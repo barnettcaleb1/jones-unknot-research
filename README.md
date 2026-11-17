@@ -21,6 +21,8 @@ The record is intended for mathematicians and independent agents who want to ins
 
 ## Inspect the record
 
+[Download the evidence supplements](https://github.com/barnettcaleb1/jones-unknot-research/releases/tag/snapshot-2026-11-17). The release includes the large saved computations and their checksums.
+
 - [Evidence and status policy](docs/EVIDENCE_POLICY.md): what historical `PROVED`, `TRUSTED`, and `REFUTED` labels mean.
 - [Chronology](docs/CHRONOLOGY.md): dated correspondence with subjects and links.
 - [Archive index](docs/ARCHIVE_INDEX.md): the original notes, reports, code, manuscripts, and evidence.

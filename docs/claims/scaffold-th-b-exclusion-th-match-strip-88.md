@@ -26,4 +26,4 @@ Exact slope-one pairing of compactQ gives row positions{0,1,2,3,3,4,5,6}. Two id
 
 - [bare_b_closure_referee.md](../../archive/work/theory_restart/bare_b_closure_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

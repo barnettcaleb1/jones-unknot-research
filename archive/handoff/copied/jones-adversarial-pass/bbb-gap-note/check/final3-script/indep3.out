@@ -1,0 +1,33 @@
+OK   word lengths 112 / 76 / commutator reduced length  [112, 76, |C|=304]
+OK   own generators: inverses and all braid relations hold, n = 3..6, U UT R RT
+OK   per-letter Fox Jacobian of the Artin automorphism == U(s_i^{+-1}), n = 3..6
+OK   Burau(Phi0) = I at t = -1 (B4, B5; U UT R RT; rational evaluation)
+OK   Burau(Phi0) != I at t = 2, 1/2, 3, 1/3 (B4, B5; U UT R RT; unreduced and reduced word)
+OK   mirror(Phi0) != I at t = 2, 3, 1/2, 1/3 as well
+OK   depth(Phi0) == 1 in B4/B5, all conventions (power series)  [4U:1, 4UT:1, 4R:1, 4RT:1, 5U:1, 5UT:1, 5R:1, 5RT:1]
+BAD  depth([Phi0, s3 Phi0 s3^-1]) == 2 in B4/B5, all conventions (power series)  [4U:2, 4UT:2, 4R:3, 4RT:3, 5U:2, 5UT:2, 5R:2, 5RT:2]
+BAD  depth of the mirror commutator == 2 as well
+OK   depth([Phi0, s3 Phi0 s3^-1]) in U, exact Laurent + repeated division  [found 2]
+OK   [Phi0, s3 Phi0 s3^-1] is nontrivial (U image != I exactly, and != I at t = 2)
+OK   U(Phi0) U(s3 Phi0 s3^-1) != U(s3 Phi0 s3^-1) U(Phi0)
+OK   matrix commutator equals U(word commutator) exactly
+OK   first-order terms: (P - I), (Q - I) vanish at t=-1 and their s^1 parts do not commute
+OK   rho(X) - I == (1 + t^3)(rho(D3^2) - I), U UT R RT
+OK   mirror words: rho - I == (1 + t^-3)(...), U UT R RT
+OK   mirror words: the (1 + t^3) version is FALSE (so the mirror check has teeth)
+OK   mirror identity also holds in B5 (not claimed; extra)
+OK   rep(mirror w)(t) == rep(Delta)^-1 J rep(w)(1/t) J rep(Delta), U UT R RT, n = 4, 5 (conjugator invertible over Z[t,1/t])
+OK   BB05 reduced matrices == diag(1,-1,..) R^T diag(1,-1,..) for s_i^{+-1}, n = 3..6; BB05 satisfies the relations
+OK   RT(s_i^{+-1}) is U(s_i^{+-1}) restricted to the sum-zero row vectors (so R, RT are genuine reduced Burau)
+OK   [delta^-2, b] in the free basis: reduced length 28, exponent sums 0  [len 28, sums [0, 0, 0]]
+OK   (13) script list M_Phi == my transcription, term by term and in order  [8 terms]
+OK   (13) script list M_PhiGamma == my transcription, term by term and in order  [8 terms]
+OK   (13) script list M_Gamma == my transcription, term by term and in order  [20 terms]
+OK   (13) M_Phi: my unsimplified list collects to the printed simplified form
+OK   (13) M_PhiGamma: my unsimplified list collects to the printed simplified form
+OK   (13) M_Gamma: my unsimplified list collects to the printed simplified form
+OK   (13) counts 8, 20, 8 and values 8, -20, 2  [{'M_Phi': 8, 'M_PhiGamma': 8, 'M_Gamma': 20} {'M_Phi': 2, 'M_PhiGamma': 8, 'M_Gamma': -20}]
+OK   (13) eps(-1)^k constant on the two parity arcs, not on beta  [{'M_Phi': [-1, 1], 'M_PhiGamma': [1], 'M_Gamma': [-1]}]
+OK   (13) Lemma 1 cross-check: |coeff| sums of simplified forms are 8, 20 (parity arcs) and 6 < 8 for beta  [{'M_Phi': 6, 'M_PhiGamma': 8, 'M_Gamma': 20}]
+
+SUMMARY: 29 OK, 2 BAD

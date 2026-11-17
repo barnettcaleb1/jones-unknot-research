@@ -26,4 +26,4 @@ LL2(1) supplied Kh table has rank26 and exact split h^4q^12 Kh_red(U2)+X+hX, dim
 
 - [ekt_control_referee.md](../../archive/work/theory_restart/ekt_control_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

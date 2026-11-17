@@ -38,4 +38,4 @@ Files: research39/topology.txt, verify_bending.py. Endpoint sources therein.
 - [topology.txt](../../archive/work/research39/topology.txt)
 - [verify_bending.py](../../archive/work/research39/verify_bending.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

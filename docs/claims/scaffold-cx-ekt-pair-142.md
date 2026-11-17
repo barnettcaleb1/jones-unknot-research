@@ -26,4 +26,4 @@ In the fixed EKT Hopf shell, a nonzero power of any conjugated rational-boundary
 
 - [ekt_universal_twist_obstruction.md](../../archive/work/global_design/ekt_universal_twist_obstruction.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

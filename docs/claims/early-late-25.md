@@ -42,4 +42,4 @@ self_writhe_repair.txt, orientation_repair_algebra.txt, verify_orientation_repai
 - [orientation_repair_algebra.txt](../../archive/work/research44/orientation_repair_algebra.txt)
 - [self_writhe_repair.txt](../../archive/work/research44/self_writhe_repair.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

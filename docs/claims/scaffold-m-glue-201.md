@@ -27,4 +27,4 @@ Actual independent two-endpoint input balls retain connected-sum factors. Univer
 - [band_transfer.md](../../archive/work/global_design/band_transfer.md)
 - [gluing_criteria.md](../../archive/work/global_design/gluing_criteria.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -27,4 +27,4 @@ Recover Morita's invariant homomorphism by a fixed-parameter homogeneous DGW rot
 - [g2_density_gate.md](../../archive/work/global_design/g2_density_gate.md)
 - [g2_quasimorphism.md](../../archive/work/global_design/g2_quasimorphism.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

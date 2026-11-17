@@ -28,4 +28,4 @@ Positive surface skein has the nonzero compression element [meridian]+A²+A^-2 e
 - [positive_skein_gate.md](../../archive/work/global_design/positive_skein_gate.md)
 - [tv_positivity_gate.md](../../archive/work/global_design/tv_positivity_gate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

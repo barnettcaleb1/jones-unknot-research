@@ -37,4 +37,4 @@ Source: work/proof10/finite_certificate.txt.
 
 - [finite_certificate.txt](../../archive/work/proof10/finite_certificate.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

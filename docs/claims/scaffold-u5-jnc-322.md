@@ -27,4 +27,4 @@ Codex reply 20261103-032512: four-plat beta=[2,2,1,2,2,2], marked central sigma1
 - [check.py](../../archive/work/width_jnc/check.py)
 - [check_results.json](../../archive/work/width_jnc/check_results.json)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

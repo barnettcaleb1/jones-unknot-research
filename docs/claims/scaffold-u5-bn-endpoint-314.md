@@ -26,4 +26,4 @@ Reply 20261103-083250; work/resume_structural/two_special_bn.md. The protected s
 
 - [two_special_bn.md](../../archive/work/resume_structural/two_special_bn.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

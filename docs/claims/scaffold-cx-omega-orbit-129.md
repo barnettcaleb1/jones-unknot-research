@@ -26,4 +26,4 @@ For fixed nonzero input bracket vectors and a fixed two-slot shell, three equal 
 
 - [omega_orbit_rigidity.md](../../archive/work/global_design/omega_orbit_rigidity.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

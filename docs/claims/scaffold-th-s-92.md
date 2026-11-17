@@ -26,4 +26,4 @@ GW0807.1432v3 Prop5.20 /0907.4375v2 Thm1.1 applies to the balanced quotient tang
 
 - [sutured_sequence_referee.md](../../archive/work/theory_restart/sutured_sequence_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ S** has10,877 certified order-2 signatures. Products with >=2 total factors, eli
 
 - [arb_REPORT.md](../../archive/collab/data/roundE/arb_REPORT.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

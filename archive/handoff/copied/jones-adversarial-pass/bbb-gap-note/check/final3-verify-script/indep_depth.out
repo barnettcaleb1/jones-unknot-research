@@ -1,0 +1,48 @@
+sanity U        n=4: inverses and braid relations hold: True
+sanity U        n=5: inverses and braid relations hold: True
+sanity UT       n=4: inverses and braid relations hold: True
+sanity UT       n=5: inverses and braid relations hold: True
+sanity R        n=4: inverses and braid relations hold: True
+sanity R        n=5: inverses and braid relations hold: True
+sanity RT       n=4: inverses and braid relations hold: True
+sanity RT       n=5: inverses and braid relations hold: True
+sanity BB05red  n=4: inverses and braid relations hold: True
+sanity BB05red  n=5: inverses and braid relations hold: True
+BB05 reduced == diag(1,-1,..) RT diag(1,-1,..) for all s_i^(+-1), n = 3..6: True
+|Phi0| = 112, reduced 76; |C| = 452, reduced 304
+EXACT B4 U       : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B4 UT      : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B4 U_rtl   : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B4 R       : depth Phi0 = 1, depth C = 3, depth mirror(C) = 3, C != I: True
+EXACT B4 RT      : depth Phi0 = 1, depth C = 3, depth mirror(C) = 3, C != I: True
+EXACT B4 BB05red : depth Phi0 = 1, depth C = 3, depth mirror(C) = 3, C != I: True
+EXACT B5 U       : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B5 UT      : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B5 U_rtl   : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B5 R       : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B5 RT      : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+EXACT B5 BB05red : depth Phi0 = 1, depth C = 2, depth mirror(C) = 2, C != I: True
+(exact part took 2.8 s)
+valuations of U(C) - I, B4:
+   [2, 2, 2, 2]
+   [2, 2, 2, 2]
+   [2, 2, 2, 2]
+   [2, 2, 2, 2]
+valuations of R(C) - I, B4:
+   [3, 3, 3]
+   [4, 3, 4]
+   [3, 3, 3]
+valuations of BB05red(C) - I, B4:
+   [3, 4, 3]
+   [3, 3, 3]
+   [3, 4, 3]
+U(C) in basis (e1-e2, e2-e3, e3-e4, e4): last column (should be 0,0,0,1 => block triangular):
+   [(0, []), (0, []), (0, []), (0, [1])]
+   depth of the restriction to sum-zero row vectors = 3; valuations of the off-diagonal row c(C) = [2, 3, 2]
+   restriction == RT(C) exactly: True
+PS iterated commutator #1: |word| = 452, depths B4: {'U': 2, 'UT': 2, 'R': 3, 'RT': 3, 'BB05red': 3}
+PS iterated commutator #2: |word| = 758, depths B4: {'U': 4, 'UT': 4, 'R': 4, 'RT': 4, 'BB05red': 4}
+PS iterated commutator #3: |word| = 1518, depths B4: {'U': 6, 'UT': 6, 'R': 6, 'RT': 6, 'BB05red': 6}
+PS iterated commutator #4: |word| = 2886, depths B4: {'U': 8, 'UT': 8, 'R': 8, 'RT': 8, 'BB05red': 8}
+(power-series part took 3.9 s)
+power-series depth == exact depth for Phi0 and C in all conventions, B4 and B5: True

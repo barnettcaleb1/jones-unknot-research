@@ -38,4 +38,4 @@ categorical_units.txt. Mainly cleaned-up equivalences/old result, not novelty.
 - [algebraic_units.txt](../../archive/work/research44/algebraic_units.txt)
 - [categorical_units.txt](../../archive/work/research44/categorical_units.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

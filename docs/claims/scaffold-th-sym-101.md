@@ -26,4 +26,4 @@ For a nonsingular two-slot tensor C, put S=G^-1C and Z=G^-1(S^-1)*GS^-1. Nonscal
 
 - [pattern_symmetry_dichotomy.md](../../archive/work/theory_restart/pattern_symmetry_dichotomy.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

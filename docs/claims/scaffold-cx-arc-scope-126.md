@@ -26,4 +26,4 @@ Assess whether banked BBB results give a designed residual Burau4 arc family.
 
 - [arc_search_scope_reply.md](../../archive/work/global_design/arc_search_scope_reply.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

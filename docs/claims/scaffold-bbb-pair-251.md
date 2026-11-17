@@ -26,4 +26,4 @@ Any two distinct old-B3 conjugates of rho4(sigma3²) freely generate, also proje
 
 - [bbb_product_channels.md](../../archive/work/global_design/bbb_product_channels.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

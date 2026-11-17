@@ -26,4 +26,4 @@ F=t^-1/2 V_L+1+t^-1 is divisible by t³-1. Integral F=N D with abs(N)>2 forces P
 
 - [jt2_root_gates.md](../../archive/work/theory_restart/jt2_root_gates.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

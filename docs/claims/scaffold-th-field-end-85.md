@@ -26,4 +26,4 @@ For the finite free integral augmented complex, dim N_Fp(h,q)=rank N_Z(h,q)+t_p(
 
 - [field_and_genus_one_reduction.md](../../archive/work/theory_restart/field_and_genus_one_reduction.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

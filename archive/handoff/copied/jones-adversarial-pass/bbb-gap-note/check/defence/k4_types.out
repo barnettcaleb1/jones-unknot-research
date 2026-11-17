@@ -1,0 +1,8 @@
+random K4 elements (y-words of length 1-7): #violating Lemma 6.3 list, #tested, types:
+(50, 200, {((3,), 'chg'): 273, ((4,), 'chg'): 744, ((1, 3), 'pres'): 2, ((1, 4), 'pres'): 16, ((2, 3), 'pres'): 157, ((2, 4), 'pres'): 64, ((3, 4), 'chg'): 1, ((1, 2, 4), 'chg'): 3, ((1, 3, 4), 'pres'): 1, ((2, 3, 4), 'pres'): 106, ((1, 2, 3, 4), 'chg'): 344})
+ending in y+1: 11 of 60 violate; types: [((1, 2, 3, 4), 'chg'), ((1, 2, 4), 'chg'), ((1, 4), 'pres'), ((2, 3), 'pres'), ((2, 3, 4), 'pres'), ((2, 4), 'pres'), ((3,), 'chg'), ((4,), 'chg')]
+ending in y-1: 6 of 60 violate; types: [((1, 2, 3, 4), 'chg'), ((1, 3, 4), 'pres'), ((1, 4), 'pres'), ((2, 3), 'pres'), ((2, 3, 4), 'pres'), ((2, 4), 'pres'), ((3,), 'chg'), ((4,), 'chg')]
+ending in y+2: 19 of 60 violate; types: [((1, 2, 3, 4), 'chg'), ((1, 2, 4), 'chg'), ((1, 4), 'pres'), ((2, 3), 'pres'), ((2, 3, 4), 'pres'), ((2, 4), 'pres'), ((3,), 'chg'), ((3, 4), 'chg'), ((4,), 'chg')]
+ending in y-2: 25 of 60 violate; types: [((1, 2, 3, 4), 'chg'), ((1, 2, 4), 'chg'), ((1, 3), 'pres'), ((1, 4), 'pres'), ((2, 3), 'pres'), ((2, 3, 4), 'pres'), ((2, 4), 'pres'), ((3,), 'chg'), ((4,), 'chg')]
+ending in y+3: 9 of 60 violate; types: [((1, 2, 3, 4), 'chg'), ((1, 3), 'pres'), ((1, 3, 4), 'pres'), ((1, 4), 'pres'), ((2, 3), 'pres'), ((2, 3, 4), 'pres'), ((2, 4), 'pres'), ((3,), 'chg'), ((4,), 'chg')]
+ending in y-3: 9 of 60 violate; types: [((1, 2, 3, 4), 'chg'), ((1, 2, 4), 'chg'), ((1, 4), 'pres'), ((2, 3), 'pres'), ((2, 3, 4), 'pres'), ((3,), 'chg'), ((4,), 'chg')]

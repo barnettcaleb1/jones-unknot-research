@@ -66,4 +66,4 @@ candidate remains subject to correction if external review finds a flaw.
 - [rational-tangle-uniqueness-audit.txt](../../archive/outputs/rational-tangle-uniqueness-audit.txt)
 - [rational-tangle-uniqueness-audited-proof.txt](../../archive/outputs/rational-tangle-uniqueness-audited-proof.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

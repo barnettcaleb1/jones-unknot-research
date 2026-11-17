@@ -1,0 +1,4 @@
+standard n=3 rho(D3^4)-I == (1+t^3)(rho(D3^2)-I): True
+standard n=4 rho(D3^4)-I == (1+t^3)(rho(D3^2)-I): True
+homological n=3 rho(D3^4)-I == (1+t^3)(rho(D3^2)-I): True
+homological n=4 rho(D3^4)-I == (1+t^3)(rho(D3^2)-I): True

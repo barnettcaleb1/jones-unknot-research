@@ -42,4 +42,4 @@ check_satellite_independence.py and satellite_independence_check.json.
 - [generic_scaffold.txt](../../archive/work/research49/generic_scaffold.txt)
 - [satellite_independence_check.json](../../archive/work/research49/satellite_independence_check.json)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

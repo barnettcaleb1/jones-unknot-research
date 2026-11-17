@@ -26,4 +26,4 @@ For q-holonomic J and rational color correction g(q,q^N), the h=q−1 primitive 
 
 - [ore_correction.md](../../archive/work/global_design/ore_correction.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

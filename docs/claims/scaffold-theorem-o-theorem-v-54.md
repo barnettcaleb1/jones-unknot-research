@@ -26,4 +26,4 @@ Outer raw state is A^(8m)X^-m p_raw; preferred vector t^(2m(1-epsilon))X^-m p. V
 
 - [skein_dictionary_arbitrary_boxes.md](../../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

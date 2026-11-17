@@ -27,4 +27,4 @@ Reply 20261103-083250; work/resume_structural/unitary_mechanism.md and phase_obs
 - [phase_obstruction_audit.md](../../archive/work/resume_structural/phase_obstruction_audit.md)
 - [unitary_mechanism.md](../../archive/work/resume_structural/unitary_mechanism.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

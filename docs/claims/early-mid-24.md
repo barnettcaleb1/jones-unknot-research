@@ -49,4 +49,4 @@ Do NOT redistribute piwocki_traczyk_source_cache.json (external full article).
 - [structural_kernel_route.txt](../../archive/work/research25/structural_kernel_route.txt)
 - [kernel_intersection.txt](../../archive/work/research26/kernel_intersection.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

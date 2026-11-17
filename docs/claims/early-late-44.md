@@ -40,4 +40,4 @@ outputs/jones-generic-route-audit.txt.
 - [jones-generic-route-audit.txt](../../archive/outputs/jones-generic-route-audit.txt)
 - [general_y_formula.txt](../../archive/work/research51/general_y_formula.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

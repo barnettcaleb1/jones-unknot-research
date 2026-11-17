@@ -46,4 +46,4 @@ ribbon_euler_faithfulness_audit.txt; work/research22/global_fiber_test.txt.
 - [ribbon_norm_architecture.txt](../../archive/work/research21/ribbon_norm_architecture.txt)
 - [global_fiber_test.txt](../../archive/work/research22/global_fiber_test.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

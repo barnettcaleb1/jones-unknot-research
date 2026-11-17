@@ -26,4 +26,4 @@ Unit-bar lift existence is equivalent to nonnegative alternating partial sums b_
 
 - [curve_structure_read.md](../../archive/work/theory_restart/curve_structure_read.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

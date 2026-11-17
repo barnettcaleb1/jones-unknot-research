@@ -1,0 +1,155 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}[lemma]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[lemma]{Remark}
+
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\Brun}{\mathrm{Brun}}
+\newcommand{\bs}{\beta^3_*}
+\newcommand{\at}{\big|_{t=-1}}
+
+\title[A remark on Section 6 of arXiv:2607.05283]{A remark on the proof of Theorem 6.9 in\\ ``The Burau representation is faithful for $n=4$''}
+\author{[author name redacted]}
+\email{[email redacted]}
+\date{3 November 2026}
+
+\begin{document}
+
+\begin{abstract}
+We point out what appears to be a gap in Section 6 of the preprint of Bharathram, Birman and Brendle \cite{BBB}. Under the parity condition, the sum of the absolute values of the coefficients of a Moody polynomial is the absolute value of its value at $t=-1$, and that value depends only on the Burau representation at $t=-1$. Consequently the conclusion of Proposition 6.7 fails for every proper product $\Phi=\Phi'\cdot\Gamma_1$ with $\rho_4(\Phi)\at=I$, and every element of $\ker\rho_4$ is such a braid. We give an explicit nontrivial Brunnian braid that is trivial at $t=-1$ and that the criterion in the proof of Theorem 6.9 makes conjugate to a proper product $\Phi'\cdot\Gamma_1$. So Proposition 6.7 or that criterion is false. The braid is not in $\ker\rho_4$, and we do not claim that $\rho_4$ is unfaithful.
+\end{abstract}
+
+\maketitle
+
+\section{The statements involved}
+
+We use the notation of \cite{BBB}. The Burau representation $\rho_n$ is the action of $B_n$ on the free $\mathbb{Z}[t^{\pm1}]$-module $H=H_1(\widetilde D_n,\{\tilde p_*\})$; $f\colon B_n\to B_{n+1}$ is the standard inclusion; $K_n=\pi_1(D_{n-1},p_n)\subset B_n$ is the group of push-maps of $p_n$; braids act on arcs on the right and are multiplied from left to right. For a braid $\Phi$, $\M_\Phi=\M(\alpha,(\bs)\Phi)=\sum_{i=1}^m\epsilon_i t^{k_i}$, where $q_1,\dots,q_m$ are the points of $\alpha\cap(\bs)\Phi$ in order along $(\bs)\Phi$ and $m=\iota(\alpha,(\bs)\Phi)$; it is defined up to a unit. We write $P\at$ for the value at $t=-1$ of a Laurent polynomial or matrix $P$. The free basis $y_1,y_2,y_3$ of $K_4$ is the one in Figure 6.13 of \cite{BBB}, and $\Gamma_1\in K_4$ is the push-map of Figure 6.3.
+
+The proof of the Main Theorem goes through Theorem 6.9 (faithfulness of $\rho_4$ on $\Brun_4$), which rests on the following three steps.
+
+\begin{enumerate}
+\item[(A)] \emph{Proposition 6.7.} If $\Phi\in B_4$ is a proper product $\Phi=\Phi'\cdot\Gamma_1$, then there is a push-map $\Gamma\in K_5$ such that $f(\Phi)\cdot\Gamma$ is a proper product, both $f(\Phi)\cdot\Gamma$ and $\Gamma$ satisfy the parity condition, and $\Gamma$ can be chosen so that $\iota(\alpha,(\bs)(f(\Phi)\cdot\Gamma))\neq\iota(\alpha,(\bs)\Gamma)$.
+\item[(B)] \emph{Corollary 6.8 and its proof.} For $\Phi\in K_4$ a proper product $\Phi'\cdot\Gamma_1$ with $\iota(\alpha,(\bs)\Phi)>0$, take $\Gamma$ as in (A). By Lemma 4.2 neither $\M_{f(\Phi)\cdot\Gamma}$ nor $\M_\Gamma$ has cancellations, so for each of them the sum of the absolute values of its coefficients is the corresponding intersection number, and the inequality in (A) gives $\M_{f(\Phi)\cdot\Gamma}\neq\M_\Gamma$.
+\item[(C)] \emph{The reduction in the proof of Theorem 6.9.} A nontrivial $\Phi\in\Brun_4$ is replaced by a conjugate that is a proper product $\Phi'\cdot\Gamma_1$. The justification given is that for the simple loop $\Gamma_1$ Condition~1 of a proper product always holds, that Condition~2 holds whenever $\Phi'$ and $\Gamma_1$ are freely reduced words in $y_1,y_2,y_3$ whose juxtaposition is freely reduced, and that $\Gamma_1$, as a reduced word, begins with $y_2^{-1}$. We call this \emph{the criterion}.
+\end{enumerate}
+Theorem 2.3 and Observation 2.1 then give $\Phi\notin\ker\rho_4$.
+
+\section{Two observations}
+
+\begin{lemma}\label{lem:sign}
+If $\varphi\in B_n$ satisfies the parity condition, then $\epsilon_i(-1)^{k_i}$ does not depend on $i$. Hence $|\M_\varphi\at|=m$, and $m$ is also the sum of the absolute values of the coefficients of $\M_\varphi$.
+\end{lemma}
+
+\begin{proof}
+For $1\le i<m$, the subarcs of $\alpha$ and $(\bs)\varphi$ between $q_i$ and $q_{i+1}$ bound the disk $\Delta_i$ of the disk sequence. Its boundary is a simple closed curve, so its winding number $W_i$ satisfies $|W_i|=|P(\Delta_i)|$, and $k_{i+1}-k_i=W_i$ by Lemma 3.1. The parity condition says that $\epsilon_{i+1}=-\epsilon_i$ exactly when $|P(\Delta_i)|$ is odd, that is, exactly when $(-1)^{W_i}=-1$. Hence $\epsilon_{i+1}(-1)^{k_{i+1}}=\epsilon_i(-1)^{k_i}$, and all $m$ terms of $\M_\varphi\at=\sum_i\epsilon_i(-1)^{k_i}$ have the same sign. The last statement is Lemma 4.2.
+\end{proof}
+
+The examples in Section 7 of \cite{BBB} illustrate this. The two polynomials there that satisfy the parity condition, $\M_{\Phi\cdot\Gamma}$ and $\M_\Gamma$, have $8$ and $20$ terms and take the values $8$ and $-20$ at $t=-1$. The polynomial $\M_\Phi$, which does not, has $8$ terms and takes the value $2$.
+
+\begin{lemma}\label{lem:tminus1}
+Let $X,Y\in B_n$ with $\rho_n(Y)\at=I$. Then $\M_{Y\cdot X}\at=\pm\M_X\at$.
+\end{lemma}
+
+\begin{proof}
+As noted in Section 2 of \cite{BBB} and used in the proof of Theorem 2.3, $\M_\Phi$ is determined by the class $c_\Phi\in H$ of the boundary of a regular neighbourhood of $(\bs)\Phi$, a loop based at $p_*$ around $p_3$. The equivariant intersection pairing of a lift $\tilde\alpha$ with $c_\Phi$ equals $(1-t^{\pm1})\M_\Phi$ up to a unit, and it is $\mathbb{Z}[t^{\pm1}]$-linear in $c_\Phi$ (or semilinear for $t\mapsto t^{-1}$, depending on conventions). With braids acting on the right, $c_{Y\cdot X}=c_{\mathrm{id}}\,\rho_n(Y)\rho_n(X)$, so
+\[
+c_{Y\cdot X}-c_X=c_{\mathrm{id}}\bigl(\rho_n(Y)-I\bigr)\rho_n(X).
+\]
+Every entry of $\rho_n(Y)-I$ vanishes at $t=-1$, so it is divisible by $t+1$ in $\mathbb{Z}[t^{\pm1}]$. Hence $c_{Y\cdot X}-c_X\in(t+1)H$, and its pairing with $\tilde\alpha$ is divisible by $t+1$; this also holds in the semilinear case, since $t^{-1}+1=t^{-1}(t+1)$. Evaluating at $t=-1$, where $1-t^{\pm1}=2$, gives the claim, with the sign coming from the normalisation of $\M$ up to a unit. With left actions the same argument applies to $\rho_n(X)(\rho_n(Y)-I)$.
+\end{proof}
+
+\section{\texorpdfstring{Proposition 6.7 at $t=-1$}{Proposition 6.7 at t = -1}}
+
+\begin{proposition}\label{prop:main}
+Let $\Phi\in B_4$ with $\rho_4(\Phi)\at=I$. Then no $\Gamma\in K_5$ has both of the following properties:
+\begin{enumerate}
+\item[(i)] $f(\Phi)\cdot\Gamma$ and $\Gamma$ both satisfy the parity condition;
+\item[(ii)] $\iota(\alpha,(\bs)(f(\Phi)\cdot\Gamma))\neq\iota(\alpha,(\bs)\Gamma)$.
+\end{enumerate}
+In particular, if such a $\Phi$ is a proper product $\Phi'\cdot\Gamma_1$, the conclusion of Proposition 6.7 is false for it.
+\end{proposition}
+
+\begin{proof}
+For the standard inclusion, $\rho_5(f(\Phi))$ is block diagonal with blocks $\rho_4(\Phi)$ and $1$, so $\rho_5(f(\Phi))\at=I$. Lemma~\ref{lem:tminus1} with $Y=f(\Phi)$ and $X=\Gamma$ gives $|\M_{f(\Phi)\cdot\Gamma}\at|=|\M_\Gamma\at|$. If (i) holds, Lemma~\ref{lem:sign} turns this into equality of the two intersection numbers, which contradicts (ii).
+\end{proof}
+
+Every element of $\ker\rho_4$ satisfies the hypothesis of Proposition~\ref{prop:main}, and so does every element of the kernel of $\rho_4\at$, which contains $\ker\rho_4$. So step (A) can only hold for proper products that are already detected at $t=-1$. Since conjugation preserves the condition $\rho_4(\Phi)\at=I$, steps (A) and (C) together would imply that no nontrivial element of $\Brun_4$ is trivial at $t=-1$. The next section shows that this is false.
+
+\section{An explicit braid}
+
+Let $A_{14}=\sigma_3\sigma_2\sigma_1^2\sigma_2^{-1}\sigma_3^{-1}$, $A_{24}=\sigma_3\sigma_2^2\sigma_3^{-1}$ and $A_{34}=\sigma_3^2$ be the standard pure braid generators, write $[x,y]=xyx^{-1}y^{-1}$, and set
+\[
+X=(\sigma_1\sigma_2)^6=\Delta_3^4,\qquad b=\bigl[[A_{14},A_{24}],A_{34}\bigr],\qquad \Phi_0=[X,b].
+\]
+As a word in the $\sigma_i$, $\Phi_0$ has $112$ letters.
+
+\begin{proposition}\label{prop:phi0}
+\begin{enumerate}
+\item[(a)] $\Phi_0\in\Brun_4$, $\Phi_0\in K_4$, and $\Phi_0\in[K_4,K_4]$.
+\item[(b)] $\rho_4(\Phi_0)\at=I$.
+\item[(c)] $\rho_4(\Phi_0)\neq I$; for instance $\rho_4(\Phi_0)|_{t=2}\neq I$. In particular $\Phi_0$ is nontrivial and $\Phi_0\notin\ker\rho_4$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(a) The braids $X$ and $A_{i4}$ are pure, so deleting a strand is a homomorphism on the group they generate. Deleting strand $4$ kills every $A_{i4}$ and hence $b$; deleting strand $1$ or $2$ kills $[A_{14},A_{24}]$ and hence $b$; deleting strand $3$ kills $A_{34}$ and hence $b$. In each case $\Phi_0$ maps to $[X',1]=1$. So $\Phi_0$ is Brunnian, and it lies in $K_4$, the kernel of deleting strand $4$ on the pure braid group. Since $K_4$ is normal in the pure braid group, so is its characteristic subgroup $[K_4,K_4]$, which contains $b$; hence $\Phi_0=(XbX^{-1})\,b^{-1}\in[K_4,K_4]$.
+
+(b) A direct computation gives $\rho_4(X)\at=I$. (This also follows from the double branched cover description of $\rho_4\at$: $X$ is the square of the Dehn twist about a curve surrounding $p_1,p_2,p_3$, which lifts to a twist about a separating curve; compare \cite{BMP}.) Hence $\rho_4(\Phi_0)\at=[\rho_4(X)\at,\rho_4(b)\at]=I$.
+
+(c) This is an exact computation; see the appendix.
+\end{proof}
+
+Now put $\Phi_0$ into the form required by (C). Let $w$ be the freely reduced word for $\Phi_0$ in $y_1,y_2,y_3$, choose $m$ larger than the length of $w$, and set
+\[
+\Phi'=\Gamma_1^{-1}\,y_1^{m}\,\Phi_0\,y_1^{-m},\qquad \Phi=\Phi'\cdot\Gamma_1=g\,\Phi_0\,g^{-1},\quad g=\Gamma_1^{-1}y_1^{m}.
+\]
+By (a), every exponent sum of $\Phi_0$ in the free basis is zero, so the nontrivial element $\Phi_0$ is not a power of $y_1$. Hence the reduced form of $y_1^m\Phi_0y_1^{-m}$ begins with $y_1$ and ends with $y_1^{-1}$. Since $\Gamma_1$ begins with $y_2^{-1}$, the word $\Gamma_1^{-1}$ ends with $y_2$, so the reduced form of $\Phi'$ is the juxtaposition of $\Gamma_1^{-1}$ and $y_1^m\Phi_0y_1^{-m}$, and it ends with $y_1^{-1}$. The juxtaposition of $\Phi'$ and $\Gamma_1$ is therefore freely reduced, and by the criterion (C), $\Phi=\Phi'\cdot\Gamma_1$ is a proper product.
+
+The braid $\Phi$ is a nontrivial element of $\Brun_4\subset K_4$, being conjugate to $\Phi_0$. It is pseudo-Anosov, as is every nontrivial element of $\Brun_4$ (as recalled in the proof of Theorem 6.9), so $\iota(\alpha,(\bs)\Phi)>0$. It satisfies $\rho_4(\Phi)\at=I$. Thus $\Phi$ meets the hypotheses of Lemma 6.3, Proposition 6.7 and Corollary 6.8, and by Proposition~\ref{prop:main} no $\Gamma\in K_5$ has the properties that Proposition 6.7 asserts for it.
+
+\section{Where the argument fails}
+
+At least one of the following is false:
+\begin{enumerate}
+\item the criterion (C) for proper products, as applied to $\Phi'\cdot\Gamma_1$;
+\item the assertion of Proposition 6.7 that $f(\Phi)\cdot\Gamma$ and $\Gamma$ satisfy the parity condition (its proof uses Lemmas 6.2 to 6.6);
+\item the inequality of intersection numbers in Proposition 6.7.
+\end{enumerate}
+In each case the proof of Theorem 6.9 does not go through as written. If (1) fails, the reduction to proper products is unjustified. If (2) or (3) fails, Proposition 6.7 is false as stated, and by Proposition~\ref{prop:main} its conclusion fails for every proper product in $\ker\rho_4$, which are exactly the braids that Theorem 6.9 has to rule out.
+
+We have not checked Conditions 1 and 2 of a proper product for $\Phi'\cdot\Gamma_1$ directly from the definition, or the case analyses inside Lemmas 6.3 to 6.6; the arcs involved are very large. So we cannot say which of (1) to (3) fails.
+
+\begin{remark}[What a repair would need]
+Suppose $\rho_4(\Phi)\equiv I\pmod{(t+1)^r}$. With compatible choices of lifts, the argument of Lemma~\ref{lem:tminus1} shows that $\M_{f(\Phi)\cdot\Gamma}-\M_\Gamma$ is divisible by $(t+1)^r$. If both braids satisfy the parity condition, Lemma~\ref{lem:sign} gives $\M(t)=\pm p(-t)$ with $p(s)=\sum_i s^{k_i}$, so the first $r$ derivatives at $s=1$ of the two polynomials $p$ agree: the exponent multisets $\{k_i\}$ have the same first $r$ factorial moments. The comparison in Corollary 6.8 is the case of the moment of order $0$. For an element of $\ker\rho_4$ the two Moody polynomials are equal (Theorem 2.3), so a version of Proposition 6.7 that excludes kernel elements has to separate $f(\Phi)\cdot\Gamma$ from $\Gamma$ by a statistic that no bounded number of these moments determines, for example the span $\max_i k_i-\min_i k_i$.
+\end{remark}
+
+\begin{remark}[Two smaller points]
+In the proof of Theorem 6.9 the conditions are stated for $\Phi\cdot\Gamma_1$ and for $\Phi$ ending with $y_2$, whereas what is needed is that $\Phi'=\Phi\cdot\Gamma_1^{-1}$ does not end with $y_2$; a conjugation as in Section~4 achieves this for every nontrivial element of $[K_4,K_4]$, in particular for every nontrivial element of $\Brun_4$. Proposition 6.7 calls $f(\Phi)\cdot\Gamma$ a proper product in $B_5$, while proper products are defined in Section 5 for a first factor in $K_n$, and $f(\Phi)\notin K_5$.
+\end{remark}
+
+\appendix
+\section{Computations}
+
+All computations are exact, over $\mathbb{Z}[t^{\pm1}]$. We used $\sigma_i\mapsto I_{i-1}\oplus\begin{pmatrix}1-t&t\\1&0\end{pmatrix}\oplus I_{n-i-1}$, its transpose, and the reduced Burau representation, and the Artin action of $B_n$ on the free group $F_n$ for triviality checks. In every convention:
+\begin{itemize}
+\item $\rho_4(\Phi_0)\at=I$ and $\rho_5(f(\Phi_0))\at=I$;
+\item $\rho_4(\Phi_0)\neq I$ as a matrix over $\mathbb{Z}[t^{\pm1}]$, and $\rho_4(\Phi_0)|_{t=2}\neq I$, $\rho_4(\Phi_0)|_{t=3}\neq I$;
+\item $\rho_4(\Phi_0)\not\equiv I\pmod{(t+1)^2}$, so its $(t+1)$-adic depth is exactly $1$;
+\item $\Phi_0$ acts nontrivially on $F_4$, and deleting any one strand gives a braid acting trivially on $F_3$.
+\end{itemize}
+The script \texttt{phi0\_check.py} (Python 3, standard library only) reproduces these checks.
+
+\subsection*{Acknowledgement}
+This note came out of a project using AI systems (Anthropic's Claude and OpenAI's Codex), which carried out the analysis and the computations. The argument and the computations were checked by several independent AI reviews, but not by a professional mathematician.
+
+\begin{thebibliography}{BMP15}
+\bibitem[BBB26]{BBB} V. Bharathram, J. S. Birman and T. E. Brendle, \emph{The Burau representation is faithful for $n=4$}, arXiv:2607.05283v2, 2026.
+\bibitem[BMP15]{BMP} T. Brendle, D. Margalit and A. Putman, \emph{Generators for the hyperelliptic Torelli group and the kernel of the Burau representation at $t=-1$}, Invent. Math. \textbf{200} (2015), 263--310.
+\end{thebibliography}
+
+\end{document}

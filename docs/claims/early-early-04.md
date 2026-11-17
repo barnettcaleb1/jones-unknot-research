@@ -39,4 +39,4 @@ replay_reidemeister.py}. The last replay uses Regina, not Spherogram.
 
 - [README.md](../../archive/work/attack_search/README.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

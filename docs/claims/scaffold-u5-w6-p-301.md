@@ -26,4 +26,4 @@ For Bigelow's B6 kernel beta, all integer powers capped by C=(2,5)(3,4) and cupp
 
 - [powers_geometry_note.txt](../../archive/work/width6/powers_geometry_note.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

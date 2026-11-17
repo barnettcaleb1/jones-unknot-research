@@ -38,4 +38,4 @@ Source: work/proof12/homology/one_special_bn_obstruction.txt and braid audit.
 
 - [one_special_bn_obstruction.txt](../../archive/work/proof12/homology/one_special_bn_obstruction.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

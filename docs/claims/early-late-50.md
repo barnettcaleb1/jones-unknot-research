@@ -128,4 +128,4 @@ saved 1 November audits.
 - [anchored_families.txt](../../archive/work/research47/anchored_families.txt)
 - [categorical_realizability.txt](../../archive/work/research52/categorical_realizability.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

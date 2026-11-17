@@ -43,4 +43,4 @@ outputs/jones-cabling-and-realizability.txt.
 - [jones-cabling-and-realizability.txt](../../archive/outputs/jones-cabling-and-realizability.txt)
 - [cabling_unit_fiber_reduction.txt](../../archive/work/proof13/generic/cabling_unit_fiber_reduction.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -54,4 +54,4 @@ verify_watson_independent.py. Do not reverse the reflected middle word twice.
 - [watson_rank_audit.txt](../../archive/work/research21/watson_rank_audit.txt)
 - [homology_mechanism.txt](../../archive/work/research26/homology_mechanism.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

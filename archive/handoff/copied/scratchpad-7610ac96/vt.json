@@ -1,0 +1,18 @@
+{
+ "files": [
+  "/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t.jsonl.gz"
+ ],
+ "records_total": 40,
+ "sampled": 40,
+ "fraction": 1.0,
+ "seed": 1,
+ "records_pass": 40,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 40
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 40
+ },
+ "secs": 0.2
+}

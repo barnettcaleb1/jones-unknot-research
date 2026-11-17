@@ -1,0 +1,57 @@
+ok    Artin(left) satisfies braid relations in B4
+ok    word length of Phi0 as written = 112  [112]
+ok    freely reduced length = 76 (scan algorithm and stack algorithm agree)  [76]
+ok    X = (s1 s2)^6 equals Delta_3^4 = (s1 s2 s1)^4
+ok    Delta_3^2 = (s1 s2)^3
+ok    delta = Delta_3^-2 Delta_4^2 equals A14 A24 A34
+ok    Phi0 = [delta^-2, b]
+ok    Phi0 nontrivial (Artin action)
+ok    Phi0 pure
+ok    delete strand 1: freely reduces to empty / trivial Artin action on F3  [len 80]
+ok    delete strand 2: freely reduces to empty / trivial Artin action on F3  [len 64]
+ok    delete strand 3: freely reduces to empty / trivial Artin action on F3  [len 56]
+ok    delete strand 4: freely reduces to empty / trivial Artin action on F3  [len 24]
+ok    A14, A24, A34, b, delta, Phi0 all in K4
+ok    A14 not killed by deleting strand 2 (sanity: deletion not vacuous)
+ok    B4 U  (lr product): Phi0 = I at t=-1
+ok    B4 U  (lr product): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B4 U  (reversed product): Phi0 = I at t=-1
+ok    B4 U  (reversed product): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B4 UT: Phi0 = I at t=-1
+ok    B4 UT: Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B4 Rq (quotient-reduced): Phi0 = I at t=-1
+ok    B4 Rq (quotient-reduced): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B4 Rs (sub-reduced): Phi0 = I at t=-1
+ok    B4 Rs (sub-reduced): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B5 U  (lr product): Phi0 = I at t=-1
+ok    B5 U  (lr product): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B5 U  (reversed product): Phi0 = I at t=-1
+ok    B5 U  (reversed product): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B5 UT: Phi0 = I at t=-1
+ok    B5 UT: Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B5 Rq (quotient-reduced): Phi0 = I at t=-1
+ok    B5 Rq (quotient-reduced): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    B5 Rs (sub-reduced): Phi0 = I at t=-1
+ok    B5 Rs (sub-reduced): Phi0 != I at t = 2, 1/2, 3, 1/3  [t=2: not I, t=1/2: not I, t=3: not I, t=1/3: not I]
+ok    mirror(Phi0) = I at t=-1 and != I at t=2, 1/2 (U)
+ok    U: rho(X) - I == (1 + t^3)(rho(Delta_3^2) - I) exactly (symbolic)
+      U(Delta_3^2) - I, nonzero entries: [(1, 1, (1, [-1, 0, 1])), (1, 2, (1, [1, -1])), (1, 3, (2, [1, -1])), (2, 1, (0, [1, -1])), (2, 2, (0, [-1, 1, -1, 1])), (2, 3, (2, [1, -1])), (3, 1, (0, [1, -1])), (3, 2, (1, [1, -1])), (3, 3, (0, [-1, 0, 1]))]
+ok    t->1/t convention: (1 + t^3) identity FAILS
+ok    t->1/t convention: (1 + t^-3) identity holds
+ok    mirror convention: (1 + t^3) identity FAILS, (1 + t^-3) holds (numeric at 3 points)
+ok    reduced (quotient and sub): identity holds at 20 rational points
+ok    depth of Phi0 (U, B4) is exactly 1  [1]
+ok    depth of f(Phi0) (U, B5) is exactly 1
+ok    depth of [Phi0, s3 Phi0 s3^-1] >= 2 and of [Phi0,[Phi0, s3 Phi0 s3^-1]] >= 3  [found 2, 4]
+ok    depth X >= 1 (X = I at t=-1), sanity
+ok    U(Phi0) and U(s3 Phi0 s3^-1) do not commute (at t=2)
+ok    s3 Phi0 s3^-1 is Brunnian too
+ok    Sec 7: M_Phi has 8 terms, value 2 at t=-1  [8, 2.0]
+ok    Sec 7: M_PhiGamma has 8 terms, value 8  [8, 8.0]
+ok    Sec 7: M_Gamma has 20 terms, value -20  [20, -20.0]
+ok    Sec 7: simplified forms match the paper's second lines
+ok    Sec 7: eps_i (-1)^k_i constant for the two parity polynomials, not for M_Phi
+ok    Sec 7: sum |simplified coeffs| = 8, 20 for parity polys; 6 for M_Phi
+
+reduced word of Phi0 (76 letters): 1 2 1 2 1 2 1 2 1 2 1 2 3 2 1 1 2 2 -1 -1 -2 -2 -2 3 3 2 2 2 1 1 -2 -2 -1 -1 -2 -3 -3 -3 -2 -1 -2 -1 -2 -1 -2 -1 -2 -1 -2 -1 3 3 3 2 1 1 2 2 -1 -1 -2 -2 -2 -3 -3 2 2 2 1 1 -2 -2 -1 -1 -2 -3
+ALL OK

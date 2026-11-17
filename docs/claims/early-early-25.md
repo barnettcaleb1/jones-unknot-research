@@ -42,4 +42,4 @@ Source: outputs/jones-concrete-experiments.txt; work/try8/tangle.
 
 - [jones-concrete-experiments.txt](../../archive/outputs/jones-concrete-experiments.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

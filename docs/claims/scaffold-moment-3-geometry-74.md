@@ -26,4 +26,4 @@ No pure linear combination of cover/constituent v3 gives M3/36; the two9_9 inver
 
 - [degree3_geometric_identity.md](../../archive/work/theory_restart/degree3_geometric_identity.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

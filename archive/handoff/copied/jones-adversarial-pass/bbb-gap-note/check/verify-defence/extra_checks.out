@@ -1,0 +1,7 @@
+(a) Lemma 2 planar test with Y=[Delta3^4,A34]: 40 random X, mismatches: 0
+(b) Phi0 y-word (length 30) equals the note's sigma-word as a mapping class: True
+    rho(Phi0) = I at t=-1 (homological Burau): True ; at t=2: False
+    y1^m Phi0 y1^-m reduced begins with y1, ends with y1^-1: True
+    Phi' = Gamma1^-1 y1^m Phi0 y1^-m is freely reduced: True
+    Gamma1 begins with y2^-1: True ; Phi' ends with y1^-1: True ; juxtaposition Phi'.Gamma1 reduced: True
+(c) Lemma 6.3 list violations [tested, violating]: {'criterion holds': [49, 0], 'criterion fails (Phi ends in y2)': [36, 0]}

@@ -26,4 +26,4 @@ Reply 20261103-035541; work/width6_targeted/square_torus_repair.txt. The dual is
 
 - [square_torus_repair.txt](../../archive/work/width6_targeted/square_torus_repair.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

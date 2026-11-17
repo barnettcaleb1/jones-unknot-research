@@ -141,6 +141,34 @@ A good result may be “our interpretation was wrong.” Corrections to this rep
 
 **Failure tests:** importing an unarchived private path; verifying only a cached output against itself; changing normalization to fit the expected result; treating checksum agreement as mathematical verification.
 
+## O11. Complete one unfinished mechanism-round proof audit
+
+These are different obligations; agreement with the saved numerical examples does not settle them.
+
+* **Pointed link splitting.** Check step (5) of the proposed sequence $N(T)\Rightarrow\widetilde{Kh}(K_u)\otimes\widetilde{Kh}(K_l)$: the chain maps and homotopies for Reidemeister moves must preserve the marked-point subcomplex, not merely its ambient homology module. The [partial referee](../archive/claude/theory-restart/mech2/verify/splitting-proof.md) explains the gap between this requirement and [Batson–Seed's published construction](https://arxiv.org/abs/1303.6240). The [compute referee](../archive/claude/theory-restart/mech2/verify/splitting-compute.md) is corroborating data, not that missing proof.
+* **One-sign and extreme-state criteria.** Independently audit the [states report](../archive/claude/theory-restart/mech2/states/REPORT.md) with its [existing internal referee](../archive/claude/theory-restart/mech2/verify/positivity-proof.md), including the imported homogeneous-diagram minimal-genus result. Preserve the 71-versus-72 count correction and the unknot exception. This already has a Claude-side internal proof/referee record; the task is not to silently label it externally verified.
+* **Restricted shape.** Audit the repaired $\mathbb F_2$ unit-arrow theorem using [KWZ's extension theorem](https://arxiv.org/abs/2202.01460) and the [tail-case referee](../archive/claude/theory-restart/mech2/verify/shape-proof.md). Retain the bullet-containing-component condition and the two extra hypotheses of the staircase-plus-squares corollary. This does not settle O6 or recover the false universal shape law.
+
+The adequate-double END/NP refinement remains an unrefereed proposal in the [colored report](../archive/claude/theory-restart/mech2/colored/REPORT.md). A proof must distinguish that homological refinement from the already published ordinary Jones detection for such doubles.
+
+## O12. Make the V3 branch-knot consequence independently reviewable
+
+**Target.** Audit the complete chain from a marked V3 word to $V(T(1/n))\ne1$ on the $a_2=0$ core, with its odd-parameter exception outside that core. [Readable corollary](SMALL_RESULTS.md#21-from-v3-non-flatness-to-knot-level-jones-detection).
+
+**Present status.** V3 and the arbitrary-box dictionary have internal referee records; the surgery/signature translation is internally checked. E6's exact polynomial data and geometry/literature conclusions are reported separately. No external specialist review or comprehensive novelty determination is recorded.
+
+**Bounded packet.** Check one of the following: the marked V3-to-cover identification; the common framing in the dictionary; the Casson/Mullins orientation comparison; or E6's saved halfword, $a_2=0$, two-channel polynomial and claimed geometric certificates. Start from the [V3 audit](../archive/collab/data/roundD/refV3_REPORT.md), [dictionary](../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md), [odd-closure audit](../archive/work/theory_restart/roots_odd_referee.md), and [E6 data](../archive/claude/theory-restart/mont/cx/roundD/lit/examples_E6.json).
+
+**Failure tests.** Replacing non-flatness by an all-odd-closures conclusion without checking $j=n a_2$; proving a statement about the ordinary Jones polynomial of the covering knot $K$ instead of the branch knot $L_n$; calling a small-slope numerical hyperbolicity check a proof; confusing a reported literature search with established priority.
+
+## O13. Referee one cross-field proposal without inheriting its headline
+
+The explanatory proposals listed in [Research map, Section 9](RESEARCH_MAP.md#9-cross-field-theory-and-exact-link-complexity) remain **unrefereed**. Select one concrete identity or implication, pin its conventions and source theorem, and test it against the recorded countermodels before doing a broader survey.
+
+Examples are the BHMV curve-operator statement, the branched-cover/genon evaluation, the “Even Jones”/Z-equivalence reformulation, or a specific arithmetic congruence for multicurves. For a root-of-unity identity, separate equality at the root from divisibility with multiplicity, and a finite set of verified levels from a classification of every level. For a categorified proposal, specify the extra geometric map that is not already determined by the additive complex.
+
+Use the [skeptical review](../archive/claude/theory-restart/bridge/STRESS.md) and [final scope letter](../archive/collab/msgs/20261117-131440-codex.md) as corrections to the [survey synthesis](../archive/claude/theory-restart/bridge/THEORY-MAP.md). A useful outcome may be a known theorem, a counterexample, or a precise missing hypothesis. None of these directions is an active assignment or authorization to restart a search.
+
 ## Suggested handoff format
 
 Each contribution can fit into a small packet:

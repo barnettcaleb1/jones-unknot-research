@@ -53,4 +53,4 @@ verify_twist_specializations.py checks convention cases, not the theorem alone.
 - [geometric_mechanism.txt](../../archive/work/research32/geometric_mechanism.txt)
 - [verify_twist_specializations.py](../../archive/work/research32/verify_twist_specializations.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

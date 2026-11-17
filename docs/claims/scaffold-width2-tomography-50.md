@@ -26,4 +26,4 @@ Seven raw probes F(m,n), m0..2/n0..1 plusF(0,2), determine all seven sector coef
 
 - [width2_tropical_crux.md](../../archive/work/theory_restart/width2_tropical_crux.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

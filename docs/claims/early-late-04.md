@@ -50,4 +50,4 @@ This supersedes speculative wiring in old work/test_machine.py.
 - [transfer_vectors.json](../../archive/work/research36/transfer_vectors.json)
 - [test_machine.py](../../archive/work/test_machine.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

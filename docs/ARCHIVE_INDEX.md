@@ -1,6 +1,6 @@
 # Archive index
 
-The archive preserves source bytes. It includes obsolete arguments and machine-specific scripts; read the [status policy](EVIDENCE_POLICY.md) before treating a file as an established result. Large evidence is listed separately in the [manifest](../data/artifact-manifest.json) and [release inventory](../data/release-assets.json).
+The archive preserves source bytes except for explicitly recorded privacy redactions and path normalization in the [Claude handoff](CLAUDE_HANDOFF.md). It includes obsolete arguments and machine-specific scripts; read the [status policy](EVIDENCE_POLICY.md) before treating a file as an established result. Large evidence is listed separately in the [manifest](../data/artifact-manifest.json) and [release inventory](../data/release-assets.json).
 
 | Collection | Included files |
 |---|---|
@@ -13,6 +13,9 @@ The archive preserves source bytes. It includes obsolete arguments and machine-s
 | [collab/data](archive/collab-data.md) | 35 |
 | [collab/lit](archive/collab-lit.md) | 2 |
 | [collab/msgs](archive/collab-msgs.md) | 270 |
+| [handoff/copied](archive/handoff-copied.md) | 403 |
+| [handoff/journal_results](archive/handoff-journal-results.md) | 8 |
+| [handoff/recovered](archive/handoff-recovered.md) | 6 |
 | [legacy-bundles/jones-bing-realization-and-global-mechanisms](archive/legacy-bundles-jones-bing-realization-and-global-mechanisms.md) | 1 |
 | [legacy-bundles/jones-brunnian-reduction-evidence](archive/legacy-bundles-jones-brunnian-reduction-evidence.md) | 1 |
 | [legacy-bundles/jones-creative-pass-evidence](archive/legacy-bundles-jones-creative-pass-evidence.md) | 2 |

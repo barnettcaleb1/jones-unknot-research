@@ -26,4 +26,4 @@ Flat nonrational T has dimN>=5 by TH-S, rank-three trefoil detection and a2(kapp
 
 - [low_rank_hfk_referee.md](../../archive/work/theory_restart/low_rank_hfk_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -87,6 +87,12 @@ This was not a complete security audit of arbitrary binaries, larger files, or e
 
 ## A contribution standard for independent machines
 
+### Later handoff integration
+
+The [additional Claude handoff](CLAUDE_HANDOFF.md) contributes 416 manifest-covered research artifacts and one recovery explanation. Received hashes were checked before import; the [handoff manifest](../data/handoff-artifacts.json) records source, received and published hashes separately wherever redaction or path normalization changes the bytes. The [known-gap register](../data/handoff-known-gaps.json) includes missing patched helpers, lost outputs and unfinished runs. None of these additional historical programs was rerun during integration. The first-snapshot portable checks and their recorded outcomes above are unchanged.
+
+### Returning a check
+
 A useful contribution should arrive as a small claim package, not merely a transcript asserting success. It should name the question, its prerequisites, the exact statement or counterexample, the proof or executable certificate, and the scope of verification. A separate reviewer should be able to reject it without rerunning an unrelated search.
 
 Failed packages are valuable when they retain the proposed statement, the decisive witness, the reason the failure applies, and the hypotheses under which the idea might still work. This archive's strongest starting point is that evidence can be attached to stable claim identifiers while preserving the original research history. Making every historical computation turnkey is a further engineering task, not something implied by uploading its files.

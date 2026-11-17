@@ -41,4 +41,4 @@ Files research43/arithmetic_braid.txt, verify_finite_field_family.py/.json.
 
 - [arithmetic_braid.txt](../../archive/work/research43/arithmetic_braid.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

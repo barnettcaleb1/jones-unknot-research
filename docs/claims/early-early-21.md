@@ -37,4 +37,4 @@ establish a geometric noncancellation principle.
 
 - [statmech_findings.txt](../../archive/work/creative6/statmech_findings.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

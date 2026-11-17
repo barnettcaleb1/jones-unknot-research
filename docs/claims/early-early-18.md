@@ -39,4 +39,4 @@ homology_isolating_audit.txt,tangle_isolating_maslov_lemma.txt.
 - [homology_isolating_audit.txt](../../archive/work/creative6/homology_isolating_audit.txt)
 - [homology_rank5_audit.txt](../../archive/work/creative6/homology_rank5_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

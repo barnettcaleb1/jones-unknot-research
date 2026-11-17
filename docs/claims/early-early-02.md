@@ -46,4 +46,4 @@ Proof/check: work/anchor_twist_attack.md, work/anchor_twist_attack.py.
 - [anchor_twist_attack.md](../../archive/work/anchor_twist_attack.md)
 - [anchor_twist_attack.py](../../archive/work/anchor_twist_attack.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

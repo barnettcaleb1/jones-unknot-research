@@ -1,0 +1,20 @@
+B4 U : depth C = 2, depth mirror(C) = 2
+B4 UT: depth C = 2, depth mirror(C) = 2
+B4 R : depth C = 3, depth mirror(C) = 3
+B4 RT: depth C = 3, depth mirror(C) = 3
+B5 U : depth C = 2, depth mirror(C) = 2
+B5 UT: depth C = 2, depth mirror(C) = 2
+B5 R : depth C = 2, depth mirror(C) = 2
+B5 RT: depth C = 2, depth mirror(C) = 2
+U(C) - I entry valuations (B4):
+    [2, 2, 2, 2]
+    [2, 2, 2, 2]
+    [2, 2, 2, 2]
+    [2, 2, 2, 2]
+R(C) - I entry valuations (B4):
+    [3, 3, 3]
+    [4, 3, 4]
+    [3, 3, 3]
+iterated commutator #1: |word| = 304, depth U = 2, R = 3, UT = 2, RT = 3
+iterated commutator #2: |word| = 758, depth U = 4, R = 4, UT = 4, RT = 4
+iterated commutator #3: |word| = 1518, depth U = 6, R = 6, UT = 6, RT = 6

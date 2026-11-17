@@ -26,4 +26,4 @@ Strict F2 TILT has the actual ce1 failure; universal all-short-special hypothesi
 
 - [ce1_endpoint_referee.md](../../archive/work/theory_restart/ce1_endpoint_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

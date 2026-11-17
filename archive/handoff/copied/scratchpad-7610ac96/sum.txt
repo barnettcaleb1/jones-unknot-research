@@ -1,0 +1,22 @@
+## 0. Summary
+ 1. THEOREM FT is PROVED (section 2): for any m independent equivariant moves (any mixture of off-axis pair flips x_i <-> y_i and
+    on-axis flips x0 <-> y0), Delta^m J is divisible by (1+t)^m; every moment M_k has equivariant order <= k. No class
+    restriction, no use of a_2/Mullins/Casson. The integral local model is the coloured theta-curve itself with two exact
+    relations (proved by eigenvalues, and checked exactly in the Temperley-Lieb algebra):
+      (L1) colour-2 crossing:  R - R^-1 = (A^4 - A^-4)(Id - E'),  A^4 - A^-4 = t^-1 (1-t)(1+t)   [SO(3)/Dubrovnik relation]
+      (L2) colour-1/colour-2 full twist:  F - F^-1 = (1+t)[t^-1 F - t^-2 (1-t+t^2) Id]   (t = A^-4; mirror form for F^-1).
+    The right sides are honest coloured graphs of the class G (axis + colour-2 arc + colour-2 loops), and the INTEGRALITY LEMMA
+    gives <G> in Delta_2 Z[A^+-1] for all G in G (the delta^-1 of a loop's projector cancels because its e-term is a split
+    unknot). Units: the normalising units are forced to be multiplicative over sites, u_S = u_empty prod (-t)^{-n_i}, and such
+    units cannot spoil the order. Observed: n_i = 4 eps_i (eps_i = upstairs crossing sign), = lp's normalisation increment.
+ 2. The symbol W_m := [Delta^m J/(1+t)^m](-1) is an explicit state sum on the equivariant chord diagram (3.2): at t = -1 a
+    colour-2 loop with even/odd winding around the axis counts -1/3 (= sdim C^{1|2}, str (-1)^F), chords insert
+    -2 eps^q (or - un), on-axis sites insert -kappa (F + 3 Id), followed by deframing. Checked against exact alternating sums
+    for m = 2, 3, 4 (116/116). W_m = prod eps_i * w(D), w depending only on the labelled chord diagram.
+ 3. Relations: 1T in three proved forms (even empty chord; empty unenclosed chord; on-axis point outside all chords), the
+    general equivariant 1T as a CONJECTURE checked on all order <= 3 types; 4T [t12, t13 + t23] = 0 PROVED in quotient-sign
+    normalisation. On-axis-only configurations have W_m = 0 for all m >= 1 (PROVED; explains the brief's observation).
+ 4. W_2 reproduces M_2 = -24 a_2 on every order-2 type; W_3 is tabulated on all 193 order-3 types (78 nonzero, multiples of 48).
+ 5. osp(1|2): colour 2 at t = -1 is the delta = -1 Brauer category (Rep OSp(1|2)), the axis is a (-1)^F defect, and the
+    symbol equals the deframed osp(1|2) weight system with that defect (CHECKED 214/214 types with explicit (3|2) matrices).
+ 6. Brief F3 at symbol level: symbol(iota) is integral on all order-3 types; symbol(iota - v_3) takes only the values 0, -8, -16.

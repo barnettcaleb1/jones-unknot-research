@@ -27,4 +27,4 @@ Every formal color series with constant term1, even color-polynomial coefficient
 - [joint_loop_gate.md](../../archive/work/global_design/joint_loop_gate.md)
 - [joint_primitive_gate.md](../../archive/work/global_design/joint_primitive_gate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

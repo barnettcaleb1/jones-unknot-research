@@ -46,4 +46,4 @@ what the unrestricted realization theorem already realizes.
 - [surgery_gate.txt](../../archive/work/research41/surgery_gate.txt)
 - [verify_auxiliary_pairing.py](../../archive/work/research41/verify_auxiliary_pairing.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

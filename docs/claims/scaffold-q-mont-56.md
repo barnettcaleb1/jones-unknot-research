@@ -27,4 +27,4 @@ For s.r2.(y1)^m.Y^N.B1...Bn.u1, m nonzero, N arbitrary and n>=2 actual bodies wi
 - [necklace_extremes_referee.md](../../archive/work/theory_restart/necklace_extremes_referee.md)
 - [skein_dictionary_arbitrary_boxes.md](../../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

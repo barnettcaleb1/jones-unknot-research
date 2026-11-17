@@ -46,4 +46,4 @@ Status: written deduction using published inputs; no external referee audit.
 
 - [global_kernel.txt](../../archive/work/research52/global_kernel.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

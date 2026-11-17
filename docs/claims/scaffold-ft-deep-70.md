@@ -27,4 +27,4 @@ W0=Y², Wr=[X,W_(r-1)] in the actual TH-2BR marked construction gives J_r(-exp(h
 - [ft_nonvanishing_referee.md](../../archive/work/theory_restart/ft_nonvanishing_referee.md)
 - [order_three_symbol_referee.md](../../archive/work/theory_restart/order_three_symbol_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ Universal dependence A(k,j) is refuted by 9_46 second inversion: q28+q34+q38+q44
 
 - [arc_law_read.md](../../archive/work/theory_restart/arc_law_read.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,71 @@
+import json
+B=[]
+B.append(dict(title="Lemma Q as a Lehmer-type gap for J (Mahler measure of the inversion invariant)",
+statement="Conjecture LJ: some c > 1 has M(J(K,h)) >= c for every strongly invertible (K,h) with K nontrivial (M = Mahler measure, J normalised J = 1 mod (t+1)^2). LJ implies Lemma Q. Data: 1800 random nontrivial samples, 472 distinct J. 128 have M(V_K) = 1 (figure-eight type), but min M(J) = 1.349716; among cyclotomic-V samples min M(J) = 1.47995; reciprocal J have M = 1.50746.",
+leverage="Imports Smyth's non-reciprocal bound, the Boyd-Smyth classification of measure-one polynomials, Lawton limits with explicit errors (Brunault-Guilloux-Mehrabdollahei-Pengo) and Lind-Schmidt-Ward entropy. M is multiplicative and limit-stable. LJ is strictly stronger than Lemma Q (it forbids non-unit cyclotomic J too), so it is not a restatement, and the figure-eight objection to Mahler routes for V does not occur for J.",
+status="NEW",restatement_only=False,
+first_step="From the transfer matrices X, Y in mont/jtools.py, write J of a 2- or 3-parameter two-node twist family as an explicit P(t,x1,x2). Certify P is not generalised-cyclotomic, compute M(P) and list the resonant sublattices. Also find the J-amphichiral (K,h) with smallest M (so far 1.50746)."))
+B.append(dict(title="Lawton descent: twist families reduce to finitely many checks plus cyclotomic resonant subfamilies",
+statement="Along a family of full twists in r regions, J_m = P(t, t^m1, ..., t^mr) up to a unit. Lawton: M(J_m) -> M(P) as q(m) = min{|v| : v != 0, v.(1,m) = 0} -> infinity. Boyd-Smyth: M(P) = 1 iff P is a monomial times a product of cyclotomic polynomials in monomials. So if P is not generalised-cyclotomic, the m with M(J_m) < (1+M(P))/2 lie on finitely many hyperplanes v.(1,m) = 0, and on each the family has the same form with fewer parameters. Recursing leaves finitely many sporadic m plus resonant subfamilies with generalised-cyclotomic P.",
+leverage="Gives one mechanism controlling all twist parameters, and the interaction between pieces, at once. This is the kind of invariant CONTEXT says is missing. It matches the project's resonance budget and resonant mirror-type products. Every step is decidable (torsion points on subvarieties of tori).",
+status="NEW",restatement_only=False,
+first_step="Do it on the E6 / V3 two-node class, where the project already has exact transfer matrices, and compare the resonant hyperplanes with the at-most-two-twist-values theorem."))
+B.append(dict(title="Cube root of unity: J(w) is the radical coordinate at the degenerate Gram point",
+statement="At t = w (order 3), delta = +-1 and the Gram matrix [[delta,1],[1,delta]] of the 4-ended tangle module is singular. So every closure functional is proportional to one functional (this is why V_L(w) = +-1 for all links), while J(w) is the coordinate on the radical. Proved: J(w) = 1 + 2(w-1)g(w), N(J(w)) = 1 - 6a + 12(a^2-ab+b^2) = 1 mod 6 (g(w) = a+bw), and J(w) is a unit iff J(w) = 1. Cube-root detection fails: T(4,5) (X = 1/4 + 1/(-5)) has J(w) = 1.",
+leverage="Explains Astra's w-gate and places J(w) in non-semisimple TQFT, where modified traces recover torsion-type invariants. Leverage on its own is small, and the negative T(4,5) result limits it.",
+status="PARTLY_KNOWN",restatement_only=False,
+first_step="Finish the stalled comparison of N(J(w)) with norms of V_K and Delta_K at small roots of unity, and with twisted torsions of E(K) of order 3 or 6."))
+B.append(dict(title="Finite-field zeros of V must come from non-dihedral representations",
+statement="The only classical zeros of V (at t = -1, and e^{i pi/3} for p = 3) are at primes dividing det, i.e. Fox/dihedral representations. A JC counterexample has det 1, so a finite-field zero of V_K (Codex's equivalent form of JC) must come from non-dihedral data. Candidate source: traceless SL(2,F_q) representations, reductions of the traceless SU(2) representations of Kronheimer-Mrowka.",
+leverage="Would give a geometric construction of the arithmetic zero (the gap Codex identified), with representation varieties over finite fields as the imported tool.",
+status="UNCLEAR",restatement_only=False,
+first_step="For small knots, count traceless SL(2,F_p) representations and test whether p divides N(V_K(zeta)) for the matching order."))
+B.append(dict(title="Whang descent plus Chebyshev-Frobenius shadow for rational-tangle detection",
+statement="Integral points of SL2 character varieties of surfaces form finitely many mapping-class orbits outside a degenerate locus (Whang). Rational tangles form one Mod(S_{0,4}) orbit, and Sikora showed JC is equivalent to the bracket detecting rational tangles. Proposal: at A of odd order N, the Bonahon-Wong Chebyshev-Frobenius shadow of the tangle vector [T] is an algebraic-integer point of the S_{0,4} cubic. Ask whether a Lemma Q-type hypothesis puts it in the orbit of the rational points, with a q-Euclid descent (Morier-Genoud-Ovsienko q-rationals).",
+leverage="Imports Markoff-type height descent and finiteness of integral orbits from Diophantine geometry.",
+status="UNCLEAR",restatement_only=False,
+first_step="Compute the Frobenius shadow of [T] for the trefoil quotient tangle and for one non-rational tangle at N = 3, 5, and check which integral orbit it lies in."))
+B.append(dict(title="t = -1 jet equals Casson invariant of the double branched cover (Mullins)",
+statement="For det-1 knots, lambda(Sigma_2(L)) = sigma(L)/8 - V'(-1)/(12 V(-1)). So V = 1 forces lambda(Sigma_2) = sigma/8. For branch knots, sigma is constant on each parity class (rank-one Seifert change plus sigma in 8Z), which settles a_2 != 0 for even n and for all but one odd n.",
+leverage="Real 3-manifold input. It is already used by the project (SCAFFOLD U4, letter 76), so it is calibration only.",
+status="KNOWN",restatement_only=False,
+first_step="None needed; recorded so it is not re-proposed."))
+best=dict(title="Lehmer gap for J: Smyth bound for chiral inversions, Lawton descent for twist families",
+development="Notation: J = J(K,h) normalised by J = 1 mod (t+1)^2; M = Mahler measure; theta0 = 1.324717 is the real root of x^3-x-1. Data (scratchpad l4/cong.py; random kht++ words): 1800 nontrivial samples, 472 distinct J. M(V_K) = 1 in 128 samples, but M(J) >= 1.349716 throughout. Among cyclotomic-V samples M(J) >= 1.47995, and reciprocal J have M = 1.50746. Prop A (mirror): J(Kbar,hbar)(t) = J(K,h)(1/t). Mirroring swaps A and 1/A in y, x and u, and the normalisation is t -> 1/t invariant and unique; checked on 120/120 words. Corollary: J is reciprocal iff (K,h) is J-amphichiral, and then J(1/t) = J(t) exactly. Prop B (Smyth): if (K,h) is not J-amphichiral then M(J) >= theta0. Some irreducible factor of J is non-reciprocal: either it is non-monic (M >= 2) or Smyth 1971 applies. So a chiral inversion, as for the figure-eight, keeps J far from every cyclotomic product. Prop C: if M(J) = 1 then J = +-t^k times a product of Phi_n with no n of the form p^a, 2p^a, 4p^a or 6p^a. This follows from J(1) = J(-1) = J(i) = J(e^{i pi/3}) = 1 and the resultant rule (Phi_n(zeta_m) is a nonunit iff m/n or n/m is a prime power). The allowed n begin 15, 21, 33, 35, 39, 40, so every factor has degree >= 8. Prop D (Lawton plus Boyd-Smyth): for J_m = P(t, t^m1, ..., t^mr) along full-twist families, the m with M(J_m) < (1+M(P))/2 lie on finitely many hyperplanes v.(1,m) = 0. Recursing leaves finitely many sporadic m plus resonant subfamilies whose polynomial is generalised-cyclotomic. Conjecture LJ: M(J) >= c > 1 for all nontrivial (K,h). It implies Lemma Q, it is strictly stronger, and it is stable under limits. The chiral half holds with c = theta0 by Prop B. The J-amphichiral half is exactly a reciprocal Lehmer problem. Probe results: up to n = 48, the only exact linear relations between J(zeta_n) and the V_K(zeta_n^k) are J = 1 at n = 4, 6 and J(z) = V_K(z^2) at n = 10. J at orders 3, 8 and 12 is not a classical invariant.",
+proved=["Prop A: J(Kbar,hbar)(t) = J(K,h)(1/t) for normalised J. Hence J is reciprocal iff (K,h) is J-amphichiral, and then J(1/t) = J(t) exactly. Hand proof plus exact check on 120/120 random words.",
+"Prop B: if (K,h) is not J-amphichiral then M(J(K,h)) >= 1.3247 (Smyth). Quantitative only: non-reciprocal already forces J != 1.",
+"Prop C: a cyclotomic J (M = 1) has no factor Phi_n with n of the form p^a, 2p^a, 4p^a or 6p^a. Every allowed factor has degree >= 8 (n = 15, 21, 33, 35, 39, 40, ...).",
+"Prop D: for multi-parameter full-twist families, Lawton plus Boyd-Smyth confine the parameters where M(J) < (1+M(P))/2 to finitely many points plus resonant subfamilies whose polynomial is generalised-cyclotomic.",
+"Cube root: N(J(w)) = 1 - 6a + 12(a^2-ab+b^2) = 1 mod 6, and J(w) is a unit iff J(w) = 1. T(4,5) with X = 1/4 + 1/(-5) has J(w) = 1, so the cube root alone does not detect the unknot.",
+"Probe: for n <= 48 the only exact linear relations between J(zeta_n) and the V_K(zeta_n^k) are n = 4, 6 (J = 1) and n = 10 (J = V_K(t^2)). J at orders 3, 8 and 12 is not determined by det or Arf."],
+obstructions=["J-amphichiral (K,h) give reciprocal J. There Smyth gives nothing and the question is Lehmer's problem, with no available tool. This is where LJ could fail or be hard.",
+"Arithmetic alone cannot exclude cyclotomic J, since Prop C leaves infinitely many allowed n. Any gap must come from geometry.",
+"Lawton gives limits only: sporadic members and generalised-cyclotomic resonant subfamilies remain. The number of twist regions is unbounded, so Prop D handles each combinatorial type but is not a global proof.",
+"The analogous gap for V is false (4_1, and 17 cyclotomic prime knots up to 16 crossings per Champanerkar-Kofman), so any proof must use the inversion.",
+"Evidence comes from random short words (biased toward small knots), not a census. The minimiser and the reciprocal-J minimum need a systematic search.",
+"Mullins/Casson at t = -1 and the finite-field-zero translation are already in the project, so they are not new here."])
+C=["Champanerkar, Kofman, On links with cyclotomic Jones polynomials, Algebr. Geom. Topol. 6 (2006); arXiv:math/0605631",
+"Champanerkar, Kofman, On the Mahler measure of Jones polynomials under twisting, Algebr. Geom. Topol. 5 (2005); arXiv:math/0404236",
+"C. J. Smyth, On the product of the conjugates outside the unit circle of an algebraic integer, Bull. London Math. Soc. 3 (1971) 169-175",
+"W. M. Lawton, A problem of Boyd concerning geometric means of polynomials, J. Number Theory 16 (1983) 356-362",
+"D. W. Boyd, Kronecker's theorem and Lehmer's problem for polynomials in several variables, J. Number Theory 13 (1981) 116-121",
+"Brunault, Guilloux, Mehrabdollahei, Pengo, Limits of Mahler measures in multiple variables, Ann. Inst. Fourier 74 (2024) 1407-1450; arXiv:2203.12259",
+"Lind, Schmidt, Ward, Mahler measure and entropy for commuting automorphisms of compact groups, Invent. Math. 101 (1990) 593-629",
+"Silver, Williams, Mahler measure, links and homology growth, Topology 41 (2002) 979-991",
+"J. P. Whang, Nonlinear descent on moduli of local systems, arXiv:1710.01848",
+"Morier-Genoud, Ovsienko, q-deformed rationals and q-continued fractions, Forum Math. Sigma 8 (2020); arXiv:1812.00170",
+"Bonahon, Wong, Representations of the Kauffman bracket skein algebra I, Invent. Math. 204 (2016) 195-243; arXiv:1206.1638",
+"D. Mullins, The generalized Casson invariant for 2-fold branched covers of S^3 and the Jones polynomial, Topology 32 (1993) 419-438",
+"Lickorish, Millett, Some evaluations of link polynomials, Comment. Math. Helv. 61 (1986) 349-359",
+"K. Habiro, Cyclotomic completions of polynomial rings, Publ. RIMS 40 (2004); arXiv:math/0209324",
+"T. M. Apostol, Resultants of cyclotomic polynomials, Proc. Amer. Math. Soc. 24 (1970) 457-462",
+"Blanchet, Costantino, Geer, Patureau-Mirand, Non-semi-simple TQFTs, Reidemeister torsion and Kashaev's invariants, Adv. Math. 301 (2016); arXiv:1404.7289"]
+out=dict(bridges=B,best=best,citations=C,notes_path="$HOME/jones-lanes/theory-restart/bridge/L4_arithmetic.md")
+for b in B:
+    assert len(b['title'])<=150 and len(b['statement'])<=900 and len(b['leverage'])<=700 and len(b['first_step'])<=500, (b['title'],len(b['statement']),len(b['leverage']),len(b['first_step']))
+assert len(best['development'])<=3500, len(best['development'])
+assert all(len(p)<=500 for p in best['proved']) and all(len(p)<=500 for p in best['obstructions'])
+assert all(len(c)<=250 for c in C)
+s=json.dumps(out,ensure_ascii=True)
+open('out.json','w').write(s)
+print(len(s), len(best['development']))

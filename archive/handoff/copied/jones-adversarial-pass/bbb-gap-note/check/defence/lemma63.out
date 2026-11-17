@@ -1,0 +1,5 @@
+proper products by the word criterion tested: 400
+  violating Lemma 6.3 (some disk outside the 5 allowed types/signs): 0
+  with no 3-disk {p1,p2,p3} in the disk sequence: 0
+disk types over all tests: {((3,), 'chg'): 100895, ((4,), 'chg'): 49934, ((2, 3), 'pres'): 38760, ((1, 2, 3), 'chg'): 48755, ((1, 2, 3, 4), 'chg'): 2206}
+Phi = Gamma_1 alone: iota = 30 disks: [((3,), 'chg'), ((2, 3), 'pres'), ((1, 2, 3), 'chg'), ((3,), 'chg'), ((4,), 'chg'), ((3,), 'chg'), ((1, 2, 3), 'chg'), ((2, 3), 'pres'), ((3,), 'chg'), ((4,), 'chg'), ((3,), 'chg'), ((4,), 'chg'), ((3,), 'chg'), ((2, 3), 'pres'), ((1, 2, 3), 'chg'), ((3,), 'chg'), ((4,), 'chg'), ((3,), 'chg'), ((1, 2, 3), 'chg'), ((3,), 'chg'), ((2, 3), 'pres'), ((1, 2, 3), 'chg'), ((3,), 'chg'), ((4,), 'chg'), ((3,), 'chg'), ((1, 2, 3), 'chg'), ((2, 3), 'pres'), ((3,), 'chg'), ((4,), 'chg')]

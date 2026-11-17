@@ -27,4 +27,4 @@ Fill coordinates constant on a Jones-unit affine component. If the remaining act
 - [multitwist_geometry.md](../../archive/work/global_design/multitwist_geometry.md)
 - [unknot_multitwist.md](../../archive/work/global_design/unknot_multitwist.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

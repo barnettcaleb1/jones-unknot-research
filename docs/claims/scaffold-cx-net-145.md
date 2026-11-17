@@ -26,4 +26,4 @@ Jones-preserving star–triangle replacements with three physical integer series
 
 - [potts_twist_gate.md](../../archive/work/global_design/potts_twist_gate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -36,7 +36,15 @@ The elementary part of the unframed extension is especially transparent: three h
 
 An actual unknot closure identifies the other tangle filling problem with surgery on a strongly invertible covering knot. “Flatness” means the relevant bracket coefficient vanishes, making a specified twist family Jones-unit. The project sought a theorem forcing a flat tangle with an unknot closure to be rational or nugatory.
 
+Here is the scalar used in the later notes. In the fixed boundary basis write $[T]=y b+x c$, with loop value $\delta=-A^2-A^{-2}$. The actual unknot cap gives $u=y+\delta x$, a signed framing monomial. In the preferred longitude marking,
+
+$$J=y/u=1-\delta x/u.$$
+
+Thus $J=1$ is precisely flatness in this marking. A raw diagram must first undergo the common framing normalization in the [skein dictionary, Sections 2–3](../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md); one cannot normalize several closures independently and retain their vector relations. The saved quotient variable is $t=A^4$, so comparisons with an ordinary Jones convention must retain the dictionary's chirality rule.
+
 Equivalent or closely related marked formulations used crossing-circle links, Sakuma links, Brunnian theta-curves, annular patterns and pants surfaces. These reformulations clarify the geometry but do not independently solve the realization problem. A necessary condition such as $a_2=0$, determinant one, or a finite-field fifth-root value is a gate, not a mechanism for producing or excluding every candidate.
+
+The broader rational-tangle reformulation is due to [Sikora, arXiv v2 Theorem 24 / journal Theorem 9.2](REFERENCES.md#sikora24): the Jones unknot conjecture is equivalent to rational-tangle detection by the bracket. Lemma Q restricts that question to tangles with an actual unknot rational closure. A converse from this restricted Lemma Q alone to the full Jones conjecture is not established here.
 
 The same day explored genus-two Jones representations, Burau pairings, two-twist subgroups, recurrence and AJ ideas, positivity, and finite-order approximations. Restricted orbit theorems survived; global claims did not follow from them. The [failure atlas](FAILURES.md) records the missing imports and the countermodels.
 
@@ -68,6 +76,16 @@ There were also useful negative theorems. A bare opposite-parity pair fails the 
 
 The identification of the sutured target and its gradings was corrected during the process. In particular, no general bound $\operatorname{rank}\widehat{HFK}\ge 2g+1$ is retained. These corrections are substantive and remain visible in the ledger.
 
+Some mechanism-round notes were never given separate scaffold nodes. They belong in the record, with their different review levels preserved:
+
+| Note | Exact surviving scope | Review state at the pause |
+|---|---|---|
+| [Extreme states](../archive/claude/theory-restart/mech2/states/REPORT.md), Theorems 2.3–2.4 | A suitable adequate extreme state away from the unit grading detects non-flatness; a one-sign half-diagram detects it unless the covering knot is the unknot. | Claude-side proof and [independent internal referee](../archive/claude/theory-restart/mech2/verify/positivity-proof.md), using the cited minimal-genus theorem for homogeneous diagrams. The first two criteria cover **71**, not 72, of the 138 table entries; the 72nd uses a third criterion. No separate Codex proof audit was found. |
+| [Pointed link splitting](../archive/claude/theory-restart/mech2/colored/REPORT.md) | Proposed sequence from $N(T)$ to $\widetilde{Kh}(K_u)\otimes\widetilde{Kh}(K_l)$ and the resulting product rank bound. | **Partial referee only.** The [referee notes](../archive/claude/theory-restart/mech2/verify/splitting-proof.md) identify the extra chain-level marked-point equivariance required beyond [Batson–Seed](https://arxiv.org/abs/1303.6240); its proof step (5) was not completed. The adequate-double END/NP claim also remains unrefereed. |
+| [Unit-arrow shape](../archive/claude/theory-restart/mech2/annular/REPORT.md), Section 2 | Over $\mathbb F_2$, the specified unit $D$-arrows and $P_2$-runs force each component **containing a bullet generator** to have the stated square or staircase shape. The corollary also assumes one arc and an odd bullet count. | [Internal referee with tail cases and scope repairs](../archive/claude/theory-restart/mech2/verify/shape-proof.md), using [KWZ, Theorem 4.4](https://arxiv.org/abs/2202.01460). This is not the withdrawn unrestricted shape law, nor a proof that every undeformed summand lifts separately. |
+
+The annular report also gives a scoped negative argument for constructions that are additive and grading-shift equivariant on the tangle complex: such a package cannot by itself exclude the formal opposite-parity blocks. This leaves open extra geometric data or maps not determined by that additive object. For adequate doubles, ordinary Jones non-triviality already has a published source in [Stoimenow, Proposition 4.3](https://arxiv.org/abs/math/0606255); the proposed homological refinements must not be credited as the first detection result for that class.
+
 ## 6. Exact transfer systems: two-bridge, necklaces and arborescent boxes
 
 **Period:** November 16–17. **Entry points:** [arbitrary-box skein dictionary](../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md), [necklace analysis](../archive/work/theory_restart/necklace_extremes_referee.md), [resonance and ideals](../archive/work/theory_restart/arborescent_resonance_divisor.md).
@@ -75,6 +93,12 @@ The identification of the sutured target and its gradings was corrected during t
 The two-bridge work replaced unsupported pictures by a marked two-dimensional representation and a closed degree-state calculation. Its scope is the specified side-preserving strong inversions; side-exchanging inversions were not silently included. The necklace formula then decomposed a more general marked assembly into two fusion channels, with one common normalization.
 
 This produced restricted non-flatness theorems for horizontal Montesinos-type inversions and vertical arborescent constructions. Exact finite-state and Farkas certificates extended certain listed classes. These are infinite-family theorems within their hypotheses, but not a proof for all arborescent inversions. The list of allowed vectors, root slopes and eligible signatures is part of each statement.
+
+**The knot-level consequence matters.** For a V3-class marked strong inversion with $a_2(K)=0$, the branch knots $L_n=T(1/n)$ have $V(L_n)\ne1$ for **every nonzero integer $n$**. V3 here means the stated vertical word with any integral part, non-integral rational boxes, odd vertical exponent $a$, and at least one box if $|a|\ge3$ or at least two if $a=\pm1$. Without $a_2(K)=0$, every nonzero even parameter is excluded, while at most one odd parameter can escape: it must satisfy $j=n a_2(K)$ in the fixed orientation convention. Non-flatness alone does not erase that exception. [Statement and short proof](SMALL_RESULTS.md#21-from-v3-non-flatness-to-knot-level-jones-detection); [V3 internal referee](../archive/collab/data/roundD/refV3_REPORT.md); [odd-closure repair](../archive/work/theory_restart/roots_odd_referee.md).
+
+The saved **E6** example has $a=-3$, integral part $N=-2$, and box slopes $1/9,5/13,-4/13$. The internal record gives $a_2(K)=0$ and, for $n\ge1$, Jones span $n+28$ with both extreme coefficients of modulus two. These coefficients put those members outside the semi-adequate and Turaev-genus-one detection classes, and the span puts their crossing numbers above 24. The record also reports hyperbolicity of the covering knot $K$ and of $\Sigma_2(L_n)$ for $|n|\ge9$; small-slope numerical observations are not a theorem. This is an explicit infinite family illustrating the result, not a substitute for its uniform proof over all permitted boxes. [Parameters and saved polynomials](../archive/claude/theory-restart/mont/cx/roundD/lit/examples_E6.json); [construction code](../archive/claude/theory-restart/mont/cx/roundD/lit/bk.py); [internal geometry and literature report](../archive/collab/data/roundD/LIT_RESULT.md).
+
+**Credit and verification boundary.** The V3 algebra, its marked skein dictionary and the odd-closure repair have internal proof/referee records; the E6 computations and literature comparison have not received external specialist review. The comparison is **PARTLY_KNOWN**, not an established priority claim: existing detection results include [semi-adequate links](https://arxiv.org/abs/math/0606255), [Turaev-genus-one links](https://arxiv.org/abs/1604.03501), and [the computational range through 24 crossings](https://arxiv.org/abs/2003.06724). The [Khovanov result of Hedden–Watson](https://arxiv.org/abs/0805.4423) is a categorified antecedent, not a Jones theorem. The literature report's unqualified sentence about **all** V3 closures is superseded by the $a_2=0$/odd-exception scope above. Neither the report's “no known theorem” wording nor its novelty verdict is an exhaustive literature certification.
 
 An eventual obstruction to finite class lists led to a more structural invariant: the ideal generated by a box's two integral coordinates. Twists preserve it, and products cannot repair a proper ideal. Pairwise compatibility detects when a product of unimodular states remains unimodular. For the remainder, an exact resonance budget reduces each fixed body's horizontal unit search to at most two twist candidates.
 
@@ -87,6 +111,8 @@ An eventual obstruction to finite class lists led to a more structural invariant
 Expanding $J$ at $t=-1$ gives an equivariant finite-type series. The integral local model resolves singular-projector concerns, and its straight chord symbol agrees with an $\mathfrak{osp}(1|2)$ Casimir normalization. A separate cyclotomic argument compares the quotient invariant with a fifth-root evaluation of the covering knot's ordinary Jones polynomial.
 
 These are structural results and useful necessary conditions. They are not nonvanishing theorems. Explicit commutator families have arbitrarily large first nonzero moment order while remaining non-flat. Consequently no fixed initial jet of this series can decide the whole problem. The order-three invariant also retains equivariant information not captured by the initially proposed combinations of classical knot invariants.
+
+There is also a useful calibration of difficulty: for the standard summand-swapping inversion with summand $L$, the preferred identity is $J_{\mathrm{LP}}(t)=J_3(L;t^{-1})$, where $J_3$ is the spin-one colored Jones polynomial in the standard Jones variable. Consequently Lemma Q for these swap inversions contains the assertion that $J_3$ detects the unknot. The [dictionary, Section 8.1](../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md), supplies the marked swap-sphere argument; this is not an assertion that colored Jones detection is already proved. The [odd-closure audit, Section 5](../archive/work/theory_restart/roots_odd_referee.md), separately explains why Lemma Q for all strong inversions would imply ordinary Jones detection among unknotting-number-one knots.
 
 ## 8. Width two and certified construction searches
 
@@ -104,6 +130,8 @@ The collaboration reports later audited unknot certificates for its recorded sea
 
 A broad survey found that many attractive “bridges” were restatements, known twist-polynomial technology, or claims requiring extra realization input. The selected new target was JT₂, exact equality to the two-component unlink polynomial.
 
+In particular, [Champanerkar–Kofman](REFERENCES.md#ck06) already supply the twist-bracket framework and its links to Mahler measure and resonant directions. The project's fixed-template algorithm must be read in that setting. Fixed-order jet computability belongs to the classical finite-type framework of [Bar-Natan](REFERENCES.md#barnatan95); the uniform-in-order constants below require the separate direct skein estimate. The conditional complexity observation linking a hypothetical Jones unknot detector to exact evaluation has a [Welsh antecedent recorded by Hass–Lagarias–Pippenger](REFERENCES.md#welsh93). These prior observations are not presented as new project results.
+
 The banked restrictions are concrete:
 
 * JT₂ is in $\mathrm C_{=}\mathrm P$, by a sum of squares of signed-count coefficient differences.
@@ -113,6 +141,19 @@ The banked restrictions are concrete:
 * Formal differences multiply in the skein category, but that does not compile them into one actual two-component diagram. Bare smoothing carriers and the simplest serial projector construction meet exact obstructions.
 
 The generic constant-braid and projector-carrier restrictions remain **TRUSTED**, with their independent referee workflow stopped at the pause. No exact clause-gadget construction or JT₂ hardness theorem has been obtained.
+
+The wider survey also produced the following **unrefereed proposals**, retained as directions rather than promoted results:
+
+| Source | Proposal and unresolved obligation |
+|---|---|
+| [Categorification lens](../archive/claude/theory-restart/bridge/L1_categorification.md) | Multicurve congruences and reverse constraints on Watson's invariant; a realization obstruction still needs additional geometric information. |
+| [Quantum-representation lens](../archive/claude/theory-restart/bridge/L3_quantum_reps.md) | A BHMV curve-operator detection statement and its off-diagonal limitation; verify its exact surface, operator and positivity hypotheses. |
+| [Arithmetic lens](../archive/claude/theory-restart/bridge/L4_arithmetic.md) | A Jones-specific Lehmer-gap proposal and related arithmetic statements; Mahler measure alone fails on known knots. |
+| [Gauge-geometry lens](../archive/claude/theory-restart/bridge/L5_gauge_geometry.md) | Equivariant instanton and traceless-character-count proposals; the lens's erroneous Euler-characteristic barrier was withdrawn. |
+| [Combinatorial lens](../archive/claude/theory-restart/bridge/L6_combinatorics.md) | An “Even Jones” conjecture for signed chord diagrams and a Z-equivalence formulation; finite chord checks do not prove either assertion. |
+| [Physics lens](../archive/claude/theory-restart/bridge/L7_physics.md) | A branched-cover/genon interpretation at selected roots; source and normalization checks remain open. An identity at a root does not explain a double cyclotomic zero, nor establish that a proposed list of levels is exhaustive. |
+
+For these notes read the [skeptical review](../archive/claude/theory-restart/bridge/STRESS.md), the [Codex map](../archive/work/theory_restart/cross_field_bridge_map.md), and the [final scope correction](../archive/collab/msgs/20261117-131440-codex.md) alongside the [survey synthesis](../archive/claude/theory-restart/bridge/THEORY-MAP.md). Those corrections take precedence over stronger headlines in the synthesis or the lens drafts. See [the bounded review queue](OPEN_PROBLEMS.md#o13-referee-one-cross-field-proposal-without-inheriting-its-headline).
 
 ## The current dependency picture
 

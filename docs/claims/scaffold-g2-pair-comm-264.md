@@ -26,4 +26,4 @@ For two distinct seed spin lines, every nonidentity commutator-subgroup word f i
 
 - [g2_two_twist_freeness.md](../../archive/work/global_design/g2_two_twist_freeness.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

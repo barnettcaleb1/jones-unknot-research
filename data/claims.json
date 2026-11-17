@@ -5532,5 +5532,179 @@
     "review": "Snapshot transcription, not a fresh proof audit; latest pause and corrections take precedence.",
     "linked_artifacts": [],
     "page": "docs/claims/scaffold-u6-326.md"
+  },
+  {
+    "key": "supp-v3-branch",
+    "id": "PUB-V3-BRANCH",
+    "title": "V3 non-flatness implies Jones non-triviality of the branch knots on the a2-zero core",
+    "recorded_status": "DERIVED COROLLARY / internal checks; source statuses retained",
+    "statement": "For the marked V3 construction s.l1.(Y^N B_1...B_r).(x2)^a.u1, N is integral, all B_i are non-integral rational boxes, a is odd, and r>=1 for |a|>=3 or r>=2 for a=+-1. Put L_n=T(1/n). If a2(K)=0, V(L_n)!=1 for every nonzero integer n. Without a2(K)=0, every nonzero even n is excluded and at most one odd n can escape; in the fixed orientation convention it must satisfy j=n a2(K). Non-flatness alone does not remove that odd exception. This is a theorem for the marked construction, not a classification of all inversions of K.",
+    "source": "archive/work/theory_restart/roots_odd_referee.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Corollary assembled from existing internally refereed V3 and skein-dictionary arguments plus the internally checked odd-closure repair. ODD-CLOSURE-REPAIR retains the board status TRUSTED; this card does not promote it. No new computation or external specialist review. A readable proof is SMALL_RESULTS item 21.",
+    "linked_artifacts": [
+      "archive/collab/data/roundD/refV3_REPORT.md",
+      "archive/collab/msgs/20261117-061728-claude.md",
+      "archive/work/theory_restart/roots_odd_referee.md",
+      "archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md"
+    ],
+    "page": "docs/claims/supp-v3-branch.md"
+  },
+  {
+    "key": "supp-e6-family",
+    "id": "PUB-E6-FAMILY",
+    "title": "E6: saved a2-zero family and the scope of its geometry/literature claims",
+    "recorded_status": "CHECKED / REPORTED",
+    "statement": "E6 has vertical exponent a=-3, integral part N=-2, and box slopes 1/9, 5/13, -4/13. The saved computation reports a2(K)=0 and, for every n>=1, span V(T(1/n))=n+28 with both extreme coefficients of modulus two. The geometry report distinguishes the hyperbolic covering knot K from its branch knots and reports hyperbolicity of Sigma_2(T(1/n)) rigorously only for |n|>=9; small-slope numerical observations are not that theorem. The uniform branch-knot conclusion comes from PUB-V3-BRANCH. The internal literature verdict was PARTLY_KNOWN; novelty is not established.",
+    "source": "archive/collab/data/roundD/LIT_RESULT.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Saved exact-polynomial data and internally reported topology/literature comparison. No external review and no fresh reproduction in the publication pass. The report’s unqualified all-V3/all-n sentence is superseded by the a2-zero/odd-exception scope.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mont/cx/roundD/lit/bk.py",
+      "archive/claude/theory-restart/mont/cx/roundD/lit/examples_E6.json",
+      "archive/claude/theory-restart/mont/cx/roundD/lit/identK.py",
+      "archive/collab/data/roundD/LIT_RESULT.md"
+    ],
+    "page": "docs/claims/supp-e6-family.md"
+  },
+  {
+    "key": "supp-mech2-one-sign",
+    "id": "MECH2-STATES-ONE-SIGN",
+    "title": "One-sign half-diagrams: a restricted non-flatness theorem",
+    "recorded_status": "PROVED / Claude-side internal referee",
+    "statement": "STATES Theorem 2.4: in the specified symmetric half-diagram construction, if all crossings have one sign, the quotient tangle is non-flat unless the covering knot is the unknot. The proof imports minimal genus of the canonical Seifert surface for the relevant homogeneous diagram. It is not a theorem for every positive-looking quotient diagram or every inversion of a positive knot.",
+    "source": "archive/claude/theory-restart/mech2/states/REPORT.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "One independent internal referee checked the proof and computations, with scope/count corrections. No separate Codex proof audit was found in the handoff. The report labels the imported Cromwell input as cited/recalled; external review remains absent.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mech2/states/REPORT.md",
+      "archive/claude/theory-restart/mech2/verify/positivity-compute.md",
+      "archive/claude/theory-restart/mech2/verify/positivity-proof.md",
+      "archive/collab/msgs/20261116-120708-claude.md"
+    ],
+    "page": "docs/claims/supp-mech2-one-sign.md"
+  },
+  {
+    "key": "supp-mech2-adequate-end",
+    "id": "MECH2-STATES-ADEQUATE-END",
+    "title": "A b-adequate extreme state away from the unit degree detects non-flatness",
+    "recorded_status": "PROVED / Claude-side internal referee",
+    "statement": "STATES Theorem 2.3: under the report’s marked half-diagram and b-adequacy hypotheses, a surviving extreme state at a grading different from the normalized unit position forces J!=1. The union of Theorems 2.3 and 2.4 covers 71 of the 138 table entries, not 72. The 72nd case uses the separate two-bad-block criterion, Corollary 1.4.",
+    "source": "archive/claude/theory-restart/mech2/states/REPORT.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Internal proof/referee record, with the explicit 71-versus-72 correction. Counts are finite data, not the proof of the general criterion. No external specialist review.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mech2/states/REPORT.md",
+      "archive/claude/theory-restart/mech2/verify/positivity-compute.md",
+      "archive/claude/theory-restart/mech2/verify/positivity-proof.md"
+    ],
+    "page": "docs/claims/supp-mech2-adequate-end.md"
+  },
+  {
+    "key": "supp-mech2-pointed-split",
+    "id": "MECH2-POINTED-SPLIT",
+    "title": "Proposed pointed Batson-Seed sequence for N(T)",
+    "recorded_status": "PARTIAL REFEREE",
+    "statement": "The colored lens proposes a pointed splitting spectral sequence from N(T) to reduced Kh(K_u) tensor reduced Kh(K_l), and hence the product rank lower bound. The proof requires chain-level marked-point equivariance of the Reidemeister maps and homotopies on the marked-point subcomplex. That is stronger than the cited statement about the module structure on homology. Proof step (5) was not completed by the referee; numerical rank and grading checks do not supply it.",
+    "source": "archive/claude/theory-restart/mech2/verify/splitting-proof.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Partial internal referee only. Do not bank the sequence or its rank bound as a completed theorem. Batson-Seed is the published antecedent; the extra pointed compatibility is the project’s unresolved obligation.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mech2/colored/REPORT.md",
+      "archive/claude/theory-restart/mech2/verify/splitting-compute.md",
+      "archive/claude/theory-restart/mech2/verify/splitting-proof.md",
+      "archive/collab/msgs/20261116-120708-claude.md"
+    ],
+    "page": "docs/claims/supp-mech2-pointed-split.md"
+  },
+  {
+    "key": "supp-mech2-double-end",
+    "id": "MECH2-ADEQUATE-DOUBLE-END",
+    "title": "Proposed END/NP refinement for doubles of adequate knots",
+    "recorded_status": "UNREFEREED",
+    "statement": "The colored lens claims endpoint visibility END/NP for the specified doubles of adequate knots using extreme states. This homological refinement was not independently refereed to completion. Ordinary Jones non-triviality of Whitehead doubles of semi-adequate knots already has a published source in Stoimenow, Proposition 4.3; the proposed refinement must not be presented as the first Jones-detection theorem for that class.",
+    "source": "archive/claude/theory-restart/mech2/colored/REPORT.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Unrefereed lens claim. Preserve the distinction between a proposed homological refinement and the known ordinary Jones consequence. No external review or novelty certification.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mech2/colored/REPORT.md",
+      "archive/collab/msgs/20261116-111845-claude.md"
+    ],
+    "page": "docs/claims/supp-mech2-double-end.md"
+  },
+  {
+    "key": "supp-mech2-shape-unit",
+    "id": "MECH2-SHAPE-UNIT",
+    "title": "Restricted unit-arrow staircase/square shape theorem",
+    "recorded_status": "PROVED / internal referee with repairs",
+    "statement": "Over F2, the report’s unit D-arrow and P2-run hypotheses, together with the KWZ extension input, force a component containing a bullet generator to have the stated square or staircase shape. Components with no bullet generators must be excluded or separately allowed. The staircase-plus-squares corollary additionally requires one noncompact component and an odd number of bullet generators. Tail cases are supplied by the referee. This is not the refuted unrestricted shape law and does not prove that every undeformed summand lifts separately.",
+    "source": "archive/claude/theory-restart/mech2/verify/shape-proof.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Internal referee checks the KWZ source and closes tail cases; its scope and field corrections govern. No generalization to arbitrary fields or unrestricted local systems is adopted. External specialist review absent.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mech2/annular/REPORT.md",
+      "archive/claude/theory-restart/mech2/verify/shape-proof.md",
+      "archive/collab/msgs/20261116-120708-claude.md"
+    ],
+    "page": "docs/claims/supp-mech2-shape-unit.md"
+  },
+  {
+    "key": "supp-mech2-annular-additivity",
+    "id": "MECH2-ANNULAR-ADDITIVITY",
+    "title": "Scoped limitation of additive annular constructions",
+    "recorded_status": "PROVED / reported internal lemma",
+    "statement": "The annular report gives a negative argument for packages determined by additive, grading-shift-equivariant functors of the tangle type-D structure, with conditions inherited by summands or additive numerical identities. Such a package cannot by itself exclude the formal opposite-parity blocks or their permitted shifted sums. This does not exclude additional geometric structure, maps not determined by that additive object, or non-additive compatibility conditions.",
+    "source": "archive/claude/theory-restart/mech2/annular/REPORT.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Reported internal scoped lemma, Section 3.2; not a universal impossibility theorem for annular or equivariant theories. No separate completed adversarial referee for the entire package is inferred from the shape referee.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mech2/annular/REPORT.md",
+      "archive/work/theory_restart/lipshitz_sarkar_bridge_audit.md",
+      "archive/work/theory_restart/surgery_ladder_referee.md"
+    ],
+    "page": "docs/claims/supp-mech2-annular-additivity.md"
+  },
+  {
+    "key": "supp-color3-swap",
+    "id": "PUB-COLOR3-SWAP",
+    "title": "Swap inversion and the spin-one colored Jones polynomial",
+    "recorded_status": "PROVED / internally refereed dictionary",
+    "statement": "For the standard summand-swapping inversion with summand L and the specified swap-sphere marking, the preferred identity is J_LP(t)=J_3(L;t^-1), with J_3 in the standard Jones variable. The color-one bubble removal leaves the zero-framed color-two knot. The inverse-variable convention is essential. Lemma Q restricted to these swaps contains spin-one colored Jones unknot detection; the identity does not prove that detection statement or classify arbitrary inversions of composite knots.",
+    "source": "archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Internal skein-dictionary proof, Section 8.1, with the swap-sphere paragraph required by the referee. No further independent normalization of several closures is allowed. External review absent.",
+    "linked_artifacts": [
+      "archive/claude/theory-restart/mont/referee/nest.md",
+      "archive/collab/msgs/20261117-061728-claude.md",
+      "archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md"
+    ],
+    "page": "docs/claims/supp-color3-swap.md"
+  },
+  {
+    "key": "supp-process-d2fix2",
+    "id": "PROCESS-D2FIX2",
+    "title": "Abandoned d2fix2 run is not a uniform two-box exclusion",
+    "recorded_status": "NOT CLAIMED / NOT RERUN",
+    "statement": "The d2fix2 task (two depth-two positive-potential boxes together with an arbitrary top-300 multiset) was interrupted, produced no claimed result, and was not rerun. The J4 and R(6) probe jobs were rerun. M300 and the distinct one-depth-two-class D36 result have their own completed evidence and round-E exact certificates. The statement that every affected run was redone is false; the omitted uniform two-box result remains unproved.",
+    "source": "archive/collab/data/roundD/lpgen_REPORT.md",
+    "source_line": null,
+    "collection": "public handoff supplement",
+    "review": "Process correction from contemporaneous reports. Neither a negative search result nor a theorem. No current computation was launched to fill the gap.",
+    "linked_artifacts": [
+      "archive/collab/MORNING-2026-11-17.md",
+      "archive/collab/data/roundD/lpgen_REPORT.md",
+      "archive/collab/data/roundD/refGen_NOTES.md",
+      "archive/collab/data/roundE/refM300_REPORT.md"
+    ],
+    "page": "docs/claims/supp-process-d2fix2.md"
   }
 ]

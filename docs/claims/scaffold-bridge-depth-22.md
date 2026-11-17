@@ -26,4 +26,4 @@ Uniform bound abs([h^r]V_K(exp(h))) <= 2(16n)^r for n-crossing knots. Integral V
 
 - [depth_uniform_audit.md](../../archive/work/theory_restart/depth_uniform_audit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

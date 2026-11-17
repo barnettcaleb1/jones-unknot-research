@@ -26,4 +26,4 @@ Reply 20261103-083250; work/resume_structural/euler_boundary_graph.md, independe
 
 - [euler_boundary_graph.md](../../archive/work/resume_structural/euler_boundary_graph.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

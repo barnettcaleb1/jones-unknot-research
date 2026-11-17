@@ -26,4 +26,4 @@ In the actual completed Jacobi-diagram Hopf algebra, the primitive D=13(P4(trefo
 
 - [fresh_route_a.md](../../archive/work/global_design/fresh_route_a.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

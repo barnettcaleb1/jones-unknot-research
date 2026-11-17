@@ -26,4 +26,4 @@ Original Gamma-only conclusion REFUTED by outer E. Corrected theorem: ANY S in G
 
 - [finite_index_pattern_rigidity.md](../../archive/work/theory_restart/finite_index_pattern_rigidity.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

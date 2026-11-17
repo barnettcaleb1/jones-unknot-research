@@ -26,4 +26,4 @@ Canonical V=x2.x1,U=x1 has only c00,c22,c44 nonzero and F(m,-m)=t^8 for all inte
 
 - [width2_unit_line_referee.md](../../archive/work/theory_restart/width2_unit_line_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -43,4 +43,4 @@ research48/relative_torsion.txt.
 - [coordinated_twists.txt](../../archive/work/research47/coordinated_twists.txt)
 - [relative_torsion.txt](../../archive/work/research48/relative_torsion.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ T is equivalent to annular bracket core detection: an actual knot pattern with [
 
 - [skein_pattern_design.md](../../archive/work/global_design/skein_pattern_design.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

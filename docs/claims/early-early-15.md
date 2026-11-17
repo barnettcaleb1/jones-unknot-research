@@ -47,4 +47,4 @@ are local U. The three-top-twist subfamily has direct positive obstruction
 - [tangle_all_braids_proof.txt](../../archive/work/pass5/tangle_all_braids_proof.txt)
 - [tangle_internal_proof.txt](../../archive/work/pass5/tangle_internal_proof.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

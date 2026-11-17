@@ -41,4 +41,4 @@ Do NOT substitute Eisermann's generalized determinant phase (false).
 - [algebra_gate_audit.txt](../../archive/work/research35/algebra_gate_audit.txt)
 - [general_topology_gate.txt](../../archive/work/research35/general_topology_gate.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

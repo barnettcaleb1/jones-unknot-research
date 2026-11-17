@@ -43,4 +43,4 @@ Whitehead calibration uses source m=-k; keep transported vs diagram framing.
 - [twist_calibration.json](../../archive/work/research46/twist_calibration.json)
 - [verify_twist_calibration.py](../../archive/work/research46/verify_twist_calibration.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

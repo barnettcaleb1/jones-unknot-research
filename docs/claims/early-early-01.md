@@ -47,4 +47,4 @@ a fresh 2 November literature check.
 - [verify_twist_obstruction.py](../../archive/outputs/verify_twist_obstruction.py)
 - [main.tex](../../archive/work/jones-audit/main.tex)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

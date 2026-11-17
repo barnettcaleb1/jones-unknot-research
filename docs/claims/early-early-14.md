@@ -40,4 +40,4 @@ Proof/diagrams: work/fourth-pass-note/main.tex, work/pass4 and reproduction.
 
 - [main.tex](../../archive/work/fourth-pass-note/main.tex)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

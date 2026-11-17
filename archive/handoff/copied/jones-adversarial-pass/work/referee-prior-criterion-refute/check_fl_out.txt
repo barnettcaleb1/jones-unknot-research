@@ -1,0 +1,15 @@
+psi [2, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [2, -3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [-2, 3, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [3, 2, 4, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [2, 3, 3, 2]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [-2, -3, 4, 3, 2]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [-4, 4, 1, 2, 3, 3, -4, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [2, -2, 2, 3, 1, 1, 3, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [-2, 3, 1, 2, 3, -2, 2, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [1, 2, -2, 2, 4, -3, 1, 3]  collision(c, s1 c): True  e1 v_c = 0: True
+psi [4, 3, -3, 4, 3, -2, -4, 3]  collision(c, s1 c): False  e1 v_c = 0: False
+psi [3, 3, 2, -2, 5, 1, -4, 3]  collision(c, s1 c): True  e1 v_c = 0: True
+A = i*exp(i*0.05), delta = 1.9900, leading minors: [7.8806979699193676, 46.42274588235554, 273.46198819998784, 1204.1055753051485, 4696.83211142341]
+A = i*exp(i*0.20), delta = 1.8421, leading minors: [6.251081472970658, 27.560764951542264, 121.51429604599012, 377.87175617194015, 969.9353927839288]
+A = i*exp(i*0.60), delta = 0.7247, leading minors: [0.3806296941917476, -0.13096927844842599, 0.04506467088366547, 0.01401738737201553, -0.01498180217823538]

@@ -43,4 +43,4 @@ pattern_root_order_corollary.txt, defect_simple_root_audit.txt.
 - [pattern_root_order_corollary.txt](../../archive/work/quotient17/pattern_root_order_corollary.txt)
 - [sato_levine_first_jet.txt](../../archive/work/quotient17/sato_levine_first_jet.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

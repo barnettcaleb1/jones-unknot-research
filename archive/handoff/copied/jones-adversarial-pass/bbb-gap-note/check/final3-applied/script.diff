@@ -1,0 +1,93 @@
+--- check/phi0_check.v44.py	2026-11-03 20:32:32
++++ phi0_check.py	2026-11-03 20:34:17
+@@ -10,7 +10,12 @@
+ Burau over Z[t, 1/t] (Laurent polynomials are dicts {exponent: coefficient}):
+   U  unreduced, s_i -> I with block [[1-t, t], [1, 0]] in rows/cols i, i+1;   UT  transpose of each U(s_i);
+   R  reduced (n-1 x n-1), s_i -> I with row i replaced by (t, -t, 1) in cols i-1, i, i+1;  RT  transposes.
+-Check (S) confirms that each is a representation and that U is the Fox Jacobian of the Artin action.
++Check (S) confirms that each is a representation of B_4 and B_5 and that, letter by letter, U is the Fox
++Jacobian of the Artin action with x_k -> t, i.e. the matrix of the action on H_1(D~_n, {p~_*}) in the basis of
++lifts of x_1..x_n.  U is the matrix form in Birman-Brendle, Braids: a survey (2005), Section 4.2, which
++Section 2 of the paper cites for Burau's definition.  Reversing every half twist, or replacing t by 1/t,
++amounts to t -> 1/t up to conjugation; this changes nothing at t = -1 or for the (t+1)-adic depth, so the
++evaluations at t = 2, 3 are repeated at t = 1/2, 1/3.
+ """
+ from fractions import Fraction
+ from functools import reduce
+@@ -103,10 +108,14 @@
+     print(('PASS  ' if ok else 'FAIL  ') + name)
+     if not ok: FAILS.append(name)
+ CONVS = ('U', 'UT', 'R', 'RT')
+-check("(S) U, UT, R, RT satisfy the B_4 relations and s_i s_i^-1 = I",
+-      all(burau(u, 4, c) == burau(v, 4, c) for c in CONVS
+-          for u, v in (([1, 2, 1], [2, 1, 2]), ([2, 3, 2], [3, 2, 3]), ([1, 3], [3, 1])))
+-      and all(depth(burau([i, -i], 4, c)) == float('inf') for c in CONVS for i in (1, 2, 3)))
++REL = lambda n: [([i, i + 1, i], [i + 1, i, i + 1]) for i in range(1, n - 1)] + \
++                [([i, j], [j, i]) for i in range(1, n) for j in range(i + 2, n)]
++check("(S) U, UT, R, RT satisfy the B_4 and B_5 relations and s_i s_i^-1 = I",
++      all(burau(u, n, c) == burau(v, n, c) for n in (4, 5) for c in CONVS for u, v in REL(n))
++      and all(burau([i, -i], n, c) == ident(n - (c[0] == 'R')) for n in (4, 5) for c in CONVS for i in range(1, n)))
++check("(S) for every letter s_i^(+-1), n = 4, 5, the Fox Jacobian of its Artin automorphism is its U matrix",
++      all([fox(v, n) for v in artin([a], n).values()] == burau([a], n, 'U')
++          for n in (4, 5) for i in range(1, n) for a in (i, -i)))
+ w = [1, -2, 3, 3, -1, 2, -3, 2, 1]
+ check("(S) Fox Jacobian of the Artin action of a test word equals U",
+       [fox(v, 4) for v in artin(w, 4).values()] == burau(w, 4, 'U'))
+@@ -130,12 +139,14 @@
+     check(f"(3) deleting strand {d}: word freely reduces to empty and acts trivially on F_3", red(v) == [] and trivial(v, 3))
+ check(f"(4) unreduced concatenation has {len(Phi0)} letters (expected 112)", len(Phi0) == 112)
+ check(f"(4) freely reduced word has {len(red(Phi0))} letters (expected 76)", len(red(Phi0)) == 76)
++TVALS = (Fraction(2), Fraction(1, 2), Fraction(3), Fraction(1, 3))
+ for n in (4, 5):                               # n = 5: the inclusion f(Phi0), s_i -> s_i
++    tag = 'Phi0' if n == 4 else 'f(Phi0)'
+     for conv in CONVS:
+         M = burau(Phi0, n, conv)
+-        check(f"(5) B_{n} {conv:2}: Burau(Phi0) = I at t=-1", is_I(at(M, -1)))
+-        check(f"(6) B_{n} {conv:2}: Burau(Phi0) != I as a Laurent matrix, at t=2 and at t=3",
+-              depth(M) != float('inf') and not is_I(at(M, 2)) and not is_I(at(M, 3)))
++        check(f"(5) B_{n} {conv:2}: Burau({tag}) = I at t=-1", is_I(at(M, -1)))
++        check(f"(6) B_{n} {conv:2}: Burau({tag}) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3",
++              depth(M) != float('inf') and not any(is_I(at(M, x)) for x in TVALS))
+         check(f"(7) B_{n} {conv:2}: (t+1)-adic depth is exactly 1 (found {depth(M)})", depth(M) == 1)
+ check("(8) (s1 s2)^6 == (s1 s2 s1)^4 = Delta_3^4 (Artin action)", trivial(X + inv([1, 2, 1] * 4), 4))
+ check("(8) Burau(X) = I at t=-1 in U, UT, R, RT", all(is_I(at(burau(X, 4, c), -1)) for c in CONVS))
+@@ -144,13 +155,35 @@
+ check("(9) delta^2 X commutes with b, hence Phi0 == [delta^-2, b]", commute(delta + delta + X, b, 4))
+ check("(10) delta and b lie in K_4, so Phi0 = [delta^-2, b] lies in [K_4, K_4]", inK4(delta) and inK4(b))
+ kw = red(comm([-3, -2, -1] * 2, comm(comm([1], [2]), [3])))   # same word in the free basis a_i = A_i4
+-check(f"(10) delta == A14 A24 A34; so Phi0 is a reduced word of length {len(kw)} in the free basis A_i4 of K_4",
+-      trivial(delta + inv(A14 + A24 + A34), 4))
++check("(10) delta == A14 A24 A34 (Artin action)", trivial(delta + inv(A14 + A24 + A34), 4))
++check(f"(10) in the free basis a_i = A_i4 of K_4, [delta^-2, b] is a reduced word of {len(kw)} letters (expected 28), exponent sums 0",
++      len(kw) == 28 and all(sum((c == i) - (c == -i) for c in kw) == 0 for i in (1, 2, 3)))
+ def msub_I(M): return [[padd(p, {0: -1} if i == j else {}) for j, p in enumerate(row)] for i, row in enumerate(M)]
+ check("(11) Burau(X) - I == (1 + t^3)(Burau(Delta_3^2) - I) exactly, in U, UT, R, RT",
+       all(msub_I(burau(X, 4, c)) == [[pmul({0: 1, 3: 1}, p) for p in row] for row in msub_I(burau(D3sq, 4, c))]
+           for c in CONVS))
+-P, Q = burau(Phi0, 4, 'U'), burau([3] + Phi0 + [-3], 4, 'U')
+-check("(12) Phi0 and s3 Phi0 s3^-1 do not commute (exact Burau), so they generate a free group of rank 2",
++mirror = lambda w: [-a for a in w]             # every half twist reversed
++check("(11) with every half twist reversed, the identity holds with 1 + t^-3 in place of 1 + t^3",
++      all(msub_I(burau(mirror(X), 4, c)) == [[pmul({0: 1, -3: 1}, p) for p in row] for row in msub_I(burau(mirror(D3sq), 4, c))]
++          for c in CONVS))
++s3conj = [3] + Phi0 + [-3]
++P, Q = burau(Phi0, 4, 'U'), burau(s3conj, 4, 'U')
++check("(12) U(Phi0) and U(s3 Phi0 s3^-1) do not commute, so neither do the braids (both lie in Brun_4 < K_4, free)",
+       mmul(P, Q) != mmul(Q, P))
++dC = depth(burau(comm(Phi0, s3conj), 4, 'U'))
++check(f"(12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found {dC})", dC == 2)
++# Section 7 of arXiv:2607.05283v2 (pp. 26-27): the printed unsimplified Moody polynomials, as (sign, exponent)
++M_Phi = [(1, 0), (1, 2), (1, 4), (-1, 3), (-1, 1), (1, -3), (1, -1), (1, 1)]
++M_PhiGamma = [(1, 0), (1, 2), (1, 4), (-1, 3), (-1, 1), (1, -4), (1, -2), (1, 0)]
++M_Gamma = [(-1, 0), (-1, 2), (1, 1), (1, -1), (-1, 0), (-1, 2), (1, 3), (1, 1), (1, -1), (-1, -2),
++           (-1, 0), (1, -1), (1, -3), (-1, -2), (-1, 0), (1, 1), (1, -1), (1, -3), (-1, -2), (-1, 0)]
++at_m1 = lambda P: sum(e * (-1) ** (k % 2) for e, k in P)
++check("(13) paper Sec. 7: M_{Phi.Gamma}, M_Gamma, M_Phi have 8, 20, 8 terms and values 8, -20, 2 at t=-1",
++      [(len(P), at_m1(P)) for P in (M_PhiGamma, M_Gamma, M_Phi)] == [(8, 8), (20, -20), (8, 2)])
++signs = lambda P: {e * (-1) ** (k % 2) for e, k in P}               # the values eps_i (-1)^k_i
++check("(13) eps_i (-1)^k_i is constant for the two parity arcs and not for beta (Lemma 1)",
++      len(signs(M_PhiGamma)) == 1 and len(signs(M_Gamma)) == 1 and len(signs(M_Phi)) == 2)
++print("\nfreely reduced word of Phi0 (" + str(len(red(Phi0))) + " letters, k = s_k, -k = s_k^-1):")
++print(" ".join(map(str, red(Phi0))))
+ print("\nALL CHECKS PASSED" if not FAILS else f"\n{len(FAILS)} CHECK(S) FAILED")
++raise SystemExit(1 if FAILS else 0)

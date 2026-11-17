@@ -26,4 +26,4 @@ Proof: reply 20261103-092620 and work/w2_review/geometry.md addendum. Independen
 
 - [geometry.md](../../archive/work/w2_review/geometry.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

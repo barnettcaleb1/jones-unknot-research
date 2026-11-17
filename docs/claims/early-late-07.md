@@ -47,4 +47,4 @@ geometry uses Spherogram2.4.1/Regina7.4.1 in braid_classification/packages.
 - [verify_certificate.py](../../archive/work/research37/verify_certificate.py)
 - [verify_corners.py](../../archive/work/research37/verify_corners.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

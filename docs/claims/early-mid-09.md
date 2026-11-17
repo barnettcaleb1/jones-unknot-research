@@ -52,4 +52,4 @@ work/research20/adjacency_obstruction.txt, adjacency_smoothing_test.json.
 - [adjacency_obstruction.txt](../../archive/work/research20/adjacency_obstruction.txt)
 - [adjacency_smoothing_test.json](../../archive/work/research20/adjacency_smoothing_test.json)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

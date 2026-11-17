@@ -26,4 +26,4 @@ Reply 20261103-042759; work/width6_instrument/README.md. All 81 entries cover 1,
 
 - [README.md](../../archive/work/width6_instrument/README.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

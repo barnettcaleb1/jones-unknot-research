@@ -27,4 +27,4 @@ Reply 20261103-045550; work/width6_parked/formula_note.md and theory_note.md. Al
 - [formula_note.md](../../archive/work/width6_parked/formula_note.md)
 - [theory_note.md](../../archive/work/width6_parked/theory_note.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

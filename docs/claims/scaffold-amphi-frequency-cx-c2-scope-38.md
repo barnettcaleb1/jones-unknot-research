@@ -27,4 +27,4 @@ Marked Hermitian spectral expansion has reciprocal aggregate frequencies; on eac
 - [u1_REPORT.md](../../archive/collab/data/roundF/u1_REPORT.md)
 - [mirror_frequency_scope.md](../../archive/work/theory_restart/mirror_frequency_scope.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

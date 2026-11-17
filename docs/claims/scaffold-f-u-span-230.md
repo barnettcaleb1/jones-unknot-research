@@ -26,4 +26,4 @@ Zero-framed tangles with actual unknot standard closure span unoriented TL_n ove
 
 - [relative_transfer.md](../../archive/work/global_design/relative_transfer.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

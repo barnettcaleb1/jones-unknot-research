@@ -26,4 +26,4 @@ L_g=a0+Q+hQ+tau_g Q+h tau_g Q, tau_g=h^(-g-1)q^(-2g), g>=1. Identity blocks give
 
 - [surgery_ladder_referee.md](../../archive/work/theory_restart/surgery_ladder_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

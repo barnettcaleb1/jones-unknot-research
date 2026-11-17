@@ -41,4 +41,4 @@ Scope excludes neither arbitrary Burau-kernel words nor other contexts.
 - [braid_kernel.py](../../archive/work/pass2/braid_kernel.py)
 - [main.tex](../../archive/work/second-pass-note/main.tex)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

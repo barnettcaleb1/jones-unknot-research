@@ -26,4 +26,4 @@ Fixed twist templates have finite-union affine unit fibres and polynomial binary
 
 - [fixed_twist_bridge_audit.md](../../archive/work/theory_restart/fixed_twist_bridge_audit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

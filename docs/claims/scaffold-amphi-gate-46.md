@@ -26,4 +26,4 @@ Exact reciprocal preferredJ, a2=0 andPhi10 gate imply J=1+(z-2)(z+2)^2 z(z-1)(zÂ
 
 - [amphicheiral_gate.md](../../archive/work/theory_restart/amphicheiral_gate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

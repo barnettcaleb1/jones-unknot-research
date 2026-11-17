@@ -26,4 +26,4 @@ For bounded-on-fixed-crossing-range combinatorial diagram statistics F, invarian
 
 - [projection_average.md](../../archive/work/global_design/projection_average.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

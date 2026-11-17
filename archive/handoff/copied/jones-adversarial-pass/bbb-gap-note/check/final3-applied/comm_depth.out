@@ -1,0 +1,8 @@
+U depth C = 2  depth mirror(C) = 2
+UT depth C = 2  depth mirror(C) = 2
+R depth C = 3  depth mirror(C) = 3
+RT depth C = 3  depth mirror(C) = 3
+U images of Phi0 and s3 Phi0 s3^-1 commute: False
+UT images of Phi0 and s3 Phi0 s3^-1 commute: False
+R images of Phi0 and s3 Phi0 s3^-1 commute: False
+RT images of Phi0 and s3 Phi0 s3^-1 commute: False

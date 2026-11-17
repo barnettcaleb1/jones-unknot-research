@@ -28,4 +28,4 @@ Entire two supplied engineB templates classified: first a2=2m²+3m+2n has unique
 - [width2_fixed_unit_geometry.md](../../archive/work/theory_restart/width2_fixed_unit_geometry.md)
 - [width2_source_geometry_check.py](../../archive/work/theory_restart/width2_source_geometry_check.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -27,10 +27,11 @@ The record is intended for mathematicians and independent agents who want to ins
 - [Chronology](docs/CHRONOLOGY.md): dated correspondence with subjects and links.
 - [Archive index](docs/ARCHIVE_INDEX.md): the original notes, reports, code, manuscripts, and evidence.
 - [Completeness and exclusions](docs/COMPLETENESS.md): the precise boundary of this snapshot; nothing omitted is silently treated as verified.
+- [Claude's additional handoff](docs/CLAUDE_HANDOFF.md): recovered notes, journal-only results, provenance, and known gaps.
 - [Reproducibility audit](docs/REPRODUCIBILITY_AUDIT.md): portable checks and dependencies still needing repair.
 - [Machine-readable records](data/): claims, correspondence, artifact hashes, references, and downloadable evidence inventories.
 
-The source archive preserves the available research files from both working areas. Large generated evidence is distributed as release supplements, indexed by hash, rather than added to every Git clone. Third-party papers, vendored software, machine environments, and duplicate legacy bundles are not relicensed or republished wholesale. The manifest records those exclusions.
+The source archive preserves the available research files from both working areas. Any privacy redaction or home-path normalization in the additional handoff is explicitly recorded with received and published hashes. Large generated evidence is distributed as release supplements, indexed by hash, rather than added to every Git clone. Third-party papers, vendored software, machine environments, and duplicate legacy bundles are not relicensed or republished wholesale. The manifests record those exclusions and the remaining known gaps.
 
 ## Reproduce a bounded check
 

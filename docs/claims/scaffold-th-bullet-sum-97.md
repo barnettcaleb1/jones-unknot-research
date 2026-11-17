@@ -26,4 +26,4 @@ N_b(T)=H(epsilon_b C_BN(T)) is a homotopy invariant; only the two unit matchings
 
 - [sum_functor_referee.md](../../archive/work/theory_restart/sum_functor_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

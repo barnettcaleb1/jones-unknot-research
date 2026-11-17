@@ -26,4 +26,4 @@ At every rational t>2, no nonempty open semialgebraic U in RP2 satisfies R^-1 Uâ
 
 - [bbb_cone_obstruction.md](../../archive/work/global_design/bbb_cone_obstruction.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

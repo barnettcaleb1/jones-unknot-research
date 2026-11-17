@@ -38,4 +38,4 @@ outputs/jones-component-removal-obstruction.txt.
 - [jones-component-removal-obstruction.txt](../../archive/outputs/jones-component-removal-obstruction.txt)
 - [quotient_realization_audit.txt](../../archive/work/research41/quotient_realization_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

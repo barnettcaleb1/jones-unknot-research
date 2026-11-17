@@ -37,4 +37,4 @@ Sources: work/try8/quiver/result.txt and verifiers.
 - [jones-concrete-experiments.txt](../../archive/outputs/jones-concrete-experiments.txt)
 - [result.txt](../../archive/work/try8/quiver/result.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

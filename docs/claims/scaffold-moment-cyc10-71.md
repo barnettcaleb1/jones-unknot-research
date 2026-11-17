@@ -26,4 +26,4 @@ Preferred J_lp(t)=V_K(t²) mod Phi10(t), quotient t=A^4; uniform J_-(t)=V_K(t^-2
 
 - [degree3_cyclotomic_comparison.md](../../archive/work/theory_restart/degree3_cyclotomic_comparison.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

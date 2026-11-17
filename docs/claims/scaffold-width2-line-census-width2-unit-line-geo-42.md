@@ -26,4 +26,4 @@ Corrected (6,6) census has145,842 line entries and2,537 planes. RoundF closes th
 
 - [u2_REPORT.md](../../archive/collab/data/roundF/u2_REPORT.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

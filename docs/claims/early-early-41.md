@@ -39,4 +39,4 @@ is Meier–Scott2501.17999; no external originality certification.
 - [jones-rotor-family-obstruction.txt](../../archive/outputs/jones-rotor-family-obstruction.txt)
 - [braid_rotor_obstruction.txt](../../archive/work/strategy14/braid_rotor_obstruction.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

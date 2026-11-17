@@ -1,16 +1,16 @@
 {
   "snapshot_date": "2026-11-17",
-  "claims": 345,
+  "claims": 355,
   "letters": 270,
-  "artifacts": 36698,
+  "artifacts": 37115,
   "dispositions": {
     "excluded": 10910,
-    "git": 14662,
+    "git": 15079,
     "asset": 11126
   },
   "bytes": {
     "excluded": 851007438,
-    "git": 164308666,
+    "git": 168084036,
     "asset": 2175771151
   }
 }

@@ -1,0 +1,8 @@
+% b3_2
+s.r1.y0.x1.u2
+,1
+% Symmetry of a 2-bridge knot corresponding to the fraction 3/2 = [1,2] (Sakuma, Appendix I).
+% Simplifies with options '-qs' to r1.y0.r1.x2.y1.y0.y0.x2.u1.y0.x1.x0.y1.y1.y1
+% Simplifies with options '-qs' to r0.x1.r2.y1.y1.y0.x2.x1.u0.y0.y0.x1.x0.y1.y1
+% Simplifies with options '-qs' to r0.x1.r1.x2.y1.x2.y0.y0.u1.x1.x0.y1.y1.y1.y1
+% Simplifies with options '-qs' to r0.x1.r2.y1.y1.y0.x2.x1.u0.y0.y0.y0.x1.x0.y1

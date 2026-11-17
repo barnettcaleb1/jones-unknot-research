@@ -26,4 +26,4 @@ Codex reply 20261103-031145; work/width6_lift/hilden_note.txt. Hovland 2410.2255
 
 - [hilden_note.txt](../../archive/work/width6_lift/hilden_note.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

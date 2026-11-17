@@ -51,4 +51,4 @@ work/research21/global_homology_bridge.txt.
 - [global_homology_bridge.txt](../../archive/work/research21/global_homology_bridge.txt)
 - [anchored_fiber_audit.txt](../../archive/work/research25/anchored_fiber_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

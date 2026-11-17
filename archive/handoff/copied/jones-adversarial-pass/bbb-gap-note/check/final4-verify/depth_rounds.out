@@ -1,0 +1,5 @@
+U  : depth Phi0 = 1, depths C1..C4 = [2, 4, 6, 8]
+UT : depth Phi0 = 1, depths C1..C4 = [2, 4, 6, 8]
+R  : depth Phi0 = 1, depths C1..C4 = [3, 4, 6, 8]
+RT : depth Phi0 = 1, depths C1..C4 = [3, 4, 6, 8]
+BB : depth Phi0 = 1, depths C1..C4 = [3, 4, 6, 8]

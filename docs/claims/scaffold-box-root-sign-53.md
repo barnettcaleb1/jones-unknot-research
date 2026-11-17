@@ -26,4 +26,4 @@ In the regular root model actual P1/P3 reduce to even/odd projectors, color-two 
 
 - [skein_dictionary_arbitrary_boxes.md](../../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

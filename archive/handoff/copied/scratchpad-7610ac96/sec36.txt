@@ -1,0 +1,25 @@
+3.6 The brief's F3 at the symbol level: v_3(K) and iota (iota.py, check_iota.py, iota_table.txt).
+ Sign conventions: the brief's moments use lp's variable t' = 1/t, so M_k^lp = (-1)^k M_k^(t) and Delta^3 M_3^lp/36 = + W_3/6
+ (CHECKED: Delta^3 M_3^lp = 6 W_3, 40/40 exact m = 3 sums).
+ Symbol of v_3 = -(V'''(1) + 3V''(1))/36 on an equivariant configuration (PROVED by the classical argument below; CHECKED 40/40
+ against exact third differences of v_3 computed from kauffman.bracket, 8 of them nonzero): for an order-3 knot invariant,
+ Delta^3 over three equivariant sites = sum over choices of one upstairs crossing per site of the ordinary third difference
+ (terms with >= 4 single differences vanish), and the ordinary symbol of [h^n] V(e^h) is
+     W^V_m(D) = prod eps * sum_{U subset chords} (3/2)^{|U|} (1/2)^{m-|U|} sum_{or/un on the others} (+-1) (-2)^{c-1}
+ (D a chord diagram on the circle K, c = number of circles after smoothing; same argument as 3.2 for the plain bracket:
+ sigma_+ - sigma_- = (A - A^-1)(or - un), A - A^-1 = -h/2 + O(h^3), <L>(A=1) = (-1)^{#crossings} (-2)^{c-1}, and the writhe
+ normalisation (-A^3)^{-w} deframes with factor A^{6 eps} = 1 - (3/2) eps h). Values: crossed pair -3 (= -3 Delta^2 a_2, since
+ [h^2] V(e^h) = -3 a_2), path diagram P3 -6, triangle K3 -12; and [h^3] V(e^h) = -6 v_3.
+ RESULT (PROVED from 3.5 and the above; table in iota_table.txt): with iota := (M_3^lp/36 - 7 v_3)/5 (brief F3),
+   symbol(iota) = (W_3/6 - 7 symbol(v_3))/5 is an INTEGER on all 192 order-3 types (values 0, +-2, +-4, +-8), and
+   symbol(iota - v_3) = (W_3 - 72 symbol(v_3))/30 takes only the values 0, -8, -16 (upstairs signs +1):
+     -8 on: c0 c1 c2 c0 c1 c2 (*1*); c0 c1 c2 c0 c2 c1 (**1); c0 c1 c2 c1 c0 c2 (*1*); c0 c1 o c0 c1 (**); c0 c1 o c1 c0 (**);
+     -16 on: c0 c1 c2 c1 c2 c0 (*11); c0 c1 c2 c2 c0 c1 (**1); c0 c1 c2 c2 c1 c0 (**1);
+     0 on every other type (in particular wherever W_3 = 72 symbol(v_3), e.g. c0 c1 c0 c2 c1 c2, c0 o o c0).
+   So at the symbol level M_3^lp/36 = 12 v_3 + 5 (iota - v_3), and the correction iota - v_3 has symbol -8 x (a weight system
+   with values 0, 1, 2), supported where an odd label or an on-axis point sits inside an overlap or a nesting.
+ CAVEATS. (i) Data (150 rows of ident3_rows.json): iota - v_3 is an integer (150/150) but NOT divisible by 8 as an invariant
+ (57/150): its lower-order part is not. (ii) A symbol not proportional to symbol(v_3) does not by itself prove that iota is
+ not an invariant of K: an order-4 invariant of K can have a nonzero equivariant order-3 symbol (choosing both crossings of a
+ pair). The brief's direct example (iota = 1 with v_3 = 0) remains the evidence that iota is not determined by K.
+

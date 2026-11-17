@@ -26,4 +26,4 @@ For any fixed-length additive continued fraction with integer-affine entries in 
 
 - [ct_rational.md](../../archive/work/global_design/ct_rational.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ Gram/norm reduction retained: in preferred frame the mirror double has unlink Jo
 
 - [hermitian_lane_read.md](../../archive/work/theory_restart/hermitian_lane_read.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ Fix a reducing curve a for S and d with nonzero H(S,v_d), for example L_S transv
 
 - [g2_two_twist_disk_criterion.md](../../archive/work/global_design/g2_two_twist_disk_criterion.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

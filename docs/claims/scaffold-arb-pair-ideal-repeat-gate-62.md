@@ -26,4 +26,4 @@ For unimodular inputs, star product unimodular iff every ordered cross ideal (a_
 
 - [arborescent_pair_and_deficit.md](../../archive/work/theory_restart/arborescent_pair_and_deficit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

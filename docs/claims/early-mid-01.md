@@ -52,4 +52,4 @@ Proof/data: work/fanout16/physics.txt; physics_check.json.
 - [physics.txt](../../archive/work/fanout16/physics.txt)
 - [physics_check.json](../../archive/work/fanout16/physics_check.json)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

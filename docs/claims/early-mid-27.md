@@ -46,4 +46,4 @@ verify_promotion_jet.py; work/proof12/braid/all_color_collision_check.py.
 - [quantum_promotion_audit.txt](../../archive/work/research28/quantum_promotion_audit.txt)
 - [verify_promotion_jet.py](../../archive/work/research28/verify_promotion_jet.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

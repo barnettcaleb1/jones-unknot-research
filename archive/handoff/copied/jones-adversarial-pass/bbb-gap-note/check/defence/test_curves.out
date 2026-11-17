@@ -1,0 +1,22 @@
+{'arcs': 400, 'disks': 6412, 'nonsimple': 0, 'lemma61_fail': 0, 'lemma1_fail': 0, 'pairing_fail': 0, 'l31_fail': 0}
+disk types seen (P, sign behaviour): count
+   ((3,), 'chg') 1714
+   ((4,), 'chg') 2326
+   ((1, 3), 'pres') 222
+   ((1, 4), 'pres') 321
+   ((2, 3), 'pres') 455
+   ((2, 4), 'pres') 325
+   ((3, 4), 'chg') 3
+   ((1, 2, 3), 'chg') 101
+   ((1, 2, 4), 'chg') 393
+   ((1, 3, 4), 'pres') 220
+   ((2, 3, 4), 'pres') 21
+   ((1, 2, 3, 4), 'chg') 311
+Y=[Delta_3^4, A34]: rho_4(Y)=I at t=-1, nontrivial at t=2: True
+  |M_X(-1)|=1  |M_YX(-1)|=1  |M_XY(-1)|=1   iota(X)=1 iota(YX)=73
+  |M_X(-1)|=0  |M_YX(-1)|=0  |M_XY(-1)|=0   iota(X)=0 iota(YX)=0
+  |M_X(-1)|=12  |M_YX(-1)|=12  |M_XY(-1)|=12   iota(X)=12 iota(YX)=1004
+  |M_X(-1)|=1  |M_YX(-1)|=1  |M_XY(-1)|=1   iota(X)=1 iota(YX)=73
+  |M_X(-1)|=1  |M_YX(-1)|=1  |M_XY(-1)|=1   iota(X)=1 iota(YX)=137
+  |M_X(-1)|=1  |M_YX(-1)|=1  |M_XY(-1)|=1   iota(X)=1 iota(YX)=9
+Lemma 2 planar test: 60 pairs, failures 0

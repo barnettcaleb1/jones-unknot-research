@@ -1,0 +1,19 @@
+6c6,7
+< Pure Python 3, exact integer/rational arithmetic, no dependencies.  Run: python3 phi0_check.py
+---
+> Pure Python 3, exact integer/rational arithmetic, no dependencies.
+> Run: python3 phi0_check.py (a copy named phi0_check.py.txt runs the same way)
+169c170
+< s3conj = [3] + Phi0 + [-3]
+---
+> s3conj = [3] + Phi0 + [-3]                     # both lie in Brun_4, which is normal in B_4 and lies in the free group K_4
+171c172
+< check("(12) U(Phi0) and U(s3 Phi0 s3^-1) do not commute, so neither do the braids (both lie in Brun_4 < K_4, free)",
+---
+> check("(12) U(Phi0) and U(s3 Phi0 s3^-1) do not commute, so neither do the braids",
+173,174c174,175
+< dC = depth(burau(comm(Phi0, s3conj), 4, 'U'))
+< check(f"(12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found {dC})", dC == 2)
+---
+> dC = [depth(burau(comm(Phi0, s3conj), 4, c)) for c in CONVS]
+> check(f"(12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 in U, UT and 3 in R, RT (found {dC})", dC == [2, 2, 3, 3])

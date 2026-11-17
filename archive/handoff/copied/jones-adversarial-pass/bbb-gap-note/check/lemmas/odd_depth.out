@@ -1,0 +1,14 @@
+leading coefficient of rho(Phi0) at order 1 (X1):
+    [0, 2208, -5808, 3600]
+    [-2208, 4416, -8016, 5808]
+    [1392, 816, -4416, 2208]
+    [3600, -1392, -2208, 0]
+X1^2 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+nonzero rows of X1: 4
+
+seed2 = [(s2 s3)^6, [[A12,A13],A14]]: nontrivial True  depth 1
+
+exact depths found (construction, depth): word length
+    ('[[s,s],s]', 4) 904
+    ('[s,s]', 2) 352
+    ('[s,s]', 3) 352

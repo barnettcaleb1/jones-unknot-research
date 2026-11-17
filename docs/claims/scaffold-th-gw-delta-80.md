@@ -26,4 +26,4 @@ Saved doubled figure-eight N has delta ranks(2,6,9,6,2), total25; HFK(K#K^r) has
 
 - [gw_delta_referee.md](../../archive/work/theory_restart/gw_delta_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

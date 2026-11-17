@@ -41,4 +41,4 @@ Source: work/proof9/quantum/handlebody_vacuum_lemma.txt.
 
 - [handlebody_vacuum_lemma.txt](../../archive/work/proof9/quantum/handlebody_vacuum_lemma.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

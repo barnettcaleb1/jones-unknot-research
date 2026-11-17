@@ -27,4 +27,4 @@ Recorded S2 length<=7 region:11,481 unit configurations; E4:65 listed unit pairs
 - [u1_REPORT.md](../../archive/collab/data/roundF/u1_REPORT.md)
 - [u45_REPORT.md](../../archive/collab/data/roundF/u45_REPORT.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

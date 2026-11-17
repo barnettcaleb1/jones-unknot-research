@@ -26,4 +26,4 @@ Generic braid subgroup on N strands, preserving one code with constant projectiv
 
 - [jt2_clause_gate_scope.md](../../archive/work/theory_restart/jt2_clause_gate_scope.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

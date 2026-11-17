@@ -37,4 +37,4 @@ Sources: work/proof9/tangle/lando_findings.txt;254 exact diagram tests.
 
 - [lando_findings.txt](../../archive/work/proof9/tangle/lando_findings.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

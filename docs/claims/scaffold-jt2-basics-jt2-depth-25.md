@@ -26,4 +26,4 @@ For oriented two-component diagrams, Delta(q)=V_L(q²)+q+q^-1 has GapP coefficie
 
 - [jt2_scope_audit.md](../../archive/work/theory_restart/jt2_scope_audit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

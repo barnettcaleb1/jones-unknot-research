@@ -26,4 +26,4 @@ Actual U anchor from a seam-band fusion of L_n=H(omega(25/(-9+50n)),-3), with V(
 
 - [c1_nonunit_turnback.md](../../archive/work/global_design/c1_nonunit_turnback.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

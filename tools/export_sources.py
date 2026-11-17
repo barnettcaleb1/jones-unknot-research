@@ -45,6 +45,11 @@ def digest(p):
 
 def disposition(p, key):
     parts = Path(key).parts
+    if key.startswith('collab/data/public-ledger-handoff/'):
+        return 'excluded', 'private handoff staging; only reviewed copies are imported by tools/import_handoff.py'
+    if key in {'collab/msgs/20261117-153856-claude.md', 'collab/msgs/20261117-154413-claude.md',
+               'collab/msgs/20261117-154422-codex.md'}:
+        return 'excluded', 'internal publication and privacy coordination; public disposition in docs/CLAUDE_HANDOFF.md'
     if any(x in VENDOR for x in parts): return 'excluded', 'retrievable dependency or interpreter cache'
     if p.name == '.DS_Store' or p.suffix in BUILD or p.name.endswith('.synctex.gz'):
         return 'excluded', 'machine-specific or compilation artifact'
@@ -83,9 +88,16 @@ def main():
         if not root.is_dir(): raise SystemExit(f'Missing source root: {label}; existing archive left intact')
         if root.resolve().is_relative_to((REPO / 'archive').resolve()):
             raise SystemExit('An export input must not be inside its generated archive')
-    # This destination contains only generated source copies, never the input roots.
-    if (REPO / 'archive').exists(): shutil.rmtree(REPO / 'archive')
-    rows, groups = [], {}
+    # Preserve separately reviewed handoff and legacy imports. Replace only this
+    # exporter's four generated collections, never the original input roots.
+    old_manifest=REPO/'data/artifact-manifest.json'
+    previous=json.loads(old_manifest.read_text())['files'] if old_manifest.exists() else []
+    managed=('collab/','work/','outputs/','claude/')
+    rows=[r for r in previous if not r['source'].startswith(managed)]
+    for _, label in sources:
+        dest=REPO/'archive'/label
+        if dest.exists(): shutil.rmtree(dest)
+    groups = {}
     for root, label in sources:
         for p in sorted(root.rglob('*')):
             if not p.is_file() or p.is_symlink(): continue

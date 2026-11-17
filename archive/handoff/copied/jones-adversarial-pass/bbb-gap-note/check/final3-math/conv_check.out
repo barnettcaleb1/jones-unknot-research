@@ -1,0 +1,74 @@
+PASS  sanity n=3 U: braid relations and inverses
+PASS  sanity n=3 UT: braid relations and inverses
+PASS  sanity n=3 R: braid relations and inverses
+PASS  sanity n=3 RT: braid relations and inverses
+PASS  sanity n=3 BB05R: braid relations and inverses
+PASS  sanity n=4 U: braid relations and inverses
+PASS  sanity n=4 UT: braid relations and inverses
+PASS  sanity n=4 R: braid relations and inverses
+PASS  sanity n=4 RT: braid relations and inverses
+PASS  sanity n=4 BB05R: braid relations and inverses
+PASS  sanity n=5 U: braid relations and inverses
+PASS  sanity n=5 UT: braid relations and inverses
+PASS  sanity n=5 R: braid relations and inverses
+PASS  sanity n=5 RT: braid relations and inverses
+PASS  sanity n=5 BB05R: braid relations and inverses
+PASS  sanity n=6 U: braid relations and inverses
+PASS  sanity n=6 UT: braid relations and inverses
+PASS  sanity n=6 R: braid relations and inverses
+PASS  sanity n=6 RT: braid relations and inverses
+PASS  sanity n=6 BB05R: braid relations and inverses
+PASS  (A) U: rho(X)-I == (1+t^3)(rho(D3^2)-I)
+PASS  (A) U: rho(X)-I != (1+t^-3)(rho(D3^2)-I)
+PASS  (A) U mirrored word: factor is 1+t^-3
+PASS  (A) U with t -> 1/t: factor is 1+t^-3
+PASS  (A) UT: rho(X)-I == (1+t^3)(rho(D3^2)-I)
+PASS  (A) UT: rho(X)-I != (1+t^-3)(rho(D3^2)-I)
+PASS  (A) UT mirrored word: factor is 1+t^-3
+PASS  (A) UT with t -> 1/t: factor is 1+t^-3
+PASS  (A) R: rho(X)-I == (1+t^3)(rho(D3^2)-I)
+PASS  (A) R: rho(X)-I != (1+t^-3)(rho(D3^2)-I)
+PASS  (A) R mirrored word: factor is 1+t^-3
+PASS  (A) R with t -> 1/t: factor is 1+t^-3
+PASS  (A) RT: rho(X)-I == (1+t^3)(rho(D3^2)-I)
+PASS  (A) RT: rho(X)-I != (1+t^-3)(rho(D3^2)-I)
+PASS  (A) RT mirrored word: factor is 1+t^-3
+PASS  (A) RT with t -> 1/t: factor is 1+t^-3
+PASS  (A) 1+t^-3 == t^-3 (1+t^3)
+PASS  (A) 1+t^3 == (1+t)(1-t+t^2)
+PASS  (B) n=3: diag(1,-1,1,-1,..) RT(s_i^+-1) diag(..) == BB05 reduced, all i
+PASS  (B) n=3: non-alternating diag(1,-1,1,1,..) also works? True (expected True only for n<=4)
+PASS  (B) n=4: diag(1,-1,1,-1,..) RT(s_i^+-1) diag(..) == BB05 reduced, all i
+PASS  (B) n=4: non-alternating diag(1,-1,1,1,..) also works? True (expected True only for n<=4)
+PASS  (B) n=5: diag(1,-1,1,-1,..) RT(s_i^+-1) diag(..) == BB05 reduced, all i
+PASS  (B) n=5: non-alternating diag(1,-1,1,1,..) also works? False (expected True only for n<=4)
+PASS  (B) n=6: diag(1,-1,1,-1,..) RT(s_i^+-1) diag(..) == BB05 reduced, all i
+PASS  (B) n=6: non-alternating diag(1,-1,1,1,..) also works? False (expected True only for n<=4)
+PASS  (B) BB05 reduced: rho(X)-I == (1+t^3)(rho(D3^2)-I)
+PASS  (B) BB05 reduced: D3^2 -> t^3 I_2 on B_3
+PASS  (C) n=4 U: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*U(Delta)(1/t), det C = {-6: 1} (unit: True)
+PASS  (C) n=4 UT: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*U(Delta)(1/t), det C = {-6: 1} (unit: True)
+PASS  (C) n=4 R: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*R(Delta)(1/t), det C = {-6: -1} (unit: True)
+PASS  (C) n=4 RT: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*R(Delta)(1/t), det C = {-6: -1} (unit: True)
+PASS  (C) n=5 U: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*U(Delta)(1/t), det C = {-10: 1} (unit: True)
+PASS  (C) n=5 UT: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*U(Delta)(1/t), det C = {-10: 1} (unit: True)
+PASS  (C) n=5 R: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*R(Delta)(1/t), det C = {-10: 1} (unit: True)
+PASS  (C) n=5 RT: M(s_i^-1)(t) = C M(s_i)(1/t) C^-1 for all i, C = J*R(Delta)(1/t), det C = {-10: 1} (unit: True)
+PASS  (C) n=4 U: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=4 UT: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=4 R: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=4 RT: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=5 U: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=5 UT: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=5 R: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (C) n=5 RT: mirror(Phi0) = I at t=-1, != I at 2,1/2,3,1/3, depth 1
+PASS  (D) n=4: Fox Jacobian of each generator's Artin automorphism == U
+PASS  (D) n=5: Fox Jacobian of each generator's Artin automorphism == U
+PASS  (D) 30 random words in B_4: Fox Jacobian of the right Artin action == U product in word order
+PASS  (E) b is pure and nontrivial
+PASS  (E) b is Brunnian: deleting each of strands 1..4 gives a trivial braid
+PASS  (E) X is not Brunnian (deleting strand 4 leaves (s1 s2)^6 != 1)
+PASS  (E) rho(X) = I at t = -1 (U)
+PASS  (E) Phi0 is Brunnian
+
+72 PASS, 0 FAIL

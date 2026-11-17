@@ -27,4 +27,4 @@ Replies 101151, 102300, 102900; work/frobenius_extension/prior.md and work/next_
 - [prior.md](../../archive/work/frobenius_extension/prior.md)
 - [periodic_audit.md](../../archive/work/next_theory/periodic_audit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

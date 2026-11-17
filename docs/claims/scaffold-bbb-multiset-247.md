@@ -26,4 +26,4 @@ For every nontrivial proper product Phi in Brun_4 with unreduced rho_4(Phi)(-1)=
 
 - [bbb_multiset_packets.md](../../archive/work/global_design/bbb_multiset_packets.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

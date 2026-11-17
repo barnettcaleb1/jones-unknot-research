@@ -34,4 +34,4 @@ File research42/structural.txt; use as restricted deduction, not new detector.
 
 - [structural.txt](../../archive/work/research42/structural.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

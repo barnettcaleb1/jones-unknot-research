@@ -40,4 +40,4 @@ verify_homology_examples.py, spanning_tree_checks.json.
 
 - [spanning_tree_mechanism.txt](../../archive/work/research24/spanning_tree_mechanism.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

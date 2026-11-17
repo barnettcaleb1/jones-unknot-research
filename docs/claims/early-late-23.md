@@ -35,4 +35,4 @@ File research43/approximation.txt. All estimates exact, no float tolerance proof
 
 - [approximation.txt](../../archive/work/research43/approximation.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

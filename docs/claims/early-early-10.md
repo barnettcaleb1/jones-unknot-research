@@ -40,4 +40,4 @@ Sources: second-pass-note/main.tex; outputs/jones-proof-mechanisms.txt.
 - [jones-proof-mechanisms.txt](../../archive/outputs/jones-proof-mechanisms.txt)
 - [main.tex](../../archive/work/second-pass-note/main.tex)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

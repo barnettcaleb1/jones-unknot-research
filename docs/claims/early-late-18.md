@@ -40,4 +40,4 @@ outputs/jones-graph-cancellation-audit.txt.
 - [jones-graph-cancellation-audit.txt](../../archive/outputs/jones-graph-cancellation-audit.txt)
 - [graph.txt](../../archive/work/research42/graph.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

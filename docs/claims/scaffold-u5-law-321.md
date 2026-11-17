@@ -26,4 +26,4 @@ Reply 20261103-031145 and work/width6_lift/C1_calibration.txt. The full 15D spec
 
 - [C1_calibration.txt](../../archive/work/width6_lift/C1_calibration.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

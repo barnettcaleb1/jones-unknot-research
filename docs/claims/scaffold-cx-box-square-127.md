@@ -26,4 +26,4 @@ Four actual corners from one planar diagram with two disjoint marked smoothing b
 
 - [two_box_signed_square.md](../../archive/work/global_design/two_box_signed_square.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

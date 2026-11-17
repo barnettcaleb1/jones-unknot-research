@@ -1,0 +1,9 @@
+twist s3 s2^2 s3^-1: fixes x3? False
+twist s3^-1 s2^2 s3: fixes x3? True
+Phi = Tc1 . Te^-1 . Tc2 (e on far side of p3): pure True, nontrivial True; image of x3 has length 5; in <x1x2,x3,x4>: True; fixed by s1^2: True
+   image of x3 = [3, 4, 3, -4, -3]   ( = image of x3 under Tc2 alone: True )
+control: e on the p*-side of p3     : pure True, nontrivial True; image of x3 has length 21; in <x1x2,x3,x4>: False; fixed by s1^2: False
+control: beta* crossing alpha (s2 s1^2 s2^-1 ... ): pure True, nontrivial True; image of x3 has length 3; in <x1x2,x3,x4>: False; fixed by s1^2: False
+total word lengths of Phi^k(x_i), k=1..5: [68, 740, 7428, 73668, 729412]
+successive ratios: [10.8824, 10.0378, 9.9176, 9.9013]
+Penner matrix [[1, 0, 2], [4, 5, 10], [2, 2, 5]]  PF eigenvalue ~ 9.898979

@@ -43,4 +43,4 @@ work/proof10/tangle/findings.txt, outputs/jones-proof-mechanisms.txt.
 - [findings.txt](../../archive/work/proof10/tangle/findings.txt)
 - [pretzel_moment_audit.txt](../../archive/work/proof9/tangle/pretzel_moment_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

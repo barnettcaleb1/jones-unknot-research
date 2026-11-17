@@ -26,4 +26,4 @@ For a 3-versus-3 curve c and any finite list of other such curves, some trivial 
 
 - [g2_curve_separation.md](../../archive/work/global_design/g2_curve_separation.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

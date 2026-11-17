@@ -26,4 +26,4 @@ In the published matched-chain family Kan(2m,2n,2j,2i), V=1 iff i*j=0 iff K=U.
 
 - [kanenobu_lock_positivity.md](../../archive/work/global_design/kanenobu_lock_positivity.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

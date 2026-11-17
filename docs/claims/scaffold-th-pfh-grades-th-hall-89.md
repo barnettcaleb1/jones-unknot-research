@@ -27,4 +27,4 @@ Daemi1508.07650, author2017 version Lemma3.10/Thm4.9, gives reduced Kh(mirror) t
 - [surgery_collapse_sources_referee.md](../../archive/work/theory_restart/surgery_collapse_sources_referee.md)
 - [surgery_hall_reduction.md](../../archive/work/theory_restart/surgery_hall_reduction.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

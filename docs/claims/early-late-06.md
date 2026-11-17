@@ -45,4 +45,4 @@ verify_isolated_twist_algebra.py/.json, topology_arithmetic_audit.json.
 - [topology_arithmetic_audit.json](../../archive/work/research37/topology_arithmetic_audit.json)
 - [topology_audit.txt](../../archive/work/research37/topology_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

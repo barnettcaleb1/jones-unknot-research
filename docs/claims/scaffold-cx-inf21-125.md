@@ -26,4 +26,4 @@ Explicit two-band ribbon infection: w=sigma1^3 sigma3^3 cable([sigma1²,sigma2²
 
 - [residual_shell_design_note.md](../../archive/work/global_design/residual_shell_design_note.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

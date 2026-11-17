@@ -39,4 +39,4 @@ torus_tree_support.json, verify_torus_tree_support.py and resultJSON.
 - [torus_tree_support.json](../../archive/work/research42/torus_tree_support.json)
 - [verify_torus_tree_support.py](../../archive/work/research42/verify_torus_tree_support.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

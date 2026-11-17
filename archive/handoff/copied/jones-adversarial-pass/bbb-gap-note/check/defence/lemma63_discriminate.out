@@ -1,0 +1,4 @@
+Gamma_1, Phi' not ending in y2 (criterion holds): (0, 60)
+Gamma_1, Phi' ending in y2 (criterion fails):      (0, 60, [])
+Gamma_1^-1 instead of Gamma_1:                      (0, 60, [])
+reversed word (mirror reading) instead of Gamma_1:  (0, 46, [])

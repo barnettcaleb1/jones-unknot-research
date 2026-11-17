@@ -41,4 +41,4 @@ File: research49/arc_geometry.txt.
 
 - [arc_geometry.txt](../../archive/work/research49/arc_geometry.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

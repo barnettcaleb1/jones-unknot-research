@@ -1,0 +1,3796 @@
+{
+  "date": "2026-11-17",
+  "scope": "540 source-file dispositions in Claude's handoff inventory. Recoveries and journal extracts are indexed separately in handoff-artifacts.json. Private filenames are replaced by generic aliases. Source classifications are supplied by the handoff; the public import verifies received hashes.",
+  "counts": {
+    "copied": 393,
+    "withheld_privacy": 8,
+    "copied_redacted": 10,
+    "not_copied_already_in_codex_inventory": 27,
+    "not_copied_duplicate": 53,
+    "third_party_not_copied": 47,
+    "not_copied_large": 1,
+    "third_party_derived_not_copied": 1
+  },
+  "records": [
+    {
+      "source_alias": "~/jones-adversarial-pass/CHECK-1730.md",
+      "source_sha256": "178208d7af77637f1a4a669ce1b954a9d58f0b7b56c31c170aa4bb8feaa28b62",
+      "source_bytes": 2333,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/CHECK-1730.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/MESSAGE-to-bridge.md",
+      "source_sha256": "6bcbdc87ca1b8c34da83ef97ff068e86ffd7e01745c15290ebce514682a0f629",
+      "source_bytes": 7071,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/MESSAGE-to-bridge.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/README.md",
+      "source_sha256": "02dcca449acb94a136ccc0a534939687f21b80d2a6be01a7f637c7bcf5473f6c",
+      "source_bytes": 1641,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/README.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/workflow-results.json",
+      "source_sha256": "6ff3dcb7e3e9b460e241fc385a5d0193348a835032b590fff213538d751debb5",
+      "source_bytes": 146279,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/workflow-results.json"
+    },
+    {
+      "source_alias": "private-withheld/artifact-1",
+      "source_sha256": "3914da32b04e68709c147a9dd187f6a80f6cc38dc4e13e4cec549c545fc4f7f9",
+      "source_bytes": 2447,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "private-withheld/artifact-2",
+      "source_sha256": "3bdfa223073aa18b75286bda3775cad1ea93786dfefc667dd33684d14bc39fe5",
+      "source_bytes": 10681,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/phi0_check.out",
+      "source_sha256": "789b1e25e70d538e733795794370d2f2f0d7f4888c271413858bea2d44bb2e7e",
+      "source_bytes": 3709,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/phi0_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/phi0_check.py",
+      "source_sha256": "7c5fb4383d1390e76a4db25b3ce31e1e80d9dba2716aa35b6af33b3ae2e33daf",
+      "source_bytes": 11643,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/phi0_check.py"
+    },
+    {
+      "source_alias": "private-withheld/artifact-3",
+      "source_sha256": "3816a03522f8264a5ac18da676d3b10c3742675bab1b2bad8582f43a30e714ac",
+      "source_bytes": 1885,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "private-withheld/artifact-4",
+      "source_sha256": "fdbc01a990f5b02e5c60cb4b2e2b7ee10513a3f07731be4215c0f5f9fef92a17",
+      "source_bytes": 2367,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "private-withheld/artifact-5",
+      "source_sha256": "be67ea0a0590beff168cccdaf4ef1e423523002e25612ed606898c1d3dcefaa1",
+      "source_bytes": 4409,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "private-withheld/artifact-6",
+      "source_sha256": "b3a44b8294af48f3870bf6e9932c2e08117e340938d5f7908b12d1db7258738a",
+      "source_bytes": 7500,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-review-results.md",
+      "source_sha256": "1ce8f20282cced2c48ef3e6e7c2d6bce86094e2be6da4a871e701d08a89a96a0",
+      "source_bytes": 136454,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-review-results.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-review-results.md",
+      "source_sha256": "d097a01b46faac8404e3debb1b7a996ddb55a9fe6c3d8631c7a50fbbe2a0b06a",
+      "source_bytes": 105527,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-review-results.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-review-results.md",
+      "source_sha256": "22984a5aaf0f48df4407668647928a5c313183cfd88f15435d94a7214d74a2e3",
+      "source_bytes": 25211,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final4-review-results.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v44.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v44.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v44.py",
+      "source_sha256": "21c68e1a1b22edbedda38c70fa813fe1d5280d05b2dd46085cc2b5051bc45954",
+      "source_bytes": 8653,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v44.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v50.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v50.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v50.py",
+      "source_sha256": "200b11cc050a3598fb06e5e2c722cc188a17670c0ae684417ca1b8ebc055c509",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/phi0_check.v50.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/referee-results.md",
+      "source_sha256": "efc288ccebaf0136d4da0233518cea54e96ae15509da1bc7da82c1253640e762",
+      "source_bytes": 160556,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/referee-results.md"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/v3_to_v4.script.diff",
+      "source_sha256": "d8597b4a49ebf1d307c0cb58799c75de9dae9f0cc7ca0f09c2f80ff29ee74ce9",
+      "source_bytes": 989,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/v3_to_v4.script.diff"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/v3_to_v4.tex.diff",
+      "source_sha256": "da69e0016b2215ce7bac42ebd5f237eed385731c8f0b65166fefbc84d2467e6b",
+      "source_bytes": 20152,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/v3_to_v4.tex.diff"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/braidlib.py",
+      "source_sha256": "3c43158bc6ecccb50cfa407be3964d65c64f1ce6fc731571b84a395c05a49a4e",
+      "source_bytes": 8965,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/braidlib.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/brunn_rerun.out",
+      "source_sha256": "b5d7557bc5c79f3d202065ce2416bc902dd73c5c46af37eae96efd12b0ab933e",
+      "source_bytes": 361,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/brunn_rerun.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/explore.out",
+      "source_sha256": "0f95779b2377fdf9dc2c446c8246c9614bb80153126c0c764805325be5849024",
+      "source_bytes": 4977,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/explore.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/explore.py",
+      "source_sha256": "7987916c8cf463828636c9d08f29a7562ec8f98fd5d62b184c06b26d80cc9cb2",
+      "source_bytes": 8303,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/explore.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/extra.out",
+      "source_sha256": "08b117486226b46c0344c43b0b679eb3eb30f7dd7264f2343fa209cd02990bb7",
+      "source_bytes": 3034,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/extra.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/extra.py",
+      "source_sha256": "06749d6cdd50358e31e2359f6da396506c42e64fd3ab25cb7cdd7c5cc06024e9",
+      "source_bytes": 5008,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/extra.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/phi0_check.out",
+      "source_sha256": "1726d94006c3c70fa7701019d0cc5304303c1ca5d4c589ac34d56dd616be1dbc",
+      "source_bytes": 2618,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/phi0_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/phi0_check.py",
+      "source_sha256": "2cdad1ffb3f9f9445a7946432d2c4bc162d87dd5cc4389e47312aece123f566b",
+      "source_bytes": 8112,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/phi0_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/selftest.out",
+      "source_sha256": "a2d7e392a4e5a58c20cff087f97950ac361452b40b5c32adb002491736597df3",
+      "source_bytes": 8444,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/selftest.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/selftest.py",
+      "source_sha256": "4d179c6ca5a1621abd6016d13eb797c4e5746f9ff61bfba39f0e28b12b4a8566",
+      "source_bytes": 4522,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/selftest.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/timing.py",
+      "source_sha256": "682807c041c4b4f8d55f3bc6b6d34c00375ca23c170f4a79a319fff933f04ed7",
+      "source_bytes": 1400,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/timing.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m1.py",
+      "source_sha256": "e12c7b596b9e717986e9d2c508cac25aff5cf8bf2853ebd7694051abb26078fd",
+      "source_bytes": 8112,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m1.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m2.py",
+      "source_sha256": "863ef04688937c8c6b128dc4d247f0d6de5848328045f7010f948b77ee1a367e",
+      "source_bytes": 8121,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m3.py",
+      "source_sha256": "d79080b266fdffcd87c17359517b12069eb4c2a7919a02eb1d83ff73fea0cded",
+      "source_bytes": 8101,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m3.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m4.py",
+      "source_sha256": "6550d08ce019db58eee444155a5b72f02dbb7c2668157926a540e3175b9813a0",
+      "source_bytes": 8112,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m4.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m6.py",
+      "source_sha256": "647aa55d6a0de74e0e48c88f963f6e326cc01d70ff9cb6f7e50e576a62cff571",
+      "source_bytes": 8112,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m6.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m7.py",
+      "source_sha256": "b8c98ce4dec38e516c0b29f0d9ff6052b7c25100ed392c056b8e84d5d4f046d0",
+      "source_bytes": 8140,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m7.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m8.py",
+      "source_sha256": "47a18d28c45dd1f2d30704697b89b6d078ae9211ae4500fe80c99ecb53e4c2ab",
+      "source_bytes": 8112,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/compute/mut/m8.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/construction/brunn_copy.py",
+      "source_sha256": "7e2cced9fffad5a7994cd93adf7ad691888e272e8b4421f438db673fa6397a29",
+      "source_bytes": 1616,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/construction/freewords.py",
+      "source_sha256": "7823b8f4135f866985c9ddf2314fed60ce004470b042bdc942a8251a25602d38",
+      "source_bytes": 3045,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/construction/freewords.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/construction/identity_check.py",
+      "source_sha256": "25389ec6bb3e7df89457b5f55360ad98072843b08075fd10b38e6f0af9e9eefc",
+      "source_bytes": 2052,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/construction/identity_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/construction/trace_check.py",
+      "source_sha256": "cc6b0794f8dc408421f857ce5ba12507c7e5daf408fe1ac3e95aaa3b763f96a2",
+      "source_bytes": 3252,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/construction/trace_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/construction/trace_gamma1.py",
+      "source_sha256": "8316a61c8649aaed102680f66d7a8c15feca779668ecb43392d4cd2d620adc76",
+      "source_bytes": 5390,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/construction/trace_gamma1.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/curves.py",
+      "source_sha256": "86a3f1caf3cd78fe4219a51a5b30e356a909ed70013d9c87726004714aff5e45",
+      "source_bytes": 3540,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/curves.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/depth_tower.out",
+      "source_sha256": "7f3f1ad79763ef742b1e443dc9b5981f1d3817123ff386f472543fa6c52ff7a5",
+      "source_bytes": 413,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/depth_tower.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/identity_D34.out",
+      "source_sha256": "0c25c259c79bd08ecdd9f564165616a42f2365ae310947c94084584b9ef06dca",
+      "source_bytes": 226,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/identity_D34.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/k4_types.out",
+      "source_sha256": "0980f51285679e0e1ee0190c77f98eaed7a3cdf99c4ac0c9029a59d5a1246c7e",
+      "source_bytes": 1516,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/k4_types.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/k4_types.py",
+      "source_sha256": "06a661798f366f3d02b22b5382e8455ece85de88ab59317b310b810e0dedf353",
+      "source_bytes": 1281,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/k4_types.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63.out",
+      "source_sha256": "73a1ac7ba0725573198202de9157011d2b03cbd4fe5abb899c4bff6affcba4c3",
+      "source_bytes": 846,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63.py",
+      "source_sha256": "3a5e5ce41161a91972bb528100daee39b0daeb7b0377943c0b3b9d5864b2a49d",
+      "source_bytes": 3559,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63_discriminate.out",
+      "source_sha256": "c6275a56ca4d17cd62b2a1fb9abaefa248bfcc401554f69c5a7f5b87ab28a68c",
+      "source_bytes": 249,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63_discriminate.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63_discriminate.py",
+      "source_sha256": "5a6a3f8b1cb8e037aed295787877a298ae3b52025441ca705a007104b79b5ce9",
+      "source_bytes": 1499,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/lemma63_discriminate.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/lp.py",
+      "source_sha256": "1349825ec177482a28e25276b54c85b6b908a0c5b9cc4963d0581c067e843d60",
+      "source_bytes": 6190,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/lp.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_arc.out",
+      "source_sha256": "b11b7801cead024baacbf500f68c73cc63f46bf47635f79f3c8f24242e30ce15",
+      "source_bytes": 1067,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_arc.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_arc.py",
+      "source_sha256": "9ce72649f9fd75d173e87d97e75b3913a0e8f5f794a1f539394cfcc5baf24e47",
+      "source_bytes": 4084,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_arc.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_facts.out",
+      "source_sha256": "7897e5387904596c7500c82f6fbd6eed4a5943e54e8c221c8e69214e7a20f1af",
+      "source_bytes": 1735,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_facts.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_facts.py",
+      "source_sha256": "1d17ede4c43947b36a3ca36d1546beeade4f84d72e8d72c3b6e2355db70f9508",
+      "source_bytes": 3344,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/phi0_facts.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/sec7_check.out",
+      "source_sha256": "cc72eb77352e2b5fe9e8d142be57da49209536fdf267ec1332589e158ef4df8f",
+      "source_bytes": 494,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/sec7_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/sec7_check.py",
+      "source_sha256": "a6c504142e664d97b74c21880a59dcb093bbb2915ab03b370b051495d61bd72a",
+      "source_bytes": 1043,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/sec7_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/test_curves.out",
+      "source_sha256": "c97b58b6cec03a6dbcbad7d8e039464b9100e21e2fb0161c5d4875d7f2c0069a",
+      "source_bytes": 961,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/test_curves.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/defence/test_curves.py",
+      "source_sha256": "cc38c0dc7cab418434aed22f152f6ddc4c79dd25ee4822c0a292f98afc99a650",
+      "source_bytes": 3842,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/defence/test_curves.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-email-readme-consistency/rerun.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-hostile-expert/run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/depth_fast.out",
+      "source_sha256": "55ccfb84b3cd9ffb1bbe8628186ce3947ffa7e2cbae4d6b11bb8202d2d554348",
+      "source_bytes": 538,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/depth_fast.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/depth_fast.py",
+      "source_sha256": "877db205bd9b77b6c7ffed92c4cafbfcebe57f26d15d436cadf1871a5bbbc192",
+      "source_bytes": 3548,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/depth_fast.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/lib.py",
+      "source_sha256": "b9072e396f0984d0b21836567b6cdf043cfc4f2ab99acd678dea4dd4ac45c877",
+      "source_bytes": 2787,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/lib.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/penner_check.out",
+      "source_sha256": "f2ad23de982556ee8f555a7c60ae8b698435a0f13fac0c121c81cf1e0887f62c",
+      "source_bytes": 785,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/penner_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/penner_check.py",
+      "source_sha256": "8316f3772272b509620cd97ebfdfbba55ca8058448f3eb2286d6949fa47ac81a",
+      "source_bytes": 2695,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/penner_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-refute-new-arguments/run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/extra_check.py",
+      "source_sha256": "bcd98f3957aec0b62566b3350d9cd0d625e6a498af0cf7b0b6b9c05bff7daafa",
+      "source_bytes": 1234,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/extra_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/indep_check.out",
+      "source_sha256": "c575c95e827b88b86ce23f82877f8832f184f745ed3f1f9965e216c86a0dd972",
+      "source_bytes": 4000,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/indep_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/indep_check.py",
+      "source_sha256": "4b2e30a7c3276d566cf0f361046aca6c9b4301f0406513805aafb18b362863bd",
+      "source_bytes": 18784,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/indep_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/mirror_check.py",
+      "source_sha256": "14eb57b6c8ef2318ad486b875ffef8ef4a190909234cbd1fa18203d01d7a45a7",
+      "source_bytes": 1420,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/mirror_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/phi0_check_proposed.out",
+      "source_sha256": "0f38e8339ff3baff11c97b6416e3196aec5ca452a8903d8802b056653d721d2d",
+      "source_bytes": 3550,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/phi0_check_proposed.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/phi0_check_proposed.py",
+      "source_sha256": "8a10f5feb11861855ded4fc99d72323d3595ecf299c9b25e24243d64fcf40a27",
+      "source_bytes": 11007,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/phi0_check_proposed.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/phi0_check_proposed39.out",
+      "source_sha256": "0f38e8339ff3baff11c97b6416e3196aec5ca452a8903d8802b056653d721d2d",
+      "source_bytes": 3550,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-script-appendix/run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/bb05_check.out",
+      "source_sha256": "a6001596d62c76a1b78fc5c4d1d47242021099d58f560f184492188887441a43",
+      "source_bytes": 1040,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/bb05_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/bb05_check.py",
+      "source_sha256": "6a976120f1554567a52b3e81b1ccb1b1c86a5aa152700842f3d1ebe0b5ffd948",
+      "source_bytes": 4788,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/bb05_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/conv_check.out",
+      "source_sha256": "fceb30ac2331cca616f456ddc60ef900a652cccb45bd01226a09c77fed690f82",
+      "source_bytes": 3424,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/conv_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/conv_check.py",
+      "source_sha256": "0f17822e1e35bb024a8a27b907e4cf5b389b875a85bd79ae4b56a123e524462c",
+      "source_bytes": 9358,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/conv_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/depth_check.out",
+      "source_sha256": "2d06bf829e3f5b2c3b5b221e17afcdf2c1349a05d9ab2a505824ad954431956e",
+      "source_bytes": 259,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/depth_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/depth_check.py",
+      "source_sha256": "3b708444bc9787687cdefb3a1a48a445b5b9f69619a3badb77a34da779155a14",
+      "source_bytes": 1368,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/depth_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/phi0_check_alt.out",
+      "source_sha256": "fd566c571872f7c564d03c4bc95a0291013505df68ea4151ebda952fdb062cb1",
+      "source_bytes": 2966,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/phi0_check_alt.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/phi0_check_alt.py",
+      "source_sha256": "d923d4137035ef9f3754f6b2e26df339bbf62851ef24db7bfd3cc3f8509535d8",
+      "source_bytes": 9089,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/phi0_check_alt.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/proposed_run.out",
+      "source_sha256": "0f38e8339ff3baff11c97b6416e3196aec5ca452a8903d8802b056653d721d2d",
+      "source_bytes": 3550,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-compute/shipped_run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-hostile/indep.out",
+      "source_sha256": "0fac419b102dd780e4ebc8af29ffa7ee0be379a9429b978ce42b180803258501",
+      "source_bytes": 1258,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-hostile/indep.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-hostile/indep.py",
+      "source_sha256": "4e5e3c3f3fdbb2ec58e5ca6a0742a1cd0d781ca04489eb53b3ba250385c013ce",
+      "source_bytes": 8518,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-hostile/indep.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-hostile/run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-package/run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-package/s_brunnian.py",
+      "source_sha256": "f189a5e115b1ced66556e1b301bcca5fba2328b2a87d7bbb2a5cdb8fb75c2b4a",
+      "source_bytes": 1453,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-package/s_brunnian.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final-verify-refute/apply_proposed.py",
+      "source_sha256": "856dcf8ac0bed1b726f9e1bffd11132f42a9e1fef10f3c54d49afe09cf980368",
+      "source_bytes": 4453,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final-verify-refute/apply_proposed.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/bb05_conj.py",
+      "source_sha256": "20a1ee974cf14885ef40d082dad2ca5f28e3ddb6fa87736bedd749c692ace8d4",
+      "source_bytes": 1425,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/bb05_conj.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/comm_depth.out",
+      "source_sha256": "7c289874861f784b495296674975176bec09388835d517c2fc9c136fd0dd02cd",
+      "source_bytes": 344,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/comm_depth.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/comm_depth.py",
+      "source_sha256": "9a22b24cf7147ae7f9a1afecbe27d89424fe88c2abe6f3c24c8f7d82f5db6ee8",
+      "source_bytes": 1020,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/comm_depth.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/exact_check.py",
+      "source_sha256": "b3faa61d4db687814f710618a85e5bf5397cbcdfb1835101fd8c74eceee93ca0",
+      "source_bytes": 4170,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/exact_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/note.diff",
+      "source_sha256": "a178114ffa51898d8394818c549c304031bdbff87acb1729b77e9a6e8d80ef97",
+      "source_bytes": 30643,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/note.diff"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/note.wdiff",
+      "source_sha256": "40b3390b4399f8bfaaf01b8954037e7dc93a4016fa951a51b87c261eadaebaa3",
+      "source_bytes": 23618,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/note.wdiff"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/run.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/run39.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/run_txt.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-applied/script.diff",
+      "source_sha256": "54ca4e91310c89d5c3d751e3751fc0d4a185f44bc9a27daed2590026687fea49",
+      "source_bytes": 7269,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-applied/script.diff"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-math/conv_check.out",
+      "source_sha256": "3dc8d2da02ea970334294b5b4837c33da6c72f44f8c0455258b788f1487e498a",
+      "source_bytes": 4596,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-math/conv_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-math/conv_check.py",
+      "source_sha256": "784c5225212a87737c2d2c2c750035ce91e26a3c48f6ec1bff9b307406c1c245",
+      "source_bytes": 13192,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-math/conv_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-math/remark56_check.out",
+      "source_sha256": "75bafbb100568a995926fcce581d33acac96cc9a97cfcd177ca659fd40816497",
+      "source_bytes": 865,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-math/remark56_check.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-math/remark56_check.py",
+      "source_sha256": "0f58050898103daa970581369f93b5029206557f225cf3a3b3624527c2d44735",
+      "source_bytes": 7080,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-math/remark56_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-math/run.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-math/run_txt.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/docfix.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/docfix.py",
+      "source_sha256": "5f30a8d9438a968637b2ac78ca8062aaa142a567eb2fb20a75f64044256ca3b3",
+      "source_bytes": 11531,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-package/docfix.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/failtest.out",
+      "source_sha256": "a130878e2bfd63b228156230d2e198fb14833ff6f8b2ffc1f0615b8a4d68dac3",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-package/failtest.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/failtest.py",
+      "source_sha256": "20134f407df245863b702f91b6c66fd22d8095af734a04de927f3622932588e8",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-package/failtest.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/run_brew_recv.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/run_py.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/run_pytxt.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-package/run_sys39.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/depth_conv.out",
+      "source_sha256": "b42af094e2dbe02a9e2e81da6d0acfb490bc19dcbbd08c7533ff3fe81c66b4b9",
+      "source_bytes": 714,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/depth_conv.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/depth_conv.py",
+      "source_sha256": "0e126de0c06745f8d39dc2dc56288b1e76bbec181dd03d172de99c31ecd05fb5",
+      "source_bytes": 2191,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/depth_conv.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/indep3.out",
+      "source_sha256": "c478711f452cdc0429d92c663dc2f273e9fb488db5ce6fa105c299a8d2adeef2",
+      "source_bytes": 2780,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/indep3.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/indep3.py",
+      "source_sha256": "cc21a27b9dc98893ccfd3990e038f67e3900cf796bff03d10e4263d80e11ed84",
+      "source_bytes": 21835,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/indep3.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mutate.out",
+      "source_sha256": "4c8363c3138f2b42331b9cdc07de8e458281a46cb8214cecc742229e5f3d023d",
+      "source_bytes": 10731,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mutate.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mutate.py",
+      "source_sha256": "8e41a9c034c8af01cd4189c030ff910c3826ca48ebe7f2dde302784e47881466",
+      "source_bytes": 6343,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mutate.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed.out",
+      "source_sha256": "0bdb75adbf2474295a733158482f4c2d37423fd8808af8e963fa350c8343b7ac",
+      "source_bytes": 3742,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed.py",
+      "source_sha256": "ecf78c9ea1951accddfe15d6d96c9b2823856ebd55161adea44db6f36b6fb145",
+      "source_bytes": 11530,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed39.out",
+      "source_sha256": "0bdb75adbf2474295a733158482f4c2d37423fd8808af8e963fa350c8343b7ac",
+      "source_bytes": 3742,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed_extra.out",
+      "source_sha256": "ea2c10999ddf821884e8054b6fbb01905168b1c28f3c88798b922651ba72c23a",
+      "source_bytes": 3988,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed_extra.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed_extra.py",
+      "source_sha256": "5afef05351d023799fae4120805134da4d0d153c722ddaf54630bfd43306a484",
+      "source_bytes": 12876,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/phi0_check_proposed_extra.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/run_py.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/run_py39.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/run_txt.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/wordcmp.py",
+      "source_sha256": "6b881f5c2decaf160eeadd2a2cde5dca481b587ccfe1d328082e451c69fb3ba5",
+      "source_bytes": 705,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/wordcmp.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C1_conj_is_square.out",
+      "source_sha256": "9a91d1b833ec17f8859978b6b24d7711e9352e16699318edea3e4245e43abd7b",
+      "source_bytes": 3709,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C1_conj_is_square.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C1_conj_is_square.py",
+      "source_sha256": "fec016081d488efe0fdbf97d46e2351d52529fe21dd524f01f10f4c9a43df777",
+      "source_bytes": 11474,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C1_conj_is_square.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C2_depth_second_commutator.out",
+      "source_sha256": "c3c164528a9110960be1850b46b6eac6c5fe5547d66f40220c2e9c6dd3f5fc99",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C2_depth_second_commutator.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C2_depth_second_commutator.py",
+      "source_sha256": "62d3a4c14fe5de8ff5eb598cd342138a10d15c225c5f0ee79b25ca05109912ed",
+      "source_bytes": 11492,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C2_depth_second_commutator.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C3_depth_in_R.out",
+      "source_sha256": "4f3ebc66595563ffc954c35a50620729e83d7238a9e08abfbc433d4b39813f7a",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C3_depth_in_R.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C3_depth_in_R.py",
+      "source_sha256": "9ca3dc99dbefa565192ab1bc08d414af84b931dab836c6dca13f78191ea6c4c7",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C3_depth_in_R.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C4_depth_in_RT.out",
+      "source_sha256": "4f3ebc66595563ffc954c35a50620729e83d7238a9e08abfbc433d4b39813f7a",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C4_depth_in_RT.py",
+      "source_sha256": "7e963fd5267d7487c0b5b232369c02824baa257e59fea348e0f8d1933057ad17",
+      "source_bytes": 11481,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C4_depth_in_RT.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C5_depth_in_UT.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C5_depth_in_UT.py",
+      "source_sha256": "3bfa9fd31a55c185e836d2ff2413e74dec341c51ed1b76e9c237efb0633d3826",
+      "source_bytes": 11481,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C5_depth_in_UT.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C6_trivial_commutator.out",
+      "source_sha256": "6266ee392f057a0f6e9236d8f225371ef1abf33f2e377f7e1666c2ece9d1dab3",
+      "source_bytes": 3709,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C6_trivial_commutator.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C6_trivial_commutator.py",
+      "source_sha256": "af71d5543a072a4bd69595486c78e9cef78191351a3de997e6e6818e83a0de76",
+      "source_bytes": 11478,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/C6_trivial_commutator.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D1_delta_order.out",
+      "source_sha256": "fcf925bebd549cc5566c53b4d9f6218133e229858e0d1b2bb502b9bad63161ce",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D1_delta_order.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D1_delta_order.py",
+      "source_sha256": "1b89ef125160971254f68dadcb30c18491939d0ced5b432a4169ca8ee860b9f7",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D1_delta_order.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D2_kw_delta_plus2.out",
+      "source_sha256": "2a5ee5988727923cfe76ff9f0a8b9f5fe653c5bd26583451c88fb9eca065ca23",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D2_kw_delta_plus2.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D2_kw_delta_plus2.py",
+      "source_sha256": "d73cd7a575bdfe6cdc1a82097cc4939a19a9a839be274350392ae7c88cad8c79",
+      "source_bytes": 11477,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D2_kw_delta_plus2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D3_kw_wrong_inverse_order.out",
+      "source_sha256": "580f3814b7fce0d3a03845fe290ff9a91a0ff7a17462bac51179e6376fa5734c",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D3_kw_wrong_inverse_order.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D3_kw_wrong_inverse_order.py",
+      "source_sha256": "dc0ae90527bf7b950e092bd9bd217cd64b21b29f93b51884083601b112d1f0fa",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D3_kw_wrong_inverse_order.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D4_kw_exponent_sum.out",
+      "source_sha256": "9a9e4b11845139763b729674f360a3965245c2351dda324463a345f6c6e1417a",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D4_kw_exponent_sum.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D4_kw_exponent_sum.py",
+      "source_sha256": "fc8429a395cd54b026a66a4df2750d26343f2077bf23ada1dd849198a79b87e2",
+      "source_bytes": 11463,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/D4_kw_exponent_sum.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M1_mirror_factor_plus3.out",
+      "source_sha256": "639ecadcc901d8b4de71cf1f325fa9c0256e155ca4a74f3ff9b1c7a969df3d3a",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M1_mirror_factor_plus3.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M1_mirror_factor_plus3.py",
+      "source_sha256": "0ded3dff055c79148c645485d9913b6387647d45923041b1fa4ca9895a597a56",
+      "source_bytes": 11479,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M1_mirror_factor_plus3.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M2_mirror_is_identity.out",
+      "source_sha256": "639ecadcc901d8b4de71cf1f325fa9c0256e155ca4a74f3ff9b1c7a969df3d3a",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M2_mirror_is_identity.py",
+      "source_sha256": "d1b18698eb3b067674d43aebce8758bae200648068e4d3a0d82c6fc5e4f2f657",
+      "source_bytes": 11466,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M2_mirror_is_identity.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M3_mirror_is_inverse_EQUIVALENT.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M3_mirror_is_inverse_EQUIVALENT.py",
+      "source_sha256": "e27f3e582645f1218896e786c37f686d7f48df4a8bff813eba61923019a51eef",
+      "source_bytes": 11471,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/M3_mirror_is_inverse_EQUIVALENT.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P1_MGamma_sign.out",
+      "source_sha256": "43f85ecfa25c7cd29a7740bfeb9b1abc0247e82c5e4f5c9eac788cff63e94d26",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P1_MGamma_sign.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P1_MGamma_sign.py",
+      "source_sha256": "6baef9dd7bf8b28939fb335dd0d126687c71b28e3554469dd8e5304ceeb37592",
+      "source_bytes": 11481,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P1_MGamma_sign.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P2_MPhiGamma_exponent.out",
+      "source_sha256": "43f85ecfa25c7cd29a7740bfeb9b1abc0247e82c5e4f5c9eac788cff63e94d26",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P2_MPhiGamma_exponent.py",
+      "source_sha256": "4334828df44be71fba1ebf51fea99fa72da379ee619d26602acd5c5f5e26061e",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P2_MPhiGamma_exponent.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P3_MPhi_drop_term.out",
+      "source_sha256": "298d8c35122a72b169898db8bfe13a5a85d71672e7e360e6e49317b6bc966be6",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P3_MPhi_drop_term.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P3_MPhi_drop_term.py",
+      "source_sha256": "245f5a30ff775a204e1a009a4883cd9ea8597859e247c062aaf628d953e61d74",
+      "source_bytes": 11472,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P3_MPhi_drop_term.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P4_MPhi_no_cancellation.out",
+      "source_sha256": "43f85ecfa25c7cd29a7740bfeb9b1abc0247e82c5e4f5c9eac788cff63e94d26",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P4_MPhi_no_cancellation.py",
+      "source_sha256": "5a277ecdb172d6687e01187bcc95b04e365de3db9a9720e343837deb7b8d359a",
+      "source_bytes": 11483,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P4_MPhi_no_cancellation.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P5_MGamma_parity_preserving_typo_BLINDSPOT.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P5_MGamma_parity_preserving_typo_BLINDSPOT.py",
+      "source_sha256": "639a251b9845a452d3c147e36b96dff3939334787412adc651bef34a4b7fd480",
+      "source_bytes": 11479,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/P5_MGamma_parity_preserving_typo_BLINDSPOT.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S1_Uinv_sign.out",
+      "source_sha256": "9616fc7ab852a80c99992ec8269c522cd292fa5a1650a22a128aefd70586c9e9",
+      "source_bytes": 3708,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S1_Uinv_sign.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S1_Uinv_sign.py",
+      "source_sha256": "607a06243997b30a6e0526b295c3d3376b71d663351fc8ef7738e7fc0c1c1016",
+      "source_bytes": 11479,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S1_Uinv_sign.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S2_R_rowcut_B5only.out",
+      "source_sha256": "372228edba3a1b6137b052d02f0a2e97b46d17e5b0e94105f5f55788fd90c9ac",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S2_R_rowcut_B5only.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S2_R_rowcut_B5only.py",
+      "source_sha256": "cf8393c9d0bcdedb6a3dae33dfee28cc9923741d6fa8df96cc3c7f9380879e06",
+      "source_bytes": 11476,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S2_R_rowcut_B5only.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S3_REL_adjacent_commute.out",
+      "source_sha256": "372228edba3a1b6137b052d02f0a2e97b46d17e5b0e94105f5f55788fd90c9ac",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S3_REL_adjacent_commute.py",
+      "source_sha256": "ad7542cba51cfed34260b0f0ce30ec39b34fa42c4a3818657e73ce7f1540ba2b",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S3_REL_adjacent_commute.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S4_U_is_transposed.out",
+      "source_sha256": "701540efd3fe2d6272b343e8b9f35543c297ea1f7e43b502fc66e6021ff21f84",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S4_U_is_transposed.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S4_U_is_transposed.py",
+      "source_sha256": "962430f47a43ece562ed05b3be8d4fa82aca2ce6d654c5c99d65df0b64a26279",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S4_U_is_transposed.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S5_U_at_inverse_t.out",
+      "source_sha256": "e3bd7e3df0ec38e5f7be3f475e421f5fd21ca12ea1b697014200dfba2c0deaea",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S5_U_at_inverse_t.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S5_U_at_inverse_t.py",
+      "source_sha256": "69f38a299439c9d719d45f8c9ff09a71527e8361504df4a5e6dcb1ce3285e714",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S5_U_at_inverse_t.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S6_artin_inverse_typo.out",
+      "source_sha256": "ba17ba1be0190bb1bf27feedb17b0f557059df86611d2c580c84489a16e1831a",
+      "source_bytes": 3708,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S6_artin_inverse_typo.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S6_artin_inverse_typo.py",
+      "source_sha256": "e4c918e7a93ada2000fa2840f0d08e891fab0d7b1b3aacdb7588a9b390f6340b",
+      "source_bytes": 11480,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/S6_artin_inverse_typo.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T1_TVALS_half_to_one.out",
+      "source_sha256": "3dc58f08c976f9711ce15ec9b6785bb9709cee76aebde1dffc42d3e1a8095835",
+      "source_bytes": 3707,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T1_TVALS_half_to_one.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T1_TVALS_half_to_one.py",
+      "source_sha256": "3539c0ba2271960a64b6340421927aa959d23214473cba889feaeb0714a61221",
+      "source_bytes": 11477,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T1_TVALS_half_to_one.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T2_identity_at_half_only.out",
+      "source_sha256": "3dc58f08c976f9711ce15ec9b6785bb9709cee76aebde1dffc42d3e1a8095835",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T2_identity_at_half_only.py",
+      "source_sha256": "d9ba9b9402bc7c32470553c56a8ef3e09a7043025b422f1634c4ff277fbf4597",
+      "source_bytes": 11624,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T2_identity_at_half_only.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T3_identity_at_third_only.out",
+      "source_sha256": "3dc58f08c976f9711ce15ec9b6785bb9709cee76aebde1dffc42d3e1a8095835",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T3_identity_at_third_only.py",
+      "source_sha256": "bcfe40f914e35099d325cd636d92ba06e8c92ff112c838b608177b637ff23b62",
+      "source_bytes": 11624,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T3_identity_at_third_only.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T4_trivial_braid_in_loop.out",
+      "source_sha256": "909b93c7002f4bcfcfa09071bdf60ba299276bf40ec3a92dad3065a70adc6fa8",
+      "source_bytes": 3724,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T4_trivial_braid_in_loop.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T4_trivial_braid_in_loop.py",
+      "source_sha256": "8168ec04b2c6492b1fe0b3590d7b6c8db622196bdfcf86b2c383054141a53bfb",
+      "source_bytes": 11492,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/T4_trivial_braid_in_loop.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/X1_exit_status.out",
+      "source_sha256": "a130878e2bfd63b228156230d2e198fb14833ff6f8b2ffc1f0615b8a4d68dac3",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/X1_exit_status.py",
+      "source_sha256": "20134f407df245863b702f91b6c66fd22d8095af734a04de927f3622932588e8",
+      "source_bytes": 11480,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/extra_bb05_broken.py",
+      "source_sha256": "8b065f0800c59d5b4a28b3fbd662ec1eb3249b4f722f6a06cdb4413041340157",
+      "source_bytes": 12875,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/extra_bb05_broken.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/extra_orient_broken.py",
+      "source_sha256": "07ea8fc6c800752b9d474f7cef7eb27c9994da3af65353d7ff3c9333cfa8c2f4",
+      "source_bytes": 12873,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-script/mut/extra_orient_broken.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/conv_remarks.out",
+      "source_sha256": "a6e0bd745c0bae955d74810bf505519c4f1f2f8fbb379f09372fa004ea802f99",
+      "source_bytes": 1487,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/conv_remarks.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/conv_remarks.py",
+      "source_sha256": "3d522d3117c7b51e62205eebd504f5ec25ac996c971948e7112be460a9c365f8",
+      "source_bytes": 4647,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/conv_remarks.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/depth_indep.out",
+      "source_sha256": "c5dc640461b763b9c0209d10135b44c24db525a8dc051f77eb94b7d8d83f966e",
+      "source_bytes": 450,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/depth_indep.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/depth_indep.py",
+      "source_sha256": "01082bc6d56f0722d6eaac4b26ecbffad06e34d2dc47ef132a496d626dc8bb2f",
+      "source_bytes": 5717,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/depth_indep.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/phi0_check_patched.out",
+      "source_sha256": "4cb4148f2177560a851079787a9840f0fb72d5bb84cc508b598f9b8c81a2d53d",
+      "source_bytes": 3818,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/phi0_check_patched.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/phi0_check_patched.py",
+      "source_sha256": "28cac106c4b95a3193b96ee018acdb33f66c0e84cd31848a43aaf227fbd12d35",
+      "source_bytes": 11674,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/phi0_check_patched.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/phi0_check_patched39.out",
+      "source_sha256": "4cb4148f2177560a851079787a9840f0fb72d5bb84cc508b598f9b8c81a2d53d",
+      "source_bytes": 3818,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/run313.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-applied/run39.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/run.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/sentdiff.out",
+      "source_sha256": "811b29a355222acd48f5f0dceb4de24753452a892cd8087ec8830350d97fbb97",
+      "source_bytes": 21730,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/sentdiff.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/sentdiff.py",
+      "source_sha256": "2d2f6a4bf5eb6393575d147e5341b2bd234903c7984cff0277d6d62c855c9168",
+      "source_bytes": 1044,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/sentdiff.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/v44_run.out",
+      "source_sha256": "cbd5b44e14dd04916fc15fd53b195b7888e78da626d3a849a9b8b8c193ea7005",
+      "source_bytes": 2806,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/verdicts.json",
+      "source_sha256": "bbbf552617edf890566819ee2230e1de112153e4b9b08da4672844d3c9bebd9d",
+      "source_bytes": 47256,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/verdicts.json"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/verdicts.py",
+      "source_sha256": "446773ee1bb030a181519581855b1ecfbbe61ffc81aba098de090def0ac8b532",
+      "source_bytes": 565,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-package/verdicts.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/current_run313.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/current_runtxt.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/indep_depth.out",
+      "source_sha256": "5dc0586e567765cceac6c1e3222ba4c5dddb5b240ca15c9e1d7e828290d1ccbc",
+      "source_bytes": 2784,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/indep_depth.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/indep_depth.py",
+      "source_sha256": "f1478267c4b7e9257b4ae8a97f8afac839f409ebf371fcf39460c8bf4dda5637",
+      "source_bytes": 11810,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/indep_depth.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/proposed_copy.py",
+      "source_sha256": "ecf78c9ea1951accddfe15d6d96c9b2823856ebd55161adea44db6f36b6fb145",
+      "source_bytes": 11530,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/run_python3_313.out",
+      "source_sha256": "0bdb75adbf2474295a733158482f4c2d37423fd8808af8e963fa350c8343b7ac",
+      "source_bytes": 3742,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final3-verify-script/run_python3_39.out",
+      "source_sha256": "0bdb75adbf2474295a733158482f4c2d37423fd8808af8e963fa350c8343b7ac",
+      "source_bytes": 3742,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/indep4.out",
+      "source_sha256": "cbd0232c4e93676ed4eecf11aeee2d92d618ffb10ef907162d7c192816358ff2",
+      "source_bytes": 3853,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final4-audit/indep4.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/indep4.py",
+      "source_sha256": "06ecce048dd6f34a79ff9cdb569b528514a15d1b88e77a86de67de71016fb225",
+      "source_bytes": 13084,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final4-audit/indep4.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/run.out",
+      "source_sha256": "789b1e25e70d538e733795794370d2f2f0d7f4888c271413858bea2d44bb2e7e",
+      "source_bytes": 3709,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/run39.out",
+      "source_sha256": "789b1e25e70d538e733795794370d2f2f0d7f4888c271413858bea2d44bb2e7e",
+      "source_bytes": 3709,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/run_txt.out",
+      "source_sha256": "789b1e25e70d538e733795794370d2f2f0d7f4888c271413858bea2d44bb2e7e",
+      "source_bytes": 3709,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/script.diff",
+      "source_sha256": "d8597b4a49ebf1d307c0cb58799c75de9dae9f0cc7ca0f09c2f80ff29ee74ce9",
+      "source_bytes": 989,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/tex.diff",
+      "source_sha256": "da69e0016b2215ce7bac42ebd5f237eed385731c8f0b65166fefbc84d2467e6b",
+      "source_bytes": 20152,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-audit/v50_rerun.out",
+      "source_sha256": "68bde0f096cc31c09fad89881e0c56bd5182a2793ee9be5596622fb975089205",
+      "source_bytes": 3707,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "private-withheld/artifact-7",
+      "source_sha256": "99ca2da9d43ec9ef44545a4aae9f0da9d78cd7503f6ebc324ad5ab0fa131441c",
+      "source_bytes": 9897,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-verify/depth_rounds.out",
+      "source_sha256": "c6723291bbde16c04b5c9561a8417ad06347d22c4fe3d7406115e3f52e2a71e8",
+      "source_bytes": 250,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final4-verify/depth_rounds.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/final4-verify/depth_rounds.py",
+      "source_sha256": "1fbf84ea2ed50a29036ff8d3bb52c522fb2851af93b8ddacf66d47d768e42c4a",
+      "source_bytes": 4641,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/final4-verify/depth_rounds.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/depth.out",
+      "source_sha256": "cf7063abbcef6ef8072030515d0fbc38a08f7115073e0bc340e9b5ecd02562af",
+      "source_bytes": 1844,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/depth.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/depth.py",
+      "source_sha256": "334aacdac87c0051fa2649fa33cbe95362a05e786f237799a0db1f8065f24c0b",
+      "source_bytes": 10499,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/depth.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/exact_depth_xcheck.out",
+      "source_sha256": "3ab2890f95d29b2a71a14f1688490022e89822a0c7e47d41ab55d84bdf381e34",
+      "source_bytes": 409,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/exact_depth_xcheck.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/exact_depth_xcheck.py",
+      "source_sha256": "e78afec9632f1b3b974fd94b15891ce94bb7dcaa295ab636f3b40a5262865b18",
+      "source_bytes": 611,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/exact_depth_xcheck.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma1_sec6.out",
+      "source_sha256": "f092e300ec6eee3e4bc1db66e2635a1ba5192935a1ec502fefdeb2cd1ed07995",
+      "source_bytes": 1582,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma1_sec6.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma1_sec6.py",
+      "source_sha256": "69659b9c0310b48b1d89e48b12c98b72e7ed9548d579c161ca4c8305dfe04d30",
+      "source_bytes": 5643,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma1_sec6.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma2_deep.out",
+      "source_sha256": "39f8ccbd2a944bf2cf3696903bb04352fc8f296b78520867099f87b8e6402bcf",
+      "source_bytes": 243,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma2_deep.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma2_deep.py",
+      "source_sha256": "123a423dc370cbbf32dbceac4a07349d3b034317f041ce6a3c361f1fb1fc20a2",
+      "source_bytes": 1641,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/lemma2_deep.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth.out",
+      "source_sha256": "624463e62348a69955621fbc03d8f5a6d7b1719e3c930ac6c91bd2f6264c4099",
+      "source_bytes": 437,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth.py",
+      "source_sha256": "5f5cb3e0af5e9bb8ad5cb11ebacca860a2e82b92be9a564a7d3a2cbf42c93ed2",
+      "source_bytes": 4080,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth2.out",
+      "source_sha256": "c6c39e55dd848fec2adf6be8eb3f8a33fa62d57a488510b24fcba2db7524ea8c",
+      "source_bytes": 1125,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth2.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth2.py",
+      "source_sha256": "f22a29945c63a190ef61f15e7da9aaedf87b04200a32e977639e3f8f76d94928",
+      "source_bytes": 1839,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth2_words.json",
+      "source_sha256": "ad966785d5c8eff0322364e8bd7af7d9991d2f7a969cf02cd05bfa6bd5bb43d6",
+      "source_bytes": 59347,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/lemmas/odd_depth2_words.json"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/quotes/brunn_check.py",
+      "source_sha256": "f87e1cffd18f177d2dab64dff31c8518f270ecd2c1cbd76081e0d2a51a6acb1b",
+      "source_bytes": 1757,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/quotes/brunn_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/quotes/delta_check.py",
+      "source_sha256": "8e831578c2c4c46f6c863a28679d8ddacc64e6c525059f29b6770d0701cbadd0",
+      "source_bytes": 1235,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/quotes/delta_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/quotes/phi0_laurent.py",
+      "source_sha256": "229082190e14dd497fdc468901a095702df0cb9b30512837435a37520fd1c751",
+      "source_bytes": 3153,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/quotes/phi0_laurent.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/quotes/sec7_check.py",
+      "source_sha256": "e2ee75eaedec212fac9b0e1e1c6639a6d4a61814d55d2a6b53f42df2ebc09145",
+      "source_bytes": 2349,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/quotes/sec7_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-compute/braidcore.py",
+      "source_sha256": "5a52af6f99854875b17da34a6d5409066569954957090f1687fe5f615617adfb",
+      "source_bytes": 4809,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-compute/braidcore.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-compute/check_findings.out",
+      "source_sha256": "1e91e7d0d6edcdfc7c15352caf578301a3716a60741df252cdaf3c774d5339e4",
+      "source_bytes": 3093,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-compute/check_findings.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-compute/check_findings.py",
+      "source_sha256": "54160450ec3fd4fdab9f61cfa3820c7cfe5b4a80ef7953d7b69eefc32707394f",
+      "source_bytes": 6658,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-compute/check_findings.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-construction/freered_test.out",
+      "source_sha256": "82db137c5ecf196cd85b49141cf78b290803fe56d7d180495f774e7bde5593be",
+      "source_bytes": 92,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-construction/freered_test.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-construction/freered_test.py",
+      "source_sha256": "dc6c0c555f633529d104d10e70f02647faebce4528527a63c9dbb376c862917f",
+      "source_bytes": 2159,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-construction/freered_test.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-construction/phi0_independent.out",
+      "source_sha256": "ea5dd78b035989d668a2b646220f9ca63e26dbaf8f5f7bc42ec0b53aa204b053",
+      "source_bytes": 682,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-construction/phi0_independent.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-construction/phi0_independent.py",
+      "source_sha256": "413db3b0ce46938cd574787ffec4a7685fc5e77051577362028e0d18dbf5020d",
+      "source_bytes": 7589,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-construction/phi0_independent.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-defence/arcs_indep.out",
+      "source_sha256": "3c91c8f365913172c0fd9547bd235d8c12ff50918812227521ef04cea7246367",
+      "source_bytes": 963,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-defence/arcs_indep.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-defence/arcs_indep.py",
+      "source_sha256": "fd027dd65deda14884f0d1038290be5e9ff2b5b885fb05b098fab2c7eb312e19",
+      "source_bytes": 10695,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-defence/arcs_indep.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-defence/extra_checks.out",
+      "source_sha256": "76870de4524eda5a6f7adefe6e6ad6ae7dec56d861c3c469970f7408e21d8f5d",
+      "source_bytes": 582,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-defence/extra_checks.out"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-defence/extra_checks.py",
+      "source_sha256": "1939551f10784239757922051195e3233a637e4a0114dc02e6af55b0fca00a1d",
+      "source_bytes": 3552,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-defence/extra_checks.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/check/verify-quotes/depth_check.py",
+      "source_sha256": "fc23e8d791792928e41fc0fe7956092e255f86fda0e5c2ac98f565e821e68b81",
+      "source_bytes": 3758,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/check/verify-quotes/depth_check.py"
+    },
+    {
+      "source_alias": "private-withheld/artifact-8",
+      "source_sha256": "a7b28f6af8095292c68c63cf6cc8186ef794702b9540e78235892072a9404238",
+      "source_bytes": 322529,
+      "handoff_action": "withheld_privacy",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.tex",
+      "source_sha256": "b482db9a71ec27cba3695a77e5a776d832df2d3ea8afcc610d93e45a0eb0ec2d",
+      "source_bytes": 28787,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.tex"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.v1.tex",
+      "source_sha256": "1cfa680aedd3fa3c08138a32bb2bafca9c0ea33c6ba2ffcb3296d079c411a450",
+      "source_bytes": 14853,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.v1.tex"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.v2.tex",
+      "source_sha256": "98a2e144b712567cc165252830c1d8856a57955f90e0b8408cbc4dd478a86e91",
+      "source_bytes": 22435,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.v2.tex"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.v3.tex",
+      "source_sha256": "63a0211cda2e61ce6304e186f84bfcbb915d0762ebf59d7aac50b6e2895e50b6",
+      "source_bytes": 28163,
+      "handoff_action": "copied_redacted",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/bbb-gap-note/note/bbb-gap-note.v3.tex"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/BBB-GAP.md",
+      "source_sha256": "0573271e10314371b1d9377151b07a5bee6a5ee0bdfe4a20822d90bb4481b87d",
+      "source_bytes": 10106,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/read-bbb.md",
+      "source_sha256": "a1a5b201e42a30ecc4924cd2a8acaa0b18cb812a0ff891a7fdc37b8660b4fdd3",
+      "source_bytes": 19893,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/ref-transfer.md",
+      "source_sha256": "efc15f3871e79de597f02f61913d4e0d45c7b9d1bf94feb2317d5f482d4511c8",
+      "source_bytes": 8174,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/scripts/brunn.py",
+      "source_sha256": "7e2cced9fffad5a7994cd93adf7ad691888e272e8b4421f438db673fa6397a29",
+      "source_bytes": 1616,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/scripts/chk.py",
+      "source_sha256": "8168f882d7bea88ef3247a9bbb5328fef0d9a18dfcbacc957b0c9dcc6393075a",
+      "source_bytes": 2252,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/scripts/phi0_check.out",
+      "source_sha256": "138c01c5b9e9a77427c4cc61f977f9d4a765f08e968ce89fd9c92b86d5b7d5ec",
+      "source_bytes": 314,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/scripts/phi0_check.py",
+      "source_sha256": "412e7cb6f47186941712e50b5459a4def29872d75fb9ee8a9cb98eed3763739a",
+      "source_bytes": 1384,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/scripts/sec7.py",
+      "source_sha256": "0843e2da674f538be225c12ac56f0fdd761642b01303297a66f5e7ce1d2f7b88",
+      "source_bytes": 770,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/audit/w60_check.py",
+      "source_sha256": "e1b7be72a0234955064e3461049c08d75d985c0391fb8e0d683a1b92a5e394f7",
+      "source_bytes": 3368,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/audit/w60_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/audit/w60_check2.py",
+      "source_sha256": "41e580961ceb8e670145e09cf1e8c49f61ac1ed52e59dcdfe079bccb38db8c5f",
+      "source_bytes": 854,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/audit/w60_check2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-prove/margin.py",
+      "source_sha256": "7e459d922cc6eb6000296bfc50342aeb3fe5ac22a6537e7ce28804f7ce43b490",
+      "source_bytes": 3117,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-prove/margin.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-prove/margin2.py",
+      "source_sha256": "a3f9a3aeb9ed8b378630475a04817136c3b0392b4c383c22c1a224d62918e55a",
+      "source_bytes": 3132,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-prove/margin2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-prove/probe_pos.py",
+      "source_sha256": "caa084b16f317bd52fb79027eae5aff4449ca46449b89c4c08bf047c01674d24",
+      "source_bytes": 1896,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-prove/probe_pos.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-prove/tl6.py",
+      "source_sha256": "af829207eac403823663cd1acd03eea5e4c63664fd9ffb949c8fc385427b3f9d",
+      "source_bytes": 8059,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-prove/tl6.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-prove/triple.py",
+      "source_sha256": "63f1ee18f7ce6b97a86ea60d532f936ad241293d5149a92e7d7ee1b2506adbba",
+      "source_bytes": 729,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-prove/triple.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-prove/zeta8.py",
+      "source_sha256": "a42683cea2cf912b9ba4cbd7f87392244cc862aea51a8775e75db7c76095fb2f",
+      "source_bytes": 1422,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-prove/zeta8.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-criterion-refute/frame.py",
+      "source_sha256": "e0265548ffc8fb198780835b12ff23d86586e7e598de0caf1d1e1a91c0bfd159",
+      "source_bytes": 2004,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-criterion-refute/frame.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-fresh-eyes/checkN.py",
+      "source_sha256": "1fe4f66ecb6f47377074ce77e19a5a5d431d4baa74abb563956224bcb8477d3c",
+      "source_bytes": 1360,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-fresh-eyes/checkN.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-fresh-eyes/endpoints.py",
+      "source_sha256": "8b33b28b3a1a8ed102c18f4274c4748924bfcedf4ec329934711277246deb9eb",
+      "source_bytes": 914,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-fresh-eyes/endpoints.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/design-fresh-eyes/sig.py",
+      "source_sha256": "1ddc070642455a6452d38604ac48be023e9c45b61a6636f834ef0e03e93ba9aa",
+      "source_bytes": 3192,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/design-fresh-eyes/sig.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/peer-checks/bbb_phi0.py",
+      "source_sha256": "659cfa9270ae98dc9ad9476b36c704b4859a1cab192e9e85b2f0c06eef745806",
+      "source_bytes": 3896,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/peer-checks/bbb_phi0.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/peer-checks/l1_size.py",
+      "source_sha256": "ed1907d89e17a132ccd484658bb44081428c8bd1afaeb721b27a71fb993638b3",
+      "source_bytes": 711,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/peer-checks/l1_size.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/peer-checks/thmA.py",
+      "source_sha256": "b05fa4542c052207e684aefadcdb77022fcaf77c50cd2fbb81230faa462d311e",
+      "source_bytes": 2458,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/peer-checks/thmA.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/beam.py",
+      "source_sha256": "7da7a6de3c4369497b9948367fb7e26759d87ea370902d10b4d966f5772731b3",
+      "source_bytes": 2226,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/beam.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/beam2.py",
+      "source_sha256": "8c6489da7310c70753d986ae3ff9030b32807a0a12a3be62ba0934eabee67145",
+      "source_bytes": 2357,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/beam2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/beam3.py",
+      "source_sha256": "cd2a393b39e2d820df027053b41e26c529f1b7c06be79ba47af7baa20e3d29e6",
+      "source_bytes": 1034,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/beam3.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/best25.txt",
+      "source_sha256": "ee96dc14853c629ed7145ff1425d399f8c136e37f58e63e2ad2048463cde7a76",
+      "source_bytes": 224,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/best25.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/curves.py",
+      "source_sha256": "70726ab460e89f8acae6451184fd02e1fc274cb86ba4b4dfff414f793bab7ab5",
+      "source_bytes": 2472,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/curves.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/exact2.py",
+      "source_sha256": "64ca3c60266ab1f2444983500caf5848f7b68aa1d26acb6f070b78c69555669e",
+      "source_bytes": 1468,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/exact2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/exact3.py",
+      "source_sha256": "fdfd37e6c2953c914928eadb80dc487b854b3323560b8ce46c50216243c2f032",
+      "source_bytes": 1455,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/exact3.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/exact4.py",
+      "source_sha256": "059c47d094e2c48c591f1455a30c006ff085c99c26b5bcacb4f90e9763170719",
+      "source_bytes": 1334,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/exact4.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/exact5.py",
+      "source_sha256": "e279abafb31ff1032bb760c6fdca49cbb9cfd69421eda107db842d838089e8eb",
+      "source_bytes": 891,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/exact5.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/exact_check.py",
+      "source_sha256": "989f5c65ee3e1da55190f1db4cdadf224d9228f995d88c436f1762e92cc620e4",
+      "source_bytes": 1438,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/exact_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/fastD.py",
+      "source_sha256": "a2e0906ed19893793541f41736927825e9c5c1ca186b0a0287c8d406b5e6a2f6",
+      "source_bytes": 6189,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/fastD.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/periodic.py",
+      "source_sha256": "3dc93fb159e0636a5b13ccae5e5af4b4d1658b27c20d14d7f4c7f909df3b20e7",
+      "source_bytes": 1269,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/periodic.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/periodic2.py",
+      "source_sha256": "94426086950cbe90c2ec58d524bf872da9fc6e72d5857c7226213cfaf54c4f6d",
+      "source_bytes": 566,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/periodic2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/run1.py",
+      "source_sha256": "40c9f40d8e45b25f47736076cfa54ef5f3d926081502a9793a20ff9d4ffe482f",
+      "source_bytes": 519,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/run1.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/runA.py",
+      "source_sha256": "2aa5033d1342e47f9b0ee697d8232a4c1f1bb1dd24082e8195240152ce67b6fc",
+      "source_bytes": 400,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/runA.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/runB.py",
+      "source_sha256": "eab70c663596bfbed8551fa07e57bddebb5d7351c1525d07c0d4f07d967c60f5",
+      "source_bytes": 1136,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/runB.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/runC.py",
+      "source_sha256": "fad19e943ad0fb6773e22b62ac5f13eba5aa670ba271b7df390e49900328c33f",
+      "source_bytes": 832,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/runC.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/theta.py",
+      "source_sha256": "76a222583557df611f78513c894b923cef2e5083b7a6d8bcd944a36a082976c6",
+      "source_bytes": 1031,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-prove/theta.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-prove/tl6.py",
+      "source_sha256": "af829207eac403823663cd1acd03eea5e4c63664fd9ffb949c8fc385427b3f9d",
+      "source_bytes": 8059,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-refute/probe.py",
+      "source_sha256": "a61c31639399c2ae557d04884c801253eacbaee1bdb88feba4a9ca32857c32b3",
+      "source_bytes": 5783,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-refute/probe.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-criterion-refute/ref.py",
+      "source_sha256": "d054e847a7c0f99f7b50bcc4213bf1bafa3d4622dbb1e935db69a9a4c4ef6691",
+      "source_bytes": 3741,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-criterion-refute/ref.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-fresh-eyes/check_arena.py",
+      "source_sha256": "875803c3c5d1f63766b4893491bd548043bd3c9aaa6c670d881670971d6e6a6d",
+      "source_bytes": 2722,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-fresh-eyes/check_arena.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-logic-fresh-eyes/check_arena_out.txt",
+      "source_sha256": "5e7203ce67d081ede24fcde0b2a5f163e3e4afba3165c4b5a28c72d1ac004ec0",
+      "source_bytes": 653,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-logic-fresh-eyes/check_arena_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/beam.py",
+      "source_sha256": "52256b7bfecae8f39bbb2c6d854145276c6012aeac6861438b551172df653719",
+      "source_bytes": 1139,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/beam.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/beam_all.py",
+      "source_sha256": "3f035888b57e75867f638b4fd7a4d91e3b0d5365a7e78df287545a11060f58bd",
+      "source_bytes": 1129,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/beam_all.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/beamk.py",
+      "source_sha256": "3828b686e2f2da91dbb829f92342e68a6e7843a74f4df4bfbb8ec948f5c87396",
+      "source_bytes": 1325,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/beamk.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/dbg.py",
+      "source_sha256": "1123be4d113cc3100dd2cf79dd11707d615cfa167ad6d2c24339d9a42b9e8457",
+      "source_bytes": 356,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/dbg.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/dbg2.py",
+      "source_sha256": "e1d4e92f00f5bca4d063a0cc64b9beb4896625d04e25ab8b68ef6dd23b7d9ae4",
+      "source_bytes": 424,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/dbg2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/dfs_exh.py",
+      "source_sha256": "780df4b65258cbc9e50411cd3ffe511a3346d4d2574b131c910aa701a2c5c1c4",
+      "source_bytes": 835,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/dfs_exh.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/exact_check.py",
+      "source_sha256": "5fc320d9e0cec94982e695e68c597eebbe96846b1d7dc73a9c10756bae0cb32c",
+      "source_bytes": 593,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/exact_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/exhaust.py",
+      "source_sha256": "dd8b6173b282c3d852b3fc6477380a11624ffb0374a13d77a256419bf98d22d1",
+      "source_bytes": 681,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/exhaust.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/family.py",
+      "source_sha256": "7f4c07b0cc032aaf4adb0671d0e67292b799cc9e03f0c94f0c6bc11f18c2a84b",
+      "source_bytes": 667,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/family.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/fastD.py",
+      "source_sha256": "4f73b42c0d1267e2e4b58d44cd88490d400a95b916b6ea6110bdd4d39b01c362",
+      "source_bytes": 3025,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/fastD.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/gramB.py",
+      "source_sha256": "ce263d4a25fe018f3631763da391267c70fdfd51f7569212a58161847bd32bca",
+      "source_bytes": 328,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/gramB.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/incr_vbasis.py",
+      "source_sha256": "932873bfe1321bcc9aa6f70bd417232c7c96ef61baa6b4a93971ca6be23f4fef",
+      "source_bytes": 1685,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/incr_vbasis.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/increments.py",
+      "source_sha256": "d34bcd490d47fe4cd58444e0b70601e7a60c72c08f44a91943f8ca34aeaa6573",
+      "source_bytes": 2122,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/increments.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/pick.py",
+      "source_sha256": "c2b758bb19444d63787b38541f2fb02437163bd30f519cd80fa0d0fa586b8b7b",
+      "source_bytes": 547,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/pick.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/setup_check.py",
+      "source_sha256": "c5f195faca463a0b75e57db71cbbcdc80167c30ba6eeb3b55711865d07da7ed0",
+      "source_bytes": 503,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/setup_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/tau.py",
+      "source_sha256": "228732a61e85b928615c1bb4211680cc289fbb9cfddeeeb81986fbbc653dc637",
+      "source_bytes": 2810,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/tau.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/tau5.py",
+      "source_sha256": "0bdec060e5221ca2fa8b004c38c31b4d576e260473f788a17ee76d10cacc966a",
+      "source_bytes": 3142,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/tau5.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/triple_setup.py",
+      "source_sha256": "9492e318afb7ca644c3c770cb26e60f19460e1180cb1a6812556d36ac99ffbf7",
+      "source_bytes": 2045,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/triple_setup.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/tsi_syll.py",
+      "source_sha256": "13ca74b5d3c6aee8b9fff77f2107f63fbe9094448a2c3529f802d0abcfd1fb94",
+      "source_bytes": 1536,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/tsi_syll.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/verify_B.py",
+      "source_sha256": "6b49ad86047dc2f01948d5b4c1ae0229e077ad656209963c107232b99960b777",
+      "source_bytes": 811,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/verify_B.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-prove/w60.py",
+      "source_sha256": "8d4f7c0ce65c2da9f1227e94ecd5a7879cfe22faecb4c2e3fc14305aacb95621",
+      "source_bytes": 2582,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-prove/w60.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-refute/check_fl.py",
+      "source_sha256": "8cfaccb7424efe378afbec3e449da78852e9f247b8ab53e36e26c65a37d2245f",
+      "source_bytes": 2460,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-refute/check_fl.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-refute/check_fl_out.txt",
+      "source_sha256": "b09982b66c4ebbb227c72572e29902e6bc724dc05107c6e20a17e47c3fb68c64",
+      "source_bytes": 1285,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-refute/check_fl_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-refute/check_frame.py",
+      "source_sha256": "66d2e21007e603994f454f8d2871ffe352aecc8628f5407a22cc3d2e43404caf",
+      "source_bytes": 4627,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-refute/check_frame.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-criterion-refute/check_frame_out.txt",
+      "source_sha256": "a8dfe9fca122af8ea68d8e05e1649913a3dabbf92b8961007853a787f5626320",
+      "source_bytes": 2566,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-criterion-refute/check_frame_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-fresh-eyes/ch4_check.py",
+      "source_sha256": "103e3dd63f7ef3444a10aba7339573feba8e3597c8559b1ea0327d0e9dcdc223",
+      "source_bytes": 5868,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-fresh-eyes/ch4_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-fresh-eyes/extra_check.py",
+      "source_sha256": "07d8072fe28a170c085e9999315350a319da0cda889366e33fceef9056164bcf",
+      "source_bytes": 783,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-fresh-eyes/extra_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/referee-prior-fresh-eyes/extra_check2.py",
+      "source_sha256": "8f2a8c476344c0f223201d2c30c2b3fc7585915aabdef0995a88296f5480dfbb",
+      "source_bytes": 944,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/referee-prior-fresh-eyes/extra_check2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-group/tl_check.py",
+      "source_sha256": "3ff34b71863a71cd8b6db5d265b80e8d881c1846437b8b255144c0059b784dd3",
+      "source_bytes": 5372,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-group/tl_check.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-plat/check_xi.py",
+      "source_sha256": "413aa5386266ae9c4fed91d60a45302e00ede9abf7748ccc4df617913dfbe586",
+      "source_bytes": 6007,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-plat/check_xi.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-plat/curver_xi.py",
+      "source_sha256": "7e9439524dca8fa653b5b3eaa5fce4aac3184605d036b733eb4dd551c10c543a",
+      "source_bytes": 1321,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-plat/curver_xi.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/extra_checks.py",
+      "source_sha256": "e1aa093ee1e5b524d6a8f0fcc87a61588be4d72c4ab30916bcfb3c3be5dab9c1",
+      "source_bytes": 1253,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/extra_checks.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/intersect.py",
+      "source_sha256": "dc4b6dae4d65f94df4f813a372b34422d6b13d14917c1648dc73a39c1292c376",
+      "source_bytes": 5568,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/intersect.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/intersect_out.json",
+      "source_sha256": "3f0428fd728f26205d483fe27978212d71634f662510c5c2482d4566d47e2c0e",
+      "source_bytes": 1092,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/intersect_out.json"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/intersect_out.txt",
+      "source_sha256": "e46d33a2711cedaceefb05a6371639f63c7f6d3481d38b03a0a439d9226fd6d5",
+      "source_bytes": 2410,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/intersect_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_collision.py",
+      "source_sha256": "368d7c6cf24416653e0986fdf2350e3d5e2b2945c4f47094dad8e772f3167b76",
+      "source_bytes": 2539,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_collision.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_collision_out.json",
+      "source_sha256": "cb2ec258fa82df05179a246446deca7d6be2dd8c9d7d8f30ef99ac437dfc6d83",
+      "source_bytes": 488,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_collision_out.json"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_collision_out.txt",
+      "source_sha256": "534e9d45d0cae55dde579540e0fd5f08ab40ee796b43e459bedea0a8f8a69a04",
+      "source_bytes": 398,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_collision_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_level2.py",
+      "source_sha256": "521c84816468b792f4a516e6527c72e2a5637e0b657e98506e399781d2b5d179",
+      "source_bytes": 1512,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_level2.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_level2_out.txt",
+      "source_sha256": "1bb36b559ea615192ee250f50a0f13d191422a988b7515326ebc2b2a0b01336c",
+      "source_bytes": 870,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_level2_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_spanN.py",
+      "source_sha256": "13a321d214a8274a6d7720bb8b26e98f370cc16caf0e4d5dea9194e611b74ddc",
+      "source_bytes": 2224,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_spanN.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_spanN_out.json",
+      "source_sha256": "b022dc5a50d846ddd9a11652b8eb18e49ec9063a14f4c1b03ce2cccdb831c79d",
+      "source_bytes": 20805,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_spanN_out.json"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/probe_spanN_out.txt",
+      "source_sha256": "2cb1b189add5aa971d2ea314ff7877b07e3bdbb75dab40235f0d59f47bc76934",
+      "source_bytes": 1555,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/probe_spanN_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/run_intersect.py",
+      "source_sha256": "4408d8b60df392410842eed66cf2ad29708626e34a62bef27fc58ac45392219f",
+      "source_bytes": 800,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/run_intersect.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/run_sep.py",
+      "source_sha256": "dc8b0121a979beccd349e1b213bf71a54748ae363afd676c5d11eb707d403390",
+      "source_bytes": 9991,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/run_sep.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/run_sep_out.json",
+      "source_sha256": "0401c6e55f266b3b85b5400a657f55eea0ab2dd6f714f4a75c32d0516fc0689d",
+      "source_bytes": 25636,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/run_sep_out.json"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/run_sep_out.txt",
+      "source_sha256": "60355064b6896c3dc5e183bdbc68c005d65d5fd35e01cee90fc3d375c4f731c6",
+      "source_bytes": 19379,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/run_sep_out.txt"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/span8_examples.py",
+      "source_sha256": "4491357b827b852147b43fe01721d5a95e8e8e2793e26765263b0fb0d2f544a4",
+      "source_bytes": 944,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/span8_examples.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/tl6.py",
+      "source_sha256": "af829207eac403823663cd1acd03eea5e4c63664fd9ffb949c8fc385427b3f9d",
+      "source_bytes": 8059,
+      "handoff_action": "not_copied_duplicate",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/work/verify-sep/validate_intersect.py",
+      "source_sha256": "ea4106f73c0f7ef0de24d91cadaed7851c985a447ba2eacd8f77a4f5d20fd259",
+      "source_bytes": 1177,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/jones-adversarial-pass/work/verify-sep/validate_intersect.py"
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/2607.05283v2.pdf",
+      "source_sha256": "d8e722bbedea4debdc6c33118b4d03341b3d0f8f6d92e16b7973f5ffe23c4e87",
+      "source_bytes": 3336389,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/bbb-raw.txt",
+      "source_sha256": "45aeb39e469a6e632a38baffdd949c42761cc1cfa2f8312a09fe19c153634793",
+      "source_bytes": 76476,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/bbb-layout.txt",
+      "source_sha256": "def6b209efafd0b1eb54bdc9abbeb83354fc05fe2489603cd8b423478deb8e80",
+      "source_bytes": 88653,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/pages",
+      "source_sha256": null,
+      "source_bytes": null,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/jones-adversarial-pass/bbb-gap-note/source/imgs",
+      "source_sha256": null,
+      "source_bytes": null,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/allfam.py",
+      "source_sha256": "7e25a8247661bfb75e549f8eb615402493f85e236c022671f1ec23da19562822",
+      "source_bytes": 449,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/allfam.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/c.json",
+      "source_sha256": "afd9bfeba2643ef8047b2f2d6bf80bac80a991bf117540c9a9ea2d53dfbcb37a",
+      "source_bytes": 1081,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/c.json"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/check.py",
+      "source_sha256": "612dd3fb869953c0b4f68f531848578bb108a5aa2217479d4efae1223672f501",
+      "source_bytes": 2691,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/check.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/closure_check.py",
+      "source_sha256": "be6846e9ecf6dfd267b5b2bb97eba5f43dff10791985bd29e3d2615cf3125362",
+      "source_bytes": 1130,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/closure_check.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/closure_check2.py",
+      "source_sha256": "91df41256b312d71b51e81bd329638020bd63d5afc595c072ca00f3e3b1c3c27",
+      "source_bytes": 1153,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/closure_check2.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/codex_family.txt",
+      "source_sha256": "e4760de6bce8cf51ddddac53e21ac2b05f7b4620fd515e99bb433510b0bfa54e",
+      "source_bytes": 378,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/codex_family.txt"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/family.py",
+      "source_sha256": "0ec73105bc3c65f18f8b6e4b35abd09c68bfb9b11ce7f38744971575a47373db",
+      "source_bytes": 1140,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/family.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/ft_deep_copy.json",
+      "source_sha256": "6a2eadea8fe8b32a313bfb81f1f8f3b295117a2621e023b7c4177a0efacc2252",
+      "source_bytes": 1312,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/ft_deep_copy.py",
+      "source_sha256": "644dc30f535ffa6025934f99d46932bbe552c10200a2d2ed3eeefe20794338af",
+      "source_bytes": 1326,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/ft_local.json",
+      "source_sha256": "c3fa3618a57285d03e5f6bde77005d6c3ea4be455833ec5168bc74f8c27140cb",
+      "source_bytes": 1615,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/ft_local.py",
+      "source_sha256": "eaff51c13af0a0d8baf90527230508b063c947428a9503ea515e6eef1032df99",
+      "source_bytes": 5548,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/ft_local_copy.py",
+      "source_sha256": "3b5aaa6e916b301ff6edefa27e787f0dbcec432d3666babebc4d2d16985e6505",
+      "source_bytes": 2394,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/ft_local_copy.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/len.py",
+      "source_sha256": "86beaca32f71d039e3a3337c2225f777cd86aea0e8d1703570890e4af9a591dd",
+      "source_bytes": 4125,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/len.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/lens.py",
+      "source_sha256": "3b289497699e1816c53fa83d890183807874dcc7136677f8a2d39419cc526efe",
+      "source_bytes": 5797,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/lens.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/osp_casimir_copy.json",
+      "source_sha256": "4acec6eda65fb64f83b82b941e8b82765fb9cf93986ad700759972782da23e16",
+      "source_bytes": 2191,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/osp_casimir_copy.py",
+      "source_sha256": "ecb4ce4fd7b20528b24e0fe3b81af4c175914f438972bd770cc290026eaa9345",
+      "source_bytes": 2488,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/osp_dbg.py",
+      "source_sha256": "aaa07c58c20a5f85b8b0b6d97dc700ee365f40c205deac43b60284960364227d",
+      "source_bytes": 716,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/osp_dbg.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/report_head.md",
+      "source_sha256": "6fecce2e7149b754887167a4bcdc9dec522bdd0201429ce221377a770a3e58a8",
+      "source_bytes": 10456,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/report_head.md"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/sec36.txt",
+      "source_sha256": "a26cbb82b0dcd3b15db49f3ea79de89c9d27fbe3f51ccc21e4f49d620a0b3886",
+      "source_bytes": 2708,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/sec36.txt"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/sum.txt",
+      "source_sha256": "0717cd9f5707c64a1b89cb690d5d7797896cc710e8c4365a938f8cfdf5c1c0aa",
+      "source_bytes": 2558,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/sum.txt"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t.jsonl.gz",
+      "source_sha256": "90686664870e5f2f2193cbbe874232d067c12efcb85f7961150d539604588dc6",
+      "source_bytes": 2002,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t.jsonl.gz"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t1.py",
+      "source_sha256": "200f70f6c1b93622e071e0f9274cb614e2bd028401d87c632daf7179822e586f",
+      "source_bytes": 508,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t1.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t2.py",
+      "source_sha256": "64db1525adc7983862af5b4364d0e77a040c4588e4a8fc6bbd2022a9c681566c",
+      "source_bytes": 659,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t2.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t3.py",
+      "source_sha256": "173834db80dcf7d75d401a7c0ea0acecc31f21c029c0d6597e5b34def8d7f3ae",
+      "source_bytes": 873,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t3.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t4.py",
+      "source_sha256": "fd1711b33567f317742185b264ecc908f3373a3a4aa56273e82f35597c0f6caf",
+      "source_bytes": 749,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t4.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t5.py",
+      "source_sha256": "091ec50737219bcedba3234f004a1b8789752a98d0b1c256a3f08fc20fee1049",
+      "source_bytes": 919,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t5.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/t6.py",
+      "source_sha256": "8e5cc3f6953d1705d985726970b61683b46cbd72671601a675a01715a8b95fb1",
+      "source_bytes": 1399,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/t6.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/tb_check.py",
+      "source_sha256": "24e20c0fe7d45a8ba13e02de7e9fb382d9c3906743f82771a1cb89150eb856d8",
+      "source_bytes": 2305,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/tb_check.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/u14.py",
+      "source_sha256": "548ed3f596444f21b6d5e215680098d1efebf6800e656fa48776a3858905e838",
+      "source_bytes": 783,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/u14.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/vt.json",
+      "source_sha256": "d1ab6e99720486e41724f14f0241a59bf206084137332d41945f024ba9d4fb28",
+      "source_bytes": 360,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/vt.json"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_blumen/blumen.pdf",
+      "source_sha256": "eacffc7dc00170f9bdc881a774c55c9ead374cf9de0c55a5fbd9ad37de8cd0ce",
+      "source_bytes": 256273,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_cl/cl.pdf",
+      "source_sha256": "c9e3a9642e76537151e55eb97f969814ce63d264f2442e47e669aea131f9de74",
+      "source_bytes": 889585,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_clark/clark.pdf",
+      "source_sha256": "7d4369c6606a50ab8ae07699de4b35df59d05271394f65c409758bf41c29bbef",
+      "source_bytes": 478422,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_ebert/ebert.pdf",
+      "source_sha256": "38fc6fa465a06a7bc25954bfd34baccc888bd93a4e20522c26eae7d1c04af841",
+      "source_bytes": 273662,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_hj/hj.pdf",
+      "source_sha256": "8c442e17143b1077048e53c4f5da36181923639054977fa9024d8d43a2235bc7",
+      "source_bytes": 156040,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_jl/jl.pdf",
+      "source_sha256": "d7e7c5b3869b93ec974730e4b337042bbecfbf9ce7c09f20ec3fdf8e245a51b8",
+      "source_bytes": 1060984,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_mas/mas.pdf",
+      "source_sha256": "936aa08026b2683b8889419e9f7364d18ed2f194804d6d99710a26b62bbd9503",
+      "source_bytes": 192770,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_mel/m.pdf",
+      "source_sha256": "43a29225446315e06ce4271a279136fd98bbd0bef909a46f11afc337965a49c7",
+      "source_bytes": 556488,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_mlk/mlk.pdf",
+      "source_sha256": "676baf2c51e2eccd305d4f316d3550e02075d654ab3d7579288963cab74bf784",
+      "source_bytes": 1014853,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/dl_mr/mr.pdf",
+      "source_sha256": "53b521705eb8ed215f8e91eff7d093fd7e746bff2a616cb3bd75198a6aa13458",
+      "source_bytes": 567772,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/ekt/ekt.txt",
+      "source_sha256": "02e6be6cbc8bf2d5bbdd0756f5f0643e0a9e46ff063bc66116d6a8da27de591f",
+      "source_bytes": 35807,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples.html",
+      "source_sha256": "f2e7b91c73d3822c61e3f36548f31b699557ced5794ce5f01fe0d7d9507182c2",
+      "source_bytes": 461,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine.html",
+      "source_sha256": "af4064fe93cceeae8646e0e9abdd22e5ee9a528a8c7b049a7e4cfe36bd5af25d",
+      "source_bytes": 610,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8.html",
+      "source_sha256": "fe3725a98a8ce97ab65b805db030d18626a501e780597ef08a3da0a83f4e0466",
+      "source_bytes": 7539,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8.kht",
+      "source_sha256": "5412b1596552112edd1690553ca7356b84b51563d6ee04afb18787b84b09e7db",
+      "source_bytes": 394,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52.html",
+      "source_sha256": "2a56cb9fd59ce8e39d17c5496b75140d68d15f558ae0b1ba17a478fa951b46ac",
+      "source_bytes": 8596,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52.kht",
+      "source_sha256": "ea936e93ab49ad6eb5f6eaabb2909bf518072b227411d559cb293a587fb26ec9",
+      "source_bytes": 603,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref.html",
+      "source_sha256": "7225e6dc760badf42d3e1779050675d54aa295143726b100a521f8df0128c7d1",
+      "source_bytes": 7155,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref.kht",
+      "source_sha256": "97d5ee3680610cfdf64a5a5980d587322518c56685c2859780739248e313f41f",
+      "source_bytes": 438,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/cxBNr-c0-qs",
+      "source_sha256": "f74e5a6105d99b21034d89280a3be8f541a1faef66c8898489285ec5bc99a2e0",
+      "source_bytes": 192,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/cxBNr-c0-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/cxBNr-c2-qs",
+      "source_sha256": "a88e7d0dffd00fe6eb34e36b80863ed8d990ad7e054047f157d119a2ce675296",
+      "source_bytes": 192,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/cxBNr-c2-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/cxBNr-c3-qs",
+      "source_sha256": "4b035b23e315f20268e9e6fc13c888a5ef55653addb7a7d8f6d0296a2ac48595",
+      "source_bytes": 192,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/cxBNr-c3-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/cxKhr-c0-qs",
+      "source_sha256": "0c34986f0e056dc896a16d33781093b041ef5acddf7465e188f5caa86c02b1d0",
+      "source_bytes": 406,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/cxKhr-c0-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/cxKhr-c2-qs",
+      "source_sha256": "90a41b8e2416fc124a7c62d06f12f165c9389943a60c226586f719a1e9d14e43",
+      "source_bytes": 397,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/cxKhr-c2-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/cxKhr-c3-qs",
+      "source_sha256": "eba4a4c35cbdb33bc1054de1a87bd8b387a40aa79c1d81f54d1c4eebee8062d2",
+      "source_bytes": 406,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/cxKhr-c3-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8-c0-qs.svg",
+      "source_sha256": "c1507b5d7d46ee75eca6fc79e76b821dfec3bdb70578a76c54f0b686bfad877b",
+      "source_bytes": 12005,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8-c0-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8-c2-qs.svg",
+      "source_sha256": "802bdc9bb9308cf0e2d884a0592b7e2f591c5c6c549b5aee4cc157adf4029fcc",
+      "source_bytes": 12004,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8-c2-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8-c3-qs.svg",
+      "source_sha256": "b8ac5fcc7f2707f5c3827739e1746d2fd069ac31cbebb30a7ce2561d0e92639a",
+      "source_bytes": 12004,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8-c3-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8-q.svg",
+      "source_sha256": "6343468cad7feef3126b9dabfd0c68967fb69ba3038de82420d5c975142d7f0f",
+      "source_bytes": 20912,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8-q.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8-s.svg",
+      "source_sha256": "548f1fa3d11fb3207dfa5ea88543e277bc75696093e63486695707fba9ee6b30",
+      "source_bytes": 12001,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8-s.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8-transparent.svg",
+      "source_sha256": "e261533e4ae95e0d1fb8d19d3166c175e5a9c7f0f6f81a36c23be94effac19a2",
+      "source_bytes": 3661,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/fig8/fig8.svg",
+      "source_sha256": "554a6eb5fa97313618b7f1bd5fd4dc638153a2540faa124d90d37e4c5a3530f0",
+      "source_bytes": 3715,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/fig8/fig8.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/cxBNr-c0-qs",
+      "source_sha256": "790f39f2d49b90f496d8098c2e06e323bef91f441a8ec9eba62f29c64998bec1",
+      "source_bytes": 252,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/cxBNr-c0-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/cxBNr-c2-qs",
+      "source_sha256": "f4b42c1942669e579a2071926d72e19f3afe3c1a73832bf3d371b8d7142d46be",
+      "source_bytes": 252,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/cxBNr-c2-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/cxBNr-c3-qs",
+      "source_sha256": "b65501d89cdb6c13103fceee762e79078dfea3d095fc3817f923d88b04ceb73d",
+      "source_bytes": 252,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/cxBNr-c3-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/cxKhr-c0-qs",
+      "source_sha256": "2697b9b7d1ab84e1b87a4bc7179a66a2f71a4921a284a06c9b07ef35f43aa6f4",
+      "source_bytes": 581,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/cxKhr-c0-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/cxKhr-c2-qs",
+      "source_sha256": "ff155c7424e4aee35d8208159628dd942d6132dd84eae753c19941992f541535",
+      "source_bytes": 569,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/cxKhr-c2-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/cxKhr-c3-qs",
+      "source_sha256": "5a8e164890025320c36ad35afd22f3cc11c75d2c87256b7a1086fc5a77a00cd8",
+      "source_bytes": 581,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/cxKhr-c3-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52-c0-qs.svg",
+      "source_sha256": "bea7dbe35db2d2b802f6d0e00ade0de08f11acf54fb51385b6853f8e4ff1889e",
+      "source_bytes": 19502,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52-c0-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52-c2-qs.svg",
+      "source_sha256": "dfd579186fafdd8a9c39d6967e40b7ff32123d8e55f530b6f3cc6c22fc9095b8",
+      "source_bytes": 18902,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52-c2-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52-c3-qs.svg",
+      "source_sha256": "8f442a09ff16499075dc5db542051c69e215607159b902e5e6b2821f5e6666ea",
+      "source_bytes": 19516,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52-c3-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52-q.svg",
+      "source_sha256": "0b8e8f6b4b547c9a7a06aac4e3aa4c87fb41cb0b73bb0b5e1bc0b9588642a270",
+      "source_bytes": 29792,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52-q.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52-s.svg",
+      "source_sha256": "a1b4f3005d627030baa8e3ee6d8bae61935dc8c9735db83d355bcad20567f28a",
+      "source_bytes": 19498,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52-s.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52-transparent.svg",
+      "source_sha256": "25a926a072a7ecb74a31aac89f82a736152f06c7ae55b47694533cf3f0680b21",
+      "source_bytes": 4535,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/k52/k52.svg",
+      "source_sha256": "1481e99f33a29d8f256e3b0a2964423dd94453749a090f6898cee909071d26cd",
+      "source_bytes": 4589,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/k52/k52.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/cxBNr-c0-qs",
+      "source_sha256": "7c6474d4cb9fa441cfa6c68f798fee557fef3446b13674afebd564c6251ff4e9",
+      "source_bytes": 180,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/cxBNr-c0-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/cxBNr-c2-qs",
+      "source_sha256": "bf1937c4cd3d2c7014e2f76adb6e093bd51006da32562d561e9aa29787d12e35",
+      "source_bytes": 180,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/cxBNr-c2-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/cxBNr-c3-qs",
+      "source_sha256": "8f0e8fb5b26c98758727954b7deab6251a1f37a731a95050165a7c1b4a552494",
+      "source_bytes": 180,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/cxBNr-c3-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/cxKhr-c0-qs",
+      "source_sha256": "e54b889ff1b89411762d291963d85fce3e850c905774d6c967144f8b59365a9e",
+      "source_bytes": 332,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/cxKhr-c0-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/cxKhr-c2-qs",
+      "source_sha256": "649d00a6c8ea42af1e8ee2eade427d18f7c814bd4a592025ff76417e678a3a6a",
+      "source_bytes": 326,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/cxKhr-c2-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/cxKhr-c3-qs",
+      "source_sha256": "31d6725cdd5b85bc8a45f7bef23ee36d291da81a3af1a993c6dd09c24c544b39",
+      "source_bytes": 332,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/cxKhr-c3-qs"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref-c0-qs.svg",
+      "source_sha256": "1b3c4c93a19edd640cbec31b6e510cfac7441a6bfadea8e66e73c9ccea8759d7",
+      "source_bytes": 9845,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref-c0-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref-c2-qs.svg",
+      "source_sha256": "ce37984fbeadf6fbc1e5c2ddb3e02c22b679a3b5e34a503bee11f8f5bf7cd956",
+      "source_bytes": 9847,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref-c2-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref-c3-qs.svg",
+      "source_sha256": "038674e48dd757d67bcdfe2a28cdf044efb7687c50fc783ac4fbdbab1ffab1ad",
+      "source_bytes": 9849,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref-c3-qs.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref-q.svg",
+      "source_sha256": "0f232c16c3efbb5f3f92afc39065142efc70b05b23665d6125c3e6789134db9d",
+      "source_bytes": 16744,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref-q.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref-s.svg",
+      "source_sha256": "fc42c7f570fd07933b30cfb49c942b8331a9b80edaf99c9ba1a4ee0cda173f01",
+      "source_bytes": 9841,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref-s.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref-transparent.svg",
+      "source_sha256": "3731dd24b53e4cf683375fef9435321fe6400a6b0f0535544d5b50b7d3dd4ab6",
+      "source_bytes": 3157,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/fld/examples/mine/tref/tref.svg",
+      "source_sha256": "978d038032f6cdf8888e172027df4beb94f81062307b5b6fc607f9f9a7d3cea0",
+      "source_bytes": 3211,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/fld/examples/mine/tref/tref.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/cmy26.pdf",
+      "source_sha256": "305b30bd675f6de4ec81764dadd2ea0b3eb55328c7478db568fd5a56b619c194",
+      "source_bytes": 1058183,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/ef17.pdf",
+      "source_sha256": "3e0bde7c83d20f39d499a17f5a05aec84adffac0c920b937d3e9790476565921",
+      "source_bytes": 160666,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/ekt.pdf",
+      "source_sha256": "8540d8d9bc727f3d1b2f71663542f7c8a57c3d66cbe5b214dcc0ffefb9638778",
+      "source_bytes": 209207,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/gghp.pdf",
+      "source_sha256": "caf960c87fe28a042f3f10e2672a22801f85b8f9980f931219284a76e845257b",
+      "source_bytes": 647529,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/ks18.pdf",
+      "source_sha256": "271388993852f1ed2493689d84f4793fc2c63731cfdb29ba9961e14d8efa47da",
+      "source_bytes": 720026,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/ks21.pdf",
+      "source_sha256": "ab7c0995d2e8d088416f4f04f7365c9bb39729fc1aa9688f517259320d8bbfd8",
+      "source_bytes": 259975,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/kup15.pdf",
+      "source_sha256": "eb6cf9592b710e6c393c319c22c1c2f6d5b8dedd70f8fe71c77caf70fab3972e",
+      "source_bytes": 389329,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/prz04.pdf",
+      "source_sha256": "eb814818a13607423761ec67d15e882cd285cabf09002343a5caeea8d3da3038",
+      "source_bytes": 6190,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/sik24.pdf",
+      "source_sha256": "24cbf9da4f3cac3abd1ed970e383d91f25801a181fe92722ea4750ed8efd62da",
+      "source_bytes": 501484,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/watson_ms.pdf",
+      "source_sha256": "b26b833486b89f9fe74a19daba7036c26b1a7bc66b72968390699d6552ad94f1",
+      "source_bytes": 418089,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/jt2lit/dl/x1707.pdf",
+      "source_sha256": "665f20be74f1c588ff433bf02430934c3d33fb2412abb935dc9a1f379e562399",
+      "source_bytes": 313095,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/allpages.json",
+      "source_sha256": "5ebd2b9141f1bdca32b41c2a27902191c668ecac48452f2dfedc18dbb94da09c",
+      "source_bytes": 25475484,
+      "handoff_action": "not_copied_large",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/bracket.py",
+      "source_sha256": "e33c5884991723e1a0277ebdfc6a4070018bcd4a5626c1ce318cc9f9b6c654af",
+      "source_bytes": 2711,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/check_trefoil.py",
+      "source_sha256": "2ab299f7005aabc163877703652996b581dbc5579d58a35dc7fa2ab843b57543",
+      "source_bytes": 1004,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/combine.py",
+      "source_sha256": "1f55a47df8eeebd17be94fefad9a374031bc4ae994629ab6a5b11fdc4b88370e",
+      "source_bytes": 9253,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/combined.json",
+      "source_sha256": "ce4efd9480bb3cf6eeb9b02d518aaac9b249721b9388848a33cbcd8285b0ae2b",
+      "source_bytes": 2452533,
+      "handoff_action": "third_party_derived_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/finalize.py",
+      "source_sha256": "8eaaa31982ececade81257984935df2f113b253a550428225522961c752be1ac",
+      "source_bytes": 6989,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/khtparse.py",
+      "source_sha256": "f7b8438b5ae750ac3d7ea881e436dc681dc6384da23bde1fb0b3c1b851ebca92",
+      "source_bytes": 6894,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/page2txt.py",
+      "source_sha256": "a8e3c046e1812225773eca5e3a1406e9717c9f5899a2b0483d7e680e2b2f3182",
+      "source_bytes": 428,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/parse.py",
+      "source_sha256": "c0ee80e01ee0577740bcc778598f1090f2b275a19601b62147fbdb08cb43f708",
+      "source_bytes": 7589,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/survey.py",
+      "source_sha256": "57ab8bccace26db8f7fcf1c25d066eef4daf31a272886151fa19f04bda7ade72",
+      "source_bytes": 1091,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l1/check_b3.py",
+      "source_sha256": "382948d7a9fb501e65988c0acd7eeafbb9b76491264e0367e74c1a262697a2e2",
+      "source_bytes": 1435,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l1/check_b3.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l3/check.py",
+      "source_sha256": "9d26c41c8858f4fabace22626375e2fa7843caec57bac84298d8231775d257be",
+      "source_bytes": 1799,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l3/check.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/clif.py",
+      "source_sha256": "e0a9a2ef45ae18be5172d88a1970cc62ba042c1cbb111c276f704474145b31cf",
+      "source_bytes": 1184,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/clif.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/cong.py",
+      "source_sha256": "15960f5829fae8584f0ae2754d368344c821607df7556effd5b8bed4ed83d977",
+      "source_bytes": 3431,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/cong.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/corr.py",
+      "source_sha256": "ec25f7d24362c3af85457801fea25fa417ece1ba0c9df76f845abd73b09a7c0d",
+      "source_bytes": 1198,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/corr.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/corr2.py",
+      "source_sha256": "d63331cb52b2cbf62e6c430fb4ea270dfa0466be2bb3513d8f69a86ea349791c",
+      "source_bytes": 1133,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/corr2.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/data1.json",
+      "source_sha256": "d93053d7a1d2b5f57c1df25070d02dd368a5ad570ffbea2e4263e70f25e976e0",
+      "source_bytes": 57368,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/data1.json"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/data2.json",
+      "source_sha256": "705f3a27fbc7af4dd094cddf8d98afe9e6d623174685f0860269ab8f0b81f640",
+      "source_bytes": 276149,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/data2.json"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/omega.py",
+      "source_sha256": "61df998ae5af7b788353e2cba7a79b0bebdc1e19c02a338f1c606bdabe6c3340",
+      "source_bytes": 611,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/omega.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/out.json",
+      "source_sha256": "be89fc12f528cb2709094a1b2aa8c7412f312624945849fb5da11eefaddf935f",
+      "source_bytes": 12077,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/out.json"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/out.py",
+      "source_sha256": "867c773a797fe78e41e058c14660e4221e9d8d873e0272bdf7faff1e0c7ebe2b",
+      "source_bytes": 12568,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/out.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/test.py",
+      "source_sha256": "8e499e6c459873645d610502e86caa8e5329a18bee15f4c9bbc6a2ea93090725",
+      "source_bytes": 1204,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/test.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/l4/torus.py",
+      "source_sha256": "70026661b13ea6d801e5f1df729f72df95da81f42a47aa33f450b0cdae7f3c63",
+      "source_bytes": 693,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/l4/torus.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/lit/a/cheng.txt",
+      "source_sha256": "ec48fb9f0edca93248fc064b13d0223e0144dabeed11b8d82b1a52d8ade655bb",
+      "source_bytes": 52954,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/lit/b/kauffman.txt",
+      "source_sha256": "8ccd6396e30941b11338412f9476a452bbbcabdbaba270fe10aba51c7a846ede",
+      "source_bytes": 85910,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/lit/c/djk.pdf",
+      "source_sha256": "d7432effc51adcc6558b812f479bbafafd57a0125f8d7ebe718bbfa3c3b25a6c",
+      "source_bytes": 244896,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/lit/d/fikm.pdf",
+      "source_sha256": "ad59ace54d3ad6fb630eee8376c87a34af0340fe5a469daba97d53080ba3fa53",
+      "source_bytes": 774711,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/lit/kwz_strong/kwz_strong.pdf",
+      "source_sha256": "a592761ed3712e2fdc1b68ecf2632d5b850102395214108a4a9e14d3ebd3e972",
+      "source_bytes": 1326349,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/mn_pdf/mn.pdf",
+      "source_sha256": "fc9985b9ec92b4441ba51bfe43cfc0fa3c6ec9cbb508ca4b72cd43d80fdbaee9",
+      "source_bytes": 184149,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/collari2606/paper.pdf",
+      "source_sha256": "c9e3a9642e76537151e55eb97f969814ce63d264f2442e47e669aea131f9de74",
+      "source_bytes": 889585,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/cork2601/paper.pdf",
+      "source_sha256": "fdc9b84b68ac03b86d5a53e19a5d1037286e8168ecac156b43d19a70a038a8cd",
+      "source_bytes": 5119247,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/ekt/paper.pdf",
+      "source_sha256": "8540d8d9bc727f3d1b2f71663542f7c8a57c3d66cbe5b214dcc0ffefb9638778",
+      "source_bytes": 209207,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/glv1807/paper.pdf",
+      "source_sha256": "68fbfb0d9dce12b530299fef13e4548b5ebea1f2382fed07a2304799de43fbb6",
+      "source_bytes": 1011322,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/kwz2104/paper.pdf",
+      "source_sha256": "a592761ed3712e2fdc1b68ecf2632d5b850102395214108a4a9e14d3ebd3e972",
+      "source_bytes": 1326349,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/kwz2602/paper.pdf",
+      "source_sha256": "8cfa1c0d4d8361339d87af5c4877fe2e3db56f4b4829869d483a56600d35911d",
+      "source_bytes": 1696421,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/ls2203/paper.pdf",
+      "source_sha256": "9b6688685211ab22cb5f5b6c01bcad7d16055956db164d80d8cb42f9e163bebf",
+      "source_bytes": 526067,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/molt2108/paper.pdf",
+      "source_sha256": "2db286f5379e3726206e7decec271256a792b0777a919448bebad8f0f9ee84de",
+      "source_bytes": 669471,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/sikora2005/paper.pdf",
+      "source_sha256": "823de522eec58808db966d83aef5489b59a4aa3545a678b3a29de491e5cf8296",
+      "source_bytes": 1385158,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/wat0910/paper.pdf",
+      "source_sha256": "b23debecf5119e3795a80f8b931d784c059d08430d553589ce2d0864bded50bc",
+      "source_bytes": 164261,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/papers/watson1311/paper.pdf",
+      "source_sha256": "e43233b287e151fbab96a5ccfd2b95f679edffbeec70b97c2cc3ecd955c7f8d9",
+      "source_bytes": 367163,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples.html",
+      "source_sha256": "5b6e23d6c1d2e2c2f0c814116fd907651b66a956f41a9a9ac58c97da71ee7645",
+      "source_bytes": 459,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/rot.py",
+      "source_sha256": "57cae864d59f32372834b3c1705a07ed556286eca88ef82563c5612df5b500d7",
+      "source_bytes": 1398,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/rot.py"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot.html",
+      "source_sha256": "9fa519b6713260395c2fc0dbe1db63c7a1ff08d99cfe21ee6ebffde43905cba7",
+      "source_bytes": 693,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1.html",
+      "source_sha256": "060a895e16bcef865eee955317fcb5d8181ded27057cdb84705a942124fb2267",
+      "source_bytes": 3158,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1.kht",
+      "source_sha256": "a9c6dfc38247b5e40237606962c7a7f8a308921e96796bb986beb2ac330b6e93",
+      "source_bytes": 60,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21.html",
+      "source_sha256": "3a8767c1287071252b48c6c525e0c8cb511cc275a152e88cc8b3041cfb1dd19d",
+      "source_bytes": 3255,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21.kht",
+      "source_sha256": "df8a9cef2a940fa85305c2e6f155a8967d49b487bd95d9d16a94a7336433941c",
+      "source_bytes": 153,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig0.kht",
+      "source_sha256": "ca5e56a7857d1f3cd6bc97696901f1dc07e18a06612ea92afe94c71ee7de3c59",
+      "source_bytes": 120,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig0.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1.html",
+      "source_sha256": "62cc1abe725b3fd31838c7f93b45d2f76e7fa2436de5ef99e8181e9ab180c839",
+      "source_bytes": 3941,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1.kht",
+      "source_sha256": "0b01a8c4e255edea3d1bc935087880bfc818be51a9b7522d8c8cc3a4ad4a4a30",
+      "source_bytes": 121,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21.html",
+      "source_sha256": "839c7ea4f50b9853a79df11314b77477061df8a3b088fd02d53f0b6fb7cffad3",
+      "source_bytes": 4098,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21.html"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21.kht",
+      "source_sha256": "1366572b64264678456efbca87cacc622dd1c9b1e70aa1a1c440f8418232f3d9",
+      "source_bytes": 274,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21.kht"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1/cxBNr-c2",
+      "source_sha256": "147abd542e136b6bb1de0e9d303fee0d3d686796dfbf66504a204ff8def3f097",
+      "source_bytes": 181,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1/cxBNr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1/cxKhr-c2",
+      "source_sha256": "9264705e923c009b1d562c4092b5ff5e664c69e5b5945308b83a4c81993605f4",
+      "source_bytes": 327,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1/cxKhr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1/k31_orig1-c2.svg",
+      "source_sha256": "eb52ec9d1871a7d28415c5d6945509d732f0fe0e3d8eeec86107c015b8636cd5",
+      "source_bytes": 9851,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1/k31_orig1-c2.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1/k31_orig1-transparent.svg",
+      "source_sha256": "45d05dbb9a5f893eedb8d1d0408ff387316947e006763156ebf94ce738c7fa3d",
+      "source_bytes": 9794,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1/k31_orig1-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_orig1/k31_orig1.svg",
+      "source_sha256": "9e38c41652366259cde3d99d8058811ea393863382a4c0860ed087de5c327a33",
+      "source_bytes": 9848,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_orig1/k31_orig1.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21/cxBNr-c2",
+      "source_sha256": "36b469a340731dfbb597d05952f2b30bf3d70a68322d4d58d09f4571357921c2",
+      "source_bytes": 181,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21/cxBNr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21/cxKhr-c2",
+      "source_sha256": "2b5f4d77346a5b096ec0716c00f9a5f05c90070207ea75012819c2e905bef46d",
+      "source_bytes": 327,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21/cxKhr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21/k31_rot21-c2.svg",
+      "source_sha256": "ed348006e7ffa4c52d9a4494e5c11e76b5ed54937e5825ea5efac8a331eeee41",
+      "source_bytes": 19132,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21/k31_rot21-c2.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21/k31_rot21-transparent.svg",
+      "source_sha256": "19130dc087b728446dc05c356a2128e86f7d04ccaabc5311f7f76cd8fb8a82cb",
+      "source_bytes": 19075,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21/k31_rot21-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k31_rot21/k31_rot21.svg",
+      "source_sha256": "d74da5568ea91a808b5a1592cc6827e4a3680d4c0053014e068c12dabc008046",
+      "source_bytes": 19129,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k31_rot21/k31_rot21.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1/cxBNr-c2",
+      "source_sha256": "a699a189c97f9d2f268ceba206ca3d24125ee82be5b81548e0c4d1523ebf6265",
+      "source_bytes": 305,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1/cxBNr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1/cxKhr-c2",
+      "source_sha256": "e0c531308e1429ca4254c660e9fdc3e6b487c3ac96f982e4f9b13f9dad21829f",
+      "source_bytes": 638,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1/cxKhr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1/k942_orig1-c2.svg",
+      "source_sha256": "9814a2c9177a39539e38b7ecbbcbe4897235860f0c6be138fe830bc3c457a671",
+      "source_bytes": 29775,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1/k942_orig1-c2.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1/k942_orig1-transparent.svg",
+      "source_sha256": "621ebd895426ffa452d541f319517220e4003fef0a65e4c8dcba5fb84a9ac4f9",
+      "source_bytes": 29718,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1/k942_orig1-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_orig1/k942_orig1.svg",
+      "source_sha256": "481784da9a0da68f0fb79cd4458fef8b20b873219e66b9051a68cb3cfdce9962",
+      "source_bytes": 29772,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_orig1/k942_orig1.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21/cxBNr-c2",
+      "source_sha256": "9a22fc46d6df4d82ed0a8ec245017d12a2e1b3edfa1ddfa4f21a988fb5959c89",
+      "source_bytes": 305,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21/cxBNr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21/cxKhr-c2",
+      "source_sha256": "55af94650768f23e5f4546ff97b1f3689b2cfad05e67bd134d8b71d9685ed334",
+      "source_bytes": 638,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21/cxKhr-c2"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21/k942_rot21-c2.svg",
+      "source_sha256": "e54a77e863cebf687ceda3ee41e05c4b076d663dd37730f5dea6dd7ffe88f864",
+      "source_bytes": 47641,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21/k942_rot21-c2.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21/k942_rot21-transparent.svg",
+      "source_sha256": "900f278d4e697a0727b07e975d33ee9df26e6b918aa60267451f82c554d480d9",
+      "source_bytes": 47584,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21/k942_rot21-transparent.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rot/examples/rot/k942_rot21/k942_rot21.svg",
+      "source_sha256": "42316c7241770deb909d1658d33fd07ffb94d922955cc9f21650c8b50947b699",
+      "source_bytes": 47638,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/scratchpad-7610ac96/rot/examples/rot/k942_rot21/k942_rot21.svg"
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/stress/ck06/ck06.pdf",
+      "source_sha256": "757942bc8c280c30a2d6acabb3349c6b73d8666821b45b0dd015787713367924",
+      "source_bytes": 207983,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/stress/code/coincidence.py",
+      "source_sha256": "6c86790d01957cb64b620262ab911d7745768af96702a1f9e6a94fe84336f215",
+      "source_bytes": 5034,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/stress/hlp/hlp.pdf",
+      "source_sha256": "18bb59cd7c2646c1ba360079d698141f011d51daf8712724f027334f83e0473b",
+      "source_bytes": 314329,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/stress/kwz22/kwz22.pdf",
+      "source_sha256": "f21321a72853928490c2d2f1ecab6b85280b48bbd94b4622c4179b262ba9579c",
+      "source_bytes": 1137748,
+      "handoff_action": "third_party_not_copied",
+      "public_path": null
+    },
+    {
+      "source_alias": "<scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/synth/residue_test.py",
+      "source_sha256": "9817bc0a96c2d0cf3d6a590497de73500278546edd03269a1c1f17593933e3c3",
+      "source_bytes": 2939,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    },
+    {
+      "source_alias": "~/Downloads/CLAUDE_JONES_RESEARCH.md",
+      "source_sha256": "4842ffafe8ad89b9d234e7a41612e3fedbc57a8647eb78cd21f82717429e717a",
+      "source_bytes": 187947,
+      "handoff_action": "copied",
+      "public_path": "archive/handoff/copied/downloads/CLAUDE_JONES_RESEARCH.md"
+    },
+    {
+      "source_alias": "~/Downloads/jones-unknot-proof-audit.pdf",
+      "source_sha256": "14c2be2e6127fbb7f873a642846b189c734bc1e3423cec74e9c3f3d6cc58c6b9",
+      "source_bytes": 216257,
+      "handoff_action": "not_copied_already_in_codex_inventory",
+      "public_path": null
+    }
+  ]
+}

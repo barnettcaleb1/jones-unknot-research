@@ -148,4 +148,4 @@ new work, read its named proof plus the latest audit/STOPPED notes first.
 - [twist_formula.txt](../../archive/work/research34/twist_formula.txt)
 - [verify_all_integer_formula.py](../../archive/work/research34/verify_all_integer_formula.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

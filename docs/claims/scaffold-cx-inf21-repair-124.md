@@ -27,4 +27,4 @@ Repair the INF21 joint defect by sequential spherical-tangle composition, or by 
 - [paired_defect_design_note.md](../../archive/work/global_design/paired_defect_design_note.md)
 - [paired_defect_determinant_check.json](../../archive/work/global_design/paired_defect_determinant_check.json)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

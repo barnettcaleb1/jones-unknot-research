@@ -39,4 +39,4 @@ Source: work/proof10/quantum/root_reflection_obstruction.txt.
 
 - [root_reflection_obstruction.txt](../../archive/work/proof10/quantum/root_reflection_obstruction.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,11 @@
+n=3: BB05 reduced is a representation: True;  BB05 reduced(s_i^+-1) == D * R(s_i^+-1)^T * D, D = diag((-1)^k): True
+n=4: BB05 reduced is a representation: True;  BB05 reduced(s_i^+-1) == D * R(s_i^+-1)^T * D, D = diag((-1)^k): True
+n=5: BB05 reduced is a representation: True;  BB05 reduced(s_i^+-1) == D * R(s_i^+-1)^T * D, D = diag((-1)^k): True
+BB05 reduced, Phi0 in B4: I at t=-1: True ; not I at 2, 1/2, 3, 1/3: True
+BB05 reduced: rho(X)-I == (1+t^3)(rho(D3^2)-I): True ; with (1+t^-3): False
+BB05 reduced: rho(Delta_3^2) in B3 = [[{3: 1}, {}], [{}, {3: 1}]]
+U: rho(Delta_3^2) in B3 eigen-check: U(D3sq)-I times (t^3-1)^-1 ... entries: [[{1: -1, 3: 1}, {1: 1, 2: -1}, {2: 1, 3: -1}], [{0: 1, 1: -1}, {0: -1, 1: 1, 2: -1, 3: 1}, {2: 1, 3: -1}], [{0: 1, 1: -1}, {1: 1, 2: -1}, {0: -1, 2: 1}]]
+n=4: space of C with C R(s_i)(1/t0) = R(s_i^-1)(t0) C for all i (t0=5/3) has dimension 1
+      that C is invertible: True
+n=5: space of C with C R(s_i)(1/t0) = R(s_i^-1)(t0) C for all i (t0=5/3) has dimension 1
+      that C is invertible: True

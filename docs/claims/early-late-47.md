@@ -39,4 +39,4 @@ File: research52/color_bootstrap.txt section5; primary lift arXiv:2603.01619.
 
 - [color_bootstrap.txt](../../archive/work/research52/color_bootstrap.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

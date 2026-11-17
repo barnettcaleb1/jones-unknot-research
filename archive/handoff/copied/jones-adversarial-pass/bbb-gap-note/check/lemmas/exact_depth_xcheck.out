@@ -1,0 +1,5 @@
+claimed depth 1: length 76, exact depth 1, identity at t=-1: True, at t=2: False
+claimed depth 2: length 360, exact depth 2, identity at t=-1: True, at t=2: False
+claimed depth 3: length 322, exact depth 3, identity at t=-1: True, at t=2: False
+claimed depth 4: length 980, exact depth 4, identity at t=-1: True, at t=2: False
+claimed depth 5: length 966, exact depth 5, identity at t=-1: True, at t=2: False

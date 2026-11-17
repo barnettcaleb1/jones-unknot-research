@@ -48,4 +48,4 @@ whitehead_injectivity_geometry_audit.txt, whitehead_exact_jet_filtration.txt.
 - [whitehead_exact_jet_filtration.txt](../../archive/work/quotient17/whitehead_exact_jet_filtration.txt)
 - [whitehead_injectivity_geometry_audit.txt](../../archive/work/quotient17/whitehead_injectivity_geometry_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

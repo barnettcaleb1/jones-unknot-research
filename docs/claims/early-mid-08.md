@@ -54,4 +54,4 @@ homology_brunnian_audit.txt, adjacency_amplification_braid_audit.txt.
 - [brunnian_reduction.txt](../../archive/work/cancellation19/brunnian_reduction.txt)
 - [homology_brunnian_audit.txt](../../archive/work/cancellation19/homology_brunnian_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

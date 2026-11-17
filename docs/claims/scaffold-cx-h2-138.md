@@ -26,4 +26,4 @@ K(m,n)=closure(A0 h sigma2^(2m+1) h sigma2^(2n) B0), with literal EKT inputs T=3
 
 - [c4_two_site_candidate.md](../../archive/work/global_design/c4_two_site_candidate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

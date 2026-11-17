@@ -1,0 +1,8 @@
+% b7_2-1
+s.r1.y0.y0.y0.x1.u2
+,1
+% Symmetry 1 of a 2-bridge knot corresponding to the fraction 7/2 = [3,2] (Sakuma, Prop. 3.6, symmetry 1).
+% Simplifies with options '-qs' to r1.y0.r2.y1.y1.y0.y0.y1.y1.y0.y0.y1.y1.y0.y0.y1.u2.y0.y0.y0.y0.y0.y0.y0.y0.x1.x0
+% Simplifies with options '-qs' to r0.x1.r1.x2.y1.y0.y0.y1.y1.y0.y0.y1.y1.y0.x2.x1.u0.y0.x1.x0.y1.y1.y1.y1.y1.y1.y1
+% Simplifies with options '-qs' to r1.y0.r1.x2.y1.y0.y0.y1.y1.y0.y0.y1.y1.y0.y0.y1.u2.x1.x0.y1.y1.y1.y1.y1.y1.y1.y1
+% Simplifies with options '-qs' to r0.x1.r2.y1.y1.y0.y0.y1.y1.y0.y0.y1.y1.y0.y0.y1.u2.y0.y0.y0.y0.y0.y0.y0.y0.x1.x0

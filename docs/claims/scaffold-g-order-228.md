@@ -28,4 +28,4 @@ At each fixed n, a finite FDTC upper bound on ALL Jones-unit knot braids would i
 - [order_gate.md](../../archive/work/global_design/order_gate.md)
 - [order_tl.md](../../archive/work/global_design/order_tl.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

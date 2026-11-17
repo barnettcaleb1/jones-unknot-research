@@ -1,0 +1,10 @@
+basis: [((1, 2), (3, 4), (5, 6)), ((1, 2), (3, 6), (4, 5)), ((1, 4), (2, 3), (5, 6)), ((1, 6), (2, 3), (4, 5)), ((1, 6), (2, 5), (3, 4))]
+delta=3/2    det==formula: True  inertia(+,-)=(5, 0)
+delta=5/4    det==formula: True  inertia(+,-)=(4, 1)
+delta=7/5    det==formula: True  inertia(+,-)=(4, 1)
+delta=2      det==formula: True  inertia(+,-)=(5, 0)
+delta=1/2    det==formula: True  inertia(+,-)=(2, 3)
+delta=6/5    det==formula: True  inertia(+,-)=(4, 1)
+delta=13/10  det==formula: True  inertia(+,-)=(4, 1)
+delta=6/5: block == delta*(G2xG2): True;  block == (G2xG2)/delta: False
+delta=3/2: block == delta*(G2xG2): True;  block == (G2xG2)/delta: False

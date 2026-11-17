@@ -37,4 +37,4 @@ Files research43/divisibility.txt, verify_ef_growth.py, ef_quantitative_check.js
 - [ef_quantitative_check.json](../../archive/work/research43/ef_quantitative_check.json)
 - [verify_ef_growth.py](../../archive/work/research43/verify_ef_growth.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

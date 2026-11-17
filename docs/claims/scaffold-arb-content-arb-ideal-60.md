@@ -26,4 +26,4 @@ Integral state ideal I(v)=(a,c) is preserved by X,Y; I(v*w) is contained in I(v)
 
 - [arborescent_resonance_divisor.md](../../archive/work/theory_restart/arborescent_resonance_divisor.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

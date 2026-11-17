@@ -26,4 +26,4 @@ For r marked identity two-string boxes, the joint kernel of their strand-color d
 
 - [c4_marked_coloring_gate.md](../../archive/work/global_design/c4_marked_coloring_gate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

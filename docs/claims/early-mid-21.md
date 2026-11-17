@@ -41,4 +41,4 @@ quantum_floer_route.txt; verify_quantum_floer_polynomials.py.
 
 - [quantum_floer_bridge_audit.txt](../../archive/work/research23/quantum_floer_bridge_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

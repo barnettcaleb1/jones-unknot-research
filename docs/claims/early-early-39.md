@@ -42,4 +42,4 @@ unreduced_lee_check.txt; generic/ainfinity_extension_audit.txt.
 
 - [algebraic_realization.txt](../../archive/work/proof13/homology/algebraic_realization.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

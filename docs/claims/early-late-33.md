@@ -41,4 +41,4 @@ proof12/braid/all_color_collision_proof.txt.
 - [peripheral_collision.json](../../archive/work/research46/peripheral_collision.json)
 - [verify_peripheral_collision.py](../../archive/work/research46/verify_peripheral_collision.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

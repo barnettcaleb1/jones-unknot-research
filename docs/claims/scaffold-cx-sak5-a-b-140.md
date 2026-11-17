@@ -26,4 +26,4 @@ Zero-framed Sakuma links of kappa_n=[2,-4n,2,2n], at n=5,10,15, both specified i
 
 - [c2_sakuma_recipe.md](../../archive/work/global_design/c2_sakuma_recipe.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

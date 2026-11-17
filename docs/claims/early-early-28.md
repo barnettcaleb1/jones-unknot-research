@@ -36,4 +36,4 @@ Source: work/proof10/tangle/unit_box_classification_audit.txt.
 
 - [unit_box_classification_audit.txt](../../archive/work/proof10/tangle/unit_box_classification_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -56,4 +56,4 @@ work/research30/braid_global.txt.
 - [curve_projector.txt](../../archive/work/research29/curve_projector.txt)
 - [braid_global.txt](../../archive/work/research30/braid_global.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

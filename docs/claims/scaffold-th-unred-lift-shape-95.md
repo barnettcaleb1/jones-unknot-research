@@ -26,4 +26,4 @@ OverF2, unreduced dot x satisfiesx²=Hx, and reduced D_i lifts as x+y_i, so DS=S
 
 - [unreduced_shape_referee.md](../../archive/work/theory_restart/unreduced_shape_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

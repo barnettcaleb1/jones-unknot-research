@@ -1,0 +1,877 @@
+> Public archival edition, prepared 17 November 2026. Historical AI-generated research/review record; not external specialist review. Private instructions and correspondence discussion have been removed with markers, and local paths anonymized. Mathematical claims and verdicts remain historical and may be superseded by the current ledger. No research or computation was rerun for this edition.
+
+# Literature sweep, three tracks not saved elsewhere: KWZ facts, Jones cosmetic surgery, satellite defect
+
+- Workflow: wf_07ca9c49-f82 (jones-lit-sweep-wf_07ca9c49-f82.js)
+- Session: bridge session (Claude-Codex integrator)
+- Launched (script written): 2026-11-02 22:49 local; journal last written: 2026-11-02 23:45 local
+- Agents started: jones-cosmetic, ideas, kwz-facts, detection-classes, satellite-defect, bridges
+- Results extracted here: kwz-facts, jones-cosmetic, satellite-defect
+- Started but returned no result: ideas
+- Context: Launched 2 Nov 22:49. Tracks 'detection-classes' and 'bridges' of the same workflow are saved verbatim in collab/lit/raw/lit-sweep-partial.json and are not repeated here; 'ideas' returned nothing.
+- Provenance: contemporaneous agent outputs recorded in the workflow journal (runtime state, not copied). Text below is verbatim except formatting (JSON fields rendered as markdown), em dashes replaced by ' - ', email addresses redacted, and home-directory paths shortened to ~ (session scratchpad roots to <scratch>). These are internal AI agent outputs, not external review; statuses are as the agent stated them at the time and may be superseded by later board entries.
+- Editorial note: a personal download-assistance suggestion was removed; mathematical content is unchanged.
+
+
+## Agent: kwz-facts
+
+
+### track
+
+KWZ Khovanov immersed multicurves: exact technical facts for Lemma Q (U5), with a KWZ-language restatement and a data screen
+
+### findings
+
+  -
+    - claim: PAIRING THEOREM AND CONVENTIONS.
+- KWZ19 Thm 1.9 (Geometric Pairing Theorem), up to bigrading shift:
+  - BN~(L;k) = HF(BN~(mT1;k), BN~(T2;k)) as k[H]-modules.
+  - Kh~(L;k) = HF(Kh~(mT1;k), BN~(T2;k)).
+  - Kh(L;k) = HF(Kh(mT1;k), BN~(T2;k)).
+  - mT1 is the mirror of T1. The reduction point of L is the identified special ends * of T1 and T2.
+- Oriented form (Thin links Thm 5.8, over F, relatively bigraded):
+  - Kh~(L) (x) V = HF(Kh~(T1*), Kh~(T2)), with V = delta^{1/2}q^{1}F + delta^{1/2}q^{-1}F.
+  - Kh~(L) = HF(Kh~(T1*), BN~(T2)).
+  - T1* is the mirror of T1 with all orientations reversed.
+- Thin links Lemma 5.9: Kh~(T*) = m(Kh~(T)) up to shift. Here m fixes the punctures pointwise, fixes the parametrizing arcs setwise, and swaps front and back. It acts on slopes by s -> -s (Def 1.11).
+- Strong-inversions eq. (1): Kh~(K) = HF(m(BN~(T1)), Kh~(T2)), with T(p/q) = Q_{-p/q} u T. So the closure at slope s is computed as HF(a(s), Kh~(T)) with a(s) = BN~(Q_s).
+- Naturality under the mapping class group (KWZ19 Thm 1.13) is proven over F only.
+- Over F, reduced Kh does not depend on the reduction point (Shumakovitch, cited in Cosmetic §4).
+    - source: Kotelskiy-Watson-Zibrowius (KWZ19) arXiv:1910.14584v2; KWZ Thin links and Conway spheres arXiv:2105.06308v3; KWZ Khovanov homology and strong inversions arXiv:2104.13592 (Open Book Ser. 5 (2022) 223-244, DOI 10.2140/obs.2022.5.223); Kotelskiy-Lidman-Moore-Watson-Zibrowius (KLMWZ) arXiv:2109.14049 (Math. Ann. 389 (2023) 2903-2930, DOI 10.1007/s00208-023-02697-5)
+    - verified: full_text
+    - relevance: Fixes the probe side for the u=1 X: X(s) = HF(a(s), Kh~(X)). Any argument that twists or uses mapping classes is F-only. Jones is field-independent, so F is enough for Lemma Q.
+    - locator: 1910.14584 Thm 1.9, Thm 1.13; 2105.06308 Thm 5.8, Lemma 5.9, Def 1.11; 2104.13592 §1 eq.(1); 2109.14049 Thm 2.3, §4
+    - node: U5
+  -
+    - claim: DIMENSION FORMULA.
+- KLMWZ Lemma 2.10: let s != r, a_s = BN~(Q_s), and let gamma be rational or special of length l and slope r. Then dim HF(a_s, gamma) = l*Delta(s,r), with Delta(p/q,p'/q') = |qp' - pq'| (Def 2.9).
+- Lengths: l(r_n) = n and l(s_{2n}) = 2n. So for s' != s:
+  - dim HF(a(s'), r_n(s)) = n*Delta;
+  - dim HF(a(s'), s_{2n}(s)) = 2n*Delta.
+- Same slope, quoted from §4 of 2109.14049:
+  - a_s against r_1(s) has dimension 2: 'a figure eight and an arc of the same slope intersect minimally in two points'.
+  - a_s against s_{2n}(s) has dimension 0: 'Special curves s_{2n}(s) intersect a_∞ in more than one point, unless they have slope s = ∞, in which case they are disjoint from a_∞'.
+- 2104.13592 Lemma 2.3 proof: dim HF(a(0), s_{2n}(∞)) = 4n in that paper's notation. Its s_{2n} is the standard s_{4n} (notation clash).
+- DERIVED, not in the source: a_s against r_n(s) for n > 1 also has dimension 2 (two line-crossings per period in the cover).
+    - source: KLMWZ arXiv:2109.14049; KWZ arXiv:2104.13592
+    - verified: full_text
+    - relevance: DERIVED consequence for the u=1 family K'_n = X(eps/2n): dim Kh~(K'_n) = |2nk - eps| + 2|n|*sum(l_j). A Lemma Q counterexample would therefore give V=1 knots whose Kh~ grows linearly in n, with all extra rank Euler-cancelling.
+    - locator: 2109.14049 Def 2.9, Lemma 2.10, §4 (proof of Thm 1.2); 2104.13592 Lemma 2.3 proof
+    - node: U5
+  -
+    - claim: INVISIBILITY OF SPECIALS TO THE SAME-SLOPE CLOSURE.
+- Thin links Lemma 6.10, for linear curves of the same slope:
+  - rational vs special: HF = 0;
+  - rational vs rational, or special vs special: HF != 0, in exactly two consecutive delta-gradings delta(gamma,gamma') and delta(gamma,gamma') - 1.
+- KLMWZ §4 (proof of Thm 1.2): if T(∞) is the unknot, then Kh~(T) = gamma_1 u ... u gamma_m u rho, with each gamma_i special of slope ∞ and rho = r_1(s), s in Z.
+  - m > 0 iff T is nonrational (Thm 2.6).
+  - Thm 2.7 constrains the parity of s.
+- 2104.13592 §3: Kh~(T) 'is homotopic to a multicurve which intersects the arc a(∞) only once'.
+- 2104.13592 Thm 3.1 (computer, knots up to 9 crossings): Kh~(T_{K,h}) = r_1(k) u n*s_2(∞) in its notation, with k in 4Z and n > 0 (Table 1).
+    - source: KWZ arXiv:2105.06308; KLMWZ arXiv:2109.14049; KWZ arXiv:2104.13592
+    - verified: full_text
+    - relevance: This is the exact KWZ form of Claude's C in msg 20261102-224844 §0: Kh~(X) = r_1(k) u {specials of slope mu}. Everything beyond the rational component is invisible to the unknot closure, so Lemma Q is entirely about how the specials pair with the other arcs.
+    - locator: 2105.06308 Lemma 6.10; 2109.14049 §4, Thms 2.6, 2.7; 2104.13592 §3, Thm 3.1, Table 1
+    - node: U5
+  -
+    - claim: DELTA-GRADINGS: a special pairing is never thick on its own.
+- Thin links Def/Lemma 6.7: HF of two linear curves of different slopes is supported in a single delta-grading.
+- 2104.13592 Def 2.2: V_kappa is 4-dimensional, in delta = 0, with q in {-5, -1, +1, +5}.
+- 2104.13592 Lemma 2.3:
+  - HF(a(0), s_2(∞)) = q^0 delta^{-1/2} h^{1/2} V_kappa.
+  - HF(a(0), s_{2n}(∞)) = (+)_{i=1..n} q^{4(2i-n-1)} delta^{-1/2} h^{1/2+2(2i-n-1)} V_kappa.
+  - These hold absolutely if s_{2n}(∞) is symmetrically bigraded (Fig 7: extreme h = ±(2n+1), extreme q = ±(4n+1)).
+- Fig 8 generators: q^5 h^3, q^1 h^1, q^-5 h^-2, q^-1 h^0, all with delta = -1/2.
+- So thickness of a closure comes only from relative delta-offsets between components.
+- Thin links §7.2 / Cor 7.4: tangles with connected alternating diagrams have no special components of slope 0 or ∞ (via Bar-Natan-Burgos-Soto).
+    - source: KWZ arXiv:2105.06308; KWZ arXiv:2104.13592
+    - verified: full_text
+    - relevance: Nothing cancels inside a V_kappa block. Euler cancellation (the B5 gap) can only happen between different blocks or components.
+    - locator: 2105.06308 Def/Lemma 6.7, §7.2, Cor 7.4; 2104.13592 Def 2.2, Lemma 2.3, Figs 7-8
+    - node: U5
+  -
+    - claim: DERIVED: EULER CLASSES IN THE BRACKET MODULE (own algebra from the full-text gradings; not stated in any source).
+- Setup: M = Z[q^±]<[Q_0],[Q_∞]>, q = -A^{-2}, d = q + q^{-1}, psi_s the reduced closure functional, v_∞ = d[Q_0] - [Q_∞] spanning ker psi_∞, and psi_0(v_∞) = d^2 - 1 = q^{-2}(1-q^6)/(1-q^2).
+- Special classes:
+  - chi_q HF(a(0), s_4(∞)) = q^-5 + q^-1 - q - q^5 = q^-5(1+q^4)(1-q^6).
+  - Hence [s_4(∞)] = unit*(1-q^2)(1+q^4)*v_∞.
+  - [s_{4n}(∞)] = unit*(1-q^{8n})/(1+q^2)*v_∞.
+  - [r_1(s)] = unit*[Q_s].
+- Twist fixing ∞: tau[Q_0] = -A^-3[Q_0] - A^-1 v_∞ and tau v_∞ = A v_∞, with eigenvalues -A^-3 and A as in TL_2.
+- Rational defect: [Q_k]^ - [Q_0]^ = unit*(1-(-q^2)^k)/(1+q^2)*v_∞. For k = 4m this is unit*(1-q^{8m})/(1+q^2)*v_∞.
+- This has the same shape as [s_{4m}(∞)]. At the Euler level, a V_kappa-type special equals a signed difference of two rational figure-8s.
+- Consequence: if every special is a V_kappa block and k is in 4Z, then (1-A^4)(1+A^8) divides w.
+    - source: Own derivation; inputs from KWZ arXiv:2104.13592 Lemma 2.3 / Fig 8 (full text)
+    - verified: full_text
+    - relevance: This explains two of the three factors of F = (1-A^4)(1+A^8)(1+A^12) in U5a from curve structure alone. The (1+A^12) factor is not structural. It comes from the t = -1 and t = e^{±i pi/3} evaluations (see the data-screen finding).
+    - locator: 2104.13592 Lemma 2.3; algebra: own
+    - node: U5a
+  -
+    - claim: DERIVED: LEMMA Q IN KWZ LANGUAGE.
+- Setting: X = T_{kappa,h}, with Kh~(X) = r_1(k) u {specials of slope mu}.
+- The flat condition (w = 0, i.e. [X]^ = [Q_0]^, which is Lemma Q's hypothesis) holds iff:
+  - chi_q(kappa(K,h)) = ±q^c (1+q^2+q^4) (1-(-q^2)^k)/(1+q^2), with c the absolutely correct shift; and
+  - for k = 0, iff chi_q(kappa) = 0.
+  - Here kappa(K,h) := HF(a(0), specials) is Watson's invariant (2104.13592 Def 3.4).
+- Under Wat17 Conj 28 = 2104.13592 Conj 3.6, write kappa = (+) h^{a_i} delta^{b_i} V_kappa. Then:
+  - w = unit*(1-q^2)(1+q^4)*(u_0 R_{k/4}(x) + u_1 P_kappa(x)), where x = q^2;
+  - P_kappa(x) = sum_i (-1)^{a_i - 1/2} x^{a_i + b_i};
+  - R_m(x) = (1-x^{4m})/(1-x^4);
+  - u_0 and u_1 are monomials fixed by absolute gradings.
+- So flatness forces P_kappa = ±x^c R_{k/4}, and P_kappa = 0 when k = 0.
+- In words: Lemma Q says the Euler characteristic of kappa, corrected by the rational slope, detects the trivial strong inversion. This is the decategorification of Watson Thm 1.
+    - source: Own derivation from KWZ arXiv:2104.13592 (Def 3.4, Conj 3.6, Lemma 2.3) and Watson arXiv:1311.1085 Thm 1
+    - verified: full_text
+    - relevance: A sharp, citable restatement of U5. B5 becomes the question: can the V_kappa-block Euler polynomial of a nontrivial kappa equal the rational pattern ±x^c(1 + x^4 + ...)?
+    - locator: 2104.13592 Def 3.4, Conj 3.6; 1311.1085 Thm 1
+    - node: U5
+  -
+    - claim: COMPUTED DATA SCREEN.
+- Data: the published absolutely bigraded kappa tables (2104.13592 §4), parsed from the PDF's vector grey boxes; 138 strong inversions on knots up to 9 crossings.
+- Parse checks:
+  - every block count reproduces Table 1's n;
+  - the explicit example kappa(4_1^1) = h^{2.5}delta^{5.5}V_kappa + h^{6.5}delta^{4.5}V_kappa is reproduced.
+- (i) The det-0 identity sum_i (-1)^{b_i - 1/2} = -k/4 holds 138/138. This is the paper's §3 remark: 'the δ-graded intersections of a(0) with special components cancel out intersections with the rational component'.
+- (ii) For every entry, one unit u = ±x^j makes (1+x^3) divide R_{k/4} + u*P_kappa (checked at x = -1 and x = e^{±i pi/3}): 138/138. This is independent support for U5a's (1+A^12) factor.
+- (iii) The flat shape P_kappa = ±x^c R_{k/4} fails for 137/138 entries.
+  - Only 3_1 (one block, k = -4) passes the shape test vacuously.
+  - So no strong inversion on a knot with at most 9 crossings has a Jones-flat quotient tangle; 3_1 is excluded separately by direct computation and B3.
+- (iv) 19/138 entries show partial Euler cancellation inside kappa.
+  - Example: 9_46^2 has 7 blocks but only 5 monomials.
+  - 9_10^2, 9_17^2, 9_23^2, 9_28^2, 9_29, 9_31^2, 9_35^2, 9_37^2, 9_38 and 9_40^2 each cancel 4 blocks.
+  - Total cancellation never occurs.
+- (v) kappa is thin (a single delta-grading) for exactly 3_1, 5_1, 7_1, 8_19 and 9_1, the L-space knots in this range. This is consistent with Wat17 Conj 30.
+    - source: KWZ arXiv:2104.13592 §4 tables and Table 1 (full text PDF); own scripts
+    - verified: full_text
+    - relevance: A cheap, unit-independent Jones-flatness screen. It shows block cancellation is real, so B5 is not vacuous, but never total in this range. It also corroborates U5a independently of Codex's bracket code.
+    - locator: Scripts: <scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/scripts/parse_kappa2.py, flat_test.py, joint_unit_test.py, screen_tsv.py. Data: <scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/kwz/kappa_parsed2.json and kappa_flat_screen.tsv
+    - node: U5a
+  -
+    - claim: DERIVED: TREFOIL.
+- 3_1 has k = -4 and one V_kappa block, kappa(3_1) = h^{2.5} delta^{4.5} V_kappa.
+- So w_{3_1} = (1-q^2)(1+q^4)*(±q^{c0} ± q^{c1}).
+- With U5a (F | w), (1+q^6) must divide that two-term factor. That forces c1 - c0 = 6 mod 12 with the matching sign.
+- Claude's prediction w_{3_1} = unit*F (msg 20261102-224844 §1(c)) is the minimal case, c1 - c0 = ±6. It is CONSISTENT with KWZ structure plus U5a but NOT FORCED by them: a factor like (1+q^18) is also allowed.
+- Deciding it needs the absolute q-offset between r_1(-4) and the block. kht++ -q outputs exactly this.
+    - source: Own derivation; KWZ arXiv:2104.13592 Thm 3.1, Table 1 row 3_1 (-4, 1), §4
+    - verified: full_text
+    - relevance: An audit aid for U5a and test (c). Reading the absolute grading off kht++ would independently confirm or refute w_{3_1} = unit*F.
+    - locator: 2104.13592 Table 1, §4; joint_unit_test.py (3_1 admissible units (eps, j mod 12) = (1,1),(1,7),(-1,4),(-1,10))
+    - node: U5a
+  -
+    - claim: DERIVED: THE THIN-kappa (L-SPACE) REGIME.
+- If kappa lies in one delta-grading, its blocks cannot cancel. Blocks with equal h have equal sign, and blocks with different h have different x-exponents.
+- So chi_q(kappa) determines the bigraded kappa completely.
+- The det identity then forces n = |k|/4. All tabulated thin cases satisfy this: 3_1 (-4,1), 5_1 (-8,2), 7_1 (-12,3), 9_1 (-16,4), 8_19 (8,2).
+- Flatness would require the blocks to sit at h = a_0, a_0+4, ..., in one delta-grading, at an exact absolute offset.
+- The tabulated thin kappa (T(2,2g+1) and T(3,4)) have blocks at consecutive h (spacing 1), so they fail for n >= 2.
+- Under Wat17 Conj 30 (L-space knot iff thin kappa), Lemma Q for L-space kappa becomes a purely categorified statement about the h-spacing of thin kappa. This is exactly the D = 0 regime where the Floer bound of msg 224844 §0 says nothing.
+    - source: Own derivation; Watson arXiv:1311.1085 Thm 18, Conj 30; KWZ arXiv:2104.13592 §4
+    - verified: full_text
+    - relevance: Splits U5-hyp in two:
+- an L-space part, where the Euler characteristic carries full information;
+- a thick part, which needs a genuinely new 'no total cancellation' input. B5 lives here.
+    - locator: 1311.1085 Thm 18, Conj 30; 2104.13592 §4
+    - node: U5-hyp
+  -
+    - claim: GEOGRAPHY AND LOCAL SYSTEMS. The Linear paper works 'exclusively over the two-element field F'.
+- Thms 1.2 / 2.14: every component of Kh~ is linear.
+- Thm 2.15: each component is r_n(p/q) or s_{2n}(p/q). Stated after it: 'the local system on any component of Kh~(T) is trivial for any tangle T'.
+- Thm 3.1: no wrapping around non-special punctures (the proof uses F-naturality).
+- Thm 4.1: no wrapping around *, for BN~ or Kh~.
+- Prop 2.7: no component is embedded.
+- Thm 5.6: odd-length rational components detect connectivity. Cor 5.7: a tangle without closed components has an odd number of odd-length rational components.
+- No known tangle has a rational component of length >= 3.
+- BN~ is not linear in general: BN~(P_{2,-3}) wraps a non-special puncture (Ex 2.13).
+- KLMWZ Conj 5.10: every rational component of Kh~(T;F) has length 1.
+- 2104.13592 Rem 3.10, over Z/3: Kh~(T_{7_4^2}) = r_1(6) u 2 s_2(∞) u 5 s_1(∞). So Conj 3.6 is false over Z/3, and k is not divisible by 4 there.
+    - source: KWZ arXiv:2202.01460v1; KLMWZ arXiv:2109.14049; KWZ arXiv:2104.13592
+    - verified: full_text
+    - relevance: Over F, the u=1 X has only r_1(k) plus special curves with trivial local systems. The V_kappa-block structure (Conj 3.6/3.7) is F-specific, but the chi_q(kappa) form of Lemma Q is not.
+    - locator: 2202.01460 Thms 1.2, 2.14, 2.15, 3.1, 4.1, Prop 2.7, Thm 5.6, Cor 5.7, Ex 2.13; 2109.14049 Conj 5.10; 2104.13592 Rem 3.10
+    - node: U5
+  -
+    - claim: RATIONAL-TANGLE DETECTION AND THE ACTUAL-ISOTOPY ANALOG OF LEMMA Q.
+- Detection: T is rational iff Kh~(T) is a single r_1(p/q) with 1-dimensional local system.
+  - Stated as Thin links Thm 5.7 = Linear Thm 2.6 = KLMWZ Thm 2.6.
+  - Proof via Zibrowius and Hedden-Ni (HN10, Geom. Topol. 14 (2010) 1479-1501), resting on Kronheimer-Mrowka.
+- KLMWZ Thms 1.6 / 3.1: Kh~ and BN~ detect split tangles.
+- KLMWZ Thm 1.2: 'Let T be a Conway tangle in the three-ball with an unknot closure. Suppose T(r) and T(r') are isotopic links ... Then r = r' or T is rational.'
+  - It implies the cosmetic crossing conjecture for the unknot (Scharlemann-Thompson).
+  - Proof, Case 2: the q-shifts of specials under ±1/n satisfy q(x-) - q(x+) = 8j - 4 - 4n < 0.
+- KLMWZ Thm 1.1: equivariant cosmetic surgery.
+- BN~-detection of rational tangles follows because Kh~ is the mapping cone of H on BN~ (derived).
+    - source: KWZ arXiv:2105.06308; KWZ arXiv:2202.01460; KLMWZ arXiv:2109.14049
+    - verified: full_text
+    - relevance: Thm 1.2 is the categorified, actual-isotopy version of U5, proved with exactly the structure r_1(s) u {specials of slope ∞}. The U6 step (X rational implies K = U) is already standard.
+    - locator: 2105.06308 Thm 5.7; 2202.01460 Thm 2.6; 2109.14049 Thms 1.1, 1.2, 1.6, 2.6, 3.1, §4 Case 2
+    - node: U5
+  -
+    - claim: KLMWZ §5 FACTS.
+- Thm 5.3: if T is not horizontally split, then for some N the knots K_n = T(1/2n), |n| >= N, are pairwise distinct as unoriented knots. In the proof: 'the quantum grading of {Kh~(K_n)}_{n>>0} is unbounded below and bounded above'.
+- Lemma 5.4: if Kh~(T) contains only slope-0 curves, at least one of them special, then K_n != K_m for all n != m.
+- Thm 5.6 (split closure property): if T(0) is split, then Kh~(T) has only slope-0 components.
+- Thm 5.7: if T is not horizontally split and T(0) is split, then the K_n are pairwise distinct.
+- Conj 5.8: converse of Thm 5.6. Thm 5.9: the converse holds when no rational curve has length > 1.
+- Wang [Wan20] proved the cosmetic crossing conjectures when T(0) is split.
+- DERIVED for the u=1 X: Thm 5.6 plus the structure theorem gives 'L_0 split implies X rational'. Gabai gives this immediately as well, since S^3_0(kappa) is irreducible.
+- The real gap is B1: V(L_0) = V(U_2) does not imply that L_0 is split (Eliahou-Kauffman-Thistlethwaite).
+    - source: KLMWZ arXiv:2109.14049
+    - verified: full_text
+    - relevance: The u=1 antiparallel family K'_n is KLMWZ's K_n. A counterexample family would be infinitely many V=1 knots, distinguished by unbounded q-support in Kh~. This shows B5 concretely.
+    - locator: 2109.14049 §5: Conj 5.1-5.2, Thm 5.3, Lemma 5.4, Thms 5.6-5.7, Conj 5.8, Thm 5.9, Conj 5.10
+    - node: U5
+  -
+    - claim: NON-COMPACT BN~ COMPONENT AND RASMUSSEN s.
+- KWZ19 §1.5: BN~(T) has 2^n non-compact components, n = number of closed components. With none, there is exactly one, and 'this component contains the information about Rasmussen's s-invariant'.
+- KWZ19 Thm 1.16: s is mutation-invariant over any field.
+- KWZ19 Prop 3.8: the tower generator of BN~(K) has q = s^k(K) and h = 0.
+- KWZ19 Prop 6.15: towers come from the wrapping of non-compact curves, with exactly 2^l ends at each of the two connected non-special punctures.
+- Thin links §7.4: BN~(L) = k[H]^{2^{|L|-1}} + torsion, and the tower's q-grading equals s.
+- Thin links Cor 7.7: for thin L, 2 rk(ker H) + 2^{|L|-1} = det.
+    - source: KWZ19 arXiv:1910.14584v2; KWZ arXiv:2105.06308v3
+    - verified: full_text
+    - relevance: BN~ carries concordance information but is not linear. Lemma Q only needs Kh~ (the mapping cone of H). The non-compact arc's slope is the natural place where classical invariants such as s or sigma could pin absolute gradings.
+    - locator: 1910.14584 §1.5, Thm 1.16, Prop 3.8, Prop 6.15; 2105.06308 §7.4, Cor 7.7
+    - node: U5b
+  -
+    - claim: LEWARK-ZIBROWIUS.
+- theta_c is an integer-valued concordance homomorphism.
+- Thm 1.1: s_2(P(K)) = s_2(P_{-theta_2(K)}(U)) for patterns with wrapping number 2 and winding number 0.
+- BN~^a(T_K) is approximated by BN~^a(Q_{2 theta}).
+- Thm 5.9: the non-compact curve connects the non-special ends that T connects.
+    - source: Lewark-Zibrowius, Rasmussen invariants of Whitehead doubles and other satellites, arXiv:2208.13612; J. reine angew. Math. 816 (2024) 241-296, DOI 10.1515/crelle-2024-0061
+    - verified: abstract_or_snippet
+    - relevance: Prior art for an immersed-curve satellite calculus, relevant to the U5b satellite formula and the winding-0 Whitehead tower (DEAD_ENDS #2). Seen through an abstract/HTML summary only.
+    - locator: 2208.13612 Thm 1.1, Thm 5.9 (via WebFetch summary)
+    - node: U5b
+  -
+    - claim: NO TANGLE-LEVEL Kh~-to-HF THEOREM WAS FOUND.
+- HRW18 §7.2: 'Very mild changes' to Lipshitz-Ozsváth-Thurston's bordered branched double cover give a filtered type D structure CFD^(Sigma_T). Its associated graded is the Bar-Natan complex (over F, mirrored convention, algebra A/(rho_123 = 0)).
+- HRW18 Fig 58: the (-2,2)-pretzel tangle has two distinct filtered lifts with the same associated graded, and only one of them gives HF^.
+- KWZ19 §1.8: for rational tangles, HFT is an embedded curve of slope p/q that resolves the figure-8. But 'it is impossible to obtain HFT(T2,-3) by resolving self-intersection points of Kh~(T2,-3)'.
+- KWZ19 Q6.9 (and the Dowlin-analogy remark) is open.
+- Watson's Thm 1 uses the Ozsváth-Szabó spectral sequence only at the link level.
+    - source: Hanselman-Rasmussen-Watson arXiv:1810.10355v1; KWZ19 arXiv:1910.14584v2; Watson arXiv:1311.1085v4
+    - verified: full_text
+    - relevance: A tangle-level route from Kh~(X) to the HF curve of E(kappa) (C1-type Floer input) is not in the literature. The filtered lift is not determined by Kh data, which is a structural reason the bracket alone cannot see Floer simplicity.
+    - locator: 1810.10355 §7.2, Fig 58; 1910.14584 §1.8, Q6.9; 1311.1085 proof of Thm 1
+    - node: U5-hyp
+  -
+    - claim: LOT AND ZIBROWIUS ABSTRACTS.
+- LOT, Bordered Floer homology and the branched double cover I: arXiv:1011.0499 (J. Topol. 7 (2014) 1155-1199). Part II: arXiv:1404.2894.
+- Zibrowius arXiv:2212.08501: HFT of double tangles is computed from the HF^ of the knot complement; Kh behaves differently.
+    - source: arXiv:1011.0499; arXiv:2212.08501
+    - verified: abstract_or_snippet
+    - relevance: Background for any attempt at a tangle-level spectral sequence. Not read in full.
+    - locator: abstracts
+    - node: U5-hyp
+  -
+    - claim: WATSON'S kappa.
+- Thm 1: kappa(K,h) = 0 iff K is trivial.
+  - Proof: if kappa = 0 then Kh~(tau(n)) is thin of rank n for |n| >> 0.
+  - By the Ozsváth-Szabó spectral sequence, S^3_n(K) is then an L-space for |n| >> 0, so g = 0.
+- Thm 18: torus knots have thin kappa.
+- Conj 28: V = F(0,delta) + F(2,delta) + F(3,delta) + F(5,delta).
+- Conj 29 is refuted: 2104.13592 Counterexample 3.5 gives dim kappa(9_46,h_1) = 16 < 28.
+- Conj 30: L-space knot iff kappa lies in a single delta-grading.
+- KWZ19 §10.2: ker(x^N) in Kh~(T_{K,h}) 'vanishes if and only if the strongly invertible knot is the trivial knot'.
+- 2104.13592 Def 3.4: kappa := HF(a(0), s(K,h)) agrees, relatively bigraded, with Watson's kappa. Conventions differ: delta_KWZ = -delta_Watson and q_KWZ = 2 q_Watson.
+- 2104.13592 §3 formula: dim Kh~(tau(n)) = dim kappa + dim HF(a(n), r_1(k)). The second summand is reduced Kh of the (2, n-k) torus link.
+    - source: Watson arXiv:1311.1085v4 (Adv. Math. 313 (2017) 915-946); KWZ19 arXiv:1910.14584v2; KWZ arXiv:2104.13592
+    - verified: full_text
+    - relevance: Watson Thm 1 is the categorified Lemma Q. Its Floer input is exactly Codex's C1 / Claude's parked KWZ+OS route. Lemma Q is its Euler-characteristic shadow.
+    - locator: 1311.1085 Thm 1, Thm 18, Conj 28-30; 1910.14584 §10.2; 2104.13592 Def 3.4, Counterexample 3.5, §3
+    - node: U5
+  -
+    - claim: STRONG-INVERSIONS CONJECTURES AND QUESTIONS (2104.13592).
+- Conj 3.6 (= Wat17 Conj 28): kappa is a sum of V_kappa, so dim is divisible by 4.
+- Conj 3.6 implies k is divisible by 4, via det(tau(0)) = 0 and delta-graded cancellation.
+- Conj 3.7: every special of Kh~(T_{K,h}) is s_{2n}(∞) in that paper's notation, so all have even length. Tabulated examples are all s_2(∞), but s_{2n} with n != 1 occur.
+- Questions 3.3: does the slope k have a geometric or topological meaning, and is it always divisible by 4?
+- Q3.8: is there a hyperbolic knot whose two strong inversions are not separated by the absolutely bigraded kappa?
+- Rem 3.9: Conj 3.7 is expected for all 4-ended tangles.
+- Among the 57 knots up to 9 crossings with two strong inversions, only 9_46 is separated by the ungraded invariant (Rem 3.2). The bigraded kappa separates all of them.
+    - source: KWZ arXiv:2104.13592
+    - verified: full_text
+    - relevance: The conjectures that make the block form of the U5 restatement unconditional. k in 4Z plus V_kappa blocks gives (1-A^4)(1+A^8) | w.
+    - locator: 2104.13592 Thm 3.1, Rem 3.2, Q3.3, Conj 3.6, Conj 3.7, Q3.8, Rem 3.9, Rem 3.10
+    - node: U5a
+  -
+    - claim: kht++ IS PUBLIC.
+- Code at github.com/cbz20/khtpp; docs at cbz20.raspberryip.com/code/khtpp/docs (v0.1-75-g2011957).
+- Options:
+  - -c<i>: i = 2, 3, 5, 7, 11 for Z/p; 0 for Q (experimental).
+  - -a: all fields.
+  - -q / --quotient: invariants of the quotient tangle of a strongly invertible knot, from a symmetric diagram.
+  - -d: doubled strands.
+  - --sum.
+- Output names components with gradings, e.g. r(1/2) q^-26/3 δ|^-1 and s4(0) q^-8 δ|^-1. Length is omitted when it is 1. δ| is the vertical and δ_ the horizontal delta-grading.
+- Database page P_2_-3 (c = 0, 2, 3, 5, 7, 11): r(-2) q^-26/3 δ|^-1/2 and s4(∞) q^-8 δ_^-1.
+- Precursor: GurkeeratChhina/KhT (Python).
+    - source: github.com/cbz20/khtpp; https://cbz20.raspberryip.com/code/khtpp/docs/ (Options, Output pages; example ThinLinksAndConwaySpheres/P_2_-3)
+    - verified: abstract_or_snippet
+    - relevance: A ready screening engine: kht++ -q gives r_1(k), the specials and their absolute gradings. That decides flatness exactly, including the vacuous 3_1 case and the exact form of w_{3_1}, and extends the 9-crossing screen to hyperbolic examples. Seen via WebFetch-processed pages.
+    - locator: khtpp docs Options.html, Output.html; examples/ThinLinksAndConwaySpheres/P_2_-3.html
+    - node: U5
+  -
+    - claim: CONFIRMED: Kh~(P_{2,-3}) = r_1 plus exactly one special s_4.
+- In the Thin links Fig 13 framing it is r_1(1/2) u s_4(0) (Ex 5.12; Linear Ex 2.13; Fig 13e crop).
+- In the Thin links Fig 17 / §7.3 framing it is r_1(-2) u s_4(∞), giving Theta_Kh = A_Kh = (-2, ∞].
+- In the strong-inversions preferred framing it is r_1(-4) u s_2(∞) in that paper's notation, i.e. standard s_4 (Table 1 row 3_1 = (-4,1); Fig 5 shows the right-handed trefoil with slope +4).
+- kht++ database: the same over Q, F_2, F_3, F_5, F_7, F_11.
+- KWZ19 Ex 6.7: BN~(T_{2,-3}) splits into the two-twist rational tangle's curve and a curve winding twice around the top two punctures; each is replaced by a figure-8 to give Kh~.
+    - source: KWZ arXiv:2105.06308; KWZ arXiv:2202.01460; KWZ arXiv:2104.13592; KWZ19 arXiv:1910.14584; kht++ database
+    - verified: full_text
+    - relevance: Calibrates U5 on the trefoil: k = ∓4 and one V_kappa block. The KWZ papers are full text; the kht++ part is a snippet.
+    - locator: 2105.06308 Ex 5.12, Fig 13, §7.3, Fig 17; 2202.01460 Ex 2.13; 2104.13592 Ex 2.1, Table 1, Fig 5; 1910.14584 Ex 6.7
+    - node: U5
+  -
+    - claim: SHAH.
+- Pamela Shah, 'Jones-cosmetic tangle replacement', UBC MSc thesis 2023, DOI 10.14288/1.0435691.
+- Glasgow seminar abstract (24 Apr 2023; also UBC 5 Apr 2023): no rational closure of the (3,-2) pretzel tangle has the unknot's Jones polynomial ('We explain why this cannot be the case'), proved with KWZ immersed curves.
+- Thesis snippet: 5_1 and 10_132 form a Jones-cosmetic pair; there is no such pair for the trefoil.
+    - source: UBC cIRcle record 1.0435691 (blocked); gla.ac.uk seminar page id=10992
+    - verified: abstract_or_snippet
+    - relevance: This is U5, via the scaffold equivalence, for the single quotient tangle of kappa = 3_1. It is the closest prior art for Jones-level KWZ arguments. Jones-cosmetic pairs exist, so Jones analogs of KWZ cosmetic theorems fail in general and the unknot closure plus rational bracket must be used essentially.
+    - locator: thesis full text not accessed
+    - node: RB1-u1
+
+### prior_art_risks
+
+  - KLMWZ arXiv:2109.14049 Thm 1.2 (Math. Ann. 2023). It is the actual-isotopy analog of Lemma Q: an unknot-closure tangle with T(r) isotopic to T(r') has r = r' or is rational. It uses the same r_1(s) u {specials of slope ∞} structure as our KWZ restatement. A new KWZ argument for U5 must go beyond its q-grading comparison (Case 2).
+  - Watson arXiv:1311.1085 Thm 1, with KWZ19 §10.2: kappa(K,h) = 0 iff K is trivial, i.e. categorified Lemma Q. Its proof (Ozsváth-Szabó spectral sequence plus L-space large surgeries) is the same Floer input as Codex C1 and Claude's parked KWZ+OS route, so that route is essentially Watson's theorem.
+  - KWZ arXiv:2104.13592 §3 already derives k in 4Z from Conj 3.6 by delta-graded Euler cancellation at det(tau(0)) = 0. That is the t = -1 part of U5a's F | w, and (under Conj 3.6) the (1-A^4)(1+A^8) block factor is close to published. Claim novelty only for full F-divisibility, the exact defect calculus, and the chi_q(kappa) restatement.
+  - Shah, UBC MSc 2023 (DOI 10.14288/1.0435691): Jones-level non-cosmeticity for the (3,-2) pretzel tangle via KWZ curves, i.e. U5 for kappa = 3_1 through the scaffold equivalence. Also gives the Jones-cosmetic pair 5_1/10_132. The full thesis was not read; it may contain general Jones-level criteria.
+  - Hanselman-Rasmussen-Watson arXiv:1810.10355 §7.2 (filtered lift of the Bar-Natan complex via LOT bordered branched double covers; non-uniqueness in Fig 58). A tangle-level spectral-sequence idea is partly in print and is known not to be determined by Kh data.
+  - Lewark-Zibrowius arXiv:2208.13612 (Crelle 816 (2024)): immersed-curve satellite calculus (theta_c, winding-0 patterns). Prior art adjacent to U5b's satellite formula and the Whitehead-tower dead end.
+  - J. Wang [Wan20], cited in KLMWZ §5, and KLMWZ Thms 5.6-5.7: cosmetic crossings when T(0) is split. For the u=1 X this only recovers 'L_0 split implies X rational', which Gabai's theorem gives directly.
+
+### searches_run
+
+  - WebFetch arxiv.org/abs/1910.14584; ar5iv HTML failed; arxiv.org/pdf/1910.14584v2 -> local pdftotext full text
+  - WebFetch arxiv.org/abs/2105.06308; ar5iv HTML; arxiv.org/pdf/2105.06308v3 -> full text
+  - WebFetch arxiv.org/abs/2202.01460; ar5iv HTML; arxiv.org/pdf/2202.01460v1 -> full text
+  - WebFetch arxiv.org/abs/2104.13592; arxiv.org/pdf/2104.13592v1 -> full text plus PyMuPDF figure and vector extraction
+  - WebFetch arxiv.org/abs/1311.1085; arxiv.org/pdf/1311.1085v4 -> full text
+  - WebSearch: kht++ Zibrowius Khovanov invariants tangles program github
+  - WebFetch github.com/cbz20/khtpp; cbz20.raspberryip.com/code/khtpp/docs/ (+ Options.html, Output.html); examples/ThinLinksAndConwaySpheres.html and P_2_-3.html
+  - WebSearch: Lewark Zibrowius Rasmussen invariants of Whitehead doubles and other satellites theta invariant Bar-Natan immersed curve slope
+  - WebFetch arxiv.org/abs/2208.13612 and arxiv.org/html/2208.13612v2
+  - WebSearch: tangle Khovanov multicurve branched double cover Heegaard Floer immersed curve spectral sequence Conway tangle Hanselman Rasmussen Watson curve quotient tangle
+  - WebFetch arxiv.org/abs/2109.14049 and arxiv.org/pdf/2109.14049 -> full text
+  - WebSearch: Khovanov immersed curves tangle branched double cover spectral sequence tangle-level Heegaard Floer bordered 2024 OR 2025 arXiv four-ended tangle HF-hat curve comparison
+  - WebFetch arxiv.org/abs/2212.08501 (abstract)
+  - WebFetch arxiv.org/abs/1810.10355; arxiv.org/pdf/1810.10355v1 -> full text
+  - WebFetch arxiv.org/abs/1011.0499 (abstract)
+  - WebSearch: Pamela Shah Jones-cosmetic tangle replacement pretzel tangle immersed curves thesis arXiv
+  - WebFetch open.library.ubc.ca cIRcle item 1.0435691 (blocked); gla.ac.uk seminar page id=10992
+  - Local grep of the full texts for the exact statements and theorem numbers cited in the findings
+  - Local PyMuPDF vector parse of the 2104.13592 §4 kappa tables (138 entries) with the det, e^{i pi/3} joint-unit and Jones-flatness screens; scripts in <scratch>/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/scripts/
+
+### mechanisms_seen
+
+  - Euler cancellation of V_kappa blocks against the rational defect: flat iff P_kappa(x) = ±x^c R_{k/4}(x). This is a unit-independent shape screen, run on 138 tabulated kappa: 137 fail, 3_1 is vacuous.
+  - Bracket identity [s_{4n}(∞)] = unit*([Q_{4n}]^ - [Q_0]^): at the Euler level a special component is a signed pair of rational figure-8s. This is the B5 gap in curve language.
+  - Classical evaluations explain the (1+A^12) factor: t = -1 (determinant; KWZ's det-0 cancellation) and t = e^{±i pi/3} (Z/3 homology, Lickorish-Millett). Verified jointly on all 138 tabulated kappa.
+  - Watson's kappa-detection: kappa = 0 implies Kh~(tau(n)) thin of rank n, so S^3_n(K) is an L-space for |n| >> 0 (OS spectral sequence), so g = 0. This is the categorified Lemma Q and shares C1's Floer input.
+  - KLMWZ cosmetic argument: compare the q-gradings of special-component pairings under ±1/n fillings (Thm 1.2 Case 2), and use unbounded q-support growth in twist families (Thm 5.3).
+  - Thin-kappa regime: in one delta-grading no blocks cancel, so chi(kappa) determines kappa. If L-space implies thin kappa (Wat17 Conj 30), Lemma Q for L-space kappa reduces to the h-spacing of thin kappa.
+  - kht++ -q on symmetric diagrams as a screening engine: it gives exact r_1(k), specials and absolute gradings, deciding flatness and the exact w.
+  - Lewark-Zibrowius approximation of BN~(T_K) by rational arcs Q_{2 theta} for winding-0 satellites.
+  - HRW §7.2 filtered lift: the Bar-Natan complex as the associated graded of the bordered CFD of the branched double cover (the lift is not unique).
+
+### open_questions
+
+  - Is the absolute q-offset between r_1(k) and the special blocks of Kh~(T_{K,h}) determined by classical data (k, signature, s, Arf)? It is needed to decide flatness when the shape test is vacuous (one block, |k| = 4) and to make F | w exact, for example w_{3_1} = unit*F versus unit*(1-q^2)(1+q^4)(1+q^18). kht++ -q can measure it on examples.
+  - Can a nontrivial strongly invertible (K,h) have P_kappa(x) = ±x^c(1 + x^4 + ... + x^{4(|k|/4 - 1)}), or P_kappa = 0 when k = 0? This is U5 in KWZ language under Conj 3.6. Partial cancellation occurs in 19/138 tabulated cases; total cancellation never does.
+  - Without Conj 3.6/3.7, the restatement is: chi_q(kappa) = ±q^c(1+q^2+q^4)(1-(-q^2)^k)/(1+q^2). Is there a decategorified analog of Watson Thm 1 that rules this out? Conj 3.6, 3.7 and Q3.3 are open over F and false over Z/3.
+  - Wat17 Conj 30 (L-space knot iff thin kappa). If 'L-space implies thin' holds, can one prove that thin kappa has blocks at consecutive h (as for the tabulated T(2,2g+1) and T(3,4)), for instance from the CFK staircase? That would settle Lemma Q for L-space kappa.
+  - Is there a tangle-level spectral sequence or filtered lift from Kh~(T) or BN~(T) to the HF^ immersed curve of Sigma_2(T)? KWZ19 Q6.9 is open, and HRW18 Fig 58 shows the lift is not determined by Kh data.
+  - Run kht++ -q on 10-12 crossing hyperbolic strongly invertible knots and on the DEAD_ENDS #2 Whitehead towers, to extend the flatness screen beyond 9 crossings and look for thick kappa with near-total cancellation.
+  - Does Shah's thesis contain a general Jones-cosmetic criterion beyond P(3,-2), and how was 5_1/10_132 realized? The full text was not accessed.
+
+
+## Agent: jones-cosmetic
+
+
+### track
+
+U5 / Lemma Q: closest prior art. Covers Shah; KWZ and Watson quotient tangles; Watson's symmetry-group paper; Lipshitz-Sarkar; the Hedden-Watson line; cosmetic crossing and surgery results via Jones, Kh and HF; Gujral-Wang.
+
+### findings
+
+  -
+    - claim: VERDICT. No source states Lemma Q, u=1 Jones unknot detection, or 'a Jones-cosmetic crossing change on the unknot is nugatory' as a theorem or a named conjecture. Status of Lemma Q: (i) implied by the Jones conjecture through Sikora Thm 24(c); (ii) proved for special families (torus kappa; J#J^r with J semiadequate or c(J)<=16; c(X)<=23); (iii) proved when Kh or HF replaces Jones (Hedden-Watson Thm 1, Watson 1311.1085 Thm 1, KLMWZ Thm 1.2); (iv) claimed only inside the unvetted Carmi-Cohen proof of the full conjecture.
+    - source: This sweep: 22 arXiv full texts plus Shah's talks, poster and postcard; see searches_run
+    - verified: full_text
+    - relevance: U5 stays OPEN. Nothing in the bibliography upgrades it.
+    - node: U5
+  -
+    - claim: The Jones conjecture is equivalent to (c): if [T']=[T] and T is rational, then T'=T as framed tangles. Prop 25: if JC holds through N crossings, (c) holds whenever c(T)+c(T')<N. Lemma Q is (c) restricted to T' that has an actual unknot closure. Hence JC implies Lemma Q, and Tuzun-Sikora's verification through 24 crossings gives Lemma Q for c(X)<=23. (c) fails for rational KNOTS (Kanenobu), so the rigidity must be at the tangle level. No source states the converse, Lemma Q implies JC.
+    - source: Sikora, arXiv:2005.08162v2 (Canad. J. Math. 76 (2024) 707-727)
+    - locator: Sec. 9: Thm 24(a)-(c), remark after Thm 24, Prop 25
+    - verified: full_text
+    - relevance: Closest general published statement. Lemma Q is a strictly weaker special case of a JC-equivalent statement, and its small-crossing cases are already known.
+    - node: U5
+  -
+    - claim: Open question posed: does a tangle exist whose Kauffman bracket pair is trivial over Z? The authors expect such a tangle would give a nontrivial knot with V=1. Their tangle T20 has a bracket pair trivial mod 2, which gives knots K_r with V = 1 mod 2^r.
+    - source: Eliahou-Fromentin, 'A remarkable 20-crossing tangle', arXiv:1610.05560v2
+    - locator: Abstract; Problem 1.1; Sec. 6 Concluding remarks
+    - verified: full_text
+    - relevance: Closest explicitly posed question. Negating Lemma Q is the special case where the tangle also has an actual unknot closure. Barrier: brackets can be made flat mod 2^r, so no finite-coefficient argument can prove Lemma Q.
+    - node: U5
+  -
+    - claim: Shah, MSc thesis (UBC 2023, supervised by Watson), and talks at UBC (5 Apr 2023) and Glasgow (24 Apr 2023). Result: no rational closure of the (3,-2) pretzel tangle, other than the trivial one, has the unknot's Jones polynomial. Proof uses KWZ immersed curves. The UBC record abstract, seen only as a search snippet, adds: no Jones-cosmetic pair from P(3,-2) involves the unknot or the trefoil, and (5_1, 10_132) is the unique such pair of determinant 5.
+    - source: math.ubc.ca/node/3411; gla.ac.uk mathstat events id=10992; open.library.ubc.ca cIRcle item 1.0435691 (snippet only)
+    - locator: Talk abstracts. Thesis full text unread: the UBC page served an F5 bot challenge, which was not bypassed.
+    - verified: abstract_or_snippet
+    - relevance: P(3,-2) is the trefoil's quotient tangle, so this is the single-closure ('Jones-cosmetic surgery') form of Lemma Q for kappa = 3_1, stronger than Lemma Q for that kappa. It is subsumed by Stoimenow Cor 4.1.
+    - node: U5
+  -
+    - claim: Theorem (Shah-Watson): there are infinitely many Bar-Natan pairs (K_i, K_i'), i in 2N. Each pair has equal V and distinct Kh~, and K_i' is 2-bridge, obtained from K_i by replacing a non-rational tangle T_i with a rational R_i. Prototype pair: (10_132, 5_1). Proof uses BN~ 'strip curves'.
+    - source: Shah (with Watson), poster 'Jones-cosmetic tangle replacement', Young Topologists Meeting, Stockholm 2025 (sites.google.com/view/pamelashah)
+    - locator: Poster main theorem
+    - verified: full_text
+    - relevance: Barrier: Jones-cosmetic replacement of a rational tangle by a non-rational one exists whenever the target is a nontrivial 2-bridge knot. The unknot target is essential to Lemma Q.
+    - node: B5
+  -
+    - claim: A fake Hopf link exists: L differs from H but V_L = t^3 V_H. L is obtained from H by replacing a rational R with a non-rational T, computed via Kh~(L) = HF(m Kh~(.), BN~(T)). The postcard also defines 'fake unknot' (V_K = t^n V_U) and records it as open.
+    - source: Shah, 'A Fake Hopf Link', Mathematical Research Postcards (to appear 2025)
+    - locator: Postcard text and figure
+    - verified: full_text
+    - relevance: Up-to-units Jones-cosmetic replacement on a 2-component target (B1 type). Lemma Q's 'rational up to framing unit' clause must use the one-component and actual-unknot hypotheses to exclude fake-unknot analogues.
+    - node: B1
+  -
+    - claim: Thm 1.2 (equivalent to Thm 1.1 via branched covers): if a Conway tangle T has an unknot closure and T(r) is isotopic to T(r'), then r=r' or T is rational. Proof: Kh multicurves plus Hanselman's restriction of cosmetic slopes to +-2 or +-1/n. The authors note it implies the cosmetic crossing conjecture for the unknot (Scharlemann-Thompson 1989). Thm 1.4 proves the generalized CCC asymptotically; Thm 1.6 shows Kh~ and BN~ detect split tangles.
+    - source: Kotelskiy-Lidman-Moore-Watson-Zibrowius, arXiv:2109.14049
+    - locator: Sec. 1: Thms 1.1, 1.2, 1.4, 1.6; pp. 2-3
+    - verified: full_text
+    - relevance: Closest theorem: Lemma Q with 'actual isotopy of two closures' in place of 'Jones equality'. The mechanism is multicurve geometry plus Heegaard Floer, never chi.
+    - node: U5
+  -
+    - claim: Strong inversions correspond to quotient tangles with tau(inf)=U; in the preferred framing, tau(0) is the longitude closure. Thm 3.1 (computer, knots through 9 crossings): Kh~(T_{K,h}) = r_1(k) plus n copies of s_2(inf), with k in 4Z and n>0 (Table 1). Pp. 8-9: det tau(0)=0 forces the delta-graded chi of the special components to cancel the rational component's, so |k| = |chi_delta(kappa)|. Conj 3.6 is Watson's Conj 28 (kappa is a sum of copies of V_kappa). Conj 3.7: special components are s_2n(inf). Question 3.3 asks what k means.
+    - source: Kotelskiy-Watson-Zibrowius, 'Khovanov homology and strong inversions', arXiv:2104.13592
+    - locator: Sec. 1; Example 2.1 (trefoil: r_1(4) plus s_2(inf)); Lemma 2.3; Thm 3.1; Table 1; pp. 8-9; Sec. 4 absolute gradings, e.g. kappa(4_1^1) = h^2.5 delta^5.5 V_kappa + h^6.5 delta^4.5 V_kappa
+    - verified: full_text
+    - relevance: This is the exact structure a Lemma Q proof must control. The paper itself uses Euler cancellation only at t=-1.
+    - node: U5
+  -
+    - claim: Thm 1: kappa(K,h)=0 iff K is trivial. Proof: kappa=0 makes Kh~(T(n)) one delta-graded string, so dim = det = n; the Ozsvath-Szabo spectral sequence then makes S^3_{+-n}(K) L-spaces; so g = tau = -tau and K=U. For n>>0, Kh~(T(n)) is kappa plus F^m (Lemma 13, Cor 14).
+    - source: Watson, 'Khovanov homology and the symmetry group of a knot', arXiv:1311.1085v4 (Adv. Math. 2017)
+    - locator: Thm 1 (p. 3; proof pp. 14-16); Lemma 13; Cor 14
+    - verified: full_text
+    - relevance: Lemma Q is the Euler-characteristic shadow of this theorem: a rational bracket means chi(kappa plus string) equals chi of the trivial string. B5 sits exactly at the 'thin, so rank = det' step.
+    - node: B5
+  -
+    - claim: For D(K) = K#K with the exchange inversion, the quotient tangle T has T(0) = the untwisted 2-cable C_2K. Watson uses this to reprove that Kh(C_2K) detects U (after Grigsby-Wehrli and Hedden), via kappa plus Hedden-Ni. Conj 28 would give dim kappa(D(K)) >= 4.
+    - source: Watson, arXiv:1311.1085v4
+    - locator: Sec. 3.4, sketch of proof of Thm 16; Sec. 6.1, Conj 28
+    - verified: full_text
+    - relevance: Puts Lemma Q for kappa = J#J^r on the 2-cable Jones problem (see the derived J#J^r finding below).
+    - node: U5
+  -
+    - claim: Thm 1: for knots of tangle unknotting number one, rk Kh~ = 1 iff U. Mechanism: Sigma_2 K = S^3_{p/q}(K'); rk HF^ <= rk Kh~; surgery formulas; Prop 5 (if S^3_{1/q}(K') is an L-space then q=1 and K' is the trefoil); a KhoHo check of 10_124. Sec. 4: the satellites K_n (n half-twists) have Sigma_2(K_n) = S^3_{1/n}(K#K^r), via the exchange inversion. n=+-2 gives the Whitehead doubles, n=+-1 the (2,+-1)-cables, and n=0^{-1} the 2-cable. Also rk Kh~(K_n) >= 4n+1.
+    - source: Hedden-Watson, arXiv:0805.4423
+    - locator: Thm 1; Lemma 4; Prop 5; Sec. 4
+    - verified: full_text
+    - relevance: Khovanov-rank version of the u=1 slice of U5, with a rank bound replacing chi. It also supplies the J#J^r quotient family.
+    - node: U5
+  -
+    - claim: DERIVED here. Take kappa = J#J^r with the exchange inversion. Its closures are X(mu) = U, X(1/n) = K_n and X(lambda) = C_2J. In TL_2 (id = f^(2) + e_1/delta), both <C_2J> and <Wh+-(J)> are affine in the unnormalized 3-dimensional colored Jones J_{J,3}, with nonzero slope. So, for this family, each of the following is equivalent: Lemma Q; V(Wh+-(J)) != 1 for J != U; V(C_2J) != V(U^2) for J != U; J_3 detects U. Wh(J) has u=1, so U5 would imply that the fixed-color colored Jones J_3 detects the unknot.
+    - source: Derivation in this sweep from 0805.4423 Sec. 4, 1311.1085 Sec. 3.4 and the TL_2 idempotent decomposition
+    - verified: memory_unverified
+    - relevance: B4 hardness marker: Lemma Q implies a quantum-invariant detection problem with no proof located. Only categorified versions are proved, plus Andersen's all-cables announcement.
+    - node: B4
+  -
+    - claim: Thm 1.1: rk Kh(K^2) = 4 iff K=U. Cor 1.2: Khovanov's 2-colored categorification detects U. The introduction poses proving V_{K^n} != V_{U^n} for nontrivial K, and cites Andersen's announced proof that the Jones polynomials of all cables together detect U. Grigsby-Wehrli (arXiv:0807.1432, Cor 1.3) prove the categorified n-colored statement for every n>1.
+    - source: Hedden, arXiv:0805.4418; Grigsby-Wehrli, arXiv:0807.1432
+    - locator: Hedden Intro p. 1, Thm 1.1, Cor 1.2; Grigsby-Wehrli Cor 1.3 (search abstract)
+    - verified: full_text
+    - relevance: The Jones-level 2-cable question, which is Lemma Q for J#J^r, has been posed but is open.
+    - node: B4
+  -
+    - claim: Thm 4.1: no nontrivial semiadequate link has trivial V, meaning the V of the unlink with the same number of components, even up to units. Cor 4.1: no Montesinos link has trivial V. Prop 4.3: Wh+-(K) of a nontrivial semiadequate K has nontrivial V. Sec. 4.3: no nontrivial K with <=16 crossings has V(Wh(K)) = 1. Separately, the torus-knot quotient tangle is Montesinos: its closures tau(+-1/n) are explicit Montesinos links (KWZ intro), and Watson Thm 18 shows kappa(T_{p,q}) is thin with dim <= |pq|-1.
+    - source: Stoimenow, arXiv:math/0606255v2 (journal ref from memory: J. reine angew. Math. 657 (2011)); KWZ arXiv:2104.13592 Sec. 1; Watson arXiv:1311.1085 Thm 18
+    - locator: Thm 4.1, Cor 4.1, Prop 4.3, remarks after Prop 4.3
+    - verified: full_text
+    - relevance: Gives Lemma Q, in its single-closure form, for every torus kappa: each closure is a Montesinos or 2-bridge link whose V is nontrivial unless the closure is U. This settles Shah's unknot case and the (f) check in the 22:48 message. It also gives Lemma Q for J#J^r when J is semiadequate or c(J) <= 16.
+    - node: U5
+  -
+    - claim: Thm 1.1: a localization spectral sequence runs from Kh(K;F2) tensor F2[theta^{+-1}] (d1 = theta(Id + tau_*)) to the annular Kh of the quotients K^0 and K^1. Cors 1.2-1.4 give rank bounds; Thm 1.5 is the HF analogue. Remark 4.7: the induced Jones-level congruence is vacuous, since J_K = 1 mod (2, q - 1 + q^{-1}) for every diagram.
+    - source: Lipshitz-Sarkar, arXiv:2203.13895
+    - locator: Thm 1.1, Cors 1.2-1.4, Thm 1.5, Remark 4.7
+    - verified: full_text
+    - relevance: Equivariant Khovanov machinery for strongly invertible knots exists, but its decategorification says nothing. Any use of it for Lemma Q must go through ranks (B5).
+    - node: B5
+  -
+    - claim: Thm 4.18: w(tau(N)) = 1 for all |N| >> 0 iff K is trivial (via Lemma 4.17 and HF). Prop 2.5: det = 0 forces width > 1. Thms 6.4-6.6: width obstructs finite and lens fillings.
+    - source: Watson, 'Surgery obstructions from Khovanov homology', arXiv:0807.1341v4 (Selecta 2012)
+    - locator: Thm 4.18; Prop 2.5; Sec. 6
+    - verified: full_text
+    - relevance: A second Khovanov detection of trivial strong inversions, through homological width rather than chi.
+    - node: U5
+  -
+    - claim: Thm 5.7: T is rational iff Kh~(T) is a single figure-eight with the trivial local system. The proof needs a gluing theorem to a link invariant that detects the 2-component unlink (Hedden-Ni, using Kronheimer-Mrowka). Thms 1.8, 1.9 and 1.15: spaces of A-link and thin fillings are intervals or points.
+    - source: Kotelskiy-Watson-Zibrowius, 'Thin links and Conway spheres', arXiv:2105.06308
+    - locator: Thm 5.7 and its proof; Thms 1.8, 1.9, 1.15
+    - verified: full_text
+    - relevance: The bracket version fails because V does not detect the 2-component unlink (EKT, B1). Lemma Q must replace that step with the actual unknot closure plus one-component input.
+    - node: B1
+  -
+    - claim: For every k>=2 there are infinite families of prime k-component links with V equal to V of the k-component unlink, built by omega-regluing.
+    - source: Eliahou-Kauffman-Thistlethwaite, Topology 42 (2003) 155-169
+    - verified: full_text
+    - relevance: B1: tangle brackets can be flat when there is no unknot closure.
+    - node: B1
+  -
+    - claim: Any (prime) tangle extends to two distinct prime non-mutant knots with equal V. The paper also notes that a mutant of an unknot diagram is unknotted.
+    - source: Watson, 'Any tangle extends to non-mutant knots with the same Jones polynomial', JKTR 15 (2006) (preprint)
+    - verified: full_text
+    - relevance: Jones-cosmetic tangle substitutions are ubiquitous for nontrivial targets. The unknot target is the exceptional case Lemma Q needs.
+    - node: B5
+  -
+    - claim: Thm 1: if Kh(K) has no 2-torsion and J differs from K by a proper rational tangle replacement, then rk Kh~(K) <= rk Kh~(J). Cor 2: u(K)=1 implies 2-torsion in Kh(K); more generally the same holds for K obtained from U or a trefoil by one proper replacement. Proof: ILM's lambda, KWZ Prop 9.3 and an F[X]-module lemma (Lemma 3). The paper makes no Jones-level statement.
+    - source: Gujral-Wang, arXiv:2310.06163
+    - locator: Thm 1, Cor 2, Lemma 3
+    - verified: full_text
+    - relevance: A u=1 slice result that uses torsion and module structure, beyond chi. It is consistent with V != 1 but does not imply it.
+    - node: U5
+  -
+    - claim: Alishahi-Dowlin: the page where the Lee spectral sequence collapses bounds u; for u<=2 it collapses at E2, so the knight move conjecture holds when u<=2. ILM: lambda >= 0 from universal Kh bounds the proper rational unknotting number below.
+    - source: Alishahi-Dowlin, arXiv:1710.07875; Iltgen-Lewark-Marino, arXiv:2110.15107
+    - locator: Abstracts and Sec. 1
+    - verified: full_text
+    - relevance: For u=1, Kh(K;Q) is a pawn plus knight pairs Q{l,m} + Q{l+1,m+4}. V=1 only forces the knight pairs to cancel in chi in pairs (equal q, opposite h-parity), which is no obstruction (derived).
+    - node: U5
+  -
+    - claim: Cosmetic crossing results. Lidman-Moore: CCC for knots with L-space Sigma_2 under a homological condition, via the Dehn-surgery characterization of the unknot. Boninger: special alternating links (2302.12236) and an Alexander obstruction for L-space Sigma_2 (2407.12763). Ito: genus one with Delta != 1 via the 2-loop polynomial; for Delta = 1 the condition is lambda(Sigma_2) - 2w_3 != 0 mod 16, where w_3 = V'''(1)/36 + V''(1)/12 (2102.09116 Thm 1.3); a Casson-Walker surgery formula (2103.15277).
+    - source: arXiv:1507.00699; 2302.12236; 2407.12763; 2102.09116; 2103.15277
+    - locator: Main theorems in each abstract or introduction
+    - verified: full_text
+    - relevance: All of these need actual isotopy. Jones enters only through low-order finite-type jets, which are constant on V=1 data (DEAD_ENDS #2).
+    - node: U5
+  -
+    - claim: A Jones-polynomial obstruction to purely cosmetic surgeries, using derivatives at t=1. KLMWZ cite it as the Jones analogue of Boyer-Lines and note that such obstructions do not exclude strongly invertible knots.
+    - source: Ichihara-Wu, 'A note on Jones polynomial and cosmetic surgery', Comm. Anal. Geom. (2019), cited as [IW19] in arXiv:2109.14049 Sec. 1.1
+    - verified: abstract_or_snippet
+    - relevance: The only Jones-level 'cosmetic' theorem found. It is finite-type and says nothing at V=1.
+    - node: U5
+  -
+    - claim: Claim: every nontrivial knot has a nonzero Jones finite-type coefficient of order <= 3c(K), hence V=1 implies U (the full conjecture). Method: clasped-twist constructions with a descending vanishing argument. Posted to math.GM, v1 21 Jun 2026; no vetting found. The main theorem is literally equivalent to JC, because a nonzero V-1 vanishes at t=1 to order at most its span, which is at most c(K).
+    - source: Carmi-Cohen, arXiv:2606.22410v1
+    - locator: Abstract; Lemma 5.5; Thm 5.6; Thms 5.10, 5.11; Prop 5.12
+    - verified: full_text
+    - relevance: The only document that claims a proof covering Lemma Q. Treat it as unverified.
+    - node: U5
+  -
+    - claim: Almost-alternating knots (one crossing change away from an alternating diagram) and Turaev genus one knots have V != 1, via extreme-coefficient formulas.
+    - source: Lowrance, 'Unknot detection and the Jones polynomial', slides (2019), citing Lowrance-Spyropoulos (NYJM 2017; reference from memory)
+    - verified: abstract_or_snippet
+    - relevance: The closest 'one crossing change' class detection at the Jones level. Its hypothesis (an alternating target diagram) and mechanism differ, and it does not cover u=1.
+    - node: U5
+  -
+    - claim: Sakuma's Alexander-type invariant eta of a strong inversion vanishes for a nontrivial amphicheiral K with a unique strong inversion. By contrast, kappa(K,h) vanishes only for the trivial knot.
+    - source: Watson, arXiv:1311.1085v4 Sec. 3.3, citing Sakuma 1986 Prop 3.4(1)
+    - verified: full_text
+    - relevance: Classical Alexander-level invariants of strong inversions fail to detect triviality, consistent with DEAD_ENDS #1.
+    - node: U5
+  -
+    - claim: A triply graded refinement of Kh for involutive links; it detects mutation.
+    - source: Lobb-Watson, arXiv:1908.00082 (G&T 25 (2021))
+    - locator: Abstract; Sec. 6.1
+    - verified: full_text
+    - relevance: An equivariant refinement that goes beyond chi. No Jones-level polynomial and no triviality detection found in it.
+    - node: U5
+  -
+    - claim: DERIVED here. In the preferred twist family, <X(n)> = A^n (delta^2-1)(1+delta w)/delta + (-A^{-3})^n/delta, because phi_n(v_mu) = A^n (delta^2-1). Compare with Kh~(X(n)) = kappa(K,h) + Kh~(T(2,n-k)) for n>>0. This gives H := 1 + delta w = (-A^{-4})^k + c delta chi_q(kappa)/(delta^2-1), where c is a unit fixed by absolute gradings. Use chi(V_kappa) ~ (1-x)(1+x^2)(1+x+x^2) with x=t, and delta^2-1 ~ 1+x+x^2. Then H = x^k + (1-x^4) S(x), where S is the signed graded count of s_2 components. So flatness holds iff 4|k and S = (1-x^k)/(1-x^4); for k=0 the special components must cancel in pairs. Check on 4_1: its blocks sit at q-offset 6 with equal h-parity, so S ~ 1+x^3, which gives w ~ (1-x)(1+x^2)(1+x^3) = unit*F if the rational part sits at the trivial position. The trefoil reproduces w = unit*F if its s_2 sits at offset x^3; this was not checked against absolute gradings.
+    - source: Derivation in this sweep from arXiv:1311.1085 (Lemma 13, Cor 14) and arXiv:2104.13592 (Sec. 3, Lemma 2.3, Sec. 4 kappa(4_1))
+    - verified: memory_unverified
+    - relevance: Locates B5 for U5: Lemma Q is equivalent to the special components never sitting at the 'geometric' placement S = (1-x^k)/(1-x^4). The identity independently reproduces U5a's factor F for 3_1 and 4_1. The units and grading conventions are unverified.
+    - node: U5a
+  -
+    - claim: The components of Khovanov multicurves are linear (only rational and special curves), which upgrades the geography expectations of 2104.13592 Sec. 2.
+    - source: Kotelskiy-Watson-Zibrowius, 'Khovanov multicurves are linear' (arXiv:2202.01460; id and content from memory)
+    - verified: memory_unverified
+    - relevance: If correct, then beyond 9 crossings the only Euler-level freedom left in the derived H identity is the bigrading placement of the special components.
+    - node: U5
+
+### prior_art_risks
+
+  - Carmi-Cohen arXiv:2606.22410 (math.GM, 21 Jun 2026) claims the full Jones conjecture. If it is correct, Lemma Q and u=1 detection are corollaries. Cite it and audit it before any novelty claim.
+  - Sikora 2005.08162: Thm 24(c) and Prop 25 make Lemma Q a special case of a published JC-equivalent statement, and Tuzun-Sikora's verification gives c(X)<=23. Neither 'JC implies Lemma Q' nor small-crossing verification is new.
+  - The torus-knot case of Lemma Q follows from Stoimenow Cor 4.1 (Montesinos links); Lickorish-Thistlethwaite 1988 is partial. The trefoil case is Shah's 2023 MSc result. Neither is novel.
+  - The J#J^r case is equivalent to V(Wh(J)) != 1, to 2-cable Jones detection and to J_3 detection. Hedden 2008 posed the question; Stoimenow (semiadequate J, <=16 crossings) is partial. The link to quotient tangles is near-folklore given Hedden-Watson Sec. 4 and Watson 1311.1085 Sec. 3.4.
+  - Khovanov and Floer analogues are published: Hedden-Watson Thm 1; Watson 1311.1085 Thm 1 and 0807.1341 Thm 4.18; KLMWZ Thm 1.2; Gujral-Wang. A U5 argument that silently uses ranks or gradings reproves these, not Lemma Q.
+  - Shah's thesis full text is unread (UBC cIRcle bot challenge, not bypassed). Her talk abstracts mention 'work in progress' with Watson on Jones-cosmetic replacement, so competing or overlapping results are possible. This is the largest open risk of being scooped.
+  - The defect scalar w and H = 1 + delta w may be read as a decategorification of Watson's kappa and KWZ's Euler cancellation (2104.13592 pp. 8-9). Cite both if the derived identity is banked.
+  - Prior art for U4 (Miyazawa 1995 and 1998; Stoimenow MRL 2004) is already flagged in literature.txt.
+  - Eliahou-Fromentin explicitly ask for a tangle whose bracket is trivial over Z. Negating Lemma Q is the special case of that question with an actual unknot closure.
+  - 'Jones-cosmetic' is Shah's 2023 term; credit her if the collab uses it.
+
+### searches_run
+
+  - arXiv full texts read with pdftotext: 2104.13592, 2109.14049, 2105.06308, 1910.14584, 1311.1085, 0807.1341, 0805.4423, 0805.4418, 2203.13895, 2310.06163, 1710.07875, 2110.15107, 1507.00699, 2302.12236, 2407.12763, 2102.09116, 2103.15277, 1610.05560, 2005.08162, math/0606255, 2606.22410, 1908.00082. 2112.10980 was withdrawn (export 404).
+  - Shah: sites.google.com/view/pamelashah; MRP postcard PDF; YTM 2025 poster PDF; math.ubc.ca/node/3411; gla.ac.uk events id=10992; open.library.ubc.ca 1.0435691 (F5 bot challenge, not bypassed); Drive thesis copies (login required, not accessed)
+  - Other texts: EKT Topology 2003 PDF; Watson 2006 JKTR preprint; Lowrance 2019 slides; Garoufalidis 'Whitehead doubling persists'. YTM PDF timed out; WorldScientific and AMS returned 403.
+  - WebSearch: Shah Watson "Jones-cosmetic" tangle arXiv
+  - WebSearch: "unknotting number one" Jones polynomial "detects the unknot" tangle rational 2025 OR 2026 arXiv
+  - WebSearch: "Jones polynomial" "Whitehead double" OR "2-cable" detects unknot colored Jones
+  - WebSearch: "cosmetic crossing" "Jones polynomial" obstruction crossing change preserves Jones polynomial unknot nugatory
+  - WebSearch: Lobb Watson "A refinement of Khovanov homology" strongly invertible Euler characteristic
+  - Before compaction (paraphrased): Pamela Shah Jones-cosmetic thesis; KWZ strong inversions quotient tangle; Lipshitz Sarkar strongly invertible Khovanov quotients; Hedden Watson tangle unknotting number follow-ups; Gujral Wang 2-torsion rational tangle replacement; trivial Kauffman bracket tangle; fake unknot Jones; Jones unknotting number one Miyazawa Stoimenow; cosmetic crossing Khovanov/Heegaard Floer unknot; Carmi Cohen trivial Jones-Vassiliev
+
+### mechanisms_seen
+
+  - Watson's kappa (inverse limit): kappa=0 makes the closures thin, so rank = det; then both signed surgeries are L-spaces and g = tau = -tau (1311.1085 Thm 1)
+  - Khovanov width: w(tau(N)) = 1 for |N| >> 0 iff the strong inversion is trivial (0807.1341 Thm 4.18)
+  - KWZ immersed multicurves: r_1(k) plus special s_2(inf) components; the pairing theorem; Euler cancellation at det = 0; rational detection through unlink detection (2105.06308 Thm 5.7)
+  - KLMWZ: multicurve dimension and grading counts plus Hanselman's cosmetic-slope restriction give the actual-closure version of Lemma Q
+  - Hedden-Watson: Ozsvath-Szabo spectral-sequence rank bound, surgery formulas, Prop 5 (a 1/q L-space surgery forces the trefoil)
+  - Hedden, Grigsby-Wehrli: Khovanov homology of cables and colored categorifications, spectral sequences to HFK
+  - Lidman-Moore, Boninger: L-space double branched covers, Dehn-surgery characterization of the unknot, Alexander polynomial
+  - Ito: 2-loop polynomial plus Casson; Jones enters only through w_3
+  - Gujral-Wang, ILM, Alishahi-Dowlin: torsion order in Lee/Bar-Natan homology (lambda, u_X), an F[X]-module lemma, knight-move structure for u<=2
+  - Lipshitz-Sarkar: Smith theory on the Khovanov spectrum; the Euler shadow is vacuous (Remark 4.7)
+  - Stoimenow, Lickorish-Thistlethwaite: semiadequacy and extreme coefficients (Montesinos links, Whitehead doubles of semiadequate knots)
+  - Sikora: brackets of rational tangles as q-rationals; JC equivalent to rigidity of rational brackets
+  - Shah: KWZ curves and BN~ strip curves for Bar-Natan pairs and closures of P(3,-2)
+  - Barrier constructions: EKT omega-regluing; Eliahou-Fromentin T20 (mod-2^r flat brackets); Watson 2006 non-mutant extensions
+  - Derived here: TL_2 idempotents link Wh, the 2-cable and J_3; H = 1 + delta w = x^k + (1-x^4) S(x) ties flatness to the absolute gradings of special components
+
+### open_questions
+
+  - Get Shah's MSc thesis (UBC cIRcle 1.0435691; [personal download-assistance suggestion removed]). Check whether it proves more than the P(3,-2) case, and what the 'work in progress' with Watson is.
+  - Cheap falsification test for the derived identity H = 1 + delta w = (-A^{-4})^k + c delta chi(kappa)/(delta^2-1). Run it on all strong inversions through 9 crossings, using KWZ Sec. 4 absolute gradings against directly computed quotient-tangle brackets; 3_1 and 4_1 already give w = unit*F. If it holds, U5 is equivalent to: special components never sit at S = (1-x^k)/(1-x^4).
+  - For L-space kappa (thin kappa, k = 4n), flatness needs the n special components at q-offsets 0, 8, ..., 8(n-1), all with equal sign. Compare the actual offsets for T(2,2m+1), using KWZ Sec. 4 tables. A spacing lemma (consecutive offsets < 8) would give Lemma Q for strongly invertible L-space knots.
+  - Is there a grading-rigidity theorem placing the special components relative to r_1(k), for example via Rasmussen s or the BN~ arc a(.)? Table 1 is consistent with k = +-chi_delta(kappa), which det tau(0) = 0 forces (KWZ Question 3.3 asks what k means).
+  - Is unknot detection by the fixed-color colored Jones J_3 (equivalently V of the 0-framed 2-cable, or of untwisted Whitehead doubles) open? Lemma Q implies it; only categorified versions and Andersen's all-cables announcement were found.
+  - Carmi-Cohen audit: find where Lemma 5.5, Thm 5.6 or Prop 5.12 uses the one-component hypothesis and classical (non-virtual) input. A finite-type descent that also applies to EKT links or virtual knots would prove false statements (B1, B2).
+  - Confirm the reference for Tuzun-Sikora's 24-crossing verification (arXiv:1606.06671 covers 22 crossings; the 24-crossing paper's id is remembered, not checked).
+
+
+## Agent: satellite-defect
+
+
+### track
+
+U5 defect-calculus machinery: strong inversions and equivariant JSJ, theta-curves, spatial-graph brackets, EKT, satellite Jones, strongly-invertible invariants (literature track for collab/msgs/20261102-224844-claude.md)
+
+### findings
+
+  -
+    - claim: KWZ computed Kh~ of the quotient tangle for every strong inversion on knots with at most 9 crossings: Kh~(T_{K,h}) = r_1(k) U n*s_2(inf), with k in 4Z and n >= 1. Table 1 values: 3_1 (k=-4, n=1); 4_1 (0, 2); 5_1 (-8, 2); 9_46^1 (0, 4); 9_46^2 (-4, 7). Lemma 2.3: HF(a(0), s_2n(inf)) = sum_{i=1..n} q^{4(2i-n-1)} delta^{-1/2} h^{1/2+2(2i-n-1)} V_kappa, where V_kappa is 4-dimensional in delta=0 with q in {-5,-1,1,5} and delta+h = q/2. Def 3.4 defines kappa(K,h) = HF(a(0), special components). Conj 3.6/3.7: every special component is s_2n(inf). Over Z/3 this fails (Rem 3.10, 7_4 has s_1(inf) components). KWZ's preferred representative has tau(0) at the Seifert longitude and tau(inf) = U.
+    - source: Kotelskiy-Watson-Zibrowius, arXiv:2104.13592
+    - locator: Thm 3.1, Table 1, Lemma 2.3 (+Fig. 7), Def 3.4, Conj 3.6, 3.7, Rem 3.10, Sec. 4 (kappa(4_1)=h^2.5 delta^5.5 V + h^6.5 delta^4.5 V), p.3 preferred representative
+    - verified: full_text
+    - relevance: Gives the exact component structure needed to compute w from Khovanov data. Claude's Sec. 0 decomposition (r_1 plus special components) is literally KWZ Thm 3.1.
+    - node: U5a
+  -
+    - claim: DERIVED decategorification (corrects my earlier guess that chi[s_2(inf)] ~ F). Pairing with a(0) gives phi_0(v_mu) = delta^2-1 = A^-4(1-A^12)/(1-A^4) and chi(V_kappa) = unit*(1-A^12)(1+A^8), with q = -A^{+-2}. So each s_2n(inf) contributes unit*(1-A^4)(1+A^8)[n]_{A^16} to w. The rational block r_1(4j) contributes c_{4j} = (A^{16j}-1)/delta = A^2(1-A^4)(1+A^8)[j]_{A^16}. Hence w_{K,h} = (1-A^4)(1+A^8)*P, where P is a signed sum of A^16-geometric blocks, one block per Kh~ component. Checks: 3_1 has 2 monomials, and F|w forces P = +-A^a(1+A^12), matching the independent exact w_{3_1} = A^-22 F. 4_1: its two V_kappa copies have Delta q = 6 and Delta h = 4 (same sign), so w_{4_1} = unit*F, which is nonzero. The factor (1-A^4)(1+A^8) (t = 1, +-i) is per component. The factor (1+A^12) (t = -1, e^{+-i pi/3}) is a global cancellation among components.
+    - source: Derived this session from arXiv:2104.13592 Lemma 2.3, Thm 3.1, Sec. 4 plus TL_2 algebra (v_mu = delta[0]-[inf], c_k = ((-1)^k A^{4k}-1)/delta)
+    - locator: scratch derivation; inputs KWZ p.5-6, p.7-8, p.9-10
+    - verified: memory_unverified
+    - relevance: Assuming KWZ geography, Lemma Q is equivalent to P != 0. w=0 needs complete chi-cancellation, and a cancelling pair needs equal q and opposite h-parity (delta differing by an odd integer). This is a concrete no-cancellation check. It also explains why F appears: one factor is componentwise, the other is the global det/Z3 identity.
+    - node: U5a
+  -
+    - claim: KWZ already argue that the det(tau(0)) = 0 closure forces cancellation: 0 = |V(-1)| = |chi_delta HF(a(0), Kh~(T))|, so delta-graded intersections of a(0) with special components cancel those with the rational component. Together with Conj 3.6 this gives 4 | k (Questions 3.3).
+    - source: arXiv:2104.13592
+    - locator: Sec. 3, text after Conj 3.6 (pp.8-9); Questions 3.3
+    - verified: full_text
+    - relevance: Prior art for the t=-1 part of U5a's F|w. Note also that (1+A^8) | c_k iff 4 | k, so U5a's t=+-i (Arf) evaluation plus Conj 3.7 also yields KWZ's divisibility-by-4 question.
+    - node: U5a
+  -
+    - claim: Watson Thm 1: kappa(K,h) = 0 iff K is the unknot. This is the Khovanov-level Lemma Q, proved via the Ozsvath-Szabo spectral sequence and L-space surgery input. Sec. 3.4: the exchange composite D(K) = K#K has quotient closure T(0) = C_2K (the untwisted 2-cable), and Thm 16 (Grigsby-Wehrli, Hedden) says Kh of the 2-cable detects U. Thm 18: torus knots have thin kappa, proved by noting S^3_{pq-1}(T_{p,q}) is a lens space, so the branch set is 2-bridge (Hodgson-Rubinstein). Conj 28: kappa is a sum of copies of V, so dim kappa = 0 mod 4.
+    - source: Watson, arXiv:1311.1085
+    - locator: Thm 1 (p.~5), Sec. 3.4 incl. Thm 16 and sketch, Thm 18, Conj 28 (Sec. 6.1)
+    - verified: full_text
+    - relevance: Categorified Lemma Q and the flipping-composite case (L_0 = C_2K) are in the literature. Thm 18's proof is precedent for the 'classify the closure via its double branched cover' mechanism in the Seifert-route finding below.
+    - node: U5
+  -
+    - claim: Gordon-Luecke 2006, Thm 5.2: for a knot exterior X and a slope gamma with Delta(gamma,mu) >= 2, exactly one of four cases holds. (1) T(X(gamma)) = T(X). (2) X is hyperbolic, k is an Eudave-Munoz knot k(l,m,n,p), and Delta = 2. (3) k is a J_eps(l,m)-satellite, Delta = 2, and a new torus appears. (4) k is a (p,q)-cable and gamma = (npq+-1)/n with n >= 2. Thm 6.2: for a knot K with u(K)=1, any unknotting arc can be isotoped off the characteristic toric suborbifold T(K), unless K is an EM-knot or has an EM-tangle summand. Within Seif(K) the arc is an (r,s)-cable of an exceptional fiber. Cor 6.3 is the same for any incompressible toric suborbifold. The intro states: hyperbolic knots with non-integral toroidal surgery are exactly the EM knots, at half-integral slope (GL, CAG 2004); Scharlemann-Thompson: a u=1 satellite has an unknotting arc off every companion torus; Kobayashi: u(K)=g(K)=1 iff K is a Whitehead double. k(l,m,n,p) are strongly invertible. EM parameter restrictions are listed in Sec. 3 (|l|>1; for p=0, (l,m) != (2,1),(-2,-1); ...). The paper also proves that u=1 is mutation invariant (Thm 7.1).
+    - source: Gordon-Luecke, Knots with unknotting number 1 and essential Conway spheres, AGT 6 (2006) 2051-2116, arXiv:math/0601265, doi:10.2140/agt.2006.6.2051
+    - locator: Intro pp.2051-2053, Thm 4.2, Thm 5.2 + Addendum 5.3, Thm 6.2, Cor 6.3, Sec. 3 (parameter restrictions, Lemma 3.1), Thm 8.2
+    - verified: full_text
+    - relevance: For every (kappa,h), X(+-1/2) is an actual knot with u<=1 and Sigma_2 = S^3_{+-1/2}(kappa) (Montesinos trick), so GL applies unconditionally. Case (4) cannot occur at slope +-1/2. Hence the JSJ tori of kappa survive into Sigma_2(K) and descend to T(K) away from the crossing ball, except for the EM and J_eps families. This largely settles the scaffold's OPEN gate 'equivariant decomposition coverage' for U5b shells, modulo explicit families.
+    - node: U5b
+  -
+    - claim: DERIVED: how h acts on JSJ tori. Take a companion torus of K = X(1/2). Its preimage in Sigma_2(K) is one torus with free deck action if the winding number is odd, and two tori swapped by the deck action if it is even. A Conway sphere lifts to a torus with hyperelliptic action. Scharlemann-Thompson put the unknotting arc off the companion torus. After the crossing change, U sits in the pattern solid torus around a knotted companion, so it lies in a ball; hence the winding number is 0. A JSJ torus stays incompressible after the 1/2 filling (GL Thm 5.2), so its quotient is an essential torus of O(K). Consequences: no h-invariant JSJ torus of a strongly invertible kappa has free h-action, which agrees with my independent axis/core argument. Swapped pairs correspond exactly to winding-0 companions of X(+-1/2); the model case is kappa = K#rK, where X(+-1/2) = Wh+-(K).
+    - source: Derived from GL2006 intro (Scharlemann-Thompson, Math. Ann. 280 (1988) 191-205, stated there) + GL2006 Thm 5.2. Hom-Lidman-Park snippet cites ST Cor 3.3: nonzero winding implies u >= 2.
+    - locator: GL2006 p.2053; ST Cor 3.2/3.3 (snippet only)
+    - verified: memory_unverified
+    - relevance: Closes the 'free action' branch of U5b coverage. Identifies the U5c flipping blocks with the Scharlemann-Thompson/Kobayashi satellite class, so the trichotomy is: hyperelliptic tori (Conway spheres inside X), swapped pairs (Whitehead-type), and EM/J_eps exceptions.
+    - node: U5b
+  -
+    - claim: DERIVED genus-one slice. By Kobayashi (u=g=1 iff Whitehead double), plus a_2 = 0 (which forces an untwisted double; Stoimenow Rem 4.2), a genus-one u=1 knot with V=1 must be Wh+-(C) with C != U. By the TL_2/skein computation, V(Wh+-C) - 1 = unit*(1-A^{-+4})(delta^2-1)delta^-1 (J'_{C,3}-1), consistent with Zheng eq. (2.9). Also L_0 = C_2C (Watson Sec. 3.4). So the following are equivalent: Jones detection among genus-one u=1 knots; the 3-colored Jones J'_{.,3} detects U; V distinguishes 0-framed 2-parallels from the 2-component unlink. All three are open. Known cases: semiadequate C (Stoimenow Prop 4.3), alternating C (Nicholson Thm 4.5; the abstract overclaims), companions of at most 16 crossings (Stoimenow remark). The Khovanov analogue is a theorem (Grigsby-Wehrli, Hedden).
+    - source: GL2006 intro (Kobayashi, Kobe J. Math 6 (1989)); Stoimenow arXiv:math/0606255 Prop 4.3, Rem 4.2; Nicholson arXiv:math/0609584 Thm 4.5/Cor 4.7; Zheng arXiv:math/0508138 eq. (2.9); Manolescu-Owens arXiv:math/0508065 Prop 6.1 (Sigma(Wh+-K) = S^3_{+-1/2}(K#K^r))
+    - locator: as listed
+    - verified: memory_unverified
+    - relevance: U5c's open 'flipping composite' gate (H = reduced color-3 Jones of an arbitrary summand) is a recognized open problem in its own right. This is a B4 hardness marker: U5 contains '3-colored Jones detects U'.
+    - node: U5c
+  -
+    - claim: DERIVED Seifert route, an actual-topology mechanism. Suppose [X_kappa] is rational. Then for every n != 0, X(1/n) is a knot (det 1) with V=1 and Sigma_2 = S^3_{1/n}(kappa), since rational closures of det 1 are unknots and the slopes align via the det-0 longitude. Suppose some S^3_{1/n}(kappa) is Seifert fibered. By the orbifold theorem and the classification of Seifert pi-orbifolds, X(1/n) is then a Montesinos knot or a torus knot. No Montesinos link has trivial V up to units (Stoimenow Cor 4.1), and nontrivial torus knots (positive braids, hence semiadequate) also have V != 1 (Stoimenow Thm 4.1). X(1/n) != U by Gordon-Luecke (knots are determined by their complements). So Lemma Q holds for: all torus knots, including T(3,5) from the Kinoshita theta-curve; 4_1 (S^3_{+-1}(4_1) = +-Sigma(2,3,7)); and any hyperbolic kappa with a Seifert-fibered 1/n surgery, where |n| <= 8 by Lackenby-Meyerhoff.
+    - source: Derived; Stoimenow arXiv:math/0606255 Thm 4.1, Cor 4.1 (full text); Seifert classification (Boileau-Zimmermann Math. Z. 200 (1989); orbifold theorem, Boileau-Leeb-Porti) from memory; Ozsvath-Szabo snippet: +1 surgery on 4_1 gives Sigma(2,3,7)
+    - locator: Stoimenow Sec. 4.1-4.2
+    - verified: memory_unverified
+    - relevance: Gives an alternative to scaffold (f) (LT semiadequacy of L_0) for torus kappa. It passes B2 (uses actual double branched covers and geometrization) and closes B5 for this class. U5-hyp splits into: some Seifert 1/n surgery (done); toroidal +-1/2 surgery (EM / J_eps); generic case where all 1/n fillings are hyperbolic (the crux).
+    - node: U5-hyp
+  -
+    - claim: DERIVED B3 corollary: Lemma Q holds for every quotient tangle with a diagram of at most 23 crossings. If [X] were rational, X(+-1) would be a nontrivial knot (nontrivial by GL89) with at most 24 crossings and V=1, contradicting Tuzun-Sikora.
+    - source: Tuzun-Sikora, arXiv:2003.06724 Thm 1 (V distinguishes all nontrivial knots with diagrams up to 24 crossings from U)
+    - locator: Thm 1
+    - verified: full_text
+    - relevance: Any cancellation recipe in U5(e), or any EKT-style construction, must produce quotient tangles with at least 24 crossings.
+    - node: U5
+  -
+    - claim: DERIVED arithmetic, using the EM slope formula for the p=0 family recalled from memory: r = l(2m-1)(1-lm) + n(2lm-1)^2 - 1/2. Sanity check: k(3,1,1,0) = P(-2,3,7) gives 37/2. Setting N = 2lm-1, r = +-1/2 forces (1-l)/2 = 0 or 1 mod N, so N | l-+1, which forces (l,m) = (2,1) or (-2,-1). These are exactly the parameters EM excludes (GL2006 Sec. 3). So no p=0 EM knot has a toroidal +-1/2 surgery, equivalently no p=0 EM-knot has det 1. The n=0 family is unchecked.
+    - source: Derived; restrictions from GL2006 Sec. 3 (full text); slope formula from memory
+    - locator: GL2006 p.2061
+    - verified: memory_unverified
+    - relevance: If the n=0 family also fails, GL Thm 5.2 case (2) is empty at our slopes. Then S^3_{+-1/2}(kappa) toroidal implies kappa is a satellite (or J_eps-satellite).
+    - node: U5-hyp
+  -
+    - claim: The Montesinos trick says u(K)=1 implies Sigma_2(K) is a half-integral surgery on some K*. Lickorish's linking-form obstruction and the CGLS route for 2-bridge knots are classical. Ozsvath-Szabo 2005 and GL2006 together determine u=1 for knots with at most 10 crossings. No paper found that proves Jones detection of U among u<=1 knots. The closest are Traczyk/Stoimenow evaluation criteria for u=1 (arXiv:math/0405076).
+    - source: GL2006 intro (full text); Stoimenow arXiv:math/0405076 (snippet); negative searches
+    - locator: GL2006 pp.2051-2052
+    - verified: abstract_or_snippet
+    - relevance: U3 is classical (no novelty claim). The scaffold equivalence 'U5 iff Jones detects U for u<=1' remains, as far as I could find, an open problem: no literature hit.
+    - node: U3
+  -
+    - claim: EKT build Jones-trivial links with k >= 2 components from a 'Hopf-clasp' bilinear form H on bracket vectors. Regluing by (Omega, Omega^-1) with Omega^t H Omega^-1 = H preserves the bracket. The construction always yields at least 2 components (T^N and U^N sublinks). Known families have nontrivial components: LL2 has 2-bridge components (Stoimenow Prop 8.2), LL1 has a trefoil component. Linking number 0 is forced by V = V(unlink). The team's own computations found torsion in H_1(Sigma_2). Searches found no Jones-trivial 2-component link with both components unknotted, nor one with H_1(Sigma_2) = Z.
+    - source: Eliahou-Kauffman-Thistlethwaite, Topology 42 (2003) 155-169; Stoimenow arXiv:math/0606255 Prop 8.2; work/ekt_homology_notes.md
+    - locator: EKT Prop 2.1', 3.1, Thm 3.2, 3.3, 4.1 and closing remarks
+    - verified: full_text
+    - relevance: B1: the regluing/cancellation mechanism is exactly what U5(e) would need. The u=1 case needs the det-0 closure L_0 to be a Jones-trivial 2-component link that is one band move from U. None is known, and EARLY-03's H_1(Sigma_2 L_0) = Z requirement is not met by known examples.
+    - node: B1
+  -
+    - claim: Eliahou-Fromentin: there are Temperley-Lieb bracket pairs congruent to [1,0] mod 2, and squaring under horizontal composition improves this to mod 2^r. Sec. 6 asks for an integrally trivial pair.
+    - source: Eliahou-Fromentin, arXiv:1610.05560
+    - locator: Lemma 4.2, Prop 4.3, Prop 5.2, Sec. 6
+    - verified: full_text
+    - relevance: The same TL_2 multiplicative algebra as U5c (H = 1+delta*w is multiplicative). Lemma Q is their Sec. 6 question plus an actual unknot closure. Prior art for the composite algebra.
+    - node: U5c
+  -
+    - claim: DERIVED composite law: f = 1+delta*w is multiplicative under directed equivariant sum, because vertex sum corresponds to the TL_2 product (via the knotoid / theta-curve / strongly-invertible semigroup correspondence). Hence w_{12} = w_1 + w_2 + delta*w_1*w_2, i.e. c_0 = -delta. The unit case 1+delta*w = A^k is compatible with F|w only if 48|k, and is excluded by the longitude determinant. This matches Codex's U5c.
+    - source: Derived; Barbensi-Buck-Harrington-Lackenby arXiv:1811.09121 (knotoids / theta-curves / strongly invertible knots, semigroup isomorphism)
+    - locator: BBHL Thm 1.1, 3.4, 4.4
+    - verified: abstract_or_snippet
+    - relevance: Independent confirmation of U5c, with c_0 = -delta.
+    - node: U5c
+  -
+    - claim: f is (up to normalization) the theta(1,1,2) spin-network / KTG evaluation of the quotient theta-curve. The Yamada polynomial equals the all-edges-spin-1 evaluation. Whether Yamada detects the trivial theta-curve is open classically. Virtual theta-curves with trivial Yamada polynomial exist.
+    - source: Huh, arXiv:2206.11450; Fleming-Mellor, arXiv:math/0510158
+    - locator: Huh Prop 5, Thm 8, Cor 9; Fleming-Mellor Sec. 3.4
+    - verified: full_text
+    - relevance: The theta-curve form of Lemma Q is a known-open spatial-graph detection question. The virtual counterexamples are the B2 analogue, so a proof must use classical input.
+    - node: B2
+  -
+    - claim: The Kinoshita theta-curve corresponds to T(3,5) with its unique strong inversion, via double branched covers of theta-curves.
+    - source: Calcut-Metcalf-Burton, arXiv:1509.07788 (ar5iv)
+    - locator: Ex 3.1, Lemma 2.1
+    - verified: full_text
+    - relevance: Its Lemma Q instance is covered by the Seifert route (T(3,5) is a torus knot), with no bracket computation needed.
+    - node: U5-hyp
+  -
+    - claim: Satellite Jones polynomials are affine in companion colored Jones: Zheng eq. (2.9) gives V(Wh+-K) affine in J_{K,3}, and Garoufalidis Thm 1(ii) gives an affine dependence on a companion invariant. Stoimenow: Thm 4.1, no nontrivial semiadequate link has trivial V; Cor 4.1, Montesinos links have nontrivial V up to units; Prop 4.3, Wh+- of a nontrivial semiadequate knot has V != 1; Rem 4.2, only untwisted doubles can be Jones-trivial.
+    - source: Zheng arXiv:math/0508138; Garoufalidis (Whitehead doubles paper); Stoimenow arXiv:math/0606255
+    - locator: Zheng (2.9); Garoufalidis Thm 1(ii); Stoimenow Thm 4.1, Cor 4.1, Prop 4.3, Rem 4.2
+    - verified: full_text
+    - relevance: The U5b affine formula w(P(J)) = w(P(U)) + d_P w(J) is the TL_2-module version of standard skein linearity, so it is prior-art-adjacent. No literature statement of the w-formula itself was found.
+    - node: U5b
+  -
+    - claim: Equivariant torus theorem (Holzmann 1991) is used to make JSJ/companion tori invariant under a strong inversion. Boyle-Issa: Sakuma's eta polynomial (= Kojima-Yamasaki eta of (axis, c_lambda)), the equivariant map K -> K#rK, butterfly links. Di Prisa: equivariant algebraic concordance.
+    - source: Armas-Sanabria and Eudave-Munoz, arXiv:2005.11893 (Lemma 3.2 proof cites Holzmann); Boyle-Issa arXiv:2101.05413; Di Prisa arXiv:2207.04985
+    - locator: 2005.11893 Lemma 3.2; Boyle-Issa Sec. 1-4, Def 2.3
+    - verified: full_text
+    - relevance: Three distinct associated links appear: Sakuma's (O, c_lambda), Boyle-Issa's butterfly link, and our L_0 = X(lambda). No identity found between eta and w; eta is Alexander-module data, w is bracket data.
+    - node: U5
+  -
+    - claim: Collari-Lisca (June 2026) define P^e, a 2-variable equivariant HOMFLY-PT-type invariant of strongly involutive links, computed on transvergent diagrams. A specialization equals the graded Euler characteristic of the E_3 page of the Lobb-Watson G-filtration spectral sequence, and J^e is 'essentially Couture's polynomial'. The equivariant bracket is a state sum on the symmetric diagram, not on the quotient tangle. Equivariant disjoint union is multiplicative; nothing is said about connected sums or satellites.
+    - source: Collari-Lisca, arXiv:2606.21471
+    - locator: Sec. 1 (Thm 1.1, 1.3, Rem 1.4), Sec. 2 (Prop 2.2, Lemma 2.3)
+    - verified: abstract_or_snippet
+    - relevance: This is the nearest existing Jones-type invariant of strong inversions. If any specialization is determined by [X_{K,h}], then w is prior art. Its relation to the quotient bracket is unknown. (Read through the fetch summarizer, first half of the HTML only.)
+    - node: U5a
+  -
+    - claim: Krebes: the determinant pair of a 4-tangle persists, i.e. its common factors divide the det of any link containing the tangle. KSW 2000 generalized this to Kauffman-bracket/TL obstructions for 2n-tangles, and Przytycki-Silver-Williams 2006 gave further generalizations. A tangle with rational bracket has unit gcd, so these persistence obstructions are blind to it.
+    - source: Przytycki-Silver-Williams, Math. Proc. Camb. Phil. Soc. (2006), arXiv:math/0405465 (abstract/intro snippets citing Krebes JKTR 1999 and KSW JKTR 9 (2000))
+    - locator: abstract/intro
+    - verified: abstract_or_snippet
+    - relevance: Lemma Q tangles are exactly the tangles that persistence obstructions cannot see. This confirms U5 needs input beyond bracket pairs (B5).
+    - node: U5
+  -
+    - claim: arXiv:2606.22410 (Carmi-Cohen, math.GM, 21 June 2026) claims a proof of the full Jones unknot conjecture via a finite-type 'clasped-twist' argument. Unvetted and outside math.GT.
+    - source: arXiv:2606.22410
+    - locator: abstract
+    - verified: abstract_or_snippet
+    - relevance: Do not cite as a result. If raised, test it against B1 (EKT links): a finite-type argument must use the one-component hypothesis somewhere.
+    - node: B1
+
+### prior_art_risks
+
+  - KWZ arXiv:2104.13592 Sec. 3 (pp.8-9) already has the det(tau(0)) = 0 delta-graded cancellation argument, i.e. the t=-1 part of U5a's F|w, and the r_1(k) + special-components decomposition (Claude's Sec. 0). The w = (1-A^4)(1+A^8)P structure is a direct decategorification of their Thm 3.1 and Lemma 2.3.
+  - Watson arXiv:1311.1085 Thm 1 is the categorified Lemma Q for all (K,h). Sec. 3.4 already identifies the exchange-composite closure with the 2-cable, and Thm 18 already uses 'surgery classifies the branch-set closure'.
+  - U3 (Sigma_2 of the u=1 knot is a half-integral surgery on a strongly invertible knot) is the Montesinos trick (Montesinos 1973), used by Ozsvath-Szabo 2005 and Gordon-Luecke 2006.
+  - U4 and the F|w evaluations are covered by classical evaluation results: Lickorish-Millett 1986 (V(i), V(e^{i pi/3})), Lipson, Jones; for unknotting-number/band-move constraints Traczyk, Stoimenow math/0405076, Miyazawa 1998, Kanenobu. Memory/snippet level.
+  - TL_2 linear algebra for tangle insertion, regluing and squaring: EKT (Topology 2003), Eliahou-Fromentin arXiv:1610.05560, Rolfsen 1993 NATO ASI 399, KSW 2000. U5b and U5c algebra is standard. Only the specific scalar w and its use in Lemma Q look new.
+  - Satellite linearity: Zheng math/0508138 (2.9), Garoufalidis Thm 1(ii), Kirby-Melvin cabling. The Wh(K) <-> J_{K,3} reduction is standard skein theory.
+  - f is a known KTG/spin-network theta evaluation (Huh 2206.11450). Yamada and Jaeger polynomials of theta-curves have long histories.
+  - The equivariant decomposition-coverage gate is largely covered by Gordon-Luecke AGT 2006 Thm 5.2/6.2/Cor 6.3, Scharlemann-Thompson 1988, Kobayashi 1989 and Holzmann 1991. Claim a U5b coverage lemma only as a repackaging of these.
+  - Collari-Lisca arXiv:2606.21471, Couture, and Lobb-Watson (GT 25 (2021) 1861-1917) supply Jones-type invariants of strong inversions. If any specialization equals the quotient bracket, U5a's scalar is prior art. Unchecked.
+  - arXiv:2606.22410 (math.GM) claims the full conjecture. Unvetted, but it is an existing claim to be aware of before any priority statement.
+
+### searches_run
+
+  - Sakuma strongly invertible knots classification torus knots satellites composite (1986)
+  - Boileau Zimmermann symmetries of knots strong inversion torus/satellite; Kodama-Sakuma symmetry groups
+  - equivariant torus theorem strong inversion JSJ hyperelliptic Conway sphere (Holzmann)
+  - Wolcott vertex connected sum theta-curves; knotoids theta-curves strongly invertible (Turaev, Barbensi-Buck-Harrington-Lackenby)
+  - Kinoshita theta-curve double branched cover strongly invertible knot (Calcut-Metcalf-Burton)
+  - Yamada polynomial theta-curve detect trivial theta-curve; Kauffman-Simon-Wolcott-Zhao invariants of theta-curves
+  - spin network theta evaluation KTG Yamada (Huh); virtual theta-curves trivial Yamada (Fleming-Mellor)
+  - Eliahou Kauffman Thistlethwaite infinite families of links with trivial Jones polynomial construction
+  - Thistlethwaite links with trivial Jones polynomial 2-component unknotted components
+  - Eliahou Fromentin Jones polynomial mod 2^r bracket pairs
+  - Jones polynomial Whitehead double colored Jones nontrivial (Zheng, Garoufalidis, Nicholson, Stoimenow)
+  - Stoimenow coefficients and non-triviality of the Jones polynomial semiadequate Montesinos
+  - Habiro cyclotomic expansion colored Jones trefoil figure-eight (numeric check)
+  - Sakuma eta polynomial strongly invertible; Boyle Issa equivariant 4-genera butterfly link; Di Prisa equivariant concordance
+  - Watson Khovanov homology and the symmetry group of a knot kappa invariant
+  - Kotelskiy Watson Zibrowius Khovanov homology and strong inversions (arXiv 2104.13592, full PDF)
+  - Manolescu Owens Whitehead double double branched cover 1/2 surgery K#K^r
+  - Armas-Sanabria Eudave-Munoz satellite knots trivializing bands (Holzmann citation)
+  - Gordon Luecke Knots with unknotting number 1 and essential Conway spheres abstract (+ full PDF)
+  - Gordon Luecke Non-integral toroidal Dehn surgeries Eudave-Munoz knots half-integral
+  - Jones polynomial detects the unknot among knots with unknotting number one
+  - Scharlemann Thompson Unknotting number, genus, and companion tori satellite unknotting number one
+  - double branched cover Seifert fibered implies Montesinos link or torus knot orbifold theorem Boileau Zimmermann
+  - Krebes Silver Williams persistent invariants of tangles Kauffman bracket
+  - Lobb Watson refinement of Khovanov homology strongly invertible Euler characteristic polynomial
+  - -1 surgery figure-eight knot Brieskorn sphere Sigma(2,3,7) Seifert fibered
+  - arXiv 2606.21471 Collari-Lisca polynomial invariant strongly involutive links (abstract + HTML)
+  - arXiv 2606.22410 Carmi-Cohen trivial Jones-Vassiliev polynomials (abstract)
+
+### mechanisms_seen
+
+  - Decategorified KWZ multicurves. The rational block r_1(4j) gives (1-A^4)(1+A^8)[j]_{A^16}, and each special s_2n(inf) gives (1-A^4)(1+A^8)[n]_{A^16}. So w=0 is possible only by complete chi-cancellation (equal q, opposite h-parity).
+  - Khovanov-level detection: Watson Thm 1 via the Ozsvath-Szabo spectral sequence plus L-space surgeries, and Grigsby-Wehrli/Hedden for the 2-cable. These are categorified versions of the Lemma Q statements.
+  - Montesinos trick plus Dehn-surgery classification: Gordon-Luecke non-integral toroidal surgeries (EM knots), GL2006 characteristic toric suborbifold theorem, CGLS and Hodgson-Rubinstein for lens fillings.
+  - Orbifold theorem plus classification of Seifert pi-orbifolds, then semiadequacy (Lickorish-Thistlethwaite, Stoimenow). Any Seifert-fibered 1/n filling forces a Montesinos or torus closure with V != 1.
+  - Satellite unknotting theory: Scharlemann (u=1 knots are prime), Scharlemann-Thompson (arc off companion torus, winding 0), Kobayashi (u=g=1 iff Whitehead double).
+  - EKT Hopf-clasp bilinear form and (Omega, Omega^-1) regluing; Eliahou-Fromentin TL_2 squaring mod 2^r. These are the only known mechanisms producing Jones-trivial objects, and they always give at least 2 components.
+  - Skein of the annulus and colored Jones for satellites: Whitehead doubles and 2-cables give J_3.
+  - Theta-curve and spatial-graph bracket (Yamada, KTG theta evaluations); knotoid / theta-curve / strongly-invertible-knot correspondence with a semigroup structure.
+  - Persistent tangle invariants (Krebes, KSW, PSW): they divide out bracket-pair gcds and are blind to rational-bracket tangles.
+  - Equivariant Khovanov refinements (Lobb-Watson filtrations, Couture, Collari-Lisca P^e): Euler characteristics built from symmetric diagrams rather than the quotient tangle.
+
+### open_questions
+
+  - Do KWZ's geography conjectures (all components linear; special components equal s_2n(inf), Conj 3.7) hold for all (K,h) over F_2? If so, Lemma Q is equivalent to P != 0. Is there a delta-grading or h-parity rule that forbids chi-cancellation between special components, or against the rational block? Watson Thm 18 gives thin kappa for torus knots; 4_1's two copies have Delta h = 4, same sign.
+  - Read the actual KWZ Sec. 4 grids to compute w for all (K,h) with at most 9 crossings. Each should be (1-A^4)(1+A^8) times a signed A^16-block sum divisible by (1+A^12). This is a cheap independent check of U5a on about 90 inversions.
+  - Does any EM knot in the n=0 family, or any J_eps(l,m)-satellite, have a toroidal surgery at slope exactly +-1/2 (equivalently det(K)=1 for the EM-knot or EM-tangle closure)? The p=0 family is excluded, using an EM slope formula recalled from memory.
+  - Which hyperbolic kappa have a Seifert-fibered 1/n surgery with n != 0 (|n| <= 8)? Each one gets Lemma Q from the Seifert route. Can the route be extended to X(1/n) lying in another V-detecting class (semiadequate, 3-braid, at most 24 crossings)?
+  - Does the 3-colored Jones J'_{K,3} detect U? Equivalently: is a 0-framed 2-parallel of a nontrivial knot never Jones-trivial? This is the open core of U5c (flipping composites) and of the genus-one u=1 slice.
+  - Is any specialization of Collari-Lisca's J^e (or Couture's polynomial) determined by the quotient-tangle bracket [X_{K,h}], and hence related to w?
+  - Does a Jones-trivial 2-component link exist with unknotted components, or with H_1(Sigma_2) = Z, or one that is one band move from U? This is the B1 test for U5(e).
+  - Sakuma 1986's original classification of strong inversions on composite knots was not accessed. My derived form (directed equivariant sums of inverted factors, plus exchange pairs J#rJ) is unconfirmed.
+  - Meta, for the parent re the user's question on a 1M context window: context is not the bottleneck for this track; the crux is B5. A larger window would mainly keep full texts resident (GL2006 is about 3000 lines; Stoimenow 350KB; KWZ) instead of re-grepping them, which reduces citation errors but does not change the mathematics.

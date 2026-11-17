@@ -40,4 +40,4 @@ from the explicitly listed algebraic premises.
 - [jones-cabling-and-realizability.txt](../../archive/outputs/jones-cabling-and-realizability.txt)
 - [cyclotomic_formal_model.txt](../../archive/work/creative6/cyclotomic_formal_model.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

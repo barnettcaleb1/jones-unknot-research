@@ -39,4 +39,4 @@ Files: research41/pairing.txt, verify_pairing.py/.json.
 
 - [pairing.txt](../../archive/work/research41/pairing.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,4 @@
+samples with span(N)=8: 89903  collinear: 84716  collinear but phi(c)!=c (KERNEL CANDIDATES): 0
+non-collinear with phi(c)=c (should be 0): 0
+span(N)=8 but not collinear: intersection numbers i(c,phi c) -> counts: {4: 2000}
+examples: [([-4, -4, -3, 5, -3, -2, -1, -4, 2, -3], 4, False), ([1, 4, 3, -2, -4, -4, 5, 1, 4, 1, -3, -1, -3], 4, False), ([5, -4, -1, -3, 4, -4, 1, -2, 4, -3, 5], 4, False)]

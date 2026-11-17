@@ -37,4 +37,4 @@ the preprint dependence of the R10 conclusion.
 
 - [jones-creative-pass.txt](../../archive/outputs/jones-creative-pass.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

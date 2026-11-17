@@ -61,4 +61,4 @@ projective_templates.txt. No claim about beta_Im or arbitrary links.
 - [projective_local_crossing_audit.txt](../../archive/work/research31/projective_local_crossing_audit.txt)
 - [verify_torus_countertest.py](../../archive/work/research31/verify_torus_countertest.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

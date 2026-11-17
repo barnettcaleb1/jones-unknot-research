@@ -27,4 +27,4 @@ Fixed-color meridian probes lie on m=-(A^(2N)+A^(-2N)) and meet A=-1 at m=-2, wh
 - [meridian_regularity.md](../../archive/work/global_design/meridian_regularity.md)
 - [skein_bridge_design.md](../../archive/work/global_design/skein_bridge_design.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

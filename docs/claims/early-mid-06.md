@@ -50,4 +50,4 @@ trefoil_actual_PD_checks.json. All-r scope follows the shell identity.
 - [whitehead_factor_and_clasp_audit.txt](../../archive/work/transmission18/whitehead_factor_and_clasp_audit.txt)
 - [whitehead_factor_check.py](../../archive/work/transmission18/whitehead_factor_check.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

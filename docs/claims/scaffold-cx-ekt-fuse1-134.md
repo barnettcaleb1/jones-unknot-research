@@ -27,4 +27,4 @@ One fixed fusion band outside both input balls of the original EKT Hopf shell, u
 - [ekt_fusion_surgery_gate.md](../../archive/work/global_design/ekt_fusion_surgery_gate.md)
 - [two_box_signed_square.md](../../archive/work/global_design/two_box_signed_square.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

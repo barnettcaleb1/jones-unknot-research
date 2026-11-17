@@ -47,4 +47,4 @@ Proofs: work/research24/braid_kernel_route.txt; braid_moment_filter.py/.json.
 
 - [braid_kernel_route.txt](../../archive/work/research24/braid_kernel_route.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

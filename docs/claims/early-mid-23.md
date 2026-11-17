@@ -46,4 +46,4 @@ work/research25/structural_kernel_route.txt. verify_spectral_jets.py.
 - [spectral_realizability_obstruction.txt](../../archive/work/research24/spectral_realizability_obstruction.txt)
 - [structural_kernel_route.txt](../../archive/work/research25/structural_kernel_route.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

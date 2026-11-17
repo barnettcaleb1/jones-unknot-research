@@ -38,4 +38,4 @@ Source: work/generic/homology_notes.md and generic-jones-note/main.tex.
 - [main.tex](../../archive/work/generic-jones-note/main.tex)
 - [homology_notes.md](../../archive/work/generic/homology_notes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

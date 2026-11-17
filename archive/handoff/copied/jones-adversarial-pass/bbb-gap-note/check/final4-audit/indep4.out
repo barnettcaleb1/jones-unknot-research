@@ -1,0 +1,62 @@
+OK   Delta_3^2 == (s1 s2)^3
+OK   Delta_3 == s2 s1 s2 (Garside positive half twist on 3 strands)
+OK   X == Delta_3^4
+OK   Delta_4^2 == (s1 s2 s3)^4
+OK   Delta_3^-2 Delta_4^2 == A14 A24 A34
+OK   [delta^-2, b] in a-basis: 28 letters, exponent sums [0, 0, 0]
+OK   Phi0 == [delta^-2, b] as braids
+OK   n=3: diag(1,-1,1,-1,..) RT diag(..) == BB05 reduced: True; with diag(1,-1,1,1,..): True
+OK   n=4: diag(1,-1,1,-1,..) RT diag(..) == BB05 reduced: True; with diag(1,-1,1,1,..): True
+OK   n=5: diag(1,-1,1,-1,..) RT diag(..) == BB05 reduced: True; with diag(1,-1,1,1,..): False
+OK   n=6: diag(1,-1,1,-1,..) RT diag(..) == BB05 reduced: True; with diag(1,-1,1,1,..): False
+OK   braid relations B_4 U
+OK   braid relations B_4 UT
+OK   braid relations B_4 R
+OK   braid relations B_4 RT
+OK   braid relations B_4 BB
+OK   braid relations B_5 U
+OK   braid relations B_5 UT
+OK   braid relations B_5 R
+OK   braid relations B_5 RT
+OK   braid relations B_5 BB
+OK   Prop4(b) U: (1+t^3) identity True, not with 1+t^-3 True, mirror 1+t^-3 True, t->1/t True, RL order True
+OK   rho(X) = I at t=-1 in U
+OK   Prop4(b) UT: (1+t^3) identity True, not with 1+t^-3 True, mirror 1+t^-3 True, t->1/t True, RL order True
+OK   rho(X) = I at t=-1 in UT
+OK   Prop4(b) R: (1+t^3) identity True, not with 1+t^-3 True, mirror 1+t^-3 True, t->1/t True, RL order True
+OK   rho(X) = I at t=-1 in R
+OK   Prop4(b) RT: (1+t^3) identity True, not with 1+t^-3 True, mirror 1+t^-3 True, t->1/t True, RL order True
+OK   rho(X) = I at t=-1 in RT
+OK   Prop4(b) BB: (1+t^3) identity True, not with 1+t^-3 True, mirror 1+t^-3 True, t->1/t True, RL order True
+OK   rho(X) = I at t=-1 in BB
+   LR U : depth(Phi0)=1  depths of C1..C4 = [2, 4, 6, 8]  images noncommute (mod s^14): True
+OK   LR U: depth Phi0 = 1, commutator depths [2, 4, 6, 8] == [2, 4, 6, 8]
+   LR UT: depth(Phi0)=1  depths of C1..C4 = [2, 4, 6, 8]  images noncommute (mod s^14): True
+OK   LR UT: depth Phi0 = 1, commutator depths [2, 4, 6, 8] == [2, 4, 6, 8]
+   LR R : depth(Phi0)=1  depths of C1..C4 = [3, 4, 6, 8]  images noncommute (mod s^14): True
+OK   LR R: depth Phi0 = 1, commutator depths [3, 4, 6, 8] == [3, 4, 6, 8]
+   LR RT: depth(Phi0)=1  depths of C1..C4 = [3, 4, 6, 8]  images noncommute (mod s^14): True
+OK   LR RT: depth Phi0 = 1, commutator depths [3, 4, 6, 8] == [3, 4, 6, 8]
+   LR BB: depth(Phi0)=1  depths of C1..C4 = [3, 4, 6, 8]  images noncommute (mod s^14): True
+OK   LR BB: depth Phi0 = 1, commutator depths [3, 4, 6, 8] == [3, 4, 6, 8]
+   RL U : depth(Phi0)=1  depths of C1..C4 = [2, 4, 6, 8]  images noncommute (mod s^14): True
+OK   RL U: depth Phi0 = 1, commutator depths [2, 4, 6, 8] == [2, 4, 6, 8]
+   RL UT: depth(Phi0)=1  depths of C1..C4 = [2, 4, 6, 8]  images noncommute (mod s^14): True
+OK   RL UT: depth Phi0 = 1, commutator depths [2, 4, 6, 8] == [2, 4, 6, 8]
+   RL R : depth(Phi0)=1  depths of C1..C4 = [3, 4, 6, 8]  images noncommute (mod s^14): True
+OK   RL R: depth Phi0 = 1, commutator depths [3, 4, 6, 8] == [3, 4, 6, 8]
+   RL RT: depth(Phi0)=1  depths of C1..C4 = [3, 4, 6, 8]  images noncommute (mod s^14): True
+OK   RL RT: depth Phi0 = 1, commutator depths [3, 4, 6, 8] == [3, 4, 6, 8]
+   RL BB: depth(Phi0)=1  depths of C1..C4 = [3, 4, 6, 8]  images noncommute (mod s^14): True
+OK   RL BB: depth Phi0 = 1, commutator depths [3, 4, 6, 8] == [3, 4, 6, 8]
+   B5 U : depth f(Phi0)=1  depths of f(C1..C4) = [2, 4, 6, 8]
+   B5 UT: depth f(Phi0)=1  depths of f(C1..C4) = [2, 4, 6, 8]
+   B5 R : depth f(Phi0)=1  depths of f(C1..C4) = [2, 4, 6, 8]
+   B5 RT: depth f(Phi0)=1  depths of f(C1..C4) = [2, 4, 6, 8]
+   B5 BB: depth f(Phi0)=1  depths of f(C1..C4) = [2, 4, 6, 8]
+OK   exact depth of [Phi0, s3 Phi0 s3^-1] in U = 2
+OK   exact depth of [Phi0, s3 Phi0 s3^-1] in UT = 2
+OK   exact depth of [Phi0, s3 Phi0 s3^-1] in R = 3
+OK   exact depth of [Phi0, s3 Phi0 s3^-1] in RT = 3
+
+SUMMARY: 45 OK, 0 BAD

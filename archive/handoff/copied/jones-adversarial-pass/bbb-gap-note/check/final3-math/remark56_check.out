@@ -1,0 +1,13 @@
+PASS  (5a) 1-t and 1-1/t are nonzero at t=-1 (value 2), so t+1 divides neither
+PASS  (5b) (t+1)^d * Q, Q != 0: exponent span >= d (500 random cases)
+PASS  (5c) congruence mod (t+1)^d <=> same sign and equal factorial moments j<d (4000 cases, 1047 congruent)
+PASS  (5d) for d = 1..8: multisets with equal factorial moments j<d and different spans exist
+PASS  (6a) exactly one of s3 s2^2 s3^-1, s3^-1 s2^2 s3 fixes x3 (found False, True)
+PASS  (6a) T_c1 = s1^2 fixes x3
+PASS  (6b) the braid sends x3 to s3^2(x3) = [3, 4, 3, -4, -3]
+PASS  (6b) s1^2 = T_c1 fixes the image loop, so the image arc is disjoint from c1, hence from alpha
+PASS  (6b) the image is not x3 (the braid moves the arc)
+PASS  (6c) word-length growth ratios [10.882, 10.038, 9.918, 9.901, 9.899, 9.899] -> 5+2sqrt6 = 9.8990
+PASS  (6c) Penner matrix PF eigenvalue 9.8990 == 5+2sqrt6
+
+11 PASS, 0 FAIL

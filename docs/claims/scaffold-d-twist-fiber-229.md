@@ -26,4 +26,4 @@ For a disk meeting a knot r times, either its entire full-twist family has const
 
 - [twist_fiber.md](../../archive/work/global_design/twist_fiber.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

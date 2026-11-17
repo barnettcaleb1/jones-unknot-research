@@ -38,4 +38,4 @@ work/proof12/satellite_fiber_rigidity.txt.
 - [all_color_collision_proof.txt](../../archive/work/proof12/braid/all_color_collision_proof.txt)
 - [satellite_fiber_rigidity.txt](../../archive/work/proof12/satellite_fiber_rigidity.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

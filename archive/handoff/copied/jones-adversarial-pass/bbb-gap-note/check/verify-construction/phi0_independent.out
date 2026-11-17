@@ -1,0 +1,13 @@
+Artin (left action): Phi0 trivial? False | image lengths {1: 11836703, 2: 7107169, 3: 629749, 4: 4112641}
+pure: True
+delete strand 1: trivial? True
+delete strand 2: trivial? True
+delete strand 3: trivial? True
+delete strand 4: trivial? True
+delta pure & strand-4 deletion trivial (delta in K_4)? True
+Phi0 == [delta^-2, b] exactly (Artin, faithful)? True
+Delta_4^2 central? True
+b in K_4 (strand-4 deletion trivial)? True | b trivial? False
+B_4: Burau(Phi0) == I as Laurent matrix? False | == I at t=-1? True | at t=2? False | at t=3? False
+B_5: Burau(Phi0) == I as Laurent matrix? False | == I at t=-1? True | at t=2? False | at t=3? False
+(t+1)-adic depth of Burau_4(Phi0) - I: 1

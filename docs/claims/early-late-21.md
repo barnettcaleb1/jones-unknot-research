@@ -35,4 +35,4 @@ commutator knot example is correct backup, not extra progress.
 
 - [jones-arithmetic-route-verdict.txt](../../archive/outputs/jones-arithmetic-route-verdict.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

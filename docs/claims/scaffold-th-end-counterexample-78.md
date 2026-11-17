@@ -27,4 +27,4 @@ Actual halfword s.r1.x2.y1.y0.r2.y0.y1.y0.y1.x2.u3.u1 has geometric unknot cap a
 - [ce1_endpoint_referee.md](../../archive/work/theory_restart/ce1_endpoint_referee.md)
 - [endpoint_counterexample.py](../../archive/work/theory_restart/referee_checks/endpoint_counterexample.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

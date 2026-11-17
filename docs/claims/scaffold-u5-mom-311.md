@@ -27,4 +27,4 @@ Reply 20261103-051309; work/width6_moments/tables_overview.md and independent_P1
 - [independent_P1_certificate.md](../../archive/work/width6_moments/independent_P1_certificate.md)
 - [tables_overview.md](../../archive/work/width6_moments/tables_overview.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

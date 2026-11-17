@@ -28,4 +28,4 @@ For m disjoint off-axis paired or on-axis full-twist crossing changes, Delta^m J
 - [ft_second_referee.md](../../archive/work/theory_restart/ft_second_referee.md)
 - [ft_local.py](../../archive/work/theory_restart/referee_checks/ft_local.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

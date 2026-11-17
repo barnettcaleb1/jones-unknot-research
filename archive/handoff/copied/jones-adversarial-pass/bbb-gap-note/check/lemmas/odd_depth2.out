@@ -1,0 +1,26 @@
+leading coefficient of rho(Phi0) at order 1 (X1):
+    [0, 2208, -5808, 3600]
+    [-2208, 4416, -8016, 5808]
+    [1392, 816, -4416, 2208]
+    [3600, -1392, -2208, 0]
+X1^2 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+nonzero rows of X1: 4
+depths of [seed^g, seed^h]: {1: 2, 2: 4, 3: 4}
+  new exact depth 4: [depth 3, depth 1] commutator, length 980
+  new exact depth 6: [depth 3, depth 2] commutator, length 1460
+  new exact depth 9: [depth 2, depth 6] commutator, length 3644
+  new exact depth 8: [depth 1, depth 6] commutator, length 3116
+  new exact depth 5: [depth 3, depth 1] commutator, length 966
+  new exact depth 10: [depth 2, depth 6] commutator, length 3566
+  new exact depth 7: [depth 4, depth 2] commutator, length 2446
+exact depths realised (nontrivial at t=2): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  depth 1: example length 76
+  depth 2: example length 360
+  depth 3: example length 322
+  depth 4: example length 980
+  depth 5: example length 966
+  depth 6: example length 1460
+  depth 7: example length 2446
+  depth 8: example length 3116
+  depth 9: example length 3644
+  depth 10: example length 3566

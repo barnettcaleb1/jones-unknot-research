@@ -26,4 +26,4 @@ Proposed beyond-two-bridge Sakuma seed P(-5,9,11), with Delta=1 and V=1 in F16; 
 
 - [c2_pretzel_gate.md](../../archive/work/global_design/c2_pretzel_gate.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

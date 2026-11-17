@@ -26,4 +26,4 @@ For two disjoint twisting disks whose augmented link exterior is hyperbolic, the
 
 - [ct_topology.md](../../archive/work/global_design/ct_topology.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ Determinant-one/zero caps give H_1(M)=Z, preferred longitude, no closed componen
 
 - [LATE-41-audit.md](../../archive/collab/audits/LATE-41-audit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,9 @@
+Phi0: len 76 depth 1 nontrivial(t=2) True
+c0 = s3 Phi0 s3^-1: len 78 pure True depth 1 Brunnian True
+Burau(Phi0), Burau(c0) commute at t=2? False
+c1 = [Phi0, c0]: len 304, nontrivial(t=2) True, Brunnian True, depth 2 (claim >= 2)  [0.0s]
+c2 = [Phi0, c1]: len 758, nontrivial(t=2) True, Brunnian True, depth 4 (claim >= 3)  [0.1s]
+c3 = [Phi0, c2]: len 1518, nontrivial(t=2) True, Brunnian True, depth 6 (claim >= 4)  [0.2s]
+c4 = [Phi0, c3]: len 2886, nontrivial(t=2) True, Brunnian True, depth 8 (claim >= 5)  [0.4s]
+
+[exited with code 0]

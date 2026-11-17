@@ -1,0 +1,55 @@
+PASS  (S) U, UT, R, RT satisfy the B_4 and B_5 relations and s_i s_i^-1 = I
+PASS  (S) for every letter s_i^(+-1), n = 4, 5, the Fox Jacobian of its Artin automorphism is its U matrix
+PASS  (S) Fox Jacobian of the Artin action of a test word equals U
+PASS  (0) A14, A24, A34 are Artin's A_14, A_24, A_34
+PASS  (0) each A_i4 lies in K_4 (pure, trivial after deleting strand 4)
+PASS  (1) Phi0 is a pure braid
+PASS  (2) Artin action: X and b do not commute, i.e. Phi0 != 1
+PASS  (3) deleting strand 1: word freely reduces to empty and acts trivially on F_3
+PASS  (3) deleting strand 2: word freely reduces to empty and acts trivially on F_3
+PASS  (3) deleting strand 3: word freely reduces to empty and acts trivially on F_3
+PASS  (3) deleting strand 4: word freely reduces to empty and acts trivially on F_3
+PASS  (4) unreduced concatenation has 112 letters (expected 112)
+PASS  (4) freely reduced word has 76 letters (expected 76)
+PASS  (5) B_4 U : Burau(Phi0) = I at t=-1
+PASS  (6) B_4 U : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_4 U : (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_4 UT: Burau(Phi0) = I at t=-1
+PASS  (6) B_4 UT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_4 UT: (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_4 R : Burau(Phi0) = I at t=-1
+PASS  (6) B_4 R : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_4 R : (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_4 RT: Burau(Phi0) = I at t=-1
+PASS  (6) B_4 RT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_4 RT: (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_5 U : Burau(f(Phi0)) = I at t=-1
+PASS  (6) B_5 U : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_5 U : (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_5 UT: Burau(f(Phi0)) = I at t=-1
+PASS  (6) B_5 UT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_5 UT: (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_5 R : Burau(f(Phi0)) = I at t=-1
+PASS  (6) B_5 R : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_5 R : (t+1)-adic depth is exactly 1 (found 1)
+PASS  (5) B_5 RT: Burau(f(Phi0)) = I at t=-1
+PASS  (6) B_5 RT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+PASS  (7) B_5 RT: (t+1)-adic depth is exactly 1 (found 1)
+PASS  (8) (s1 s2)^6 == (s1 s2 s1)^4 = Delta_3^4 (Artin action)
+PASS  (8) Burau(X) = I at t=-1 in U, UT, R, RT
+PASS  (9) Delta_4^2 is central in B_4
+PASS  (9) delta^2 X commutes with b, hence Phi0 == [delta^-2, b]
+PASS  (10) delta and b lie in K_4, so Phi0 = [delta^-2, b] lies in [K_4, K_4]
+PASS  (10) delta == A14 A24 A34 (Artin action)
+PASS  (10) in the free basis a_i = A_i4 of K_4, [delta^-2, b] is a reduced word of 28 letters (expected 28), exponent sums 0
+PASS  (11) Burau(X) - I == (1 + t^3)(Burau(Delta_3^2) - I) exactly, in U, UT, R, RT
+PASS  (11) with every half twist reversed, the identity holds with 1 + t^-3 in place of 1 + t^3
+PASS  (12) U(Phi0) and U(s3 Phi0 s3^-1) do not commute, so neither do the braids (both lie in Brun_4 < K_4, free)
+PASS  (12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found 2)
+PASS  (13) paper Sec. 7: M_{Phi.Gamma}, M_Gamma, M_Phi have 8, 20, 8 terms and values 8, -20, 2 at t=-1
+PASS  (13) eps_i (-1)^k_i is constant for the two parity arcs and not for beta (Lemma 1)
+
+freely reduced word of Phi0 (76 letters, k = s_k, -k = s_k^-1):
+1 2 1 2 1 2 1 2 1 2 1 2 3 2 1 1 2 2 -1 -1 -2 -2 -2 3 3 2 2 2 1 1 -2 -2 -1 -1 -2 -3 -3 -3 -2 -1 -2 -1 -2 -1 -2 -1 -2 -1 -2 -1 3 3 3 2 1 1 2 2 -1 -1 -2 -2 -2 -3 -3 2 2 2 1 1 -2 -2 -1 -1 -2 -3
+
+ALL CHECKS PASSED

@@ -26,4 +26,4 @@ Bend H2 to End(V1 tensor V2^2)=Mat2+Mat2+K, since V1 tensor V2^2=2V1+2V3+V5. Fix
 
 - [width2_coordinate_answer.md](../../archive/work/theory_restart/width2_coordinate_answer.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

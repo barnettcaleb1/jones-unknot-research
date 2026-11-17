@@ -45,4 +45,4 @@ one-dimensional state space and would create false commutator invisibility.
 - [projected_clasp.py](../../archive/work/research20/projected_clasp.py)
 - [quantum_scaffold.txt](../../archive/work/research20/quantum_scaffold.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ For M=Mod(Sigma2), I=I2, D=[M,I], every finite quotient pi has cyclic Z_pi=pi(I)
 
 - [g2_finite_coinvariants.md](../../archive/work/global_design/g2_finite_coinvariants.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

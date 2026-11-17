@@ -26,4 +26,4 @@ Three ribbons carrying beta=[sigma1²,sigma2²], closed by the specified exterio
 
 - [brunnian_band_transfer.md](../../archive/work/global_design/brunnian_band_transfer.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

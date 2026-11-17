@@ -26,4 +26,4 @@ Flat nonrational quotient with genus-one covering knot has dim_F2 N>=9 (m>=4): D
 
 - [genus_one_rank_five_referee.md](../../archive/work/theory_restart/genus_one_rank_five_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

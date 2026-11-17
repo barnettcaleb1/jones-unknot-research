@@ -26,4 +26,4 @@ Datta's specialized SL2(Z)/class-number classification plus B4 entry theory and 
 
 - [n1.md](../../archive/work/global_design/n1.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

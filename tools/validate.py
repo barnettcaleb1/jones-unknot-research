@@ -26,6 +26,15 @@ claims=json.loads((root/'data/claims.json').read_text())
 if len({c['key'] for c in claims})!=len(claims):errors.append('Duplicate claim keys')
 for c in claims:
     if not (root/c['page']).is_file():errors.append('Missing claim card: '+c['key'])
+handoff=root/'data/handoff-artifacts.json'
+if handoff.exists():
+    indexed={r.get('path'):r for r in manifest if r['disposition']=='git'}
+    for r in json.loads(handoff.read_text())['records']:
+        if r['disposition']!='git':continue
+        if r['path'] not in indexed:errors.append('Handoff missing from artifact manifest: '+r['path'])
+        elif indexed[r['path']]['sha256']!=r['published_sha256']:
+            errors.append('Handoff manifests disagree: '+r['path'])
+        if not r.get('received_sha256'):errors.append('Handoff missing received hash: '+r['path'])
 if errors:
     print('\n'.join(errors[:80])); raise SystemExit(f'{len(errors)} validation errors')
 print(f'PASS: {count} source hashes, {len(claims)} claim cards, and {len(guides)} guide pages.')

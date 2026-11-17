@@ -26,4 +26,4 @@ For u in B3 and nonzero r,s, set b0=[u,sigma3^(2r)], bj=[Delta3^(4s),b_(j-1)]. r
 
 - [bbb_mixed_returns.md](../../archive/work/global_design/bbb_mixed_returns.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

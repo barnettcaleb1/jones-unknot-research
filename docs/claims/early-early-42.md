@@ -38,4 +38,4 @@ outputs/jones-rotor-topology-and-surgery.txt.
 - [jones-rotor-topology-and-surgery.txt](../../archive/outputs/jones-rotor-topology-and-surgery.txt)
 - [trivial_completion_independent_audit.txt](../../archive/work/strategy15/trivial_completion_independent_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

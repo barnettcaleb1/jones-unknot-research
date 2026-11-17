@@ -26,4 +26,4 @@ A fixed standard zero-algebraic-intersection crossing disk gives F_n=C+D t^(+/-2
 
 - [crossing_dynamics.md](../../archive/work/global_design/crossing_dynamics.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

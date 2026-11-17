@@ -43,9 +43,12 @@ def main():
         claims.append({'key':key,'id':identity,'title':identity,'recorded_status':cells[-1],
           'statement':' | '.join(cells[1:-1]),'source':source,'source_line':line_num,'collection':'final scaffold snapshot',
           'review':'Snapshot transcription, not a fresh proof audit; latest pause and corrections take precedence.'})
+    supplement=DATA/'supplementary-claims.json'
+    if supplement.exists():
+        claims.extend(json.loads(supplement.read_text()))
     for c in claims:
         names=set(re.findall(r'[A-Za-z0-9_./-]+\.(?:md|txt|py|tex|json)',c['statement']+' '+c['recorded_status']))
-        proofs=[]
+        proofs=list(c.get('linked_artifacts',[]))
         for name in names:
             options=[]
             for candidate in ('archive/'+name,'archive/work/'+name,'archive/claude/'+name):
@@ -68,7 +71,7 @@ def main():
         if c['linked_artifacts']:
             text+='\n## Identified supporting artifacts\n\n'
             text+='\n'.join('- ['+Path(p).name+']('+link('../../'+p)+')' for p in c['linked_artifacts'])+'\n'
-            text+='\nThese links were resolved from explicit filenames, not inferred as a complete logical dependency list.\n'
+            text+='\nThese links identify recorded evidence; they are not a claim that the logical dependency list is complete.\n'
         (ROOT/c['page']).write_text(text)
     lines=['# Claim index','','This index retains the early handoff and the final scaffold as **separate records**. It does not silently merge conflicting versions. Read [Evidence policy](EVIDENCE_POLICY.md) and [human-work corrections](HUMAN_WORK_AND_CORRECTIONS.md).','','The small proofs are introduced in [Small results](SMALL_RESULTS.md); many additional proof notes are reached from the cards below.','','| Claim | Record | Status excerpt |','|---|---|---|']
     for c in claims:
@@ -99,7 +102,7 @@ def main():
     idir=DOCS/'archive'
     if idir.exists(): shutil.rmtree(idir)
     idir.mkdir(exist_ok=True)
-    lines=['# Archive index','','The archive preserves source bytes. It includes obsolete arguments and machine-specific scripts; read the [status policy](EVIDENCE_POLICY.md) before treating a file as an established result. Large evidence is listed separately in the [manifest](../data/artifact-manifest.json) and [release inventory](../data/release-assets.json).','','| Collection | Included files |','|---|---|']
+    lines=['# Archive index','','The archive preserves source bytes except for explicitly recorded privacy redactions and path normalization in the [Claude handoff](CLAUDE_HANDOFF.md). It includes obsolete arguments and machine-specific scripts; read the [status policy](EVIDENCE_POLICY.md) before treating a file as an established result. Large evidence is listed separately in the [manifest](../data/artifact-manifest.json) and [release inventory](../data/release-assets.json).','','| Collection | Included files |','|---|---|']
     for group,paths in sorted(groups.items()):
         name=slug(group)+'.md'; lines.append(f'| [{group}](archive/{name}) | {len(paths)} |')
         listing=['# '+group,'','[Archive index](../ARCHIVE_INDEX.md)','','These are historical source files, not automatically endorsed or portable.','']
@@ -113,6 +116,10 @@ def main():
     lines=['# Completeness of this snapshot','','This is an inventory of the available research record, not a claim that every proposed proof has been verified or that every conversation ever held was recoverable. The source scope is the workspace `collab/`, `work/`, `outputs/` and the separate `jones-lanes/` research tree. Live chat transcripts outside the saved letters and reports are not fabricated.','','| Category | Files | Bytes |','|---|---:|---:|']
     for k in counts:lines.append(f'| {k} | {counts[k]:,} | {byte_counts[k]:,} |')
     lines += ['',f'The catalog contains {len(claims)} claim records and {len(letters)} letters. Claims may overlap or supersede one another; these are not counts of theorems.','','## What is preserved','','- Original research notes, correspondence, proof drafts, programs, and compact evidence in Git.','- Large generated evidence and historical logs in hash-indexed release supplements, restored at their original archive-relative paths.','- A disposition for every inventoried file, with a reason for exclusion.','- Original wording, including mistakes and unfinished reviews, with a separate current reading guide.','','## What is excluded','','Downloaded human papers and source bundles are cited rather than republished. Vendored dependencies, interpreter environments, compiled executables, and transient state are omitted. Legacy ZIP/tar bundles are inventoried as bundled copies rather than added again; extraction contents are reviewed separately for any unique research documents. These decisions are visible in [artifact-manifest.json](../data/artifact-manifest.json).','','The [source audit](REPRODUCIBILITY_AUDIT.md) describes dependency and provenance limitations. Hash coverage is for the distributed original research files; it does not certify their mathematical correctness. The export program is included so the selection policy is inspectable.','','## Review still needed','','The bibliography is a curated primary-source map, not a fresh verification of every citation in every archived document. Historical bare paths may require the mapping in [Reproducing](REPRODUCING.md). Full manuscript specialist review, complete dependency pinning, and replay of all large certificate collections are not claimed. The contribution tasks make these gaps explicit.']
+    lines += ['', '## Additional recovered material', '',
+      'The [Claude handoff](CLAUDE_HANDOFF.md) records the later inventory, received and published hashes, recovery method, privacy transformations and known gaps. Its [history guide](HISTORY_RECOVERED.md) adds results and corrections that were previously confined to journals. A supplementary claim card never upgrades the source review status.', '',
+      'Unique original files recovered from legacy bundles are indexed in [legacy-members.json](../data/legacy-members.json). Bibliographic URLs harvested from historical sources are listed in [source-links.json](../data/source-links.json); this is a discovery index, not a verified bibliography.', '',
+      '“No further known artifact is missing” is the collaborators’ bounded inventory conclusion, not proof that every past transcript or unsaved output was recovered. See the [known-gap register](../data/handoff-known-gaps.json).']
     (DOCS/'COMPLETENESS.md').write_text('\n'.join(lines)+'\n')
     print(json.dumps(summary,indent=2))
 

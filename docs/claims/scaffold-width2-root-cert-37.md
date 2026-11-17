@@ -26,4 +26,4 @@ D0=(1+t)^4(1+t^2)^2(1-t^3)^2 clears all seven sector coefficients for arbitrary 
 
 - [width2_root_resonance_answer.md](../../archive/work/theory_restart/width2_root_resonance_answer.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

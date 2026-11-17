@@ -26,4 +26,4 @@ If the spin lines of a set of separating-twist generators span a proper subspace
 
 - [g2_proper_span.md](../../archive/work/global_design/g2_proper_span.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

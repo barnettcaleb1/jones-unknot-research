@@ -42,4 +42,4 @@ portable verifier outputs/verify_twist_obstruction.py.
 - [descent_arithmetic.txt](../../archive/work/research36/descent_arithmetic.txt)
 - [descent_audit.txt](../../archive/work/research36/descent_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

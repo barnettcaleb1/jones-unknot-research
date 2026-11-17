@@ -26,4 +26,4 @@ Known torus-row J_m=t^-4m[1+t^-3(1-t)(1+t²)(1-(-t)^m)] has J_(5k)(xi)=1 at all 
 
 - [width2_root_transport.md](../../archive/work/theory_restart/width2_root_transport.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

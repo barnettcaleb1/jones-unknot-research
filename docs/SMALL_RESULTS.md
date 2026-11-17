@@ -57,6 +57,8 @@ If two actual $2n$-ended tangles have relative brackets equal up to sign at $A=1
 
 **Limit:** matching is not isotopy. This does prevent silently changing component structure by replacing a full skein signature. [Full proof](../archive/work/theory_restart/jt2_difference_algebra.md).
 
+The component specialization is classical [Jones](REFERENCES.md#jones85), and its use to preserve connectivity in skein replacements has a prior appearance in [Champanerkar–Kofman, Proposition 2.2](REFERENCES.md#ck06). The proof above records the boundary-marking form needed by this project; it is not a priority claim.
+
 ## 5. Fixed twist-template fibers are finite unions of integer affine flats
 
 **Status:** internally checked elementary consequence of twist spectral expansion; no novelty claim for the underlying twist-bracket technology.
@@ -200,6 +202,8 @@ The existence of compatible additive collapse sequences is thus insufficient for
 
 **Status:** recorded proof with complexity quantifiers accepted in the collaboration.
 
+Fixed-order computability is part of the classical finite-type theory; see [Bar-Natan, Theorem 1](REFERENCES.md#barnatan95). The direct recursion below fixes this ledger's input model. It is distinct from the uniform-in-order bound in item 16.
+
 For every fixed $r$, the first $r$ Taylor coefficients of the normalized Jones polynomial of an explicit link diagram are exactly computable in polynomial time.
 
 **Proof.** Change crossings until the diagram becomes a descending unlink, telescoping the skein relation. Each smoothing branch brings $t^{1/2}-t^{-1/2}$, of order one at $t=e^h=1$. Modulo $h^{r+1}$, only smoothing depth at most $r$ matters. With $n$ crossings there are $O(1+n+\cdots+n^r)$ relevant nodes; each requires polynomial-size diagram operations and truncated exact rational arithmetic. ∎
@@ -256,6 +260,8 @@ JT₂ consists of oriented two-component diagrams with $V_L(q^2)=-q-q^{-1}$. It 
 
 There is a reduction from knot Jones-triviality: $K\mapsto K\sqcup U$, whose polynomial is $-(q+q^{-1})V_K(q^2)$. Neither statement proves a reverse reduction or hardness. [Full scope and literature comparison](../archive/work/theory_restart/jt2_scope_audit.md).
 
+The conditional connection between Jones unknot detection and exact counting has a [Welsh antecedent quoted by Hass–Lagarias–Pippenger](REFERENCES.md#welsh93). The GapP argument here records the precise whole-polynomial two-component language; no novelty claim is made for this routine membership refinement.
+
 ## 19. A scalar binary gate need not be reusable multiplication
 
 **Status:** SERIAL-TL2, TRUSTED; independent referee pending at the pause.
@@ -293,6 +299,43 @@ Clear denominators with $C(z)=e+z(\delta I-e)$. If actual two-string tangles rea
 **Proof.** At $A=1$, each carrier specializes to $\pm e$. Item 4 forces cup-cap matching and no closed component. Composing $m$ matchings creates $m-1$ closed components at the interfaces. Closing the remaining arcs adds at least one. An outside context cannot fuse components already closed inside the composite. ∎
 
 They need not be split or unknotted. Internal cuts and extra boundary legs change the architecture and are not excluded. This is one scoped obstruction to a JT₂ compiler, not a universal no-go. [Full proof and mixed-corner criterion](../archive/work/theory_restart/jt2_difference_algebra.md).
+
+## 21. From V3 non-flatness to knot-level Jones detection
+
+**Status:** a corollary of the internally refereed V3 algebra and marked skein dictionary, with the internally checked ODD-CLOSURE-REPAIR. No external specialist review or priority determination is claimed.
+
+Let $(K,h)$ be the marked strong inversion of a V3 vertical construction
+
+$$
+\texttt{s.l1.}(Y^N B_1\cdots B_r)\texttt{.}(x_2)^a\texttt{.u1},
+$$
+
+where $N\in\mathbb Z$, each $B_i$ is a non-integral rational box in the fixed dictionary, $a$ is odd, and $r\ge1$ if $|a|\ge3$ or $r\ge2$ if $a=\pm1$. These are hypotheses on the marked construction, not a classification of all inversions of the resulting covering knot. V3 gives $J\ne1$. Put $L_n=T(1/n)$, so $L_0=U$, and let $a_2(K)$ denote the second Conway coefficient.
+
+* If $a_2(K)=0$, then $V(L_n)\ne1$ for every integer $n\ne0$.
+* If $a_2(K)\ne0$, all nonzero even $n$ are excluded, and at most one odd $n$ can have $V(L_n)=1$. In the convention below, that parameter must satisfy $j=n a_2(K)$, where $j$ is fixed by the inversion. This is a necessary condition, not an assertion that the exceptional knot exists.
+
+**Proof.** In the fixed preferred convention set $G=(J-1)/(1+t)^2$, $\Phi_3=1+t+t^2$, and $\epsilon_n=0$ or $1$ according to the parity of $n$. The marked closure identity is
+
+$$
+V(L_n)=t^{12j\epsilon_n}\bigl[1+(1-(-t)^{-n})\Phi_3G\bigr].
+$$
+
+For even nonzero $n$, the prefactor is one and $(1-(-t)^{-n})\Phi_3$ is nonzero. The Laurent polynomial ring is a domain, so $V(L_n)=1$ would imply $G=0$, contrary to $J\ne1$.
+
+For the odd parameters one must keep the prefactor. Each $\Sigma_2(L_n)$ is an integral homology sphere obtained by $1/n$ surgery, so $\det L_n=1$. The symmetrized Seifert form is even unimodular, and its signature lies in $8\mathbb Z$. The knots $L_{n+2}$ and $L_n$ differ by one crossing change, which changes signature by at most two. Hence signatures are constant on each parity class. In this convention they are zero on the even class and $-8j$ on the odd class.
+
+Use the ordinary Casson normalization of Mullins's formula,
+
+$$
+\lambda(\Sigma_2L)=-\frac{V'_L(-1)}{12V_L(-1)}+\frac{\sigma(L)}8.
+$$
+
+The orientation agreeing with the displayed closure formula gives $\lambda(\Sigma_2L_n)=-n a_2(K)$. An odd Jones-unit closure therefore satisfies $-n a_2(K)=-j$. If $a_2(K)\ne0$, at most one nonzero odd integer solves this equation. If $a_2(K)=0$, it forces $j=0$, removing the prefactor; the same domain argument as for even $n$ then contradicts $J\ne1$. A consistent reversal of orientations changes the signed identification, not the zero or uniqueness conclusions. ∎
+
+The proof imports [Mullins, Theorem 5.1, with the Casson normalization and orientation check recorded here](../archive/work/theory_restart/roots_odd_referee.md); that audit also gives a [primary source for the branched-cover formula and normalization comparison](https://arxiv.org/abs/math/9811021). The non-flatness input is the [V3 proof audit](../archive/collab/data/roundD/refV3_REPORT.md), completed topologically by the [arbitrary-box dictionary](../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md) and its [three-referee report](../archive/collab/msgs/20261117-061728-claude.md). The formal odd-closure target from the earlier letter explains why simply deleting the prefactor is invalid.
+
+**Concrete recorded family.** E6 has $a=-3$, $N=-2$, boxes of slopes $1/9,5/13,-4/13$, and recorded $a_2(K)=0$. Its saved two-channel calculation gives span $V(L_n)=n+28$ and both extreme coefficients of modulus two for every $n\ge1$. Thus the corollary supplies ordinary Jones non-triviality uniformly in $n$, including a family outside the semi-adequate and Turaev-genus-one tests and above the 24-crossing range. The [saved input and polynomial data](../archive/claude/theory-restart/mont/cx/roundD/lit/examples_E6.json) and [internal literature/geometry report](../archive/collab/data/roundD/LIT_RESULT.md) are separate evidence from the uniform V3 proof. Their broader topology and novelty claims are internally reported, not externally certified; see the [scope and prior-work comparison](RESEARCH_MAP.md#6-exact-transfer-systems-two-bridge-necklaces-and-arborescent-boxes).
 
 ## Further proof collections
 

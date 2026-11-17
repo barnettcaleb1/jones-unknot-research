@@ -1,0 +1,26 @@
+basis [((1, 2), (3, 4), (5, 6)), ((1, 2), (3, 6), (4, 5)), ((1, 4), (2, 3), (5, 6)), ((1, 6), (2, 3), (4, 5)), ((1, 6), (2, 5), (3, 4))]
+v_c0 = [(A**4 + 1)/A**2, 1, 1, (A**4 + 1)/A**2, (A**2 - A + 1)*(A**2 + A + 1)*(A**4 - A**2 + 1)/A**4]
+e1 v0 = 0: True  e5 v0 = 0: True
+dim U = 2
+eig X -(A**6 - lambda)*(A**6*lambda - 1)/A**6  eig Y -(A**2 - lambda)*(A**6*lambda - 1)/A**6
+tau X, Y, XY, XY^-1 = 12 8 12 20
+random cyclically reduced words with tau = 0: 0
+word [4, 3, 2, -2, -2, -4, 5, -4] collision(c, s1 c): True  foreign line: True
+word [5, -3, -1, 2, 4, -1, 1, 1] collision(c, s1 c): True  foreign line: True
+word [1, 5, -5, -1, -3, -2, -1, -2] collision(c, s1 c): True  foreign line: True
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-calebbarnett/325b8760-550e-4462-b594-d76cd953b342/scratchpad/jones-adv/referee-prior-criterion-refute/check_frame.py", line 133, in <module>
+    print('Gram eigenvalues near A=i (Hermitian):', [sp.N(sp.re(x), 6) for x in Gn.eigenvals().keys()])
+                                                                                ~~~~~~~~~~~~^^
+  File "/private/tmp/claude-501/-Users-calebbarnett/325b8760-550e-4462-b594-d76cd953b342/scratchpad/jones-adv/verify-plat/venv/lib/python3.13/site-packages/sympy/matrices/matrixbase.py", line 3331, in eigenvals
+    return _eigenvals(self, error_when_incomplete=error_when_incomplete, **flags)
+  File "/private/tmp/claude-501/-Users-calebbarnett/325b8760-550e-4462-b594-d76cd953b342/scratchpad/jones-adv/verify-plat/venv/lib/python3.13/site-packages/sympy/matrices/eigen.py", line 171, in _eigenvals
+    return _eigenvals_mpmath(M, multiple=multiple)
+  File "/private/tmp/claude-501/-Users-calebbarnett/325b8760-550e-4462-b594-d76cd953b342/scratchpad/jones-adv/verify-plat/venv/lib/python3.13/site-packages/sympy/matrices/eigen.py", line 61, in _eigenvals_mpmath
+    E, _ = _eigenvals_eigenvects_mpmath(M)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/private/tmp/claude-501/-Users-calebbarnett/325b8760-550e-4462-b594-d76cd953b342/scratchpad/jones-adv/verify-plat/venv/lib/python3.13/site-packages/sympy/matrices/eigen.py", line 56, in _eigenvals_eigenvects_mpmath
+    raise PrecisionExhausted
+sympy.core.evalf.PrecisionExhausted
+
+[referee note] The final Gram-eigenvalue step above hit sympy PrecisionExhausted; all earlier lines are complete. Definiteness near A = i was redone with leading minors in check_fl.py (see check_fl_out.txt). The three "True/True" words above are native cases (psi(c0) misses d12); crossing cases are in check_fl_out.txt.

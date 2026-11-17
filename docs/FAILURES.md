@@ -172,6 +172,14 @@ A search implementation had skipped exactly the one-slope groups representing co
 
 **Possible repair.** Identify exactly which hypothesis the construction escapes and prove its exact tensor identity. Approximate root-of-unity universality is not an exact generic compiler. [Full note](../archive/work/theory_restart/jt2_clause_gate_scope.md).
 
+## F21. “Every interrupted certification run was rerun”
+
+**Correction to our own process record.** The morning summary overstates recovery from an interrupted round-D computation. The `J4` and `R(6)` probe runs were rerun and completed. The separate `d2fix2` job—two depth-two positive-potential boxes together with an arbitrary top-300 multiset—was **not rerun and produced no claimed result**. A missing result is neither a negative search verdict nor a proof of the corresponding uniform statement.
+
+**What survives.** M300's completed certificates and the distinct D36 result for **one** such depth-two class have their own evidence and later exact re-verification. Their validity does not certify the abandoned two-box task. The contemporaneous [lpgen report, header and Section 7](../archive/collab/data/roundD/lpgen_REPORT.md), explicitly excludes `d2fix2`; the later [round-E audit](../archive/collab/data/roundE/refM300_REPORT.md) identifies the statements it actually re-proves. These specific records take precedence over “every affected run was redone” in the [morning overview](../archive/collab/MORNING-2026-11-17.md).
+
+**Future obligation.** Any attempt to claim the omitted uniform two-box result needs its own complete proof or certificate, declared inputs, and independent check. This publication does not restart that computation.
+
 ## Corrections to other researchers' work require a separate standard
 
 This atlas includes both our own failures and version-specific audits of external work; those must not be conflated.

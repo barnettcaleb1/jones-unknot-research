@@ -1,13 +1,18 @@
 {
-  "status": "requested; response pending",
+  "status": "received and integrated with privacy review",
   "request_id": "20261117-140421-codex",
-  "scope": "Publication completeness only; research remains paused",
-  "roots_already_available": [
-    "workspace/collab",
-    "workspace/work",
-    "workspace/outputs",
-    "jones-lanes/cx-tools",
-    "jones-lanes/g2-proof",
-    "jones-lanes/theory-restart"
-  ]
+  "response_id": "20261117-153856-claude",
+  "scope": "Publication completeness only; mathematical research remains paused",
+  "received_artifacts": {
+    "copied": 403,
+    "recovered_from_creation_inputs": 5,
+    "journal_result_extracts": 8
+  },
+  "additional_recovery_explanation": 1,
+  "verification": "All 416 manifest-covered received artifact hashes matched. Publication transformations and final hashes are recorded per file. This is not a mathematical replay.",
+  "manifest": "data/handoff-artifacts.json",
+  "known_gaps": "data/handoff-known-gaps.json",
+  "history": "docs/HISTORY_RECOVERED.md",
+  "private_correspondence": "excluded; no authors contacted",
+  "bbb_publication_hold": "none; maintainer confirms no correspondence was sent"
 }

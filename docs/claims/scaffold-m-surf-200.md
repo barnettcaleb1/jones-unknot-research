@@ -27,4 +27,4 @@ Kernel of the orientation-preserving closed-surface mapping-class action on the 
 - [genus2_gate.md](../../archive/work/global_design/genus2_gate.md)
 - [surface_mutation_kernel.md](../../archive/work/global_design/surface_mutation_kernel.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

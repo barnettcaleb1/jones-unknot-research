@@ -1,0 +1,8 @@
+image lengths: {1: 6774875, 2: 9487773, 3: 5064573, 4: 2359041}
+Phi0 trivial in B4 (Artin)? False
+pure: yes
+forget strand 1: induced automorphism of F_3 trivial? True
+forget strand 2: induced automorphism of F_3 trivial? True
+forget strand 3: induced automorphism of F_3 trivial? True
+forget strand 4: induced automorphism of F_3 trivial? True
+b trivial? False

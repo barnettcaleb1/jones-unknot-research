@@ -27,4 +27,4 @@ Published Eliahou-Fromentin K_r has V(exp(h))=1+96*2^(r-1)h^4+O(h^5), hence exac
 - [eliahou_fromentin_bridge_audit.md](../../archive/work/theory_restart/eliahou_fromentin_bridge_audit.md)
 - [ef_depth.py](../../archive/work/theory_restart/referee_checks/ef_depth.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

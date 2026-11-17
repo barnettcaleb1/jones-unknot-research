@@ -39,4 +39,4 @@ not fully verified here, and does not bridge representation versus trace.
 - [main.tex](../../archive/work/generic-jones-note/main.tex)
 - [braid_notes.md](../../archive/work/generic/braid_notes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

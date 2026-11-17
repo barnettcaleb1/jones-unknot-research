@@ -26,4 +26,4 @@ Six boundary sectors c00,c02,c20,c24,c42,c44 nonzero suffice: after clearingD wi
 
 - [two_ended_potential_referee.md](../../archive/work/theory_restart/two_ended_potential_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ Xie1809.01568v2 Cor1.2/Thm6.1 gives N_C(mirror T)=>THI(T), the original-cylinder
 
 - [instanton_sutured_referee.md](../../archive/work/theory_restart/instanton_sutured_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

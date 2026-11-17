@@ -27,4 +27,4 @@ Disjoint pair sectors00,02,20,22,24,42,44 have ranks1,1,1,2,1,1,2;04/40 vanish. 
 - [width2_coordinate_answer.md](../../archive/work/theory_restart/width2_coordinate_answer.md)
 - [width2_tropical_crux.md](../../archive/work/theory_restart/width2_tropical_crux.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

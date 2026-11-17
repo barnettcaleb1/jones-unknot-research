@@ -41,4 +41,4 @@ in work/pass3/pass_summary.txt; theorem in work/pass3/braid_notes.md.
 - [braid_notes.md](../../archive/work/pass3/braid_notes.md)
 - [pass_summary.txt](../../archive/work/pass3/pass_summary.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

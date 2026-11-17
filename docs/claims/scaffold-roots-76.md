@@ -26,4 +26,4 @@ J-1 is divisible by D=(t+1)²(t-1)(t²+1)(t²-t+1)=(t4-1)(t3+1), with an extra t
 
 - [roots_odd_referee.md](../../archive/work/theory_restart/roots_odd_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

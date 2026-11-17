@@ -42,4 +42,4 @@ are not excluded globally.
 - [geometry_gate_audit.txt](../../archive/work/research35/geometry_gate_audit.txt)
 - [uniform_surgery_algebra.txt](../../archive/work/research35/uniform_surgery_algebra.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

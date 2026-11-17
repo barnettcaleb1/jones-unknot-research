@@ -351,3 +351,13 @@ The small proofs are introduced in [Small results](SMALL_RESULTS.md); many addit
 | [U5-RU](claims/scaffold-u5-ru-324.md) | final scaffold snapshot | Two closures at distinct slopes determine [X] (RB2), and some rational R has unknot closures at both slopes. |
 | [U5-POS](claims/scaffold-u5-pos-325.md) | final scaffold snapshot | Claude 040335 and Codex reply 20261103-044104. Repairs the invalid setwise-S justification identified in 040022. A minimal-width presentatio |
 | [U6](claims/scaffold-u6-326.md) | final scaffold snapshot | 2-bridge knots are alternating; span V = crossing number. |
+| [PUB-V3-BRANCH](claims/supp-v3-branch.md) | public handoff supplement | DERIVED COROLLARY / internal checks; source statuses retained |
+| [PUB-E6-FAMILY](claims/supp-e6-family.md) | public handoff supplement | CHECKED / REPORTED |
+| [MECH2-STATES-ONE-SIGN](claims/supp-mech2-one-sign.md) | public handoff supplement | PROVED / Claude-side internal referee |
+| [MECH2-STATES-ADEQUATE-END](claims/supp-mech2-adequate-end.md) | public handoff supplement | PROVED / Claude-side internal referee |
+| [MECH2-POINTED-SPLIT](claims/supp-mech2-pointed-split.md) | public handoff supplement | PARTIAL REFEREE |
+| [MECH2-ADEQUATE-DOUBLE-END](claims/supp-mech2-double-end.md) | public handoff supplement | UNREFEREED |
+| [MECH2-SHAPE-UNIT](claims/supp-mech2-shape-unit.md) | public handoff supplement | PROVED / internal referee with repairs |
+| [MECH2-ANNULAR-ADDITIVITY](claims/supp-mech2-annular-additivity.md) | public handoff supplement | PROVED / reported internal lemma |
+| [PUB-COLOR3-SWAP](claims/supp-color3-swap.md) | public handoff supplement | PROVED / internally refereed dictionary |
+| [PROCESS-D2FIX2](claims/supp-process-d2fix2.md) | public handoff supplement | NOT CLAIMED / NOT RERUN |

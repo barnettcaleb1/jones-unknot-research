@@ -39,4 +39,4 @@ verification.json; source Masbaum2003 eqs2--4 andTheorem1.1.
 - [geometric_realization.txt](../../archive/work/research45/geometric_realization.txt)
 - [verify_annular_twist.py](../../archive/work/research45/verify_annular_twist.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

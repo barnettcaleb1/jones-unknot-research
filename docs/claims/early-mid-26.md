@@ -40,4 +40,4 @@ verify_bing_formula.py. Uses Suzuki's Bing-doubling formula.
 - [tangle_realization.txt](../../archive/work/research27/tangle_realization.txt)
 - [verify_bing_formula.py](../../archive/work/research27/verify_bing_formula.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -26,4 +26,4 @@ The full sequence of generic closure power traces determines every TL block char
 
 - [power_moments.md](../../archive/work/global_design/power_moments.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

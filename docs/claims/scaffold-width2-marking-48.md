@@ -26,4 +26,4 @@ Canonical plat s.l1.l3.W.u2.u2 with W indices0..3, input cups12/34 and shifted o
 
 - [width2_marking_fusion.md](../../archive/work/theory_restart/width2_marking_fusion.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

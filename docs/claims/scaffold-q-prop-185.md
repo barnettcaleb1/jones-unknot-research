@@ -27,4 +27,4 @@ Propagate J_2=1 through the long-knot fusion defects F_K(V,W)=z_(K,V tensor W)-z
 - [colored_propagation.md](../../archive/work/global_design/colored_propagation.md)
 - [quantum_geometry.md](../../archive/work/global_design/quantum_geometry.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

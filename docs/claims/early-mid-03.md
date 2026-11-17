@@ -47,4 +47,4 @@ to pass51, outside this ledger. Do not add an ambient Casson term there.
 - [realizability_casson_audit.txt](../../archive/work/fanout16/realizability_casson_audit.txt)
 - [realizability_zero_filling.txt](../../archive/work/fanout16/realizability_zero_filling.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-11-17",
+  "source": "Claude completeness handoff section 5; G10 resolved by the maintainer directly",
+  "gaps": [
+    {
+      "id": "G1",
+      "status": "withheld for privacy",
+      "detail": "Eight private files: three correspondence drafts, four package/contact READMEs, and one old compiled PDF. Mathematical content is preserved in redacted TeX and certificates. Draft correspondence is not published."
+    },
+    {
+      "id": "G2",
+      "status": "orchestration omitted",
+      "detail": "43 workflow-launch scripts were inventoried but not supplied for public import. They contain runtime instructions, including private project directions. Most mathematical briefs already exist as lane BRIEF.md files; this does not reproduce every orchestration command."
+    },
+    {
+      "id": "G3",
+      "status": "private runtime excluded; research extracted",
+      "detail": "Raw chats, persisted tool outputs, 76 workflow journals and private memory logs are excluded. Eight research-only journal extracts, five recovered files and the recovered-history guide preserve the identified research content."
+    },
+    {
+      "id": "G4",
+      "status": "reconstruction not supplied",
+      "detail": "Final patched versions of frob5_check.py and the BBB arc-construction pipeline would require replaying transcript patches. They have not been reconstructed or relabeled as originals. No current conclusion is reported to depend on these missing scripts."
+    },
+    {
+      "id": "G5",
+      "status": "missing or never completed",
+      "detail": "Some scratchpad traces, JSON outputs, logs and inline-computation outputs were never saved or are lost. The surviving letters record the inline checks; one input list survives. Engine C1 certificate verdicts were independently re-derived by refGen. d2fix2 was killed, never rerun, and is NOT CLAIMED; incomplete rg_robust/rg_sigcert outputs are not relied upon."
+    },
+    {
+      "id": "G6",
+      "status": "third-party material omitted",
+      "detail": "Downloaded papers, full-text extractions, crops, thesis copies and third-party-derived KWZ collections are not redistributed in this addition. Some source extractions are lost. Paper directories outside the research roots were not inspected file by file."
+    },
+    {
+      "id": "G7",
+      "status": "bundle not found",
+      "detail": "Only the Markdown inventory from a separate AI literature crawl was found; its original_crawl, checks and JSONL bundle was not located. The inventory is labeled as that other thread's unverified historical summary, not a Claude research result."
+    },
+    {
+      "id": "G8",
+      "status": "outside project scope",
+      "detail": "An adjacent AI-mathematics assessment project and its literature cache were not imported. They were not artifacts of this Jones investigation."
+    },
+    {
+      "id": "G9",
+      "status": "bounded completeness",
+      "detail": "The handoff used bounded file reads, a running history log and surviving files after context compactions. Bibliographic locators not checked in those reads remain qualified. The inventory does not prove recovery of every past conversation or unsaved output."
+    },
+    {
+      "id": "G10",
+      "status": "resolved by maintainer",
+      "detail": "The maintainer confirmed that no correspondence was sent to anyone on this project and none is planned. No prior correspondence commitment limits this release. Private drafts remain excluded; no authors are being contacted."
+    }
+  ]
+}

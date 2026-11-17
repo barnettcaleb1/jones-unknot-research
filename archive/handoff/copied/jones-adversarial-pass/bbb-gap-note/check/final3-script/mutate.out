@@ -1,0 +1,119 @@
+KILLED  S1_Uinv_sign                                  exit=1 fails=13   1.4s target='(S) U, UT, R, RT satisfy'
+        FAIL (S) U, UT, R, RT satisfy the B_4 and B_5 relations and s_i s_i^-1 = I
+        FAIL (S) for every letter s_i^(+-1), n = 4, 5, the Fox Jacobian of its Artin automorphism is its U matrix
+        FAIL (S) Fox Jacobian of the Artin action of a test word equals U
+        FAIL (5) B_4 U : Burau(Phi0) = I at t=-1
+        FAIL (7) B_4 U : (t+1)-adic depth is exactly 1 (found 0)
+        FAIL (5) B_4 UT: Burau(Phi0) = I at t=-1
+        FAIL (7) B_4 UT: (t+1)-adic depth is exactly 1 (found 0)
+        FAIL (5) B_5 U : Burau(f(Phi0)) = I at t=-1
+        FAIL (7) B_5 U : (t+1)-adic depth is exactly 1 (found 0)
+        FAIL (5) B_5 UT: Burau(f(Phi0)) = I at t=-1
+        FAIL (7) B_5 UT: (t+1)-adic depth is exactly 1 (found 0)
+        FAIL (11) with every half twist reversed, the identity holds with 1 + t^-3 in place of 1 + t^3
+        ... 1 more
+KILLED  S2_R_rowcut_B5only                            exit=1 fails= 1   1.2s target='(S) U, UT, R, RT satisfy'
+        FAIL (S) U, UT, R, RT satisfy the B_4 and B_5 relations and s_i s_i^-1 = I
+KILLED  S3_REL_adjacent_commute                       exit=1 fails= 1   1.2s target='(S) U, UT, R, RT satisfy'
+        FAIL (S) U, UT, R, RT satisfy the B_4 and B_5 relations and s_i s_i^-1 = I
+KILLED  S4_U_is_transposed                            exit=1 fails= 2   1.2s target='(S) for every letter'
+        FAIL (S) for every letter s_i^(+-1), n = 4, 5, the Fox Jacobian of its Artin automorphism is its U matrix
+        FAIL (S) Fox Jacobian of the Artin action of a test word equals U
+KILLED  S5_U_at_inverse_t                             exit=1 fails= 4   1.2s target='(S) for every letter'
+        FAIL (S) for every letter s_i^(+-1), n = 4, 5, the Fox Jacobian of its Artin automorphism is its U matrix
+        FAIL (S) Fox Jacobian of the Artin action of a test word equals U
+        FAIL (11) Burau(X) - I == (1 + t^3)(Burau(Delta_3^2) - I) exactly, in U, UT, R, RT
+        FAIL (11) with every half twist reversed, the identity holds with 1 + t^-3 in place of 1 + t^3
+KILLED  S6_artin_inverse_typo                         exit=1 fails=10  17.6s target='(S) for every letter'
+        FAIL (S) for every letter s_i^(+-1), n = 4, 5, the Fox Jacobian of its Artin automorphism is its U matrix
+        FAIL (S) Fox Jacobian of the Artin action of a test word equals U
+        FAIL (3) deleting strand 1: word freely reduces to empty and acts trivially on F_3
+        FAIL (3) deleting strand 2: word freely reduces to empty and acts trivially on F_3
+        FAIL (3) deleting strand 3: word freely reduces to empty and acts trivially on F_3
+        FAIL (3) deleting strand 4: word freely reduces to empty and acts trivially on F_3
+        FAIL (8) (s1 s2)^6 == (s1 s2 s1)^4 = Delta_3^4 (Artin action)
+        FAIL (9) delta^2 X commutes with b, hence Phi0 == [delta^-2, b]
+        FAIL (10) delta and b lie in K_4, so Phi0 = [delta^-2, b] lies in [K_4, K_4]
+        FAIL (10) delta == A14 A24 A34 (Artin action)
+KILLED  T1_TVALS_half_to_one                          exit=1 fails= 8   1.2s target='(6) B_4 U '
+        FAIL (6) B_4 U : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 UT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 R : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 RT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 U : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 UT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 R : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 RT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+KILLED  T2_identity_at_half_only                      exit=1 fails= 8   1.2s target='(6) B_4 U '
+        FAIL (6) B_4 U : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 UT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 R : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 RT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 U : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 UT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 R : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 RT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+KILLED  T3_identity_at_third_only                     exit=1 fails= 8   1.2s target='(6) B_5 RT'
+        FAIL (6) B_4 U : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 UT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 R : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_4 RT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 U : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 UT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 R : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (6) B_5 RT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+KILLED  T4_trivial_braid_in_loop                      exit=1 fails=16   1.3s target='(6) B_4 U '
+        FAIL (6) B_4 U : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (7) B_4 U : (t+1)-adic depth is exactly 1 (found inf)
+        FAIL (6) B_4 UT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (7) B_4 UT: (t+1)-adic depth is exactly 1 (found inf)
+        FAIL (6) B_4 R : Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (7) B_4 R : (t+1)-adic depth is exactly 1 (found inf)
+        FAIL (6) B_4 RT: Burau(Phi0) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (7) B_4 RT: (t+1)-adic depth is exactly 1 (found inf)
+        FAIL (6) B_5 U : Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (7) B_5 U : (t+1)-adic depth is exactly 1 (found inf)
+        FAIL (6) B_5 UT: Burau(f(Phi0)) != I as a Laurent matrix, and at t = 2, 1/2, 3, 1/3
+        FAIL (7) B_5 UT: (t+1)-adic depth is exactly 1 (found inf)
+        ... 4 more
+KILLED  D1_delta_order                                exit=1 fails= 1   1.2s target='(10) delta == A14 A24 A34'
+        FAIL (10) delta == A14 A24 A34 (Artin action)
+KILLED  D2_kw_delta_plus2                             exit=1 fails= 1   1.2s target='(10) in the free basis'
+        FAIL (10) in the free basis a_i = A_i4 of K_4, [delta^-2, b] is a reduced word of 32 letters (expected 28), exponent sums 0
+KILLED  D3_kw_wrong_inverse_order                     exit=1 fails= 1   1.2s target='(10) in the free basis'
+        FAIL (10) in the free basis a_i = A_i4 of K_4, [delta^-2, b] is a reduced word of 30 letters (expected 28), exponent sums 0
+KILLED  D4_kw_exponent_sum                            exit=1 fails= 1   1.2s target='(10) in the free basis'
+        FAIL (10) in the free basis a_i = A_i4 of K_4, [delta^-2, b] is a reduced word of 28 letters (expected 28), exponent sums 0
+KILLED  M1_mirror_factor_plus3                        exit=1 fails= 1   1.2s target='(11) with every half twist reversed'
+        FAIL (11) with every half twist reversed, the identity holds with 1 + t^-3 in place of 1 + t^3
+KILLED  M2_mirror_is_identity                         exit=1 fails= 1   1.2s target='(11) with every half twist reversed'
+        FAIL (11) with every half twist reversed, the identity holds with 1 + t^-3 in place of 1 + t^3
+EQUIV-OK  M3_mirror_is_inverse_EQUIVALENT               exit=0 fails= 0   1.2s target=None
+KILLED  C1_conj_is_square                             exit=1 fails= 2   1.3s target='(12) U(Phi0) and U(s3 Phi0 s3^-1) do not commute'
+        FAIL (12) U(Phi0) and U(s3 Phi0 s3^-1) do not commute, so neither do the braids (both lie in Brun_4 < K_4, free)
+        FAIL (12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found inf)
+KILLED  C2_depth_second_commutator                    exit=1 fails= 1   3.0s target='(12) [Phi0, s3 Phi0 s3^-1] has'
+        FAIL (12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found 4)
+KILLED  C3_depth_in_R                                 exit=1 fails= 1   1.0s target='(12) [Phi0, s3 Phi0 s3^-1] has'
+        FAIL (12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found 3)
+KILLED  C4_depth_in_RT                                exit=1 fails= 1   1.0s target='(12) [Phi0, s3 Phi0 s3^-1] has'
+        FAIL (12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found 3)
+EQUIV-OK  C5_depth_in_UT                                exit=0 fails= 0   1.2s target=None
+KILLED  C6_trivial_commutator                         exit=1 fails= 1   1.0s target='(12) [Phi0, s3 Phi0 s3^-1] has'
+        FAIL (12) [Phi0, s3 Phi0 s3^-1] has (t+1)-adic depth exactly 2 (found inf)
+KILLED  P1_MGamma_sign                                exit=1 fails= 2   1.2s target='(13) paper Sec. 7'
+        FAIL (13) paper Sec. 7: M_{Phi.Gamma}, M_Gamma, M_Phi have 8, 20, 8 terms and values 8, -20, 2 at t=-1
+        FAIL (13) eps_i (-1)^k_i is constant for the two parity arcs and not for beta (Lemma 1)
+KILLED  P2_MPhiGamma_exponent                         exit=1 fails= 2   1.2s target='(13) paper Sec. 7'
+        FAIL (13) paper Sec. 7: M_{Phi.Gamma}, M_Gamma, M_Phi have 8, 20, 8 terms and values 8, -20, 2 at t=-1
+        FAIL (13) eps_i (-1)^k_i is constant for the two parity arcs and not for beta (Lemma 1)
+KILLED  P3_MPhi_drop_term                             exit=1 fails= 1   1.2s target='(13) paper Sec. 7'
+        FAIL (13) paper Sec. 7: M_{Phi.Gamma}, M_Gamma, M_Phi have 8, 20, 8 terms and values 8, -20, 2 at t=-1
+KILLED  P4_MPhi_no_cancellation                       exit=1 fails= 2   1.2s target='(13) eps_i (-1)^k_i is constant'
+        FAIL (13) paper Sec. 7: M_{Phi.Gamma}, M_Gamma, M_Phi have 8, 20, 8 terms and values 8, -20, 2 at t=-1
+        FAIL (13) eps_i (-1)^k_i is constant for the two parity arcs and not for beta (Lemma 1)
+EQUIV-OK  P5_MGamma_parity_preserving_typo_BLINDSPOT    exit=0 fails= 0   1.2s target=None
+KILLED  X1_exit_status                                exit=1 fails= 1   1.2s target='(4) unreduced concatenation'
+        FAIL (4) unreduced concatenation has 112 letters (expected 112)
+
+all mutants behaved as expected: True

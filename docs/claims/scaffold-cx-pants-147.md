@@ -27,4 +27,4 @@ For canonical zero-Seifert-form pants of a nonplanar Brunnian theta, cut to a di
 - [pants_nontriviality.md](../../archive/work/global_design/pants_nontriviality.md)
 - [pants_twist_transfer.md](../../archive/work/global_design/pants_twist_transfer.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

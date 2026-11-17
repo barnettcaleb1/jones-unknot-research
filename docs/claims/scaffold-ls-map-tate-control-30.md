@@ -26,4 +26,4 @@ Lipshitz-Sarkar supplies an axis-moving map cone and upstairs inversion action. 
 
 - [lipshitz_sarkar_bridge_audit.md](../../archive/work/theory_restart/lipshitz_sarkar_bridge_audit.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -48,4 +48,4 @@ independently audited.
 - [verification.txt](../../archive/work/research47/verification.txt)
 - [verify_coordinated_twists.py](../../archive/work/research47/verify_coordinated_twists.py)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,695 @@
+{
+ "basis": [
+  "(1, 0, 3, 2, 5, 4)",
+  "(1, 0, 5, 4, 3, 2)",
+  "(3, 2, 1, 0, 5, 4)",
+  "(5, 2, 1, 4, 3, 0)",
+  "(5, 4, 3, 2, 1, 0)"
+ ],
+ "v_c": {
+  "[(1, 2), (3, 4), (5, 6)]": "+1*A^2 +1*A^-2",
+  "[(1, 2), (3, 6), (4, 5)]": "+1*A^0",
+  "[(1, 4), (2, 3), (5, 6)]": "+1*A^0",
+  "[(1, 6), (2, 3), (4, 5)]": "+1*A^2 +1*A^-2",
+  "[(1, 6), (2, 5), (3, 4)]": "+1*A^4 +1*A^0 +1*A^-4"
+ },
+ "H_vc_vc": "-1*A^14 -3*A^10 -6*A^6 -8*A^2 -8*A^-2 -6*A^-6 -3*A^-10 -1*A^-14",
+ "G_vc_vc": "-1*A^14 -3*A^10 -6*A^6 -8*A^2 -8*A^-2 -6*A^-6 -3*A^-10 -1*A^-14",
+ "overlaps": [
+  {
+   "label": "s3",
+   "word": [
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^3 +2*A^-1 +3*A^-5 +3*A^-9 +2*A^-13 +1*A^-17",
+   "H_span": [
+    -17,
+    3
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-17 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^0",
+   "gammaG_den": "+1*A^20 +2*A^16 +2*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3 s2",
+   "word": [
+    3,
+    2
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^4 +2*A^0 +3*A^-4 +3*A^-8 +2*A^-12 +1*A^-16",
+   "H_span": [
+    -16,
+    4
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-16 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^0",
+   "gammaG_den": "+1*A^20 +2*A^16 +2*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3 s4",
+   "word": [
+    3,
+    4
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^4 +2*A^0 +3*A^-4 +3*A^-8 +2*A^-12 +1*A^-16",
+   "H_span": [
+    -16,
+    4
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-16 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^0",
+   "gammaG_den": "+1*A^20 +2*A^16 +2*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2",
+   "word": [
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^12 -3*A^8 -5*A^4 -7*A^0 -7*A^-4 -6*A^-8 -4*A^-12 -2*A^-16 -1*A^-20",
+   "H_span": [
+    -20,
+    12
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-20 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^24 +2*A^20 +1*A^16 +2*A^12 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^28 +1*A^24 +1*A^20 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3 s2 s4 s3",
+   "word": [
+    3,
+    2,
+    4,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^-2 -2*A^-6 -3*A^-10 -3*A^-14 -2*A^-18 -1*A^-22",
+   "H_span": [
+    -22,
+    -2
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "-1*A^-22 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^0",
+   "gammaG_den": "+1*A^20 +2*A^16 +2*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^-1 s2 s3",
+   "word": [
+    -3,
+    2,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^3 +2*A^-1 +3*A^-5 +3*A^-9 +2*A^-13 +1*A^-17",
+   "H_span": [
+    -17,
+    3
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-17 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^4",
+   "gammaG_den": "+1*A^20 +1*A^16 +2*A^12 +2*A^8 +2*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3 s3 s2 s4 s3 s3",
+   "word": [
+    3,
+    3,
+    2,
+    4,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^12 -3*A^8 -4*A^4 -7*A^0 -6*A^-4 -6*A^-8 -4*A^-12 -2*A^-16 -2*A^-20 -1*A^-28",
+   "H_span": [
+    -28,
+    12
+   ],
+   "H_spanwidth": 40,
+   "H_factor": "-1*A^-28 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, -2, 0, 0, 0, 3, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^28 -1*A^24 +7*A^16 -11*A^12 +17*A^8 -11*A^4 +7*A^0 -1*A^-8 +1*A^-12",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-12 * R(A)=[1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, -11, 0, 0, 0, 17, 0, 0, 0, -11, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-12 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi16(A) * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^40 +2*A^36 -1*A^32 +4*A^28 +3*A^24 -8*A^20 +15*A^16 -14*A^12 +10*A^8 -4*A^4 +1*A^0",
+   "gammaG_den": "+1*A^44 +1*A^40 -1*A^36 +7*A^32 -7*A^28 +11*A^24 -11*A^20 +11*A^16 -8*A^12 +6*A^8 -2*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^3",
+   "word": [
+    3,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^13 -2*A^9 -2*A^5 -1*A^1 +2*A^-3 +4*A^-7 +5*A^-11 +4*A^-15 +2*A^-19 +1*A^-23",
+   "H_span": [
+    -23,
+    13
+   ],
+   "H_spanwidth": 36,
+   "H_factor": "-1*A^-23 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[-1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "-1*A^24 +3*A^8 -1*A^-8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "-1*A^-8 * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^-8 * Phi8(A)^2 * Phi16(A) * Phi24(A)^2",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^32 -2*A^24 -1*A^16 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^36 +1*A^32 +1*A^28 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^4",
+   "word": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^14 -2*A^10 -3*A^6 -4*A^2 -4*A^-2 -5*A^-6 -5*A^-10 -5*A^-14 -4*A^-18 -2*A^-22 -1*A^-26",
+   "H_span": [
+    -26,
+    14
+   ],
+   "H_spanwidth": 40,
+   "H_factor": "-1*A^-26 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^28 +1*A^20 +1*A^16 +3*A^8 +1*A^0 +1*A^-4 +1*A^-12",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-12 * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-12 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)^3",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^40 +2*A^28 +2*A^20 +1*A^16 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^44 +1*A^40 +1*A^36 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^5",
+   "word": [
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^15 -2*A^11 -3*A^7 -3*A^3 -1*A^-1 +1*A^-5 +4*A^-9 +5*A^-13 +5*A^-17 +4*A^-21 +2*A^-25 +1*A^-29",
+   "H_span": [
+    -29,
+    15
+   ],
+   "H_spanwidth": 44,
+   "H_factor": "-1*A^-29 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[-1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "-1*A^32 -1*A^24 +1*A^16 +3*A^8 +1*A^0 -1*A^-8 -1*A^-16",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "-1*A^-16 * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^-16 * Phi8(A)^2 * Phi16(A) * Phi40(A)^2",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^48 -2*A^32 -2*A^24 +1*A^16 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^52 +1*A^48 +1*A^44 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^6",
+   "word": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^16 -2*A^12 -3*A^8 -3*A^4 -2*A^0 -2*A^-4 -2*A^-8 -4*A^-12 -5*A^-16 -5*A^-20 -4*A^-24 -2*A^-28 -1*A^-32",
+   "H_span": [
+    -32,
+    16
+   ],
+   "H_spanwidth": 48,
+   "H_factor": "-1*A^-32 * Phi3(A)^2 * Phi6(A)^2 * Phi8(A) * Phi12(A)^2 * Phi16(A) * R(A)=[1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 -2*A^16 +2*A^12 -3*A^4 +5*A^0 -3*A^-4 +2*A^-12 -2*A^-16 +1*A^-20",
+   "gamma_den": "+1*A^0",
+   "gamma_num_factor": "1*A^-20 * R(A)=[1, 0, 0, 0, -2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 5, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, -2, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0",
+   "one_minus_gamma_num_factor": "-1*A^-20 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A) * Phi24(A)^2",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^40 -2*A^36 +1*A^32 +2*A^28 -4*A^24 +4*A^20 -1*A^16 -2*A^12 +3*A^8 -2*A^4 +1*A^0",
+   "gammaG_den": "+1*A^44 -1*A^40 +1*A^32 -1*A^28 +1*A^20 -1*A^16 +1*A^8 -1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^-1",
+   "word": [
+    -3
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^17 +2*A^13 +3*A^9 +3*A^5 +2*A^1 +1*A^-3",
+   "H_span": [
+    -3,
+    17
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-3 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^20",
+   "gammaG_den": "+1*A^20 +1*A^16 +2*A^12 +2*A^8 +2*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^-2",
+   "word": [
+    -3,
+    -3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^20 -2*A^16 -4*A^12 -6*A^8 -7*A^4 -7*A^0 -5*A^-4 -3*A^-8 -1*A^-12",
+   "H_span": [
+    -12,
+    20
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-12 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^28 +2*A^20 +2*A^16 +1*A^12 +2*A^8 +1*A^4",
+   "gammaG_den": "+1*A^28 +1*A^24 +2*A^20 +1*A^16 +1*A^12 +1*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "(s3 s2 s4 s3)^2",
+   "word": [
+    3,
+    2,
+    4,
+    3,
+    3,
+    2,
+    4,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^2 -3*A^-2 -5*A^-6 -7*A^-10 -7*A^-14 -6*A^-18 -4*A^-22 -2*A^-26 -1*A^-30",
+   "H_span": [
+    -30,
+    2
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-30 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^24 +2*A^20 +1*A^16 +2*A^12 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^28 +1*A^24 +1*A^20 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "(s3^-1 s2 s3)^2",
+   "word": [
+    -3,
+    2,
+    3,
+    -3,
+    2,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^12 -3*A^8 -5*A^4 -7*A^0 -7*A^-4 -6*A^-8 -4*A^-12 -2*A^-16 -1*A^-20",
+   "H_span": [
+    -20,
+    12
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-20 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^28 +2*A^24 +1*A^20 +2*A^16 +2*A^12 +1*A^4",
+   "gammaG_den": "+2*A^28 +1*A^24 +2*A^20 +1*A^16 +1*A^12 +1*A^8 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3 s2^-1",
+   "word": [
+    3,
+    -2
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^2 +2*A^-2 +3*A^-6 +3*A^-10 +2*A^-14 +1*A^-18",
+   "H_span": [
+    -18,
+    2
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-18 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^0",
+   "gammaG_den": "+1*A^20 +2*A^16 +2*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2 s2^2",
+   "word": [
+    3,
+    3,
+    2,
+    2
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^14 -3*A^10 -5*A^6 -7*A^2 -7*A^-2 -6*A^-6 -4*A^-10 -2*A^-14 -1*A^-18",
+   "H_span": [
+    -18,
+    14
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-18 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^24 +2*A^20 +1*A^16 +2*A^12 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^28 +1*A^24 +1*A^20 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s2 s3^2 s2^-1",
+   "word": [
+    2,
+    3,
+    3,
+    -2
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^12 -3*A^8 -5*A^4 -7*A^0 -7*A^-4 -6*A^-8 -4*A^-12 -2*A^-16 -1*A^-20",
+   "H_span": [
+    -20,
+    12
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-20 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^28 +2*A^24 +1*A^20 +2*A^16 +2*A^12 +1*A^4",
+   "gammaG_den": "+2*A^28 +1*A^24 +2*A^20 +1*A^16 +1*A^12 +1*A^8 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2 s4^2",
+   "word": [
+    3,
+    3,
+    4,
+    4
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^14 -3*A^10 -5*A^6 -7*A^2 -7*A^-2 -6*A^-6 -4*A^-10 -2*A^-14 -1*A^-18",
+   "H_span": [
+    -18,
+    14
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-18 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^24 +2*A^20 +1*A^16 +2*A^12 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^28 +1*A^24 +1*A^20 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2 s2 s3^2",
+   "word": [
+    3,
+    3,
+    2,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^11 -2*A^7 -4*A^3 -6*A^-1 -7*A^-5 -7*A^-9 -5*A^-13 -3*A^-17 -1*A^-21",
+   "H_span": [
+    -21,
+    11
+   ],
+   "H_spanwidth": 32,
+   "H_factor": "-1*A^-21 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^20 +1*A^16 +1*A^12 +3*A^8 +1*A^4 +1*A^0 +1*A^-4",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-4 * R(A)=[1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-4 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^24 +2*A^16 +2*A^12 +1*A^8 +2*A^4 +1*A^0",
+   "gammaG_den": "+1*A^32 +1*A^16 +2*A^12 +2*A^8 +2*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3 s2 s3",
+   "word": [
+    3,
+    2,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "+1*A^5 +2*A^1 +3*A^-3 +3*A^-7 +2*A^-11 +1*A^-15",
+   "H_span": [
+    -15,
+    5
+   ],
+   "H_spanwidth": 20,
+   "H_factor": "1*A^-15 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A)",
+   "gamma_num": "+1*A^8",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^8",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^0 * Phi8(A)^2 * Phi16(A)",
+   "gamma_at_A_eq_i": 0.111111111111,
+   "gammaG_num": "+1*A^4",
+   "gammaG_den": "+1*A^20 +1*A^16 +2*A^12 +2*A^8 +2*A^4 +1*A^0",
+   "gammaG_at_i": 0.111111111111,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2 s2^-1 s4^-1 s3^2",
+   "word": [
+    3,
+    3,
+    -2,
+    -4,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^20 +1*A^16 -1*A^12 -2*A^4 -5*A^0 -5*A^-4 -8*A^-8 -5*A^-12 -5*A^-16 -3*A^-20 -1*A^-24 -1*A^-28",
+   "H_span": [
+    -28,
+    20
+   ],
+   "H_spanwidth": 48,
+   "H_factor": "-1*A^-28 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, -1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, -2, 0, 0, 0, 4, 0, 0, 0, -3, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^36 -4*A^32 +9*A^28 -11*A^24 +6*A^20 +11*A^16 -26*A^12 +37*A^8 -26*A^4 +11*A^0 +6*A^-4 -11*A^-8 +9*A^-12 -4*A^-16 +1*A^-20",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-20 * R(A)=[1, 0, 0, 0, -4, 0, 0, 0, 9, 0, 0, 0, -11, 0, 0, 0, 6, 0, 0, 0, 11, 0, 0, 0, -26, 0, 0, 0, 37, 0, 0, 0, -26, 0, 0, 0, 11, 0, 0, 0, 6, 0, 0, 0, -11, 0, 0, 0, 9, 0, 0, 0, -4, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-20 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi16(A) * R(A)=[1, 0, 0, 0, -2, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, -3, 0, 0, 0, 10, 0, 0, 0, -3, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, -2, 0, 0, 0, 1]",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^56 -6*A^52 +17*A^48 -28*A^44 +30*A^40 -18*A^36 -2*A^32 +20*A^28 -21*A^24 +16*A^20 -2*A^16 -2*A^12 +5*A^8 -2*A^4 +1*A^0",
+   "gammaG_den": "+1*A^60 -3*A^56 +8*A^52 -15*A^48 +22*A^44 -28*A^40 +32*A^36 -30*A^32 +26*A^28 -17*A^24 +11*A^20 -2*A^16 +1*A^12 +3*A^8 -1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^-2 s2 s4 s3^2",
+   "word": [
+    -3,
+    -3,
+    2,
+    4,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^20 -2*A^16 -3*A^12 -6*A^8 -5*A^4 -7*A^0 -5*A^-4 -4*A^-8 -3*A^-12 -1*A^-20 +1*A^-24",
+   "H_span": [
+    -24,
+    20
+   ],
+   "H_spanwidth": 44,
+   "H_factor": "-1*A^-24 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * Phi24(A) * R(A)=[-1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1]",
+   "gamma_num": "-1*A^32 +3*A^28 -3*A^24 +12*A^16 -21*A^12 +29*A^8 -21*A^4 +12*A^0 -3*A^-8 +3*A^-12 -1*A^-16",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "-1*A^-16 * Phi24(A)^2 * R(A)=[1, 0, 0, 0, -1, 0, 0, 0, -2, 0, 0, 0, 1, 0, 0, 0, -7, 0, 0, 0, 1, 0, 0, 0, -2, 0, 0, 0, -1, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "1*A^-16 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi16(A) * R(A)=[1, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0, 2, 0, 0, 0, -8, 0, 0, 0, 2, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0, 1]",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^52 +6*A^40 -6*A^36 +6*A^32 +7*A^28 -18*A^24 +27*A^20 -24*A^16 +15*A^12 -6*A^8 +1*A^4",
+   "gammaG_den": "+1*A^52 +2*A^48 -2*A^44 +7*A^40 -10*A^36 +16*A^32 -17*A^28 +21*A^24 -17*A^20 +15*A^16 -11*A^12 +6*A^8 -3*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2 s1 s3^2",
+   "word": [
+    3,
+    3,
+    1,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^15 -2*A^11 -3*A^7 -4*A^3 -4*A^-1 -5*A^-5 -5*A^-9 -5*A^-13 -4*A^-17 -2*A^-21 -1*A^-25",
+   "H_span": [
+    -25,
+    15
+   ],
+   "H_spanwidth": 40,
+   "H_factor": "-1*A^-25 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^28 +1*A^20 +1*A^16 +3*A^8 +1*A^0 +1*A^-4 +1*A^-12",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-12 * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-12 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)^3",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^40 +2*A^28 +2*A^20 +1*A^16 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^44 +1*A^40 +1*A^36 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  },
+  {
+   "label": "s3^2 s5 s3^2",
+   "word": [
+    3,
+    3,
+    5,
+    3,
+    3
+   ],
+   "collinear": false,
+   "H_vc_w": "-1*A^15 -2*A^11 -3*A^7 -4*A^3 -4*A^-1 -5*A^-5 -5*A^-9 -5*A^-13 -4*A^-17 -2*A^-21 -1*A^-25",
+   "H_span": [
+    -25,
+    15
+   ],
+   "H_spanwidth": 40,
+   "H_factor": "-1*A^-25 * Phi3(A) * Phi6(A) * Phi8(A) * Phi12(A) * Phi16(A) * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_num": "+1*A^28 +1*A^20 +1*A^16 +3*A^8 +1*A^0 +1*A^-4 +1*A^-12",
+   "gamma_den": "+1*A^16 +2*A^12 +3*A^8 +2*A^4 +1*A^0",
+   "gamma_num_factor": "1*A^-12 * R(A)=[1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]",
+   "gamma_den_factor": "1*A^0 * Phi3(A)^2 * Phi6(A)^2 * Phi12(A)^2",
+   "one_minus_gamma_num_factor": "-1*A^-12 * Phi1(A)^2 * Phi2(A)^2 * Phi4(A)^2 * Phi8(A)^2 * Phi16(A)^3",
+   "gamma_at_A_eq_i": 1.0,
+   "gammaG_num": "+1*A^40 +2*A^28 +2*A^20 +1*A^16 +2*A^8 +1*A^0",
+   "gammaG_den": "+1*A^44 +1*A^40 +1*A^36 +1*A^16 +1*A^12 +2*A^8 +1*A^4 +1*A^0",
+   "gammaG_at_i": 1.0,
+   "G_w_w_equals_G_vc_vc": false
+  }
+ ],
+ "seconds": 0.49932193756103516
+}

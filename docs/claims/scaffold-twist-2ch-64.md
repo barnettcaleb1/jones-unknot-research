@@ -26,4 +26,4 @@ For fixed ce1 twist family, J_n=t^(2n-6)[alpha t^(2n)+beta(-t)^n]. Cap slide put
 
 - [twist_two_channel_referee.md](../../archive/work/theory_restart/twist_two_channel_referee.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -45,4 +45,4 @@ STOPPED_BRANCHES.txt. Do not treat the22 hits as unresolved candidates.
 - [STOPPED_BRANCHES.txt](../../archive/work/research33/STOPPED_BRANCHES.txt)
 - [candidate_audit.txt](../../archive/work/research33/candidate_audit.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

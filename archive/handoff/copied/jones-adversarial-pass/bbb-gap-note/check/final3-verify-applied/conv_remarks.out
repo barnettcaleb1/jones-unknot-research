@@ -1,0 +1,17 @@
+(i) D R^T D == BB05 reduced for s_i and s_i^-1, n = 3..6: True
+(ii) U  n=4 t0=5/3  : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) U  n=4 t0=-7/2 : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) U  n=5 t0=5/3  : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) U  n=5 t0=-7/2 : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) UT n=4 t0=5/3  : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) UT n=4 t0=-7/2 : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) UT n=5 t0=5/3  : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) UT n=5 t0=-7/2 : dim of conjugator space = 2, an invertible conjugator exists: True
+(ii) R  n=4 t0=5/3  : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) R  n=4 t0=-7/2 : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) R  n=5 t0=5/3  : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) R  n=5 t0=-7/2 : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) RT n=4 t0=5/3  : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) RT n=4 t0=-7/2 : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) RT n=5 t0=5/3  : dim of conjugator space = 1, an invertible conjugator exists: True
+(ii) RT n=5 t0=-7/2 : dim of conjugator space = 1, an invertible conjugator exists: True

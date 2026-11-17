@@ -28,4 +28,4 @@ Arbitrary classical knot -> one-circle Gauss word and symmetric projection P²=P
 - [projection_geometry.md](../../archive/work/global_design/projection_geometry.md)
 - [projection_prior.md](../../archive/work/global_design/projection_prior.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

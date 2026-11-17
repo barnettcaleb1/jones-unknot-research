@@ -26,4 +26,4 @@ In any fixed finite full-twist template, each exact Jones fiber is a finite unio
 
 - [multitwist_locus.md](../../archive/work/global_design/multitwist_locus.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

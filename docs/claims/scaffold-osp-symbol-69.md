@@ -26,4 +26,4 @@ With P superflip and K=coev0 ev0, K²=-K, PK=K. For B(X,Y)=str(XY)/2 on osp(1 | 
 
 - [osp_casimir_exact.md](../../archive/work/theory_restart/osp_casimir_exact.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

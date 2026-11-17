@@ -26,4 +26,4 @@ Replies 093845/094509; work/sakuma_review/watson.md; Watson 1311.1085 Def10/Prop
 
 - [watson.md](../../archive/work/sakuma_review/watson.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

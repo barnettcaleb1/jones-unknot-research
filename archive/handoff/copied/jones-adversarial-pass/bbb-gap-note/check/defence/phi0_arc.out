@@ -1,0 +1,11 @@
+[S: Phi = Gamma1^-1 [y3^-2, y1] Gamma1]  y-word length 22, sigma-length 144
+   rho_4(Phi)=I at t=-1: True;  rho_4(Phi)!=I at t=2: True
+   m = iota(alpha,(beta3*)Phi) = 33320;  4-disks: 312;  disks outside the Lemma 6.3 list: 0;  3-disk {p1,p2,p3} present: True;  parity holds: False
+   M_Phi(-1) = 0  (note's Lemma 2 predicts 0);  c_i = eps_i(-1)^k_i flips exactly at the 4-disks: True
+   sizes of the 313 blocks cut out by the 4-disks: first few [110, 110, 60, 110, 110, 110, 129, 110, 110, 110, 60, 110] ; alternating sum = 0
+   [time 0.5s]
+Phi0 = [y3^-2, b], b = [[g1,g2],g3];  reduced y-word of Phi0: [-3, -1, 2, -3, 1, -2, 1, 2, -1, 3, -2, 1, -3, -1, 3, 3, 1, 3, -1, 2, -3, 1, -2, -1, 2, -1, 3, -2, 1, -3] length 30
+   Burau of Push(Phi0 y-word) equals Burau of the note's sigma-word at t = 2, 3, -2, 5
+   Gamma1^-1 . Phi0 freely reduced and not ending in y2: True
+
+[N: the conjugate Gamma1^-1 Phi0 Gamma1 (y-word length 46) was started but aborted after ~5 min at >800 MB: its arc is too long for this pure-Python tool. Only its hypotheses are recorded above.]

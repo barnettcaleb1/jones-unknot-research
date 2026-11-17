@@ -27,4 +27,4 @@ For positive words P,Q,H in x=A14,y=A24,z=A34, H nonempty with primitive root H0
 - [bbb_perron_centralizers.md](../../archive/work/global_design/bbb_perron_centralizers.md)
 - [bbb_perron_extensions.md](../../archive/work/global_design/bbb_perron_extensions.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

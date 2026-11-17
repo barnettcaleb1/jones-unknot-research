@@ -49,4 +49,4 @@ cable certificate in work/pass4/braid_ren_cable.py and .json.
 - [ren_composition.txt](../../archive/work/research47/ren_composition.txt)
 - [ren_power_certificate.json](../../archive/work/research47/ren_power_certificate.json)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

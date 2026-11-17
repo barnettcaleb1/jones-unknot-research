@@ -43,4 +43,4 @@ Proof: work/research23/global_quantum_bridge.txt; verify_fusion_variance.py.
 
 - [global_quantum_bridge.txt](../../archive/work/research23/global_quantum_bridge.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

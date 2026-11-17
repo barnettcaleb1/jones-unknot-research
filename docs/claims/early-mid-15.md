@@ -42,4 +42,4 @@ Proof: work/research22/markov_global_constraints.txt.
 
 - [markov_global_constraints.txt](../../archive/work/research22/markov_global_constraints.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

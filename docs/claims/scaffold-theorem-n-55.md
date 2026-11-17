@@ -27,4 +27,4 @@ A marked west/east axis–arc box has state aP1+bP3; bending gives a=v1,b=v1+(1-
 - [necklace_skein_referee.md](../../archive/work/theory_restart/necklace_skein_referee.md)
 - [skein_dictionary_arbitrary_boxes.md](../../archive/work/theory_restart/skein_dictionary_arbitrary_boxes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -56,4 +56,4 @@ An old LL1/LL2 indexing concern was avoided by actual-diagram calibration.
 - [band_obstructions.md](../../archive/work/band_obstructions.md)
 - [ekt_homology_notes.md](../../archive/work/ekt_homology_notes.md)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -1,0 +1,20 @@
+== Lemma 1 on the paper's examples ==
+Fig3.1a  M=1-t               m= 2 M(-1)=   2 L1= 2 parity=True  single-sign=True  violating-disks=[] W=[1]
+Fig3.1b  M=2-2t+t^2-t^-1     m= 6 M(-1)=   6 L1= 6 parity=True  single-sign=True  violating-disks=[] W=[1, 1, -1, -2, 1]
+Sec7 M_Phi (no parity)       m= 8 M(-1)=   2 L1= 6 parity=False single-sign=False violating-disks=[5] W=[2, 2, -1, -2, -4, 2, 2]
+Sec7 M_PhiGamma              m= 8 M(-1)=   8 L1= 8 parity=True  single-sign=True  violating-disks=[] W=[2, 2, -1, -2, -5, 2, 2]
+Sec7 M_Gamma                 m=20 M(-1)= -20 L1=20 parity=True  single-sign=True  violating-disks=[] W=[2, -1, -2, 1, 2, 1, -2, -2, -1, 2, -1, -2, 1, 2, 1, -2, -2, 1, 2]
+
+== non-minimal representative (one finger move) ==
+m = 8  M(-1) = 6  W = [1, 1, 0, 0, -1, -2, 1]
+disks with W=0 (empty bigons) are sign-changing: [True, True]
+parity holds for this representative: False
+
+identity M^(j)(-1) = c(-1)^j p^(j)(1): verified on 300 random multisets, j<6
+shift d=0: factorial moments j=0..3 = [6, 3, 4, -6], p'(1) mod p(1) = 3
+shift d=1: factorial moments j=0..3 = [6, 9, 10, 6], p'(1) mod p(1) = 3
+shift d=3: factorial moments j=0..3 = [6, 21, 58, 120], p'(1) mod p(1) = 3
+d=1: sizes 9,9; power sums j<= 2: [9, 9, 17] vs [9, 9, 15]; spans 3 vs 2
+d=2: sizes 16,16; power sums j<= 3: [16, 24, 56, 150] vs [16, 24, 56, 144]; spans 4 vs 3
+d=3: sizes 35,35; power sums j<= 4: [35, 70, 210, 700, 2502] vs [35, 70, 210, 700, 2478]; spans 5 vs 4
+d=4: sizes 66,66; power sums j<= 5: [66, 165, 605, 2475, 10769, 48795] vs [66, 165, 605, 2475, 10769, 48675]; spans 6 vs 5

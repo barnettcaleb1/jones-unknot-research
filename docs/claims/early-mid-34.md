@@ -51,4 +51,4 @@ not audited in entirety.
 - [homology_mechanism.txt](../../archive/work/research32/homology_mechanism.txt)
 - [quantum_mechanism.txt](../../archive/work/research32/quantum_mechanism.txt)
 
-These links were resolved from explicit filenames, not inferred as a complete logical dependency list.
+These links identify recorded evidence; they are not a claim that the logical dependency list is complete.

@@ -5,10 +5,10 @@ This is an inventory of the available research record, not a claim that every pr
 | Category | Files | Bytes |
 |---|---:|---:|
 | excluded | 10,910 | 851,007,438 |
-| git | 14,662 | 164,308,666 |
+| git | 15,079 | 168,084,036 |
 | asset | 11,126 | 2,175,771,151 |
 
-The catalog contains 345 claim records and 270 letters. Claims may overlap or supersede one another; these are not counts of theorems.
+The catalog contains 355 claim records and 270 letters. Claims may overlap or supersede one another; these are not counts of theorems.
 
 ## What is preserved
 
@@ -27,8 +27,10 @@ The [source audit](REPRODUCIBILITY_AUDIT.md) describes dependency and provenance
 
 The bibliography is a curated primary-source map, not a fresh verification of every citation in every archived document. Historical bare paths may require the mapping in [Reproducing](REPRODUCING.md). Full manuscript specialist review, complete dependency pinning, and replay of all large certificate collections are not claimed. The contribution tasks make these gaps explicit.
 
-## Additional handoff and recovered bundles
+## Additional recovered material
 
-The [Claude completeness request](CLAUDE_HANDOFF.md) is tracked separately; a pending response is not confirmation of exhaustiveness. Twenty-five unique original files were recovered from legacy evidence ZIPs after byte-level comparison with the other exported artifacts. Their ZIP/member provenance is in [legacy-members.json](../data/legacy-members.json). Third-party members remain excluded and identified.
+The [Claude handoff](CLAUDE_HANDOFF.md) records the later inventory, received and published hashes, recovery method, privacy transformations and known gaps. Its [history guide](HISTORY_RECOVERED.md) adds results and corrections that were previously confined to journals. A supplementary claim card never upgrades the source review status.
 
-A [harvested source-link index](../data/source-links.json) makes citations scattered through the historical record discoverable. It is not a claim that every link or historical use has been independently verified; the curated [References](REFERENCES.md) states its review levels.
+Unique original files recovered from legacy bundles are indexed in [legacy-members.json](../data/legacy-members.json). Bibliographic URLs harvested from historical sources are listed in [source-links.json](../data/source-links.json); this is a discovery index, not a verified bibliography.
+
+“No further known artifact is missing” is the collaborators’ bounded inventory conclusion, not proof that every past transcript or unsaved output was recovered. See the [known-gap register](../data/handoff-known-gaps.json).

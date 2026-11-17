@@ -1,0 +1,131 @@
+id	status	title	ledger	line
+LATE-01	IP	COHERENT UNIFORM MULTI-BAND TWIST OBSTRUCTION (pass35)	work/handoff/late-ledger.txt	46
+LATE-02	IP	COMMON SIGNATURE PHASE AND RANK-ONE TWO-BAND NO-GO (pass35)	work/handoff/late-ledger.txt	62
+LATE-03	IP/FC	CARMI--COHEN: EXACT FAILURE OF THE UNIVERSAL PACKAGE (pass36)	work/handoff/late-ledger.txt	78
+LATE-04	IP/FC	CARMI--COHEN: SOURCE-GROUNDED G2 MISIDENTIFICATION (pass36)	work/handoff/late-ledger.txt	94
+LATE-05	IP	ACTUAL UNKNOT ANCHOR DOES NOT GIVE TWIST COMPRESSION (pass36)	work/handoff/late-ledger.txt	114
+LATE-06	IP	EXACT TWO-BAND INTEGER-LOCUS CERTIFICATES (pass37)	work/handoff/late-ledger.txt	131
+LATE-07	IP/FC/FM	SIXTEEN ACTUAL LLL(1) FAMILIES EXCLUDED, SIX NOT MARKED	work/handoff/late-ledger.txt	150
+LATE-08	IP/FC	ALL HEEGAARD MARKINGS OF ONE VIRTUAL UNIT DIAGRAM EXCLUDED	work/handoff/late-ledger.txt	168
+LATE-09	IP/LI	CLOSED UNKNOT DATA DOES NOT CONTROL BRAID DYNAMICS (pass39)	work/handoff/late-ledger.txt	186
+LATE-10	LI/IP	TAME SKEIN-RANK ENDPOINT AND ITS SPECIALIZATION OBSTRUCTION	work/handoff/late-ledger.txt	199
+LATE-11	LI/NEGATIVE AUDIT	CATEGORIFICATION CITATION GATES (pass39)	work/handoff/late-ledger.txt	212
+LATE-12	IP	JONES RANDOM-CLUSTER CURVE MISSES FERROMAGNETIC DOMAIN (pass40)	work/handoff/late-ledger.txt	223
+LATE-13	IP	FULL KNOT BRAID OPERATOR CANNOT BE PSD NEAR REAL CLASSICAL LIMIT	work/handoff/late-ledger.txt	233
+LATE-14	IP	ONE RIBBON FAMILY RULES OUT EVERY FIXED REAL POSITIVITY PARAMETER	work/handoff/late-ledger.txt	244
+LATE-15	IP	EKT OMEGA PAIRINGS: TWO DIMENSIONS, BOUNDARY-BRAID NO-GO (pass41)	work/handoff/late-ledger.txt	257
+LATE-16	IP	FORMAL COMPONENT DIVISION H/delta IS NOT AN ACTUAL OUTSIDE TANGLE	work/handoff/late-ledger.txt	272
+LATE-17	IP/LI/FC	COMPLETE HOMOLOGY/LINKING-FORM MULTI-BAND GATE	work/handoff/late-ledger.txt	285
+LATE-18	IP	EXACT STAR--TRIANGLE BOUNDARY CHANNEL GATE (pass42)	work/handoff/late-ledger.txt	305
+LATE-19	IP/FC/LI	SUPPORT MATCHING IS NOT ACYCLIC KHOVANOV CANCELLATION	work/handoff/late-ledger.txt	320
+LATE-20	IP/LI	SMALL GRAPH CLASS AND CLUSTER-LETTER LIMITS (pass42)	work/handoff/late-ledger.txt	332
+LATE-21	IP	FINITE FIELD FALSE POSITIVES BY ORDINARY TORUS KNOTS (pass43)	work/handoff/late-ledger.txt	342
+LATE-22	IP	EXACT CERTIFICATES AND LIMIT OF AMBIENT PIGEONHOLING (pass43)	work/handoff/late-ledger.txt	353
+LATE-23	IP	DEGREE/HEIGHT/ARCHIMEDEAN PRECISION GATE (pass43)	work/handoff/late-ledger.txt	370
+LATE-24	IP/FC/LI	ELIAHOU--FROMENTIN CONGRUENCE FAMILY NEVER BECOMES EXACT	work/handoff/late-ledger.txt	381
+LATE-25	IP	GENUINE ORIENTATION REPAIR, BUT COMPRESSION STILL IMPOSSIBLE	work/handoff/late-ledger.txt	392
+LATE-26	IP/LI	UNIT REFLECTION AND SCALAR-TO-EXTERIOR TRANSFER ARE NOT BRIDGES	work/handoff/late-ledger.txt	408
+LATE-27	IP/LI	FOUR-DIMENSIONAL MODULE SIMPLICITY DOES NOT GIVE HANDLE CANCEL	work/handoff/late-ledger.txt	421
+LATE-28	IP	NO ACTUAL UNCOLORED PROJECTOR GADGET; PI DOES NOT MAKE BRAID LAW	work/handoff/late-ledger.txt	434
+LATE-29	IP	NO FINITE UNIVERSAL ANNULAR SURGERY-TWIST IMPLEMENTATION	work/handoff/late-ledger.txt	446
+LATE-30	LI/IP	MULTICURVE AND ALL-FILLING LIMITS (pass45)	work/handoff/late-ledger.txt	460
+LATE-31	IP	ONE-DISK TWIST FAMILY EXACT CLASSIFICATION AND FINITE BOUND	work/handoff/late-ledger.txt	473
+LATE-32	IP/LI	FINITE-ORDER CORRECTIONS CANNOT FIRST CLOSE IN TAME LIMIT	work/handoff/late-ledger.txt	489
+LATE-33	IP/FC, TABLE-DEPENDENT	ORDINARY JONES DOES NOT DETERMINE A-POLYNOMIAL	work/handoff/late-ledger.txt	500
+LATE-34	IP	REN CORE REPEATED STACKS AND SATELLITE COMPOSITION OBSTRUCTIONS	work/handoff/late-ledger.txt	514
+LATE-35	IP	SINGLE-DISK INTEGRALITY FAILS FOR COORDINATED DISKS	work/handoff/late-ledger.txt	536
+LATE-36	IP/LI	ABSOLUTE TORSION DOES NOT SUPPLY A BANDED KNOT PAIR	work/handoff/late-ledger.txt	558
+LATE-37	IP	TORSION NECK-INTERSECTION AND HOMEOMORPHISM GATES	work/handoff/late-ledger.txt	576
+LATE-38	IP	ONE-PUNCTURED ANNULUS JONES-CONSTANT CLASSIFICATION	work/handoff/late-ledger.txt	591
+LATE-39	IP/LI	BRUNNIAN THETA-ARC LINEAR UNZIP FILTER	work/handoff/late-ledger.txt	611
+LATE-40	IP/LI, PARTLY DUPLICATE	UNIVERSAL SATELLITE u=1 PROMOTER LIMIT	work/handoff/late-ledger.txt	628
+LATE-41	CP	FULL FRAMED RATIONAL-SOLUTION UNIQUENESS	work/handoff/late-ledger.txt	644
+LATE-42	IP	POSITIVE HERMITIAN BRAID GENERATORS ABELIANIZE	work/handoff/late-ledger.txt	685
+LATE-43	IP/NEGATIVE AUDIT	PRIME EXTENSION DOES NOT PRESERVE PRESCRIBED FIBER	work/handoff/late-ledger.txt	702
+LATE-44	IP	GENERAL-Y ZERO-SURGERY DERIVATIVE OBSTRUCTION	work/handoff/late-ledger.txt	714
+LATE-45	IP/LI	FLOER ENDPOINT LEAVES A CLOSED HOMOLOGY-SPHERE SUMMAND	work/handoff/late-ledger.txt	729
+LATE-46	IP/FM	MODULAR GALOIS SYMMETRY DOES NOT PROMOTE ORDINARY COLOR	work/handoff/late-ledger.txt	751
+LATE-47	FM/IP	2026 FROBENIUS ARITHMETIC LIFT ALLOWS HIDDEN COLORS	work/handoff/late-ledger.txt	768
+LATE-48	FM/IP/LI	ERASE FINITE COLOR PREFIX WHILE RETAINING VOLUME ASYMPTOTICS	work/handoff/late-ledger.txt	783
+LATE-49	IP/FC/LI	BRUNNIAN/BURAU CONSTRAINTS KEEP RESIDUAL B5 BLOCK DENSE	work/handoff/late-ledger.txt	801
+LATE-50	FM/IP	UNIVERSAL FROBENIUS COMPLEX HIDES ARBITRARY KH HOMOLOGY	work/handoff/late-ledger.txt	823
+MID-01	D/N	Reversible finite classical positivity cannot model Jones	work/handoff/middle-ledger.txt	29
+MID-02	D/N	Globally periodic unknot rotors and a clasper-anchor failure	work/handoff/middle-ledger.txt	55
+MID-03	D	Preferred longitude derivative detects a_2 of the covering knot	work/handoff/middle-ledger.txt	72
+MID-04	D	Sato--Levine criterion and exact shell transmission	work/handoff/middle-ledger.txt	93
+MID-05	D	Exact shell root order and Whitehead no-first-flatness	work/handoff/middle-ledger.txt	113
+MID-06	D	Exact Whitehead factor and actual deep-jet u=1 knot family	work/handoff/middle-ledger.txt	129
+MID-07	C/D/N	Zero shell endpoint, and two insufficient invariant packages	work/handoff/middle-ledger.txt	150
+MID-08	D/C	Brunnian equivalence and adjacency amplification in the u=1 case	work/handoff/middle-ledger.txt	169
+MID-09	D/F/N	One exact Brunnian seed is nonzero; smoothing signs cancel	work/handoff/middle-ledger.txt	194
+MID-10	D/N	Exact no-cancellation restrictions for anchored quotient circuits	work/handoff/middle-ledger.txt	216
+MID-11	D/C	Genuine positive norm identity, but only in one clasp family	work/handoff/middle-ledger.txt	239
+MID-12	C/D/N	Connected-sum amplification and the precise missing bounds	work/handoff/middle-ledger.txt	257
+MID-13	D/N	Watson degeneracy, support window, and uniform rank theorem	work/handoff/middle-ledger.txt	281
+MID-14	C/N	Ribbon Euler-faithfulness and failed reflection shortcuts	work/handoff/middle-ledger.txt	308
+MID-15	D/N	Markov-related closures are not independent quantum probes	work/handoff/middle-ledger.txt	326
+MID-16	D	Relative lifted-Lee bars constrain ribbon concordances	work/handoff/middle-ledger.txt	343
+MID-17	F/D	Ribbon candidate screen and same-genus movie rigidity	work/handoff/middle-ledger.txt	360
+MID-18	D/N	Three-term Jones polynomials can have unbounded homology rank	work/handoff/middle-ledger.txt	387
+MID-19	D/N	Raw spanning-tree minimization still bounds crossing number	work/handoff/middle-ledger.txt	402
+MID-20	D/N/C	Fusion moment positivity fails for an actual ribbon double	work/handoff/middle-ledger.txt	417
+MID-21	D/N/C	Quantum braid Floer quotient adds no mixed polynomial data	work/handoff/middle-ledger.txt	435
+MID-22	C/D/F	Exact braid-kernel endpoint and four-moment certificate	work/handoff/middle-ledger.txt	451
+MID-23	D/N	Spectral and geometric restrictions on Burau-kernel braids	work/handoff/middle-ledger.txt	473
+MID-24	D/N/C	Partial-kernel coverage does not accumulate automatically	work/handoff/middle-ledger.txt	493
+MID-25	D/N/C	Finite scalar-annular certificate and companion-power dichotomy	work/handoff/middle-ledger.txt	516
+MID-26	D/C	Actual Bing pattern product formula	work/handoff/middle-ledger.txt	537
+MID-27	D/N	Actual finite-order inverses, but no exact realization	work/handoff/middle-ledger.txt	550
+MID-28	C/D/N	Branched-cover finite parents and a low-invariant countertest	work/handoff/middle-ledger.txt	568
+MID-29	D/N/C	Rank-one fusion projectors and residual-faithfulness equivalence	work/handoff/middle-ledger.txt	583
+MID-30	D/F/N	A whole ordinary-Jones fiber has unbounded color3 span	work/handoff/middle-ledger.txt	611
+MID-31	D/N	Projective graph complexity equals classical crossing number	work/handoff/middle-ledger.txt	631
+MID-32	D	Fixed twist templates bound Mahler measure, not colored span	work/handoff/middle-ledger.txt	662
+MID-33	C/D/N	Exterior-volume endpoint and simultaneous finite-probe evasion	work/handoff/middle-ledger.txt	679
+MID-34	D/N	Signed spectral cooling and dyadic enlargement do not add data	work/handoff/middle-ledger.txt	703
+MID-35	F/N	Three concrete constructions failed, with exact stopping points	work/handoff/middle-ledger.txt	727
+MID-36	D/F	All-slope two-band algebra and one complete family exclusion	work/handoff/middle-ledger.txt	745
+EARLY-01	INTERNAL-PROOF / explicit classical-knot obstruction.	Carmi–Cohen universal compression package is contradicted	work/handoff/early-ledger.txt	28
+EARLY-02	INTERNAL-PROOF, elementary skein deduction; novelty not claimed.	Exact anchored-twist dichotomy and failed propagation	work/handoff/early-ledger.txt	49
+EARLY-03	INTERNAL-PROOF; exact family theorem; novelty unverified.	EKT band-fusion obstruction, including arbitrary unknot seeds	work/handoff/early-ledger.txt	70
+EARLY-04	EXACT-COMPUTATION, no census/general inference.	Initial random braid sample is fully classified	work/handoff/early-ledger.txt	101
+EARLY-05	INTERNAL-PROOF; explicit infinite nontrivial family.	No fixed Taylor cutoff, even among three-braid knots	work/handoff/early-ledger.txt	116
+EARLY-06	INTERNAL-PROOF, algebra; topology deliberately not inferred.	Complete TL2 skein-unit classification and cap obstruction	work/handoff/early-ledger.txt	129
+EARLY-07	INTERNAL-PROOF + exact actual-knot countertests.	Crossing-cover homology supplies automatic, insufficient tests	work/handoff/early-ledger.txt	148
+EARLY-08	INTERNAL-PROOF, standard positivity deduction.	Unlink-value braid trace rigidity; knot-value interior obstruction	work/handoff/early-ledger.txt	161
+EARLY-09	INTERNAL-PROOF with exact finite coefficient certificates.	144 specified Bigelow-commutator families excluded for all powers	work/handoff/early-ledger.txt	175
+EARLY-10	INTERNAL-PROOF, elementary effective method; no novelty asserted.	Exact twist-parameter locus and finite polynomial certificates	work/handoff/early-ledger.txt	191
+EARLY-11	INTERNAL-PROOF, classical-surgery consequence; count sharp.	Finite geometric unknot certificates for fixed twist grids	work/handoff/early-ledger.txt	206
+EARLY-12	INTERNAL-PROOF + finite calibration.	Protected ribbon-twist template consists of unknots	work/handoff/early-ledger.txt	219
+EARLY-13	INTERNAL-PROOF for named positive words; EXACT-COMPUTATION elsewhere.	Additional braid searches and an infinite positive-word exclusion	work/handoff/early-ledger.txt	232
+EARLY-14	INTERNAL-PROOF, specific diagram family; novelty unverified.	Ren-pattern classification for all twists AND all companions	work/handoff/early-ledger.txt	248
+EARLY-15	INTERNAL-PROOF; all B4 words, positive and negative.	Arbitrary top braids cannot erase Ren core's z^2 channel	work/handoff/early-ledger.txt	264
+EARLY-16	INTERNAL-PROOF, standard skein/Habiro deduction.	Color-three, two-parallels and ordinary-Jones necessary congruence	work/handoff/early-ledger.txt	285
+EARLY-17	INTERNAL-PROOF using published inputs AND a specified preprint.	Small Khovanov-rank restrictions on hypothetical Jones-one knots	work/handoff/early-ledger.txt	299
+EARLY-18	INTERNAL-PROOF, sophisticated geometric grading deduction; review advised.	Isolating M1 branch excluded in the r5 case	work/handoff/early-ledger.txt	312
+EARLY-19	FORMAL with exact algebraic proofs, NOT knots.	Formal higher-color models defeat integrality/recurrence shortcuts	work/handoff/early-ledger.txt	326
+EARLY-20	INTERNAL-PROOF, actual knots with exact braid certificates.	Exact Jones collision separates EVERY higher color	work/handoff/early-ledger.txt	341
+EARLY-21	INTERNAL-PROOF / EXACT-COMPUTATION for examples.	Electrical-network determinant identity and failed positivity	work/handoff/early-ledger.txt	354
+EARLY-22	INTERNAL-PROOF, concrete braid identity and elementary TL2.	Two-site biological epistasis and one-site tomography	work/handoff/early-ledger.txt	367
+EARLY-23	FORMAL algebra, not knot constructions.	Supersymmetric-index and interacting-quiver countermodels	work/handoff/early-ledger.txt	381
+EARLY-24	INTERNAL-PROOF, actual torus-knot examples.	Every finite collection of quantum levels misses actual knots	work/handoff/early-ledger.txt	394
+EARLY-25	ACTUAL geometry / INTERNAL-PROOF; prior example identified.	Known unframed ambiguity, its complete twist exclusion, failed repair	work/handoff/early-ledger.txt	406
+EARLY-26	EXACT-COMPUTATION with exhaustive symmetry reduction.	Complete exclusion of one seven-node quiver multiset	work/handoff/early-ledger.txt	424
+EARLY-27	INTERNAL-PROOF; known detection context, precise novelty unverified.	Low derivatives detect U in three-box and all-odd pretzel classes	work/handoff/early-ledger.txt	436
+EARLY-28	INTERNAL-PROOF + ACTUAL counterexample to extension.	Sharp mixed-pretzel boundary and unit-box classification	work/handoff/early-ledger.txt	453
+EARLY-29	INTERNAL-PROOF; counterexample to proposed genus-only bound.	Exact outer-layer identity and unbounded genus-two cancellation	work/handoff/early-ledger.txt	465
+EARLY-30	INTERNAL-PROOF from standard TQFT/skein/topology; novelty unverified.	Handlebody vacuum rigidity is a valid endpoint, absent Jones bridge	work/handoff/early-ledger.txt	478
+EARLY-31	INTERNAL-PROOF / KNOWN inputs; unproved geometric bridge explicit.	Fusion-one Lee-bar reduction; categorical detection is insufficient	work/handoff/early-ledger.txt	495
+EARLY-32	ACTUAL counterexample to mechanism; finite table evidence separate.	Actual failure of broader extreme-bar positivity and formal model	work/handoff/early-ledger.txt	513
+EARLY-33	INTERNAL-PROOF, actual figure-eight stress test.	Root-of-unity color strips add no information; derivative boundary	work/handoff/early-ledger.txt	530
+EARLY-34	INTERNAL-PROOF; finite certificates, novelty unverified.	Satellite functional rigidity, strengthened to whole Jones fibers	work/handoff/early-ledger.txt	545
+EARLY-35	INTERNAL-PROOF, actual families of knots/links.	Same first trace does not control higher traces; coupled sampling fails	work/handoff/early-ledger.txt	564
+EARLY-36	INTERNAL-PROOF, restricted realizability obstruction; review useful.	One-special Khovanov multicurve cannot realize unlink Euler	work/handoff/early-ledger.txt	578
+EARLY-37	INTERNAL-PROOF, actual PD template + sign argument.	Actual KT two-band double excluded at every integer full twist	work/handoff/early-ledger.txt	592
+EARLY-38	CONDITIONAL equivalence theorem.	Global color-promotion equivalences, not a proof of their premises	work/handoff/early-ledger.txt	608
+EARLY-39	FORMAL + CONDITIONAL geometric consequence; NO actual tangle.	Explicit formal tangle target survives specified strong algebra tests	work/handoff/early-ledger.txt	626
+EARLY-40	INTERNAL-PROOF from standard knot topology.	Strong-inversion reduction and obstruction to composite U anchoring	work/handoff/early-ledger.txt	644
+EARLY-41	INTERNAL-PROOF, specified geometric family; novelty unverified.	Boundary-parallel C4 rotors are flip-trivial	work/handoff/early-ledger.txt	663
+EARLY-42	INTERNAL-PROOF, topology lemma; preserve its limitation.	Unknot-completable tangles admit boundary-parallel completions	work/handoff/early-ledger.txt	677
+EARLY-43	INTERNAL-PROOF, necessary condition + published group computation.	Rotor-cover symmetry excludes standard Suzuki graph exteriors	work/handoff/early-ledger.txt	690
+EARLY-44	INTERNAL-PROOF; symmetric counterexample construction remains unbuilt.	Actual globally nugatory / locally essential building block	work/handoff/early-ledger.txt	702

@@ -1,0 +1,52 @@
+{
+ "plain": [
+  "CERTIFIED_NONTRIVIAL",
+  []
+ ],
+ "pd_faked": [
+  "CERTIFIED_NONTRIVIAL",
+  [
+   "BRACKET DISAGREEMENT: PD bracket +1*t^0 vs project bracket +1*t^1 +1*t^3 -1*t^4",
+   "certificate REJECTED by checker: jones24 (V_K != 1)",
+   "PD bracket says V_K = 1 but the project bracket and the third bracket disagree: bracket BUG, knot certified nontrivial, not a HIT"
+  ],
+  {
+   "seed": 4,
+   "success": false,
+   "attempts": 32,
+   "final_gens": 2,
+   "final_rels": 1,
+   "final_len": 5,
+   "seeds_tried": 5
+  }
+ ],
+ "pd_and_project_faked": [
+  "COUNTEREXAMPLE",
+  [
+   "certificate REJECTED by checker: jones24 (V_K != 1)",
+   "NONTRIVIAL KNOT WITH V_K = 1 (brackets saying V_K = 1: 2 of 3; project bracket: True)"
+  ]
+ ],
+ "project_only_faked": [
+  "COUNTEREXAMPLE",
+  [
+   "BRACKET DISAGREEMENT: PD bracket +1*t^1 +1*t^3 -1*t^4 vs project bracket +1*t^0",
+   "certificate REJECTED by checker: jones24 (V_K != 1)",
+   "NONTRIVIAL KNOT WITH V_K = 1 (brackets saying V_K = 1: 1 of 3; project bracket: True)"
+  ]
+ ],
+ "hit_writer": [
+  "COUNTEREXAMPLE",
+  "/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/out/validation/hit_writer_test/HIT-0556.md"
+ ],
+ "hit_file_has": {
+  "halfword:": true,
+  "J (lp.J": true,
+  "V_K (PD": true,
+  "V_K (project": true,
+  "V_K (third": true,
+  "Delta_K": true,
+  "certificate": true
+ },
+ "ALL_AS_EXPECTED": true
+}

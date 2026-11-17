@@ -1,0 +1,36 @@
+{
+  "status": "TRUSTED finite calibration against published square pairings",
+  "rows": [
+    {
+      "square": "C0_v14",
+      "caps_one_based": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pair_with_standard_x14_by_Bigelow_Lemma_5_3": 1,
+      "TL_Gram_with_C0": "delta^2"
+    },
+    {
+      "square": "C1_v15",
+      "caps_one_based": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "pair_with_standard_x14_by_Bigelow_Lemma_5_3": 0,
+      "TL_Gram_with_C0": "delta^1"
+    }
+  ],
+  "conclusion": "The standard boundary-relative square x14 is not the TL Gram functional of cap C0, even up to a common scalar."
+}

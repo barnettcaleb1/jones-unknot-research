@@ -1,0 +1,515 @@
+{
+  "status": "EXACT_FREE_GROUP_COUNTS_FOR_FOUR_FIXED_WORDS",
+  "quantity": "Word length in the fixed six-meridian free basis; cap boundaries are cyclically reduced conjugacy classes of enclosing curves",
+  "not_claimed": "These are not geometric cap-arc intersection counts, two-point pair counts, or slide-minimal complexity",
+  "cases": [
+    {
+      "label": "Bigelow_nonzero",
+      "i": 7,
+      "j": 7,
+      "effective_matrix_word": [
+        -1,
+        2,
+        5,
+        -4,
+        3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        5,
+        -4,
+        -3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        -3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1
+      ],
+      "effective_word_length": 44,
+      "status": "EXACT_COUNTS_COMPLETE",
+      "meridian_image_lengths": [
+        6639,
+        11265,
+        1345,
+        1345,
+        9921,
+        3951
+      ],
+      "source_cap_boundaries": [
+        {
+          "source_cap": [
+            1,
+            2
+          ],
+          "based_boundary_length": 4626,
+          "cyclic_boundary_length": 4626
+        },
+        {
+          "source_cap": [
+            3,
+            4
+          ],
+          "based_boundary_length": 1346,
+          "cyclic_boundary_length": 2
+        }
+      ],
+      "seconds": 0.01025200029835105,
+      "stopped_PL_prefix": {
+        "prefix": 30,
+        "matrix_generator": -2,
+        "vertices": [
+          14635,
+          15091
+        ],
+        "seconds": 27.46557258395478,
+        "status": "EXACT_COUNTS_COMPLETE",
+        "meridian_image_lengths": [
+          481,
+          817,
+          97,
+          97,
+          719,
+          287
+        ],
+        "source_cap_boundaries": [
+          {
+            "source_cap": [
+              1,
+              2
+            ],
+            "based_boundary_length": 338,
+            "cyclic_boundary_length": 336
+          },
+          {
+            "source_cap": [
+              3,
+              4
+            ],
+            "based_boundary_length": 98,
+            "cyclic_boundary_length": 2
+          }
+        ]
+      }
+    },
+    {
+      "label": "LP_nonzero",
+      "i": 7,
+      "j": 7,
+      "effective_matrix_word": [
+        -1,
+        2,
+        3,
+        -4,
+        -5,
+        -1,
+        -1,
+        -1,
+        3,
+        3,
+        3,
+        2,
+        -4,
+        3,
+        -5,
+        4,
+        5,
+        -4,
+        5,
+        -3,
+        4,
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        1,
+        1,
+        5,
+        4,
+        -3,
+        -2,
+        1,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        -1,
+        2,
+        3,
+        -4,
+        -5,
+        -1,
+        -1,
+        -1,
+        3,
+        3,
+        3,
+        2,
+        -4,
+        3,
+        -5,
+        4,
+        -5,
+        -4,
+        5,
+        -3,
+        4,
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        1,
+        1,
+        5,
+        4,
+        -3,
+        -2,
+        1,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2
+      ],
+      "effective_word_length": 106,
+      "status": "EXACT_COUNTS_COMPLETE",
+      "meridian_image_lengths": [
+        1783297,
+        3225249,
+        438847,
+        341343,
+        675711,
+        229887
+      ],
+      "source_cap_boundaries": [
+        {
+          "source_cap": [
+            1,
+            2
+          ],
+          "based_boundary_length": 1448920,
+          "cyclic_boundary_length": 1441952
+        },
+        {
+          "source_cap": [
+            3,
+            4
+          ],
+          "based_boundary_length": 780190,
+          "cyclic_boundary_length": 780190
+        }
+      ],
+      "seconds": 2.0343206669203937,
+      "stopped_PL_prefix": {
+        "prefix": 23,
+        "matrix_generator": -3,
+        "vertices": [
+          8892,
+          15018
+        ],
+        "seconds": 21.28844083333388,
+        "status": "EXACT_COUNTS_COMPLETE",
+        "meridian_image_lengths": [
+          215,
+          389,
+          55,
+          41,
+          73,
+          21
+        ],
+        "source_cap_boundaries": [
+          {
+            "source_cap": [
+              1,
+              2
+            ],
+            "based_boundary_length": 174,
+            "cyclic_boundary_length": 174
+          },
+          {
+            "source_cap": [
+              3,
+              4
+            ],
+            "based_boundary_length": 96,
+            "cyclic_boundary_length": 96
+          }
+        ]
+      }
+    },
+    {
+      "label": "prior_zero_kernel_arc_commutator",
+      "i": 0,
+      "j": 8,
+      "effective_matrix_word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -1,
+        2,
+        5,
+        -4,
+        3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        5,
+        -4,
+        -3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        -3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1,
+        -2,
+        -1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        5,
+        -4,
+        3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        -3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        5,
+        -4,
+        -3,
+        4,
+        -5,
+        -2,
+        1,
+        -2,
+        -1,
+        -3,
+        1,
+        2,
+        -1,
+        -2
+      ],
+      "effective_word_length": 108,
+      "status": "STOPPED_AT_WORD_LIMIT",
+      "action_step": 85,
+      "limit_per_word": 5000000,
+      "previous_meridian_lengths": [
+        1307949,
+        3515107,
+        1798311,
+        1737235,
+        3576419,
+        1348819
+      ],
+      "seconds": 2.9713879162445664,
+      "stopped_PL_prefix": {
+        "prefix": 25,
+        "matrix_generator": -4,
+        "vertices": [
+          8044,
+          20343
+        ],
+        "seconds": 26.24365079216659,
+        "status": "EXACT_COUNTS_COMPLETE",
+        "meridian_image_lengths": [
+          63,
+          61,
+          113,
+          81,
+          39,
+          65
+        ],
+        "source_cap_boundaries": [
+          {
+            "source_cap": [
+              1,
+              2
+            ],
+            "based_boundary_length": 64,
+            "cyclic_boundary_length": 4
+          },
+          {
+            "source_cap": [
+              3,
+              4
+            ],
+            "based_boundary_length": 88,
+            "cyclic_boundary_length": 32
+          }
+        ]
+      }
+    },
+    {
+      "label": "witness14",
+      "i": 7,
+      "j": 7,
+      "effective_matrix_word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        3,
+        4,
+        2,
+        3,
+        -1,
+        -2
+      ],
+      "effective_word_length": 14,
+      "status": "EXACT_COUNTS_COMPLETE",
+      "meridian_image_lengths": [
+        9,
+        13,
+        15,
+        17,
+        1,
+        9
+      ],
+      "source_cap_boundaries": [
+        {
+          "source_cap": [
+            1,
+            2
+          ],
+          "based_boundary_length": 14,
+          "cyclic_boundary_length": 6
+        },
+        {
+          "source_cap": [
+            3,
+            4
+          ],
+          "based_boundary_length": 18,
+          "cyclic_boundary_length": 4
+        }
+      ],
+      "seconds": 4.120822995901108e-05
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+ "files": [
+  "../out/full/S3b.jsonl.gz"
+ ],
+ "records_total": 31589,
+ "sampled": 1572,
+ "fraction": 0.05,
+ "seed": 23,
+ "records_pass": 1572,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 1572
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 1572
+ },
+ "secs": 1.8
+}

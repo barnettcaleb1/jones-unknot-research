@@ -1,0 +1,146 @@
+INDEPENDENT HOSTILE AUDIT: PROJECTIVE LOCAL CROSSING NUMBER
+1 November 2026. Scope: mathematical audit, not a priority claim.
+
+Verdict: I found no mathematical gap in the proposed proof, with the
+local-diagram convention stated as below. The argument establishes
+beta_Re(K) >= c_S3(K_tilde) for a nullhomologous projective KNOT and
+hence beta_Re(K)=c_S3(K) for a classical knot placed in a ball.
+It does not establish the corresponding statement for beta_Im or for
+multicomponent links. Its consequence is a counterexample to the
+local-knot specialization of the source's proposed span bound, not a
+counterexample to Jones unknot detection.
+
+I reread Boyle--Spyropoulos, arXiv:2609.40122v1, Definition 1.6,
+Conjecture 1.1(2), Section 4/Table 2 and Proposition 4.4. The source
+indeed minimizes c(D)-alpha_Re(D) over all projective diagrams, and
+its conjecture uses the integral Jones sector for local knots.
+https://arxiv.org/html/2609.40122v1
+https://arxiv.org/pdf/2609.40122v1
+The page-image endpoint failed, so I did not independently inspect the
+small Tait-sign picture in Equation (9). The algebraic convention is
+checked through Table 2 and its contraction/smoothing interpretation.
+
+1. Integral index and deck action.
+
+For an oriented immersed circle Gamma_0 on the oriented sphere, the
+integer region index I exists because its integral 1-cycle bounds.
+The additive constant cancels in J=I-I composed with tau. Since the
+antipodal map reverses the sphere orientation and carries the lifted
+orientation of Gamma_0 to that of Gamma_1, -I composed with tau has
+exactly the correct jumps across Gamma_1. Thus J is the index of the
+TOTAL oriented lifted curve and is antisymmetric. No choice of a
+preferred outside region, and no splitness of the lifted link, is
+needed. Changing the orientation or exchanging lift components changes
+J by sign and leaves its parity shading unchanged.
+
+An odd face cannot have a connected, deck-invariant lift: J would be
+constant on such a face and equal to its negative, forcing J=0. Thus
+f=I mod2 genuinely chooses one of the TWO lifts of each odd face. It
+is not a merely local or inconsistently chosen sheet assignment.
+
+At a self crossing a small path between opposite black sectors meets
+Gamma_0 either twice or zero times, giving even index change. At a
+mixed crossing it meets Gamma_0 once. This proves the claimed edge
+holonomies simultaneously for the whole graph. Deleting the mixed
+edges therefore leaves a balanced graph and hence a local graph in
+RP2. This supplies the needed lower bound beta(G_odd)>=s(D); it does
+not require equality with the maximum balanced-edge count.
+
+Deleting Gamma_1 from the genuine lifted S2 diagram leaves a diagram
+of Gamma_0 with exactly s(D) crossings. Hence s(D)>=c(Gamma_0).
+Deck reversal of both surface orientation and interval height preserves
+ambient orientation and crossing signs; it does not convert a self
+crossing into a mixed crossing or change this counting argument.
+
+2. The vulnerable Seifert-state step survives the audit.
+
+The oriented crossing arcs and their oriented smoothing have the same
+boundary in a crossing disk, so their difference bounds an integral
+2-chain supported in that disk. Choose the correction in one lifted
+disk and its negative pullback in the other. This produces an index
+J' which agrees with J outside the crossing disks and remains exactly
+antisymmetric, not just antisymmetric modulo2.
+
+The local index test can also be seen without a diagram convention:
+for one oriented transverse crossing the four sector indices, cyclically,
+are k,k+1,k+2,k+1 (or the reverse). Seifert smoothing joins the two
+equal-index opposite sectors, while the sectors differing by2 remain
+separate. Therefore the continued odd region is precisely the black
+Seifert-state neighborhood N used in the Euler-characteristic argument.
+
+Every smoothed circle in RP2 is contractible. Two essential simple
+circles cannot be disjoint, and one essential circle would contradict
+the preserved zero mod2 class of the whole knot. Their complement has
+one and only one component containing the crosscap. Its lift is connected
+and invariant under tau, and J' is constant on it. Antisymmetry therefore
+forces J'=0 there. Consequently N has no crosscap. This argument does
+not assume that a Seifert surface for the original knot is local, and
+it does not use smoothing as an isotopy of the knot.
+
+For a connected NONLOCAL shadow, the embedded shadow and its realized
+Tait graphs are cellular. Thus the black faces give vertex disks and
+N has the stated disk-and-band Euler characteristic. There is no hidden
+use of disk faces for a local shadow with a Mobius outside region.
+
+3. Independent grading arithmetic.
+
+Table 2 gives the following A exponents modulo4:
+  positive internal edge: +1; positive external edge: -1;
+  negative internal edge: -1; negative external edge: +1.
+For a spanning tree with v-1 internal edges, their sum is
+  2 sum_internal epsilon_e - sum_all epsilon_e
+    = 2(v-1)-sum_all epsilon_e mod4.
+Writhe normalization subtracts 3w. Thus
+  r=2(v-1)-sum epsilon_e-3w mod4.
+This is even. If m edges have epsilon_e different from oriented
+crossing sign s_e, the contribution (epsilon_e+3s_e)/2 is even
+for an agreeing edge and odd for a disagreeing edge. Therefore
+  r/2 = v-1+m mod2.
+
+In these conventions the black band is present in the Seifert state
+exactly when epsilon_e=s_e, giving chi(N)=v-c+m. This is also the
+standard contraction/A-smoothing convention encoded by Table 2;
+changing the shading changes BOTH the edge signs and the neighborhood.
+Oriented smoothing toggles the parity of the component count at each
+crossing, so for a knot the number q of Seifert circles satisfies
+  q=c+1 mod2.
+Consequently
+  r/2 = chi(N)+q mod2.
+A planar component contributes chi+b=2 modulo2, and the one possible
+nonorientable component contributes chi+b=1 modulo2. Since N has no
+crosscap, r=0 mod4. With t=A^(-4), this is exactly the integral sector.
+This check proves G_odd=G_Re and is not a choice of whichever shading
+happens to give a favorable bound. At a crossing change both epsilon
+and the oriented crossing sign reverse, leaving this sector unchanged.
+
+4. Local diagrams and scope of the minimum.
+
+For a disk diagram use the canonical odd shading, whose graph is local:
+the index is zero in the outside crosscap region and odd regions are
+inside the local disk. Thus alpha=0 and beta=c(D). Proposition4.4
+identifies the local graph expansion with the ordinary bracket. The
+proof need not assert cellular duality or a disk vertex neighborhood
+for the Mobius outside face of the other shading. This formulation
+avoids the only convention-sensitive shorthand in the earlier note.
+
+Taking a minimal classical disk diagram gives the upper bound. Every
+nonlocal diagram gives the lower bound by sections1--3. Small values
+of min(beta_Re,beta_Im) in source projective families do not refute this:
+the theorem singles out Re, and it is possible for only Im to be small.
+
+5. Explicit contradiction and independent polynomial scope.
+
+The standard torus formulas for T(3,4) give
+  V(t)=t^3+t^5-t^8, span(V)=5,
+  Delta(t)=t^3-t^2+1-t^(-2)+t^(-3), span(Delta)=6.
+These formulas also follow by simplifying the torus Jones and Alexander
+rational expressions; no table identification is needed. The elementary
+inequality span(Delta)<=2g(K)<=c(K) already gives c(K)>=6. Hence
+  span(V)=5 < beta_Re(K)=c(K).
+I did not independently rerun the parent's separate 256-state braid
+certificate; the parent reports it also verifies these polynomials with
+unknot and trefoil convention tests. Mirroring changes neither span.
+
+This audit supports the stated theorem and the failure of the cited
+span conjecture. It does not turn the unit Jones fiber into a bounded
+crossing family; that remains exactly the missing global premise.

@@ -1,0 +1,26 @@
+Independent audit of the rational rank-five obstruction, 2026-10-31.
+
+Verdict: Conditional on the stated KHI support at Alexander gradings {-g,0,g}, with g>=2 and total rank five, the Bhat-Li-Ye mapping-cone theorem gives dim_C I^sharp=10. The rational unreduced Khovanov spectral sequence and reduced/unreduced exact sequence then force dim_Q Kh=10. This is compatible with the standard rational basepoint and Lee algebra. It is not an established contradiction.
+
+1. Bhat-Li-Ye, arXiv:2512.24206, Theorem 1.4, identifies I^sharp with the homology of the cone of d_1^++d_1^- on KHI. If each map changes Alexander grading by one, the stated support makes both zero. The zero-map cone doubles dimension. Their Question 1.13 explicitly asks whether these maps must be nonzero for every nontrivial knot in S^3. Thus such a knot would violate an open question, not a theorem.
+https://arxiv.org/html/2512.24206
+
+2. Khovanov, Link homology and Frobenius extensions, arXiv:math/0411447, printed p12, decomposes the generalized Lee complex over Q[X] into one free summand and two-term X^m blocks, m>0, up to contractible summands. If b is the number of positive-length blocks and b1 the number of length-one blocks, then
+   dim reduced Kh = 1+2b,
+   dim unreduced Kh = 2+4b-2b1.
+Indeed, reduction modulo X kills each positive-power block differential. Reduction modulo X^2 leaves rank-one maps precisely for m=1. Therefore ranks five and ten require two blocks, each of length at least two. There is no numerical contradiction.
+https://arxiv.org/pdf/math/0411447
+
+3. Schuetz, A note on the X-torsion order of a knot, arXiv:2412.05156, Section 3, identifies generalized Lee X with the Bar-Natan operation (2X-H). In reduced Bar-Natan, formed as X times the complex with X^2=XH, this operation acts as H: (2X-H)X=HX. Consequently each X^m block corresponds to an H^m block. In particular absence of length-one bars is equivalent in the two theories.
+https://arxiv.org/html/2412.05156
+
+4. Gujral-Wang, A minimality property for knots without Khovanov 2-torsion, AGT25(2025)4073-4075, Remark4, explicitly discusses knots whose rational reduced Bar-Natan module has no Q[H]/H direct summand. Their proof implies reduced Kh rank is minimal among all proper rational-tangle replacements. The continuation on p4075 identifies the assertion that every nontrivial knot has such a summand as KWZ Question9.4, an open question. The implication from a length-one summand to integral Kh 2-torsion does not have a proved converse; no-torsion must not be inferred from no-length-one-bar.
+https://msp.org/agt/2025/25-7/agt-v25-n7-p10-p.pdf
+
+5. An explicit formal complex demonstrates compatibility of the elementary constraints. Use the grading convention deg X=2. Take the free module Q[X]{-1} in cohomological degree zero, a block Q[X]{3} --X^2--> Q[X]{-1} in degrees (0,1), and an identical block in degrees (1,2). Reduced modulo X and normalized by multiplying quantum degree by q, its Poincare polynomial is
+   P_red(t,q)=1+q^4+t+t*q^4+t^2.
+This has rank five and P_red(-1,q)=1. Modulo X^2 both block differentials vanish, and
+   P_unred=(q+q^-1)*P_red,
+so unreduced rank is ten with Euler polynomial q+q^-1. Specializing X^2=1 makes the two blocks acyclic and leaves Lee rank two with s=0. In the reduced BN spectral sequence the first differential is zero and the second kills the two pairs. This complex is not asserted to be realized by a knot. It shows that grading, Euler characteristic, and the standard Lee/basepoint algebra by themselves do not exclude the rank-five scenario.
+
+Scope: I independently checked the mapping-cone consequence under the proposed support and the full reduced/unreduced and Lee-bar argument. The preceding classification steps producing Delta=1 and the sparse KHI support were assigned to the homology agent and are not independently reproved in this audit.

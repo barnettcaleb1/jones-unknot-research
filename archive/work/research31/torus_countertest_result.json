@@ -1,0 +1,29 @@
+{
+  "actual_braid": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "alexander_span": 6,
+  "alexander_t_coefficients": {
+    "-3": 1,
+    "-2": -1,
+    "0": 1,
+    "2": -1,
+    "3": 1
+  },
+  "consequence": "c(K) >= span Alexander = 6 > span Jones = 5",
+  "jones_span": 5,
+  "jones_t_coefficients": {
+    "3": 1,
+    "5": 1,
+    "8": -1
+  },
+  "knot": "T(3,4)",
+  "scope": "Polynomial certificate only; beta_Re=c(K) has a separate proof."
+}

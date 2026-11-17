@@ -1,0 +1,46 @@
+Bigelow6 powers: bounded geometric test and uniform splitting mechanism
+Status: TRUSTED.
+
+BOUNDED TEST
+For n=2,3,4 and both cap/cup pairs (4,5),(5,4), all six tangles:
+  - split after boundary-relative RIII and R1/R2;
+  - have actual numerator closures reducing to the two-component unlink;
+  - have actual denominator closures reducing to the unknot.
+Thus all six tangles are geometrically trivial by Property R. Runtime ~7 s.
+These cases are stored separately from the 222-word search batch.
+
+UNIFORM CENTRAL-ARC MECHANISM
+Write beta for kernel_words.BIGELOW6_REN and use one-based strand labels.
+The faithful Artin action on F6 gives
+                     [beta, sigma_3] = 1 in B6.
+The reduced images of x1,...,x6 are exactly x1,...,x6. Operational controls
+also checked inverse, braid, and far-commutation relations.
+Since sigma_3 is the half twist on the standard arc joining punctures 3
+and 4, the commutation identity says beta preserves that actual arc up to
+isotopy. Every integer power therefore preserves it as well.
+
+State 4 contains caps (2,5) and (3,4), with free endpoints 1,6.
+State 5 contains caps (1,2) and (5,6), with free endpoints 3,4.
+For top state 4 and bottom state 5, slide the cap on (3,4) through beta^n
+along the preserved arc. It reaches the free bottom endpoints 3,4 and
+splits off a boundary-parallel arc. The other arc is separated by a disk.
+Reflecting top and bottom gives the same argument for (5,4), using beta^-n.
+Hence BOTH FAMILIES ARE SPLIT FOR ALL INTEGER n. This uses genuine braid
+group information, not just preservation of a subspace in a TL module.
+
+The local knot on the remaining arc closes as a four-plat after forgetting
+the central pair of strands. Both end matchings are trivial two-string
+tangles, so this local knot is two-bridge. The separately supplied exact
+all-powers bracket certificate says the original tangle has bracket e.
+Consequently the local knot has Jones polynomial 1, hence determinant 1.
+A two-bridge knot of determinant 1 is the unknot. Subject to that supplied
+all-powers bracket certificate, both families are therefore trivial for
+every integer n; they cannot supply Jones-unknot counterexamples.
+
+This does not establish a theorem about arbitrary width-six braids or
+coefficient zeros. The cap-slide mechanism uses this beta's actual
+central-arc symmetry. It explains why the all-powers zero is geometric.
+
+Files:
+  powers_topology.py / powers_topology.json: six bounded cases.
+  central_arc_artin.py / central_arc_artin.json: faithful Artin certificate.

@@ -1,0 +1,223 @@
+LITERATURE NOVELTY ASSESSMENT — 1 NOVEMBER 2026
+
+Scope: bibliographic assessment of the candidate rational-solution uniqueness
+argument in outputs/jones-rational-tangle-uniqueness-proof.txt. This is not an
+independent proof audit and does not investigate the main Jones conjecture.
+
+ASSESSMENT
+
+I did not identify a prior source proving the exact balanced-framed,
+two-distinct-rational-probe theorem among arbitrary tangles. There is positive,
+recent evidence that its proposer still treated it as a conjecture: Sikora's
+IPAM talk dated 15 October 2026 explicitly calls it the Uniqueness of Rational
+Solutions Conjecture. Its abstract describes the lens-space-surgery route to
+potential counterexamples rather than an established proof. The host's program
+also lists the talk. This is considerably better evidence of recent open status
+than the absence of search hits, but it is not proof of novelty or priority.
+
+Primary event record:
+https://www.mathinstitutes.org/videos/25091
+Host schedule:
+https://www.ipam.ucla.edu/programs/workshops/workshop-i-hyperbolic-structures-and-quantum-invariants/?tab=schedule
+
+The most significant attribution issue is METHOD overlap: Gainullin's 2018
+unknot-characterization proof already combines Casson–Walker surgery,
+vanishing of the second Alexander derivative, the alternating L-space
+Alexander form, and genus detection. A defensible presentation should identify
+that antecedent. The proposed novelty, if the mathematical argument survives
+specialist review, would be applying a related strategy to the full framed
+tangle conjecture using two matched fillings and Floer simplicity, without
+assuming the auxiliary homology sphere is an L-space.
+
+No source located licenses wording such as "the first proof," "new theorem,"
+or "previously unknown implication." Recommended status: "a candidate
+deduction of Sikora's framed rational-solution uniqueness conjecture from
+published surgery and Floer-theoretic results; priority unverified."
+
+EXACT TARGET AND SOURCE VERSIONS
+
+Sikora's current arXiv record lists v1, 17 May 2020, and v2, 5 August 2023;
+the journal reference is Canadian Journal of Mathematics 76 (2024), 707–727.
+The target is Conjecture 2 in v2 / Conjecture 1.2 in the journal. Proposition
+1 / 1.1 proves uniqueness only among rational solutions. Theorem 21 / 8.1
+proves uniqueness of their bracket vector. Theorem 24(c) / 9.2(c), detection
+of a rational tangle among arbitrary tangles by its bracket alone, is the
+stronger Jones-equivalent statement. The distinct probes must be unequal
+after forgetting framing. The framed equivalence is balanced isotopy.
+
+The v1 title ends "and quantum continued fractions" and its abstract
+conjectures broader uniqueness of framed solutions. It should not substitute
+for the narrowed target in v2. The journal's 2024 erratum corrects only the
+author's misspelled name; it does not announce a mathematical amendment.
+
+https://arxiv.org/abs/2005.08162
+https://arxiv.org/html/2005.08162v1
+https://arxiv.org/html/2005.08162v2
+https://doi.org/10.4153/S0008414X23000755
+https://doi.org/10.4153/S0008414X24000208
+
+RELATED RESULTS AND WHAT THEY DO NOT AUTOMATICALLY SUPPLY
+
+1. Unknot-product case: an existing surgery characterization is very close.
+
+Kronheimer–Mrowka–Ozsváth–Szabó, Monopoles and lens space surgeries,
+Theorem 1.1, says that equality of oriented r-surgeries on a knot K in S^3
+and the unknot, for a finite rational r, forces K to be the unknot. The
+paper identifies Property R and Gordon–Luecke as earlier special cases.
+
+Inference for the candidate: if one actual product is the unknot, its cover
+gives S^3. After the candidate's peripheral-coordinate identification, the
+other matched filling falls under the classical characterization. Thus an
+unknot-product restriction should not be marketed as a new surgery-rigidity
+theorem. This does not by itself handle the candidate's general case, whose
+chosen determinant-one filling is only known to be an integral homology
+sphere. Determinant one is not a proof that it is S^3.
+
+https://arxiv.org/html/math/0310164v2
+https://annals.math.princeton.edu/2007/165-2/p03
+
+2. Gainullin's theorem and the particularly close proof strategy.
+
+Fyodor Gainullin, Heegaard Floer homology and knots determined by their
+complements, AGT 18 (2018), 69–109, Theorem 8.2, assumes K is
+null-homologous in an L-space Y. Matching the absolutely graded Floer
+module of its surgery to that of Y#L(p,q) forces K to be unknotted.
+The argument on pp. 104–105 uses precisely the Casson–Walker / Alexander
+second derivative / alternating coefficients / genus-detection chain.
+
+Inference: this is direct prior art for the strategy, but not a direct
+application covering the full candidate. Its auxiliary Y is not established
+an L-space, and its comparison surgery is L(p,q), not Y#L(p,q).
+Choosing an actual lens-space filling as ambient Y instead does not
+automatically fix this: the filling core is generally homologically essential,
+whereas Gainullin requires a null-homologous knot. These hypotheses should
+be checked explicitly before claiming that this theorem already contains
+the candidate's entire result.
+
+https://msp.org/agt/2018/18-1/agt-v18-n1-p03-p.pdf
+
+3. Rasmussen–Rasmussen already supply the relevant structural machinery.
+
+Floer Simple Manifolds and L-Space Intervals, arXiv:1508.05900v2
+(24 November 2015), Proposition 1.3 relates two L-space fillings to Floer
+simplicity; Proposition 1.4 supplies the torsion coefficient restriction;
+Corollary 2.3 relates torsion degree to Thurston norm under boundary
+incompressibility. Their generalized-solid-torus theory is substantial
+prior work, not a new consequence first discovered here.
+
+Inference: the potentially new step is the particular assembly with framed
+bracket constraints and two SAME-COEFFICIENT oriented lens-space fillings.
+The cited statements do not themselves state a framed-tangle theorem.
+
+https://arxiv.org/html/1508.05900
+
+4. The S^1 x S^2 branch has established rigidity tools.
+
+Ni–Vafaee, Null surgery on knots in L-spaces, Trans. AMS 372 (2019),
+8279–8306, Theorem 1.1, proves fibering for a knot exterior in S^1 x S^2
+admitting an L-space surgery. Remark 3.2 identifies this with the spherical
+braid description. The candidate's torsion-free homology condition is the
+extra ingredient used to reduce the fiber to a disk.
+
+https://www.its.caltech.edu/~yini/Published/NullSurgery.pdf
+
+Gillespie, L-space fillings and Generalized solid tori, arXiv:1603.05016,
+Theorem 1.2, characterizes manifolds with every non-longitudinal filling an
+L-space by genus zero and an L-space filling. Alishahi–Lidman–Lipshitz,
+Detecting Heegaard Floer homology solid tori, arXiv:2505.01217 (2 May 2025),
+Theorem 1.1, characterizes Heegaard Floer homology solid tori by a
+nonseparating sphere in the longitude filling. Neither statement alone
+identifies an arbitrary rational homology solid torus as an actual solid
+torus; the newer paper explicitly includes non-solid-torus examples.
+
+https://arxiv.org/html/1603.05016
+https://arxiv.org/html/2505.01217
+
+5. Multiple lens fillings alone do not provide the proposed rigidity.
+
+Baker–Doleshal–Hoffman, On manifolds with multiple lens space fillings,
+arXiv:1308.5002 / Bol. Soc. Mat. Mex. 20 (2014), 405–447, studies
+non-solid-torus manifolds with several lens fillings, including hyperbolic
+families. The paper also has an erratum, DOI 10.1007/s40590-014-0048-0.
+Such results show why "two lens fillings" is not a substitute for matching
+the oriented lens spaces at the same peripheral coefficients as a fixed
+solid torus. No classification from this paper was used to claim the full
+candidate already known.
+
+https://arxiv.org/abs/1308.5002
+https://doi.org/10.1007/s40590-014-0016-8
+https://doi.org/10.1007/s40590-014-0048-0
+
+6. Cosmetic-crossing results have narrower configurations.
+
+Lidman–Moore, Cosmetic surgery in L-spaces and nugatory crossings,
+arXiv:1507.00699, applies surgery characterization to crossings with
+branched L-space covers and additional homological constraints. This is
+related technology, not a theorem about all pairs of rational probes.
+
+https://arxiv.org/abs/1507.00699
+
+UNFRAMED AND POLYNOMIAL-ONLY CLAIMS MUST REMAIN SEPARATE
+
+The candidate requires two actual balanced-framed link equalities. Removing
+their framing conditions changes the problem: distinct underlying rational
+tangles can solve an unframed system, and compatible framings cannot simply
+be assumed. Conversely, replacing actual product equalities by bracket or
+Jones equality removes the topological lens-filling hypotheses used in the
+candidate. Neither change is a harmless reformulation. This assessment
+does not claim the stronger bracket-detection statement is proved, or that
+the unframed rationality conjecture follows.
+
+CITATION FOLLOW-UP
+
+Two later sources that cite Sikora were inspected in primary full text:
+
+* Perrine Jouteur, Burau representation of B4 and quantization of the
+  rational projective plane, arXiv:2407.20645v3 (28 February 2025).
+  Its explicit Sikora citation in Section 1.2 concerns the connection of
+  q-rationals with Jones polynomials of rational knots. Its principal
+  results concern braid-group orbits and quantization, not the target.
+  https://arxiv.org/html/2407.20645
+
+* Affine representations of rational and pretzel knots, arXiv:2510.02077v2
+  (5 October 2025), references Sikora as item [36]. Its stated results
+  concern affine representations, Alexander polynomials, and their roots.
+  I did not locate the target uniqueness theorem there.
+  https://arxiv.org/html/2510.02077v2
+
+Sikora's own current publication list was checked. It lists the 2024 paper
+and work dated through 2026, but I located no listed replacement proof of
+this conjecture. That is only a bounded negative observation.
+https://www.acsu.buffalo.edu/~asikora/research.htm
+
+SEARCH LOG AND LIMITATIONS
+
+Searches were run on 1 November 2026 using web search, then primary arXiv,
+publisher, author, and institute pages. Principal query strings included:
+
+"Sikora rational tangle equations Conjecture 2 2005.08162"
+"2005.08162" uniqueness tangle conjecture surgery
+"Uniqueness of Rational Solutions" Sikora
+"Sikora" "lens space" "2026"
+"tangle equations" "uniqueness" "framed" proof
+"2005.08162" citations
+"S0008414X23000755"
+"Sikora" "Conjecture 1.2" tangles
+"lens spaces" "same slopes" "solid torus" Casson Walker
+"Casson-Walker" "Floer simple"
+"homology solid torus" "unknot" "surgery characterization"
+"two lens space fillings" "solid torus"
+"two surgeries" "unknot" "integral homology"
+"multiple lens space fillings" Baker Doleshal Hoffman
+"unknot" "surgery" "L-space" "Gainullin"
+"Burau representation" "quantization" Ovsienko arxiv
+site:ipam.ucla.edu "Hyperbolic Structures and Quantum Invariants" Sikora
+
+Queries also used title/arXiv/DOI strings with common indexing mirrors
+excluded to seek genuine citing sources. Citation enumeration was incomplete:
+the Semantic Scholar route linked by arXiv and its graph endpoint could not
+be fetched; Cambridge HTML intermittently timed out, although indexed
+article text and the journal PDF were available. The institute abstract was
+read, not the entire talk recording. Search indexes can omit recent work,
+unindexed manuscripts, theses, and unpublished arguments. Nothing here
+establishes priority, absence of earlier work, or correctness of the candidate.

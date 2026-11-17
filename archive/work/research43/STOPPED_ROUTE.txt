@@ -1,0 +1,31 @@
+PASS 43 STOP RECORD — 2026-11-01
+
+Main objective remains unsolved. No generic Jones-one nontrivial knot.
+
+Arithmetic lifting, finite quotient counting, quantum approximation, and
+increasing divisibility were audited. None furnished a full solution route.
+Do not restart these generic searches without a new construction satisfying
+degree, height, exactness and nontriviality conditions for the SAME knot.
+
+Most important root correction after the initial agent reports:
+the finite-field false-positive knot family in arithmetic_braid.txt is
+unnecessarily elaborate. T(2,2m+1), with m=lcm p_i(q_i-1), already supplies
+every required nonzero finite-field value. Its integer value at -1 is
+2m+1>1. This elementary observation is not being claimed as new literature
+or a bridge to the detection theorem. Root derived it and generic_braid
+independently audited it. All requested exact verifiers were replayed.
+
+The commutator example is correct backup, but pursuing it further is not
+justified. Equality of functions on finite fields is not equality of
+integer Laurent polynomials. Degree/height-limited certificates remain valid.
+
+Eliahou--Fromentin content and span calculations are exact all-r deductions
+from the source recurrence, supported by r=1,...,6 seed/regression checks.
+They close that particular congruence-limit shortcut, not all arithmetic.
+
+Final user-facing note: outputs/jones-arithmetic-route-verdict.txt
+Evidence archive: outputs/jones-arithmetic-route-evidence.zip
+
+Process correction: do not present accumulation of necessary conditions,
+conditional reformulations or route obstructions as a converging proof.
+Do not claim a quick breakthrough is likely. The objective is still open.

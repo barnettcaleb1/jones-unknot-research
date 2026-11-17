@@ -1,0 +1,156 @@
+THE AUGMENTED-UNLINK GATE FOR THE EQUIVARIANT SURGERY CONSTRUCTION
+
+Status: conceptual audit, not a counterexample construction or a proof of Jones
+unknot detection. Two elementary necessary conditions are proved below. Neither
+supplies the required geometric surgery link.
+
+SETUP AND THE FIRST GATE
+
+Let B contain a standard boundary-parallel C4 rotor R0, completed by a stator S
+to the unknot U. Let eta_0,...,eta_3 be a free C4 orbit of disjoint surgery circles
+in B minus R0. The required global hypothesis is that these four circles bound
+SIMULTANEOUSLY DISJOINT embedded disks in S3 minus U. Framings are the disk
+framings. This is stronger than zero linking and stronger than four separate
+disk certificates with intersections among their disks.
+
+The augmented link L=U union eta_0 union ... union eta_3 is therefore the
+five-component unlink. Indeed, a regular neighborhood of each disk is a ball
+disjoint from U and from the other disk neighborhoods, separating its boundary
+component. The remaining component U is an unknot.
+
+Include the eta circles as closed components of the rotor. After the prescribed
+flip mu, the augmented link L'=U' union mu(eta_0) union ... union mu(eta_3) is a
+C4 rotant of L. This use of closed rotor components is explicitly permitted in
+Section 1 of Anstee--Przytycki--Rolfsen. The original trivial-rotor result gives
+U'=U up to isotopy; the four-circle sublink is also an unlink, because it is the
+image of an unlink in B under a homeomorphism of B. These assertions do not imply
+that their UNION is an unlink.
+
+NECESSARY CONDITION. If any equal 1/k surgeries on the flipped circle orbit
+produce a nontrivial knot, L' must already be a nontrivial five-component link.
+
+Proof. If L' is the unlink, its surgery circles have disjoint disk neighborhoods
+disjoint from U'. Any 1/k surgery on such a disk-framed unknot replaces its ball
+by a ball, and leaves U' unchanged. Thus all simultaneous equal surgeries leave
+the unknot. Contraposition proves the condition.
+
+Consequently, a useful seed already constructs a nontrivial C4 rotant of an
+unlink, before the surgery step. This is precisely a special case of the unlink
+rotant question posed as APR Question 3.5. It is a necessary gate, not a claim
+that nontrivial unlink rotants suffice: one must additionally prove that some
+specified equal surgery filling of L' has a nontrivial remaining knot. No such
+L' has been constructed here. This observation does not assert a current
+classification or a current open-status theorem about unlink rotants.
+
+THE LINKING-NUMBER TEST IS AUTOMATIC IN THE STANDARD C4 MODEL
+
+Use the standard cap model for R0, or an equivariant identification with that
+model. Orient its four arcs alpha_i by transporting one chosen orientation under
+the quarter-turn rho. Let e_i be their positive meridians; they form the basis
+of H1(B minus R0;Z)=Z^4. The rotation acts by P e_i=e_(i+1), indices modulo 4.
+The orientation of the completed unknot gives a sign vector a in {+1,-1}^4:
+the inclusion into H1(S3 minus U;Z)=Z sends e_i to a_i.
+
+Choose an orientation of eta_0 and let v=[eta_0]. Orient eta_i by rotation.
+Then the four global linking numbers are
+
+    ell_i = a^T P^i v.
+
+In this standardization the flip induces epsilon Q_c on meridians, where
+Q_c e_i=e_(c-i), and epsilon=+1 or -1 is a common orientation sign. The common
+sign follows from mu rho mu=rho^(-1): the orientation effect on every rotated
+arc is transported from that on alpha_0. This formula explicitly includes the
+possible reversal of arc orientations. It does not assume the stator or the
+global orientation vector a is rotation-invariant.
+
+For every a in {+1,-1}^4 and every dihedral reflection Q_c, there is a j such that
+
+    Q_c a=P^j a.
+
+Proof. A binary cyclic word of length four has zero, one, two, three, or four
+plus signs. The zero/four cases are constant. The one/three cases have a unique
+exception, which a rotation can relocate. The two-plus cases are either an
+adjacent pair or an opposite pair, and all reflected words of either type are
+rotations. These exhaust all possibilities.
+
+Since Q_c is symmetric and P is orthogonal, the post-flip linking numbers are
+
+    ell'_i = epsilon a^T Q_c P^i v
+           = epsilon (P^j a)^T P^i v
+           = epsilon a^T P^(i-j) v
+           = epsilon ell_(i-j).
+
+Thus the orbit's four linking numbers are only cyclically permuted, up to a
+common sign. In particular, all four being zero before the flip forces all four
+to be zero after it. This is an integral calculation, not just a mod-two fact.
+
+An alternative weaker proof works for any real orientation-weight vector:
+the cyclic span of a decomposes into the constant line, the alternating line,
+and the two-dimensional rotation plane. A reflection preserves each summand,
+so orthogonality to every P^i a is preserved by reflection. The binary argument
+above gives the stronger multiset equality actually needed here.
+
+Scope: the formula uses the standard C4 cap model with its dihedral meridian
+action, or a specified equivariant conjugate. For a separately proposed marked
+initial rotor, that action must be checked under its chosen identification; one
+cannot silently replace its marking by an arbitrary trivial-tangle marking.
+
+COVER / HEEGAARD AUDIT
+
+The double cover of S3 branched over U is S3. The double cover H0 of B branched
+over its four trivial arcs is a genus-three handlebody. Each eta_i has two lifts:
+its disk in S3 minus U lifts to two disjoint disks. The entire lifted surgery
+link is therefore a globally trivial eight-component unlink in S3, contained
+in H0, with disks that need not lie in H0. The disk framings lift unchanged.
+
+After surgery, the whole covered manifold is still S3, but the surgically
+modified piece H_k need not be a handlebody. The fact that a compact piece sits
+inside S3 is not a handlebody criterion. Thus the original splitting does not
+automatically remain a Heegaard splitting, and Waldhausen's uniqueness theorem
+does not supply an isotopy preserving the rotor boundary or its disk set.
+Even if H_k were separately shown to be a handlebody, one would still need to
+track the marked boundary, deck involution, and order-four rotation; an
+unmarked ambient uniqueness statement does not identify that marked data.
+
+Generalized Property R concerns zero-framed surgery yielding a connected sum
+of S1 x S2. Our global surgeries are already certified surgeries on an unlink,
+with slopes 1/k, yielding S3. Rewriting the presentation by Kirby moves would
+not by itself ensure that the moves preserve the rotor boundary, the stator,
+or the two commuting symmetries. No relative or equivariant conclusion follows
+solely from the ordinary global surgery conclusion.
+
+The exact missing datum is the simultaneous unlink disks' position relative
+to the rotor sphere (equivalently, the lifted disks' position relative to the
+marked genus-three boundary). If the disks all lie in B minus R0, the flip
+carries them to equally harmless disks and the construction fails. If they
+leave B, zero linking after the flip is automatic, but disjoint embedded disks
+after the flip are not supplied. That geometric distinction is where all the
+remaining content lies.
+
+REJECTED SEED
+
+The proposed two-string family R_k=-1+1/2+1/(2k+1) has closure determinant
+|1-2k|. Its k=0 and k=1 unknot closures therefore do NOT certify a globally
+split disk-framed surgery circle: if such a circle generated this whole twist
+family, every k would leave the unknot, contradicting determinant 3 at k=2.
+No global nugatoriness conclusion from that two-unknot observation is used.
+
+STRATEGIC VERDICT
+
+The cover formulation does not currently kill the construction, but neither
+does it bypass its difficult geometric premise. Before implementing a surgery
+search, demand an explicit augmented unlink whose C4 flip is nontrivial, with
+the exact marked rotor and simultaneous pre-flip disk certificate. Ordinary
+pairwise linking calculations cannot certify the required asymmetry: all of
+them vanish automatically on both sides. Only after this gate is passed is a
+nontrivial-filling theorem or an explicit filling computation warranted.
+
+PRIMARY SOURCE
+
+Anstee--Przytycki--Rolfsen, Knot polynomials and generalized mutation, Section 1
+(closed components permitted), Theorem 3.1, and Question 3.5:
+https://arxiv.org/html/math/0405382
+https://arxiv.org/abs/math/0405382
+
+The algebraic linking lemma and augmented-unlink necessary condition above are
+elementary deductions made in this investigation, with no novelty claim.

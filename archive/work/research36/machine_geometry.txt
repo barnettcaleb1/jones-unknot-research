@@ -1,0 +1,132 @@
+Carmi--Cohen v1: source-grounded audit of Proposition 5.12(G2)
+2026-11-01. Bounded investigation; no claim about priority.
+
+RESULT
+The displayed Reidemeister movie is not refuted here. Its endpoint is
+misidentified as a state with the SAME four clasp coordinates. Under one
+fixed orientation of the machine shadow, the movie switches all four
+clasp signs, reverses the drawn orientation of the closed twist component,
+and changes one residual crossing sign. Ignoring this distinction loses a
+nontrivial Jones normalization factor. Consequently the stated same-layer
+transfer from (C1d) to (C2) is not justified by the supplied movie.
+
+This is an explicit failure of the relative-boundary same-clasp isotopy
+used in the proof, not a counterexample to the conditional algebraic
+statement (C2) under its two higher-level vanishing hypotheses. We do not
+claim those hypotheses hold in the small examples below.
+
+SOURCE AND PORT MAP
+Authoritative cached source: work/source/main_machines_21_06_26_final.tex.
+Relevant active source lines 4265--4388, especially the assertion
+  D([s,s;s,s];s^L) ~= D([s,s;s,s];s^(L-2)).
+The actual PNGs are omega_1.png, omega_3.png, omega_4.png, omega_5.png,
+and exceptional_1.png through exceptional_3.png. They were visually read.
+The machine definition at lines 2445--2474 smooths the seed first and
+clasps both outgoing seed strands with the ends of the closed twist.
+
+Use a,b for the upper/lower left clasps, c,d for the upper/lower right
+clasps; these are y0,y0',y(L+1),y(L+1)'. At each clasp give geometric ports
+0,1,2,3 the cyclic order E,N,W,S. At each central z_i use NE,NW,SW,SE.
+The edges read directly from omega_1 are:
+  a2--b2, a3--b1, c0--d0, c3--d1;
+  a0--z0.1, b0--z0.2;
+  zi.0--z(i+1).1 and zi.3--z(i+1).2;
+  z(last).0--c2, z(last).3--d2.
+Boundary ports are a1,b3,c1,d3. The overstrands of omega_1 are the
+horizontal pairs at a,d, the vertical pairs at b,c, and NW--SE at each z.
+In omega_5, the overstrand is switched at ALL FOUR a,b,c,d, and at z0;
+the other two z crossings retain their overstrands. This matches the pixels,
+not a speculative interpretation of an absent diagram.
+
+The executable source_machine.py implements exactly these cyclic ports.
+All closures pass Spherogram's planarity check, and Regina and Spherogram
+agree on writhe. source_machine.json contains every PD and full Jones
+polynomial. This supersedes any inference drawn from the older unverified
+work/test_machine.py wiring.
+
+THE FIXED-ORIENTATION ERROR
+Fix both seed strands upward and the omega_1 orientation of the closed
+component throughout the crossing cube. In the displayed s=- instance:
+  omega_1: clasp signs (-,-,-,-), residual (-,-,-);
+  omega_5 with that SAME orientation: clasp signs (+,+,+,+), residual (+,-,-).
+The final source picture reverses all arrows on the closed component. This
+restores its four oriented clasp signs to minus, but this reorientation is
+not the operation of changing one coordinate in a fixed oriented cube.
+
+The closed component's total linking number with the rest is 2s in the
+initial picture and -2s in the fixed-orientation final picture. Reversing
+it changes the writhe by 8s. With t=A^-4, x=t^(1/2), the normalized Jones
+factor is A^(-24s)=t^(6s)=x^(12s). Thus the corrected relation furnished by
+the movie is
+  V(initial fixed state) = x^(12s) V(final with four flipped clasp signs),
+not equality with the claimed same-clasp state.
+
+Compatible vertical closure (a1--b3 and c1--d3) checks this factor exactly.
+Its fixed-orientation values are
+  initial: x^-2 + 2x^-6 + x^-10,
+  literal final, fixed orientation: x^10 + 2x^6 + x^2.
+Their ratio is x^-12, as s=- requires. The vertical closure does NOT
+separate the initial picture from the claimed same-clasp state; we do not
+use it as an isotopy counterexample.
+
+AN ORIENTATION-INDEPENDENT RELATIVE-BOUNDARY COUNTERTEST
+Close a1--c1 and b3--d3 by disjoint exterior caps. This horizontal closure
+is NOT compatible with both displayed upward arrows. It is used only as
+an UNORIENTED relative-boundary test: an oriented relative-boundary isotopy
+would in particular be an unoriented one under every exterior closure.
+For omega_1 the automatically oriented closure has Jones
+  -x^3 + x - 2x^-1 + x^-3 - 2x^-5 + x^-7.
+For the claimed fixed-clasp state (only z0 switched), its Jones is
+  -x - x^-1.
+The latter actually simplifies to the two-component unlink. These cannot
+be related by any signed Laurent monomial, so no component-orientation
+choice can rescue the alleged unoriented relative-boundary isotopy.
+The same six-term versus two-term discrepancy occurs when comparing L=3
+to L=1 with all four clasp crossings fixed. L=1 with all four clasps switched
+recovers the six-term polynomial, exactly locating the error in the first
+length-reduction claim as well.
+
+The root independently computed raw Kauffman brackets by a frontier state
+sum from these PDs, without Regina. Its file independent_source_bracket.json
+records, for the horizontal closures:
+  omega_1: A^-15 - A^-11 + 2A^-7 - A^-3 + 2A - A^5;
+  literal omega_5: A^6 times the preceding bracket;
+  claimed same-clasp state: A^-5 + A^-1.
+Reidemeister-I changes multiply the bracket only by signed A^3 powers.
+The first and third brackets are not related by ANY signed monomial.
+Thus this certificate is independent of Jones orientation conventions.
+
+WHY (C1d) DOES NOT IMMEDIATELY REPAIR THE ARGUMENT
+(C1d) does address every clasp state, so the change Y -> -Y by itself need
+not be fatal. The missing factor x^(12s) is the obstruction to the stated
+same-r coefficient inference. In the paper's ring x^2=px+1, multiplication
+by x^12 or x^-12 mixes levels r,r-1,...,r-12. Vanishing at level r of the
+new nonexceptional state does not make level r of its monomial multiple
+vanish. The assumptions G_(r+1),G_(r+2) supply no vanishing of those lower
+levels. A new argument would be required; no such repair is established
+here. In particular, merely increasing a numerical cap does not justify
+this downward induction step.
+
+SCOPE
+No failure is asserted here for the elementary anti-parallel smoothing
+identity (C3), the residual smoothing proxy, or a correctly tracked
+Reidemeister III move. The isolated failure is the identification of the
+movie's output with a fixed oriented cube state in Proposition 5.12(G2).
+
+EXACT TL2 TRANSFER VECTORS
+In the basis I (two vertical arcs), e (top/bottom caps), with e^2=delta e,
+write the tangle bracket f I+g e. Vertical and horizontal closures evaluate
+respectively to delta*f+g and f+delta*g. Exact Laurent division of these two
+computed closure brackets gives:
+  omega_1:
+    f = A - 2A^-3 + 3A^-7 - A^-11 + A^-15,
+    g = A^3 - 2A^-1 + A^-5;
+  literal omega_5: A^6 times BOTH preceding coefficients;
+  claimed same-clasp state:
+    f = A^3 + A^-9,
+    g = A - 2A^-3 + A^-7.
+Thus the literal picture movie preserves the whole bracket up to its two
+RI framing factors, while the claimed fixed-clasp state has a different
+skein vector. transfer_matrix.py and transfer_vectors.json reproduce these
+exact integer Laurent coefficients. This is a source-grounded TL2 test,
+not an assumed realization of a formal skein combination.

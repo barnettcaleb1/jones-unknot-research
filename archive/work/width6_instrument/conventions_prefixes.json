@@ -1,0 +1,560 @@
+[
+  {
+    "prefix": 1,
+    "word": [
+      4
+    ],
+    "match": true,
+    "actual": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "configurations": 2,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "seconds": 0.03659049980342388
+  },
+  {
+    "prefix": 2,
+    "word": [
+      4,
+      3
+    ],
+    "match": true,
+    "actual": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "configurations": 6,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "seconds": 0.0762249999679625
+  },
+  {
+    "prefix": 3,
+    "word": [
+      4,
+      3,
+      2
+    ],
+    "match": true,
+    "actual": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "configurations": 3,
+    "intersection_counts": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "seconds": 0.11246108310297132
+  },
+  {
+    "prefix": 4,
+    "word": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "match": true,
+    "actual": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "configurations": 9,
+    "intersection_counts": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "seconds": 0.16902020806446671
+  },
+  {
+    "prefix": 5,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5
+    ],
+    "match": true,
+    "actual": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "configurations": 9,
+    "intersection_counts": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "seconds": 0.2074955003336072
+  },
+  {
+    "prefix": 6,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4
+    ],
+    "match": true,
+    "actual": [],
+    "expected": [],
+    "configurations": 12,
+    "intersection_counts": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "seconds": 0.2450578329153359
+  },
+  {
+    "prefix": 7,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3
+    ],
+    "match": true,
+    "actual": [],
+    "expected": [],
+    "configurations": 18,
+    "intersection_counts": [
+      [
+        3,
+        5
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "seconds": 0.3895145417191088
+  },
+  {
+    "prefix": 8,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2
+    ],
+    "match": true,
+    "actual": [],
+    "expected": [],
+    "configurations": 208,
+    "intersection_counts": [
+      [
+        4,
+        16
+      ],
+      [
+        10,
+        12
+      ]
+    ],
+    "seconds": 0.6080764583311975
+  },
+  {
+    "prefix": 9,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3
+    ],
+    "match": true,
+    "actual": [],
+    "expected": [],
+    "configurations": 340,
+    "intersection_counts": [
+      [
+        4,
+        26
+      ],
+      [
+        10,
+        20
+      ]
+    ],
+    "seconds": 1.0435932911932468
+  },
+  {
+    "prefix": 10,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      4
+    ],
+    "match": true,
+    "actual": [],
+    "expected": [],
+    "configurations": 214,
+    "intersection_counts": [
+      [
+        4,
+        5
+      ],
+      [
+        10,
+        41
+      ]
+    ],
+    "seconds": 1.8777262498624623
+  },
+  {
+    "prefix": 11,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      4,
+      2
+    ],
+    "match": true,
+    "actual": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        3,
+        0,
+        -1
+      ]
+    ],
+    "configurations": 2103,
+    "intersection_counts": [
+      [
+        13,
+        22
+      ],
+      [
+        56,
+        67
+      ]
+    ],
+    "seconds": 3.221569708082825
+  },
+  {
+    "prefix": 12,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      4,
+      2,
+      3
+    ],
+    "match": true,
+    "actual": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        4,
+        0,
+        1
+      ]
+    ],
+    "configurations": 5035,
+    "intersection_counts": [
+      [
+        13,
+        66
+      ],
+      [
+        56,
+        103
+      ]
+    ],
+    "seconds": 4.764737583231181
+  },
+  {
+    "prefix": 13,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      4,
+      2,
+      3,
+      -1
+    ],
+    "match": true,
+    "actual": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        3,
+        0,
+        -1
+      ]
+    ],
+    "configurations": 7617,
+    "intersection_counts": [
+      [
+        15,
+        66
+      ],
+      [
+        92,
+        103
+      ]
+    ],
+    "seconds": 8.573335583787411
+  },
+  {
+    "prefix": 14,
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      4,
+      2,
+      3,
+      -1,
+      -2
+    ],
+    "match": false,
+    "actual": [
+      [
+        -3,
+        -2,
+        1
+      ],
+      [
+        -2,
+        -2,
+        -2
+      ],
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -2,
+        1,
+        1
+      ],
+      [
+        -1,
+        -2,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        -1
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        4,
+        1,
+        -1
+      ]
+    ],
+    "configurations": 30602,
+    "intersection_counts": [
+      [
+        73,
+        68
+      ],
+      [
+        289,
+        150
+      ]
+    ],
+    "seconds": 12.154204583261162
+  }
+]

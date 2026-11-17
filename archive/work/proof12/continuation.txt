@@ -1,0 +1,82 @@
+PROOF12 CONTINUATION — 2026-10-31, completed near21:01UTC
+Goal remains ACTIVE: generic Jones unknot detection, no solution claimed.
+Current pass began20:34UTC; used27min of user-requested bounded30min pass.
+
+User-facing deliverables:
+ outputs/jones-finite-tests-and-cancellation.txt
+ outputs/jones-finite-tests-and-cancellation-evidence.zip
+40 entries, about95KB; fresh extraction SHA checks39files and7 standardlib
+verifiers passed. No source PDFs bundled. Geometry scripts need already
+installed Spherogram2.4.1/Regina7.4.1, not included in archive.
+
+NEW PROVED RESULTS — do not rediscover:
+1. Arbitrary Jones-fiber satellite rigidity (no rationality assumption):
+V_A=V_B impliesV_P(A)=V_P(B) forALLknots iffV_P(A)=V_P(U) (evenw) or
+V_P(U)V_A (oddw). ActualcollisionK51,L10132 has everyH_Ndifferent N>=3:
+DeltaH_N(eh)=8(N²−1)(N²−4)h5+O(h6). ExactHabiroDeltaa2
+q^-15(q²−1)(q³+1)(q5+1); independentlyRmatrixcomputedcolor3.
+Connected sums isolatecoeffs. Finitecertificate improved to s probes,
+s=numberpossiblehigherparitylabels≤floor(r/2), usingT_m m1..s.
+valH_(j+1)(T_m)=−mj(j+2)−j(j+1)/2; determinantuniqueleadingterm bystrict
+rearrangement. Proofsatellite_fiber_rigidity.txt; braidaudits/checks.
+LIMIT: notclassificationofsinglefiberV1 norgeometricallytrivialpatterns.
+
+2. Positiveone-specialrealizabilityobstruction (homology/one_special_bn_obstruction.txt):
+ActualU-infinityanchoredtangle,preferredzero determinant0, reducedKhF2curve
+r1(s) plus EXACTLYONE standardrankone multiplicityone s4n∞, n>=1.
+Thenzero filling cannot have2unlinkJones. detforces|s|4n=k. MirrorWLOG.
+R=sumj0..k−2(−1)^j Q^(2j+1)+Q^(2k+1), E=Q^k E_n,
+E_n=Q^(-k−1)(1+Q4)(1−Q6)Σi0..n−1Q8i. R+E=Q+Q^-1.
+ALLquantum/homologicalshiftsallowed: Eulerunlinkforcesqshifts0 andsigns+.
+Proofwithtopsdifferent forcesbottomsalign thenuncanceledRnextbottom below−1.
+Thuscommonmaxq,oppositehtopparities; eachsectortophgap2. UniqueglobalhtopH
+cannotdiebyBNd(1,2r). IfH!=0 contradictBNlimit; ifH0 only1h0gen butlimit
+needsrank2. Jonesunlink⇒lk0⇒reducedBNrank2h0. Trefoilquotientactualexample
+r1(4)+s4, sohypothesisnotvacuous. Braidauditindependentlypassed.
+LIMIT: length4divisibilitystillnotprovedgenerally; s2mod4excludedfromclaim.
+IMPORTANTFORMALBOUNDARY: fourB=s4pairingblocks B,B[1]{2},B[1],B[2]{2},
+withidentityd1 onfirst→second andthird→fourth, Euler0 andacyclic. Addr1(0)
+unlinkmodule⇒formalrank18Kh,Jonesunlink,BNrank2h0; freeF2[H] lift8length1
+bars. NOactualtanglerealization. ThereforeBN/geographyalonecannotextend
+one-specialproofgenerically. Needfulltanglealgebra/geometricrealization.
+
+3. ACTUALTWO-BANDKTDOUBLE constructed andALLintegerfulltwistsEXCLUDED:
+Musick arxiv1208.4233v3 p71KT78crossingDT, 3overpasseslengths34,28,16;
+commonface3edges; mirroredPD andonefixedjoin givesK#mirrorK geometrically.
+Twootherjoin/cut sites:4actualcutPDs,allcutactualU3viaReidemeisters,
+linkingmatrixall0; direct2crossingfulltwistPDchecks atBOTHsites validate
+recurrencewithn−1. Storedtangle/kt_double_cuts.json,kt_twist_check.json.
+Qcutnormalizeδ;Q12=1. V_mn−1=A t^(2m+2n)+B t2m+C t2n with
+A=Q0−Q1−Q2+1 (degree10,lead−1), B=Q2−1(deg8,lead−1),
+C=Q1−1(deg9,lead−1). Allleadingcoeff−1⇒globalhighestcannotcancel ANYm,nZ.
+Noenumerationneeded. Affinelatticesolverandroot3alignmentcaseauditagree.
+Mainnote tangle/newfamilyproof.txt; stdlibkt_leading_verify.py.
+DISKGROUPCAUTION: standardhalfspinG_K intended butnotseparatelycomputed
+forserializeddiagram; allparameterJonesexclusion DOESNOTNEEDgroupID.
+Prior claimtemplateunbuilt wascorrected in findings.txt anddeliverable.
+
+4. KT ONE-AXISINVERSETARGET nowDOWNGRADED: complete8casefilter fromTanaka2022
+reflectionidentity+derivativecongruenceforcesm2(upmirror),Vpartial1.
+EvennesspermitsBKNgenusinequality gKT2≥2gpartial;partialnontriv⇒g1Δ1.
+KT3bridge⇒meridionalrank≤3. 2meridians⇒2bridge⇒Jonesdetectso mr3.
+Fukuhama–Ozawa–Teragaito genus1bridge3⇒3oddpretzel; priorlowmomentsproof
+forcesU ifV1. Thuspartialbridge≥4. WouldrefuteBOTHJonesdetectionandMRC.
+Do not huntthisas easy genericcounterexampleroute.
+Tanaka2025shortnotehasvisuallyconfirmedexponenttypo; usecorrect2022identity.
+
+5. Genericreductionobstructions: canonicalribbondoubleK#mirrorK diskgroupG_K;
+evenbandtwists/band-crossingswitchespreservegroup (HittSilver1991). Ribbon
+boundaryU forcesdiskgroupZ byboundarysurjection, so cannotanchoractualU
+fromnontrivKbythesemoves. BleilerEudaveMunozcompositefusion1⇒2bridgeprime
+factor;Jones1primefactorsallJones1 =>canonicaldoublehypotheticalJones1
+hasfusion>=2. Bothsourcechecked,findings.txt.
+
+WHERE TO GO NEXT
+Generalproblemnotproved. One-speciallemma givesrealgeometricrealization
+progress, butfour-specialalgebraiccountermodel preventsnaivegeneralization.
+FullBNtangle/typeD/Ainfinityextensions and compatibilityofALLfillings may
+supplyextra constraints. Actual2bandtemplateexclusiongivesnewsigncriterion:
+commonleading sign ofnonemptyBoolean-Mobiuscutcoeffs forbidsJones1forall
+twists. No proofthissignconditionisgeneric; doNOTclaimit. Newtemplatesor
+band/base-diskmoveswouldberequired; alreadyexcludedthisexactKTtwistorbit.
+Allagentscurrentlyfinished. Noexternalmessagesorpublicationauthorized.

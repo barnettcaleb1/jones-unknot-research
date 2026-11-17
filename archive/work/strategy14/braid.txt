@@ -1,0 +1,146 @@
+STRATEGIC RESET: EXACT QUANTUM SYMMETRY, TESTED BY 3-MANIFOLD GLUING
+2026-10-31. Strategic memo, not a new theorem or a claimed counterexample.
+
+Recommendation
+--------------
+Pursue one concrete mechanism: use a published, all-q Jones-preserving
+operation on ACTUAL tangles, and make the missing work entirely geometric.
+Rotants and related commuting-transfer-matrix surgeries supply this.
+They are an old research direction, not a newly discovered solution. They
+are nevertheless substantially different from our exhausted attempts to
+promote one scalar into colored data or to realize arbitrary formal modules.
+
+The physics connection is exact integrability: a protected partition
+function survives a rearrangement of interactions even when the geometric
+configuration changes. The useful question is whether that protected
+rearrangement can act nontrivially on an unknot completion. It is not whether
+more measurements can reconstruct the knot from the original scalar.
+
+Published starting evidence
+--------------------------
+Anstee-Przytycki-Rolfsen prove Jones preservation for rotants of order n<=5,
+with the required orientation/writhe conditions. Their Question 3.5 already
+asks whether an unknot can have a knotted rotant; novelty is not claimed.
+https://arxiv.org/pdf/math/0405382
+
+MacColl constructs an infinite family of ORDER-4 rotants with different
+Khovanov homology and the same Jones polynomial. This is useful evidence:
+the operation is not automatically invisible to an unknot-detecting
+homology theory. It is not evidence that the published family contains an
+unknot anchor, and does not justify scanning its twist parameter blindly.
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D57214ADA03771549477CCEFE30A8219/S0008439500019718a.pdf/rotors_in_khovanov_homology.pdf
+
+Jones' transfer-matrix mechanism and its tangle interpretation are described
+by Przytycki in Section 3 of this primary account:
+https://matwbn.icm.edu.pl/ksiazki/bcp/bcp34/bcp34111.pdf
+
+Precise construction bridge
+----------------------------
+Let U=R union S be a CERTIFIED unknot diagram with an n-rotor R, n=3,4,5.
+Let f be the allowed flip, with normalized Jones invariance verified by the
+published rotor hypotheses. Let M_R and M_S be the double covers of the two
+tangle balls, branched over their strands. The boundary is a surface Sigma
+of genus n-1, by Riemann-Hurwitz. Since the starting knot is U,
+  M_R union_id M_S = S^3.
+The flipped knot K has double branched cover
+  Y_f = M_R union_(f-tilde) M_S,
+where f-tilde is a lift of the marked-sphere flip (convention may replace it
+by its inverse; this does not affect the proposed test).
+
+A single certified example with pi_1(Y_f) nontrivial proves K nontrivial,
+while Jones preservation already proves V_K=1. This is an exact sufficient
+bridge, using no colored-Jones promotion and no finite-level approximation.
+The two lifts differ by the deck map, which extends over each piece, so the
+homeomorphism type of Y_f is independent of that choice.
+
+This changes the inverse-design problem: build an equivariant S^3 splitting
+whose allowed rotor flip produces a nontrivial homology sphere. A nontrivial
+finite quotient of the resulting fundamental-group presentation is a compact
+positive certificate. Candidate finite perfect quotients such as A5 are
+reasonable targets, but no such quotient or candidate is claimed here.
+
+Why the first test must be nonabelian
+------------------------------------
+Jones invariance and the unknot anchor imply det(K)=|V_K(-1)|=1. Consequently
+H_1(Y_f;Z)=0. Every successful candidate is already an integral homology
+sphere. Checking a determinant or first homology can expose a convention or
+construction error, but can never certify success. For handlebody pieces,
+the homology quotient
+  H_1(Sigma)/(L_R + f-tilde(L_S))
+is therefore forced to vanish. The new information must live in nonabelian
+meridian words, disk sets, or a genuine 3-manifold invariant.
+
+What handlebodies and Waldhausen do -- and do not -- give
+--------------------------------------------------------
+If both tangles are trivial n-string tangles, both branched covers are
+handlebodies. The unknot completion then gives a genus n-1 Heegaard splitting
+of S^3. Fix its common-boundary marking, and let G_R and G_S denote the
+subgroups of mapping classes extending across the respective handlebodies.
+With a consistent gluing convention, the flipped cover is S^3 exactly when
+  f-tilde belongs to G_S G_R.
+Sufficiency follows by absorbing the two extending maps into the pieces.
+Necessity follows from uniqueness of the genus-g Heegaard splitting of S^3
+(Waldhausen), allowing an ordered-piece equivalence.
+
+The Goeritz group is the INTERSECTION G_R intersect G_S. It is not the
+product in the preceding criterion. Failure to extend over either piece,
+or failure to lie in the Goeritz group, does NOT by itself prove that the
+new manifold differs from S^3. Conversely, finding an extension over either
+piece is an excellent immediate exclusion certificate. For nonhandlebody
+pieces, extension/product membership remains sufficient for exclusion;
+Waldhausen no longer supplies its necessity.
+
+A primary new proof of the Heegaard uniqueness theorem:
+https://arxiv.org/abs/math/0607332
+
+Smallest sector not eliminated by these arguments
+------------------------------------------------
+The familiar two-string Conway mutation cannot unknot a nontrivial knot or
+knot the unknot. Order 3 already lifts to genus 2, but that fact does NOT
+eliminate it. The hyperelliptic involution is the DECK transformation: it
+projects to identity on the six-marked sphere. An allowed rotor flip has a
+nontrivial permutation of the marked points, so its lift is not that
+hyperelliptic mapping class. The Birman-Hilden quotient distinguishes them.
+Thus the theorem that hyperelliptic genus-2 mutation of S^3 is S^3 cannot be
+applied merely by counting the genus.
+
+Primary references for these distinctions:
+https://arxiv.org/abs/math/0010310
+https://arxiv.org/pdf/math/0607258 (Section 2.6)
+
+Accordingly, n=3 is not excluded by the present cover argument. Order 4 is
+the more justified practical starting sector because the published
+Khovanov-changing examples show extra freedom explicitly. I am not claiming
+a new classification or that all trivial-tangle rotor constructions survive;
+the specific equivariant disk systems must still be checked.
+
+Proof branch versus counterexample branch
+----------------------------------------
+PROOF OF A FAMILY OBSTRUCTION: show that cyclic symmetry plus the particular
+unknot-completion geometry forces f-tilde into G_S G_R (or forces extension
+over one actual piece). This would eliminate the whole chosen construction,
+not establish general Jones detection.
+
+COUNTEREXAMPLE: maintain the geometric rotor symmetry and the certified
+unknot completion, and exhibit a nontrivial quotient of pi_1(Y_f). For
+handlebodies this is a balanced presentation obtained by expressing one
+side's flipped disk boundaries as words in the other side's free group.
+An arbitrary mapping class with an interesting quotient is insufficient:
+it must descend to the permitted rotor flip with the required cyclic action.
+
+Decision gates before computation
+---------------------------------
+1. Specify an actual rotor and an actual unknot completion, with a geometric
+   unknot certificate. Formal skein equality is insufficient.
+2. Identify the lifted flip and disk systems. If the flip visibly extends
+   over either piece, stop that family before polynomial work.
+3. If both pieces are handlebodies, ask for product-of-handlebody-groups
+   membership, not only individual extension or a homological test.
+4. Only then seek a nonabelian quotient or other non-S^3 certificate.
+5. If the entire chosen family always yields a standard disk system, record
+   that obstruction and abandon it; do not respond by simply increasing
+   crossing bounds.
+
+No knot candidate or generic proof has emerged in this strategic pass. The
+concrete gain is selecting a route with its Jones identity already proved,
+so the next unit of work must address the actual topological bottleneck.

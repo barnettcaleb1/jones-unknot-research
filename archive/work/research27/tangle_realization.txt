@@ -1,0 +1,182 @@
+AN ACTUAL BING-PATTERN REALIZATION AND ITS EXACT CANCELLATION GATE
+1 November 2026. Bounded research deduction; no priority claim.
+
+STATUS AND FULL ENDPOINT
+
+There is an explicit geometric construction, using the untwisted Bing
+double of an arbitrary zero-framed knot C, whose scalar annular-skein
+condition is EXACTLY H_3(C)=1. Here H_N is the reduced, dimension-N,
+zero-framed colored Jones polynomial, H_N(U)=1. The construction needs
+no formal linear-combination realization assumption. It does not supply
+a nontrivial C with H_3(C)=1, and ordinary V_C=1 cannot be promoted to this
+condition without another theorem.
+
+For nontrivial C, the pattern is essential and its ordinary unknot
+closure is an actual unknot. Consequently a nontrivial H_3-unit knot
+would produce an actual essential scalar pattern, and its satellites on
+nontrivial companions would be nontrivial Jones-one knots. This is the
+same unresolved color-three gate already reached by the Whitehead-double
+formula in outputs/jones-cabling-and-realizability.txt, now with the FULL
+annular realization proved. It should not be counted as an easier or
+independent route to solving the generic Jones conjecture.
+
+1. ACTUAL PATTERN AND GEOMETRIC NONTRIVIALITY
+
+Let B(C)=B_1(C) union B_2(C) be the ordinary untwisted, zero-framed Bing
+double. Both components are actual unknots, and their linking number is
+zero. Let P_C be B_1(C) in the solid torus S^3 minus int N(B_2(C)). Use
+the preferred zero framing on the axis and pattern. In particular
+P_C(U)=U geometrically, not merely by a Jones calculation.
+
+Cimasoni, Slicing Bing doubles, Section 1, gives an exact construction:
+infect one component of the Borromean rings by C, exchanging meridian
+and preferred longitude. Each remaining component is an unknot because
+its pair with the infection component was a two-component unlink.
+
+For nontrivial C, E(B(C)) is obtained by gluing the Borromean exterior to
+E(C) along their indicated incompressible boundary tori. Both pieces
+are irreducible and the gluing torus is incompressible on both sides.
+The elementary innermost-circle argument shows their union irreducible.
+Thus B(C) is nonsplit, so P_C is geometrically essential in the solid
+torus. This uses no Jones or colored-Jones detection assumption.
+
+Primary construction:
+https://www.unige.ch/~cimasoni/Bing.pdf , Section 1, pp. 3--4 of PDF.
+Published version: https://msp.org/agt/2006/6-5/agt-v6-n5-p13-s.pdf .
+The essentiality conclusion is also explicitly used by Ren, Remark 1.3:
+https://arxiv.org/html/2609.11084 .
+
+2. FULL ANNULAR FORMULA, WITH INDEXING AND FRAMING
+
+Write delta=-A^2-A^-2 and z for the zero-framed core in the Kauffman
+bracket skein of the solid torus; the empty diagram is 1, and a local
+zero-framed unknot is delta. Put q=A^-4. Then
+
+       [P_C] = delta H_3(C) + (1-H_3(C)) z^2 / delta.             (1)
+
+Equation (1) is an equality over Q(A); its left side is an actual
+integral annular skein. No positivity or division at a root of unity is
+asserted. A different pattern framing multiplies the entire equation by
+the corresponding framing unit; use zero framing for the displayed form.
+
+Proof from Suzuki, Bing doubling and the colored Jones polynomial,
+https://arxiv.org/html/1305.0602 , Section 2.1, Theorem 3.2, and
+Proposition 4.3/Corollary 4.4.
+
+CAUTION: Suzuki's V_m has dimension m+1, whereas our H_N is indexed by
+dimension. Put a={1}=q^(1/2)-q^(-1/2), b={2},
+s=q^(1/2)+q^(-1/2), r=q^(3/2)+q^(-3/2). Her reduced colors are
+
+ P'_0=1, P'_1=(V_1-s)/a,
+ P'_2=(V_1-s)(V_1-r)/(ab).
+
+Her Bing coefficients satisfy x_ij^(l)=0 unless i=j. For i=j=1,
+x_11^(1)=-{4}, x_11^(2)=-ab, and all other l vanish. Since
+{4}/a=r+s and V_1^2=V_2+V_0, their combination is
+
+ sum_l x_11^(l) J_C(P'_l)
+   = -J_C((V_1-s)(V_1+s))
+   = -J_C(V_2-(q+1+q^-1)V_0)
+   = -[3](H_3(C)-1).
+
+The pattern itself has the FUNDAMENTAL color V_1=sP'_0+aP'_1.
+Therefore its pairing with axis color P'_j equals s when j=0,
+equals -a[3](H_3(C)-1) when j=1, and equals zero for EVERY j>=2.
+The extra factor a in the j=1 pairing must not be dropped.
+
+These are full annular probes, not just ordinary two-component Jones
+values. The axis is an actual unknot; coloring it computes the standard
+Hopf pairing against the annular class of P_C. In the even annular
+Jones-Wenzl basis E_(2k), its pairing with P'_j is
+
+ [2k+1] P'_j(q^(k+1/2)+q^(-k-1/2)).
+
+This is zero for k<j and nonzero for k=j. A finite even annular
+polynomial whose probes vanish for all j>=2 thus has degree at most two:
+apply the probe j=k to its highest nonzero coefficient, then descend.
+This proves the required separation; no colored information is inferred
+from an ordinary scalar closure.
+
+In the positive quantum-dimension convention the degree-two basis is
+E_2=z^2-1, with [3]=s^2-1. Its j=1 pairing is [3](r-s)/a. Consequently
+the z^2 coefficient is
+
+       (1-H_3(C)) a^2/(r-s) = (1-H_3(C))/s,
+
+because r-s=s a^2. The j=0 pairing gives the constant coefficient
+s H_3(C). Switching to the Kauffman convention changes the sign of the
+single pattern component and sends s to -delta; the even z^2 term has
+no further sign. This gives (1).
+
+Thus, exactly:
+
+          P_C has scalar annular skein  iff  H_3(C)=1.            (2)
+
+In that case [P_C]=delta, not an arbitrary nonunit scalar. This family
+therefore does NOT offer an easier nonunit fixed-Jones-fiber countertest.
+
+3. ENTIRE TWO-INPUT SATELLITE FAMILY: NO COMPENSATING CANCELLATION
+
+For any other zero-framed knot J, satellite evaluation sends
+z^2 to the bracket of its zero-framed two-parallel:
+
+             z^2 -> 1+(delta^2-1) H_3(J).
+
+Normalize the output knot bracket by delta. Because the pattern has
+winding zero, the zero-framing convention introduces no companion-
+dependent writhe factor. Substituting into (1) gives
+
+ V_{P_C(J)}-1
+       = -(delta^2-1)/delta^2
+                       (H_3(C)-1)(H_3(J)-1).                   (3)
+
+The prefactor is nonzero in Q(A), an integral domain. Therefore this
+actual two-input construction has Jones polynomial one if and only if
+one of its two inputs has H_3=1. Two nontrivial color-three deviations
+cannot compensate. This excludes a broad attempted cancellation
+mechanism without an integer-parameter search.
+
+It is consistent with the previous Whitehead result
+V_Wh+(C)-1=((1-t^3)/(1+t))(H_3(C)-1). In particular the scalarity gate
+is the same color-three gate, not a new proof of ordinary-to-colored
+promotion. Ren's all-colored Bing observation does not itself state
+this single-color formula; the derivation above is directly from
+Suzuki's theorem, with no novelty claim.
+
+4. A DIFFERENT PROPOSED LOCAL MOVE, AND ITS FIRST EXACT OBSTRUCTION
+
+Suppose a crossing change in a local unknot pattern produces a pattern
+with the same normalized full annular invariant 1. The oriented skein
+relation forces the oriented two-component smoothing to have exactly
+the normalized annular invariant of the two-component unlink. At
+A=-1 its two component winding numbers must both vanish: they sum to
+zero, and if they are k,-k with k!=0 the classical SL_2 trace evaluation
+is a nonconstant square of the degree-|k| Chebyshev trace polynomial.
+
+Thus a simple smoothing that winds nontrivially around the axis cannot
+realize this move. A candidate would need a null-homologous interaction
+with the axis in each smoothing component, in addition to exact skein
+equality. This is only a necessary condition; it does not establish
+locality or supply a candidate. Formal commutators, Kirby colors, and
+clasper alternating sums do not replace an actual single diagram.
+
+5. RESEARCH DECISION
+
+The Bing construction settles a concrete realization question exactly:
+its geometric pattern exists for every input, its essentiality is
+topological, and its scalarity is one explicit whole colored polynomial
+condition. It also proves that pairing two such inputs cannot cancel
+their defects. The next useful step within this class would have to
+construct a genuine H_3-unit knot or prove a substantive geometric
+restriction on that fiber. Repeating satellite evaluations or testing
+more Bing companions does not close the global problem. No full Jones
+proof or counterexample was produced in this pass.
+
+AUDIT
+
+The braid agent independently read Suzuki's coefficient formulas and
+checked the reduced-color simplification, Hopf-probe separation, extra
+factor {1}, and SU(2)-to-Kauffman sign conversion. The algebra verifier
+checks the elementary Laurent identities, not the published topology
+or geometric construction. Exact geometric wrapping bounds are not
+needed in the proof above and are not inferred from annular degree.

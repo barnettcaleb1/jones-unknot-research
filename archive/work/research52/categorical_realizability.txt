@@ -1,0 +1,188 @@
+PASS 52: UNIVERSAL DEFORMATION COMPATIBILITY DOES NOT REMOVE HIDDEN HOMOLOGY
+1 November 2026. Bounded global-mechanism test; no Jones theorem or
+counterexample. No claim of literature novelty for the calculation.
+
+PRIOR WORK CHECKED
+
+Read the Khovanov and relative Lee-bar sections of
+outputs/jones-full-proof-scaffolds.md, work/research20/homology_scaffold.txt,
+and work/research27/homology_global.txt. Their formal Euler-one/rank17
+model, Lee compatibility, Steenrod growth on actual ribbon knots, and
+2-torsion obstruction are not presented as new findings below.
+
+The specific new test is stronger than separately imposing Lee rank,
+integral torsion, or a formal Euler condition: impose ONE integral
+universal Frobenius complex, built from genuine cobordism morphisms,
+whose every semisimple specialization has the unknot's homology. An
+explicit calculation shows that even these simultaneous conditions
+allow nonzero Euler-invisible homology.
+
+1. The putative independent deformations share one source.
+
+Khovanov's universal rank-two system has
+
+ R=Z[h,t],    A=R[X]/(X^2-hX-t),
+ epsilon(1)=0, epsilon(X)=1,
+ Delta(1)=1 tensor X+X tensor 1-h*(1 tensor 1),
+ Delta(X)=X tensor X+t*(1 tensor 1).
+
+His Proposition 5 produces rank-two Frobenius systems by base changes
+and twists from this system. When 2 is invertible, Y=X-h/2 gives
+
+                    Y^2=t+h^2/4.
+
+Thus treating rational Lee and Bar-Natan parameters as unrelated
+constraints overcounts the available structure. The integral prime-2
+behavior is genuinely additional, and is retained in the construction
+below. Naot's universal geometric theory also reduces link complexes
+to one-variable module complexes, though this does NOT characterize
+which such complexes arise from actual link diagrams.
+
+Use quantum degrees deg(X)=deg(h)=-2 and deg(t)=-4; the circle module
+has the usual extra shift giving its generators quantum degrees +1,-1.
+
+2. A block built from actual surfaces, not arbitrary scalar differentials.
+
+Let O be a circle object in the additive graded Bar-Natan cobordism
+category. Let H:O->O be the connected genus-one cylinder. It has quantum
+degree -2. Under the universal Frobenius functor, H=m Delta acts by
+
+                         H=2X-h.
+
+Consequently
+
+               H^2=(2X-h)^2=h^2+4t=:D.
+
+Define the two-term formal cobordism complex E in homological degrees
+zero and one by
+
+ E^0 = O direct-sum O{-2},
+ E^1 = O direct-sum O{+2},
+
+                       [ 2 Id   H ]
+             d_E   =   [  H     0 ].
+
+Every matrix entry is a genuine cobordism or integer linear combination
+of cobordisms. The grading shifts make each entry degree zero. There is
+only one differential, so d^2=0 imposes no additional relation. This is
+an honest object of the formal cobordism-complex category. It is NOT
+claimed to be the cube of resolutions of any knot diagram.
+
+After applying the universal Frobenius functor, if D is invertible then
+
+                   [ 2  H ] [ 0   H ]
+                   [ H  0 ] [ H  -2 ]  = D*I.
+
+The reverse product is also D*I. Thus d_E is invertible and E contractible
+over A[D^-1]. In particular:
+
+ * Bar-Natan specialization h=1,t=0: D=1, contractible integrally.
+ * Rational Lee specialization h=0,t=1: D=4, contractible over Q.
+ * Every field specialization with nonzero discriminant: contractible.
+
+These specializations come from the same universal differential, with
+all base-change maps automatically compatible. This is stronger than
+choosing independent differentials after specializing.
+
+3. The Khovanov special fiber retains free homology and 2-torsion.
+
+Set h=t=0. Then A_0=Z[X]/(X^2), H=2X, and
+
+                        [ 2   2X ]
+                d_E  =  [ 2X   0 ].
+
+Apply the integral, grading-preserving row operation row2-=X*row1 and
+then column2-=X*column1. The result is diag(2,0), since X^2=0. Hence
+
+ H^0(E)=A_0{-2},
+ H^1(E)=A_0{+2} direct-sum (A_0/2A_0).
+
+The free classes at the two different quantum shifts form the familiar
+deformation bar, but the same block also contains genuine integral
+2-torsion. Nothing has been discarded by passing first to Q.
+
+Now put
+
+                  C_N=O direct-sum (E direct-sum E[1])^N,
+
+where [1] shifts homological degrees up by one. All complexes and maps
+remain inside the same formal cobordism category. Each pair E+E[1] has
+zero full graded Euler characteristic, so C_N has exactly the unknot's
+unreduced Euler polynomial q+q^-1.
+
+At the ordinary Khovanov specialization, reduce at the chosen circle by
+X=0 with the usual normalization. The resulting homology has
+
+  rational reduced rank = 1+4N,
+  integral reduced 2-torsion summands = 2N,
+  mod-2 reduced rank = 1+8N,
+  normalized reduced Euler polynomial = 1.
+
+For example N=4 gives rational reduced rank17 and mod-2 rank33. Arbitrary
+N shows that this is not merely an accidental small-rank loophole.
+Meanwhile every semisimple specialization of C_N is chain equivalent to
+the circle alone. In particular its rational Lee homology has rank two,
+and its integral h=1,t=0 homology is the corresponding rank-two unknot
+module, with all extra blocks contractible.
+
+Thus adding coherent universal deformations and integral Bar-Natan
+acyclicity does not force the Khovanov special fiber to have minimal rank.
+
+4. What cohomology operations do and do not add to this test.
+
+The ordinary integral special fiber just computed is a direct sum of
+free one-generator complexes and two-term multiplication-by-2 complexes.
+Quantum grade by quantum grade, this chain data is realized by wedges
+of suspended spheres and mod-2 Moore spectra. The Moore pieces have
+the nonzero first Bockstein/Sq^1 dictated by their integral 2-torsion;
+the usual Steenrod relations are consistent, with higher squares zero.
+So the construction does not evade integral constraints merely by
+declaring all cohomology operations zero on torsion classes.
+
+This does NOT construct the Lipshitz-Sarkar stable homotopy type of an
+actual knot, nor prove compatibility with every knot-cobordism operation
+or an odd/even unified theory. Those are additional geometric realization
+conditions. Ordinary Steenrod-module axioms and integral universal
+coefficients alone do not exclude this special fiber.
+
+5. Precise obstruction and stopping point.
+
+The proposed mechanism was: a Jones-unit complex cannot contain hidden
+homology because all Lee/Bar-Natan deformations must be simultaneously
+realizable by one integral universal Frobenius differential.
+
+The construction above disproves that implication for formal geometric
+complexes. Its excess is supported on the discriminant D=0, becomes
+contractible on the entire semisimple locus, and cancels in the full
+graded Euler characteristic. Universal specialization compatibility
+cannot see it disappear by an algebraic contradiction.
+
+The remaining realizability condition is specifically that the complex
+must be produced by the signed planar cube of saddle maps of ONE knot
+diagram, up to the established Reidemeister homotopies. Membership in
+the ambient cobordism category is insufficient. A valid new proof must
+extract a restriction from that cube origin which rules out these
+blocks or their substitutes. No such restriction was proved in this
+bounded pass. Asking simply that every Jones-unit knot complex be
+indecomposable or have no such excess would restate the detection problem.
+
+This supplies a reusable exact falsification test for proposed universal
+deformation arguments. It does not supply a candidate knot, and should
+not trigger enumeration for a diagram realizing C_N: such a realization
+would already be a Jones counterexample.
+
+PRIMARY SOURCES
+
+Khovanov, Link homology and Frobenius extensions, Proposition 5,
+formula (5), and the examples following Proposition 6:
+https://arxiv.org/pdf/math/0411447
+
+Naot, The universal Khovanov link homology theory, Theorem 1 and
+the integral geometric reduction in Sections 4-5:
+https://arxiv.org/pdf/math/0603347
+
+Lipshitz-Sarkar, A Steenrod square on Khovanov homology:
+https://arxiv.org/abs/1204.5776
+
+The matrix block, its graded diagonalization, and specialization checks
+above are explicit deductions, not attributed theorems from these papers.

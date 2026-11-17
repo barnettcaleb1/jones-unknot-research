@@ -1,0 +1,48 @@
+[
+  {
+    "label": "Bigelow6_Ren",
+    "specialization_A": 2,
+    "prime": 1000003,
+    "rank": 6,
+    "minor_rows_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "minor_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "minor_determinant": 975793
+  },
+  {
+    "label": "LongPaton6",
+    "specialization_A": 2,
+    "prime": 1000003,
+    "rank": 6,
+    "minor_rows_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "minor_columns_zero_based": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "minor_determinant": 434761
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "README.txt": {
+    "bytes": 2629,
+    "sha256": "110b9b2fad31d6e510bef48655b24e72c3acb00e9f9c843d9b0b7bad001fceaf"
+  },
+  "actual_collision_check.json": {
+    "bytes": 1314,
+    "sha256": "9327edc7cca89d218c93b9b40de31c0ab1b6d3451f31a3d90b54380c4ef54c37"
+  },
+  "exterior_volume_audit.txt": {
+    "bytes": 5911,
+    "sha256": "ab0498aa6368ebb525d93a8f0238343a7ccff64be4cb7503e84b7acba00deab8"
+  },
+  "finite_probe_independent_audit.txt": {
+    "bytes": 4489,
+    "sha256": "4b23df369b13b55e9a236808c7017b1b75de96785105b817224a78c616f07b07"
+  },
+  "finite_probe_volume_obstruction.txt": {
+    "bytes": 4563,
+    "sha256": "fcb3e22edd63f151b32b5b216c53a68d8ecd354cf367da063cb3c454ef74446e"
+  },
+  "geometric_mechanism.txt": {
+    "bytes": 12717,
+    "sha256": "94f0235a09926f1db55889b58c1c7140e9c9e46e19d5856cf268f77a0089c044"
+  },
+  "homology_mechanism.txt": {
+    "bytes": 9044,
+    "sha256": "b23676d8cd3acd430ad5f997fdcb864844abb8badd1f717e34d711e3081b0550"
+  },
+  "quantum_mechanism.txt": {
+    "bytes": 8629,
+    "sha256": "816e02f154d80e116976383a66588ec095bdd9d3c5fbce1223fb809afeb0b59b"
+  },
+  "twist_specialization_result.json": {
+    "bytes": 4136,
+    "sha256": "22f44eaf5fbb347e092698536e1bff55dd1098cce9ee8f877fd6a86da306a93b"
+  },
+  "verify_twist_specializations.py": {
+    "bytes": 2687,
+    "sha256": "7359352161a00e7a650be6391ccc3f75be351c500132dd51fdd68c3561a2b626"
+  }
+}

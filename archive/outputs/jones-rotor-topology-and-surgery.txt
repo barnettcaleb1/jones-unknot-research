@@ -1,0 +1,112 @@
+JONES UNKNOT DETECTION: TOPOLOGY AND A CONSTRUCTIVE SURGERY ROUTE
+Research pass, 31 October 2026
+
+STATUS
+
+No general proof and no nontrivial knot with Jones polynomial 1 have been obtained. The results below are internally checked deductions and exclusions, with no claim of originality. The proposed construction is conditional, not an example.
+
+STRATEGIC CHOICE
+
+The strongest constructive direction remaining from this pass is to create an actual symmetric tangle inside an unknot, then flip that tangle. For appropriate rotors of order at most five, the established rotor theorem supplies Jones preservation. The work is therefore concentrated on geometry: can the flip change the unknot into a nontrivial knot?
+
+This broad question is old: Anstee--Przytycki--Rolfsen explicitly posed it. What this pass contributes is a set of filters, a completion lemma, and a more specific possible construction. We are not presenting the rotor approach itself as a new discovery.
+
+The earlier boundary-parallel rotor result excludes the naive inverse-braid construction. Standard Suzuki--Kinoshita graph exteriors are now excluded by their symmetry groups. Generic positivity arguments and attempts to recover all colored Jones information from the ordinary polynomial remain unsupported and are parked.
+
+1. A COMPLETION LEMMA
+
+Claim. If an n-string tangle R in a marked ball occurs as part of an unknot, there is a boundary-parallel complementary n-string tangle S' such that R union S' is an unknot. The original marked R remains fixed. No symmetry is required of S'.
+
+Proof. Induct on n. For n=1, a sphere meeting an unknot twice gives a connected-sum decomposition of the unknot, so both arcs are unknotted.
+
+For n>=2, puncture the splitting sphere at its 2n intersections with the unknot. Its fundamental group is nonabelian free, while the unknot exterior has group Z. Consequently the punctured sphere is compressible. A compressing disk lies on one side, is disjoint from the strands, and divides that ball into two balls with n1 and n2 strands, where 0<ni<n.
+
+If the disk lies in the complementary tangle S, apply induction to the tangle OUTSIDE the first small ball. Replace the contents of that ball by the supplied boundary-parallel completion, preserving the whole unknot and R. Recompute the complementary tangle for the second small ball and do the same. The two new trivial tangles glue across an endpoint-free disk; their bridge-disk shadows can avoid that disk. Their union is boundary-parallel.
+
+If the disk lies in R, it splits R into R1 and R2. Each has a boundary-parallel unknot completion by induction. Represent these completions by disjoint arcs pushed slightly off the two boundary spheres, avoiding the empty attaching disks. Join a selected shadow on each side by an untwisted boundary rectangle crossing the connecting neck once and avoiding all other shadows. The resulting shadows remain disjoint, so the new completion is boundary-parallel. The resulting closed knot is the standard connected sum of the two completed unknots, hence an unknot. This uses a specified connected-sum neck, not an arbitrary band sum.
+
+The double branched cover of R therefore admits an embedding in S3 with handlebody complement and with its deck involution extending globally. The separate rotor rotation need not extend.
+
+Scope limitation: this replacement preserves the original unknot closure. It does NOT guarantee that a flipped closure remains nontrivial. Thus this is a construction tool, not a reduction of every possible rotor counterexample to one with trivial stator.
+
+Related primary literature: Nogueira--Salgueiro prove the disk-union closure statement in Theorem 2.3 of their preprint. Their Proposition 4.1 gives a stronger statement for essential two-string tangles: every unknotting completion is rational.
+https://www.mat.uc.pt/preprints/ps/p2033.pdf
+
+2. A SYMMETRY OBSTRUCTION FOR PROPOSED GRAPH COVERS
+
+Claim. If M is the double branched cover of an actual n-rotor, n>=3, then its mapping class group contains C_n x C_2.
+
+The rotor rotation lifts because it preserves the double-cover meridian character. Every lift commutes with the deck involution. Choose a boundary pole of the rotation and one of its two preimages. Exactly one lift fixes that preimage. Its nth power is a deck transformation fixing an unbranched point, hence the identity. It has order n and is independent of the deck involution. This gives an effective C_n x C_2 action.
+
+The boundary is a closed surface of genus n-1, and the action on it is faithful. A nonidentity finite-order orientation-preserving surface map in genus at least two cannot be isotopic to the identity. Therefore none of these nonidentity maps is isotopic to the identity on M, proving injection into its mapping class group.
+
+Ushijima's Theorem 2.4 computes the full mapping class group of the standard Suzuki theta_n graph exterior, and the indicated related M_n,k manifolds, as the dihedral group of order 2n. It cannot contain the abelian group C_n x C_2 of the same order. These exteriors therefore cannot supply the required rotor covers. For n=4, the obstruction is C4 x C2 versus D8.
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1065-12.pdf
+
+This excludes this specific graph family, not all Brunnian spatial graphs or all handlebody exteriors.
+
+3. WHY LOCAL SYMMETRY DOES NOT BECOME GLOBAL AUTOMATICALLY
+
+Label eight rotor endpoints 0,...,7, with rotation i -> i+2. The trivial rotor pairs (0,1),(2,3),(4,5),(6,7). A planar complementary tangle with pairs (1,2),(3,4),(5,6),(7,0) gives an unknot.
+
+Exchange the first two rotor caps by a homeomorphism of its ball and extend this homeomorphism over S3. The rotor is unchanged as a set and the completed knot is still an unknot. The complementary pairing is now (0,3),(1,4),(5,6),(2,7), which is not rotation invariant. Thus the given rotation cannot extend over that stator. A global equivariant disk theorem cannot be applied merely from the existence of an unknot completion.
+
+4. PROPOSED CONSTRUCTION: GLOBALLY HARMLESS, LOCALLY NONTRIVIAL SURGERY
+
+Start with a boundary-parallel C4 rotor R0 and an asymmetric stator S completing it to U. Seek a C4 orbit of surgery circles inside the rotor ball, disjoint from R0, satisfying:
+
+* Together they bound disjoint disks in S3 minus U. These disks may leave the rotor ball.
+* Their effect inside the marked rotor ball is nontrivial.
+* Equal surgeries produce a ball with the required standard rotor action and marked boundary.
+
+Equal integer twists along such a globally split unlink preserve the original unknot. If the surgered rotor is essential, flipping it may alter the global placement of the surgery circles relative to S. A nontrivial flipped knot would have Jones polynomial 1 by the rotor theorem, provided its orientation/writhe hypotheses are checked.
+
+The missing object is an actual C4-symmetric circle configuration satisfying these conditions, followed by a certificate that the flipped closure is nontrivial. No such symmetric object has been constructed here. A single-circle building block does exist, as follows.
+
+An exact test family. Write [r] for a rational tangle of fraction r, '+' for horizontal tangle sum, and N for numerator closure. Define
+
+    T_k = [-1] + [1/2] + [(2k-1)/(4k-1)],  k an integer.
+
+At k=0, T_0 is rational of fraction 1/2. For k != 0 its double branched cover is a Seifert manifold over a disk with two exceptional fibers of orders 2 and |4k-1|. It has incompressible torus boundary, so T_k is an essential, non-boundary-parallel tangle.
+
+Nevertheless N(T_k) is the unknot for EVERY integer k. These are two-bridge closures of length-two Montesinos tangles, and their determinant is
+
+    |-2(4k-1) + (4k-1) + 2(2k-1)| = 1.
+
+Determinant 1 implies unknot here because the closures are two-bridge; it would not imply this for general knots.
+
+The family can be implemented by twisting one fixed crossing circle. In the final reciprocal box start with 1/(1+x+1), x=-1. Twist in the perpendicular direction, giving x -> x/(1+2kx). This produces the displayed fraction (2k-1)/(4k-1). At k=1 the crossing x=-1 changes to x=+1. The relevant crossing disk has algebraic intersection zero with the completed unknot: the exterior of the x-box pairs its top endpoints together and its bottom endpoints together, giving opposite strand orientations through this disk. The unknot cosmetic-crossing theorem therefore implies that this circle bounds a disk disjoint from the whole unknot. It does not bound such a disk in the original tangle complement, since the local tangle becomes essential.
+
+This is an actual example of globally nugatory surgery changing a tangle from rational to essential. It invalidates a proposed blanket obstruction to the construction. It does not supply the needed symmetric orbit.
+
+The direction of twisting matters. The alternative family [-1]+[1/2]+[1/(2k+1)] has determinant |1-2k|. Its two unknot parameters do not establish global nugatoriness; the corresponding additive twisting disk has coherent strand orientations. We rejected that initial shortcut before using it.
+
+A primary modern reference explicitly recalling the unknot cosmetic-crossing theorem is Kotelskiy--Watson--Zibrowius, Cosmetic operations and Khovanov multicurves:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/
+
+Early rejection tests:
+
+* If the circles bound disjoint disks already in the rotor complement, the operation is locally harmless.
+* Zero linking numbers or null-homotopy do not establish the required embedded, mutually disjoint disks.
+* Two parameter values giving unknots do not prove a twisting circle is globally nugatory. A globally nugatory circle preserves the unknot for EVERY integer twist.
+* Four independent seed boxes in a dihedrally symmetric connector can reduce the flip to ordinary Conway mutations, which preserve the unknot. Interactions between sectors must escape that reduction.
+
+The useful interdisciplinary intuition is collective entanglement: local changes may be globally removable in one assembly and not in another. That intuition supplies a design question; the embedded disks and symmetry are the necessary mathematical content. A biological or physical analogy alone supplies no proof.
+
+5. A CHECK ON WHETHER THIS REALLY SIMPLIFIES THE PROBLEM
+
+There is a substantial remaining difficulty before any surgery calculation. The original unknot together with four globally split surgery circles is a five-component unlink. For the proposed construction to work, its rotor flip must already produce a nontrivial augmented link. Otherwise all the surgeries remain harmless after the flip as well.
+
+Thus a successful configuration would in particular give a nontrivial rotant of an unlink. This is precisely the unlink version of Anstee--Przytycki--Rolfsen's Question 3.5; their definition permits the closed surgery-circle components inside the rotor. Nontriviality of that augmented rotant is necessary but still not sufficient to make a chosen surgery filling nontrivial.
+
+This observation limits the enthusiasm warranted by the construction: it relocates part of the hard geometry into another established rotor question. The single-circle family supplies a genuine building block, not a shortcut through the main obstruction.
+
+6. DECISION FOR THE NEXT PASS
+
+Try to construct the symmetric, globally split surgery configuration, or prove it cannot exist in a clearly specified family. Do not start Jones computations: Jones preservation is already the available theorem. Do not accept a formal tangle invariant as a geometric construction. If only abstract candidates emerge, park this branch rather than extending another algebraic verification exercise.
+
+Primary rotor references:
+Anstee--Przytycki--Rolfsen, Knot polynomials and generalized mutation, including Question 3.5:
+https://arxiv.org/abs/math/0405382
+MacColl, Rotors in Khovanov Homology, showing that some rotants differ in Khovanov homology:
+https://arxiv.org/abs/1501.00851

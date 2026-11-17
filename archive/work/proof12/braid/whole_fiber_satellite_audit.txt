@@ -1,0 +1,292 @@
+INDEPENDENT AUDIT: FIXED SATELLITES CONSTANT ON ORDINARY-JONES FIBERS
+2026-10-31. Verdict: the theorem and the stated finite test bound are valid
+with the zero-longitude satellite convention. No claim of novelty is made.
+
+1. PRECISE THEOREM
+
+Let q be an indeterminate, F=Q(q^(1/4)), and let H_N(K;q) be the reduced,
+zero-framed, N-dimensional sl_2 colored Jones invariant, normalized by
+H_N(U)=1, H_1=1, H_2=V. Consider a finite combination
+
+    F_c(K)=sum_(N=1)^M c_N(q) H_N(K;q),       c_N in F.
+
+Assume that for ALL oriented knots A,B,
+
+    V_A=V_B  implies  F_c(A)=F_c(B).
+
+Then c_N=0 for every N>=3. Conversely, any combination c_1+c_2 V has
+the stated property. Thus no regularity, rationality, computability, or
+pointwise-in-q assumption on the dependence is necessary: it may be an
+arbitrary function on the set of realized full Jones polynomials.
+
+For a fixed single-component satellite pattern P, formed using the
+preferred zero-framed companion longitude, the conclusion becomes
+
+    V_(P(K)) = V_(P(U))                         if winding(P) is even,
+    V_(P(K)) = V_(P(U)) V_K                    if winding(P) is odd.
+
+These formulas characterize its invariant action, not the topology of P.
+In particular, if P(U)=U, the two possible actions are 1 and V_K.
+
+2. ALL-COLOR WITNESS USED IN THE PROOF
+
+Take the knots specified by the explicit braid words
+
+    K: B_2, [-1,-1,-1,-1,-1],
+    L: B_4, [1,1,1,-2,-1,-1,-2,-3,2,-3,-3].
+
+They have equal ordinary Jones polynomial
+
+    q^-2+q^-4-q^-5+q^-6-q^-7.
+
+The exact computation and Habiro argument in
+all_color_collision_proof.txt prove, for every N>=3,
+
+    H_N(K;e^h)-H_N(L;e^h)
+      =8(N^2-1)(N^2-4)h^5+O(h^6),
+
+so this difference is a nonzero Laurent polynomial. The exact Habiro
+coefficient identity is
+
+    Delta a_2 = q^-15(q^2-1)(q^3+1)(q^5+1).
+
+The ordinary and color-three calculations, normalization, and this factor
+were independently audited; this is not inference from finitely many colors.
+
+3. CONNECTED SUM AND LINEAR INDEPENDENCE
+
+Reduced colored Jones is exactly multiplicative under connected sum when
+all knots have zero framing:
+
+    H_N(A#B)=H_N(A)H_N(B).
+
+There is no extra quantum-dimension factor in the reduced convention.
+The connected sum of zero framings is again the zero framing.
+
+For every knot J, V_(K#J)=V_(L#J). The hypothesis therefore gives
+
+    sum_N c_N (H_N(K)-H_N(L)) H_N(J)=0.                 (1)
+
+The functions H_N(J) are linearly independent over F. Here is a direct
+proof that also verifies the needed fixed-variable interpretation.
+For J_m=T(2,2m+1), m>=0, choose a chirality convention in which
+
+    H_(j+1)(J_m)=G_j(q^-m),
+
+    G_j(x)=1/[j+1] sum_(a=0)^j (-1)^(j-a)[2a+1]
+      q^((a(a+1)-j(j+2))/2) x^(j(j+2)-a(a+1)),
+
+where [n]=(q^(n/2)-q^(-n/2))/(q^(1/2)-q^(-1/2)).
+All x-exponents are nonnegative; the a=j exponent is j. The leading
+degree and coefficient are
+
+    deg_x G_j=j(j+2),
+    [x^(j(j+2))]G_j=(-1)^j q^(-j(j+2)/2)/[j+1] != 0.
+
+Thus the G_j have pairwise distinct degrees. A finite relation among
+H_N(J) on every knot gives a polynomial in F[x] vanishing at every
+x=q^-m. These are infinitely many DISTINCT elements of F because q
+is an indeterminate. Hence the polynomial is zero, and its distinct
+leading degrees force every coefficient of the relation to vanish.
+
+Applying this to (1), c_N Delta H_N=0 for each N. The field F is an
+integral domain and Delta H_N !=0 for every N>=3, so c_N=0 for N>=3.
+For N=1,2 the differences vanish, and no restrictions on c_1,c_2 follow
+or are needed. This completes the algebraic theorem.
+
+4. SATELLITE EXPANSION AND THE FRAMING AUDIT
+
+The Kauffman bracket skein module of a solid torus is F[z]. Its monic
+Chebyshev/Jones--Wenzl basis is
+
+    S_0=1, S_1=z, S_(j+1)=z S_j-S_(j-1).
+
+For a fixed framed pattern P, write [P]=sum_j b_j S_j, a finite sum.
+Inserting a zero-framed companion K evaluates S_j as Delta_j H_(j+1)(K),
+where Delta_j is the nonzero quantum dimension with the chosen bracket
+sign convention. The ordinary Jones normalization divides the resulting
+bracket by the unknot bracket and corrects the pattern's framing. Both
+operations are factors independent of K; hence the required finite
+expansion has coefficients c_(j+1) independent of K.
+
+The independence of that framing correction needs to be stated, rather
+than assumed from a blackboard diagram. Choose a ribbon framing of P and
+let f_P be its induced self-linking after the standard embedding about U.
+If the companion embedding is changed from zero framing to integer f,
+the induced pattern self-linking changes by w(P)^2 f. This is the standard
+linking-number satellite formula, applied to P and its parallel push-off:
+each has winding w(P). In particular, every embedding using the preferred
+zero longitude induces the same self-linking f_P, irrespective of K.
+One can either choose f_P=0 initially or absorb its fixed twist correction
+into c_N. Arbitrary companion-dependent blackboard cabling is not allowed.
+
+The theorem remains valid for any fixed additional integer framing of the
+companion embedding: absorb that fixed Dehn twist into the pattern first.
+It need not apply to a rule choosing a different framing from K's diagram
+or other companion-dependent data.
+
+5. PARITY AND THE CLASSIFICATION FOR KNOT PATTERNS
+
+Skein smoothing preserves the mod-2 homology class in the solid torus.
+The core has mod-2 class 1 and S_j contains only powers z^(j mod 2).
+Consequently a pattern of winding w has b_j=0 unless j=w mod 2.
+Normalization by nonzero scalar factors preserves this restriction.
+
+The algebraic theorem allows only labels j=0,1. Thus an even-winding knot
+pattern has only j=0, giving a constant; an odd-winding knot pattern has
+only j=1, giving a scalar times V. Evaluation at U identifies that scalar
+or constant as V_(P(U)), proving the two displayed formulas in section 1.
+Negative winding changes no part of this parity argument.
+
+6. FINITE COLLISION-PAIR TEST: SHARPENED LINEAR-SIZE BOUND
+
+The original polynomial-root argument below gave a correct quadratic
+bound. A valuation determinant improves it to ONE PROBE PER POSSIBLE
+HIGHER COLOR. This is the preferred certificate.
+
+Let j_1<...<j_s be any finite set of possible labels j>=2. For a satellite
+pattern of wrapping at most r, take exactly the labels 2<=j<=r of its
+winding parity. For m=1,...,s define the equal-Jones pairs
+
+    K_m=K#T(2,2m+1),     L_m=L#T(2,2m+1).
+
+Then equality of satellite Jones on these s pairs forces every higher
+color coefficient to vanish. For a pattern of wrapping at most r,
+
+    s=floor(r/2)                       for even winding,
+    s=max(0,floor((r-1)/2))             for odd winding.
+
+Thus floor(r/2) pairs always suffice; often fewer do. If s=0, the skein
+degree and parity already imply the classification without any tests.
+
+PROOF OF THE INVERTIBLE SAMPLING MATRIX
+
+Form E_(m,i)=H_(j_i+1)(T(2,2m+1);q), with m=1,...,s. In the torus
+formula from section 3, the q-valuation of the a-th summand, including
+the denominator [j+1], is
+
+    -m j(j+2)-j(j+1)/2 + m a(a+1)+a(a-1)/2.
+
+For m>=1 and a>=1, its difference from the a=0 valuation is strictly
+positive (for a=1 it is 2m). Therefore
+
+    val_q E_(m,i)=-m j_i(j_i+2)-j_i(j_i+1)/2,
+    leading_q E_(m,i)=(-1)^(j_i).
+
+Set lambda_i=j_i(j_i+2) and mu_i=j_i(j_i+1)/2. The determinant term
+indexed by a permutation sigma has valuation
+
+    -sum_(m=1)^s m lambda_(sigma(m)) - sum_i mu_i.
+
+Both the m's and the lambda_i's are strictly increasing. Strict
+rearrangement says the first sum is uniquely maximal for sigma=id;
+equivalently, the displayed valuation is uniquely minimal there. One
+can prove this directly: swapping an inversion raises the sum by the
+positive product of the two differences. Thus no other determinant
+term can cancel its lowest q-power. In particular,
+
+    val_q det E=-sum_(i=1)^s i lambda_i-sum_i mu_i,
+    leading_q det E=(-1)^(sum_i j_i) !=0.
+
+No specialization of q is used. These are valuations of rational
+functions at q=0, where every nonzero rational function has a finite
+Laurent leading term.
+
+The s satellite-output equalities give
+
+    E d=0,     d_i=c_(j_i+1)(H_(j_i+1)(K)-H_(j_i+1)(L)).
+
+Since E is invertible, each d_i=0. The all-color collision theorem
+makes its colored difference nonzero, forcing c_(j_i+1)=0 for every i.
+
+EXACT SMALL-SIZE VERIFICATION
+
+finite_probe_determinant_check.py performs exact integer Laurent
+arithmetic in u=q^(1/2), including division by [j+1] with zero remainder.
+It checks the full torus polynomials' valuations for j=2,...,10 and
+m=1,...,6 (54 checks), and computes nine full Laurent determinants
+through size 4, for even labels, odd labels, and a mixed-parity case.
+Every predicted valuation and leading sign agrees. These finite checks
+support the normalization; the strict-rearrangement proof gives all s.
+
+EARLIER QUADRATIC BOUND, RETAINED FOR COMPARISON
+
+Let the largest nonzero label j=N-1 in the expansion be J>=2. Define
+
+    K_m=K#T(2,2m+1),     L_m=L#T(2,2m+1).
+
+Every pair has equal ordinary Jones. Its satellite-output difference is
+
+    D(q^-m),
+    D(x)=sum_(j=0)^J c_(j+1) Delta H_(j+1) G_j(x).
+
+The j=0,1 terms vanish. The leading term of D comes uniquely from j=J
+and is nonzero. Therefore deg D=J(J+2). A nonzero polynomial of this
+degree has at most J(J+2) roots in F. Thus at least one of the
+J(J+2)+1 pairs indexed by m=0,...,J(J+2) is distinguished. In fact all
+but at most J(J+2) nonnegative integers m yield distinguished pairs.
+
+If the pattern has geometric wrapping number at most r, then J<=r.
+To see this, cut along a meridional disk meeting P in at most r points.
+Resolve crossings without changing the boundary endpoints. Each essential
+annular component uses at least one disk intersection, so no state has
+more than r essential components. The skein polynomial therefore has
+degree at most r, as does its expansion in the monic S_j basis.
+
+It follows that agreement on the fixed r(r+2)+1 pairs
+
+    m=0,1,...,r(r+2)
+
+forces all higher-color coefficients to vanish. This correct bound is
+superseded by the s-probe determinant certificate above.
+
+7. STRESS TESTS AND LIMITS
+
+* Fixed formal q is essential. At one numerical specialization, quantum
+  dimensions can vanish, torus sampling points can coincide, and colored
+  functions need not be independent.
+* The hypothesis covers all knots, including connected sums. Constancy
+  on prime knots alone does not supply equation (1).
+* A satellite depending on K, an infinite completed skein expansion, or
+  nonlinear combinations such as products of colored invariants are not
+  included unless first reduced to a fixed finite linear expansion.
+* The proof classifies universal dependence across every Jones fiber.
+  It does not exclude the weaker implication V_K=1 => V_(P(K))=1.
+* A pattern with constant annular skein is not thereby geometrically
+  inessential, and an action equal to V does not prove core isotopy.
+
+8. FOCUSED LITERATURE CHECK
+
+The inspected primary references contain the standard ingredients, not
+an exact statement of the whole-fiber classification established above.
+No claim that it is new follows from this limited check.
+
+H. R. Morton and P. Traczyk, The Jones polynomials of satellites about
+mutant knots, Contemporary Mathematics 78 (1988), 587--592:
+https://livrepository.liverpool.ac.uk/2048801/
+This proves invariance of same-pattern satellites of mutant pairs.
+
+A. Stoimenow and T. Tanaka, Mutation and the colored Jones polynomial,
+Journal of Gokova Geometry Topology 3 (2009), 44--78, section 2:
+https://www.gokovagt.org/journal/2009/stoimenowtanaka.html
+Accessible author preprint:
+https://www.i-repository.net/contents/osakacu/kiyo/111F0000020-08-6.pdf
+Section 2 explicitly uses zero-framed cabling, the solid-torus polynomial
+skein module, its Chebyshev basis, and the equivalence of all satellite
+Jones information with the colored Jones function. Its introduction notes
+that ordinary Jones does not itself satisfy a general cabling formula.
+
+H. R. Morton, The coloured Jones function and Alexander polynomial for
+torus knots, Math. Proc. Cambridge Philos. Soc. 117 (1995), 129--135:
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+This supplies the torus/fusion formula used for frequency independence.
+
+The collision certificate cites Habiro math/0211044; its symmetric kernel
+normalization was additionally checked against Garoufalidis--Le,
+Asymptotics of the colored Jones function, math/0508100, section 3.2.
+
+FINAL VERDICT
+No error found. The substantive hypotheses are finiteness, coefficients
+independent of the companion, zero-framed reduced colored normalization,
+and constancy on every full Jones fiber. The standard fixed satellite
+operation satisfies the first three, including the framing condition.

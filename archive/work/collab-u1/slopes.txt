@@ -1,0 +1,194 @@
+U2--U4 ADVERSARIAL AUDIT
+Date: 2026-11-02. Auditor: Codex subagent u1_slope_audit.
+Status recommendation: U2 and U3 TRUSTED AFTER THE MARKING REPAIR below;
+their unqualified fixed-coordinate family assertions are SUSPECT. U4 TRUSTED.
+No change to the OPEN status of Lemma Q or the general Jones conjecture.
+
+1. The fixed raw integer-twist family needs an orientation hypothesis
+
+Put delta=-A^2-A^-2. In the horizontal-composition TL_2 convention, write
+0 for the identity tangle and infinity for the cup-cap, so infinity^2=
+delta infinity. The positive raw integer crossing is
+
+ b=A 0+A^-1 infinity,
+
+and reduced numerator closure satisfies N(0)=delta, N(infinity)=1.
+For [X]=f 0+g infinity, direct multiplication gives
+
+ F_+=<N(X+1)>=-A^3 f-A^-3 g,
+ F_-=<N(X-1)>=-A^-3 f-A^3 g.
+
+Let s be the oriented crossing sign of the RAW +1 drawing, and w the
+outside writhe. Thus s=+1 or -1, and the two total writhes are w+s,w-s.
+Since both normalized Jones polynomials equal 1,
+
+ F_+=(-A^3)^(w+s), F_-=(-A^3)^(w-s).
+
+The two closure functionals are independent over Q(A). Writing u=(-A^3)^w,
+their unique solution is
+
+ s=+1: [X]=u 0;
+ s=-1: [X]=u infinity.
+
+Thus the rational bracket conclusion follows directly and does NOT depend
+on an all-twists inference. However the integer-twist families differ:
+
+ * In the first case their normalized Jones polynomials equal those of
+   N(0+(2n-1))=T(2,2n-1).
+ * In the second case their normalized Jones polynomials equal 1 for all n.
+
+The exact countermodel to the unconditional algebraic inference is X=0:
+N(X-1) and N(X+1) are both actual unknots, whereas N(X+3) is a trefoil.
+This tests the inference from two Jones-one endpoints. It is NOT a genuine
+counterexample to the strict hypothesis u(K)=1, since its endpoint K=U.
+It shows why EARLY-02's antiparallel/fixed-smoothing condition cannot be
+discarded when using that theorem.
+
+One can choose the other crossing-ball marking (a quarter-turn exchanges
+the two smoothing directions and interchanges the signs of the crossing
+caps). With sign/reindexing chosen to retain K_0=U and K_1=K, the twist
+disk can be taken antiparallel. It is essential to state this choice;
+the resulting family need not be the original raw N(X+(2n-1)) family.
+
+The statement about a scalar annular crossing-circle pattern is a further
+application of the previously checked EARLY-02/LATE-31 results to this
+antiparallel, algebraic-winding-zero family. It should not be conflated
+with the relative tangle equality [X]=u infinity: the objects and skein
+modules are different. In the old annular normalization that conclusion
+is [P]=delta; the relative equality has a framing unit u.
+
+2. Preferred slopes give a clean, coordinate-independent repair
+
+Let M=Sigma_2(X). The actual unknot closure gives an actual S^3 filling.
+Removing its filling solid torus exhibits M=E(kappa), with meridian mu.
+The deck involution gives the usual strong inversion of kappa. Let lambda
+be its preferred longitude.
+
+The other crossing cap alpha has Delta(alpha,mu)=2. Therefore
+
+ alpha=p mu+2 epsilon lambda, epsilon=+/-1, p odd.
+
+Since |H_1(M(alpha))|=det(K)=|V_K(-1)|=1, |p|=1. Slopes are unoriented,
+so after changing the representative's overall sign we can write
+
+ alpha=mu+2 epsilon lambda.
+
+Consequently the original endpoint K, independently of any twist-family
+claim, has branched double cover S^3_{epsilon/2}(kappa).
+
+The oriented smoothing L_0 satisfies
+
+ V_(L_0)=-(t^(1/2)+t^(-1/2))
+
+by the oriented Jones skein relation with V_+=V_-=1. In particular its
+determinant is zero. Its filling slope is distance one from mu, so in the
+knot exterior this is exactly lambda. This independently identifies the
+preferred smoothing direction.
+
+Define the REPAIRED family by the rational caps
+
+ alpha_n=mu+2 epsilon n lambda, n in Z;
+ K_n'=branch link of M(alpha_n).
+
+These are knots: their cap connectivity is constant modulo 2, as for the
+two original odd crossing caps. They satisfy K_0'=U and K_1'=K, and
+
+ Sigma_2(K_n')=S^3_{epsilon/(2n)}(kappa)
+
+with n=0 interpreted as meridional filling. This is the antiparallel twist
+family after an appropriate crossing-ball marking. The direct rational
+bracket equality above, in this preferred marking, identifies all its
+closure brackets with the rational reference tangle's brackets up to a
+framing monomial. The reference is the solid-torus quotient with meridian
+closure U; each numerator-one filling gives a two-bridge knot of
+determinant one, hence U. Normalization leaves a monomial knot Jones
+polynomial; V(1)=1 and V'(1)=0 force that monomial to be 1. Equivalently,
+apply the already checked antiparallel skein recurrence. Thus all K_n'
+have Jones polynomial 1.
+
+For comparison, BEFORE repairing the marking, raw caps have the form
+
+ alpha_n=mu+2n beta,
+ beta=a mu+s' lambda, s'=+/-1,
+ alpha_n=(1+2an)mu+2s'n lambda.
+
+The endpoint determinant condition gives |1+2a|=1, hence a=0 or a=-1.
+The first branch has numerator 1; the second has numerator 1-2n. The
+latter is precisely the overlooked possibility. At n=1 both still give
+a +/-1/2 surgery, so this error does not damage U4.
+
+The equivalence kappa nontrivial iff X nonrational uses the standard
+classification of tangles with solid-torus double branched cover and the
+fact that a knot in S^3 has solid-torus exterior iff it is the unknot.
+It does not follow from bracket equality alone.
+
+3. U4 is valid; its proof is independent of the all-n correction
+
+Let B be a Seifert matrix for K. B+B^T is even integral and, since det K=1,
+unimodular. The signature of an even unimodular integral form is 0 modulo
+8. Hence sigma(K)=0 modulo 8. The crossing-change signature bound gives
+|sigma(K)|<=2u(K)=2, so sigma(K)=0.
+
+In the normalization used by Greene--Watson, Mullins' formula is
+
+ lambda_G(Sigma_2 K)=-V'_K(-1)/(6 V_K(-1))+sigma(K)/4.
+
+The input V_K=1 and sigma(K)=0 makes this zero. Their lambda_G is twice
+the integer-valued Casson normalization on integral homology spheres;
+vanishing is unaffected by that convention.
+
+In the integer-valued Casson normalization,
+
+ lambda(S^3_(1/m)(kappa))=(m/2) Delta_kappa''(1).
+
+Our endpoint is +/-1/2 surgery, so m=+/-2. Therefore
+
+ 0=lambda(Sigma_2 K)=+/-Delta_kappa''(1)=+/-2 a_2(kappa),
+
+and a_2(kappa)=0. Overall orientation/sign conventions do not affect the
+conclusion. No Floer simplicity, second actual filling, or generic Jones
+unknot theorem is used here.
+
+4. Sources and audit trail
+
+* Greene--Watson, Turaev torsion, definite 4-manifolds, and
+  quasi-alternating knots, arXiv:1106.5559, Theorem 13 and the normalization
+  immediately preceding it. Freshly inspected Nov 2:
+  https://arxiv.org/pdf/1106.5559
+  Theorem 13 explicitly attributes the formula to Mullins, Topology 32
+  (1993), Theorem 5.1.
+
+* Stoimenow, Determinants of knots and Diophantine equations, Acta
+  Arithmetica 129.4 (2007), Theorem 1.1 and its even-unimodular proof:
+  https://www.impan.pl/shop/en/publication/transaction/download/product/83749
+  The theorem is phrased as excluding signature 4 modulo 8 at determinant
+  1; the even-unimodular proof gives the full divisibility used above.
+
+* Ni--Wu, Cosmetic surgeries on knots in S^3, equation (7):
+  https://www.math.cuhk.edu.hk/~ztwu/Cosmetic.pdf
+  General rational surgery formula has term (q/2p) Delta''(1).
+  For p=+/-1 the lens-space term vanishes, giving the displayed formula.
+
+* Casson's integral surgery formula is also reproduced in Theorem 2.1:
+  https://www.kurims.kyoto-u.ac.jp/preprint/file/RIMS1515.pdf
+
+* Existing local sources checked: work/anchor_twist_attack.md (explicit
+  antiparallel hypothesis), work/transmission18/generic.txt (preferred
+  quotient and half-surgery equivalence), and
+  work/fanout16/realizability_zero_filling.txt (independent zero-filling
+  route to a_2=0).
+
+Suggested scaffold wording
+
+U2: After choosing antiparallel crossing-ball coordinates and indexing
+K_0=U,K_1=K, all full-twist knots K_n have V=1. The associated annular
+pattern has the previously established scalar class, and X has rational
+relative bracket up to a framing unit. TRUSTED (repaired).
+
+U3: M=Sigma_2(X)=E(kappa), kappa strongly invertible. In the preferred
+marking, K_n is the closure at mu+2 epsilon n lambda, so its branched
+cover is S^3_(epsilon/(2n))(kappa); kappa nontrivial iff X nonrational.
+TRUSTED (repaired). Do not assert this slope formula for arbitrary raw
+integer-twist coordinates.
+
+U4: Retain a_2(kappa)=0, TRUSTED, with the normalization explanation above.

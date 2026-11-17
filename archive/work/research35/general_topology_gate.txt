@@ -1,0 +1,130 @@
+GENERAL TWO-BAND COMMON-PHASE OBSTRUCTION
+Independent audit, 2026-11-01. Established under the explicit hypotheses below.
+This is an obstruction to a proposed construction, not a proof of Jones detection.
+
+STATEMENT
+Let U be an actual unknot. Attach two disjoint, coherently oriented fission bands
+b1,b2, so doing both produces a three-component link L. Let S1,S2 be the two-component
+links obtained by doing just b1 or just b2, oriented by the resulting annuli.
+Suppose b1(Sigma2(L))=1. In the standard convention
+
+  delta=V_(two-component unlink)=-(x+x^-1),  x=t^(1/2),
+
+one has S1(i)+S2(i) != 0. Consequently the Laurent-polynomial equality
+
+  V_S1(x)+V_S2(x)=2 delta(x)
+
+is impossible. Here S_i(i) means V_Si evaluated at x=i.
+No assumption on the Jones polynomial of L is required for this obstruction.
+In particular it applies to every such two-band unknot fusion of LLL(1), whose
+branched cover has H1=Z direct-sum Z/144. The nonzero torsion assumption is stronger
+than needed: free rank one alone suffices.
+
+PROOF
+1. Choose a standard disk D for U pushed into B4 and put the two bands in successive
+radial levels near its boundary. Their orientations extend across D. The resulting
+properly embedded ribbon surface F=D+b1+b2 is connected and orientable, with one
+0-handle and two1-handles. Since its boundary has three components, F is planar.
+The original disk is an actual disk because U is an actual unknot; Jones1 alone
+would NOT justify this step.
+
+The double cover W of B4 branched along F has a handle description consisting of
+one0-handle and two2-handles. This is the usual branched-cover handle correspondence:
+a surface saddle lifts to a2-handle; the first disk gives the standard covered B4.
+The two handles have a common symmetric integral linking/intersection matrix
+
+                  B = [[a,c],[c,b]].
+
+Keeping only band bi keeps only its corresponding handle, so the partial branched
+cover Wi has matrix [a] or [b], with the very same framing integer.
+No diagonal change or independent boundary-framing choice is being made here.
+
+2. The surgery presentation gives H1(Sigma2(L);Z)=coker B. Therefore the assumed
+free rank one gives rank_Q B=1. In particular B is nonzero and has exactly one
+nonzero eigenvalue. It follows that
+
+               tr B=a+b !=0.
+
+Equivalently B is positive or negative semidefinite, so its nonzero diagonal entries
+have the same sign. Either diagonal may be zero; that case causes no problem.
+
+3. For an oriented properly embedded surface F_i in B4 with its boundary-induced
+orientation, the signature of the branched cover Wi is the ordinary link signature
+of its boundary. A useful framing-safe proof is to cap F_i by an oppositely pushed
+Seifert surface in the other B4. The closed branch surface in S4 is oriented, hence
+has normal Euler number zero, since its integral homology class is zero. The
+G-signature formula and Novikov additivity then identify the two signatures.
+This proof also covers degenerate intersection forms; no rational-homology-sphere
+assumption is required for the signature identity.
+
+Thus sigma(S1)=sign(a), sigma(S2)=sign(b), in the common symmetrized-Seifert convention.
+Also H1(Sigma2(S1))=coker[a], and similarly for b. Hence their absolute determinants
+are |a|,|b| when nonzero, and zero when the corresponding integer is zero.
+
+4. Use the ORDINARY signed determinant phase formula. Eisermann uses q=-sqrt(t),
+positive two-component unlink polynomial, and
+
+  V_E(L;q=i)=i^(-sigma(L)) |det(L)|.
+
+For a two-component link the powers of x are odd, so our evaluation at x=i is the
+negative of his evaluation at q=i. Therefore, when a!=0,
+
+  V_S1(x=i)=-i^(-sign(a)) |a| = i a.
+
+For a=0 both sides vanish, and likewise V_S2(i)=i b. A global reversal of all
+signature/cover conventions changes the same overall factor for BOTH entries,
+which does not affect the conclusion. In the stated conventions the sum is
+
+                  V_S1(i)+V_S2(i)=i(a+b) !=0.
+
+Since delta(i)=0, the proposed polynomial identity cannot hold. QED.
+
+OPTIONAL QUANTITATIVE FORM
+Every nonzero symmetric integral rank-one2x2 matrix can be written B=d v v^T,
+where v=(v1,v2) is a primitive integral vector and d is a nonzero integer.
+For example, take v as a primitive generator of its rational column line; integral
+columns give B=v w^T, symmetry gives w=dv, and primitivity forces d integral.
+The gcd of the entries of B is |d|, so its Smith form is diag(|d|,0). Consequently,
+with N=|Tor H1(Sigma2(L))| (N=1 allowed),
+
+  |V_S1(i)+V_S2(i)| = N(v1^2+v2^2) >= N,
+  |V_S1(i)|=N v1^2,   |V_S2(i)|=N v2^2.
+
+This concerns the bands' surgery basis, not an arbitrary diagonalized matrix.
+It agrees with the audited LLL(1) example, where both partial values are144i.
+
+APPLICATION TO THE TWO-TWIST FORMULA
+If the double-cut link has V_L=delta^2 and the uncut anchor is U, the two-antiparallel-
+site recurrence gives, using effective twist monomials X,Y,
+
+ V-1 = (S1/delta-1)Y(1-X)+(S2/delta-1)X(1-Y).
+
+On the equal-effective-exponent diagonal X=Y, it is identically zero precisely when
+S1+S2=2delta. The theorem excludes that diagonal whenever b1(Sigma2(L))=1.
+It does not identify geometric handedness with effective exponent sign, exclude all
+individual off-diagonal Jones1 points, or cover bands that do not form the stated
+oriented disk-plus-two-band surface. It also does not say arbitrary twist-constant
+families are trivial. The opposite-effective-exponent diagonal has a different
+criterion, namely S1=S2=delta, and is separately excluded by the same evaluation.
+
+PRIMARY SOURCES AND NORMALIZATION CHECKS
+A. Brendan Owens and Saso Strle, Disoriented homology and double branched covers,
+arXiv2207.09358v2 (2022); published Canadian Journal of Mathematics.
+https://arxiv.org/pdf/2207.09358
+https://arxiv.org/html/2207.09358
+Sections7 and9 give the handle/intersection-form correspondence. Section10, especially
+Lemma10.1 and its proof, explicitly uses capping by Seifert surfaces, Novikov
+additivity, and the G-signature identity sigma(branched S4)=-e/2. Theorem10.3 states
+the general surface signature formula including its correction term. We use the
+oriented capping argument to make that term vanish, not an unsupported assertion
+that an arbitrary boundary framing has zero Euler correction.
+
+B. Michael Eisermann, The Jones polynomial of ribbon links, Geometry & Topology13
+(2009)623-660.
+https://pnp.mathematik.uni-stuttgart.de/igt/eiserm/publications/ribbonlinks.pdf
+Section2.1 fixes q=-sqrt(t); Section2.2 defines signature by the symmetrized Seifert
+matrix; Section2.3 fixes the positive unlink convention. Introduction and Section7.6,
+Eq13 identify the ordinary q=i determinant and its signature phase.
+WARNING: the analogous formula for the GENERALIZED Jones determinant after dividing
+by an unlink factor is explicitly false in that paper. No generalized determinant
+is used in this argument.

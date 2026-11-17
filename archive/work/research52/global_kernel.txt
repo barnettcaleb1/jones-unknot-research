@@ -1,0 +1,196 @@
+PASS 52: BRUNNIANIZING THE BURAU KERNEL DOES NOT REMOVE THE RESIDUAL BLOCK
+1 November 2026. Bounded structural pass; no braid-word search.
+
+RESULT
+No nontrivial full generic Jones kernel was obtained. There is a new precise
+obstruction to the proposed higher-commutator mechanism: on the residual
+five-dimensional B5 block, the intersection of the Burau kernel with the
+Brunnian subgroup has full projective Zariski image. Every finite term of
+its lower central series and its derived series still has full image.
+Nevertheless the intersection of its lower central series is the identity.
+Thus imposing Brunnian deletion constraints and arbitrarily increasing
+commutator depth does not automatically convert the known partial kernel
+into a full kernel. An isolated extra exact relation remains possible.
+
+A separate cabling check shows that every uniform ODD parallel cable retains
+the original full Jones operator as a subrepresentation; it cannot turn an
+already detected braid into a full-kernel braid. Even cabling introduces new
+colored conditions, not conditions established by Burau nonfaithfulness.
+
+1. SETTING AND PUBLISHED INPUTS
+Let rho be the generic five-dimensional TL5 block [3,2], over Q(A), with
+rho(sigma_i)=A I+A^-1 e_i and delta=-A^2-A^-2. Let N be the generic reduced
+Burau kernel in B5. It is contained in P5 and has exponent sum zero. Let
+H=Brun_5 be the subgroup of pure braids becoming trivial after deletion of
+ANY one strand. Both N and H are normal in P5 (indeed in B5).
+
+Kuperberg Theorem 1.1 gives full projective Zariski closure PGL5 for rho(B5)
+at a transcendental specialization of A. P5 has the same closure since it
+has finite index and PGL5 is connected. A nontrivial projective image of a
+normal subgroup of P5 therefore has closure PGL5: the closure is a nontrivial
+closed normal subgroup of the simple adjoint algebraic group PGL5.
+https://msp.org/gt/2011/15-1/gt-v15-n1-p02-s.pdf
+
+The prior exact Bigelow-seed certificate supplies a nonidentity rho image
+of an element of N. See
+work/second-pass-evidence/braid_certificate/README.md and its verifier.
+This is not a new scan. The seed has trivial scalar and Burau blocks but a
+closure Jones polynomial different from its unknot anchor. Hence its residual
+matrix is nonidentity. It cannot be a nonidentity scalar: its determinant
+is one, its entries are rational functions, and its specialization at A=1
+is I, so a scalar image would be identically I. Therefore rho(N) is
+projectively Zariski dense. One can also state the following argument as a
+dichotomy: if rho(N) were projectively trivial, the required full kernel
+would already exist; the cached certificate establishes the other branch.
+
+2. AN EXPLICIT BRUNNIAN WITNESS FOR THE RESIDUAL BLOCK
+Use [x,y]=xyx^-1y^-1 and the standard pure generators A_(i,5). Put
+
+       b=[A_(1,5),[A_(2,5),[A_(3,5),A_(4,5)]]].
+
+Deleting strand 5 kills all four inputs. Deleting any other strand kills
+one leaf of the commutator, forcing the full nested word to be the identity.
+Thus b belongs to H. It is not a formal Lie element: it is an actual pure
+braid on five strands.
+
+Set h=A-1. At A=1, the representation specializes to the S5 representation
+[3,2], with s_(i,5) denoting the transposition matrix. The generator relation
+
+ g^2=(A-A^-3)g+A^-2 I
+
+implies (g^2)'(1)=4g(1)-2I. Conjugating a squared generator to A_(i,5) gives
+
+ rho(A_(i,5))=I+h(4s_(i,5)-2I)+O(h^2).
+
+Hence
+ rho(b)=I+4^4 h^4 C+O(h^5),
+ C=[s_(1,5),[s_(2,5),[s_(3,5),s_(4,5)]]].
+
+Here C is nonzero on [3,2]. The following exact finite verification avoids
+choosing a Specht basis. The 10-dimensional permutation module on unordered
+2-subsets of {1,...,5} decomposes as [5] direct-sum [4,1] direct-sum [3,2].
+The 5-dimensional permutation module on vertices is [5] direct-sum [4,1].
+All transposition matrices are orthogonal, so the squared Frobenius norm of
+C on the residual summand is the difference of its norms on these two
+permutation modules. Exact integer matrix multiplication gives
+
+           ||C||^2_(2-subsets)=88,
+           ||C||^2_(vertices)=8,
+           ||C||^2_[3,2]=80 > 0.
+
+The decomposition can also be seen directly: map each vertex to the sum of
+2-subsets containing it; this is an injective equivariant map, and its
+orthogonal complement is the five-dimensional [3,2] summand. The scalar
+summand contributes zero to the commutator. The certificate and all matrices
+are saved as work/research52/brunnian_leading.py and brunnian_leading.json.
+This calculation checks a predicted leading term, not a word search.
+
+Consequently rho(b) is generically nonidentity, and non-scalar (the leading
+commutator has trace zero). Normality plus Kuperberg now proves that rho(H)
+has projective Zariski closure PGL5. The symmetric-group specialization and
+Young-diagram labeling agree with Kasahara Proposition 2.5:
+https://arxiv.org/pdf/0803.0304
+
+3. THE INTERSECTION AND ALL ITS FINITE COMMUTATOR STAGES REMAIN DENSE
+Let J=N intersect H. Since both groups are normal,
+
+                      [N,H] is contained in J.
+
+The product of two Zariski-dense subsets is dense in PGL5 x PGL5. Apply the
+regular commutator map. The algebraic subgroup generated by its values is
+the derived group of PGL5, namely PGL5 itself. It follows that rho([N,H]),
+and hence rho(J), have full projective Zariski closure.
+
+The same argument inductively proves
+
+ closure(rho(gamma_k(J)))=PGL5 for every finite k>=1,
+ closure(rho(J^(d)))=PGL5 for every finite derived-series stage d>=0.
+
+In particular none of these subgroups is contained in ker rho. Neither
+Brunnian deletion constraints nor taking an entire sufficiently deep
+commutator subgroup kills the unresolved Jones block. There is no automatic
+triangularization, nilpotent image, or scalar image after those operations.
+A fixed nontrivial group word cannot be a universal kernel recipe for
+arbitrary inputs from J: density would turn it into a group law on PGL5,
+which contains a nonabelian free subgroup and satisfies no such law.
+This last statement does not exclude a specially chosen tuple satisfying
+an accidental exact matrix relation.
+
+Pure braid groups are residually nilpotent. Since gamma_k(J) is contained
+in gamma_k(P5), we also have
+
+                       intersection_k gamma_k(J)={1}.
+
+See Cohen--Prassidis, proof of Corollary 1.4, for the residual-nilpotence
+input: https://arxiv.org/pdf/math/0404278 . Thus every finite stage here can
+have a dense image even though their infinite intersection contains only
+the trivial braid. Passing to an infinite-depth limit is not a construction
+of a finite nontrivial braid. Long's finite normal-intersection lemma does
+not justify an infinite intersection or a completed formal braid.
+
+4. DEGREE AND STRAND COST
+The witness above uses five strands throughout. With the standard words,
+|A_(i,5)|=2(5-i), so its displayed nested-commutator word has length at most
+88. It is detected at exactly order h^4. Deletion of all proper sub-braids
+therefore does not mean a whole generic Laurent identity.
+
+In a link-state TL module, a generator or inverse has Laurent entries with
+exponents between -3 and 3. A word of length L consequently has every entry
+of rho(beta)-I supported in [-3L,3L]. Vanishing at A=1 through more than
+6L orders would certify the polynomial identity, but formal commutator depth
+does not reach that threshold automatically. Balanced commutators of inputs
+with length L0 and vanishing order r0 yield the generic estimates
+
+          length <=4^d L0,     vanishing order >=2^d r0.
+
+The guaranteed order-to-length ratio decreases. Actual cancellations may
+improve these estimates; proving them is extra information, not a consequence
+of being Brunnian or lying deep in the lower central series. No new strand
+count or word-length scan is warranted by this mechanism.
+
+5. CABLING CHECK
+Use the generic semisimple Uq(sl2) category and let V1 be its fundamental
+2-dimensional object. Uniform r-parallel blackboard cabling of an n-braid
+is the braid action on (V1^tensor r)^tensor n. For odd r, V1 occurs as a
+direct summand of V1^tensor r. Choose one split inclusion i:V1->V1^tensor r
+and projection p with p i=id. Naturality of the braiding gives, for the
+uniform cable c_r(beta),
+
+ p^tensor n rho_(rn)(c_r(beta)) i^tensor n = rho_n(beta).
+
+Therefore a full identity for the odd cable forces a full identity for the
+original braid. In particular an odd cable of the cached Bigelow seed
+cannot repair its nonzero residual block. This is an exact operator result,
+not just a comparison of closure traces. The raw framed ribbon convention
+must be consistent on both sides; natural block cabling supplies that.
+
+Even r has only even labels in the decomposition of V1^tensor r. It contains
+V0,V2,...,Vr, and the cabled operator tests their mixed-color sectors. These
+are NEW colored braid representations. Burau-kernel membership supplies no
+identity on the V2 sector, let alone on all mixed sectors. No claim that
+an even cable can never help is proved here; it requires a genuinely new
+colored-kernel input. It is not a consequence of the known Burau kernel.
+
+Uniform cabling sends n to rn and a length-L diagram to one of length r^2 L.
+The target has floor(rn/2)+1 TL blocks. This growth buys new constraints;
+it does not inherit full coverage from the old first two blocks.
+Freedman--Walker--Wang Theorem 5.1 runs in the detecting direction: every
+nontrivial braid is detected after SOME cabling. It does not say a known
+partial kernel becomes a full kernel under cabling.
+https://arxiv.org/pdf/math/0209150
+
+6. FULL ENDPOINT AND DECISION
+At a fixed strand count, independently established noncentral kernels for
+ALL generic Jones blocks can be intersected by Long; Ito then produces
+nontrivial hyperbolic Jones-one knot closures. That endpoint remains exact.
+https://arxiv.org/pdf/1402.2028 , Theorem 1 and the discussion of Long's lemma.
+
+The new calculation does not furnish the missing block kernel. It proves
+that the large subgroup obtained by simultaneously imposing the known
+Burau identity and every strand-deletion identity STILL retains all the
+projective algebraic complexity of that block, even after every finite
+commutator-depth restriction. Odd cabling retains the obstruction; even
+cabling asks for additional unproved colored identities. No complete generic
+kernel mechanism survives from these automatic operations alone. Stop this
+branch unless an actual exact residual relation is independently motivated.
+No claim of literature novelty or of a solution to Jones detection.

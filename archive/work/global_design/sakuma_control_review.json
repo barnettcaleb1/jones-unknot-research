@@ -1,0 +1,63 @@
+{
+  "scope": "saved control only; no candidate verdict",
+  "projections": [
+    {
+      "source": "/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/cx-sak/out/fig8_I1_2_1_rot1_sakuma_proj0.json",
+      "sha256": "ea372184444c1f1ad77868e981d2e24ffa67761b5eae76f8518b66b5c22a05a6",
+      "crossings": 25,
+      "components": [
+        {
+          "self_crossings": 0,
+          "certificate": "simple planar projection"
+        },
+        {
+          "self_crossings": 13,
+          "certificate": "Reidemeister/pickup simplification",
+          "remaining_crossings": 0,
+          "crossing_free_unknot_count": 1
+        }
+      ],
+      "jones_dictionary": {
+        "-5": -1,
+        "-3": 2,
+        "-1": -3,
+        "1": 1,
+        "3": -1,
+        "7": 1,
+        "9": -2,
+        "11": 2,
+        "13": -2,
+        "15": 1
+      }
+    },
+    {
+      "source": "/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/cx-sak/out/fig8_I1_2_1_rot1_sakuma_proj1.json",
+      "sha256": "5ad5657178fb0ea1dd6ec285e79861e1881c22778c06811822ed0549882c8daa",
+      "crossings": 29,
+      "components": [
+        {
+          "self_crossings": 0,
+          "certificate": "simple planar projection"
+        },
+        {
+          "self_crossings": 17,
+          "certificate": "Reidemeister/pickup simplification",
+          "remaining_crossings": 0,
+          "crossing_free_unknot_count": 1
+        }
+      ],
+      "jones_dictionary": {
+        "-5": -1,
+        "-3": 2,
+        "-1": -3,
+        "1": 1,
+        "3": -1,
+        "7": 1,
+        "9": -2,
+        "11": 2,
+        "13": -2,
+        "15": 1
+      }
+    }
+  ]
+}

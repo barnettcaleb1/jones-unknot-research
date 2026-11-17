@@ -1,0 +1,109 @@
+COMMON-PHASE AND RANK-ONE OBSTRUCTION FOR TWO ORIENTED INVERSE BANDS
+Independent audit, pass 35. Verdict: the proposed gate is valid with the
+orientation and single-disk hypotheses stated below. Determinant magnitudes
+alone would not prove it; the branched-surface signature supplies the sign.
+
+1. EXACT GEOMETRIC HYPOTHESES
+Start with an actual oriented unknot U and two disjoint orientation-compatible
+inverse bands. Each individual band splits U into an oriented two-component
+link, and applying both gives a three-component link L. Cap U with its standard
+properly embedded disk in B4, below the band moves. The resulting surface F is
+an oriented disk with two 1-handles, and its one-band subsurfaces F1,F2 are
+oriented annuli. No claim that these annuli lie embedded in S3 is needed.
+
+The double cover W of B4 branched over F is B4 with two 2-handles. In their
+natural basis its intersection/surgery matrix is a symmetric integer 2x2
+matrix B. The one-band covers Wi have matrices [B_ii], and H1(boundary W)
+is coker B. Therefore H1(Sigma2 L)=Z plus finite torsion implies rank B=1.
+The additional condition that the torsion is nonzero is not needed for this
+rank conclusion or the obstruction below.
+
+Let Si be the Jones polynomial of the boundary of Fi, with its induced
+orientation. If Si is instead indexed by the smoothing SITE removed from
+the final fused knot, its label is swapped; sums are unaffected.
+
+2. WHY THE PHASE IS COMMON
+Use x=sqrt(t), V(U)=1, and delta=V(U2)=-x-x^-1.
+For any nonzero B_ii, the one-band branched cover gives
+  |det(partial link i)|=|B_ii|.
+More strongly,
+  sigma(partial link i)=sign(B_ii),
+with the common convention identifying link signature with the signature
+of the oriented double branched cover.
+
+Here is a way to see the latter assertion without assuming a formula for an
+immersed S3 annulus. Glue Fi to the negative of a pushed-in Seifert surface
+for its oriented boundary, inside two 4-balls forming S4. The closed branch
+surface is oriented, so its normal Euler number is zero. The G-signature
+theorem says its double cover has signature zero. Novikov additivity then
+identifies the signature of Wi with the usual link signature. This also
+shows exactly why orientation-compatible bands are essential.
+
+For explicit primary-source support, Owens--Strle, Disoriented homology and
+double branched covers, Lemma 10.1 and its proof give this gluing and normal-
+Euler calculation; Section 7 gives the lifted handle construction:
+  https://arxiv.org/html/2207.09358#S10
+  https://arxiv.org/html/2207.09358#S7
+
+Eisermann's The Jones polynomial of ribbon links, introduction, Sections
+2.1--2.3 and Section 7.6 equation (13), gives
+  V_E(L;q=i)=i^(-sigma(L))*|det(L)|.
+His square-root variable is q=-sqrt(t), and his two-component unlink has
+polynomial q+q^-1. Thus our two-component polynomial satisfies
+  Si(x=i)=-V_E(partial link i;q=i).
+For sigma=sign(B_ii)=+/-1 this becomes precisely
+
+                          Si(i)=i*B_ii.               (1)
+
+If B_ii=0, both sides are zero by the determinant identity. Reversing the
+GLOBAL branched-cover/signature convention changes the common factor i to
+-i; it cannot change the two phases independently.
+Source:
+  https://pnp.mathematik.uni-stuttgart.de/igt/eiserm/publications/ribbonlinks.pdf
+
+IMPORTANT DISTINCTION: this uses the ordinary signed determinant V_E(i),
+not the generalized determinant obtained after dividing out unlink factors.
+Eisermann explicitly warns that the analogous phase rule for the latter is
+false. We do not use that false extension.
+
+3. THE TWO-BAND DIAGONAL CANNOT CANCEL
+A nonzero real symmetric rank-one matrix is positive or negative semidefinite.
+Hence B_11 and B_22 have the same weak sign and
+  tr B = B_11+B_22 != 0.
+Equation (1) implies S1(i)+S2(i)=i tr B != 0. But delta(i)=0. Consequently
+
+                         S1+S2 != 2 delta.             (2)
+
+If the double smoothing also has Jones polynomial delta^2, the exact TL2
+calculation in work/research34/twist_formula.txt says that the whole diagonal
+V(K_k,k)=1 is equivalent to S1+S2=2 delta. Thus (2) excludes it for ANY actual
+oriented two-band presentation satisfying the stated branched-cover rank.
+This is not restricted to the one particular LLL(1) band pair tested earlier.
+The diagonal is calibrated so both sites have normalized eigenvalue
+z=A^8=t^-2; reversing a local twist-coordinate convention reverses that
+coordinate in the geometric statement.
+
+The same two-site classification also shows that a linear trajectory
+(m,n)=(ak,bk) with a,b both nonzero and a!=b would require S1=S2=delta.
+Then (1) forces B_11=B_22=0, incompatible with nonzero rank one. Therefore
+NO nonconstant linear Jones-one trajectory twisting BOTH bands exists under
+these hypotheses and the double-smoothing condition. Coordinate trajectories
+are not all excluded: if B_ii=0, their determinant test is silent, and their
+full Jones condition still has to be checked.
+
+This does not rule out isolated nonzero Jones-one pairs (m,n), nonlinear
+parameter sets, different branch-cover homology, or unoriented bands.
+
+4. PRECISE HIGHER-BAND OBSERVATION
+The phase relation (1) applies individually to r disjoint oriented inverse
+bands based on the same disk: the r-handle matrix has principal one-handle
+forms [B_ii]. Hence a nonzero semidefinite B always has sum_i Si(i)!=0.
+For the SAME normalized twist exponent k at all r sites, multilinearity
+expresses V as the polynomial in s=z^k
+  sum_(J subset {1,...,r}) (S_J/delta^|J|)*s^(r-|J|)*(1-s)^|J|,
+where S_empty=1. If this equals 1 for all integer k, independence of the
+Bernstein basis forces sum_i Si=r*delta (and analogous higher-subset sums).
+Thus a nonzero semidefinite B excludes this uniform diagonal for any r.
+Mixed-sign higher-rank matrices can have trace zero, so this particular
+first-level obstruction then vanishes; it does not prove that cancellation
+actually occurs. No general mixed-rate higher-band theorem is claimed.

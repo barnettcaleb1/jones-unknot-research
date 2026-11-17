@@ -1,0 +1,8137 @@
+[
+  {
+    "label": "cap_0_against_cap_0",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.16922862501814961,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 0
+  },
+  {
+    "label": "cap_0_against_cap_1",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 27.939133582636714,
+    "configuration_count": 464310,
+    "intersection_counts": [
+      [
+        245,
+        973
+      ],
+      [
+        205,
+        1081
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        -1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 544,
+      "sum": 0.0,
+      "b_counts": {
+        "-1": 544
+      },
+      "signed_b": {
+        "-1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 109981,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 59431,
+        "-1": 33822,
+        "1": 16728
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 169523,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 95348,
+        "2": 1728,
+        "-1": 33131,
+        "1": 39316
+      },
+      "signed_b": {
+        "0": 0,
+        "2": 0,
+        "-1": -1,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -3,
+        -1,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 1
+  },
+  {
+    "label": "cap_0_against_cap_2",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 1.045790582895279,
+    "configuration_count": 4620,
+    "intersection_counts": [
+      [
+        33,
+        48
+      ],
+      [
+        44,
+        76
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 52,
+      "sum": 0,
+      "b_counts": {
+        "0": 52
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1715,
+      "sum": 1,
+      "b_counts": {
+        "0": 1107,
+        "1": 608
+      },
+      "signed_b": {
+        "0": 1,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 1507,
+      "sum": 1,
+      "b_counts": {
+        "0": 547,
+        "1": 960
+      },
+      "signed_b": {
+        "0": 1,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 2
+  },
+  {
+    "label": "cap_0_against_cap_3",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.301513709127903,
+    "configuration_count": 113,
+    "intersection_counts": [
+      [
+        23,
+        1
+      ],
+      [
+        44,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 47,
+      "sum": -1,
+      "b_counts": {
+        "0": 27,
+        "1": 20
+      },
+      "signed_b": {
+        "0": -1,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 47,
+      "sum": -1,
+      "b_counts": {
+        "0": 27,
+        "1": 20
+      },
+      "signed_b": {
+        "0": -1,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 3
+  },
+  {
+    "label": "cap_0_against_cap_4",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.20229008374735713,
+    "configuration_count": 46,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        23
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 17,
+      "sum": 1,
+      "b_counts": {
+        "0": 17
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 21,
+      "sum": 1,
+      "b_counts": {
+        "0": 21
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 4
+  },
+  {
+    "label": "cap_0_against_cap_5",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.7197786248289049,
+    "configuration_count": 1184,
+    "intersection_counts": [
+      [
+        4,
+        48
+      ],
+      [
+        18,
+        80
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 56,
+      "sum": 0,
+      "b_counts": {
+        "0": 56
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 5
+  },
+  {
+    "label": "cap_0_against_cap_6",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.2509065829217434,
+    "configuration_count": 62,
+    "intersection_counts": [
+      [
+        4,
+        1
+      ],
+      [
+        18,
+        11
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 12,
+      "sum": 0,
+      "b_counts": {
+        "0": 12
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 6
+  },
+  {
+    "label": "cap_0_against_cap_7",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.10468750027939677,
+    "configuration_count": 480,
+    "intersection_counts": [
+      [
+        4,
+        24
+      ],
+      [
+        18,
+        12
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 76,
+      "sum": 0,
+      "b_counts": {
+        "0": 12,
+        "1": 64
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 7
+  },
+  {
+    "label": "cap_0_against_cap_8",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.2184985000640154,
+    "configuration_count": 764,
+    "intersection_counts": [
+      [
+        23,
+        9
+      ],
+      [
+        44,
+        16
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 20,
+      "sum": 0,
+      "b_counts": {
+        "0": 4,
+        "1": 16
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 0,
+    "j": 8
+  },
+  {
+    "label": "cap_1_against_cap_0",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 25.051870041992515,
+    "configuration_count": 433590,
+    "intersection_counts": [
+      [
+        237,
+        207
+      ],
+      [
+        1031,
+        929
+      ]
+    ],
+    "polynomial": [
+      [
+        -3,
+        0,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": -1,
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 22612,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 12000,
+        "-2": 1088,
+        "-1": 9064,
+        "1": 460
+      },
+      "signed_b": {
+        "0": 0,
+        "-2": 0,
+        "-1": 0,
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 157299,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 81192,
+        "-2": 704,
+        "-1": 32076,
+        "1": 43327
+      },
+      "signed_b": {
+        "0": 0,
+        "-2": 0,
+        "-1": 0,
+        "1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 119667,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 57233,
+        "1": 49322,
+        "-1": 13112
+      },
+      "signed_b": {
+        "0": -1,
+        "1": 0,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 0
+  },
+  {
+    "label": "cap_1_against_cap_1",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.6471222499385476,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 1
+  },
+  {
+    "label": "cap_1_against_cap_2",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -3,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 9.24130745884031,
+    "configuration_count": 119281,
+    "intersection_counts": [
+      [
+        98,
+        265
+      ],
+      [
+        307,
+        387
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 6372,
+      "sum": 0,
+      "b_counts": {
+        "0": 6372
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 33441,
+      "sum": 1,
+      "b_counts": {
+        "0": 4702,
+        "1": 28739
+      },
+      "signed_b": {
+        "0": 0,
+        "1": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 33441,
+      "sum": 1,
+      "b_counts": {
+        "0": 4702,
+        "1": 28739
+      },
+      "signed_b": {
+        "0": 0,
+        "1": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        1,
+        1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 2
+  },
+  {
+    "label": "cap_1_against_cap_3",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -3,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 2.6256824997253716,
+    "configuration_count": 26512,
+    "intersection_counts": [
+      [
+        98,
+        48
+      ],
+      [
+        291,
+        128
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": -1,
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 2804,
+      "sum": 0,
+      "b_counts": {
+        "0": 2268,
+        "1": 536
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 9917,
+      "sum": -1,
+      "b_counts": {
+        "0": 3872,
+        "1": 6045
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 4557,
+      "sum": -1,
+      "b_counts": {
+        "0": 1220,
+        "1": 3337
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 3
+  },
+  {
+    "label": "cap_1_against_cap_4",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 18.00025225011632,
+    "configuration_count": 312311,
+    "intersection_counts": [
+      [
+        227,
+        151
+      ],
+      [
+        1031,
+        690
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 1720,
+      "sum": 0,
+      "b_counts": {
+        "0": 800,
+        "1": 920
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 111813,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 53897,
+        "-2": 704,
+        "-1": 27702,
+        "1": 29510
+      },
+      "signed_b": {
+        "0": 1,
+        "-2": 0,
+        "-1": 0,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 111813,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 53897,
+        "-2": 704,
+        "-1": 27702,
+        "1": 29510
+      },
+      "signed_b": {
+        "0": 1,
+        "-2": 0,
+        "-1": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 4
+  },
+  {
+    "label": "cap_1_against_cap_5",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 3.0487087089568377,
+    "configuration_count": 5422,
+    "intersection_counts": [
+      [
+        4,
+        241
+      ],
+      [
+        18,
+        271
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 164,
+      "sum": 0,
+      "b_counts": {
+        "0": 164
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 5
+  },
+  {
+    "label": "cap_1_against_cap_6",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.603494833689183,
+    "configuration_count": 480,
+    "intersection_counts": [
+      [
+        4,
+        24
+      ],
+      [
+        18,
+        12
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 76,
+      "sum": 0,
+      "b_counts": {
+        "0": 12,
+        "1": 64
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 6
+  },
+  {
+    "label": "cap_1_against_cap_7",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.40163320815190673,
+    "configuration_count": 1678,
+    "intersection_counts": [
+      [
+        4,
+        65
+      ],
+      [
+        18,
+        127
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 128,
+      "sum": 0,
+      "b_counts": {
+        "0": 64,
+        "1": 64
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 7
+  },
+  {
+    "label": "cap_1_against_cap_8",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -4,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 1.8939049998298287,
+    "configuration_count": 26993,
+    "intersection_counts": [
+      [
+        98,
+        61
+      ],
+      [
+        269,
+        108
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 2156,
+      "sum": 0,
+      "b_counts": {
+        "0": 1620,
+        "1": 536
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 5703,
+      "sum": -1,
+      "b_counts": {
+        "0": 1428,
+        "1": 4275
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 5703,
+      "sum": -1,
+      "b_counts": {
+        "0": 1428,
+        "1": 4275
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 1,
+    "j": 8
+  },
+  {
+    "label": "cap_2_against_cap_0",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.7820397499017417,
+    "configuration_count": 2616,
+    "intersection_counts": [
+      [
+        11,
+        20
+      ],
+      [
+        78,
+        96
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 298,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 46,
+        "-1": 252
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 845,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 209,
+        "-1": 636
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 907,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 379,
+        "-1": 528
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 0
+  },
+  {
+    "label": "cap_2_against_cap_1",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 7.285786457825452,
+    "configuration_count": 100983,
+    "intersection_counts": [
+      [
+        78,
+        171
+      ],
+      [
+        331,
+        569
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        -1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 450,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 30,
+        "-1": 420
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 25037,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 6246,
+        "-1": 18791
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 25037,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 6246,
+        "-1": 18791
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -3,
+        -1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 1
+  },
+  {
+    "label": "cap_2_against_cap_2",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.05764662520959973,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 2
+  },
+  {
+    "label": "cap_2_against_cap_3",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.09235337469726801,
+    "configuration_count": 46,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        23
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 17,
+      "sum": 1,
+      "b_counts": {
+        "0": 17
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 21,
+      "sum": 1,
+      "b_counts": {
+        "0": 21
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 3
+  },
+  {
+    "label": "cap_2_against_cap_4",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.6171200843527913,
+    "configuration_count": 4187,
+    "intersection_counts": [
+      [
+        11,
+        49
+      ],
+      [
+        74,
+        51
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 8,
+      "sum": 0,
+      "b_counts": {
+        "0": 8
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 1305,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 83,
+        "-1": 1222
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 1305,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 83,
+        "-1": 1222
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 4
+  },
+  {
+    "label": "cap_2_against_cap_5",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.07109191687777638,
+    "configuration_count": 18,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1,
+      "0": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 6,
+      "sum": 0,
+      "b_counts": {
+        "0": 6
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 9,
+      "sum": -1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 3,
+      "sum": -1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 5
+  },
+  {
+    "label": "cap_2_against_cap_6",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.08736516581848264,
+    "configuration_count": 81,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        27
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 33,
+      "sum": -1,
+      "b_counts": {
+        "0": 33
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 33,
+      "sum": -1,
+      "b_counts": {
+        "0": 33
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 6
+  },
+  {
+    "label": "cap_2_against_cap_7",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.03045424958691001,
+    "configuration_count": 12,
+    "intersection_counts": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 7
+  },
+  {
+    "label": "cap_2_against_cap_8",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.04128133272752166,
+    "configuration_count": 8,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 2,
+    "j": 8
+  },
+  {
+    "label": "cap_3_against_cap_0",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.25619175005704165,
+    "configuration_count": 53,
+    "intersection_counts": [
+      [
+        11,
+        20
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 8,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 2,
+        "-1": 6
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 19,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 9,
+        "-1": 10
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 19,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 9,
+        "-1": 10
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 0
+  },
+  {
+    "label": "cap_3_against_cap_1",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 3.0647581657394767,
+    "configuration_count": 31560,
+    "intersection_counts": [
+      [
+        78,
+        171
+      ],
+      [
+        76,
+        238
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1,
+      "0": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 318,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 72,
+        "-1": 246
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 5629,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 1876,
+        "-1": 3753
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 12079,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 6324,
+        "-1": 5755
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -4,
+        -1,
+        1
+      ],
+      [
+        -3,
+        -1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 1
+  },
+  {
+    "label": "cap_3_against_cap_2",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.07821387518197298,
+    "configuration_count": 22,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        11
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 7,
+      "sum": 1,
+      "b_counts": {
+        "0": 7
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 9,
+      "sum": 1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 2
+  },
+  {
+    "label": "cap_3_against_cap_3",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.021527667064219713,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 3
+  },
+  {
+    "label": "cap_3_against_cap_4",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.19533929135650396,
+    "configuration_count": 148,
+    "intersection_counts": [
+      [
+        11,
+        49
+      ],
+      [
+        1,
+        9
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1,
+      "0": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 25,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 17,
+        "-1": 8
+      },
+      "signed_b": {
+        "0": -1,
+        "-1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 61,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 38,
+        "-1": 23
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -3,
+        -1,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 4
+  },
+  {
+    "label": "cap_3_against_cap_5",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.08200137503445148,
+    "configuration_count": 45,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        15
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 8,
+      "sum": 0,
+      "b_counts": {
+        "0": 8
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 15,
+      "sum": -1,
+      "b_counts": {
+        "0": 15
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 15,
+      "sum": -1,
+      "b_counts": {
+        "0": 15
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 5
+  },
+  {
+    "label": "cap_3_against_cap_6",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.035087999887764454,
+    "configuration_count": 18,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1,
+      "0": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 6,
+      "sum": 0,
+      "b_counts": {
+        "0": 6
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 9,
+      "sum": -1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 3,
+      "sum": -1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 6
+  },
+  {
+    "label": "cap_3_against_cap_7",
+    "word": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.012056583072990179,
+    "configuration_count": 9,
+    "intersection_counts": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 7
+  },
+  {
+    "label": "cap_3_against_cap_8",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.018159958999603987,
+    "configuration_count": 6,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1,
+      "0": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 3,
+      "sum": -1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 1,
+      "sum": -1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 3,
+    "j": 8
+  },
+  {
+    "label": "cap_4_against_cap_0",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.15939399972558022,
+    "configuration_count": 22,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        11
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 7,
+      "sum": 1,
+      "b_counts": {
+        "0": 7
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 9,
+      "sum": 1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 0
+  },
+  {
+    "label": "cap_4_against_cap_1",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 18.9350124578923,
+    "configuration_count": 295085,
+    "intersection_counts": [
+      [
+        245,
+        973
+      ],
+      [
+        125,
+        708
+      ]
+    ],
+    "polynomial": [
+      [
+        -4,
+        -1,
+        -1
+      ],
+      [
+        -3,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 496,
+      "sum": 0.0,
+      "b_counts": {
+        "-1": 496
+      },
+      "signed_b": {
+        "-1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 103957,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 56921,
+        "2": 1728,
+        "-1": 9982,
+        "1": 35326
+      },
+      "signed_b": {
+        "0": 1,
+        "2": 0,
+        "-1": 0,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 103957,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 56921,
+        "2": 1728,
+        "-1": 9982,
+        "1": 35326
+      },
+      "signed_b": {
+        "0": 1,
+        "2": 0,
+        "-1": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -4,
+        -1,
+        -1
+      ],
+      [
+        -3,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 1
+  },
+  {
+    "label": "cap_4_against_cap_2",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 1.26756420917809,
+    "configuration_count": 3963,
+    "intersection_counts": [
+      [
+        33,
+        48
+      ],
+      [
+        53,
+        43
+      ]
+    ],
+    "polynomial": [
+      [
+        -3,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 36,
+      "sum": 0,
+      "b_counts": {
+        "0": 36
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 1365,
+      "sum": 1,
+      "b_counts": {
+        "0": 191,
+        "1": 1174
+      },
+      "signed_b": {
+        "0": 1,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 1365,
+      "sum": 1,
+      "b_counts": {
+        "0": 191,
+        "1": 1174
+      },
+      "signed_b": {
+        "0": 1,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 2
+  },
+  {
+    "label": "cap_4_against_cap_3",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.26900912495329976,
+    "configuration_count": 214,
+    "intersection_counts": [
+      [
+        23,
+        1
+      ],
+      [
+        53,
+        7
+      ]
+    ],
+    "polynomial": [
+      [
+        -3,
+        0,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": -1,
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 99,
+      "sum": -1,
+      "b_counts": {
+        "0": 74,
+        "1": 25
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 63,
+      "sum": -1,
+      "b_counts": {
+        "0": 39,
+        "1": 24
+      },
+      "signed_b": {
+        "0": -1,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 3
+  },
+  {
+    "label": "cap_4_against_cap_4",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.10055466694757342,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 4
+  },
+  {
+    "label": "cap_4_against_cap_5",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.4722663341090083,
+    "configuration_count": 1276,
+    "intersection_counts": [
+      [
+        4,
+        48
+      ],
+      [
+        23,
+        43
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 88,
+      "sum": 0,
+      "b_counts": {
+        "0": 36,
+        "1": 52
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 5
+  },
+  {
+    "label": "cap_4_against_cap_6",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.17727599991485476,
+    "configuration_count": 51,
+    "intersection_counts": [
+      [
+        4,
+        1
+      ],
+      [
+        23,
+        7
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 6,
+      "sum": 0,
+      "b_counts": {
+        "0": 4,
+        "1": 2
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 13,
+      "sum": -1,
+      "b_counts": {
+        "0": 10,
+        "1": 3
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 13,
+      "sum": -1,
+      "b_counts": {
+        "0": 10,
+        "1": 3
+      },
+      "signed_b": {
+        "0": 0,
+        "1": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        1,
+        1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 6
+  },
+  {
+    "label": "cap_4_against_cap_7",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -3,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.07502870867028832,
+    "configuration_count": 584,
+    "intersection_counts": [
+      [
+        4,
+        24
+      ],
+      [
+        23,
+        8
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-3": 1,
+      "-2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 8,
+      "sum": 0,
+      "b_counts": {
+        "1": 8
+      },
+      "signed_b": {
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 203,
+      "sum": 1,
+      "b_counts": {
+        "0": 8,
+        "1": 195
+      },
+      "signed_b": {
+        "0": 0,
+        "1": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -3,
+      "point_pairs": 27,
+      "sum": 1,
+      "b_counts": {
+        "1": 27
+      },
+      "signed_b": {
+        "1": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 7
+  },
+  {
+    "label": "cap_4_against_cap_8",
+    "word": [
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -2,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.18885174999013543,
+    "configuration_count": 937,
+    "intersection_counts": [
+      [
+        23,
+        9
+      ],
+      [
+        53,
+        20
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 16,
+      "sum": 0,
+      "b_counts": {
+        "1": 16
+      },
+      "signed_b": {
+        "1": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 375,
+      "sum": -1,
+      "b_counts": {
+        "0": 255,
+        "1": 120
+      },
+      "signed_b": {
+        "0": -1,
+        "1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 375,
+      "sum": -1,
+      "b_counts": {
+        "0": 255,
+        "1": 120
+      },
+      "signed_b": {
+        "0": -1,
+        "1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 4,
+    "j": 8
+  },
+  {
+    "label": "cap_5_against_cap_0",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.5635812501423061,
+    "configuration_count": 728,
+    "intersection_counts": [
+      [
+        4,
+        4
+      ],
+      [
+        78,
+        104
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 130,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 46,
+        "-1": 84
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 0
+  },
+  {
+    "label": "cap_5_against_cap_1",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 1.6141029158607125,
+    "configuration_count": 2488,
+    "intersection_counts": [
+      [
+        4,
+        4
+      ],
+      [
+        279,
+        343
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 170,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 30,
+        "-1": 140
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 1
+  },
+  {
+    "label": "cap_5_against_cap_2",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 3,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.057211208157241344,
+    "configuration_count": 18,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "polynomial": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "1": 1,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 3,
+      "sum": 1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 3,
+      "sum": 1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 1,
+      "point_pairs": 9,
+      "sum": 1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 2
+  },
+  {
+    "label": "cap_5_against_cap_3",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.09186420822516084,
+    "configuration_count": 81,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        27
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 21,
+      "sum": 1,
+      "b_counts": {
+        "0": 21
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 21,
+      "sum": 1,
+      "b_counts": {
+        "0": 21
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 3
+  },
+  {
+    "label": "cap_5_against_cap_4",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.4037071671336889,
+    "configuration_count": 1344,
+    "intersection_counts": [
+      [
+        4,
+        15
+      ],
+      [
+        76,
+        51
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 8,
+      "sum": 0,
+      "b_counts": {
+        "0": 8
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 4
+  },
+  {
+    "label": "cap_5_against_cap_5",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.04240145767107606,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 5
+  },
+  {
+    "label": "cap_5_against_cap_6",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.058987833093851805,
+    "configuration_count": 46,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        23
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 17,
+      "sum": 1,
+      "b_counts": {
+        "0": 17
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 21,
+      "sum": 1,
+      "b_counts": {
+        "0": 21
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 6
+  },
+  {
+    "label": "cap_5_against_cap_7",
+    "word": [
+      4,
+      3,
+      5,
+      4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.02215691702440381,
+    "configuration_count": 8,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 7
+  },
+  {
+    "label": "cap_5_against_cap_8",
+    "word": [
+      4,
+      3,
+      5,
+      4,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.031500833574682474,
+    "configuration_count": 12,
+    "intersection_counts": [
+      [
+        3,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 5,
+    "j": 8
+  },
+  {
+    "label": "cap_6_against_cap_0",
+    "word": [
+      4,
+      3,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.13691995898261666,
+    "configuration_count": 64,
+    "intersection_counts": [
+      [
+        4,
+        4
+      ],
+      [
+        1,
+        15
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 16,
+      "sum": 0.0,
+      "b_counts": {
+        "0": 14,
+        "-1": 2
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 0
+  },
+  {
+    "label": "cap_6_against_cap_1",
+    "word": [
+      4,
+      3,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.16512654209509492,
+    "configuration_count": 144,
+    "intersection_counts": [
+      [
+        4,
+        4
+      ],
+      [
+        24,
+        12
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 18,
+      "sum": 0.0,
+      "b_counts": {
+        "-1": 18
+      },
+      "signed_b": {
+        "-1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 1
+  },
+  {
+    "label": "cap_6_against_cap_2",
+    "word": [
+      4,
+      3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.07908579194918275,
+    "configuration_count": 45,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        15
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 15,
+      "sum": 1,
+      "b_counts": {
+        "0": 15
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 15,
+      "sum": 1,
+      "b_counts": {
+        "0": 15
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 2
+  },
+  {
+    "label": "cap_6_against_cap_3",
+    "word": [
+      4,
+      3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 3,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.021884082816541195,
+    "configuration_count": 18,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "polynomial": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "1": 1,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 3,
+      "sum": 1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 3,
+      "sum": 1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 1,
+      "point_pairs": 9,
+      "sum": 1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 3
+  },
+  {
+    "label": "cap_6_against_cap_4",
+    "word": [
+      4,
+      3,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.08745274972170591,
+    "configuration_count": 51,
+    "intersection_counts": [
+      [
+        4,
+        15
+      ],
+      [
+        1,
+        9
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        -1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 17,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 14,
+        "-1": 3
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 17,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 14,
+        "-1": 3
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -3,
+        -1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 4
+  },
+  {
+    "label": "cap_6_against_cap_5",
+    "word": [
+      4,
+      3,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.053577957674860954,
+    "configuration_count": 22,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        11
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1,
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 7,
+      "sum": 1,
+      "b_counts": {
+        "0": 7
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 9,
+      "sum": 1,
+      "b_counts": {
+        "0": 9
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 5
+  },
+  {
+    "label": "cap_6_against_cap_6",
+    "word": [
+      4,
+      3,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.008189250249415636,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 6
+  },
+  {
+    "label": "cap_6_against_cap_7",
+    "word": [
+      4,
+      3
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.0049857497215271,
+    "configuration_count": 6,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1,
+      "0": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 3,
+      "sum": -1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 1,
+      "sum": -1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 7
+  },
+  {
+    "label": "cap_6_against_cap_8",
+    "word": [
+      4,
+      3,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.00934683345258236,
+    "configuration_count": 9,
+    "intersection_counts": [
+      [
+        3,
+        3
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 5,
+      "sum": 1,
+      "b_counts": {
+        "0": 5
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 5,
+      "sum": 1,
+      "b_counts": {
+        "0": 5
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 6,
+    "j": 8
+  },
+  {
+    "label": "cap_7_against_cap_0",
+    "word": [
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.16421349998563528,
+    "configuration_count": 144,
+    "intersection_counts": [
+      [
+        4,
+        4
+      ],
+      [
+        24,
+        12
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 18,
+      "sum": 0.0,
+      "b_counts": {
+        "-1": 18
+      },
+      "signed_b": {
+        "-1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 0
+  },
+  {
+    "label": "cap_7_against_cap_1",
+    "word": [
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.27552299993112683,
+    "configuration_count": 328,
+    "intersection_counts": [
+      [
+        4,
+        4
+      ],
+      [
+        25,
+        57
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 3,
+      "point_pairs": 18,
+      "sum": 0.0,
+      "b_counts": {
+        "-1": 18
+      },
+      "signed_b": {
+        "-1": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 1
+  },
+  {
+    "label": "cap_7_against_cap_2",
+    "word": [
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.030096249654889107,
+    "configuration_count": 12,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 2
+  },
+  {
+    "label": "cap_7_against_cap_3",
+    "word": [
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 4,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.014845666941255331,
+    "configuration_count": 9,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 3
+  },
+  {
+    "label": "cap_7_against_cap_4",
+    "word": [
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 3,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.1270986250601709,
+    "configuration_count": 392,
+    "intersection_counts": [
+      [
+        4,
+        15
+      ],
+      [
+        24,
+        8
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        -1,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": -1,
+      "1": -1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 27,
+      "sum": -1.0,
+      "b_counts": {
+        "-1": 27
+      },
+      "signed_b": {
+        "-1": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 1,
+      "point_pairs": 27,
+      "sum": -1.0,
+      "b_counts": {
+        "-1": 27
+      },
+      "signed_b": {
+        "-1": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 113,
+      "sum": -1.0,
+      "b_counts": {
+        "0": 8,
+        "-1": 105
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -4,
+        -1,
+        1
+      ],
+      [
+        -3,
+        -1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 4
+  },
+  {
+    "label": "cap_7_against_cap_5",
+    "word": [
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.016961332876235247,
+    "configuration_count": 8,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 5
+  },
+  {
+    "label": "cap_7_against_cap_6",
+    "word": [
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 3,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.0027906671166419983,
+    "configuration_count": 6,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "1": 1,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 1,
+      "point_pairs": 3,
+      "sum": 1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 6
+  },
+  {
+    "label": "cap_7_against_cap_7",
+    "word": [],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.0010957499034702778,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 7
+  },
+  {
+    "label": "cap_7_against_cap_8",
+    "word": [
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.003971916623413563,
+    "configuration_count": 6,
+    "intersection_counts": [
+      [
+        3,
+        3
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 1
+    },
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 1,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 3,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 2,
+        "-1": 1
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -3,
+        -1,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 7,
+    "j": 8
+  },
+  {
+    "label": "cap_8_against_cap_0",
+    "word": [
+      2,
+      1,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.3353864997625351,
+    "configuration_count": 152,
+    "intersection_counts": [
+      [
+        11,
+        20
+      ],
+      [
+        1,
+        12
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 8,
+      "sum": 0,
+      "b_counts": {
+        "0": 8
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 0
+  },
+  {
+    "label": "cap_8_against_cap_1",
+    "word": [
+      2,
+      1,
+      -3,
+      -4,
+      -2,
+      -3,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 1.8907992499880493,
+    "configuration_count": 13323,
+    "intersection_counts": [
+      [
+        78,
+        171
+      ],
+      [
+        25,
+        116
+      ]
+    ],
+    "polynomial": [
+      [
+        -3,
+        -1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 8,
+      "sum": 0,
+      "b_counts": {
+        "0": 8
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 2223,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 1368,
+        "-1": 855
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 2223,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 1368,
+        "-1": 855
+      },
+      "signed_b": {
+        "0": 0,
+        "-1": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -4,
+        -1,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 1
+  },
+  {
+    "label": "cap_8_against_cap_2",
+    "word": [
+      2,
+      1,
+      -4,
+      -5,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.03444479079917073,
+    "configuration_count": 8,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 1,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 2
+  },
+  {
+    "label": "cap_8_against_cap_3",
+    "word": [
+      2,
+      1,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 3,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.01688924990594387,
+    "configuration_count": 6,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "1": 1,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 1,
+      "point_pairs": 3,
+      "sum": 1,
+      "b_counts": {
+        "0": 3
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 3
+  },
+  {
+    "label": "cap_8_against_cap_4",
+    "word": [
+      2,
+      1,
+      -2,
+      -3,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 1,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.23509941715747118,
+    "configuration_count": 291,
+    "intersection_counts": [
+      [
+        11,
+        49
+      ],
+      [
+        1,
+        22
+      ]
+    ],
+    "polynomial": [
+      [
+        -3,
+        -1,
+        -1
+      ],
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 10,
+      "sum": 0,
+      "b_counts": {
+        "0": 10
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 55,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 47,
+        "-1": 8
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 55,
+      "sum": 1.0,
+      "b_counts": {
+        "0": 47,
+        "-1": 8
+      },
+      "signed_b": {
+        "0": 1,
+        "-1": 0
+      }
+    },
+    "expected_Phi": [
+      [
+        -4,
+        -1,
+        -1
+      ],
+      [
+        -3,
+        0,
+        -1
+      ],
+      [
+        -2,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 4
+  },
+  {
+    "label": "cap_8_against_cap_5",
+    "word": [
+      2,
+      1,
+      -4,
+      -5,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {},
+    "seconds": 0.03948383405804634,
+    "configuration_count": 12,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "polynomial": [],
+    "TL_line_specialization": {},
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "expected_Phi": [],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 5
+  },
+  {
+    "label": "cap_8_against_cap_6",
+    "word": [
+      2,
+      1,
+      -3,
+      -4
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 0,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.0236654169857502,
+    "configuration_count": 9,
+    "intersection_counts": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        -1,
+        0,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-1": -1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 2,
+      "sum": 0,
+      "b_counts": {
+        "0": 2
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 5,
+      "sum": -1,
+      "b_counts": {
+        "0": 5
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 5,
+      "sum": -1,
+      "b_counts": {
+        "0": 5
+      },
+      "signed_b": {
+        "0": -1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 6
+  },
+  {
+    "label": "cap_8_against_cap_7",
+    "word": [
+      2,
+      1
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": -1,
+      "t": 0,
+      "sign": -1
+    },
+    "seconds": 0.00892079109326005,
+    "configuration_count": 14,
+    "intersection_counts": [
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "polynomial": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "TL_line_specialization": {
+      "-2": 1,
+      "-1": 1
+    },
+    "highest_geometric_line": {
+      "degree": 0,
+      "point_pairs": 4,
+      "sum": 0,
+      "b_counts": {
+        "0": 4
+      },
+      "signed_b": {
+        "0": 0
+      }
+    },
+    "highest_surviving_line": {
+      "degree": -1,
+      "point_pairs": 9,
+      "sum": 1,
+      "b_counts": {
+        "0": 4,
+        "1": 5
+      },
+      "signed_b": {
+        "0": 0,
+        "1": -1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": -2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 7
+  },
+  {
+    "label": "cap_8_against_cap_8",
+    "word": [
+      2,
+      1,
+      -1,
+      -2
+    ],
+    "calibrated": true,
+    "deck_unit": {
+      "q": 2,
+      "t": 0,
+      "sign": 1
+    },
+    "seconds": 0.015217916574329138,
+    "configuration_count": 4,
+    "intersection_counts": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "polynomial": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "TL_line_specialization": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "highest_geometric_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "highest_surviving_line": {
+      "degree": 2,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "lowest_surviving_line": {
+      "degree": 0,
+      "point_pairs": 1,
+      "sum": 1,
+      "b_counts": {
+        "0": 1
+      },
+      "signed_b": {
+        "0": 1
+      }
+    },
+    "expected_Phi": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "rational_geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "winding_status": "Float angle primitives; aggregate exact calibration remains mandatory",
+    "i": 8,
+    "j": 8
+  }
+]

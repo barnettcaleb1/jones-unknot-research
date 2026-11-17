@@ -1,0 +1,210 @@
+PASS 46: CONTEXTUAL FULL TWISTS AND THE SINGLE-CHANNEL GATE
+2026-11-01. Deduction from standard annular skein formulas; no novelty claim.
+
+Outcome
+-------
+For an arbitrary fixed exterior, an infinite full-twist family of knots
+can have Jones polynomial one only in the following two situations:
+
+  winding zero: the initially zero-framed annular bracket is delta;
+  winding +/-1: the initially zero-framed annular bracket is z.
+
+Here delta=-A^2-A^-2, z is the annular core, and the empty link has
+bracket one. In particular, larger-winding channels cannot give a new
+contextual escape, even when a meridional disk has arbitrarily many
+intersection points. This is stronger than merely listing possible
+twist eigenvalues: integrality and the unknot Jones value remove all
+higher single-channel possibilities.
+
+This does not prove the surviving patterns geometrically trivial. A
+hyperbolic annular knot with one of these skein classes would yield
+actual nontrivial Jones-one knots under all sufficiently long twists.
+No such pattern was constructed here. The winding-zero case returns
+to the previously identified scalar-pattern realization problem.
+
+1. Geometry and conventions
+---------------------------
+Let C be an unknot disjoint from an oriented knot P in S^3. Its exterior
+is a solid torus V. Fix the standard meridian-longitude marking and
+write w=lk(P,C), equivalently the signed intersection sum with a
+meridional disk of V. Let r be the geometric intersection count with
+one chosen transverse disk, so |w|<=r and w=r modulo two.
+
+Choose the framing of P which is zero in the original S^3 embedding.
+Let P_k be the knot obtained by k meridional twists of V. This is an
+actual knot for every integer k; twists do not alter component count.
+Equivalently, it is surgery on the unknot C with the corresponding
+reciprocal-integer slope. Choose the sign of k so that the annular
+twist operator has eigenvalues theta_j below.
+
+An ambient torus twist changes the transported framing of P by k*w^2.
+This is the usual surgery linking formula: the framing change is the
+product of the winding numbers of P and its parallel push-off. It can
+also be checked in an r-strand disk diagram: ordinary braid twisting
+adds k(w^2-r) to the oriented writhe, and transporting the individual
+ribbon framings adds kr. The final total is kw^2, independent of r.
+The familiar w=1 core acquires one framing twist, calibrating the sign.
+
+Consequently, to compute the normalized Jones polynomial of P_k one
+must remove (-A^3)^(kw^2), not an r-dependent framing correction.
+
+2. Exact spectral formula with integral coefficients
+----------------------------------------------------
+The annular skein is Z[A,A^-1][z]. Use the monic Chebyshev basis
+
+ e_0=1, e_1=z, e_(j+1)=z e_j-e_(j-1).
+
+Write the initially zero-framed bracket of P as
+
+                   [P]=sum_j a_j(A)e_j,
+
+where a_j belong to Z[A,A^-1]. Because the change from powers of z to
+the e_j basis is monic triangular, this coefficient integrality is
+literal, not rational-projector integrality. Only j congruent to w
+modulo two occurs, and j<=r.
+
+Let Delta_j=<e_j> and theta_j be the annular twist eigenvalue. Then
+
+ Delta_j=(-1)^j[j+1],       theta_j=(-1)^j A^(j(j+2)),
+ [n]=(A^(2n)-A^(-2n))/(A^2-A^-2),       Delta_1=delta.
+
+The normalized Jones polynomial, with t=A^-4, is therefore
+
+ V_(P_k)(A^-4)
+   =delta^-1 sum_j a_j(A)Delta_j
+                   (-A^3)^(-kw^2) theta_j^k
+   =sum_j b_j(A) A^(k d_j),
+
+ b_j=a_j Delta_j/delta,        d_j=j(j+2)-3w^2.       (1)
+
+The signs cancel because j-w^2 is even. The numbers d_j are distinct
+as j varies over nonnegative allowed labels. Formula (1) keeps all
+exterior complexity in the fixed integral coefficients a_j.
+
+Primary eigenvalue and annular-basis source: Masbaum, Skein-theoretical
+derivation of some formulas of Habiro, AGT 3 (2003), equations (2)--(4),
+printed p.539, and the twist discussion preceding them:
+https://msp.org/agt/2003/3-1/agt-v3-n1-p17-p.pdf
+Yokota's Twisting formulae of the Jones polynomial, Math. Proc. Cambridge
+Philos. Soc. 110 (1991),473--482, concerns precisely winding/wrapping and
+meridional twisting. Only its publisher extract was accessible this
+pass; no uninspected theorem or novelty claim is attributed to it:
+https://doi.org/10.1017/S0305004100070559
+
+3. Finite certificate; no infinite-root fallacy
+----------------------------------------------
+For distinct integers d_1,...,d_s and distinct integers k_1,...,k_s,
+the matrix (A^(d_i k_l)) is invertible over Q(A). Sort both integer
+lists increasingly. Strict rearrangement shows that the identity
+permutation gives the unique largest exponent in the determinant.
+Its coefficient is nonzero, so the determinant cannot vanish.
+
+Thus a nonzero sum of s distinct monomial exponentials has at most
+s-1 integer zeros. Apply this to V_(P_k)-1. If q coefficients a_j
+are nonzero, then a nonconstant family has at most q Jones-one
+parameters, or at most q-1 if some active d_j is zero. Also
+q<=floor(r/2)+1. The assertion concerns distinct parameters, not
+necessarily consecutive ones.
+
+In particular, infinitely many Jones-one parameters force (1) to be
+identically one for every k. Linear independence then forces exactly
+one active label j, with
+
+                j(j+2)=3w^2,       a_j Delta_j=delta.    (2)
+
+This argument does not treat an exponential expression as an ordinary
+polynomial in k. The generalized Vandermonde supplies the precise
+finite-dimensional certificate.
+
+4. Integrality removes every higher channel
+-------------------------------------------
+Evaluating the second equality in (2) at A=1 gives
+
+               a_j(1)(-1)^j(j+1)=-2.
+
+Since a_j(1) is an integer, j+1 divides two. Hence j=0 or j=1.
+Equation (2) now gives w=0 or |w|=1, respectively. Moreover (2)
+determines the entire annular bracket, not merely its value at A=1:
+
+       j=0: a_0=delta and [P]=delta;
+       j=1: a_1=1     and [P]=z.
+
+Conversely either displayed annular class, with its corresponding
+winding, makes (1) identically one. Thus the criterion is exact.
+
+The eigenvalue equation alone is a Pell equation
+(j+1)^2-3w^2=1 and admits higher solutions such as (j,|w|)=(6,4).
+Those are unrealizable as a single surviving channel with Jones-one
+closure because of the integral dimension equation above. Keeping
+only the spectral equation would falsely leave these possibilities.
+
+An initial framing other than zero multiplies the entire annular
+class by one power of -A^3. Removing that common factor gives exactly
+the statement above; arbitrary channel-dependent framing changes
+are not allowed.
+
+5. Actual calibration tests
+---------------------------
+For the r=3 coherent unknot closure of the braid sigma_1 sigma_2,
+the winding is three. Inserting full twists gives the actual torus
+knots T(3,3k+1), whose Jones polynomials in one chirality convention are
+
+        V_k=t^(3k)+t^(3k+2)-t^(6k+2).
+
+At k=0 this is one. For every nonzero integer k the three exponents
+are distinct, so it is not one. The two frequencies are t^(3k) and
+t^(6k), exactly those predicted by (1): labels j=3,1 have d=-12,-24.
+Thus a genuine unknot anchor does not itself annihilate either channel.
+The torus formula was independently derived in research40 from TL_3.
+
+For a zero-winding Whitehead crossing-circle context, the familiar
+unknot-to-trefoil twist family has
+
+ V_k=1+(t+t^3-t^4-1)*(t^(-2k)-1)/(t^2-1).
+
+The source's integer parameter m is -k in our positive annular-twist
+convention; in particular k=-1 gives the displayed trefoil polynomial.
+The frequencies are 1 and t^(-2k)=A^(8k), exactly the zero-winding labels
+0 and 2 in (1). Its second coefficient is nonzero. This actual marked
+example was already verified in research36/descent_audit.txt and is
+only a normalization check here, not a new construction or a generic
+two-strand argument.
+
+6. Full endpoint and its unresolved geometric content
+-----------------------------------------------------
+Suppose an actual P in V has [P]=delta,w=0, or [P]=z,|w|=1, and
+suppose the two-component exterior S^3\nu(P union C) is hyperbolic.
+Then (1) gives V_(P_k)=1 for every integer k. Hyperbolic Dehn surgery
+implies that for all sufficiently large |k| the P_k exteriors are
+hyperbolic, so these knots are nontrivial. This would be a complete
+counterexample construction with an independent nontriviality witness.
+For the filling input, see Hodgson--Kerckhoff, Universal bounds for
+hyperbolic Dehn surgery, Annals of Mathematics 162 (2005), introduction:
+https://annals.math.princeton.edu/wp-content/uploads/annals-v162-n1-p06.pdf
+
+The missing statement is the existence of that actual hyperbolic
+pattern, not a formal choice of a_j. The derived condition is much
+stronger than having one unknot closure. Conversely, an actual
+unknot anchor plus these annular equalities would suffice even if
+nontriviality were certified by a different topological method.
+
+No such pattern is supplied by this pass. Local unknot patterns and
+the ordinary core satisfy the required brackets but have trivial
+twist outputs. Ren's known annular degree-drop example retains a
+nonzero higher channel and does not satisfy either equality. The
+generalized wrapping-degree conjecture cannot be used to infer
+geometric locality from these skein classes; it is already false.
+
+This is a contextual all-exterior reduction for a single full-twist
+orbit, not a proof of Jones detection, not a reduction of every
+hypothetical counterexample to this orbit, and not an exclusion of
+isolated Jones-one parameters or multiple coupled twist sites.
+
+Audit: parent independently checked the finite generalized-Vandermonde
+extension and framing formulation, and caught the opposite parameter
+direction in the Whitehead calibration, corrected explicitly above.
+The actual diagram tests use the previously audited TL_3 torus formula
+and marked Whitehead/twist-knot family. The braid agent independently
+confirmed the raw and normalized eigenvalues and the integral annular
+single-channel argument; the proof uses integral Chebyshev coefficients,
+not possibly rational coefficients of matrix projectors.

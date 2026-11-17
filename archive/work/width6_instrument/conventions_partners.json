@@ -1,0 +1,208 @@
+{
+  "configuration_count": 254638,
+  "unique_one_point_intersections": 2050,
+  "raw_collapsed_range": [
+    -6,
+    1
+  ],
+  "raw_top_configuration_count": 3688,
+  "raw_top_by_b_and_sign": [
+    {
+      "b": 0,
+      "sign": -1,
+      "count": 1844
+    },
+    {
+      "b": 0,
+      "sign": 1,
+      "count": 1844
+    }
+  ],
+  "raw_top_specialized_sum": 0,
+  "all_points_direct_h_pairing_possible": false,
+  "direct_h_pairing_failures": [
+    {
+      "collapsed_degree": -6,
+      "polynomial_sign": -1,
+      "b": 0,
+      "count": 36,
+      "incoming_required": 20,
+      "outgoing": 16
+    },
+    {
+      "collapsed_degree": -6,
+      "polynomial_sign": 1,
+      "b": 0,
+      "count": 36,
+      "incoming_required": 20,
+      "outgoing": 16
+    },
+    {
+      "collapsed_degree": -5,
+      "polynomial_sign": -1,
+      "b": 1,
+      "count": 90,
+      "incoming_required": 89,
+      "outgoing": 1
+    },
+    {
+      "collapsed_degree": -5,
+      "polynomial_sign": 1,
+      "b": 1,
+      "count": 90,
+      "incoming_required": 89,
+      "outgoing": 1
+    },
+    {
+      "collapsed_degree": -4,
+      "polynomial_sign": -1,
+      "b": 2,
+      "count": 578,
+      "incoming_required": 28,
+      "outgoing": 550
+    },
+    {
+      "collapsed_degree": -4,
+      "polynomial_sign": 1,
+      "b": 2,
+      "count": 578,
+      "incoming_required": 28,
+      "outgoing": 550
+    },
+    {
+      "collapsed_degree": -3,
+      "polynomial_sign": -1,
+      "b": 2,
+      "count": 4342,
+      "incoming_required": 1315,
+      "outgoing": 3027
+    },
+    {
+      "collapsed_degree": -3,
+      "polynomial_sign": 1,
+      "b": 2,
+      "count": 4342,
+      "incoming_required": 1315,
+      "outgoing": 3027
+    },
+    {
+      "collapsed_degree": -2,
+      "polynomial_sign": -1,
+      "b": 2,
+      "count": 10083,
+      "incoming_required": 3593,
+      "outgoing": 6490
+    },
+    {
+      "collapsed_degree": -2,
+      "polynomial_sign": 1,
+      "b": 2,
+      "count": 10083,
+      "incoming_required": 3593,
+      "outgoing": 6490
+    },
+    {
+      "collapsed_degree": -1,
+      "polynomial_sign": -1,
+      "b": 2,
+      "count": 6024,
+      "incoming_required": 2601,
+      "outgoing": 3423
+    },
+    {
+      "collapsed_degree": -1,
+      "polynomial_sign": 1,
+      "b": 2,
+      "count": 6024,
+      "incoming_required": 2601,
+      "outgoing": 3423
+    },
+    {
+      "collapsed_degree": 0,
+      "polynomial_sign": -1,
+      "b": 1,
+      "count": 4313,
+      "incoming_required": 7279,
+      "outgoing": -2966
+    },
+    {
+      "collapsed_degree": 0,
+      "polynomial_sign": 1,
+      "b": 1,
+      "count": 4313,
+      "incoming_required": 7279,
+      "outgoing": -2966
+    },
+    {
+      "collapsed_degree": 1,
+      "polynomial_sign": -1,
+      "b": 0,
+      "count": 1844,
+      "incoming_required": 0,
+      "outgoing": 1844
+    },
+    {
+      "collapsed_degree": 1,
+      "polynomial_sign": 1,
+      "b": 0,
+      "count": 1844,
+      "incoming_required": 0,
+      "outgoing": 1844
+    }
+  ],
+  "points_without_h_partner_sharing_one_intersection": 254638,
+  "first_missing_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "ordinary_equal_exponent_opposite_sign_pairs": 127317,
+  "remaining_h_packets": [
+    [
+      [
+        145689,
+        -2,
+        0,
+        -1
+      ],
+      [
+        254436,
+        -1,
+        1,
+        -1
+      ]
+    ],
+    [
+      [
+        145518,
+        -3,
+        0,
+        1
+      ],
+      [
+        254442,
+        -2,
+        1,
+        1
+      ]
+    ]
+  ],
+  "scope": "The algebraic pairing choices are NOT a geometric involution or separating-disk certificate. Failure of the simple h map is a genuine cardinality obstruction for this fixed representative. Compact NPZ rows are index,a,b,sign,source0intersectionID,source1intersectionID."
+}

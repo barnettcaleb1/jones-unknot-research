@@ -1,0 +1,182 @@
+JONES UNKNOT DETECTION: INTERDISCIPLINARY CALCULATIONS
+31 October 2026
+
+This pass supplies research directions and exact tests. It does not prove
+Jones unknot detection or produce a nontrivial knot with Jones polynomial 1.
+No novelty claim is made for the elementary consequences below.
+
+1. BIOLOGICAL INTERVENTIONS AND INTERACTIONS
+
+The strongest existing bridge is Sikora's framed DNA tangle-equation
+criterion: Theorems 3, 21 and 24 in
+https://arxiv.org/html/2005.08162
+Framing is essential; unframed ambiguities alone do not contradict Jones
+detection. The paper uses balanced framed isotopy.
+
+An exact analogue of genetic epistasis can be exhibited with actual knots.
+Write a=sigma_1 and b=sigma_2 in the three-strand braid group. Consider
+
+  w = a b a b^-1 a^-1 b^-1 a b.
+
+Select its first and third crossings. Let K_00 be the closure of w; K_10
+and K_01 switch one selected crossing, and K_11 switches both. Then
+
+  K_00 = unknot, K_10 = unknot, K_01 = unknot,
+  K_11 = negative trefoil.
+
+This is certified geometrically, without assuming Jones detects the unknot:
+
+* aba=bab simplifies w to ab.
+* bab^-1=a^-1ba simplifies the first-switch word to a^-1b.
+* ba^-1b^-1=a^-1b^-1a simplifies the third-switch word to b^-2ab,
+  which is conjugate to b^-1a.
+* The double-switch word becomes a^-2b^-2ab. Using
+  b^-1ab=aba^-1 and cyclic conjugacy, it is conjugate to a^-3b.
+
+The first three two-crossing braids destabilize to an unknot; a^-3b
+destabilizes to the negative two-strand trefoil braid. Consequently,
+
+  (V_00,V_10,V_01,V_11) = (1,1,1,t^-1+t^-3-t^-4),
+  V_11-V_10-V_01+V_00 = t^-1+t^-3-t^-4-1 != 0.
+
+The lesson is about experimental design: single interventions can be silent
+while joint interventions reveal information. The interaction itself is
+not an invariant detecting nontriviality of the original knot: here that
+original knot is an unknot. A useful search must retain the marked sites.
+
+At one two-strand site, processive twisting has limited information.
+In TL_2 let e^2=delta e, delta=-A^2-A^-2, b=A+A^-1 e, and let the closure
+functional satisfy ell(1)=delta and ell(e)=1. For T=f+g e, put
+F_n=ell(T b^n). Since b has eigenvalues A and -A^-3,
+
+  F_(n+2)=(A-A^-3)F_(n+1)+A^-2 F_n.
+
+The determinant of the map (f,g)->(F_0,F_1) is
+A^-1(delta^2-1), a nonzero Laurent polynomial. Two responses determine
+the entire response sequence over Q(A). Moving the site, or using several
+sites jointly, changes what information is available. Numerical specializations
+where this determinant vanishes must be excluded from this reconstruction.
+Exact checks covered 165 tangles and 1,650 recurrence instances.
+
+2. PHYSICS: INVISIBLE STATES CAN STILL INTERACT
+
+The rigorous Khovanov Euler-characteristic identity gives the Jones
+polynomial as a signed, graded count. Witten's physical formulation
+interprets a related expression as a supersymmetric index:
+https://arxiv.org/abs/1101.3216
+The physical realization has additional duality/analytic inputs; none is
+needed for the following finite-dimensional calculation.
+
+Take two even states u,b and one odd state f. Give u charge 0 and b,f
+charge j. Define Q(b)=epsilon f and Q(u)=Q(f)=0. Then
+
+  H=QQ*+Q*Q=diag(0,|epsilon|^2,|epsilon|^2),
+  Tr((-1)^F q^P exp(-beta H))=1.
+
+There are three zero-energy states at epsilon=0 and only one at epsilon!=0.
+Thus index 1 and positivity of H do not imply a unique ground state.
+
+Knot-quiver constructions make interactions explicit. Their established
+starting point is https://arxiv.org/abs/1707.04017 ; a proven gluing
+construction for arborescent links is https://arxiv.org/abs/2004.10837 .
+Arbitrary symmetric quivers need not come from knots.
+
+For a symmetric integer matrix C, define
+
+  Z_C(x_1,...,x_n;q)
+    = sum_d (-q)^(d^T C d) product_i x_i^d_i/(q^2;q^2)_d_i.
+
+For C=[[0,m],[m,1]], x_1=x, x_2=q^-1 x, m>=0, direct expansion gives
+
+  [x] Z_C = 0,
+  [x^2] Z_C = (1-q^(2m))/(1-q^2)^2.
+
+The two single-particle contributions cancel, but their interaction survives
+in the two-particle term when m>0. When m=0 the whole series is 1 by the
+q-binomial theorem. A disconnected zero-loop node supplies the unknot-like
+first normalized coefficient. This construction is an abstract model,
+not a knot counterexample.
+
+An exact deletion criterion is available. Nodes u,v cancel completely if
+
+  C_uu=C_uv=a, C_vv=a+1,
+  C_uk=C_vk for all other nodes k, and x_v=q^-1 x_u.
+
+Fix external occupancies and n=d_u+d_v. The internal exponent is
+a n^2+d_v^2; equal external couplings depend only on n. The remaining sum is
+
+  sum_(d=0)^n (-1)^d q^(d(d-1)) /
+                   ((q^2;q^2)_d (q^2;q^2)_(n-d)),
+
+which vanishes for n>0 and equals 1 for n=0. Thus the pair can be deleted
+coefficient by coefficient. This gives a precise research question:
+which constraints from actual knot geometry force a cancelling pair to
+have removable interactions? It is not enough to posit positive state counts.
+
+A stronger abstract trial was checked and rejected. Put y=q^2,
+x_i=q^(-C_ii)x, and H_N=(y;y)_(N-1)[x^(N-1)]Z_C for
+
+  C = [[0,0,0,0,0,0,0],
+       [0,0,0,2,0,0,0],
+       [0,0,0,5,1,1,4],
+       [0,2,5,0,7,10,10],
+       [0,0,1,7,1,6,9],
+       [0,0,1,10,6,1,11],
+       [0,0,4,10,9,11,1]].
+
+Exact expansion gives
+
+  H_1=H_2=1,
+  H_3=1+(y-1)(y^2-1)(y^4-1)(y^5-1),
+  H_4''(1)=1704.
+
+H_3 passes the full first nontrivial Habiro divisibility condition. But
+H_4 fails: for actual normalized colored Jones polynomials, H_2=1 forces
+H_N-1 to vanish to order at least four at y=1, for every N>=3. Therefore
+this specific matrix cannot describe a knot's colored Jones sequence.
+Two independent implementations agreed on H_3 and the H_4 derivative.
+No untested assignment of edges is being presented as a knot candidate.
+
+3. QUANTUM EXPERIMENTS: EXACT FINITE-LEVEL INVISIBILITY
+
+Take any finite collection of unitary modular tensor categories. Let M
+be a common order of all their topological twists theta_a. Then the
+nontrivial torus knot T(2,2M+1) has normalized zero-framed invariant 1
+for every simple color in every selected category.
+
+On fusion channel c of a tensor a, the ribbon identity gives
+(R_aa)^2=theta_c/theta_a^2. Set U_a=theta_a^-1 R_aa. Then
+U_a^(2M)=I. Closing the odd two-braid therefore gives
+
+  Tr_q(U_a^(2M+1))/d_a = Tr_q(U_a)/d_a = 1.
+
+The last equality is the one-crossing unknot normalization. These are
+direct consequences of the identities in Bonderson--Shtengel--Slingerland,
+equations 2.33--2.34: https://arxiv.org/abs/0707.4206 .
+
+For only ordinary Jones evaluations, a simpler explicit calculation is
+
+  V_(T(2,2R+1))(t) = t^R(1+t+t^2-t^(2R+2))/(1+t).
+
+At every t with t^R=1 and t!=-1 this equals 1. For example T(2,121),
+using R=60, matches the unknot at primitive orders 3,4,5 while its
+determinant is 121. This is an actual-knot example, not a formal model.
+
+A positive counterpart comes from arithmetic. If P=V_K-1 has Laurent
+support in an interval of width W, exact vanishing at primitive roots of
+distinct orders r_i implies product_i Phi_(r_i) divides a monomial shift
+of P. Hence sum_i phi(r_i)>W forces P=0. One prime p with p-1>W suffices.
+This certifies the polynomial, not unknotness.
+
+RESEARCH PRIORITY
+
+The biology route supplies an actual geometric inverse problem. The quiver
+route supplies explicit variables for hidden interactions, together with
+strong consistency tests. A useful combined project would constrain quiver
+searches to those produced by a certified tangle-gluing construction, and
+track compatible framing in the corresponding reaction equations.
+
+Cluster cancellation methods in statistical physics offer another analogy:
+seek a geometric certificate that algebraically cancelling states are
+removable. See Chandrasekharan--Wiese, https://arxiv.org/abs/cond-mat/9902128 .
+No such general geometric cancellation theorem has been established here.

@@ -1,0 +1,119 @@
+{
+ "label": "A2_codex",
+ "count": 21,
+ "status": {
+  "CERTIFIED_UNKNOT": 21
+ },
+ "certificate_kinds": {
+  "tietze": 21
+ },
+ "tietze_success": 21,
+ "V_K=1": 21,
+ "Delta=1": 21,
+ "rep_groups": {},
+ "crossings_min_max": [
+  6,
+  86
+ ],
+ "secs_median_max_total": [
+  0.496,
+  5.442,
+  27.2
+ ],
+ "by_crossings_bucket4": {
+  "4": {
+   "count": 1,
+   "unknot": 1,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.001,
+   "max_s": 0.001
+  },
+  "12": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.037,
+   "max_s": 0.037
+  },
+  "20": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.017,
+   "max_s": 0.017
+  },
+  "28": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.119,
+   "max_s": 0.119
+  },
+  "36": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.295,
+   "max_s": 0.295
+  },
+  "44": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.496,
+   "max_s": 0.496
+  },
+  "52": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.91,
+   "max_s": 0.91
+  },
+  "60": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 1.358,
+   "max_s": 1.358
+  },
+  "68": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 2.568,
+   "max_s": 2.568
+  },
+  "76": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 3.058,
+   "max_s": 3.058
+  },
+  "84": {
+   "count": 2,
+   "unknot": 2,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 5.442,
+   "max_s": 5.442
+  }
+ },
+ "wall": 8.4,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

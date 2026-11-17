@@ -1,0 +1,643 @@
+JONES UNKNOT DETECTION: FINITE TESTS AND A REALIZABILITY OBSTRUCTION
+31 October 2026
+
+The general problem remains unresolved in this investigation. This pass
+established several restricted results, with separate audits and exact
+calculations. None is asserted to be new to the literature.
+
+1. SATELLITE RIGIDITY WITHOUT ANY REGULARITY ASSUMPTION
+If a fixed satellite construction preserves equality of ordinary Jones
+polynomials for all companions, its output is either V_P(U) or V_P(U)V_K,
+according to the winding parity. No assumed rational dependence is needed.
+For wrapping bound r, at most floor(r/2) explicit equal-Jones companion pairs
+suffice to certify this universal statement. A fixed actual pair of knots
+separated by EVERY higher color is the key ingredient. The exact proof and
+finite test are in Part I.
+
+2. A POSITIVE NONCANCELLATION THEOREM FOR A RESTRICTED TANGLE CLASS
+For an unknot-anchored tangle whose reduced mod-2 Khovanov multicurve consists
+of one rational component and one standard special component of length4n,
+the preferred zero filling cannot have the Jones polynomial of the
+2-component unlink. The proof combines forced Euler cancellation with an
+unavoidable surviving class in the Bar-Natan spectral sequence. It works
+with arbitrary grading shifts. This is a real realization obstruction;
+it is not just a nonvanishing observation about one summand. Part II gives
+the precise hypotheses, proof, and a nonvacuous example.
+
+3. A COUNTEREXAMPLE ROUTE THAT BECAME LESS PROMISING
+An independently checked symmetric-union calculation restricts every
+one-region presentation of the fixed Kinoshita-Terasaka knot to two signed
+half-twists and partial Jones polynomial1. A nontrivial partial would have
+genus1, meridional rank3, and bridge number at least4. It would simultaneously
+refute Jones unknot detection AND the meridional-rank conjecture. Part III
+explains the chain and records a more direct constructive alternative:
+full twists of a ribbon disk with a fixed nonabelian complement group.
+No actual Jones-one candidate was obtained. A concrete two-band template was
+subsequently constructed and its entire integer twist family excluded by a
+leading-coefficient argument; the final geometry note gives that result.
+
+The main missing step is still geometric: control the classical realization
+of cancellation when more special components are present, or construct an
+actual knot in a topology-certified family whose Jones polynomial is1.
+The satellite theorem concerns all Jones fibers and cannot be applied solely
+to the special fiber V=1. These limitations are essential.
+
+The accompanying evidence ZIP contains the full research notes, exact
+standard-library verifiers, their data, and an integrity manifest. Finite
+checks audit the displayed all-parameter proofs; they do not replace them.
+
+
+========================================================================
+PART I — WHOLE-FIBER SATELLITE RIGIDITY
+========================================================================
+
+FINITE TESTS FOR SATELLITES THAT PRESERVE JONES EQUALITY
+Research pass, 31 October 2026
+Status: proved below from standard colored-Jones facts and an exact braid
+certificate, independently audited. Novelty has not been established.
+The general Jones unknot-detection problem is NOT solved by this result.
+
+THE RESULT
+Let P be a fixed knot pattern in a solid torus, and form P(A) using the
+preferred zero-framed longitude of the companion knot A. Let w be its
+integer winding number. The following statements are equivalent:
+
+ (1) For all classical knots A,B, V_A=V_B implies V_{P(A)}=V_{P(B)}.
+
+ (2) For every classical knot A,
+       V_{P(A)} = V_{P(U)}                 if w is even,
+       V_{P(A)} = V_{P(U)} V_A             if w is odd.
+
+No rational formula, continuity, computability, or dependence on a single
+numerical evaluation of V is assumed in (1). It refers to equality of the
+entire Laurent polynomial. It includes composite companion knots.
+
+Moreover, (1) has a finite certificate if a wrapping bound r is known.
+Wrapping here means the minimum geometric intersection with a meridian disk;
+an explicit diagram with at most r intersections suffices. Put
+ S={j: 2<=j<=r and j congruent to w modulo 2}, s=|S|.
+Thus s=floor(r/2) for even w, and max(0,floor((r-1)/2)) for odd w.
+Choose the fixed knots K,L specified below and let T_m=T(2,2m+1), in the
+chirality of the displayed torus formula. Then (1) and (2) are equivalent to
+
+ (3) V_{P(K#T_m)}=V_{P(L#T_m)} for m=1,...,s.
+
+Every tested companion pair already has the same ordinary Jones polynomial.
+These are sufficient symbolic tests, not numerical evaluations at roots of
+unity. For s=0 the annular skein expansion already has the asserted form.
+For example, wrapping at most four requires at most two tests; wrapping at
+most six requires at most three. The bound is not claimed optimal.
+
+CONVENTIONS
+q is an indeterminate; work over F=Q(q^(1/4)). H_N is the reduced,
+zero-framed N-dimensional colored Jones polynomial, normalized by
+H_N(U)=1. In particular H_1=1 and H_2=V. Colored Jones is multiplicative
+under connected sum. A color label j means dimension N=j+1.
+
+STEP 1: ONE ACTUAL JONES COLLISION SEPARATES EVERY HIGHER COLOR
+Take closures of the following braid words (the signs fix chirality):
+ K: B_2, [-1,-1,-1,-1,-1],
+ L: B_4, [1,1,1,-2,-1,-1,-2,-3,2,-3,-3].
+These are versions of 5_1 and 10_132, respectively, and
+ V_K(q)=V_L(q)=q^-2+q^-4-q^-5+q^-6-q^-7.
+For every fixed integer N>=3,
+ H_N(K;e^h)-H_N(L;e^h)
+   =8(N^2-1)(N^2-4)h^5+O(h^6),
+so H_N(K)-H_N(L) is a nonzero Laurent polynomial for every higher color.
+
+Here is the all-N deduction, rather than an extrapolation from finite data.
+The symmetric Habiro expansion is
+ H_N(A;q)=sum_{k=0}^{N-1} a_k(A;q) product_{i=1}^k
+                         (q^N+q^-N-q^i-q^-i),
+where a_0=1 and each a_k is a Laurent polynomial. Equality of H_2 gives
+Delta a_1=0. Exact color-three calculations give
+ Delta a_2=q^-15(q^2-1)(q^3+1)(q^5+1).
+Thus Delta a_2(e^h)=8h+O(h^2). The k=2 kernel has leading coefficient
+(N^2-1)(N^2-4)h^4; every k>=3 kernel starts at order h^6. This proves
+the displayed all-N separation.
+
+The color-three input was independently computed from both explicit braids
+with exact Laurent R-matrix arithmetic; it is not a numerical table fit.
+The verifier checks Yang--Baxter, inverses, framing/stabilization examples,
+ordinary Jones equality, both full color-three polynomials, and the exact
+factorization above. A separate audit checked the Habiro convention and
+factor-of-two normalization. Details are in the accompanying witness note.
+
+STEP 2: FINITE COLORED EXPANSION OF A SATELLITE
+The Kauffman skein module of the annulus is F[z]. Its Chebyshev/Jones--Wenzl
+basis S_j(z) has degree j and parity j. Inserting the companion evaluates
+S_j at its unreduced color j+1. Quantum dimensions can be absorbed in
+coefficients. Therefore
+ V_{P(A)}=sum_{j=0}^r c_j(q) H_{j+1}(A;q),
+where c_j depends on P, not A, and c_j=0 unless j congruent to w mod 2.
+Smoothing preserves mod-two homology. Cutting along a meridian disk also
+shows that skein degree is at most the geometric intersection bound r.
+
+The zero-framing point matters: fix a framing of P relative to the standard
+solid torus. Changing the companion framing by f changes the induced
+self-linking by w^2 f. Using the preferred zero longitude thus makes the
+ordinary-Jones framing correction independent of the companion.
+
+STEP 3: COLORED FUNCTIONS ARE LINEARLY INDEPENDENT
+Put [n]=(q^(n/2)-q^(-n/2))/(q^(1/2)-q^(-1/2)). The two-strand torus formula is
+ H_{j+1}(T_m;q) = (1/[j+1]) sum_{a=0}^j (-1)^(j-a)[2a+1]
+                       q^((2m+1)(a(a+1)-j(j+2))/2).
+With x=q^-m this is a polynomial G_j(x) over F, whose largest degree is
+j(j+2) and whose leading coefficient is nonzero. These degrees are distinct.
+Consequently, a finite linear combination of the functions H_{j+1}(A) that
+vanishes for all A must have every coefficient zero: evaluating on all T_m
+makes a polynomial vanish at infinitely many distinct x=q^-m in F, then
+successively comparing its largest degrees isolates every coefficient.
+
+STEP 4: THE CONNECTED-SUM ARGUMENT
+Assume (1). For every knot J, V_{K#J}=V_{L#J}. Subtract the satellite
+expansions and use reduced colored-Jones multiplicativity:
+ sum_j c_j (H_{j+1}(K)-H_{j+1}(L)) H_{j+1}(J)=0.
+Step 3 forces each coefficient to vanish. Step 1 then gives c_j=0 for all
+j>=2. Only c_0+c_1 V_A remains. Parity leaves c_0 alone for even winding,
+or c_1 V_A alone for odd winding. Evaluating at A=U identifies the remaining
+coefficient as V_{P(U)}. This proves (1) implies (2); the converse is direct.
+
+STEP 5: WHY ONLY s TESTS SUFFICE
+For j>=2 and m>=1, the smallest q-exponent in H_{j+1}(T_m) is
+ e_j(m)=-m j(j+2)-j(j+1)/2,
+with coefficient (-1)^j. Indeed, the valuation of the a-th term in the
+torus formula exceeds that of a=0 by
+ m a(a+1)+a(a-1)/2,
+which is strictly positive for a>=1. Thus no leading cancellation occurs.
+
+List S as j_1<...<j_s. Form the s by s matrix
+ M_{m,b}=H_{j_b+1}(T_m), 1<=m,b<=s.
+For a determinant term indexed by a permutation pi, its valuation is
+ -sum_m m j_{pi(m)}(j_{pi(m)}+2) - sum_b j_b(j_b+1)/2.
+The second sum is fixed. By strict rearrangement of two increasing
+sequences, the first expression has its unique minimum at the identity
+permutation. That term has leading coefficient (-1)^(sum_b j_b), which
+is nonzero. Hence det M is nonzero over F.
+
+Subtracting the s equalities in (3) therefore gives an invertible linear
+system for c_j (H_{j+1}(K)-H_{j+1}(L)), j in S. Every unknown is zero.
+The all-color witness makes every difference nonzero, so all higher c_j
+vanish, yielding (2). This replaces the earlier quadratic root-count bound
+by a linear number of tests. Exact determinant checks supplement this
+all-size proof; they are not its justification.
+
+WHAT THIS DOES AND DOES NOT GIVE TOWARD UNKNOT DETECTION
+If P(U)=U, the two possibilities are exactly the constant polynomial 1
+and the original Jones polynomial V_A. A fixed satellite cannot be a
+more elaborate extractor of ordinary Jones data while preserving every
+ordinary-Jones equality. The proof is an algebraic form of tomography:
+connected sums separate the higher-color contributions that a single
+ordinary Jones measurement has lost.
+
+The crucial limitation is that the desired implication V_A=1 => V_{P(A)}=1
+only concerns one Jones fiber. It does not imply (1). Nor does a constant
+annular skein imply a geometrically trivial pattern. A pattern with
+constant output 1 and geometrically nontrivial satellites would itself
+produce counterexamples. This theorem does not exclude its existence.
+K-dependent patterns, and operations using multiple independent companion
+inputs, also require separate arguments. No generic proof or actual
+Jones-one nontrivial knot is claimed here.
+
+PRIMARY INPUTS AND EXACT CERTIFICATES
+Knot Atlas braid and color-three data:
+ https://katlas.org/wiki/5_1
+ https://katlas.org/wiki/10_132
+Jackson--Kerler, R-matrix formula, equation 23:
+ https://arxiv.org/abs/0912.2114
+Habiro, integral cyclotomic expansion:
+ https://arxiv.org/abs/math/0211044
+Garoufalidis--Le, symmetric convention, Section 3.2, equations 11--12:
+ https://letu.math.gatech.edu/Papers/Asymptotics.pdf
+Morton, colored torus/cabling formula:
+ https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+Garoufalidis, The Jones slopes of a knot, Section 4.8, equation 26:
+ https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_jones_slopes_of_a_knot.pdf
+
+The proof of whole-fiber classification and the valuation-determinant test
+is given here explicitly. We have not established whether this statement
+already appears in the literature. The companion evidence includes the
+source-independent braid calculation and separate normalization audit.
+
+
+
+========================================================================
+PART II — ONE-SPECIAL-COMPONENT REALIZABILITY OBSTRUCTION
+========================================================================
+
+ONE SPECIAL CURVE: A BAR-NATAN REALIZABILITY OBSTRUCTION
+2026-10-31. Derived in this investigation; no novelty claim.
+
+STATUS AND SCOPE
+The proof below excludes a particular formal Euler cancellation from being the
+Khovanov homology of an actual classical link. It does not prove generic Jones
+unknot detection, and does not assert that every special curve has length
+divisible by four. The latter is not a theorem in the cited 2022 source.
+
+THEOREM (restricted tangle statement)
+Let T be a classical four-ended tangle with infinity filling the unknot. Use
+the preferred parametrization in which the zero filling L=T(0) has determinant
+zero (the double cover is zero surgery on the strongly invertible covering
+knot). Work with reduced Khovanov homology over F_2. Suppose its multicurve has
+one rational component r_1(s) and exactly one special component s_(4n)(infinity),
+where n>=1 and length is in the PUBLISHED KWZ2022 convention. Then L cannot have
+the Jones polynomial of the two-component unlink.
+Both components occur with multiplicity one and carry the standard rank-one
+local system (+1 over F_2). This is the Kh geography convention, not a claim
+about arbitrary BN curves with potentially higher-rank local systems.
+
+No absolute grading calibration of the rational curve is needed. All possible
+overall quantum and homological shifts of both components are allowed in the
+argument. Replacing the whole tangle by its mirror is permitted.
+
+INPUTS FROM PRIMARY SOURCES
+1. Kotelskiy--Watson--Zibrowius, Khovanov homology and strong inversions,
+   Open Book Series 5 (2022), 223--244:
+   https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+   Theorem 3.1 gives rational-plus-vertical-special shape for unknot anchors.
+   Lemma 2.5 gives the absolutely relative-to-shift pairing of a(0) with s_(4n).
+   The determinant argument on printed p236 compares the delta-Euler values.
+   Warning: their early arXiv version uses a different length convention.
+   Example 2.2 explicitly identifies the right-handed trefoil quotient as
+   r_1(4) union s_4(infinity), showing the shape hypothesis is non-vacuous.
+   Its mirror is the first row of Table 1, with slope -4 and one special curve.
+   The 2026 geography extension, arXiv:2602.23442 Theorem 3.19 and Remark 3.20,
+   explicitly confirms the fixed rank-one Kh local system. It still states
+   s_(2n), not s_(4n); we do not infer divisibility by four from it.
+2. Turner, Calculating Bar-Natan's characteristic two Khovanov homology,
+   arXiv:math/0411225v3:
+   https://arxiv.org/pdf/math/0411225
+   Theorems 3.1 and 3.2 compute filtered BN homology and its spectral sequence;
+   Section 3.3 constructs the reduced version. The filtration in Section 3.2
+   makes the rth differential have (homological,quantum) degree (1,2r).
+   The reduced two-component case follows directly from the same idempotent
+   proof, as explained below; we do not misquote its knot-focused subsection
+   as a separately stated link theorem.
+
+STEP 1: THE TWO SECTORS AND THEIR SHAPES
+The special pairing is delta-thin and has dimension 4n. The rational pairing
+has delta-Euler magnitude |s| if s!=0, or zero for s=0. Since det L=0, their
+delta-Euler characteristics sum to zero, so |s|=4n. Put k=4n.
+The rational pairing is reduced Kh of a two-strand torus link with k crossings,
+up to overall bigrading shift and orientation change. Orientation changes only
+give another overall shift. Mirror the whole link if necessary to select the
+chirality below. Its Euler polynomial, after a convenient quantum shift, is
+
+ R(Q)=sum_{j=0}^{k-2} (-1)^j Q^(2j+1) + Q^(2k+1).
+
+It is delta-thin and has one generator at each displayed exponent. Equivalently,
+before this shift its polynomial is
+ [Q^(-3k)+(Q^2+1+Q^-2)Q^(-k)]/(Q+Q^-1).
+This is the standard alternating two-strand torus-link calculation; reduced
+F_2 Kh is thin with rank k. Important shape features of R:
+  minimum quantum exponent 1, next exponent 3;
+  maximum quantum exponent 2k+1, preceding exponent 2k-3.
+Thus its unique homological top has a gap of two in homological degree below it.
+
+Lemma 2.5 of KWZ gives the special Euler polynomial, up to sign and Q monomial,
+
+ E_n(Q)=Q^(-k-1)(1+Q^4)(1-Q^6) sum_{i=0}^{n-1}Q^(8i).
+
+Define E(Q)=Q^k E_n(Q). This sector is also delta-thin, with one generator at
+each nonzero Euler monomial. Its min exponent is -1 and next exponent is 3;
+its max exponent is 2k+1 and preceding exponent is 2k-3. The min coefficient
+is +1 and max coefficient -1. In particular BOTH ends have homological gap2,
+so mirroring preserves the required special-sector shape.
+
+The exact identity is
+ R(Q)+E(Q)=Q+Q^-1.
+It follows by summing the geometric series, or multiplying by Q+Q^-1 and using
+ (1+Q^2)(1+Q^4)(1-Q^6)/(1-Q^8)=1+Q^2+Q^4.
+
+STEP 2: UNIQUENESS OF EULER CANCELLATION, ALLOWING ALL SHIFTS
+Assume the actual reduced Kh Euler polynomial is Q+Q^-1. For arbitrary shifts
+a,b and signs epsilon,eta in {+1,-1}, it must therefore satisfy
+ epsilon Q^a R(Q)+eta Q^b E(Q)=Q+Q^-1.                 (1)
+The only solution is a=b=0 and epsilon=eta=+1.
+
+Proof. If the two maximum exponents differ, the larger maximum cannot cancel,
+so it must equal 1. Both supports have width greater than 2. Consequently their
+minimum exponents must cancel, hence a+1=b-1, or a=b-2. Then the E maximum
+dominates and equals 1, giving b=-2k. The canceled minimum is -2k-1. At exponent
+-2k+1, only R contributes: its bottom gap is 2 while E's bottom gap is 4. This
+exponent is below -1 because k>=4, contradicting (1).
+Thus the maxima agree, so a=b. Their coefficients at the common maximum are
+epsilon and -eta. If they did not cancel, the coefficient would have absolute
+value 2, impossible on the right. Thus epsilon=eta. The displayed identity now
+reduces (1) to epsilon Q^a(Q+Q^-1)=Q+Q^-1, forcing a=0, epsilon=+1. QED.
+
+The actual reduced quantum grading of a two-component link is odd integral, so
+the shifts above are integers. The extremal argument in fact does not need
+integrality. Crucially, the homological shifts remain unrestricted apart from
+the Euler signs: the rational top has EVEN homological parity, and the special
+top has ODD homological parity. Both occur at the SAME maximum quantum grade.
+
+STEP 3: A SHIFT-INDEPENDENT SPECTRAL SEQUENCE OBSTRUCTION
+Here is the abstract lemma actually used.
+
+Suppose a bigraded vector space is a direct sum of two delta-thin sectors,
+each having a unique top homological class and no class one homological degree
+below its own top. Suppose the two top classes have the same quantum grading
+and opposite homological parities. Then it cannot be the E1 page of a spectral
+sequence with differential degrees (1,positive quantum degree) converging to a
+rank-two vector space supported entirely in homological degree zero.
+
+Proof. Their top homological degrees differ because their parities differ.
+Let H be the larger one. There is exactly one class in homological degree H,
+and no classes above H. It has no outgoing differential. In its own sector there
+is no incoming source in degree H-1. In the other sector, a potential source in
+degree H-1 can exist only when that sector's top degree is H-1; that top has the
+SAME quantum degree as the target, so no differential of positive quantum degree
+can connect them. If the other top is lower, there is no source at all.
+These support exclusions persist to every spectral-sequence page, since pages
+are subquotients of E1 in their bigradings. Thus the unique class at H survives.
+If H!=0 this contradicts support of the limit in degree zero. If H=0, E1 has
+only one class in degree zero and no higher classes, so its limit cannot have
+rank two in degree zero. QED.
+
+This lemma applies to the forced pair R,E by Step 2 and the top gaps in Step 1.
+
+STEP 4: WHY AN ACTUAL JONES-UNLINK LINK HAS THAT BN LIMIT
+The normalized Jones polynomial's first derivative at 1 determines the linking
+number of a two-component link (its nonzero proportionality factor is irrelevant
+here). Equality with the unlink polynomial therefore gives lk(L)=0.
+Turner's characteristic-two BN spectral sequence has E1=Kh over F_2 and
+d_r of degree (1,2r), r>=1. For the reduced theory at a basepoint, the filtered
+homology has two canonical orientation classes, of homological degrees 0 and
+2lk(L), hence rank2 at homological degree0 here.
+
+For completeness, the reduced link assertion follows from Turner's proof:
+at u=1 the Frobenius algebra splits into idempotents a=x+1 and b=x. The unreduced
+canonical basis is indexed by orientations of the components, with degree
+2 times the total linking between the reversed subset and its complement.
+Reduction at the basepoint with x=0 keeps a and kills b there, selecting exactly
+one member of each globally reversed orientation pair. For two components these
+two surviving degrees are precisely 0 and 2lk. This also shows there is no
+uncontrolled overall homological shift in the target theory.
+
+Steps 2--4 contradict one another, proving the restricted tangle statement.
+
+WHAT THIS DOES AND DOES NOT DO
+The formal all-n Euler identity is valid but is NOT classically realizable with
+these exact two sectors and unlink polynomial: BN detects an unavoidable class.
+This is a real realization obstruction, stronger than per-component Euler
+nonvanishing and independent of absolute anchor shifts. Multiple special curves
+can supply additional incoming sources, so the proof does not cover them.
+It also says nothing by itself about whether an arbitrary Jones-one knot admits
+an unknot-anchored presentation with this one-special property.
+
+
+
+========================================================================
+BOUNDARY OF PART II — FOUR FORMAL SPECIAL COMPONENTS
+========================================================================
+
+FOUR-SPECIAL FORMAL BOUNDARY TO THE ONE-SPECIAL ARGUMENT
+2026-10-31. Explicitly NOT a classical tangle construction.
+
+Let B be the four-dimensional pairing HF(a(0),s_4(infinity)) over F_2, with
+bigrades (h,q)=(-2,-5),(0,-1),(1,1),(3,5). Write [a]{b} for shifts adding a
+to homological degree and b to quantum degree.
+
+Consider the bigraded vector space
+  W = B direct-sum B[1]{2} direct-sum B[1] direct-sum B[2]{2}.
+All four summands have the shape of a standard rank-one special component,
+up to the allowed overall bigrading shifts. If E_B(Q) is B's Euler polynomial,
+then
+  Euler(W) = E_B(Q)(1-Q^2-1+Q^2) = 0.
+
+Define a degree-(1,2) differential by identity on the underlying B vector space:
+  B -> B[1]{2},       B[1] -> B[2]{2},
+with zero differential from the two targets. These are disjoint isomorphism
+pairs. Thus d_1^2=0 and (W,d_1) is acyclic.
+
+Now add the rational r_1(0) pairing module U with two generators in bigrades
+(0,-1),(0,1), and set its differential to zero. The resulting formal E1 page
+has rank18, Euler Q+Q^-1, and E2=E_infinity=U of rank2 in homological degree0.
+Thus it satisfies precisely the Jones-unlink Euler and reduced filtered
+Bar-Natan rank/support conditions that obstructed the one-special model.
+
+There is also an elementary universal algebraic lift. Over F_2[H] with
+deg H=(0,-2), use the same free generators and differential H times each
+displayed identity. The differential now has bidegree (1,0). At H=0 it is
+zero, and at H=1 it is the acyclic-pairs differential above. Its homology has
+eight length-one H-torsion summands and two free generators. This is a free
+bigraded chain complex, NOT a claim that it is a knot/tangle BN invariant.
+
+WHAT IS MISSING
+No classical tangle realizes this model in this note. In particular, we have
+not constructed its full tangle type-D/A-infinity extension, shown that the
+displayed differential comes from the actual BN deformation of such a tangle,
+or supplied compatible deformations for all rational fillings. The geometric
+curve shapes and this one filling's spectral-sequence axioms alone do not
+provide those missing structures.
+
+CONCLUSION
+The one-special permanence lemma is a genuine restricted realizability
+obstruction. It cannot extend to arbitrary numbers of special components
+using only component geography, Euler polynomial, and the existence of a
+Bar-Natan spectral sequence with its usual degree and rank conditions.
+This formal example supplies the additional incoming sources that its proof
+excluded. It is not a Jones counterexample or a realized tangle theorem.
+
+
+
+========================================================================
+PART III — TOPOLOGY AND TARGETED COUNTEREXAMPLE ROUTES
+========================================================================
+
+PROOF12 TANGLE GEOMETRY AUDIT — 2026-10-31
+Scope: checked deductions and targeted research proposals; no solution of generic Jones detection and no novelty claim.
+
+1. AN ACTUAL OBSTRUCTION TO THE NATURAL UNKNOT-ANCHOR REDUCTION
+
+For a nontrivial knot K, let D_K be the standard half-spin ribbon disk with boundary K#(-K). Its complement group is the knot group G_K, hence is nonabelian. Friedl–Teichner, New topologically slice knots (2005), Section 2, p2135 explicitly gives this half-spin construction and group:
+https://math.berkeley.edu/~teichner/Papers/topslice.pdf
+
+If a ribbon disk D has boundary the actual unknot, then inclusion of the boundary knot exterior surjects onto pi1(B4\D). This is the standard homotopy-ribbon property; reversing the ribbon-complement handle decomposition adds only handles of indices at least 2 to the boundary exterior. The group is therefore a quotient of Z. Its abelianization is Z, so the disk-complement group is Z. No uniqueness or standardness claim about the disk is needed.
+
+In a fixed ribbon disk-band presentation, adding even band twists and switching crossings between bands preserve the complement group: the Wirtinger relators record how bands pass through base disks, not their framings or band-band crossings. This is stated explicitly in Hitt–Silver, Ribbon knot families via Stallings' twists, J Austral Math Soc A50 (1991), p363 Remark(2) after Lemma3:
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/82437148D37FEF30ED1C6155174B382C/S1446788700032961a.pdf/ribbon_knot_families_via_stallings_twists.pdf
+
+Consequently, the standard double of ANY nontrivial K cannot be carried to an actual unknot by these moves, isotopies, and slides of the same disk. This remains an obstruction for Delta_K=1 and for a hypothetical V_K=1. A successful generic anchor reduction must change the disk group, e.g. by moves involving band/base-disk passages, whose Jones effect is not controlled here.
+
+2. THE SAME CANONICAL REDUCTION CANNOT GENERICALLY REACH FUSION ONE
+
+Bleiler–Eudave-Munoz, Composite ribbon number one knots have two-bridge summands (1990), Theorem1.3 says a composite fusion-one ribbon knot has a nontrivial two-bridge summand. Their 'ribbon number' is the modern fusion number, not number of ribbon singularities.
+https://doi.org/10.1090/S0002-9947-1990-0968881-9
+Author-uploaded original read at:
+https://www.researchgate.net/publication/303349776_Composite_ribbon_number_one_knots_have_two-bridge_summands
+
+If V_K=1, multiplicativity forces each prime factor's Jones polynomial to be a Laurent unit; V(1)=1 and V'(1)=0 then force that unit to be 1. A nontrivial two-bridge factor is impossible by alternating Jones detection. Thus a nontrivial hypothetical K has fusion(K#(-K))>=2. This is a genuine obstruction to the proposed canonical fusion-one reduction, not evidence against all possible unrelated reductions.
+
+3. POSITIVE CONSTRUCTION TARGET: AN ORBIT WITH NONTRIVIALITY BUILT IN
+
+The group obstruction is useful for counterexample search. Start with D_K for a nontrivial Delta=1 knot K and vary full band twists. Every resulting boundary remains nontrivial by (1). Any parameter yielding V=1 is then a certified counterexample, without a difficult separate unknot-recognition step.
+
+For a ribbon disk presented by b bands joining b+1 base disks (an abstract tree), let L_C be the ribbon link after cutting a subset C of the bands. It has |C|+1 components. Put delta=-(t^(1/2)+t^(-1/2)) and Q_C=V_(L_C)/delta^|C|. Eisermann's ribbon-link divisibility theorem makes Q_C an integral Laurent polynomial:
+https://msp.org/gt/2009/13-2/gt-v13-n2-p01-s.pdf
+
+Choose n_i so that the full-twist recurrence is
+V_(R with n full twists at b)=t^(2n)V_R+(1-t^(2n)) V_(R cut at b)/delta.
+This is Hitt–Silver Lemma2(b), up to the explicitly selectable sign of the full-twist convention. Iterating on the cut links gives the exact multi-affine expression
+
+V_R(n_1,...,n_b)= sum_(C subset [b]) Q_C(t)
+                    product_(i in C)(1-t^(2n_i))
+                    product_(i not in C)t^(2n_i).
+
+All-cut Q_[b]=1 (base unlink). Cutting a band in an abstract forest raises the component count by one, so the same normalization works at each step. This is also the ribbon-band analogue of Tanaka2022 Theorem1.1's explicit symmetric-union formula.
+
+A fixed b=2 template needs 4 actual cut-link polynomials; b=3 needs 8. After these are geometrically verified, V=1 is an exact affine-exponent cancellation problem, suitable for the existing unbounded lattice solver. UPDATE: a concrete two-site mirror-double template of KT has now been constructed; see newfamilyproof.txt. All four actual cut diagrams and two full-twist checks are supplied. Its Jones-one locus is empty for ALL integer twist parameters by a one-line leading-term argument. The exact identification of this serialized disk with the canonical half-spin disk group was not separately computed and is not needed for the exclusion.
+
+4. A KNOWN INVERSE-DESIGN TARGET, NOW WITH AN EXACT SMALL PARAMETER FILTER
+
+Lamm–Tanaka, On partial knots for symmetric unions, Topology Appl375 (2025),109593, proves that any partial knot J of a ONE-twist-region symmetric-union presentation of the Kinoshita–Terasaka knot has V_J=1. The publisher abstract explicitly states this result. Full article was not accessible, so its complete proof is not claimed audited:
+https://www.sciencedirect.com/science/article/pii/S0166864125003918
+https://doi.org/10.1016/j.topol.2025.109593
+
+A nontrivial partial knot in such a presentation would be a counterexample. The known presentation has partial unknot. Varying its twist does not change that partial knot. One must change the off-axis tangle/decomposition, possibly breaking and recovering symmetry. Symmetric Reidemeister moves alone preserve the partial knot.
+
+We independently recovered the Jones obstruction and a stronger parity restriction, using Tanaka's correct primary formula in A formula for the Jones polynomial of symmetric unions (2022), Thm1.3 and proof:
+https://www.ed.gifu-u.ac.jp/file/5c3c1905e8c24e832f61fa5f837be463.pdf
+
+Let P=V_KT in the chirality used by our independently checked four-braid, and choose signed twist exponent m OPPOSITE to Tanaka2022's half-twist parameter. Set star P(t)=P(t^-1). Then
+  (1+(-t)^m) F(t)=P(t)+(-t)^m star P(t),
+  F(t)=V_J(t)V_J(t^-1).
+The case m=0 is excluded because KT is prime and nontrivial, whereas zero twist is J#(-J).
+
+Tanaka's derivative congruence says 8|m| divides P'(-1). Here
+  P=1+(t^2-1) f,
+  f=t^-4(t^2+1)(t-1)^2(t^2+t+1)(t^2-t+1),
+  P'(-1)=-48.
+Thus |m| is one of 1,2,3,6. The accompanying exact Fraction-based script performs Laurent division for all eight possibilities; this is a complete number-theoretic reduction, not a bounded search.
+
+- m=+-6: RHS/(1+(-t)^m) is not a Laurent polynomial.
+- m=-3,-2,-1: the required F has negative constant coefficient. Impossible, since [t^0](Q Q*) is a sum of squares of integer coefficients.
+- m=1: F has constant coefficient 1 and is nonconstant. A norm with constant coefficient 1 comes from a single signed monomial and is identically 1.
+- m=3: F=3-(t+t^-1)+(t^3+t^-3)-(t^4+t^-4). At a primitive cube root omega this is 7, contradicting the universal knot identity V_J(omega)=1, which requires F(omega)=1.
+- m=2: F=1. Hence V_J is a signed monomial; V_J(1)=1 and V'_J(1)=0 force V_J=1.
+
+Therefore every ONE-region presentation of this fixed chirality has m=2 in our convention (Tanaka's m=-2); the mirror reverses it. In particular every such presentation is EVEN. This independently recovers the published Jones conclusion and establishes the parity needed for the next geometric restrictions. The underlying identity is in the 2022 source and the derivative congruence is restated as Cor4.2 in Tanaka2025 below. No originality claim is made.
+
+Source audit caveat: Tanaka's short 2025 On alternating partial knots of symmetric unions, printed p4 Theorem4.1, has an exponent typo in the displayed identity: it uses t^-m on the left and t^m on the right. Differentiating at t=1 contradicts V(1)=1,V'(1)=0 for m nonzero. The typo was checked visually, not inferred from OCR. The correct t^m-left formula appears in the 2022 source and its elementary proof. The following example equations inherit the typo. Do not use the 2025 identity uncorrected.
+https://www.ed.gifu-u.ac.jp/file/aa876b18ef60ef2ef2bcac4abdf0ec78_1.pdf
+
+5. GEOMETRIC RESTRICTIONS ON A NONTRIVIAL PARTIAL J
+
+Because the unique allowed twist is even, Boileau–Kitano–Nozaki's even-symmetric-union results apply: Delta_KT=Delta_J^2, g(KT)>=2g(J), and there is a meridian-preserving, longitude-killing epimorphism G_KT -> G_J.
+https://arxiv.org/html/2407.09881
+Thus a nontrivial candidate must have g(J)=1 and Delta_J=1, in addition to V_J=1.
+
+KT has a 3-bridge presentation, so G_KT has three meridional generators and mr(J)<=3. A knot generated by two meridians is two-bridge, so a nontrivial Jones1 candidate must have mr(J)=3 exactly. This does NOT unconditionally imply bridge number 3; the meridional-rank conjecture is not used as a theorem.
+
+Dutra, Meridional rank of Whitehead doubles, arXiv2212.13081, proves mr(W(C))=b(W(C))=2b(C)>=4 when C is prime algebraically tame. Proposition2.9 includes two-bridge, torus and prime three-bridge companions. Such Whitehead-double candidates are therefore excluded by the group epimorphism, regardless of their Jones polynomials:
+https://arxiv.org/abs/2212.13081
+General Whitehead doubles are not all covered. Genus1+Delta1 does not alone classify a knot as a Whitehead double, and no such reduction is claimed.
+
+A further obstruction from Boileau–Kitano–Nozaki, A preorder on the set of links with applications to symmetric unions, arXiv2510.12372v3, Thm1.7 and Prop7.2: KT is arborescent, and its pi-orbifold group surjects onto that of J; each prime factor of Sigma2(J) must have a Seifert-fibered JSJ piece. This excludes a purely hyperbolic prime double cover, not every hyperbolic knot J.
+https://arxiv.org/html/2510.12372v3
+
+No complete classification of KT's quotient knot groups was found. A 'small source' finiteness shortcut is not justified: Tillmann's 2000 character-variety calculation detects a closed essential surface in KT's exterior, so KT is not small.
+https://www.maths.usyd.edu.au/u/tillmann/papers/kino.pdf
+The word 'small' means no closed essential surface, not small crossing number.
+
+6. FINITE-TEMPLATE NEXT TEST, AND THE MISSING GENERAL STEP
+
+Two sharply bounded next tests are now clear:
+(A) Construct one explicit 2/3-band canonical double of a nontrivial Delta1 knot, certify its disk group nonabelian, compute its 4/8 cut-link Jones polynomials, and solve the complete integer twist locus. Group certifies every potential V1 point nontrivial.
+(B) Fix an off-axis tangle template for a one-region symmetric union and ask which parameters give the actual KT knot. Its axis exponent is already fixed at +-2; any geometrically nontrivial partial solution is automatically Jones1. Filter proposed partials by genus1, Delta1, mr3, and the double-cover JSJ restriction before further computation.
+
+Neither is a generic proof reduction: no complexity bound on all off-axis diagrams or all ribbon disks has been shown. We do not infer topological equality to KT merely from matching Jones. This pass found no actual counterexample. The subsequent concrete two-site KT template was constructed and completely excluded; see newfamilyproof.txt.
+
+7. INDEPENDENT AUDIT OF ROOT'S SHARPER BRIDGE OBSTRUCTION
+
+Fukuhama–Ozawa–Teragaito, Genus one, three-bridge knots are pretzel, J Knot Theory Ramifications8 (1999),879–885, Theorem1.1, proves every genus-one 3-bridge knot is a three-strand pretzel with all three parameters odd. This is explicit at the end of Case(i), p3; Case(ii) produces P(+-3,-+3,n), n odd, p5. The complete primary manuscript was read:
+https://www.komazawa-u.ac.jp/~w3c/research/pdf/pretzel.pdf
+Accessible primary-manuscript mirror:
+https://citeseerx.ist.psu.edu/document?doi=8607359ad54e3635165f912f0347ace68fadbabe&repid=rep1&type=pdf
+
+For three odd parameters p,q,r, put S=p+q+r. Our earlier independently audited exact Jones moment proof gives, under V''(1)=V'''(1)=0,
+  pq+pr+qr+1=0,
+  (p+q)(q+r)(r+p)=0.
+If p+q=0, the first equality gives p^2=1. Hence the diagram is P(1,-1,r), an actual unknot by cancellation of the integer rational tangles. The other choices are identical. Thus the genus1/bridge3 class detects U using just these two derivatives. We do NOT need to cite an unverified blanket assertion that every pretzel knot detects U.
+
+Primary table for KT's bridge number 3, with a 3-bridge projection, appears in Minimal bridge projections for 11-crossing prime knots:
+https://citeseerx.ist.psu.edu/document?doi=459a0d6e1a8117452853eb584cc126fb0951921b&repid=rep1&type=pdf
+Row 11n42 explicitly lists bridge index3. Genus2 is also established independently in the knot-Floer literature and explicitly recorded by Kindred's A simple proof of the Crowell–Murasugi theorem, AGT24(2024), p2783:
+https://msp.org/agt/2024/24-5/agt-v24-n5-p12-p.pdf
+
+Combine Sections4–5 with this theorem. If a one-region KT partial J is nontrivial, then:
+  V_J=1, Delta_J=1, g(J)=1,
+  mr(J)<=3 from the meridian-preserving epimorphism,
+  b(J)>=4 from genus1/bridge3 classification plus alternating detection for b<=2.
+Moreover mr(J)=3 since mr<=2 implies two-bridge. Thus J would ALSO contradict the meridional-rank conjecture, mr(J)=b(J).
+
+Exact conditional conclusion: if the meridional-rank conjecture holds just for genus-one knots with meridional rank at most3, every one-region symmetric-union presentation of KT has trivial partial knot. This greatly reduces the appeal of using this particular inverse target to find a Jones counterexample; it is a simultaneous counterexample hunt to two longstanding conjectures. It does not prove the meridional-rank conjecture or Jones detection.
+
+The genuinely useful remaining constructive proposal from this pass is instead Section3's fixed nonabelian disk-group orbit with its exact multiaffine Jones equation. That route has no stated implication that it must violate meridional rank, and one actual two-site KT mirror-double template is now built and excluded for all parameters; see newfamilyproof.txt.
+
+
+
+========================================================================
+PART IV — AN ACTUAL TWO-BAND FAMILY EXCLUDED FOR ALL TWISTS
+========================================================================
+
+AN ACTUAL TWO-PARAMETER RIBBON-DOUBLE FAMILY, COMPLETELY EXCLUDED
+2026-10-31. No novelty claim. This is a family theorem, not generic Jones detection.
+
+CONSTRUCTION AND GEOMETRIC DATA
+
+Use Musick, Minimal bridge projections for 11-crossing prime knots, arXiv1208.4233v3, p71, row11n42. The source gives a 78-crossing DT projection of the Kinoshita–Terasaka knot. The exact DT and its planar diagram are stored in kt_bridge_data.json. Code verifies precisely three maximal overpasses, of lengths34,28,16, and simplifies the projection to11crossings. The simplified KT Jones polynomial matches the independent four-braid calculation in pass5.
+https://arxiv.org/abs/1208.4233
+
+A face of this projection meets all three overpasses. Select one edge on each, then make a second copy with reflected planar cyclic orders (port j maps to -j mod4), preserving over/under parity. Along selected edge i, either retain the two separate mirror edges (0) or cross-glue corresponding reflected ends (infinity). Fix one infinity join. The other two sites are the two band sites.
+
+With both band sites 0, the separating sphere meets the diagram only at the fixed join, so this is geometrically K#mirror(K), irrespective of polynomial checks. Joining both remaining sites is cutting both bands; the resulting THREE-component diagram simplifies by Reidemeister moves to three crossing-free unknots. The one-site cuts are two-component links. All pairwise linking numbers of every cut diagram are0, so reversing component orientations does not introduce a Jones monomial ambiguity. Initial and simplified PD codes are stored for all four cases in kt_double_cuts.json.
+
+The constructor now uses the stored planar diagram directly, avoiding dependence on a fresh DT decoding. The selected edges are recorded in the cut data. Its default port convention for full twists has been checked against actual planar diagrams at BOTH band sites: insert a two-crossing positive braid; its Jones polynomial agrees with n_i=-1 in the recurrence below. Actual twist PDs and exact polynomials are stored in kt_twist_check.json.
+
+DISK-GROUP SCOPE
+
+This mirror-double/bridge construction is intended as the canonical half-spin ribbon disk, whose group is the companion knot group. Folding identifies the two mirror bridge diagrams. However, no separate disk-group presentation computation was completed for this particular serialized band diagram. The all-parameter Jones exclusion below is independent of that identification: it requires only the explicit diagrams, two local full-twist sites, and their cut diagrams. Do not treat polynomial equality as a proof of a disk-group identification.
+
+THE FOUR COEFFICIENTS
+
+Put t=x^2, where x is Regina's Jones variable, and delta=-x-x^-1. Let Q_C be the Jones polynomial of the link with the bands in C cut, divided by delta^|C|. Write Q0 for neither cut, Q1,Q2 for one cut, and Q12 for both cut. Exact computation gives:
+  Q0=V_KT(t)V_KT(t^-1),
+  Q12=1.
+Complete integral coefficients are recorded in kt_double_locus.json and can be re-derived from the actual cut polynomials using kt_leading_verify.py.
+
+For integers m,n counting full band twists, the local antiparallel twist skein relation gives
+  V_(m,n)=Q0*t^(2m+2n)
+          +Q1*(1-t^(2m))*t^(2n)
+          +Q2*t^(2m)*(1-t^(2n))
+          +(1-t^(2m))*(1-t^(2n)).
+A negative m or n is allowed; this identity holds in the Laurent polynomial ring. The full-twist sign convention was fixed by the two actual twist checks above.
+
+Set
+  A=Q0-Q1-Q2+1, B=Q2-1, C=Q1-1.
+Then
+  V_(m,n)-1=A*t^(2m+2n)+B*t^(2m)+C*t^(2n).
+Their exact leading data are
+  degree_t A=10, leading coefficient=-1;
+  degree_t B=8,  leading coefficient=-1;
+  degree_t C=9,  leading coefficient=-1.
+
+PROOF OF ALL-INTEGER EXCLUSION
+
+For any integers m,n, let M=max(10+2m+2n,8+2m,9+2n). Every summand that reaches exponent M contributes coefficient -1. Every other summand has strictly lower degree. Consequently [t^M](V_(m,n)-1) is -1,-2,or-3, never0. Therefore V_(m,n) is not1 for ANY integer pair (m,n).
+
+This is a direct leading-term proof with no parameter bound and no dependence on an exhaustive numerical search. The existing affine-exponent lattice solver independently gives an empty solution locus (49 total RREF states); that computation is redundant after the leading-term proof.
+
+REPRODUCTION
+
+Geometry/polynomial packages already available at work/braid_classification/packages:
+  Spherogram2.4.1; Regina7.4.1.
+From the workspace root:
+  python3 work/proof12/tangle/kt_double_cuts.py
+  python3 work/proof12/tangle/kt_double_locus.py
+  python3 work/proof12/tangle/kt_twist_check.py
+Only Python standard library is needed to check the exact final arithmetic:
+  python3 work/proof12/tangle/kt_leading_verify.py
+
+Random choices in Reidemeister simplification can change the final simplified PD, but not the initial diagrams, linking numbers, or computed Jones polynomials. The saved initial PDs make the inputs fixed.

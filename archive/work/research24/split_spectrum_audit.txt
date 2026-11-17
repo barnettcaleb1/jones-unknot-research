@@ -1,0 +1,120 @@
+INDEPENDENT AUDIT: SPLIT SPECTRUM OF A BURAU-KERNEL BRAID
+2026-10-31. Scope: generic B_5 and its standard five-dimensional
+Temperley--Lieb module. Verdict: the proposed lemma is valid, with the
+scope qualifications below. This is an internal proof audit, not a
+novelty claim or an unknot-detection result.
+
+Statement.
+Let B lie in the kernel of the unreduced Burau representation of B_5
+over Z[t,t^{-1}]. Let M=rho_5(B), where rho_5 is the standard integral
+five-dimensional Temperley--Lieb representation with
+  rho(sigma_i)=A I+A^{-1}e_i,  e_i^2=delta e_i,
+  delta=-A^2-A^{-2}.
+Then every eigenvalue of M which belongs to Q(A) is 1. If the
+characteristic polynomial of M splits completely over Q(A), then M=I.
+Equivalently, M != I implies that its characteristic polynomial does
+not split completely over Q(A).
+
+1. The Burau kernel lies in [P_5,P_5].
+
+Use the local generator matrix [[1-t,t],[1,0]], as in the exact code
+work/pass2/braid_kernel.py. At t=1 it is an adjacent transposition.
+Consequently a Burau-kernel braid is pure.
+
+For a pure braid beta, the derivative D(beta)=Burau(beta)'(1) is an
+additive homomorphism, because every pure braid evaluates to I. For a
+standard pure generator A_ij, direct differentiation gives
+  D(A_ij)=L_ij,
+where L_ij has diagonal entries +1 at i,j, off-diagonal entries -1 at
+(i,j),(j,i), and zero elsewhere. Indeed for sigma_i^2 the derivative
+is [[1,-1],[-1,1]]; conjugating to A_ij conjugates this matrix by the
+specialized permutation. The derivative contributions of conjugator
+and inverse cancel. The ten L_ij are Z-linearly independent, as each
+off-diagonal position detects its corresponding coefficient.
+
+The abelianization of P_5 is Z^{10}, with A_ij as its standard basis
+(the pairwise linking numbers). Hence D is injective on this
+abelianization. A Burau-kernel braid has D(B)=0, so B is in [P_5,P_5].
+This calculation fixes the possible factor-of-two issue: A_ij has
+linking number one, and the derivative above is exactly L_ij.
+
+2. The residual matrix has zero first jet at A=1.
+
+All generator matrices and their inverses have entries in
+R=Z[A,A^{-1}]. At A=1, delta=-2 and (I+e_i)^2=I, so the specialized
+braid representation factors through the symmetric group. Thus every
+pure braid maps to I. As in step 1, its first derivative is additive
+on the pure subgroup and therefore vanishes on [P_5,P_5]. It follows
+that
+  M = I + (A-1)^2 N(A),
+with N regular at A=1. This step does not require faithfulness of the
+classical specialized representation.
+
+3. A rational eigenvalue must be 1.
+
+If lambda belongs to Q(A) and is an eigenvalue of M, the monic
+characteristic polynomial makes lambda integral over R. The inverse
+matrix also has entries in R, so lambda^{-1} is integral over R.
+The Laurent polynomial ring R is integrally closed and has fraction
+field Q(A). Therefore lambda and lambda^{-1} belong to R, making
+lambda a unit of R. Its form is thus +/- A^k for an integer k.
+
+Since M(1)=I, lambda(1)=1 and the sign is positive. If k were nonzero,
+the determinant of
+  M-A^k I = -k(A-1)I + O((A-1)^2)
+would have nonzero leading term (-k)^5(A-1)^5. This contradicts that
+lambda=A^k is an eigenvalue identically. Hence k=0 and lambda=1.
+
+If all roots are rational, the characteristic polynomial is (X-1)^5.
+Cayley--Hamilton then gives (M-I)^5=0.
+
+4. Unitarity eliminates nonidentity unipotents.
+
+Put E_i=-e_i and d=-delta=A^2+A^{-2}. For A on the unit circle near
+1, d is real and near 2. The fixed finite-dimensional TL_5 algebra
+has a positive faithful Markov trace form at d=2. For example, its
+standard faithful action on (C^2)^{tensor 5}, with E_i twice the
+antisymmetric projection on factors i,i+1, realizes this trace as a
+positive scalar multiple of the ordinary matrix trace. All three
+TL_5 simple modules occur. Equivalently one can use the positive
+Jones--Wenzl/path basis at d=2.
+
+The Gram matrix is finite and depends continuously on d. Its strict
+positivity therefore persists on a neighborhood of d=2. This provides
+positive inner products on the fixed TL_5 simple modules, in
+particular the five-dimensional module, for a sufficiently small
+open arc of A around 1. In that inner product E_i is self-adjoint and
+  (A I-A^{-1}E_i)^*(A I-A^{-1}E_i)
+    = I-(A^2+A^{-2})E_i+E_i^2 = I.
+Thus M(A) is unitary on this arc. A unitary matrix whose sole
+eigenvalue is 1 is the identity. Since every Laurent entry of M-I
+vanishes on an open arc, every entry vanishes identically.
+
+Source for the positivity framework: Aaserud--Evans, Realizing the
+braided Temperley--Lieb--Jones C*-tensor categories as Hilbert
+C*-modules, arXiv:1908.02674, sections 2.4.1 and 2.4.3.
+https://arxiv.org/pdf/1908.02674
+Their full-tower positivity statement has discrete parameters below
+2. The open interval used here is instead the elementary continuity
+argument for the ONE FIXED finite algebra TL_5; no full-tower open
+unitary interval is asserted.
+
+Consequences and limits.
+
+* “Does not split completely” is the precise conclusion. Irreducibility
+  is not claimed: some roots could equal 1 while others are algebraic
+  over Q(A).
+* The formal diagonal monomial models for all-power trace cancellation
+  cannot be the nonidentity residual image of a Burau-kernel braid.
+  The first-order pure-braid constraint already rules their nontrivial
+  monomial eigenvalues out.
+* Nonsplit eigenvalues remain a genuine possibility. Nothing here rules
+  out the four-moment trace locus with algebraic eigenvalues.
+* M=I is not asserted to imply B=1. Since the other generic TL_5 blocks
+  are already identity on a Burau-kernel braid, M=I would put B in the
+  entire generic TL_5 representation kernel. Its braid nontriviality
+  remains a separate topological/algebraic issue.
+* The same proof works for any fixed standard integral TL_n module and
+  B in the unreduced Burau kernel of B_n. The finite-n positive arc may
+  shrink with n. No statement about every colored representation or
+  every root of unity follows.

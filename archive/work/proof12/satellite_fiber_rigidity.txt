@@ -1,0 +1,167 @@
+FINITE TESTS FOR SATELLITES THAT PRESERVE JONES EQUALITY
+Research pass, 31 October 2026
+Status: proved below from standard colored-Jones facts and an exact braid
+certificate, independently audited. Novelty has not been established.
+The general Jones unknot-detection problem is NOT solved by this result.
+
+THE RESULT
+Let P be a fixed knot pattern in a solid torus, and form P(A) using the
+preferred zero-framed longitude of the companion knot A. Let w be its
+integer winding number. The following statements are equivalent:
+
+ (1) For all classical knots A,B, V_A=V_B implies V_{P(A)}=V_{P(B)}.
+
+ (2) For every classical knot A,
+       V_{P(A)} = V_{P(U)}                 if w is even,
+       V_{P(A)} = V_{P(U)} V_A             if w is odd.
+
+No rational formula, continuity, computability, or dependence on a single
+numerical evaluation of V is assumed in (1). It refers to equality of the
+entire Laurent polynomial. It includes composite companion knots.
+
+Moreover, (1) has a finite certificate if a wrapping bound r is known.
+Wrapping here means the minimum geometric intersection with a meridian disk;
+an explicit diagram with at most r intersections suffices. Put
+ S={j: 2<=j<=r and j congruent to w modulo 2}, s=|S|.
+Thus s=floor(r/2) for even w, and max(0,floor((r-1)/2)) for odd w.
+Choose the fixed knots K,L specified below and let T_m=T(2,2m+1), in the
+chirality of the displayed torus formula. Then (1) and (2) are equivalent to
+
+ (3) V_{P(K#T_m)}=V_{P(L#T_m)} for m=1,...,s.
+
+Every tested companion pair already has the same ordinary Jones polynomial.
+These are sufficient symbolic tests, not numerical evaluations at roots of
+unity. For s=0 the annular skein expansion already has the asserted form.
+For example, wrapping at most four requires at most two tests; wrapping at
+most six requires at most three. The bound is not claimed optimal.
+
+CONVENTIONS
+q is an indeterminate; work over F=Q(q^(1/4)). H_N is the reduced,
+zero-framed N-dimensional colored Jones polynomial, normalized by
+H_N(U)=1. In particular H_1=1 and H_2=V. Colored Jones is multiplicative
+under connected sum. A color label j means dimension N=j+1.
+
+STEP 1: ONE ACTUAL JONES COLLISION SEPARATES EVERY HIGHER COLOR
+Take closures of the following braid words (the signs fix chirality):
+ K: B_2, [-1,-1,-1,-1,-1],
+ L: B_4, [1,1,1,-2,-1,-1,-2,-3,2,-3,-3].
+These are versions of 5_1 and 10_132, respectively, and
+ V_K(q)=V_L(q)=q^-2+q^-4-q^-5+q^-6-q^-7.
+For every fixed integer N>=3,
+ H_N(K;e^h)-H_N(L;e^h)
+   =8(N^2-1)(N^2-4)h^5+O(h^6),
+so H_N(K)-H_N(L) is a nonzero Laurent polynomial for every higher color.
+
+Here is the all-N deduction, rather than an extrapolation from finite data.
+The symmetric Habiro expansion is
+ H_N(A;q)=sum_{k=0}^{N-1} a_k(A;q) product_{i=1}^k
+                         (q^N+q^-N-q^i-q^-i),
+where a_0=1 and each a_k is a Laurent polynomial. Equality of H_2 gives
+Delta a_1=0. Exact color-three calculations give
+ Delta a_2=q^-15(q^2-1)(q^3+1)(q^5+1).
+Thus Delta a_2(e^h)=8h+O(h^2). The k=2 kernel has leading coefficient
+(N^2-1)(N^2-4)h^4; every k>=3 kernel starts at order h^6. This proves
+the displayed all-N separation.
+
+The color-three input was independently computed from both explicit braids
+with exact Laurent R-matrix arithmetic; it is not a numerical table fit.
+The verifier checks Yang--Baxter, inverses, framing/stabilization examples,
+ordinary Jones equality, both full color-three polynomials, and the exact
+factorization above. A separate audit checked the Habiro convention and
+factor-of-two normalization. Details are in the accompanying witness note.
+
+STEP 2: FINITE COLORED EXPANSION OF A SATELLITE
+The Kauffman skein module of the annulus is F[z]. Its Chebyshev/Jones--Wenzl
+basis S_j(z) has degree j and parity j. Inserting the companion evaluates
+S_j at its unreduced color j+1. Quantum dimensions can be absorbed in
+coefficients. Therefore
+ V_{P(A)}=sum_{j=0}^r c_j(q) H_{j+1}(A;q),
+where c_j depends on P, not A, and c_j=0 unless j congruent to w mod 2.
+Smoothing preserves mod-two homology. Cutting along a meridian disk also
+shows that skein degree is at most the geometric intersection bound r.
+
+The zero-framing point matters: fix a framing of P relative to the standard
+solid torus. Changing the companion framing by f changes the induced
+self-linking by w^2 f. Using the preferred zero longitude thus makes the
+ordinary-Jones framing correction independent of the companion.
+
+STEP 3: COLORED FUNCTIONS ARE LINEARLY INDEPENDENT
+Put [n]=(q^(n/2)-q^(-n/2))/(q^(1/2)-q^(-1/2)). The two-strand torus formula is
+ H_{j+1}(T_m;q) = (1/[j+1]) sum_{a=0}^j (-1)^(j-a)[2a+1]
+                       q^((2m+1)(a(a+1)-j(j+2))/2).
+With x=q^-m this is a polynomial G_j(x) over F, whose largest degree is
+j(j+2) and whose leading coefficient is nonzero. These degrees are distinct.
+Consequently, a finite linear combination of the functions H_{j+1}(A) that
+vanishes for all A must have every coefficient zero: evaluating on all T_m
+makes a polynomial vanish at infinitely many distinct x=q^-m in F, then
+successively comparing its largest degrees isolates every coefficient.
+
+STEP 4: THE CONNECTED-SUM ARGUMENT
+Assume (1). For every knot J, V_{K#J}=V_{L#J}. Subtract the satellite
+expansions and use reduced colored-Jones multiplicativity:
+ sum_j c_j (H_{j+1}(K)-H_{j+1}(L)) H_{j+1}(J)=0.
+Step 3 forces each coefficient to vanish. Step 1 then gives c_j=0 for all
+j>=2. Only c_0+c_1 V_A remains. Parity leaves c_0 alone for even winding,
+or c_1 V_A alone for odd winding. Evaluating at A=U identifies the remaining
+coefficient as V_{P(U)}. This proves (1) implies (2); the converse is direct.
+
+STEP 5: WHY ONLY s TESTS SUFFICE
+For j>=2 and m>=1, the smallest q-exponent in H_{j+1}(T_m) is
+ e_j(m)=-m j(j+2)-j(j+1)/2,
+with coefficient (-1)^j. Indeed, the valuation of the a-th term in the
+torus formula exceeds that of a=0 by
+ m a(a+1)+a(a-1)/2,
+which is strictly positive for a>=1. Thus no leading cancellation occurs.
+
+List S as j_1<...<j_s. Form the s by s matrix
+ M_{m,b}=H_{j_b+1}(T_m), 1<=m,b<=s.
+For a determinant term indexed by a permutation pi, its valuation is
+ -sum_m m j_{pi(m)}(j_{pi(m)}+2) - sum_b j_b(j_b+1)/2.
+The second sum is fixed. By strict rearrangement of two increasing
+sequences, the first expression has its unique minimum at the identity
+permutation. That term has leading coefficient (-1)^(sum_b j_b), which
+is nonzero. Hence det M is nonzero over F.
+
+Subtracting the s equalities in (3) therefore gives an invertible linear
+system for c_j (H_{j+1}(K)-H_{j+1}(L)), j in S. Every unknown is zero.
+The all-color witness makes every difference nonzero, so all higher c_j
+vanish, yielding (2). This replaces the earlier quadratic root-count bound
+by a linear number of tests. Exact determinant checks supplement this
+all-size proof; they are not its justification.
+
+WHAT THIS DOES AND DOES NOT GIVE TOWARD UNKNOT DETECTION
+If P(U)=U, the two possibilities are exactly the constant polynomial 1
+and the original Jones polynomial V_A. A fixed satellite cannot be a
+more elaborate extractor of ordinary Jones data while preserving every
+ordinary-Jones equality. The proof is an algebraic form of tomography:
+connected sums separate the higher-color contributions that a single
+ordinary Jones measurement has lost.
+
+The crucial limitation is that the desired implication V_A=1 => V_{P(A)}=1
+only concerns one Jones fiber. It does not imply (1). Nor does a constant
+annular skein imply a geometrically trivial pattern. A pattern with
+constant output 1 and geometrically nontrivial satellites would itself
+produce counterexamples. This theorem does not exclude its existence.
+K-dependent patterns, and operations using multiple independent companion
+inputs, also require separate arguments. No generic proof or actual
+Jones-one nontrivial knot is claimed here.
+
+PRIMARY INPUTS AND EXACT CERTIFICATES
+Knot Atlas braid and color-three data:
+ https://katlas.org/wiki/5_1
+ https://katlas.org/wiki/10_132
+Jackson--Kerler, R-matrix formula, equation 23:
+ https://arxiv.org/abs/0912.2114
+Habiro, integral cyclotomic expansion:
+ https://arxiv.org/abs/math/0211044
+Garoufalidis--Le, symmetric convention, Section 3.2, equations 11--12:
+ https://letu.math.gatech.edu/Papers/Asymptotics.pdf
+Morton, colored torus/cabling formula:
+ https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+Garoufalidis, The Jones slopes of a knot, Section 4.8, equation 26:
+ https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_jones_slopes_of_a_knot.pdf
+
+The proof of whole-fiber classification and the valuation-determinant test
+is given here explicitly. We have not established whether this statement
+already appears in the literature. The companion evidence includes the
+source-independent braid calculation and separate normalization audit.

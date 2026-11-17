@@ -1,0 +1,112 @@
+WHITEHEAD DEFECT-CALCULUS GATE (c)
+2026-11-02, bounded independent audit by defect_wh_gate.
+
+VERDICT: PASS at the requested up-to-Laurent-unit level. No mismatch
+between the shell multiplier and archived tower factor was found. The
+geometric identification is the already TRUSTED inherited Whitehead shell,
+not a newly reconstructed PD diagram. The exact arithmetic certificate was
+rerun successfully. This audit does not upgrade the shared status to PROVED.
+
+1. Coordinates and the sign of w
+
+Use the archive's relative basis (Q0,Qinf), delta=-A^2-A^-2, with
+  f_inf=(1,delta), f_0=(delta,1).
+The meridian is f_inf and the preferred rational reference is Q0.
+The archive's kernel vector is v_x=Qinf-delta Q0, and
+  [T]/f_inf(T)=Q0+x(T)v_x,
+  x=(f_0(T)/f_inf(T)-delta)/(1-delta^2).
+
+Claude's displayed vector v_w=delta Q0-Qinf is -v_x. Therefore
+  w=-x,
+  w=(f_0(T)/f_inf(T)-delta)/(delta^2-1).
+Thus the displayed quotient formula and scalar convention are consistent
+after identifying his mu-closure with the archive's f_inf.
+
+CAUTION: if "N" literally means the archive's numerator closure f_0,
+the claimed vector delta Q0-Qinf is NOT in its kernel: its value is
+delta^2-1. That kernel instead is spanned by Q0-delta Qinf. A quarter-turn
+or relabeling fixes the convention. Do not combine one convention's
+closure label with the other's basis coordinates.
+
+2. The actual shell matrix
+
+Let M be the unnormalized inherited Whitehead shell map. Meridionally
+filling its pattern end deletes the pattern and leaves the input meridian
+cap. Thus f_inf M=u f_inf, with a fixed framing unit u. Because the
+untwisted Whitehead pattern on U is U, with preferred longitude unchanged
+(winding zero), M(Q0)=u Q0. Consequently the normalized map Mhat=M/u is
+
+  Mhat = [[1, delta(1-d)],
+          [0, d]],
+
+in (Q0,Qinf), or diag(1,d) in (Q0,v_x). The same diagonal entry d acts on
+v_w=-v_x. This follows geometrically for all inputs, not by assuming a
+span of knot quotients or assuming Lemma Q.
+
+The distinction between two multiplier conventions is exact:
+  M(v)=m_raw v,
+  m_raw=det(M)/u,
+  d=m_raw/u=det(M)/u^2.
+The meridian-normalized defect obeys w_out=d*w_in. The raw eigenvalue
+and normalized multiplier agree only after accounting for u. Their
+divisibility/nonvanishing agrees because u is a unit. For affine
+cancellation formulas elsewhere, normalization must be fixed coherently;
+independent unspecified units in two summands cannot be discarded.
+
+3. Evaluate the remaining diagonal entry using rational probes
+
+The archive constructs a preferred trefoil quotient from
+  R=<-1>+<1/2>+<1/3>, T=rotation(R)+<-6>.
+Its actual unknot meridian has bracket A^-18. Direct TL2 arithmetic gives
+  f_0(T)/f_inf(T)=-A^2+A^6-A^22-A^30,
+  x(T)=A^2(A^4-1)(1+A^8)(1+A^12)=-A^2 F,
+  w(T)=A^2 F,
+where F=(1-A^4)(1+A^8)(1+A^12).
+
+One of the unit-twist rational inputs Q1,Q-1 produces a trefoil exterior
+under the Whitehead shell. Its normalized x is -A^2 or -A^-2. The
+trefoil's strong inversion is unique up to equivalence; fixing meridian
+and preferred longitude removes the peripheral shear. The residual
+Conway flips act trivially on the rational skein basis. Hence division
+of the output x by this input x gives
+  d=unit*F.
+The exact unit depends on the clasp, input sign, chirality and framing
+convention; this audit does not identify all of them with a single fixed
+diagram. This is exactly the up-to-unit prediction requested in (c).
+Mirroring changes F(A) to -A^-24 F(A), preserving the conclusion.
+
+This determination does not use the asserted universal F-divisibility
+for arbitrary knots, nor any satellite recurrence for a2. It therefore
+does not assume the later clauses (a), (b), or the desired Lemma Q.
+
+4. Consequences and scope
+
+Since the Laurent ring is a domain and d is nonzero,
+  w_Wh(J)=0 iff w_J=0
+for each of the specified inherited inversions and its compatible
+preferred marking. This banks the restricted Whitehead preservation
+statement; it does not classify other inversion axes of Wh(J).
+
+Iterating from a trefoil yields
+  w_r=unit*F^(r+1),
+equivalently the archived x_r with the opposite sign. Thus the tower
+increases vanishing orders at F's roots but never erases a nonzero defect.
+That is the precise one-line explanation for the finite-jet dead end.
+
+The uncertified clasp-crossing-circle converse discussed in the archive
+is not used here. Its crossing circle is not componentwise strongly
+inverted by the inherited action; that failed converse does not damage
+the satellite shell already used in this calculation.
+
+Files checked:
+  work/quotient17/whitehead_pattern_audit.txt
+  work/transmission18/whitehead_factor_and_clasp_audit.txt
+  work/transmission18/trefoil_longitude_bracket.json
+  work/transmission18/exact_factor_certificate.py
+
+Validation rerun:
+  python3 work/transmission18/exact_factor_certificate.py
+PASS: trefoil anchor, preferred longitude, exact defect, Whitehead factor,
+and cap algebra. Stored actual base-knot differences/F0 are +t^-2 and -1.
+This rerun checks algebra and stored base data, not a fresh all-r geometric
+construction. No new research or later assignment sections were attempted.

@@ -1,0 +1,421 @@
+EXACT CANCELLATION AUDIT: CONNECTED SUM, PARALLEL INPUTS, AND WIDTH
+31 October 2026. Internal research note. No generic detection or novelty claim.
+
+1. THE CORRECT MULTIPLICATIVE COORDINATE
+
+Let R=Z[A,A^-1], delta=-A^2-A^-2. In the horizontal two-tangle skein
+algebra S=R[e]/(e^2=delta e), Q0=1 and Q_infinity=e. The denominator
+functional is the algebra homomorphism f_infinity(1)=1,
+f_infinity(e)=delta. Write v=e-delta; then v^2=-delta v.
+
+For an actual unknot-anchored preferred exterior quotient T, divide
+its bracket by the framing unit f_infinity(T). Its exact normalized
+vector is
+
+                    T_hat=1+x(T)v,
+                    x(T) in R.
+
+Define
+
+                    y(T)=1-delta*x(T).
+
+Horizontal composition gives
+
+ x(T1+T2)=x1+x2-delta*x1*x2,
+ y(T1+T2)=y(T1)*y(T2).                                      (1)
+
+These are polynomial identities, not formal asymptotics.
+
+2. GEOMETRY AND PREFERRED MARKING OF THE COMPOSITION
+
+Choose the horizontal sum so its gluing disk is the two-punctured disk
+that caps the right end of T1 and left end of T2 in their meridional
+closures. Its branched double cover is an annulus with meridional core
+in both covering knot exteriors. Gluing these exteriors along that
+annulus is the standard exterior of J1#J2. The involutions glue to the
+equivariant connected sum. The meridian closure downstairs is the
+connected sum of the actual two meridional unknots, hence U. Preferred
+longitudes concatenate across the meridional annulus; no extra meridian
+twist is introduced. Thus (1) applies to preferred quotients of the
+resulting directed strongly invertible connected sum.
+
+The standard geometric equivariant connected-sum construction is stated
+explicitly in Miller--Powell, Strongly invertible knots, equivariant
+slice genera, and an equivariant algebraic concordance group, Definition
+2.9 and Remark2.10 (following Sakuma):
+https://www.maths.gla.ac.uk/~mpowell/equivslice-020223.pdf
+https://arxiv.org/abs/2208.11571
+The meridional-annulus argument above identifies its quotient operation
+and fixes the peripheral marking used here.
+
+3. AN EXACT NO-CANCELLATION THEOREM
+
+For any finite list of actual preferred unknot-anchored quotient tangles,
+
+        T1+...+Tk is Jones-flat  iff  every Ti is Jones-flat.   (2)
+
+Proof. Flat means x=0, equivalently y=1. By (1), flatness of the sum
+implies product(y_i)=1 in the Laurent polynomial ring R. Consequently
+each y_i is a Laurent unit epsilon*A^m. Also y_i=1-delta*x_i, so
+
+epsilon*A^m == 1 mod(delta).
+
+Since delta=-A^-2(A^4+1), this congruence forces m=4n and
+epsilon=(-1)^n: reduce exponents modulo8 in R/(A^4+1), whose basis is
+1,A,A^2,A^3. Thus y_i=(-A^4)^n.
+
+Let zeta=exp(i*pi/4). The longitude of every actual knot exterior has
+zero determinant. Since
+
+ f0(T_hat)=delta+(1-delta^2)*x(T),
+
+and delta(zeta)=0, this gives x(T)(zeta)=0. But
+
+ x(T)=[1-(-A^4)^n]/delta
+       ==> x(T)(zeta)=-n*zeta^2,
+
+including negative n (by the Laurent geometric-series identity).
+Therefore n=0, so y_i=1 and x_i=0. The reverse implication is immediate.
+
+An equivalent short package is
+
+                 y(T) in 1+(A^4+1)^2 R.                     (3)
+
+Indeed x(zeta)=0 and integrality imply Phi8=A^4+1 divides x; delta
+contains another Phi8. The only Laurent unit in (3) is 1. This proves
+(2) directly. No positivity assumption and no finite-order truncation
+replace the exact polynomial argument.
+
+In particular a mirror, a reversal, or an allegedly inverse preferred
+quotient cannot cancel a non-flat summand. A hypothetical flat core can
+be copied into any number of equivariant connected summands and remains
+flat, but no first flat core is created by this operation.
+
+4. WHY DUPLICATING AN INPUT DOES NOT IMPLEMENT ADDITION OF SHELL FACTORS
+
+Let F_i be normalized compatible shells with factors d_i in R. Inserting
+the SAME normalized input T into each shell, then taking the equivariant
+connected sum of the outputs, gives
+
+ y_out=product_i(1-delta*d_i*x),
+ x_out=[1-product_i(1-delta*d_i*x)]/delta.                    (4)
+
+For two branches this is
+
+                 x_out=(d1+d2)x-delta*d1*d2*x^2.
+
+Thus the apparent additive term has an unavoidable nonlinear correction.
+If k nonzero d_i occur, (4) has degree k in x, with nonzero leading
+coefficient (-delta)^(k-1) product(d_i). A single-input shell is linear:
+x_out=d*x. Hence a nontrivial parallel duplicate-input construction
+cannot be represented by a single compatible two-component shell.
+
+The same conclusion holds if one only asserts equality on all rational
+probes Q_n. Here x(Q_n)=[1-(-A^4)^n]/delta; these are infinitely many
+distinct elements of Q(A). A polynomial of degree >=2 cannot agree with
+a linear function on all of them. In fact k+1 distinct probes suffice.
+
+Geometrically, merging several surgery axes into one does not preserve
+all their independent-surgery connected-sum outputs. Some interactions,
+marking changes, or additional components must enter. Formula (4) detects
+that missing geometric input. This is an exact barrier, not an assertion
+that arbitrary multi-input tangles are impossible.
+
+5. SERIAL CIRCUITS AND THE NEXT NON-EXCLUDED CLASS
+
+Changing basis between stages does not help serial cancellation: any
+finite product of invertible rational-tangle operations and nonzero-d
+shell maps has nonzero determinant over Q(A). A commutator of invertible
+maps also has full rank. This rules out a fixed-width serial construction
+of a rank-one shell from such blocks, even when intermediate maps do not
+preserve the preferred Q0 line.
+
+A genuine additive construction must therefore use a connected geometry
+with an additional intermediate skein channel and a subsequent
+contraction, not serial multiplication or uncorrected duplication of one
+input. This is a necessary structural feature, not an actual essential
+zero shell. The unknot anchors and componentwise strong inversion still
+have to be established geometrically for any such contraction.
+
+6. SWAPPED PRIME FACTORS: VERIFIED LOCAL FORMULA, DECOMPOSITION SOURCE GATE
+
+For the standard flipping inversion on D(K)=K#K^r, its preferred quotient
+is the usual double tangle. Its meridional closure is U and its longitude
+closure is the zero-framed two-parallel of K. This geometric double-tangle
+identification appears in Lewark--Zibrowius, Rasmussen invariants of
+Whitehead doubles and other satellites, Remark3.10 (and the cited
+Montesinos correspondence). DMT arXiv:2606.05819 Example2.21 separately
+defines the flipping inversion.
+
+Let H3(K) be the reduced 3-dimensional colored Jones polynomial, U=1,
+and Delta2=delta^2-1. The two-parallel expansion 2 x 2 = 1 + 3 gives
+
+       R_D=(1+Delta2*H3(K))/delta,
+       x_D=(1-H3(K))/delta,
+       y_D=H3(K).                                           (5)
+
+All framings in (5) are zero/preferred; changing framing without restoring
+it would invalidate the comparison. Equation (5) does not infer H3 from
+ordinary Jones. It identifies the exact additional information in the
+swapped-factor block.
+
+A known theorem of Sakuma (On strongly invertible knots, Theorem1 and
+Lemma1.2(2)) decomposes arbitrary directed strong inversions into
+strongly invertible prime knots and these flipping prime blocks. Snape's
+thesis quotes this result verbatim. The primary author-hosted article and
+1984 RIMS precursor were located, but fetching the full theorem failed
+in this bounded check. Therefore the unconditional global decomposition
+claim is NOT counted as a newly independently checked ingredient here.
+Once the stated primary theorem is checked, (2) and (5) immediately show
+that a flat arbitrary strongly inverted core must have each equivariant
+prime block flat: a prime strongly invertible flat core or a prime K
+with H3(K)=1. The latter is a separate colored constraint, not permission
+to replace it by V_K=1.
+
+Primary source locations for that remaining source check:
+https://www.math.sci.hiroshima-u.ac.jp/sakuma/research.html (publication48)
+https://repository.kulib.kyoto-u.ac.jp/items/dba90b07-a86d-4ff8-aa32-59e927c4f393
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/0518-12.pdf
+
+7. EVEN A FORMAL INTEGRAL SUPERPOSITION CANNOT CANCEL ASSOCIATED FACTORS
+
+There is a second obstruction independent of whether a proposed additive
+controller has been geometrically realized. Suppose all its resolved
+branches are normalized compatible shells F_i=diag(1,d_i), and
+
+              d_i=u_i*d0,   d0 nonzero,   u_i=+/-A^k_i.
+
+Suppose the controller's skein expansion is an integral Laurent linear
+combination F=sum_i a_i F_i, a_i in R. Preserving the normalized unknot
+channel requires sum_i a_i=1. If its transmission vanished, then
+
+                        sum_i a_i u_i=0.
+
+Reduce modulo the maximal ideal (2,A-1). Every Laurent unit u_i becomes
+1 in F2. The left side becomes sum_i a_i=1, a contradiction.
+
+Therefore NO such integral controller cancels the full transmission.
+This covers arbitrarily many mirrors/framing variants of one fixed
+Whitehead-tower factor, not just a pair. It allows negative coefficients;
+positivity is not being assumed. It is an exact ring obstruction to an
+identically zero polynomial, despite using a simple residue to certify it.
+
+A successful additive construction must have either genuinely different
+nonassociated branch factors, branches that do not separately preserve
+the normalized anchor, or a geometry not captured by this affine
+resolution. Rational-function coefficients such as division by2 would
+evade the formal ring test but are not supplied by ordinary framed-tangle
+skein expansion. This is a necessary condition, not a realization theorem.
+
+8. FIRST ACTUAL OVERLAPPING TL3 CIRCUIT: EXACT PRODUCT OBSTRUCTION
+
+Embed an actual preferred cap-trivial quotient on adjacent strands as
+
+                  T_i(x)=I+x(e_i-delta I),  i=1,2.
+
+Let u2 be the cup on strands2--3, a morphism from one strand to three;
+let d1 be the cap on strands1--2. Their empty composite is the snake,
+d1*u2=I on the remaining strand. Thus closing that remaining strand has
+an actual unknot as the baseline, with no division by delta and no
+formal projector.
+
+Insert T1(b) and then T2(a) between these cup/cap morphisms. Preferred longitude closure has two components, so each gate has
+identity endpoint connectivity and no closed components. The cup2-to-cap1
+wiring forces the three strand orientations to alternate (+,-,+). The two
+strands in each gate are therefore oppositely oriented, matching its
+meridian-cap orientation up to reversing both strands. Normalize each gate by its actual meridional framed-unknot
+unit. This removes precisely its writhe contribution; the cups and caps
+add none. Therefore the following is an exact normalized knot-Jones
+formula, not equality merely up to a framing monomial:
+
+       V_K(A^-4)=1+(1-delta^2)*a*b.                          (6)
+
+For verification, put v_i=e_i-delta. We have d1*v1=0 and v2*u2=0.
+The only nonconstant term is a*b*d1*v2*v1*u2. The TL3 relations
+(e_i^2=delta e_i, e1e2e1=e1, e2e1e2=e2) give
+
+                  d1*v2*v1*u2=(1-delta^2) I.
+
+As a and b lie in the integral domain R, (6) equals1 iff at least one
+gate was flat already. This eliminates the first genuinely overlapping
+two-gate construction. It neither relies on a braid kernel nor replaces
+actual tangles by a formal linear combination.
+
+Longer alternating circuits can have additional terms. No claim that
+(6) classifies all TL3 networks is made. A next attempt needs enough
+interleaving to escape this two-gate product formula, while retaining a
+geometric unknot anchor. Merely placing two known non-flat preferred
+quotients on overlapping strand pairs is insufficient.
+
+9. INDEPENDENT AUDIT: BRUNNIAN INFECTION DOES GIVE THE MISSING CONVERSE
+
+The tangle track supplied a different, genuinely interacting construction.
+Its geometry and algebra pass this independent audit. Let P,C,D be a
+nontrivial, three-component Brunnian link in S3 with a componentwise
+strong inversion. Every proper sublink is the actual unlink. Let J be a
+nontrivial strongly invertible knot with an actual preferred flat quotient
+T_J. Infect the C component by J using the usual meridian-longitude swap,
+and retain the two-component link
+
+                         B_J=P(J) union D(J).
+
+Because P union C and D union C are split unlinks, both retained components
+are actual unknots. Their linking number is zero. The compatible strong
+inversions glue and remain strong on both retained components. Thus B_J
+is in precisely the class of two-unknot winding-zero shells under study.
+
+ALGEBRA: Consider the quotient of the original three-component exterior.
+It is a two-input tangle operator, one input being the C quotient and the
+other being the eventual D companion. Inserting T_J=uQ0 into the C hole
+multiplies the entire remaining D-to-P skein map by u, by skein linearity.
+Inserting Q0 instead restores P union D, a split unlink. Its shell map has
+rank one and transmission zero. The fixed framing scalar u disappears
+under meridional anchor normalization. Hence
+
+                           d_(B_J)=0 identically.            (7)
+
+This does not require colored promotion and does not use finite jets.
+It also shows why no formal additive controller was needed: geometric
+infection uses an already flat tangle as input to an interacting Brunnian
+three-component shell.
+
+ESSENTIALITY: Perform 1/n surgery on D in the ORIGINAL Brunnian link.
+Call the retained two-link P_n union C. Its components are still unknots
+and linking zero, by pairwise splitness. For |n|>=2 this link is nonsplit.
+Indeed the original nonsplit link exterior is irreducible; its D-meridian
+filling is E(U2), a reducible manifold with no lens-space summand. If the
+1/n filling were also split, it would again be E(U2). These two slopes
+have distance |n|. The Culler--Gordon--Luecke--Shalen reducible-filling consequence
+(Corollary2.4.7, as applied in Lidman--Moore Proposition3.2) says that
+two such fillings at distance >=2 force a lens-space summand in one;
+this is impossible here. It is important to use this precise theorem,
+not to state an unrestricted distance<=1 theorem for all reducible
+fillings.
+
+The nonsplit P_n union C is an essential winding-zero pattern. After
+inserting nontrivial J, its companion torus is incompressible on both
+sides, so P_n(J) is nontrivial. Surgery on D(J) in B_J yields precisely
+P_n(J), since the surgeries/infection occur on disjoint boundary tori.
+If B_J were split, twisting its unknotted D(J) component could not change
+the other unknot. Thus B_J is nonsplit. Taking n=2 is enough.
+
+EXISTENCE OF THE SEED: Lidman--Moore, Adjacency of three-manifolds and
+Brunnian links, Nagoya Math.J.261 (2026), e10, Theorem1.4 proof, gives the
+needed primary mechanism. Start with a nontrivial 3-adjacent-to-U knot,
+change all three distinguished crossings to U, and lift the knotting
+arcs to Sigma2(U)=S3. The deck involution strongly inverts EACH lifted
+component. Montesinos surgery slopes are half-integral, hence their
+Proposition3.2 excludes proper Hopf pairs and proves every proper
+sublink is the actual unlink. The full link is nontrivial: surgery on a
+three-component unlink at the resulting +/-1/2 slopes would give S3,
+whereas the original nontrivial knot cannot have S3 as double branched
+cover (Smith conjecture). Thus this is not just a surgery-Brunnian link
+or a link in some other ambient manifold.
+
+Primary source inspected independently:
+https://arxiv.org/html/2308.06211
+https://www.cambridge.org/core/journals/nagoya-mathematical-journal/article/adjacency-of-threemanifolds-and-brunnian-links/477B1EF74CDC457D6FEA1B628CBB670C
+DOI 10.1017/nmj.2025.10092.
+The tangle track supplies the separate primary existence of nontrivial
+3-adjacent-to-U knots (Stoimenow, Eq10/Lemma6, or Howards--Luecke Thm6.1).
+That existence citation was not independently reopened in this audit.
+
+CONSEQUENCE: Together with the previously established essential-zero-shell
+=> nontrivial u=1 Jones-one knot => nonrational anchored flat tangle
+implications, this Brunnian infection closes the equivalence WITHIN THE
+UNKNOTTING-NUMBER-ONE PROBLEM. It supplies a conversion, not an example:
+no nontrivial flat J is known here. It does not convert an arbitrary
+ordinary Jones-one knot into a flat quotient and therefore does not
+settle the full Jones unknot-detection problem.
+
+10. EXACT MULTILINEAR TRANSMISSION OF THE BRUNNIAN CONSTRUCTION
+
+For the three-component seed B=P union C union D, let F be its two-input
+quotient skein operator. Normalize by the single fixed framing unit in
+F(Q0,Q0), so that this value is Q0. The split unlink C union D gives
+
+                 f_infinity o F = f_infinity tensor f_infinity.
+
+One way to see the framing assertion is to choose an equivariant splitting
+sphere for the component-preserved unlink; its quotient separates the two
+cap evaluations. The resulting functional is their product up to one
+fixed framed-unknot unit, fixed by evaluating Q0,Q0. The usual uniqueness
+of the componentwise strong inversion of an unlink gives the same
+conclusion. No normalization depending on the inserted companions is used.
+
+Pairwise splitness gives the stronger exact identities
+
+             F(Q0,T)=f_infinity(T)Q0,
+             F(T,Q0)=f_infinity(T)Q0.
+
+In the unimodular R-basis (Q0,v), v=Q_infinity-delta Q0, these imply
+F(Q0,v)=F(v,Q0)=0. The meridional functional identity implies
+F(v,v) belongs to its one-dimensional kernel Rv. Consequently there is
+one uniquely determined c_B in R with
+
+       F(Q0+xv,Q0+yv)=Q0+c_B*x*y*v.                         (8)
+
+There is no unspecified sign in (8) after v and the peripheral markings
+are fixed. In particular the infected two-component link of Section9
+has exact normalized transmission
+
+                         d_(B_J)=c_B*x(J).                  (9)
+
+Geometric nontriviality of B does NOT prove c_B nonzero. If c_B=0, the
+fixed seed itself, combined with any nontrivial strongly invertible core,
+would provide an essential zero shell and hence a Jones counterexample.
+If c_B is nonzero, (9) shows that this construction propagates a flat
+input but cannot create the first one.
+
+A potential direct certificate for c_B nonzero is already built into
+the adjacent-knot construction. If the seed is the lift associated to a
+3-adjacent-to-U knot K with V_K != 1, its full surgeries have slopes
++/-1/2. The two input probes are Q_(+/-2); the output has a half-integral
+cap. The exact cap formula of pass18 then gives
+
+ V_K-1=(nonzero cap factor)*c_B*x(Q_(+/-2))*x(Q_(+/-2)).
+
+Thus a verified nonconstant Jones polynomial of that source K certifies
+c_B != 0, with no need to reconstruct the entire quotient diagram.
+A particular source is now independently certified. The script
+stoimenow_k3.py reconstructs Stoimenow's displayed K3, with 38 initial
+crossings. Every nonempty subset of the three marked crossings simplifies
+to a crossing-free single unknot. Regina gives the source Jones polynomial;
+independent_pd_bracket.py recomputes it by an independent frontier
+Kauffman state sum on the 30-crossing simplified PD, with a known-trefoil
+convention check, and obtains exactly the same integer coefficients.
+The diagram wiring was independently compared with the primary figure.
+Exact integer-Laurent multiplication also verifies the factorization
+
+ V_K3(t)-1 = -t^(-12)(t-1)^7(t+1)^3(t^2+1)
+                         *(t^2+t+1)*(t^2-t+1)^2.
+
+The explicit half-surgery factors are
+ x(Q2)=A^2(A^4-1), x(Q_-2)=-A^(-6)(A^4-1),
+ h_+=A^(-10)(A^4-1)(A^8+A^4+1),
+ h_-=-A^(-2)(A^4-1)(A^8+A^4+1).
+Consequently this particular seed has, up to a signed A-Laurent unit,
+
+ c_B = (t-1)^4(t+1)^3(t^2+1)(t^2-t+1)^2
+     = (t-1)^4(t+1)(t^2+1)(t^3+1)^2 != 0.
+
+This verifies the nonzero coefficient without reconstructing the full
+Brunnian quotient diagram. In the chosen v convention c_B has A-exponents
+2 modulo 4, so writing it as a t-Laurent polynomial suppresses an A^2
+unit. No exact monomial or overall sign is asserted by the displayed
+up-to-unit equality.
+
+More generally, a componentwise strongly inverted n-component Brunnian
+link, with one output and n-1 inputs, has normalized operation
+
+ F(Q0+x1v,...,Q0+x_(n-1)v)
+                 =Q0+c_B*(product_i x_i)*v.                 (10)
+
+Every mixed multilinear term containing at least one Q0 and at least one
+v vanishes because removing that input component leaves a proper unlink.
+The all-v term lies in Rv by the product meridional functional. Formula
+(10) identifies the exact geometric limitation: this entire Brunnian
+class forces multiplicative behavior of the defects, even though its
+link geometry is genuinely interacting. Additive cancellation requires
+a pattern beyond these proper-unlink conditions, or a seed whose own
+coefficient c_B already vanishes.

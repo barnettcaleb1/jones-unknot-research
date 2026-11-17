@@ -1,0 +1,113 @@
+QUANTUM BRAID FLOER HOMOLOGY: A GLOBAL SCAFFOLD AND TWO EXACT OBSTRUCTIONS
+1 November 2026 UTC. Derived analysis; no proof of Jones unknot detection.
+
+New input examined
+------------------
+Anghel--Juhasz, Quantum braid Floer homology, arXiv:2601.08805v4,
+7 September 2026:
+https://arxiv.org/html/2601.08805v4
+
+Their braid invariant qHFB is over F_2, with a spectral sequence to
+HFK-hat of the closure. Its two-variable Euler polynomial satisfies
+  Omega_beta(x,1)=Delta_K(x),
+  Omega_beta(x,-x^-1)=V_mirror(K)(x).
+It is not invariant under conjugation or stabilization. These statements
+are read from the preprint; its construction has not been independently
+reproved here. The deductions below isolate what would still be needed.
+
+1. A complete conditional proof using presentation minimization
+--------------------------------------------------------------
+For a knot K define
+  m(K)=min{dim_F2 qHFB(beta): closure(beta)=K}.
+Use the braid presentations covered by the paper, with at least two
+strands. Every knot has such a presentation, so this minimum exists as
+a positive integer. It is a knot invariant by its definition, even
+though each individual qHFB(beta) depends on the braid presentation.
+
+Proposed hypothesis Q (unproved):
+For every whole Jones polynomial P there is a finite B(P) with
+  V_K=P => m(K)<=B(P).
+
+Let f(K)=dim_F2 HFK-hat(K). The spectral sequence gives f(K)<=m(K).
+If V_K=1, then for every positive integer n, V_(K#...#K)=1. The HFK
+connected-sum formula therefore gives
+  f(K)^n=f(K#...#K)<=m(K#...#K)<=B(1).
+It follows that f(K)=1, which forces K to be the unknot by knot Floer
+genus detection (or its rank-one detection consequence).
+
+No connected-sum formula for qHFB is used. The bound B(1) need not equal
+one. Restricted to the Jones-one fiber, Q is equivalent to detection,
+not an independently easier theorem. Its potential value would be a
+geometric method for choosing braid representatives and cancelling
+Floer generators. No such method has been obtained.
+
+2. The invariant polynomial quotient has no extra mixed information
+------------------------------------------------------------------
+The paper's Section 9.2 gives a Markov-invariant quotient for Omega.
+In its q convention put
+  R=Z[x,x^-1,d,d^-1], I=((d-1)(xd+1)).
+Consider
+  R/I -> Z[x,x^-1] x Z[x,x^-1],
+  F -> (F(x,1), F(x,-x^-1)).
+
+This map is injective. Indeed, if both evaluations vanish, first
+F=(d-1)G. Evaluating at d=-x^-1 gives
+  -(x+1)x^-1 G(x,-x^-1)=0.
+The Laurent polynomial ring is an integral domain, so G(x,-x^-1)=0,
+and hence xd+1 divides G. Thus F belongs to I. The converse is immediate.
+
+The image consists exactly of pairs (A,J) satisfying
+  A(-1)=J(-1), equivalently A-J divisible by x+1.
+Necessity follows because the two specializations meet at x=-1,d=1.
+For sufficiency the explicit Laurent polynomial
+  F=A+x(d-1)(A-J)/(x+1)
+has the prescribed evaluations. Therefore the quotient carries exactly
+the Alexander/Jones pair with its compatibility at -1. It supplies no
+additional mixed polynomial datum that can automatically recover
+Alexander or Floer information from Jones alone.
+
+This is a direct commutative-algebra calculation, independently checked
+by another agent. It does not assert the unquotiented braid invariant
+or its homology has no additional information.
+
+3. Actual unknot presentations already have extra quantum Floer classes
+----------------------------------------------------------------------
+All three braids below close to the unknot: sigma_1, its positive
+stabilization sigma_1 sigma_2, and the conjugate
+sigma_1^2 sigma_2 sigma_1^-1. Converting Section 9.2 to the q convention:
+
+  A=Omega_(sigma_1)=xd^2-xd+d,
+  B=Omega_(sigma_1 sigma_2)=x^2d^4-x^2d^3+xd^3-xd+d,
+  C=Omega_(sigma_1^2 sigma_2 sigma_1^-1)
+    =x^2d^2(1-d-x^-1)^2.
+
+Both specializations of A,B,C are 1. Their coefficient l1 norms are
+3,5,9, respectively. Since these are graded Euler polynomials, their
+qHFB dimensions are at least 3,5,9. Thus V=1 does not force one quantum
+Floer generator in every braid presentation. These are lower bounds;
+we do not claim exact homology ranks from Euler polynomials.
+
+Their differences factor as
+  B-A=xd^2(d-1)(xd+1),
+  C-B=-d(x-1)(d-1)(xd+1).
+This exhibits precisely the mixed information lost in the invariant
+quotient. The short verifier checks the identities and specializations.
+
+The paper also gives a trefoil example where its distinguished class
+Theta is nonzero on the qHFB page but dies in the spectral sequence.
+Consequently its mere existence does not supply a permanent Floer
+class or a rank-one theorem.
+
+Scope
+-----
+The new construction provides genuine geometric objects on which one
+could seek a cancellation theorem. It does not presently prove Q, and
+its spectral sequence alone does not convert a Jones Euler identity
+into a Floer rank bound. The polynomial quotient and the distinguished
+class do not remove that missing step.
+
+For the HFK endpoint and connected-sum formula:
+Ozsvath--Szabo, Holomorphic disks and knot invariants,
+https://arxiv.org/abs/math/0209056
+Ozsvath--Szabo, Holomorphic disks and genus bounds,
+https://arxiv.org/abs/math/0311496

@@ -1,0 +1,246 @@
+{
+  "snapshot_date": "2026-11-17",
+  "method": "Compare each member of inventoried legacy ZIPs against SHA-256 hashes of all git and release-asset entries. Only byte-unmatched members are listed.",
+  "files": [
+    {
+      "sourcezip": "outputs/jones-annulus-and-marked-torsion-evidence.zip",
+      "member": "work/research48/abernathy-gilmer.pdf",
+      "bytes": 416617,
+      "sha256": "46c9d9bcf74e1a235ca0436decc624322724854d77d54f5b5f1ad38746f7e058",
+      "classification": "third-party",
+      "reason": "Downloaded human paper; cite the source instead of redistributing the paper."
+    },
+    {
+      "sourcezip": "outputs/jones-bing-realization-and-global-mechanisms.zip",
+      "member": "manifest.json",
+      "bytes": 561,
+      "sha256": "b7e2390bb611189ae9314f7b3b07b695d665115cf887342466af7f7af26ec4da",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-brunnian-reduction-evidence.zip",
+      "member": "SHA256.json",
+      "bytes": 2482,
+      "sha256": "5096a15a6580c0699ff3fc77b05cef35473f506d0e80181dc9dfe02288bb0868",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-creative-pass-evidence.zip",
+      "member": "README.txt",
+      "bytes": 1455,
+      "sha256": "94a81a46d6f74bffd1bdc5c5449244c909d8c6ddd1add5e04746e99d733037e5",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-creative-pass-evidence.zip",
+      "member": "MANIFEST.json",
+      "bytes": 2883,
+      "sha256": "a9de572abe77659f6de666e528f5db79dfefadd4956d2df5270a5de5ab3d8f00",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-exact-knot-family-evidence.zip",
+      "member": "jones-exact-knot-family-and-zero-factor-target.txt",
+      "bytes": 11981,
+      "sha256": "59bca4abba95619dadbc54b1d938e53bbbf6c0c03774344f889b03860f639ed0",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-exact-knot-family-evidence.zip",
+      "member": "README.txt",
+      "bytes": 641,
+      "sha256": "b91ea430dc61ecaf9593b0e6d5b699461f05942880c2e49f1deeec514be64d17",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-finite-order-realizability-and-geometry.zip",
+      "member": "manifest.json",
+      "bytes": 1538,
+      "sha256": "da221ebee4a4e162b91433f82a324d80110366cb52e2d9aace8c35479c24fe82",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-finite-tests-and-cancellation-evidence.zip",
+      "member": "SHA256SUMS",
+      "bytes": 4208,
+      "sha256": "1ecb9a5b0f1a3d0f3142c865bd4386dd5b088bd50614466ae8bcfab6184aa3d5",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-framed-tangle-uniqueness-evidence.zip",
+      "member": "outputs/jones-framed-tangle-uniqueness.txt",
+      "bytes": 9269,
+      "sha256": "fe485f4a58885c22c2441a73b0b0fd195320edcc0f1c6fdf8b6c3641ae087252",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-global-hypothesis-tests.zip",
+      "member": "MANIFEST.sha256",
+      "bytes": 2772,
+      "sha256": "b43081a7f08a8b9376194120150afde1d7692f6e2ec7f82ad848b051a93b2f31",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-global-hypothesis-tests.zip",
+      "member": "jones-full-proof-scaffolds.md",
+      "bytes": 29586,
+      "sha256": "40d13e3654e83d2e51f7f8a883ba7bc00ce6d82ea02743b36ac02753226e1992",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-global-scaffold-audit.zip",
+      "member": "MANIFEST.sha256",
+      "bytes": 1374,
+      "sha256": "b76baf70d177af72fe46c460100fdcdf3138e01623857099f69e96e2faafa214",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-global-scaffold-audit.zip",
+      "member": "jones-full-proof-scaffolds.md",
+      "bytes": 23171,
+      "sha256": "d7903fa172ae1e5e82981bc264e5ce9891d2bc072e19e24493d3c9b34ede3390",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-graph-cancellation-evidence.zip",
+      "member": "README.txt",
+      "bytes": 515,
+      "sha256": "c16be5a58c1a773a5cf11bb834f0b9dec4072535f4e2b9c8cbe1be3ef8533b50",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-parallel-research-evidence.zip",
+      "member": "READ_ME_results.txt",
+      "bytes": 13081,
+      "sha256": "f211ed83223d933fb3ba2b04305bfe4be58dc59d4c109c6b671fb7bc88347233",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-parallel-research-evidence.zip",
+      "member": "REPRODUCTION.txt",
+      "bytes": 611,
+      "sha256": "5c2151ac985542cf7efe4a8f949569bdb18d1c324b77053808c742df8a658038",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-positivity-and-boundaries-evidence.zip",
+      "member": "README.txt",
+      "bytes": 1535,
+      "sha256": "5abb43ed7d147ca8dec00ae379f2d38d0137e3cbee79b1758e315b691d134746",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-positivity-and-boundaries-evidence.zip",
+      "member": "SHA256SUMS",
+      "bytes": 3590,
+      "sha256": "4d036df7d56d2df90613e45288906e5a3220e1fcf88872d5cac0dca720c02f8b",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-positivity-and-boundaries-evidence.zip",
+      "member": "work/proof10/homology/polys.json",
+      "bytes": 11131665,
+      "sha256": "a6a12c81abf451632001b8582904e4505b56df61a7fe44d7e4b4fa10baf40e8f",
+      "classification": "third-party",
+      "reason": "Cached KnotInfo polynomial-table subset; upstream data provenance applies, not original project authorship."
+    },
+    {
+      "sourcezip": "outputs/jones-preprint-local-move-evidence.zip",
+      "member": "README.txt",
+      "bytes": 1304,
+      "sha256": "ff2231d06e02ebdffc304cd6168be5c8927a3b23f88cf2f4460eeb38812fd8e9",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-preprint-local-move-evidence.zip",
+      "member": "work/source/omega_1.png",
+      "bytes": 380095,
+      "sha256": "36ccc5d11ddb291af217c47f8177c03edba4d0f63dbb0d2e15c1d5bd9b59f46b",
+      "classification": "third-party",
+      "reason": "Figure extracted from a human source paper; retain citation/provenance rather than republishing the image."
+    },
+    {
+      "sourcezip": "outputs/jones-preprint-local-move-evidence.zip",
+      "member": "work/source/omega_5.png",
+      "bytes": 267327,
+      "sha256": "27e2656a3a10d01165afbbea1e62471d02f9f9ecdd3eddd781e9c6d6c255d3cd",
+      "classification": "third-party",
+      "reason": "Figure extracted from a human source paper; retain citation/provenance rather than republishing the image."
+    },
+    {
+      "sourcezip": "outputs/jones-proof-mechanisms-evidence.zip",
+      "member": "README.txt",
+      "bytes": 1255,
+      "sha256": "6b01aab41735b943c077100d76b026d5d5a6b30f5c255537c3b85bb0387daa0e",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-satellite-rigidity-evidence.zip",
+      "member": "README.txt",
+      "bytes": 1369,
+      "sha256": "17b17df1bffe37a67fa0efa9c6b95232644cc01be4577341bb3f8b78ed9a762d",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-satellite-rigidity-evidence.zip",
+      "member": "SHA256SUMS.txt",
+      "bytes": 2363,
+      "sha256": "7c2f6810ad560285f32ac41e116b1eb07007c42db2cff86f550a51af492f1521",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-satellite-rigidity-evidence.zip",
+      "member": "work/proof10/homology/polys.json",
+      "bytes": 603,
+      "sha256": "903b55f772fb6bd32c8cb7fbcc292d98ba167adaf5d11ff07a6130e86fa4be9b",
+      "classification": "third-party",
+      "reason": "Cached KnotInfo polynomial-table subset; upstream data provenance applies, not original project authorship."
+    },
+    {
+      "sourcezip": "outputs/jones-satellite-transmission-evidence.zip",
+      "member": "READ_ME_results.txt",
+      "bytes": 13392,
+      "sha256": "85e5e89970d472f147e0acdf5b6ab21b65fd43c4e87fce408def5d196c6aea55",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-third-pass-evidence.zip",
+      "member": "SHA256SUMS",
+      "bytes": 3956,
+      "sha256": "abe2e021625f0e19ce139cb79213b18f251bbaecbc304715487452c1717929c3",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    },
+    {
+      "sourcezip": "outputs/jones-two-band-taylor-evidence.zip",
+      "member": "README.txt",
+      "bytes": 847,
+      "sha256": "685bbbb7d410f0be0f28de3cbec15f46de9b5c0e3fa4e27e5cace1f0c68e0839",
+      "classification": "original",
+      "reason": "Original historical report, README or checksum manifest absent byte-for-byte from current source export."
+    }
+  ]
+}

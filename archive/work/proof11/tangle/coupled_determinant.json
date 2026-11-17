@@ -1,0 +1,6 @@
+{
+  "integer_matrix_checks": 201,
+  "independent_Jones_determinant_checks": 5,
+  "formula": "abs(1+8*n*(n-1)*(n-2)*(8*(n-1)^2*(n-2)+6*n-8))",
+  "nontrivial_for_every_n_ge": 3
+}

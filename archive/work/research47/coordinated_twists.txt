@@ -1,0 +1,230 @@
+PASS 47: TWO OPPOSITE DISK TWISTS — AN ACTUAL CHANNEL-CANCELLATION TEST
+2026-11-01. Research deduction and countertest; no novelty claim.
+
+Result
+------
+The single-disk integral argument does NOT extend by multiplying quantum
+dimensions for two separated disks. An actual unknot supplies a countertest:
+both disks have coherent winding two, both labels 0 and 2 survive, and all
+opposite twists give the unknot. More precisely, the actual knot has a
+nonintegral coefficient in the generic tensor Chebyshev basis of the
+complement of the two unlink axes. The denominator is a quantum dimension.
+
+This is not a counterexample to Jones detection. The two twists cancel
+geometrically. Its value is to rule out a proposed algebraic exclusion of
+higher channels and identify the exact integral lattice that it overlooks.
+No nontrivial Jones-one knot is produced by this pass.
+
+1. Actual marked construction and topology
+------------------------------------------
+Take the standard closure of the two-strand braid sigma_1. It is an unknot.
+Place two transverse disks across its coherent braid tube at two separate
+heights, one before and one after the crossing. The disk interiors are
+disjoint, and their boundary circles C_1,C_2 are an unlink disjoint from the
+knot. Each disk meets the knot twice, with the same intersection sign, so
+w_1=w_2=2. Keep these disks marked.
+
+Insert m and n full twists at the two disks. The resulting actual knot is
+
+ K_(m,n) = closure(sigma_1^(2m) sigma_1 sigma_1^(2n))
+         = T(2,2(m+n)+1).
+
+The odd exponent guarantees one component for every integer m,n. On the
+opposite-rate line (m,n)=(k,-k), the word equals sigma_1 in B_2, so every
+K_(k,-k) is geometrically the unknot. This is a literal braid cancellation,
+not an inference from its Jones polynomial. On either coordinate axis the
+family is generally nontrivial; the joint cancellation cannot be assigned
+to vanishing of all higher channels at either disk separately.
+
+Equivalently, let y be the unknot running once around each component of the
+two-component unlink, the connected sum of its two meridian cores. The
+initial knot is the (2,1) cable of y. This gives the same marked picture.
+
+2. Exact TL_2 calculation, with framings
+----------------------------------------
+Set R=Z[A,A^-1], delta=-A^2-A^-2 and Delta_2=A^4+1+A^-4.
+In TL_2 use e^2=delta e and b=rho(sigma_1)=A I+A^-1 e.
+Its inverse is A^-1 I+A e. Over Q(A), the two projectors are
+
+ E_0=e/delta,                 E_2=I-e/delta,
+ b E_0=-A^-3 E_0,            b E_2=A E_2.
+
+Their unreduced ordinary closure values are 1 and Delta_2. Therefore, for
+p=2(m+n)+1 (which is odd), writhe normalization gives
+
+ V_(m,n)(A^-4)
+   = delta^-1 [A^(-6p) - A^(-2p) Delta_2]
+   = c_0 A^(-12(m+n)) + c_2 A^(-4(m+n)),                 (1)
+
+ c_0=A^-6/delta,          c_2=-A^-2 Delta_2/delta.
+
+Both coefficients are nonzero, c_0+c_2=1, and at A=1 they are -1/2
+and 3/2. The two individual normalized full-twist frequencies are -12
+and -4, exactly j(j+2)-3w_i^2 for j=0,2 and w_i=2.
+Along n=-m both frequencies become zero. Their sum, not either term
+individually, gives the unknot value.
+
+The initial one-crossing braid has framing +1. Multiplication by -A^-3
+makes its initial framing zero. A meridional annulus twist changes the
+transported framing by 4 per twist, while the braid word writhe changes
+by 2. Removing transported framing thus supplies A^-12(m+n), as in (1).
+Keeping this distinction prevents an erroneous r-dependent correction.
+
+3. Why even the unnormalized joint coefficients are not integral
+----------------------------------------------------------------
+The complement M of C_1 union C_2 is the connected sum of two solid tori.
+Over Q(A), its skein is the tensor product of their annular skeins. Let
+x_1,x_2 be their cores and e_j the monic Chebyshev basis, e_0=1,e_1=z.
+The integral module, however, is not the tensor polynomial module over R.
+
+A directly applicable primary source is Bakshi–Le–Przytycki, Kauffman
+bracket skein module of the connected sum of two solid tori,
+arXiv:2604.09971v1, Theorem 1 and equation (1):
+https://arxiv.org/html/2604.09971v1
+Their variable q is A here. With {n}=A^(2n)-A^(-2n), their n=2 relation is
+
+             {3} e_2(y) - {1} e_2(x_1)e_2(x_2) = 0.
+
+Consequently, after passing to Q(A),
+
+                 e_2(y) = e_2(x_1)e_2(x_2)/Delta_2.       (2)
+
+Here y is exactly the connected sum core described in section 1. The
+blackboard-framed (2,1) cable has annular bracket A e_2(y)-A^-3. After
+removing its +1 framing, its ACTUAL zero-framed skein class is
+
+ [K_(0,0)] = A^-6(e_0 tensor e_0)
+              - A^-2/Delta_2 (e_2 tensor e_2).             (3)
+
+Thus the denominator is present before normalizing the Jones polynomial
+or evaluating the two quantum dimensions. It cannot be dismissed as
+only the usual division by delta. Evaluating (3) after m,n twists gives
+(1), since theta_0=1, theta_2=A^8, and the two closure dimensions in the
+second term are Delta_2^2.
+
+Przytycki's generic connected-sum theorem is Theorem 1.2 / Corollary 1.3
+in Kauffman bracket skein module of a connected sum of 3-manifolds:
+https://arxiv.org/pdf/math/9911120
+It explicitly assumes the requisite A^k-1 are invertible; the generic
+field tensor-product conclusion is not an integral tensor-basis claim.
+The newer source supplies the precise integral relation (2), avoiding
+any extrapolation from generic linear algebra.
+
+4. The exact surviving two-disk gate
+------------------------------------
+For an arbitrary actual knot P in the complement of two disjoint-disk
+axes, write its zero-framed generic skein class as
+
+ [P]=sum_(j,l) a_(j,l)(A) e_j tensor e_l,   a_(j,l) in Q(A).
+
+This is a finite sum. Parity gives j=w_1 mod 2 and l=w_2 mod 2. The two
+independent twists have normalized Jones expression
+
+ V_(m,n)=sum_(j,l) b_(j,l)(A)
+       A^{m[j(j+2)-3w_1^2]+n[l(l+2)-3w_2^2]},
+ b_(j,l)=a_(j,l) Delta_j Delta_l/delta.                    (4)
+
+Group terms by the common opposite-rate frequency
+
+ d_(j,l)=j(j+2)-l(l+2)-3(w_1^2-w_2^2).
+
+Then infinitely many identities V_(k,-k)=1 hold if and only if the
+coefficient sum in frequency zero is 1 and every other grouped
+coefficient sum is zero. This follows from the same finite generalized
+Vandermonde argument used for the one-disk case; equal frequencies
+must be grouped BEFORE applying it.
+
+When |w_1|=|w_2|, all diagonal labels j=l have frequency zero. Formula
+(3) shows that simultaneous nontrivial diagonal labels and the rational
+coefficients needed to combine their dimensions are geometrically
+realizable, even for an actual unknot. Fusion multiplicity is not needed
+to expose the problem: the two elementary TL_2 channels already suffice.
+
+5. What this closes and what it leaves open
+-------------------------------------------
+It is false that an unknot-anchored, two-disk, opposite-twist Jones-one
+family must use only the single-disk allowed labels/windings. It is also
+false that the two-solid-torus tensor coordinates of every actual knot
+must be integral Laurent polynomials. Neither statement can be used to
+exclude the remaining coordinated-twist route.
+
+This test has an evident geometric annulus/tube cancellation, so it gives
+no evidence that a nontrivial Jones-one knot exists. To obtain a genuine
+candidate one would need an actual two-axis exterior satisfying the
+frequency-group equations (4), and an independent topological argument
+that some opposite-twist output is nontrivial. The equations alone do
+not supply that topology. For example, a hyperbolic three-component
+exterior with such equalities would supply hyperbolic, hence nontrivial,
+outputs for sufficiently long simultaneous fillings; no such exterior
+is constructed here.
+
+This is separate from the previously settled Watson mirrored-three-braid
+unknot orbits, and from the same-sign band-surgery symmetric-matrix
+obstruction. It addresses exactly why the new one-annulus integrality
+proof does not combine across two opposite twist disks.
+
+Verification
+------------
+verify_coordinated_twists.py is a Python-standard-library verifier of the
+TL_2 inverse, closure dimensions, framed eigenvalues, source n=2 relation
+coefficient, and two-variable normalized identity. The proof for all
+integers follows from the displayed spectral decomposition and invertible
+braid generator; the finite checks are corroboration, not a search bound.
+The braid agent independently confirmed (1), the framing correction,
+and uniqueness of the generic tensor coefficients via two successive
+Vandermonde arguments. The parent independently supplied and checked the
+same actual opposite-twist unknot as a countertest.
+
+6. Bounded check of the source's torsion endpoint (section 3.5)
+--------------------------------------------------------------
+There is a potentially stronger exact mechanism: if two ACTUAL framed
+knots P and U in M have a torsion difference, every embedding/filling
+M -> S^3 kills that difference, since the skein of S^3 is the torsion-free
+ring R. If U is an appropriate unknot reference with matching transported
+framings, their filling Jones polynomials agree. One would still need an
+actual P and a filling with independently certified nontrivial topology.
+A single actual link cannot itself be nonzero torsion here: its S^3
+bracket specializes at A=1 to a nonzero signed power of two. A difference
+of actual links can be torsion, so this observation does not kill the
+proposed pair mechanism.
+
+The 2026 preprint's Corollary 3.11(4) and Corollary 3.12 display
+
+ J_n=[n+1]e_n(y)+(-1)^(n+1)e_n(x_1)e_n(x_2),
+                 (A^2-A^-2) J_n=0.
+
+The first example is more concrete than a formal colored sum:
+
+ J_1=[2]y+x_1x_2 = [x_1 disjoint-union x_2] - [y disjoint-union U].
+
+These ARE two actual two-component links, with distinct component
+homology classes in M: {(1,0),(0,1)} versus {(1,1),(0,0)}. But under
+every reciprocal-integer filling of the two unlink axes, both are
+geometrically the same UNFRAMED two-component unlink. The first consists
+of the two core unknots; in the second, y becomes their connected-sum
+unknot. The individual framing pairs are (m,n) and (m+n,0), respectively,
+so they need not be isotopic as framed links. Their total framings agree,
+and hence their brackets agree; their normalized Jones polynomials are
+both those of the two-component unlink.
+The elementary band joining the first pair produces y, and the trivial
+band joining y to the small unknot produces y as well. Thus this explicit
+torsion witness supplies no nontrivial knot.
+
+For n>=2 the displayed J_n involve Chebyshev combinations and multiple
+parallel components; the source does not exhibit them as a knot-minus-
+unknot pair. Nor does one obtain such a pair merely by attaching bands
+to the terms: band attachment is not an operation on an UNMARKED absolute
+skein class. An appropriate torsion relation would first have to lift to
+a relative skein module retaining the attachment points and band data.
+Only then could a common closing/banding map be applied to the relation.
+That relative actual-pair realization, together with nontriviality of a
+filling, is the precise missing construction. It has not been provided.
+
+Source caution: this is a 2026 preprint, and its concluding Question 1
+asks about torsion coprime to {1} immediately after Corollary 3.12 claims
+that all torsion is annihilated by {1}. We do not treat the entire torsion
+classification as independently audited. The explicit low-degree
+relations used here agree with the older generic connected-sum theorem
+and with our independently verified two-variable fillings. In particular,
+formula (3) is also uniquely determined by those fillings via successive
+Vandermonde arguments, independently of the broader 2026 classification.

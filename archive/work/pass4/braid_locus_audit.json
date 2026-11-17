@@ -1,0 +1,15 @@
+{
+  "method": "recursive highest-degree ties; independent RREF; no integrality pruning",
+  "visited": 294,
+  "rational_solution_loci": 1,
+  "integer_solutions": [
+    [
+      -1,
+      0,
+      0
+    ]
+  ],
+  "positive_dimensional_loci": 0,
+  "coefficient_formula_checks": 125,
+  "seconds": 0.273179582785815
+}

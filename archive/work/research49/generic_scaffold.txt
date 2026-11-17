@@ -1,0 +1,158 @@
+PASS 49: A GLOBAL-REDUCTION OBSTRUCTION FROM SATELLITES AND COLOR PARITY
+2026-11-01. Internally checked deduction; no priority claim and no resolution
+of Jones unknot detection.
+
+DUPLICATE AUDIT: After deriving Theorem A below, I inspected the existing
+outputs/jones-satellite-rigidity.txt. It ALREADY proves Theorem A in the
+stronger form allowing a rational function F_A, using torus-knot families.
+The proof below is an alternative connected-sum/Vandermonde proof of its
+polynomial special case, not a new research result. The new combination in
+this pass is Theorem B: Scharlemann--Thompson replaces the earlier universal-
+slice/signature hypothesis by the existence of even ONE genuine u=1 output.
+This identifies another obstruction to the missing generic-to-u1 bridge.
+
+Question addressed
+------------------
+Could one turn an arbitrary hypothetical Jones-one knot K into an
+unknotting-number-one counterexample by a fixed satellite construction
+whose Jones polynomial depends polynomially only on V_K? This would connect
+the generic problem to the anchored/Brunnian reduction of pass19.
+
+The two existing outputs were read. Their Brunnian equivalence has ONLY the
+unknotting-number-one scope. They explicitly do not supply this global bridge.
+The result below shows why a large natural version of the proposed bridge
+cannot extract a counterexample from its input: it would already have to
+construct Jones-one satellites of every knot, including ordinary trefoils.
+
+THEOREM A: UNIVERSAL POLYNOMIAL ORDINARY-JONES SATELLITES ARE AFFINE
+----------------------------------------------------------------
+Let P be a fixed framed knot pattern in a solid torus, inserted using the
+zero framing of its companion. Suppose there is a polynomial
+ F_A(s) in Q(A)[s]
+such that for EVERY knot K,
+ V_{P(K)}(A^-4)=F_A(V_K(A^-4)).
+Then F_A has degree at most1. Moreover:
+
+ * if the algebraic winding of P is even, F_A is constant;
+ * if that winding is odd, F_A(s)=b(A)*s.
+
+Equivalently, the appropriately normalized annular skein of P has only
+Chebyshev labels0,1; parity permits only the label agreeing with winding.
+There is no assumption about the geometric wrapping number.
+
+Proof
+-----
+Write e_j for the monic Chebyshev annular basis, Delta_j for its unknot
+value, and J_j(K) for normalized color j+1, so J_0=1 and J_1=V_K.
+The finite annular expansion gives
+  V_{P(K)}=sum_{j=0}^N a_j(A) J_j(K),
+where the fixed scalar normalization and nonzero Delta_j are absorbed into
+a_j. This is valid for zero-framed satellites, with the pattern framing
+correction fixed independently of K. The skein respects mod2 homology in
+the solid torus, so a_j=0 unless j equals the winding modulo2.
+
+Let T be the trefoil with V_T=t+t^3-t^4, t=A^-4, and set c_j=J_j(T).
+Normalized colors multiply under connected sum. Evaluate the asserted law
+on K=T^{#r}, r=0,1,2,..., where r=0 denotes U. Then
+
+  sum_j a_j c_j^r = sum_l b_l (c_1^l)^r.                    (1)
+
+All elements here lie in the field Q(A). The c_j have exact degree intervals
+
+  min_degree_t c_j = j,
+  max_degree_t c_j = (3j^2+5j)/2.                           (2)
+
+Thus the c_j are pairwise distinct. Also c_1^l has interval [l,4l]. Equality
+c_j=c_1^l first forces j=l by minimum degree; comparison of maximum degrees
+then gives 3j(j-1)=0. The only coincidences are (j,l)=(0,0),(1,1).
+
+Collect equal bases in (1). For finitely many distinct bases d_1,...,d_m,
+the equations sum_i z_i d_i^r=0, r=0,...,m-1, have only the zero solution:
+the Vandermonde determinant is product_{i<k}(d_k-d_i), nonzero in Q(A).
+Therefore a_j=0 for j>=2 and b_l=0 for l>=2. Parity proves the two listed
+forms. This is a finite exact algebraic argument, not a numerical inference.
+
+Degree check for (2)
+--------------------
+A convenient standard two-strand fusion expression is
+
+ c_j = Delta_j^-1 * sum_{k=0,2,...,2j}
+       (-1)^(k/2) Delta_k A^((3/2)k(k+2)-6j(j+2)),
+ Delta_j=(-1)^j sum_{h=0}^j A^(2j-4h).
+
+The fusion channel k of two j-colored strands has braid eigenvalue
+ (-1)^(j-k/2) A^((k(k+2)-2j(j+2))/2).
+Cube this and remove the three colored framing twists
+ ((-1)^j A^(j(j+2)))^3; taking the quantum trace gives the displayed formula.
+This is the elementary SU(2) case of the torus-knot formula; primary reference
+for the general calculation is Morton,
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf .
+
+In its numerator the minimum A exponent comes uniquely from k=0 and is
+-6j(j+2). The maximum comes uniquely from k=2j and is -2j. Dividing by
+Delta_j, whose exponent interval is [-2j,2j], gives the c_j interval
+[-6j^2-10j,-4j] in A, equivalent to (2). No highest/lowest cancellation is
+possible because those channels are unique. At j=1 the formula gives
+A^-4+A^-12-A^-16 exactly. The small exact-arithmetic verifier
+check_satellite_independence.py reproduces labels0 through6 and their degree
+intervals; the all-label proof is the preceding unique-extremum argument.
+
+THEOREM B: CONSEQUENCE FOR AN UNKNOTTING-NUMBER-ONE PROMOTER
+----------------------------------------------------------
+Assume P is geometrically essential, its outputs under nontrivial companions
+are genuine satellites, and P(U)=U. Suppose it has a universal rational
+Jones law as in the earlier satellite-rigidity report (in particular, the
+polynomial law of Theorem A suffices), with the law defined at 1. Suppose
+P(K) has unknotting number1 for at least one
+nontrivial companion K. Then
+
+  V_{P(J)}=1 for EVERY companion J.
+
+Indeed Scharlemann--Thompson prove that a genuine satellite with nonzero
+algebraic winding has unknotting number at least2. Hence winding(P)=0.
+The earlier rational rigidity theorem now makes F constant; evaluating
+at U makes that constant1. For polynomial F, Theorem A alone suffices.
+
+Precise primary locator for the established topological input:
+Hom--Lidman--Park, Unknotting number and cabling, Introduction, immediately
+after Theorem1.1, explicitly states the general satellite conclusion and
+cites Scharlemann--Thompson [ST88, Corollary3.3]:
+https://preprint.press.jhu.edu/ajm/sites/default/files/AJM-hom-lidman-park.pdf
+Original: Unknotting number, genus, and companion tori, Math. Ann.280 (1988),
+191--205, https://doi.org/10.1007/BF01456051 .
+
+Geometric essentiality with nontrivial companion gives an incompressible
+companion torus here (the winding-zero pattern is not a core). Thus choosing
+J to be a trefoil would already give an explicit nontrivial Jones-one knot.
+The proposed device would not need a hypothetical Jones-one input at all.
+
+Interpretation for the generic scaffold
+---------------------------------------
+This does not prove that such a scalar essential pattern cannot exist. Its
+existence is itself an unconditional counterexample construction. It does
+prove that a fixed satellite with a universal polynomial law in ordinary
+Jones cannot provide a genuinely input-dependent reduction to u=1.
+
+An odd-winding pattern can pass ordinary Jones through, but the companion
+torus obstructs u=1. A winding-zero pattern can support u=1, but its colors
+are even, and any universal polynomial dependence on the ordinary fundamental
+color collapses to a constant. This combines a sutured-manifold obstruction
+with a representation-theoretic parity obstruction.
+
+Scope qualifications are essential. The result does NOT exclude:
+ * operations depending on the particular diagram/companion;
+ * several independent infection boxes, including separate mirror inputs;
+ * an identity assumed only on the unknown Jones-one locus;
+ * arbitrary non-polynomial functions of the ordinary Jones polynomial;
+ * a construction using additional information from higher colors.
+The third escape still needs a proof that Jones1 controls the higher-color
+combination, precisely the missing bridge. Nothing here assumes ordinary
+Jones determines higher colors or that all-colored detection is known.
+
+This bounded pass combines an already-proved algebraic rigidity theorem
+with an established u=1 topology theorem. It produces an obstruction to a broad tempting global
+reduction, not a complete generic proof scaffold. It changes the next action:
+do not pursue a fixed one-companion satellite whose success is justified by
+an ordinary-Jones polynomial substitution. A useful generic-to-u1 reduction
+must add genuinely different geometric input or escape that single-companion
+universal-law framework.

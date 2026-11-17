@@ -1,0 +1,45 @@
+TIGHTNESS OBSTRUCTION FOR TOTAL ARC / FIGURE-EIGHT-LOOP INTERSECTION
+Conditional on adopting the repaired source-square / target-torus model.
+
+Take beta=identity, target caps C=(12)(34), source caps D=(23)(56), with
+punctures1,...,6 on a horizontal diameter. Let ell12 and ell34 be the
+standard figure-eight loops associated to the respective target caps.
+Each has winding numbers +1,-1 at its two endpoints and zero at every
+other puncture (up to reversing the whole orientation).
+
+Define c to be the total geometric intersection of the two source arcs
+with the two target figure-eight loops, minimized over cap-slide-equivalent
+representatives preserving the marked endpoint pairings. Then c_min=2.
+
+LOWER BOUND. Every source arc from p2 to p3 has algebraic intersection
+of absolute value1 with ell12, and also absolute value1 with ell34, by the
+difference of the loops' winding numbers at its endpoints. Hence it has
+at least two geometric intersections in total. Cap slides change paths
+but not the endpoint winding charges of the associated figure-eight
+cycles, so this lower bound survives the entire proposed minimization.
+
+ACHIEVABILITY. Use the straight source arc23 and small standard loops.
+Arc23 exits the lobe around p2 once and enters the lobe around p3 once.
+The other source arc56 misses both target loops. Thus total intersection2
+is achieved, and these representatives are global minimizers for this c.
+
+VANISHING. The two-point intersection set is empty: arc56 has no point
+on either target loop, so no complete two-point matching exists. Therefore
+the square/torus pairing vanishes for all q,t. The torus-torus pairing also
+vanishes (the source56 torus factor is disjoint). The TL coefficient is
+zero as well: in saved state labels, J_identity(top7,bottom2)=0.
+
+TOPOLOGY. The cap-cup tangle has two arcs and no closed component. Its
+standard diagram has no crossings and is the trivial e-type tangle:
+source23 connects through target12 and34 to the remaining source endpoints
+1,4, while source56 joins the two remaining target endpoints5,6.
+
+CONSEQUENCE. For this repaired definition of c, both 'split implies c=0'
+and 'every minimizer with c>0 has nonzero pairing' are false. The failure
+is total intersections versus COMPLETE intersection matchings. This does
+not refute a conjecture explicitly restricted to nonsplit pairs. It also
+does not supply a counterexample to the Jones unknot conjecture.
+
+This argument concerns figure-eight loops, not an unspecified choice of
+two boundary noodles. Those choices must not be conflated: the corrected
+duality object determines which complexity is actually being minimized.

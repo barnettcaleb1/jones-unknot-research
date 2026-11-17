@@ -1,0 +1,146 @@
+GEOMETRY OF AN IDENTICALLY ZERO SHELL FACTOR
+31 October 2026. Bounded research pass; deductions, not novelty claims.
+
+SETUP
+
+Use the exact geometry and normalizations of
+outputs/jones-satellite-transmission-and-hidden-derivatives.txt.
+The two-component link P union C has both components unknotted, linking
+number zero, and a component-preserving strong inversion. Its quotient
+shell gives F=diag(1,d_P) in the (Q_0,Q_infinity-delta Q_0) basis.
+The pattern is geometrically essential precisely when P union C is
+nonsplit, equivalently P is not contained in a ball in E(C).
+
+1. A ZERO FACTOR WOULD GIVE A CERTIFIED COUNTEREXAMPLE, WITH NO
+   SECOND GEOMETRIC SEARCH
+
+The strongest useful topological input is Gabai's Corollary 2.5 in
+Foliations and the topology of 3-manifolds II, J. Differential Geometry
+26 (1987), 461--478. It is stated on p.462 and proved on p.471:
+a winding-zero knot in a solid torus, not contained in a ball, has no
+nontrivial surgery yielding a solid torus; the boundary of every such
+filled manifold remains incompressible.
+
+Apply this with C as a knot in E(P). This is a solid torus because P is
+an unknot. Its winding number is lk(P,C)=0, and it is not contained in
+a ball because the link is nonsplit. For each n != 0, 1/n surgery on C
+preserves the ambient S^3, since C is an unknot, and produces P_n.
+The resulting manifold with the P boundary unfilled is E(P_n).
+Gabai's theorem shows E(P_n) is not a solid torus. Therefore
+
+       P union C nonsplit  ==>  P_n is nontrivial for EVERY n != 0.
+
+This is stronger than a finiteness statement about exceptional twist
+parameters, and it does not need hyperbolicity or a bridge-number bound.
+
+Now suppose d_P is identically zero. Insert the rational input Q_1.
+The actual output T_1 is the preferred exterior quotient of P_1,
+and its entire bracket is on the Q_0 line. Its meridian branch closure
+is the actual unknot. Fill instead at slope 1/2, i.e. mu+2 lambda.
+The resulting branch link B is a knot: its double cover is the integer
+homology sphere S^3_(1/2)(P_1). Its bracket is a framing monomial times
+the bracket of the same filling on Q_0, which is an unknot. Thus V_B
+is a monomial. The knot identities V_B(1)=1 and V'_B(1)=0 force V_B=1.
+
+Nevertheless B is nontrivial. P_1 is nontrivial by Gabai, so its
+nonmeridional 1/2 surgery is not S^3 by Gordon--Luecke's no-S^3-surgery
+corollary. The double branched cover of an unknot is S^3, ruling out B=U.
+
+Moreover B has unknotting number exactly one. The rational-tangle
+boundary transformation [[1,0],[1,1]] sends the standard crossing
+slopes -1 and +1 to infinity and 1/2. Therefore these precise two
+fillings differ by one crossing change. The infinity filling is U and
+B is nontrivial. This slope argument was independently supplied by
+the braid agent; it avoids asserting that arbitrary distance-two
+replacements automatically come with a specified crossing diagram.
+
+Consequently an essential zero shell is a DIRECT counterexample
+generator. Once actual geometry and d_P=0 are certified, no additional
+search for a nontrivial closure is necessary: Q_1 followed by the 1/2
+closure supplies a nontrivial Jones-one knot of unknotting number one.
+The same works with every Q_n, n != 0; distinctness of the resulting
+branch knots is NOT claimed here.
+
+Primary Gabai article (actual PDF inspected, including proof on p.471):
+https://doi.org/10.4310/jdg/1214441487
+https://scispace.com/pdf/foliations-and-the-topology-of-3-manifolds-ii-4bywlfmfgl.pdf
+The mirror hosts the original article, not a secondary summary.
+Gordon--Luecke consequence is explicitly recalled in the introduction of
+Kronheimer--Mrowka, Witten's conjecture and Property P:
+https://people.math.harvard.edu/~kronheim/wittenp.pdf
+
+2. SPLIT PATTERNS DO HAVE ZERO FACTOR; NO EQUIVARIANT SPLITTING
+   ASSUMPTION IS NEEDED
+
+If P union C is split, then every 1/n surgery on C leaves P an unknot.
+Hence F(Q_0) and F(Q_1) are actual unknot exterior quotients, and with
+their preferred output markings both lie on the rational Q_0 skein
+line. Q_0 and Q_1 are linearly independent over Q(A). Therefore F has
+rank one, and d_P=0. Its meridian evaluation shows that F is nonzero.
+
+This argument does not require choosing an invariant splitting sphere
+or assuming that the splitness is visibly compatible with the axis.
+
+Thus the precise unresolved statement within this pattern class is:
+  d_P=0  implies  P union C is split.
+The reverse implication is proved above. A failure gives a Jones
+counterexample by Section 1. Proving the implication only settles this
+construction class; we have NOT reduced arbitrary Jones-one knots to
+such shells. In particular, do not call it equivalent to the full
+Jones unknot-detection conjecture.
+
+3. A WHOLE PRESERVATION CONSTRUCTION IS UNAVAILABLE: CONWAY MUTATION
+
+Starting with a split zero shell and performing ordinary two-string
+Conway mutations inside the shell cannot produce an essential example.
+The lift of a Conway mutation to the torus double-covering its four-
+punctured sphere is isotopic to the identity (choose the translation
+lift). The usual proof that mutant links have homeomorphic double
+branched covers is local; using a collar at the mutation torus gives
+a homeomorphism of shell double covers relative to their external
+boundary tori and peripheral markings.
+
+Therefore such mutations preserve the homeomorphism type of the
+pattern-link exterior. In particular they preserve compressibility
+of its boundary tori. A split link of two unknots has compressible
+boundary tori; a nonsplit link has incompressible boundary. Hence any
+mutated shell that again has the required two-component pattern-link
+interpretation still represents a split link.
+
+This excludes a natural exact-Jones-preserving construction without
+using the Jones conjecture. It concerns ordinary Conway mutations of
+the quotient shell, not arbitrary rotations with more branch points,
+nor mutations performed on an unrelated diagram of the covering link.
+
+Primary exposition/proof of the local lifting statement:
+Morton and collaborators' mutation chapter, Theorem 3, p.6:
+https://www.liverpool.ac.uk/~su14/papers/mutantchapter.pdf
+It identifies the torus lift as isotopic to the identity.
+
+4. INDEPENDENT SATELLITE ALTERNATIVE
+
+Even without Gabai's theorem, an essential zero shell gives a
+counterexample by inserting a strongly inverted trefoil. The gluing
+torus of P(trefoil) is incompressible on the trefoil side. It is also
+incompressible on the pattern side: a compressing meridian disk in
+E(C) disjoint from P would cut the solid torus into a ball containing
+P, contradicting essentiality. Thus P(trefoil) is nontrivial. Its
+flat quotient gives the same nontrivial 1/2 branch construction.
+Gabai's theorem is stronger because the simpler rational input Q_1
+already suffices.
+
+5. WHAT THE CURRENT PASS DOES NOT SUPPLY
+
+No essential zero shell or new Jones-one knot was found. The results
+make the exact construction target easier to certify and remove
+ordinary Conway mutation of a split seed as a possible route. They do
+not replace the entire-polynomial condition d_P=0 by beta=0, finite
+derivatives, or vanishing of an Alexander polynomial. Iterated
+Whitehead patterns remain concrete counterexamples to those shortcuts.
+
+An additional possible route would have to construct an actual
+non-compositional shell with full cancellation. Serial compositions
+of already nonzero shell factors cannot do this, because their
+factors multiply in the integral domain Z[A,A^-1]. No topological
+operation implementing the required additive cancellation was
+established in this pass.

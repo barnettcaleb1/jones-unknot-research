@@ -1,0 +1,194 @@
+ALL MARKOV PRESENTATIONS: GLOBAL QUANTUM-CONSTRAINT AUDIT
+1 November 2026. Exact algebraic tests; no novelty claim.
+
+QUESTION
+Can the ordinary Jones-one hypothesis, applied to EVERY presentation of
+the same knot, provide independent measurements that force positivity
+saturation or a vanishing operator ideal, without adding satellite data?
+
+VERDICT
+The proposed measurement amplification does not occur. All scalar probes
+obtained by transporting the ordinary closure through Markov moves are
+the same linear functional. More strongly, a Markov stabilization has a
+strict conditional-expectation variance, independent of the knot. The
+unknot itself supplies an exact counterexample to operator rigidity.
+These facts do not rule out a new geometric theorem about which
+destabilizations exist; they rule out deriving it from the stated scalar
+and channel identities alone.
+
+1. FULL CONDITIONAL ROUTE, BEFORE TESTING THE MISSING PREMISE
+
+Every knot has a closed-braid presentation. For the standard unitarized
+Temperley--Lieb representation, the writhe-normalized n-strand operator
+R_beta satisfies
+ V_(closure beta)=delta^(n-1) tau_n(R_beta),  tau_n(I)=1.
+
+A sufficient global bridge would be:
+ (S) If V_K=1, some Markov representative of K has
+     |tau_n(R_beta)|=1 at a positive specialization delta>1.
+Indeed the displayed formula gives |tau_n(R_beta)|=delta^(1-n), so (S)
+forces n=1. The closure of a one-strand braid is U. Thus this chain reaches
+an arbitrary Jones-one knot and closes exactly.
+
+But (S) is equivalent in strength to Jones unknot detection, since U has
+a one-strand representative. It is a precise target, not a newly proved
+weaker lemma. The proposed way of proving it was to turn all Markov
+presentation measurements into tomography or an entropy equality. The
+following tests defeat that mechanism as presently formulated.
+
+2. CONVENTIONS AND THE ONE-DIMENSIONAL PROBE THEOREM
+
+Work first over Q(A), with
+ delta=-A^2-A^-2, e_i^2=delta e_i,
+ rho(sigma_i)=A I+A^-1 e_i,
+ rho(sigma_i^-1)=A^-1 I+A e_i.
+Let w(beta) be the exponent sum and
+ R_beta=(-A)^(-3w(beta)) rho(beta).
+The normalized Markov traces obey
+ tau_n(I)=1, tau_n(xy)=tau_n(yx),
+ tau_(n+1)(iota(x))=tau_n(x),
+ tau_(n+1)(iota(x)e_n)=delta^-1 tau_n(x).
+
+Define linear normalized stabilization maps on the entire algebra by
+ S_+(x)=(-A)^-3 iota(x) rho(sigma_n),
+ S_-(x)=(-A)^3  iota(x) rho(sigma_n^-1).
+Direct substitution gives, for BOTH signs,
+ tau_(n+1)(S_+(x))=delta^-1 tau_n(x),
+ tau_(n+1)(S_-(x))=delta^-1 tau_n(x).
+Conjugation by any invertible braid image preserves tau_n.
+
+Put L_n(x)=delta^(n-1) tau_n(x). Then
+ L_(n+1) S_+=L_n=L_(n+1) S_-,
+ L_n Ad(rho(gamma))=L_n.
+Consequently every ordinary closure functional transported back through
+a prescribed sequence of conjugations and stabilizations is exactly L_n,
+as an identity of linear functionals. An inverse destabilization, when
+geometrically defined, has the inverse equality on its domain. Therefore
+all such transported scalar probes span one dimension, not a tomographic
+family. This holds identically in A, including every derivative or level.
+
+This does not say all information in a braid presentation is scalar.
+The existence of a special geometric move sequence can carry additional
+information. It says that evaluating the SAME ordinary invariant after
+known closure-preserving moves supplies no new independent functional.
+
+3. STABILIZATION IS A STRICT QUANTUM CHANNEL STEP
+
+At a specialization where TL_n and TL_(n+1) have faithful positive Markov
+forms and |A|=1, let E_n:TL_(n+1)->TL_n be the trace-preserving conditional
+expectation. It is unital and completely positive and satisfies
+ E_n(iota(x))=x, E_n(iota(x)e_n)=delta^-1 x.
+Thus the stronger operator identity is
+ E_n(S_+(x))=delta^-1 x=E_n(S_-(x)).
+
+For a unitary normalized braid R, S_+(R) and S_-(R) are unitary too. Hence
+their Kadison--Schwarz defects are EXACTLY
+
+ E_n(S(R)^* S(R))-E_n(S(R))^* E_n(S(R))
+                  =(1-delta^-2) I.
+
+For delta>1 this is strictly positive, for every R, including R=I from
+the one-strand unknot. No Jones-one condition changes it. Stabilization
+therefore does not enter the multiplicative-domain equality case of this
+channel. Multiplying E_n by delta restores the Jones normalization but
+makes the map nonunital; one cannot then import the unital-channel
+equality argument. This is a concrete obstruction to the proposed
+recoverability/entropy bridge, not merely a warning about normalization.
+
+4. ACTUAL UNKNOT COUNTERTEST TO OPERATOR RIGIDITY
+
+In B_2 the braids sigma_1 and sigma_1^-1 both close to U, being the two
+Markov stabilizations of the trivial one-strand braid. Their normalized
+operators are
+ R_+=-A^-2 I-A^-4 e_1,
+ R_-=-A^2 I-A^4 e_1.
+Therefore
+ R_+-R_-=(A^4-A^-4)(e_1-delta^-1 I).
+This is generically nonzero although both closures have Jones polynomial
+1 in every Markov presentation and at every A.
+
+Let D=e_1-delta^-1 I. Then
+ tau_2(D)=0,
+ tau_2(e_1 D)=tau_2(D^*D)=1-delta^-2>0
+on the positive real-delta arc. In particular
+ ||R_+-R_-||_tau^2=|A^4-A^-4|^2(1-delta^-2)>0
+away from the isolated zeros of A^4-A^-4.
+
+This sharply distinguishes ker(tau), which is only a linear hyperplane,
+from the trace radical {D:tau(aD)=0 for all a}, which is zero for a
+faithful positive trace. Markov invariance preserves trace-zero defects;
+it does NOT turn them into a two-sided ideal or permit multiplication by
+arbitrary test operators. The latter operations change the closure and
+usually its knot or component type. They would be new data.
+
+The earlier beta_m family in work/proof11/braid/markov_moment_obstruction.txt
+shows more: actual unknot presentations can have unbounded second-moment
+derivatives. The two-strand example above already suffices for the present
+global-presentation inference, so no further computations are required.
+
+5. AN ADDITIONAL INFINITE-TOWER LIMITATION
+
+For each fixed finite n there is an open unitary arc near A=i, delta=2,
+on which the Markov form is positive and faithful. There is no common
+GENERIC open arc with this property simultaneously for every strand
+number. Full-tower positivity for 0<delta<2 occurs only at the discrete
+Jones values delta=2cos(pi/(k+2)); beyond a finite strand number one must
+pass to the Jones quotient, which kills the relevant Jones--Wenzl ideal.
+At delta=2 the generic tower remains positive, but the corresponding
+ordinary Jones specialization is t=1 and is universal for knots.
+
+Thus an argument using arbitrary stabilizations cannot silently retain
+both a fixed generic unitary parameter and faithful positivity in every
+unquotiented TL_n. Any finite move sequence can still be treated on a
+sufficiently small arc, and root-of-unity quotients can treat all n; this
+limitation does not invalidate those legitimate uses.
+
+6. WHAT A MINIMIZATION REFORMULATION REALLY MEASURES
+
+At a fixed unitary Jones level with delta>1, the simple positive defect
+ tau_n((R_beta-I)^*(R_beta-I))=2-2 Re tau_n(R_beta)
+for a Jones-one knot is
+ 2(1-delta^(1-n)).
+Its infimum over all braid presentations is therefore
+ 2(1-delta^(1-b(K))),
+where b(K) is braid index. It vanishes exactly for the unknot. This is a
+valid Markov-invariant minimization, but it merely repackages braid index
+on the Jones-one fiber: the scalar hypothesis does not show its minimum
+is zero. A proof that it is zero would be the missing geometric theorem.
+
+7. PRECISE BOUNDARY OF THIS NEGATIVE RESULT
+
+Not excluded: a theorem that the Jones-one identity forces a special
+exchange move, a geometrically recognizable destabilization, or some
+new monotone presentation complexity to decrease. Such a theorem could
+prove the sufficient bridge (S) without introducing satellite invariants.
+
+Excluded by the exact calculations here: getting (S) solely by treating
+all Markov-related closure values as independent probes, promoting a
+trace kernel to an operator ideal, or asserting equality in the standard
+conditional-expectation inequality. The simplest proposed premises fail
+already on actual unknot presentations.
+
+No new generic positive bridge has been established in this bounded pass.
+
+PRIMARY SOURCES CHECKED
+
+V.F.R.Jones, A polynomial invariant for knots via von Neumann algebras,
+Bull.Amer.Math.Soc.12(1985),103--111, DOI10.1090/S0273-0979-1985-15304-2.
+Publisher PDF access returned403 in this pass; the conventions and trace
+facts were directly checked in the following primary paper instead.
+
+D.Aharonov,V.F.R.Jones,Z.Landau, A Polynomial Quantum Algorithm for
+Approximating the Jones Polynomial, arXiv:quant-ph/0511096v2,
+https://arxiv.org/pdf/quant-ph/0511096 . Definitions/uniqueness of the
+Markov trace, its braid-closure normalization, and unitary path model.
+
+A.N.Aaserud,D.E.Evans, Realizing the braided Temperley--Lieb--Jones
+C*-tensor categories as Hilbert C*-modules, arXiv:1908.02674v3,
+https://arxiv.org/pdf/1908.02674 . Section2.4 records the Markov trace,
+Jones positivity range, and passage to its positive quotient; the
+unitary braiding uses the discrete range together with delta=2.
+
+The displayed stabilization and trace-kernel formulas above are elementary
+derivations from the stated relations, not an attributed new theorem from
+these references.

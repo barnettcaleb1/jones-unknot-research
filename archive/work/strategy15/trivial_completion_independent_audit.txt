@@ -1,0 +1,65 @@
+INDEPENDENT AUDIT: TRIVIAL COMPLETIONS OF UNKNOT-COMPLETABLE TANGLES
+Status: internally checked deduction; no novelty claim. Audit of braid agent's
+inductive argument in rotor_topology.txt. No appeal to Jones detection.
+
+Statement. Let R be an n-string tangle in a marked ball B, without closed
+components. If some complementary n-string tangle S makes R union S an unknot,
+then there exists a boundary-parallel complementary tangle S' making R union S'
+an unknot. R, its ball, its marked endpoints, and its embedding remain fixed.
+No equivariance is required of S'.
+
+Base n=1. The sphere gives a connected-sum decomposition of the unknot into the
+closures of the two ball-arcs. Uniqueness of prime decomposition implies both
+arcs are unknotted. Thus a boundary-parallel completion exists.
+
+Compression. For n>=2 the punctured splitting sphere F has nonabelian fundamental
+group, whereas the unknot exterior has fundamental group Z. Hence F is not
+pi1-injective. The Loop Theorem supplies a compression on one side of F. One may
+also see the side issue from the amalgamated-product normal form: injection on
+both sides would imply injection into the glued exterior. The compressing disk
+cuts the corresponding ball into two balls. Each contains a positive even number
+2n_i of punctures, with n_i<n. Positivity follows from essentiality on F; parity
+follows because the associated sphere intersects the closed knot an even number
+of times. Its disk is disjoint from the knot, so the tangle strands do not cross
+between the two resulting balls.
+
+Case 1: the compression is in S. Write S=S1 union_D S2. Apply induction to the
+COMPLEMENTARY n1-string tangle of the ball containing S1, replacing S1 by a
+boundary-parallel completion while keeping the whole closure U. Recompute the
+complementary n2-string tangle after this replacement and apply induction again.
+The two new stator pieces are boundary-parallel and glue along an endpoint-free
+disk. Their boundary shadows can be pushed off that disk, so their union is
+boundary-parallel. Sequential replacement is essential to this formulation.
+
+Case 2: the compression is in R. Write R=R1 union_D R2. Each R_i already embeds
+in U, so induction gives a boundary-parallel unknot completion S_i'. Realize
+S_i' as a small push-off of disjoint shadow arcs on the boundary of its rotor
+ball, with all shadows avoiding the endpoint-free disk used for the disk-sum.
+Choose one shadow on each side. The complement of each shadow forest in its
+boundary sphere is connected. Therefore an embedded boundary rectangle can
+join the interiors of the chosen shadows, crossing the neck once and avoiding
+all other shadows. Use its untwisted small push-off as the connecting band.
+
+Boundary-parallelness: perform the band surgery on the shadow arcs and their
+push-offs simultaneously. The two resulting arcs are again disjoint boundary
+shadows. The entire stator is their small push-off together with the unchanged
+shadows. Thus it is boundary-parallel directly, without assuming that a general
+band sum of trivial tangles is trivial.
+
+Unknot certificate: before the connection, the two closed unknots U_i are in
+separate slightly enlarged balls. The chosen untwisted band runs through their
+single connecting neck, outside the interiors of those balls. This is the
+standard connected-sum band, so the closure is U1#U2=U. An arbitrary ribbon band
+would NOT suffice; it could tie a nontrivial ribbon knot. The explicit collar
+and single-neck choice is the required additional detail.
+
+Marking: the disk-sum reconstructs the given rotor ball and its original R_i.
+All adjustment occurs in the complementary collar/stator, so the fixed marked
+R is unchanged.
+
+LIMIT OF THE DEDUCTION
+This establishes a new choice of stator preserving the ORIGINAL unknot closure.
+If the old stator made the FLIPPED rotor nontrivial, the argument does not prove
+that this remains true for the replacement stator. Thus it is not by itself a
+reduction of all hypothetical rotant counterexamples to trivial-stator ones.
+It is also not a claim that every rotor which admits such a completion is trivial.

@@ -1,0 +1,137 @@
+JONES UNIT, BRANCHED COVERS, AND GAUGE THEORY: STRATEGIC AUDIT
+31 October 2026. No resolution of the Jones unknot conjecture is claimed.
+
+Outcome
+
+The double-cover route has a rigorous recognition endpoint, but the familiar
+Jones-to-Casson bridge stops at a signed count. There is an actual, infinite
+family showing that even the whole Jones polynomial plus signature does not
+recover the full Floer information of the cover. LMO/WRT constructions require
+additional input; evaluating the same fundamental Jones polynomial at more
+roots does not by itself supply that input.
+
+1. Exact consequence of V_K(t)=1
+
+Put Y=Sigma_2(K). Then |H_1(Y;Z)|=det(K)=|V_K(-1)|=1. Mullins' formula,
+with lambda normalized as twice ordinary Casson on integral homology spheres,
+is
+
+  lambda(Y) = -V'_K(-1)/(6 V_K(-1)) + sigma(K)/4.
+
+Hence
+
+  V_K=1  =>  lambda_C(Y)=sigma(K)/8.
+
+Casson therefore vanishes if signature zero is independently known, as for a
+ribbon candidate. Do not assume signature zero from V_K=1 generically.
+
+Mullins, Topology 32 (1993), 419--438, Theorem 5.1:
+  https://doi.org/10.1016/0040-9383(93)90029-U
+Exact formula and normalization checked in Greene--Watson, Theorem 13:
+  https://arxiv.org/pdf/1106.5559
+
+2. The recognition endpoint is already a theorem
+
+Cornwell--Ng--Sivek, Theorem 3.1, prove that pi_1(Sigma_2(K)) admits a
+nontrivial SO(3) representation if and only if K is nontrivial. Their proof
+uses the traceless-meridian SU(2) representation supplied by
+Kronheimer--Mrowka. For determinant-one K, H^2(Y;Z/2)=0 removes the obstruction
+to lifting the SO(3) representation to SU(2). Since H_1(Y;Z)=0, a nontrivial
+SU(2) representation cannot be abelian, and is therefore irreducible.
+
+Thus the following would suffice for generic Jones detection:
+
+  V_K=1 implies that Sigma_2(K) has no irreducible SU(2) representation.
+
+There is no need to assume the general conjecture that every nontrivial
+integral homology sphere has an irreducible SU(2) representation. But the
+displayed implication is not proved by the Jones information we possess.
+
+Primary source, Theorem 3.1:
+  https://sites.math.duke.edu/~ng/math/papers/concordances.pdf
+  https://arxiv.org/abs/1411.1364
+
+3. A decisive kill test for the Casson shortcut
+
+Choose any nontrivial Alexander-polynomial-one knot J and take Y=S^3_{+1}(J).
+The Casson surgery formula gives
+
+  lambda_C(Y) = (1/2) Delta_J''(1) = 0.
+
+Nevertheless Kronheimer--Mrowka's Property P theorem gives a nontrivial SO(3)
+representation of pi_1(Y), which lifts to an irreducible SU(2) representation
+because Y is an integral homology sphere. Therefore 'Casson zero implies no
+irreducible representations' is false for actual surgery manifolds.
+
+This failure also has an irreducible, toroidal example: +1 surgery on the
+untwisted Whitehead double of the right-handed trefoil is the splice
+of two right-handed trefoil exteriors. Hedden--Levine identify this manifold
+and compute HF-hat rank 7. Its Alexander polynomial input is one, so Casson is
+zero, while the splice is nontrivial. This example is not asserted to have a
+Jones-one branch knot; its role is precisely to refute the proposed inference
+from the extracted 3-manifold constraints.
+
+Primary sources:
+  https://people.math.harvard.edu/~kronheim/wittenp.pdf  (Theorem 2)
+  https://arxiv.org/abs/1210.7055  (introduction and explicit splice example)
+  Jim Hoste, A formula for Casson's invariant, Trans. AMS 297 (1986), 547--562.
+
+4. Stronger no-go: the entire Jones polynomial still leaves cover data free
+
+Greene--Watson's ribbon Kanenobu knots K_n=K_{-10n,10n+3} have fixed Jones,
+signature zero and determinant 25. Their covers' minimum correction terms tend
+to minus infinity, although Casson--Walker stays constant. Thus full Jones
+plus signature does not determine these Floer invariants. This is outside the
+Jones-unit fiber, and does not establish that these covers have different
+LMO or WRT invariants; that stronger claim was not verified here.
+
+Primary source: Greene--Watson, Sections 3--4, especially Corollary 8,
+Proposition 11, Theorem 13 and Proposition 14:
+  https://arxiv.org/abs/1106.5559
+
+5. What the all-q and perturbative routes actually require
+
+Garoufalidis--Kricker provide the genuine all-orders branched-cover bridge:
+
+  Z(Sigma_p(K)) = exp(sigma_p(K) Theta/16)
+                 Lift_p [tau^rat_{alpha_p}(Z^rat(K))].
+
+Their Theorem 1 uses the rational Kontsevich invariant Z^rat, followed by
+twisting and lifting of diagrams, as well as the total signature. It does not
+take the ordinary Jones polynomial as input. The hypothesis V_K=1 kills the
+fundamental sl_2 evaluation of the knot's perturbative invariant; it does not
+assert that the universal diagram-valued input equals that of the unknot.
+To exploit the theorem one must prove that the needed lifting/weight-system
+functional factors through precisely that fundamental evaluation, at least
+on the unit fiber. No such factorization follows from their theorem.
+
+Primary source, Theorem 1:
+  https://people.mpim-bonn.mpg.de/stavros/publications/CBC.pdf
+  https://arxiv.org/abs/math/0107220
+
+At a root of unity, surgery quantum invariants similarly insert a Kirby color
+(a sum of allowed irreducible colors) on the surgery link. This is not the
+single fundamental Wilson-loop insertion supplied by ordinary Jones. The
+distinction remains even when V_K is known at every root of unity.
+
+Habiro proves a useful continuation theorem once the MANIFOLD invariant is
+known: its entire Ohtsuki series determines its unified invariant and all
+SU(2) WRT values. This does not identify the Jones Taylor series of the BRANCH
+KNOT with the Ohtsuki series of its COVER. Moreover, equality of unified
+invariants is equality of quantum invariants, not a homeomorphism theorem by
+definition; that would be another recognition step to justify.
+
+Primary source:
+  https://arxiv.org/abs/math/0605314
+  Theorems 1.2, 1.4 and equation (1.6).
+
+Strategic recommendation
+
+Do not spend a further pass computing Casson zero for candidates already known
+to have V=1 and sigma=0: it is automatic and supplies no representation-space
+vanishing. Retain the Cornwell--Ng--Sivek theorem as a clean recognition
+endpoint. The only substantive entry point for this route would be a new,
+Jones-specific theorem controlling UNSIGNED representations, or a proven
+factorization of the branched-cover perturbative invariant through ordinary
+Jones. Neither has been obtained. The existing surgery and quantum formulas
+identify the missing input sharply; they do not bypass it.

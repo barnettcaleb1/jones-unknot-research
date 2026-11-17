@@ -1,0 +1,156 @@
+PASS22: A TOPOLOGICAL ENDGAME FOR RIBBON DOUBLES, AND TWO EXACT GATES
+
+Status: bounded research audit. The axis endgame below is a valid
+conditional architecture using a recent primary preprint; the missing
+Jones-to-axis implication is not proved. The cyclic-disk counterexample
+is an established obstruction to a tempting substitute. No full Jones
+detection theorem or new counterexample is claimed.
+
+1. THE GLOBAL STARTING OBJECT
+
+For arbitrary K, let R=K#(-K), with -K the reversed mirror, and use the
+standard product ribbon disk D_K. Its boundary is R, its complement group
+is pi_1(S^3 minus K), and a puncture near a minimum gives C_K:U -> R.
+If V_K=1 then V_R=1. If K is nontrivial, genus additivity makes R nontrivial.
+
+The precise product-disk group statement is recorded in Friedl--Teichner,
+New topologically slice knots, Geometry & Topology 9 (2005), p2135:
+https://math.berkeley.edu/~teichner/Papers/topslice.pdf
+It matters that this is the PARTICULAR product disk, not an arbitrary
+ribbon disk with the same boundary.
+
+The previous Euler-faithfulness route is logically complete but leaves
+the entire ordinary-Jones/categorified-cancellation issue in its premise.
+The purpose here is to isolate a purely geometric endgame with an actual
+finite movie certificate, then locate the exact missing bridge to it.
+
+2. AXIS EXTENSION: A CONDITIONAL ROUTE WITH AN EXISTING TOPOLOGICAL ENDGAME
+
+Call C:U -> R axis-extendible if there is a disjoint embedded annulus
+A in S^3 x I such that:
+  (i) A is itself a ribbon concordance from an unknot A_0 to an unknot A_1;
+  (ii) R is a closed braid about A_1 in the terminal S^3.
+No restriction is needed on the linking or geometry of U union A_0,
+beyond its two individual components being unknotted.
+
+Proposition. If C is axis-extendible, then R is the unknot.
+
+Proof. C union A is a componentwise ribbon concordance
+  U union A_0 -> R union A_1.
+By Daniels' braid-axis minimality theorem, its terminal link is ribbon-
+concordance minimal. Thus the two endpoint links are isotopic. Both
+components of the initial link are unknots, so the component R is an
+unknot, regardless of whether that isotopy preserves component labels.
+
+Primary input: Benjamin Daniels, Braid closure union braid axis is ribbon
+concordance minimal, arXiv:2607.14030 (2026), Theorem1.0.1 and Corollary1.0.2:
+https://arxiv.org/html/2607.14030
+The source is a recent preprint. Its stated theorem was checked; this
+pass does not independently reprove its full link-Floer argument.
+
+Consequently the following candidate bridge would close the FULL Jones
+problem, not merely a subclass:
+
+  AX: If V_K=1, the canonical C_K can be chosen axis-extendible.
+
+Indeed AX -> proposition -> R=U -> g(K)=0 -> K=U. There are no hidden
+unknotting-number, strong-inversion, fusion-number, or braid-index bounds.
+
+A finite geometric sufficient criterion for axis extension is explicit:
+give a ribbon movie, choose a moving unknot disjoint from every birth
+ball and saddle band throughout the movie, and verify that the terminal
+knot is braided about the final unknot. The trace of the moving unknot
+is an annulus with no critical points, disjoint from the ribbon annulus.
+This is a checkable movie certificate rather than a homological assertion.
+
+3. COVERAGE AND INFORMATION AUDIT OF AX
+
+There is NO universal axis-extension theorem for ribbon concordances.
+The standard U -> square-knot ribbon concordance already contradicts it,
+by the proposition. Thus adding an axis is not a harmless decoration:
+although every terminal knot can be braided about some unknot, that axis
+need not extend disjointly over the particular ribbon concordance with
+an unknotted initial component.
+
+AX restricted to the unit Jones fiber is itself equivalent in strength
+to Jones detection (the reverse direction uses the trivial concordance
+when K=U). Its attraction is a concrete geometric target and a known
+topological endgame; it is not an established reduction in difficulty.
+It should not be advertised as a proof or as following from Markov's
+theorem.
+
+Knowing the Jones scalar for every Markov presentation adds no values:
+Markov moves reproduce the same invariant. An elementary actual-unknot
+example exhibits the annular information that is discarded. In the
+Kauffman bracket skein module of the annulus R[z], put
+  delta=-A^2-A^-2.
+The identity one-braid has annular skein z. A positive stabilization is
+the two-braid sigma_1, whose writhe-normalized annular skein is
+  (-A^3)^-1 (A z^2 + A^-1 delta)
+  = -A^-2 z^2 - A^-4 delta.
+These are different annular skeins, although filling the annulus into S^3
+sets z=delta and makes both equal delta. After the usual circle reduction,
+both are the normalized Jones polynomial 1 of the unknot.
+
+Thus a Jones-to-axis proof needs new geometry relating band moves to an
+axis; it cannot silently recover annular skein state, link-Floer support,
+or an axis-colored family from the ordinary scalar. Stabilization does
+not repair that loss. This is the same scalar-versus-state gate in a
+particularly concrete topological form.
+
+4. A DECISIVE COUNTEREXAMPLE TO THE ARBITRARY-DISK GROUP SHORTCUT
+
+The statement
+  'a knot bounding a ribbon disk with cyclic complement group is unknotted'
+is FALSE.
+
+Nakanishi--Nakagawa, On Ribbon Knots, Mathematics Seminar Notes 10 (1982),
+423--430, proof of Theorem3b on printed p429, starts with a nontrivial
+Kinoshita--Terasaka-type knot K and constructs a ribbon disk with boundary
+K#rK whose complement group is infinite cyclic. Here r denotes reflection.
+The boundary is nontrivial by connected-sum genus additivity.
+https://da.lib.kobe-u.ac.jp/da/kernel/E0001171/E0001171.pdf
+
+The exact text identifies the first lower half as the ribbon disk for
+B union rB and then gives its complement group Z. This is sufficient for
+the counterexample; no claim about the second lower half's ribbon status
+is needed. This reading was independently checked by the homology agent.
+
+Therefore merely producing SOME simple-complement disk cannot replace
+Euler faithfulness. The standard product disk has group pi_1(K), but the
+same boundary can have other disks with much simpler groups. A proof
+must retain its specified disk or additional peripheral/embedding data.
+
+For the specified D_K, proving pi_1(B^4 minus D_K)=Z WOULD finish the
+problem, because this group is the original knot group. However deriving
+that assertion from V_K=1 is another full-strength missing bridge. A
+representation-theoretic version asking that all traceless SU(2)
+representations be abelian encounters the same issue: ordinary Jones is
+not the full skein module or the character variety of the disk complement.
+AJ-type results concern the colored Jones sequence, not its single
+two-dimensional color. Neither ribbonness nor the split Khovanov map
+supplies the omitted colored sequence.
+
+5. EXISTING INSTANTON RESULTS DO NOT AUTOMATICALLY COVER THE DOUBLE
+
+A further recent primary check was Imori--Park--Taniguchi, Unknotting
+number, ribbon concordance, and singular instantons, arXiv:2607.12768,
+Theorem1.2 and the following discussion:
+https://arxiv.org/html/2607.12768
+Their obstruction to same-sign unknotting of slice band sums requires a
+summand with a nonzero specified instanton concordance invariant. An
+arbitrary hypothetical Jones-one knot has no such established property.
+The paper explicitly exhibits a double of the figure-eight knot where
+the unrestricted same-sign conclusion fails. Consequently this theorem
+cannot be applied universally just because R is a ribbon double.
+
+6. RESULT OF THIS PASS
+
+There is a clean topological endgame through braid-axis ribbon minimality,
+with a precise finite movie certificate. The missing Jones-to-axis bridge
+is still a genuine global mathematical problem. The disk-group shortcut
+has an explicit established counterexample, so it should be removed from
+the candidate proof architecture unless the canonical disk and its
+peripheral information are preserved. No existing Floer or gauge theorem
+checked here converts the ordinary Jones scalar into the needed state,
+axis annulus, or complement representation restriction.

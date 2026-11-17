@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.78in]{geometry}
+\usepackage{amsmath,amssymb,microtype,booktabs,xcolor}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\lhead{\small Jones unknot detection: second bounded pass}\rhead{\small 31 October 2026}\cfoot{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}
+\begin{document}
+{\LARGE Jones unknot detection}\\[4pt]
+{\large Exact exclusions and a reusable search method}
+
+\textbf{Outcome.} This pass found neither a general proof nor a counterexample. It established an exact, reproducible exclusion of 144 specified infinite braid families, an elementary method for solving all twist parameters in any fixed two-strand twist template, and a topological reason that another construction degenerates to unknots. No novelty claim is made.
+
+\textbf{1. Complete calculation in a Burau-kernel family.}
+Use $[x,y]=xyx^{-1}y^{-1}$. In $B_5$, define
+\begin{align*}
+\psi_1&=\sigma_3^{-1}\sigma_2\sigma_1^2\sigma_2\sigma_4^3\sigma_3\sigma_2,\\
+\psi_2&=\sigma_4^{-1}\sigma_3\sigma_2\sigma_1^{-2}\sigma_2\sigma_1^2\sigma_2^2\sigma_1\sigma_4^5,\\
+H&=\psi_1^{-1}\sigma_4\psi_1,\\
+F&=\psi_2^{-1}(\sigma_4\sigma_3\sigma_2\sigma_1^2\sigma_2\sigma_3\sigma_4)\psi_2 .
+\end{align*}
+These factors come from \href{https://doi.org/10.2140/gt.1999.3.397}{Bigelow (1999), p.~403}; his commutator convention corresponds to negating both exponents below. Let
+\[
+\alpha_{\epsilon}=\sigma_1^{\epsilon_1}\sigma_2^{\epsilon_2}
+ \sigma_3^{\epsilon_3}\sigma_4^{\epsilon_4},\quad \epsilon_i\in\{-1,1\},
+\qquad c\in\{1,\sigma_1^{\pm1},\ldots,\sigma_4^{\pm1}\}.
+\]
+Our exact certificate gives
+\[
+\boxed{
+V_{\widehat{[H^m,F^n]\,c\alpha_\epsilon c^{-1}}}(t)=1
+\ \Longleftrightarrow\ mn=0,\qquad m,n\in\Z .
+}
+\]
+There are $16\cdot9=144$ choices of $(\epsilon,c)$. Every closure is a knot. Exact Burau multiplication shows that $H$ and $F$ commute in that representation, so every member has Alexander polynomial $1$. When $mn=0$, successive braid destabilizations give the unknot. Otherwise its Jones polynomial is nontrivial.
+
+\textbf{Why this covers unbounded exponents.}
+Put $t=A^{-4}$. The five-dimensional Temperley--Lieb component satisfies
+\[
+(\rho(H)-AI)(\rho(H)+A^{-3}I)=0,\qquad
+(\rho(F)-I)(\rho(F)-A^{-8}I)=0.
+\]
+The one- and four-dimensional components see the commutator as the identity. Fixed spectral projectors therefore give
+\[
+V-1=\frac{(x-1)(y-1)}{xy}(a(t)xy+b(t)x+c(t)y+d(t)),
+\quad x=(-t)^m,\quad y=t^{2n},
+\]
+with fixed rational coefficients. Four exact Jones evaluations recover them; fixed nonzero denominators are cleared. In every one of the 144 cases, the four cleared coefficients are nonzero and have the \emph{same highest degree} $d$. Their shifted highest exponents are
+\[
+d+m+2n,\qquad d+m,\qquad d+2n,\qquad d.
+\]
+For $m,n\ne0$, exactly one is largest: maximizing independently between $0,m$ and between $0,2n$ gives a unique choice. Its coefficient cannot cancel. Thus the four-term sum is nonzero, proving the exclusion for every integer pair. A separate exhaustive integer-root solver independently confirms the result.
+
+\newpage
+\textbf{2. Exact parameter classification for a fixed twist template.}
+
+\textbf{Proposition.}
+Fix a finite diagram with $k$ designated two-strand twist sites, with signed half-twist counts $\mathbf m\in\Z^k$. On a fixed parity class where closures are knots, the set
+\[
+\{\mathbf m:V_{K_{\mathbf m}}(t)=1\}
+\]
+is a finite union of affine integer lattices, effectively computable from the template. An affine integer lattice means a translate of a subgroup of $\Z^k$, including a point or a lower-dimensional subgroup.
+
+\textit{Proof.}
+Write $\delta=-A^2-A^{-2}$ and $e^2=\delta e$ in $TL_2$. The idempotent $P=e/\delta$ gives the exact formula
+\[
+(AI+A^{-1}e)^m=A^m(I-P)+(-A^{-3})^mP
+\]
+over $\Q(A)$, for every positive, zero, or negative integer $m$.
+
+Expand the diagram using these two summands at each twist site. On a fixed parity class, signs and connectivity are fixed, and orientations can be chosen consistently. Writhe is affine in $\mathbf m$, so Jones normalization adds a monomial with affine exponent. Clear a fixed nonzero Laurent denominator in $V-1$ and expand the fixed coefficients:
+\[
+D(A)(V_{K_{\mathbf m}}(A^{-4})-1)
+ =\sum_{\nu=1}^{N}c_\nu A^{a_\nu+\mathbf b_\nu\cdot\mathbf m},
+\]
+where $c_\nu,a_\nu\in\Z$ and $\mathbf b_\nu\in\Z^k$ are fixed.
+
+If this sum vanishes, partition its terms by equal exponent. Each block has coefficient sum zero. Conversely, take any partition into blocks whose coefficient sums are zero, and impose equal exponents within each block:
+\[
+(\mathbf b_\nu-\mathbf b_\mu)\cdot\mathbf m=a_\mu-a_\nu .
+\]
+Every solution makes the Laurent sum zero. Exponents from different blocks need not be distinct: merging zero-sum blocks still gives zero.
+
+There are finitely many partitions. Each gives integer affine linear equations and the parity constraints. Their integer solution set is empty or a coset of an integer kernel, computable by integer linear algebra. Taking the finite union proves the assertion. \hfill$\square$
+
+This is an elementary algebraic observation, not a claim of a new theorem in the literature. Repeated parameters and affine constraints on twist counts can be imposed as further equations. Restricting to nonnegative twists gives intersections with an orthant.
+
+\textbf{Use and limit.}
+This replaces arbitrary twist cutoffs with exact parameter classification. It accommodates infinite equal-polynomial families on affine parameter subspaces. However, the number of partitions can be enormous. Degree arguments and structural simplifications are important in practice, as on page~1.
+
+It does not classify the topology of the resulting Jones-one knots. A finite list of templates also does not cover every knot. A generic proof still needs a theorem controlling all templates, or a different global argument.
+
+\newpage
+\textbf{3. A structural obstruction in the tangle search.}
+
+Take a six-strand construction with a three-braid $\alpha$ on the left and its reflected opposite crossings on the right. Put tangles $T,U$ in its two endcaps, each with an outer connecting arc. Writing $D$ for denominator closure, the actual geometric identities are
+\[
+L_\alpha(\infty,U)\cong O\sqcup D(U),\qquad
+L_\alpha(T,\infty)\cong O\sqcup D(T).
+\]
+The $\infty$ endcap has nested pairs $(1,6),(2,5),(3,4)$. A crossing slides around these caps and cancels its reflected inverse. What remains is a split outer circle and the other tangle's denominator closure.
+
+If both denominator closures are actual unknots, resolving either designated band gives the actual two-component unlink. This verifies the geometric hypothesis of
+\href{https://arxiv.org/abs/1105.3985}{Lobb's Theorem 1.4}: full twists at that band preserve reduced $\mathfrak{sl}_2$ homology dimension, since its complementary summand only shifts grading. An actual unknot anchor therefore forces the whole same-parity orbit to have reduced Khovanov rank one, hence to be unknotted by
+\href{https://arxiv.org/abs/1005.4346}{Kronheimer--Mrowka}.
+
+Applying this at each of the two bands excludes the entire parity lattice
+$(p_0,q_0)+2\Z^2$ from any actual unknot anchor $(p_0,q_0)$. For the tested integer-tangle seeds, certified anchors $(0,0)$ and $(1,-1)$ exclude every opposite-twist parameter $(n,-n)$.
+
+The finite checks agree: 432 opposite-twist instances from 72 sampled unknot seeds, and 288 nonrational-tangle substitutions, all had full Jones polynomial one and all simplified to unknots. These count diagram instances, not distinct knots. A separate 40,000-closure tangle search had 112 monomial-bracket hits, also all certified unknotted. The theorem explains why enlarging the protected ribbon-twist families is unproductive.
+
+\textbf{4. The remaining categorical difficulty.}
+
+Actual cancellation prevents inferring minimal Khovanov rank from Jones polynomial one. Published figure-eight quotient-tangle data give
+\[
+(q^{11}+q^{15}-q^{17}-q^{21})
+ +(q^{17}+q^{21}-q^{23}-q^{27}),
+\]
+so nonzero groups cancel at two quantum gradings. See
+\href{https://doi.org/10.2140/obs.2022.5.223}{Kotelskiy--Watson--Zibrowius, p.~238}.
+Even the highest quantum grading of $10_{132}$ cancels in its rational Euler characteristic; see
+\href{https://arxiv.org/abs/math/0201043}{Bar-Natan, p.~356}.
+
+For tangles with an \emph{actual} unknot filling, immersed curves give one rational component plus special components parallel to that filling. Jones equality requires
+\[
+E_{\mathrm{special}}=E_{\mathrm{target}}-E_{\mathrm{rational}},
+\]
+not automatically $E_{\mathrm{special}}=0$. The rational component's slope and grading need control too. This restricted geometry does not cover every hypothetical Jones-one knot: a local knot tied into a trivial tangle need have no actual unknot closure.
+
+\newpage
+\textbf{5. Verification and research decision.}
+
+The braid calculation uses exact integer Laurent polynomials, with no floating-point evaluations or truncated Taylor coefficients.
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Check & Coverage\\
+\midrule
+Anchor/context choices & 144\\
+Full Jones evaluations for coefficient recovery & 576\\
+Exact candidate checks in the all-integer solver & 576\\
+Temperley--Lieb basis trace identities & 42\\
+Independent synthetic solver cases & 1,505\\
+Bounded comparisons within those regressions & 940,625\\
+Saved all-integer certificates replayed & 144\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The trace formula was checked on every basis element of $TL_5$, establishing it throughout the algebra by linearity. Matrix representation relations, quadratic identities, and Burau-kernel identities are checked exactly. The portable verifier recomputes all Jones samples and coefficients and verifies their equal highest degrees. The root solver and its synthetic tests are additional checks; the unique-highest-term argument already proves the all-integer exclusion.
+
+For scale, $\widehat{[H,F]\sigma_1\sigma_2\sigma_3\sigma_4}$ has Jones degrees $-33$ through $38$ and a coefficient of absolute value $90{,}424{,}762$, although its Alexander polynomial is one. Burau invisibility leaves a substantial Jones obstruction.
+
+\textbf{What is excluded.}
+The specified two-factor Bigelow commutator construction gives no counterexample at any integer powers, in all 144 stated contexts. The actual-unknot-anchored ribbon families give none in the covered parity classes. Neither statement applies to arbitrary Burau-kernel words or tangles.
+
+\textbf{Next useful direction.}
+A constructive search should use different braid or tangle templates and solve their entire Jones-one parameter sets. Products of several conjugated Burau-kernel elements are one possible class; this exclusion does not cover them. There is also a concrete conditional topology certificate: if a surviving parameter lattice has a line with every twist coordinate unbounded, and the augmented template complement is hyperbolic, \href{https://annals.math.princeton.edu/2005/162-1/p06}{hyperbolic Dehn filling} makes sufficiently distant members nontrivial. No such surviving lattice has been found here.
+
+A proof attempt needs a geometric restriction on which complete Euler cancellations actual knots can realize. Khovanov unknot detection, positive ranks, rational-tangle detection, and a finite set of Jones derivatives do not themselves provide that restriction. The published cancellations on page~3 are necessary stress tests for proposed restrictions.
+
+\textbf{Reproducibility.}
+The evidence archive includes a self-contained standard-library verifier:
+\[
+\texttt{python3 braid\_certificate/verify.py}.
+\]
+It also includes the fixed-template proof, categorical arithmetic, search records, and implementation checks. Tangle reconstruction uses Regina and Spherogram; the principal braid certificate requires neither.
+
+\textbf{Assessment.}
+This bounded pass produced meaningful exclusions and a reusable exact method. It did not resolve Jones unknot detection or repair the previously identified gap in the Carmi--Cohen proof claim.
+\end{document}

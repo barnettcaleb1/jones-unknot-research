@@ -1,0 +1,51 @@
+Independent adversarial audit of one_band_relative_rank.txt: PASSED.
+
+Read Sarkar arXiv:1903.11095v3 Section6, both evaluations of W, and
+Dunfield--Gong--Hockenhull--Marengon--Willis arXiv:2303.04233v1 Section6.2.
+
+The key operator assertion is stronger than the theorem's displayed
+isomorphism of images, but is explicitly present in its proof: the SAME
+W induces, up to sign, 2X_K and 2 i X_J p when d=1. Therefore ker(p) is
+killed by X. The split-injection statement holds in the lifted theory
+by Sarkar's footnote(iv). Dot-action sign conventions can replace X by
+-X in a module identification; this preserves all graded elementary
+divisors and does not affect the argument.
+
+The passage from graded homology splitting to Poincare polynomial
+splitting does not require a chain-level splitting of the particular
+cobordism maps. A bounded free complex over graded Q[X] decomposes into
+the free resolutions of its graded homology modules and contractibles.
+Each added Q[X]/(X) homology summand is represented by a two-term bar
+with endpoints (h-1,q-2),(h,q), as also recorded explicitly in Sarkar
+Section5. Specializing X=0 therefore adds a nonnegative multiple of
+1+u q^2. The common reduced normalization is harmless.
+
+Finally, normalized Jones has derivative zero at t=1 for each endpoint
+knot. Differentiating the Euler-polynomial difference yields S(-1,1)=0,
+so S(1,1) is even. Its added rank 2S(1,1) is a nonnegative multiple of4.
+
+Scope retained: precisely one birth and one saddle, over Q, with an
+actual ribbon concordance. No iteration through arbitrary ribbon movies
+or general concordance-mod4 claim follows without further geometry.
+
+ADDENDUM: GENERAL d-SADDLE EXTENSION
+
+The same operator proof passes for every d. Sarkar's two evaluations of
+the same W are, up to overall signs,
+  2^d X_K^d Id_K  and  2^d i X_J^d p.
+Over Q, 2^d is invertible, so X_K^d ker(p)=0. Dot-motion sign choices
+do not affect this annihilation. The graded splitting and PID argument
+therefore add only torsion bars with lengths 1<=a<=d. Consequently
+
+  P_K(u,q)-P_J(u,q) = sum_{a=1}^d (1+u q^(2a)) S_a(u,q),
+
+with every S_a a finite Laurent polynomial with nonnegative integer
+coefficients. For d=0 the difference is zero. Thus existence of a
+positive-length bar matching of the relative bigraded rank data is a
+necessary condition for ANY actual ribbon concordance, even when its
+number of saddles is unspecified. Failure of every such matching rules
+out ribbon concordance; it does not require a factorization through
+one-band concordances between knots. No new sign or grading issue arises.
+
+This audit checks the general implication, not the separate computation
+of which concrete knot pairs fail its matching condition.

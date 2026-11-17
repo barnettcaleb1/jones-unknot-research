@@ -1,0 +1,27 @@
+{
+ "types": {
+  "('single', (0, 1), 'top-scalar', 'TOP-STAB', '')": 492,
+  "('single', (1, -1), 'top-scalar', 'TOP-STAB', 'axis-split')": 746,
+  "('single', (1, 0), 'bot-scalar', 'BOT-STAB', '')": 74,
+  "('single', (0, 1), 'bot-scalar', 'BOT-STAB', '')": 70,
+  "('offset', (0, 1), 'offset', 'NONE', '')": 18,
+  "('plane', (1, 0), 'top-scalar', 'TOP-STAB', '')": 41,
+  "('plane', (1, 0), 'bot-scalar', 'BOT-STAB', '')": 21,
+  "('plane', (1, 0), 'pairing-only', 'NONE', '')": 21
+ },
+ "cert": {
+  "('single', (0, 1), 'TOP-STAB', 'base<=24:V=1')": 492,
+  "('single', (1, -1), 'TOP-STAB', 'base<=24:V=1')": 746,
+  "('single', (1, 0), 'BOT-STAB', 'base<=24:V=1')": 74,
+  "('single', (0, 1), 'BOT-STAB', 'base<=24:V=1')": 70,
+  "('offset', (0, 1), 'NONE', 'base<=24:V=1')": 18,
+  "('plane', (1, 0), 'TOP-STAB', 'base<=24:V=1')": 41,
+  "('plane', (1, 0), 'BOT-STAB', 'base<=24:V=1')": 21,
+  "('plane', (1, 0), 'NONE', 'base<=24:V=1')": 21
+ },
+ "exact": {
+  "('single', True)": 1382,
+  "('offset', True)": 18,
+  "('plane', True)": 83
+ }
+}

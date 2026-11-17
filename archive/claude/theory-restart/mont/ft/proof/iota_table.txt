@@ -1,0 +1,81 @@
+W^V_2(crossed pair) = -3  (expect -3 = -3 Delta^2 a_2)
+W^V_3(P3: a b a c b c) = -6   W^V_3(K3: a b c a b c) = -12
+types 192  iota symbol non-integral in 0 types
+  c0 c1 c0 c2 c1 c2      000   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      001   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      010   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      011   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      100   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      101   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      110   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c1 c2      111   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 c2 c2 c1      001   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c0 c2 c2 c1      011   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c0 c2 c2 c1      101   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c0 c2 c2 c1      111   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c1 c2 c0 c2      010   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c1 c2 c0 c2      011   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c1 c2 c0 c2      110   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c1 c2 c0 c2      111   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c1 c2 c2 c0      011   W3=  576  Delta3 v3=    8  Delta3 iota=    8
+  c0 c1 c1 c2 c2 c0      111   W3=  576  Delta3 v3=    8  Delta3 iota=    8
+  c0 c1 c2 c0 c1 c2      000   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c0 c1 c2      001   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c0 c1 c2      010   W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 c2 c0 c1 c2      011   W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 c2 c0 c1 c2      100   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c0 c1 c2      101   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c0 c1 c2      110   W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 c2 c0 c1 c2      111   W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 c2 c0 c2 c1      000   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c0 c2 c1      001   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c0 c2 c1      010   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c0 c2 c1      011   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c0 c2 c1      100   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c0 c2 c1      101   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c0 c2 c1      110   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c0 c2 c1      111   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c1 c0 c2      000   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c1 c0 c2      001   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c1 c0 c2      010   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c1 c0 c2      011   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c1 c0 c2      100   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c1 c0 c2      101   W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c2 c1 c0 c2      110   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c1 c0 c2      111   W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 c2 c1 c2 c0      001   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c1 c2 c0      010   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c1 c2 c0      011   W3=  384  Delta3 v3=   12  Delta3 iota=   -4
+  c0 c1 c2 c1 c2 c0      101   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c1 c2 c0      110   W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c2 c1 c2 c0      111   W3=  384  Delta3 v3=   12  Delta3 iota=   -4
+  c0 c1 c2 c2 c0 c1      001   W3=  384  Delta3 v3=   12  Delta3 iota=   -4
+  c0 c1 c2 c2 c0 c1      011   W3=  384  Delta3 v3=   12  Delta3 iota=   -4
+  c0 c1 c2 c2 c0 c1      101   W3=  384  Delta3 v3=   12  Delta3 iota=   -4
+  c0 c1 c2 c2 c0 c1      111   W3=  384  Delta3 v3=   12  Delta3 iota=   -4
+  c0 c1 c2 c2 c1 c0      001   W3=   96  Delta3 v3=    8  Delta3 iota=   -8
+  c0 c1 c2 c2 c1 c0      011   W3=  672  Delta3 v3=   16  Delta3 iota=    0
+  c0 c1 c2 c2 c1 c0      101   W3=   96  Delta3 v3=    8  Delta3 iota=   -8
+  c0 c1 c2 c2 c1 c0      111   W3=  672  Delta3 v3=   16  Delta3 iota=    0
+  c0 c1 c0 o c1          00    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 o c1          01    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 o c1          10    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c0 o c1          11    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 c1 c1 o c0          01    W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 c1 o c0          11    W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 c1 o c0 c1          00    W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 o c0 c1          01    W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 o c0 c1          10    W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 o c0 c1          11    W3=  192  Delta3 v3=    6  Delta3 iota=   -2
+  c0 c1 o c1 c0          00    W3=   48  Delta3 v3=    4  Delta3 iota=   -4
+  c0 c1 o c1 c0          01    W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 c1 o c1 c0          10    W3=   48  Delta3 v3=    4  Delta3 iota=   -4
+  c0 c1 o c1 c0          11    W3=  336  Delta3 v3=    8  Delta3 iota=    0
+  c0 o c1 c0 c1          00    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 o c1 c0 c1          01    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 o c1 c0 c1          10    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 o c1 c0 c1          11    W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 o c1 c1 c0          01    W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 o c1 c1 c0          11    W3=  288  Delta3 v3=    4  Delta3 iota=    4
+  c0 o o c0              0     W3=  144  Delta3 v3=    2  Delta3 iota=    2
+  c0 o o c0              1     W3=  144  Delta3 v3=    2  Delta3 iota=    2

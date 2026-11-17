@@ -1,0 +1,152 @@
+SURGERY-SEED AUDIT: GLOBALLY NUGATORY CAN BE LOCALLY ESSENTIAL
+31 October 2026. Internal research note; no generic Jones conclusion or novelty claim.
+
+1. The exact question and verdict
+
+Let R_0 be a boundary-parallel tangle in a ball B, completed by a stator S to
+the unknot U. A surgery circle eta lies in int(B), disjoint from R_0, and
+bounds a disk in S^3 minus U; that disk need not lie in B. Does 1/k surgery
+on eta necessarily keep the tangle boundary-parallel because the underlying
+surgered ball is again a ball?
+
+NO. The explicit single-circle family below refutes that inference. A
+homeomorphism between the old and surgered underlying balls need not carry
+the old embedded tangle to the new one.
+
+2. Explicit diagram convention and the two twisting directions
+
+Use the usual rational-tangle notation <p/q>, horizontal sum '+', and
+reciprocal operation I, with fraction I(x)=1/x. The reciprocal is the usual
+rotation/reflection convention for rational tangles; simultaneous mirroring
+changes none of the conclusions. Only integers are added inside a rational
+box. We never assume a horizontal sum of arbitrary rational tangles is itself
+rational.
+
+Consider the marked middle crossing in
+
+  R(x) = <-1> + <1/2> + I(<1> + <x> + <1>).
+
+At x=-1, the three consecutive crossings +,-,+ inside I cancel by RII to a
+single positive crossing. Thus the final box is <1>, and R(-1) is a rational
+tangle of fraction 1/2 (integer twists can slide across a rational box).
+Its numerator closure is U. At x=+1 the final box is <1/3>, and
+
+  R(+1) = <-1> + <1/2> + <1/3>.
+
+There are TWO local twisting-circle choices which realize this same crossing
+change. Their repeated twists differ, and their linking numbers with U differ.
+
+REJECTED CHOICE: additive horizontal twisting, x=-1+2k. It gives
+  R_bad(k) = <-1> + <1/2> + <1/(2k+1)>.
+The numerator determinant is |1-2k|. Although k=0 and k=1 both give U,
+k=2 gives determinant3. This circle is not globally nugatory. Its disk has
+coherently oriented strands, hence linking number +/-2. The zero-algebraic-
+intersection hypothesis of the cosmetic-crossing theorem must not be omitted.
+
+CORRECT CHOICE: twist in the perpendicular direction. On the middle rational
+box this is x -> x/(1+2kx); at x=-1 it becomes -1/(1-2k). The resulting family is
+
+  R_k = <-1> + <1/2> + <(2k-1)/(4k-1)>,   k in Z.
+
+The k=0 box is <1>; the k=1 box is <1/3>, as required. The circle and its
+crossing disk are contained in a small ball around the marked middle crossing,
+so in particular the circle lies in int(B).
+
+3. Orientation audit for the correct circle
+
+Temporarily replace the middle crossing x by the horizontal zero tangle.
+The closure becomes N(<-1>+<1/2>+<1/2>), which has two components by its
+endpoint pairing (it is also the two-component unlink). Therefore the exterior
+of the small x-box pairs its two upper endpoints together, and its two lower
+endpoints together. At x=-1, orienting the resulting single component gives
+oppositely directed strands through a disk transverse to the VERTICAL twist
+direction. The perpendicular surgery disk therefore meets U twice with
+algebraic intersection zero. By contrast, the disk transverse to the additive
+horizontal direction sees coherently directed strands.
+
+Consequently the correct eta is a crossing circle in the precise convention
+used by the cosmetic-crossing theorem. Its +/-1 surgery changes x=-1 to x=+1.
+Both closed knots are U. The known unknot case of the cosmetic-crossing theorem
+therefore implies that eta bounds an embedded disk in S^3 minus U. A regular
+neighborhood of this disk gives a ball disjoint from U containing eta, so
+eta union U is a split two-component unlink.
+
+This conclusion is NOT inferred merely from the equality of two determinants:
+the closed links are explicitly two-bridge links with numerator +/-1, and the
+zero-linking hypothesis was checked separately.
+
+4. All closures are U, all nonzero tangles are essential
+
+The numerator closure of R_k is a Montesinos link with two nonintegral rational
+summands. Such a link is two-bridge. Its signed numerator is
+
+  -2(4k-1) + (4k-1) + 2(2k-1) = -1.
+
+Thus N(R_k)=U for every integer k. This independently checks the behavior
+expected from global nugatoriness; it is not a substitute for the orientation
+audit in Section3.
+
+The double cover of the tangle ball branched over R_k is Seifert fibered over
+a disk with exceptional orders 2 and |4k-1|. The fraction is reduced because
+gcd(2k-1,4k-1)=1. For k!=0, |4k-1|>=3. Its fundamental group surjects onto
+C_2 * C_|4k-1|, a nonabelian group; it is therefore not the solid torus.
+The cover of any boundary-parallel two-string tangle is a solid torus.
+Hence R_k is not boundary-parallel for every nonzero k. In particular k=1
+has the trefoil-exterior cover D^2(2,3).
+
+So a globally nugatory circle contained in the rotor ball can be locally
+essential relative to the marked tangle. The disk certifying nugatoriness
+necessarily leaves that ball.
+
+5. What this does and does not say about a C4 rotor
+
+The seed does not provide a fourfold-symmetric rotor, nor four mutually
+disjoint splitting disks in the global unknot complement. Those are additional
+simultaneous geometric requirements. Local C4 symmetry of the rotor does not
+extend to a general asymmetric stator, so one cannot rotate a global splitting
+disk to obtain the required disk orbit.
+
+A safe exclusion for naive replication is the following conditional statement.
+Suppose a proposed rotor consists of four disjoint four-ended seed balls in a
+connector tangle, and the connector itself is preserved by the rotor flip,
+after reindexing the cyclic seed balls. Suppose also that on each seed boundary
+the remaining flip is one of the ordinary Conway half-turns. Then flipping
+the whole rotor is a sequence of ordinary Conway mutations of the closed knot.
+If its initial completion is U, its flip is U as well. This includes the naive
+planar necklace of four identical two-string seed boxes with a dihedrally
+symmetric connector.
+
+This statement does NOT exclude arbitrary sector decompositions. Higher-valence
+interfaces, or a connector not returned to itself by the flip, are outside its
+hypotheses. A viable fourfold replication would need such genuine inter-sector
+interaction, as well as simultaneous globally split surgery-circle data.
+No such construction has been supplied here.
+
+6. Primary sources and scope
+
+Kalfagianni, Crossing changes of fibered knots: defines a crossing disk to have
+two intersections of zero algebraic number and proves the cosmetic-crossing
+statement for fibered knots, including U.
+  https://users.math.msu.edu/users/kalfagia/mynugatory15.pdf
+
+Kalfagianni--Lin, Knot adjacency, genus and essential tori, Pacific J. Math.
+228 (2006), Section5, p272: records the unknot case due to
+Scharlemann--Thompson (1989), and Corollary5.2 gives the all-twists criterion.
+  https://msp.org/pjm/2006/228-2/pjm-v228-n2-p.pdf
+
+Scharlemann--Thompson, Link genus and the Conway moves, Comment. Math. Helv.
+64 (1989), 527--535 (original unknot result).
+  https://www.digizeitschriften.de/download/pdf/358147735_0064/log36.pdf
+
+MacColl, Rotors in Khovanov Homology, Canad. Math. Bull.59 (2016), 159--169,
+Introduction pp159--160: Conway mutation cannot turn U into a nontrivial knot;
+also gives an argument using mutation invariance of mod2 Khovanov homology and
+unknot detection. The general unknot-rotant question remains separate.
+  https://doi.org/10.4153/CMB-2015-034-6
+
+Standard Montesinos/rational-tangle conventions and examples may also be
+compared with Nogueira--Salgueiro, On embeddings of tangles, Theorem4.5.
+  https://www.mat.uc.pt/preprints/ps/p2033.pdf
+
+The counterexample here is to a proposed LOCAL-TRIVIALITY INFERENCE, not to
+Jones unknot detection. It is a construction with all closed knots equal to U.

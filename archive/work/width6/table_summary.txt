@@ -1,0 +1,46 @@
+U5-W6 test 1: exact Jones comparison after one crossing change
+Status: TRUSTED (computational result).
+
+RESULT: No Jones-preserving crossing changes among 34,527 changes in one
+minimum-crossing census diagram for each of 2,977 prime knots through 12 crossings.
+There were no loading or calculation errors. Computation took 3.35 seconds.
+
+Crossings   Knots   Crossing changes   Jones-preserving changes
+3              1                  3                         0
+4              1                  4                         0
+5              2                 10                         0
+6              3                 18                         0
+7              7                 49                         0
+8             21                168                         0
+9             49                441                         0
+10           165               1650                         0
+11           552               6072                         0
+12          2176              26112                         0
+TOTAL       2977              34527                         0
+
+METHOD: Spherogram 2.4.1 census PD diagrams, HT-style names (e.g. 11a1,
+12n1), converted to Regina 7.4.1 PD input by shifting labels by one.
+Regina's exact Jones polynomial was computed for the original diagram
+and for a fresh copy after each individual crossing change. Equality was
+tested as exact Laurent polynomial equality. Crossing counts and the
+one-component condition were checked for every original input.
+HT names avoid the historical Perko duplicate in Rolfsen-style labels.
+
+CONTROLS: The three crossings of a minimum trefoil diagram each change
+its Jones polynomial to 1. The four-crossing Markov-stabilized trefoil
+given by the braid word [1,1,1,2] has exactly one Jones-preserving crossing
+change, at zero-based index 3, as expected: changing the stabilization
+crossing preserves the knot. Thus the comparison procedure detects a
+known preserving change when one is present.
+
+SCOPE: One census diagram per prime knot type, not every minimum-crossing
+diagram. The result also covers the corresponding mirrored diagrams,
+since variable inversion preserves polynomial equality and inequality.
+It says nothing about arbitrary nonminimal diagrams, additional minimal
+diagrams, composite knots, or knots above 12 crossings. In particular,
+the stabilized-trefoil control demonstrates why nonminimal diagrams cannot
+be included in a blanket claim that all preserving changes are absent.
+There are no hit identifications or plat widths to report.
+
+Reproducible program: work/width6/table_test.py
+Machine-readable results: work/width6/table_results.json

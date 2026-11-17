@@ -1,0 +1,40 @@
+{
+  "family": "T(2,2m+1)",
+  "m": 840,
+  "determinant": 1681,
+  "integer_polynomial_is_one": false,
+  "all_nonzero_finite_field_evaluations_are_one": true,
+  "checks": [
+    {
+      "q": 2,
+      "characteristic": 2,
+      "defect_remainder": {}
+    },
+    {
+      "q": 3,
+      "characteristic": 3,
+      "defect_remainder": {}
+    },
+    {
+      "q": 4,
+      "characteristic": 2,
+      "defect_remainder": {}
+    },
+    {
+      "q": 5,
+      "characteristic": 5,
+      "defect_remainder": {}
+    },
+    {
+      "q": 8,
+      "characteristic": 2,
+      "defect_remainder": {}
+    },
+    {
+      "q": 9,
+      "characteristic": 3,
+      "defect_remainder": {}
+    }
+  ],
+  "scope": "Evaluation functions only; not coefficientwise polynomial equality."
+}

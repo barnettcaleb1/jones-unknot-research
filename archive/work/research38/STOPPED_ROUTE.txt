@@ -1,0 +1,47 @@
+PASS 38: CLOSED ROUTES AND PRECISE RESULT
+
+The initial KT/symmetric-union lead was a DUPLICATE of work/proof12/tangle/
+findings.txt sections4-7. It was stopped. Do not revisit it as a new lead.
+
+The replacement virtual-knot route produced a completed family exclusion:
+For explicit cyclic-port virtual PD [(1,4,2,5),(5,3,0,2),(3,1,4,0)], every
+marked standard UNKNOTTED Heegaard-torus embedding with Jones polynomial1 is U.
+This is all SL2Z markings, not a finite parameter scan. Orientation-reversed
+versions follow by mirroring the conventions together.
+
+Actual genus1 surface bracket:
+  F=C+(A-A^-3)mu^2+A lambda^2, C=A^-7-2A-A^5.
+Knot homology -2lambda, local writhe1; virtual Jones1.
+With u=(p,q),v=(r,s),det1, X=pq,U=p²+q²,Y=rs,W=r²+s²:
+  E2(p,q)=2+A^[4q(p+1)][2p+1]-A^[4q(p-1)][2p-1].
+Actual unit target F=-delta*A^(3+12Y), framing1+4Y.
+Second and third Taylor coefficients force
+  W=4Y²+3Y+1−6X;
+  2U=−10X²+20XY+6X−Y²−Y+2.
+det1 gives XY=t(t+1)>=0 and (ps+qr)²=1+4XY.
+Integer inequalities eliminate all cases except X0,U1,Y0or−1.
+Exactly8SL2Z matrices survive; fullLaurentidentity verifies sufficiency.
+
+Topology: rational flat-torus realization has longitude strictly decreasing
+from0to−2 along the entire knot. For any axial u, mu is meridional in one
+complementary unknotted solid torus, so the embedded knot is a closed2braid.
+Jones1⇒det1⇒T(2,k) has|k|1⇒U. No generic Jones-detection assumption.
+The 24 triangulation triangles have consistent nonzero rational areas,total−1.
+All8survivorPDs additionally exact-rational-projected and simplifiedU.
+
+Convention: exact PL projection is global MIRROR of algebraic Jones convention.
+nonaxis Mrow[1,1,1,2] control confirms t inversion; unit/U claims unaffected.
+Do not assert nonunit polynomial equality without this inversion.
+
+Finished user-facing report:
+  outputs/jones-virtual-torus-exclusion.txt
+Evidence archive:
+  outputs/jones-virtual-torus-evidence.zip
+Core stdlib scripts: virtual_surface_states.py,verify_all_markings.py,
+verify_flat_braid.py,verify_virtual_marking_jets.py.
+Written independent proofs: virtual_marking_jets.txt,marked_embedding_topology.txt.
+
+Do not continue scanning/reparametrizing this exact diagram on an unknotted
+torus. This family is exhausted. Other virtual diagrams and knotted-torus
+embeddings are outside the theorem, not established promising breakthroughs.
+The original general Jones problem remains unsolved by this work.

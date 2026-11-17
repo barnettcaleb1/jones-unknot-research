@@ -1,0 +1,30 @@
+# work/proof10
+
+[Archive index](../ARCHIVE_INDEX.md)
+
+These are historical source files, not automatically endorsed or portable.
+
+- [work/proof10/finite_certificate.txt](../../archive/work/proof10/finite_certificate.txt)
+- [work/proof10/homology/12n25_floer_meta.json](../../archive/work/proof10/homology/12n25_floer_meta.json)
+- [work/proof10/homology/12n25_original_data.json](../../archive/work/proof10/homology/12n25_original_data.json)
+- [work/proof10/homology/check_extremes.py](../../archive/work/proof10/homology/check_extremes.py)
+- [work/proof10/homology/composite_counterexample.json](../../archive/work/proof10/homology/composite_counterexample.json)
+- [work/proof10/homology/composite_counterexample.py](../../archive/work/proof10/homology/composite_counterexample.py)
+- [work/proof10/homology/result.txt](../../archive/work/proof10/homology/result.txt)
+- [work/proof10/mixed_unit_independent.json](../../archive/work/proof10/mixed_unit_independent.json)
+- [work/proof10/mixed_unit_independent.py](../../archive/work/proof10/mixed_unit_independent.py)
+- [work/proof10/quantum/check_output.txt](../../archive/work/proof10/quantum/check_output.txt)
+- [work/proof10/quantum/root_reflection_check.json](../../archive/work/proof10/quantum/root_reflection_check.json)
+- [work/proof10/quantum/root_reflection_check.py](../../archive/work/proof10/quantum/root_reflection_check.py)
+- [work/proof10/quantum/root_reflection_obstruction.txt](../../archive/work/proof10/quantum/root_reflection_obstruction.txt)
+- [work/proof10/tangle/findings.txt](../../archive/work/proof10/tangle/findings.txt)
+- [work/proof10/tangle/mixed_counterexample.json](../../archive/work/proof10/tangle/mixed_counterexample.json)
+- [work/proof10/tangle/mixed_counterexample.py](../../archive/work/proof10/tangle/mixed_counterexample.py)
+- [work/proof10/tangle/mixed_counterexample_run.txt](../../archive/work/proof10/tangle/mixed_counterexample_run.txt)
+- [work/proof10/tangle/mixed_moments.json](../../archive/work/proof10/tangle/mixed_moments.json)
+- [work/proof10/tangle/mixed_moments.py](../../archive/work/proof10/tangle/mixed_moments.py)
+- [work/proof10/tangle/mixed_search.json](../../archive/work/proof10/tangle/mixed_search.json)
+- [work/proof10/tangle/mixed_search.py](../../archive/work/proof10/tangle/mixed_search.py)
+- [work/proof10/tangle/odd_pretzel.json](../../archive/work/proof10/tangle/odd_pretzel.json)
+- [work/proof10/tangle/odd_pretzel.py](../../archive/work/proof10/tangle/odd_pretzel.py)
+- [work/proof10/tangle/unit_box_classification_audit.txt](../../archive/work/proof10/tangle/unit_box_classification_audit.txt)

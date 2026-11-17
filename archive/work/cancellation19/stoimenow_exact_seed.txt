@@ -1,0 +1,111 @@
+EXPLICIT STOIMENOW BRUNNIAN SEED: FULL POLYNOMIAL CERTIFICATE
+31 October2026. Concrete computation; no novelty claim.
+
+SOURCE AND GEOMETRY
+
+A. Stoimenow, Some applications of Tristram--Levine signatures and
+relation to Vassiliev invariants, Adv. Math.194(2005),463--484,
+equation(10), printed p476, https://doi.org/10.1016/j.aim.2004.07.003 .
+Primary PDF: https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf .
+The actual PDF diagram was rendered and visually inspected. The supplied
+script reconstructs its n=3 case with all initial commutator signs positive:
+
+    beta3 = sigma1^2 sigma2^2 sigma1^-2 sigma2^-2.
+
+Replace each sigma_i^epsilon by
+
+    sigma_(2i)^epsilon sigma_(2i-1)^epsilon
+    sigma_(2i+1)^epsilon sigma_(2i)^epsilon.
+
+This is a six-strand doubled braid with32 crossings. Number its top and
+bottom endpoints1,...,6 from left to right. At the top, cups pair(1,2),
+(3,4),(5,6). A single horizontal bridge crosses OVER each odd vertical
+strand and UNDER each even vertical strand. Connect its left endpoint
+around the outside to bottom1 and its right endpoint to bottom6. The
+remaining bottom cups pair(2,3),(4,5). The even-strand crossings of the
+horizontal bridge are the three marked crossings. This is exactly the
+wiring and crossing data shown in the published figure, specialized to3
+pairs. It yields a38-crossing one-component diagram of writhe-6.
+
+The script stores its full initial PD and the seven diagrams obtained by
+changing every nonempty subset of the three marked crossings. All seven
+simplify to an actual crossing-free one-component diagram. This is a
+geometric simplification certificate, in addition to the published
+3-adjacency theorem; their unknot status is not inferred from Jones=1.
+
+EXACT JONES POLYNOMIAL
+
+In the variable t (Regina's printed x is sqrt(t)), the computed polynomial
+is most compactly specified by
+
+ V_K3(t)-1 = -t^-12 (t-1)^7 (t+1)^3 (t^2+1)
+                    (t^2+t+1)(t^2-t+1)^2.
+
+Thus K3 is nontrivial, and its Jones polynomial is NOT1. The Jones
+calculation from the original38-crossing PD agrees exactly with the
+calculation after simplifying the diagram. The complete coefficient list
+is in stoimenow_k3.json. Integer Laurent division and independent
+multiplication verify the displayed factorization exactly.
+
+THE ACTUAL BRUNNIAN INTERACTION FACTOR
+
+Lift the three reverse crossing arcs after changing all marked crossings
+to the unknot. As in brunnian_reduction.txt, this gives an actual nontrivial
+componentwise strongly inverted Brunnian triple B in S3. For its preferred
+two-input quotient shell, with v=Qinf-delta Q0, write
+
+    F_B(Q0+x*v,Q0+y*v) = Q0 + c_B(A)*x*y*v.
+
+The two-input identity and normalization were independently audited on
+the braid track. Full three-component surgery along the lifted crossing
+slopes(+/-1/2) gives the branched double cover of K3. Correspondingly the
+two input probes are Q_(+/-2), and the remaining output cap is slope+/-1/2.
+
+With delta=-A^2-A^-2:
+
+ x(Q2)=A^2(A^4-1),
+ x(Q-2)=-A^-6(A^4-1),
+ h_+(A)=A^-10(A^4-1)(A^8+A^4+1),
+ h_-(A)=-A^-2(A^4-1)(A^8+A^4+1).
+
+Here h_+ and h_- are the normalized output-cap differences on v. Hence,
+up to a nonzero signed Laurent monomial and possible simultaneous mirror
+convention,
+
+ c_B(A) = [V_K3(t)-1]/[(t-1)^3(t^2+t+1)],  t=A^-4.
+
+Therefore this ACTUAL seed has interaction factor
+
+    c_B  ~  (t-1)^4(t+1)^3(t^2+1)(t^2-t+1)^2
+         = (t-1)^4(t+1)(t^2+1)(t^3+1)^2.
+
+The symbol ~ means equality up to a signed A-Laurent monomial (and
+consistent choice of global mirror); no claim is made that the phase is
+fixed by the displayed formula. Its nonvanishing and all factor
+multiplicities are exact. In the preferred A grading c_B has exponents
+congruent to2 modulo4, so c_B/A^2 is naturally a Laurent polynomial in t.
+
+For infection by a preferred quotient with defect x(J), the resulting
+one-input shell factor is d=c_B*x(J). Since c_B is nonzero and the
+coefficient ring is an integral domain, this explicit seed gives a zero
+shell if and only if J was already flat. In particular trefoil infection
+cannot produce a counterexample. This establishes a complete exact
+exclusion for every nonflat companion in this fixed construction, without
+bounding crossing number, twist parameters, or finite-type degree.
+
+REPRODUCTION AND AUDIT
+
+Run from the workspace root:
+  python3 work/cancellation19/stoimenow_k3.py
+  python3 work/cancellation19/stoimenow_factor.py
+
+The first uses the existing packages under work/braid_classification/packages.
+Exact package versions are in stoimenow_versions.json. The second uses
+only the Python standard library and checks the full factorization.
+The PD/source wiring and all exact factors were independently audited by
+the braid track. The parent is independently auditing the numerical Jones
+computation. The source PDF and rendered figure remain in the same folder.
+
+No explicit PD for the lifted three-component B is asserted. Its actual
+geometric existence and peripheral data are supplied by the published
+Montesinos construction applied to this explicit, checked K3 diagram.

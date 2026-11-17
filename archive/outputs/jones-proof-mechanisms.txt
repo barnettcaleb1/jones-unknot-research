@@ -1,0 +1,248 @@
+JONES UNKNOT DETECTION: A BOUNDED PASS AT PROOF MECHANISMS
+31 October 2026
+
+Outcome
+
+This pass produced a short, independently checked proof for an infinite
+class, and identified precise obstructions to several proposed extensions.
+It did not prove Jones unknot detection for arbitrary knots and did not
+find a nontrivial knot with Jones polynomial 1. No novelty is claimed.
+
+The most useful connection was to sparse moment recovery: a fixed twist
+pattern produces finitely many exponential terms, and vanishing Jones
+derivatives imposes rigid equations on their integer frequencies. In the
+three-strand pretzel case those equations reduce to a positive definite
+quadratic form. This is an actual calculation, not a physical analogy.
+
+1. A COMPLETE RESTRICTED PROOF
+
+Proposition. For every three-strand pretzel knot K=P(p,q,r),
+
+             V_K''(1)=V_K'''(1)=0  implies  K is the unknot.
+
+Here V_U(t)=1. There is no bound on the integer twist parameters. Jones
+detection for pretzel knots was already established in the literature;
+the point of this calculation is the short proof and the method it tests.
+Nicholson: https://arxiv.org/abs/math/0609584
+Low-order pretzel Vassiliev formulas also appear in Sleptsov:
+https://arxiv.org/abs/1512.07192
+We have not established priority for this exact two-derivative formulation.
+
+Conventions and normalization
+
+P(p,q,r) is the numerator closure of the sum of rational tangles with
+slopes 1/p, 1/q, 1/r. A zero parameter means the infinity tangle. This
+closure is a knot precisely when all parameters are odd or exactly one
+is even. Set
+
+ y=A^4,  d=y+2+y^(-1),  X_j=(-1)^j y^(-j),  S=p+q+r.
+
+The twist-bracket formula gives
+
+ <P(p,q,r)> = A^S E/d,
+ E = X_p X_q X_r + (d-1)(X_p+X_q+X_r) + (d-1)(d-2).
+
+Input: Champanerkar--Kofman, Proposition 2.1 and the pretzel example:
+https://arxiv.org/html/math/0605631
+We also recovered this identity independently in the two-dimensional
+Temperley--Lieb algebra. The choice of A convention can replace the
+Jones variable by its inverse; simultaneous vanishing of the second
+and third derivatives at 1 is invariant under that replacement.
+
+Write D=y d/dy. Jones normalization has the form
+
+                 E = epsilon d y^m V_K(y or y^(-1)),
+
+where epsilon is a sign. Since V_K(1)=1 and V_K'(1)=0, the zeroth and
+first moments determine epsilon and m. If F=E-epsilon d y^m, then
+F(1)=DF(1)=0. The desired joint vanishing is equivalent to
+D^2F(1)=D^3F(1)=0. A nonzero analytic normalization factor does not change
+the order of vanishing. The following computations use exact integers.
+
+Case A: p,q,r all odd
+
+E(1)=-4 and DE(1)=4S, so epsilon=-1 and m=-S. Factor
+
+ F=(d-1)Q,
+ Q=y^(-S)-y^(-p)-y^(-q)-y^(-r)+y+y^(-1).
+
+Q(1)=DQ(1)=0, and
+
+ D^2Q(1) = 2(pq+pr+qr+1),
+ D^3Q(1) = -3(p+q)(q+r)(r+p).
+
+Thus some pair must sum to zero. Taking p=-q, the quadratic equation
+becomes 1-p^2=0. All possibilities are permutations of (k,1,-1).
+
+Case B: exactly one parameter even
+
+Reorder so p is even, and write q=a+b, r=a-b. Since q and r are odd,
+a and b are integers. Now epsilon=1 and m=a-p. Differentiation yields
+
+ D^2F(1) = 6(1-a^2-b^2+2pa),
+ D^3F(1) = 6a(1+3b^2-a^2-3p^2).
+
+Eliminating b^2 gives
+
+                    a[4-a^2-3(p-a)^2]=0.
+
+If a=0, then b^2=1, again giving (k,1,-1).
+Otherwise a^2+3(p-a)^2=4. Its integer solutions have:
+
+ * a=+/-2 and p=a, which would require b^2=5 and are impossible;
+ * a=+/-1 and p=0, giving (0,1,1) or its mirror;
+ * a=+/-1 and p=2a, giving permutations of (1,-2,-3) or its mirror.
+
+This exhausts the possibilities.
+
+Geometry of the survivors
+
+Rotating and reversing the three boxes permits all parameter permutations.
+In (k,1,-1), the adjacent integer tangles +1 and -1 cancel; the remaining
+numerator closure of slope 1/k is an unknot. The same is true for k=0.
+The infinity tangle with two unit twists gives the unknot P(0,1,1), and
+mirroring preserves this conclusion. Finally a pretzel with a unit box
+is a two-bridge link. P(1,-2,-3) has determinant
+|pq+pr+qr|=|-2-3+6|=1. A two-bridge link of determinant 1 is the unknot.
+This also handles its mirror and finishes the proposition.
+
+Verification and its role
+
+The proof above is symbolic and covers all integer parameters. Separate
+checks recovered the bracket for 2,197 triples, classified all solutions
+with an exact affine-exponent solver, and independently audited all 60
+solver branches. Direct Reidemeister simplification checked the exceptional
+geometric cases. These checks support the algebra and conventions; finite
+testing is not the reason the proposition holds for arbitrary parameters.
+
+2. THE REUSABLE CONNECTION: SPARSE MOMENTS AND INTEGER LATTICES
+
+Fix a wiring diagram containing finitely many two-strand twist sites.
+After fixing twist parities and clearing denominators, its bracket-minus-
+target condition is a finite Laurent sum of the form
+
+        F_n(A) = sum_{i=1}^M c_i A^(a_i + b_i dot n).
+
+The coefficients c_i and integer affine exponent functions are fixed;
+the entries of n can be arbitrarily large. If the target is an arbitrary
+signed monomial, include its exponent as one further integer variable.
+
+Two elementary facts make this suitable for exhaustive proofs.
+
+(i) Exact collision classification. The identity F_n=0 holds precisely
+when the terms can be partitioned into blocks whose coefficients sum to
+zero and whose exponents agree. There are finitely many partitions. Each
+one imposes only integer linear equations in n. Each nonempty solution
+set is a translate of an integer lattice. Projecting away an auxiliary
+monomial exponent again gives a translate of a lattice. Consequently the
+identity locus is a finite union of such sets, including the parity
+constraints. No cutoff on twist magnitude is required.
+
+This is also an algorithm: choose an uncancelled term and branch on its
+exponent coinciding with an opposite-sign term. Every new nontrivial
+equation increases the rank of the linear system, so a branch has bounded
+depth. It may be computationally expensive, but it terminates.
+
+(ii) Finite moments certify an identity. If a Laurent polynomial has at
+most M nonzero monomials, then
+
+          (A d/dA)^j F(1)=0 for j=0,...,M-1  implies F=0.
+
+After collecting equal exponents e_i, these equations have matrix
+(e_i^j), a Vandermonde matrix. Distinct exponents make it invertible.
+This bound depends on the number of terms, not their exponent sizes.
+
+In the pretzel example, only two nonautomatic moments were needed to
+force the geometry, through the small integer ellipse above. This suggests
+seeking positive definite combinations of moments in other fixed templates.
+
+Limitation: arbitrary knots require arbitrarily complicated templates.
+Nothing here supplies a universal finite template list, a universal
+derivative order, or a geometric interpretation of every cancellation
+lattice. Those are substantive missing steps, not implementation details.
+
+3. WHY TWO TEMPTING GENERAL PROOFS FAIL
+
+Extreme coefficients and diagram genus
+
+For a connected diagram with c crossings and Turaev genus g_D, let k_A
+and k_B count the potential outer bracket layers that vanish at the two
+ends. The exact state-sum identity is
+
+                 span V = c-g_D-k_A-k_B.
+
+A genus-only bound on cancellation depth would be attractive. It fails:
+standard Kanenobu diagrams D(n,-n) have c=2n+8, g_D=2, and constant Jones
+polynomial V_(4_1)^2 of span 8. Therefore k_A+k_B=2n-2 is unbounded.
+For n>=3 these diagrams are within one crossing of minimal. This rules
+out that bound even for nearly minimal diagrams; it makes no claim about
+all possible presentations of those knots.
+
+Primary inputs: Qazaqzeh--Mansour, Proposition 1.2,
+https://arxiv.org/pdf/1405.0683 ; del Valle Vilchez--Lowrance, Section 6,
+https://arxiv.org/pdf/2509.21274 .
+
+The obstruction is especially relevant because Turaev genus one is already
+covered by Lowrance--Spyropoulos:
+https://nyjm.albany.edu/j/2017/23-71p.pdf
+Any genus-two extension must control long cancellation mechanisms, not
+simply inspect a genus-dependent fixed number of outer layers.
+
+Quantum positivity and vacuum rigidity
+
+We checked a useful full-TQFT endpoint: a boundary mapping class preserves
+the handlebody vacuum line at infinitely many unbounded SU(2) levels if
+and only if it extends over the handlebody. The proof uses a fixed finite
+colored-spine expansion, specialization of the integral skein module at
+A=-1, faithful free-group representations, and disk detection. Its full
+argument and assumptions are included in the evidence archive; no novelty
+is claimed.
+
+But ordinary Jones=1 does not imply vacuum saturation. For a g-bridge plat,
+normalized cup state Omega, and unitary level r with d=2cos(pi/r),
+
+       |V_K| = d^(g-1) |<Omega,U_beta Omega>|.
+
+Thus V_K=1 gives overlap d^(1-g), strictly less than 1 when g>1 and r>3.
+The squared norm outside the vacuum is 1-d^(2-2g), which is positive.
+The missing equality cannot be supplied by Cauchy--Schwarz. Moreover the
+full handlebody theory contains data beyond the fixed-color ordinary
+Jones representation. Deriving a sufficient rigidity premise from the
+ordinary Jones polynomial remains unproved.
+
+Sources for the standard ingredients and normalization:
+https://arxiv.org/html/math/0209150
+https://arxiv.org/abs/q-alg/9604014
+https://theoryofcomputing.org/articles/v011a006/v011a006.pdf
+
+4. A NARROWER GEOMETRIC TARGET THAT SURVIVES THIS PASS
+
+For a ribbon knot formed from the two-component unlink by one band,
+Sarkar's ribbon-distance theorem bounds the generalized Lee torsion
+blocks to length one. With reduced grading conventions this gives
+
+ P_red(t,q)=1+(1+t q^2)S(t,q),
+ V_K(q^2)-1=(1-q^2)S(-1,q).
+
+Here S has nonnegative coefficients, but S(-1,q) is a signed sum. A
+sufficient geometric lemma would say that at some extreme source quantum
+grade, even and odd homological source multiplicities are unequal.
+This lemma is unproved. It would settle this restricted ribbon subclass.
+
+Actual Kinoshita--Terasaka homology has complete internal cancellations
+at two source grades, so positivity at every grade is false. Its extremes
+do survive. We also built a formal rank-nine reduced complex obeying the
+length-one restriction, slice normalization, a free-summand retraction,
+and the full-twist grading law, but having Euler polynomial 1. No knot
+realization is asserted. This demonstrates why the existing algebraic
+constraints alone do not prove the needed geometric lemma.
+
+Primary inputs: Sarkar https://arxiv.org/pdf/1903.11095 ; Wang
+https://arxiv.org/pdf/2006.01070 ; Kinoshita--Terasaka data in Sano
+https://arxiv.org/pdf/2602.17435 . Exact calculations are in the archive.
+
+The direction I would prioritize is classifying cancellation lattices in
+additional fixed twist templates, then asking which lattices are forced
+by genuine geometric simplifications. The pretzel proof supplies a working
+example; the Kanenobu family supplies a necessary stress test. Neither
+currently provides the missing global theorem.

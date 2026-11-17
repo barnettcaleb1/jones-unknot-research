@@ -1,0 +1,59 @@
+PASS 30: EXACT JONES FIBERS AND A PROJECTIVE-GRAPH SCAFFOLD AUDIT
+Status: no fixed-Jones knot family with unbounded rational reduced Kh was certified. A new primary-source conditional scaffold has a valid zero-complexity endpoint, but its inequality is conjectural. One graph-induction step in the source fails; a contraction-based replacement is valid and has a clear topological limitation.
+
+1. Bounded literature check
+
+I searched specifically for exact Jones-preserving single crossing changes, Jones-invisible bands, and fixed-Jones families with unbounded Khovanov rank or quantum spread. The searches did not produce a certified knot example. This is a bounded search result, NOT a claim that no such example is known.
+
+The precise published question at the band stage remains visible in Wang's own 2021 presentation: whether the Jones polynomial detects the trivial band in a band sum of a split two-component link. His paper proves homological band detection and shifting of its nonzero complement; it does not prove the complement's graded Euler characteristic is nonzero. The later split-link theorem proves that bounded ranks under band twisting force the marked smoothing components to be split. These are different statements; neither supplies the missing Euler nonvanishing.
+
+Primary sources:
+  https://people.math.harvard.edu/~jxwang/GaugeTheoryVirtualSlides.pdf , slide16
+  https://arxiv.org/pdf/2006.01070 , introduction and Theorems1.7–1.8
+  https://arxiv.org/pdf/2112.09110 , Proposition1.7 and Remark1.8
+
+Thus the exact concrete unresolved statement is: for every nontrivial band b joining a geometrically split two-component link, is V(K_b)-V(K_#) nonzero? A negative answer produces a whole Jones-constant knot twist family with unbounded quantum spread by Wang; it need not give unbounded rank. A Jones-invisible crossing whose oriented smoothing is nonsplit instead produces unbounded rank. These implications are already proved in the main report and were not recomputed here.
+
+2. Why the explicit published link construction does not settle the knot test
+
+Kauffman's Knot Diagrammatics §9.3 and his shorter Detecting Links With The Jones Polynomial construct two-component links with unlink Jones polynomial related by a single crossing change. They derive a complementary tangle S with scalar bracket [S]=kappa[infinity]. Source: https://homepages.math.uic.edu/~kauffman/MLinks.pdf , final three pages; equivalent discussion in https://citeseerx.ist.psu.edu/document?doi=5c89143d6ad74d2ae5eb7157474ef2541357f512&repid=rep1&type=pdf , §9.3.
+
+There is an exact component-count obstruction to treating this as an arc-only knot construction. Use the bracket normalization <unknot>=1, delta=-A²-A^-2. Since the changed links have two-component unlink Jones polynomial, |kappa(1)|=2. The numerator and denominator closures of S have brackets kappa and delta*kappa, respectively. Their absolute evaluations at A=1 are therefore 2 and4. The elementary identity |V_L(1)|=2^(number_of_components-1) implies that these closures have respectively two and three components.
+
+Any four-ended tangle consists of two arcs and c closed components. Its two standard closures have component counts either (c+1,c+2), (c+2,c+1), or (c+1,c+1), according to endpoint connectivity. The pair (2,3) forces c=1 and infinity connectivity. Thus the scalar tangle in this particular link construction necessarily has a closed component. Deleting it or joining it to an arc changes the skein problem and is not licensed by the scalar-bracket identity. This explains the exact remaining geometric step without relying on visual interpretation of the source figure.
+
+3. New primary-source scaffold: Boyle–Spyropoulos
+
+Boyle–Spyropoulos, Myopic Tutte polynomials and Khovanov homology in RP³, arXiv2609.40122v1 (30 September2026), defines beta_epsilon(L)=min_D(c(D)-alpha_epsilon(D)); alpha counts the minimum checkerboard edges deleted to make the graph local. Conjecture1.1(2) asserts beta_epsilon(L)≤span J_epsilon, with the local-link case restricted to knots and epsilon=Re. Section1.1 explicitly gives the intended implication to ordinary Jones unknot detection. Theorem5.3 states a small-beta classification with a prime hypothesis. Its proof begins with a direct beta0 graph argument.
+
+Source: https://arxiv.org/html/2609.40122v1 , §1.1, Definition1.6, Conjecture1.1(2), Theorem5.3 and its proof.
+
+Independent endpoint audit: there is no essential prime/nonlocal gap at beta0. A connected checkerboard graph with two distinct vertices has a nonloop edge; that edge alone is local, so its maximum local edge set has size≥1. A local loop likewise gives a local edge set of size1. Consequently beta0 forces a one-vertex graph containing only projective loops. Their crossing-sign choices simplify to the Upsilon_n family. This argument does not use primeness or nonlocality. The source's zero-complexity family has Jones1 only for the ordinary unknot. Therefore the conjectural inequality really does give a complete conditional detection proof for local classical knots. It remains an unproved inequality, not a new proof of detection.
+
+4. A precise induction issue and an audited repair
+
+The source proof says that beta(G)=n implies the existence of an edge e with beta(G-e)=n-1. That assertion is false. Embed a triangle as an essential simple closed curve in RP². It has e=3, alpha=1, beta=2. Deleting any edge leaves a local path with two edges, alpha=0, beta=2. No edge deletion lowers beta. This identifies a gap in that stated induction, not a counterexample to its small-beta classifications or its direct beta0 endpoint.
+
+The parent's replacement works by signed-graph contraction. Give every edge its projective holonomy eta_e in {+1,-1}; these are NOT the crossing signs. A subgraph is local exactly when all its cycles have trivial holonomy, equivalently it is balanced. Hence
+
+  beta(G)=max_s #{uv in E(G): eta_uv s_u s_v=+1},
+
+where s_v are vertex signs. A balanced subgraph extends to a switching on all vertices, so both directions of this equality hold.
+
+For a maximizing switching, its satisfied spanning subgraph H must be connected when G is connected. If H had more than one component, flip all spins on one component. Internal statuses stay fixed and every cut edge becomes satisfied, contradicting maximality. Choose a nonloop edge e of H and gauge it positive. Spin assignments on G/e are exactly assignments on G with its endpoints equal; at least one global optimum has this property. Removing the always-satisfied e then gives
+
+  beta(G/e)=beta(G)-1.
+
+If only one vertex remains, deleting a positive/local loop also decreases beta by1. Iteration therefore reaches a one-vertex bouquet of negative/projective loops in exactly beta graph reductions. These are checkerboard smoothings. They are not isotopies of the original knot, so the reduction does not itself bound bridge number or homology.
+
+5. What bounded beta does and does not currently control
+
+Random vertex spins show
+
+  beta(G)≥ number_of_local_loops + (number_of_nonloop_edges)/2.
+
+Also beta(G)≥|V(G)|-1 since a spanning tree is local. Thus bounded beta bounds vertices and all edges except projective loops. Projective loop edges at distinct vertices cannot coexist disjointly in RP²: one-sided closed curves have mod-two intersection1. All unbounded projective loops therefore occur at one vertex. Their endpoint pairs interleave in the cyclic order; the loop-only cyclic word has the form 1,...,n,1,...,n. The bounded remaining edge darts cut this into boundedly many candidate parallel blocks.
+
+This suggests a finite-twist-template lemma: simplify opposite crossing signs within each block and prove that each block lifts to an ordinary fixed-strand twist site in the double cover S³→RP³. If that lemma is proved with the necessary marked-embedding details, it may bound bridge number for local knots with bounded beta. I have NOT established that last geometric identification. No beta-to-bridge or beta-to-Kh theorem is claimed here. In particular, graph contraction/smoothing must not be substituted for knot-preserving simplification.
+
+The firm new endpoint is the beta0 classification and its use in the paper's conditional proof. The genuinely missing theorem is the stated beta-versus-Jones inequality (or a constructive local-knot version sufficient for it); graph optimization alone does not compare beta with the cancellations of a signed Jones state sum.

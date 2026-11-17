@@ -1,0 +1,65 @@
+{
+ "summary": {
+  "F0": {
+   "n": 600,
+   "units": 508,
+   "whole": 14,
+   "max_ratio_window": 0.3333333333333333,
+   "max_ratio_square": 1.0,
+   "worst": [
+    3,
+    3,
+    3,
+    1
+   ]
+  },
+  "F1": {
+   "n": 300,
+   "units": 211,
+   "whole": 4,
+   "max_ratio_window": 0,
+   "max_ratio_square": 1.0,
+   "worst": null
+  },
+  "F2": {
+   "n": 300,
+   "units": 326,
+   "whole": 3,
+   "max_ratio_window": 0.25,
+   "max_ratio_square": 0.75,
+   "worst": [
+    4,
+    0,
+    4,
+    1
+   ]
+  },
+  "F3": {
+   "n": 30,
+   "units": 1291,
+   "whole": 20,
+   "max_ratio_window": 1.0,
+   "max_ratio_square": 1.5,
+   "worst": [
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  "F4": {
+   "n": 40,
+   "units": 40,
+   "whole": 0,
+   "max_ratio_window": 0.125,
+   "max_ratio_square": 0.17647058823529413,
+   "worst": [
+    32,
+    1,
+    32,
+    4
+   ]
+  }
+ },
+ "violations": []
+}

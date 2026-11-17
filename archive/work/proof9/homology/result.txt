@@ -1,0 +1,144 @@
+BAND DETECTION, LEE BARS, AND THE PRECISE DECATEGORIFICATION GAP
+Bounded proof-mechanism audit, 2026-10-31. No general Jones detection
+proof, no knot counterexample, and no novelty claim.
+
+1. WHAT THE MULTICURVE THEOREM ACTUALLY PROVIDES
+Kotelskiy--Lidman--Moore--Watson--Zibrowius, Cosmetic operations and
+Khovanov multicurves, Theorems5.6--5.7, prove that a Conway tangle with
+split zero closure has only slope-zero Khovanov curves. If the tangle is
+not horizontally split, special components occur. Their geometric
+pairings distinguish all full twists of the corresponding nontrivial
+band. They work over F2. The result is categorical and does not assert
+that the special components have nonzero graded Euler characteristic.
+Source: https://arxiv.org/abs/2109.14049 ; published text:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/ .
+
+Wang's stronger algebraic formulation makes the missing step explicit.
+For the band sum K_b of a split link with connected sum K_#, there is a
+nonzero complementary bigraded vector space H_b when b is nontrivial,
+with reduced homology over Q satisfying
+ Kh_red(K_(b+n)) = Kh_red(K_#) direct-sum h^(2n)q^(4n) H_b.
+Hence, in normalized Jones conventions,
+ V_(K_(b+n))(q^2)=V_(K_#)(q^2)+q^(4n) chi_q(H_b).
+Theorems1.7--1.8 and Remark1.9 are the sources for reduced Q coefficients.
+Wang explicitly leaves nonvanishing of the polynomial difference open
+in his introduction; categorical detection does not settle it.
+Source: https://arxiv.org/pdf/2006.01070 , pp5--7.
+
+In particular, for a nontrivial band on the two-component unlink,
+one Jones-one member would give infinitely many pairwise distinct
+Jones-one knots. Twisting cannot repair an Euler-zero complementary
+summand: it only shifts that zero polynomial. This is a rigorous
+amplification statement, not a contradiction.
+
+2. NEW ADDITIONAL GEOMETRIC INPUT: ALL BARS HAVE LENGTH ONE
+Let K have ribbon-fusion number at most1, i.e. arise from a two-component
+unlink by one band. It is smoothly slice, so s(K)=0. Sarkar's Corollary1.2
+bounds the X-extortion order of generalized Lee homology over Q by ribbon
+distance, which is at most the number of bands. Therefore every nonzero
+Lee torsion block has exponent1. The source is
+https://arxiv.org/pdf/1903.11095 , Corollary1.2 and Section5.
+This is stronger than merely knowing that Lee homology has rank two.
+
+Use reduced quantum grading q and homological degree h, with unknot
+generator(0,0). A length-one torsion block has reduced generators
+ (i,a) and(i+1,a+2).
+Write its source as t^i q^a. If S(t,q) is the sum of these source
+monomials, with nonnegative coefficients, then
+ P_red(K;t,q)=1+(1+t q^2)S(t,q),
+ V_K(q^2)-1=(1-q^2)B(q),  B(q)=S(-1,q).
+Thus Jones1 is equivalent to exact balance of even and odd source
+multiplicities at EVERY quantum source grade. The bar lengths are fixed;
+the remaining unknown is the parity distribution of their locations.
+
+PRECISE SUFFICIENT LEMMA (proved elementary implication):
+If a fusion-one ribbon knot has a nonempty Lee-bar collection, and at
+some source quantum grade a the signed source multiplicity is nonzero,
+then V_K is not1. In particular it suffices that all bars at a minimal
+or maximal source quantum grade have the same homological parity.
+Proof: that coefficient of B is nonzero, so (1-q^2)B is nonzero in the
+Laurent polynomial domain.
+
+A GEOMETRIC STATEMENT THAT WOULD NOW SUFFICE, BUT IS NOT PROVED:
+Every nontrivial fusion-one ribbon knot has at least one extreme source
+quantum grade with unequal even and odd source multiplicities.
+This is a restricted and testable geometric statement. We do NOT infer
+it from multicurve linearity, positivity of ranks, or ribbon functoriality.
+It would settle the fusion-one subclass, not all classical knots.
+
+3. ACTUAL TEST: KINOSHITA--TERASAKA ALREADY HAS INTERNAL CANCELLATION
+Hom--Kang--Park explicitly state that KT has fusion number1:
+https://arxiv.org/pdf/2003.02832 , p2.
+Sano's 2026 preprint gives its reduced rational homology, including
+additional e-operator data, in Proposition6.1:
+https://arxiv.org/pdf/2602.17435 , pp76--77.
+Using the ordinary underlying polynomial and Sarkar's length-one result,
+the quotient S=(P_red-1)/(1+tq^2) is uniquely determined. Its source
+multiplicities, written(h,q,m), are
+ (-6,-12,1),(-5,-10,1),(-4,-8,1),(-3,-6,2),(-2,-6,1),
+ (-2,-4,1),(-1,-4,1),(-1,-2,1),(0,-2,1),(0,0,1),
+ (1,0,2),(2,2,1),(3,4,1),(4,6,1).
+Conventions: Sano uses delta=2h+q; we reverse his homological grading,
+so our delta=q-2h. Mirroring conventions do not affect the conclusions.
+
+At source quantum grades-4 and-2, there is exactly one even and one
+odd source: they cancel completely in B. Grades-6 and0 also have mixed
+source parity, with multiplicities1 versus2. Therefore the stronger
+claim that each source quantum grade has a uniform parity is FALSE for
+an actual fusion-one ribbon knot. This is not merely a formal model.
+The extreme source grades-12 and6 are each pure, so KT does not refute
+the narrower extreme-source statement. We did not find an actual knot
+refuting that narrower statement in this bounded pass; it remains an
+unproved proposed bridge, not a theorem supported by the single example.
+
+The exact extraction is in kt_bar_check.py/.json. The resulting reduced
+rank is33, with16 length-one bars. The ordinary Euler polynomial agrees
+with KT's nontrivial Jones polynomial. The new e-operator distinguishes
+KT from Conway in Sano's computation, but no implication from Jones1
+to vanishing of this extra structure is supplied by that paper.
+
+4. A FORMAL STRESS TEST OF ALL THE PRESENTLY AVAILABLE CONSTRAINTS
+For any even a,b, put
+ P_red(n)=1+t^(2n)q^(4n)(1+t)(1+tq^2)(q^a+t^2q^b).
+This is a nonnegative polynomial of rank9. It comes from one free
+Q[X] summand and four two-term blocks with map X. Its Euler polynomial
+is identically1, s=0, and all Lee bars have length1. Specialization
+X^2=0 gives unreduced rank10, with polynomial
+ q+q^-1+t^(2n)q^(4n-1)(1+t)(1+tq^4)(q^a+t^2q^b).
+The free summand has inclusion and retraction. Its nonzero complement
+obeys precisely Wang's full-twist grading law. These are ABSTRACT
+complexes; no knot, tangle, ribbon movie, or multicurve realization is
+asserted. They demonstrate that the listed categorical, torsion-length,
+and twisting statements alone still permit complete Jones cancellation.
+formal_band_test.py/.json checks the identities exactly.
+
+5. CAREFULLY SEPARATED RANK CONSEQUENCE
+Sarkar plus elementary block specialization gives, independently of
+recent instanton preprints,
+ r=dim_Q Kh_red=1+2m,  R=dim_Q Kh=2+2m=r+1,
+where m is the number of length-one bars. If V=1 then B=0, so m is even
+and r=1 mod4. Nontriviality implies m>0.
+
+Our earlier rank-five synthesis uses Bhat--Li--Ye's December2025
+preprint2512.24206 and proves that a nontrivial Jones-one knot with r5
+has R10. Here r5 would instead force R6, a contradiction. With that
+additional PREPRINT-DEPENDENT input, a nontrivial fusion-one Jones-one
+knot must satisfy r>=9 and R>=10. This rank improvement is not the
+mechanism that would prove detection, and is distinguished from the
+source-backed fusion bound above.
+
+6. SCOPE CAUTION: ALL RIBBON KNOTS IS NOT A WEAKER CONJECTURE
+For any K, K#mirror(K) is ribbon and its normalized Jones polynomial is
+V_K(t)V_K(t^-1). Thus any nontrivial Jones-one K would produce a
+nontrivial ribbon Jones-one knot. Nontriviality follows, for example,
+from additivity of Seifert genus. Therefore proving Jones unknot detection
+for ALL ribbon knots would already prove it for all knots. Fusion-one
+is a genuinely restricted hypothesis; it must not be replaced silently
+by arbitrary ribbon knots in claiming a reduction.
+
+CONCLUSION
+The new geometric ingredient controls bar LENGTHS, but the actual KT
+test proves it does not enforce parity positivity at all bar locations.
+The exact unresolved issue is the extreme/source-parity geometry of
+actual one-band ribbon diagrams. The multicurve theorem cannot be
+presented as proving the missing noncancellation statement.

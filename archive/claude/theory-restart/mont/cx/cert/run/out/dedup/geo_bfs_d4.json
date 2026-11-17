@@ -1,0 +1,54 @@
+{
+ "D": 4,
+ "top": {
+  "stats": {
+   "classes_per_depth": [
+    1,
+    4,
+    13,
+    44,
+    160
+   ],
+   "rehits_geometric": 214,
+   "rehits_NONGEOMETRIC_new_class": 0,
+   "rehits_hash_equal_but_NOT_exact_new_class": 0,
+   "projective_classes": 222,
+   "geometric_classes": 222,
+   "mitm_classes": 222,
+   "missed_geometric_classes": 0,
+   "secs": 0.1
+  },
+  "missed": []
+ },
+ "bottom": {
+  "stats": {
+   "classes_per_depth": [
+    1,
+    4,
+    18,
+    74,
+    298
+   ],
+   "rehits_geometric": 286,
+   "rehits_NONGEOMETRIC_new_class": 2,
+   "rehits_hash_equal_but_NOT_exact_new_class": 0,
+   "projective_classes": 393,
+   "geometric_classes": 395,
+   "mitm_classes": 393,
+   "missed_geometric_classes": 2,
+   "secs": 0.1
+  },
+  "missed": [
+   {
+    "mitm_rep": "x1.x2.x3",
+    "missed_word": "y0.y1.x2.x3",
+    "depth": 4
+   },
+   {
+    "mitm_rep": "y1.x2.x3",
+    "missed_word": "x0.x1.x2.x3",
+    "depth": 4
+   }
+  ]
+ }
+}

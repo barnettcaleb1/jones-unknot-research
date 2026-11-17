@@ -1,0 +1,197 @@
+JONES UNKNOT DETECTION: ONE-PUNCTURED ANNULI AND MARKED TORSION
+1 November 2026. Research deductions, not a proof or counterexample.
+
+Outcome
+-------
+The recent closed torsion relation does not yet supply a new knot
+construction. Its canonical cuts are geometrically trivial after filling,
+and arbitrary banding returns to the previously identified one-band ribbon
+problem. A separate annulus calculation gives a stronger restriction:
+in a once-punctured unknotted annulus twist family, infinitely many Jones-one
+members force the complementary relative arc to have exactly the skein
+class of an elementary arc, up to framing. This is an algebraic statement;
+it does not show that the embedded arc is elementary.
+
+The complete remaining endpoint is explicit. An actual nontrivial relative
+arc with that skein class, the appropriate winding, an unknot closure, and
+Taylor's incompressibility hypothesis would give counterexamples after
+twisting. No such arc or marked torsion lift was constructed.
+
+1. One-punctured annulus restriction
+-----------------------------------
+Let B be an annulus lying on an embedded sphere P in S^3, and let a knot K
+meet the interior of B transversely in exactly one point. Its boundary is
+disjoint from K. Denote the complementary disks of P by D1,D2. Let K_n be
+the knot obtained by opposite n and -n disk twists at their boundaries,
+with the zero-framing normalization used for the ordinary Jones polynomial.
+
+THEOREM (research deduction). If V(K_n)=1 for infinitely many integers n,
+then V(K_n)=1 for every n. The absolute linking numbers with the two annulus
+boundaries are 0 and 1 in some order. In the solid torus complementary to
+a neighborhood of B, the relative skein of the remaining arc is a framing
+unit times one of the two elementary arcs.
+
+Proof. Write R=Z[A,A^-1], F=Q(A), delta=-A^2-A^-2, and
+Delta_r=(-1)^r(A^(2r)+A^(2r-4)+...+A^(-2r)).
+Choose boundary orientations so w1=w2+1=w+1. This follows by algebraic
+intersection with the once-punctured annulus.
+
+The complement of a neighborhood of B is a solid torus with two marked
+endpoints. Over F its relative skein has the trivalent graph basis
+g_(j,l), where the three incident colors j,l,1 are admissible. Hence
+|j-l|=1. The two colored edges meet D1,D2 respectively. Opposite disk
+twists act with eigenvalue theta_j^n theta_l^(-n), where
+theta_r=(-1)^r A^(r(r+2)). Removing transported framing contributes
+(-A^3)^(-n(w1^2-w2^2)). Parity cancels the signs. Thus the normalized
+frequencies in the finite graph expansion are
+
+ d_(j,l)=j(j+2)-l(l+2)-3(w1^2-w2^2).
+
+For j=l+1 the first difference is 2l+3; for l=j+1 it is -(2j+3).
+These integers are distinct over all ordered adjacent pairs. The initial
+short complementary arc closes g_(j,l) to its theta evaluation
+Theta(1,j,l)=Delta_max(j,l), which is nonzero.
+
+Consequently V(K_n) is a finite sum of distinct Laurent-monomial
+exponentials in n, each with a nonzero closure weight. Such a sum equals
+1 infinitely often only if its sole surviving frequency is zero and its
+coefficient is 1. To see this without analytic assumptions, include the
+constant term and evaluate at as many distinct integers as there are
+frequencies. The generalized Vandermonde determinant is nonzero: after
+ordering both integer lists, the rearrangement inequality gives a unique
+largest exponent in its determinant expansion. Thus all coefficients of
+the difference from 1 vanish.
+
+It follows that the relative skein is c*g_(j,l) for one adjacent pair.
+Here c is actually integral; this does NOT assert that arbitrary graph
+expansions have integral coefficients. Use the free crossingless-diagram
+basis of the marked annulus. The identity terms of the Jones-Wenzl
+projectors give one highest diagram with coefficient 1. For g_(i,i+1)
+this is the short arc with i core circles; for g_(i,i-1) it is the long
+arc with i-1 core circles. Their minimal intersection pairs with the two
+meridian cuts are respectively (i,i+1) and (i,i-1). Every other projector
+term has a turnback and reduces at least one cut count, without increasing
+the other. It cannot contribute to this highest diagram. The corresponding
+coefficient of c*g is therefore exactly c. Since the original arc has
+an integral skein class, c belongs to R.
+
+The initial closure now gives
+
+ c*Delta_max(j,l)=u(A)*delta,
+
+where u is a framing unit and u(1)=+1 or -1. At A=1, integrality says that
+max(j,l)+1 divides 2. Adjacency implies max(j,l)>=1, so max(j,l)=1.
+The only pairs are (1,0) and (0,1), whose graph representatives are the
+two elementary arcs. The zero-frequency equation then forces
+{|w1|,|w2|}={0,1}. This proves the stated necessary conditions. End proof.
+
+The graph basis and theta-closure conventions come from Abernathy--Gilmer,
+Section 4 and Proposition 5.2. The leading-diagram argument above is the
+additional lattice argument; the paper's graph basis is localized, and
+must not be treated as an integral basis. The actual graph diagram on
+printed page 1044 was inspected, alongside its integral crossingless basis.
+
+The theorem concerns an entire marked family. It neither excludes an
+isolated Jones-one knot nor proves a global reduction to annulus twists.
+It also does not cover annuli meeting the knot zero times or more than
+once. In particular, the earlier two-braid example uses zero punctures
+and equal linking numbers, so its many diagonal channels are unavailable
+here. The quantum-dimension denominator from that example is not ignored.
+
+2. Complete conditional counterexample endpoint
+-----------------------------------------------
+Taylor's Theorem 1.3 states that if K_0 is an unknot and B is an unknotted
+sufficiently incompressible twisting annulus meeting K_0 once, then K_n
+is nontrivial for every |n|>=2. His Definition 5.1 supplies the precise
+geometric incompressibility condition.
+
+Therefore a sufficient construction is:
+ - an actual pair (K_0,B) satisfying those geometric hypotheses;
+ - complementary relative arc skein u*g_(1,0) or u*g_(0,1);
+ - corresponding zero normalized twist frequency (linking magnitudes 0,1).
+
+The unknot anchor fixes the scalar; the displayed spectral calculation
+then gives V(K_n)=1 for all n. Taylor supplies nontriviality for |n|>=2.
+All subsequent implications are accounted for. What remains unknown here
+is existence of the actual marked geometry with those exact skein data.
+Neither a formal graph nor an arc merely homotopic to the elementary arc
+would supply it. No claim of existence or geometric detection is made.
+
+3. Why the canonical torsion-band construction is finished
+---------------------------------------------------------
+For M=ST#ST, the explicit closed relation is
+
+ (A^2-A^-2)([x1 disjoint-union x2]-[y disjoint-union U])=0,
+
+with y the connected sum of the two core circles. To band the two sides,
+one would need a relation after deleting a band ball while retaining its
+four endpoint markings. The closed relation does not imply that relation.
+
+After an S^3 filling, the complement of the deleted band ball is a ball.
+Its four-point skein module is free of rank two on h,v. With coordinates
+chosen so h has unlink numerator and unknot denominator, the two closure
+maps on alpha*h+beta*v are
+
+ N=delta^2*alpha+delta*beta,
+ D=delta*alpha+delta^2*beta.
+
+The determinant delta^2(delta^2-1) is nonzero. Thus a relative torsion
+difference would force equality of both coordinates. The original closed
+relation controls only one closure and cannot supply the other.
+
+For the canonical cuts, both filled tangles have numerator the two-component
+unlink and denominator the unknot geometrically. Scharlemann's theorem
+implies that such a tangle is rational. Its numerator determinant is zero,
+so its rational fraction is 0 in these fixed coordinates. Both tangles are
+therefore the same trivial unframed tangle. Any common replacement inside
+the band ball produces isotopic unframed links. This excludes all common
+local replacements after these cuts, not just the first elementary band.
+
+A different cut would require an actual nonrational unlinkable tangle T
+with the full framed bracket vector [T]=[h]. Its denominator would have
+Jones polynomial 1; Scharlemann's theorem would show that denominator is
+nontrivial. This is a complete conditional endpoint, but no such T was
+constructed. It lies in the one-band ribbon subclass already isolated in
+earlier work. The closed torsion witness by itself imposes no restriction
+on the arbitrary band and does not solve that older problem.
+
+4. Further geometric filter on torsion candidates
+------------------------------------------------
+If an actual knot P in ST#ST intersects its reducing sphere in two points,
+it factors as P1#P2 across the sphere. Write p1(x1),p2(x2) for the integral
+annular skeins of the capped pieces. Generic connected-sum skein theory
+gives delta[P]=p1(x1)p2(x2). If [P]-[y] is torsion, then
+
+ p1(x1)p2(x2)=x1*x2.
+
+Separate polynomial variables and integrality force
+p1=+/-A^r*x1 and p2=+/-A^(-r)*x2, with reciprocal signs. Any nontrivial
+Jones-one filling would already yield a nontrivial Jones-one one-axis
+factor. Thus a new interacting torsion construction must use at least
+four intersections with this sphere. Sphere-supported homeomorphisms
+preserving filling slopes do not help: they extend over filling and
+carry an unknot's spanning disk with them.
+
+Sources
+-------
+Abernathy--Gilmer, Even and odd Kauffman bracket ideals for genus-1 tangles,
+NYJM 22 (2016), 1039-1053:
+https://nyjm.albany.edu/j/2016/22-48v.pdf
+
+Taylor, Closures of 1-tangles and annulus twists, Theorem 1.3 and Section 5:
+https://arxiv.org/html/2506.11226v1
+
+Bakshi--Le--Przytycki, Kauffman bracket skein module of the connected sum
+of two solid tori, Sections 2.2 and 3.5:
+https://arxiv.org/html/2604.09971v1
+
+Nogueira--Salgueiro, On embeddings of 2-string tangles into the unknot,
+the unlink and split links, Theorem 4.8 (attributed to Scharlemann):
+https://arxiv.org/html/2110.15645
+
+Przytycki, Kauffman bracket skein module of a connected sum of 3-manifolds,
+generic Theorem 1.2 and Corollary 1.3 only:
+https://arxiv.org/pdf/math/9911120
+
+The new deductions received internal checks, not external peer review.
+The full Jones unknot-detection problem remains unresolved by this work.

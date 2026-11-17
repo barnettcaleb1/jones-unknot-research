@@ -1,0 +1,90 @@
+{
+  "conventions": "sigma_i=A I+A^-1 e_i; delta=-A^2-A^-2; V=(-A^3)^(-w)<closure>; t=A^-4",
+  "all_N_symbolic_commutator_and_anchor_trace_verified": true,
+  "unknot_normalization_controls": [
+    [
+      1,
+      2
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      1,
+      -2
+    ]
+  ],
+  "checks": [
+    {
+      "N": 2,
+      "word": [
+        1,
+        1,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        2
+      ],
+      "components": 1,
+      "writhe": 2,
+      "V_t": {
+        "1": 1,
+        "3": 1,
+        "4": -1
+      },
+      "V_at_1": 1,
+      "V_prime_at_1": 0,
+      "V_at_minus1": -3,
+      "determinant": 3,
+      "A_exponents_all_multiples_of_4": true
+    },
+    {
+      "N": 4,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        -1,
+        -1,
+        -2,
+        -2,
+        -2,
+        -2,
+        1,
+        2
+      ],
+      "components": 1,
+      "writhe": 2,
+      "V_t": {
+        "-2": -1,
+        "-1": 1,
+        "0": -1,
+        "1": 3,
+        "2": -2,
+        "3": 3,
+        "4": -2,
+        "5": 1,
+        "6": -1
+      },
+      "V_at_1": 1,
+      "V_prime_at_1": 0,
+      "V_at_minus1": -15,
+      "determinant": 15,
+      "A_exponents_all_multiples_of_4": true
+    }
+  ],
+  "finite_field_theorem": "Given finitely many fields F_q of characteristics p, choose even N>=2 divisible by all p(q^4-1). For every t in each F_q^*, choose A in F_(q^4)^* with A^-4=t. The quadratic (g-A)(g+A^-3)=0 divides X^N-1 in that characteristic, so both generator Nth powers are identity. Thus beta_N is the full specialized TL identity, and V_KN(t)=1. Nevertheless V_KN(-1)=1-N^2 over Z, so K_N is a nontrivial knot.",
+  "scope": "Finite-field evaluation-function equality, not coefficientwise equality or complex-root equality."
+}

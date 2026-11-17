@@ -1,0 +1,84 @@
+PASS38: SYMMETRIC-UNION / ORBIFOLD SOURCE-SCOPE AUDIT
+2026-11-01. Bounded check of a purported new route; no candidate or new theorem.
+
+DECISION
+The recently surfaced orbifold paper does NOT prove that every one-region partial
+knot of Kinoshita--Terasaka is trivial, and does NOT provide a known nontrivial partial.
+Its answer to Lamm--Tanaka Question (2) concerns a different issue. The known KT
+presentation has partial unknot. Finding a different, nontrivial partial remains
+a hard inverse geometric construction, already investigated in our earlier work.
+There is no new ready-made axis to test here.
+
+WHAT THE NEWER PAPER ACTUALLY SAYS
+Boileau--Kitano--Nozaki, arXiv2510.12372v3, 19 April 2026, now titled
+A preorder on the set of links with applications to symmetric unions:
+https://arxiv.org/html/2510.12372v3
+
+Section 7.2 explicitly identifies Proposition 7.6 as answering Lamm--Tanaka
+Question (2). It says that a nontrivial symmetric union and its partial knot have
+nonisomorphic pi-orbifold groups; in particular the partial cannot be the whole
+knot itself. It does NOT force the partial to be the unknot. The proof uses
+Hopficity, determinant squaring, and nontriviality of the preferred longitude's
+orbifold image for a nontrivial determinant-one knot.
+
+The other applicable restriction is Corollary 7.4: an arborescent symmetric union
+cannot have a partial whose prime factor has a hyperbolic double branched cover.
+This does not exclude every hyperbolic partial knot: knot-exterior hyperbolicity
+and branched-cover hyperbolicity are different properties. Theorem 1.11's
+homological obstruction to admitting a symmetric union does not apply to KT,
+whose branched-cover H1 is zero. The small-source finiteness theorem also cannot
+be invoked without smallness; our existing Tillmann source shows KT is not small.
+These distinctions were already recorded in proof12 and the living report.
+
+PUBLISHED JONES STATEMENT, AND WHAT IT DOES NOT SUPPLY
+Lamm--Tanaka, On partial knots for symmetric unions, Topology Appl.375 (2025),109593:
+https://doi.org/10.1016/j.topol.2025.109593
+https://www.sciencedirect.com/science/article/pii/S0166864125003918
+The publisher abstract states that any partial knot of a one-twist-region KT
+presentation has Jones polynomial 1. It does not assert a nontrivial partial exists.
+The full article remains unavailable in this audit; the abstract and visible
+section snippets were checked. No audit of its entire proof is claimed. Our
+independent Tanaka-formula computation in proof12 already recovered that Jones
+conclusion and restricted the twist to one even value, up to mirror convention.
+
+PRECISE EXISTING TOPOLOGICAL FILTER, NOT A NEW CLAIM
+For completeness, combine that previously audited even-twist computation with:
+Boileau--Kitano--Nozaki, On the genera of symmetric unions of knots,
+https://arxiv.org/html/2407.09881
+Proposition 1.5 gives the meridian-preserving, longitude-killing epimorphism for
+an even symmetric union; Corollary 1.8 gives g(K)>=2g(partial). The ordinary
+Alexander polynomial is the square of the partial's Alexander polynomial.
+Since g(KT)=2, Delta(KT)=1, and KT has a three-bridge diagram, a nontrivial
+one-region partial J must satisfy
+  g(J)=1, Delta_J=1, V_J=1, mr(J)<=3.
+Our earlier audited genus-one/three-bridge classification and pretzel Jones-moment
+calculation exclude b(J)<=3. Thus any such J would have
+  mr(J)=3 < b(J), with b(J)>=4.
+This would contradict BOTH Jones unknot detection and the meridional-rank
+conjecture. This is a reason to downgrade this particular inverse-design target,
+not a proof that no such J exists. In particular, mr<=3 must not be silently
+replaced by bridge number<=3.
+
+The prior complete derivation and its source checks are in
+work/proof12/tangle/findings.txt and Sections 4--7 of
+outputs/jones-finite-tests-and-cancellation.txt. The classification source is
+Fukuhama--Ozawa--Teragaito, Genus one, three-bridge knots are pretzel (1999):
+https://www.komazawa-u.ac.jp/~w3c/research/pdf/pretzel.pdf
+No new classification of genus-one meridional-rank-three knots was located in
+this bounded primary-source check. This is not an exhaustive literature claim.
+
+ONE ADDITIONAL PRIMARY CHECK THAT DOES NOT HELP HERE
+Colorings of symmetric unions and partial knots, arXiv2504.08589, Theorem 1.3:
+https://arxiv.org/html/2504.08589
+The theorem bounds Fox p-colorings of the union between the partial's coloring
+count and its square divided by p. At determinant one both branched-cover H1
+groups vanish, so every Fox p-coloring is constant and all three quantities are
+p. Thus this particular recent obstruction is automatically saturated here;
+it supplies no new KT partial candidate or exclusion.
+
+STOP CONDITION / PRACTICAL RESULT
+Do not label this lead a new construction or reopen an undirected axis search.
+It becomes concrete only upon producing an actual new one-region symmetric
+KT diagram together with a geometrically certified nontrivial partial, or a
+new classification theorem for the narrow quotient-knot class above. The checked
+orbifold paper supplies neither. The question-answer headline was the wrong scope.

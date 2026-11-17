@@ -1,0 +1,252 @@
+JONES RESEARCH: AN EXACT KNOT FAMILY AND THE ZERO-FACTOR TARGET
+31 October 2026. Parallel research continuation.
+
+STATUS
+
+The general Jones unknot-detection problem is not solved here. This pass
+obtains an exact factorization for an infinite family of actual nontrivial
+knots, identifies the precise scope of the anchored-tangle approach, and
+gives a geometric criterion that would certify a counterexample immediately.
+These are internally checked deductions; priority in the literature is not
+claimed. The full-polynomial condition remains essential.
+
+1. ACTUAL KNOTS, WITH AN EXACT FORMULA FOR THE DIFFERENCE FROM ONE
+
+Start with a trefoil J_0 and its strong inversion. Form J_r by r untwisted
+Whitehead operations, carrying the compatible inherited inversion along.
+Take the quotient of E(J_r), with meridian and preferred longitude marked,
+and fill along either half-integral slope +1/2 or -1/2. Call the resulting
+branch knot B_r. Both choices, and the standard inherited clasp choices,
+satisfy the following statement.
+
+For an integer k_r and a sign epsilon_r depending on those choices,
+
+ V_(B_r)(t)-1 = epsilon_r t^(k_r)
+                 (t-1)^(r+2) (t^2+t+1)
+                 (t^2+1)^(r+1) (t^3+1)^(r+1).               (1)
+
+The monomial ambiguity is in the DIFFERENCE V-1, not in a comparison of
+unnormalized Jones polynomials. It cannot make the displayed difference zero.
+
+Consequences:
+
+ * Every B_r is an actual nontrivial knot of unknotting number exactly one.
+ * ord_(t=1)(V_(B_r)-1)=r+2, and ord_(t=-1)(V_(B_r)-1)=r+1.
+ * The absolute first nonzero Taylor coefficient at t=1 is 12*4^r.
+ * The knots are pairwise distinct, already by their Jones polynomials.
+
+Here 'Taylor coefficient' means derivative divided by factorial. Thus the
+absolute derivative of order r+2 is (r+2)!*12*4^r. The derivatives through
+order r+1 at t=1 coincide with those of the unknot. This asserts vanishing
+for the finite-type coefficients extracted from ordinary Jones; it does
+not assert vanishing of every finite-type invariant in those degrees.
+
+The existence of nontrivial knots with arbitrarily deep finite-type
+vanishing is classical. The result established here is the particular
+geometric family and its complete factorization, including exact orders
+at both 1 and -1. Its originality has not been established.
+
+2. PROOF OF THE FACTORIZATION
+
+Use delta=-A^2-A^-2 and t=A^-4. For a preferred exterior quotient T, put
+
+ x(T) = (f_0(T)/f_infinity(T)-delta)/(1-delta^2).
+
+The previous report proves the exact shell identity x(P(T))=d_P(A)x(T).
+The meridional closure is an actual unknot, so its bracket is a framing
+unit and the ratio is defined.
+
+Here the Whitehead factor can be computed completely, up to a Laurent
+unit and mirroring, from one rational input that yields a trefoil.
+An actual trefoil-exterior quotient is obtained as follows. Set
+
+ R=<-1>+<1/2>+<1/3>,     T=rotation(R)+<-6>.
+
+The numerator of R is an actual unknot. The branched cover of R is
+Seifert fibered over D^2(2,3), identifying the exterior as a trefoil
+exterior up to chirality. Rotation makes its denominator the meridian.
+The minus-six adjustment makes the numerator determinant zero, uniquely
+selecting the preferred longitude. Direct two-dimensional skein algebra
+gives
+
+ f_infinity(T)=A^-18,
+ f_0(T)/f_infinity(T)=-A^2+A^6-A^22-A^30,
+ x(T)=A^2(A^4-1)(1+A^8)(1+A^12).                             (2)
+
+For example, subtracting delta in the middle line gives
+ A^-2(1+A^8)(1-A^24), which verifies the last line directly.
+
+The appropriate signed unit-twist input to the Whitehead shell produces
+a trefoil. That input has x=-A^2 or -A^-2. A trefoil has a unique strong
+inversion up to equivalence. Its meridian and preferred longitude remove
+the Dehn-twist marking ambiguity; the remaining Conway half-turns act
+trivially on the rational skein basis. Consequently
+
+ d_Wh(A) = a Laurent unit times
+                 (1-A^4)(1+A^8)(1+A^12).                     (3)
+
+Mirroring this displayed factor multiplies it by -A^-24. Thus it has the
+same factorization up to a unit for the mirrored choices as well. This
+also checks the previous first-jet result: the absolute derivative at
+exp(pi i/4) is 48. The absolute derivative at A=1 is 16.
+
+The exact normalized half-integral closure formula is, for one choice,
+
+ V_B(A^-4)-1=A^-10(A^4-1)(A^8+A^4+1)x(T).                    (4)
+
+For the opposite choice the prefactor is
+ -A^-2(A^4-1)(A^8+A^4+1).
+To verify (4), the two-crossing closure functional is
+ C_2=A^-2 f_infinity+(1-A^4)f_0, with C_2(Q_0)=A^6.
+The two added crossings contribute the same writhe increment for T and
+Q_0: the cap has the meridional endpoint pairing, so the orientations
+on the outside tangle arcs agree. Normalizing by A^-6 gives (4), with
+no unknown additive monomial.
+
+Multiply (2) by r factors (3), then by (4). Changing from A to t yields
+(1). The remaining unit has integer t exponent because both sides are
+ordinary knot Jones polynomials. All displayed factors are nonzero.
+The half-integral closure changes to the meridional unknot by one
+crossing change, so u(B_r)<=1. Nonzero V_(B_r)-1 gives u(B_r)=1.
+
+The base calculation was also checked independently on actual diagrams
+with Spherogram and Regina. In Regina's chirality convention, the two
+base diagrams give V-1=t^-2 F_0(t) and V-1=-F_0(t), where F_0 is the
+product in (1) for r=0. The evidence archive contains PD data and a
+standalone exact-arithmetic certificate. The all-r claim follows by
+the shell identity, not by testing finitely many r.
+
+Primary geometric inputs:
+Whitehead-link fillings producing twist knots and their Alexander
+polynomials: Dubois--Huynh--Yamaguchi, Remark 2(4)--(5):
+https://arxiv.org/pdf/0706.2213
+Uniqueness of torus-knot strong inversion: Hirasawa--Hiura--Sakuma,
+Proposition 2.1(2): https://arxiv.org/abs/2206.02097
+Inherited Whitehead inversions: Dai--Mallick--Taniguchi, Example 2.22:
+https://arxiv.org/html/2606.05819
+
+3. THE ANCHORED TANGLE TARGET HAS AN EXACT, RESTRICTED SCOPE
+
+The following existence statements are equivalent:
+
+ (a) A nontrivial unknotting-number-one knot has Jones polynomial one.
+ (b) A nonrational actual four-ended tangle has an actual unknot
+     meridional closure and its entire skein vector is proportional
+     to the preferred rational-zero tangle.
+
+For (a)->(b), remove an unknotting crossing. The two crossing fillings
+have Jones polynomial one; the oriented skein relation makes the
+oriented smoothing's polynomial exactly that of the two-component
+unlink. The unknot filling identifies the cover as a knot exterior.
+The determinant-zero smoothing is its longitude. The common-writhe,
+two-closure argument then determines its entire vector as rational-zero.
+A rational outside tangle would make the original knot a determinant-one
+two-bridge knot, hence an unknot, which is impossible.
+
+For (b)->(a), use the half-integral closure (4). Its Jones polynomial is
+one. Its cover is 1/2 surgery on the nontrivial knot covering the tangle,
+so is not S^3 by the no-nonmeridional-S^3-surgery theorem. Hence the
+branch knot is nontrivial; changing the cap crossing unknots it.
+
+This does NOT reduce the full Jones conjecture to unknotting number one.
+Sikora's general tangle equivalence ties a hypothetical Jones-one knot
+locally into a rational tangle; its meridional closure still contains
+that knot. An actual unknot anchor is a stronger requirement.
+https://arxiv.org/abs/2005.08162 (Section 9)
+https://people.math.harvard.edu/~kronheim/wittenp.pdf (Introduction)
+
+4. AN ESSENTIAL ZERO FACTOR WOULD CERTIFY A COUNTEREXAMPLE
+
+Let P union C be a nonsplit link of two unknots, with linking number zero
+and a componentwise strong inversion. Its normalized quotient shell
+has multiplier d_P. If d_P is identically zero, insert the unit-twist
+rational input. The output is the flat preferred quotient of the knot
+P_1 obtained by 1-surgery on the axis C.
+
+P_1 is provably nontrivial. Regard C as a knot in the solid torus E(P).
+It has winding zero and is not contained in a ball. Gabai's Corollary2.5
+says that no nontrivial surgery on such a knot produces a solid torus.
+Thus the exterior E(P_1) is not a solid torus. In fact the same argument
+works for every nonzero integral twist input.
+
+The half-integral branch closure of the output consequently gives a
+nontrivial Jones-one knot of unknotting number one, by Section3. Once
+an actual essential zero shell is found, no additional search for a
+nontrivial closure is necessary.
+
+Conversely a split pattern link has d_P=0: its zero and unit-twist inputs
+both produce preferred unknot exterior quotients. Those inputs span
+the rank-two skein module, so the shell has rank one.
+
+The unresolved implication in this class is therefore
+
+                  d_P=0  ==>  P union C is split.
+
+This implication has not been established here. Ordinary Conway
+mutation of a split quotient shell cannot produce the needed nonsplit
+example: its torus lift preserves the covering exterior and its boundary
+compressibility. Serial composition of nonzero shell factors also cannot
+produce zero, since their Laurent-polynomial factors multiply.
+
+Gabai, Foliations and the topology of 3-manifolds II, Corollary2.5:
+https://doi.org/10.4310/jdg/1214441487
+
+5. TWO TEMPTING PROOF ROUTES THAT THIS PASS RULED OUT
+
+First, all derived classical linking invariants are insufficient for
+recovering d. Twice Whitehead-doubling one component of the Hopf link
+gives a boundary link. Its eta functions, Cochran derived invariants
+and Milnor invariants vanish, while its multiplier is d_Wh squared,
+which is nonzero. Thus the full eta sequence, not merely its first
+coefficient, misses this Jones information.
+Meilhan--Yasuhara, Theorem4.1 and Corollary4.2:
+https://arxiv.org/pdf/0704.3093
+
+Second, increasing a fixed perturbative order does not settle exact
+vanishing. For each N, sufficiently many Whitehead layers make every
+rational-input covering knot's nonzero rational surgeries agree with
+the corresponding lens spaces in LMO degrees through N, while the
+shell factor remains nonzero. This uses the classical finite-type
+vanishing of Whitehead iterates and the degree bound in the rational
+surgery formula, not any assumption that ordinary Jones determines LMO.
+The detailed quantifiers and degree audit are in homology.txt in the
+evidence archive. There is no claim that one fixed finite knot fools
+all orders simultaneously.
+Birman, New points of view in knot theory, p.283, Remark(ii), attributing
+the Whitehead-iterate construction to Lin:
+https://arxiv.org/pdf/math/9304209
+Ito, On LMO invariant constraints for cosmetic surgery and other surgery
+problems for knots in S^3, Proposition3.1:
+https://arxiv.org/pdf/1704.01755v2
+
+These results favor an exact geometric argument about the whole factor,
+or an actual construction making it vanish. No such construction and no
+proof of the general unknot-detection statement were obtained in this pass.
+
+6. AN ATTRACTIVE CONVERSE THAT FAILED ITS GEOMETRIC CHECK
+
+We also tried to turn ANY anchored flat quotient into an essential zero
+shell. The proposed construction was to Whitehead-double its covering
+knot, then undo the clasp. Algebraically this would work: the zero and
+unit-twist rational inputs would both give flat quotients, forcing d=0.
+
+The required symmetry is missing. In both standard inherited inversions,
+the Whitehead clasp crossing circle is acted on FREELY. The two fixed
+points of the Whitehead knot are at the opposite cap. Thus the clasp
+circle does not become a four-ended boundary sphere in the quotient,
+as the shell construction requires. A perpendicular local axis can fix
+the circle, but has not been extended over the doubled companion with
+the required zero linking number and inherited involution.
+
+This was checked against the actual primary Figure4 in
+https://arxiv.org/html/2606.05819 . The proposed converse remains
+conditional, not a theorem. In particular the zero-shell target has not
+been proved equivalent even to the whole anchored-tangle target.
+
+
+FOLLOW-UP, 31 OCTOBER 2026 — PASS 19
+The previously unresolved anchored-flat-core => essential-zero-shell
+conversion is now proved in our Brunnian reduction, using a different
+operation from the failed Whitehead clasp. The u=1 scope remains essential.
+See jones-brunnian-reduction-and-exact-test.txt for this reduction, the
+conditional all-n adjacency amplification, and an exact nonzero seed test.

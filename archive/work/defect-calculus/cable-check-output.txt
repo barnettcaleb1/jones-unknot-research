@@ -1,0 +1,39 @@
+Trefoil anchor, preferred longitude, exact x, Whitehead factor, and cap verified.
+Actual base-knot difference / F_0(t): [('minus_half', 1, -2), ('plus_half', -1, 0)]
+For general r, the proof multiplies these exact nonzero factors; no finite enumeration is used.
+q 1 meridian {-3: -1} longitude determinant remainder {}
+sign 1 ddeg 0 12 droot {0: 4} d [(0, 1), (4, -1), (8, 1), (12, -1)]
+sign -1 ddeg 0 12 droot {0: 4} d [(0, 1), (4, -1), (8, 1), (12, -1)]
+q 3 meridian {-18: 1} longitude determinant remainder {}
+sign 1 ddeg 12 24 droot {0: 4} d [(12, -1), (16, 1), (20, -1), (24, 1)]
+sign -1 ddeg 12 24 droot {0: 4} d [(12, -1), (16, 1), (20, -1), (24, 1)]
+q 5 meridian {-30: 1} longitude determinant remainder {}
+sign 1 ddeg 24 36 droot {0: 4} d [(24, 1), (28, -1), (32, 1), (36, -1)]
+sign -1 ddeg 24 36 droot {0: 4} d [(24, 1), (28, -1), (32, 1), (36, -1)]
+q 15 meridian {-90: 1} longitude determinant remainder {}
+sign 1 ddeg 84 96 droot {0: 4} d [(84, -1), (88, 1), (92, -1), (96, 1)]
+sign -1 ddeg 84 96 droot {0: 4} d [(84, -1), (88, 1), (92, -1), (96, 1)]
+q 17 meridian {-102: 1} longitude determinant remainder {}
+sign 1 ddeg 96 108 droot {0: 4} d [(96, 1), (100, -1), (104, 1), (108, -1)]
+sign -1 ddeg 96 108 droot {0: 4} d [(96, 1), (100, -1), (104, 1), (108, -1)]
+q -1 meridian {0: 1} longitude determinant remainder {}
+sign 1 ddeg -12 0 droot {0: 4} d [(-12, -1), (-8, 1), (-4, -1), (0, 1)]
+sign -1 ddeg -12 0 droot {0: 4} d [(-12, -1), (-8, 1), (-4, -1), (0, 1)]
+q -3 meridian {9: -1} longitude determinant remainder {}
+sign 1 ddeg -24 -12 droot {0: 4} d [(-24, 1), (-20, -1), (-16, 1), (-12, -1)]
+sign -1 ddeg -24 -12 droot {0: 4} d [(-24, 1), (-20, -1), (-16, 1), (-12, -1)]
+DIRECT SHELL q 1 u {-9: -1} dprime(1) -8 xprime(1) 0 target x(1) -0.0
+DIRECT SHELL q 3 u {-18: 1} dprime(1) 8 xprime(1) 16 target x(1) -2.0
+DIRECT SHELL q 5 u {-27: -1} dprime(1) -8 xprime(1) 16 target x(1) 2.0
+DIRECT SHELL q 15 u {-72: 1} dprime(1) 8 xprime(1) 64 target x(1) -8.0
+DIRECT SHELL q 17 u {-81: -1} dprime(1) -8 xprime(1) 64 target x(1) 8.0
+DIRECT SHELL q -1 u {0: 1} dprime(1) 8 xprime(1) 0 target x(1) 0.0
+DIRECT SHELL q -3 u {9: -1} dprime(1) -8 xprime(1) -16 target x(1) -2.0
+DIVISIBILITY q 1 remainder {} x0/d [] target xJ(1) 0
+DIVISIBILITY q 3 remainder {} x0/d [(-10, 1), (2, 1)] target xJ(1) -2
+DIVISIBILITY q 5 remainder {} x0/d [(-22, -1), (-6, -1), (2, 1), (6, -1)] target xJ(1) 2
+DIVISIBILITY q 15 remainder {} x0/d [(-82, 1), (-66, 1), (-50, 1), (-34, 1), (-18, 1), (-2, 1), (2, 1), (6, -1), (10, 1), (18, 1), (22, -1), (26, 1)] target xJ(1) -8
+DIVISIBILITY q 17 remainder {} x0/d [(-94, -1), (-78, -1), (-62, -1), (-46, -1), (-30, -1), (-14, -1), (6, -1), (10, 1), (14, -1), (22, -1), (26, 1), (30, -1)] target xJ(1) 8
+DIVISIBILITY q -1 remainder {} x0/d [] target xJ(1) 0
+DIVISIBILITY q -3 remainder {} x0/d [(-2, 1), (10, 1)] target xJ(1) -2
+PASS: exact divisibility, target evaluations, linking derivative, and recurrence at the specified samples.

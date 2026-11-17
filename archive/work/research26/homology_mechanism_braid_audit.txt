@@ -1,0 +1,93 @@
+INDEPENDENT ADVERSARIAL AUDIT OF THE WATSON FIXED-INPUT RANK BOUND
+1 November 2026 UTC; braid track.
+Audited: homology_mechanism.txt and research21/geometric_bridge.txt.
+
+Verdict: the stated theorem and the quantitative bound pass. The scope is
+the explicitly marked mirrored-three-braid Watson template, with the
+two fixed input tangles containing two arcs and no closed components.
+This is not a bound over an arbitrary Jones fiber without an additional
+bound on the input crossing parameter N.
+
+A. Six-port geometry and the word-order issue
+The rainbow coevaluation pairs i with 5-i. Moving a crossing through
+its cups converts sigma_i into sigma_(6-i), so the reflected INVERSE
+crossing cancels. Hence g_i=sigma_i sigma_(6-i)^(-1) fixes the rainbow
+cap, as does g_i^(-1). Because the reflected block is a group
+homomorphism with the SAME word order, a product of these paired
+generators also fixes the cap. There is no unsupported reversal of
+the word. The two disjoint braid blocks commute, allowing the actual
+six-strand word to be regrouped into these generators.
+
+After either input resolves to infinity, its variable integer twists
+are curls and that cap is rainbow. The paired middle braid then cancels
+geometrically. Pairing the other integer-tangle cap with rainbow gives
+a denominator closure of an integer tangle plus an outside trivial
+circle, namely U2; two rainbow caps give U3. Framing and orientation
+changes do not affect normalized total Khovanov ranks.
+
+B. Independent component-count audit
+I independently constructed the six-port graph: top cap matching;
+bottom cap matching pulled back through p on the first three ports and
+reflection-p-reflection on the last three. For all six p and all nine
+cap pairs, connected-component counts reproduce the submitted table.
+
+If p fixes its first port (123 or132), no allowed A/X input pair yields
+a knot. For each other p, AA,AX,XA,XX each give one component. Every
+pair with exactly one B gives two components; BB gives three.
+Thus every use of Watson's knot-only Lemma3.1 is legitimate:
+the both-zero branch is AA for even n and XX for odd n, always a knot.
+The other branches are LINKS, but their ranks come from the explicit
+unlink isotopy rather than an unproved extension of Watson's theorem.
+
+C. Resolution cube and state circles
+Only the N fixed input crossings are resolved. Every state consists of
+one of the two planar matchings in each input ball plus state circles.
+A circle cannot enclose an arc reaching the boundary in this planar
+state without meeting it. All circles therefore split off, including
+nested planar circles, which still form an unlink.
+
+There are at most 2^N states. Initially the two input tangles have four
+arc components and no circles; finally there remain four arcs and ell
+circles. Each smoothing changes component count by at most one.
+Consequently ell<=N and sum_s 2^ell(s)<=4^N.
+The exact-triangle rank inequality works irrespective of intermediate
+orientations and grading shifts, and yields the claimed finite sum.
+
+D. Determinant and characteristic-two reduction
+For an allowed input connectivity, denominator closure joins its two
+arcs into a knot. Therefore det D(T),det D(U) are positive odd integers.
+The previously proved bracket matrix, evaluated at delta=0, gives
+  d=det K_n=p^2 det D(T) det D(U),
+where p=det J_beta and the both-zero base is J_beta#mirror(J_beta).
+Thus p^2<=d. Integer twists leave denominator knot types unchanged.
+
+A two-bridge knot is alternating and quasi-alternating. The primary
+Manolescu–Ozsvath Theorem1 explicitly establishes reduced integral
+thinness; universal coefficients therefore give reduced-F2 rank p.
+The reduced connected-sum formula gives base rank p^2.
+Shumakovitch Corollary3.2.C gives unreduced-F2 rank exactly twice
+reduced-F2 rank. Watson's integral Kh constancy transfers to F2 by UCT.
+The elementary branch ranks are consequently bounded by max(2d,8).
+
+Combining the cube bound and applying mod2 splitting and UCT once more:
+  dim_Q Kh_red(K_n) <= dim_F2 Kh_red(K_n)
+                    <= 4^N max(d,4).
+No characteristic-two splitting over Q is assumed. The alternative
+Section4 Lee-bar argument is unnecessary to this proof and may remain
+optional.
+
+Primary checks:
+Watson, Lemma3.1 and its hypotheses, published pp1392–1393:
+https://msp.org/agt/2007/7-3/agt-v7-n3-p11-s.pdf
+Manolescu–Ozsvath, Theorem1, p3:
+https://web.stanford.edu/~cm5/quasi.pdf
+Shumakovitch, Corollary3.2.C, PDFp12:
+https://arxiv.org/pdf/math/0405474
+
+No substantive correction required. Keep explicit that only the
+simple AA/XX branch is a knot after smoothing; the proof correctly
+handles the remaining branches as unlinks. The bound permits beta
+of unbounded word length but requires the stated fixed-input crossing
+bound. It neither establishes a global presentation theorem nor
+proves generic Jones unknot detection.
+

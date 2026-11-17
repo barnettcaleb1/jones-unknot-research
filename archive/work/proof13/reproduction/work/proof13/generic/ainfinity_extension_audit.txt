@@ -1,0 +1,111 @@
+INDEPENDENT AUDIT OF THE FORMAL s4 EXTENSION
+Auditor: generic_braid. 2026-10-31.
+
+Verdict
+-------
+No error found in the claimed formal A-infinity extension and lifted G-cone.
+Both the F2 and signed integer computations satisfy the actual finite
+Maurer-Cartan equations of the KWZ algebra, with the stated gradings and
+idempotents. This is an algebraic model and an obstruction to deductions
+using only these necessary algebraic conditions. It is not a realization
+by a classical tangle, nor evidence for an actual Jones counterexample.
+
+Files audited without modifying them:
+  work/proof13/homology/check_extension.py
+  work/proof13/homology/check_integral_extension.py
+Source read:
+  work/proof13/homology/mutation2026.txt
+  KWZ, arXiv:2602.23442, Definitions 2.6, 9.3, 9.4, 10.1;
+  Remarks 9.5, 9.12, 10.3; Lemmas 9.8, 9.9, 10.2.
+Both scripts were rerun with Path.write_text disabled. Additional independent
+checks used the source's four explicit mu4 formulas in reversed path order,
+and verified gradings and endpoint idempotents for every differential,
+nullhomotopy, lifted-G and cone arrow.
+
+1. Algebra and mu4
+-----------------
+Definition 2.6 gives DS=SD=0, q(S)=-1, q(D)=-2, and G=S^2-D.
+The scripts' suppressed-idempotent multiplication is correct on every
+composable path that occurs. Endpoint-idempotent compatibility was checked
+separately, including the U times identity arrows.
+
+Definition 10.1 cancels the sign (-1)^(m-1) from the B-infinity disk
+operations. Thus all four displayed mu4 values in Remark 10.3 have positive
+sign. The implementation correctly assigns ONE value U when all four
+powers are one: this input is described in two displayed patterns, but the
+patterns are alternative descriptions of the same operation, not summands.
+Reversing a forward graph path to the source's (a4,...,a1) input convention
+preserves the resulting value. An independent source-pattern implementation
+agreed on all 226 arity-four paths across X, the one-H calculation, and the
+cone. Higher operations containing a primitive idempotent vanish; U
+multilinearity therefore kills operations containing the added U-idempotent
+arrows, except ordinary multiplication.
+
+2. Signs and shifts
+-------------------
+The integer local system places a minus sign on x0 -> y0. The new arrows
+have signs - on x1 -> y3 and + on x2 -> y4. These satisfy the full signed
+MC equation, with additive-enlargement factor (-1)^(ell/2) for even arity ell.
+This factor is not merely assumed from the MC-specific statement: Def. 9.3
+reduces mod 2 to sum_p p*(r_p-r_(p-1)). Every differential arrow and every
+H arrow has odd shift difference, since the underlying algebra degrees
+are even. Thus the same factor applies to paths containing one H, despite
+H having total homological degree -1 instead of +1.
+
+The integer nullhomotopy solves delta*H + H*delta = S^2-D. In the source's
+additive convention, mu1(H) has the negative of this U=0 value. Therefore
+using mu1(-H), as the integer script does, is correct. Its lifted map has
+q-degree -2 and h-degree 0, and is
+  G*id + U*(x1->x3 + x2->x4 + y1->y3 + y2->y4),
+with all four displayed correction coefficients +1. Mod 2 this agrees with
+the F2 calculation.
+
+The cone uses copies q^-1 h^-1 X and q X. Every cone arrow has degree h^1 q^0.
+The first copy's internal differential is negated, exactly as required by
+Remark 9.5 for a homological shift by -1. The cone is strictly triangular.
+The full signed cone MC equation vanishes.
+
+3. Completeness in arity, not merely a truncation test
+----------------------------------------------------
+Independent path enumeration gives:
+  X maximum path length 6;
+  paths with exactly one H maximum length 8;
+  cone maximum path length 7.
+The scripts test all even arities through these maxima. There are no omitted
+arity-12-or-higher contributions, and the extra arities 8 or 10 tested in
+some places are harmless.
+
+For the arity-six and arity-eight paths actually present, the zero claim
+also follows from the quantum grading. After removing input U factors,
+mu_(2m) would require a B-output of degree
+  sum q(B-inputs) + 6*(m-1).
+The available nonunit paths give positive degree, absent in B. Paths with
+U-idempotent inputs instead vanish by the previous strict-unital argument.
+
+Implementation-scope caveat: the helper named mu is a verifier for this
+finite graph, not a general evaluator for arbitrary B_U-infinity inputs.
+Its treatment of U powers in mu4 and in the higher-degree assertion is
+sufficient here because every nonzero-U edge is U times an idempotent.
+It should not be reused without modification for nonunit S or D inputs
+carrying U powers. This does not affect any operation used in this model.
+
+4. Exactness of the lifted map and scope of the integer claim
+-----------------------------------------------------------
+The lifted G is computed as the actual twisted-category boundary mu1(-H),
+not guessed from its reduction modulo U. The A-infinity identities imply
+it is closed, and its cone is homotopy equivalent to the cone of the zero
+map (the direct sum of the corresponding shifted copies). The direct cone
+MC calculation is an additional check of that statement's concrete model.
+
+The source introduces Section 10 over fields, because its geometric and
+multicurve equivalences have that scope. Section 9's disk operations are
+defined over the commutative coefficient ring, and the concrete signed
+identities here are integer identities with those structure constants.
+Accordingly the claim can safely be called a signed formal algebraic
+integral lift, and in particular gives a genuine formal model over Q.
+It must not be called an integral geometric extension theorem for actual
+tangles. No such claim was needed or verified.
+
+Conclusion: the proposed model survives this independent extension audit.
+The missing condition is geometric realizability, not an overlooked mu4
+sign, duplicated operation, missing higher arity, or cone-grading mismatch.

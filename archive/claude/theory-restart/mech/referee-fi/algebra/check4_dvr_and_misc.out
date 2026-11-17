@@ -1,0 +1,23 @@
+(1) J^T C J = Matrix([[-1, 0], [0, 1]]) (= -C);  M^T C (J M J) + A^-2 C = Matrix([[0, 0], [0, 0]])
+    P=M: E^-1 bar(P) E = Matrix([[1/A, -A], [0, -A**3]])  G-unitary: True
+    P=J: E^-1 bar(P) E = Matrix([[0, -1], [-1, 0]])  G-unitary: True
+    P=MJM: E^-1 bar(P) E = Matrix([[1, 0], [A**2, -A**4]])  G-unitary: True
+(2) centralizer of S0: g=[[a,b],[c,e]], g S0 = +-S0 g
+    sign +1: [(Matrix([
+[e, -c],
+[c,  e]]), c**2 + e**2)]
+    sign -1: [(Matrix([
+[-e, c],
+[ c, e]]), -c**2 - e**2)]
+    T'^N = Matrix([[1, 0], [-N, 1]]) eigvecs [[Matrix([
+[0],
+[1]])]] ; S0 T'^N S0^-1 = Matrix([[1, N], [0, 1]]) eigvecs [[Matrix([
+[1],
+[0]])]]
+(3) Phi_8(1/A)*A^4 - Phi_8(A) = 0
+    det G at zeta_8 = -1
+    det M at zeta_8 = I
+    det J at zeta_8 = -1
+    det E at zeta_8 = 1
+(4) D^* G0 D = Matrix([[0, I], [-I, 0]])
+(5) G^-1 P^T C Q - bar(P)^-1 S Q = Matrix([[0, 0], [0, 0]])

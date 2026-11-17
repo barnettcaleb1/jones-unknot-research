@@ -1,0 +1,266 @@
+PASS 50: FRAMED RATIONAL TANGLE UNIQUENESS FROM FILLING THEORY
+1 November 2026. Research deduction from established results; independent
+audit requested. No claim of literature novelty or a Jones detection proof.
+The main proof below covers two nonsplit products. The appended Ni-Vafaee
+argument closes the remaining split-product case, giving all distinct-
+slope systems in Sikora's Conjecture 2, subject to the stated proof audit.
+
+THEOREM (nonzero-determinant case)
+Let X and R be tangles in the same oriented marked ball, with R rational.
+Let P and Q be rational closing tangles with distinct underlying slopes.
+Suppose the corresponding closed links agree by balanced framed isotopy:
+
+             C_P(X)=C_P(R),       C_Q(X)=C_Q(R).
+
+Suppose both common products are nonsplit rational links, equivalently
+their determinants are nonzero. Then X is rational. Consequently Sikora's
+uniqueness of framed rational solutions makes X equal to R as a balanced
+framed tangle.
+
+In particular, the proposed construction using two nontrivial rational
+products cannot be repaired by searching other A'/B' parameters. Their
+branch involutions and three lens fillings do not evade this theorem.
+The proof is uniform and requires neither census enumeration nor a claimed
+extension of the S^3 lens-surgery characterization to homology spheres.
+
+PROOF
+
+1. Two probes give the full bracket, hence all closure determinants.
+
+Sikora, Theorem 21, says the bracket vectors of two solutions to this
+framed system are equal. Therefore [X]=[R]. Every other rational closure
+also has equal brackets and equal determinants. With the convention
+that the unreduced unknot bracket is delta, divide the polynomial bracket
+of a nonempty closed link by delta before evaluating at A=exp(pi*i/4).
+Directly evaluating the unreduced bracket would instead vanish identically.
+Framing changes at this root have absolute value one, so determinants are
+independent of the chosen representative framings.
+
+2. Recover a common meridian and preferred longitude without assuming S^3.
+
+Let M be the oriented double branched cover of X and V the solid-torus
+cover of R. Their boundary tori carry the same marking. Choose slopes
+mu and lambda at distance one such that V(mu)=S^3 and
+V(lambda)=S^1 x S^2. These correspond to rational closures of R that
+are respectively the unknot and two-component unlink.
+
+Step 1 gives |H_1(M(mu);Z)|=1 and infinite H_1(M(lambda);Z). Write
+Y=M(mu). It is an integral homology sphere; it is not yet known to be
+S^3. The core of its filling solid torus is a knot K with exterior M.
+Thus H_1(M;Z)=Z, and the unique primitive slope giving infinite first
+homology after filling is the preferred longitude of K. It is lambda.
+The oriented common boundary marking therefore identifies mu and lambda
+with the meridian and longitude of the unknot exterior V.
+
+Write the original two slopes as p_i mu+q_i lambda, with coprime p_i,q_i.
+Nonzero determinants mean p_i != 0. Distinct slopes imply
+q_1/p_1 != q_2/p_2. The balanced framed equivalences in the hypothesis
+are orientation-preserving ambient equivalences of the underlying branch
+links. Lifting them gives orientation-preserving diffeomorphisms
+
+              Y_(p_i/q_i)(K) = S^3_(p_i/q_i)(U),   i=1,2.
+
+These are the SAME signed surgery coefficients on both sides. This is
+stronger than equality of lens-space orders, and stronger than an
+unoriented homeomorphism of lens spaces. The common peripheral marking
+and the auxiliary determinant-zero closure are essential here.
+
+3. Casson-Walker forces the Alexander second derivative to vanish.
+
+Let Delta_K(t) be the symmetric Alexander polynomial normalized by
+Delta_K(1)=1. Ni-Wu, Proposition 3.1, gives for a null-homologous knot in
+a rational homology sphere, in their Casson normalization,
+
+ lambda_CW(Y_(p/q)(K)) - lambda_CW(S^3_(p/q)(U))
+       = lambda_CW(Y) + (q/(2p))*Delta_K''(1).
+
+Our K lies in an integral homology sphere, so this applies. The left
+side is zero for both i. Subtracting the two equations yields
+
+             Delta_K''(1)=0,       lambda_CW(Y)=0.
+
+The meridional q=0 case can be read directly as lambda_CW(Y)=0; in the
+intended case where both products are nontrivial, neither probe is mu.
+No inference that lambda_CW(Y)=0 implies Y=S^3 is made.
+
+4. Floer simplicity turns this vanishing into Delta_K=1.
+
+Each of the two fillings is a lens space and hence an L-space. Since the
+slopes are distinct, Rasmussen-Rasmussen Proposition 1.3 implies M is
+Floer simple. Their Proposition 1.4 says its normalized Turaev torsion
+has only coefficients zero and one. Since H_1(M)=Z, it has the form
+
+      tau(M)=D(t)/(1-t)=sum_(n>=0) a_n t^n,
+      a_0=1, a_n in {0,1}, and a_n=1 for all sufficiently large n.
+
+Here D(t) is the polynomial normalization of the Alexander polynomial.
+Its coefficient at n is a_n-a_(n-1), with a_(-1)=0. Thus, after zero
+coefficients are suppressed, its coefficients alternate +1,-1,+1,...,+1.
+The first coefficient is +1. The final nonzero coefficient is also +1,
+since the sequence a_n eventually returns to and remains at one.
+
+For a knot in an integral homology sphere, symmetry gives
+D(t)=t^g Delta_K(t), where 2g is the degree of D (this g is an exponent,
+not an assumed topological genus). Consequently there are strictly
+increasing positive integers n_1<...<n_k such that
+
+ Delta_K(t)=(-1)^k + sum_(i=1)^k (-1)^(k-i)*(t^(n_i)+t^(-n_i)).
+
+To justify the nonzero central term: all noncentral coefficients occur
+in symmetric pairs, whereas D(1)=1 and all its nonzero coefficients are
+plus or minus one. Its number of nonzero coefficients is odd, and hence
+the central coefficient is nonzero. Alternation then gives the displayed
+signs. The symmetric normalization has Delta_K(1)=1 because D(1)=1.
+
+Differentiating the displayed polynomial at one gives
+
+          Delta_K''(1)=2*sum_(i=1)^k (-1)^(k-i)*n_i^2.
+
+If k is positive, group from the largest exponent downward: every pair
+n_j^2-n_(j-1)^2 is strictly positive, with an additional positive n_1^2
+when k is odd. Therefore Delta_K''(1)>0 for every nonconstant possibility.
+Step 3 forces k=0 and Delta_K(t)=1. This is the crucial use of the TWO
+L-space fillings; Delta''=0 alone would not suffice for a general knot.
+
+5. The Thurston norm forces a boundary compression.
+
+Rasmussen-Rasmussen Corollary 2.3 says that, for boundary-incompressible
+Floer-simple M, the Thurston norm of the relative generator equals
+deg(D)-1. Here deg(D)=0, which would give norm -1, impossible. Thus
+the boundary of M is compressible.
+
+A connected orientable torus-boundary manifold with compressible boundary
+is a solid torus connected summed with a closed manifold Z. Since
+H_1(M)=Z, Z is an integral homology sphere. Filling a slope with nonzero
+determinant produces L(p,q)#Z. But one of our actual fillings is a lens
+space, and lens spaces are prime; by prime decomposition Z is S^3.
+This also covers a filling yielding S^3. Therefore M is a solid torus.
+The classical branched-cover criterion then makes X a rational tangle.
+End proof.
+
+WHAT HAS BEEN EXCLUDED, AND WHAT HAS NOT
+
+All actual two-probe systems with a rational comparator and TWO NONSPLIT
+rational products are excluded as a source of a rational/nonrational
+framed ambiguity. This includes every attempted member of the explicit
+Baker-Doleshal-Hoffman A'/B' branch-tangle families if it satisfies those
+two marked product conditions. A parameter scan is unnecessary: successful
+unframed matches must retain a varying framing defect.
+
+The argument through two L-space fillings does not itself cover a system
+with one product the two-component unlink. The separate argument below,
+identified by the relative_torsion agent and independently source-checked
+here and by the parent, closes that case. It does not incorrectly treat
+S^1 x S^2 as an L-space.
+
+This is a proof for a tangle-equation subclass, not a proof that the Jones
+polynomial detects the unknot. Its topological hypotheses require actual
+link equivalences, whereas a putative Jones-one knot supplies only equal
+polynomials. Sikora's Theorem 3 is a one-way implication from Jones
+detection to framed uniqueness; the converse must not be inferred.
+Literature novelty has not been established.
+
+APPENDIX: THE ZERO-DETERMINANT EDGE AND THE FULL TANGLE STATEMENT
+
+Suppose one common product is the two-component unlink. Its slope is
+lambda, and M(lambda)=S^1 x S^2 geometrically. As above, bracket equality
+still supplies an auxiliary determinant-one closure, so H_1(M)=Z and
+lambda is the primitive homological longitude. The other probe differs
+from lambda. Its rational product is therefore nonsplit, so its cover is
+a lens space and is an L-space.
+
+Let L be the core of the lambda-filling solid torus in S^1 x S^2. Its
+exterior is M, and it has an L-space surgery. Ni-Vafaee, Null surgery on
+knots in L-spaces, Theorem 1.1, says that M fibers over S^1. Choose a
+connected fiber F, corresponding to a primitive class of H^1(M;Z)=Z.
+
+The boundary map H_2(M,partial M;Z) -> H_1(partial M;Z) identifies the
+relative generator with the primitive lambda. Indeed M has the homology
+of a solid torus, and its peripheral inclusion sends the auxiliary
+meridian to a generator of H_1(M). The oriented boundary circles of a
+fiber are all parallel with coherent orientations on the boundary torus.
+If there were b such circles, [partial F] would equal +/-b*lambda. But
+the fiber class is primitive and the boundary map has primitive image,
+so b=1.
+
+Fill at lambda and cap the single boundary circle of F with a disk. The
+monodromy extends over the disk, yielding a closed surface bundle over
+S^1 whose total space is M(lambda)=S^1 x S^2. Its connected-fiber bundle
+map induces an epimorphism pi_1(S^1 x S^2)=Z -> Z, hence an isomorphism.
+The fundamental group of the closed fiber, which injects as its kernel,
+is trivial. Thus the closed fiber is a sphere, F is a disk, and M is a
+solid torus. This proves X rational also in the remaining case.
+
+There cannot be two split rational products at distinct slopes: the
+solid-torus comparator has only one homological-longitude slope.
+Together with the main proof, all possible rational products are covered.
+The result therefore proves the distinct-slope framed uniqueness
+statement formulated as Sikora's Conjecture 2, as a deduction from the
+cited theorems, pending independent mathematical verification.
+
+Allowing closed circle components in a general 2-tangle does not leave
+another case. The auxiliary closure with determinant one has double
+branched cover with trivial H_1, and so its branch link has exactly one
+component: for a link with c components, the mod-2 first Betti number of
+its double branched cover is c-1. A closed circle component of X would
+survive alongside at least one component made from the two open strands
+in every closure, contradicting this. Therefore any possible solution
+already has exactly two strings and no closed components.
+
+The explicit hypotheses still require actual balanced framed link
+equivalences, common markings, and distinct underlying slopes. Equality
+of Jones polynomials alone cannot replace these geometric hypotheses.
+Consequently this does not solve generic Jones unknot detection.
+
+OPTIONAL HIDDEN-S^3 EXTENSION OF PASS49
+
+Before the stronger two-nonsplit-products argument, there is a useful
+separate observation: if [X]=[R] and the branched-cover exterior M admits
+ANY S^3 filling, even one not among the observed probes, then this is an
+unknot closure of X. The double-cover involution of S^3 has nonempty
+fixed set; Smith theory gives a single fixed circle, and the Smith
+conjecture implies the quotient branch link is an unknot. The comparator
+closure has determinant one by bracket equality and is rational, so it
+is also the unknot. Use this auxiliary unknot probe and either distinct
+actual rational product in the pass49 same-slope KMOS proof. This excludes
+every hidden-S^3 member without treating arbitrary integral homology
+spheres as S^3. The result is subsumed by the main theorem when both
+observed products have nonzero determinant.
+
+PRIMARY SOURCE LOCATORS
+
+Sikora, Tangle Equations, the Jones conjecture, slopes of surfaces in
+tangle complements, and q-deformed rationals, arXiv:2005.08162v2.
+Theorem 21 (bracket uniqueness); Proposition 1 (rational uniqueness);
+Conjecture 2 and Theorem 3 (logical relationship with Jones detection).
+https://arxiv.org/html/2005.08162
+
+Ni-Wu, Cosmetic surgeries on knots in S^3, J. reine angew. Math. 706
+(2015), Proposition 3.1, printed page 9, equation (7). The proposition
+explicitly applies to null-homologous knots in rational homology spheres,
+despite the narrower title of the paper.
+https://archive.ymsc.tsinghua.edu.cn/pacm_download/301/8839-Cosmetic.pdf
+
+Rasmussen-Rasmussen, Floer simple manifolds and L-space intervals,
+arXiv:1508.05900v2, Propositions 1.3 and 1.4 (printed page 2),
+Corollary 2.3 (printed page 7). The latter does not require irreducibility
+for the norm conclusion; irreducibility occurs in its further fibering
+assertion, unused here.
+https://arxiv.org/pdf/1508.05900
+
+Rational-tangle/solid-torus-cover criterion, explicit Theorem 3.5(2):
+https://arxiv.org/pdf/1007.0948
+
+Baker-Doleshal-Hoffman, On manifolds with multiple lens space fillings,
+arXiv:1308.5002, actual branch families in Figures 3 and 4.
+https://arxiv.org/pdf/1308.5002
+
+KMOS, Monopoles and lens space surgeries, Theorem 1.1, for the optional
+hidden-S^3 extension only:
+https://people.math.harvard.edu/~kronheim/lens.pdf
+
+Ni-Vafaee, Null surgery on knots in L-spaces, Transactions of the AMS
+372 (2019), Theorem 1.1, printed page 8280. No irreducibility assumption
+is present in its stated hypothesis. Its Remark 3.2 also explains the
+spherical-braid interpretation of the fibered exteriors in S^1 x S^2.
+https://www.its.caltech.edu/~yini/Published/NullSurgery.pdf

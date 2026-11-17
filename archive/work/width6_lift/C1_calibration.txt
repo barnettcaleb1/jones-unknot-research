@@ -1,0 +1,127 @@
+C1: THE CORRECT LAWRENCE / TEMPERLEY–LIEB CALIBRATION
+2026-11-03. Status TRUSTED (exact algebra and published input).
+
+RESULT
+------
+The requested direct specialization of a 15-dimensional Hecke module and
+unit multiple of the Budney pairing does not exist as stated. There is a
+precise repair: the TL module is a nine-dimensional submodule at
+t=-q^-1, and its Gram form is a derivative of a degenerating pairing.
+The derivative is (1+q) times the TL Gram form, not a Laurent unit times it.
+Every identity below was checked generically by exact Laurent arithmetic,
+apart from the separately labelled rational calibration at q=4.
+
+PRIMARY SOURCE AND CONVENTIONS
+-----------------------------
+Bigelow, The Lawrence-Krammer Representation (2003), Theorem6.1:
+https://web.math.ucsb.edu/~bigelow/publications/08.pdf
+At t=-q^-1, the IMAGE of absolute homology in the specified relative
+homology module is the TL representation (n-2,2). In the absolute basis
+v_ij, the map kills the n classes j=i+1 and (i,j)=(1,3); the other
+n(n-3)/2 image classes give its basis. Section5.2 warns that the absolute
+Lawrence lattice and the usual Krammer fork lattice are not isomorphic
+over the Laurent ring, although they are over Q(q,t). Specialization
+therefore must keep track of the lattice.
+
+We use the Krammer fork matrices F_ij displayed in Bigelow section5.2,
+not his absolute v_ij lattice. Generator eigenvalues are
+                 1, -q, -t q^2.
+At the correct TL parameter t=-q^-1 these are 1,-q,+q. This is NOT an
+eigenvalue collision. The full module cannot be a direct sum of the
+three stated Hecke modules 9+5+1: it still has the +q eigenvalue.
+At q=4 each quadratic Hecke defect has rank1, hence is explicitly nonzero.
+More explicitly its characteristic polynomial at the TL line is
+                   (z-1)^10 (z+q)^4 (z-q),
+whereas W(6,2) has characteristic polynomial (z-1)^6 (z+q)^3.
+The +q eigenvalue alone rules out the proposed three-Hecke-summand model.
+
+For our bracket convention sigma_i=A I+A^-1 e_i, set
+               s=A^-2, q=s^2=A^-4, t=-s^-2=-A^4.
+The Krammer/TL generator identification is with the normalized braid
+generator A^-1 rho_TL(sigma_i)=I+s e_i. Here delta=-s-s^-1.
+
+GENERIC NINE-DIMENSIONAL SUBMODULE
+--------------------------------
+Start with the fork vector
+                  v=F13-F14-F23+F24.
+For every q,t, sigma1 v=sigma3 v=-q v and sigma5 v=v. At t=-q^-1,
+generate the nine columns by applying e_i=(sigma_i-I)/s in the same
+orders that generate our nine TL link states from C0=(12)(34), free56.
+The resulting 15-by-9 matrix B(s) satisfies exactly
+               K_i(s^2,-s^-2) B(s) = B(s) [I+s e_i]
+for all five generators. The columns are generically independent: their
+q=4 specialization has rank9. Thus this explicitly embeds W(6,2) into
+the specialized fork module over Q(s), and gives an integral Laurent
+map over Z[s,s^-1]. No six-dimensional complement is asserted.
+
+For clarity, the 15-by-9 B(s) is NOT the six-by-15 incidence matrix
+appearing below. Its complete entries are in generic_intertwiner.json.
+
+THE FORM: TWO DEGENERACIES AND A DERIVATIVE
+-----------------------------------------
+Use Budney's form as implemented by the pairing agent in budney_gram.py.
+It is linear in its first argument: <x,y>=x^T G bar(y). The bar inverts
+q and t. Its published common factor is
+        c=-(1-t)(1+qt)(q-1)^2 t^-2 q^-3.
+Write Graw=c Gnorm and epsilon=1+qt.
+
+First, c vanishes at epsilon=0, so EVERY raw Budney entry specializes to
+zero. Multiplication by a Laurent unit cannot fix this.
+
+Second, after dividing by c, the specialized matrix is
+ Gnorm(q,-q^-1)=-(q-1) Inc(q^-1)^T Inc(q),
+where the (i,j) column of Inc(q) is e_i+q e_j.
+Its rank is6 and its left radical has dimension9. Our B(s) lies in this
+left radical, equivalently Inc(q^-1)B(s)=0. The right radical uses the
+barred columns. Confusing the two radicals would give a false basis
+mismatch.
+
+Let G1=(dGnorm/d epsilon)|epsilon=0. The exact generic 9-by-9 identity is
+                 B(s)^T G1 B(s^-1)=(1+s^2) Gram_TL.
+All81 entries were checked, including zero entries and delta powers.
+Thus division by the additional NONUNIT 1+q gives the TL Gram form.
+
+This derivative is independent of first-order choices of lifts: if a
+lift changes by epsilon*u, the new first-order contribution pairs u
+with the zeroth-order radical, so vanishes. Equivalently, the raw form
+has a second-order zero on such lifted cap classes and
+       [epsilon^-2 B^T Graw bar(B)]_(epsilon=0)
+                     = -(q-q^-1)^2 Gram_TL.
+This last scalar again is not a Laurent unit.
+
+WHAT THIS ENABLES, AND WHAT IT DOES NOT
+-------------------------------------
+Given CHOSEN geometric cap lifts u_C(q,t), u_C'(q,t) whose specializations
+lie in this radical, the normalized pairing is divisible by epsilon.
+Its quotient specializes to (1+q) times the TL pairing after matching
+the cap normalizations. This defines a repaired two-variable object
+for further tests; it is not the raw Budney form proposed in the message.
+It does not establish invariance under three-dimensional cap slides,
+which is a separate geometric descent question.
+
+Short actual braid transports for all nine standard cap states have
+been recorded in cap_braid_lifts.json. Each is a product of elementary
+two-neighbor-generator cap slides and satisfies
+                   rho_TL_normalized(w_j) v_C0=s^k v_j,
+with k=length(w_j)/2. Therefore a chosen geometric lift is
+                   s^-k K(w_j) v.
+Its specialized image equals the corresponding B(s) column. The
+generic lift can differ from an algebraic e-descendant by epsilon terms;
+the derivative pairing is unaffected, but the full two-variable
+polynomial need not be unaffected. This distinction is material for C3.
+
+ARTIFACTS
+---------
+lkb_calibration.py/.json: exact q=4 fork matrices, relation checks,
+maximal Hecke-submodule dimension9, and15-by9 intertwiner.
+generic_intertwiner.py/.json: generic Laurent embedding and all5 exact
+intertwining identities.
+derivative_gram.py/.json: all81 generic Gram comparisons.
+cap_braid_lifts.py/.json: chosen geometric cap transports and exact units.
+bivariate_lifts.py/.json: all9 generic geometric cap lifts, with48 total
+monomials, and exact specialization checks against B(s). This module
+also provides generic inverse generators and exact division by1+s²t.
+budney_gram.py/.json: pairing agent's normalized form and factorization.
+
+This calibration corrects C1 and makes a repaired C3 possible. It proves
+neither the two-variable geometric Key Lemma nor no-Jones-cancellation.

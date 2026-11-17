@@ -1,0 +1,35 @@
+{
+  "all_passed": true,
+  "checks": {
+    "generator 0 preserves orthosymplectic form": true,
+    "generator 1 preserves orthosymplectic form": true,
+    "generator 2 preserves orthosymplectic form": true,
+    "generator 3 preserves orthosymplectic form": true,
+    "generator 4 preserves orthosymplectic form": true,
+    "odd anticommutator is H": true,
+    "positive odd square is -E": true,
+    "negative odd square is F": true,
+    "displayed dual is dual for half supertrace": true,
+    "Casimir equals superflip minus contraction": true,
+    "contraction square is -contraction": true,
+    "superflip fixes contraction": true,
+    "Casimir invariant under generator 0": true,
+    "Casimir invariant under generator 1": true,
+    "Casimir invariant under generator 2": true,
+    "Casimir invariant under generator 3": true,
+    "Casimir invariant under generator 4": true,
+    "raw crossing symbol is 2K-2I": true,
+    "transported chord symbol is -2Casimir": true,
+    "raw symbol Casimir plus allowed I,P corrections": true,
+    "raw crossing symbol commutes with superflip": true
+  },
+  "conventions": {
+    "basis": "w0 odd,w1 even,w2 odd",
+    "form": "B(X,Y)=str_V(XY)/2",
+    "chord": "superflip times crossing difference symbol"
+  },
+  "C22": "Matrix([[-2, 0, 0, 0, 0, 0, 0, 0, 0], [0, -2, 0, 0, 0, 0, 0, 0, 0], [0, 0, -4, 0, -2, 0, 2, 0, 0], [0, 0, 0, -2, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0, -2, 0, 0], [0, 0, 0, 0, 0, -2, 0, 0, 0], [0, 0, 2, 0, 2, 0, -4, 0, 0], [0, 0, 0, 0, 0, 0, 0, -2, 0], [0, 0, 0, 0, 0, 0, 0, 0, -2]])",
+  "Omega": "Matrix([[-1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, -2, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 0, -1, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 0], [0, 0, -2, 0, -1, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, -1]])",
+  "contraction": "Matrix([[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, -1, 0, -1, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, -1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, -1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0]])",
+  "identity": "C22=2K-2I=-2Omega+2P-2I; P C22=-2Omega; Omega=P-K"
+}

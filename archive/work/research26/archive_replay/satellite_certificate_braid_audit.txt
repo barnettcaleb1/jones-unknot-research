@@ -1,0 +1,74 @@
+INDEPENDENT AUDIT: FINITE SATELLITE SCALARITY CERTIFICATE
+1 November 2026 UTC. Braid track. No new construction or search.
+
+Audited satellite_mechanism.txt sections1–3 and the conditional
+Jones-one endpoint. Verdict: passes, with the explicit framing and
+geometric hypotheses already stated in the note.
+
+1. Use a fixed framing of P and insert its solid torus using the
+companion's preferred zero longitude. The relative framing of P(J)
+then depends only on the framed pattern: changing the companion
+does not add a self-linking correction. Thus the normalized ordinary
+satellite has a single companion-independent linear functional of
+the annular pattern skein. Without the preferred-zero convention,
+the claimed common coefficients would require extra framing factors.
+
+2. A disk meeting the actual pattern at most2d times bounds its
+annular skein degree by2d. Kauffman smoothing preserves its mod2
+homology class; winding zero therefore allows only even degrees.
+Changing from powers of the core to the Chebyshev/Jones-Wenzl basis
+is triangular. Its label2i evaluates to the nonzero generic quantum
+dimension times reduced H_(2i+1)(J). These dimensions and the common
+framing/unit normalization may be absorbed in c_i in Q(A).
+Consequently all c_i with i>0 vanish IF AND ONLY IF the original
+annular class is scalar. No implication from a single closure is used.
+
+3. The normalized reduced colored invariant is multiplicative under
+connected sum. Thus for J_r=#^r T the finite expansion becomes
+sum c_i lambda_i^r with lambda_i=H_(2i+1)(T) and lambda0=1.
+
+For the displayed trefoil formula the a-th numerator term has
+minimum exponent
+  -3j(j+2)/2 +(3a^2+a)/2.
+The unique minimum is a=0; already a=1 is two degrees higher.
+The denominator [j+1] has valuation -j/2. Therefore
+  val H_(j+1)(T)=-(3j^2+5j)/2,
+  val lambda_i=-6i^2-5i.
+As a normalization check j=1 gives V_T=q^-1+q^-3-q^-4,
+whose lowest exponent is indeed -4. The lambda_i are distinct and
+lambda_i!=1 for every i>0.
+
+4. Subtracting the r=0 evaluation gives the square matrix
+lambda_i^r-1, 1<=r,i<=d. Dividing column i by lambda_i-1 gives
+monic polynomials of successive degrees0,...,d-1 evaluated at lambda_i.
+Their evaluation determinant is the Vandermonde, so the stated
+determinant is nonzero over Q(A). Exactly d+1 complete ordinary
+satellite polynomials certify scalarity, GIVEN the geometric2d bound.
+
+The valuation argument for eventual pairwise distinctness also passes:
+the highest nonzero positive-color term has a strictly most negative
+slope in r, so it is uniquely minimal for all sufficiently large r.
+No cancellation of that term or infinite constant subsequence is possible.
+
+5. COMPLETE CONDITIONAL COUNTEREXAMPLE ENDPOINT
+Suppose P is an actual knot pattern with positive geometric wrapping w,
+zero algebraic winding, scalar full annular bracket, and V_(P(U))=1.
+Then V_(P(T))=1 for a trefoil T. The Schubert bridge inequality uses
+GEOMETRIC wrapping (Schultens Definition2 explicitly calls it index/
+wrapping), and gives b(P(T))>=w*b(T)=2w. Since w is positive and even,
+this is greater than1; P(T) is a nontrivial knot. Thus these hypotheses
+really do close an ordinary-Jones counterexample construction.
+Using #^r T gives unbounded bridge numbers and infinitely many examples.
+
+If the scalar value V_(P(U)) is not1, the same construction instead
+falsifies broad bridge boundedness within one Jones fiber. It does not
+settle unknot detection. No geometric essentiality may be inferred
+from annular scalarity or from passing the finite polynomial test.
+
+Primary bridge source checked directly:
+https://www.math.ucdavis.edu/~jcs/pubs/addbri15.pdf
+Abstract and Definition2, pp1–2.
+No all-colored unknot-detection theorem is assumed anywhere in this
+certificate or endpoint; colors appear solely in an invertible finite
+basis calculation.
+

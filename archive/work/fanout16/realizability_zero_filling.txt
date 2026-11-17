@@ -1,0 +1,156 @@
+TWO-FILLING REALIZABILITY OBSTRUCTION
+Independent derivation and normalization audit, 31 October 2026.
+The derivation was independently checked by the tangle agent against the sources.
+
+STATEMENT
+
+Let T be a classical four-ended tangle. Suppose its infinity rational filling
+is the actual unknot, and its zero rational filling L has the Jones polynomial
+of the two-component unlink, possibly multiplied by a signed Laurent monomial.
+Let J be the knot in S3 whose exterior is the double branched cover of T.
+Then
+
+                         a_2(J) = Delta_J''(1)/2 = 0.
+
+Delta is symmetric and Delta(1)=1; a_2 is the integral second Conway
+coefficient. No Jones assumption at any other filling is needed. In particular,
+this strengthens the earlier all-rational-filling argument in
+realizability_casson_audit.txt. It is a consequence of established formulas,
+not a claimed new theorem in the literature or a solution of Jones detection.
+
+GEOMETRIC MARKING
+
+The infinity filling of M=Sigma_2(T) is S3, so M is the exterior of the core J
+of the filling solid torus. Infinity is the meridian. The zero branch filling
+has determinant zero, hence H1(M(0);Q) is nonzero. For an S3 knot exterior the
+unique primitive slope with this property is the preferred longitude. Thus
+M(0)=S3_0(J). This identification does not assume T rational or M incompressible.
+The standard 0 and infinity slopes have distance one.
+
+GAROUFALIDIS'S FORMULA AT DETERMINANT ZERO
+
+Use the Jones convention J_L(t)=(-1)^(c-1) V_L(t^-1), with c components and
+sqrt(-1)=i. Garoufalidis, Theorem 1.1 in the published paper (Theorem 1 in
+the arXiv HTML), states
+
+  i^(sigma(L)+nu(L)) lambda_G(Sigma_2(L))
+        = J_L'(-1)/6 + J_L(-1) sigma(L)/4.
+
+Here nu(L)=b1(Sigma_2(L)); for the present zero surgery it is 1. The invariant
+lambda_G uses the doubled Casson-Lescop normalization. For the two-component
+unlink, J_U2(t)=t^(1/2)+t^(-1/2), so
+
+                        J_U2(-1)=0,  J_U2'(-1)=-i.
+
+Consequently the hypothesized polynomial gives
+
+                     |lambda_G(S3_0(J))| = 1/6.                 (1)
+
+The signature and nullity phase has absolute value one. No signature-zero
+assumption is needed. A signed monomial multiplier also has absolute value
+one at -1. Its derivative contributes zero because J_U2(-1)=0. Thus (1)
+remains true under the stated monomial ambiguity. Evaluation at 1 shows that
+an actual normalized link polynomial of this form belongs to a two-component
+link, as required by the unlink comparison.
+
+ZERO-SURGERY NORMALIZATION, CHECKED WITHOUT MIXING b1 CONVENTIONS
+
+Garoufalidis Section 4.1 defines lambda_G directly by a surgery formula. For
+one knot J with integer framing f, its terms are
+
+  D = zeta(J),     H0 = f sign(f)/4,
+  H1 = -1/6,      H2 = -f^2/12,
+
+and the sum is multiplied by sgn'([f]). The exceptional convention is
+sgn'([0])=1. In H2, the one-component L8 is just f^2. The Alexander-derived
+term zeta(J) is independent of the surgery framing.
+
+At f=+1 all three H terms sum to zero, and sgn'=1. Hence
+
+              zeta(J)=lambda_G(S3_1(J))=2 a_2(J).
+
+The final equality is the usual +1 Casson surgery formula in the doubled
+normalization. This normalization can also be checked entirely in our tangle
+setting: the +1 filling is a determinant-one branch knot. Garoufalidis's
+formula there reduces to the Mullins formula quoted by Greene-Watson as
+Theorem 13, with coefficients -1/6 and +1/4 and Poincare-sphere value -2.
+It is twice the integer-valued Casson normalization. Thus this calibration
+does not presume that a normalization change at b1=0 automatically extends
+to b1=1: we pass between the two framings in Garoufalidis's own surgery formula.
+
+At f=0 only H1 remains, and therefore
+
+                    lambda_G(S3_0(J))=2 a_2(J)-1/6.             (2)
+
+As a separate consistency check, Kerler's Lemma 2 quotes Lescop's usual
+b1=1 formula lambda_L(M)=Delta_M''(1)/2-Delta_M(1)/12.
+For S3_0(J) this reads a_2(J)-1/12, exactly half of (2).
+In particular S1 x S2 has values -1/6 and -1/12 respectively. One must not
+apply the rational-homology-sphere orientation-sign rule indiscriminately to
+this b1=1 invariant; the direct formula (2) avoids that issue.
+
+Combining (1) and (2) gives
+
+                              |12 a_2(J)-1|=1.
+
+Its two rational solutions are a_2=0 and a_2=1/6. Integrality excludes the
+second, proving the statement. Different coherent orientation conventions
+can reverse intermediate signs but cannot yield a nonzero integral solution.
+
+More generally, for ANY longitudinal branch link L of a strongly invertible
+S3 knot J, the same calculation before substituting the unlink polynomial
+gives the exact magnitude identity
+
+                       |J_L'(-1)| = |12 a_2(J)-1|.
+
+It is also valid with V in place of J: their derivatives at this zero differ
+by a unit complex phase. In particular the root of its Jones polynomial at
+t=-1 is always simple. Indeed 12 a_2(J)-1 cannot vanish for integral a_2.
+This is a constraint on actual longitudinal quotient links, not on arbitrary
+determinant-zero links or arbitrary formal tangle modules.
+
+SCOPE AND IMMEDIATE CONSEQUENCES
+
+* Any geometric realization of the earlier Jones-invisible formal tangle
+  must satisfy a_2(J)=0 already from its infinity and zero closures.
+* This rules out the previously tested candidate companions 6_1, 8_20,
+  9_42 and 9_46, whose a_2 values are -2, +2, -2, -2.
+* A nontrivial L-space knot, or its mirror, cannot be the companion. Its
+  Alexander polynomial has the form
+    (-1)^k + sum_(i=1)^k (-1)^(k-i)(t^n_i+t^-n_i),
+  where 0<n1<...<nk and k>=1. Thus
+    a_2=sum_(i=1)^k (-1)^(k-i)n_i^2 > 0:
+  pair adjacent terms starting from the largest; each difference of squares
+  is positive, and if k is odd the remaining n1^2 is positive as well.
+  The form and nontriviality follow from the L-space surgery knot Floer
+  theorem and genus detection, not merely from a lens-surgery assumption.
+* a_2=0 does not imply Delta=1, J=U, or impossibility of the formal tangle.
+  There are actual nontrivial strongly invertible knots with a_2=0.
+* No generic reduction from an arbitrary Jones-one knot to the stipulated
+  two-filling tangle has been established here.
+* We have not promoted higher ordinary Jones derivatives to higher cover
+  invariants. Such an extension would need an additional actual theorem.
+
+PRIMARY SOURCES
+
+Stavros Garoufalidis, Signatures of links and finite type invariants of cyclic
+branched covers, Contemporary Mathematics 231 (1999), Theorem 1.1,
+Remark 2.2, and Sections 3 and 4.1:
+https://arxiv.org/html/math/9811021
+https://people.mpim-bonn.mpg.de/stavros/publications/printed/signatures_of_links_and_finite_type_invariants_of_cyclic_branched_covers.pdf
+
+Joshua Greene and Liam Watson, Turaev torsion, definite 4-manifolds, and
+quasi-alternating knots, Theorem 13 and its explicit doubled normalization:
+https://arxiv.org/pdf/1106.5559
+
+Thomas Kerler, p-Modular TQFT's, Milnor torsion and the Casson-Lescop invariant,
+Geometry & Topology Monographs 4 (2002), Lemma 2, Equation (3), p.122:
+https://msp.org/gtm/2002/04/gtm-2002-04-009p.pdf
+
+Tye Lidman and Steven Sivek, Quasi-alternating links with small determinant,
+Equation (2.1), Casson surgery formula in the undoubled normalization:
+https://www.ma.imperial.ac.uk/~ssivek/papers/smalldeterminant.pdf
+
+Peter Ozsvath and Zoltan Szabo, On knot Floer homology and lens space surgeries,
+Theorem 1.2 and Corollary 1.3 (the Alexander-polynomial consequence):
+https://arxiv.org/abs/math/0303017

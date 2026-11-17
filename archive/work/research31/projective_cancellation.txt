@@ -1,0 +1,106 @@
+PROJECTIVE SPANNING-TREE CANCELLATION: MECHANISM AND OBSTRUCTIONS
+1 November 2026. Bounded research note; no Jones-unknot theorem claimed.
+
+Primary source: Boyle--Spyropoulos, Myopic Tutte polynomials and Khovanov
+homology in RP3, arXiv:2609.40122v1, Sections 1.1, 4, 5.2 and 6.
+https://arxiv.org/html/2609.40122v1
+
+1. What would complete the proposed route.
+
+The proposed inequality beta_Re(K) <= span V_K, with beta minimized over
+all RP2 diagrams of the classical local knot K, would imply detection:
+V_K=1 forces beta_Re(K)=0, and the zero-complexity bouquet classification
+has only the ordinary unknot with this Jones polynomial. Prior work also
+gives a bridge bound from bounded beta, so even a uniform beta bound on
+one complete Jones fiber would suffice by connected-sum amplification.
+Neither chain turns a skein smoothing into a knot-preserving isotopy.
+
+IMPORTANT UPDATE DURING THIS PASS: the independent lift/shading audit in
+projective_local_crossing_audit.txt proves beta_Re(K)=c(K) for classical
+local knots. Consequently the proposed span inequality fails on T(3,4).
+The discussion below remains useful to distinguish the algebraic and
+geometric mechanisms, but should NOT be presented as a still-supported
+route through that specific span inequality. This does not settle the
+Jones unknot-detection problem, or refute a generic whole-fiber crossing
+bound merely by refuting the particular numerical span bound.
+
+2. Exact tree cancellation is not a diagram simplification.
+
+The source's signed spanning-tree weights change under swapping the
+ordering of two oppositely signed edges. In some cases paired weights
+cancel; in others both weights remain unchanged (Lemma 4.3). This proves
+order independence of the polynomial. It supplies neither an isotopy nor
+a disk supporting a Reidemeister move. Similarly, Gaussian elimination
+in the tree chain complex need not come from a geometric simplification.
+
+Care with normalization: for a local diagram the two separate graph
+sums each equal the bracket, so their sum is twice the bracket. For a
+nonlocal diagram their sum equals the bracket (Proposition 4.4). Mixing
+these conventions can manufacture a false cancellation argument.
+
+The two kinds of edge signs have different jobs. Tait crossing signs
+record over/under data and enter tree weights. Holonomy signs record the
+orientation double cover of RP2 and enter the balanced-subgraph formula
+for beta. They must not be identified.
+
+3. A precise positivity normal form is too restrictive.
+
+Let G be the selected Tait graph. Give each edge weight 1 or 0 according
+to its Tait crossing sign. Then the positive-edge count p(T) is constant
+over all spanning trees exactly when this edge weight is constant on
+every connected component of the cycle matroid of G.
+
+Proof. If a matroid component is monochromatic, every basis takes its
+fixed rank worth of edges, so its contribution is constant. Conversely,
+equal basis weights imply that every allowed one-element basis exchange
+swaps equally weighted elements. Any two elements of one circuit can
+be exchanged in a suitable basis: extend the circuit minus one element
+to a basis. Circuit connectivity then forces constant weights in each
+matroid component. Loops and coloops are singleton components and impose
+no condition. This proves both directions.
+
+The source's tree grading v is the number of one chosen crossing sign
+in the tree. Its differential changes v by one, and constant v places
+the sector on one reduced-Khovanov diagonal. Therefore the normal form
+"all nonloop edges have one crossing sign; arbitrary signs only on
+projective loops" forces that sector to be thin. More generally the
+matroid condition above has the same consequence. For a classical local
+knot the surviving sector is its ordinary reduced homology.
+
+This cannot be universal: nonalternating torus knots, including T(3,4),
+are Khovanov-thick. Stošić proves the thickness statement in Khovanov
+homology of links and graphs, arXiv:math/0605579, and the thesis also
+discusses the torus-knot stability mechanism.
+https://arxiv.org/abs/math/0605579
+
+Thus a valid global mechanism must accommodate genuine variation of
+tree gradings and genuine cancellation; moving all difficult crossing
+signs into projective loops is not a general solution.
+
+4. A monotone classical cancellation-to-move rule is also false.
+
+Every classical shadow admits a descending crossing assignment giving
+the unknot. Its local Tait graph has alpha=0 and beta=c(D), regardless
+of those crossing choices. Hence fixed-diagram holonomy optimization
+cannot by itself bound beta(D) by Jones span.
+
+More strongly, a rule that always simplified an unknot through classical
+diagrams without increasing beta would be a crossing-monotone unknotting
+rule, because beta=c on those diagrams. Certified hard-unknot diagrams
+need at least three extra crossings in any such Reidemeister sequence:
+Burton et al., Hard Diagrams of the Unknot, arXiv:2104.14076.
+https://arxiv.org/pdf/2104.14076
+
+This statement is deliberately limited to classical diagram sequences.
+It does not itself rule out excursions through nonlocal RP2 diagrams.
+The separate lift/shading theorem now gives the stronger invariant-level
+obstruction for the specific proposed numerical beta bound.
+
+5. Strategic conclusion.
+
+The tree expansion supplies exact cancellations and a clean thinness
+criterion, but no general cancellation-to-isotopy theorem. The new
+local-knot identity beta_Re=c removes the hoped-for escape of lowering
+this particular complexity below classical crossing number. A weaker
+whole-Jones-fiber complexity theorem remains logically sufficient, but
+no new geometric bridge to it was obtained in this bounded pass.

@@ -1,0 +1,184 @@
+LOCALITY AND PROJECTIVE CROSSING COMPLEXITY
+1 November 2026. Research deduction; no priority claim.
+
+Main result, with independently audited parity step:
+For a classical knot K regarded as a local knot in RP3,
+                    beta_Re(K) = c_S3(K).
+Consequently bounded beta_Re gives bounded classical crossing number
+and finitely many classical knot types, not merely bounded bridge number.
+This is a statement about local knots. It does not identify beta_Im,
+and it is not proved here for links with several components.
+
+Definitions and source conventions are those of Boyle--Spyropoulos,
+Myopic Tutte polynomials and Khovanov homology in RP3,
+arXiv:2609.40122v1, Definition1.6 and Proposition4.4.
+https://arxiv.org/html/2609.40122v1
+For an embedded checkerboard graph G, alpha(G) is the minimum number
+of edges whose deletion makes G local, and beta(G)=e(G)-alpha(G).
+The prior signed-holonomy lemma identifies beta(G) with the maximum
+number of edges made positive by choosing lifts of its vertices to S2.
+
+1. The lift and the self-crossing lower bound.
+
+Take any generic RP2 diagram D of local K. Its lift to S2 is a diagram
+of K0 disjoint union K1, two copies of K exchanged by the antipodal
+deck map tau. It is a genuine S3 link diagram: the lifted interval
+bundle is S2 x I, embedded between two balls in S3. Locality implies
+the two copies are split, although splitness is not needed for the
+following crossing-count argument.
+
+Classify a crossing of D as self if its two lifts are self-crossings
+of K0 and K1, respectively, and mixed if both lifts are crossings
+between K0 and K1. If s(D) is the number of self crossings, deleting
+K1 from the lifted diagram leaves an S3 diagram of K0 with exactly
+s(D) crossings. Thus s(D) >= c_S3(K).
+
+2. A canonical shading makes all self edges positive.
+
+Orient K, and orient its two lifts compatibly with the covering.
+Let I be an integer winding-index function of the oriented immersed
+curve K0 on S2. Such a function exists and is unique up to a constant.
+Because tau reverses the orientation of S2 while preserving the
+orientations of the lifted knot curves, -I composed with tau is an
+index function for K1. Therefore
+                       J = I - I composed with tau
+is an integer index function for K0 union K1 and satisfies
+                       J composed with tau = -J.
+Its parity descends to a checkerboard coloring of D in RP2.
+Call the color J odd black, and let G_odd be its checkerboard graph.
+
+Write f=I mod2. On the black faces,
+                       f + f composed with tau = 1.
+Thus f chooses one lift of every black face/vertex. Across opposite
+black sectors at a self crossing, f changes by zero: a small path
+crosses either two arcs of K0 or no arcs of K0. At a mixed crossing
+it changes by one, since it crosses exactly one arc of K0.
+Consequently the holonomy switching associated to these vertex-lift
+choices makes every self edge positive and every mixed edge negative.
+The positive self edges therefore form a local subgraph. In particular
+                       beta(G_odd) >= s(D).
+
+The possibility that one black face meets both lift components does
+not obstruct the argument: f is constant on the entire lifted face,
+and its opposite value on the other lift is precisely the needed
+single vertex-sheet choice.
+
+3. Crucial sector identification: G_odd is G_Re.
+
+This step is needed; an unspecified favorable shading would not imply
+a bound for beta_Re, since the minima for the two sectors are separate.
+
+Perform oriented Seifert smoothing at every crossing of D, and do so
+equivariantly in its S2 lift. The local replacement of two oriented
+crossing arcs by the oriented smoothing preserves their integral
+boundary outside the small crossing disk. Their difference bounds
+an integral 2-chain in that disk. Thus the winding-index function
+extends across each smoothing, agrees outside the disks, and can be
+chosen equivariantly to remain antisymmetric under tau. Its parity
+extends the black/white shading to the smoothed diagram.
+
+All Seifert circles downstairs are contractible in RP2: there cannot
+be two disjoint essential simple curves, and exactly one essential
+circle would contradict the zero mod2 homology of the original knot.
+The complement of these circles has exactly one nonlocal region.
+Its lift is connected and tau-invariant. The smoothed integer index
+is constant on that lifted region and antisymmetric, hence is zero
+there. Therefore the odd-colored side N of the Seifert state is local:
+it does not contain the unique nonlocal complementary region.
+
+Here is the exact grading check translating that fact to the Re label.
+Let v be the number of vertices of G_odd, c=c(D), epsilon_e its Tait
+signs, and w the oriented writhe. A spanning-tree term has normalized
+A exponent, modulo4,
+                r_G = 2(v-1) - sum_e epsilon_e - 3w.
+This follows directly from the tree weights in the source: an internal
+positive edge contributes exponent1 mod4, an external positive edge
+contributes -1, and negative edges reverse these signs. For
+                m = #{e : epsilon_e differs from crossing sign},
+one obtains
+                        r_G/2 = v-1+m mod2.
+The Seifert-state black neighborhood N contains exactly the edges
+whose Tait and oriented signs agree, so chi(N)=v-c+m. If its boundary
+has q Seifert circles, oriented smoothing toggles component parity
+at every crossing, giving q=c+1 mod2. Hence
+                       r_G/2 = chi(N)+q mod2.
+A subsurface N of RP2 has chi(N)+number_of_boundary_components odd
+exactly when N contains the unique crosscap; otherwise this number
+is even. Since the black Seifert-state side N is local, r_G=0 mod4.
+Under t=A^(-4), its normalized tree expansion therefore has integral
+exponents: it is precisely the Re sector. The other graph, for a
+nonlocal connected diagram, has the opposite half-integral parity.
+
+This also explains why crossing signs do not affect this label:
+switching a crossing reverses both its Tait and writhe signs, leaving
+r_G unchanged mod4.
+
+For a geometrically local diagram, use the usual local Tait expansion;
+both source graph expansions compute the ordinary bracket, and its
+crossing count is already at least c_S3(K). No cellular duality of a
+local diagram with a Mobius complementary region is assumed.
+
+4. Minimize over diagrams.
+
+For every nonlocal projective diagram of local K, Sections1--3 give
+                     beta_Re(D) >= s(D) >= c_S3(K).
+For local diagrams the same bound follows from alpha=0. Conversely
+a crossing-minimal classical diagram in a disk has alpha=0 and
+beta_Re=c_S3(K). Taking the minimum proves the stated equality.
+
+5. Consequences and their exact scope.
+
+(a) Source Question5.4(1), with its first link the local unknot, has
+an affirmative answer for local K and epsilon=Re. No claim is made
+about the general connected-sum question or epsilon=Im.
+
+(b) Source Conjecture1.1(2), specialized to local knots, would imply
+span(V_K) >= c_S3(K). This is false for standard nonalternating knots.
+For example the conventional positive T(3,4) has crossing number8
+and Jones polynomial t^3+t^5-t^8, up to mirroring t -> t^(-1), whose
+span is5. The crossing number and polynomial can be verified by the
+standard torus-knot formulas; the parent is independently checking
+this explicit example before using it in the report.
+
+(c) A bounded beta_Re on one specified nonempty Jones fiber would now
+give a finite fiber of classical knot types. This remains an unproved
+global premise, and broad all-fiber finiteness is already contradicted
+by known infinite fixed-Jones families. The weaker one-fiber statement
+still implies unknot detection by connected-sum amplification. Thus
+the projective invariant does not presently provide a new route around
+the ordinary fixed-Jones crossing-complexity obstruction.
+
+(d) Independently of the sharper equality, the previously audited
+template proof yields b(K)<=12 beta_Re(K)+2 for nontrivial local K:
+at most6b+1 RP2 twist blocks lift to at most12b+2 S2 twist regions;
+Blair--Kjuchukova--Velazquez--Villanueva Cor1.4 gives b(L)<=2t(L),
+and b(K disjoint union K)=2b(K). Crossing-free trivial components
+must be handled separately in applying the twist bound. Therefore
+Question5.4(4)'s universal beta bound is false already on repeated
+connected sums of trefoils. This does not answer its separate alpha
+question.
+Primary bridge source:
+https://arxiv.org/html/1705.03108
+https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf
+
+6. Discarded weaker filling approach, retained as an audit warning.
+
+For a hyperbolic augmented RP3 twist-template exterior, sufficiently
+long simultaneous filling slopes produce irreducible hyperbolic
+exteriors, so they cannot give local knots, whose exteriors have an
+RP3 connected-summand. Thus local parameters lie in finitely many
+coordinate slices with at least one bounded slope. This observation
+alone does NOT prove finiteness: an exceptional partial filling can
+create a persistent reducing sphere, after which surviving twist
+circles on the classical side can vary indefinitely. Nor can one
+silently apply a reducible-filling estimate with a no-lens-summand
+hypothesis: the local exterior already has an RP3 lens summand.
+The direct index/shading proof above avoids these difficulties.
+
+Audit status. The canonical spin construction, sector residue formula,
+Seifert-state parity, and index preservation were communicated to the
+parent and homology agent during this pass. Homology independently
+checked the grading and crosscap-parity steps. The equality is a
+research deduction to be presented with its proof, not an established
+published theorem or a novelty claim. It is not a solution of the
+Jones unknot-detection problem.

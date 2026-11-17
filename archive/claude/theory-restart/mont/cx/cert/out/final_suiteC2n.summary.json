@@ -1,0 +1,48 @@
+{
+ "label": "C2n_nontrivial_64",
+ "count": 100,
+ "status": {
+  "CERTIFIED_NONTRIVIAL": 100
+ },
+ "certificate_kinds": {
+  "rep": 100
+ },
+ "tietze_success": 0,
+ "V_K=1": 0,
+ "Delta=1": 0,
+ "rep_groups": {
+  "Aff(F_7)": 15,
+  "Aff(F_23)": 6,
+  "Aff(F_3)": 23,
+  "Aff(F_17)": 4,
+  "Aff(F_5)": 23,
+  "Aff(F_13)": 8,
+  "Aff(F_11)": 15,
+  "Aff(F_19)": 6
+ },
+ "crossings_min_max": [
+  64,
+  64
+ ],
+ "secs_median_max_total": [
+  0.968,
+  1.121,
+  97.0
+ ],
+ "by_crossings_bucket4": {
+  "64": {
+   "count": 100,
+   "unknot": 0,
+   "nontrivial": 100,
+   "unresolved": 0,
+   "median_s": 0.968,
+   "max_s": 1.121
+  }
+ },
+ "wall": 19.7,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

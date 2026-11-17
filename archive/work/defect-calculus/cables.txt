@@ -1,0 +1,191 @@
+EXPLICIT (2,q) CABLE DEFECT CALCULUS
+2026-11-02, defect_wh_gate, bounded task (e).
+
+SUMMARY
+
+For the explicit inherited quotient shell below, the normalized multiplier
+is nonzero and divides the torus-core defect for every odd q. However the
+required cancellation target violates x_J(1)=0 unless q=+1 or -1.
+Consequently this standard shell has no flat output for |q|>1, and for
+q=+/-1 its output is flat iff the input is flat.
+
+This is an exact all-odd-q algebraic deduction from a written shell,
+not a fit to a finite list. Its ordinary topological content is a linking-
+number obstruction in the longitude branch link. No novelty claim.
+The cable-space identification and inherited-inversion scope are stated
+separately below; no claim for arbitrary axes or p>2 is made.
+
+1. Actual single-input shell and conventions
+
+Write I_n for integer tangle n, R for quarter-turn (slope z -> -1/z),
+and '+' for horizontal tangle composition. In the archive's TL2 convention,
+I_1=A^-1 Q0+A Qinf and delta=-A^2-A^-2.
+
+For odd q, let m=(q-1)/2 and define the actual geometric shell
+
+ C_q(T) = R( I_-1 + Q_(1/2) + R( I_-2 + R( I_m + T ))) + I_(-2q).
+
+All operations are actual tangle composition/rotation, so this gives a
+single linear map on the relative skein module for arbitrary T. It is not
+defined by interpolation on rational inputs.
+
+On input I_n, the inner rational tangle has slope
+ R(-2+R(m+n))=(m+n)/(2(m+n)+1)
+                    =(q+2n-1)/(2q+4n).
+Consequently its output is, up to harmless framing curls,
+
+ Y_n = R( I_-1 + Q_(1/2) + Q_((q+2n-1)/(2q+4n)) ) + I_(-2q).
+
+For n=0 this is the marked torus quotient T_q. For general n it is the
+preferred quotient T_(q+2n) with an extra +4n outer integer twist. Thus the
+output longitude shear is included; it has not been dropped by substituting
+an unmarked torus quotient into the affine formula. This identity fixes
+the input as I_n, not I_-n, in these algebra conventions.
+
+Geometric identification: the Montesinos shell with one fixed rational
+summand Q_(1/2) has branched cover Seifert fibered over an annulus with one
+order-two exceptional fiber. The surrounding integer twists/rotations
+specify its two boundary markings. Its Q0 filling is the T(2,q) exterior,
+and the final -2q shift makes the output longitude preferred; the regular
+fiber is slope 2q in those coordinates. This identifies the marked standard
+(2,q) cable space and its inherited quotient action. This geometric
+identification is TRUSTED pending the parent's independent check against
+the standard cabling quotient construction (Marian 2025 was located by
+the parent). The explicit shell itself is completely defined above.
+
+2. Exact normalized matrix
+
+Use meridian f_inf=(1,delta), longitude f_0=(delta,1), and the archive's
+v_x=Qinf-delta Q0, so [T]/f_inf(T)=Q0+x(T)v_x. Claude's w=-x for the
+opposite kernel generator.
+
+For a tangle B=aQ0+bQinf, horizontal addition has matrix
+  L_B=[[a,0],[b,a+delta*b]].
+For integer tangles a_n=A^-n and
+  b_n=(( -A^3)^n-A^-n)/delta,
+an integral Laurent polynomial. Let S=[[0,1],[1,0]]. The shell matrix is
+
+  M_q=L_(-2q) S L_-1 L_(Q1/2) S L_-2 S L_m.
+
+This written matrix product provides a direct symbolic verification for
+all odd q. Multiplying its meridional row gives
+  f_inf M_q=u_q f_inf,
+  u_q=(-1)^((q+1)/2) A^(-9(q+1)/2).
+
+Let x_q=x(T_q) and s=(-1)^((q-1)/2). In basis (Q0,v_x), normalization by
+this SAME u_q on both columns gives
+
+  Mhat_q=[[1,0],[x_q,d_q]],
+  d_q=s A^(6(q-1)) (1-A^4)(1+A^8).
+
+Equivalently, in (Q0,Qinf),
+  Mhat_q=[[1-delta*x_q, delta*(1-d_q)-delta^2*x_q],
+          [x_q,         d_q+delta*x_q]].
+
+The determinant calculation is short: det L_n=(-A^2)^n, det S=-1,
+and det L_(Q1/2)=A^-8(1-A^4)(1+A^8). Dividing det M_q by u_q^2 gives
+the displayed d_q. In particular d_q is nonzero. At zeta=exp(pi*i/4),
+  d_q(zeta)=4,
+matching winding number squared. At A=1, d_q has a simple zero with
+  d_q'(1)=-8s.
+
+The exact affine law is
+  x(C_q(J))=x_q+d_q*x(J).
+All quantities here share one fixed normalization. There are no independent
+unit ambiguities between the two summands.
+
+3. Divisibility holds; the target fails a basic value test
+
+Put r_q=x_q/d_q. For every odd q it is a Laurent polynomial. An all-q
+proof comes from the rational-probe relation above and the normalized
+integer-twist action
+  x(T+I_k)=(1-(-A^-4)^k)/delta+(-A^-4)^k*x(T).
+Since x(I_1)=-A^-2, this gives
+
+  r_1=0,
+  r_(q+2)=-A^4*r_q+A^2+s*A^(-6q-4),
+  s=(-1)^((q-1)/2).
+
+This recurrence propagates Laurent integrality in both directions, because
+-A^4 is a unit. It also gives r_-1=0. Thus d_q divides x_q for ALL odd q;
+failure of polynomial divisibility is not the obstruction in this family.
+
+At A=1, solve the recurrence to obtain
+  r_q(1)=(1-s*q)/2.
+Cancellation would require the exact target
+  x(J)=-r_q,
+whose value at A=1 is (s*q-1)/2.
+
+For EVERY actual preferred strongly invertible quotient J,
+  x(J)(1)=0.
+Indeed its preferred longitude closure has two components, and its
+compatible normalized Jones polynomial has value -2 at t=1; delta(1)=-2
+while 1-delta(1)^2=-3 is nonzero. This uses only the elementary value of
+Jones at 1 and the actual meridian/longitude normalization, not the full
+universal-F claim in (a).
+
+Therefore the cancellation target is impossible unless q=s, i.e. q=+/-1.
+For q=+/-1 the torus core is U and x_q=0, while d_q is nonzero. Hence
+  x(C_(2,+/-1)(J))=0 iff x(J)=0
+for the explicit inherited quotient construction.
+
+For |q|>1 the output cannot be flat, regardless of the companion. There
+is consequently no need to search a twist-knot or double-twist family for
+these targets: they fail a necessary condition for every actual companion.
+
+4. Concrete tests requested by Claude
+
+ q     r_q(1)    target x_J(1)    a2(T_(2,q))   required a2(J)
+ 1        0           0               0               0
+ 3        2          -2               1            -1/4
+ 5       -2           2               3            -3/4
+15        8          -8              28              -7
+17       -8           8              36              -9
+
+All five divisions have zero Laurent remainder. The q=15 and q=17 cases
+pass the integer a2 screen but fail the A=1 target test.
+For q=3, explicitly,
+  r_3=A^-10(1+A^12),
+  target x_J=-A^-10(1+A^12).
+For q=5,
+  r_5=-A^-22-A^-6+A^2-A^6.
+The script prints the exact longer targets for q=15 and q=17 as well.
+
+The screen a2(T_(2,q))+4a2(J)=0 uses a2(T_(2,q))=(q^2-1)/8. It therefore
+requires q^2=1 mod32, equivalently odd q=+/-1 mod16, as Claude stated.
+It is strictly weaker than the quotient-geometry obstruction above.
+
+5. Interpretation as ordinary linking number
+
+The normalized preferred longitude Jones polynomial satisfies
+  V_L(A^-4)=delta+(1-delta^2)x.
+At A=1, delta'=0 and x(1)=0, so differentiation and V'_L(1)=-3lk(L)
+give
+  x'(1)=-4lk(L).
+
+Because d_q(1)=x(J)(1)=0, the companion term contributes no first
+derivative. The preceding recurrence gives
+  x_q'(1)=4(q-s).
+Thus the preferred longitude branch link of the explicit cable quotient
+has lk=s-q, independently of J, in the compatible orientation. In
+orientation-independent form, its absolute linking number is |q-s|.
+For |q|>1 this is nonzero, so its Jones polynomial cannot be that of U2.
+This explains the obstruction without suggesting a new deep Jones theorem.
+
+6. Validation and limits
+
+work/defect-calculus/cable_models.py computes the shell itself on both
+basis vectors. It checks the exact meridian-functional identity, compares
+normalized rational probes n=-2,-1,0,1,2, verifies d_q, determinant-root
+value, exact divisions and the targets above, including q=-1,-3.
+Different continued-fraction presentations can differ by framing curls;
+the probe comparisons correctly divide by the actual meridian bracket.
+An initial raw framed equality test failed for that reason and was replaced
+by the appropriate normalized comparison. No geometric conclusion was
+drawn from that failed raw equality.
+
+The all-q claims follow from the displayed matrix product and recurrence,
+not enumeration. The assertion about arbitrary companion input refers to
+this single explicit shell with compatible inherited inversion. A theorem
+that all strongly inverted two-cables use this shell is not supplied here.
+No conclusion for p>2 or all satellite JSJ pieces is claimed.

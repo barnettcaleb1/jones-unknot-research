@@ -1,0 +1,11 @@
+2-cable of l1.l2.x0.y1.x0.y1.u2.u1 : l2.l3.l4.l5.x1.x0.x2.x1.y3.y2.y4.y3.x1.x0.x2.x1.y3.y2.y4.y3.u5.u4.u3.u2
+double of 41: crossings 16 (mixed 8), lk=0, n+=8 n-=8, pointed gens 185585, d^2=0 True
+   E_1 = H(X1X2 C, d0), by (h,q): (-8,-14):1 (-7,-12):1 (-5,-10):1 (-4,-8):2 (-3,-6):2 (-2,-6):1 (-2,-4):1 (-1,-4):2 (0,-2):3 (1,0):2 (2,0):1 (2,2):1 (3,2):2 (4,4):2 (5,6):1 (7,8):1 (8,10):1  dim 25
+   H(X1X2 C, d0+d1) by l: -2:1 -1:2 0:3 1:4 2:5 3:4 4:3 5:2 6:1  dim 25
+   component 0 alone: 4 crossings, Kh~ (q shifted by -1) = (-2,-5):1 (-1,-3):1 (0,-1):1 (1,1):1 (2,3):1
+   component 1 alone: 4 crossings, Kh~ (q shifted by -1) = (-2,-5):1 (-1,-3):1 (0,-1):1 (1,1):1 (2,3):1
+   Kh~(L1) (x) Kh~(L2) by l: -2:1 -1:2 0:3 1:4 2:5 3:4 4:3 5:2 6:1  dim 25   => total homology is a shift of it: True (shift 0; 2 lk = 0)
+   E_1 by (h,q): (-8,-14):1 (-7,-12):1 (-5,-10):1 (-4,-8):2 (-3,-6):2 (-2,-6):1 (-2,-4):1 (-1,-4):2 (0,-2):3 (1,0):2 (2,0):1 (2,2):1 (3,2):2 (4,4):2 (5,6):1 (7,8):1 (8,10):1   dim 25
+   E_infinity by (h,q): (-8,-14):1 (-7,-12):1 (-5,-10):1 (-4,-8):2 (-3,-6):2 (-2,-6):1 (-2,-4):1 (-1,-4):2 (0,-2):3 (1,0):2 (2,0):1 (2,2):1 (3,2):2 (4,4):2 (5,6):1 (7,8):1 (8,10):1   dim 25;   pages needed: collapse at E_1
+   nonzero higher differentials by page (bidegree (1-2k,-2k) asserted): {}  time 12.1s
+python3 t_double.py 41  10.00s user 0.22s system 83% cpu 12.267 total

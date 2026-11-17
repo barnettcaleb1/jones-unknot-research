@@ -1,0 +1,63 @@
+PROOF11 TANGLE AUDIT — 31 October 2026
+Status: checked deductions and countertests; no generic Jones-unknot proof.
+
+1. What can be repaired in the machine argument
+
+Authoritative sources: work/source/main_machines_21_06_26_final.tex, especially Proposition prop:clasping-twist-machines (G1--G4), and work/jones-audit/main.tex. The previous explicit contradiction invalidates the simultaneous controlled-cap/collapse claims, not the elementary downstream skein algebra by itself. It does not isolate G2 alone.
+
+A valid replacement is a bounded number of exponential channels, not bounded degree. In the standard convention t^{-1}V_+ - t V_- = (t^{1/2}-t^{-1/2})V_0, an antiparallel full-twist family, with the parameter direction chosen appropriately, satisfies
+  V_{n+1}=t^2 V_n+t^{1/2}(t-1)V_H,
+where H is its common oriented smoothing. Consequently
+  V_n=F+Gt^{2n},
+  F=-t^{1/2}V_H/(1+t), G=V_0-F.
+If V_0=1 then
+  (1+t)(V_n-1)=(1+t+t^{1/2}V_H)(t^{2n}-1).
+Thus one unit-Jones sample does not kill the second channel. Two distinct unit-Jones samples kill it identically. A coordinate-axis unit-Jones locus is empty, a singleton, or all integers. The entire family has Jones polynomial 1 precisely when the smoothing has the two-component unlink's Jones polynomial.
+
+Countertest to a one-anchor shortcut: a standard twist-knot family has an actual unknot at n=0 and a trefoil with V_1=t+t^3-t^4 at n=1. Here V_H=-t^{1/2}-t^{5/2}, F=t(1+t^2)/(1+t), G=(1-t^3)/(1+t), so the uncontrolled mode is explicitly nonzero despite an actual unknot anchor. This does not address an additional minimum-diagram hypothesis, which would require a separate geometric theorem.
+
+2. A strengthened geometric certificate on a coordinate axis
+
+For an antiparallel family, two distinct ACTUAL unknot samples suffice to prove every member is an unknot. The skein calculation first makes every Jones polynomial 1. The double cover of the fixed exterior tangle has two S^3 fillings. Regard the first as the meridional filling of a knot exterior in S^3. The theorem excluding nonmeridional S^3 surgery implies the exterior is a solid torus; equivalently the tangle is rational. All remaining members are two-bridge knots and have determinant 1, hence are unknots. No inference from Jones=1 to unknot is used.
+
+3. Three actual unknot samples are NOT a certificate on an arbitrary coupled line
+
+Put a=sigma_1,b=sigma_2 in B_3 and [x,y]=xyx^{-1}y^{-1}. Set
+  beta(n)=[a^{2n},[b^{2(n-1)},a^{2(n-2)}]] ab.
+This is a fixed template with affine integer full-twist parameters. The commutator is pure and ab induces a 3-cycle, so every closure is a knot. At n=0,1,2 a commutator entry is the identity, and the whole commutator freely reduces to the identity. These three closures are therefore actual unknots. For every n>=3 the closure is nontrivial, because
+  det K_n=|1+8n(n-1)(n-2)[8(n-1)^2(n-2)+6n-8]|>1.
+For example det K_3=2017, det K_4=30721. Exact full Jones polynomials were computed for n=0,...,4 and independently agreed with Spherogram/Regina on the actual braid diagrams. The n=3 and n=4 Jones spans are 20 and 32.
+
+Hand verification of the all-n determinant formula:
+At t=-1 use reduced Burau U(x)=[[1,x],[0,1]], L(y)=[[1,0],[-y,1]]. For H=[L(y),U(z)], its first column is (a,c)^T with a=1+yz,c=-y^2z. Direct multiplication gives
+  tr([U(x),H]U(1)L(1))=1+x(a^2-1+c^2-ac)+ax^2c.
+The B_3 Alexander closure formula has denominator 1+t+t^2=1 at t=-1, giving determinant |2-tr|. Hence
+  2-tr=1+xyz[-(2+y)-yz(1+y+y^2)+xy(1+yz)].
+Set x=2n,y=2(n-1),z=2(n-2). The expression in square brackets becomes
+  -2+3y+y^2z=8(n-1)^2(n-2)+6n-8.
+This proves the displayed formula symbolically, without a bound on n.
+
+Reproducible files: coupled_sampling.py/.json and coupled_determinant.py/.json in this directory. The latter also verifies 201 integer matrix evaluations and five independent Jones determinant values.
+
+Scope: this refutes extending the coordinate-axis three-sample certificate to arbitrary coupled lines by sampling alone. It does NOT refute a proposed theorem that additionally assumes the entire coupled line is Jones-flat; this family is not Jones-flat. Any valid multidimensional proof must control its actual lattice-generating transformations geometrically, not merely sample several lattice points.
+
+4. Positive geometric route: a constrained split-link question
+
+If the common smoothing H is split and a band on H produces an actual unknot, Scharlemann's band-sum theorem says that the band sum is a connected sum of unknots; in particular H is the two-component unlink and the band is trivial in the required sense. Twisting this band leaves the unknot. This supplies a genuine geometric certificate for an unknot-anchored Jones-flat family when splitness is independently known.
+
+Primary source used: Scott A. Taylor, Boring split links, Pacific J. Math. 241 (2009), 127--167, printed p.129, which states Scharlemann's band-sum theorem; also its Theorem 7.3 gives rational-tangle replacement obstructions for split closures.
+  https://msp.org/pjm/2009/241-1/pjm-v241-n1-p04-s.pdf
+
+A precise missing lemma would be:
+  If H has two components, V_H=-(t^{1/2}+t^{-1/2}), and an oriented band on H yields an actual unknot, then H is split.
+It is not established here. This is a restricted banded-link problem, rather than unrestricted Jones-unlink detection (which fails for links). Solving it would settle the one-unknot-anchored antiparallel flat-family case, not automatically all knots.
+
+5. Multicurve route: useful structure, but an unproved Euler-characteristic step
+
+Kotelskiy--Lidman--Moore--Watson--Zibrowius, Cosmetic operations and Khovanov multicurves, Math. Ann. 389 (2024), Section 4:
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/
+An actual unknot infinity-closure restricts the tangle multicurve to one rational component r_1(s), s even, plus special components of slope infinity. Section 4 proves s=0 under equality of TOTAL Khovanov dimensions of the relevant fillings. Equality of Jones polynomials does not give that premise. It subsequently distinguishes actual homology groups by their quantum gradings; nonzero homology can have zero graded Euler characteristic.
+
+Therefore a proposed one-special-component Jones-flat theorem still needs two checks: nonzero Euler contribution of that component, and exclusion of cancellation against the rational r_1(s) contribution when s is nonzero. An honest smaller target fixes s=0 and explicitly computes the special-component Euler polynomial. No such noncancellation calculation is claimed proved in this note. The paper's actual splitness-detection theorem uses full homology, not only its Euler characteristic.
+
+Novelty: no priority claim for these deductions or the braid counterexample. The main research contribution of this pass is identifying valid certificates and exact failure modes, not solving Jones unknot detection.

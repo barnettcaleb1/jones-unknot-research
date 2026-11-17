@@ -1,0 +1,140 @@
+PASS 45: IMMERSED CURVES, FULL JONES CONTRIBUTIONS, AND REALIZABILITY
+2026-11-01. Bounded audit; no generic unknot-detection theorem is claimed.
+
+1. Exact full chain and conventions
+-----------------------------------
+Use a pointed Conway tangle (two arcs in B^3, four boundary ends, a distinguished
+end). Over F_2, its reduced Khovanov invariant is a bigraded multicurve in the
+four-punctured sphere. Its components are rational curves r_n(s) or special
+curves s_(2n)(s), with slopes in Q union infinity, and the specified rank-one
+local systems. This component classification is NOT a classification of which
+collections with which relative grading shifts arise from actual tangles.
+
+For a rational filling Q, use its reduced BN arc a(Q), reflected by the gluing
+map. The gluing theorem identifies
+
+       Kh_red(T union Q; F_2) = HF(m(a(Q)), Kh_tilde(T)).
+
+This is the full bigraded pairing, not merely an ungraded intersection count.
+Write h for homological degree and j for the ordinary integral quantum degree.
+Its graded Euler sum is sum(-1)^h Q^j dim, giving the normalized Jones polynomial
+after the usual variable/sign convention. The delta convention in KWZ2022 is
+delta=j/2-h; this differs by a sign and factor from some other papers.
+
+If the relevant pairing has total dimension one, then rational reduced Kh also
+has rank one and Kronheimer--Mrowka implies that the knot is U. A theorem saying
+that a Jones-one rational closure of ANY actual Conway tangle has only one Floer
+generator would therefore prove the conjecture. Conversely every knot admits
+such a decomposition (take a crossing ball), so that assertion is equivalent to
+the conjecture when stated without further geometric restrictions. The useful
+question is what additional, proved realizability condition supplies it.
+
+Primary sources:
+KWZ, Immersed curves in Khovanov homology, gluing theorem:
+https://arxiv.org/abs/1910.14584
+KWZ, Khovanov homology and strong inversions, equation(1), printed p.228:
+https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+KLMWZ, Cosmetic operations and Khovanov multicurves, Theorems2.5--2.6:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/
+The 2026 preprint extends geography to every field; it remains a preprint:
+https://arxiv.org/abs/2602.23442
+
+2. A special component is NOT invisible to every full Jones pairing
+-----------------------------------------------------------------
+The published KWZ2022 Lemma2.5, p.231, supplies an exact counterexample to
+that tempting claim. For the special curve s_(4n)(infinity), n>=1, its pairing
+with a(0) has graded Euler polynomial, up to one signed quantum monomial,
+
+ E_n(Q)=Q^(-4n-1)(1+Q^4)(1-Q^6) sum_{i=0}^{n-1} Q^(8i).
+
+This is nonzero. For n=1 the four bigrades are
+  (h,j)=(-2,-5),(0,-1),(1,1),(3,5),
+so E_1=Q^-5+Q^-1-Q-Q^5. Every class has delta=-1/2.
+
+Three different operations must be distinguished:
+  * Full quantum Euler polynomial: E_n(Q) is nonzero.
+  * Forget the quantum grading: E_n(1)=0.
+  * Determinant specialization: E_n(i)=-4ni, so its magnitude is4n.
+Thus even the delta-thin determinant contribution is nonzero. It is incorrect
+to describe the ordinary Euler cancellation at Q=1 as vanishing of the
+delta-Euler characteristic. Pairing a rational arc of the SAME slope with the
+special curve can instead be geometrically disjoint and have zero Floer
+homology; this does not say that other rational fillings are invisible.
+
+The formula covers the published length4n convention. Do not silently replace
+it by a theorem that every actual special curve has length divisible by four:
+that divisibility was conjectural in the cited 2022 source. The general
+geography theorem has s_(2n), not automatically s_(4n).
+
+3. What actual geometry already refutes, and what remains unrealized
+-------------------------------------------------------------------
+An unknot infinity closure does NOT force quantum-parity purity of the special
+sector. Watson's actual strong-inversion quotient of the figure-eight knot has
+two quantum grades containing both homological parities. Its special-sector
+Euler polynomial is nevertheless nonzero. This was checked directly from his
+Section7, printed p.27, in work/proof12/homology/multicurve_findings.txt:
+https://arxiv.org/pdf/1311.1085
+
+The prior one-special obstruction is more substantial: with one r_1 component
+and exactly one standard s_(4n)(infinity), an actual unknot anchor plus a
+Jones-unlink longitude filling is excluded by the reduced BN spectral sequence.
+Its proof used the precise sector supports and an unavoidable top class, not
+positivity of all intersections. Scope and independent audits are recorded in
+work/proof12/homology/one_special_bn_obstruction.txt. It is not a published
+generic theorem and does not cover arbitrary special components or arbitrary
+knots.
+
+The general obstruction is still missing. Four shifted special copies have
+Euler multiplier 1-Q^2-1+Q^2=0 under EVERY rational pairing. Our prior formal
+object was lifted through the BN cone, the full specified A-infinity extension,
+integral signs, and all rational pairing functors. That is recorded in
+work/proof13/homology/algebraic_realization.txt. It is NOT a classical tangle.
+Realizing its exact grading data by a classical diagram would produce a
+Jones-one nontrivial knot: one rational closure has Jones polynomial one but
+pairing rank17. Its infinity closure has rank one and would be the actual
+unknot. Hence calling this model 'realizable by geography' would assume the
+very missing geometric step. The checked primary sources provide neither
+this realization nor an exclusion theorem for it.
+
+4. A separate ACTUAL all-rational-filling test of stronger rigidity
+------------------------------------------------------------------
+There is a simple construction showing that even the WHOLE skein pair of an
+actual tangle cannot generally recover its graded curves.
+
+Take the rational zero tangle and tie a zero-framed local knot J into one of
+its arcs. Call the resulting actual tangle T_J. In the normalized skein module,
+
+                  [T_J]=V_J(A^-4)[0].
+
+For every rational closure, the resulting link is the corresponding rational
+closure of[0], with J locally connected-summed into its designated component.
+Its Jones polynomial is the corresponding rational-link polynomial times V_J.
+Thus whenever V_J=V_K, T_J and T_K have the SAME entire bracket pair and the
+same Jones polynomial for EVERY rational filling.
+
+Use the established actual pair5_1 and the appropriate chirality of10_132.
+Their reduced rational Kh ranks are5 and11. A rational cap closing[0] to one
+circle closes T_J and T_K to precisely J and K, so their graded multicurve
+invariants cannot agree in a theory recovering those homologies. The same
+distinction holds overF_2 for this pair (unreduced rational ranks6,12 and
+respectively2,5 integral Z/2 summands give reducedF_2 ranks5,11).
+This is an actual geometric test, not a formal direct-sum object or a search.
+It rules out 'same all-filling Jones data implies same curves.'
+
+The local-knot construction does NOT have an unknot anchor: the indicated
+cap closes to J or K. It therefore does not refute the narrower unit-fiber
+or anchored-realizability conjecture. The ordinary Jones coincidence and
+unreduced Kh distinction are in Bar-Natan's original Examples21--23:
+https://www.math.toronto.edu/~drorbn/papers/Categorification/Categorification.pdf
+The retained reduced/integral data and conventions were previously checked in
+work/research27/homology_global.txt; no new table scan is used here.
+
+5. Assessment and stop condition
+--------------------------------
+There is real geometric information here: per-component shapes, exact graded
+pairings, and restricted realizability obstructions. There is no justified
+step from a unit Jones pairing to a single Floer generator in general. The
+classification does not control the relative shifts of distinct components,
+and the algebraic extension conditions already tested do not eliminate the
+four-special cancellation. Further work on this route should require a new
+classical-realization theorem, rather than another objectwise algebra check.

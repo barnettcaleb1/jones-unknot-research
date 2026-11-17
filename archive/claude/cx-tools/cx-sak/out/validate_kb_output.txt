@@ -1,0 +1,17 @@
+10_132  writhe  -4  maxstates    4  V=-t^-7 + t^-6 - t^-5 + t^-4 + t^-2  OK
+3_1     writhe  -3  maxstates    2  V=-t^-4 + t^-3 + t^-1  OK
+4_1     writhe   0  maxstates    2  V=t^-2 - t^-1 + 1 - t + t^2  OK
+5_1     writhe  -5  maxstates    2  V=-t^-7 + t^-6 - t^-5 + t^-4 + t^-2  OK
+5_2     writhe  -5  maxstates    2  V=-t^-6 + t^-5 - t^-4 + 2*t^-3 - t^-2 + t^-1  OK
+6_1     writhe  -2  maxstates    2  V=t^-4 - t^-3 + t^-2 - 2*t^-1 + 2 - t + t^2  OK
+7_2     writhe  -7  maxstates    2  V=-t^-8 + t^-7 - t^-6 + 2*t^-5 - 2*t^-4 + 2*t^-3 - t^-2 + t^-1  OK
+7_4     writhe   7  maxstates    2  V=t - 2*t^2 + 3*t^3 - 2*t^4 + 3*t^5 - 2*t^6 + t^7 - t^8  OK
+8_1     writhe  -4  maxstates    2  V=t^-6 - t^-5 + t^-4 - 2*t^-3 + 2*t^-2 - 2*t^-1 + 2 - t + t^2  OK
+8_19    writhe   8  maxstates    5  V=t^3 + t^5 - t^8  OK
+K11n42  writhe  -1  maxstates    5  V=t^-6 - 2*t^-5 + 2*t^-4 - 2*t^-3 + t^-2 + 2*t - 2*t^2 + 2*t^3 - t^4  OK
+L2a1    writhe  -2  maxstates    2  V=-t^(-5/2) - t^(-1/2)  OK
+Hopf: crossings 2 lk -1.0 writhe -2 V = -t^(-5/2) - t^(-1/2)
+Hopf mirror: lk 1.0 V = -t^(1/2) - t^(5/2)
+2-unlink: crossings 2 lk 0.0 V = -t^(-1/2) - t^(1/2)
+torus(2,3): crossings 3 writhe -3 V = -t^-4 + t^-3 + t^-1
+ALL OK

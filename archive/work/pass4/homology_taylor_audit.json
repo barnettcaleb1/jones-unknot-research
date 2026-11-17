@@ -1,0 +1,37 @@
+{
+  "Fa_first_A_log_moment": {
+    "m^0_l^0_n^0": -16,
+    "m^0_l^1_n^0": -16,
+    "m^1_l^0_n^0": -16
+  },
+  "parameterization": {
+    "p": "320r^2+32r-1",
+    "q": "-320r^2+32r+1",
+    "n": "800r^3-7r"
+  },
+  "G2_on_parameter_family": {},
+  "determinant_signed_core_on_family": 1,
+  "G3_on_parameter_family": {
+    "3": 2370048,
+    "1": 2496,
+    "5": -169574400,
+    "7": 2949120000
+  },
+  "required_log_second_derivative_H3": {
+    "2": "6172/3",
+    "0": "13/6",
+    "4": "-147200",
+    "6": "2560000"
+  },
+  "six_times_required_H3_second_derivative": {
+    "2": 12344,
+    "0": 13,
+    "4": -883200,
+    "6": 15360000
+  },
+  "numerator_always_odd": true,
+  "G3_at_p_minus1_q1": {
+    "1": -576
+  },
+  "conclusion": "Jones one for any companion requires p=-1,q=1,n=0; then reduced color-three Jones of the companion must be one."
+}

@@ -1,0 +1,50 @@
+{
+  "odd_closure_formal_J": {
+    "-11": 1,
+    "-9": -1,
+    "-8": 1,
+    "-6": -1,
+    "-5": 1,
+    "-3": -1,
+    "-2": 1
+  },
+  "odd_closure_divisibility_witness": {
+    "-10": 1,
+    "-9": -2,
+    "-8": 2,
+    "-7": -1,
+    "-4": 1,
+    "-3": -2,
+    "-2": 2,
+    "-1": -1
+  },
+  "odd_closure_value": 1,
+  "warning": "Formal algebra counterexample to an implication; no tangle realization claimed.",
+  "pretzel_2_3_5_raw_J": {
+    "-6": 1,
+    "-5": -2,
+    "-4": 2,
+    "-3": 1,
+    "-2": -4,
+    "-1": 5,
+    "0": -2,
+    "1": -1,
+    "2": 3,
+    "3": -3,
+    "4": 1
+  },
+  "pretzel_2_3_5_preferred_J": {
+    "-18": 1,
+    "-17": -2,
+    "-16": 2,
+    "-15": 1,
+    "-14": -4,
+    "-13": 5,
+    "-12": -2,
+    "-11": -1,
+    "-10": 3,
+    "-9": -3,
+    "-8": 1
+  },
+  "pretzel_a2_from_banked_moment_identity": 0
+}

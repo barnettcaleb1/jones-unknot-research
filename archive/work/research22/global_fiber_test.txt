@@ -1,0 +1,192 @@
+PASS 22: GLOBAL JONES-FIBER FALSIFICATION TEST
+Date: 2026-11-01 UTC. Bounded primary-source check; no completeness claim.
+
+1. RESULT AND BOUNDARY
+
+No certified classical non-nugatory Jones-preserving crossing change,
+or infinite exact-Jones knot fiber with unbounded rational reduced Kh
+rank/quantum diameter, was located in this pass. This is a report of the
+bounded search, not a claim that no such example is known.
+
+The strongest useful outcome is an exact local replacement target:
+single-coordinate vanishing in the classical two-tangle skein module
+would have to detect a geometric separating disk. This is a more
+specific geometric problem than whole-fiber compactness, but remains
+unproved. Section4 gives a new scoped consequence using existing Wang
+theorems: Jones-flat non-nugatory twist orbits have only finitely many
+members whose rational reduced Kh has no Euler cancellation. In the
+split-smoothing case, there are no such members at all.
+
+2. WHY THE MUTATION SEARCH DID NOT GIVE A COUNTEREXAMPLE
+
+Conway mutation: Kotelskiy--Watson--Zibrowius,
+On mutation invariance in Khovanov homology, arXiv2602.23442v1,
+https://arxiv.org/pdf/2602.23442 , TheoremA and its knot corollary,
+state bigraded reduced Kh invariance over every field. Thus, subject to
+this 2026 preprint's theorem, an orbit of ordinary Conway mutations
+preserves both quantities under examination. The theorem was read,
+not independently reproved here. Older rational-coefficient mutant-LINK
+counterexamples need not preserve components and do not contradict it.
+
+Genus-two mutation: Dunfield--Garoufalidis--Shumakovitch--Thistlethwaite,
+https://people.mpim-bonn.mpg.de/stavros/publications/mutation.pdf ,
+give actual equal-colored-Jones pairs with different Kh. This refutes
+determination, not boundedness of a whole exact-Jones fiber. The
+Moore--Starkston infinite family examined earlier has equality within
+each pair, not one fixed polynomial across its parameter; see the
+prior scaffold for the explicit growing-support audit. Neither source
+supplies the required unbounded fixed-polynomial family.
+
+Rotants: Joseph MacColl, Rotors in Khovanov Homology,
+https://arxiv.org/pdf/1501.00851 , Theorem1.5, constructs infinitely
+many pairs with equal Jones and distinct Kh. These are links, and the
+polynomial is not fixed as the parameter varies. There is a short exact
+check directly in his data: at quantum degree -76 for L_0, the rational
+ranks in homological degrees -32,-31,-30 are 75,127,23. Their alternating
+sum is -29. Proposition2.6 transports this entire quantum slice to
+
+  Q(n)=-76+22 ceil(n/2)-26 floor(n/2).
+
+Each two steps shift the homological grading by -2 and Q by -4.
+Therefore the unreduced Jones coefficient at Q(2m)=-76-4m is always
+-29. The odd subsequence similarly has a nonzero coefficient escaping
+to negative infinity. Neither parity subsequence lies in a single
+exact-Jones fiber. Equality of the two rotants at each n must not be
+read as equality across n. This check uses published homology data,
+not new diagram enumeration.
+
+Crossings: targeted primary-source searches on Jones cosmetic crossings,
+crossing changes among mutants, and skein-equivalent tangles did not
+produce an actual example meeting the required one-crossing condition.
+Wang's explicit split-band question remains the exact source boundary
+we can certify: on printed p5 of https://arxiv.org/pdf/2006.01070 he
+does not establish that the Jones defect P_b is nonzero for every
+nontrivial band. This historical statement is not a current exhaustive
+status claim. Surgery papers on cosmetic Dehn fillings do not answer
+the stronger question of merely equal Jones polynomials of the branch
+knots.
+
+3. A CONCRETE LOCAL GEOMETRIC REPLACEMENT TARGET
+
+Let T be an actual classical two-arc tangle, with no circle components,
+and choose the crossingless basis I,e of TL_2 over Z[A,A^-1]. Write
+
+  [T]=a(A) I+b(A)e,    delta=-A^2-A^-2,
+  R_+=A I+A^-1 e,     R_-=A^-1 I+A e.
+
+Use the closure with tr(I)=delta, tr(e)=1 (unknot bracket1). Since
+e^2=delta e, direct multiplication gives
+
+  <T R_+>=-A^3 a-A^-3 b,
+  <T R_->=-A^-3 a-A^3 b.
+
+Assume these closures are knots and choose the orientation/basis so
+the displayed R_+ crossing is positive. The writhes differ by2.
+Equality of normalized Jones polynomials is therefore equivalent to
+
+  <T R_+>=A^6<T R_->,
+  (A^9-A^-3)b=0,
+  b=0.
+
+The last step is exact over the Laurent integral domain. Mirroring or
+rotating the convention exchanges the relevant basis rays and changes
+units, not the geometric question.
+
+DECISIVE MISSING LEMMA (UNPROVED):
+If an actual classical two-arc tangle lies on one crossingless skein
+ray, then its arcs can be separated by a properly embedded disk in
+the ball, in the corresponding endpoint configuration. Local knots on
+the individual arcs are allowed.
+
+The local-knot allowance is essential: cutting open any knot produces
+a one-strand scalar, and adding such a local knot to I still gives a
+scalar multiple of I. Requiring rationality rather than geometric
+separation would be immediately false.
+
+The separating-disk conclusion makes the displayed crossing nugatory.
+Conversely, the usual nugatory-crossing decomposition gives such a
+separated tangle. Sikora's geometric reformulation of the cosmetic
+crossing conjecture uses exactly this 'unlinked tangle' notion:
+Tangle equations, the Jones conjecture, slopes of surfaces in tangle
+complements, and q-deformed rationals, Canadian J.Math.76(2024),
+https://arxiv.org/abs/2005.08162 . His formulation concerns isotopic
+closures; replacing isotopy by Jones equality is an additional,
+unproved strengthening. No theorem from that paper is being asserted
+to prove this missing lemma.
+
+This target provides a finite exact certificate for each candidate:
+one skein coefficient is zero, and topology must either supply a
+separating disk or certify that none exists. It avoids invoking rank
+or quantum-support bounds for unrelated knots in the same Jones fiber.
+It is still not a full generic unknot-detection scaffold: V_K=1 does
+not supply a Jones-invisible non-nugatory crossing, and no such generic
+reduction is assumed here.
+
+4. PROVED SCOPED CONSEQUENCE: EULER-EFFICIENT FILLINGS CANNOT RECUR
+
+Define r(K)=dim_Q reducedKh(K), and let P_K(q) be its graded Euler
+polynomial (normalized Jones in the Kh variable). Call K
+Euler-efficient if
+
+  r(K)=sum_j |[q^j]P_K(q)|.
+
+Equivalently, for every quantum grading j, all nonzero homological
+groups have the same parity: there is no cancellation at that j.
+An Euler-efficient knot has quantum support exactly supp(P_K).
+In particular every knot whose reduced Kh_Q is supported on one
+delta=j/2-i diagonal is Euler-efficient. This definition does not
+require any unproved assertion about all knots.
+
+THEOREM (direct synthesis of established band results).
+Let K_n be an oriented band-twist family from a two-component link L,
+and suppose all P_Kn=P. If the crossing is non-nugatory, then:
+
+(a) If L is nonsplit, r(K_n) tends to infinity as n tends to either
+    positive or negative infinity. Hence only finitely many K_n are
+    Euler-efficient, and their Euler-cancellation excess
+    r(K_n)-||P||_1 tends to infinity in both directions.
+
+(b) If L is split but b is nontrivial, no K_n is Euler-efficient.
+    The ranks are constant, while quantum diameter grows as
+    4|n|+O(1).
+
+PROOF OF (a): Wang, Split link detection for sl(P) link homology in
+characteristic P, https://arxiv.org/pdf/2112.09110 , Proposition1.7
+and Remark1.8, apply to N=2 and F=Q. The field restriction in the
+paper's main title does not apply to these propositions. Rank grows
+in both directions, while ||P||_1 is fixed.
+
+PROOF OF (b): Wang, The cosmetic crossing conjecture for split links,
+https://arxiv.org/pdf/2006.01070 , Theorems1.7--1.8 and Remark1.9,
+give reduced-Q decompositions
+
+  reducedKh(K_n)=reducedKh(K_#) direct-sum h^(2n)q^(4n) H_b,
+  H_b!=0.
+
+Thus ranks are constant. If one member were Euler-efficient, every
+member would have the same minimal rank ||P||_1, and hence every
+member would have quantum support supp(P). This contradicts the
+diameter divergence caused by the fixed nonzero summand and moving
+nonzero H_b. This proves (b).
+
+COROLLARY: If a Jones-flat band-twist family contains infinitely many
+Euler-efficient members (in particular, infinitely many rational
+reduced-Kh-thin members), the smoothing is split and the band is
+trivial. In the split case, a single efficient member suffices.
+
+This is an independently testable theorem about actual twist families,
+not an assumption of global fiber boundedness. Its potential use is
+to look for a genuine geometric source of efficient fillings. No
+general existence of such fillings is proved or assumed: a nugatory
+crossing on a thick knot already cautions against demanding thinness
+for every flat orbit without accounting for fixed local knot factors.
+
+5. STRATEGIC VERDICT
+
+The searched mutation mechanisms do not presently disprove H-rank or
+H-spread. The local scalar-ray problem is a sharper falsification
+target than broad searches for arbitrary equal-Jones pairs. The exact
+efficient-filling theorem is a useful restricted endpoint, but neither
+it nor the scalar-ray target supplies the missing full-scope bridge
+from an arbitrary hypothetical Jones-one knot. The bounded pass has
+not proved Jones unknot detection and has found no counterexample.

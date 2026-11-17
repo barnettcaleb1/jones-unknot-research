@@ -1,0 +1,50 @@
+TWO DISJOINT BANDS ON THE ORIGINAL LLL(1) DIAGRAM
+1 November 2026. Actual geometric family, not a formal skein expansion.
+
+Original diagram: the19-crossing,3-component EKT LLL(1), whose exact PD is
+embedded in two_band_family.py and recorded in two_band_family.json.
+Its Jones polynomial is (x+x^-1)^2 with x=sqrt(t).
+
+BandA joins original half-edges (17,1),(5,3), with core in original face2.
+BandB joins original half-edges (9,3),(3,3), with core in original face10.
+Crossing and strand indices are zero-based, as in Spherogram.
+The two faces are distinct and the four attaching edges are distinct, so
+narrow rectangles around the two core arcs are disjoint in the original
+diagram. There are no crossings between the rectangles and the link away
+from their attaching intervals.
+
+K(m,n) is obtained by doing both band surgeries and inserting2m half twists
+inA and2n half twists inB. Thus m,n count full twists. The supplied generator
+changes the crossing graph at BOTH original sites before doing any orientation
+rebuild. It performs no simplification or relabelling between bands.
+Consequently the sites do not drift when m,n change.
+
+The zero parameter diagram is EXACTLY the saved PD of prior hit5, before its
+final simplification. Both bands have zero initial twists. The intervening
+simplification in the old enumeration happened to remove no crossings for
+this hit; the only subtlety was an orientation normalization rotating the two
+old second-band crossing indices by180degrees. The new construction avoids
+that normalization entirely. The reverse application order was prior hit7.
+
+K(0,0) has19crossings and simplifies by Reidemeister moves to a single
+crossing-free circle. The three cut diagrams have3,2,2components. All four
+untwisted closures have writhe−3, so their Jones-to-bracket normalizations are
+common. At either band a positive full twist decreases the knot diagram writhe
+by2. Corner writhes are −3,−5,−5,−7 for(0,0),(1,0),(0,1),(1,1).
+
+Computed actual tests:
+ K(0,0): Jones1, actual unknot.
+ K(1,0),K(0,1),K(1,1),K(1,−1): each Jones polynomial nonunit.
+In particular neither equal-sign nor opposite-sign one-step compensation
+preserves the unknot polynomial for this marked pair.
+
+All original PDs, Jones coefficient dictionaries in x, blackboard writhes,
+and fresh simplification results are saved. Nonzero simplified crossing counts
+are not asserted minimal and can vary with the simplifier; nonunit Jones
+already proves those tested knots nontrivial.
+
+Reproduce:
+ /opt/homebrew/opt/python@3.13/bin/python3 work/research34/two_band_family.py
+Dependencies: Spherogram2.4.1, Regina7.4.1, installed under
+work/braid_classification/packages. The core family() function needs neither
+the previous search nor any intermediate simplified diagram.

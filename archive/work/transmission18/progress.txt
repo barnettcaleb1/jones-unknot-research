@@ -1,0 +1,18 @@
+Goal-turn audit, 31 October 2026.
+
+The immediately preceding response principally reported already-saved
+results. Under the strict goal accounting definition, that response did
+not itself constitute a new research advance. This continuation re-read
+authoritative workspace files and pursued new mathematical tasks.
+
+Current progress: computed exact Whitehead transmission factor; proved
+the full Jones difference factorization for actual u=1 branch knots;
+independently verified base diagrams and cap normalization; established
+the anchored-flat/u=1 equivalence; sharpened essential-zero-shell
+counterexample certification via Gabai; refuted eta and fixed-LMO-order
+shortcuts; audited and rejected a proposed zero-shell converse because
+the required crossing-circle involution is free.
+
+Full objective remains incomplete. No generic detection proof and no
+Jones-one nontrivial knot has been produced. No external blocker has
+been identified. Goal should remain active.

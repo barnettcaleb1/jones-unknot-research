@@ -1,0 +1,116 @@
+TWO DISJOINT ANTIPARALLEL FULL-TWIST SITES: EXACT ALL-SLOPE CLASSIFICATION
+Pass 34. This is a skein calculation, not a claim of a new Jones-one knot.
+
+HYPOTHESES AND ORIENTATION
+Start with an actual oriented knot K_00, with two disjoint balls in which
+it consists of untwisted antiparallel strands. Let K_mn insert m and n
+full twists. Full twists preserve the endpoint matching, so every K_mn
+is still a knot. Let S1, S2 denote the Jones polynomials obtained by
+replacing respectively the first or second two-strand identity by the
+cup-cap smoothing; let S12 denote the double-smoothed Jones polynomial.
+Use the orientations induced from the original knot. For band fusions
+of three components, these are the reverse band-surgery smoothings.
+
+Assume exactly
+  V(K_00)=1,                  S12=delta^2,
+where delta=-A^2-A^-2, t=A^-4 and V(unknot)=1. The double smoothing may
+be a nontrivial three-component link with the Jones polynomial of the
+unlink. Its isotopy to the unlink is NOT used or assumed.
+
+A positive local braid generator is g=A*I+A^-1*e, e^2=delta*e.
+Since the two strands have opposite orientations, g^2 changes oriented
+writhe by -2. Thus its normalized operator is
+  N=A^6*g^2=A^8*I+(A^6-A^2)*e.
+It has eigenvalues A^8 on I-e/delta and 1 on e/delta. Put z=A^8=t^-2.
+For every integer m, positive, zero, or negative,
+  N^m=z^m*I+(1-z^m)*e/delta.                         (1)
+All calculations take place over Q(A); the resulting Jones polynomials
+are Laurent polynomials. Reversing the chosen local twist generator at
+one site replaces its integer parameter by its negative. Consequently
+the word 'diagonal' below refers to the SAME normalized z-eigenvalue
+at both sites, not to an uncalibrated visual choice of band handedness.
+
+The outside diagram and all its crossing orientations are identical
+in the four smoothings: cup-cap connects an incoming to an outgoing
+endpoint precisely because the strands are antiparallel. Therefore a
+common outside writhe normalization is legitimate. One must not insert
+independently chosen orientations of the partial links into this formula
+unless their Jones normalization is checked to agree.
+
+EXACT TWO-VARIABLE FORMULA
+Multilinearity and (1) give
+ V(K_mn)=z^(m+n)*V(K_00)
+   +z^n*(1-z^m)*S1/delta
+   +z^m*(1-z^n)*S2/delta
+   +(1-z^m)*(1-z^n)*S12/delta^2.
+
+Under the two hypotheses, define u=S1/delta-1 and v=S2/delta-1. Then
+
+ V(K_mn)-1 = u*z^n + v*z^m - (u+v)*z^(m+n)            (2)
+           = u*z^n*(1-z^m)+v*z^m*(1-z^n).
+
+Thus the double smoothing condition alone supplies no Jones-preserving
+trajectory. The two single smoothings are the remaining exact inputs.
+
+CLASSIFICATION OF EVERY INTEGER LINE THROUGH THE ANCHOR
+Fix integers a,b and set (m,n)=(ak,bk). Equality V(K_ak,bk)=1 for every
+integer k holds exactly in the following cases:
+
+  a=b=0:                always;
+  a nonzero, b=0:       S1=delta;
+  a=0, b nonzero:       S2=delta;
+  a=b nonzero:          S1+S2=2*delta;
+  a,b nonzero, a!=b:    S1=S2=delta.
+
+Proof. Substitute into (2). The three exponential frequencies are b,
+a,a+b. They are distinct unless a=0, b=0, or a=b. Distinct powers of
+the transcendental z have linearly independent integer-k sequences over
+Q(A), so their coefficients vanish individually. The exceptional cases
+follow by direct substitution. Negative integers require no new case.
+
+Equivalently, for fixed partial polynomials:
+ * u=v=0: all integer slopes work, indeed every K_mn has Jones 1;
+ * u=0, v!=0: only the horizontal slopes b=0 work;
+ * v=0, u!=0: only the vertical slopes a=0 work;
+ * u=-v!=0: only the diagonal slopes a=b work;
+ * otherwise: no nonconstant linear trajectory works.
+
+The diagonal cancellation is a REAL algebraic possibility, and is not
+excluded merely by S12=delta^2. If u=-v!=0, equation (2) is just
+  V(K_mn)-1=u*(z^n-z^m).
+In that case its ENTIRE integer Jones-one locus is exactly m=n. Whether
+any knot on that locus is nontrivial is a separate geometric question.
+
+FINITE EXACT CERTIFICATES
+One exact diagonal check is sufficient:
+  V(K_11)-1=z*(1-z)*(u+v).
+Consequently V(K_11)=1 iff the entire diagonal consists of Jones-one
+knots. This includes all negative k. Also
+  V(K_10)-1=(1-z)*u,
+  V(K_01)-1=(1-z)*v,
+so the diagonal criterion is equivalently
+  V(K_10)+V(K_01)=2.
+These two actual knot polynomials avoid any partial-link orientation
+ambiguity, once the local full-twist sign is calibrated.
+
+For a fixed nonzero unequal slope (a,b), checking k=1 and k=2 suffices
+for the entire trajectory: the determinant of the two equations in
+u,v is
+  z^(a+b)*(1-z^a)*(1-z^b)*(z^a-z^b),
+which is nonzero. Hence two Jones-one points at those parameters force
+u=v=0. In the diagonal and coordinate cases, one nonzero k suffices.
+These are full polynomial checks, not tests at one numerical value of A.
+
+APPLICATION TO THE LLL(1) TWO-BAND ANCHOR
+If the saved band-fusion unknot supplies two disjoint antiparallel band
+sites, and reversing both bands recovers LLL(1) with its Jones polynomial
+delta^2 in the induced orientation, the preceding formulas apply exactly.
+It remains to identify the two marked sites in that unsimplified diagram
+and compute either S1,S2 or K_10,K_01. This note does not silently infer
+those data from an unmarked simplified unknot diagram. No Jones-one
+trajectory or nontrivial knot has been certified for that input here.
+
+The calculation uses only the displayed Temperley-Lieb relation,
+Kauffman bracket skein relation, writhe normalization, and Laurent
+polynomial identities. It needs no representation-faithfulness,
+positivity, colored-Jones, or topology conjecture.

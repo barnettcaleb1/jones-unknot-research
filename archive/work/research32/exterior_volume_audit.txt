@@ -1,0 +1,133 @@
+INDEPENDENT AUDIT: THE EXTERIOR-VOLUME ENDPOINT
+1 November 2026 UTC. Audit of generic_tangle's geometric_mechanism.txt.
+Status: the stated conditional endpoint passes. No bound on a whole Jones
+fiber has been proved. No use of a colored volume conjecture is needed.
+
+1. Definition and topology
+==========================
+For a knot K in S^3 set
+
+ v(K)=sum of hyperbolic volumes of the JSJ pieces of E(K),
+
+equivalently v_3 times the relative simplicial volume. This is defined for
+composite and satellite knots, not only hyperbolic knots. Its zero set is
+the graph knots. It is additive under connected sum.
+
+I independently opened and checked these primary-source passages:
+
+* Motegi–Takata, The slope conjecture for graph knots, v3, Introduction,
+  paragraph after Theorem 1.2: graph knots are generated from unknots by
+  cabling and connected sums, citing Gordon, Corollary 4.2; they are exactly
+  knots of zero Gromov volume.
+  https://arxiv.org/html/1501.01105v3
+  The paper's earlier-version slope-proof gap does not concern these
+  classical classification statements; v3 explicitly replaces that lemma.
+
+* Detcherry–Kalfagianni–Yang, Turaev-Viro invariants, colored Jones
+  polynomials and volume, Section 5, printed p18/PDF page index17:
+  defines the JSJ hyperbolic sum and explicitly recalls Soma's additivity
+  under connected sums and split unions.
+  https://users.math.msu.edu/users/kalfagia/paper1-23.pdf
+  Original: Soma, The Gromov invariant of links, Inventiones 64 (1981),
+  445–454, https://doi.org/10.1007/BF01389276 .
+
+Thus it is legitimate to use v(J#K^#m)=v(J)+m v(K). One must not substitute
+the volume of the branched double cover, nor count only knots that are
+themselves hyperbolic. Those different quantities do not give this proof.
+
+2. Independent algebra audit of the zero-volume escape
+=====================================================
+Use symmetric Delta_K(t)=Delta_K(t^-1), Delta_K(1)=1. Then Delta'_K(1)=0
+and a2(K)=Delta''_K(1)/2 is the z^2 Conway coefficient. In exponential
+coordinate h, Delta_K(e^h)=1+a2(K)h^2+O(h^4).
+
+Define cable_(p,q)(K) to have LONGITUDINAL WINDING p, so its curve class is
+p lambda+q mu. This definition matters: some authors interchange p and q.
+Take p>=1 and gcd(p,q)=1. The satellite Alexander identity gives
+
+ Delta_cable(t)=Delta_T(p,q)(t) Delta_K(t^p).
+
+The symmetric torus polynomial satisfies, for nonzero p,q,
+
+ Delta_T(p,q)(e^h)
+   = sinh(pq h/2) sinh(h/2) / [sinh(p h/2) sinh(q h/2)].
+
+Expanding sinh independently yields the h^2 coefficient
+(p^2 q^2+1-p^2-q^2)/24. Therefore
+
+ a2(cable_(p,q)(K))
+    =p^2 a2(K)+(p^2-1)(q^2-1)/24.                       (A)
+
+Also a2(K#L)=a2(K)+a2(L). All terms in (A) are nonnegative once a2(K)>=0.
+Negative q does not change the formula. Mirroring preserves a2.
+
+Degenerate operations are harmless but should be explicit:
+* p=1 gives a curve isotopic to the core of the solid torus, hence K.
+* q=0 with gcd(p,q)=1 forces p=1.
+* For companion U, p>=2 and |q|=1 gives U, not a nontrivial torus knot.
+* For p>=2 and |q|>=2, the torus contribution is strictly positive.
+* Any cable of a nontrivial graph companion has positive first term.
+
+Induction through the classification therefore proves
+
+  graph knot K and a2(K)=0  ==>  K=U.                    (B)
+
+This is stronger and more precise than saying graph knots have nontrivial
+Alexander polynomial: it supplies the particular ordinary-Jones derivative
+needed here. No cancellation between mirrored graph summands is possible.
+
+3. Jones derivative normalization, derived directly
+===================================================
+Use V_U=1 and
+
+ t^-1 V_+ - t V_- = (t^1/2-t^-1/2) V_0.
+
+At t=1 an l-component link has value (-2)^(l-1). Expanding the skein
+relation first to order h, t=e^h, shows V'_K(1) is invariant under crossing
+changes of knots, hence zero. For a two-component link L, the linear
+coefficient b(L) changes by -3 at a positive versus negative MIXED crossing,
+and by zero at a self crossing. Since b(U_2)=0, b(L)=-3 lk(L).
+
+Write V_K(e^h)=1+c2(K)h^2+O(h^3). At a knot crossing whose oriented
+smoothing has linking number l, the h^2 skein coefficient gives
+
+ c2(K_+)-c2(K_-)=-3l.
+
+The Conway skein relation gives a2(K_+)-a2(K_-)=l. Crossing changes reduce
+any knot to U, where both coefficients vanish, so c2=-3a2. Because
+V'_K(1)=0, the ordinary second derivative is
+
+                    V''_K(1)=-6a2(K).                   (C)
+
+Thus V_K=1 implies a2(K)=0. Combining (B), (C), and the zero-volume
+classification proves: every nontrivial Jones-one knot has v(K)>0.
+
+4. Complete conditional theorem
+===============================
+Assume a realized polynomial P has a finite uniform upper bound B on v(L)
+for ALL classical knots L satisfying V_L=P. Choose J in that fiber.
+If a nontrivial K had V_K=1, multiplicativity and additivity would give
+
+ V_(J#K^#m)=P,
+ v(J#K^#m)=v(J)+m v(K) -> infinity,
+
+contradicting B, since v(K)>0. Hence Jones detects the unknot.
+
+No prime, hyperbolic, ribbon, or unknotting-number restriction is imposed
+on K. No conjecture connecting colors to volume enters this implication.
+A fiber bound only on prime/hyperbolic knots would miss the displayed
+connected sums and is insufficient.
+
+5. Logical scope
+================
+The implication is rigorous given the established classification and
+additivity inputs. The global premise remains unproved. The existential
+claim that SOME whole fiber has bounded exterior volume is equivalent to
+detection, because detection itself makes the unit fiber the singleton U.
+Its utility would come from an independently proved bound for a specified
+nonunit fiber, or an actual polynomial-controlled geometric operation.
+The proof does not itself make that premise easier.
+
+In particular, this audit supports the endpoint in geometric_mechanism.txt,
+not the as-yet-unconstructed Jones-to-hyperbolic-parent mechanism or any
+reverse Turaev–Viro/volume inequality.

@@ -1,0 +1,1 @@
+NOTE 07:50 from integrator: Codex 074708 adds ARB-IDEAL (full ideal I(v)=(a,c) invariant under F_m, Y^N; I(v*w) in I(v)I(w); N-INF family zero mod (7,t-2)). If you have time, include it in the referee (check integrality of the star product in (a,c) coordinates and the mod-7 evaluation).

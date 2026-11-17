@@ -1,0 +1,91 @@
+ISOLATING M1: A RELATIVE MASLOV GAP COMPUTATION
+2026-10-31. Proposed deduction for independent audit. It does NOT cover the
+non-isolating M1 case and is not a general Jones detection theorem.
+
+Claim. Suppose a minimal genus Seifert surface S for a knot K in S3 has
+isolating M1 guts. Write the two product fibers as F_a and F_b, with boundary
+counts1 and4, respectively, and genera a>=1,b>=0. Then g(K)=a+b+1 and the two
+top HFK classes have absolute Maslov difference 2a-1. In particular the
+difference is at most2g(K)-3.
+
+GEOMETRIC INPUT
+Baker--Manjarrez-Gutierrez, arXiv:2305.08928v2, Proposition2.9 and Section5.1,
+gives precisely this decomposition into a solid torus V with four longitudinal
+sutures, F_a x I attached along one suture, and F_b x I attached along the
+other three. The fourth boundary of F_b is the knot suture. Euler characteristic
+gives chi(S)=chi(F_a)+chi(F_b)=1-2a-2-2b, hence g=a+b+1.
+
+LOCAL SUTURED MANIFOLD
+Let N_a=V union_(annulus) (F_a x I). The attaching annulus is a longitude on V
+and the unique vertical boundary of F_a x I. Absorbing V as a boundary collar
+shows that N_a is F_a x I with THREE parallel copies of its boundary suture.
+
+Juhasz, The sutured Floer homology polytope, Example7.5 and Figure3,
+https://msp.org/gt/2010/14-3/gt-v14-n3-p02-s.pdf, pp1343-1345,
+gives an explicit balanced diagram for N_1. The source explicitly identifies
+it as the four-longitude solid torus glued to punctured-torus x I along one
+suture. We inspected the actual Figure3 pixels, saved as juhasz-fig3.png.
+
+The diagram surface has genus1 and THREE boundary circles. Its alpha and beta
+curves intersect in exactly two points x,y. The CENTRAL region D between the
+curves is a bigon with a handle: a genus1 surface with one boundary component
+and two convex corners. It contains none of the three boundary punctures.
+The other three regions each contain a boundary puncture. The source says
+D gives a Whitney disk class from one generator to the other and that there
+are no periodic domains. Thus x,y occupy the same Spin^c structure.
+
+For arbitrary a>=1 replace the one handle INSIDE D by a handles, leaving
+alpha, beta, all their intersections, and the three boundary circles intact.
+This gives the identical collar construction with F_a in place of F_1,
+hence a diagram for N_a. The central region D_a now has chi(D_a)=1-2a,
+but exactly the same two convex corners and multiplicities. There are still
+no nonzero periodic domains: the manifold N_a is the handlebody F_a x I,
+so H2(N_a)=0. The two generators remain in the same relative Spin^c class.
+
+LIPSHITZ INDEX
+For the domain with multiplicity1 on D_a and0 elsewhere,
+ e(D_a)=chi(D_a)-2/4=1/2-2a,
+ n_x(D_a)=n_y(D_a)=1/4,
+ so mu(D_a)=e(D_a)+n_x(D_a)+n_y(D_a)=1-2a.
+For a=1 this is -1, checked directly on the displayed diagram. Each additional
+handle lowers the index by2. Reversing the two generators changes the sign.
+The only positive domain is D_a and has negative index; its negative has
+negative multiplicities. Hence there is no holomorphic index1 differential.
+Equivalently SFH(N_a) has its two generators with relative gap2a-1.
+
+REATTACHING THE REMAINING PRODUCT REGION
+Build the genus-b,four-boundary surface F_b from THREE annular collars of the
+incoming (glued) circles by 2b+2 surface1handles. Two handles connect the three
+collars into one component; each pair of the other2b handles adds a genus.
+All feet lie on the outgoing boundaries, so thickening by I turns every one
+into a PRODUCT3-dimensional1handle (its attaching disks each cross the
+suture in one arc). Absorb the three initial collars into the three sutures
+of N_a. The Seifert complement W is therefore N_a plus 2b+2 product1handles.
+Cutting their cocore product disks recovers N_a. This is also the annulus-to-
+disk trade of Baker--Manjarrez-Gutierrez Lemma2.7 applied to the NON-isolated
+annuli, retaining the isolated piece.
+
+Juhasz Proposition5.4, pp1330-1334, preserves the relative Maslov grading
+within each source Spin^c structure under the surface decomposition maps.
+Unlike the original bare guts generators, the two N_a classes are already in
+the SAME Spin^c class. Hence their gap is preserved on passage to SFH(W),
+and then to top HFK(K,g) by the Seifert surface decomposition. Product disks
+preserve total rank, so these are exactly the two top classes.
+
+APPLICATION TO THE PROPOSED RANK-FIVE GEOMETRIC TARGET
+If a separate argument forces a rank-five Jones-one candidate's top HFK
+Maslov gap to equal2g-1, then the above calculation rules out ISOLATING M1
+for that candidate. The contradiction is2a-1<=2g-3<2g-1.
+That separate HFK constraint is not proved in this note.
+NON-ISOLATING M1 is unaffected: the bare solid-torus generators occupy
+distinct Spin^c classes, so their mutual Maslov gap cannot be transported by
+Proposition5.4 in this manner.
+
+REAL EXAMPLE CHECK
+Baker--Manjarrez-Gutierrez's genus2 isolating example16n332130 has a=1,b=0.
+Their displayed HFK table (actual pixels saved as baker-table.png) has top
+classes at Maslov2,3, gap1, agreeing with2a-1. Alexander rows2,1,0,-1,-2
+have total ranks2,4,5,4,2, giving total17. The outer Euler characteristics
+vanish, and the central3-2 gives Alexander polynomial1. Thus the geometric
+type is realized and is not itself an obstruction; sparse total rank is the
+extra target.

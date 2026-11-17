@@ -1,0 +1,1 @@
+203 {'tried': 18806, 'knots': 10999, 'nontrivial': 8143, 'flat': 0, 'unitfail': 0, 'extreme_not_pm1': 127}

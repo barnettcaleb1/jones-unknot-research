@@ -1,0 +1,862 @@
+{
+  "snapshot_date": "2026-11-17",
+  "purpose": "Publication completeness and reproducibility audit, not mathematical re-refereeing",
+  "source_roots": {
+    "collab": {
+      "files": 329,
+      "bytes": 3757987,
+      "symlinks": 0,
+      "extensions": {
+        ".md": 309,
+        ".py": 7,
+        ".json": 6,
+        ".bak-20261115": 2,
+        ".tex": 1,
+        ".pdf": 1,
+        ".bak-20261116-2127": 1,
+        ".bak-20261116-2110": 1,
+        "<none>": 1
+      },
+      "largest": [
+        {
+          "path": "THEORY-width-ladder.md",
+          "bytes": 420078
+        },
+        {
+          "path": "NOTE-LATE-41.pdf",
+          "bytes": 288975
+        },
+        {
+          "path": "SCAFFOLD.md",
+          "bytes": 234849
+        },
+        {
+          "path": "SCAFFOLD.md.bak-20261116-2127",
+          "bytes": 181010
+        },
+        {
+          "path": "SCAFFOLD.md.bak-20261116-2110",
+          "bytes": 177387
+        },
+        {
+          "path": "lit/raw/late41-audit-results.json",
+          "bytes": 173378
+        },
+        {
+          "path": "DEAD_ENDS.md",
+          "bytes": 83067
+        },
+        {
+          "path": "STATUS.md",
+          "bytes": 64697
+        },
+        {
+          "path": "lit/raw/lit-sweep-partial.json",
+          "bytes": 63810
+        },
+        {
+          "path": "data/roundE/arb_REPORT.md",
+          "bytes": 42934
+        },
+        {
+          "path": "data/roundE/refM300_REPORT.md",
+          "bytes": 35632
+        },
+        {
+          "path": "data/bridge/THEORY-MAP.md",
+          "bytes": 34601
+        }
+      ]
+    },
+    "work": {
+      "files": 3694,
+      "bytes": 965920763,
+      "symlinks": 0,
+      "extensions": {
+        ".py": 1144,
+        ".pyc": 792,
+        ".json": 499,
+        ".txt": 475,
+        ".md": 271,
+        ".png": 115,
+        ".out": 78,
+        ".test": 68,
+        "<none>": 51,
+        ".log": 37,
+        ".pdf": 33,
+        ".tex": 17,
+        ".aux": 8,
+        ".cpp": 7,
+        ".h": 7,
+        ".whl": 7,
+        ".tdb": 6,
+        ".rga": 6,
+        ".orb": 5,
+        ".in": 5,
+        ".svg": 5,
+        ".sha256": 4,
+        ".dylib": 4,
+        ".so": 4,
+        ".bz2": 4,
+        ".sqlite": 4,
+        ".npz": 3,
+        ".tri": 3,
+        ".v2": 3,
+        ".html": 3,
+        ".tar": 2,
+        ".rs": 2,
+        ".typed": 2,
+        ".B99": 2,
+        ".A99": 2,
+        ".xlsx": 2,
+        ".xls": 2,
+        ".stdout": 2,
+        ".tsv": 1,
+        ".zip": 1,
+        ".jsonl": 1,
+        ".pyi": 1,
+        ".filter": 1,
+        ".APACHE": 1,
+        ".BSD": 1,
+        ".gz": 1,
+        ".bbl": 1,
+        ".kht": 1
+      },
+      "largest": [
+        {
+          "path": "width6_instrument/transport_exact_intersections_14.json",
+          "bytes": 168723918
+        },
+        {
+          "path": "width6_instrument/transport_pairing_14.json",
+          "bytes": 128982612
+        },
+        {
+          "path": "proof10/homology/knotinfo_data_complete.xls",
+          "bytes": 82738176
+        },
+        {
+          "path": "braid_classification/packages/regina/engine.cpython-313-darwin.so",
+          "bytes": 71169504
+        },
+        {
+          "path": "proof10/homology/polys.json",
+          "bytes": 69207286
+        },
+        {
+          "path": "braid_classification/wheels/snappy_manifolds-1.4-py3-none-any.whl",
+          "bytes": 63292930
+        },
+        {
+          "path": "braid_classification/packages/snappy_manifolds/sqlite_files/more_manifolds.sqlite",
+          "bytes": 47493120
+        },
+        {
+          "path": "braid_classification/packages/snappy_manifolds/sqlite_files/manifolds.sqlite",
+          "bytes": 43356160
+        },
+        {
+          "path": "braid_classification/packages/snappy_manifolds/sqlite_files/platonic_manifolds.sqlite",
+          "bytes": 36966400
+        },
+        {
+          "path": "width6_parked/kernel_bigelow_resume.json",
+          "bytes": 21884949
+        },
+        {
+          "path": "braid_classification/wheels/regina-7.4.1-cp313-cp313-macosx_11_0_arm64.whl",
+          "bytes": 19905988
+        },
+        {
+          "path": "width6_moments/tables_witness_full.json",
+          "bytes": 17307494
+        }
+      ]
+    },
+    "outputs": {
+      "files": 95,
+      "bytes": 13410587,
+      "symlinks": 0,
+      "extensions": {
+        ".zip": 43,
+        ".txt": 37,
+        ".pdf": 7,
+        ".json": 3,
+        ".py": 2,
+        ".md": 1,
+        ".pyc": 1,
+        ".tsv": 1
+      },
+      "largest": [
+        {
+          "path": "claude-handoff/JONES_RESEARCH_EVIDENCE.zip",
+          "bytes": 4319231
+        },
+        {
+          "path": "jones-positivity-and-boundaries-evidence.zip",
+          "bytes": 2060827
+        },
+        {
+          "path": "jones-second-pass-evidence.zip",
+          "bytes": 749489
+        },
+        {
+          "path": "claude-handoff/MANIFEST.json",
+          "bytes": 698011
+        },
+        {
+          "path": "jones-annulus-and-marked-torsion-evidence.zip",
+          "bytes": 692827
+        },
+        {
+          "path": "jones-preprint-local-move-evidence.zip",
+          "bytes": 606115
+        },
+        {
+          "path": "abernathy-gilmer-genus-one-tangles.pdf",
+          "bytes": 416617
+        },
+        {
+          "path": "jones-ren-braid-obstruction.pdf",
+          "bytes": 245773
+        },
+        {
+          "path": "jones-fourth-pass.pdf",
+          "bytes": 231912
+        },
+        {
+          "path": "jones-second-pass.pdf",
+          "bytes": 226337
+        },
+        {
+          "path": "claude-handoff/CLAUDE_JONES_HANDOFF.txt",
+          "bytes": 216289
+        },
+        {
+          "path": "jones-unknot-proof-audit.pdf",
+          "bytes": 216257
+        }
+      ]
+    },
+    "claude": {
+      "files": 32557,
+      "bytes": 2208017188,
+      "symlinks": 3,
+      "extensions": {
+        ".svg": 8663,
+        "<none>": 3641,
+        ".py": 3430,
+        ".pkl": 2882,
+        ".html": 2444,
+        ".kht": 2207,
+        ".pyc": 2023,
+        ".log": 1641,
+        ".cpp": 806,
+        ".pdf": 795,
+        ".eps": 708,
+        ".json": 618,
+        ".h": 548,
+        ".tex": 397,
+        ".txt": 240,
+        ".png": 234,
+        ".md": 217,
+        ".jsonl": 105,
+        ".pstex": 70,
+        ".pstex_t": 70,
+        ".dox": 60,
+        ".hh": 58,
+        ".gz": 57,
+        ".f": 51,
+        ".cmake": 50,
+        ".bbl": 47,
+        ".out": 42,
+        ".pdf_tex": 36,
+        ".sh": 33,
+        ".sty": 21,
+        ".un": 21,
+        ".c": 21,
+        ".xml": 19,
+        ".bin": 16,
+        ".al": 16,
+        ".in": 15,
+        ".pdf_t": 14,
+        ".cu": 14,
+        ".typed": 14,
+        ".sample": 13,
+        ".pstex_t_": 12,
+        ".bib": 12,
+        ".flag": 11,
+        ".dat": 10,
+        ".d": 10,
+        ".o": 9,
+        ".time": 8,
+        ".cls": 7,
+        ".bst": 7,
+        ".m": 6,
+        ".exe": 6,
+        ".nb": 5,
+        ".XXX": 5,
+        ".cc": 5,
+        ".yml": 4,
+        ".xsl": 4,
+        ".mx": 3,
+        ".tsv": 3,
+        ".aux": 3,
+        ".css": 3,
+        ".js": 3,
+        ".cxx": 3,
+        ".eprint": 3,
+        ".eepic": 3,
+        ".pdftex": 2,
+        ".pdftex_t": 2,
+        ".src": 2,
+        ".tar": 2,
+        ".diff": 2,
+        ".BSD": 2,
+        ".APACHE": 2,
+        ".main": 2,
+        ".jpg": 2,
+        ".mf": 2,
+        ".13": 2,
+        ".g4": 2,
+        ".lark": 2,
+        ".done": 1,
+        ".05443": 1,
+        ".40122": 1,
+        ".03501": 1,
+        ".pack": 1,
+        ".idx": 1,
+        ".LGPL": 1,
+        ".MPL2": 1,
+        ".GPL": 1,
+        ".README": 1,
+        ".MINPACK": 1,
+        ".cxxlist": 1,
+        ".natvis": 1,
+        ".traits": 1,
+        ".preamble": 1,
+        ".evaluator": 1,
+        ".expression": 1,
+        ".entry": 1,
+        ".dtd": 1,
+        ".synctex": 1,
+        ".toc": 1,
+        ".tfm": 1,
+        ".jpeg": 1,
+        ".cfg": 1,
+        ".ps1": 1,
+        ".fish": 1,
+        ".csh": 1,
+        ".1": 1,
+        ".pem": 1
+      },
+      "largest": [
+        {
+          "path": "theory-restart/mont/cx/engineC1/fr_g43.pkl",
+          "bytes": 699992696
+        },
+        {
+          "path": "theory-restart/mont/cx/engineC1/fr_d2pos.pkl",
+          "bytes": 154793771
+        },
+        {
+          "path": "theory-restart/mont/cx/engineC1/libA_jets.pkl",
+          "bytes": 48758245
+        },
+        {
+          "path": "theory-restart/mont/cx/roundD/refV3/jstar.pkl",
+          "bytes": 38291520
+        },
+        {
+          "path": "theory-restart/mont/cx/cert/run/out/full/words_S2.json",
+          "bytes": 37432009
+        },
+        {
+          "path": "theory-restart/mont/cx/cert/extract/data/s3a_stage3.json",
+          "bytes": 33928188
+        },
+        {
+          "path": "theory-restart/mont/cx/cert/run/out/full/S2.jsonl.gz",
+          "bytes": 30845625
+        },
+        {
+          "path": "theory-restart/mont/cx/cert/extract/data/s2_survivors_7_7.json",
+          "bytes": 30688169
+        },
+        {
+          "path": "theory-restart/mech2/verify/positivity-compute/exh_9.jsonl",
+          "bytes": 30343429
+        },
+        {
+          "path": "theory-restart/mont/cx/cert/extract/data/s3a_items.json",
+          "bytes": 28429490
+        },
+        {
+          "path": "theory-restart/mont/cx/regress/out/classify2_6_6.pkl",
+          "bytes": 28158805
+        },
+        {
+          "path": "theory-restart/lit/kht/out/alex1/cands2.txt",
+          "bytes": 27552529
+        }
+      ]
+    }
+  },
+  "path_mapping": {
+    "workspace_relative": "archive/<workspace-relative path>",
+    "jones_lanes_relative": "archive/claude/<relative path>"
+  },
+  "exclude_rules": [
+    {
+      "root": "work",
+      "path": "braid_classification/packages/**",
+      "reason": "vendored installed third-party packages"
+    },
+    {
+      "root": "work",
+      "path": "braid_classification/wheels/**",
+      "reason": "platform-specific third-party package wheels"
+    },
+    {
+      "root": "work",
+      "path": "proof10/homology/packages/**",
+      "reason": "vendored installed third-party packages"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/tools/venv/**",
+      "reason": "machine-specific virtual environment"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/lit/*/src/**",
+      "reason": "downloaded human papers and source bundles; kht subtree also includes third-party kht++ and Eigen"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/cube/src/**",
+      "reason": "downloaded primary-source bundles"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/annular/src/**",
+      "reason": "downloaded primary-source bundles"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/floer/src/**",
+      "reason": "downloaded primary-source bundles"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/annular/src/**",
+      "reason": "downloaded primary-source bundles"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/**",
+      "reason": "downloaded primary-source bundles"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/dictionary/lit_ab/**",
+      "reason": "downloaded primary source"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/bs/**",
+      "reason": "downloaded primary source"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/dl/**",
+      "reason": "downloaded primary-source bundles"
+    },
+    {
+      "root": "claude",
+      "path": "g2-proof/ref-kernel/ito_pdf/**",
+      "reason": "downloaded primary source"
+    },
+    {
+      "root": "all",
+      "path": "**/__pycache__/**, **/*.pyc, **/.DS_Store",
+      "reason": "runtime caches"
+    },
+    {
+      "root": "all",
+      "path": "**/*.aux, **/*.toc, **/*.fls, **/*.fdb_latexmk, manuscript build.stdout/main.log/main.out",
+      "reason": "regenerable TeX build artifacts; retain authored .tex and intended PDF"
+    }
+  ],
+  "important_inclusions": [
+    "claude/theory-restart/mont/cx/roundE/refM300/src/**",
+    "claude/theory-restart/mont/cx/roundD/refV3/src/**",
+    "claude/theory-restart/tools/*.py",
+    "claude/theory-restart/mont/lp.py",
+    "claude/theory-restart/mont/cx/cert/** checker code and replayable certificates",
+    "collab/data/** reports retained with source provenance"
+  ],
+  "third_party_pdf_candidates": [
+    {
+      "root": "work",
+      "path": "garoufalidis-zagier.pdf",
+      "bytes": 1478621,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "kauffman-bracket.pdf",
+      "bytes": 3268333,
+      "paired_text": "kauffman-bracket.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "carmi-cohen.pdf",
+      "bytes": 4115182,
+      "paired_text": "carmi-cohen.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "defect-calculus/marian-2cabling.pdf",
+      "bytes": 2017682,
+      "paired_text": "defect-calculus/marian-2cabling.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "attack/ekt.pdf",
+      "bytes": 209207,
+      "paired_text": "attack/ekt.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "research21/watson_identical.pdf",
+      "bytes": 310098,
+      "paired_text": "research21/watson_identical.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "research27/suzuki_bing.pdf",
+      "bytes": 305585,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "width6_lift/bigelow_lkb.pdf",
+      "bytes": 294854,
+      "paired_text": "width6_lift/bigelow_lkb.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "transmission18/exotic.pdf",
+      "bytes": 1789923,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "pass2/strong-inversions.pdf",
+      "bytes": 809993,
+      "paired_text": "pass2/strong-inversions.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "pass2/watson2005.pdf",
+      "bytes": 144360,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "research38/dye_kauffman.pdf",
+      "bytes": 571781,
+      "paired_text": "research38/dye_kauffman.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "generic/mlinks.pdf",
+      "bytes": 316209,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "cancellation19/stoimenow2005.pdf",
+      "bytes": 298492,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "strategy15/maccoll.pdf",
+      "bytes": 295581,
+      "paired_text": "strategy15/maccoll.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "research25/luecke_osoinach.pdf",
+      "bytes": 202544,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "creative6/baker-manjarrez-guts.pdf",
+      "bytes": 578340,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "creative6/juhasz-polytope.pdf",
+      "bytes": 547319,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "research48/abernathy-gilmer.pdf",
+      "bytes": 416617,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "proof12/tangle/tanaka_alternating.pdf",
+      "bytes": 108687,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "proof12/homology/kwz2022.pdf",
+      "bytes": 806011,
+      "paired_text": "proof12/homology/kwz2022.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "proof12/homology/watson.pdf",
+      "bytes": 367163,
+      "paired_text": "proof12/homology/watson.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "work",
+      "path": "proof13/homology/mutation2026.pdf",
+      "bytes": 1696421,
+      "paired_text": "proof13/homology/mutation2026.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "outputs",
+      "path": "abernathy-gilmer-genus-one-tangles.pdf",
+      "bytes": 416617,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "g2-proof/ref-kernel/ito_pdf/ito.pdf",
+      "bytes": 126234,
+      "paired_text": "g2-proof/ref-kernel/ito_pdf/ito.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/ggd/ggd.pdf",
+      "bytes": 135909,
+      "paired_text": "theory-restart/mech/referee-fi/kleinian/dl/ggd/ggd.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/inoue/inoue.pdf",
+      "bytes": 418858,
+      "paired_text": "theory-restart/mech/referee-fi/kleinian/dl/inoue/inoue.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/dlugie/dlugie.pdf",
+      "bytes": 635969,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/dlugie/dlugie_p.pdf",
+      "bytes": 628467,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/dlugie/x/Diagrams/developing.pdf",
+      "bytes": 16357,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/dlugie/x/Diagrams/the_last_twist_in_the_disk.pdf",
+      "bytes": 2324,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/dlugie/x/Diagrams/bigelow_braids_manipulate.pdf",
+      "bytes": 10071,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech/referee-fi/kleinian/dl/dlugie/x/Diagrams/braid_action.pdf",
+      "bytes": 34960,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/dictionary/lit_ab/ab.pdf",
+      "bytes": 414614,
+      "paired_text": "theory-restart/mech2/dictionary/lit_ab/ab.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/bs/batson-seed-1303.6240.pdf",
+      "bytes": 754622,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/dl/0807.1432.pdf",
+      "bytes": 793404,
+      "paired_text": "theory-restart/mech2/colored/lit/dl/0807.1432.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/dl/math_0606255.pdf",
+      "bytes": 821166,
+      "paired_text": "theory-restart/mech2/colored/lit/dl/math_0606255.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/dl/1809.00055.pdf",
+      "bytes": 54303,
+      "paired_text": "theory-restart/mech2/colored/lit/dl/1809.00055.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/dl/1203.5741.pdf",
+      "bytes": 397899,
+      "paired_text": "theory-restart/mech2/colored/lit/dl/1203.5741.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/mech2/colored/lit/dl/1602.02769.pdf",
+      "bytes": 617728,
+      "paired_text": "theory-restart/mech2/colored/lit/dl/1602.02769.txt",
+      "disposition": "cite primary source; do not copy by default"
+    },
+    {
+      "root": "claude",
+      "path": "theory-restart/lit/daemi/daemi-1508.07650.pdf",
+      "bytes": 1829106,
+      "paired_text": null,
+      "disposition": "cite primary source; do not copy by default"
+    }
+  ],
+  "fixed_checks": [
+    {
+      "id": "EF-DEPTH",
+      "source": "work/theory_restart/referee_checks/ef_depth.py",
+      "sha256": "67df681487bd76c44c22dd93abda3637bff40766474f46f3cc3bc319a208ca29",
+      "command": "python3 -I archive/work/theory_restart/referee_checks/ef_depth.py",
+      "dependencies": [
+        "Python 3 standard library"
+      ],
+      "result": "PASS",
+      "scope": "printed seed jet and doubling algebra; not independent diagram reconstruction"
+    },
+    {
+      "id": "CARMI-COHEN-RECURRENCE",
+      "source": "work/paper/carmi-cohen-obstruction/verify.py",
+      "sha256": "6b564371e601ed1557bd76c0c42b8783256bf5ed778bfeaffd0a285041ef70d3",
+      "command": "copy verify.py to a temporary directory; python3 -I verify.py",
+      "dependencies": [
+        "Python 3 standard library"
+      ],
+      "result": "PASS; generated verification.json equals archived JSON structurally",
+      "scope": "finite exact recurrence/binomial certificates at L=1,3,5,7,23; closed-form proof is in manuscript"
+    }
+  ],
+  "credential_scan": {
+    "files_scanned": 10310,
+    "scope": "text-like files <=4MB, vendor/runtime/source-directory exclusions as documented",
+    "patterns": [
+      "GitHub token formats",
+      "OpenAI-style sk token formats",
+      "private-key headers"
+    ],
+    "confirmed_credentials": 0,
+    "false_positive_count": 4,
+    "false_positive_explanation": "LaTeX disk-* lemma labels in downloaded human source",
+    "limitation": "not a complete secret audit of binaries, large files or all possible credential formats"
+  },
+  "portability_findings": [
+    {
+      "id": "external-source-root",
+      "severity": "critical_for_completeness",
+      "finding": "Most Nov15\u201317 Claude engine/referee code and certificates live outside the workspace in jones-lanes; local collab/data mostly reports. Include eligible external files or explicitly mark unavailable."
+    },
+    {
+      "id": "absolute-imports",
+      "severity": "reproduction_blocker",
+      "finding": "rho2.py and many fixed checks add absolute source-machine paths to sys.path. Preserve archival source, provide portable launchers or an explicit patch layer."
+    },
+    {
+      "id": "dependency-pins",
+      "severity": "reproduction_blocker",
+      "finding": "No repository-wide environment lock exists. Python standard-library checks run; default Python lacks SymPy. kht++, Regina, SnapPy and Sage-related checks require separate pinned environments."
+    },
+    {
+      "id": "large-data",
+      "severity": "artifact_delivery",
+      "finding": "Large JSON, pickle caches and compressed replay certificates exceed ordinary code-repository scale. Keep checksum/index for each omitted object; release assets should distinguish essential certificates from regenerable caches."
+    },
+    {
+      "id": "historical-claims",
+      "severity": "interpretation",
+      "finding": "Raw notes include superseded claims and paper drafts whose adversarial review was interrupted. Archive is historical evidence, not a current theorem list."
+    },
+    {
+      "id": "untrusted-pickle",
+      "severity": "execution",
+      "finding": "Pickle caches must never be automatically loaded by a viewer or reproduction runner; publish only as opt-in data with provenance or convert to a safe format."
+    },
+    {
+      "id": "third-party-source",
+      "severity": "rights_and_provenance",
+      "finding": "Downloaded human papers, source archives, knot tables and vendor libraries are not original research; use citations and upstream provenance, not a blanket repository license."
+    }
+  ]
+}

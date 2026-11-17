@@ -1,0 +1,282 @@
+JONES UNKNOT DETECTION: A BRUNNIAN REDUCTION AND AN EXACT TEST
+Research pass 19 — 31 October 2026
+
+STATUS
+
+The general Jones unknot-detection problem is not resolved here. This pass
+establishes a reduction within the unknotting-number-one case, repairs a
+geometric gap in our previous approach, and evaluates an actual construction
+exactly. It also gives the conditional amplification theorem below. The
+mathematical deductions have been independently checked within
+this investigation; we make no claim of literature priority.
+
+The central distinction is between converting a hypothetical counterexample
+into a useful form and constructing the first counterexample. The Brunnian
+construction accomplishes the former. Our explicit test does not accomplish
+the latter.
+
+1. THE REDUCTION
+
+The following three existence statements are equivalent:
+
+  (i) A nontrivial knot K has unknotting number one and V_K(t)=1.
+
+ (ii) A nontrivial strongly invertible knot J has a preferred exterior
+      quotient tangle whose entire Kauffman bracket equals that of the
+      zero rational tangle, up to the unavoidable framing unit.
+
+(iii) There is a nonsplit two-component link P union D, with both components
+      unknotted, linking number zero, and one involution strongly inverting
+      both components, for which the normalized quotient operation has
+      identically zero transmission factor d(A).
+
+The new implication in this pass is (ii) => (iii). Our earlier Whitehead-clasp
+attempt did not prove it: the inherited symmetry acts freely on the standard
+clasp circle. The new construction uses a different, actually realizable
+three-component link.
+
+Here are precise meanings for the algebra. Put
+
+  R = Z[A,A^-1],   delta = -A^2-A^-2,   v = Q_infinity-delta Q0.
+
+For a preferred quotient T_J, its meridional closure is an actual unknot.
+Divide by that closure's framing unit. The normalized bracket is
+
+                         T_J = Q0 + x(J)v,       x(J) in R.
+
+We call this quotient flat when x(J)=0. This condition is stronger than
+asserting that the ordinary Jones polynomial of J is 1.
+
+A two-component pattern as in (iii) induces an R-linear operation F with
+
+                   F(Q0)=Q0,       F(v)=d(A)v.
+
+Thus x(output)=d(A)x(input). A zero factor means exactly that the operation
+erases this entire polynomial coordinate, for every input.
+
+The previously established connection to (i) is concrete. Filling a flat
+quotient at slope +/-1/2 gives a knot with Jones polynomial 1; a crossing
+change gives the meridional unknot. Nontriviality follows because a nontrivial
+S3 knot admits no nonmeridional S3 surgery. Conversely, removing an unknotting
+crossing from a Jones-one knot gives such a flat quotient. The exact cap
+formula, in one choice of signs and t=A^-4, is
+
+                  V_B(A^-4)-1 = (A^2-A^-10)x(J).
+
+This reduction does NOT show that every hypothetical Jones-one knot can be
+replaced by an unknotting-number-one example. That remains a missing bridge
+to the unrestricted problem.
+
+1A. A STRONGER CONDITIONAL AMPLIFICATION THEOREM
+
+If (i) holds, then for every positive integer n there is a nontrivial knot
+K_n with V_K_n=1 and n marked crossings such that changing ANY nonempty
+subset of those crossings produces the unknot.
+
+The knots K_n depend on n. This does not assert that a single nontrivial knot
+has this property for all n. In fact, the Howards–Luecke genus bound implies
+g(K_n)>n/3, so this construction gives arbitrarily high Seifert genus. For
+n>=3 these knots also have Alexander polynomial 1, by the established
+adjacency theorem cited by Stoimenow immediately after equation (10).
+
+Consequently, for any fixed n>=2, Jones detection among n-adjacent-to-the-
+unknot knots would imply Jones detection among ALL unknotting-number-one
+knots. A counterexample in the latter class could not remain an isolated
+exception to the stronger adjacency restriction.
+
+Proof outline. Use the lift of a nontrivial (n+1)-adjacent source knot to
+obtain an (n+1)-component, componentwise strongly inverted Brunnian link.
+Infect one component C with the flat companion J supplied by (ii). Every
+proper sublink of the n remaining components is still an actual unlink.
+The original n crossing-change neighborhoods survive the infection.
+
+Perform the source's prescribed +/-1/2 surgeries on all but one of these
+remaining components P. Before infection, the surviving pair P_* union C
+is nonsplit: if it were split, its two unknotted components' remaining
+prescribed surgeries would give S3, contradicting the nontrivial original
+source knot's double branched cover. Hence P_* is an essential pattern.
+After infection, P_*(J) is a nontrivial satellite. Its final nonmeridional
+surgery cannot give S3, so the final branch knot K_n is nontrivial.
+
+Undoing any nonempty subset of the n prescribed crossing changes leaves
+surgeries on a proper unlink, and therefore returns the branch unknot.
+Replacing the inserted flat quotient by Q0 preserves the complete bracket
+and gives an unknot closure. Thus V_K_n is a monomial; V(1)=1 and V'(1)=0
+force exactly V_K_n=1. This proves the conditional theorem without a
+limiting argument or finite-order approximation.
+
+2. WHY THE BRUNNIAN CONSTRUCTION WORKS
+
+Choose an actual three-component link P union C union D with these properties:
+every pair is the two-component unlink, the full link is nonsplit, and a
+single involution strongly inverts all three components. Such links exist.
+One construction starts with a nontrivial 3-adjacent-to-the-unknot knot:
+three marked crossings have the property that changing any nonempty subset
+gives the unknot. Change all three and lift the reverse crossing arcs in the
+double cover of that unknot. Lidman–Moore's proof of Theorem 1.4 establishes
+the required Brunnian property of this lifted link. Stoimenow's explicit
+construction and Lemma 6 supply a nontrivial source knot.
+
+Now replace the solid torus complementary to C by the corresponding satellite
+embedding around the hypothetical flat knot J. Denote the two remaining
+components by P(J) and D(J).
+
+Each component remains an actual unknot: before replacement, each was local
+in the solid torus because its pair with C was split. Their linking number
+is zero, and the componentwise strong inversion extends over the companion
+exterior. Thus P(J) union D(J) satisfies all the geometric requirements for
+a normalized pattern operation.
+
+Its transmission factor is zero. In the quotient, replacing T_J by its equal
+skein vector Q0 turns the whole operation into that of the original split
+pair P union D. Skein composition is linear, so this replacement preserves
+the entire operation, after the fixed framing normalization.
+
+The important remaining point is that P(J) union D(J) is NONSPLIT. Perform
+the source knot's prescribed +/-1/2 surgery on D in the original triple.
+The remaining pair P_* union C consists of unknots but is nonsplit. If it
+were split, the remaining prescribed surgeries on P_* and C would give S3,
+whereas the full surgeries give the nontrivial source knot's double branched
+cover. This is a contradiction by Smith's unknot theorem.
+
+Consequently P_* is an essential pattern. For nontrivial J, P_*(J) has an
+incompressible companion torus and is nontrivial. But twisting the D(J)
+component of a split pair of unknots could not change P(J) into a nontrivial
+knot. Therefore the infected pair is nonsplit. This completes (ii) => (iii).
+
+This proof uses a generalized twist, not an invariant two-puncture clasp disk.
+It therefore avoids the specific geometric obstruction that invalidated the
+earlier Whitehead construction.
+
+The archive also proves an optional stronger geometric fact for arbitrary
+such Brunnian triples: every twist of denominator absolute value at least two
+leaves a nonsplit pair. That statement uses the precise CGLS reducing-filling
+theorem and its no-lens-space-summand hypothesis. The chosen-source proof
+above needs only its prescribed slopes and avoids that additional input.
+
+3. THE EXACT ALGEBRA EXPLAINS BOTH THE OPPORTUNITY AND THE LIMIT
+
+The quotient of the three-component Brunnian link has two input slots.
+Pairwise splitness forces its normalized operation to have the form
+
+        F(Q0+xv, Q0+yv) = Q0+c_B(A)xyv,       c_B(A) in R.
+
+Proof: the terms containing exactly one v vanish because filling the other
+slot by Q0 leaves a split pair. The meridional closure functional is the
+product of the two input meridional functionals, so the remaining all-v term
+lies in the rank-one kernel Rv. Its coefficient is c_B.
+
+In particular,
+
+                         d_(P(J) union D(J)) = c_B x(J).
+
+This makes the reduction transparent. A flat input gives a zero factor.
+If c_B is nonzero, a nonflat input cannot give one. The Brunnian construction
+multiplies the defects; it does not add contributions with opposite signs.
+
+For a componentwise strongly inverted Brunnian link with more input slots,
+the same argument gives c_B times the product of all input defects. A seed
+with c_B identically zero would be decisive. Its topological nontriviality
+alone does not establish that coefficient's value.
+
+4. AN ACTUAL SEED, COMPUTED EXACTLY
+
+We reconstructed Stoimenow's n=3 diagram directly from his equation (10).
+Start with the pure braid
+
+                   beta_3 = [sigma_1^2, sigma_2^2].
+
+Double its strands and add the six crossings in the specified clasp wiring.
+The resulting diagram has 38 crossings; this is a diagram count, not a claim
+about the knot's minimal crossing number. Its three marked crossing changes
+were checked in all seven nonempty combinations. Every result simplifies by
+actual diagram moves to a crossing-free, one-component unknot.
+
+In the recorded Jones convention, the exact polynomial satisfies
+
+ V_K3(t)-1 = -t^-12 (t-1)^7 (t+1)^3 (t^2+1)
+                         (t^2+t+1)(t^2-t+1)^2.
+
+In particular it is nonzero. Extracting the two input factors and the output
+cap factor gives
+
+ c_B(A) = unit * (t-1)^4 (t+1)(t^2+1)(t^3+1)^2,
+                                                        t=A^-4,
+
+where 'unit' means a signed power of A determined by the chosen peripheral
+markings and chirality. The nonzero conclusion is independent of that unit.
+
+Therefore this specific seed cannot create the first flat input, for ANY
+nonflat companion. This is an exact exclusion of the whole companion family.
+The same seed still proves the conversion theorem when a flat companion is
+assumed.
+
+Verification: Regina computed the polynomial directly from the original PD
+diagram. A separate integer Kauffman-bracket contraction, using neither
+Regina nor diagram simplification, reproduced all eight polynomials from the
+38-crossing PD data. Independent exact Laurent multiplication checked the
+displayed factorization. The data, complete diagram, and both computation
+paths are included in the evidence archive.
+
+5. TWO OTHER EXACT OBSTRUCTIONS
+
+Equivariant connected sums cannot create a first flat preferred quotient.
+Writing y(J)=1-delta*x(J), composition multiplies the y coordinates. For a
+flat total, the factors must all be Laurent units. The preferred longitude
+has determinant zero, which gives x(exp(pi*i/4))=0. Together these conditions
+force every unit factor to equal 1, hence every individual x to be zero.
+The proof is included in the archive; its scope is the specified equivariant
+connected sum, without an unproved claim about every possible involution on
+a composite knot.
+
+There is also a geometric locality obstruction. In a strongly inverted solid
+torus, invariant zero-linking two-puncture crossing-disk twists preserve the
+property that a knot lies inside a ball in that torus. An equivariant sphere
+gives an invariant containing ball, and the unique fixed-axis interval
+between the disk's punctures allows its surgery circle to be moved into that
+ball. Thus such local clasp moves cannot turn an essential pattern into a
+local unknot. The proof requires the disk itself to be invariant and contained
+in the solid torus. The Brunnian construction escapes precisely this scope.
+
+6. WHAT REMAINS
+
+The concrete target is still an essential pattern whose whole transmission
+factor vanishes. We now know that this is equivalent to a Jones counterexample
+with unknotting number one, rather than merely a sufficient construction.
+The tested Brunnian seed, connected sums, and the audited local clasp repairs
+do not supply such a pattern.
+
+Two separate open steps must remain distinct: finding or excluding a zero
+factor in this restricted setting, and connecting the restricted setting to
+an arbitrary Jones-one knot. No finite collection of Taylor coefficients,
+ordinary polynomial equality promoted to colored equality, or braid-matrix
+faithfulness theorem supplies either missing step here.
+
+PRIMARY REFERENCES
+
+T. Lidman and A. H. Moore, Adjacency of three-manifolds and Brunnian links,
+Nagoya Math. J. 261 (2026), e10. Theorem 1.4 proof; Propositions 3.1 and 3.2.
+https://arxiv.org/html/2308.06211
+https://doi.org/10.1017/nmj.2025.10092
+
+A. Stoimenow, Some applications of Tristram–Levine signatures and relation
+to Vassiliev invariants, Adv. Math. 194 (2005), 463–484. Eq. (10), Lemma 6.
+https://doi.org/10.1016/j.aim.2004.07.003
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf
+
+H. Howards and J. Luecke, Strongly n-trivial knots, Theorem 6.1.
+An alternative primary existence construction; conventions in Definition 1.3.
+https://arxiv.org/abs/math/0004183
+https://users.wfu.edu/howards/papers/ntrivial.pdf
+
+K. Boyle and W. Chen, Equivariant unknotting numbers of strongly invertible
+knots, Definition 2.1 and Section 6.
+https://arxiv.org/html/2412.09797v2
+
+M. Lackenby, Links with splitting number one, Proposition 4.1 proof.
+The equivariant-sphere formulation used in the locality argument.
+https://people.maths.ox.ac.uk/lackenby/spl29121-geom-ded.pdf
+
+M. Culler, C. McA. Gordon, J. Luecke, P. B. Shalen, Dehn surgery on knots,
+Ann. Math. 125 (1987), 237–300, Corollary 2.4.7. We use the exact unlink-
+exterior application spelled out in Lidman–Moore's Proposition 3.2 proof.

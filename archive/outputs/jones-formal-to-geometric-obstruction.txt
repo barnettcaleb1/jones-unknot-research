@@ -1,0 +1,159 @@
+JONES UNKNOT DETECTION: WHY THE FORMAL-TO-GEOMETRIC SHORTCUT FAILS
+1 November 2026. Research audit; not a proof of unknot detection.
+
+Result and decision
+-------------------
+No proof or nontrivial Jones-one knot was obtained. This pass closes three
+specific shortcuts: realizing a surgery twist by a finite annular link,
+realizing a Jones--Wenzl projector by an ordinary tangle, and turning an
+additive matrix identity automatically into a braid relation. These are
+obstructions to proposed methods, not evidence that the main theorem is
+nearly proved. No novelty or external-review claim is made.
+
+The most useful result is small and exact: a finite annular gadget cannot
+reproduce a twist even on two elementary test channels. Its failure is
+visible in the first derivative, before any large diagram computation.
+
+1. A two-channel obstruction
+---------------------------
+Use the Kauffman bracket with empty link equal to one. Write the annular
+skein module as Z[A,A^-1][z]. The meridian and positive-twist eigenvalues
+on channel i are
+
+    lambda_i = -A^(2i+2) - A^(-2i-2),
+    theta_i  = (-1)^i A^(i(i+2)).
+
+In particular, inserting a finite annular skein F(A,z) acts in channel i
+by F(A,lambda_i). These conventions are Masbaum's equations (2)--(4),
+printed page 539, in the primary source below.
+
+PROPOSITION. Let F(A,z) be a finite polynomial in z whose coefficients
+are rational functions regular at A=1. Let g(A) be regular at A=1 with
+g(1) nonzero. There is no such F satisfying both
+
+    F(A,lambda_0(A)) = g(A),
+    F(A,lambda_2(A)) = g(A) A^(8r)
+
+for a nonzero integer r.
+
+Proof. Every channel satisfies lambda_i(1)=-2 and lambda_i'(1)=0.
+Consequently the chain rule gives
+
+    d/dA F(A,lambda_i(A)) at A=1 = F_A(1,-2),
+
+independently of i. The proposed right sides have derivatives g'(1)
+and g'(1)+8r g(1), respectively. They differ. Contradiction. End proof.
+
+The proposition permits A-dependent coefficients and any common regular
+normalization nonzero at A=1. For an actual framed annular link, taking
+g=F(A,lambda_0) is its ordinary closure bracket. Its value at A=1 is a
+nonzero signed power of two, so this natural normalization cannot help.
+The normalized responses all have first derivative zero, whereas the
+required channel-2 twist response has derivative 8r.
+
+An equivalent exact factorization is
+
+    lambda_2-lambda_0 = -A^-6 (A^4-1)^2 (A^4+1),
+    theta_2-theta_0   = (A^4-1)(A^4+1).
+
+The difference of two polynomial substitutions is divisible by the first
+expression. Its double zero at A=1 cannot produce the second expression's
+simple zero. The degree-one formal interpolant instead requires
+
+    (theta_2-theta_0)/(lambda_2-lambda_0) = -A^6/(A^4-1).
+
+This is exactly the first nonconstant coefficient in Habiro's completed
+twist expansion in Masbaum's equation (7), printed page 540. The pole
+records the obstruction. Clearing its denominator changes the vacuum
+normalization to a scalar vanishing at A=1, which is not the closure
+bracket of an actual finite uncolored link.
+
+Scope. The result excludes a fixed closed annular insertion implementing
+the twist in arbitrary external contexts. It does not exclude actual
+Dehn surgery, drawing an open full-twist braid on a chosen set of strands,
+singular formal skeins, root-of-unity quotients, or an identity needed
+only in one particular exterior. Testing channels 0 and 2 assumes no
+deduction from ordinary to colored Jones polynomials: a universal
+operation on ordinary parallel strands must also act on their linear
+combinations.
+
+2. Rational interpolation still requires increasing size
+--------------------------------------------------------
+Even allowing poles, a polynomial F in Q(A)[z] that implements a positive
+or negative twist on channels 0,...,N must have z-degree at least N.
+
+The Nth divided difference is
+
+    sum over i=0,...,N of
+       theta_i^(+/-1) / product over j!=i of (lambda_i-lambda_j).
+
+The denominator's degree at A=infinity in term i is
+    i^2-i+N^2+3N.
+For positive twist, the term degrees are 3i-N^2-3N, uniquely largest at
+i=N. For negative twist, they are -2i^2-i-N^2-3N, uniquely largest at i=0.
+Thus the divided difference is nonzero, proving the degree bound. The
+same argument works for the even channels 0,2,...,2N. Hence no finite
+rational annular polynomial implements the twist on every even channel.
+This is consistent with the completed, rather than finite, construction
+in the literature.
+
+3. Two supporting checks on formal algebra
+------------------------------------------
+A Jones--Wenzl projector cannot be a single ordinary tangle, even after
+multiplication by a nonzero rational scalar. For width at least two it
+annihilates an adjacent cup-cap diagram. If an actual tangle represented
+it, composing and closing would yield an actual link with identically
+zero bracket. That is impossible because an actual link has nonzero
+bracket at A=1. Clearing denominators does not change the contradiction.
+This does not exclude identities involving a difference of actual tangles.
+
+An additive matrix identity is also not a braid relation. The entire
+generic three-strand Temperley--Lieb algebra satisfies the standard
+degree-four alternating matrix identity. Nevertheless, the actual braid
+images of sigma_1^3 and sigma_2^3 freely generate a group. Specialization
+at A=exp(pi*i/4), after accounting for the scalar character, gives the
+cubes of the two elementary parabolic matrices; their actions satisfy
+the elementary ping-pong criterion. Thus even within the actual small
+braid algebra, an additive identity coexists with freely generated gates.
+
+4. What would constitute a complete route
+-----------------------------------------
+The proposed counterexample route was: realize a formal quantum identity
+by one finite geometric gadget; insert it into an unknot; prove the result
+has exactly the same whole Jones polynomial; certify that the resulting
+single-component knot in S^3 is nontrivial. The universal realization step
+fails here. Later steps do not deserve further work for that gadget.
+
+A construction tailored to one exterior remains logically possible, but
+none was produced. It must provide an actual diagram and an exact full
+polynomial identity, not a signed sum, a finite Taylor approximation, or
+a formal object whose realizability is assumed.
+
+The parallel homological audit reached the same strategic boundary:
+known component classifications of Khovanov curves do not classify which
+graded collections arise from classical tangles. Existing formal
+cancelling collections are not actual knot counterexamples. Assuming
+that every Jones-one closure has rank-one homology merely assumes an
+equivalent form of the original conjecture.
+
+The research correction is to distinguish an explicit missing geometric
+theorem from a proof scaffold that has earned further investment. These
+tests close proposed shortcuts; they do not supply that missing theorem.
+
+Primary sources and verification
+--------------------------------
+G. Masbaum, Skein-theoretical derivation of some formulas of Habiro,
+Algebraic & Geometric Topology 3 (2003), 537--556, equations (2)--(7):
+https://msp.org/agt/2003/3-1/agt-v3-n1-p17-p.pdf
+
+S. Morrison, A Formula for the Jones--Wenzl Projections, Section 2:
+https://arxiv.org/abs/1503.00384
+
+T. Ito, A kernel of a braid group representation yields a knot with
+trivial knot polynomials (a sufficient endpoint, not a constructed kernel):
+https://arxiv.org/abs/1402.2028
+
+The derivative proof and divided-difference calculation were checked
+independently within this research session. Exact Laurent arithmetic
+checked the factorizations and interpolation coefficient. The companion
+evidence archive retains those calculations and the three agent audits.

@@ -1,0 +1,1847 @@
+{
+  "case": "nonzero_control",
+  "status": "PASS_EVERY_RECORD_AND_PARKED_SUM",
+  "configuration_count": 4005,
+  "intersection_counts": [
+    [
+      49,
+      123
+    ],
+    [
+      23,
+      24
+    ]
+  ],
+  "base_matching": 0,
+  "matching_references": {
+    "0": {
+      "a_m": 0,
+      "b_m": 0,
+      "parity": 0,
+      "kappa_m": 0,
+      "raw_sign_m": 1,
+      "path": [
+        [
+          [
+            "87/50",
+            "236262/2918725"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "87/50",
+            "236262/2918725"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "87/50",
+            "236262/2918725"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "87/50",
+            "236262/2918725"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "87/50",
+            "236262/2918725"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ]
+      ]
+    },
+    "1": {
+      "a_m": 1,
+      "b_m": 1,
+      "parity": 1,
+      "kappa_m": 0,
+      "raw_sign_m": -1,
+      "path": [
+        [
+          [
+            "87/50",
+            "236262/2918725"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "87/50",
+            "-13/100"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "187/100",
+            "-13/50"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "2",
+            "-13/50"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "213/50",
+            "-373/3670"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "213/50",
+            "13/100"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "413/100",
+            "13/50"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "387/100",
+            "13/50"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "187/50",
+            "13/100"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "187/50",
+            "-13/100"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "387/100",
+            "-13/50"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "4",
+            "-13/50"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "1882/475",
+            "-13/50"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "1097/276",
+            "-19/69"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-1073/1256"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "2357/980",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "773/276",
+            "38/69"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "5/2",
+            "57/62"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "467/220",
+            "69/110"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "29257/13140",
+            "351/730"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "180269/80132",
+            "20019/40066"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "3047/1292",
+            "225/646"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "6447/2612",
+            "285/1306"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7129/3084",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-10995/11864"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "911/236",
+            "-115/236"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-10245/10792"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7437/3052",
+            "-285/1526"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "6619/3052",
+            "-639/1526"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "5/2",
+            "-11229/13624"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "68313/24196",
+            "-3468/6049"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-3264/3079"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "119455/27602",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "94247/24196",
+            "4293/12098"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "12115/3524",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "68305/18092",
+            "-4293/9046"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-1527/1885"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "13315/5404",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7641/3052",
+            "6/109"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "5011/1732",
+            "309/866"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "57623/17540",
+            "309/8770"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "880/247",
+            "927/3952"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "163547/50132",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "15455/4692",
+            "-103/2346"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "343221/114340",
+            "-23899/57170"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-2488253/3081008"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "2529371/671964",
+            "-81619/167991"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "336105/98288",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "3501261/900644",
+            "81619/225161"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "17794265/4110068",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-3409027/3209424"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "2549501/900644",
+            "-130763/225161"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "5/2",
+            "-3933/4699"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "48341/22868",
+            "-4161/11434"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "273809/114340",
+            "-4136/28585"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-191327/203614"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "178973/50132",
+            "-21305/25066"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7/2",
+            "-184663/197442"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "7565/3284",
+            "0"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "210467/86188",
+            "4136/21547"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "192439/86188",
+            "20805/43094"
+          ]
+        ],
+        [
+          [
+            "13933/7100",
+            "-13/50"
+          ],
+          [
+            "87/50",
+            "236262/2918725"
+          ]
+        ],
+        [
+          [
+            "5/2",
+            "-213/232"
+          ],
+          [
+            "87/50",
+            "236262/2918725"
+          ]
+        ],
+        [
+          [
+            "1185/412",
+            "-129/206"
+          ],
+          [
+            "87/50",
+            "236262/2918725"
+          ]
+        ],
+        [
+          [
+            "7/2",
+            "-789/734"
+          ],
+          [
+            "87/50",
+            "236262/2918725"
+          ]
+        ],
+        [
+          [
+            "213/50",
+            "-373/3670"
+          ],
+          [
+            "87/50",
+            "236262/2918725"
+          ]
+        ]
+      ]
+    }
+  },
+  "parked_positions": [
+    {
+      "matching": 0,
+      "parked_index": 0,
+      "position": [
+        "213/50",
+        "-373/3670"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 1,
+      "position": [
+        "42837/10300",
+        "-119/515"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 2,
+      "position": [
+        "47263/11750",
+        "13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 3,
+      "position": [
+        "213/50",
+        "373/5730"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 4,
+      "position": [
+        "517/150",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 5,
+      "position": [
+        "517/150",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 6,
+      "position": [
+        "63713/17700",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 7,
+      "position": [
+        "63713/17700",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 8,
+      "position": [
+        "1485163/370100",
+        "13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 9,
+      "position": [
+        "213/50",
+        "25849/451200"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 10,
+      "position": [
+        "213/50",
+        "-25849/289000"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 11,
+      "position": [
+        "305467/74020",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 12,
+      "position": [
+        "213/50",
+        "-200239/2235125"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 13,
+      "position": [
+        "4725087/1144940",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 14,
+      "position": [
+        "22973121/5724700",
+        "13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 15,
+      "position": [
+        "213/50",
+        "200239/3489575"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 16,
+      "position": [
+        "3940589/1095100",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 17,
+      "position": [
+        "3940589/1095100",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 18,
+      "position": [
+        "77867/21700",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 19,
+      "position": [
+        "77867/21700",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 20,
+      "position": [
+        "1818801/453100",
+        "13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 21,
+      "position": [
+        "213/50",
+        "32219/552400"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 22,
+      "position": [
+        "213/50",
+        "-1111/12200"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 0,
+      "parked_index": 23,
+      "position": [
+        "1870437/453100",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 0,
+      "position": [
+        "13933/7100",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 1,
+      "position": [
+        "13933/7100",
+        "-13/50"
+      ],
+      "A_y": 0,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": 0,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 2,
+      "position": [
+        "13933/7100",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 3,
+      "position": [
+        "87/50",
+        "163/2085"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 4,
+      "position": [
+        "1963/1000",
+        "13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 5,
+      "position": [
+        "31369/17000",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 6,
+      "position": [
+        "13557/7700",
+        "-58/385"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 7,
+      "position": [
+        "87/50",
+        "-163/1315"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 8,
+      "position": [
+        "31369/17000",
+        "-13/50"
+      ],
+      "A_y": -2,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -2,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 9,
+      "position": [
+        "1933627/1047500",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 10,
+      "position": [
+        "418553/237300",
+        "-365/2373"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 11,
+      "position": [
+        "87/50",
+        "-3987/32408"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 12,
+      "position": [
+        "1933627/1047500",
+        "-13/50"
+      ],
+      "A_y": -2,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -2,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 13,
+      "position": [
+        "87/50",
+        "3987/51392"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 14,
+      "position": [
+        "2057023/1047500",
+        "13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 15,
+      "position": [
+        "113/50",
+        "-691/6600"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 16,
+      "position": [
+        "12309/5900",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 17,
+      "position": [
+        "87/50",
+        "801/15175"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 18,
+      "position": [
+        "49441/24800",
+        "13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 19,
+      "position": [
+        "9311/4960",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 20,
+      "position": [
+        "9311/4960",
+        "-13/50"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 21,
+      "position": [
+        "87/50",
+        "-801/9625"
+      ],
+      "A_y": -1,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -1,
+      "outer_sign": 1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "matching": 1,
+      "parked_index": 22,
+      "position": [
+        "9311/4960",
+        "-13/50"
+      ],
+      "A_y": -2,
+      "w0_geometric": 0,
+      "w0_with_matching_boundary": 0,
+      "outer_degree": -2,
+      "outer_sign": -1,
+      "inner_pairing": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "first_loop_winding_range": [
+        0,
+        0
+      ]
+    }
+  ],
+  "matching_sums": {
+    "0": [],
+    "1": [
+      [
+        -4,
+        1
+      ]
+    ]
+  },
+  "total_specialization": [
+    [
+      -4,
+      1
+    ]
+  ],
+  "seconds": 0.9967929585836828,
+  "formula": "b=b_m+2 wind_xm(gamma_other[y_m,y]+c1[y,y_m])+2 wind_y(gamma_first[x_m,x]+c0[x,x_m])",
+  "non_tautological_check": "Every winding is computed from actual one-point closed paths; matching reference constants are traced configuration paths, not residuals from saved b."
+}

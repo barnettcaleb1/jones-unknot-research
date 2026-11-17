@@ -1,0 +1,191 @@
+DNA RECOMBINATION, ACTIVE IDENTIFICATION, AND JONES HIDDEN CHANNELS
+2026-10-31. Bounded interdisciplinary pass. No general unknot theorem claimed.
+
+BIOLOGICAL MOTIVATION, WITH PRIMARY SOURCES
+DNA topology uses active perturbation: infer an inaccessible protein-bound
+configuration from the knots/links produced after a known local reconnection.
+Wasserman--Dungan--Cozzarelli experimentally found a specifically predicted
+minor knot product of resolvase recombination (Science229,1985,171-174):
+https://pubmed.ncbi.nlm.nih.gov/2990045/ . This is real inverse-problem evidence,
+not a claim that enzymes compute the Jones polynomial.
+Vazquez--Sumners rigorously classify the Gin tangle equations under their
+model assumptions, proving the relevant tangles rational and obtaining a
+unique mechanism:
+https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/abs/tangle-analysis-of-gin-sitespecific-recombination/373922696F866DA126DD7384E44241AD .
+Stolz et al., Pathways of DNA unlinking (2017), use coherent band surgery
+and simulated reconnection pathways, with explicit modeling assumptions:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC5622096/ .
+The mathematical idea to import is ACTIVE IDENTIFICATION and interactions
+between interventions, not biochemical specificity as an unproved theorem
+about arbitrary knots.
+
+1. TWO PROBES COMPLETELY RECOVER THE TWO-STRAND SKEIN RESPONSE
+Use R=Z[A,A^-1], delta=-A^2-A^-2, e^2=delta e, and b=A*1+A^-1*e.
+The planar braid closure functional is ell(1)=delta, ell(e)=1; one circle
+has bracket1. Let [T]=f*1+g*e and F_n=ell(T b^n). These are FRAMED brackets;
+known writhe corrections convert oriented product Jones polynomials to F_n.
+Since (b-A)(b+A^-3)=0,
+ F_(n+2)=(A-A^-3)F_(n+1)+A^-2 F_n, for all integers n.
+Moreover
+ F_0=delta f+g,
+ F_1=-A^3 f-A^-3 g.
+Let D=A^3-delta A^-3=A^-1(delta^2-1). Then
+ D f=-A^-3 F_0-F_1,
+ D g=A^3 F_0+delta F_1.
+D is a nonzero Laurent polynomial, so two symbolic probes recover the entire
+bracket vector. Infinite rounds at the SAME synapse provide no additional
+Jones information. This is a sharp finite-dimensional observability statement.
+The stdlib verifier response_check.py checks165 actual algebraic-tangle
+expressions,1650 recurrence instances, and both reconstruction identities.
+
+At a fixed numerical A, observability fails when A^8+A^4+1=0, equivalently
+when t=A^-4 is a primitive third root of unity. At a simple such root, the
+derivatives of the two inverse numerators divided by D' recover f and g
+at that root, by l'Hopital. Thus varying the coupling can recover information
+which more rounds at the same singular coupling cannot.
+
+2. AN EXPLICIT HIDDEN CHANNEL AND AN EXACT DESIGN EQUATION
+After adjusting framing so an actual unknot substrate has ell(T)=1,
+every bracket vector is uniquely
+ T(h)=e+h(1-delta e), h in R.
+The original closed Jones observation sees no h at all. One extra twist reads
+ F_1=-A^-3-A^-1(delta^2-1)h.
+For a second tangle S=u+v e,
+ ell(T(h)S)=u+delta v+(1-delta^2)v h.
+This makes the inverse problem concrete: recover h from intervention data,
+then impose geometric constraints from the enzyme/tangle model.
+
+Two independently prepared substrates compensate to retain the two-unlink
+bracket exactly when
+ ell(T(h)T(k))=delta+(1-delta^2)(h+k-delta h k)=delta,
+ equivalently (1-delta h)(1-delta k)=1.
+Over R this requires both factors to be Laurent monomial units. Consequently
+arbitrary cancellation designs cannot be realized even algebraically. This
+recovers the earlier rank-two unit obstruction; it is not new generic progress.
+
+A narrower constructive target survives: find a NONRATIONAL two-string tangle
+with bracket e and a CERTIFIED ACTUAL UNKNOT closure ell(T). Then the crossed
+closure ell(Tb) has bracket -A^-3. Its magnitude at A=1 forces it to be a knot,
+since for a c-component link |V(1)|=2^(c-1). Its normalized Jones is a monomial;
+the knot identities V(1)=1,V'(1)=0 force that monomial to be1. If this crossed
+closure were also an actual unknot, the double branched cover of T would have
+two distinct distance-one S3 fillings. The nonmeridional S3-surgery theorem
+forces that cover to be a solid torus, making T rational, a contradiction.
+Thus such a T would construct a counterexample with rational-tangle unknotting
+number1. This is a RESTRICTED REALIZABILITY TARGET, not a reduction of every
+potential Jones counterexample. The opposite planar closure is delta and
+is NOT the knot closure used in this argument.
+Relevant primary tangle/Jones equivalences and surgery discussion:
+Sikora, https://arxiv.org/abs/2005.08162 .
+
+3. A GENUINE EPistasis TEST: TWO SILENT MOVES INTERACT
+Take the3braid
+ w=[1,2,1,-2,-1,-2,1,2].
+The first six generators are identity by the braid relation, so its closure
+is the unknot closure of sigma1 sigma2. Switch crossing positions0 and2,
+numbered from zero. Each SINGLE switch still gives an actual unknot, but the
+DOUBLE switch gives a trefoil. Exact Jones response table:
+ (00,10,01,11)=(1,1,1,t^-1+t^-3-t^-4).
+Both first-order differences vanish at the base state, while the mixed
+difference is t^-1+t^-3-t^-4-1, nonzero.
+This is a literal knot analogue of biological epistasis: individually silent
+changes have a joint effect. It is not merely a formal polynomial example.
+unknot_epistasis.py saves the four PD codes and checks simplification to
+0,0,0,3 crossings, each with one component. Exact TL3 evaluation independently
+checks all four Jones polynomials. No full knot invariant is inferred from
+this marked response: even the ACTUAL UNKNOT has nonzero interactions.
+
+An even simpler warning is the unknot closure of the2braid sigma1: adding a
+positive full twist gives a trefoil with V=t+t^3-t^4; adding a negative full
+twist gives another unknot. V=1 never implies that its perturbed products
+must retain V=1.
+
+4. WHAT THE BIOLOGY CONNECTION SUGGESTS NEXT
+Move the synapse or use two interacting sites, rather than indefinitely
+repeating one operation. For m marked sites the entire response is a
+multilinear functional on a tensor product of m rank-two skein spaces.
+Two independent probes per site recover that functional from2^m measurements;
+they do not automatically recover the full Catalan-dimensional skein state
+on all4m boundary points. Mixed responses identify which sites interact and
+can guide exact counterexample construction toward coupled regions rather
+than independent local knots. The example above is a necessary calibration
+test for any such interaction criterion.
+
+For the mathematical unknot problem, a possible research program is to impose
+topological realization constraints on these measured hidden coefficients:
+certified unknot substrate, no local knot, prime tangle, and controlled
+branched-cover exterior. In the rational subclass, classical tangle fractions
+make reconstruction rigid; outside it, geometric realizability is the missing
+step. The DNA literature earns its rigidity from multiple ACTUAL topological
+products and structural hypotheses, not from one scalar Jones value.
+
+5. THE UNAVOIDABLE LIMIT OF A FIXED TWO-STRAND OBSERVATION
+Conway mutation fixes both basis elements of the two-strand bracket space.
+Thus a tangle and its Conway mutant have the same bracket vector and all
+outside Jones intervention responses, even if the tangles are nonisotopic.
+Actual mutant knots, such as Conway and Kinoshita--Terasaka, show that this
+can conceal genuine topological differences. One must move/enlarge the
+accessible region or use information beyond the fundamental bracket.
+Primary skein proof of mutation invariance:
+https://nyjm.albany.edu/j/2010/16-7p.pdf, Section3.
+
+These results identify both a usable experimental-design principle and a
+precise realizability problem. They neither prove Jones unknot detection nor
+produce a counterexample, and no novelty claim is made for the elementary
+skein identities.
+
+6. DIRECT EXISTING BIOLOGY--JONES BRIDGE: SIKORA AUDIT
+Source: Adam S. Sikora, arXiv:2005.08162v2, Sections4,8,9,
+https://arxiv.org/html/2005.08162 . This is a KNOWN research direction, not
+an original theorem of this investigation.
+
+Fix two rational probes T1,T2 distinct as UNFRAMED tangles. Theorem21
+reconstructs [X] from the two framed closure brackets. If [Ti]=(ai,bi), the
+measurement matrix has rows (delta ai+bi, ai+delta bi), and determinant
+(delta^2-1)(a1 b2-a2 b1), nonzero because the rational slopes differ.
+Theorem24 proves that bracket recognition of rational tangles among all
+tangles is equivalent to Jones unknot detection. Theorem3 then follows:
+assuming JC, a framed reaction system admitting a rational solution admits
+no other solution.
+
+The positive inverse-design target is therefore precise: find a nonrational
+X and rational R with certified actual isotopies
+ N(X+Ti) = N(R+Ti), i=1,2,
+and compatible framings. This is a topological construction problem, rather
+than a polynomial guessing problem. The branched-cover version seeks a
+non-solid-torus exterior with two fillings matching the solid-torus model,
+with compatible peripheral markings and deck involutions. Matching abstract
+filled 3-manifolds alone is insufficient to certify the branch links.
+
+Framing calibration: fix all blackboard-framed input diagrams. Track the
+signed Reidemeister-I defects k1,k2 in the two certified closure isotopies.
+A single framing change of X aligns both output framings exactly when
+k1=k2. Adding framing to a probe shifts both candidate products equally and
+does not repair a mismatch. Sikora works up to BALANCED framed isotopy,
+which is more flexible than individually preserving every component framing.
+Under that stated convention, total kink defect is the relevant calibration.
+
+A necessary negative control is already in Lemmas14--15: the unframed
+system N(X)=U=N(X+1) has the two rational solutions infinity and -1/2.
+Their closure framing DIFFERENCES are respectively +1 and -3. Consequently
+they never give two solutions to the same framed system. The HTML has an
+irrelevant typo in the denominator q in Lemma14 and conflicting absolute
+framing offsets for -1/2 in Lemma15; the difference +1 versus -3 is consistent
+and is all we use. An unframed ambiguity alone does not threaten JC.
+
+7. EXACT BRAID PROOF OF THE EPistasis CALIBRATION
+Independently supplied and checked by the braid agent. Put a=sigma1,
+b=sigma2 and use aba=bab. The base word is
+ w=aba b^-1 a^-1 b^-1 ab=ab.
+Flip crossing0: a^-1 b a b^-1 a^-1 b^-1 ab = a^-1 b.
+Here b a b^-1 = a^-1 b a, followed by free cancellation.
+Flip crossing2: a b a^-1 b^-1 a^-1 b^-1 ab = b^-2 a b,
+using a b a^-1 = b^-1 a b and free cancellation. This is conjugate to
+b^-1 a. Both single-flip closures are unknots by Markov destabilizations.
+The double-flip word reduces to a^-2 b^-2 a b. It is conjugate to a^-3 b:
+cyclically rotate to b^-1 a b a^-2 b^-1, substitute
+b^-1 a b = a b a^-1 to get a b a^-3 b^-1, cyclically rotate to
+a^-3 b^-1 a b, and apply the same relation to get a^-2 b a^-1.
+Moving the last a^-1 to the front gives a^-3 b. The closure destabilizes
+to a^-3, a negative trefoil. The exact TL3 Jones table independently confirms
+V=t^-1+t^-3-t^-4 for the double flip, and V=1 for the other three states.

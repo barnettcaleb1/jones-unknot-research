@@ -1,0 +1,117 @@
+U5-W6 TEST 2: KNOWN BURAU KERNEL ELEMENTS IN OTHER TL SUMMANDS
+2026-11-03. Status TRUSTED (exact computation, independently calibrated).
+
+Outcome
+-------
+No supplied braid lies in all TL kernels. The blanket prediction that every
+other summand is nonidentity has a published exception: the Long--Paton
+braid acts EXACTLY as identity in W(6,0), shape (3,3), dimension5. Its W(6,2)
+block is nonidentity, so this exception supplies no Jones counterexample.
+
+                              W(5,1)   W(6,4)   W(6,2)   W(6,0)
+Bigelow B5 (length118)          non-I      --       --       --
+Bigelow B6 / Ren (length44)        --       I      non-I    non-I
+Long--Paton B6 (length106)         --       I      non-I       I
+
+W(n,k) has k through strands and partition ((n+k)/2,(n-k)/2).
+Dimensions: W(5,1)=5; W(6,4)=5; W(6,2)=9; W(6,0)=5.
+All input words have exponent sum0. All unreduced Burau matrices were also
+checked to be identity exactly over Z[t,t^-1]. Thus no normalization scalar
+is hidden in the TL comparisons.
+
+Sources and precise words
+-------------------------
+Commutator convention here [a,b]=aba^-1b^-1. Switching to the other common
+convention does not change the identity/nonidentity conclusions.
+
+1. Bigelow B5: Geometry & Topology3 (1999), pp403--404.
+   https://web.math.ucsb.edu/~bigelow/publications/02.pdf
+   Archived exact implementation: work/pass2/braid_kernel.py.
+   phi1 = s3^-1 s2 s1^2 s2 s4^3 s3 s2.
+   phi2 = s4^-1 s3 s2 s1^-2 s2 s1^2 s2^2 s1 s4^5.
+   b5 = [phi1^-1 s4 phi1,
+         phi2^-1 (s4 s3 s2 s1^2 s2 s3 s4) phi2].
+   Freely reduced word has118 letters in our convention.
+
+2. Bigelow B6: same source; also Ren section2.2 explicitly reproduces it.
+   https://arxiv.org/html/2609.11084v2#S2.SS2
+   psi1 = s4 s5^-1 s2^-1 s1.
+   psi2 = s4^-1 s5^2 s2 s1^-2.
+   b6 = [psi1^-1 s3 psi1, psi2^-1 s3 psi2].
+   Important: Ren's short ten-letter core psi1 psi2^-1 is a vanishing
+   matrix-coefficient gadget; it is NOT itself the Burau-kernel braid.
+
+3. Long--Paton: Topology32 (1993), pp444,446.
+   https://web.math.ucsb.edu/~long/pubpdf/Burau_n6.pdf
+   psi = s5^-1 s4^-1 s5 s3^-1 s4 s2^-1 s3^-3 s1^3
+         s5 s4 s3^-1 s2^-1 s1.
+   xi = [psi^-1 s5 psi, (s2 s3 s4 s5)^5].
+   Source formulas transcribed visually from PDF, not damaged OCR.
+   Source p446 already states identity in222 and nonidentity in2211;
+   these are our transposed shapes (3,3) and (4,2).
+
+Certificates
+------------
+Files:
+  work/width6/kernel_words.py: complete explicit words.
+  work/width6/kernel_eval.py: exact Laurent arithmetic, TL cell action.
+  work/width6/kernel_results.json: full matrices, ordered bases, witnesses.
+Run: python3 work/width6/kernel_eval.py
+Runtime approximately0.15sec on this workspace.
+
+Each generator is A*I+A^-1*e_i and delta=-A^2-A^-2. Cell basis comprises
+noncrossing partial matchings with no unmatched point inside a cup. A
+reconnection of two unmatched points is zero in the cell quotient. The
+program checks TL relations, braid relation, inverse relation, and exact
+Burau identities. The B5 matrix was also matched entry-for-entry with
+archived tl5_block.py after the basis permutation.
+
+For compact nonidentity witnesses, specialize A=2 over F_1000003. Listed
+entry is (rho(word)-I) with ONE-BASED row/column indices in saved basis:
+  Bigelow5, W(5,1):       (1,1) = 990042.
+  Bigelow6/Ren, W(6,2):   (1,1) = 694822.
+  Bigelow6/Ren, W(6,0):   (1,2) = 819897.
+  Long--Paton6, W(6,2):   (1,1) = 145335.
+These nonzero specializations suffice for rigorous nonidentity. All
+identity claims above were checked as exact Laurent-polynomial matrices,
+not inferred from specializations.
+
+A short exact witness for Bigelow6/Ren in W(6,2), entry(1,1) of rho-I:
+ A^-40 -3A^-36 +3A^-32 -A^-28 -2A^-24 +4A^-20
+ -3A^-16 +A^-12 +A^-8 -A^-4.
+
+Interpretation
+--------------
+These are finite explicit evaluations, not a faithfulness result for W(6,2)
+and not a general obstruction to scalar matrix-coefficient cancellation.
+Long--Paton's example isolates the remaining nontrivial TL behavior in
+the nine-dimensional W(6,2) block. It is the particularly relevant seed
+for the assigned width-six scalar-coefficient probe.
+
+Bounded structural follow-up (no new braid-family scan)
+------------------------------------------------------
+Both B6 seeds have rank(rho-I)=6 over Q(A), hence a three-dimensional fixed
+space in W(6,2). This is exact, not a genericity guess:
+
+For a=A*I+A^-1*E, with E a conjugate of e_i, rank(E)=dim W(4,2)=3.
+For either seed write M=[a,b]. Then
+  M-I=(ab-ba)a^-1b^-1,
+so rank(M-I)=rank(Eb-bE)<=2 rank(E)=6.
+Nonzero six-by-six minors at A=2 mod1000003 give the reverse inequality.
+Their explicit row/column indices and determinants are stored in
+kernel_structure.json and reproduced by kernel_structure.py.
+
+Consequently, for any fixed cap/cup vectors ell,v, the scalar sequence
+ell*M^r*v satisfies a recurrence of order at most7 over Q(A):
+Im(M-I) is invariant, has dimension6, and the induced map on the quotient
+is identity. This provides a finite-dimensional way to study all powers
+of either particular seed. It does NOT determine whether a scalar zero
+means a split tangle, nor supply a uniform nonvanishing theorem.
+
+For Long--Paton specifically, the full twist b=(s2 s3 s4 s5)^5 acts on
+W(6,2)|B5 = W(5,1) direct_sum W(5,3), dimensions5+4, by A^-12 and1.
+The other factor is scalar plus a rank3 idempotent (after dividing E by
+delta). Thus it is a commutator of two scalar-plus-idempotent operators.
+On W(6,0)|B5=W(5,1), the same b is scalar A^-12, directly explaining the
+identity block. No mechanism forcing the requested cap/cup coefficient
+nonzero emerged from this reduction; stop here rather than extrapolate.

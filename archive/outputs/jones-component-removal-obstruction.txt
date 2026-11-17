@@ -1,0 +1,128 @@
+WHY THE FORMAL COMPONENT-REMOVAL CONSTRUCTION CANNOT EXIST
+Research note, 1 November 2026
+
+Status
+------
+This is a proved obstruction to one proposed construction. It is not a
+proof of Jones unknot detection, nor a counterexample. No novelty claim
+is made for the elementary surgery lemma used below.
+
+The idea
+--------
+Eliahou, Kauffman and Thistlethwaite construct nontrivial links with the
+Jones polynomial of an unlink. Their two-slot outside tangle has reduced
+Kauffman-bracket pairing
+
+    H = [[h, delta^2], [delta^2, delta]],
+    delta = -A^2-A^(-2),
+    h = -A^(-14)-A^(-6)-2A^(-2)-2A^2-A^6-A^14.
+
+An extra split unknotted component multiplies a bracket by delta. The
+tempting shortcut is therefore to divide this entire pairing by delta,
+hoping to obtain a knot-producing version of the same invariant mechanism.
+The division does give Laurent polynomials:
+
+    G = H/delta = [[g, delta], [delta, 1]],
+    g = A^12-A^8+2A^4+2A^(-4)-A^(-8)+A^(-12).
+
+It also preserves the algebraic intertwining identity responsible for the
+EKT construction. But it cannot be realized by a single actual outside
+tangle with two disjoint four-ended filling slots. Here is a complete
+topological obstruction.
+
+A general lemma
+---------------
+Let K be a knot of determinant one. Choose two disjoint embedded bands
+on K. Suppose that performing either band move alone produces a link of
+determinant zero. Then performing both produces a link whose determinant
+is either zero or a perfect square.
+
+Proof. The double cover of S^3 branched over K is an integral homology
+sphere Y. The two disjoint band moves lift to integral surgeries on a
+two-component link in Y (the Montesinos trick). Write the surgery linking
+matrix as
+
+    B = [[a,b],[b,c]],   a,b,c integers.
+
+The single surgeries have first homology presented by [a] and [c]. Their
+zero determinants force a=c=0. The double surgery therefore has first
+homology presented by [[0,b],[b,0]]. This homology is infinite when b=0;
+otherwise its order is b^2. This is exactly the asserted determinant.
+End of proof.
+
+Application to G
+----------------
+Fill each of the two slots by one of the two crossing-free rational
+tangles, 0 or infinity. If G were realizable, its four closures would have
+brackets g, delta, delta, 1. Put zeta=exp(pi*i/4). Then
+
+    delta(zeta)=0,    g(zeta)=-8.
+
+The absolute bracket value at zeta equals the link determinant: the
+Jones writhe correction has absolute value one. Thus these four closures
+would have determinants
+
+    [[8,0],[0,1]].
+
+The infinity/infinity closure is a knot: its bracket at A=1 has absolute
+value one, whereas an r-component link has absolute bracket value
+2^(r-1) there. Its determinant is one. Switching either slot from
+infinity to 0 is a band move, and the slots are disjoint. The lemma says
+the double switch must have square determinant, contradicting 8.
+
+This argument does not assume the determinant-one anchor is an unknot.
+It therefore does not use the conjecture being investigated. Common
+framing monomials cannot repair the contradiction, because their absolute
+values at zeta are one.
+
+What this establishes
+---------------------
+Formal division by an unlink factor does not necessarily correspond to
+removing a component geometrically. Here that distinction is decisive,
+even though the quotient has integral Laurent coefficients and retains
+the desired algebraic symmetry. The entire proposed H/delta mechanism
+is excluded, independently of crossing number or band complexity.
+
+This does not classify all outside tangles or all invariant pairings.
+It does not exclude every possible conversion of a Jones-trivial link
+into a knot. A separate five-component input examined in this pass passes
+a necessary homological test, but no suitable bands or Jones-one knot
+were constructed; that test is not evidence of a counterexample.
+
+Assessment of the larger search
+-------------------------------
+We have not obtained a complete proof scaffold with an independently
+tractable missing step. Algebraic identities, finite necessary tests,
+and formal tangle models have repeatedly left geometric realizability
+unproved. Closing one of those routes is a useful negative result, but
+does not establish that the general conjecture is close to resolution.
+
+The appropriate standard for another construction is an actual diagram
+or a theorem ensuring realization, followed by an exact Jones calculation
+and an independent certificate of nontriviality. For a proof, a proposed
+bridge must explain why ordinary Jones data forces a known topological
+unknot criterion; merely assuming that bridge restates the hard part.
+
+Verification
+------------
+Two independent mathematical audits checked the surgery argument,
+distance-one fillings, anchor hypothesis and normalization phases. Exact
+Laurent arithmetic checked the original invariant pairings; the quotient
+identity and root-of-unity values were checked separately. The proof
+above depends on no finite enumeration or numerical approximation.
+
+Primary sources
+---------------
+1. Eliahou, Kauffman, Thistlethwaite, Infinite families of links with
+   trivial Jones polynomial, Topology 42 (2003), 155-169, Sections 2-3.
+   https://homepages.math.uic.edu/~kauffman/ekt.pdf
+2. Moore and Vazquez, A note on band surgery and the signature of a knot,
+   Section 4.1, for the band-surgery/distance-one-filling correspondence.
+   https://arxiv.org/abs/1806.02440
+3. Cochran and Melvin, The Milnor degree of a 3-manifold, Section 1,
+   for integral linking matrices and the homology/linking-form framework.
+   https://arxiv.org/abs/0902.1731
+
+The lemma and its application are deductions here from these standard
+inputs; the cited papers are not being credited with this specific
+H/delta obstruction.

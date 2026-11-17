@@ -1,0 +1,7 @@
+anchor tests: 540
+('in', 'diag') signs observed: {1}
+('in', 'off') signs observed: {-1}
+('out', 'diag') signs observed: {-1}
+('out', 'off') signs observed: {1}
+ALL ASSERTIONS PASSED: (a) Gamma -> scalar*SL2(Z); (b) outer coset -> scalar*integral det -1;
+ (c) C(zeta)=v[[ic,d],[a,-ib]]; (d) det C/C_ij^2 = detL*(-1)^(i+j)/entry^2

@@ -1,0 +1,168 @@
+PASS 31 — GLOBAL TESTS OF PROJECTIVE COMPRESSION
+1 November 2026 UTC. Bounded research pass; no novelty claim.
+
+Conclusion
+==========
+No known fixed-whole-Jones KNOT family found in this pass contradicts the
+projective-beta bound. But finite actual twist templates impose two stronger,
+concrete restrictions that are suitable falsification targets:
+
+ (A) For every fixed color N, the Mahler measure M(H_N(K)) is uniformly bounded.
+ (B) At every sufficiently high-order root of unity, H_N(K) takes only finitely
+     many values across the family.
+
+Here H_N is zero-framed, normalized by H_N(U)=1 and H_2=ordinary Jones.
+Neither restriction says that colored-Jones degree span is bounded. Our
+fixed-Jones Watson family with unbounded H_3 span therefore does NOT refute
+projective compression. A fixed-Jones family violating (A) or (B) would.
+
+Input from the independently audited projective geometry
+=======================================================
+Bounded minimized beta gives finitely many actual RP3 diagrams with variable
+integer two-strand twist boxes. Each twist ball has two lifts to S3. For a
+classical knot placed locally in RP3 the lift is K disjoint-union K, split.
+After fixing the finitely many box parities, the component connectivity is
+fixed. Selecting either component and deleting the other gives a member of
+one of finitely many classical twist templates: a box is retained if both
+of its strands lie in that component, and disappears if at most one does.
+Thus the arguments below apply directly to K. Alternatively the unreduced
+colored invariant of the split lift bounds the square of H_N(K).
+
+1. Uniform denominator-cleared coefficient bound
+================================================
+Fix one template and one parity class; write its integer twists as epsilon_i
++2m_i. Put j=N-1. Generic SU(2) fusion gives
+ V_j tensor V_j = direct-sum_{a=0}^j V_(2a).
+A full twist on the a channel acts by
+ A^[4a(a+1)-2j(j+2)].
+This follows from theta_l=(-1)^l A^[l(l+2)] and the ratio
+ theta_(2a)/theta_j^2. Projectors and the rest of the diagram are fixed over
+Q(A). The zero-framing correction is another monomial whose exponent is
+affine in the m_i within the chosen parity/connectivity class.
+
+Consequently there are fixed rational functions c_nu(A) and integral affine
+functions ell_nu(m) such that
+ H_N(K_m; A^-4) = sum_nu c_nu(A) A^[ell_nu(m)].
+The sum has finitely many terms independent of the twisting parameters.
+Choose a fixed nonzero integral Laurent polynomial D clearing all denominators
+and let p_nu=D c_nu be integral Laurent polynomials. Then
+ ||D H_N(K_m; A^-4)||_1 <= sum_nu ||p_nu||_1 = C,
+for ALL integer m, including simultaneous compensating twists and negative
+parameters. Exponent collisions can only decrease this coefficient-norm
+upper bound. A maximum/product over finitely many templates and parity
+classes yields a common denominator and bound for the whole bounded-beta
+class at that N.
+
+This is stronger than merely deriving convergence along generic rays. It
+covers rays on which some linear combinations of twist parameters stay
+bounded, including exact Jones-constant compensation lattices.
+
+2. Mahler and root-distribution consequences
+===========================================
+Mahler measure satisfies M(PQ)=M(P)M(Q), M(P)<=||P||_1, and monomial factors
+have measure one. Therefore
+ M(H_N(K_m)) = M(H_N(K_m; A^-4)) <= C/M(D).
+The substitution A->A^-4 preserves Mahler measure. This proves (A).
+For any epsilon>0, the number of nonzero roots, counted with multiplicity,
+outside the annulus 1-epsilon<|z|<1+epsilon is uniformly bounded, by applying
+the Mahler bound to the polynomial and its reciprocal. Large degree alone
+can be accommodated by roots accumulating near the unit circle.
+
+Primary background, with normalization caveat:
+Champanerkar–Kofman, On the Mahler measure of Jones polynomials under twisting,
+Algebraic & Geometric Topology 5 (2005), 1–22:
+ https://arxiv.org/pdf/math/0404236
+ Theorem 2.4 treats colored invariants and multiple twisting; Theorem 2.5
+ treats roots; Corollary 3.2 treats fixed coefficient blocks. Their J_N is
+ unreduced. Dividing by the fixed quantum dimension changes no Mahler measure,
+ because that dimension is a monomial times a product of cyclotomic factors.
+The uniform coefficient estimate above also follows directly from their
+finite spectral-expansion method and does not require a generic-ray limit.
+
+Silver–Stoimenow–Williams, Euclidean Mahler measure and twisted links,
+AGT6(2006), 581–602, proves related bounded-twist Mahler statements:
+ https://msp.org/agt/2006/6-2/agt-v6-n2-p04-s.pdf
+Do not apply its alternating Alexander statement to arbitrary knots.
+
+3. Finite values at roots of unity
+==================================
+Take A=zeta of order L>4N(N-1). This explicit bound is sufficient, not sharp.
+The full-twist eigenvalue exponents above differ by
+ 4[a(a+1)-b(b+1)],
+whose absolute value is at most 4j(j+1)=4N(N-1). Hence distinct channels have
+distinct eigenvalues at zeta. The relevant quantum dimensions do not vanish:
+the roots of the quantum integers through N have orders at most 4N, which
+is below the chosen threshold (with the same strict bound also covering N=2).
+The full-twist operator is therefore diagonalizable with eigenvalues that
+are L-th roots of unity, and its L-th power is the identity. Framing factors
+are roots of unity as well; using period 2L if necessary covers their signs.
+
+Each variable box consequently has a finite period. Finitely many boxes,
+parity classes, and templates give a FINITE image for H_N(-;zeta^-4).
+Equivalently one can choose any root avoiding the finite set of local fusion
+singularities; the large-order condition is an easy uniform sufficient choice.
+This proves (B). It is a statement about exact complex values, not about
+numerical closeness. A family with infinitely many such exact values at ONE
+allowed root would refute all-fiber bounded-beta, regardless of its volumes.
+
+4. Checks against actual fixed-Jones families
+============================================
+• The previously certified Watson example has two variable twist boxes.
+  Its H_3 has a fixed finite exponential expansion and therefore automatically
+  satisfies both (A) and (B). Its values at t=4 grow, but t=4 is off the unit
+  circle and the twist eigenvalues need not have modulus one. Its linear
+  colored degree growth is not a compression obstruction.
+
+• A recent primary example also remains a finite-template family:
+  Kanenobu, Infinitely many knots with the same polynomial invariant, II,
+  version dated 14 October 2025, Theorem 1 and Section 2:
+   https://www.mathsoc.jp/publication/JMSJ/pdf/JMSJ9541.pdf
+  The knots share HOMFLYPT and Q polynomials, hence ordinary Jones, but are
+  distinguished by Kauffman polynomial. Section 2 places the entire family
+  in a single diagram K(k,l,m) with THREE integer two-strand boxes. Variation
+  of the stronger polynomial therefore supplies no contradiction to (A)/(B).
+  This pass did not independently recompute those published polynomials.
+
+• Traczyk's often-cited fixed-Jones five-braid examples are LINKS:
+  3-Braids with proportional Jones polynomials, Kobe J.Math.15(1998),187–190:
+   https://da.lib.kobe-u.ac.jp/da/kernel/E0003672/E0003672.pdf
+  The abstract specifies three components. The starting three-braids have
+  proportional Jones polynomials; connected sums cancel monomial factors
+  but give three-component links. They cannot be treated as a counterexample
+  involving one whole Jones fiber of KNOTS.
+
+No primary source located in this bounded search provides a fixed-Jones knot
+family with unbounded bridge number, unbounded fixed-color Mahler measure,
+or infinitely many fixed-color values at a single allowed root. This is
+search uncertainty, not a theorem that all Jones fibers satisfy these bounds.
+
+5. What not to use as a template obstruction
+==========================================
+A finite number of twist sites does NOT bound crossing number, Seifert genus,
+signature, colored degree span, or determinant. The two-strand torus family
+already disproves such unconditional implications. Even Alexander Mahler
+measure can grow without bound in a fixed twist-knot template: its Alexander
+polynomial has the form n(t+t^-1)-(2n+1), up to chirality/convention, whose
+Mahler measure grows with n. Varying Alexander module structure alone does
+not imply unbounded numbers of generators; the original Kanenobu family
+has bridge number three.
+
+Thus a proposed counterexample must force growth of a quantity actually
+bounded by the template structure, not just a stronger invariant omitted
+from the ordinary Jones polynomial.
+
+6. Scope of the resulting strategy
+=================================
+These are necessary consequences of geometric compression and usable tests
+of the ALL-FIBER version. They provide no Jones-to-beta inequality or global
+normal form. The weaker target that ONE specified nonempty Jones fiber has
+bounded beta survives a counterexample in another fiber.
+
+A redundant but exact logical check: if one fiber were beta-bounded and
+V_K=1, then H_N(J#K^{#m})=H_N(J)H_N(K)^m and (B) would force H_N(K)(zeta)
+to have modulus one at a dense set of roots, apart from finitely many zeros.
+Continuity gives constant unit-circle modulus, so H_N(K) is a Laurent
+monomial; H_N(1)=1 and H_N'(1)=0 force H_N(K)=1. This is a CONSEQUENCE of
+the geometric hypothesis, not promotion from ordinary Jones alone. It adds
+no endpoint to the existing argument: the bridge-number theorem already
+forces K=U, and detection by all colored Jones polynomials is not assumed.

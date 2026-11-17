@@ -1,0 +1,9 @@
+{
+ "words": 3000,
+ "both_knot": 341,
+ "both_none": 2659,
+ "MISMATCH": 0,
+ "split_links_now_NOT_A_KNOT": 4,
+ "old_code_accepted_non_knot": 242,
+ "mismatch_examples": []
+}

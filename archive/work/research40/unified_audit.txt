@@ -1,0 +1,95 @@
+INDEPENDENT AUDIT: A SINGLE RIBBON FAMILY ON BOTH REAL AXES
+2026-11-01. Scope: exact normalization, elementary topology, real limits.
+
+Status: the proposed family and formulas pass. Take n>=1 and
+
+  K_n=T(3,6n-1),      R_n=K_n # mirror(K_n).
+
+Orientation reversal of the mirrored summand may be inserted in the usual
+ribbon construction; torus knots are invertible, and Jones does not depend
+on reversing the orientation of a knot.
+
+1. Independent TL normalization check
+------------------------------------
+Use rho(sigma_i)=A I+A^(-1)e_i and delta=-A^2-A^(-2). On the
+two-dimensional TL_3 block the proposed matrix is
+
+  C=rho(sigma_1 sigma_2)=[[0,-A^(-4)],[1,-A^(-2)]].
+
+Direct multiplication gives
+
+  C^2=[[-A^(-4),A^(-6)],[-A^(-2),0]],
+  C^3=A^(-6)I.
+
+Thus tr(C^q)=-A^(-2q) whenever q is not divisible by 3. The remaining
+one-dimensional block sends sigma_1 sigma_2 to A^2. The reduced bracket
+closure functional on these two blocks is
+
+  <closure((sigma_1 sigma_2)^q)>
+     =tr(C^q)+(delta^2-2)A^(2q).
+
+Checks: q=0 gives delta^2, the reduced bracket of the three-component
+unlink; q=1 gives A^6, whose writhe-two normalization is 1. For q=2 the
+normalized polynomial is t+t^3-t^4, fixing the trefoil convention.
+
+The writhe is 2q. Since (-A^3)^(-2q)=A^(-6q), for 3 not dividing q,
+
+  V_{T(3,q)}(A^(-4))
+    =A^(-4q+4)+A^(-4q-4)-A^(-8q),
+  V_{T(3,q)}(t)=t^(q-1)+t^(q+1)-t^(2q).
+
+For q=6n-1 this is t^(6n-2)(1+t^2-t^(6n)). Multiplicativity and the
+mirror identity V_mirror(K)(t)=V_K(t^(-1)) then give exactly
+
+  V_{R_n}(t)=(1+t^2-t^(6n))(1+t^(-2)-t^(-6n)).       (1)
+
+No extra framing or monomial correction remains in (1).
+
+2. Both real axes
+-----------------
+For any fixed real t outside {0,1,-1}, let a=t^2>0. Then
+
+  V_{R_n}(t)=(1+a-a^(3n))(1+a^(-1)-a^(-3n)).
+
+If a>1, the first factor tends to minus infinity and the second tends
+to the positive number 1+a^(-1). If 0<a<1, the second factor tends to
+minus infinity and the first tends to the positive number 1+a. Hence
+
+  lim_{n->infinity} V_{R_n}(t)=-infinity
+
+on both real axes, with precisely the exclusions stated above. Negative
+t creates no additional sign: every exponent in (1) is even. The t=0
+exclusion is essential because these are Laurent polynomials.
+
+3. Topological and special-value checks
+---------------------------------------
+Every R_n is ribbon by the standard K # reverse-mirror(K) ribbon disk.
+Signature additivity and mirroring give signature zero. From (1),
+
+  V_{R_n}(1)=V_{R_n}(-1)=1,
+  determinant(R_n)=|V_{R_n}(-1)|=1.
+
+A connected-sum diagram formed from the standard positive braid diagram
+and its mirror has writhe zero. This is a property of that chosen diagram,
+not an invariant claim that every diagram of R_n has writhe zero.
+
+The family is nontrivial already from its exact polynomials: expansion of
+(1) gives
+
+  3+t^2+t^(-2)-t^(6n)-t^(-6n)
+    -t^(6n-2)-t^(-6n+2),
+
+whose highest and lowest terms cannot cancel for n>=1.
+
+4. Exact limitations
+--------------------
+This rules out any universal nonnegative-real-value assertion, or any
+uniform lower bound at a fixed real t not in {0,+1,-1}, even restricted to
+ribbon knots with determinant one and signature zero. It does not concern
+a fixed WHOLE Jones fiber: the polynomials (1) vary with n and never equal 1.
+It does not prove that all analytic methods fail or constrain a hypothetical
+nontrivial knot with V identically 1.
+
+On the unit circle the behavior is different: the mirror-product identity
+gives V_{R_n}(t)=|V_{K_n}(t)|^2>=0. The real-axis conclusion must not be
+promoted to a complex-plane or unit-circle negativity claim.

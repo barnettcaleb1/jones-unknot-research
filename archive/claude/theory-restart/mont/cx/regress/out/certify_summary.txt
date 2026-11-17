@@ -1,0 +1,28 @@
+ENUMERATION (5,5)
+   E-end-segment    (0, 1)   {'lines': 1062, 'base<=24,V=1': 1050, 'base>24': 12}
+   E-end-segment    (1, 0)   {'lines': 222, 'base<=24,V=1': 222}
+   J1-axis-split    (1, -1)  {'lines': 14986, 'base<=24,V=1': 14956, 'base>24': 30}
+   J2-band-clasp    (1, -1)  {'lines': 2236, 'base<=24,V=1': 2233, 'base>24': 3}
+   PLANE-geo        plane    {'lines': 613, 'base<=24,V=1': 613}
+   PLANE-with-R     plane    {'lines': 176, 'base<=24,V=1': 176}
+   R-residual       (0, 1)   {'lines': 76, 'base<=24,V=1': 76}
+   S1-cap           (0, 1)   {'lines': 10146, 'base<=24,V=1': 10146}
+   S1-cap           (1, 0)   {'lines': 532, 'base<=24,V=1': 508, 'base>24': 24}
+   S2-cup           (0, 1)   {'lines': 2574, 'base<=24,V=1': 2570, 'base>24': 4}
+   S2-cup           (1, 0)   {'lines': 1580, 'base<=24,V=1': 1580}
+   TOTAL {'lines': 34203, 'base<=24,V=1': 34130, 'base>24': 73}
+   distinct base words with > 24 crossings: 68
+ENUMERATION (6,6)
+   E-end-segment    (0, 1)   {'lines': 4886, 'base<=24,V=1': 4618, 'base>24': 268}
+   E-end-segment    (1, 0)   {'lines': 1716, 'base<=24,V=1': 1684, 'base>24': 32}
+   J1-axis-split    (1, -1)  {'lines': 57872, 'base<=24,V=1': 56489, 'base>24': 1383}
+   J2-band-clasp    (1, -1)  {'lines': 8724, 'base<=24,V=1': 8555, 'base>24': 169}
+   PLANE-geo        plane    {'lines': 1439, 'base<=24,V=1': 1439}
+   PLANE-with-R     plane    {'lines': 572, 'base<=24,V=1': 572}
+   R-residual       (0, 1)   {'lines': 764, 'base<=24,V=1': 668, 'base>24': 96}
+   S1-cap           (0, 1)   {'lines': 38348, 'base<=24,V=1': 38186, 'base>24': 162}
+   S1-cap           (1, 0)   {'lines': 3194, 'base<=24,V=1': 2386, 'base>24': 808}
+   S2-cup           (0, 1)   {'lines': 11250, 'base<=24,V=1': 10888, 'base>24': 362}
+   S2-cup           (1, 0)   {'lines': 4824, 'base<=24,V=1': 4790, 'base>24': 34}
+   TOTAL {'lines': 133589, 'base<=24,V=1': 130275, 'base>24': 3314}
+   distinct base words with > 24 crossings: 2604

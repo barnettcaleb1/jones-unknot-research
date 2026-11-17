@@ -1,0 +1,331 @@
+WATSON COUPLED TWISTS: AN EXACT OBSTRUCTION AND A SHARPER REMAINING GATE
+1 November 2026. Bounded research deduction; no novelty claim.
+
+RESULT
+
+For Watson's mirrored-three-braid template, every actual knot with Jones
+polynomial one must have an UNKNOT as the template's underlying two-bridge
+knot. In that degenerate case its full bracket factors into the brackets
+of the two input denominator closures. Consequently BOTH denominator
+closures must themselves be Jones-one knots.
+
+This applies to arbitrary two-arc input tangles, including nonsimple
+tangles, and all powers of the coupled-twist operation. Thus the standard
+nontrivial-base Kanenobu and Watson templates cannot meet the Jones-one
+fiber at all. Dropping the simplicity hypothesis does not evade this
+obstruction. The proof does not use Khovanov homology or a finite search.
+
+The remaining unknot-base case is also settled for this marked template:
+its output is the actual connected sum of the two denominator closures.
+The proof uses the three-braid normal form, a cap trace, and cancellation
+of opposite twists about complementary triples on a six-punctured sphere.
+It does NOT infer topology merely from rank-one bracket factorization.
+
+Consequently every such coupled-twist orbit that contains an actual
+unknot consists entirely of unknots, even for nonsimple input tangles.
+A Jones-one u=1 output already has a Jones-one u=1 denominator summand.
+This closes this particular generic-bridge candidate; it does not prove
+Jones unknot detection outside this family.
+
+1. ACTUAL TEMPLATE AND ITS TWO-BRIDGE BASE
+
+Let alpha be a three-strand braid. In a six-strand rectangle take
+
+   beta=j(alpha)s(alpha),
+   j(sigma_i)=sigma_i,
+   s(sigma_i)=sigma_(6-i)^(-1),     i=1,2.
+
+The two images have disjoint supports. At both ends use a four-ended
+input tangle on the middle four endpoints and a cap joining the two
+outer endpoints. Denote the resulting closed diagram by L_alpha(T,U).
+This is Watson's Figure 7 construction. The same template, after a
+rotation of the picture, appears in his later Khovanov paper.
+
+With T=U=0, each middle endcap consists of the two adjacent cups. The
+left three-strand half, capped at its two inner endpoints at both ends
+and closed by the remaining outer arc, is a four-plat J_alpha. A sphere
+between the two braid halves exhibits
+
+             L_alpha(0,0)=J_alpha # mirror(J_alpha).
+
+Here J_alpha has bridge number at most two, as seen directly from its
+four-plat: there are two upper caps and two lower caps. Whenever the
+template produces a knot, J_alpha is a knot. Indeed, if alpha's endpoint
+permutation fixes its outer strand, the paired outer strands close up
+to a component disjoint from both input tangles, so the template is not
+a knot. Otherwise the capped four-plat is connected.
+
+This connectivity qualification is necessary. We consider actual knot
+outputs and input tangles without closed components; closed input
+components would themselves survive as extra components.
+
+2. EXACT EVALUATION MATRIX
+
+Put R=Z[A,A^-1], delta=-A^2-A^-2. Write the bracket vectors in Watson's
+0,infinity basis as
+             [T]=(a,b),       [U]=(c,d).
+The denominator closure has bracket
+             D(T)=a+delta b,  D(U)=c+delta d.
+Here D in a polynomial expression means its bracket; the corresponding
+geometric closed links will also be denoted D(T),D(U).
+
+The six-strand cap C pairs (1,6),(2,5),(3,4). Sliding a crossing around
+the cap gives C sigma_i=C sigma_(6-i), for i=1,2, and hence
+
+                    C j(alpha)s(alpha)=C.
+
+This is a framed Reidemeister-II/cap isotopy, not an invariant-only
+cancellation. Consequently the four evaluations are
+
+             X_alpha = [[X,delta],[delta,delta^2]],
+             X = <J_alpha><mirror(J_alpha)>
+               = V_J(A^-4)V_J(A^4).
+
+The framing exponents in the mirrored product cancel. Thus
+
+ <L_alpha(T,U)> = X ac + delta(ad+bc)+delta^2 bd
+                = (X-1)ac + <D(T)><D(U)>.                (1)
+
+Watson proves the same matrix form in Proposition 5.1 and the discussion
+after Figure 7 of his original paper. His fixed-point calculation then
+gives the opposite-twist Jones invariance, subject to compatible writhes.
+Equation (1) itself is a bracket identity and does not need that
+compatibility assumption.
+
+3. THE DETERMINANT FACTOR IS A WHOLE-FAMILY OBSTRUCTION
+
+Set zeta=exp(pi i/4), so delta(zeta)=0 and t=A^-4=-1. Let
+p=det(J_alpha)>0. For the knot J_alpha,
+                    X(zeta)=p^2.
+Since a(zeta)=<D(T)>(zeta) and c(zeta)=<D(U)>(zeta), equation (1) gives
+
+ det(L_alpha(T,U))=p^2 det(D(T)) det(D(U)),                (2)
+
+where determinants are absolute values of Jones evaluation at -1; this
+definition agrees with the usual integral link determinant, including
+zero for a split link. Writhe factors at zeta have absolute value one.
+
+There is also a proof needing no conventions for link determinants. If
+V_L=1, then <L>(zeta) is a root of unity. But (1) expresses it as
+p^2 a(zeta)c(zeta), where a(zeta),c(zeta) are algebraic integers in
+Z[zeta]. A nonunit integer p cannot divide a unit of that ring.
+Therefore p=1.
+
+A two-bridge knot has determinant equal to its positive Schubert
+numerator. Numerator one gives the unknot. Hence
+
+             V_L=1  ==>  J_alpha=U.                      (3)
+
+For the standard Kanenobu template J_alpha=4_1 and p=5, so 25 divides
+every output determinant. NO choice of nonsimple T,U, and no number of
+coupled twists, gives Jones one in that template. More generally every
+nontrivial two-bridge base, not only an alternating or simple input
+subclass, is excluded. This does not say such families cannot test
+Khovanov-rank bounds at other fixed Jones polynomials.
+
+4. THE ENTIRE UNIT-FIBER REDUCES TO THE INPUT DENOMINATORS
+
+If J_alpha=U, then X=1 as a full Laurent polynomial. Equation (1) becomes
+
+              <L_alpha(T,U)>=<D(T)><D(U)>.                (4)
+
+If L has Jones polynomial one, its bracket is a signed A-monomial, hence
+a unit of R. Each factor in (4) is therefore a Laurent unit. After writhe
+normalization each denominator link has signed-monomial Jones polynomial.
+For a c-component link, |V(1)|=2^(c-1), so each denominator has exactly
+one component. For a knot, V(1)=1 and V'(1)=0 force a signed monomial
+Jones polynomial to be exactly 1. This proves
+
+ V_(L_alpha(T,U))=1 ==> J_alpha=U and V_(D(T))=V_(D(U))=1.  (5)
+
+Conversely, if J_alpha=U, both denominator closures are Jones-one knots,
+and L_alpha(T,U) is a knot, (4) makes its Jones polynomial a monomial;
+the same normalization makes it 1. This is an exact characterization
+of the unit polynomial in this template, conditional only on connectivity.
+
+Integer twists at an input do not change its denominator knot: the
+twists slide into the closing cap as Reidemeister-I curls. Thus the
+denominator knot types in (5) are constant along the coupled-twist orbit.
+If either denominator fails the Jones-one condition, the entire orbit
+misses the unit fiber. Neither 'contains any prescribed tangle' nor
+'has the same Jones polynomial as another extension' means the output
+has the Jones polynomial of a prescribed closure of that tangle.
+
+5. WHAT IS AND IS NOT A NEW GENERIC BRIDGE
+
+For an arbitrary hypothetical counterexample K, cut it into a tangle
+T with D(T)=K and take U with denominator an unknot. Formula (4) then
+allows Jones-one outputs without colored Jones information. This is a
+real ordinary-polynomial route at the algebraic level; it differs from
+the Whitehead/color-three gate. But no theorem here makes an output
+nontrivial AND unknotting-number one. A local-knot placement simply
+retains K and cannot supply that missing topology.
+
+For the canonical braid alpha=sigma_1 or sigma_1^(-1), a direct endpoint
+trace and cap isotopy give
+
+             L_alpha(T,U) = D(T) # D(U).                 (6)
+
+The two outer braid crossings cap off one pair of endpoints separately
+at T and U; only the two middle strands connect those capped tangles.
+The separating sphere meets them twice. The crossing decorations can
+be removed outside the input boxes. This is a geometric statement for
+this elementary marked template, not an inference from (4).
+
+Therefore this canonical degenerate template does not reduce unknotting
+number to one: a nontrivial u=1 knot is prime (Scharlemann), so a u=1
+output in (6) must already have a u=1 nontrivial denominator summand.
+Likewise, if its output is U, both denominator summands are actual U.
+
+Adding a paired sigma_2 power immediately at either end can be absorbed
+into that input tangle. Its denominator closure is unchanged by the
+cap-cancellation isotopy C sigma_2 sigma_4^(-1)=C. Thus the same argument
+applies to the displayed noncentral word family
+
+            alpha=sigma_2^r sigma_1^(+/-1) sigma_2^s.
+
+The remaining central-power issue has a complete geometric resolution.
+Here are the markings and the algebra, so that the argument can be
+checked separately from the bracket computation.
+
+Use the standard representation phi:B3 -> SL(2,Z),
+ sigma_1 -> U=[[1,1],[0,1]], sigma_2 -> L=[[1,0],[-1,1]].
+The capped inner pair has meridian e2=(0,1), fixed by L. The double
+cover of the four-plat is the gluing of two solid tori whose meridians
+have intersection |det(e2,phi(alpha)e2)|. Thus det J is the absolute
+value of the upper-right entry of phi(alpha).
+
+When det J=1 write phi(alpha)=[[a,epsilon],[c,d]], epsilon=+/-1.
+Direct integer matrix multiplication gives
+
+ phi(alpha)=L^r U^epsilon L^s,
+ r=epsilon(1-d), s=epsilon(1-a).
+
+Indeed the upper-left and lower-right entries are a,d, and determinant
+one gives c=epsilon(ad-1), exactly the lower-left product entry. The
+kernel of phi is generated by z^2, where z=(sigma_1 sigma_2)^3 is the
+central full twist. Hence, as an actual B3 word,
+
+          alpha=z^(2k) sigma_2^r sigma_1^epsilon sigma_2^s.   (7)
+
+This is an exact group normal form in the required det-one subset, not
+an inference from equality of two Jones matrices.
+
+For beta=j(alpha)s(alpha), each central factor becomes a positive full
+twist on the left triple and the opposite full twist on the right triple:
+
+       j(z)^m s(z)^m = Delta_left^(2m) Delta_right^(-2m).
+
+Its signs follow directly from s(sigma_1)=sigma_5^-1 and
+s(sigma_2)=sigma_4^-1. The left and right factors commute with their
+respective three-braid blocks, so they may be put adjacent in the
+six-strand shell.
+
+Now view that shell as S2 x I between the TWO ENDCAP BALLS. Each endcap
+ball contains all six endpoints: its arbitrary four-ended tangle plus
+the outer cap. On the six-punctured end sphere, the curves surrounding
+the left triple and the right triple are parallel complementary curves.
+Their positive Dehn twists represent the SAME mapping class. Therefore
+the opposite powers above cancel in Mod(S2,6).
+
+The possible residual kernel from the spherical braid group is the
+2pi rotation class. It is absorbed on closure by rotating an entire
+endcap ball. This moves the whole contained tangle and any local knots
+with the ball, so no extra endpoint or local-knot marking is violated.
+Equivalently, the point-pushing isotopy gives a diffeomorphism of S2 x I
+with trivial boundary maps; extending it by the identity over the two
+endcap balls identifies the resulting closed link in S3. This is why
+all six endpoints must lie inside the two endcap balls. A central twist
+about an arbitrary intervening annulus would not justify the argument.
+
+Thus the paired central power in (7) is closure-trivial for arbitrary
+T,U. The paired sigma_2 end powers are absorbed into the two endcaps
+without changing their denominator closures, as already proved by
+cap slides. The elementary sigma_1^epsilon template is (6). Combining
+these three actual geometric steps proves
+
+ det J_alpha=1  ==>  L_alpha(T,U) is D(T)#D(U)              (8)
+
+whenever these are knot closures, with the closure orientations/mirror
+conventions inherited from the actual top and bottom endcaps.
+
+The braid track independently audited the complementary-sphere argument,
+including the residual spherical-braid rotation and arbitrary knotted
+input tangles. It specifically checked the condition that the two
+central powers be adjacent in the same S2 x I shell with opposite signs;
+centrality and the displayed definition of s ensure those conditions.
+
+Eight controlled diagram checks, using the nonsimple/nonrational input
+T=rotate(1/2+1/3) and its mirror, reduced to two five-crossing connected
+summands for elementary, end-twisted, and centrally twisted examples.
+They are convention checks, not a proof by extrapolation. Reproducible
+script and PDs: watson_degenerate_check.py and .json in this directory.
+
+6. IMPLICATION FOR THE CURRENT PROOF ARCHITECTURE
+
+THEOREM A (UNKNOT ORBIT RIGIDITY). If a knot in a Watson mirrored-three-
+braid coupled-twist orbit is an actual unknot, every knot in that orbit
+is an unknot, with no simplicity assumption on T or U.
+
+Proof. Its determinant is one, so (8) gives D(T)#D(U)=U. Each summand
+is therefore U. Coupled integer twists leave both denominator knots
+unchanged. Equation (8) applies to every member, giving U#U. QED.
+
+This is a topological conclusion, not an invocation of Jones detection
+for the denominator closures. It strengthens the earlier simple-tangle
+exclusion based on Lobb and Khovanov theory for this particular template.
+
+THEOREM B (NO FIRST u=1 COUNTEREXAMPLE IN THIS TEMPLATE). If an output
+has V=1 and u=1, one of its two denominator knots is itself nontrivial,
+has V=1, and has u=1; the other denominator knot is U.
+
+Proof. Equations (3)--(5) give a det-one base and Jones-one denominator
+knots. Equation (8) gives their actual connected sum. A nontrivial u=1
+knot is prime, so exactly one summand is nontrivial and is the output
+knot itself. QED.
+
+Thus Watson's construction cannot be the generic compiler proposed in
+research20: it cannot turn denominator knots outside the u=1 sector
+into a first Jones-one u=1 output. It also cannot create a counterexample
+by starting from an actual unknot member of the twist orbit.
+
+One can still use the algebraic reduction (5) as a structural descent for
+a counterexample ALREADY presented in this template. In the det-one case
+it is the ordinary prime-factor reduction, now certified geometrically.
+It is not automatically a strict complexity descent: one denominator
+may be U and the other may be the entire original knot. If both are
+nontrivial, genus additivity gives strictly smaller-genus Jones-one
+summands. No theorem says that an arbitrary counterexample has a Watson
+presentation with two nontrivial capped inputs. Therefore no global
+minimal-counterexample proof follows by declaring the template universal.
+
+This excludes one concrete exact-Jones, non-mutation operation class.
+It does not exclude all paired-crossing moves of research20, arbitrary
+higher-arity tangles, or a different two-cut construction. The next
+candidate must escape the mirrored-three-braid/rank-one degeneration
+rather than merely use more complicated tangles inside this template.
+
+PRIMARY SOURCES AND AUDIT SCOPE
+
+Liam Watson, Any tangle extends to non-mutant knots with the same Jones
+polynomial, original manuscript June24,2005; published JKTR15(9)(2006),
+1153--1162. Proposition5.1 and Figure7/discussion give the matrix and
+mirrored-three-braid construction:
+https://personal.math.ubc.ca/~liam/files/preprint.pdf
+
+Watson, Knots with identical Khovanov homology, arXiv:math/0606630v3,
+Sections4--5 and6.4. Simplicity is a real hypothesis of Lemma4.2; the
+paper explicitly discusses nonsimple examples without proving the full
+general homology invariance:
+https://arxiv.org/pdf/math/0606630
+
+Gordon--Luecke, Knots with unknotting number1 and essential Conway
+spheres, AGT6(2006), introduction (Scharlemann primeness) and Theorem7.1
+(mutation invariance of the property u=1):
+https://msp.org/agt/2006/6-5/agt-v6-n5-p02-p.pdf
+
+The determinant/unit argument and resulting all-input exclusion were
+derived here from the actual matrix. They are not being attributed as
+a newly published theorem or assumed to settle any remaining Jones
+counterexample. The central-power cancellation has a separate topological proof above;
+no generic Jones-to-u=1 bridge has been obtained.

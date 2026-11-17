@@ -1,0 +1,76 @@
+# rational/Qb_l0/cxBNr-c2
+  component: (non-compact) | gens 1 | cyclic False | closes consistently True | mean q 0
+    gens: ⬮(h0,q0)
+    chi[⬮] = +1·q^0
+    chi[⬯] = 0
+# rational/Qb_l0/cxKhr-c2
+  component: r(0) q^0 δ|^1/2 | gens 2 | cyclic True | closes consistently True | mean q 0
+    gens: ⬮(h-1,q-1) ⬮(h0,q1)
+    chi[⬮] = -1·q^-1 +1·q^1
+    chi[⬯] = 0
+# rational/Qa_l1/cxBNr-c2
+  component: (non-compact) | gens 1 | cyclic False | closes consistently True | mean q 0
+    gens: ⬯(h0,q0)
+    chi[⬮] = 0
+    chi[⬯] = +1·q^0
+# rational/Qc_l0x1/cxBNr-c2
+  component: (non-compact) | gens 2 | cyclic False | closes consistently True | mean q -3/2
+    gens: ⬯(h-1,q-2) ⬮(h0,q-1)
+    chi[⬮] = +1·q^-1
+    chi[⬯] = -1·q^-2
+# rational/Qe_l1y0/cxBNr-c2
+  component: (non-compact) | gens 2 | cyclic False | closes consistently True | mean q -3/2
+    gens: ⬯(h-1,q-2) ⬮(h0,q-1)
+    chi[⬮] = +1·q^-1
+    chi[⬯] = -1·q^-2
+# rational/Qe_l1y0/cxKhr-c2
+  component: r(1) q^-3/2 δ|^1/2 | gens 4 | cyclic True | closes consistently True | mean q -3/2
+    gens: ⬯(h-2,q-3) ⬮(h-1,q-2) ⬮(h0,q0) ⬯(h-1,q-1)
+    chi[⬮] = -1·q^-2 +1·q^0
+    chi[⬯] = +1·q^-3 -1·q^-1
+# rational/Qg_l1y0y0/cxBNr-c2
+  component: (non-compact) | gens 3 | cyclic False | closes consistently True | mean q -8/3
+    gens: ⬯(h-2,q-4) ⬮(h-1,q-3) ⬮(h0,q-1)
+    chi[⬮] = -1·q^-3 +1·q^-1
+    chi[⬯] = +1·q^-4
+# rational/Qg_l1y0y0/cxKhr-c2
+  component: r(1/2) q^-8/3 δ|^1/2 | gens 6 | cyclic True | closes consistently True | mean q -8/3
+    gens: ⬯(h-3,q-5) ⬮(h-2,q-4) ⬮(h-1,q-2) ⬮(h0,q0) ⬮(h-1,q-2) ⬯(h-2,q-3)
+    chi[⬮] = +1·q^-4 -2·q^-2 +1·q^0
+    chi[⬯] = -1·q^-5 +1·q^-3
+# si/4_1-1/cxBNr-c2-q
+  component: (non-compact) | gens 13 | cyclic False | closes consistently True | mean q 252/13
+    gens: ⬮(h0,q12) ⬯(h1,q13) ⬯(h2,q15) ⬯(h3,q17) ⬯(h4,q19) ⬮(h5,q20) ⬮(h4,q18) ⬯(h5,q19) ⬯(h6,q21) ⬯(h7,q23) ⬯(h8,q25) ⬮(h9,q26) ⬮(h8,q24)
+    chi[⬮] = +1·q^12 +1·q^18 -1·q^20 +1·q^24 -1·q^26
+    chi[⬯] = -1·q^13 +1·q^15 -1·q^17 +1·q^21 -1·q^23 +1·q^25
+# si/4_1-1/cxKhr-c2-q
+  component: r(0) q^24 δ|^9/2 | gens 2 | cyclic True | closes consistently True | mean q 24
+    gens: ⬮(h7,q23) ⬮(h8,q25)
+    chi[⬮] = -1·q^23 +1·q^25
+    chi[⬯] = 0
+  component: s4(∞) q^22 δ_^5 | gens 12 | cyclic True | closes consistently True | mean q 22
+    gens: ⬮(h3,q17) ⬯(h4,q18) ⬯(h5,q20) ⬯(h6,q22) ⬯(h7,q24) ⬮(h8,q25) ⬮(h9,q27) ⬯(h8,q26) ⬯(h7,q24) ⬯(h6,q22) ⬯(h5,q20) ⬮(h4,q19)
+    chi[⬮] = -1·q^17 +1·q^19 +1·q^25 -1·q^27
+    chi[⬯] = +1·q^18 -2·q^20 +2·q^22 -2·q^24 +1·q^26
+  component: s4(∞) q^16 δ_^6 | gens 12 | cyclic True | closes consistently True | mean q 16
+    gens: ⬮(h-1,q11) ⬯(h0,q12) ⬯(h1,q14) ⬯(h2,q16) ⬯(h3,q18) ⬮(h4,q19) ⬮(h5,q21) ⬯(h4,q20) ⬯(h3,q18) ⬯(h2,q16) ⬯(h1,q14) ⬮(h0,q13)
+    chi[⬮] = -1·q^11 +1·q^13 +1·q^19 -1·q^21
+    chi[⬯] = +1·q^12 -2·q^14 +2·q^16 -2·q^18 +1·q^20
+# si/4_1-2/cxBNr-c2-q
+  component: (non-compact) | gens 13 | cyclic False | closes consistently True | mean q -252/13
+    gens: ⬮(h-8,q-24) ⬮(h-9,q-26) ⬯(h-8,q-25) ⬯(h-7,q-23) ⬯(h-6,q-21) ⬯(h-5,q-19) ⬮(h-4,q-18) ⬮(h-5,q-20) ⬯(h-4,q-19) ⬯(h-3,q-17) ⬯(h-2,q-15) ⬯(h-1,q-13) ⬮(h0,q-12)
+    chi[⬮] = -1·q^-26 +1·q^-24 -1·q^-20 +1·q^-18 +1·q^-12
+    chi[⬯] = +1·q^-25 -1·q^-23 +1·q^-21 -1·q^-17 +1·q^-15 -1·q^-13
+# si/4_1-2/cxKhr-c2-q
+  component: r(0) q^-24 δ|^-7/2 | gens 2 | cyclic True | closes consistently True | mean q -24
+    gens: ⬮(h-9,q-25) ⬮(h-8,q-23)
+    chi[⬮] = -1·q^-25 +1·q^-23
+    chi[⬯] = 0
+  component: s4(∞) q^-16 δ_^-5 | gens 12 | cyclic True | closes consistently True | mean q -16
+    gens: ⬮(h-6,q-21) ⬯(h-5,q-20) ⬯(h-4,q-18) ⬯(h-3,q-16) ⬯(h-2,q-14) ⬮(h-1,q-13) ⬮(h0,q-11) ⬯(h-1,q-12) ⬯(h-2,q-14) ⬯(h-3,q-16) ⬯(h-4,q-18) ⬮(h-5,q-19)
+    chi[⬮] = +1·q^-21 -1·q^-19 -1·q^-13 +1·q^-11
+    chi[⬯] = -1·q^-20 +2·q^-18 -2·q^-16 +2·q^-14 -1·q^-12
+  component: s4(∞) q^-22 δ_^-4 | gens 12 | cyclic True | closes consistently True | mean q -22
+    gens: ⬮(h-10,q-27) ⬯(h-9,q-26) ⬯(h-8,q-24) ⬯(h-7,q-22) ⬯(h-6,q-20) ⬮(h-5,q-19) ⬮(h-4,q-17) ⬯(h-5,q-18) ⬯(h-6,q-20) ⬯(h-7,q-22) ⬯(h-8,q-24) ⬮(h-9,q-25)
+    chi[⬮] = +1·q^-27 -1·q^-25 -1·q^-19 +1·q^-17
+    chi[⬯] = -1·q^-26 +2·q^-24 -2·q^-22 +2·q^-20 -1·q^-18

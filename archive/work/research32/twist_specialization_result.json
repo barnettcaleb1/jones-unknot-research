@@ -1,0 +1,199 @@
+{
+  "scope": "Finite exact arithmetic checks; not a substitute for the proof.",
+  "checks": [
+    {
+      "primitive_A_order": 1,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 2,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 3,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 4,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 5,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 6,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 7,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 8,
+      "twist_power_is_identity": false
+    },
+    {
+      "primitive_A_order": 9,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 10,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 11,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 12,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 13,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 14,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 15,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 16,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 17,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 18,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 19,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 20,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 21,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 22,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 23,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 24,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 25,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 26,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 27,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 28,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 29,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 30,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 31,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 32,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 33,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 34,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 35,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 36,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 37,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 38,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 39,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 40,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 41,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 42,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 43,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 44,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 45,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 46,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 47,
+      "twist_power_is_identity": true
+    },
+    {
+      "primitive_A_order": 48,
+      "twist_power_is_identity": true
+    }
+  ],
+  "exception": "A order 8 gives t=-1; handled by Alexander determinant in the proof.",
+  "status": "passed"
+}

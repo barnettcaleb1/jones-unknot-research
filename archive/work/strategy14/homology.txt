@@ -1,0 +1,112 @@
+STRATEGIC RESET: GEOMETRY AND EULER CANCELLATION
+31 October 2026. Status: assessment, not a proof of Jones unknot detection.
+
+Decision
+
+Park the formal four-special-component object D. It is a useful stress test and
+a conditional counterexample specification, but it is presently a poor route
+to an answer. No classical diagram realizes it. Even proving that this one D
+is unrealizable would not settle arbitrary knots; no generic reduction to the
+unknot-anchored tangle setting has been established. More checks of necessary
+objectwise conditions do not supply either missing step.
+
+Two genuinely different geometric mechanisms were considered below. Neither
+currently supplies an independently easier decisive lemma. This is an explicit
+negative strategic result: we should not disguise a restatement of the Jones
+conjecture as a new geometric conjecture.
+
+1. Geometric image rigidity, rather than more algebraic object conditions
+
+Known bridge. Abouzaid--Smith realize Khovanov homology as Lagrangian Floer
+cohomology in characteristic zero. Their symplectic arc algebra and cup/cap
+bimodules are formal. A link is made by a constrained sequence of crossings,
+cups and caps; an arbitrary direct sum of shifted objects need not be in the
+image of that construction.
+
+Sources:
+  https://arxiv.org/abs/1311.5535
+  https://arxiv.org/abs/1504.01230
+
+Potential mechanism. A geometric condition on this specific image, absent from
+the ambient additive/derived category, could exclude an Euler-invisible
+summand. Examples of the kind of input required are an actual stability
+condition respected by the diagrammatic construction, or a geometric
+obstruction to realizing a particular extension by embedded classical
+tangles. An arbitrary heart, positive cone, or sheaf simplicity condition is
+not enough unless its preservation under BOTH crossing signs and cups/caps is
+proved.
+
+Decisive missing lemma for the current counterexample route: characterize the
+image sufficiently to decide whether D comes from a classical tangle, or give
+a crossing/cup/cap construction realizing D. This is a real realization
+problem, not a consequence of the A-infinity Maurer--Cartan equation.
+
+Decisive missing lemma for a generic proof would be much stronger: Jones-unit
+objects in the actual knot image have reduced homology rank one. Without an
+independent geometric formulation and proof method this is exactly the
+original conjecture transported into another category, not progress.
+
+Earliest kill tests. (a) Formality is already present for all knots and does not
+imply parity purity of their Floer groups. (b) Actual tangle invariants can split
+into rational and special components: the strongly inverted trefoil example is
+r_1(4) plus s_4. Thus 'geometric objects are indecomposable' is false in the
+relevant tangle category. (c) Our actual Watson example and ribbon examples
+already exhibit opposite homological parities at a fixed quantum grading.
+Any proposed positivity condition must first survive those examples.
+
+Published source for the actual trefoil and special-sector framework:
+  https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+  Example 2.2 and Lemmas 2.5, 3.6.
+
+Go/no-go gate. Resume this route only with an explicit geometric invariant or
+an actual synthesis move that is not automatic in the formal category. Adding
+microlocal-sheaf, Hodge, or BPS terminology without such an invariant changes
+neither the evidence nor the missing step.
+
+2. Transfer a genus-detecting gauge-theory class into an uncancelled Jones term
+
+Known bridge. Kronheimer--Mrowka's spectral sequence transfers reduced Kh to
+singular instanton homology and proves rank-one unknot detection. A geometric
+proof of Jones detection would need more than this rank transfer: it must make
+some nontrivial-knot contribution visible in the signed quantum Euler sum.
+  https://arxiv.org/abs/1005.4346
+
+Potential mechanism. A Seifert-surface-compatible refinement could constrain
+which quantum degrees and parities can support the extremal instanton
+eigenspace. A usable decisive lemma would identify, for every positive-genus
+knot, a nonzero quantum Euler coefficient outside the unknot contribution,
+using geometric surface data. Such a lemma would solve the problem. Merely
+showing survival or nonvanishing of an extremal class does not establish it.
+
+Earliest kill test, which already rules out the naive version: extremal
+instanton homology itself need not have nonzero Euler characteristic. For a
+nontrivial Alexander-polynomial-one knot, e.g. Kinoshita--Terasaka, let g>0 be
+its genus. Genus detection gives KHI(K,g) != 0, whereas the Alexander Euler
+identity gives chi(KHI(K,g)) = 0. Consequently its even and odd ranks are equal
+and positive. Thus geometric genus detection and top-eigenspace nonvanishing
+are demonstrably compatible with complete signed cancellation in that same
+extremal eigenspace. This is an actual knot, not our artificial object.
+
+Primary sources for the two facts:
+  https://arxiv.org/abs/0807.4891  (Knots, sutures and excision)
+  https://arxiv.org/abs/0907.4639  (Theorem 1.1, Alexander Euler identity)
+For the Alexander-one Kinoshita--Terasaka family and knot Floer calculations:
+  https://www.maths.tcd.ie/EMIS/journals/UW/gt/ftp/main/m7/m7l7.pdf
+
+This does not disprove a new Jones-specific refinement; it establishes exactly
+why generic 'gauge-theory positivity' or 'the top class cannot disappear'
+arguments are insufficient. Any proposed refinement must explain why the
+Alexander cancellation example does not carry over. If the repair inserts
+additional colors or satellite probes, it must separately prove those probes
+are controlled by the ordinary Jones-unit hypothesis. That is the same missing
+information bridge as the global cabling approach, not a free consequence of
+instanton detection.
+
+Recommended allocation
+
+Keep D as a recorded conditional target and stop extending its certificates.
+Do not pursue purity/formality or extremal nonvanishing as generic proof
+mechanisms: their naive decisive lemmas already fail. Prefer an exact global
+bridge with a clearly identified hypothesis over further local necessary
+conditions. No credible geometric theorem found in this bounded assessment
+currently supplies the needed bridge from V_K=1 to homological rank one.

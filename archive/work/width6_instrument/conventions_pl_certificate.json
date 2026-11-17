@@ -1,0 +1,11 @@
+{
+  "all_eight_cell_orientations_positive": true,
+  "edge_images_agree": true,
+  "domain_and_image_annular_area": "2",
+  "inner_boundary": "one counterclockwise quarter turn",
+  "outer_boundary": "pointwise fixed",
+  "exact_barycentric_inverse_tests": 528,
+  "homeomorphism_argument": "Positive cell orientations plus continuous gluing and degree-one boundary map imply a degree-one orientation-preserving PL homeomorphism of the annulus; extend by rigid rotation on the inner disk and identity outside.",
+  "diagonal_path_argument": "The two source arcs begin disjoint and remain disjoint under this ambient homeomorphism. The two target figure-eight supports occupy disjoint x-bands. Consequently the successive-point configuration paths remain off the diagonal.",
+  "winding_limit": "Exact PL geometry certifies the path is valid. The existing float angle primitive and its integer rounding are a separate numerical layer; exact aggregate calibration is evidence, not a substitute for an exact winding implementation."
+}

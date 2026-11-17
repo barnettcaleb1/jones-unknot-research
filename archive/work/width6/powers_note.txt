@@ -1,0 +1,68 @@
+STATUS: TRUSTED computational-algebraic result; no novelty claim.
+
+ALL-POWERS FRAMED BRACKET IDENTITY
+
+Work over R=Z[A,A^-1], with delta=-A^2-A^-2 and
+rho(sigma_i)=A*1+A^-1*e_i. Products of braid letters are drawn
+top-to-bottom from left to right, and act on columns rightmost first.
+
+In B_6 set
+  psi_1 = sigma_4 sigma_5^-1 sigma_2^-1 sigma_1,
+  psi_2 = sigma_4^-1 sigma_5^2 sigma_2 sigma_1^-2,
+  a = psi_1^-1 sigma_3 psi_1,
+  b = psi_2^-1 sigma_3 psi_2,
+  beta = [a,b] = a b a^-1 b^-1.
+This is the Bigelow B_6 Burau-kernel word used in the Ren comparison.
+The integer-word certificate is stored in kernel_words.py as BIGELOW6_REN.
+
+Use 1-based strand positions, ordered left-to-right at each boundary.
+Let C have cap/cup pairs (2,5),(3,4), leaving positions 1,6 free.
+Let D have cap/cup pairs (1,2),(5,6), leaving positions 3,4 free.
+The caps in C are nested. In probe.py, C and D are state indices 4 and 5.
+
+For every integer n, both 2,2 tangles
+  X_n = cap_C beta^n cup_D,
+  Y_n = cap_D beta^n cup_C
+have framed Kauffman bracket EXACTLY e in TL_2, where e joins the two
+top boundary points and joins the two bottom boundary points. There is
+no unrecorded Laurent monomial or framing factor in this identity.
+
+FINITE CERTIFICATE AND PROOF
+
+Write [X_n]=u_n*1+v_n*e (and the same argument for Y_n).
+The identity coefficient u_n is a matrix coefficient of rho(beta)^n
+on W(6,2), dimension 9. Exact Laurent arithmetic gives u_n=0 for
+n=0,...,9. Cayley-Hamilton gives an order-9 recurrence; the constant
+term is a unit because rho(beta) is invertible over R. The first nine
+zeros therefore imply u_n=0 for every integer n, in both directions.
+
+For the numerator closure, join the two free points of each cap/cup
+state. This is a matrix coefficient on W(6,0), dimension 5. Use the
+unnormalized closure convention in which every circle contributes
+delta, including the first circle. The computed value is delta^2 for
+n=0,...,6. Subtracting delta^2 gives a matrix coefficient of the
+invertible 6x6 block matrix diag(rho_W(6,0)(beta),1). Cayley-Hamilton
+and the first six zeros show that the numerator value is delta^2 for
+every integer n. But N(X_n)=u_n*delta+v_n*delta^2. Thus u_n=0 and
+v_n=1, since R is an integral domain and delta^2 is nonzero.
+
+Reproduction: python3 work/width6/powers_certificate.py
+Exact output: work/width6/powers_certificate.json
+Module and Gram implementation: work/width6/probe.py
+
+TOPOLOGICAL LIMIT
+
+This proves a framed skein identity, not that all X_n,Y_n are trivial
+tangles. At n=1 both actual numerator closures simplify to the
+two-component unlink and both denominator closures simplify to U;
+Property R then supplies a separate rational/split-tangle certificate.
+Additional finite exponents are being checked separately by the
+topology agent. No uniform topological result is asserted here.
+
+A short possible geometric target is a uniform cup/cap slide: a swaps
+positions 1,6 and b swaps positions 2,5, so their endpoint permutations
+are disjoint and beta is pure. Thus all powers have the same bare
+two-arc connectivity. In W(6,2), rho(a) fixes the C basis line up to
+the scalar A, consistent with pushing a boundary twist past C. That
+cell-module observation alone does NOT establish the required isotopy;
+the remaining cup/cap geometry must be controlled independently.

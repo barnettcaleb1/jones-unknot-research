@@ -1,0 +1,39 @@
+14-LETTER WITNESS: GEOMETRIC ENUMERATOR FAILED CALIBRATION
+
+Do NOT use geometric_14_candidate.json as a valid witness intersection list.
+Its status is explicitly FAILED_CALIBRATION_DO_NOT_USE_AS_WITNESS_INTERSECTION_DATA.
+
+The direct PL geometric model has valid small controls: identity and each
+single generator sigma2^+-1 agree with the canonical mixed pairing up to
+deck units. Generic single-generator comparison, rather than Jones alone,
+shows that counterclockwise half rotation in our geometric coordinates
+represents the inverse of the matrix generator. The 14-letter attempt
+therefore applies clockwise half rotations for the positive matrix letters.
+
+For the chronological geometric word
+  [-4,-3,-2,-1,-5,-4,-3,-2,-3,-4,-2,-3,1,2],
+resolution64 and maximum segment length0.006 gave:
+  source curve vertex counts 26,666 and55,095;
+  one-point intersection matrix [[73,68],[289,150]];
+  configuration-intersection count30,602.
+
+The aggregate produced by this attempted model is
+  q^-3 t^-2 -2q^-2 t^-2 +q^-2 +q^-2 t
+  +q^-1 t^-2 -q^-1 -q^-1 t.
+It specializes to -q^-3+2q^-2-2+q, which is NONZERO.
+The independently calibrated canonical answer for the trivial-tangle
+witness is q^2(1-q)(1+qt), up to a deck unit, and specializes to zero.
+Thus the long-word geometric model is not validated. Possible unresolved
+issues include composition/transport conventions and failure of a PL
+approximation to preserve the two source arcs' disjoint isotopy classes.
+The small single-generator controls alone do not settle those issues.
+
+The attempt was stopped at this failed calibration, as instructed. No
+ad hoc exponent adjustment, partner grouping, or geometric interpretation
+of these30,602 candidate pairs was accepted. The successful c=2 minimal
+split counterexample uses straight source arcs and explicit simple loops;
+it is independent of this failed long-word transport.
+
+The exact polynomial-level (1+qt) grouping of the real 14-letter witness
+remains valid in the previous algebraic certificate. An intersection-level
+partner map for that witness is still uncomputed.

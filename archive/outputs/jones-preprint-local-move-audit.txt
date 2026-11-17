@@ -1,0 +1,164 @@
+JONES UNKNOT DETECTION: A CONCRETE FAILURE IN THE CLAIMED PROOF
+Audit of Carmi–Cohen, arXiv:2606.22410v1
+Checked 31 October 2026, America/Chicago
+
+RESULT AND SCOPE
+
+The relative-boundary isotopy asserted in Proposition 5.12(G2), pages 45–46,
+does not preserve the four clasp crossings as claimed. Reading the actual
+source figures, its pictured endpoint switches all four clasp crossings
+and reverses the arrows on the closed twist component. Those changes matter
+in the fixed oriented crossing cube used by the argument.
+
+A seven-crossing, exact state-sum certificate distinguishes the initial
+tangle from the claimed fixed-clasp endpoint. Their closed Kauffman brackets
+have spans 20 and 4. Reidemeister moves cannot change bracket span.
+
+This identifies a specific failure of the geometric argument supplying
+hypothesis (C2). It does not refute a conditional theorem while leaving all
+its hypotheses true, and it does not disprove Jones unknot detection.
+No proof or counterexample to the main conjecture has been obtained here.
+
+The arXiv record still listed only v1 when checked in this pass:
+https://arxiv.org/abs/2606.22410
+Source PDF: https://arxiv.org/pdf/2606.22410v1
+
+1. THE CLAIM BEING TESTED
+
+The machine has four clasp crossings Y and an odd residual twist Z of
+length L. The exceptional state has all signs equal to s. In (G2), the
+paper claims that two end crossings of Z can be removed by Reidemeister
+moves while keeping Y fixed. It then inserts a canceling pair, obtaining
+a length-L state with one residual sign changed and the same four clasp
+signs. This is used to transfer vanishing at coefficient level r from a
+nonexceptional state to the exceptional state.
+
+The explicit illustration for L=3 uses source images omega_1.png through
+omega_5.png. Inspecting those images reveals that the over/under choices
+at all four clasps switch between the first and last images. Reversing
+the drawn orientation of the closed component restores the clasp-sign
+caption, but does not give the asserted state of one fixed oriented cube.
+
+2. A FINITE, ORIENTATION-INDEPENDENT CERTIFICATE
+
+Label the upper/lower left clasps a,b, the upper/lower right clasps c,d,
+and the three central crossings z0,z1,z2. Close the two upper boundary
+ends together and the two lower boundary ends together using disjoint
+exterior caps. This is an unoriented closure test: it need not respect
+the displayed arrows. Any oriented relative-boundary isotopy would also
+be an unoriented isotopy and remain one after this closure.
+
+The following planar-diagram codes use cyclic ports with the first pair
+of opposite ports underneath. Edge labels are zero-based; each occurs twice.
+
+Initial source diagram:
+ [(12,7,13,8), (6,13,7,10), (2,12,3,11), (10,2,11,1),
+  (5,8,6,9), (9,4,0,5), (3,0,4,1)]
+
+Claimed fixed-clasp endpoint (only z0 switched):
+ [(12,7,13,8), (6,13,7,10), (2,12,3,11), (10,2,11,1),
+  (8,6,9,5), (9,4,0,5), (3,0,4,1)]
+
+Actual final source picture (four clasps and z0 switched):
+ [(7,12,8,13), (11,6,12,7), (13,3,10,2), (1,11,2,10),
+  (8,6,9,5), (9,4,0,5), (3,0,4,1)]
+
+For bracket convention delta = -A^2-A^-2 and one circle equal to 1,
+an exact enumeration of all 128 smoothing states gives:
+
+ Initial:
+   A^-15 - A^-11 + 2A^-7 - A^-3 + 2A - A^5.
+   Span = 20.
+
+ Claimed fixed-clasp endpoint:
+   A^-5 + A^-1.
+   Span = 4.
+
+ Actual final picture:
+   A^-9 - A^-5 + 2A^-1 - A^3 + 2A^7 - A^11.
+   This is A^6 times the initial bracket.
+
+Thus the actual pictured endpoint is consistent with the two framing
+changes in the movie. The endpoint named by the proof is different.
+The first and claimed brackets cannot be related by any signed monomial,
+so no writhe convention or component reorientation resolves the discrepancy.
+
+The source-to-diagram reconstruction passed a planarity check. Jones
+computations in Regina, an independent frontier bracket calculation, and
+an independent exhaustive bracket state sum agree. The short exhaustive
+verifier in the accompanying evidence needs only standard Python.
+The remaining human-checkable input is the port map read from the figures;
+that map and the full reconstructions are included in the evidence.
+
+3. WHY THE ORIENTATION CHANGE IS NOT HARMLESS
+
+Use the paper's variables x=t^(1/2), p=x-x^-1. With both seed strands
+upward and one fixed orientation of the closed component, the source's
+s=- instance has signs
+
+ Initial:       clasps (-,-,-,-), residual (-,-,-).
+ Pictured end:  clasps (+,+,+,+), residual (+,-,-).
+
+Reversing the closed component changes the normalization. The corrected
+relation supplied by the movie has a factor x^(12s), together with the
+four flipped clasp signs. For a compatible vertical closure in the s=-
+case, the exact polynomials are
+
+ Initial:       x^-2 + 2x^-6 + x^-10.
+ Pictured end with fixed orientation: x^10 + 2x^6 + x^2.
+
+Their ratio is x^-12. This compatible closure checks the orientation
+factor; it is not the closure used to distinguish the tangles above.
+
+Condition (C1d) ranges over all clasp choices, so switching Y alone would
+not settle the issue. The monomial factor is crucial: in the paper's
+normal form V=A(p)+xB(p), multiplication by x^12 mixes coefficient levels.
+Vanishing of the coefficient at level r in one state does not imply
+vanishing at r after this multiplication. The higher-level assumptions
+do not supply the missing lower-level vanishings. The stated descent
+therefore requires a new argument.
+
+4. AN INDEPENDENT CHECK ON THE COMPRESSION STRATEGY
+
+There is also a simple obstruction to a universal degree-compression
+repair. Start with the three-crossing trefoil diagram and switch its
+unknotting crossing, obtaining an actual unknot diagram. At that marked
+crossing add positive full twists. Its fixed oriented smoothing has
+H=-x-x^5. The exact skein relation gives
+
+ R_0=1,
+ R_(m+1)=x^4 R_m + p x^2 H,
+ R_m=1+D*(x^(4m)-1)/(x^4-1),
+ D=x^2+x^6-x^8-1 != 0.
+
+Consequently its degree grows without bound. More generally, for an
+unknot-Jones anchor, a uniform degree bound in this family is equivalent
+to H=-(x+x^-1), the unlink Jones polynomial. The anchor alone does not
+force that smoothing value.
+
+The paper's exact paired-clasp skein identity reads
+
+ V_-+ + V_+- = x^-4 V_++ + x^4 V_-- - p^2 V_00.
+
+Therefore four uniformly bounded clasped states cannot recover this
+unbounded residual family with fixed coefficients. Using the paper's
+other direct local reductions, the locked state satisfies T_m=C-p^2 R_m,
+with C of bounded degree. For the three-crossing unknot host, those
+reductions give deg(C)<=18. At L=7, the leading coefficient b_21(T) is +1,
+above the claimed threshold 20. This last statement is an algebraic
+consequence of those other stated local identities; it is not presented
+as an independently reconstructed full-host PD calculation.
+
+The unknot diagram here is nonminimal. Restricting a new theorem to
+minimal diagrams of hypothetical nontrivial Jones-one knots would evade
+this particular anchor example, but would require a new proof. It would
+also have to handle the crossing-flipped hosts used later in the paper.
+
+RESEARCH CONSEQUENCE
+
+The preprint's supplied argument does not establish its conclusion.
+The local compression mechanism cannot be used as a proven bridge to a
+solution. Further progress must supply an actual constraint on the
+missing smoothing channel, or use a different mechanism. The calculations
+above are a checked obstruction to this proposed route; no novelty or
+independent expert endorsement is claimed.

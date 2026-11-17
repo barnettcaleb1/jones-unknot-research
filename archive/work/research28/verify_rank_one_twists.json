@@ -1,0 +1,14 @@
+{
+  "generic_projector_identity": true,
+  "generic_projector_rank": 1,
+  "full_twist_eigenvalues": [
+    "A^6 (rank 1)",
+    "A^-6 (rank 4)"
+  ],
+  "projector_denominator_at_A1": 3,
+  "ordered_classical_subset_pairs": {
+    "1": 10,
+    "1/9": 90
+  },
+  "scope": "Fixed polynomial identities and classical projectors only; no kernel found."
+}

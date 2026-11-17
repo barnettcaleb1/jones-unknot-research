@@ -1,0 +1,149 @@
+PASS 32: TESTING THE NEW DYADIC JONES FRAMEWORK
+1 November 2026. Bounded architecture test; no kernel or Jones-one knot found.
+No novelty claim. No edits to the living report.
+
+Outcome
+=======
+A new October2026 construction genuinely has global link coverage and embeds
+all braid groups in one finitely generated group. Its explicit definitions
+nevertheless give two structural obstructions to the intended use here:
+(1) its algebraic Jones kernel is exactly the direct limit of the ordinary
+finite-strand Jones kernels; the extra Thompson-group directions cannot
+create a kernel automatically;
+(2) link coverage does not give an extremal vacuum normalization. A nontrivial
+knot cannot attain that normalization in this framework, even after adding
+arbitrarily many split unknots.
+There is also an explicit failure of a uniform positive parameter arc on the
+unbounded-strand algebra, separate from the earlier fixed-strand scalar gap.
+
+Primary construction
+====================
+Yangxiao Luo and Shunyu Wan, On unifying Jones representations of braid
+groups and Thompson's group, arXiv:2610.09333v1, 7 October2026.
+https://arxiv.org/html/2610.09333
+Use Definition3.7, Proposition3.12, Definitions5.2--5.5, and equations2.2,5.1.
+This is a recent preprint. The deductions below use its explicit definitions,
+not an assumption that formal 'unitary' means a faithful positive Hilbert
+representation at every complex parameter.
+
+A. Complete conditional counterexample path, then its exact reduction
+===================================================================
+Proposed path:
+  construct a nonidentity dyadic braid b with J_F(b)=1;
+  extract a nontrivial finite braid in the full generic TL kernel;
+  apply Ito to produce nontrivial hyperbolic knots with Jones polynomial1.
+The second arrow is valid by the following elementary deduction. It also
+shows that the enlargement has not supplied an easier automatic relation.
+
+Write a dyadic braid as [P,alpha,f], where P is a finite ordered set of dyadic
+points, alpha is an ordinary |P|-braid, and f belongs to oriented Thompson F.
+The source's concentration equivalence preserves f exactly. Its TL map is
+  J_F[P,alpha,f]=[P,J_|P|(alpha),f].
+The linearity relations in the enlarged algebra occur within a fixed f-tag.
+
+There is an especially direct tag detector. Let aug:TL_n->Q(A) send every
+turnback e_i to0 and 1 to1. It respects the TL relations and the source's
+backside-strand insertions: their formula for an inserted e_i is a sum of
+terms containing turnbacks, all of which aug kills. Thus
+  [P,x,f] |-> aug(x) f
+is a homomorphism to Q(A)[oriented Thompson F]. On a braid alpha it has value
+A^exp(alpha) f. If J_F(b)=1, this forces f=id and exp(alpha)=0.
+
+The finite-stage TL insertion maps are injective. Geometrically, moving a new
+backside strand to the right edge identifies the insertion with a braid
+conjugate of x |-> x tensor1. The latter is injective on planar bases; also,
+closing the added strand is a left inverse after dividing by delta. Iterating
+gives injectivity for every P subset Q. Consequently
+  J_F[P,alpha,id]=1 iff J_|P|(alpha)=1.
+The braid insertion maps are likewise injective (forget the inserted strands).
+Therefore the algebraic kernel of J_F is exactly the direct limit of the
+finite generic Jones kernels. In particular, J_F is faithful iff every
+finite generic Jones representation is faithful.
+
+The link-compatible embedding iota of oriented Thompson F has f-tag g on
+input g. Hence J_F restricted to iota(F) is algebraically faithful, regardless
+of the unresolved braid faithfulness problem. This does NOT imply that its
+single vacuum coefficient distinguishes links, or that the analogous GNS
+representation after quotienting a trace radical is algebraically faithful.
+
+If an actual nonidentity kernel element were found, exp(alpha)=0 rules out a
+nontrivial central full twist. Ito's theorem then supplies nontrivial
+Jones-one knots, as in the previous full-kernel scaffold. No extra all-colored
+Jones detector or closure nontriviality conjecture is required.
+Primary endpoint: Tetsuya Ito, A kernel of a braid group representation yields
+a knot with trivial knot polynomials, Math.Z.280(2015), arXiv:1402.2028.
+https://arxiv.org/pdf/1402.2028
+
+B. Complete proposed proof path and a topological normalization obstruction
+==========================================================================
+A tempting different path is:
+  represent arbitrary K by a Thompson element whose vacuum coefficient is V_K;
+  use V_K=1 and positive unitarity to force vacuum stabilization;
+  prove a geometric stabilizer theorem yielding K=U.
+Even before the last (unproved) stabilizer theorem, the first calibration
+fails for every nontrivial knot in the source's actual construction.
+
+Let the source's n-strand braid representative close to K disjoint union r
+split unknots. Its ordinary Jones polynomial is delta^r V_K, and its writhe is
+zero for the link-compatible Thompson embedding. Equations2.2 and5.1 give
+  coefficient = delta^(r+1-n) V_K.
+The closure map only identifies links up to adding split unknots; forgetting
+that distinction would incorrectly replace this by V_K.
+
+Deleting the r other components from the n-strand braid leaves a braid for K.
+If K uses n_K strands, then n_K>=b(K), its classical braid index. Each of the
+other r components uses at least one strand. Hence
+  n-r >= n_K >= b(K).
+For a nontrivial knot, b(K)>=2. Therefore, at any meaningful positive unitary
+specialization with delta>1, a Jones-one representative has coefficient
+  delta^(r+1-n) <= delta^(1-b(K)) <= delta^(-1) <1.
+This is unchanged by adding distant trivial braid strands: both r and n rise
+by one. No choice among the permitted representatives can make r=n-1 unless
+K already has braid index1 and is the unknot. Thus the global link-coverage
+statement does not repair the interior-amplitude obstruction.
+This deduction is topological and does not rely on an assumed Jones detector.
+
+C. Why the infinite enlargement also has a distinct positivity problem
+=====================================================================
+The source's Theorem5.6 proves preservation of a Q(A)-valued sesquilinear
+form. It does not state that this form is positive definite at every complex
+specialization. In fact no open unitary parameter arc works faithfully for
+all strand counts at once.
+
+Use the ordinary real TL loop parameter delta=2cos(theta), with 0<theta<pi/2,
+and quantum integers [k]=sin(k theta)/sin(theta). The Jones--Wenzl idempotent
+f_m is self-adjoint wherever its denominators [1],...,[m] are nonzero, and
+its unnormalized Markov trace is [m+1]. Hence its normalized squared norm is
+  tau(f_m^* f_m)=tau(f_m)=[m+1]/delta^m.
+For generic theta, choose the first integer k with k theta>pi. Then all [j]
+for 1<=j<k are nonzero while [k]<0, so f_(k-1) exists and has negative squared
+norm. The test occurs at a finite but theta-dependent strand count.
+At theta=pi/r, f_(r-1) exists, is nonzero (identity coefficient1), and has
+trace[r]=0. The unitary root-of-unity theory uses the corresponding quotient;
+it does not make the full generic TL direct limit faithfully positive.
+At theta=0, delta=2, positivity survives every finite stage, but the Jones
+variable is q=1 and the ordinary knot value is universally1.
+
+Thus a fixed finite-dimensional positive arc near delta2 cannot be promoted
+to a common faithful positive arc for the infinite dyadic algebra. Taking
+larger strand counts and retaining a fixed generic positive specialization
+are noncommuting steps. This does not invalidate finite-stage positivity or
+root-of-unity unitary quotients.
+Primary projector inputs:
+H.Wenzl, On sequences of projections, C.R.Math.Rep.Acad.Sci.Canada9(1987)5--9.
+https://mathreports.ca/article/on-sequences-of-projections/
+Goodman--Wenzl, The Temperley--Lieb algebra at roots of unity, PacificJ.Math.
+161(1993),355--364.
+https://msp.org/pjm/1993/161-2/pjm-v161-n2-p05-s.pdf
+The negative-norm argument itself is the elementary sine calculation above.
+
+Decision
+========
+The new framework is relevant and has true global coverage, but neither a
+new full kernel nor an extremal normalized scalar follows from its larger
+group or its formal unitarity. Do not start a Thompson-word search based only
+on this enlargement. A worthwhile next attempt must predict an actual finite
+braid relation in the generic TL image, or introduce genuinely new geometric
+information that supplies the missing stabilizer/normalization premise.
+No such construction was obtained in this bounded pass. The conclusions
+are structural exclusions, not evidence of proximity to a generic solution.

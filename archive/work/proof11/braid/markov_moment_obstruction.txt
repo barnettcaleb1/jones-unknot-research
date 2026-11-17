@@ -1,0 +1,159 @@
+ALL-q JONES IDENTITY DOES NOT CONTROL HIGHER MARKOV MOMENTS
+2026-10-31. An explicit family of actual unknot braids.
+This is an obstruction to a proposed proof mechanism, not a counterexample
+to Jones unknot detection. No novelty claim is made.
+
+1. EXACT FAMILY AND TOPOLOGY
+For every integer m let
+ beta_m = sigma_2^(2m) (sigma_1 sigma_2) sigma_2^(-2m) sigma_3^(-1)
+in B_4. Each has writhe1. A negative Markov destabilization removes the
+last sigma_3^(-1), leaving a conjugate in B_3 of sigma_1 sigma_2.
+That conjugate closes to the unknot. Therefore
+ V_(closure beta_m)(A)=1 for every m, identically as a Laurent polynomial.
+No unproved Jones-detection assumption enters this topology argument.
+
+2. THE SECOND MOMENT VARIES WITHOUT BOUND
+The closure of beta_m^2 has two components, and their linking number
+with the braid orientation is2m.
+
+Here is a crossing-count proof for every signed integer m. Color initial
+strand labels {0,2} red and {1,3} blue. The permutation of beta_m is the
+4-cycle represented by bottom labels[1,2,3,0], so these are exactly the
+two component classes after squaring. In the first copy of beta_m, the
+initial sigma_2^(2m) contributes2m mixed-color signed crossings; sigma_1
+contributes+1; the following sigma_2 and sigma_2^(-2m) involve strands of
+the same color; the final sigma_3^(-1) contributes-1. Thus the signed
+mixed-color count is2m. The second copy gives the same count. Dividing
+the total4m by2 gives linking number2m.
+
+For an oriented two-component link L, in the convention t=A^(-4),
+ V_L'(1) in variable t = -3 lk(L).
+One can derive this directly from the Jones skein relation:
+ t^-1 V_+ - t V_- = (t^(1/2)-t^(-1/2))V_0.
+At t=1 the two-component value is-2. Differentiation shows that changing
+a crossing between the components changes V'(1) by-3, just as it changes
+linking number by+1. Changing a self-crossing changes this derivative
+by0. The two-component unlink has derivative0. Hence the formula follows.
+Consequently
+ d/dA V_(closure beta_m^2)(A) at A=1 =24m.
+In particular the second Jones/Markov moment is unbounded even to first
+order, although all Taylor coefficients of the first Jones moment agree.
+
+The same construction works with a positive last crossing instead:
+ beta_m^+ =sigma_2^(2m)(sigma_1 sigma_2)sigma_2^(-2m)sigma_3.
+All closures are still unknots, now with writhe3=n-1, and
+ lk(closure (beta_m^+)^2)=2m+2, so the derivative is24m+24.
+Thus even requiring the writhe to be n-1 does not restore moment
+rigidity.
+
+3. COMMON ANALYTIC UNITARY REALIZATION
+Write delta=-A^2-A^-2 and use the standard TL_4 representation
+ rho(sigma_i)=A I+A^-1 e_i,
+with normalized Markov trace tau(1)=1. Put
+ R_m=(-A)^(-3)rho(beta_m),
+since every beta_m has writhe1. The ordinary Jones formula gives
+ tau(R_m)=delta^-3,
+ tau(R_m^2)=delta^-3 V_(closure beta_m^2).
+These identities hold as rational functions, not merely at sample roots.
+
+On the common arc A=i exp(i theta), for sufficiently small real theta,
+the TL_4 Markov form is positive and faithful, and all R_m are unitary
+for that same q-dependent form at each parameter value. Indeed, at delta=2 the TL action on(C^2)^(tensor4)
+realizes a faithful positive trace; positivity persists on a neighborhood.
+The standard adjoint has e_i*=e_i and
+ (A I+A^-1 e_i)*(A I+A^-1 e_i)=I
+because A^2+A^-2+delta=0. The writhe-normalization scalar has modulus1.
+No m-dependent choice of an arc is necessary.
+
+At theta=0,
+ tau(R_m)=1/8, tau(R_m^2)=1/4,
+ d/dtheta tau(R_m)=0,
+ d/dtheta tau(R_m^2)=-3 i m.
+For the last equation, the two-component Jones exponents are2 mod4,
+so V'(i)=i V'(1)=24im; delta'(i)=0 and dA/dtheta=-1.
+This is an explicit family of analytic unitary braid images, on a fixed
+finite-dimensional algebra with a common q-dependent positive trace, whose complete
+first-trace function agrees but whose second-moment velocities are
+unbounded. Thus unitarity, analyticity, a common dimension and the full
+ordinary Jones identity do not imply spectral rigidity or a bound on
+higher moments. Differentiating tau(R(A)) is not the same operation as
+forming tau(R(A)^k).
+
+4. A NONDESTABILIZABLE UNKNOT TEST
+For a sharper test of a one-step simplification claim, use Morton's
+irreducible4-braid
+ X=sigma_3^-2 sigma_2 sigma_3^-1 sigma_2 sigma_1^3
+   sigma_2^-1 sigma_1 sigma_2^-1.
+Its closure is the unknot, and its writhe is1, as for
+ C=sigma_1 sigma_2 sigma_3^-1. Exact TL calculation gives
+ V_(closure X)=V_(closure C)=1,
+but
+ support V_(closure C^2)=[-14,6] in A,
+ support V_(closure X^2)=[-42,26] in A.
+Thus their second Markov moments differ. In particular their images
+cannot be conjugate in the generic Temperley--Lieb algebra. Morton's
+example also illustrates why a Jones-one braid need not admit an
+immediate destabilization: exchange moves can be needed first.
+The original topology result is Morton's1983 paper; the word and explicit
+exchange simplification are reproduced by Birman--Brendle, Example3.1.
+
+5. WHAT SURVIVES AS A RESEARCH TARGET
+An ordinary-Jones proof via braid matrices must work modulo closure-
+preserving changes, including destabilization and exchange. Neither
+matrix conjugacy nor a bound on matrix moments is such a property.
+One possible target would be a Markov-invariant variational quantity
+whose minimum over all representatives is forced to its unknot value
+by V=1. This family explains why fixing strand count and writhe does
+not remove the need for that minimization. No such quantity or theorem
+has been established here. This does not rule out rigidity specifically
+at the level of the closed knot.
+
+6. REPRODUCTION AND PRIMARY SOURCES
+markov_moment_check.py computes exact TL14 Laurent polynomials and
+independent component-linking counts for m=-8,...,8, and checks all
+reported first derivatives. It also verifies the two Morton moments.
+The resulting markov_moment_check.json stores the complete polynomials.
+The proof of the infinite family is the symbolic argument above, not
+extrapolation from these17 checks.
+
+H.R.Morton, An irreducible4-string braid with unknotted closure,
+Math.Proc.Cambridge Philos.Soc.93(1983),259--261.
+https://doi.org/10.1017/S0305004100060540
+
+JoanS.Birman and TaraE.Brendle, Braids:A Survey, Example3.1, pp34--35
+of the author manuscript; explicit Morton word and exchange moves.
+https://www.math.columbia.edu/~jb/Handbook-21.pdf
+
+JoanS.Birman and WilliamW.Menasco, Studying Links Via Closed BraidsV:
+The Unlink, Trans.Amer.Math.Soc.329(1992),585--606.
+https://www.math.columbia.edu/~jb/slvcb-v.pdf
+The unknot simplification theorem needs exchange moves as well as
+conjugacy and destabilizations; no use of a broader knot-classification
+claim is made here.
+
+7. MINIMAL-BRAID QUALIFICATION AND AN EXACT REFORMULATION
+The beta_m examples are nonminimal braid representatives of the unknot.
+They do not refute a theorem restricted to minimal representatives.
+However, minimal braid dimension is not controlled by the ordinary
+Jones polynomial in general: Takioka's Kanenobu family k(n) has the
+same HOMFLYPT polynomial(v^-2-1+v^2-z^2)^2 for all n, while
+ n+3 <= b(k(n)) <=2n+1 for n>=3.
+Therefore even the full HOMFLYPT polynomial does not bound minimal
+braid index. A minimality theorem at V=1 would require special rigidity
+of that fiber rather than a general scalar-trace dimension argument.
+
+A precise sufficient statement using only the original Jones hypothesis:
+ If beta is an n-braid with knot closure, V_(closure beta)=1, and n>1,
+ then finitely many conjugacies and exchange moves take beta to a braid
+ admitting a destabilization.
+Iteration would prove Jones unknot detection. Conversely, if Jones
+detects the unknot, Birman--Menasco's unknot theorem gives exactly this
+statement. Thus it is an equivalent reformulation, not an independent
+new lemma. Its missing input is a trace-to-exchange-move theorem; neither
+unitarity nor the moment identities proved here supply that input.
+
+Hideo Takioka, On the Braid Index of Kanenobu Knots,
+Kyungpook Mathematical Journal55(2015),169--180, Theorem1.1 and p170.
+https://doi.org/10.5666/KMJ.2015.55.1.169
+Full primary article inspected:
+https://pdfs.semanticscholar.org/1cfd/410a7f28da8ead9f610c18d6bcce6b0886cf.pdf

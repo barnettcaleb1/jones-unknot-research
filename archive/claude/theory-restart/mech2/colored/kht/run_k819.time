@@ -1,0 +1,1 @@
+perl -e 'alarm 590; exec @ARGV' $K -c2 -d examples/dbl/k819.kht < /dev/null >  191.57s user 0.58s system 98% cpu 3:15.51 total

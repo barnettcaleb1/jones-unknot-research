@@ -1,0 +1,7 @@
+sigma3 (i=2)                             D = +0  (2D-1)^2 =   1   r(c,gc)|q=-1 = |rb|^2 = 1.000000   match: True
+T_e Omega^2, e=bd{2,3,4}                 D = -1  (2D-1)^2 =   9   r(c,gc)|q=-1 = |rb|^2 = 9.000000   match: True
+Omega^2 (c -> bd{3,4,5})                 D = +1  (2D-1)^2 =   1   r(c,gc)|q=-1 = |rb|^2 = 1.000000   match: True
+T_d^2, d = sigma3(c) (same splitting)    D = +0  (2D-1)^2 =   1   r(c,gc)|q=-1 = |rb|^2 = 1.000000   match: True
+(s3 s4^-1)^3                             D = +0  (2D-1)^2 =   1   r(c,gc)|q=-1 = |rb|^2 = 1.000000   match: True
+(T_e Omega^2)^2                          D = +1  (2D-1)^2 =   1   r(c,gc)|q=-1 = |rb|^2 = 1.000000   match: True
+T_e Omega^2 T_c' , c' = bd{3,4,5}        D = +1  (2D-1)^2 =   1   r(c,gc)|q=-1 = |rb|^2 = 1.000000   match: True

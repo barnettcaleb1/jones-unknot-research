@@ -1,0 +1,47 @@
+FOUR-SPECIAL FORMAL BOUNDARY TO THE ONE-SPECIAL ARGUMENT
+2026-10-31. Explicitly NOT a classical tangle construction.
+
+Let B be the four-dimensional pairing HF(a(0),s_4(infinity)) over F_2, with
+bigrades (h,q)=(-2,-5),(0,-1),(1,1),(3,5). Write [a]{b} for shifts adding a
+to homological degree and b to quantum degree.
+
+Consider the bigraded vector space
+  W = B direct-sum B[1]{2} direct-sum B[1] direct-sum B[2]{2}.
+All four summands have the shape of a standard rank-one special component,
+up to the allowed overall bigrading shifts. If E_B(Q) is B's Euler polynomial,
+then
+  Euler(W) = E_B(Q)(1-Q^2-1+Q^2) = 0.
+
+Define a degree-(1,2) differential by identity on the underlying B vector space:
+  B -> B[1]{2},       B[1] -> B[2]{2},
+with zero differential from the two targets. These are disjoint isomorphism
+pairs. Thus d_1^2=0 and (W,d_1) is acyclic.
+
+Now add the rational r_1(0) pairing module U with two generators in bigrades
+(0,-1),(0,1), and set its differential to zero. The resulting formal E1 page
+has rank18, Euler Q+Q^-1, and E2=E_infinity=U of rank2 in homological degree0.
+Thus it satisfies precisely the Jones-unlink Euler and reduced filtered
+Bar-Natan rank/support conditions that obstructed the one-special model.
+
+There is also an elementary universal algebraic lift. Over F_2[H] with
+deg H=(0,-2), use the same free generators and differential H times each
+displayed identity. The differential now has bidegree (1,0). At H=0 it is
+zero, and at H=1 it is the acyclic-pairs differential above. Its homology has
+eight length-one H-torsion summands and two free generators. This is a free
+bigraded chain complex, NOT a claim that it is a knot/tangle BN invariant.
+
+WHAT IS MISSING
+No classical tangle realizes this model in this note. In particular, we have
+not constructed its full tangle type-D/A-infinity extension, shown that the
+displayed differential comes from the actual BN deformation of such a tangle,
+or supplied compatible deformations for all rational fillings. The geometric
+curve shapes and this one filling's spectral-sequence axioms alone do not
+provide those missing structures.
+
+CONCLUSION
+The one-special permanence lemma is a genuine restricted realizability
+obstruction. It cannot extend to arbitrary numbers of special components
+using only component geography, Euler polynomial, and the existence of a
+Bar-Natan spectral sequence with its usual degree and rank conditions.
+This formal example supplies the additional incoming sources that its proof
+excluded. It is not a Jones counterexample or a realized tangle theorem.

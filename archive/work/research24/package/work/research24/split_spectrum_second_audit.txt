@@ -1,0 +1,89 @@
+SECOND INDEPENDENT AUDIT — SPLIT SPECTRUM ON THE BURAU KERNEL
+1 November 2026
+
+Verdict: the proposed lemma is correct, with the explicit hypotheses below. In fact its final part applies to every element of [P_n,P_n], not only to the generic Burau kernel, and to every fixed finite number n of strands. This is an obstruction to a proposed residual-image model, not a proof of faithfulness or Jones unknot detection.
+
+Conventions. Put R=Z[A,A^-1]. Use the Kauffman-bracket braid action
+
+  rho_A(sigma_i)=A I+A^-1 e_i,
+  e_i^2=(-A^2-A^-2)e_i.
+
+Let M(A) be a matrix of this action on an actual finite Temperley--Lieb module, in a basis for which M and M^-1 have entries in R. Rational basis changes are harmless for the spectral statement, but the existence of an integral Laurent lattice for both directions is an explicit hypothesis used below. More generally Q[A,A^-1] suffices, with the harmless change that its units have rational constant factors.
+
+1. The generic unreduced Burau kernel lies in [P_n,P_n]
+
+Use the unreduced Burau generator block
+
+                  B_i(t) = [[1-t,t],[1,0]].
+
+At t=1 these are the ordinary adjacent permutation matrices, a faithful representation of S_n. Therefore an element in the generic kernel is pure.
+
+A direct multiplication gives
+
+  B_i(t)^2 = [[1-t+t^2, t-t^2],[1-t,t]],
+  (B_i^2)'(1) = [[1,-1],[-1,1]] = L_(i,i+1).
+
+For a pure braid p, B_p(1)=I. Differentiation of products therefore makes
+
+                     p -> B_p'(1)
+
+an additive homomorphism from P_n to the additive group of integer matrices. For a standard pure generator A_ij, realized by conjugating a squared adjacent generator, differentiation of the conjugating factors cancels because the middle factor has value I. Its derivative is thus
+
+  L_ij=(e_i-e_j)(e_i-e_j)^T,
+
+up to a uniform convention sign if t is inverted. These matrices are linearly independent: the (i,j) off-diagonal entry occurs only in L_ij.
+
+The standard pure generators generate P_n; pairwise linking numbers send them to the standard basis of Z^(n choose 2). Consequently P_n^ab is precisely that free abelian group. The derivative homomorphism is injective on this abelianization. If the entire Burau matrix is I, its derivative is zero, hence all abelianization coordinates vanish. Thus
+
+                ker(Burau_n) is contained in [P_n,P_n].
+
+This argument requires neither Burau faithfulness nor any recent B_4 preprint.
+
+2. Every TL action of such an element has a zero first jet at A=1
+
+At A=1, rho(sigma_i)=I+e_i and e_i^2=-2e_i, so rho(sigma_i)^2=I. The specialization factors through S_n. Hence rho(p)(1)=I for every pure p. As above, p -> rho(p)'(1) is additive on P_n, so it vanishes on its commutator subgroup. Therefore
+
+                     M(A)=I+O((A-1)^2).
+
+No scalar framing normalization spoils this: pure commutators have exponent sum zero. The derivative argument already handles the stated unnormalized bracket convention directly.
+
+3. Split characteristic polynomial forces generic unipotence
+
+Assume det(zI-M(A)) splits completely over Q(A). Each root lambda is integral over R, since the characteristic polynomial is monic. Each lambda^-1 is integral over R as a root of the monic characteristic polynomial of M^-1. The Laurent polynomial ring R is integrally closed. Thus both lambda and lambda^-1 belong to R, so
+
+                         lambda=+/- A^k.
+
+Since M(1)=I, evaluation gives lambda(1)=1, excluding the minus sign. It remains to justify k=0 WITHOUT assuming analytic choices of eigenvectors.
+
+Write h=A-1. If k were nonzero, lambda-1=k h+O(h^2). Since M-I=O(h^2),
+
+   det(lambda I-M)=det(k h I+O(h^2))=k^d h^d+O(h^(d+1)),
+
+where d is the module dimension. This is nonzero, contradicting that lambda is an eigenvalue over Q(A). Hence every k is zero, and the characteristic polynomial is (z-1)^d. The same proof over Q[A,A^-1] first writes lambda=c A^k; evaluation fixes c=1.
+
+4. Positive unitary specializations eliminate the remaining Jordan blocks
+
+The negative loop value near A=1 does not invalidate positivity. Set A=exp(i theta), f_i=-e_i, and d=A^2+A^-2=2cos(2theta). Then
+
+  f_i^2=d f_i,    f_i f_(i+1) f_i=f_i,
+  rho(sigma_i)=A I-A^-1 f_i.
+
+For fixed n, standard Temperley--Lieb path modules admit positive Hermitian forms on a sufficiently small unit-circle arc around A=1. One elementary construction uses positive quantum numbers
+
+                    [r]=sin(2r theta)/sin(2theta).
+
+Taking 0<|theta|<pi/(2(n+1)) makes every [r] with 1<=r<=n+1 positive; the path-basis coefficients are square roots of ratios of these numbers. All simple modules at this fixed n occur, and their f_i are Hermitian. For n=5, the conservative interval 0<|theta|<pi/12 suffices. In these forms,
+
+  (A I-A^-1 f_i)(A^-1 I-A f_i)
+      =I-(A^2+A^-2)f_i+f_i^2=I.
+
+Thus actual TL braid modules are unitarizable on this arc. Equivalently one can use infinitely many standard unitary root-of-unity specializations with levels tending to infinity; for fixed n the truncation eventually removes no blocks. The usual local-unitary construction is described in Delaney--Rowell--Wang, Local unitary representations of the braid group and their applications to quantum computing, Section 4.1. The sign change above transfers its positive-loop convention to the current one.
+https://people.tamu.edu/~rowell/DRWv10.pdf
+
+A unitary matrix all of whose eigenvalues are 1 is the identity, since unitary matrices are diagonalizable. Consequently M(A)=I at every allowed specialization. Any exceptional poles of a rational comparison basis can be omitted; they are finite in number. Laurent-polynomial entries that vanish on infinitely many points are identically zero, so M(A)=I generically.
+
+5. Exact scope
+
+For B in ker generic unreduced Burau_5, a nonidentity residual integral Laurent TL_5 block MUST have characteristic polynomial that does not split over Q(A). In particular a nontrivial monomial diagonal eigenvalue construction cannot describe that block.
+
+The same conclusion holds for any B in [P_n,P_n] at any fixed n. No argument here asserts that a particular residual block is nonidentity, that its trace determines it, or that the Burau kernel acts nontrivially in TL. A split characteristic polynomial is the crucial extra hypothesis; generic Jones representations usually need algebraic eigenvalues and are not covered by it. The positive Hermitian specialization must come from an actual TL module, not an arbitrary integral Laurent matrix with the same determinant or trace.

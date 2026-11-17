@@ -1,0 +1,27 @@
+PASS45 STOP RECORD -- 1 November 2026
+
+No proof of unknot detection and no actual Jones-one nontrivial knot.
+
+Concrete result: universal finite annular implementation of surgery twist
+fails already on even channels 0 and 2, by first derivatives at A=1.
+Allows A-dependent regular coefficients and common nonzero normalization.
+Exact first Habiro coefficient checked against Masbaum equation (7).
+Finite rational interpolation needs degree >=N for N+1 test channels.
+
+Additional gates: a scalar multiple of a nontrivial Jones--Wenzl projector
+cannot be a single uncolored tangle; actual generic TL3 contains free
+braid gates despite satisfying the standard additive degree-four PI.
+Do not restart these universal realization recipes through coefficient
+normalization, denominator clearing, or a larger search of finite gadgets.
+
+Homological curve audit mostly reinforces earlier results. Do not count
+geography or algebraic extensions as a realization of the previously
+constructed formal cancelling curve collection. Strong all-filling Jones
+rigidity fails by actual local knot insertion, but those examples have no
+unknot anchor. No new global homological implication was established.
+
+Open scope: a specific identity in one marked exterior, accompanied by
+an actual knot diagram and independent nontriviality proof, would evade
+the universal annular obstruction. No such construction was obtained.
+
+Goal remains active and unsolved; no blocked or completion declaration.

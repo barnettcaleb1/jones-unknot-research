@@ -1,0 +1,447 @@
+{
+ "unknot kink": {
+  "crossings": 1,
+  "timings": {
+   "jones": 4.38750721514225e-05,
+   "seifert": 7.250020280480385e-05,
+   "hfk": 8.76658596098423e-05,
+   "geometry": 0.005059333052486181
+  },
+  "components": 1,
+  "writhe": 1,
+  "V": {
+   "0": 1
+  },
+  "V_str": "1",
+  "V_is_one": true,
+  "bracket_max_states": 1,
+  "det": 1,
+  "V_at_i": {
+   "zeta8_coeffs": [
+    1,
+    0,
+    0,
+    0
+   ],
+   "complex": [
+    1.0,
+    0.0
+   ]
+  },
+  "arf": 0,
+  "snappy": true,
+  "spherogram_components": 1,
+  "spherogram_writhe": 1,
+  "seifert_matrix_size": 0,
+  "alexander": {
+   "0": 1
+  },
+  "alexander_str": "1",
+  "det_seifert": 1,
+  "signature": 0,
+  "signature_convention": "right-handed trefoil = -2 (negated inertia of spherogram S+S^T)",
+  "seifert_nullity": 0,
+  "hfk_note": "diagram simplified to 0 crossings (unknot); HFK filled in by hand: The PD code describes a knot projection with a reducing Reidemeister 1 move",
+  "hfk": {
+   "total_rank": 1,
+   "seifert_genus": 0,
+   "fibered": true,
+   "tau": 0,
+   "epsilon": 0,
+   "nu": 0,
+   "L_space_knot": true,
+   "modulus": 2,
+   "ranks": {
+    "0,0": 1
+   },
+   "alexander_from_hfk": "1"
+  },
+  "hfk_nontrivial": false,
+  "alexander_consistent": true,
+  "volume": -1.9722307337266543e-07,
+  "solution_type": "contains degenerate tetrahedra",
+  "identify": [],
+  "group": {
+   "generators": 1,
+   "relators": []
+  },
+  "group_is_Z": true,
+  "verdict": "V = 1 and HFK rank 1 (genus 0): this is the unknot; not a counterexample"
+ },
+ "unknot conjugate g(s1 s2)g^-1 (8 cr.)": {
+  "crossings": 8,
+  "timings": {
+   "jones": 0.00042887497693300247,
+   "seifert": 0.0008897078223526478,
+   "hfk": 0.0008079172112047672,
+   "geometry": 0.002328000031411648
+  },
+  "components": 1,
+  "writhe": 2,
+  "V": {
+   "0": 1
+  },
+  "V_str": "1",
+  "V_is_one": true,
+  "bracket_max_states": 5,
+  "det": 1,
+  "V_at_i": {
+   "zeta8_coeffs": [
+    1,
+    0,
+    0,
+    0
+   ],
+   "complex": [
+    1.0,
+    0.0
+   ]
+  },
+  "arf": 0,
+  "snappy": true,
+  "spherogram_components": 1,
+  "spherogram_writhe": 2,
+  "seifert_matrix_size": 6,
+  "alexander": {
+   "0": 1
+  },
+  "alexander_str": "1",
+  "det_seifert": 1,
+  "signature": 0,
+  "signature_convention": "right-handed trefoil = -2 (negated inertia of spherogram S+S^T)",
+  "seifert_nullity": 0,
+  "hfk": {
+   "L_space_knot": true,
+   "epsilon": 0,
+   "fibered": true,
+   "modulus": 2,
+   "nu": 0,
+   "seifert_genus": 0,
+   "tau": 0,
+   "total_rank": 1,
+   "ranks": {
+    "0,0": 1
+   },
+   "alexander_from_hfk": "1"
+  },
+  "hfk_nontrivial": false,
+  "alexander_consistent": true,
+  "volume": 0.0007452546502589577,
+  "solution_type": "contains degenerate tetrahedra",
+  "identify": [],
+  "group": {
+   "generators": 1,
+   "relators": []
+  },
+  "group_is_Z": true,
+  "verdict": "V = 1 and HFK rank 1 (genus 0): this is the unknot; not a counterexample"
+ },
+ "3_1 (braid s1^3)": {
+  "crossings": 3,
+  "timings": {
+   "jones": 0.00010216562077403069,
+   "seifert": 0.0001948745921254158,
+   "hfk": 0.0001331660896539688,
+   "geometry": 0.005854166112840176
+  },
+  "components": 1,
+  "writhe": 3,
+  "V": {
+   "2": 1,
+   "6": 1,
+   "8": -1
+  },
+  "V_str": "t + t^3 - t^4",
+  "V_is_one": false,
+  "bracket_max_states": 2,
+  "det": 3,
+  "V_at_i": {
+   "zeta8_coeffs": [
+    -1,
+    0,
+    0,
+    0
+   ],
+   "complex": [
+    -1.0,
+    0.0
+   ]
+  },
+  "arf": 1,
+  "snappy": true,
+  "spherogram_components": 1,
+  "spherogram_writhe": 3,
+  "seifert_matrix_size": 2,
+  "alexander": {
+   "-1": 1,
+   "0": -1,
+   "1": 1
+  },
+  "alexander_str": "t^-1 - 1 + t",
+  "det_seifert": 3,
+  "signature": -2,
+  "signature_convention": "right-handed trefoil = -2 (negated inertia of spherogram S+S^T)",
+  "seifert_nullity": 0,
+  "hfk": {
+   "L_space_knot": true,
+   "epsilon": 1,
+   "fibered": true,
+   "modulus": 2,
+   "nu": 1,
+   "seifert_genus": 1,
+   "tau": 1,
+   "total_rank": 3,
+   "ranks": {
+    "-1,-2": 1,
+    "0,-1": 1,
+    "1,0": 1
+   },
+   "alexander_from_hfk": "t^-1 - 1.0 + t"
+  },
+  "hfk_nontrivial": true,
+  "alexander_consistent": true,
+  "volume": 0.0,
+  "solution_type": "contains flat tetrahedra",
+  "identify": [],
+  "group": {
+   "generators": 2,
+   "relators": [
+    "aabbb"
+   ]
+  },
+  "group_is_Z": false,
+  "verdict": "V != 1 (V = t + t^3 - t^4): not a candidate"
+ },
+ "K11n42 (KA PD)": {
+  "crossings": 11,
+  "timings": {
+   "jones": 0.0007701246067881584,
+   "seifert": 0.0026671658270061016,
+   "hfk": 0.002441542223095894,
+   "geometry": 0.006568749900907278
+  },
+  "components": 1,
+  "writhe": -1,
+  "V": {
+   "-12": 1,
+   "-10": -2,
+   "-8": 2,
+   "-6": -2,
+   "-4": 1,
+   "2": 2,
+   "4": -2,
+   "6": 2,
+   "8": -1
+  },
+  "V_str": "t^-6 - 2*t^-5 + 2*t^-4 - 2*t^-3 + t^-2 + 2*t - 2*t^2 + 2*t^3 - t^4",
+  "V_is_one": false,
+  "bracket_max_states": 5,
+  "det": 1,
+  "V_at_i": {
+   "zeta8_coeffs": [
+    1,
+    0,
+    0,
+    0
+   ],
+   "complex": [
+    1.0,
+    0.0
+   ]
+  },
+  "arf": 0,
+  "snappy": true,
+  "spherogram_components": 1,
+  "spherogram_writhe": -1,
+  "seifert_matrix_size": 10,
+  "alexander": {
+   "0": 1
+  },
+  "alexander_str": "1",
+  "det_seifert": 1,
+  "signature": 0,
+  "signature_convention": "right-handed trefoil = -2 (negated inertia of spherogram S+S^T)",
+  "seifert_nullity": 0,
+  "hfk": {
+   "L_space_knot": false,
+   "epsilon": 0,
+   "fibered": false,
+   "modulus": 2,
+   "nu": 0,
+   "seifert_genus": 2,
+   "tau": 0,
+   "total_rank": 33,
+   "ranks": {
+    "-2,-2": 1,
+    "-2,-1": 1,
+    "-1,-1": 4,
+    "-1,0": 4,
+    "0,0": 7,
+    "0,1": 6,
+    "1,1": 4,
+    "1,2": 4,
+    "2,2": 1,
+    "2,3": 1
+   },
+   "alexander_from_hfk": "1"
+  },
+  "hfk_nontrivial": true,
+  "alexander_consistent": true,
+  "volume": 11.21911772538136,
+  "solution_type": "all tetrahedra positively oriented",
+  "identify": [
+   "11_58(0,0)",
+   "K11n42(0,0)"
+  ],
+  "group": {
+   "generators": 3,
+   "relators": [
+    "aCaBAbc",
+    "accbCAbccbCacBCCAcBCaC"
+   ]
+  },
+  "group_is_Z": false,
+  "verdict": "V != 1 (V = t^-6 - 2*t^-5 + 2*t^-4 - 2*t^-3 + t^-2 + 2*t - 2*t^2 + 2*t^3 - t^4): not a candidate"
+ },
+ "7_2 from twisting clasp unknot": {
+  "crossings": 8,
+  "timings": {
+   "jones": 0.0003631250001490116,
+   "seifert": 0.01554645923897624,
+   "hfk": 0.000559875275939703,
+   "geometry": 0.0040008751675486565
+  },
+  "components": 1,
+  "writhe": 8,
+  "V": {
+   "2": 1,
+   "4": -1,
+   "6": 2,
+   "8": -2,
+   "10": 2,
+   "12": -1,
+   "14": 1,
+   "16": -1
+  },
+  "V_str": "t - t^2 + 2*t^3 - 2*t^4 + 2*t^5 - t^6 + t^7 - t^8",
+  "V_is_one": false,
+  "bracket_max_states": 2,
+  "det": 11,
+  "V_at_i": {
+   "zeta8_coeffs": [
+    -1,
+    0,
+    0,
+    0
+   ],
+   "complex": [
+    -1.0,
+    0.0
+   ]
+  },
+  "arf": 1,
+  "snappy": true,
+  "spherogram_components": 1,
+  "spherogram_writhe": 8,
+  "seifert_matrix_size": 18,
+  "alexander": {
+   "-1": 3,
+   "0": -5,
+   "1": 3
+  },
+  "alexander_str": "3*t^-1 - 5 + 3*t",
+  "det_seifert": 11,
+  "signature": -2,
+  "signature_convention": "right-handed trefoil = -2 (negated inertia of spherogram S+S^T)",
+  "seifert_nullity": 0,
+  "hfk": {
+   "L_space_knot": false,
+   "epsilon": 1,
+   "fibered": false,
+   "modulus": 2,
+   "nu": 1,
+   "seifert_genus": 1,
+   "tau": 1,
+   "total_rank": 11,
+   "ranks": {
+    "-1,-2": 3,
+    "0,-1": 5,
+    "1,0": 3
+   },
+   "alexander_from_hfk": "3.0*t^-1 - 5.0 + 3*t"
+  },
+  "hfk_nontrivial": true,
+  "alexander_consistent": true,
+  "volume": 3.331744231641115,
+  "solution_type": "all tetrahedra positively oriented",
+  "identify": [
+   "m053(0,0)",
+   "7_2(0,0)",
+   "K4_2(0,0)",
+   "K7a4(0,0)"
+  ],
+  "group": {
+   "generators": 2,
+   "relators": [
+    "aBBBabbbABBAbbb"
+   ]
+  },
+  "group_is_Z": false,
+  "verdict": "V != 1 (V = t - t^2 + 2*t^3 - 2*t^4 + 2*t^5 - t^6 + t^7 - t^8): not a candidate"
+ },
+ "Hopf link": {
+  "crossings": 2,
+  "timings": {
+   "jones": 7.008295506238937e-05,
+   "seifert": 0.00014295894652605057,
+   "geometry": 0.016597417183220387
+  },
+  "components": 2,
+  "writhe": -2,
+  "V": {
+   "-5": -1,
+   "-1": -1
+  },
+  "V_str": "-t^(-5/2) - t^(-1/2)",
+  "V_is_one": false,
+  "bracket_max_states": 2,
+  "det": 2,
+  "V_at_i": {
+   "zeta8_coeffs": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "complex": [
+    0.0,
+    0.0
+   ]
+  },
+  "arf": null,
+  "snappy": true,
+  "spherogram_components": 2,
+  "spherogram_writhe": -2,
+  "seifert_matrix_size": 1,
+  "alexander": {
+   "0": -1,
+   "1": 1
+  },
+  "alexander_str": "-1 + t",
+  "det_seifert": 2,
+  "signature": 1,
+  "signature_convention": "right-handed trefoil = -2 (negated inertia of spherogram S+S^T)",
+  "seifert_nullity": 0,
+  "volume": -2.942091015256665e-15,
+  "solution_type": "contains degenerate tetrahedra",
+  "identify": [],
+  "group": {
+   "generators": 2,
+   "relators": [
+    "abAB"
+   ]
+  },
+  "group_is_Z": false,
+  "verdict": "link with 2 components; V = -t^(-5/2) - t^(-1/2)"
+ }
+}

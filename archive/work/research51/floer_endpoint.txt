@@ -1,0 +1,197 @@
+PASS 51: WHAT THE FLOER ENDPOINT PROVES, AND THE TWO MISSING BRIDGES
+1 November 2026. Bounded audit; no new Jones theorem or counterexample.
+
+1. The proposed conditional endpoint is correct.
+
+Let M be a compact connected oriented manifold with one torus boundary
+component and H_1(M;Z)=Z, realized as the exterior of a knot in an integral
+homology sphere. Suppose M is Floer simple and its symmetrically normalized
+Alexander polynomial satisfies Delta(1)=1 and Delta''(1)=0.
+
+Then M is a solid torus connected summed with an integral homology sphere Z.
+Moreover Z is an L-space. If M is irreducible, Z=S^3 and M is a solid torus.
+If M is a double branched tangle cover, the latter conclusion implies that
+the tangle is rational.
+
+Proof. Rasmussen-Rasmussen Proposition 1.4 gives coefficients 0 or 1 for
+the normalized torsion D(t)/(1-t). Consecutive differences imply the
+nonzero coefficients of D alternate +1,-1,+1,...,+1. Symmetry gives
+
+ Delta(t)=(-1)^k + sum_(i=1)^k (-1)^(k-i)*(t^n_i+t^-n_i),
+                  0<n_1<...<n_k.
+
+Thus Delta''(1)=2 sum_i (-1)^(k-i)n_i^2 is strictly positive unless k=0:
+pair terms from the largest exponent downward. Our hypothesis implies
+Delta=1. If M had incompressible boundary, Rasmussen-Rasmussen Corollary
+2.3 would give Thurston norm deg(D)-1=-1. Therefore the boundary compresses,
+and elementary prime decomposition gives M=(S^1 x D^2)#Z. Homology makes
+Z an integral homology sphere.
+
+For each nonlongitudinal slope p/q,
+
+                    M(p/q)=L(p,q)#Z.
+
+The connected-sum formula for hat Heegaard Floer homology, over a field,
+gives rank HFhat(M(p/q))=|p|*rank HFhat(Z). Consequently one such filling
+is an L-space iff Z is an L-space. Floer simplicity supplies an L-space
+filling, so Z is an L-space. Conversely, if Z is an L-space, every
+nonlongitudinal filling is one, and Rasmussen-Rasmussen Proposition 1.3
+makes M Floer simple. Finally an irreducible M cannot contain the nontrivial
+connected-sum sphere separating Z, so Z=S^3. End proof.
+
+This argument is the correct extension of pass50. In pass50 an ACTUAL
+lens filling eliminated Z by prime decomposition. Bracket equality by
+itself does not supply such a filling.
+
+2. Even strengthened numerical endpoint data do not eliminate Z.
+
+Let P be the Poincare homology sphere and set Z=P#(-P). Both orientations
+of P are L-spaces; their connected sum is an L-space. It is a nontrivial
+integral homology sphere, but Casson additivity and orientation reversal
+give lambda(Z)=0. Its correction term likewise vanishes by additivity
+and orientation reversal. Take
+
+                         M=(S^1 x D^2)#Z.
+
+Then H_1(M)=Z, Delta_M=1, Delta_M''(1)=0, M is Floer simple, and its
+meridional filling is an L-space homology sphere with Casson invariant
+zero. Yet M is not a solid torus. Its nonlongitudinal fillings are
+L(p,q)#P#(-P), not lens spaces.
+
+More strongly, for EVERY p != 0 and each Spin^c structure s,
+
+ lambda_CW(M(p/q)) = lambda_CW(L(p,q)),
+ d(M(p/q),s) = d(L(p,q),s),
+ rank HFhat(M(p/q)) = |p|.
+
+Thus all these fillings are L-spaces with exactly the lens-space
+Casson-Walker invariants and correction terms. The boundary longitude
+and the Alexander polynomial also agree with the solid-torus model.
+This remains insufficient to identify the filled manifolds topologically.
+Ozsvath-Szabo explicitly discuss this very Z as an 'invisible' homology
+sphere in Absolutely graded Floer homologies, Section 6 (printed page 34).
+This example and its Floer phenomenon are established literature, not
+a new construction from this pass.
+
+This is an actual counterexample to the ABSTRACT endpoint inference
+from those homological/Floer/Casson data. It is not claimed to satisfy
+the original rational-bracket equality, and it is not a Jones
+counterexample. It shows exactly why the closed summand cannot be erased
+by extending the numerical part of the argument.
+It is deliberately a REDUCIBLE model; it does not refute a stronger
+statement restricted to irreducible homology spheres or irreducible M.
+
+3. Local knot insertion locates the unresolved generic case precisely.
+
+Start with a rational tangle R. In a small ball meeting one arc once,
+replace the trivial subarc by a long version of a knot J. Denote the
+resulting tangle X_J. The one-strand ball skein module has rank one,
+so, after the usual framing normalization, this insertion multiplies
+the bracket of every closure by V_J(A^-4). In particular,
+
+              V_J=1  implies  [X_J]=[R].
+
+The double branched cover of the local ball is the double branched cover
+Sigma_2(J) with a ball removed. The local insertion therefore changes
+the exterior by a connected sum:
+
+              M_J=(S^1 x D^2)#Sigma_2(J).
+
+If J were a nontrivial Jones-one knot, determinant one would make
+Sigma_2(J) an integral homology sphere. Smith's theorem implies it is
+not S^3. Hence M_J is reducible and the closed-summand obstacle is present
+for EVERY counterexample inserted by this elementary construction.
+
+The Alexander polynomial of this exterior as a knot exterior in the
+auxiliary homology sphere is already 1: its meridional core is an unknot
+contained in a ball of Sigma_2(J). Thus Delta''=0 is automatic in this
+family and supplies no extra restriction on J. Also,
+
+ M_J is Floer simple  iff  Sigma_2(J) is an L-space.
+
+The equivalence follows from the filling/connected-sum calculation in
+Section 1, and is independent of any conjectural Jones detection claim.
+
+Therefore a proposed universal implication
+
+          [X]=[rational R]  implies  cover(X) is Floer simple
+
+would already entail the substantial unproved assertion
+
+          V_J=1  implies  Sigma_2(J) is an L-space.
+
+Even granting that assertion leaves the nontrivial L-space summand
+Sigma_2(J) to eliminate. Adding irreducibility of M silently excludes
+the local insertion construction and is not a generic reduction.
+
+4. Existing categorification does not provide the missing implication.
+
+Ozsvath-Szabo construct a spectral sequence from reduced Khovanov homology
+(with the appropriate mirror convention) to hat Heegaard Floer homology
+of the double branched cover. It gives
+
+       rank HFhat(Sigma_2(J)) <= rank reduced Kh(mirror J).
+
+The Jones polynomial is the graded Euler characteristic of Khovanov
+homology. V_J=1 allows cancelling contributions in different homological
+degrees; it does not bound the total rank above by one. Consequently
+the spectral sequence cannot turn V_J=1 into an L-space conclusion
+without a further theorem controlling that cancellation. Claiming that
+it does would reverse the available inequalities.
+
+For alternating/quasi-alternating branch links, established special
+theorems give L-space covers. But no argument here converts an arbitrary
+rational-bracket tangle or Jones-one knot to that geometric class.
+
+5. What a genuinely independent input would have to do.
+
+The independent topological endpoint is now complete: Floer simplicity
+and Delta''=0 classify the exterior as a solid torus plus an L-space
+homology-sphere summand. The missing input is not another surgery
+calculation. It must either establish an actual L-space filling from
+the bracket data AND exclude the closed summand, or construct a different
+tangle from a general Jones-one knot with irreducible cover while retaining
+enough justified Floer information. Neither operation has been supplied.
+
+The Ozsvath-Szabo conjecture classifying irreducible integral-homology-
+sphere L-spaces as S^3 or either orientation of the Poincare sphere is
+an independently meaningful existing conjecture. It could constrain
+irreducible prime summands after an L-space conclusion, but it is not a
+proved input and does not by itself manufacture Floer simplicity or
+cancel Poincare summands of opposite orientations. Invoking it would
+add a major open problem rather than finish this proof.
+
+Thus there is no newly established independent bridge to a generic
+Jones proof in this pass. Calling the missing rank-control assertion
+a new conjecture would merely rename the obstacle. The actual result
+is the precise endpoint classification and the local-insertion stress
+test showing why it does not already settle the generic question.
+
+PRIMARY SOURCES CHECKED
+
+Rasmussen-Rasmussen, Floer simple manifolds and L-space intervals,
+Propositions 1.3 and 1.4, Corollary 2.3:
+https://arxiv.org/pdf/1508.05900
+
+Ozsvath-Szabo, Holomorphic disks and three-manifold invariants: properties
+and applications, Section 6.1, Proposition 6.1 and its Kunneth consequence:
+https://arxiv.org/pdf/math/0105202
+
+Ozsvath-Szabo, On the Heegaard Floer homology of branched double-covers:
+https://arxiv.org/abs/math/0309170
+
+Ozsvath-Szabo, Absolutely graded Floer homologies and intersection forms
+for four-manifolds with boundary, Theorem 1.2 and Section 4 (correction
+term additivity/reversal), Theorem 1.3 (Casson relation), and Section 6,
+printed page 34 (the explicit Poincare-sphere sum example):
+https://arxiv.org/pdf/math/0110170
+
+Conway-Tosun, primary research paper, Remark 2 discusses the independent
+irreducible homology-sphere L-space conjecture and its Poincare exceptions:
+https://intlpress.com/site/pub/files/_fulltext/journals/mrl/2020/0027/0001/MRL-2020-0027-0001-a003.pdf
+
+Sikora, framed bracket conventions and rational-tangle detection context:
+https://arxiv.org/html/2005.08162
+
+Only the local construction and deductions above are claimed here; no
+claim is made that these statements are new in the literature.

@@ -1,0 +1,81 @@
+ACTUAL FOUR-CANDIDATE TEST: OVERLAPPING SIX-STRAND BURAU KERNELS
+Bounded pass 33. No Jones-one knot, full Jones kernel, or proof was found.
+This is a failed explicit construction, not a conditional scaffold.
+
+CONSTRUCTION
+Use Artin generators sigma_i, positive crossing A*1+A^-1*e_i,
+loop value delta=-A^2-A^-2, and t=A^-4. Normalize V(unknot)=1.
+Write [a,b]=a b a^-1 b^-1 and c(w,p)=p^-1 w p. Let
+
+p = sigma3^-1 sigma2 sigma1^2 sigma2 sigma4^3 sigma3 sigma2,
+q = sigma4^-1 sigma3 sigma2 sigma1^-2 sigma2 sigma1^2
+    sigma2^2 sigma1 sigma4^5,
+H = c(sigma4,p),
+F = c(sigma4 sigma3 sigma2 sigma1^2 sigma2 sigma3 sigma4,q),
+X = [H,F].
+
+This is the cached Bigelow-factor Burau-kernel word, freely reduced
+length 118. Its primary source is Bigelow, Geometry & Topology 3
+(1999), 397–404, p403; the commutator convention is explicitly the one
+above, not the convention used on p399 of that paper.
+https://doi.org/10.2140/gt.1999.3.397
+
+Embed X in B6 on strands 1–5, and obtain Y by replacing every sigma_i
+in X by sigma_(i+1). Set C=sigma1 sigma2 sigma3 sigma4 sigma5. Test
+
+                  K_(e,f) = closure([X^e,Y^f] C), e,f in {1,-1}.
+
+All four displayed words have length 477 and writhe 5. X and Y are
+pure, so the closure permutation is the six-cycle of C: every test
+is a KNOT. Exact generic unreduced Burau matrices of both X and Y,
+and of all four commutators, are identity. Hence the Alexander
+polynomial of every closure equals that of C, namely 1. This is NOT
+an inference about the Jones polynomial.
+
+FULL EXACT JONES RESULTS
+(e,f)    minimum t-degree  maximum t-degree  nonzero terms
+( 1, 1)        -67               78              146
+( 1,-1)       -140              149              290
+(-1, 1)       -142              147              290
+(-1,-1)        -68               77              146
+
+Every polynomial is different from 1. Consequently every closure is
+nontrivial, but none is a counterexample to Jones unknot detection.
+The same-sign commutators exhibit substantial cancellation compared
+with opposite signs, without eliminating the remaining Jones terms.
+This observation does not justify a prediction about larger powers.
+
+WHAT WAS VERIFIED
+The full 132-dimensional planar Temperley–Lieb diagram algebra TL6
+was used; no representation block was omitted. Laurent coefficients
+are integers, with no floating point or interpolation. The unknot
+anchor was checked directly. A separate integer-scaled computation
+at A=2 agrees exactly with each full Laurent polynomial. The latter
+is a cross-check of arithmetic, not an identity test substituted for
+the full polynomial computation.
+
+The machine-readable JSON includes the explicit complete braid words
+and every Jones coefficient. The standalone driver uses the already
+retained standard-library exact TL engine, with known trefoil,
+figure-eight, mirror, braid-relation, and stabilization checks.
+
+Reproduce from workspace root:
+  python3 work/research33/verify_braid_candidate.py
+
+Files:
+  work/research33/verify_braid_candidate.py
+  work/research33/braid_candidate.json
+  work/pass2/braid_kernel.py
+  work/attack_search/search.py
+
+This is distinct from the prior five-strand short-conjugator searches:
+the two kernel blocks overlap on four strands in B6. We deliberately
+exclude the balanced product X Y^-1 C as a search mechanism, because
+with the matching shift convention it can be merely conjugate to C.
+No such conjugacy assumption was made for the commutator tests.
+
+STOP CONDITION AND VERDICT
+All four exact candidates fail. No further power or word scan was
+started. The broader Jones unknot-detection question remains unsolved
+by this pass; there is no unresolved candidate to present as progress
+at that scale.

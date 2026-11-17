@@ -1,0 +1,127 @@
+INDEPENDENT GEOMETRIC AUDIT: BOUNDED PROJECTIVE LOCAL COMPLEXITY
+1 November 2026. Research deduction, not a novelty claim.
+
+Scope. The parent supplies the signed-holonomy identity
+ beta(G)=e(G)-alpha(G)=maximum number of balanced edges under vertex spins.
+Here G is a connected graph embedded in RP2, and alpha is the minimum
+number of edges to delete to make G local. This note audits the actual
+medial-diagram geometry needed after that identity. No graph deletion
+or contraction is mistaken for an isotopy of the link.
+
+1. The bounded skeleton.
+
+First separate the local-graph case. If the realized checkerboard graph
+G itself is local, then alpha(G)=0 and e(G)=beta(G)<=b, so its diagram
+is already bounded and belongs to a finite list. Its complementary
+region may be a Mobius band: no cellular duality of the two checkerboard
+graphs is asserted or used. In the remaining case G is connected and
+nonlocal, hence cellular in RP2. The argument below applies to this
+realized embedded graph alone and never requires its geometric dual.
+
+Every spanning tree is balanced after a spin assignment, so v(G)<=b+1
+when beta(G)<=b. Every local loop is balanced for every spin assignment;
+every non-loop is balanced with probability 1/2 for independent uniform
+spins. Projective loops are never balanced. Therefore the total number
+of edges OTHER THAN projective loops is at most 2b. Their total number
+of darts is at most 4b.
+
+Any two projective loops based at different vertices would be disjoint
+essential simple closed curves in RP2, impossible because their mod-2
+intersection number is one. Consequently all projective loops, if any,
+are based at a single vertex v. At that vertex, any pair has interleaving
+darts: otherwise a small perturbation makes the curves disjoint.
+Pairwise interleaving forces their cyclic dart subword to have the form
+  1,2,...,n,1,2,...,n
+up to relabeling, cyclic choice and reversal. Other darts are inserted
+into this word. At most 4b inserted darts break it into at most 4b+1
+linear blocks of projective loops consecutive in BOTH halves.
+This bound is intentionally nonoptimal.
+
+2. A consecutive block is an ACTUAL twist region.
+
+Remove the interior of a small vertex disk about v. The remaining
+surface RP2 minus that disk is a Mobius band. Each projective loop
+becomes a properly embedded essential arc in this Mobius band; cutting
+along any such arc produces a disk. Pairwise disjoint essential proper
+arcs in a Mobius band are parallel spanning arcs. Consecutive arcs
+cobound a rectangle, with the other two sides on the vertex-disk boundary.
+
+For successive loops in one block, both of these boundary intervals
+contain no other graph darts. The rectangle therefore contains no
+other graph edges: any graph inside it would have to attach across
+its boundary, which has neither an available vertex sector nor a
+crossing of graph edges. A component wholly inside would violate
+connectedness of G. Thus the corresponding two medial crossings have
+an empty bigon between them.
+
+A block of r loops gives a chain of r crossings with r-1 successive
+empty bigons. A regular neighborhood of this open chain is an embedded
+disk in RP2. The link projection inside it is a two-strand braid with
+r crossings. Assigning either over/under choice at a crossing assigns
+one of the two braid generators. Adjacent inverse generators cancel
+by a genuine Reidemeister-II isotopy in this disk. The entire block
+is consequently an integer-twist box. The integer is the signed
+exponent in this local braid convention; no identification with a
+particular global oriented crossing-sign convention is required.
+
+The disk thickens to a 3-ball in the twisted interval bundle over RP2:
+local orientability is enough. All cancellations and twist replacements
+occur in that ball and preserve the represented RP3 link.
+
+Cyclic exception. If there are no other darts, the projective loops
+can form a cyclic chain. Choose one adjacency at which to open the
+chain and retain the other r-1 bigons. Their neighborhood is still a
+disk twist box, with a fixed exterior closure. For r=1, use a small
+crossing disk; for r=0, there is no box. Thus the beta=0 family creates
+no unbounded number of boxes.
+
+3. Finitely many templates, then a classical bridge bound.
+
+Record each block by one twist-box placeholder, leaving the actual
+integer exponent free. The remaining graph has at most 2b ordinary
+edges and at most 4b+1 block representatives, hence at most 6b+1 edges.
+The vertex number, cyclic orders, edge-twist data of its surface ribbon
+neighborhood, crossing choices outside boxes, and box markings all
+have finitely many possibilities. For connected graphs in RP2 these
+ribbon data plus the complementary-surface data determine finitely
+many ambient embedding types: the nonlocal case is cellular; the local
+case has one projective complementary component and disks. There are
+no arbitrary mapping-class parameters left on RP2.
+
+Therefore beta(G)<=b gives finitely many ACTUAL RP3 twist templates.
+This records a bigon-chain isotopy; it is not a deletion-induction claim.
+In particular it does not use the contested sentence in the source
+asserting beta(G-e)=beta(G)-1 for some edge.
+
+Under the unbranched double cover S3 -> RP3, each twist 3-ball has two
+disjoint ball lifts. Thus every RP3 template lifts to a fixed S3 template
+with twice as many variable two-strand braid boxes. Each such fixed
+S3 template has a bridge presentation with a number of maxima bounded
+independently of its integer twist exponents: put every braid box
+monotonically in a local height coordinate and keep the fixed exterior
+arcs fixed. Take the maximum over the finite list of templates.
+
+For a LOCAL classical knot K embedded in a ball of RP3, the lifted link
+is a split union of two copies of K. Restricting any bounded-bridge
+presentation of this lifted link to either component bounds b(K).
+No split-link bridge additivity formula is needed. Hence there is a
+finite function B(b) with
+  beta_Re(K)<=b  =>  bridge(K)<=B(b).
+
+4. Full-proof relevance and remaining gate.
+
+A uniform beta bound on ONE specified nonempty ordinary-Jones fiber
+would now give a uniform bridge bound on that fiber. If V_H=1 for a
+nontrivial H, taking J#H^{#r} for an anchor J in that fiber contradicts
+Schubert's connected-sum bridge formula as r grows. Thus such a beta
+bound would imply Jones unknot detection. The geometry above supplies
+the beta-to-bridge implication; it does not supply any Jones-to-beta
+bound. The latter remains the exact unproved global premise.
+
+Primary source audited for definitions and scope:
+Boyle--Spyropoulos, Myopic Tutte polynomials and Khovanov homology in RP3,
+arXiv:2609.40122v1, Definition1.6, Section3 (local/cellular graphs), and
+Section5.2. Their Conjecture1.1(2) would imply an explicit span-to-beta
+bound. This note does not assume that conjecture or repeat the source's
+edge-deletion induction as a valid proof.
+https://arxiv.org/html/2609.40122

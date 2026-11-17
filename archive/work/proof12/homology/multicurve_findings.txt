@@ -1,0 +1,99 @@
+PROOF12: ACTUAL UNKNOT-ANCHORED CANCELLATION AND ONE-SPECIAL-CURVE AUDIT
+2026-10-31. No generic Jones detection theorem is claimed.
+
+1. AN ACTUAL COUNTERTEST, NOT AN ABSTRACT COMPLEX
+Watson, Khovanov homology and the symmetry group of a knot, Section 7,
+printed page27 (arXiv1311.1085v4), computes kappa for a strong inversion of the
+figure-eight knot. I inspected the original figure and independently transcribed
+its entries:
+ (u,2delta)=(0,-3),(2,-3),(3,-3),(5,-3),
+            (4,-1),(6,-1),(7,-1),(9,-1).
+Watson uses q=u-delta (half the usual Kh quantum grading). Therefore opposite
+homological parities occur at exactly the SAME quantum grading q=9/2 and13/2.
+Both grades cancel in the graded Euler polynomial, which is
+ t^(3/2)+t^(7/2)-t^(15/2)-t^(19/2)
+ =t^(3/2)(1+t^2)(1-t^6).
+This is an actual classical tangle with an actual unknot infinity closure: its
+tangle is the quotient of the figure-eight exterior under the strong inversion.
+KWZ2022 Lemma3.6 identifies kappa with the special-sector pairing. Thus this
+example refutes quantum-parity purity of the special sector even with an actual
+unknot anchor. It does NOT refute aggregate nonvanishing or extreme imbalance;
+its extremes survive.
+Primary: https://arxiv.org/pdf/1311.1085
+Exact data: independent_checks.json. The inspected page is watson_page27.png.
+
+2. THE PRECISE SINGLE-COMPONENT EULER FORMULA IS AVAILABLE
+Use the PUBLISHED length convention of Kotelskiy--Watson--Zibrowius, Khovanov
+homology and strong inversions, Open Book Series5 (2022),223--244.
+Lemma2.5, printed page231, treats s_(4n)(infinity), of length4n. The arXivv1
+calls the same curve s_(2n); do not mix the conventions.
+The base pairing HF(a(0),s_4(infinity)) has (quantum Q exponent,homological h)
+ (-5,-2),(-1,0),(1,1),(5,3).
+For length4n it is the sum of n shifted copies, with quantum shifts
+4(2i-n-1) and even homological shifts2(2i-n-1), 1<=i<=n. Hence its Euler
+polynomial, up to an overall signed quantum monomial, is
+ E_n(Q)=Q^(-4n-1)(1+Q^4)(1-Q^6) sum_(i=0)^(n-1) Q^(8i).
+This is nonzero, with extreme coefficients +1 and -1. Every summand is
+concentrated in the same delta grading. This proves per-component nonvanishing
+for the specified curves, rather than assuming it.
+Primary: https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+Local published PDF/text: kwz2022.pdf / kwz2022.txt.
+
+3. THE s=0 ONE-SPECIAL SUBCASE IS VACUOUS, NOT A NEW DETECTION RESULT
+Suppose an unknot-anchored tangle in preferred meridian-longitude framing has
+one rational component r_1(s) and exactly one special component s_(4n).
+The zero filling is the branch set of zero surgery, so its determinant is0.
+Its special-sector delta-Euler characteristic has magnitude4n, by Lemma2.5.
+For s!=0 the rational-sector magnitude is |s|; for s=0 that magnitude is0
+(the unlink sector has two generators in adjacent delta gradings). Consequently
+  |s|=4n,
+with opposite signs for the two sectors. In particular s=0 is impossible in
+this one-special setup. This follows from the same determinant argument used
+on printed page236 of KWZ2022. Do not advertise an s=0 one-special nonflatness
+statement as a non-vacuous theorem about actual tangles.
+For general special lengths not divisible by4, this note makes no assertion
+beyond the geography theorem; divisibility by4 is Conjecture3.10 in the paper.
+
+4. EVEN A SINGLE SPECIAL CURVE CAN FORMALLY CANCEL AGAINST THE RATIONAL SECTOR
+Define the reduced Khovanov Euler torus-link polynomial (one fixed chirality)
+ R_(4n)(Q)=[Q^(-12n)+(Q^2+1+Q^-2)Q^(-4n)]/(Q+Q^-1).
+There is an exact identity for every n>=1:
+ R_(4n)(Q)+Q^(-8n) E_n(Q)=Q^(-12n)(Q+Q^-1).
+Equivalently Q^(12n)R_(4n)+Q^(4n)E_n=Q+Q^-1.
+Thus two appropriately shifted graded sectors have EXACTLY the unlink Euler
+polynomial, despite a nonzero special component. This is not claimed realized
+by a classical tangle. Whether these relative/absolute grading shifts can occur
+with the actual unknot anchor is precisely the remaining geometric question.
+The identity shows that per-component nonvanishing alone is insufficient.
+
+Proof: sum_(i=0)^(n-1)Q^(8i)=(1-Q^(8n))/(1-Q^8), and
+ (1+Q^2)(1+Q^4)(1-Q^6)/(1-Q^8)=1+Q^2+Q^4.
+Multiplying the proposed identity by Q+Q^-1 immediately cancels the two terms
+Q^(-4n-2)(1+Q^2+Q^4); the remainder is
+Q^(-12n-2)(1+Q^2)^2, as required. This proves all n, independently of checks.
+
+5. WHY A BARE BAR-NATAN CONE REQUIREMENT DOES NOT GIVE SIGN POSITIVITY
+Kh(T) is a cone of the central G action on BN(T). The cone gives a necessary
+nullhomotopy G·id on every summand; it does not identify an Euler polynomial
+with a dimension. Homological shifts preserve the nullhomotopy property and
+reverse Euler signs. Thus the summand-wise cone constraint is not, by itself,
+a relative-grading positivity theorem. We have NOT proved that every formal
+collection satisfying these properties is realizable, or even that the whole
+formal collection admits every A-infinity extension required for a tangle.
+
+The recent primary preprint On mutation invariance in Khovanov homology,
+arXiv2602.23442, extends the component classification and its matrix-factorization/
+homological-mirror-symmetry argument to every field. Theorem3.19 classifies each
+component up to an overall bigrading shift; Lemma7.7 supplies the G-nullhomotopy.
+Neither statement supplies a relationship between the shifts of different
+components that rules out the cancellations above. The full extension structure
+could contain more realization information, but no such theorem was extracted
+in this bounded pass.
+Primary: https://arxiv.org/pdf/2602.23442
+
+OUTCOME
+We now have (i) an actual anchored parity-cancellation example, (ii) the exact
+one-component formula, and (iii) an explicit identity showing why the rational
+component cannot be ignored. The next meaningful lemma must constrain the
+absolute placement of these components for actual tangles, not merely classify
+their shapes or show that individual Euler polynomials are nonzero.

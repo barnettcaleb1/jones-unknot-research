@@ -1,0 +1,91 @@
+PASS 24: GENERIC KERNELS, FOUR EXACT MOMENTS, AND THE TOPOLOGY CERTIFICATE
+Bounded counterexample-route audit. No Jones-one nontrivial knot was found.
+
+1. WHAT THE EXISTING DATA ACTUALLY SAY
+
+The 118-letter braid K in work/pass2/braid_kernel.py is a pure, writhe-zero element of the B5 BURAU kernel, constructed from Bigelow's factors. It is not an element of the generic Temperley-Lieb kernel: its Coxeter-anchor closure has Jones degrees -33 through 38 and coefficients as large as 90,424,762. The cached exact polynomial is work/pass2/braid_kernel_seed.json.
+
+The separate work/pass5/braid_color3_kernel.py evaluates a 15-dimensional spin-one weight sector at q=2. Its exact trace has absolute value greater than 15, excluding all nonzero powers and conjugates of this K from the generic color-three REPRESENTATION kernel. That argument does not exclude isolated color-three CLOSURE trace coincidences.
+
+The pass3 searches already examined short conjugators, commutators, and mixed pairs of K conjugates. Their apparent hits were either explicit unknot conjugacy tautologies or failed full Laurent checks. This pass does not repeat those searches.
+
+2. A GENUINE GENERIC TL KERNEL WOULD SUFFICE: THE TOPOLOGY GAP IS KNOWN TO CLOSE
+
+Bigelow's 2000 preprint explicitly left the nontriviality of a kernel-inserted unknot closure as a conjectural step. Ito's 2015 theorem resolves the normal-subgroup version. A nontrivial noncentral normal braid subgroup has elements which, inserted into a fixed unknot anchor, give hyperbolic knots of arbitrarily large genus. Its proof provides a braid-order construction.
+
+Consequently an explicit nontrivial GENERIC ordinary Jones/Temperley-Lieb representation-kernel element would give a complete counterexample route. Establish exact Laurent matrix identity and nontriviality as a braid (e.g. faithful Artin free-group action), then use Ito's normal-subgroup construction and its order certificate. A scalar projective kernel or an identity at one numerical/root-of-unity specialization is not sufficient without the appropriate framing correction or generic identity.
+
+For our raw convention rho(sigma_i)=A I+A^-1 e_i, the augmentation e_i->0 shows a kernel element has writhe zero. Specializing the equivalent fundamental tensor representation at the classical parameter shows its permutation is trivial; alternatively pass to the pure subgroup before applying the construction. Thus the kernel has no nonidentity central full twist, and the requisite normal subgroup is noncentral. With a pure insertion, a five-cycle unknot anchor always closes to ONE component.
+
+This concerns one fixed quantum representation and its corresponding invariant. A fundamental TL kernel is not automatically a color-three kernel, and finitely many colored kernels would not constitute all-color invisibility. Known Burau nonfaithfulness for B5 does not establish a TL kernel: the extra residual block is precisely what survives in the cached calculations.
+
+3. A STRICTLY WEAKER, FINITELY CERTIFIABLE ALL-POWER TARGET
+
+Let B be ANY pure writhe-zero B5 braid with reduced Burau(B)=I. Let
+  C=sigma1 sigma2 sigma3 sigma4,
+  M=rho_5(B), Z=rho_5(C),
+where rho_5 is the five-dimensional one-through-strand TL5 block in work/pass2/tl5_block.py. The complete generic TL5 trace decomposition was checked there on all 42 diagram-basis elements, not just sample braids. Its irreducible block dimensions are 1,4,5. The first two blocks of B are trivial; tr(Z)=0; the residual trace weight in the bracket normalization is exactly 1. Therefore
+
+  V_(closure(B^m C))(A^-4)-1 = A^-12 tr(Z M^m)                 (1)
+
+for EVERY integer m. Writhe(C)=4 accounts for A^-12. There is no m-dependent framing factor. Purity of B makes every closure in (1) a knot, and C itself closes to U.
+
+FOUR-MOMENT LEMMA. All these knots have Jones polynomial 1 if and only if
+  tr(ZM)=tr(ZM^2)=tr(ZM^3)=tr(ZM^4)=0                        (2)
+as exact Laurent identities.
+
+Proof. The sequence z_m=tr(ZM^m) satisfies the degree-five characteristic recurrence of the invertible matrix M. Since z_0=tr Z=0, (2) supplies five consecutive zeros. Cayley-Hamilton propagates them forward. The nonzero constant coefficient of the characteristic polynomial propagates them backward as well. The converse is immediate. A smaller minimal polynomial can reduce the number of tests. This is an elementary finite certification lemma, not a claim of a breakthrough.
+
+A signed Coxeter anchor with nonzero trace requires applying the same argument to tr(ZM^m)-tr Z; the extra constant eigenmode can raise the recurrence order to six. The four-test statement above is deliberately restricted to the displayed positive Coxeter anchor and its conjugates.
+
+4. THE NECESSARY TOPOLOGICAL SECOND CERTIFICATE
+
+Conditions (2) alone do not identify a nontrivial knot. A sufficient entirely finite additional certificate is an integer m and a verified Dehornoy-order inequality
+  C B^m >_D Delta^2,
+where Delta^2 is the B5 full twist. Ito's genus bound gives genus(closure(CB^m))>=1, while (1) gives Jones 1. For example, an explicit sigma-positive representative of Delta^-2 C B^m proves the inequality: it contains some sigma_i positively, no sigma_i^-1, and no generators of smaller index. Braid equivalences used to obtain that word must themselves be checked.
+
+This is a complete sufficient counterexample certificate: B's pure/Burau/writhe identities, four moment identities, and one braid-order/genus certificate. It does not assume all colored Jones detect U.
+
+Crucially, the four-moment locus need not be a normal subgroup or even a subgroup. Ito's existence theorem therefore cannot be invoked merely from a nonidentity M satisfying (2). Normal-subgroup amplification preserves a genuine representation kernel; it need not preserve this weaker trace locus. There remains a real compatibility problem between (2) and a nontrivial closure/order certificate.
+
+5. WHY THE FOUR EQUATIONS ARE WEAKER THAN REPRESENTATION KERNEL IDENTITY
+
+Over Q(A), let Z0 be the cyclic shift on five coordinates with four weights 1 and final weight A^-12. It has trace zero, is invertible, and Z0^5=A^-12 I, matching the residual Coxeter spectrum. Let
+  M0=diag(A^4,A^-4,A^8,A^-8,1).
+Then det M0=1, M0 is not identity, and tr(Z0 M0^m)=0 for every integer m because Z0 has zero diagonal. At |A|=1 both are unitary in the ordinary Hermitian form. Thus neither generic finite-dimensional algebra nor unitarity forces a matrix kernel from the four moment equations.
+
+This is ONLY an algebraic model. No claim is made that M0 and Z0 are simultaneously realized by the required B5 braid representations, or that a conjugating matrix realizing Z0 is the image of a braid. That exact image-realizability issue is the essential extra constraint. Density at a root of unity gives approximation, not an exact Laurent identity, and would not solve it.
+
+Likewise, even Zariski density of a braid-image subgroup would not guarantee its nontrivial exact intersection with this closed moment variety. One must produce an actual braid word and verify the identities. Powers of one braid can also have bounded Dehornoy floor; normal-subgroup unboundedness cannot be transferred to a one-parameter trace family.
+
+6. A NEW ALL-INTEGER CONJUGATED-ANCHOR TEST, EXECUTED
+
+For the existing Bigelow seed K, the four fixed-anchor moments at the exact specialization A=2 in F_1000003 are
+  838644, 819437, 877630, 442339.
+Thus the seed fails all four equations, consistently with its cached full Jones polynomial.
+
+Now allow the infinitely many unknot anchors
+  C_h=sigma_i^-h C sigma_i^h,  h in Z, i=1,2,3,4.
+The generator G=rho_5(sigma_i) has eigenvalues A and -A^-3. Consequently, with x=(-A^-4)^h, each moment tr(rho_5(C_h)M^j) has the exact form a_j x+b_j+c_j/x. Multiplication by x gives a quadratic. At A=2 modulo 1000003, the four quadratic polynomials have common gcd 1 for EACH i. Hence they have no common root even over the algebraic closure of the finite field. Any generic all-integer solution would specialize to a nonzero common root, a contradiction.
+
+Therefore no integer h in any of these four entire conjugation families can turn this cached seed into an all-power Jones-one construction. This is not a finite cutoff on h and is not another enumeration of braid words. It does NOT exclude isolated powers, conjugators using several interacting twist regions, or other Burau-kernel braids.
+
+Reproduce with Python's standard library:
+  python3 work/research24/braid_moment_filter.py
+Exact data: work/research24/braid_moment_filter.json.
+The script imports the existing exact TL5 generator model and uses exact finite-field matrix arithmetic and Euclidean polynomial gcd. Its three-point interpolation is justified by the two-eigenvalue identity, and additionally cross-checked at h=+-2.
+
+7. RESEARCH DECISION
+
+The strongest complete counterexample scaffold remains a genuine generic TL kernel plus Ito's known topology theorem. The four-moment alternative is a weaker exact algebraic target with a finite verification cost, but currently lacks a braid realization compatible with the genus certificate. The tested seed and all single-generator-power changes of its unknot anchor fail. A future effort should solve a structured exact braid-image intersection with the four-moment variety and carry a topology certificate in parallel; more random short conjugators would repeat already negative work. No new candidate survives this pass.
+
+PRIMARY SOURCES
+
+Bigelow, Does the Jones polynomial detect the unknot?, J. Knot Theory Ramifications11 (2002), 493-505; preprint Sections1 and3 distinguish representation kernels from closure nontriviality and prove the B4 representation equivalences.
+https://arxiv.org/pdf/math/0012086
+
+Ito, A kernel of a braid group representation yields a knot with trivial knot polynomials, Math. Z.280 (2015), 347-353. Theorem1 gives the normal-subgroup construction; Theorem2(1) supplies the order/genus certificate; Corollaries1-3 explain quantum invariants and B4 Burau. DOI10.1007/s00209-015-1426-7.
+https://arxiv.org/pdf/1402.2028
+
+Bigelow, The Burau representation is not faithful for n=5, Geometry & Topology3 (1999), 397-404, p.403, supplies the existing B5 seed factors. The earlier files explicitly record the commutator-convention change.
+https://doi.org/10.2140/gt.1999.3.397

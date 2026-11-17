@@ -1,0 +1,121 @@
+PASS 39: A PRECISE SKEIN-TO-TOPOLOGY ENDPOINT, AND ITS ARITHMETIC OBSTRUCTION
+Bounded research audit. No generic Jones theorem or counterexample is claimed.
+
+Outcome. There is an established-input endpoint: an integer homology sphere
+with tame universal Kauffman skein module and generic skein dimension one
+is S^3. However, generic finite-dimensionality alone can lose an entire
+family of actual group representations. The explicit +1 surgery below
+exhibits this failure inside the exact class of manifolds a surgery-based
+Jones proof would use. It does not refute rank-one detection without
+tameness; its generic rank is not computed here.
+
+Duplicate check: earlier handlebody-vacuum (proof9), ribbon-disk group
+(research22), AJ/color promotion (research23), and positivity/cluster
+(research29) routes were checked. The closed-manifold specialization and
+torsion obstruction below is separate. No finite Jones probe is proposed.
+
+1. What really follows from a simple entire skein module.
+
+Write S_A(Y) for the Kauffman bracket skein module and S_gen(Y) for its
+extension to Q(A). Farajzadeh-Tehrani--Frohman--Kania-Bartoszynska, Cor7.6
+(indeed Thm7.7), show for a homology sphere with tame universal module that
+
+  dim_Q(A) S_gen(Y) >= dim_C S_{-1}(Y).
+
+Here S_{-1} is the unreduced SL2(C) character algebra. Tameness means the
+Q[A,A^-1] module is a direct sum of cyclic modules and has no torsion
+submodule for at least one cyclotomic polynomial Phi_(2m), m odd. The
+primary source is https://arxiv.org/html/2402.17037, Section7.2.
+
+Zentner proves every integer homology sphere other than S^3 has an
+irreducible SL2(C) representation: https://arxiv.org/abs/1605.08530,
+Duke Math J167 (2018), 1643--1712. Such a character differs from the trivial
+one. Evaluation at those two points gives character-algebra dimension at
+least two. Consequently tame + generic rank one implies Y=S^3.
+
+Thus the complete proposed global chain would be
+
+  V_K=1
+    -> S_A(S^3_(+1)(K)) is tame and has generic rank one [UNPROVED]
+    -> S^3_(+1)(K)=S^3
+    -> K=U [no nonmeridional S^3 surgery on a nontrivial knot].
+
+Only the final two arrows are established. Calling the first arrow
+"vacuum rigidity" or "simple scalar gives simple complement" does not
+prove it. On the Jones-one fiber that combined missing assertion already
+has the force of the original problem. A Jones polynomial is one closure
+functional, whereas the module involves arbitrary links inside a filled
+manifold and all handle-slide relations. No justified construction here
+promotes that scalar to the module or supplies tameness.
+
+2. An actual geometric stress test, with exact matrices.
+
+Let T be a right-handed trefoil and let Y=S^3_(+1)(T#T). This is an integer
+homology sphere. The trefoil group has presentation <x,y | x^2=y^3>.
+Take mu=xy^-1 and lambda=h mu^-6, where h=x^2=y^3. The latter peripheral
+identity is the torus-knot fiber push-off: h has linking number 2*3=6,
+so subtracting six meridians gives the preferred longitude. For the
+connected sum, identify the meridians and multiply the longitudes.
+
+Let z be a primitive 11th root, and put
+
+  M=diag(z,z^-1), a=(z^-1-z)^-1, c=-1-a^2,
+  X=[[a,1],[c,-a]], Y0=M^-1 X.
+
+Directly det X=det Y0=1, tr X=0, tr Y0=1. Hence
+
+  X^2=Y0^3=-I, XY0^-1=M, rho(lambda)=-M^-6.
+
+For the second summand conjugate X,Y0 by D_t=diag(t,t^-1), t in C*.
+This preserves M, so the two representations glue on the connected-sum
+group. The +1 filling relation is satisfied identically:
+
+  rho(mu lambda_1 lambda_2)=M*M^-12=M^-11=I.
+
+Every resulting representation is irreducible: M has distinct eigenlines
+and both off-diagonal entries of X are nonzero. In particular c=0 would
+force z^4-z^2+1=0, hence z^12=1, impossible at order11. Their characters
+vary, since the trace of the word x_1 x_2 is
+
+  2a^2 + c(t^2+t^-2).
+
+This is a nonconstant regular function of t. Therefore X(Y) contains a
+positive-dimensional component, not merely infinitely many matrices
+representing a single conjugacy class. This bending argument is elementary
+and is not asserted to be a novel character-variety construction.
+
+verify_bending.py checks the identities over the exact cyclotomic field
+Q[z]/(1+z+...+z^10), including three distinct character values. It uses
+only Python's standard library. The group/peripheral identifications are
+the topological input; the program does not pretend to prove them.
+
+3. What the stress test decisively rules out.
+
+Gunningham--Jordan--Safronov prove finite-dimensionality of S_gen for
+every closed oriented three-manifold. Belletti--Detcherry state this as
+Theorem1.6 in https://arxiv.org/html/2406.17454. Their Cor2.2 says a
+positive-dimensional character variety forces (A-zeta)-torsion for every
+root of unity of odd order or order2 modulo4 (with complex coefficients
+when zeta is not rational). Thus this specific Y has finite generic skein
+dimension, but infinite-dimensional S_{-1}, and fails tameness.
+
+The source theorem controls this loss of information; this example does
+not compute an explicit torsion element. It kills any argument that
+automatically specializes a finite generic basis to recover all classical
+representations, or assumes tame arithmetic for all +1 knot surgeries.
+It does NOT show that its generic module has rank one, and does NOT
+disprove the narrower hypothetical assertion that Jones-one surgeries
+have tame rank-one modules. The test knot T#T itself has nonunit Jones.
+
+4. Research decision.
+
+The useful new constraint is to preserve the integral parameter module
+and its cyclotomic torsion throughout a surgery/gluing argument. Merely
+solving a generic transfer matrix or recognizing a scalar closure will
+not do this. A concrete future claim can be tested against the matrices
+above immediately: if it would make all +1 surgeries tame from generic
+finite-dimensionality, it is false. No new computation of a Jones-one
+candidate or proof of the missing first arrow emerged from this bounded
+pass. Shelve this as a full-solution route until an explicit construction
+relates the whole Jones polynomial to integral handle-slide relations;
+the established endpoint alone is not progress on that connection.

@@ -1,0 +1,164 @@
+JONES UNKNOT DETECTION: COORDINATED TWISTS AND GEOMETRIC COMPOSITION
+1 November 2026. Research deductions; no full proof or counterexample.
+
+Outcome
+-------
+The previous one-disk restriction cannot exclude coordinated twists.
+An actual unknot shows why: two higher channels can survive and cancel
+along the opposite-twist direction. Their joint skein coefficients have
+quantum-dimension denominators, despite the underlying diagram being an
+ordinary uncolored knot.
+
+Two concrete attempts to exploit annular degree cancellation were ruled
+out. Stacking any positive number of identical Ren-core-and-braid blocks
+always retains annular degree two. Nesting two standard Ren patterns as
+satellites instead gives degree eight. These conclusions cover arbitrary
+parameters in the stated constructions, not just a finite search.
+
+1. Exact theorem for repeated Ren blocks
+---------------------------------------
+Use sigma_i=A*1+A^-1*e_i and delta=-A^2-A^-2. In the six-strand braid
+
+ sigma_2^-1 sigma_1^3 sigma_2^-1 sigma_4 sigma_5^-3 sigma_4,
+
+cap positions 3 and 4 at both ends to obtain the four-strand tangle T.
+This is the core of Ren's annular wrapping-number counterexample.
+
+THEOREM. For every four-strand braid beta and every integer k>=1,
+the annular closure of (T beta)^k has degree exactly two.
+
+Proof. The four-through coefficient of T is zero. The other thirteen
+Temperley--Lieb diagrams span a two-sided ideal, so the same is true
+for every power. On that ideal, the coefficient of z^2 in annular
+closure is the trace in the three-dimensional two-through module.
+
+Put x=-A^-4 and use the integral gauge in the retained core certificate.
+The core and braid are represented, up to nonzero scalar monomials, by
+Laurent matrices M(x), U(x) over Z. Set u=(1,0,1)^t, v=(1,0,-1),
+w=-15u-25(0,1,0)^t. Exact expansion of the actual core gives
+
+ M(1)=w v,     M(1)=0 modulo5,     M'(1)=2I modulo5.
+
+Every U_0=U(1) has determinant one and fixes u. The coefficient whose
+nonvanishing is required is f_k=tr((MU)^k).
+
+Suppose f_k were identically zero. The rank-one formula at x=1 gives
+0=(v U_0 w)^k, hence v U_0(0,1,0)^t=0. On the primitive integral quotient
+Z^3/Z u, the induced determinant-one matrix is triangular. Its two
+diagonal entries must both be epsilon, where epsilon is +1 or -1.
+Therefore tr(U_0^k)=1+2 epsilon^k, which is either 3 or -1.
+
+On the other hand, modulo five,
+
+ M(x)U(x)=2(x-1)U_0+O((x-1)^2).
+
+The coefficient of (x-1)^k in f_k is consequently
+2^k(1+2 epsilon^k), nonzero modulo five. This contradicts f_k=0.
+Thus z^2 survives, proving the theorem. No division by k is used, so
+multiples of five cause no exception. The proof also gives
+ord_(x=1) f_k<=k. End proof.
+
+The actual core expansion, its integral matrix gauge, and all fourteen
+basis trace identifications were rechecked. The all-k conclusion follows
+from the proof, not from testing finitely many powers.
+
+Scope: this covers repetition of the SAME block T beta. It does not
+cover arbitrary products with different intervening braids. Nonzero
+annular degree also does not imply a nontrivial ordinary Jones polynomial
+after filling the annulus; some ordinary closures are unknots.
+
+2. Satellite composition has the opposite effect to the intended one
+-------------------------------------------------------------------
+Write a standard Ren pattern as [P]=b_P+a_P z^2, with a_P nonzero.
+For another such pattern Q=K(p,q), with odd top-twist parameters p,q,
+the exact two-parallel cable coefficient is
+
+ [z^8][Q^(2)] = A^(4(p+q)) h(A),
+ h(A)=-A^-24(A^4-1)^4(A^4+1)^2
+                    *(1+A^4+A^8+A^12+A^16+A^20+A^24),
+
+which is nonzero. Satellite insertion is linear on skeins and sends
+z^2 to the actual two-parallel cable, so
+
+ [P(Q)]=b_P+a_P[Q^(2)].
+
+Its z^8 coefficient is a_P A^(4(p+q))h(A), hence its degree is eight.
+Replacing [Q^(2)] by [Q]^2 would be an invalid substitution. Framing
+adjustments multiply the relevant highest coefficient by a unit and do
+not remove it. The cable calculation is retained from the earlier exact
+certificate; Ren already reports the degree-eight phenomenon for the
+original example. No novelty claim is made.
+
+3. Why coordinated twists remain outside the single-disk obstruction
+--------------------------------------------------------------------
+The actual braid closure
+
+ K_(m,n)=closure(sigma_1^(2m) sigma_1 sigma_1^(2n))
+
+has two disjoint twist disks, each of linking number two. Along n=-m it
+is literally the one-crossing unknot. Set D=A^4+1+A^-4. Its normalized
+Jones expression is
+
+ V_(m,n)=(A^-6/delta) A^(-12(m+n))
+            -(A^-2 D/delta) A^(-4(m+n)).
+
+Both channels are nonzero; their coefficients at A=1 are -1/2 and 3/2.
+Along the opposite-twist line both frequencies become zero and the sum
+is one. This is geometric cancellation, not a counterexample.
+
+More substantially, in the generic tensor Chebyshev coordinates for
+the exterior of the two unlink axes, this actual zero-framed knot is
+
+ A^-6(e_0 tensor e_0) - A^-2/D (e_2 tensor e_2).
+
+The denominator occurs before Jones normalization. It follows from the
+connected-sum skein relation D e_2(y)=e_2(x_1)e_2(x_2) over Q(A), where
+y is the connected sum of the two core circles. Thus the integral
+single-annulus divisibility argument cannot be multiplied across disks.
+One must retain the actual integral module and group coincident twist
+frequencies before drawing conclusions.
+
+4. An explicit torsion relation, and the missing knot construction
+-----------------------------------------------------------------
+The connected-sum calculation also supplies
+
+ (A^2-A^-2) J_1=0,
+ J_1=[x_1 disjoint-union x_2]-[y disjoint-union U].
+
+This is a difference of two actual TWO-component links in the axis
+exterior. Every filling into S^3 kills this torsion difference because
+the S^3 skein module is torsion-free. In the standard reciprocal-integer
+fillings here, both underlying links are unlinks. Their individual
+component framings can differ, but their total framing and brackets agree.
+
+An actual knot-minus-unknot torsion relation, with appropriate framing
+control and an independently nontrivial filling, would complete a
+counterexample construction. The displayed relation does not provide
+one: its standard bandings give the same knot, and arbitrary banding is
+not an operation on an unmarked closed skein class. A usable relation
+must first be established in a relative skein module retaining the band
+attachment points. That relative geometric construction is still missing.
+
+A separate source check found a 2026 equal-Jones coupled-twist family
+with partial knot 4_1. Its determinant is always 25, so it cannot contain
+an unknot. Annulus-twist nontriviality theorems supply no Jones identity
+for the same marked construction. No actual candidate emerged.
+
+Sources and evidence
+--------------------
+Ren, A counterexample to the wrapping number conjecture, 2026 preprint:
+https://arxiv.org/html/2609.11084v2
+
+Bakshi--Le--Przytycki, Kauffman bracket skein module of the connected sum
+of two solid tori, 2026 preprint, Theorem1 and Section3.5:
+https://arxiv.org/html/2604.09971v1
+Only the explicit low-degree relations needed above were checked here;
+the whole preprint is not claimed independently verified.
+
+Przytycki, Kauffman bracket skein module of a connected sum of 3-manifolds:
+https://arxiv.org/pdf/math/9911120
+
+The companion archive contains the full three research tracks, exact
+two-disk verifier, refreshed core matrix certificate, and source details.
+These deductions close specified constructions or correct an invalid
+extension. They do not establish generic Jones unknot detection.

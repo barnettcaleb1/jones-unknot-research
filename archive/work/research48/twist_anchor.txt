@@ -1,0 +1,157 @@
+PASS48 — THE ONE-PUNCTURED ANNULUS IS NOT THE DIAGONAL-CANCELLATION CASE
+2026-11-01. Bounded research deduction; no Jones detection proof/counterexample.
+
+Task and endpoint
+-----------------
+Taylor supplies nontriviality for most twists of an unknot along a sufficiently
+incompressible unknotted annulus meeting the knot once. The missing condition
+is constant Jones along that SAME marked family. This pass shows why the
+previous two-disk diagonal cancellation does not supply it, and derives a
+stronger necessary condition. It does not prove that the condition forces
+geometric triviality.
+
+Primary sources read
+--------------------
+Taylor, Closures of 1-tangles and annulus twists, arXiv2506.11226v1, §5:
+https://arxiv.org/html/2506.11226v1
+The neighborhood W of the annulus is an unknotted solid torus; the knot meets
+W in one trivial arc. Its complement V is a solid torus containing a relative
+1-tangle G. Twisting changes only the complementary trivial arc, winding it
+longitudinally. The sufficient incompressibility hypothesis implies G is
+nontrivial; Taylor's main theorem limits unknot closures.
+
+Abernathy–Gilmer, Even and odd Kauffman bracket ideals for genus-1 tangles,
+NYJM22(2016),1039–1053, §4 and Proposition5.2:
+https://nyjm.albany.edu/j/2016/22-48v.pdf
+https://arxiv.org/pdf/1407.7914
+Over Q(A), the relative solid-torus skein has a graph basis g_(i,epsilon)
+where epsilon=i+1 or i-1. The standard untwisted closure evaluates g to
+Theta(1,i,epsilon). For adjacent colors this is Delta_max(i,epsilon), where
+Delta_n=(-1)^n[n+1]. Their §3 uses the integral crossingless-diagram basis;
+§4 carefully localizes for the graph basis. No integral-basis assertion is
+being attributed to their graph basis.
+
+1. Fusion eliminates the diagonal cancellation mechanism
+--------------------------------------------------------
+Identification of the actual twist operator matters here. In Taylor's
+V=closure(S3 minus (A times I)), the two components D1,D2=P minus int(A)
+are meridian disks of V. The endpoints of the arc G lie in the two boundary
+regions between their boundaries. The two edges of the graph basis cross
+these respective disks. Opposite surgery twists are equivalently the local
+disk twists in V, leaving the initial normal arc phi0 in W fixed. On the
+graph basis this is multiplication by theta_j^q theta_l^(-q), with
+theta_n=(-1)^n A^(n(n+2)). Transported knot framing changes by
+q(w1^2-w2^2). Therefore the normalized eigenvalue is A^(q*d_(j,l));
+the signs cancel because j-l and w1^2-w2^2 are both odd. The sphere P
+supplies the standard initial framing, and closing with phi0 is the planar
+theta closure. This identifies the geometric Taylor family with the
+spectral calculation, rather than presuming that any relative closure
+family has this operator.
+
+Take the annulus A in a sphere P, and complementary disks D1,D2 in P.
+Orient their boundary circles compatibly along the annulus. Since K meets
+A once, oriented linking numbers satisfy w1-w2=+1 or -1. Reverse choices
+so w1=w2+1=w+1. In particular |w1| cannot equal |w2| for integer w.
+
+Project the strands meeting D1,D2 onto colors j,l. The remainder of P is
+one-punctured, so the three colors j,l,1 must form an admissible triple.
+This is precisely the relative-solid-torus graph basis. Therefore
+
+                  |j-l|=1.
+
+For opposite full twists the zero-framing-normalized frequency is
+
+        d_(j,l)=j(j+2)-l(l+2)-3(w1^2-w2^2).
+
+The first difference equals +(2l+3) if j=l+1 and -(2j+3) if l=j+1.
+These are distinct across all allowed ordered adjacent pairs. Hence there
+are no coincident frequencies to group. A finite Vandermonde argument
+implies an identically Jones-one family has a single nonzero graph channel,
+and its frequency is zero. The zero-frequency pair is uniquely
+
+ w>=0:  (j,l)=(3w+1,3w),
+ w<=-1: (j,l)=(-3w-3,-3w-2).
+
+This is fundamentally different from the earlier actual two-braid example,
+whose annulus has zero punctures and which permits every diagonal j=l.
+It cannot be imported into Taylor's one-punctured setting.
+
+2. Leading-term integrality removes all large surviving labels
+---------------------------------------------------------------
+Here is the required lattice argument, rather than assuming localized
+graph coefficients are integral in general.
+
+Realize the relative solid torus as an annulus times an interval, with two
+marked points on one boundary. Its integral skein basis consists of
+crossingless essential arc-and-circle diagrams. Cut the annulus by the two
+meridional arcs separated by the marked points. A graph g_(j,l), |j-l|=1,
+has a unique leading crossingless diagram of bidegree (j,l), with coefficient
+1: take the identity term from each Jones–Wenzl projector. Every other
+projector term contains a turnback and lowers at least one of the two cut
+intersection counts. Thus, if an integral relative skein equals c*g_(j,l)
+with no other graph channels, its leading crossingless coefficient is c,
+and c lies in Z[A,A^-1]. It would already suffice that c(1) is an integer;
+all projector denominators are quantum integers nonzero at A=1.
+
+Closing by the initial standard complementary arc gives
+
+                    c*Delta_max(j,l)=u(A)*delta,
+
+where delta=-A^2-A^-2 and u is a framing monomial with u(1)=+1 or -1.
+Consequently (max(j,l)+1) divides 2. Adjacency gives max>=1, so max=1.
+Only the pairs (1,0) and (0,1) remain. Their graphs are the two elementary
+boundary-parallel arcs. The zero-frequency equation also now gives
+
+                    {|w1|,|w2|}={0,1}.
+
+This leading-term argument needs the relative graph basis tied to the two
+actual disk cuts; one must not replace it by the false tensor-integrality
+statement for the two-axis absolute skein from pass47.
+
+3. Exact remaining obstacle
+----------------------------
+An all-parameter Jones-one Taylor family, if it exists, must have its
+actual relative 1-tangle G skein-equal (up to framing) to an elementary
+arc. The fact that the graph has small degree does not show that the
+actual embedded arc is boundary-parallel. That is a new instance of the
+same geometry-versus-skein faithfulness difficulty; no such implication
+has been proved here.
+
+Accordingly, Taylor does not automatically rule out the surviving
+possibility: its nontriviality concerns the embedded arc, whereas the
+calculation constrains its skein class. Conversely no nontrivial actual
+arc with this elementary skein class and the necessary unknot closure
+has been constructed. The apparent solution is not obtained by silently
+identifying those two notions of triviality.
+
+The useful action change is precise: for one-punctured annulus candidates,
+stop exploring equal-winding diagonal channels and higher adjacent colors.
+A genuine candidate must have boundary linking magnitudes 0 and1, and
+an actual relative 1-tangle with exactly elementary-arc skein. A formal
+graph, absolute torsion relation, or arbitrary band attachment does not
+supply such a tangle.
+
+4. Complete conditional counterexample endpoint
+-----------------------------------------------
+It would suffice to exhibit an actual unknot K0 and one-punctured unknotted
+annulus A satisfying Taylor's sufficient incompressibility, with the
+relative arc G in the complementary V skein-equal (with the compatible
+framing) to the elementary graph of zero normalized frequency. The spectral
+argument then gives V_(Kq)=1 for every q. Taylor gives Kq nontrivial for
+|q|>=2. Thus K2 would be a counterexample with both polynomial and topology
+established for the same diagram. No such G or diagram is constructed.
+
+Conversely, any all-parameter Jones-one family in this one-punctured setup
+must have exactly this elementary relative skein class. This reduces the
+construction goal to an actual geometrically nontrivial relative arc with
+that class and unknot anchor, not a search among arbitrary adjacent colors.
+Taylor's theorem is only used in the final nontriviality implication; the
+skein deductions do not assume its sufficient incompressibility.
+
+Independent parent audit: the parent inspected the actual graph diagram
+in the source and confirmed the leading terms. The short arc plus i core
+circles leads g_(i,i+1); the long arc plus (i-1) core circles leads
+ g_(i,i-1). These have distinct pairs of cut counts. Nonidentity projector
+terms reduce the count at their disk and do not increase the other count.
+This is the required monic triangular argument, not an assertion that the
+entire localized graph basis is integral.

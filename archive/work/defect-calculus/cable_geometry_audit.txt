@@ -1,0 +1,146 @@
+INHERITED TWO-CABLE SHELL: GEOMETRIC AUDIT
+2026-11-02. Codex subagent defect_scalar, second bounded assignment.
+
+VERDICT
+PASS as a TRUSTED topological derivation for the specified inherited
+strong inversion and preferred markings. The operator is geometrically
+a two-cable shell, not merely a rank-two map fitted to torus-knot probes.
+This does not classify all cable-knot strong inversions or all p-cables.
+The exact multiplier/no-cancellation algebra is independently assigned
+to defect_wh_gate; this note audits the geometric identification.
+
+1. THE EXPLICIT SHELL
+
+For odd q put m=(q-1)/2, let Q_a denote the integer rational tangle, and
+let r be the quarter-turn with rational-slope action z -> -1/z. Consider
+
+ C_q(T) = r(Q_-1 + Q_(1/2) + r(Q_-2 + r(Q_m+T))) + Q_(-2q).
+
+This is an actual annular tangle: replace T by an unfilled four-ended
+inner ball. Its only nonintegral fixed rational piece is Q_(1/2).
+The other operations are integer twists and quarter-turns in collars;
+they change boundary markings and sections, not the number/order of
+exceptional Seifert fibers.
+
+The standard double-cover construction of a Montesinos tangle therefore
+identifies its cover W_q as a Seifert manifold over an annulus with one
+exceptional fiber of order 2. This is the structural certificate missing
+from an argument based solely on fitting several rational input values.
+Such a manifold is a cable space; its specific solid-torus embedding and
+peripheral identification still need to be fixed as follows.
+
+2. WHAT THE RATIONAL PROBES REALLY CERTIFY
+
+With T=Q_n, the inner expression is a rational tangle of slope
+
+             (m+n)/(2(m+n)+1).
+
+Thus the Montesinos part has rational pieces
+
+       -1, 1/2, (m+n)/(2(m+n)+1),
+
+and its cover has base disk with exceptional orders 2 and |q+2n|.
+This is the standard torus-knot-exterior description, with the outer
+boundary marked by the final rotation and Q_(-2q) twist. At n=0 it is
+the quotient of E(T(2,q)), up to the simultaneous mirror convention.
+
+These probes are used to identify slopes inside an already certified
+cable space; they are not being used to assert that arbitrary tangles
+are determined topologically by their bracket values.
+
+At n=0 the output meridian is the ordinary torus-knot meridian. Its
+distance from the Seifert-fiber slope is one. Filling that outer boundary
+therefore changes the base annulus to a disk and adds no new exceptional
+fiber. The result is a solid torus, with the original order-2 exceptional
+core. The core of the filling just added is a regular Seifert fiber in
+this solid torus, so it winds twice around its core. Its complement W_q
+is exactly the exterior of a (2,q)-type pattern in a solid torus.
+
+The q label and relative input twist are fixed by the displayed slope
+formula: inserting Q_n changes the torus parameter from q to q+2n. A
+meridional twist of the input would change that reference q, and has
+therefore not been left free.
+
+3. MERIDIANS AND PREFERRED LONGITUDES
+
+After the outer meridional filling, the quotient of the resulting solid
+torus is a rational cap on the input boundary (the standard solid-torus
+branched-cover criterion). The direct operator computation gives
+
+              f_infinity M_q = u_q f_infinity,
+
+where u_q is a framing unit. Because this cap is already known to be
+rational, its bracket functional identifies its slope as the input
+meridian. This uses injectivity for rational tangles only; it does not
+use the open claim that an arbitrary tangle with rational bracket is
+rational. Hence an arbitrary actual input meridian-unknot quotient is
+sent to another actual meridian-unknot quotient.
+
+The final Q_(-2q) marking makes the n=0 output zero closure have determinant
+zero, so it identifies the output longitude with the preferred longitude
+of T(2,q). For a genuine satellite gluing, input preferred longitude is
+null-homologous. The same outer marked longitude is therefore preferred
+for the arbitrary companion satellite as well. It would be WRONG to call
+it preferred for every Q_n probe: changing the companion framing shifts
+the output longitude by the winding-square framing correction. The code's
+fixed outer shift -2q, rather than -2(q+2n), correctly keeps the shell's
+output marking fixed while probing its matrix.
+
+4. PRIMARY-DIAGRAM CROSS-CHECK AND ITS LIMIT
+
+Marian, 2-cabling and tangle operators in Khovanov theory,
+arXiv:2508.00644, Figure 6, constructs the strong inversion on the (2,1)
+pattern and its annular tangle operator. The surrounding text explicitly
+states that insertion of the companion quotient gives the inherited
+cable inversion. Proposition 3.11 says the correctly framed operator
+takes a Seifert-framed cap-trivial tangle to a Seifert-framed one.
+
+I inspected the saved Figure 6 and Figure 11 images, and the text around
+Figure 6 / Proposition 3.11. They corroborate the inherited geometric
+construction and the importance of the framing correction. I did NOT
+draw a Reidemeister-isotopy sequence between Marian's exact planar picture
+and the nested rational expression above. The identification here instead
+uses the explicit Montesinos-shell cover, its regular-fiber pattern, and
+the peripheral checks in Sections 2--3.
+
+The root independently checked Baker--Buck, AGT 13 (2013), Theorem 5.3(II),
+which describes tangles covered by an annulus-one-exceptional-fiber
+Seifert manifold as a rational-tangle/4-braid shell and gives involution
+uniqueness up to non-boundary-fixed homeomorphism. This is consistent with
+the shell identification, but by itself does not fix peripheral markings;
+the additional slope work above is necessary.
+
+Sources:
+https://arxiv.org/abs/2508.00644
+https://msp.org/agt/2013/13-3/agt-v13-n3-p05-s.pdf
+
+5. CHEAP NO-CANCELLATION CHECK
+
+The root's exact model was rerun successfully. It gives
+
+ d_q=(-1)^m A^(6(q-1)) (1-A^4)(1+A^8),
+ x_(cable)=x_(T(2,q))+d_q x_J.
+
+For q=3,5,15,17,-3 the offset is divisible by d_q in R, but the required
+target -x_(T(2,q))/d_q has respective values -2,+2,-8,+8,-2 at A=1.
+Every actual preferred quotient has x_J(1)=0 by the universal factor
+proved in scalar.txt. Thus those apparent divisible targets cannot be
+realized by any actual companion quotient. In particular the q=15,17
+targets that pass the Alexander a2 screen still fail this scalar test.
+
+The observed all-odd-q formulas are
+
+ x_(T(2,q))'(1)=16 floor((q+1)/4),
+ d_q'(1)=-8 (-1)^((q-1)/2),
+ [-x_(T(2,q))/d_q](1)
+       =2 (-1)^((q-1)/2) floor((q+1)/4).
+
+The other algebra auditor has been asked to derive these formulas in
+general; this geometry note does not promote a finite check to that
+all-q theorem. Once proved, the target is nonzero at A=1 exactly when
+|q|>1, giving the no-cancellation theorem for the whole inherited
+two-cable family. For q=+/-1 the offset is zero and nonzero d_q gives
+exact defect preservation, already supported by the general nonzero-
+winding shell argument.
+
+The explicit strong-inversion scope remains essential throughout.

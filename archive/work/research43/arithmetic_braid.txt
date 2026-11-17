@@ -1,0 +1,220 @@
+FINITE-QUOTIENT COLLISIONS VERSUS EXACT GENERIC JONES IDENTITIES
+2026-11-01. Bounded structural audit. No generic Jones-one counterexample.
+
+FINAL SIMPLIFICATION: Sections 8--9 are correct but unnecessary for the
+finite-field knot conclusion. Ordinary T(2,2m+1), with m=lcm p_i(q_i-1),
+already has V=1 at all nonzero values in the selected fields and integer
+V(-1)=2m+1>1. See the final output note and verify_torus_finite_fields.py.
+The commutator example is backup, not a substantive advance toward detection.
+
+Verdict
+Finite-field pigeonholing plus the usual universal degree/height certificate
+does not close an exact-kernel construction. Its reconstruction threshold
+requires quadratically many bits in word length, while the supply of words
+has only linearly many bits. This conclusion concerns the specified
+worst-case cardinality argument; it is not an impossibility theorem for
+structured braid-specific arithmetic methods.
+
+1. Full endpoint and the genuinely necessary gates
+An actual nonidentity braid in the full generic Temperley--Lieb/Jones
+kernel would enter the established Long/Ito route to a nontrivial knot
+with Jones polynomial1. A finite specialized collision alone supplies
+neither a generic kernel element nor its braid nontriviality. Comparing
+two syntactically different words does not establish different braids.
+Passing to zero-exponent-sum or pure braids does not change these issues.
+
+2. Explicit universal Laurent bounds
+Use TL_n over R=Z[A,A^-1] with diagram basis of size C_n (the nth Catalan
+number), e_i^2=delta*e_i, delta=-A^2-A^-2, and
+  rho(sigma_i^s)=A^s I+A^-s e_i,  s=+1 or-1.
+Multiplication of a basis diagram by e_i creates at most one loop.
+Thus one letter changes exponents by at most3 and multiplies the total
+absolute coefficient sum by at most3. Induction gives, for word lengthL,
+  support_A rho(w) subset[-3L,3L],
+  sum_over_basis_and_exponents |coefficient| <=3^L.
+These statements concern the entire TL element, so no matrix-denominator
+or choice-of-irreducible-lattice issue occurs.
+
+For two words u,v of length at mostL, every coefficient of rho(u)-rho(v)
+has support in[-3L,3L] and absolute value at most H=2*3^L. Multiplying
+by A^(3L) gives polynomials of degree at mostD=6L. If the words represent
+different braids and their TL elements agree, uv^-1 is the desired generic
+kernel element. Its length is at most2L; compare the two images directly
+to retain the sharper bound above.
+
+3. A valid exact certificate, and why the elementary count fails
+Choose a prime p>H and alpha in F_(p^k) with minimal polynomial degree
+k>D. If rho(u)(alpha)=rho(v)(alpha), each coefficient difference vanishes
+identically modulo p: a nonzero polynomial of degree at mostD cannot
+vanish at alpha. All integer coefficients have magnitude<p, so they
+then vanish over Z. This IS a correct finite exact-equality certificate.
+
+The specialized TL algebra has p^(k*C_n) elements. The usual pigeonhole
+argument would require more distinct candidate braids than this bound.
+But the number of words of length at mostL is at most
+  (2n-2)^(L+1),
+whereas the certificate above requires
+  p^(k*C_n) > (2*3^L)^((6L+1)*C_n).
+The latter is larger for every n>=2,L>=1. For a simple uniform proof,
+C_n>=n and 2n-2<=3^n, while L(6L+1)>L+1. The log of the ambient
+finite-algebra bound grows as Omega(C_n L^2), compared with O(L log n)
+for the candidate-word bound.
+
+Important logical qualification: this does NOT prove that the actual
+specialized braid image has that many elements. Its cardinality could be
+much smaller. It proves that the ambient-algebra counting bound alone
+never forces a collision within its own safe reconstruction range.
+A new structural upper bound on the ACTUAL image could change the issue;
+none is supplied by residual finiteness or by the Catalan dimension.
+
+4. General information bound for universal modular separators
+Let F be an additive map from integer polynomials of degree at mostD
+to a finite group, and suppose F detects every nonzero polynomial whose
+coefficient height is at mostH. Apply F to all polynomials whose D+1
+coefficients lie in{0,...,H}. Any two of these with equal image have a
+nonzero difference in the forbidden height-H box. Consequently
+  |target F| >= (H+1)^(D+1).
+For C_n independent coefficient polynomials, the analogous lower bound is
+  (H+1)^(C_n*(D+1)).
+This applies to combined finite-field evaluations and congruence tests,
+including Chinese-remainder collections, if they are supposed to work
+universally for this whole box. It explains the quadratic bit scale
+without committing to one extension field or one prime.
+
+This is deliberately a bound for UNIVERSAL polynomial reconstruction.
+Actual braid coefficients form a restricted subset; a certificate using
+proved special constraints on that subset need not obey this ambient-box
+bound. Such constraints, rather than additional unstructured congruence
+tests, would be the missing construction mechanism.
+
+5. Congruence-depth amplification does not automatically repair it
+For a lengthL braid beta, rho(beta)-I has coefficient height at most3^L+1.
+If it is nonzero and coefficientwise divisible by p^r, necessarily
+  p^r <=3^L+1.
+Thus exceeding this threshold certifies the identity, but just asserting
+that a congruence can be made deep does not show it exceeds the threshold.
+For example, the standard estimate for a commutator of two lengthL words
+which are I modulo p^r gives length at most4L and congruence modulo p^(2r).
+The guaranteed depth-to-length ratio is halved. Usual pth-power estimates
+likewise incur multiplicative word growth for incremental depth growth.
+Actual extra cancellation can improve these bounds, but proving that is
+additional structure, not a consequence of the formal commutator estimate.
+
+6. Root-of-unity and residual-finiteness distinctions
+At a primitive Mth root of unity zeta in characteristic0, exact vanishing
+of a Laurent polynomial of spanD implies generic vanishing if phi(M)>D.
+Here there is no coefficient-height requirement. However, the specialized
+Jones braid image is not thereby finite; root-of-unity generators can
+generate an infinite or dense group. Thus the required finite pigeonhole
+premise is absent. Freedman--Larsen--Wang explicitly study dense Jones
+images, so finiteness cannot be inferred from finite-order generators.
+
+For alpha in a finite field, high MULTIPLICATIVE order alone is not the
+analog of cyclotomic degree: its minimal polynomial degree is what enters
+the exact polynomial argument. Confusing these quantities defeats the
+reconstruction step.
+
+Finally, every fixed finite quotient of an infinite braid group has many
+collisions, even in settings with a faithful generic representation.
+For example the generic reduced Burau representation of B3 is faithful,
+yet all its finite-field specializations have finite image. Thus existence
+of arbitrarily many finite collisions cannot by itself imply a generic
+relation. Residual finiteness separates a fixed nonidentity element in
+some quotient; it does not produce a common nonidentity element in every
+kernel. A growing sequence of different collision words can escape every
+fixed length bound, precisely as the reconstruction inequalities allow.
+
+7. Operational conclusion
+Finite tests remain useful filters for a geometrically predicted word,
+and an exact certificate with explicit degree/height bounds is possible.
+They do not provide a kernel-construction theorem by the standard ambient
+pigeonhole estimate. No larger word scan is justified by this audit.
+The only substantive escape identified is a proved restriction on actual
+braid images strong enough to beat the universal reconstruction count,
+together with an independent certificate that the collision braid is
+nontrivial. Neither has been established here.
+
+8. Explicit full-operator false positives for ANY finite list of fields
+This is an actual braid construction, not merely a counting analogy.
+Let the selected fields have sizes q_j=p_j^(k_j), and choose positive N
+divisible by every p_j(q_j-1). Then N is even. In B3 put
+  beta_N=[sigma1^N,sigma2^N]
+         =sigma1^N sigma2^N sigma1^-N sigma2^-N.
+It is pure, has exponent sum0 and word length4N.
+
+For every nonzero A in each selected field, a TL generator g satisfies
+  (g-A I)(g+A^-3 I)=0.
+Both roots belong to F_q^*. In characteristic p, X^N-1 has every nonzero
+field element as a root of multiplicity at leastp>=2. Therefore the
+displayed quadratic divides X^N-1, including when its two roots coincide.
+It follows in the ENTIRE specialized TL algebra that g^N=I. Consequently
+rho(beta_N)=I for EVERY nonzero parameter in EVERY chosen finite field.
+This includes arbitrary finite lists of extension fields, not just one
+parameter value or one characteristic.
+
+Nevertheless beta_N has nonidentity generic TL image. At
+A=exp(pi*i/4), use the standard two-dimensional TL3 block. After a diagonal
+gauge and removing the common scalar A, the generators are
+  L=[[1,0],[1,1]], U^-1=[[1,-1],[0,1]].
+The scalar cancels in the commutator. Direct multiplication gives
+  rho(beta_N)=[[1+N^2,N^3],[N^3,N^4-N^2+1]],
+which is nonidentity for every positive N. This also independently proves
+braid nontriviality. The block conventions are the same horizontal twist
+and inverse vertical twist checked in research41/pairing.txt.
+
+Thus exhaustive full-operator tests over any FIXED finite collection of
+finite fields still admit explicit nontrivial false positives. There is
+no contradiction with the exact certificate in Section3: N grows with
+the field orders, and the resulting word exceeds the required degree
+threshold. This construction supplies no Jones-one knot and no generic
+kernel; it precisely demonstrates the failure of finite tests without
+a compatible length bound.
+
+9. Root's strengthening: explicit NONTRIVIAL KNOT false positives
+The preceding braid gives a particularly clean knot family. For evenN>=2,
+let K_N be the closure of
+  [sigma1^N,sigma2^N] sigma1 sigma2.
+The commutator is pure and the final permutation is a3-cycle, so K_N is a
+knot. The writhe is2, the same as the unknot anchor sigma1 sigma2. At every
+selected finite-field parameter from Section8, the commutator is the full
+TL identity. Hence the normalized Jones evaluation of K_N equals1 there,
+including degenerate delta=0 values: this argument uses no division by
+delta or quantum dimension.
+
+At zeta=exp(pi*i/4), set R=L U^-1=[[1,-1],[1,0]] and M equal to the
+commutator matrix in Section8. Then tr(MR)=1+N^2. The reduced TL3 closure
+trace decomposes as
+  tr_2+(delta^2-2)*char_1.
+Here char_1=A^2 and the two-dimensional matrix is A^2 M R. At delta=0,
+the raw closure is A^2(tr(MR)-2). Writhe normalization multiplies by
+A^-6, giving
+  V_(K_N)(-1)=1-N^2,
+  det(K_N)=N^2-1>=3.
+Thus K_N is certified nontrivial. Independent full Laurent TL3 computations
+at N=2 and N=4 returned V(-1)=-3 and-15, respectively.
+
+Parameter caveat: tests for every nonzero A in F_q cover the ordinary
+Jones parameters t=A^-4 in that field. To cover EVERY nonzero t in F_q,
+one may instead include F_(q^4) among the operator-test fields. Every
+nonzero F_q element has a fourth root in that extension. Therefore,
+given any finite list of finite fields F_q, choosing N divisible by all
+p(q^4-1) yields an explicit nontrivial K_N with
+  V_(K_N)(t)=1 for every t in each F_q^*.
+This is equality of finite-field functions, NOT equality of Laurent
+polynomials over Z. The increasing word length is essential and agrees
+with all reconstruction bounds above.
+
+Primary references
+S. Bigelow, The Burau representation is not faithful for n=5, Geometry &
+Topology3(1999),397–404. The abstract records faithfulness for n=3; we do
+not use its n=5 partial kernel as a full Jones kernel.
+https://web.math.ucsb.edu/~bigelow/publications/02.pdf
+
+M. Freedman, M. Larsen, Z. Wang, The two-eigenvalue problem and density of
+Jones representation of braid groups, Comm. Math. Phys.228(2002),177–199,
+especially the density/closed-image results. We use only the fact that
+root-of-unity Jones images are not generally finite.
+https://arxiv.org/abs/math/0103200
+
+The explicit Laurent estimates, reconstruction criterion and counting
+inequalities above are elementary derivations, not quoted new theorems.

@@ -1,0 +1,140 @@
+U5d / REDUCTION: CABLE ARITHMETIC AND A NONZERO-WINDING NO-GO
+2026-11-02. Bounded audit, separate from the marked cable-matrix track.
+
+1. Low-order arithmetic
+
+Use longitudinal winding p: cable class p lambda+q mu, gcd(p,q)=1.
+The standard satellite Alexander identity and torus polynomial give
+
+ a2(C_(p,q)(J)) = p^2 a2(J)+(p^2-1)(q^2-1)/24.
+
+An anchored-flat quotient requires a2=0. Therefore a necessary condition is
+
+ a2(J)=-(p^2-1)(q^2-1)/(24p^2) in Z.
+
+For p=2 this is exactly
+
+ a2(J)=-(q^2-1)/32,   q odd,   q == +/-1 mod 16.
+
+In particular q=+/-1 requires a2(J)=0; q=+/-15 requires -7;
+q=+/-17 requires -9. Thus all 1<|q|<15 fail the integral condition.
+There are infinitely many q passing it. This is only a first-order screen.
+Twist knots realize arbitrary negative integral a2 (take normalized
+Alexander polynomial -n(t+t^-1)+(1+2n), n>0), so the screen alone does
+not remove the suggested twist-knot input family. It does not assert their
+full defects hit any specified target.
+
+For comparison p=3 requires q^2==1 mod27, equivalently q==+/-1 mod27;
+p=4 requires q^2==1 mod128, equivalently q==+/-1 mod64. These are merely
+integer arithmetic checks, not additional Jones obstructions.
+
+2. Nonzero winding forces the exact shell multiplier nonzero
+
+Assume precisely the compatible marked shell setup from (b): the pattern
+P lies in the solid torus complementary to an unknotted axis A; the
+componentwise involution produces the two-ended Conway-sphere shell;
+input/output meridians and preferred longitude for P(U) are fixed.
+Let p=lk(P,A) be the winding. In the archived sign convention write
+
+ x_(P(J))=x_(P(U))+d_P x_J,
+
+where d_P is the MERIDIAN-NORMALIZED multiplier (det M/u^2 for raw matrix
+M with meridian factor u). The same multiplier appears for Claude's w=-x.
+
+Claim: at zeta=exp(pi*i/4),
+
+                         |d_P(zeta)|=p^2.                   (1)
+
+Proof. Insert rational Q_1, whose axis filling is +1 surgery on A.
+The new ambient manifold is S3, because A is an unknot. Its output
+meridian branch closure is U, so the common normalization divides by a
+framing unit, of absolute value one at zeta. Next close the output at the
+FIXED ORIGINAL longitude of P(U). This gives the simultaneous surgery on
+P union A with coefficients 0 and +1. Its first homology has presentation
+matrix
+
+                           [[0,p],[p,1]].
+
+For p != 0 its order is p^2; for p=0 it is infinite. Thus the corresponding
+branch-link bracket has absolute value p^2 at zeta, including value zero
+when p=0. No assertion that this slope is the NEW preferred longitude of
+the twisted pattern knot is made: its framing has shifted by p^2.
+
+Now delta(zeta)=0. Every actual preferred quotient of P(U) has
+x_(P(U))(zeta)=0 because its original longitude determinant is zero.
+The rational probe has x(Q_1)=-A^2 in the archived convention, hence
+|x(Q_1)(zeta)|=1. Evaluating
+
+ f0(T_hat)=delta+(1-delta^2)x,
+ x_out=x_(P(U))+d_P*x(Q_1),
+
+proves (1). The use of absolute values avoids an unnecessary phase/sign
+assertion. This needs only the established branched-cover determinant
+identity and the displayed integer surgery homology calculation.
+
+Consequences:
+
+* Every compatible shell of NONZERO winding has d_P != 0 identically.
+  A zero-transmission shell must have winding zero.
+* If P(U)=U as an actual knot and p != 0, then x_(P(U))=0 and
+
+                    x_(P(J))=0 iff x_J=0.
+
+  The equivalence is for the inherited compatible inversions/markings.
+* In particular every (p,+/-1) cable in this setup preserves exact flatness
+  iff its input is flat. Thus q=+/-1 is an exact no-new-counterexample case,
+  not merely a2=0 arithmetic. This applies to all p, not only p=2.
+
+This is a no-go for creation of the first flat input by these operations;
+it does not prove a hypothetical flat input cannot exist.
+
+3. Torus and graph knots need no semi-adequacy argument
+
+For a nontrivial torus knot T(p,q), |p|,|q|>1 and
+
+                    a2=(p^2-1)(q^2-1)/24 > 0.
+
+Thus the general anchored-flat => a2=0 lemma rules out its rational
+quotient bracket for EVERY strong inversion. Mirroring does not change
+a2. There is no need to prove semi-adequacy of its longitude branch link.
+
+The same induction excludes every nontrivial graph knot: connected sum
+adds a2, and cabling changes it by the nonnegative expression in Section1;
+starting from U, any operation that first makes a nontrivial knot adds a
+positive contribution, which later graph operations preserve.
+Graph knots are generated from U by cabling and connected sums. This
+classification was freshly checked in Motegi--Takata arXiv:1501.01105v3,
+Introduction, citing Gordon Corollary4.2:
+https://arxiv.org/html/1501.01105v3
+The archive already had this argument in work/research32/geometric_mechanism.txt
+and its independent audit; no novelty is claimed.
+
+The valid reduction is therefore: a hypothetical nontrivial flat core
+must have at least one hyperbolic JSJ piece. It need not itself be a
+hyperbolic knot.
+
+4. What has NOT been reduced to U5-hyp
+
+The assumed single Conway-sphere shell does not by itself classify every
+strong inversion on every JSJ decomposition. Directed connected sums are
+controlled separately, but flipping composite blocks are already an
+explicit additional case (see sums.txt). A proof of a global reduction
+must provide the actual equivariant decomposition, including how any
+permuted pieces are handled; this audit does not assert that a particular
+unhandled torus action necessarily occurs.
+
+For a general pattern with P(U) != U, d_P != 0 does NOT prevent
+x_(P(U))+d_P*x_J=0. The cancellation condition remains. Checking cables
+does not check all hyperbolic satellite patterns. Unknotted winding-zero
+patterns still need a nonzero-multiplier theorem, and the proposed
+equivalence with flat twisted pattern knots can carry U5's original
+difficulty. Accordingly, U5-hyp cannot yet be labeled the sole remaining
+crux of a complete reduction.
+
+5. Audit limits
+
+No full cable matrix was assumed in this note. The other assigned track
+is computing those. For q=15,17, the integral screen passes and no claim
+of full Laurent divisibility or nondivisibility is made here. Formula(1)
+is a new short deduction in this pass, to be marked TRUSTED pending
+Claude's independent check under the shared protocol.

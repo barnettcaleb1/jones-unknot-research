@@ -1,0 +1,128 @@
+FIXED SATELLITE RIBBONIZATION: EXACT OBSTRUCTIONS AND THE REMAINING GAP
+Status: elementary consequences of standard satellite and colored-Jones formulas;
+not a solution of Jones unknot detection and no novelty claim. 2026-10-31.
+
+CONVENTIONS
+H_N(K;q) is the zero-framed, dimension-N colored Jones polynomial normalized
+by H_N(U;q)=1. Thus H_2=V and H_1=1. Quantum integers are
+[n]=(q^(n/2)-q^(-n/2))/(q^(1/2)-q^(-1/2)). Coefficients may lie in Q(q^(1/4)).
+A fixed satellite pattern is embedded using the zero framing of each companion.
+
+1. A UNIVERSALLY SLICE PATTERN HAS WINDING ZERO
+Suppose P(K) is slice for every knot K. Litherland's signature formula gives
+  sigma_P(K)(omega)=sigma_P(U)(omega)+sigma_K(omega^w),
+where w is the algebraic winding number of P. Since P(U) is slice, its signature
+vanishes at regular omega. If w is nonzero, choose K a trefoil and omega away
+from the finitely many exceptional roots with omega^w in an open arc on which
+the trefoil signature is nonzero. This contradicts sliceness of P(K). Thus w=0.
+This includes every fixed universally ribbon or universally fusion-one pattern.
+It DOES NOT apply if sliceness is assumed only for companions whose Jones
+polynomial is 1; the latter unknown locus might have further restrictions.
+
+2. WINDING ZERO IMPLIES A FINITE EVEN-LABEL EXPANSION
+The annular Kauffman bracket skein is Q(A)[z], graded by mod-2 homology, with
+z of odd parity. Skein resolutions preserve mod-2 homology. A winding-zero
+pattern therefore has only even powers of z. The Chebyshev basis S_j(z),
+S_0=1, S_1=z, S_(j+1)=z S_j-S_(j-1), respects this parity. Consequently
+  V_P(K)(q)=sum_(j even, 0<=j<=J) b_j(q) H_(j+1)(K;q)
+for finitely many coefficients b_j independent of K. Fixed pattern framing,
+quantum dimensions, and Jones normalization are absorbed in b_j. Zero-framed
+companions are essential in making these coefficients independent of K.
+The displayed identity is a standard satellite skein evaluation, not a claim
+that ordinary Jones determines the colored polynomials on its right.
+
+3. A FINITE-FREQUENCY TEST THAT EXCLUDES THREE UNIVERSAL IDENTITIES
+Let K_m be the chirality of T(2,2m+1) with the following fusion formula:
+  H_(j+1)(K_m;q) = [j+1]^-1 sum_(a=0)^j
+    (-1)^(j-a) [2a+1] q^((2m+1)(a(a+1)-j(j+2))/2).
+The opposite chirality replaces q by q^-1 and gives the same conclusions.
+One obtains the formula by fusing j tensor j into labels 2a and including
+zero-framing correction. At m=0 it is identically 1. For j=1 and m=1 it is
+q^-1+q^-3-q^-4, agreeing with the mirror of the usual positive trefoil.
+
+As a function of m this is a sum of nonzero exponentials q^(lambda m), where
+  lambda_(j,a)=a(a+1)-j(j+2).
+For even j all lambda are even. For j=1 the two slopes are -3 and -1.
+For even j>=2 the least slope is -j(j+2), occurring exactly once, and the
+largest is -j. All slopes are nonpositive. Distinct exponential sequences are
+linearly independent over Q(q^(1/4)): evaluate m=0,...,n-1 and use the
+Vandermonde determinant. The least slope from the largest label J in a finite
+nonzero even-label sum cannot be canceled by any smaller label.
+
+It follows that NO fixed winding-zero pattern P can satisfy, for every K,
+  (a) V_P(K)=V_K;
+  (b) V_P(K)=V_K^2;
+  (c) V_P(K)=V_K V_mirror(K).
+For (a), target slopes are odd. For (b), target slopes are -6,-4,-2, whereas
+any nonconstant even-label sum has an uncanceled least slope at most -8.
+For (c), target slopes include +2 with nonzero coefficient, whereas all
+available slopes are nonpositive. Constants cannot realize any of the three.
+This rules out these natural one-input universal ribbonization identities.
+The argument concerns fixed finite patterns, not limits or K-dependent patterns.
+
+4. THE LOGICAL GAP BETWEEN AN IDENTITY AND PRESERVING THE UNIT FIBER
+The desired weaker implication is
+  V_K=1 ==> V_P(K)=1.
+The frequency argument does NOT refute this implication: it tests all torus
+knots, most of which do not satisfy the antecedent. With P(U)=U, the implication
+would amount to proving
+  sum_(j even>=2) b_j(q)(H_(j+1)(K;q)-1)=0
+on the Jones-one locus. Habiro's expansion shows V_K=1 kills its first
+cyclotomic coefficient, but does not algebraically force the subsequent
+coefficients to vanish. There is no known implication here from our work, and
+no actual knot counterexample to such an implication has been constructed.
+A successful reduction also needs P(K) nontrivial whenever K is nontrivial;
+a local unknot pattern preserves the unit fiber vacuously and is useless.
+
+5. WHY A TWO-INPUT MIRROR CONSTRUCTION ESCAPES THE WINDING ARGUMENT
+For a two-companion infection the signature contributions are
+sigma_K(omega^w1)+sigma_mirror(K)(omega^w2).
+These cancel when |w1|=|w2|. Thus a fixed two-input construction fed K and its
+mirror need not have winding zero in either input. The standard connected sum
+K#mirror(K) is ribbon and has Jones V_K V_mirror(K), so it preserves V=1.
+However it need not have fusion number one. In particular our prior exact
+example 12n25#mirror(12n25) has fusion number 2: bridge number 3 gives the upper
+bound, and the Bleiler--Eudave-Munoz theorem that a composite fusion-one ribbon
+knot has a two-bridge summand gives the lower bound. Both prime summands here
+have bridge number 3. See work/proof10/homology/result.txt.
+Simply tying K into a single local arc and its mirror into another keeps the
+connected-sum factors. More involved interactions can escape this particular
+obstruction, but require an independent calculation of their Jones behavior.
+No construction with all three properties (fusion one, nontriviality transfer,
+and Jones-one preservation) has been obtained.
+
+6. ODD COLORS DO NOT LOSE THE ORDINARY JONES POLYNOMIAL AS A WHOLE
+A finite winding-zero pattern accesses finitely many odd-dimensional colors.
+The ENTIRE sequence of odd-dimensional colored Jones polynomials determines
+H_2: at each odd level r the root-reflection identity gives
+  H_(r-2)(K;zeta_r)=H_2(K;zeta_r).
+Here r-2 is odd, so infinitely many odd levels supply infinitely many values
+of the Laurent polynomial H_2. Polynomial identity then gives uniqueness.
+Thus our finite-pattern obstruction must not be exaggerated to a loss of all
+information in the complete odd-color sequence. See the normalization audit in
+work/proof10/quantum/root_reflection_obstruction.txt.
+
+PRIMARY SOURCES
+Litherland, Signatures of iterated torus knots, Theorem 2:
+https://www.maths.ed.ac.uk/~v1ranick/papers/litherland.pdf
+Carter, An Elementary Proof of the Signature of Satellite Knots, Theorem 1:
+https://arxiv.org/pdf/2203.03217
+Morton, The coloured Jones function and Alexander polynomial for torus knots:
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+Garoufalidis, The Jones slopes of a knot, Section 4.8, equation (26):
+https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_jones_slopes_of_a_knot.pdf
+Bleiler--Eudave-Munoz, Composite ribbon number one knots have two-bridge summands:
+https://doi.org/10.1090/S0002-9947-1990-0968881-9
+
+INDEPENDENTLY AUDITED STRENGTHENING
+The braid agent subsequently proved the stronger statement that if a fixed
+satellite satisfies V_P(K)=f(H_N(K)) for a rational function f and every knot K,
+then f is affine; its colored expansion has only colors H_1 and H_N. For N=2,
+winding-zero parity therefore forces f constant. The proof compares the top
+two coefficients of the torus-family polynomials G_j(x), x=q^-m: their ratio
+is universally -q[3], while the ratio for a degree-d polynomial in G_j is
+-d q[3]. Lower colors and lower powers miss these two degrees. Rational f is
+polynomial by a Bezout argument after substitution. I independently audited
+both steps and found no framing or parity gap. Full proof and exact checks:
+work/proof11/braid/satellite_functional_rigidity.txt
+work/proof11/braid/satellite_frequency_check.py

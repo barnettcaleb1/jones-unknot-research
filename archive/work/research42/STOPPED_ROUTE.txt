@@ -1,0 +1,25 @@
+PASS42: GENERIC GRAPH REDUCTION/MATCHING MECHANISMS REJECTED
+
+Previous goal turn classification: progress. Pass41 produced and audited
+an exact topological impossibility proof for formal H/delta and closed that
+construction. It did not achieve the persistent goal.
+
+This pass has new evidence, not a generic Jones theorem:
+1. Full three-terminal Jones/Potts star-triangle equality iff
+   abc=Q(Q+a+b+c). For crossing weights exactly6mixedsign patterns work;
+   the2uniform patterns have explicit nonzero extra123-channel defect.
+   Discarding the channel loses boundary information. No unit-host theorem.
+2. Actual standard positiveT(3,5) Roberts--Jaeger complex:121states,
+   500nonzero supports,60disjoint-pair matching leaving1; homologyrank7
+   from Roberts plus Jaeger. Thus support/Hall matching with generic
+   nonzero coefficients is not acyclic Morse cancellation. Explicitcycle
+   15,159,135,207,195,231,39,63,15. All counts/geometry independently audited.
+   Not a Jones1example: V=t4+t6-t10. Coefficient field characteristic2.
+3. Jaeger markings slide tobasepoint andvanish inreducedtheory: cannot
+   use generic arc weights as an independent homology-destroying perturbation.
+
+Root replayed both exact verifiers successfully and read primary sources.
+Full user-facing note: outputs/jones-graph-cancellation-audit.txt.
+No new knot candidate or credible general missing-lemma mechanism.
+Do not launch broad graph enumeration or repackage these failures as
+progress proving Jones detection. The persistent goal remains unachieved.

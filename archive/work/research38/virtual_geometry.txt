@@ -1,0 +1,50 @@
+PASS 38: VIRTUALIZED TREFOIL, ACTUAL CLASSICAL RESOLUTIONS
+Status: exact small classicalization obstruction; no generic torus-embedding exclusion.
+
+1. Explicit diagram and complete height-only test
+Let sigma be the positive generator of the two-strand braid group and tau a virtual crossing. Virtualize one crossing of the closure of sigma^3 using Dye--Kauffman's switch-flanked-by-two-virtual-crossings convention. This gives the closure of
+    tau sigma^(-1) tau sigma^2.
+Its virtual Jones polynomial is 1, because the virtual crossings disappear from the virtual bracket calculation and the result has the Jones polynomial of closure(sigma^(-1)sigma^2)=U.
+
+Replace the two virtual crossings by actual classical crossings sigma^a and sigma^b, a,b in {+1,-1}. This is an ACTUAL specified classical diagram, not a formal skein element. Since B_2 is infinite cyclic, its closure is
+    closure(sigma^(1+a+b)).
+Consequently all four outcomes are completely identified:
+  a=b=+1: T(2,3), Jones t+t^3-t^4;
+  (+1,-1), (-1,+1): closure(sigma)=U;
+  (-1,-1): closure(sigma^(-1))=U.
+The Reidemeister-II cancellations in B_2, followed by destabilization of sigma^+/-1, give geometric unknot certificates independent of Jones detection. Regina/Spherogram independently verify the polynomials and simplify all three unit-Jones cases to zero crossings and one component.
+
+Files virtual_resolutions.py and virtual_resolutions.json give the four original five-crossing PDs, the simplified PDs, and exact Jones polynomials. Interpreter: /opt/homebrew/opt/python@3.13/bin/python3. Dependencies: Spherogram 2.4.1 and Regina 7.4.1, stored in work/braid_classification/packages. No scan: precisely four prescribed resolutions.
+
+This rules out the height-only classical resolution mechanism for this explicit projection. It does NOT prove that all embeddings of its minimal supporting torus are of this form: an arbitrary mapping class or a knotted torus embedding can create additional interactions. No claim about those embeddings is made.
+
+2. Source-grounded torus-state check and unresolved convention
+Primary source: H. A. Dye and L. H. Kauffman, Minimal surface representations of virtual knots and links, Algebraic & Geometric Topology 5 (2005), 509--535, https://arxiv.org/pdf/math/0401035 . Downloaded as dye_kauffman.pdf. Actual figures inspected at printed pp517,519,520; raster pages dk-09.png, dk-11.png, dk-12.png and fig7_crop.png.
+
+Figure2 specifies the virtualizing operation. Figure4 expands the remaining classical 2-tangle as alpha times cup-cap plus beta times the through pairing. Equation(4) states
+    <K>  = -A^-3 alpha - A^3 beta,
+    <Ks> = -A^3 alpha - A^-3 beta.
+For the two-crossing positive braid tangle in this pairing order,
+    alpha=1-A^-4, beta=A^2;
+these give trefoil bracket -A^5-A^-3+A^-7 and switched unknot bracket -A^3.
+
+Figures5--7 present a torus representation and its four outer skein states. The two states declared contractible are Kv-,alpha and Kv+,beta. The other two pictured states visually appear to be two parallel meridians and two parallel longitudes. There is a precise consistency gate before using this as a Jones-one torus certificate: the printed weights in Eq(5)/(6), with both essential two-curve states evaluated as an unlink, give
+    (A alpha+A^-1 beta)+(A^-1 alpha+A beta) delta
+      = -A^-3 alpha-A^3 beta,
+where delta=-A^2-A^-2. This is their original K expression, whereas their virtual-bracket statement gives Ks.
+
+This calculation is independent of a common reduced/unreduced factor. It is NOT being advertised as a theorem that the published figure is wrong. A crossing convention, tangle insertion convention, or geometric state identification must be resolved first. Swapping the outer A and A^-1 weights repairs the algebra, but an algebraic repair alone is not a certified interpretation of the printed marked diagram. The parent is independently constructing the ribbon surface directly from an explicit virtual PD to settle this gate.
+
+3. General embedding warning
+A surface bracket retains essential state curves. The virtual evaluator counts each such state circle as an ordinary loop. A Heegaard torus embedding instead evaluates a slope (p,q) as an actual torus knot/link with the surface framing. These evaluators need not agree. If all nonzero essential states were simultaneously meridian or longitude parallels in one marked unknotted-torus embedding, their evaluations would agree; that sufficient condition still requires exact slope and framing identification from the actual diagram.
+
+No nontrivial classical Jones-one knot was produced. The actual finite experiment above is complete; the arbitrary-embedding problem is not claimed solved.
+
+UPDATE: THE MARKED EMBEDDING GAP WAS SUBSEQUENTLY CLOSED FOR THIS INPUT.
+See marked_embedding_topology.txt and verify_two_braid.py. The direct PD-derived
+ribbon-surface calculation replaces the ambiguous printed-figure identification.
+The parent proves that every Jones-one Heegaard marking sends mu to an axis;
+the exact rational marked-surface realization then makes the knot a closed
+2-braid, hence an actual unknot. All eight surviving markings also have exact
+rational projected PDs, independently simplified to U. The earlier four-height
+resolution test above remains valid but is no longer the strongest conclusion.

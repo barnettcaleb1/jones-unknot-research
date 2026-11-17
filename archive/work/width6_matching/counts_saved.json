@@ -1,0 +1,430 @@
+[
+  {
+    "label": "prior_zero_identity",
+    "archive_index": 1,
+    "original_word": [],
+    "i": 0,
+    "j": 6,
+    "effective_matrix_word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -3,
+      -4
+    ],
+    "original_geometry": {
+      "closed_components": 0,
+      "boundary_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "archived_split_classification": "split_certified",
+    "representative": "Exact rational PL transport of stored cap lifts; no source simplification, cap slides, or minimization",
+    "count_meaning": "Intersection incidences/preimages on parametrized figure-eight loops, whose return connectors retrace",
+    "status": "EXACT_COUNT",
+    "source_vertices": [
+      120,
+      151
+    ],
+    "one_point_counts": [
+      [
+        4,
+        1
+      ],
+      [
+        18,
+        11
+      ]
+    ],
+    "matching_products": [
+      44,
+      18
+    ],
+    "total_pairs": 62,
+    "geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "seconds": 0.2505
+  },
+  {
+    "label": "prior_zero_one_generator",
+    "archive_index": 25,
+    "original_word": [
+      -1,
+      -1,
+      -1
+    ],
+    "i": 0,
+    "j": 6,
+    "effective_matrix_word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      -1,
+      -1,
+      -1,
+      -3,
+      -4
+    ],
+    "original_geometry": {
+      "closed_components": 0,
+      "boundary_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "archived_split_classification": "split_certified",
+    "representative": "Exact rational PL transport of stored cap lifts; no source simplification, cap slides, or minimization",
+    "count_meaning": "Intersection incidences/preimages on parametrized figure-eight loops, whose return connectors retrace",
+    "status": "EXACT_COUNT",
+    "source_vertices": [
+      185,
+      281
+    ],
+    "one_point_counts": [
+      [
+        28,
+        1
+      ],
+      [
+        48,
+        11
+      ]
+    ],
+    "matching_products": [
+      308,
+      48
+    ],
+    "total_pairs": 356,
+    "geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "seconds": 0.4747
+  },
+  {
+    "label": "prior_zero_Ren_standard",
+    "archive_index": 408,
+    "original_word": [
+      -2,
+      -1,
+      -1,
+      -1,
+      -2,
+      4,
+      5,
+      4
+    ],
+    "i": 1,
+    "j": 7,
+    "effective_matrix_word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      4,
+      3,
+      -2,
+      -1,
+      -1,
+      -1,
+      -2,
+      4,
+      5,
+      4
+    ],
+    "original_geometry": {
+      "closed_components": 0,
+      "boundary_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "archived_split_classification": "split_certified",
+    "representative": "Exact rational PL transport of stored cap lifts; no source simplification, cap slides, or minimization",
+    "count_meaning": "Intersection incidences/preimages on parametrized figure-eight loops, whose return connectors retrace",
+    "status": "EXACT_COUNT",
+    "source_vertices": [
+      1393,
+      3601
+    ],
+    "one_point_counts": [
+      [
+        182,
+        214
+      ],
+      [
+        705,
+        811
+      ]
+    ],
+    "matching_products": [
+      147602,
+      150870
+    ],
+    "total_pairs": 298472,
+    "geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "seconds": 4.9695
+  },
+  {
+    "label": "prior_zero_arc_commutator",
+    "archive_index": 600,
+    "original_word": [
+      3,
+      -2,
+      -1,
+      3,
+      1,
+      2,
+      -3,
+      -2,
+      -1,
+      -3,
+      1,
+      2
+    ],
+    "i": 0,
+    "j": 7,
+    "effective_matrix_word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      -2,
+      -1,
+      3,
+      1,
+      2,
+      -3,
+      -2,
+      -1,
+      -3,
+      1,
+      2
+    ],
+    "original_geometry": {
+      "closed_components": 0,
+      "boundary_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "archived_split_classification": "split_certified",
+    "representative": "Exact rational PL transport of stored cap lifts; no source simplification, cap slides, or minimization",
+    "count_meaning": "Intersection incidences/preimages on parametrized figure-eight loops, whose return connectors retrace",
+    "status": "EXACT_COUNT",
+    "source_vertices": [
+      3633,
+      8410
+    ],
+    "one_point_counts": [
+      [
+        1683,
+        757
+      ],
+      [
+        3992,
+        1610
+      ]
+    ],
+    "matching_products": [
+      2709630,
+      3021944
+    ],
+    "total_pairs": 5731574,
+    "geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "seconds": 12.0189
+  },
+  {
+    "label": "prior_zero_product_conjugates",
+    "archive_index": 612,
+    "original_word": [
+      3,
+      -2,
+      -1,
+      3,
+      1,
+      2
+    ],
+    "i": 0,
+    "j": 7,
+    "effective_matrix_word": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      4,
+      3,
+      2,
+      3,
+      -2,
+      -1,
+      3,
+      1,
+      2
+    ],
+    "original_geometry": {
+      "closed_components": 0,
+      "boundary_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "archived_split_classification": "split_certified",
+    "representative": "Exact rational PL transport of stored cap lifts; no source simplification, cap slides, or minimization",
+    "count_meaning": "Intersection incidences/preimages on parametrized figure-eight loops, whose return connectors retrace",
+    "status": "EXACT_COUNT",
+    "source_vertices": [
+      336,
+      585
+    ],
+    "one_point_counts": [
+      [
+        127,
+        121
+      ],
+      [
+        106,
+        260
+      ]
+    ],
+    "matching_products": [
+      33020,
+      12826
+    ],
+    "total_pairs": 45846,
+    "geometry_checks": [
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      },
+      {
+        "potential_collinear_segments": 0,
+        "vertex_intersections": 0
+      }
+    ],
+    "seconds": 1.2068
+  }
+]

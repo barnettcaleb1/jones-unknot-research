@@ -1,0 +1,90 @@
+[
+  {
+    "n": 1,
+    "sector_rank": 4,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 81
+  },
+  {
+    "n": 2,
+    "sector_rank": 8,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 289
+  },
+  {
+    "n": 3,
+    "sector_rank": 12,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 625
+  },
+  {
+    "n": 4,
+    "sector_rank": 16,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 1089
+  },
+  {
+    "n": 5,
+    "sector_rank": 20,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 1681
+  },
+  {
+    "n": 6,
+    "sector_rank": 24,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 2401
+  },
+  {
+    "n": 7,
+    "sector_rank": 28,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 3249
+  },
+  {
+    "n": 8,
+    "sector_rank": 32,
+    "unique_euler_alignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "independent_h_shift_cases": 4225
+  }
+]

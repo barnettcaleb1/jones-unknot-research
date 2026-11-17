@@ -1,0 +1,186 @@
+PROJECTIVE LOCAL CROSSING NUMBER OF A LOCAL KNOT
+1 November 2026. Research deduction with proof; no priority claim.
+
+THEOREM.
+Let K be a nullhomologous knot in RP3, and let K_tilde be either
+component of its inverse image under S3 -> RP3. In the conventions of
+Boyle--Spyropoulos, arXiv:2609.40122v1,
+                       beta_Re(K) >= c_S3(K_tilde).
+In particular, if K is a classical knot placed in a ball in RP3, then
+                       beta_Re(K) = c_S3(K).
+
+The general inequality does not assume that the lifted two-component
+link is split. Locality is needed only to identify K_tilde with the
+given classical K and to obtain the reverse inequality from a disk
+diagram. No conclusion about beta_Im is claimed.
+
+INPUTS AND NOTATION.
+The source defines alpha(G) to be the minimum number of edges whose
+deletion makes the embedded checkerboard graph G local in RP2, and
+beta(G)=e(G)-alpha(G). beta_Re(K) minimizes beta(G_Re(D)) over diagrams.
+For a connected nonlocal diagram, the two realized checkerboard graphs
+are cellular. Their spanning-tree bracket expansions have distinct
+normalized A-exponent residues0 and2 modulo4; under t=A^(-4), these
+are respectively the integral and half-integral Jones sectors.
+
+We use the previously audited elementary holonomy fact: choosing one
+lift of each vertex of G to S2 switches its Z2 edge-holonomy signs;
+the edges of positive sign form a local subgraph. Thus beta(G) is at
+least the number of positive edges in any such assignment. Equivalently,
+beta(G) is the maximum such number. Only this lower-bound direction
+is needed here.
+
+Here is the elementary topological justification. Any cycle consisting
+of positive edges lifts closed, so its image in pi_1(RP2)=Z/2 is trivial.
+The inclusion of each connected component of that subgraph therefore
+has trivial fundamental-group image. Its regular neighborhood has no
+crosscap and is planar. The disjoint neighborhoods leave the unique
+crosscap in a complementary component; choose an essential simple
+closed curve there. A sufficiently small Mobius neighborhood of that
+curve is disjoint from the subgraph. Its complement is a disk containing
+the entire subgraph. This proves the lower-bound direction directly,
+also when the subgraph is disconnected.
+
+PROOF.
+
+1. Lift the diagram and count self crossings.
+
+Let D be any generic RP2 diagram of K. Pulling its twisted interval
+bundle back to S2 gives S2 x I, which embeds in S3 as the complement
+of two open balls. Thus the lifted diagram is a genuine S3 diagram
+of two components A and tau A; tau is the antipodal map on S2 and
+reverses the interval coordinate. Orient both components by lifting
+an orientation of K.
+
+Each crossing of D lifts either to one self crossing on each component,
+or to two mixed crossings between the components. Write s(D) for the
+number of crossings of the first kind. Deleting tau A from the lifted
+diagram produces an ordinary diagram of K_tilde with s(D) crossings.
+Therefore
+                         s(D) >= c_S3(K_tilde).              (1)
+
+2. Construct the canonical shading and its sheet choices.
+
+An oriented immersed closed curve A on S2 has an integer region-index
+function I, unique up to a constant, whose jumps across A are the
+oriented intersection signs. Since tau reverses the orientation of
+S2 and carries the oriented A to the oriented tau A, the function
+-I composed with tau is an index function for tau A. Set
+                         J = I - I composed with tau.
+Then J is an index function for A union tau A and J(tau x)=-J(x).
+It is independent of the additive constant chosen for I.
+
+Consequently J mod2 descends to a checkerboard coloring of D. Choose
+the odd color as black, and call its checkerboard graph G_odd. With
+f=I mod2, the two lifts of every black face satisfy
+                         f(x)+f(tau x)=1.
+The value of f therefore selects one lift of every black vertex.
+
+At a self crossing, a small path between the opposite black sectors
+crosses either two arcs of A or no arcs of A, so f has the same value
+on the two sectors. At a mixed crossing it crosses one arc of A,
+and f changes value. Thus the above sheet choices make every self
+edge positive and every mixed edge negative. The holonomy fact gives
+                         beta(G_odd) >= s(D).                (2)
+
+3. Identify G_odd as the integral Jones sector.
+
+This is essential: choosing whichever shading is convenient would not
+justify a statement about beta_Re, whose minimum uses a fixed sector.
+
+Perform the oriented Seifert smoothing of D, and perform both lifted
+copies of each local smoothing simultaneously. Integral index functions
+are preserved outside the smoothing disks: the original oriented arcs
+and their smoothed replacement have the same boundary, and their
+difference is the boundary of an integral 2-chain in the disk. Modify
+J by that chain inside each disk, using the negative pullback change
+in the antipodal disk. The resulting smoothed index J' still satisfies
+J' composed with tau=-J', agrees with J away from the disks, and its
+parity extends the original black/white shading across the smoothing.
+Equivalently, at an oriented crossing the two sectors joined by the
+Seifert smoothing have equal integer indices; sectors differing by2
+are not joined. This local index rule identifies the continued odd
+region with the black state neighborhood used in the grading check.
+
+Every Seifert circle downstairs is contractible. Indeed, disjoint
+essential simple closed curves in RP2 cannot occur twice, whereas
+one essential circle would contradict the zero total mod2 homology
+class preserved by the smoothing. The complementary regions of these
+contractible circles have exactly one nonlocal component. Its lift is
+connected and tau-invariant. Since J' is constant on that lifted
+region and antisymmetric, its value there is zero. In particular the
+nonlocal component is white. The black side N of the Seifert state
+is therefore local, with no crosscap.
+
+For completeness, the precise grading calculation follows. Let v be
+the number of vertices of G_odd, c the crossing number of D, epsilon_e
+the Tait sign of an edge, and w the oriented writhe. A spanning-tree
+term has normalized A exponent modulo4
+                    r_G = 2(v-1)-sum_e epsilon_e-3w.         (3)
+An internal positive edge contributes exponent1 mod4, an external
+positive edge contributes -1, and a negative edge reverses these
+contributions. This proves (3) directly from the source tree weights.
+
+Let m count the crossings where epsilon_e differs from the oriented
+crossing sign. Equation (3) gives
+                         r_G/2 = v-1+m mod2.                (4)
+The black-state neighborhood for the oriented Seifert smoothing has
+the v vertex disks and the c-m bands where these two signs agree.
+Thus chi(N)=v-c+m. If q is the number of Seifert circles, each oriented
+smoothing toggles component-count parity, so q=c+1 mod2, since K has
+one component. Hence (4) becomes
+                         r_G/2 = chi(N)+q mod2.             (5)
+
+For a subsurface N of RP2, chi(N)+number_of_boundary_components is
+even precisely when N is local: each orientable component is planar,
+and a nonlocal component contributes the unique crosscap. Since N is
+local, (5) gives r_G=0 mod4. Therefore the G_odd spanning-tree sum has
+integral exponents after t=A^(-4), and G_odd is exactly G_Re.
+
+4. Complete the inequality and the local equality.
+
+For every connected nonlocal diagram, (1)--(2) and the sector
+identification yield beta_Re(D)>=c_S3(K_tilde). If D itself is local,
+use its canonical odd checkerboard graph. It lies in the disk and has
+alpha=0, so its beta is its crossing count and the same inequality is
+immediate. This agrees with the source's ordinary planar graph convention
+and its local-graph expansion in Proposition4.4(i). The local
+case may have a Mobius complementary region; no cellular duality of
+its two graphs is assumed or needed. Minimizing proves the general
+inequality. For a local classical K, a crossing-minimal disk diagram
+also gives beta_Re(K)<=c_S3(K), proving equality. QED.
+
+CONSEQUENCE FOR THE PROPOSED GLOBAL ROUTE.
+The local-knot specialization of Boyle--Spyropoulos Conjecture1.1(2)
+would say span(V_K)>=beta_Re(K)=c_S3(K). This is false. A countertest
+does not require a crossing-number table: for the positive T(3,4),
+independent exact calculations on the braid (sigma_1 sigma_2)^4 give
+                 V(t)=t^3+t^5-t^8,       span(V)=5,
+                 span(Delta)=6.
+The elementary Seifert bound span(Delta)<=2g<=c gives c>=6, already
+enough to contradict span(V)>=c. Mirroring reverses exponents but
+does not change either span.
+
+Thus bounded beta_Re on local knots is equivalent to bounded classical
+crossing number. It implies finitely many local knot types. In particular
+the earlier weaker beta-to-bridge theorem is valid but is not the sharp
+description of the local case. A bound on beta_Re in a specified Jones
+fiber is precisely a crossing-complexity bound on that fiber; the broad
+all-fiber formulation cannot hold in the presence of known infinite
+fixed-Jones knot families. None of these conclusions solves Jones
+unknot detection or supplies a bound on the unit fiber.
+
+SOURCE AND AUDIT PROVENANCE.
+Boyle--Spyropoulos, arXiv:2609.40122v1, Definition1.6, Proposition4.4,
+spanning-tree edge weights, Conjecture1.1(2), and Question5.4.
+https://arxiv.org/html/2609.40122v1
+This is an internally audited deduction, not a claim that the source
+states the theorem. The homology agent independently checked (3)--(5)
+and the Seifert/crosscap parity, and its full geometric audit is saved
+in projective_local_crossing_audit.txt. The parent independently
+developed the canonical sheet assignment and grading formula. A
+separate braid-agent hostile audit is saved in
+projective_crossing_hostile_audit.txt. These are internal audits; there
+has been no external review. No graph contraction or smoothing is used as an
+isotopy of the original knot: smoothing is used only to identify a
+grading parity in step3.

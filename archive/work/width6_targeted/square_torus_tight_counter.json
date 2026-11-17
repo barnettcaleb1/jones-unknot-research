@@ -1,0 +1,44 @@
+{
+  "states": [
+    7,
+    2
+  ],
+  "word": [],
+  "coefficient": {},
+  "geometry": {
+    "closed_components": 0,
+    "boundary_pairs": [
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "source_caps_one_based": [
+    [
+      2,
+      3
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "target_caps_one_based": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "global_minimum_total_one_point_intersections": 2,
+  "minimum_certificate": "Each loop winding-number difference along arc23 has magnitude1; standard loops realize two crossings and arc56 is remote.",
+  "complete_matching_count_in_standard_minimizer": 0
+}

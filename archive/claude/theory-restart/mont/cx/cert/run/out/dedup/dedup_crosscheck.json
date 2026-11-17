@@ -1,0 +1,9 @@
+{
+ "pairs": 76584,
+ "proved_by_words&kernel_equal": 74351,
+ "PROVED_BUT_KERNEL_SAYS_DIFFERENT": 0,
+ "not_proved&kernel_equal": 1535,
+ "not_proved&kernel_different": 698,
+ "contradictions": [],
+ "secs": 57.8
+}

@@ -1,0 +1,369 @@
+work/anchor_twist_attack.md	# Bounded Jones attack: the anchor-dependent twist route |  | Prepared 31 October 2026. This is a partial calculation, not a proof of unknot detection
+work/attack/ekt.txt	Topology 42 (2003) 155 – 169 | www.elsevier.com/locate/top | 
+work/attack_search/README.md	# Bounded Jones unknot search — October 31, 2026 |  | This is a small, reproducible exploratory search, not an exhaustive knot census.
+work/attack_search/modular_checks.txt	662634 2 2 2 3 1 -3 -3 -1 -2 -2 1 1 -3 1 2 2 3 2 3 2 3 2 3 -1 -2 -3 1 | 63983 -2 3 -2 3 2 -1 -1 -1 2 -3 -2 1 -2 1 2 -1 -1 -2 1 1 -2 1 3 3 1 2 3 | 2280
+work/attack_search/modular_hits.txt	-2 -2 3 2 3 -1 -3 1 3 -1 -1 -1 3 1 3 2 3 -1 -3 -3 1 -2 -3 2 -3 2 1 | 3 -1 -1 2 3 -2 1 2 3 1 -3 -1 3 -1 3 -1 -1 -2 -3 -3 -2 1 3 3 3 -1 3 | -3 -3 2 -3 1
+work/attack_twist_notes.md	# Bounded attack: anti-parallel twists and Jones-trivial links |  | Research notes, 31 October 2026. No solution of the general problem is claimed.
+work/band_evidence/README.txt	Jones investigation: EKT band-fusion obstruction and completed braid classification | 31 October 2026 | 
+work/band_evidence/braid_certificates/README.md	# Classification of the two remaining Jones-one braid closures |  | The two previously unclassified words, entries 82 and 86 of the saved 40,000-word
+work/band_evidence/previous_search/bounded-jones-search/README.md	# Bounded Jones unknot search — October 31, 2026 |  | This is a small, reproducible exploratory search, not an exhaustive knot census.
+work/band_evidence/previous_search/bounded-jones-search/modular_checks.txt	662634 2 2 2 3 1 -3 -3 -1 -2 -2 1 1 -3 1 2 2 3 2 3 2 3 2 3 -1 -2 -3 1 | 63983 -2 3 -2 3 2 -1 -1 -1 2 -3 -2 1 -2 1 2 -1 -1 -2 1 1 -2 1 3 3 1 2 3 | 2280
+work/band_evidence/previous_search/bounded-jones-search/modular_hits.txt	-2 -2 3 2 3 -1 -3 1 3 -1 -1 -1 3 1 3 2 3 -1 -3 -3 1 -2 -3 2 -3 2 1 | 3 -1 -1 2 3 -2 1 2 3 1 -3 -1 3 -1 3 -1 -1 -2 -3 -3 -2 1 3 3 3 -1 3 | -3 -3 2 -3 1
+work/band_evidence/previous_search/twist_checks/README.txt	Exact checks accompanying the bounded twist-family attack. | Run: python3 verify_anchor_twists.py | Standard library only. Checks positive and negativ
+work/band_obstructions.md	# Band obstructions for EKT Jones-trivial links |  | Research continuation, 2026-10-31. These calculations concern the explicit EKT construction, not 
+work/bio7/bio_notes.txt	DNA RECOMBINATION, ACTIVE IDENTIFICATION, AND JONES HIDDEN CHANNELS | 2026-10-31. Bounded interdisciplinary pass. No general unknot theorem claimed. |
+work/bio7/braid_quiver_audit.txt	Independent seven-node quiver audit, 2026-10-31. |  | The diagonal entries are four zeros and three ones, and x_i=q^(-C_ii)x, y=q^2. Direct degree-one
+work/bio7/physics_notes.txt	PHYSICS PASS: FINITE TOPOLOGICAL ORDERS, EXACT INVISIBILITY, AND RESOLUTION | 2026-10-31. These are elementary consequences of established TQFT and po
+work/bio7/susy_notes.txt	SUPERSYMMETRY AND JONES-ONE: AN EXACT OBSTRUCTION TO A POSITIVITY SHORTCUT | Bounded interdisciplinary pass, 2026-10-31. No knot realization or genera
+work/braid_classification/deliverable/README.md	# Classification of the two remaining Jones-one braid closures |  | The two previously unclassified words, entries 82 and 86 of the saved 40,000-word
+work/braid_classification/packages/decorator-5.3.1.dist-info/licenses/LICENSE.txt	Copyright (c) 2005-2026, Michele Simionato | All rights reserved. | 
+work/braid_classification/packages/decorator-5.3.1.dist-info/top_level.txt	decorator
+work/braid_classification/packages/knot_floer_homology-1.2.2.dist-info/top_level.txt	knot_floer_homology
+work/braid_classification/packages/networkx-3.7.dist-info/entry_points.txt	[networkx.backends] | nx_loopback = networkx.classes.tests.dispatch_interface:backend_interface
+work/braid_classification/packages/networkx-3.7.dist-info/licenses/LICENSE.txt	NetworkX is distributed with the 3-clause BSD license. |  | ::
+work/braid_classification/packages/networkx-3.7.dist-info/top_level.txt	networkx
+work/braid_classification/packages/regina-7.4.1.dist-info/top_level.txt	regina | regina/pyCensus | regina/sageRegina
+work/braid_classification/packages/regina/sageRegina/testsuite/CMakeLists.txt	 | CONFIGURE_FILE( | testall.in
+work/braid_classification/packages/regina/sageRegina/testsuite/README.txt	Regina Python Test Suite | ------------------------ | 
+work/braid_classification/packages/snappy_manifolds-1.4.dist-info/top_level.txt	snappy_manifolds | snappy_manifolds/sqlite_files
+work/braid_classification/packages/spherogram-2.4.1.dist-info/top_level.txt	spherogram
+work/cancellation19/README.txt	EVIDENCE FOR THE BRUNNIAN REDUCTION AND EXACT SEED TEST | 31 October 2026 | 
+work/cancellation19/adjacency_amplification.txt	CONDITIONAL AMPLIFICATION TO ARBITRARILY HIGH UNKNOT ADJACENCY | 31 October2026. Internally audited research deduction; no priority claim. | 
+work/cancellation19/adjacency_amplification_braid_audit.txt	INDEPENDENT AUDIT OF CONDITIONAL ADJACENCY AMPLIFICATION | 31 October 2026. Braid/geometry track. No novelty claim. | 
+work/cancellation19/algebra.txt	EXACT CANCELLATION AUDIT: CONNECTED SUM, PARALLEL INPUTS, AND WIDTH | 31 October 2026. Internal research note. No generic detection or novelty claim. 
+work/cancellation19/brunnian_reduction.txt	BRUNNIAN INFECTION REPAIRS THE ZERO-SHELL CONVERSE | 31 October 2026. Internally audited research deduction; no novelty claim. | 
+work/cancellation19/brunnian_zero_shell_converse.txt	This initial filename is superseded by brunnian_reduction.txt in the same directory. | The latter contains the full marked proof and corrected CGLS ci
+work/cancellation19/geometry.txt	PASS 19: A LOCALITY OBSTRUCTION TO EQUIVARIANT SATELLITE REPAIRS | 31 October 2026. Bounded research deduction, internally audited. | No claim of lite
+work/cancellation19/homology.txt	PASS 19: GEOMETRIC AUDIT AND THE ACTUAL GAUGE-THEORY GAP | 31 October 2026. Independent bounded audit; no general detection proof. | 
+work/cancellation19/homology_adjacency_audit.txt	INDEPENDENT AUDIT: CONDITIONAL AMPLIFICATION OF A JONES-ONE u=1 KNOT | 31 October 2026. Research deduction; no novelty or unconditional existence clai
+work/cancellation19/homology_brunnian_audit.txt	INDEPENDENT AUDIT: BRUNNIAN INFECTION REPAIRS THE CONVERSE | 31 October 2026 | 
+work/cancellation19/homology_brunnian_coefficient.txt	EXACT NONZERO COEFFICIENT FOR THE COMPUTED STOIMENOW THREE-CLASP SEED | 31 October 2026. Independently checked integer Kauffman-bracket contraction. |
+work/cancellation19/progress.txt	PASS 19 — COMPLETE BOUNDED RESEARCH PASS, GENERIC GOAL STILL ACTIVE | Started 2026-10-31 23:13:02 UTC. | 
+work/cancellation19/stoimenow_exact_seed.txt	EXPLICIT STOIMENOW BRUNNIAN SEED: FULL POLYNOMIAL CERTIFICATE | 31 October2026. Concrete computation; no novelty claim. | 
+work/carmi-cohen.txt	On trivial Jones–Vassiliev polynomials | Avishy Carmi∗1 and Eliahu Cohen†1,2 | 1
+work/creative6/braid_cyclotomic_audit.txt	Independent audit of cyclotomic_formal_model, 2026-10-31. |  | The listed claims pass. The standard-library exact script was rerun successfully.
+work/creative6/braid_rank_five_audit.txt	Independent audit of the rational rank-five obstruction, 2026-10-31. |  | Verdict: Conditional on the stated KHI support at Alexander gradings {-g,0,g
+work/creative6/cyclotomic_formal_model.txt	FORMAL COLORED-SEQUENCE COUNTERMODEL, 31 OCTOBER 2026 |  | Purpose: test whether cyclotomic integrality, q-holonomicity, and the leading
+work/creative6/homology_isolating_audit.txt	INDEPENDENT AUDIT OF THE REPAIRED ISOLATING-M1 LEMMA | 2026-10-31. Audit by homology agent of the tangle agent's proposed lemma. | 
+work/creative6/homology_rank5_audit.txt	RANK-FIVE JONES-ONE CANDIDATES: AUDITED RESTRICTED CONSEQUENCES | Audit date: 2026-10-31. This is a deduction from cited results, not a proof that | t
+work/creative6/quantum_notes.md	# Quantum information and reflection positivity: a focused audit |  | Outcome: no generic unknot-detection proof or counterexample. This pass produced
+work/creative6/statmech_findings.txt	Statistical mechanics / electrical networks: a precise bridge and its limits |  | Most useful direction
+work/creative6/tangle_guts_geometry.txt	M1 GUTS: TOPOLOGICAL REDUCTION AND A FAILED MASLOV SHORTCUT | Audit 2026-10-31. This note is a bounded geometric investigation, not a Jones | unknot d
+work/creative6/tangle_isolating_maslov_lemma.txt	ISOLATING M1: A RELATIVE MASLOV GAP COMPUTATION | 2026-10-31. Internally checked deduction: the local diagram, its genus | extension, product1handle r
+work/ekt_homology_notes.md	# Branched-cover homology obstruction for the EKT LL2 family |  | Research calculation, 31 October 2026. The Fox-coloring derivation below is independ
+work/fanout16/geometric.txt	GEOMETRIC FANOUT: A PROVED EXCLUSION AND A SMALLER CONSTRUCTION TARGET | 31 October 2026. First bounded pass, approximately 20 minutes. | 
+work/fanout16/physics.txt	REVERSIBILITY, POSITIVE CONES, AND AN EXACT JONES SIGN-PROBLEM OBSTRUCTION |  | Status: an elementary obstruction to a proposed proof mechanism, not a
+work/fanout16/realizability.txt	GEOMETRIC REALIZABILITY FILTER FOR A JONES-INVISIBLE TANGLE | Bounded research pass, 31 October 2026. No resolution of the Jones conjecture. | 
+work/fanout16/realizability_casson_audit.txt	INDEPENDENT AUDIT: ALL-RATIONAL-FILLING JONES FLATNESS FORCES a_2=0 |  | Verdict: the proposed lemma is valid with the hypotheses and conventions belo
+work/fanout16/realizability_zero_filling.txt	TWO-FILLING REALIZABILITY OBSTRUCTION | Independent derivation and normalization audit, 31 October 2026. | The derivation was independently checked by
+work/fanout16/whitehead_quotient_followup.txt	WHITEHEAD COMPANION QUOTIENT: BOUNDED FOLLOW-UP |  | Outcome: inherited strong inversions and exact diagram constructors located;
+work/final-audit/floer.txt	FRESH ADVERSARIAL AUDIT: STEPS 3–5 | 1 November 2026 | 
+work/final-audit/novelty.txt	LITERATURE NOVELTY ASSESSMENT — 1 NOVEMBER 2026 |  | Scope: bibliographic assessment of the candidate rational-solution uniqueness
+work/final-audit/surgery.txt	FRESH ADVERSARIAL AUDIT — TOPOLOGICAL REDUCTION AND SIGNED SURGERIES | 1 November 2026 | 
+work/generic/braid_notes.md	# Generic braid and trace audit (2026-10-31) |  | This bounded pass did not find a knot counterexample or prove Jones unknot detection.
+work/generic/commutator_nontrivial.md	# Independent audit: arbitrary Taylor agreement without triviality |  | Fix a=σ1², b=σ2² in B3. Set c1=a and c_(r+1)=[c_r,b]=c_r b c_r^-1 b^-1. Let K_
+work/generic/homology_notes.md	# Generic homology attack on Jones unknot detection |  | Bounded research pass, 31 October 2026. This deliberately leaves the EKT families aside and a
+work/generic/tangle_notes.md	# Generic Jones attack: tangle unit cancellation |  | Bounded pass on 2026-10-31. These notes prove a useful algebraic restriction and identify, rathe
+work/gz-p74.txt	74                                                                     S. Garoufalidis and D. Zagier |  | The Jones (hence, also the colored Jones) po
+work/gz-p79.txt	Knots, Perturbative Series and Quantum Modularity                                                        79 |  | of 52 is J52 (q) = q − q 2 + 2q 3  4 
+work/kauffman-bracket.txt	 |  | 
+work/pass2/braid_certificate/README.md	# Exact exclusion of an infinite Bigelow-kernel family |  | This bounded investigation does not settle whether the Jones polynomial detects the unknot
+work/pass2/braid_notes.md	# Exact exclusion of an infinite Bigelow-kernel family |  | This bounded investigation does not settle whether the Jones polynomial detects the unknot
+work/pass2/categorical_notes.md	# Actual categorical constraints: bounded second pass |  | Investigated 31 October 2026, approximately 16:57–17:16 UTC. This is an audit and a restric
+work/pass2/strong-inversions.txt	THE OPEN BOOK SERIES             5 |  | 
+work/pass2/tangle_diagram_progress.txt	67 2 16 1 -> 0 | 124 2 12 1 -> 0 | 194 2 13 1 -> 0
+work/pass2/tangle_notes.md	# Second bounded pass: actual tangle constructions |  | Prepared 2026-10-31, within the 16:57–17:27 UTC pass.
+work/pass2/tangle_search_progress.txt	200 expressions 3 hits 0.1 seconds | 400 expressions 4 hits 0.1 seconds | 600 expressions 8 hits 0.2 seconds
+work/pass2/twist_locus_notes.md	# Fixed twist templates: an elementary lattice-locus statement |  | Independent audit, 31 October 2026. This is an elementary algebraic observation; n
+work/pass3/braid_notes.md	# Products and commutators of Bigelow-kernel conjugates |  | This bounded pass found no counterexample to Jones unknot detection and no proof of that 
+work/pass3/coset_modular_checks.txt	955693 1 -3 -1 -1 -2 1 2 2 2 2 2 2 2 | 955693 1 -3 -1 -1 -2 1 1 1 2 2 2 2 2 | 777806 1 -3 1 -3 1 -3 -1 -1 -2 1 2 2 2 2 2 2 2
+work/pass3/coset_modular_hits.txt	3 13 0 0 0 0 1 1 0 3 0 3 0 1 2 | 1 -3 1 -3 1 -3 1 -3 2 1 -3 -2 2 1 -3 -2 1 -3 2 3 -1 -2 1 -3 2 3 -1 -2 1 -3 2 1 -3 -2 3 -1 -1 -1 2 2 1 1 1 2 2 | 0 16 
+work/pass3/literature_notes.md	# A concrete four-braid realization problem |  | Bounded investigation, 31 October 2026. This identifies and tests a counterexample target; it does no
+work/pass3/pass_summary.txt	Third bounded Jones investigation, 31 October 2026 |  | Outcome: no general proof, no nontrivial Jones-one knot, no unresolved candidate.
+work/pass3/tangle_notes.md	# Third bounded pass: adversarial audit and a new annular construction |  | Pass window: 2026-10-31, 17:42–18:02 UTC. No solution of Jones unknot dete
+work/pass4/braid_notes.md	# Ren cable channel and independent Jones-locus audit |  | This pass supplies two exact checks. It does not prove Jones unknot detection or produce a 
+work/pass4/homology_full_family_notes.md	# Classification of Jones-one satellites in the entire odd two-top-twist Ren family |  | This is an exact theorem about the specified template, with n
+work/pass4/homology_ren_satellite_notes.md	# Exact obstruction for all twisted satellites of Ren's original pattern |  | 31 October 2026. This is a proved exclusion of an infinite construction 
+work/pass4/tangle_notes.md	# Fourth pass: complete two-site Ren twist calculation |  | No general solution of Jones unknot detection is claimed. This pass gives an exact all-par
+work/pass5/braid_notes.md	# Fifth-pass braid and ribbon results |  | No counterexample and no general unknot-detection proof were found. The useful results are exact exclusions
+work/pass5/evidence/README.txt	REN CORE: ALL FOUR-STRAND BRAIDS | 31 October 2026 | 
+work/pass5/evidence/tangle_all_braids_proof.txt	Ren's capped core cannot lose its remaining annular Jones channel |  | Statement. Let T be the four-strand tangle obtained from the six-strand braid
+work/pass5/homology_all_braids_notes.md	# Independent audit: every four-strand braid retains the Ren core's degree-two channel |  | ## Statement and scope
+work/pass5/homology_colored_notes.md	# The remaining color-three condition: exact consequences and an independent framing audit |  | Conventions: \(H_N(C;q)\) is the zero-framed reduced J
+work/pass5/tangle_all_braids_proof.txt	Ren's capped core cannot lose its remaining annular Jones channel |  | Statement. Let T be the four-strand tangle obtained from the six-strand braid
+work/pass5/tangle_internal_proof.txt	An all-integer classification of a mirrored internal Ren family |  | Conventions: delta=-A^2-A^-2 and sigma_i=A I+A^-1 e_i.
+work/pass5/unpacked-reproduction/README.txt	REN CORE: ALL FOUR-STRAND BRAIDS | 31 October 2026 | 
+work/pass5/unpacked-reproduction/tangle_all_braids_proof.txt	Ren's capped core cannot lose its remaining annular Jones channel |  | Statement. Let T be the four-strand tangle obtained from the six-strand braid
+work/proof10/finite_certificate.txt	THREE-SAMPLE UNKNOT CERTIFICATION IN FIXED TWIST FAMILIES | 31 October 2026. Deduction from classical 3-manifold theorems; no novelty claim. | 
+work/proof10/homology/packages/xlrd-2.0.2.dist-info/top_level.txt	xlrd
+work/proof10/homology/result.txt	BOUNDARY TEST OF EXTREME LEE-BAR IMBALANCE | 2026-10-31. Bounded exploratory pass; no novelty or Jones-detection claim. | 
+work/proof10/quantum/check_output.txt	{ | "exact_reflection_checks": 180, | "exact_derivative_identity_checks": 10,
+work/proof10/quantum/root_reflection_obstruction.txt	ROOT-OF-UNITY COLOR STRIPS DO NOT ADD COLORED INFORMATION | 2026-10-31. Exact reductions and an actual-knot stress test. | No proof or counterexample 
+work/proof10/tangle/findings.txt	ALL-ODD PRETZELS: A COMPLETE LOW-ORDER RIGIDITY PROOF | MIXED PRETZELS: AN EXPLICIT SHARP FAILURE | 31 October2026. Independently derived and checked;
+work/proof10/tangle/mixed_counterexample_run.txt	{'parameters': (8, -3, -3, 1), 'writhe_original': -3, 'Regina_Jones_in_sqrt_t': 'x^8 - 2 x^6 + 2 x^4 - 3 x^2 + 4 - 3 x^-2 + 4 x^-4 - 3 x^-6 + 3 x^-8 -
+work/proof10/tangle/unit_box_classification_audit.txt	INDEPENDENT AUDIT: FOUR-PRETZEL KNOTS WITH A UNIT BOX | 31 October2026. Checked algebra and topology; no novelty claim. | 
+work/proof11/braid/markov_moment_obstruction.txt	ALL-q JONES IDENTITY DOES NOT CONTROL HIGHER MARKOV MOMENTS | 2026-10-31. An explicit family of actual unknot braids. | This is an obstruction to a pr
+work/proof11/braid/satellite_functional_rigidity.txt	FIXED SATELLITES CANNOT APPLY NONLINEAR RATIONAL FUNCTIONS TO JONES | 2026-10-31. Independent audit and generalization of the torus-frequency | argume
+work/proof11/homology/mirror_norm_obstruction.txt	WHY MIRROR DOUBLING DOES NOT TURN JONES INTO A POSITIVE HOMOLOGY NORM | Status: exact algebra plus actual-knot countertest; not a Jones-one counterexa
+work/proof11/homology/multicurve_anchor_audit.txt	UNKNOT-ANCHORED MULTICURVES: WHAT IS RIGOROUS AND WHAT IS STILL MISSING | 2026-10-31. This note separates a geometric constraint from a realizability 
+work/proof11/homology/satellite_obstruction.txt	FIXED SATELLITE RIBBONIZATION: EXACT OBSTRUCTIONS AND THE REMAINING GAP | Status: elementary consequences of standard satellite and colored-Jones form
+work/proof11/tangle/findings.txt	PROOF11 TANGLE AUDIT — 31 October 2026 | Status: checked deductions and countertests; no generic Jones-unknot proof. | 
+work/proof12/braid/all_color_collision_proof.txt	ONE ACTUAL JONES COLLISION DISTINGUISHED BY EVERY HIGHER COLOR | 2026-10-31. Exact calculation plus Habiro's cyclotomic expansion. | No claim of novel
+work/proof12/braid/one_special_bn_audit.txt	INDEPENDENT AUDIT OF THE ONE-SPECIAL-COMPONENT BN OBSTRUCTION | 2026-10-31. Verdict: no gap found in the restricted theorem. | 
+work/proof12/braid/whole_fiber_satellite_audit.txt	INDEPENDENT AUDIT: FIXED SATELLITES CONSTANT ON ORDINARY-JONES FIBERS | 2026-10-31. Verdict: the theorem and the stated finite test bound are valid | 
+work/proof12/continuation.txt	PROOF12 CONTINUATION — 2026-10-31, completed near21:01UTC | Goal remains ACTIVE: generic Jones unknot detection, no solution claimed. | Current pass b
+work/proof12/homology/four_special_formal_boundary.txt	FOUR-SPECIAL FORMAL BOUNDARY TO THE ONE-SPECIAL ARGUMENT | 2026-10-31. Explicitly NOT a classical tangle construction. | 
+work/proof12/homology/habiro_audit.txt	INDEPENDENT AUDIT OF THE ALL-COLOR JONES-COLLISION ARGUMENT | 2026-10-31. Data from work/proof12/braid/all_color_collision_check.json; | I independent
+work/proof12/homology/kwz2022.txt	O | THE OPEN BOOK SERIES             5 | 
+work/proof12/homology/multicurve_findings.txt	PROOF12: ACTUAL UNKNOT-ANCHORED CANCELLATION AND ONE-SPECIAL-CURVE AUDIT | 2026-10-31. No generic Jones detection theorem is claimed. | 
+work/proof12/homology/one_special_bn_obstruction.txt	ONE SPECIAL CURVE: A BAR-NATAN REALIZABILITY OBSTRUCTION | 2026-10-31. Derived in this investigation; no novelty claim. | 
+work/proof12/homology/watson.txt	KHOVANOV HOMOLOGY | AND THE SYMMETRY GROUP OF A KNOT | 
+work/proof12/kt_filter_stdout.txt	[ | { | "m": -6,
+work/proof12/satellite_fiber_rigidity.txt	FINITE TESTS FOR SATELLITES THAT PRESERVE JONES EQUALITY | Research pass, 31 October 2026 | Status: proved below from standard colored-Jones facts and
+work/proof12/tangle/findings.txt	PROOF12 TANGLE GEOMETRY AUDIT — 2026-10-31 | Scope: checked deductions and targeted research proposals; no solution of generic Jones detection and no 
+work/proof12/tangle/newfamilyproof.txt	AN ACTUAL TWO-PARAMETER RIBBON-DOUBLE FAMILY, COMPLETELY EXCLUDED | 2026-10-31. No novelty claim. This is a family theorem, not generic Jones detectio
+work/proof13/continuation.txt	PROOF13 CONTINUATION — 2026-10-31 | Pass began21:02:13UTC; finished near21:31UTC, within the bounded30min guidance. | Goal remains ACTIVE. No generic 
+work/proof13/generic/ainfinity_extension_audit.txt	INDEPENDENT AUDIT OF THE FORMAL s4 EXTENSION | Auditor: generic_braid. 2026-10-31. | 
+work/proof13/generic/cabling_unit_fiber_reduction.txt	ONE FIXED CABLE AND THE FULL COLORED JONES FUNCTION | 2026-10-31. Conditional reduction and unconditional test-family theorem. | No Jones-unknot proof
+work/proof13/homology/algebraic_realization.txt	PROOF13: THE FOUR-SPECIAL MODEL PASSES FULL TANGLE-ALGEBRA EXTENSION TESTS | 2026-10-31. This is an algebraic construction, NOT a classical tangle dia
+work/proof13/homology/mutation2026.txt	On mutation invariance in Khovanov homology | Artem Kotelskiy, Liam Watson, and Claudius Zibrowius | 
+work/proof13/homology/unreduced_lee_check.txt	UNREDUCED RATIONAL LEE AUDIT OF THE FORMAL TANGLE MODEL | 2026-10-31. Formal Frobenius-algebra lift; no classical diagram is asserted. | 
+work/proof13/tangle/findings.txt	PROOF13 TANGLE RESULTS |  | 1. Universal leading-sign coherence for mirror ribbon doubles is FALSE.
+work/proof13/tangle/homology_realization_audit.txt	INDEPENDENT AUDIT OF THE CONDITIONAL ACTUAL-REALIZATION CLAIM |  | Audited work/proof13/homology/algebraic_realization.txt Section5 and the
+work/proof13/tangle/sign_counterexample_note.txt	A DIRECTED COUNTERTEST OF COMMON LEADING SIGNS |  | The last KT-double calculation does not extend to all ribbon mirror doubles
+work/proof13/tangle/strong_inversion_reduction.txt	GENERIC SYMMETRY REDUCTION, AND ITS EXACT LIMIT | Status: standard constructions and deductions; no novelty or generic detection proof claimed. | 
+work/proof13/tangle/unknot_anchor_primality.txt	COMPOSITE DETERMINANT-ONE KNOTS CANNOT HAVE AN UNKNOT RATIONAL FILLING | Status: deduction from standard surgery theorems, not a novelty claim. | 
+work/proof9/homology/result.txt	BAND DETECTION, LEE BARS, AND THE PRECISE DECATEGORIFICATION GAP | Bounded proof-mechanism audit, 2026-10-31. No general Jones detection | proof, no k
+work/proof9/quantum/handlebody_vacuum_lemma.txt	HANDLEBODY VACUUM SATURATION: A PRECISE SUFFICIENT LEMMA | 2026-10-31. Research audit, not a Jones unknot-detection proof. | No novelty claim; the arg
+work/proof9/tangle/lando_findings.txt	PROOF-ROUTE AUDIT: EXTREME STATE CANCELLATION | 31 October 2026. Checked deduction and experiments; no novelty claim. | 
+work/proof9/tangle/pretzel_moment_audit.txt	INDEPENDENT AUDIT: TWO JONES DERIVATIVES DETECT THE UNKNOT AMONG 3-PRETZEL KNOTS | 31 October2026. Algebra checked by hand and independently against T
+work/quotient17/defect_simple_root_audit.txt	EXACTLY ONE ROOT FACTOR IN A NONZERO-SATO--LEVINE SHELL | 31 October 2026. Independent proof by generic_braid. | 
+work/quotient17/pattern_root_order_corollary.txt	PATTERN TRANSFER FACTOR AT THE DETERMINANT ROOT | 2026-10-31. Root's deduction; independently audited by the tangle agent. | This is an internal resea
+work/quotient17/sato_levine_first_jet.txt	EXACT FIRST JET OF THE QUOTIENT DEFECT MULTIPLIER | 31 October 2026. Root derivation, independently audited. | 
+work/quotient17/sato_levine_skein_injectivity.txt	SATO--LEVINE OBSTRUCTION TO LOSS OF QUOTIENT SKEIN INFORMATION | 31 October 2026. Research deduction, not a novelty claim. | 
+work/quotient17/whitehead_exact_jet_filtration.txt	EXACT JONES-JET FILTRATION FROM ITERATED WHITEHEAD QUOTIENTS | 31 October 2026. Root's deduction, independently audited by homology agent. | This is a
+work/quotient17/whitehead_injectivity_audit.txt	WHITEHEAD QUOTIENT SKEIN MAP: INDEPENDENT AUDIT | 31 October 2026. This audits the root agent's geometric argument. | 
+work/quotient17/whitehead_injectivity_geometry_audit.txt	INDEPENDENT GEOMETRIC AND NORMALIZATION AUDIT | 31 October 2026. Auditor: generic_braid. | 
+work/quotient17/whitehead_pattern_audit.txt	WHITEHEAD QUOTIENT PATTERN: INDEPENDENT GEOMETRIC AUDIT | 2026-10-31. Research deduction, internally checked; no novelty claim. | 
+work/research20/adjacency_obstruction.txt	STRONG ADJACENCY: AN ACTUAL TEST THAT KILLS NAIVE SMOOTHING POSITIVITY | Status: exact computation on the audited Stoimenow K3 diagram; no generic | n
+work/research20/homology_scaffold.txt	GENERIC KHOVANOV SCAFFOLD: BOUNDED CANCELLATION, THEN CONNECTED-SUM AMPLIFICATION | Status: complete CONDITIONAL inference chains, not a proof of Jone
+work/research20/quantum_scaffold.txt	QUANTUM NORM ROUTE: AN END-TO-END CONDITIONAL SCAFFOLD | 1 November 2026. Strategic reset, not a claimed solution or novelty claim. | 
+work/research20/topology_scaffold.txt	FULL TOPOLOGICAL PROOF SCAFFOLD: GENERIC BRIDGE, THEN RIGIDITY | 1 November 2026. Conditional research architecture, not a proof of Jones | unknot det
+work/research21/README.txt	GLOBAL SCAFFOLD AUDIT — 31 OCTOBER 2026 (LOCAL DATE) |  | This archive records a bounded research pass toward Jones unknot detection.
+work/research21/fiber_bound_audit.txt	ADVERSARIAL AUDIT OF JONES-FIBER BOUNDS | 1 November 2026. Primary-source search plus elementary structural audit. | 
+work/research21/geometric_bridge.txt	WATSON COUPLED TWISTS: AN EXACT OBSTRUCTION AND A SHARPER REMAINING GATE | 1 November 2026. Bounded research deduction; no novelty claim. | 
+work/research21/global_homology_bridge.txt	GLOBAL BRIDGE AUDIT: ASYMPTOTIC CONTROL AND A GEOMETRIC LIFT | Status: conditional full-solution scaffolds. None of the new coverage/lift | assertions
+work/research21/ribbon_euler_audit.txt	RIBBON-CONCORDANCE EULER FAITHFULNESS: FULL SCAFFOLD AND BAND TEST | Status: the inference chain is valid; its Euler-faithfulness premise is | unprove
+work/research21/ribbon_euler_faithfulness_audit.txt	RIBBON PROJECTORS: WHAT EULER-FAITHFULNESS WOULD REQUIRE | 1 November 2026. Independent architectural audit. | 
+work/research21/ribbon_geometry_scaffold.txt	RIBBON-CONCORDANCE ROUTE: GLOBAL COVERAGE AND THE GEOMETRIC GAP |  | Status: an exact conditional route to the full Jones conjecture, with no
+work/research21/ribbon_norm_architecture.txt	SYMMETRIC RIBBON DOUBLING AND THE QUANTUM NORM BRIDGE | 1 November 2026. Architecture audit, not a proposed proof. | 
+work/research21/watson_homology.txt	WATSON COMPENSATING TWISTS: A FIXED SUPPORT WINDOW | 31 October 2026. Derived argument from Watson's diagrams and skein sequences. | No novelty claim;
+work/research21/watson_identical.txt	mntptm |  | 
+work/research21/watson_rank_audit.txt	INDEPENDENT WATSON SUPPORT / RANK AUDIT | 1 November 2026. Internal research note; no novelty claim. | 
+work/research21/watson_topology_audit.txt	INDEPENDENT AUDIT RECORD: DEGENERATE WATSON TEMPLATE | 1 November 2026. Braid track's checks relayed to geometry track. | 
+work/research22/README.txt	GLOBAL HYPOTHESIS TESTS — 31 OCTOBER 2026 LOCAL DATE |  | STATUS
+work/research22/candidate_filter_audit.txt	INDEPENDENT RIBBON-CANDIDATE FILTER AUDIT | 2026-11-01 UTC. Necessary conditions only; no ribbon concordance certified. | 
+work/research22/global_fiber_test.txt	PASS 22: GLOBAL JONES-FIBER FALSIFICATION TEST | Date: 2026-11-01 UTC. Bounded primary-source check; no completeness claim. | 
+work/research22/markov_global_constraints.txt	ALL MARKOV PRESENTATIONS: GLOBAL QUANTUM-CONSTRAINT AUDIT | 1 November 2026. Exact algebraic tests; no novelty claim. | 
+work/research22/one_band_relative_rank.txt	ONE-BAND RIBBON CONCORDANCES: RELATIVE RANK CONGRUENCE | Independent audit, 31 October 2026. | 
+work/research22/one_band_relative_rank_topology_audit.txt	Independent adversarial audit of one_band_relative_rank.txt: PASSED. |  | Read Sarkar arXiv:1903.11095v3 Section6, both evaluations of W, and
+work/research22/relative_bar_filter_audit.txt	RELATIVE LIFTED-LEE BAR FILTER: EXACT AUDIT OF THE 54 RETAINED PAIRS | 1 November 2026. This is a necessary-condition screen, not a construction of ri
+work/research22/ribbon_global_geometry.txt	PASS22: A TOPOLOGICAL ENDGAME FOR RIBBON DOUBLES, AND TWO EXACT GATES |  | Status: bounded research audit. The axis endgame below is a valid
+work/research22/ribbon_relative_bar_filter_pairs.txt	FULL DIRECTED PAIR STATUS | one_band = nonnegative exact quotient by 1+u q^2 | any_ribbon_bars = existence of a positive-length relative bar decomposi
+work/research22/satellite_same_genus_appendix.txt	SATELLITES AND SAME-GENUS PRIME RIBBON CONCORDANCES: QUICK AUDIT |  | Conclusion: arbitrary satellite patterns preserve ribbon concordance,
+work/research23/README.txt	Jones unknot detection: global geometry and quantum tests | Research pass 23, 1 November 2026 UTC (31 October local time). | 
+work/research23/global_homology.txt	PASS 23: GLOBAL KHOVANOV-RANK COMPACTNESS — STRATEGIC AUDIT | 1 November 2026. No proof of Jones unknot detection and no counterexample to H-rank. | 
+work/research23/global_quantum_bridge.txt	PASS 23: POSITIVE FUSION MOMENTS, SURGERY HOLONOMY, AND A GLOBAL PROOF SCAFFOLD | Status: one exact conditional reduction and an actual ribbon-knot co
+work/research23/global_ribbon_geometry.txt	PASS 23: GEOMETRIC TESTS OF RIBBON EULER-FAITHFULNESS | Status: bounded research deductions and exclusions; no counterexample to E or | to Jones unkno
+work/research23/quantum_floer_bridge_audit.txt	INDEPENDENT AUDIT: QUANTUM BRAID FLOER BRIDGE | 1 November 2026. All three proposed deductions pass, with F2 coefficients. | 
+work/research23/quantum_floer_route.txt	QUANTUM BRAID FLOER HOMOLOGY: A GLOBAL SCAFFOLD AND TWO EXACT OBSTRUCTIONS | 1 November 2026 UTC. Derived analysis; no proof of Jones unknot detection
+work/research23/ribbon_geometry_independent_audit.txt	INDEPENDENT CRITICAL AUDIT: SAME-GENUS RIBBON MOVIES | 1 November 2026. | 
+work/research24/README.txt	JONES UNKNOT DETECTION: PASS 24 EVIDENCE | 31 October 2026 America/Chicago / 1 November 2026 UTC | 
+work/research24/braid_kernel_route.txt	PASS 24: GENERIC KERNELS, FOUR EXACT MOMENTS, AND THE TOPOLOGY CERTIFICATE | Bounded counterexample-route audit. No Jones-one nontrivial knot was foun
+work/research24/braid_strategy.txt	BRAID COUNTEREXAMPLE STRATEGY: COMPLETE CHAINS AND A STOP RULE | 1 November 2026 UTC. Strategic audit of the full-proof scaffolds and | research24 not
+work/research24/geometric_strategy.txt	GLOBAL GEOMETRIC STRATEGY AUDIT | 1 November 2026 UTC. Six-minute bird's-eye pass. No claim of novelty or proof. | 
+work/research24/homology_strategy.txt	ONE-PAGE STRATEGIC ASSESSMENT: THE GLOBAL HOMOLOGY / RIBBON ROUTES | 1 November 2026. Conditional arguments, not a proof or a proximity claim. | 
+work/research24/intersection_geometry.txt	GEOMETRIC INTERSECTIONS AT THE JONES SPECIALIZATION | 1 November 2026 UTC. Bounded pass24; research deductions, no novelty claim. | 
+work/research24/spanning_tree_mechanism.txt	PASS 24 — SPANNING TREES: A GLOBAL OBSTRUCTION TO RAW STATE COMPACTNESS | 1 November 2026. Bounded strategic audit; no proof of Jones unknot detection
+work/research24/spectral_realizability_obstruction.txt	SPECTRAL REALIZABILITY OBSTRUCTION FOR THE FOUR-MOMENT ROUTE | 1 November 2026 UTC. Derived lemma with two independent audits. | No novelty claim, no 
+work/research24/split_spectrum_audit.txt	INDEPENDENT AUDIT: SPLIT SPECTRUM OF A BURAU-KERNEL BRAID | 2026-10-31. Scope: generic B_5 and its standard five-dimensional | Temperley--Lieb module.
+work/research24/split_spectrum_second_audit.txt	SECOND INDEPENDENT AUDIT — SPLIT SPECTRUM ON THE BURAU KERNEL | 1 November 2026 | 
+work/research25/README.txt	PASS 25: GLOBAL SCAFFOLDS AND MECHANISM AUDIT | 1 November 2026 UTC | 
+work/research25/anchored_fiber_audit.txt	ANCHORED-FIBER AMPLIFICATION — INDEPENDENT AUDIT | 1 November 2026 | 
+work/research25/bridge_global_route.txt	WHOLE-JONES BRIDGE BOUNDEDNESS: GLOBAL SCAFFOLD AND A NEW SURGERY TEST | 1 November 2026. Bounded primary-source investigation; no novelty claim. | 
+work/research25/homology_global_mechanism.txt	PASS 25 — TESTING A CONSTRUCTIVE GLOBAL HOMOLOGY MECHANISM | 1 November 2026. Bounded primary-source investigation, no theorem of Jones unknot detecti
+work/research25/structural_kernel_route.txt	PASS 25: STRUCTURAL KERNEL MECHANISMS AND TWO OBSTRUCTIONS | 1 November 2026 UTC. Bounded conceptual pass, with no braid-word scan. | No nontrivial ge
+work/research26/README.txt	JONES RESEARCH PASS 26 — WATSON BOUND AND STRUCTURAL TESTS | 1 November 2026 UTC | 
+work/research26/homology_mechanism.txt	UNIFORM RATIONAL KH RANK FOR EACH FIXED WATSON ORBIT | 31 October 2026. Derived argument, independently geometrically audited. | No novelty claim. Thi
+work/research26/homology_mechanism_braid_audit.txt	INDEPENDENT ADVERSARIAL AUDIT OF THE WATSON FIXED-INPUT RANK BOUND | 1 November 2026 UTC; braid track. | Audited: homology_mechanism.txt and research2
+work/research26/kernel_intersection.txt	PASS 26 — PARTIAL KERNEL INTERSECTION: COMPLETE SCAFFOLD AND COVERAGE OBSTRUCTION | 1 November 2026 UTC. No braid enumeration and no Jones-one knot co
+work/research26/satellite_certificate_braid_audit.txt	INDEPENDENT AUDIT: FINITE SATELLITE SCALARITY CERTIFICATE | 1 November 2026 UTC. Braid track. No new construction or search. | 
+work/research26/satellite_mechanism.txt	SCALAR ANNULAR PATTERNS: A COMPLETE SATELLITE TEST AND CONSTRUCTION GATES | 1 November 2026. Bounded research pass; no priority claim. | 
+work/research26/watson_geometric_inputs.txt	GEOMETRIC INPUTS FOR THE PASS-26 WATSON RANK BOUND | 1 November 2026 UTC. Extracted and restated from our pass-21 argument. | Only the two inputs used
+work/research26/watson_independent_audit.txt	INDEPENDENT ADVERSARIAL AUDIT OF THE WATSON FIXED-INPUT RANK BOUND | 1 November 2026 UTC; braid track. | Audited: homology_mechanism.txt and research2
+work/research27/README.txt	JONES UNKNOT DETECTION: BING REALIZATION AND GLOBAL MECHANISM AUDIT | Research pass 27, 1 November 2026 UTC | 
+work/research27/bing_formula_audit.txt	INDEPENDENT AUDIT RECORD — BING ANNULAR FORMULA | 1 November 2026. No priority claim. | 
+work/research27/braid_mechanism.txt	PASS 27 — POINT-PUSHING DOES NOT COLLAPSE THE MISSING JONES BLOCKS | 1 November 2026 UTC. Bounded structural pass; no word scan. | No nontrivial full 
+work/research27/homology_global.txt	PASS 27: TESTING SMITH AND STEENROD MECHANISMS ON ACTUAL RIBBON GEOMETRY | 1 November 2026. Bounded research audit. No generic Jones proof obtained. |
+work/research27/tangle_realization.txt	AN ACTUAL BING-PATTERN REALIZATION AND ITS EXACT CANCELLATION GATE | 1 November 2026. Bounded research deduction; no priority claim. | 
+work/research28/README.txt	JONES UNKNOT DETECTION: FINITE-ORDER REALIZABILITY AND GLOBAL GEOMETRY | Research pass 28, 1 November 2026 UTC | 
+work/research28/braid_structure.txt	PASS 28 — RANK-ONE THREE-PUNCTURE TWISTS: AN EXACT STRUCTURAL EXCLUSION | 1 November 2026 UTC. No braid-word scan; no kernel or Jones-one knot found. 
+work/research28/homology_geometry.txt	PASS 28: WHOLE JONES FIBERS AND GEOMETRIC COMPACTNESS | Status: a bounded literature test and a conditional geometric endpoint, not a proof of Jones u
+work/research28/quantum_promotion.txt	ACTUAL KNOTS, COMPLETED QUANTUM INVARIANTS, AND THE COLOR-PROMOTION GAP | Pass 28, 2026-11-01. Research deductions; no priority claim. | 
+work/research28/quantum_promotion_audit.txt	PASS 28 AUDIT RECORD |  | The actual collision certificate was rerun successfully:
+work/research29/README.txt	Jones unknot investigation — pass 29 evidence | 1 November 2026 UTC | 
+work/research29/colored_audit.txt	Independent braid/fusion audit of the fixed-Jones Watson family | 1 November 2026 UTC. Scope: all-parameter fusion argument, normalization, | and the 
+work/research29/colored_global.txt	WHOLE ORDINARY JONES DOES NOT BOUND COLOR-THREE SPAN | 1 November 2026 UTC. Bounded research deduction, not a priority claim. | 
+work/research29/curve_projector.txt	PASS 29 — SAME-SUBSET CURVES, FUSION SUPPORT, AND THE POSITIVITY GAP | 1 November 2026 UTC. No random curve/word scan and no kernel constructed. | 
+work/research29/positivity_geometry.txt	PASS 29: SURFACE QUANTUM-TRACE POSITIVITY DOES NOT SURVIVE S^3 CLOSURE | Status: precise obstruction to a proposed proof mechanism; no Jones counterex
+work/research29/watson_colored_braid_audit.txt	Independent braid/fusion audit of the fixed-Jones Watson family | 1 November 2026 UTC. Scope: all-parameter fusion argument, normalization, | and the 
+work/research30/README.txt	JONES UNKNOT DETECTION — PROJECTIVE COMPRESSION SCAFFOLD | Research pass 30, 1 November 2026 UTC. | 
+work/research30/braid_global.txt	PASS 30 — THE CURVE COLLISION GATE IS EXACTLY THE RESIDUAL FAITHFULNESS GATE | 1 November 2026 UTC. Bounded architecture audit; no braid-word scan. | 
+work/research30/fixed_jones_volume_check.txt	BOUNDED STRATEGIC CHECK: FIXED WHOLE JONES POLYNOMIAL AND VOLUME | 1 November 2026 UTC. No exhaustive literature claim. | 
+work/research30/homology_global.txt	PASS 30: EXACT JONES FIBERS AND A PROJECTIVE-GRAPH SCAFFOLD AUDIT | Status: no fixed-Jones knot family with unbounded rational reduced Kh was certifie
+work/research30/projective_dual_systole_audit.txt	PROJECTIVE EDGE-DELETION NUMBER AS A DUAL SYSTOLE | Independent audit of the parent's proposed lemma. Status: sound under the cellular-embedding hypot
+work/research30/projective_final_audit.txt	PASS 30: FINAL INDEPENDENT GEOMETRIC AUDIT | 1 November 2026 UTC. Internal research review; no external validation or novelty claim. | 
+work/research30/projective_global_scaffold.txt	PASS 30: projective diagrams, an Ising identity, and a complete geometric scaffold |  | ### The full target, before the local arguments
+work/research30/projective_templates.txt	INDEPENDENT GEOMETRIC AUDIT: BOUNDED PROJECTIVE LOCAL COMPLEXITY | 1 November 2026. Research deduction, not a novelty claim. | 
+work/research30/projective_twist_geometry_audit.txt	INDEPENDENT GEOMETRIC AUDIT: BOUNDED PROJECTIVE LOCAL COMPLEXITY | 1 November 2026. Research deduction, not a novelty claim. | 
+work/research30/ribbon_satellite.txt	PASS30: RIBBON SATELLITE ROUTE, BEFORE THE PROJECTIVE-GEOMETRY PIVOT | 1 November 2026. Bounded audit, no counterexample or priority claim. | 
+work/research31/README.txt	PROJECTIVE CROSSING IDENTITY: PASS 31 EVIDENCE | 1 November 2026 UTC | 
+work/research31/projective_cancellation.txt	PROJECTIVE SPANNING-TREE CANCELLATION: MECHANISM AND OBSTRUCTIONS | 1 November 2026. Bounded research note; no Jones-unknot theorem claimed. | 
+work/research31/projective_crossing_hostile_audit.txt	INDEPENDENT HOSTILE AUDIT: PROJECTIVE LOCAL CROSSING NUMBER | 1 November 2026. Scope: mathematical audit, not a priority claim. | 
+work/research31/projective_crossing_identity.txt	PROJECTIVE LOCAL CROSSING NUMBER OF A LOCAL KNOT | 1 November 2026. Research deduction with proof; no priority claim. | 
+work/research31/projective_dual_systole_audit_pass30.txt	PROJECTIVE EDGE-DELETION NUMBER AS A DUAL SYSTOLE | Independent audit of the parent's proposed lemma. Status: sound under the cellular-embedding hypot
+work/research31/projective_global_tests.txt	PASS 31 — GLOBAL TESTS OF PROJECTIVE COMPRESSION | 1 November 2026 UTC. Bounded research pass; no novelty claim. | 
+work/research31/projective_local_crossing_audit.txt	INDEPENDENT SECTOR AND LOCAL-CROSSING AUDIT | 1 November 2026. Joint construction by parent and tangle agent; | independent algebra/topology audit rec
+work/research31/projective_locality.txt	LOCALITY AND PROJECTIVE CROSSING COMPLEXITY | 1 November 2026. Research deduction; no priority claim. | 
+work/research32/README.txt	PASS 32 — EXTERIOR VOLUME AND FINITE JONES PROBES | 1 November 2026 UTC | 
+work/research32/exterior_volume_audit.txt	INDEPENDENT AUDIT: THE EXTERIOR-VOLUME ENDPOINT | 1 November 2026 UTC. Audit of generic_tangle's geometric_mechanism.txt. | Status: the stated conditi
+work/research32/finite_probe_independent_audit.txt	INDEPENDENT AUDIT: FINITE JONES PROBES AND UNBOUNDED VOLUME | 1 November 2026. Audit of finite_probe_volume_obstruction.txt; no edits to it. | 
+work/research32/finite_probe_volume_obstruction.txt	FINITE JONES PROBES DO NOT CONTROL EXTERIOR VOLUME | 1 November 2026. Research deduction from published constructions; no priority claim. | 
+work/research32/geometric_mechanism.txt	PASS 32 — EXTERIOR VOLUME AS A GLOBAL JONES-DETECTION SCAFFOLD | 1 November 2026 UTC. Research deductions, not a claim of novelty or a proof of | Jone
+work/research32/homology_mechanism.txt	PASS 32: A SPECTRAL-GEOMETRIC ROUTE AND ITS EXACT LIMIT | 1 November 2026 UTC. Bounded research pass. No proof of Jones unknot | detection, no counter
+work/research32/quantum_mechanism.txt	PASS 32: TESTING THE NEW DYADIC JONES FRAMEWORK | 1 November 2026. Bounded architecture test; no kernel or Jones-one knot found. | No novelty claim. N
+work/research33/STOPPED_BRANCHES.txt	Latest human steering: stop rabbit holes; produce a creative solution. | Current pass took about eight minutes and found no solution. | 
+work/research33/braid_candidate.txt	ACTUAL FOUR-CANDIDATE TEST: OVERLAPPING SIX-STRAND BURAU KERNELS | Bounded pass 33. No Jones-one knot, full Jones kernel, or proof was found. | This i
+work/research33/candidate_audit.txt	PASS 33: CONCRETE CANDIDATE AUDIT | 1 November 2026 UTC. No knot with Jones polynomial one has been obtained. | 
+work/research33/rotor_candidate.txt	ACTUAL FOUR-SECTOR ROTOR TEST — 1 NOVEMBER 2026 | Result: the explicit unknot flips to the unknot. The two tested asymmetric | completions are nontriv
+work/research34/STOPPED_BRANCH.txt	Pass34 completed the exact all-integer analysis for an actually marked | two-band family based on the EKT LLL(1) link and prior unknot hit5. | 
+work/research34/all_integer_audit.txt	INDEPENDENT ALL-INTEGER AUDIT OF THE MARKED LLL(1) TWO-BAND FAMILY | Verdict: the proposed exclusion is valid for the family in | work/research34/two_
+work/research34/twist_formula.txt	TWO DISJOINT ANTIPARALLEL FULL-TWIST SITES: EXACT ALL-SLOPE CLASSIFICATION | Pass 34. This is a skein calculation, not a claim of a new Jones-one knot
+work/research34/twist_topology.txt	PASS34: topology and exact all-integer exclusion for one marked EKT two-band family | Independent audit, 2026-11-01. Scope is the explicit family in t
+work/research34/two_band_geometry.txt	TWO DISJOINT BANDS ON THE ORIGINAL LLL(1) DIAGRAM | 1 November 2026. Actual geometric family, not a formal skein expansion. | 
+work/research35/STOPPED_ROUTE.txt	Pass35 extends the pass34 exclusion geometrically, without new band scans. |  | Proved: For any actual unknot with disjoint marked antiparallel twist 
+work/research35/algebra_gate_audit.txt	COMMON-PHASE AND RANK-ONE OBSTRUCTION FOR TWO ORIENTED INVERSE BANDS | Independent audit, pass 35. Verdict: the proposed gate is valid with the | orie
+work/research35/general_topology_gate.txt	GENERAL TWO-BAND COMMON-PHASE OBSTRUCTION | Independent audit, 2026-11-01. Established under the explicit hypotheses below. | This is an obstruction t
+work/research35/geometry_gate_audit.txt	GEOMETRIC AUDIT OF THE DISJOINT-BAND OBSTRUCTION | 2026-11-01. Research deduction; no priority claim. | 
+work/research35/uniform_surgery_algebra.txt	UNIFORM FULL-TWIST SURGERY: INDEPENDENT LINEAR-ALGEBRA AUDIT | Verdict: valid. The algebra requires no semidefiniteness assumption on B. | 
+work/research36/descent_arithmetic.txt	L=1: max x-exponent=8; p-degree=7; b_7=-1 | -x^8 + x^6 + x^2 | L=3: max x-exponent=12; p-degree=11; b_11=-1
+work/research36/descent_audit.txt	CARMI–COHEN DESCENT: EXACT LOGICAL SCOPE AND THE MISSING SKEIN CHANNEL | Independent bounded audit, 2026-11-01. No proof of generic unknot detection i
+work/research36/machine_geometry.txt	Carmi--Cohen v1: source-grounded audit of Proposition 5.12(G2) | 2026-11-01. Bounded investigation; no claim about priority. | 
+work/research36/operator_audit.txt	LITERAL CLASP-MACHINE OPERATOR AUDIT: AN UNKNOT HOST DOES NOT GIVE COMPRESSION | Pass 36. Sources checked: cached main_machines_21_06_26_final.tex, | 
+work/research36/second_referee_audit.txt	SECOND REFEREE AUDIT OF PASS36 CONCRETE FINDINGS | 2026-11-01. Scope: independent algebra, orientation caveats, and a second full bracket | calculatio
+work/research37/STOPPED_ROUTE.txt	Pass37: actual all-integer exclusion for 16 marked records of the earlier | 22 EKT LLL1 two-stage unknot fusions. They have partial deviations with | 
+work/research37/isolated_twist_algebra.txt	TWO-BAND TWISTS: A FINITE-JET EXCLUSION AND AN EXACT ISOLATED-POINT CERTIFICATE | Pass37. This is an algebraic consequence of the previously audited m
+work/research37/literature_lead_not_verified.txt	Literature lead located during pass37, NOT a new theorem verified here: | Lamm--Tanaka, On partial knots for symmetric unions (2025), DOI | 10.1016/j.
+work/research37/topology_audit.txt	PASS37: INDEPENDENT TOPOLOGICAL AND NORMALIZATION AUDIT | 2026-11-01. This excludes the saved marked family and supplies a finite exact | criterion fo
+work/research37/two_band_exclusion.txt	SIXTEEN CERTIFIED MARKED RECORDS: COMPLETE INTEGER-TWIST EXCLUSION | 2026-11-01. Bounded follow-up of the 22 stored unknot band-fusion hits. | 
+work/research38/README-evidence.txt	Evidence for jones-virtual-torus-exclusion.txt |  | The main result is a family exclusion, not a solution of the general Jones
+work/research38/STOPPED_ROUTE.txt	PASS 38: CLOSED ROUTES AND PRECISE RESULT |  | The initial KT/symmetric-union lead was a DUPLICATE of work/proof12/tangle/
+work/research38/dye_kauffman.txt	ISSN 1472-2739 (on-line) 1472-2747 (printed)                                       509 |  | 
+work/research38/marked_embedding_topology.txt	ACTUAL MARKED TORUS EMBEDDING: THE VIRTUALIZED TREFOIL IS A CLOSED TWO-BRAID | Independent geometric certificate, 2026-11-01. No Jones-detection assum
+work/research38/union_algebra.txt	Lamm--Tanaka one-region KT lead: source and algebra status | Pass38; bounded review. No new counterexample and no novelty claim. | 
+work/research38/union_topology.txt	PASS38: SYMMETRIC-UNION / ORBIFOLD SOURCE-SCOPE AUDIT | 2026-11-01. Bounded check of a purported new route; no candidate or new theorem. | 
+work/research38/virtual_algebra.txt	HEEGAARD EVALUATION OF A VIRTUAL JONES-ONE TORUS DIAGRAM | Independent algebra audit, pass 38 | 
+work/research38/virtual_geometry.txt	PASS 38: VIRTUALIZED TREFOIL, ACTUAL CLASSICAL RESOLUTIONS | Status: exact small classicalization obstruction; no generic torus-embedding exclusion. |
+work/research38/virtual_marking_jets.txt	ALL SL(2,Z) MARKINGS OF THE EXPLICIT THREE-CROSSING TORUS KNOT | Pass 38: exact algebra and independent integer reduction | 
+work/research38/virtual_topology.txt	PASS38 REPLACEMENT: VIRTUAL JONES-ONE KNOTS ON A HEEGAARD TORUS | Independent topology/framing audit, 2026-11-01. No actual candidate knot is asserted
+work/research39/STOPPED_ROUTE.txt	PASS 39 CLOSED — 2026-11-01 |  | Outcome: no new generic implication toward ordinary Jones unknot detection,
+work/research39/braid.txt	PASS 39: WHY QUANTUM DETECTION OF BRAID DYNAMICS DOES NOT DETECT THE CLOSURE | Bounded global architecture audit. No claim of a generic Jones theorem.
+work/research39/homology.txt	PASS 39 — BOUNDED GLOBAL CATEGORIFICATION CHECK | Date: 2026-11-01 | Status: no new generic proof mechanism, no certified fixed-Jones unbounded-rank
+work/research39/topology.txt	PASS 39: A PRECISE SKEIN-TO-TOPOLOGY ENDPOINT, AND ITS ARITHMETIC OBSTRUCTION | Bounded research audit. No generic Jones theorem or counterexample is 
+work/research40/STOPPED_ROUTE.txt	PASS 40 CLOSED — 2026-11-01 |  | Previous goal turn classification: progress in testing and excluding proposed
+work/research40/analytic.txt	PASS 40: LEE–YANG / POTTS ZERO-THEOREM SCOPE AUDIT | 2026-11-01. Bounded check; no unknot-detection proof or new candidate. | 
+work/research40/braid.txt	PASS 40: ENDPOINT PERMUTATION OBSTRUCTS A DIRECT POSITIVE-BRAID PROOF | Bounded mechanism check; no new generic Jones theorem or counterexample. | 
+work/research40/geometric.txt	PASS 40: A CANONICAL RIBBON FAMILY EXCLUDES REAL-PARAMETER POSITIVITY | Status: exact geometric obstruction, not a Jones detector or counterexample. |
+work/research40/unified_audit.txt	INDEPENDENT AUDIT: A SINGLE RIBBON FAMILY ON BOTH REAL AXES | 2026-11-01. Scope: exact normalization, elementary topology, real limits. | 
+work/research41/STOPPED_ROUTE.txt	PASS41 COMPLETED: FORMAL COMPONENT REMOVAL IS IMPOSSIBLE |  | No generic proof and no nontrivial Jones-one knot. User-facing result:
+work/research41/link_construction.txt	PASS 41: BOUNDED SEARCH FOR A DIFFERENT EXACT JONES-TRIVIAL LINK INPUT | Outcome: no new actual link-to-knot construction was obtained. Stop here. | T
+work/research41/pairing.txt	EKT OPPOSITE-OMEGA: TWO PAIRINGS AND THE BOUNDARY-BRAID LIMIT | 2026-11-01. Exact algebra plus a restricted geometric obstruction; no Jones-one | nont
+work/research41/quotient_realization_audit.txt	INDEPENDENT REALIZABILITY AUDIT: THE FORMAL EKT PAIRING H/delta | 2026-11-01. The proposed obstruction is valid. | 
+work/research41/surgery_gate.txt	PASS 41: WHAT THE MULTI-BAND LINKING-FORM GATE CAN ACTUALLY DECIDE | 2026-11-01. No repeated band enumeration and no new Jones-one knot. | 
+work/research42/STOPPED_ROUTE.txt	PASS42: GENERIC GRAPH REDUCTION/MATCHING MECHANISMS REJECTED |  | Previous goal turn classification: progress. Pass41 produced and audited
+work/research42/graph.txt	SIGNED PLANAR GRAPH ELIMINATION: THE MISSING BOUNDARY CHANNEL | 2026-11-01. Bounded mechanism test. No generic detection theorem is claimed. | 
+work/research42/homological_graph.txt	PASS 42: ACTUAL SPANNING-TREE DIFFERENTIAL COUNTERTEST | 2026-11-01 | 
+work/research42/structural.txt	SIGNED-GRAPH CANCELLATION: BOUNDED STRUCTURAL AUDIT | 1 November 2026. Pass 42. No proof or counterexample to Jones detection. | 
+work/research42/torus_support_independent_audit.txt	INDEPENDENT AUDIT: T(3,5) SUPPORT MATCHING | 2026-11-01. Audit of torus_tree_support.json; no change to shared source data. | 
+work/research43/STOPPED_ROUTE.txt	PASS 43 STOP RECORD — 2026-11-01 |  | Main objective remains unsolved. No generic Jones-one nontrivial knot.
+work/research43/approximation.txt	APPROXIMATION, ARITHMETIC SEPARATION, AND EXACT JONES ONE | 1 November 2026. Bounded pass 43; no counterexample or detection proof. | 
+work/research43/arithmetic_braid.txt	FINITE-QUOTIENT COLLISIONS VERSUS EXACT GENERIC JONES IDENTITIES | 2026-11-01. Bounded structural audit. No generic Jones-one counterexample. | 
+work/research43/divisibility.txt	PASS 43: CAN INCREASING DIVISIBILITY FORCE AN EXACT JONES-ONE KNOT? | 2026-11-01 | 
+work/research44/STOPPED_ROUTE.txt	PASS 44 — 2026-11-01 |  | Previous goal turn: progress, because exact evidence closed the finite-field
+work/research44/algebraic_units.txt	PASS 44: INTEGRAL UNITS, LONG KNOTS, AND THE AMBIENT-MANIFOLD GAP |  | Bounded conceptual audit. No new Jones-unknot proof, counterexample, or
+work/research44/categorical_units.txt	PASS 44: CATEGORICAL UNIT REFLECTION FOR A CUT KNOT | 2026-11-01 | 
+work/research44/orientation_repair_algebra.txt	PASS44: ORIENTATION-INDEPENDENT REPAIR OF THE CLASP-MACHINE ARGUMENT |  | Outcome. The normalization F_L=x^{-3 ell(L)}V_L, ell=sum of pairwise
+work/research44/self_writhe_repair.txt	SELF-WRITHE NORMALIZATION REPAIR OF THE CARMI--COHEN DESCENT | Independent audit, 2026-11-01 | 
+work/research44/surgery_units.txt	PASS 44: SURGERY, LASAGNA CLASSES, AND ACTUAL HANDLE CANCELLATION | 2026-11-01. Bounded primary-source audit; no priority claim. | 
+work/research45/STOPPED_ROUTE.txt	PASS45 STOP RECORD -- 1 November 2026 |  | No proof of unknot detection and no actual Jones-one nontrivial knot.
+work/research45/geometric_realization.txt	PASS 45: CAN AN ACTUAL SURGERY GADGET REALIZE A FORMAL CANCELLATION? | 2026-11-01. Bounded research deduction; no priority claim. | 
+work/research45/kh_curves.txt	PASS 45: IMMERSED CURVES, FULL JONES CONTRIBUTIONS, AND REALIZABILITY | 2026-11-01. Bounded audit; no generic unknot-detection theorem is claimed. | 
+work/research45/quantum_identities.txt	PASS45: EXACT QUANTUM IDENTITIES VERSUS ACTUAL GEOMETRIC OPERATIONS |  | Outcome. No Jones-one knot or generic braid kernel was constructed.
+work/research46/STOPPED_ROUTE.txt	PASS46 STOP RECORD -- 1 November 2026 |  | Previous turn classified PROGRESS: a verified finite annular surgery no-go
+work/research46/complement_character.txt	PASS 46 — AN ACTUAL TEST OF JONES-TO-PERIPHERAL TRANSFER |  | Outcome: no new proof bridge. A concrete same-Jones countertest rules out
+work/research46/contextual_surgery.txt	PASS 46: CONTEXTUAL FULL TWISTS AND THE SINGLE-CHANNEL GATE | 2026-11-01. Deduction from standard annular skein formulas; no novelty claim. | 
+work/research46/geometric_limit.txt	PASS 46 — FINITE-ORDER JONES CORRECTIONS CANNOT FIRST CLOSE IN A TAME LIMIT | 2026-11-01 | 
+work/research47/STOPPED_ROUTE.txt	PASS47 STOP RECORD -- 1 November 2026 |  | Previous turn: PROGRESS. Exact one-disk family restriction moved next
+work/research47/anchored_families.txt	PASS 47 — ACTUAL COUPLED-TWIST FAMILIES WITH AN UNKNOT ANCHOR | Bounded primary-source test. No proof or counterexample to Jones detection. | 
+work/research47/coordinated_twists.txt	PASS 47: TWO OPPOSITE DISK TWISTS — AN ACTUAL CHANNEL-CANCELLATION TEST | 2026-11-01. Research deduction and countertest; no novelty claim. | 
+work/research47/ren_composition.txt	PASS 47 — WHAT COMPOSING REN GADGETS ACTUALLY DOES | 2026-11-01 | 
+work/research47/verification.txt	PASS: exact TL2 inverse, projector weights, source quantum-dimension relation, framing, and two-disk identities | Opposite twists are actual braid can
+work/research48/STOPPED_ROUTE.txt	PASS48 STOP RECORD -- 1 November 2026 |  | Previous turn classification: NO PROGRESS for the immediate final
+work/research48/relative_torsion.txt	PASS 48: THE RELATIVE-TORSION GATE AND AN UNLINKABLE-TANGLE ENDPOINT | 1 November 2026. Bounded research audit; no proof or counterexample. | 
+work/research48/torsion_geometry.txt	PASS 48: GEOMETRIC AUDIT OF THE LOW-DEGREE SKEIN TORSION ROUTE | 2026-11-01. Bounded deduction and route identification, not a solution. | 
+work/research48/twist_anchor.txt	PASS48 — THE ONE-PUNCTURED ANNULUS IS NOT THE DIAGONAL-CANCELLATION CASE | 2026-11-01. Bounded research deduction; no Jones detection proof/counterexa
+work/research48/twist_anchor_independent_audit.txt	INDEPENDENT AUDIT OF THE PURE-CHANNEL ARGUMENT | 1 November 2026. Bounded audit of work/research48/twist_anchor.txt. | 
+work/research49/STOPPED_ROUTE.txt	PASS49 STOP RECORD — 1 November 2026 |  | Previous substantive pass48: PROGRESS. It proved the internally checked
+work/research49/arc_geometry.txt	PASS49 — BRUNNIAN THETA-CURVE TEST FOR THE ELEMENTARY-ARC CONSTRUCTION | 2026-11-01. No proof of Jones detection, no counterexample construction. | 
+work/research49/dna_endpoint.txt	PASS 49: THE UNKNOT-ANCHORED FRAMED DNA ROUTE IS EXCLUDED | 1 November 2026. Research deduction from established theorems; no claim | of literature no
+work/research49/dna_endpoint_independent_audit.txt	INDEPENDENT AUDIT OF dna_endpoint.txt SECTIONS 2--3 | 2026-11-01. No new research claimed. | 
+work/research49/generic_scaffold.txt	PASS 49: A GLOBAL-REDUCTION OBSTRUCTION FROM SATELLITES AND COLOR PARITY | 2026-11-01. Internally checked deduction; no priority claim and no resoluti
+work/research50/STOPPED_ROUTE.txt	PASS50 STOP RECORD — 1 November 2026 |  | Previous goal turn: PROGRESS. Consolidated and independently checked the
+work/research50/global_endpoint.txt	PASS50 — CONNECTED-SUM AND PRIME-FIBER MECHANISM AUDIT | 2026-11-01. Bounded generic endpoint search. | 
+work/research50/lens_endpoint.txt	PASS 50: FRAMED RATIONAL TANGLE UNIQUENESS FROM FILLING THEORY | 1 November 2026. Research deduction from established results; independent | audit req
+work/research50/lens_endpoint_audit.txt	INDEPENDENT ADVERSARIAL AUDIT: FULL FRAMED RATIONAL-SOLUTION RIGIDITY | 1 November 2026. Auditor: twist_anchor. Research deduction, not an assertion |
+work/research50/longitude_edge.txt	Pass 50: the S1 x S2 / lens-space edge case is closed | 2026-11-01 | 
+work/research50/quantum_endpoint.txt	Pass 50: quantum/statistical-mechanics endpoint audit | 2026-11-01. This is an obstruction to two proposed mechanisms, not a proof or | counterexample
+work/research51/STOPPED_ROUTE.txt	PASS51 STOP RECORD — 1 November 2026 |  | Latest human instruction: stop rabbit holes, find a creative solution.
+work/research51/adversarial_audit.txt	PASS 51: SKEPTICAL AUDIT AND A DECISIVE GENERIC-ROUTE DIAGNOSTIC | 1 November 2026. Agent twist_anchor. | 
+work/research51/floer_endpoint.txt	PASS 51: WHAT THE FLOER ENDPOINT PROVES, AND THE TWO MISSING BRIDGES | 1 November 2026. Bounded audit; no new Jones theorem or counterexample. | 
+work/research51/general_y_formula.txt	Pass 51: general-homology-sphere longitude formula | 2026-11-01. Requested implication VERIFIED. No geometric unknot conclusion. | 
+work/research52/categorical_realizability.txt	PASS 52: UNIVERSAL DEFORMATION COMPATIBILITY DOES NOT REMOVE HIDDEN HOMOLOGY | 1 November 2026. Bounded global-mechanism test; no Jones theorem or | c
+work/research52/color_bootstrap.txt	Pass 52: root-of-unity Galois bootstrap audit | 2026-11-01. Bounded test of one specific mechanism. No new promotion theorem. | 
+work/research52/global_kernel.txt	PASS 52: BRUNNIANIZING THE BURAU KERNEL DOES NOT REMOVE THE RESIDUAL BLOCK | 1 November 2026. Bounded structural pass; no braid-word search. | 
+work/strategy14/braid.txt	STRATEGIC RESET: EXACT QUANTUM SYMMETRY, TESTED BY 3-MANIFOLD GLUING | 2026-10-31. Strategic memo, not a new theorem or a claimed counterexample. | 
+work/strategy14/braid_rotor_obstruction.txt	BOUNDARY-PARALLEL C4 ROTORS: A COMPLETE OBSTRUCTION TO INVERSE-BRAID SEARCH |  | Status: a short deduction from an equivariant bridge-disk theorem and
+work/strategy14/homology.txt	STRATEGIC RESET: GEOMETRY AND EULER CANCELLATION | 31 October 2026. Status: assessment, not a proof of Jones unknot detection. | 
+work/strategy14/tangle.txt	STRATEGY14: ROTORS, GEOMETRIC COMPLETION, AND COOPERATIVE CANCELLATION | Scope: conceptual research design, no enumeration, no new candidate or novelt
+work/strategy15/gauge_surgery.txt	JONES UNIT, BRANCHED COVERS, AND GAUGE THEORY: STRATEGIC AUDIT | 31 October 2026. No resolution of the Jones unknot conjecture is claimed. | 
+work/strategy15/maccoll.txt	Rotors in Khovanov Homology | Joseph MacColl | 
+work/strategy15/nugatory_orbit_audit.txt	BOUNDED AUDIT: A CYCLIC ORBIT OF GLOBALLY NUGATORY SURGERY CIRCLES |  | Proposed data: an actual C4-symmetric trivial rotor R0 in B, an asymmetric sta
+work/strategy15/orbit_linking_audit.txt	THE AUGMENTED-UNLINK GATE FOR THE EQUIVARIANT SURGERY CONSTRUCTION |  | Status: conceptual audit, not a counterexample construction or a proof of Jone
+work/strategy15/rotor_topology.txt	ROTOR-UNKNOT TOPOLOGY: WHAT COMPRESSIBILITY GIVES, AND WHERE SYMMETRY FAILS |  | Status: focused strategic pass following the proved boundary-parallel
+work/strategy15/surgery_seed_topology.txt	SURGERY-SEED AUDIT: GLOBALLY NUGATORY CAN BE LOCALLY ESSENTIAL | 31 October 2026. Internal research note; no generic Jones conclusion or novelty claim
+work/strategy15/suzuki_cover_obstruction_audit.txt	INDEPENDENT AUDIT: A NECESSARY COVER-SYMMETRY TEST FOR ROTORS |  | Result. Let M be the double cover of a ball branched over an actual n-rotor with 2n
+work/strategy15/tangle_construction.txt	STRATEGY15: ACTUAL GEOMETRY FOR A ROTOR OF THE UNKNOT | Status: bounded construction audit. No non-boundary-parallel C4 rotor with a | certified unkno
+work/strategy15/trivial_completion_independent_audit.txt	INDEPENDENT AUDIT: TRIVIAL COMPLETIONS OF UNKNOT-COMPLETABLE TANGLES | Status: internally checked deduction; no novelty claim. Audit of braid agent's 
+work/transmission18/generic.txt	QUOTIENT TRANSMISSION: GENERIC BRIDGE AUDIT AND THE 1/2-FILLING FORMULA | 31 October 2026. Status: proved conditional reductions and exact skein | cal
+work/transmission18/geometry.txt	GEOMETRY OF AN IDENTICALLY ZERO SHELL FACTOR | 31 October 2026. Bounded research pass; deductions, not novelty claims. | 
+work/transmission18/homology.txt	PASS 18: WHAT THE SATELLITE MULTIPLIER CANNOT BE | 31 October 2026. Research deductions; no claim of novelty. | 
+work/transmission18/progress.txt	Goal-turn audit, 31 October 2026. |  | The immediately preceding response principally reported already-saved
+work/transmission18/unknotting_one_reduction_audit.txt	DOES THE GENERAL JONES CONJECTURE REDUCE TO UNKNOTTING NUMBER ONE? | Focused literature audit, 31 October 2026. | 
+work/transmission18/whitehead_factor_and_clasp_audit.txt	WHITEHEAD FACTOR AND CLASP-CIRCLE AUDIT | 31 October 2026; bounded internal research audit, not a novelty claim. | 
+work/try8/README.txt	REPRODUCIBLE EVIDENCE: CONCRETE JONES EXPERIMENTS, 2026-10-31 |  | Read outputs/jones-concrete-experiments.txt for scope and conclusions.
+work/try8/audit/processive_audit.txt	Independent audit of the all-integer processive classification | 2026-10-31, generic_braid | 
+work/try8/audit/tangle_pair_audit.txt	Independent audit, 2026-10-31, generic_braid |  | Let X=<-1>+<1/2>+<1/3> and R=<1/4>, using Spherogram's
+work/try8/quiver/finalists.txt	FINALIST 1 D5 79200 | 0 0 0 6 0 0 1 | 0 0 11 0 1 0 10
+work/try8/quiver/result.txt	COMPLETE OBSTRUCTION FOR THE FIXED SEVEN-NODE INTERACTION FAMILY | 2026-10-31. Exact finite computation, independently checked. This is an | obstructi
+work/try8/tangle/processive_proof.txt	ALL INTEGER REACTION POWERS FOR ONE ACTUAL NONRATIONAL DNA TANGLE |  | Status: exact deduction and reproducible calculation, not a generic Jones
+work/verification-results.txt	L=1: max x-exponent=8; p-degree=7; b_7=-1 | -x^8 + x^6 + x^2 | L=3: max x-exponent=12; p-degree=11; b_11=-1

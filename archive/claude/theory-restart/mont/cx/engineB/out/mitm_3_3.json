@@ -1,0 +1,1 @@
+{"D1": 3, "D2": 3, "P": 2305843009213690801, "tops": 62, "bottoms": 97, "knot_pairs": 4031, "pass7": 975, "stats": {"J=1 unknot(V=1,Delta=1)": 975, "J!=1 (filter false positive)": 0, "HIT": 0}, "unknot_examples": ["s.l1.l1.u2.u2", "s.l1.l1.x0.u2.u2", "s.l1.l1.y0.u2.u2", "s.l1.l1.x0.x0.u2.u2", "s.l1.l1.y0.y0.u2.u2"]}

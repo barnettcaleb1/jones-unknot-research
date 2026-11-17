@@ -1,0 +1,19 @@
+=== fig8_var_0.0025_0.4_0.1 ===
+samples N=29831  length=74.58
+crossings matched: 4 (markers 4)
+symmetric diagram: 4 crossings, writhe x = 0
+Jones(K) = t^-2 - t^-1 + 1 - t + t^2
+det(K) = |V_K(-1)| = 5.0
+correction interval: indices 13516..16314 (2799 samples, x from -3.50 to 3.50, through the top fixed point), k = 0 turns
+cover projection: 90 crossings; lk(K,l+)=0 lk(K,l-)=0 lk(l+,l-)=0
+Gauss integral lk(K,l+) ~ -0.0004
+quotient proj 0: 25 crossings (B-L: 12, L-L: 13), lk(B,L)=0, writhe 3, maxstates 100
+  V_S(t)   = -t^(-5/2) + 2*t^(-3/2) - 3*t^(-1/2) + t^(1/2) - t^(3/2) + t^(7/2) - 2*t^(9/2) + 2*t^(11/2) - 2*t^(13/2) + t^(15/2)
+  J_S(q)   = q^-5 - 2*q^-3 + 3*q^-1 - q + q^3 - q^7 + 2*q^9 - 2*q^11 + 2*q^13 - q^15    [Snape normalisation, t^(1/2) = -q]
+  equals 2-unlink V = -t^(1/2) - t^(-1/2)? False
+quotient proj 1: 25 crossings (B-L: 12, L-L: 13), lk(B,L)=0, writhe 1, maxstates 50
+  V_S(t)   = -t^(-5/2) + 2*t^(-3/2) - 3*t^(-1/2) + t^(1/2) - t^(3/2) + t^(7/2) - 2*t^(9/2) + 2*t^(11/2) - 2*t^(13/2) + t^(15/2)
+  J_S(q)   = q^-5 - 2*q^-3 + 3*q^-1 - q + q^3 - q^7 + 2*q^9 - 2*q^11 + 2*q^13 - q^15    [Snape normalisation, t^(1/2) = -q]
+  equals 2-unlink V = -t^(1/2) - t^(-1/2)? False
+projections agree: True
+L alone: 13 crossings, Jones(L) = 1 (unknot iff 1)

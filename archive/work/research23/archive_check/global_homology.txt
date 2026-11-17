@@ -1,0 +1,79 @@
+PASS 23: GLOBAL KHOVANOV-RANK COMPACTNESS — STRATEGIC AUDIT
+1 November 2026. No proof of Jones unknot detection and no counterexample to H-rank.
+
+The useful concrete outcome is an actual-knot obstruction to replacing the whole Jones polynomial by a bounded numerical amplitude, coefficient entropy, sparsity, or finite-state representation. The proposed global geometric bridge remains missing. No new Watson or mutation enumeration was undertaken.
+
+1. A decisive actual family: three-term Jones polynomials, unbounded homology
+
+For k>=1 let K_k=T(3,3k+1). With the positive-torus convention,
+
+  V_Kk(t)=t^(3k)+t^(3k+2)-t^(6k+2),
+  dim_Q Kh_red(K_k)=4k+1.
+
+The rank statement follows directly from Schütz, Theorem 5.3(2): the reduced specialization X=h=0 has one free generator and 2k two-generator blocks, with zero differential. The two block types have endpoint gaps (1,2) and (1,4). In reduced grading the full polynomial is
+
+  P_k(u,q) = q^(6k)
+    + sum_(m=0)^(k-1) u^(4m+2) q^(6(k+m)+4) (1+u q^2)
+    + sum_(m=1)^k u^(4m) q^(6(k+m)) (1+u q^4).
+
+Substituting u=-1 makes the interior terms telescope, leaving
+q^(6k)+q^(6k+4)-q^(12k+4). This proves the Jones formula in the stated normalization, without depending on a separate torus-knot Jones convention.
+
+Primary source: Dirk Schütz, On the Khovanov homology of 3-braids, arXiv:2501.11547v1, Theorem 5.3(2) and reduced specialization.
+https://arxiv.org/html/2501.11547v1
+
+Consequences, obtained directly from the displayed formulas:
+
+* The number of nonzero Jones coefficients is always three, and their absolute values are always 1,1,1.
+* The coefficient l1 norm is 3 and l2 norm is sqrt(3).
+* On the entire unit circle, |V_Kk(t)|<=3. Every finite-p mean of its magnitude is therefore uniformly bounded; its Mahler measure is at most sqrt(3) by Jensen and Parseval.
+* For even k, the determinant |V_Kk(-1)| is exactly one, while the homology rank is 8(k/2)+1 and tends to infinity.
+* Nevertheless the reduced homology rank tends to infinity.
+
+Thus no bound on rank in terms only of coefficient magnitudes, sparsity, coefficient entropy, determinant, or a monotone function of the supremum of |Jones| on the unit circle can hold. In particular, there is no universal estimate log(rank Kh_red)<=C log(sup |V|)+D.
+
+This is NOT a counterexample to fixed-WHOLE-polynomial compactness: the exponent gap 3k grows. It identifies an indispensable input for any successful compactness theorem. The locations of Jones coefficients, and not merely their magnitudes or the size of quantum amplitudes, must carry the proposed bound. The cancellation is realized by actual classical prime knots, so abstract-complex realizability cannot rescue the rejected numerical versions.
+
+2. Why finite state spaces, efficient encoding, and ordinary Noetherianity do not close the gap
+
+A fixed braid index supplies a fixed Temperley--Lieb state space for computing Jones. It does not uniformly bound categorical multiplicities. Kelomäki--Schütz give actual closed three-braids with exponential rational Khovanov ranks, while their invariant can still be computed in polynomial time using compressed formulas. Their bounds on homology in a prescribed degree depend on the diagram's crossing number, not only on its Jones polynomial.
+
+Primary source: On computational complexity of Khovanov homology, arXiv:2601.02119v1, Theorems 1.2--1.4, Proposition 1.5, and the weaving-braid example in Section 3.
+https://arxiv.org/html/2601.02119v1
+
+Likewise a fixed Noetherian coefficient ring guarantees finite generation for each individual module, not a uniform bound on the number of generators over a collection. Graded perfect complexes over Q[X] can have fixed Euler class and arbitrarily many torsion blocks. Even a fixed finite set of possible block types leaves their multiplicities unbounded. This is a purely algebraic limitation, not a claim that the corresponding formal complexes are knots. Earlier full tangle and lifted-Lee countermodels already demonstrate the missing realizability input; repeating them does not add a bridge.
+
+An algebro-geometric compactness argument would genuinely work IF one could construct, for each Jones polynomial P, a quasi-compact finite-type parameter space together with a universal perfect complex whose fibers include the reduced complexes of EVERY knot with Jones P. Finite affine covers and bounded locally free presentations would then uniformly bound fiber homology. Neither finite generation of the tangle algebra nor the existence of individual perfect complexes constructs such a parameter space. The missing theorem is global boundedness of presentations, not Hilbert's basis theorem.
+
+3. An exact diagnosis: polynomial factorization does not evade the unit fiber
+
+Let H-prime mean that for each fixed Jones polynomial P, reduced rational Kh rank is bounded among PRIME knots with Jones P. Then
+
+  H-rank for all knots  <=>  [Jones detects the unknot AND H-prime].
+
+Forward: the connected-sum argument already proves detection, and restricting a bound to primes gives H-prime.
+
+Reverse: assume detection and H-prime. Fix a nonzero Jones polynomial P. Factor P in the UFD Z[t,t^-1], ignoring its Laurent unit. There are finitely many divisor multisets. For each divisor, the conditions Q(1)=1 and Q'(1)=0 determine at most one Laurent-unit normalization: the sign is fixed by Q(1), and multiplication by t^e changes Q'(1) by e. Thus only finitely many Jones polynomials can occur for prime factors of a knot with polynomial P. Every nonunit prime-factor polynomial consumes at least one irreducible factor of P, so their number is bounded by the total irreducible multiplicity Omega(P). Detection excludes nontrivial prime factors with polynomial 1. Taking the largest prime-rank bound over the finite divisor list and multiplying bounds over at most Omega(P) factors gives H-rank. For P=1, detection already says the fiber is the unknot.
+
+Consequently, prime-fiber compactness plus Laurent-polynomial factorization cannot independently settle the problem. A hypothetical Jones-one prime can be inserted with arbitrary connected-sum multiplicity at no polynomial cost. Any argument based on counting nonunit polynomial factors misses exactly the difficult case.
+
+4. A concrete operational bridge, with the entire conditional chain
+
+A more geometric target than unspecified module finite generation is a Jones-controlled algebraic discrete-Morse theorem:
+
+  M: For every P there is F(P)<infinity such that each actual knot K with V_K=P
+  has an actual diagram D whose reduced enhanced-state cube admits an acyclic
+  algebraic Morse matching leaving at most F(P) unmatched generators.
+
+Require the matching on the actual enhanced-state basis, using invertible differential entries, rather than arbitrary changes of basis after homology has already been computed. This distinction matters: allowing arbitrary Gaussian reduction to a minimal complex would merely rephrase H-rank. The permitted matching structure is a concrete planar-cobordism constraint, and the number of unmatched generators is an independently checkable certificate.
+
+Algebraic discrete Morse theory gives a chain-homotopy-equivalent complex on the unmatched generators. Therefore M gives rank Kh_red(K)<=F(P). If V_K=1, apply M separately to every K#...#K. Reduced Kunneth gives rank r(K)^m; hence r(K)^m<=F(1) for every m, forcing r(K)=1. Kronheimer--Mrowka then gives K=U. This is a complete conditional chain, with M its single new geometric premise.
+
+The acyclic-matching theorem is standard and is stated explicitly as Theorem 2.2 in Kelomäki--Schütz. The unknot endpoint is Kronheimer--Mrowka:
+https://people.math.harvard.edu/~kronheim/khovanov-unknot.pdf
+
+M is an ambitious stronger hypothesis, not an established mechanism or an easier reformulation. No construction of its matchings has been found here. The earliest proposed simplification of M is already killed by Section 1: assigning a uniformly bounded number of critical generators to each NONZERO Jones monomial cannot work. Three monomials would give a constant bound, whereas every matching for K_k must leave at least 4k+1 generators. A possible matching theorem would have to charge critical states to exponent gaps or other information in the entire P, and show why those charges cannot proliferate invisibly within one fixed P. That latter step is precisely the unresolved geometric work.
+
+5. Recommendation
+
+Keep the exact H-rank implication as a global scaffold. Do not invest in unqualified Noetherianity, bounded quantum-amplitude, or finite-state arguments: they lack the needed boundedness theorem, and natural quantitative versions are refuted by explicit torus knots. A meaningful next proof attempt must state an actual geometry-sensitive compression theorem such as M, together with a local construction or countertest. No such generic construction was obtained in this bounded pass. No counterexample to H-rank, and no full Jones-unknot proof, is claimed.

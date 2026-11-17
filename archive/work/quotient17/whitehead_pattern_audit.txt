@@ -1,0 +1,175 @@
+WHITEHEAD QUOTIENT PATTERN: INDEPENDENT GEOMETRIC AUDIT
+2026-10-31. Research deduction, internally checked; no novelty claim.
+
+Scope. This concerns the exterior quotient of a strongly invertible knot,
+with its meridian and preferred longitude marked. It is NOT the familiar
+Whitehead clasp tangle whose double cover has companion K#K^r.
+
+1. ACTUAL GEOMETRIC MAP
+
+Write W=E(P union A), the standard Whitehead link exterior; A is the
+unknotted axis and P is the Whitehead pattern component. The usual
+component-preserving strong inversion strongly inverts BOTH components.
+Its quotient is S^3 minus two balls, with four marked branch endpoints
+on each boundary sphere. Gluing an actual four-ended tangle into one
+boundary therefore defines an R-linear map F on the rank-two relative
+Kauffman bracket skein module, R=Z[A,A^-1]. We may extend scalars to Q(A).
+
+There are two inherited inversions of a Whitehead double, according to
+which fixed point of the companion carries the clasp. Each is realized
+by this construction, with the corresponding boundary marking/direction.
+See Dai--Mallick--Taniguchi, arXiv:2606.05819, Example 2.22 and Figure 4.
+The negative clasp follows by mirroring the pattern. The argument below
+applies separately to all these choices; it does not classify unrelated
+strong inversions of a Whitehead double.
+
+2. SLOPES AND FRAMING
+
+On the A boundary use meridian mu_A and preferred longitude lambda_A.
+For V=S^3 minus N(A), its meridian is lambda_A and longitude is mu_A.
+Satellite gluing identifies mu_K with lambda_A and lambda_K with mu_A.
+The exterior of an unknot has contractible slope lambda_U. Its rational
+quotient Q_0 therefore fills A along mu_A. More generally let Q_n be the
+rational tangle whose covering solid torus has contractible slope
+lambda_U+n mu_U. It fills A along mu_A+n lambda_A, namely 1/n surgery.
+Since A is an unknot, this ambient manifold is S^3 for every integer n.
+The image of P is the n-twisted Whitehead pattern on the unknot, a twist
+knot. In a standard sign convention its Alexander polynomial is
+  Delta_n(t)=-n(t+t^-1)+(1+2n),  a_2=-n.
+Changing conventions changes the sign of n, never its nonvanishing.
+
+Crucially, lk(P,A)=0. Thus lambda_P is already zero in H_1(W), and remains
+the preferred longitude after either these fillings or a satellite
+gluing of E(K). Equivalently the surgery-induced framing correction is
+n*lk(P,A)^2=0. The output meridian is also fixed. These markings are what
+allow comparison of the SAME output zero closure for all n.
+
+Primary surgery + polynomial source: Dubois--Huynh--Yamaguchi,
+arXiv:0706.2213v3, Remark 2(4)--(5): W(1/m)=E(J(2,-2m)), with the
+displayed Alexander polynomial above.
+https://arxiv.org/html/0706.2213v3
+
+3. WHY F HAS RANK TWO (NO QUOTIENT PD NEEDED)
+
+For n=0 the pattern knot P_0(U) is an unknot. Its exterior quotient is a
+rational tangle, with the marked longitude zero and meridian infinity.
+Thus F(Q_0) is a nonzero framing monomial times the output Q_0.
+
+Suppose rank(F)=1 over Q(A). Every F(Q_n) would be proportional to
+F(Q_0). Each output is an ACTUAL knot exterior quotient with meridian
+closure U. Applying that framed closure functional shows the scalar of
+proportionality is a framing monomial, not an arbitrary rational function:
+both framed unknot brackets are powers of -A^3. Consequently its zero
+closure has bracket a monomial times delta, delta=-A^2-A^-2.
+
+The independently audited Garoufalidis/Casson lemma says that any actual
+exterior quotient with U meridian closure and zero-closure Jones a
+monomial times the two-component unlink polynomial has a_2(companion)=0.
+(See ../fanout16/realizability_zero_filling.txt.) Applied to n=1, this
+contradicts a_2(P_1(U))=+/-1. Therefore rank(F)=2: F is injective over
+Q(A), and hence on the integral skein module as well.
+
+4. PRECISE CONSEQUENCE
+
+For any strongly invertible companion K and the chosen inherited
+Whitehead inversion, its exterior quotient is projectively skein-equal
+to the preferred rational Q_0 if and only if K's exterior quotient is.
+Indeed F(T_K) proportional to F(Q_0), together with injectivity, is
+equivalent to T_K proportional to Q_0. The proportionality is fixed to
+a framing monomial by the actual meridian-unknot closures.
+
+In particular, a companion with a_2(K) nonzero cannot acquire this
+property under untwisted Whitehead doubling, despite the double itself
+having Alexander polynomial 1. This excludes the trefoil Whitehead
+seed, both inherited clasp placements and either clasp sign, from the
+previous formal Jones-flat tangle realization target. Repeating the
+argument also excludes its iterated inherited Whitehead doubles.
+
+5. ORIENTATION LEMMA: EXACT ZERO JONES EQUALITY IS ENOUGH
+
+Let T be an actual two-string tangle whose standard infinity closure
+is U, and whose standard zero closure L has EXACT normalized Jones
+polynomial V_L=V_U2. Then [T] is a framing monomial times Q_0.
+
+Proof. L has two components (also follows from V_L(1)=-2). The first
+derivative formula V'_L(1)=-3 lk(L) follows directly by differentiating
+the Jones skein relation: a mixed crossing change changes V' by -3 and
+lk by +1, while a self-crossing change does not change V'; normalize on
+the unlink. Thus lk(L)=0. Reversing one component multiplies Jones by
+t^(-3 lk), so does not alter V_L. Orient U and then orient the two
+components of L so the directions on both tangle arcs agree with U.
+The standard zero and infinity closure arcs have no crossings. Hence
+both closure diagrams have identical writhe w. Their framed brackets
+are therefore (-A^3)^w delta and (-A^3)^w, respectively. The two closure
+functionals have matrix [[delta,1],[1,delta]] on (Q_0,Q_infinity), whose
+determinant delta^2-1 is nonzero. Thus [T]=(-A^3)^w[Q_0], as claimed.
+
+This proves the Whitehead exclusion above also rules out EXACT
+zero-filling Jones equality to U2, not merely a prescribed framed
+vector. Conversely, a projective Q_0 vector with an actual meridian
+unknot closure has exact V_U2 as its zero-closure Jones polynomial in
+the compatible orientation: the common writhe is fixed by the meridian
+closure. Its linking number is then zero, so the orientation choice
+does not affect this conclusion. Therefore inherited untwisted
+Whitehead doubling preserves this exact zero-Jones-unlink property in
+BOTH directions.
+
+The orientation lemma was independently checked by the homology agent
+on 2026-10-31: no gap found for EXACT equality. For monomial-only
+normalized equality, do not use this converse
+without another orientation argument; the rank-two proof itself needs
+only the separately established monomial version of the Casson lemma.
+
+Orientation-reversal primary source: Lickorish--Millett, Some evaluations
+of link polynomials, Comment. Math. Helv. 61 (1986), Jones reversing
+result in Section 4.
+https://web.math.ucsb.edu/~millett/Papers/1986Millett6LickorishCommMathHelv.pdf
+
+6. LIMITS / WHAT WAS NOT COMPUTED
+
+No PD code or explicit Jones polynomial of the Whitehead-trefoil zero
+branch link was constructed. Instead, the above gives a uniform
+non-equality certificate for the inherited-inversion family. It does
+not establish generic Jones unknot detection, nor a statement about
+ordinary V_Wh(K) by itself, nor detection for arbitrary inversion axes.
+
+Rejected figure shortcut: Baldwin--Sivek arXiv:2208.03307, Proposition
+7.7 / Figure 27, lifts a CLOSED component kappa through a cover branched
+over U. This supplies a periodic symmetry of a twisted Whitehead knot,
+not directly the required strong-inversion exterior quotient. It was
+not used as a quotient certificate.
+
+7. STRONGER NORMAL FORM AND DEFECT-RECOVERY LAW
+
+Root's additional structural deduction was independently audited here.
+Let f_infinity and f_0 be the standard bracket closure functionals, with
+f_infinity(Q_0)=1, f_infinity(Q_infinity)=delta. Meridionally filling the
+P boundary of W restores E(A). Its compressible slope is lambda_A, which
+is identified with the input mu_K. Therefore its quotient is exactly
+the input rational infinity cap. It follows geometrically, for ALL
+skein inputs, that
+  f_infinity F = c f_infinity,
+where c is one fixed framing monomial, independent of the input. There
+are no extra closed branch components: this is the exterior quotient
+of the strongly inverted unknot A, hence a rational two-string tangle.
+
+Since F(Q_0) is proportional to the preferred output Q_0, applying this
+functional shows that its scalar is the same c. Replace F by c^-1 F.
+Then
+  f_infinity F=f_infinity,   F(Q_0)=Q_0.
+The vector v=Q_infinity-delta Q_0 spans ker(f_infinity), which is
+F-invariant. Consequently F(v)=d v for a nonzero Laurent polynomial
+d in Z[A,A^-1]. Nonvanishing is the rank-two theorem above. Integrality
+follows because c is a unit and the change of basis (Q_0,v) is unimodular.
+Equivalently the normalized matrix on (Q_0,Q_infinity) is
+  [[1, delta(1-d)], [0,d]].
+
+For any T with f_infinity(T) nonzero define its normalized defect
+  x(T) = (f_0(T)/f_infinity(T)-delta)/(1-delta^2).
+Writing T=f_infinity(T)Q_0+bv shows x(T)=b/f_infinity(T), hence
+  x(F(T))=d x(T).
+This applies automatically to an actual unknot-meridian exterior
+quotient, whose framed f_infinity is a nonzero monomial. Thus Whitehead
+doubling scales, but cannot erase, the non-rational Jones channel.
+Recovery by division by d is over Q(A); d has not been shown to be a
+unit. No explicit polynomial d was computed in this pass.

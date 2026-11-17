@@ -1,0 +1,116 @@
+Uniform band twists: a surgery and linear-algebra obstruction
+31 October 2026, America/Chicago
+
+This is an obstruction to a class of counterexample constructions. It does
+not resolve whether the ordinary Jones polynomial detects the unknot. No
+novelty or external expert-verification claim is made.
+
+GENERAL STATEMENT
+Start with an actual unknot U and r disjoint marked two-strand twist balls.
+The strands at each site are antiparallel. Let L be the oriented link obtained
+by the cup-cap replacements (the inverse bands) at all marked sites. Let K_k
+insert k full twists at every site, with the same local handedness in
+orientation-preserving charts. Thus K_0=U, and all K_k remain knots.
+
+The common-handed convention is essential. In the local normalized
+Temperley-Lieb convention used here, all sites use the same eigenvalue
+z=A^8=t^-2; reversing every local convention is harmless, but reversing just
+one site changes the hypothesis.
+
+There is a symmetric integral r-by-r surgery matrix B such that
+
+ H1(Sigma_2(L);Z) = coker B,
+ |V(K_k;t=-1)| = |det(I + epsilon*2k B)|,  epsilon in {+1,-1}.       (1)
+
+If V(K_k)=1 for infinitely many integers k, then B=0. In particular
+H1(Sigma_2(L);Z) must be free abelian of rank r. The same necessary condition
+already follows from determinant one at infinitely many k.
+
+PROOF OF THE SURGERY FORMULA
+The double branched cover of the actual unknot is S3. The inverse-band arcs
+lift to a framed r-component link in S3. On its ith boundary torus, let mu_i
+be the original meridian filling and lambda_i the band-smoothing filling.
+They have distance one, so lambda_i is an integral framed longitude. Write
+lambda_i=preferred_longitude_i + B_ii*mu_i; the off-diagonal B_ij are the
+pairwise linking numbers of the lifted components. Therefore B is symmetric,
+and filling all lambda_i presents the homology of Sigma_2(L) by B.
+
+A local half twist lifts to a Dehn twist; a full twist lifts to its square.
+The kth full twist changes the filling to mu_i+epsilon*2k*lambda_i. The
+same-handed local charts give one common epsilon. In meridian generators
+these simultaneous filling relations form I+epsilon*2kB, proving (1).
+The usual identity |V_K(-1)|=|H1(Sigma_2(K))| then gives the determinant.
+
+PROOF OF THE OBSTRUCTION
+Put P(s)=det(I+epsilon*2sB). If |P(k)|=1 for infinitely many integers, the
+polynomial P(s)^2-1 has infinitely many roots, hence vanishes identically.
+Since P(0)=1, P is identically1.
+
+Its linear coefficient gives tr B=0. Its quadratic coefficient gives
+
+             (tr B)^2-tr(B^2)=0.
+
+For a real symmetric matrix,
+
+             tr(B^2)=sum_i B_ii^2 + 2 sum_(i<j) B_ij^2.
+
+Every summand is nonnegative, so B=0. The r=1 case follows already from
+the linear coefficient. Equivalently, the real eigenvalues of B must all
+vanish. This argument requires neither positivity nor definiteness of B.
+
+If B is nonzero, P has degree rank(B). Consequently there are at most
+2*rank(B) real parameter values, hence at most that many integer values,
+at which the determinant can be1. This is an upper bound, not an existence
+statement about Jones-one knots at those parameters.
+
+APPLICATION TO EVERY QUALIFYING TWO-BAND PRESENTATION OF EKT LLL(1)
+For the concrete three-component link LLL(1), exact diagram calculations give
+
+                    H1(Sigma_2(LLL(1))) = Z + Z/144.
+
+Thus every disjoint oriented pair of inverse bands based at an actual unknot
+and producing this link has a rank-one integral symmetric matrix B. It can
+be written B=d*v*v^T with v a primitive integer vector and |d|=144, because
+the nonzero Smith invariant is the gcd of the entries. Consequently
+
+ |tr B| = 144*(v_1^2+v_2^2) >=144,
+ det(I+epsilon*2kB) = 1+epsilon*2k*tr B.
+
+For every nonzero integer k this has absolute value at least288*|k|-1,
+and therefore at least287. In particular EVERY nonzero uniform coherent
+twist in EVERY such marked two-band presentation has nonunit Jones polynomial.
+This conclusion is independent of the length, placement, or complexity of
+the qualifying embedded bands. It improves the prior result for one band pair.
+
+ESSENTIAL LIMITS
+Opposite twist signs are different. For example,
+ B=2[[1,1],[1,1]], D=diag(1,-1)
+has B nonzero but DB nonzero nilpotent, so det(I+2kDB)=1 for every k.
+This is a matrix example, not a Jones-one knot construction. It explains why
+the symmetric-matrix proof must not be applied to mixed signs.
+
+For two bands with double smoothing Jones delta^2, the separate exact skein
+formula and signature argument also exclude a whole linear Jones-one family
+twisting both bands at unequal nonzero rates when b1(Sigma_2L)=1. They do
+not exclude isolated mixed-sign parameter choices, coordinate families,
+different starting links, or the remaining general Jones unknot problem.
+Finally, B=0 is only a necessary condition: it does not establish Jones1
+or topological triviality.
+
+PRIMARY SOURCES AND CHECKS
+Montesinos surgery/tangle correspondence, with a modern primary account:
+McCoy--Zentner, The Montesinos trick for proper rational tangle replacement,
+https://arxiv.org/html/2110.15106, Sections1.1 and2.
+Owens--Strle, Disoriented homology and double branched covers,
+https://arxiv.org/html/2207.09358, Sections7 and10.
+Eisermann, The Jones polynomial of ribbon links,
+https://pnp.mathematik.uni-stuttgart.de/igt/eiserm/publications/ribbonlinks.pdf,
+introduction and Section7.6 for the ordinary determinant identity and phase.
+Eliahou--Kauffman--Thistlethwaite, Infinite families of links with trivial
+Jones polynomial, https://homepages.math.uic.edu/~kauffman/ekt.pdf, Section4.3.
+
+The LLL(1) homology was checked from its full PD Fox presentation and separately
+from its integral Goeritz matrix. The local filling conventions, common-sign
+condition, and linear algebra were separately audited in work/research35.
+The previously recorded explicit family gives |1-576k| on its equal-twist
+diagonal, consistent with (1). No general claim is inferred from that sample.

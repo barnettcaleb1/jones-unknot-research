@@ -1,0 +1,831 @@
+{
+  "case": "nonzero_control",
+  "input_word": [
+    2,
+    1,
+    -2,
+    3,
+    2,
+    -3
+  ],
+  "cap_indices": [
+    3,
+    7
+  ],
+  "checked_lobe_incidences": 2629,
+  "nonzero_differences": 0,
+  "connector_parked_positions_omitted": 16,
+  "example": null,
+  "parked_position_summary": [
+    {
+      "matching": 0,
+      "parked_index": 0,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "-373/3670"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 1,
+      "adjacent_puncture": 4,
+      "target_segment": 17,
+      "parked_position": [
+        "42837/10300",
+        "-119/515"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 2,
+      "adjacent_puncture": 4,
+      "target_segment": 14,
+      "parked_position": [
+        "47263/11750",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 3,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "373/5730"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 4,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 5,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 6,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 7,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 8,
+      "adjacent_puncture": 4,
+      "target_segment": 14,
+      "parked_position": [
+        "1485163/370100",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 9,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "25849/451200"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 10,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "-25849/289000"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 11,
+      "adjacent_puncture": 4,
+      "target_segment": 18,
+      "parked_position": [
+        "305467/74020",
+        "-13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 12,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "-200239/2235125"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 13,
+      "adjacent_puncture": 4,
+      "target_segment": 18,
+      "parked_position": [
+        "4725087/1144940",
+        "-13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 14,
+      "adjacent_puncture": 4,
+      "target_segment": 14,
+      "parked_position": [
+        "22973121/5724700",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 15,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "200239/3489575"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 16,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 17,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 18,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 19,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 0,
+      "parked_index": 20,
+      "adjacent_puncture": 4,
+      "target_segment": 14,
+      "parked_position": [
+        "1818801/453100",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 21,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "32219/552400"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 22,
+      "adjacent_puncture": 4,
+      "target_segment": 16,
+      "parked_position": [
+        "213/50",
+        "-1111/12200"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 0,
+      "parked_index": 23,
+      "adjacent_puncture": 4,
+      "target_segment": 18,
+      "parked_position": [
+        "1870437/453100",
+        "-13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 0,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 1,
+      "adjacent_puncture": 2,
+      "target_segment": 10,
+      "parked_position": [
+        "13933/7100",
+        "-13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 2,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 3,
+      "adjacent_puncture": 2,
+      "target_segment": 12,
+      "parked_position": [
+        "87/50",
+        "163/2085"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 4,
+      "adjacent_puncture": 2,
+      "target_segment": 14,
+      "parked_position": [
+        "1963/1000",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 5,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 6,
+      "adjacent_puncture": 2,
+      "target_segment": 11,
+      "parked_position": [
+        "13557/7700",
+        "-58/385"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 7,
+      "adjacent_puncture": 2,
+      "target_segment": 12,
+      "parked_position": [
+        "87/50",
+        "-163/1315"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 8,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 9,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 10,
+      "adjacent_puncture": 2,
+      "target_segment": 11,
+      "parked_position": [
+        "418553/237300",
+        "-365/2373"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 11,
+      "adjacent_puncture": 2,
+      "target_segment": 12,
+      "parked_position": [
+        "87/50",
+        "-3987/32408"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 12,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 13,
+      "adjacent_puncture": 2,
+      "target_segment": 12,
+      "parked_position": [
+        "87/50",
+        "3987/51392"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 14,
+      "adjacent_puncture": 2,
+      "target_segment": 14,
+      "parked_position": [
+        "2057023/1047500",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 15,
+      "adjacent_puncture": 2,
+      "target_segment": 16,
+      "parked_position": [
+        "113/50",
+        "-691/6600"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 16,
+      "adjacent_puncture": 2,
+      "target_segment": 18,
+      "parked_position": [
+        "12309/5900",
+        "-13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 17,
+      "adjacent_puncture": 2,
+      "target_segment": 12,
+      "parked_position": [
+        "87/50",
+        "801/15175"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 18,
+      "adjacent_puncture": 2,
+      "target_segment": 14,
+      "parked_position": [
+        "49441/24800",
+        "13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 19,
+      "target_segment": 9,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    },
+    {
+      "matching": 1,
+      "parked_index": 20,
+      "adjacent_puncture": 2,
+      "target_segment": 10,
+      "parked_position": [
+        "9311/4960",
+        "-13/50"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 21,
+      "adjacent_puncture": 2,
+      "target_segment": 12,
+      "parked_position": [
+        "87/50",
+        "-801/9625"
+      ],
+      "parked_winding_range": [
+        0,
+        0
+      ],
+      "adjacent_winding_range": [
+        0,
+        0
+      ],
+      "difference_range": [
+        0,
+        0
+      ],
+      "nonzero_differences": 0
+    },
+    {
+      "matching": 1,
+      "parked_index": 22,
+      "target_segment": 19,
+      "status": "CONNECTOR_NO_CANONICAL_ADJACENT_PUNCTURE"
+    }
+  ],
+  "scope": "Only this existing nonzero control, not either kernel-braid configuration. No new word or minimization."
+}

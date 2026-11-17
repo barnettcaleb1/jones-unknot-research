@@ -1,0 +1,175 @@
+PASS 45: CAN AN ACTUAL SURGERY GADGET REALIZE A FORMAL CANCELLATION?
+2026-11-01. Bounded research deduction; no priority claim.
+
+Outcome
+-------
+No Jones-one knot candidate was constructed. A specific proposed route
+through Kirby coloring fails at a small, exact realization test: no actual
+finite annular link, even after normalizing by its own nonzero evaluation,
+can act as the positive or negative surgery twist on just the two even
+channels 0 and 2. The required formal coefficient has a pole at A=1.
+There is also a quantitative obstruction for rational formal gadgets:
+matching N+1 consecutive channels requires annular degree at least N.
+
+Scope is crucial. This is an obstruction to replacing a surgery color by
+a fixed finite link inserted around arbitrary external strands. It does
+not prohibit actual Dehn surgery, a full-twist braid drawn on a specified
+number of strands, or a cancellation tailored to one particular exterior.
+
+1. The proposed complete route and the first gate
+------------------------------------------------
+The construction under examination would convert a formal quantum
+identity into surgery circles or ribbon handles, use handle slides to
+absorb its signed summands, and then remove those circles to leave one
+ordinary knot. A successful construction would have to verify all of:
+
+ (a) one actual framed diagram, not a sum of diagrams, realizes the needed
+     operation in the contexts where the quantum identity is used;
+ (b) the surgeries return S^3 and the surviving diagram has one component;
+ (c) the exact ordinary Jones polynomial is one;
+ (d) a separate geometric invariant certifies nontriviality.
+
+The universal Kirby-color implementation of (a) fails below. Therefore
+there is no reason to pursue (b)--(d) for this implementation. This is not
+a claim that every possible contextual realization must fail.
+
+Duplicate check: research27/tangle_realization.txt already warns that
+Kirby colors and clasper sums are not single diagrams. The finite-channel
+integrality obstruction proved here makes that warning precise for the
+surgery-twist color. It is separate from the prior finite-type/clasper
+approximation results and from the braid agent's additive-PI versus
+multiplicative-braid-word obstruction.
+
+2. Primary setup and exact formulas
+----------------------------------
+Use the empty-link-normalized Kauffman bracket. The annular skein module
+is Z[A,A^-1][z]. Let e_0=1, e_1=z and e_i=z e_(i-1)-e_(i-2). Set
+
+ lambda_i = -A^(2i+2)-A^(-2i-2),
+ theta_i  = (-1)^i A^(i(i+2)).
+
+For the Hopf pairing, any polynomial f satisfies
+
+ <f(z),e_i> = f(lambda_i)<e_i>.
+
+A full positive twist has eigenvalue theta_i on e_i. Masbaum's paper
+states these as equations (2)--(4), printed p.539, and gives Habiro's
+infinite surgery-twist expansion in Theorem 1.1, p.540. Its introduction
+explicitly distinguishes this completed series from a finite skein.
+
+Primary source: G. Masbaum, Skein-theoretical derivation of some formulas
+of Habiro, Algebraic & Geometric Topology 3 (2003), 537--556:
+https://msp.org/agt/2003/3-1/agt-v3-n1-p17-p.pdf
+https://arxiv.org/pdf/math/0306345
+
+The even-only sector suffices for the obstruction. No promotion of
+ordinary Jones data to colored data is being assumed: a universal
+annular operation on all ordinary parallel-strand contexts would, by
+linearity, also act on the e_i combinations of those contexts.
+
+3. An actual finite annular link fails already on channels 0 and 2
+----------------------------------------------------------------
+Let F(A,z) be the skein polynomial of any fixed finite framed annular
+link. Polynomial subtraction gives
+
+ lambda_2-lambda_0 divides F(A,lambda_2)-F(A,lambda_0)
+
+in Z[A,A^-1]. Direct factorization gives
+
+ lambda_2-lambda_0 = -A^-6 (A^4-1)^2(A^4+1),
+ theta_2-theta_0   = A^8-1 = (A^4-1)(A^4+1).
+
+Consequently, no F can satisfy F(lambda_0)=1 and
+F(lambda_2)=A^8. More generally, suppose one normalizes by a factor
+g(A), regular and nonzero at A=1, and asks
+
+ F(lambda_0)=g(A),       F(lambda_2)=g(A) A^8.
+
+The first difference has a zero of order at least two at A=1, while the
+required difference g(A)(A^8-1) has order one. This is impossible.
+The same argument works for A^-8 and for any nonzero integer power
+of the twist, since A^(8r)-1 has a simple zero at A=1.
+
+Equivalently, there is a direct differential proof. For every i,
+lambda_i(1)=-2 and lambda_i'(1)=0. Therefore the derivative at A=1 of
+F(A,lambda_i(A)) is F_A(1,-2), independent of i, whenever the coefficients
+of F are regular there. The twist derivatives in channels 0 and 2 are
+0 and +/-8. Multiplication by the same regular nonzero normalization
+cannot remove that difference. Meridian channels separate only at
+second order, whereas these twist channels already separate at first
+order. This is a local explanation of the required pole.
+
+For an actual annular link, the natural g=F(lambda_0) is its ordinary
+closure bracket. At A=1 this equals a signed power of two determined
+by the number of components, so it is nonzero. Thus normalization by
+the gadget's own evaluation does not escape the obstruction.
+
+An explicit small check uses the actual meridian unknot F=z. Its
+normalized channel-2 eigenvalue is
+
+ lambda_2/lambda_0 = A^4-1+A^-4.
+
+Its derivative at A=1 is zero, whereas the required A^8 has derivative
+eight. The general argument proves that replacing this circle by any
+more complicated finite annular link cannot repair the discrepancy.
+
+The formal degree-one interpolant instead has coefficient
+
+ (A^8-1)/(lambda_2-lambda_0) = -A^6/(A^4-1).
+
+This is exactly the first nonconstant coefficient in Habiro's expansion,
+written in Masbaum's A convention. The pole is the obstruction, not a
+missing clever isotopy. Clearing the denominator changes the required
+vacuum normalization into something vanishing at A=1; such a scalar is
+not the closure evaluation of an actual uncolored finite link.
+
+4. Even with rational coefficients the required annular degree grows
+-------------------------------------------------------------------
+Allow F in Q(A)[z], so the preceding pole is permitted. Suppose F matches
+theta_i (or theta_i^-1) at lambda_i for i=0,...,N. Its Nth divided
+difference is
+
+ sum_(i=0)^N theta_i^(+/-1) /
+                    product_(j!=i)(lambda_i-lambda_j).
+
+At A tending to infinity, the denominator in summand i has degree
+
+ i^2-i+N^2+3N.
+
+For positive twist the summand degrees are 3i-N^2-3N, with a unique
+maximum at i=N. For negative twist they are -2i^2-i-N^2-3N, with a
+unique maximum at i=0. Thus the divided difference is nonzero, and
+deg_z F >= N. This is an exact degree comparison, not a numerical limit.
+
+Restricting to even channels 0,2,...,2N gives the same lower bound.
+The corresponding summand degrees are
+
+  2i^2+6i-2N^2-4N          (positive twist),
+ -6i^2-2i-2N^2-4N          (negative twist).
+
+Again each has a unique maximum. Consequently no finite rational
+annular skein implements either twist on every even channel. This also
+explains why the completed surgery element cannot be replaced by a
+single finite polynomial. Truncations can act on a bounded sector but
+do not become actual uncolored links merely because their action is
+well-defined there.
+
+5. What is and is not ruled out
+-------------------------------
+Actual surgery is not contradicted: it changes the ambient gluing, rather
+than replacing its effect by the bracket of one finite uncolored link in
+the original solid torus. Drawing a full twist directly is also allowed:
+that is an open braid operation on a specified strand set, not the fixed
+closed annular insertion treated here. Root-of-unity quotients can truncate
+the theory; that does not supply an identity of ordinary Laurent polynomials.
+
+No new actual unknot-preserving knot operation, no exact signed-sum
+realization, and no nontriviality witness emerged. A viable alternative
+would have to realize the desired identity in its particular marked
+exterior without invoking a universal finite surgery color. That
+context-specific task remains open in this pass.
+
+Audit: the parent independently proposed and checked the divided-
+difference bound. This agent independently checked its degree formula
+and the even-channel variant. The integral two-channel test is a direct
+factorization using the primary-source eigenvalue conventions.

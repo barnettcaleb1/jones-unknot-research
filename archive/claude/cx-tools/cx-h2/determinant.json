@@ -1,0 +1,143 @@
+{
+ "signed_V_at_minus1": {
+  "-2,-2": -355,
+  "-2,-1": 197,
+  "-2,0": -39,
+  "-2,1": -119,
+  "-2,2": 277,
+  "-1,-2": 153,
+  "-1,-1": -83,
+  "-1,0": 13,
+  "-1,1": 57,
+  "-1,2": -127,
+  "0,-2": 49,
+  "0,-1": -31,
+  "0,0": 13,
+  "0,1": 5,
+  "0,2": -23,
+  "1,-2": -251,
+  "1,-1": 145,
+  "1,0": -39,
+  "1,1": -67,
+  "1,2": 173,
+  "2,-2": 453,
+  "2,-1": -259,
+  "2,0": 65,
+  "2,1": 129,
+  "2,2": -323
+ },
+ "sign_pattern": "(-1)^(m+n)",
+ "alpha": 13,
+ "beta": 26,
+ "gamma": -18,
+ "eps": -88,
+ "det_formula": "|13 + (26) m + (-18) n + (-88) m n|",
+ "solutions": [],
+ "lines": [],
+ "degenerate": [],
+ "mod13": {
+  "alpha": 0,
+  "beta": 0,
+  "gamma": 8,
+  "eps": 3,
+  "det_mod_13_on_grid": {
+   "-2,-2": 4,
+   "-2,-1": 2,
+   "-2,0": 0,
+   "-2,1": 2,
+   "-2,2": 4,
+   "-1,-2": 10,
+   "-1,-1": 5,
+   "-1,0": 0,
+   "-1,1": 5,
+   "-1,2": 10,
+   "0,-2": 10,
+   "0,-1": 5,
+   "0,0": 0,
+   "0,1": 5,
+   "0,2": 10,
+   "1,-2": 4,
+   "1,-1": 2,
+   "1,0": 0,
+   "1,1": 2,
+   "1,2": 4,
+   "2,-2": 11,
+   "2,-1": 12,
+   "2,0": 0,
+   "2,1": 12,
+   "2,2": 11
+  },
+  "grid_gcd": 1
+ },
+ "cross_checks": [
+  {
+   "m": 0,
+   "n": 0,
+   "det_from_V": 13,
+   "regina_alexander_abs_at_minus1": 13,
+   "regina_alexander": "2 x^4 - 3 x^3 + 3 x^2 - 3 x + 2",
+   "hfk_alexander_abs_at_minus1": 13,
+   "hfk_total_rank": 13,
+   "seifert_genus": 2
+  },
+  {
+   "m": 0,
+   "n": 1,
+   "det_from_V": 5,
+   "regina_alexander_abs_at_minus1": 5,
+   "regina_alexander": "x^4 - x^3 + x^2 - x + 1",
+   "hfk_alexander_abs_at_minus1": 5,
+   "hfk_total_rank": 5,
+   "seifert_genus": 2
+  },
+  {
+   "m": 1,
+   "n": 0,
+   "det_from_V": 39,
+   "regina_alexander_abs_at_minus1": 39,
+   "regina_alexander": "x^8 - 3 x^7 + 4 x^6 - 7 x^5 + 9 x^4 - 7 x^3 + 4 x^2 - 3 x + 1"
+  },
+  {
+   "m": 1,
+   "n": 1,
+   "det_from_V": 67,
+   "regina_alexander_abs_at_minus1": 67,
+   "regina_alexander": "x^8 - 4 x^7 + 8 x^6 - 13 x^5 + 15 x^4 - 13 x^3 + 8 x^2 - 4 x + 1",
+   "hfk_alexander_abs_at_minus1": 67,
+   "hfk_total_rank": 67,
+   "seifert_genus": 4
+  },
+  {
+   "m": -1,
+   "n": 2,
+   "det_from_V": 127,
+   "regina_alexander_abs_at_minus1": 127,
+   "regina_alexander": "x^10 - 4 x^9 + 9 x^8 - 15 x^7 + 22 x^6 - 25 x^5 + 22 x^4 - 15 x^3 + 9 x^2 - 4 x + 1",
+   "hfk_alexander_abs_at_minus1": 127,
+   "hfk_total_rank": 127,
+   "seifert_genus": 5
+  },
+  {
+   "m": 2,
+   "n": -2,
+   "det_from_V": 453,
+   "regina_alexander_abs_at_minus1": 453,
+   "regina_alexander": "x^14 - 4 x^13 + 10 x^12 - 21 x^11 + 36 x^10 - 53 x^9 + 66 x^8 - 71 x^7 + 66 x^6 - 53 x^5 + 36 x^4 - 21 x^3 + 10 x^2 - 4 x + 1"
+  },
+  {
+   "m": -2,
+   "n": -2,
+   "det_from_V": 355,
+   "regina_alexander_abs_at_minus1": 355,
+   "regina_alexander": "x^14 - 2 x^13 + 6 x^12 - 15 x^11 + 28 x^10 - 42 x^9 + 54 x^8 - 59 x^7 + 54 x^6 - 42 x^5 + 28 x^4 - 15 x^3 + 6 x^2 - 2 x + 1"
+  },
+  {
+   "m": 2,
+   "n": 2,
+   "det_from_V": 323,
+   "regina_alexander_abs_at_minus1": 323,
+   "regina_alexander": "x^12 - 5 x^11 + 13 x^10 - 25 x^9 + 39 x^8 - 51 x^7 + 55 x^6 - 51 x^5 + 39 x^4 - 25 x^3 + 13 x^2 - 5 x + 1"
+  }
+ ],
+ "verdict": "REJECTED: |det K(m,n)| = 1 has no integer solutions, so no member of the family can have trivial Jones polynomial (V=1 forces det=1)."
+}

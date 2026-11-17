@@ -1,0 +1,155 @@
+{
+  "scope": "saved n5 first-inversion diagrams; independent Regina Jones and component isotopies; spatial generator not rerun or certified",
+  "projections": [
+    {
+      "source": "/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/cx-sak/out/n5_inv1_I1_2_2_m10_5_sakuma_proj0.json",
+      "sha256": "6d12019c22688ebadf8bf4ae2c41362dda3abe60837ca200536f89986c5eb3ab",
+      "crossings": 181,
+      "components": [
+        {
+          "self_crossings": 0,
+          "certificate": "simple planar projection"
+        },
+        {
+          "self_crossings": 161,
+          "certificate": "Reidemeister/pickup simplification",
+          "remaining_crossings": 0,
+          "crossing_free_unknot_count": 1
+        }
+      ],
+      "jones_dictionary": {
+        "-11": -1,
+        "-9": 4,
+        "-7": -8,
+        "-5": 11,
+        "-3": -12,
+        "-1": 8,
+        "1": -2,
+        "3": -9,
+        "5": 18,
+        "7": -23,
+        "9": 23,
+        "11": -19,
+        "13": 13,
+        "15": -7,
+        "17": 1,
+        "19": 5,
+        "21": -11,
+        "23": 17,
+        "25": -22,
+        "27": 23,
+        "29": -19,
+        "31": 11,
+        "33": -1,
+        "35": -7,
+        "37": 11,
+        "39": -11,
+        "41": 8,
+        "43": -4,
+        "45": 1
+      }
+    },
+    {
+      "source": "/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/cx-sak/out/n5_inv1_I1_2_2_m10_5_sakuma_proj1.json",
+      "sha256": "05b35d087c73a9ebc58210b5f493276bfff5bf97c3f4cdf8e5831c724daa66c6",
+      "crossings": 209,
+      "components": [
+        {
+          "self_crossings": 0,
+          "certificate": "simple planar projection"
+        },
+        {
+          "self_crossings": 189,
+          "certificate": "Reidemeister/pickup simplification",
+          "remaining_crossings": 0,
+          "crossing_free_unknot_count": 1
+        }
+      ],
+      "jones_dictionary": {
+        "-11": -1,
+        "-9": 4,
+        "-7": -8,
+        "-5": 11,
+        "-3": -12,
+        "-1": 8,
+        "1": -2,
+        "3": -9,
+        "5": 18,
+        "7": -23,
+        "9": 23,
+        "11": -19,
+        "13": 13,
+        "15": -7,
+        "17": 1,
+        "19": 5,
+        "21": -11,
+        "23": 17,
+        "25": -22,
+        "27": 23,
+        "29": -19,
+        "31": 11,
+        "33": -1,
+        "35": -7,
+        "37": 11,
+        "39": -11,
+        "41": 8,
+        "43": -4,
+        "45": 1
+      }
+    }
+  ],
+  "extrema_half_t": [
+    -11,
+    45
+  ],
+  "equals_unlink": false,
+  "regina_independent_jones": {
+    "version": "7.4",
+    "projection": 0,
+    "simplified_crossings": 97,
+    "dictionary": {
+      "-11": -1,
+      "-9": 4,
+      "-7": -8,
+      "-5": 11,
+      "-3": -12,
+      "-1": 8,
+      "1": -2,
+      "3": -9,
+      "5": 18,
+      "7": -23,
+      "9": 23,
+      "11": -19,
+      "13": 13,
+      "15": -7,
+      "17": 1,
+      "19": 5,
+      "21": -11,
+      "23": 17,
+      "25": -22,
+      "27": 23,
+      "29": -19,
+      "31": 11,
+      "33": -1,
+      "35": -7,
+      "37": 11,
+      "39": -11,
+      "41": 8,
+      "43": -4,
+      "45": 1
+    },
+    "agrees_exactly": true
+  },
+  "source_knot_checks": {
+    "value_at_1": 1,
+    "derivative_at_1": 0,
+    "second_derivative_at_1": 0,
+    "value_at_minus_1": -799
+  },
+  "frob5": {
+    "VS_basis_bits": 12,
+    "Vkappa_basis_bits": 1,
+    "d_basis_bits": 12,
+    "identity_passes": true
+  }
+}

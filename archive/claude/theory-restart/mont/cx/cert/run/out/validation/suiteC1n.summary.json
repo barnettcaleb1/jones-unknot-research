@@ -1,0 +1,65 @@
+{
+ "label": "C1n_nontrivial_26_32",
+ "count": 200,
+ "status": {
+  "CERTIFIED_NONTRIVIAL": 200
+ },
+ "certificate_kinds": {
+  "rep": 200
+ },
+ "tietze_success": 0,
+ "V_K=1": 0,
+ "Delta=1": 0,
+ "rep_groups": {
+  "Aff(F_3)": 96,
+  "Aff(F_5)": 46,
+  "Aff(F_7)": 20,
+  "Aff(F_13)": 10,
+  "Aff(F_23)": 2,
+  "Aff(F_11)": 18,
+  "Aff(F_17)": 6,
+  "Aff(F_19)": 1,
+  "Aff(F_31)": 1
+ },
+ "crossings_min_max": [
+  26,
+  32
+ ],
+ "secs_median_max_total": [
+  0.025,
+  0.04,
+  5.1
+ ],
+ "by_crossings_bucket4": {
+  "24": {
+   "count": 111,
+   "unknot": 0,
+   "nontrivial": 111,
+   "unresolved": 0,
+   "median_s": 0.022,
+   "max_s": 0.03
+  },
+  "28": {
+   "count": 88,
+   "unknot": 0,
+   "nontrivial": 88,
+   "unresolved": 0,
+   "median_s": 0.029,
+   "max_s": 0.04
+  },
+  "32": {
+   "count": 1,
+   "unknot": 0,
+   "nontrivial": 1,
+   "unresolved": 0,
+   "median_s": 0.037,
+   "max_s": 0.037
+  }
+ },
+ "wall": 1.4,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

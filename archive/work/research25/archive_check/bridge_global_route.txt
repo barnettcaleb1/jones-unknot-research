@@ -1,0 +1,180 @@
+WHOLE-JONES BRIDGE BOUNDEDNESS: GLOBAL SCAFFOLD AND A NEW SURGERY TEST
+1 November 2026. Bounded primary-source investigation; no novelty claim.
+
+VERDICT
+
+No counterexample to whole-Jones bridge boundedness was found. This is a
+search outcome, not a theorem or a claim that the literature has none.
+The useful new test is an explicit annulus-twist family with PROVEN
+unbounded bridge number. Its ordinary Jones behavior remains uncomputed
+here. The second Jones derivative is provably constant in that family,
+so the first sensible derivative test is the third-order invariant.
+
+1. COMPLETE CONDITIONAL PROOF ARCHITECTURE (PRIOR WORK, NOT NEW)
+
+B-plat: for every Laurent polynomial P there is a finite B(P) such that
+every classical knot K with V_K=P has bridge number b(K)<=B(P).
+
+If V_K=1, multiplicativity gives V_(K#^r)=1 for every r. Schubert's exact
+formula then gives
+
+                 r(b(K)-1)+1 = b(K#^r) <= B(1).
+
+Hence b(K)=1 and K is the unknot. This is an end-to-end implication,
+with no categorification, colored-Jones promotion, or generic-bridge
+assumption hidden in it. The restriction of B-plat to P=1 is equivalent
+to Jones unknot detection, however. It is not a simpler established
+lemma. The all-P version is stronger and independently falsifiable at a
+nonunit polynomial. A prime-knot-only bound would not justify this proof.
+
+Primary modern proof of Schubert's results:
+J. Schultens, Additivity of Bridge Numbers of Knots,
+https://www.math.ucdavis.edu/~jcs/pubs/addbri15.pdf
+https://arxiv.org/abs/math/0111032
+
+These observations, the finite-template lemma below, and Stoimenow's
+historical Question8.1 were already recorded in
+work/research21/fiber_bound_audit.txt. They are not pass25 discoveries.
+
+2. THE FIXED-TEMPLATE BARRIER, NOW WITH A SHARP PRIMARY BOUND
+
+For a fixed knot/tangle wiring containing finitely many braid boxes of
+fixed strand counts, arbitrary words inserted in those boxes give a
+uniform upper bound on bridge number. Put each box in its own fixed
+height slab. The strands in the slab are monotone, so all maxima occur
+in the fixed exterior wiring. Fixed local knots in the wiring cause a
+fixed additional number of maxima. This is an elementary geometric
+argument; it does not require a Jones identity.
+
+For ordinary two-strand twist regions there is also a published linear
+bound: Blair--Kjuchukova--Velazquez--Villanueva, Wirtinger systems of
+generators of knot groups, CAG28(2020), Corollary1.4, gives
+
+                         b(K) <= 2 t(K)
+
+for nontrivial knots, with t the usual minimum diagram twist number.
+Theorem1.3 identifies their diagrammatic Wirtinger number with bridge
+number. This corroborates rather than replaces our earlier argument.
+https://archive.intlpress.com/site/pub/files/_fulltext/journals/cag/2020/0028/0002/CAG-2020-0028-0002-a002.pdf
+
+Consequences: fixed-input Kanenobu/Watson twist orbits cannot falsify
+B-plat merely by increasing their twist exponents. We make NO exact
+three-bridge assertion about Takioka's Kanenobu k(n): that assertion was
+not independently verified from the original diagram/source in pass24.
+Takioka's proven unbounded CLOSED BRAID INDEX at fixed HOMFLYPT does not
+contradict bounded bridge number. Those are different minima.
+
+Important scope correction: a fixed SURGERY diagram is not a fixed
+braid-box presentation. Nor does bounded hyperbolic volume bound bridge
+number. Section3 gives an actual family separating these notions.
+
+3. A GENUINELY DIFFERENT GLOBAL TEST: ANNULUS TWISTING
+
+Luecke--Osoinach, Infinitely many knots admitting the same integer
+surgery, arXiv1407.1529v1, Definition0.1/Theorem0.2, provide an explicit
+four-component link L=k union l1 union l2 union l3 in Figure1. Their
+parameters are
+
+              k_n^m = L(*, -1/m, 1/m, -1/n).
+
+For each fixed n!=0, bridge number tends to infinity as m tends to
+infinity, while the n-surgeries agree by orientation-preserving maps.
+The n=0 row instead has bounded bridge number. The proof says the
+twisting annulus meets k four times geometrically and zero algebraically;
+after the l3 surgery its two boundary components have linking number n.
+https://arxiv.org/pdf/1407.1529
+
+Figures1 and3 were visually inspected, and the parameter conventions
+and the bounded n=0 exception were checked against the proof. The public
+PDF and inspected page images are saved in this directory. No PD code
+has been transcribed or verified. Do not infer one from the sketch.
+
+Underlying primary bridge-growth mechanism:
+Baker--Gordon--Luecke, Bridge number and integral Dehn surgery,
+AGT16(2016)1--40, Theorem1.1 and Corollary1.4.
+https://msp.org/agt/2016/16-1/agt-v16-n1-p01-s.pdf
+Its catching-surface and annulus hypotheses matter; it is not a theorem
+that every annulus twist makes bridge number grow.
+
+Exact falsification target: find a fixed n!=0 and an infinite set of
+positive m on which V_(k_n^m) is one polynomial. The bridge theorem then
+immediately falsifies B-plat, with no new bridge computation needed.
+An equality of surgery manifolds, Alexander data, or a few Jones values
+does NOT establish this target. No Jones-constancy theorem or explicit
+Jones formula for this family was located in the focused source search.
+
+4. A DEFINITE EARLY KILL-TEST CORRECTION: v2 CANNOT VARY
+
+For a fixed nonzero integer n, the Casson--Walker surgery formula has
+the form
+
+        lambda(S3_n K) = lambda(L(n,1)) + c_n a2(K),
+
+where c_n is a fixed nonzero normalization-dependent rational number.
+The orientation-preserving n-surgery identifications above therefore
+force a2(k_n^m) to be independent of m. For V_U=1, the standard relation
+V_K''(1)=-6 a2(K) shows that the SECOND Jones derivative is also constant.
+This is a deduction from the surgery theorem, not a computation of the
+full Alexander or Jones polynomial. No constancy of a4 or v3 follows.
+
+An explicit primary use of the surgery formula, in doubled normalization,
+is Ni--Zhang, Finite Dehn surgeries on knots in S3, equation(6.2):
+https://www.math.buffalo.edu/~xinzhang/half-integral-surgery%209.pdf
+The precise overall normalization cancels in the constancy deduction.
+
+The next proposed finite test is therefore v3 (equivalently the third
+Jones derivative after subtracting the known v2 term), obtained from a
+verified diagram or a justified surgery/Gauss-diagram formula. A formula
+which is a nonconstant polynomial in m would imply that EACH fixed Jones
+polynomial occurs only finitely often in that row, ruling out not just
+whole-row constancy but every infinite constant-Jones subsequence.
+
+Remaining gates are concrete: transcribe and independently verify
+Figure1; implement its rational surgeries with the stated ambient S3
+identification; derive the all-m formula and a degree bound rather than
+interpolate a guessed polynomial. None of these were completed here.
+In particular, we have not asserted that v3 is polynomial in m merely
+because this is called twisting. This is not an ordinary fixed-strand
+disk-twist family, and importing that finite-difference proof unchecked
+would recreate the geometric mistake noted in Section2.
+
+5. A SECOND, EXACT SUFFICIENT COUNTEREXAMPLE MECHANISM
+
+Suppose an actual winding-zero knot pattern P in a solid torus has
+positive geometric wrapping number w, and its full Kauffman-bracket
+skein class is a scalar
+multiple of the empty diagram. Use zero-framed satellites throughout.
+Then skein substitution gives one Jones polynomial for P(J), independent
+of the companion J. The framing correction is companion-independent:
+companion crossings occur in opposite signed pairs for winding-zero P;
+equivalently the satellite framing change is winding(P)^2 times the
+companion framing. Winding zero is included as an explicit hypothesis;
+we need not deduce it from the scalar skein condition.
+
+For nontrivial companions, Schubert gives b(P(J))>=w b(J). Taking J to
+be connected powers of a trefoil yields an unbounded-bridge constant
+Jones family. Thus an essential winding-zero SCALAR annular knot pattern
+would refute B-plat even if P(U) is a nontrivial knot and its Jones
+polynomial is not1. This does not require a Jones-one knot as input.
+
+No actual such pattern was found. This is a sufficient construction
+criterion, not an existence result. Ren's previously studied wrapping4,
+annular-degree2 example does NOT satisfy it. Pairwise equal Jones
+polynomials of satellites of mutants likewise do not suffice: varying
+the pattern may vary their common polynomial.
+
+Primary proof of the needed satellite bridge inequality is again
+Schultens' paper linked in Section1. The scalar skein substitution is
+the usual linear satellite evaluation, and the logical combination
+above is our deduction rather than a priority claim.
+
+6. WHAT SURVIVES THE AUDIT
+
+The full conditional scaffold remains logically sound but unproved.
+The already studied twist templates offer no generic coverage. The
+annulus-twist row is a meaningful new test precisely because its bridge
+growth is independently certified. The first informative low-degree
+Jones invariant is v3, since surgery forces v2 to be constant. An exact
+nonconstant v3 formula would eliminate that row as a B-plat falsifier;
+an exact constant whole Jones polynomial on an infinite row would
+disprove B-plat. Neither outcome was established in this pass.

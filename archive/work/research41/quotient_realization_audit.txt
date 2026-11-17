@@ -1,0 +1,99 @@
+INDEPENDENT REALIZABILITY AUDIT: THE FORMAL EKT PAIRING H/delta
+2026-11-01. The proposed obstruction is valid.
+
+Statement
+---------
+Let an actual outside tangle P have two disjoint four-ended filling slots.
+In each slot use the crossing-free rational fillings 0 and infinity.
+Use the reduced Kauffman bracket, with one circle evaluating to1 and
+delta=-A^2-A^(-2). No such P can have its four closure brackets equal to
+
+                         [[g,delta],[delta,1]],
+
+where
+
+              g=A^12-A^8+2A^4+2A^(-4)-A^(-8)+A^(-12).
+
+Multiplying ALL entries by a common framing monomial does not repair it.
+In fact the obstruction only needs the four absolute values at a primitive
+eighth root to be 8,0,0,1 in the displayed order.
+
+Proof
+-----
+Put zeta=exp(pi i/4). Then delta(zeta)=0 and g(zeta)=-8. For an actual
+nonempty link closure L, the absolute value of its reduced bracket at
+zeta equals its determinant: the Jones writhe correction is a unit of
+modulus1. The determinant is the order of H1(Sigma_2 L;Z) when finite,
+and is zero when that homology is infinite.
+
+Let Y_ij be the branched double cover of closure P_ij. The entry1 gives
+det(P_11)=1, so Y_11 is an integral homology sphere. It is NOT necessary
+to show P_11 is the unknot. In particular this argument assumes no form
+of Jones unknot detection. If component counts are wanted, the values
+at A=1 have absolute values4,2,2,1 respectively, so the ordinary
+bracket specialization forces component counts3,2,2,1.
+
+Each local infinity-to-zero replacement is a band move. Its lift changes
+the meridional filling of a surgery knot to a slope at distance1 from
+the meridian. In an integral homology sphere that is an integral surgery
+coefficient. Because the two balls are disjoint, both changes lift to
+simultaneous integral surgery on a two-component framed link in Y_11.
+Write its symmetric integral linking matrix as
+
+                              [[a,b],[b,c]].
+
+Surgery on its first component alone gives Y_01 (or Y_10, depending on
+the indexing convention); surgery on the second alone gives the other
+single-changed cover. Their determinants are both0, so the one-by-one
+surgery matrices must both be zero: a=c=0. This is independent of which
+slot receives which index.
+
+The simultaneous filling Y_00 consequently has presentation matrix
+
+                              [[0,b],[b,0]].
+
+If b=0 its first homology is infinite, contradicting det(P_00)=8. If
+b is nonzero, its first homology has order |det|=b^2. No integer b has
+b^2=8. This is the required contradiction.
+
+Normalization and geometry caveats checked
+------------------------------------------
+1. Both slot replacements are exactly 0<->infinity, hence distance1.
+   A crossing change (distance2) would be a different statement; none
+   is substituted for a band move here.
+2. The fixed outside must be one actual tangle with TWO DISJOINT slots.
+   Four unrelated links with the displayed brackets need not share a
+   surgery link, so their existence would not contradict this proof.
+3. Writhe, component-orientation and framing monomials have absolute
+   value1 at zeta. They cannot change zero determinants or change8 to
+   a square. The proof does not assume a common transported orientation
+   of all four closures.
+4. A formal division of a skein pairing by delta can exist algebraically
+   without being represented by an actual outside tangle. This argument
+   distinguishes precisely those notions in the proposed example.
+5. No conclusion is asserted here for every invariant matrix in the
+   two-dimensional algebraic pairing space, nor for arbitrary combinations
+   [[-8c,b],[b,c]] at zeta. The hypotheses giving an integral homology
+   sphere and two zero-framed single surgeries were used explicitly.
+
+General reusable form
+---------------------
+Whenever two disjoint band moves start from a determinant-one knot and
+each single move gives a determinant-zero link, the link after BOTH moves
+has determinant either zero or a perfect square. This follows from the
+same matrix and does not require the starting knot to be the unknot.
+
+Primary input
+-------------
+The band-move/distance-one surgery correspondence is the Montesinos trick;
+a precise primary account is Moore–Vazquez, A note on band surgery and
+the signature of a knot, Section4.1:
+https://par.nsf.gov/servlets/purl/10182784
+
+The integral surgery presentation and linking-matrix conventions agree
+with Cochran–Melvin, The Milnor degree of a three-manifold, Section1:
+https://arxiv.org/pdf/0902.1731
+
+The rest is the elementary two-by-two calculation above. The geometric
+nonrealizability conclusion does not rely on the earlier finite band
+searches, the auxiliary five-component input, or a generic Jones theorem.

@@ -1,0 +1,142 @@
+{
+  "family": "Ren core times sigma1^p sigma3^q sigma2^r",
+  "all_integer_annular_degree_zero_loci": [
+    {
+      "parity": [
+        0,
+        0,
+        0
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "nonintegral": 189,
+        "rank2": 91,
+        "rank3": 261
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        0,
+        0,
+        1
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "nonintegral": 180,
+        "rank2": 91,
+        "rank3": 247
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        0,
+        1,
+        0
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "rank2": 91,
+        "nonintegral": 181,
+        "rank3": 248
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        0,
+        1,
+        1
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "rank2": 91,
+        "nonintegral": 181,
+        "rank3": 242
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        1,
+        0,
+        0
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "nonintegral": 167,
+        "rank2": 87,
+        "rank3": 223
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        1,
+        0,
+        1
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "nonintegral": 177,
+        "rank2": 90,
+        "rank3": 237
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        1,
+        1,
+        0
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "rank2": 89,
+        "nonintegral": 170,
+        "rank3": 229
+      },
+      "solution_loci_rref": []
+    },
+    {
+      "parity": [
+        1,
+        1,
+        1
+      ],
+      "parameterization": "(p,q,r)=parity+2(m,l,n)",
+      "monomials": 42,
+      "stats": {
+        "rank0": 1,
+        "rank1": 16,
+        "rank2": 89,
+        "nonintegral": 170,
+        "rank3": 232
+      },
+      "solution_loci_rref": []
+    }
+  ],
+  "elapsed_seconds": 0.6918283342383802
+}

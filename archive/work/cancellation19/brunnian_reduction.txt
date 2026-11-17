@@ -1,0 +1,223 @@
+BRUNNIAN INFECTION REPAIRS THE ZERO-SHELL CONVERSE
+31 October 2026. Internally audited research deduction; no novelty claim.
+
+RESULT AND SCOPE
+
+The following existence statements are equivalent, using the preferred
+meridian/longitude conventions of our satellite-transmission note:
+
+(A) A nontrivial strongly invertible knot J has a preferred quotient
+    tangle with the same projective Kauffman bracket as the rational
+    longitude-zero tangle Q0.
+(B) There is a nonsplit two-component link B=P union D, both components
+    unknotted, linking number zero, with a componentwise strong inversion,
+    whose normalized quotient-shell factor d_B(A) is identically zero.
+(C) There is a nontrivial knot of unknotting number one with Jones
+    polynomial identically 1.
+
+The earlier report establishes (B) implies (A) and (C), and equivalence
+of (A) and (C). The NEW deduction here is (A) implies (B), through an
+actual geometrically realizable Brunnian-link construction. It repairs
+the failed Whitehead-clasp converse without assuming the clasp surgery
+circle is strongly inverted. It is NOT a proof or disproof of any of
+these equivalent statements, and it does not identify them with the
+unrestricted Jones unknot-detection conjecture.
+
+All assertions concern whole Laurent polynomials, not finite jets.
+The proof needs one hypothetical flat J but no further unproved geometric
+realizability statement. No actual nontrivial flat J is currently known.
+
+1. EXISTENCE OF AN ACTUAL STRONGLY INVERTED BRUNNIAN TRIPLE
+
+Fix a nontrivial 3-adjacent-to-the-unknot knot K: a diagram has three
+marked crossings, and changing ANY nonempty subset makes the unknot.
+Such actual knots exist. One explicit published family is Stoimenow's
+K_n in equation (10), printed p476, of:
+A. Stoimenow, Some applications of Tristram--Levine signatures and
+relation to Vassiliev invariants, Adv. Math.194(2005),463--484,
+https://doi.org/10.1016/j.aim.2004.07.003
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf .
+The text immediately after (10) states n-adjacency; Lemma6, pp477--479,
+proves K_n nontrivial. Take n=3. No Jones-detection conjecture is used in
+that lemma: its argument uses a particular known Jones evaluation of an
+auxiliary braid closure to establish nontriviality.
+
+Change all three marked crossings of K to obtain an actual unknot U.
+Lift the three reverse crossing arcs in the double cover Sigma2(U)=S3.
+Each arc lifts to a circle; the deck involution reverses it and fixes its
+two endpoints. Thus this is an ACTUAL componentwise strongly inverted
+three-component link L=P union C union D in S3.
+
+The precise primary justification that L is Brunnian is in the proof of
+Theorem1.4 of Tye Lidman and Allison H. Moore, Adjacency of three-manifolds
+and Brunnian links, arXiv:2308.06211:
+https://arxiv.org/html/2308.06211 .
+The published paper appeared online 7 January 2026 in Nagoya Math. J.,
+https://doi.org/10.1017/nmj.2025.10092 .
+Their proof lifts the knotting arcs over U, applies the Montesinos trick,
+and uses Proposition3.2 to show every proper sublink is an actual unlink;
+the reverse crossing slopes are all +/-1/2. In particular this is stronger
+than merely having pairwise linking numbers zero or surgery-trivial
+proper sublinks.
+
+The full three-component link L is not an unlink: if it were, simultaneous
++/-1/2 surgeries would give S3, whereas the result is Sigma2(K); Smith's
+unknot theorem would then force K=U. Since every proper sublink is an
+unlink, a split L would itself be an unlink. Thus L is nonsplit and its
+exterior M is irreducible.
+
+Do NOT replace L by the Borromean rings. The required componentwise
+strong inversion is not available for that link; the nonzero triple
+Milnor invariant obstructs reversing all three component orientations.
+Our existence proof uses the published higher Brunnian construction.
+
+2. ONE FIXED NONZERO TWIST MAKES AN ESSENTIAL PATTERN
+
+Perform 1/n surgery on D, measured with its usual preferred meridian and
+longitude, and call the other two components P_n and C. The ambient
+manifold remains S3 because D is an unknot. Each remaining component is
+still an unknot because both P union D and C union D were actual unlinks.
+Their linking number remains zero: all pairwise linking numbers in L
+were zero, so the surgery linking-number correction is zero.
+
+For every |n| >= 2, P_n union C is NONSPLIT. Indeed, meridional D filling
+of M is E(P union C)=E(U2), a reducible manifold. If the 1/n filling were
+split, its two individually unknotted components would again give E(U2).
+These two reducing slopes have distance |n|. The exact version of the
+reducing-filling theorem needed here is Culler--Gordon--Luecke--Shalen,
+Corollary2.4.7: for an irreducible manifold, two reducible fillings on a
+torus boundary component at distance at least two force a nontrivial
+lens-space summand in one filling. Neither E(U2) has such a summand.
+This is precisely the application in the n=3 case of Lidman--Moore's
+proof of Proposition3.2, and gives the contradiction.
+
+Primary reference:
+M. Culler, C. McA. Gordon, J. Luecke, P. B. Shalen,
+Dehn surgery on knots, Ann. Math.(2)125(1987),237--300, Corollary2.4.7.
+The exact multi-boundary E(U2) application and reference are printed in
+Lidman--Moore, Proposition3.2 proof, cited above. No stronger general
+bound on all reducible-filling slopes is required here.
+Choose n=2 once and for all; no asymptotic or hyperbolicity assumption is
+needed.
+
+Hence P_2 in V=E(C) is an essential winding-zero pattern with P_2(U)=U.
+Here essential means not contained in an interior ball of the solid
+torus; for an unknotted axis C this is equivalent to P_2 union C being
+nonsplit. The inherited involution strongly inverts both components.
+
+3. INSERT THE HYPOTHETICAL FLAT COMPANION BEFORE THE TWIST
+
+Assume (A), with an actual nontrivial strongly invertible J. Replace
+N(C) by E(J), using the usual untwisted satellite identification
+
+    mu_J -> lambda_C,      lambda_J -> mu_C.
+
+Because C is an unknot, the new ambient manifold is S3. On the boundary
+both strong inversions act by -I, and the peripheral gluing can be chosen
+equivariantly. The involution extends over the new S3. It still strongly
+inverts P and D, whose two fixed points have not been changed. Denote the
+resulting two-component link by
+
+    B_J = P(J) union D(J).
+
+Each component is an ACTUAL UNKNOT. The pairs P union C and D union C were
+unlinks, so each of P and D separately lies in a ball in V disjoint from
+C; companion insertion leaves those balls and their contained unknots
+unchanged. The two containing balls need not be disjoint, and no such
+assumption is made. Linking number is unchanged by this infection and is
+zero. Thus B_J meets every geometric hypothesis of the rank-two shell
+formalism. Its zero-companion closure is P(J)=U.
+
+Surgery on D is disjoint from the C gluing torus, so the operations
+commute. More explicitly, D is local in V because D union C is the unlink;
+1/n surgery can be realized in a ball in V, giving V again with its outer
+boundary marking unchanged. The surgery framing corrections on C and P
+are n*lk(D,C)^2 and n*lk(D,P)^2, both zero. Consequently the n-th rational
+probe of the shell B_J has core knot EXACTLY the ordinary untwisted
+satellite P_n(J), with its preferred meridian and longitude, not a
+framing-shifted or differently surgered version.
+
+4. THE TWO PROBES FORCE AN ENTIRE ZERO FACTOR
+
+Put R=Z[A,A^-1], delta=-A^2-A^-2. With the standard rational basis,
+
+    f_inf(Q0)=1, f_inf(Qinf)=delta,
+    x(T)=(f_0(T)/f_inf(T)-delta)/(1-delta^2).
+
+The normalized quotient shell F_P of any actual winding-zero,
+componentwise strongly inverted two-unknot pattern P(U)=U satisfies
+
+    F_P(Q0)=Q0,       x(F_P(T))=d_P(A)*x(T).
+
+This established transmission identity uses full preferred markings.
+It applies to the pattern P_2 union C. Because J is flat, x(T_J)=0,
+its satellite P_2(J) has flat preferred quotient as well.
+
+Now apply the shell identity to B_J. Its input Q0 has output the preferred
+quotient of U, hence defect zero. Its input Q2 has output the preferred
+quotient of P_2(J), hence defect zero. The input Q2 has
+
+    x(Q2) = (1-(-A^4)^2)/delta != 0.
+
+Since R is an integral domain, d_B*x(Q2)=0 forces
+
+    d_B(A) IDENTICALLY ZERO.
+
+There is an independent multilinearity explanation. Quotient E(P,C,D)
+by the simultaneous strong inversion: this is a genuine two-input tangle
+shell, obtained by deleting three balls from the quotient S3, with the
+outer output and two input four-punctured spheres. Insert T_J at the C
+input. Since T_J is projectively Q0, multilinearity makes its remaining
+shell projectively identical to the shell obtained by inserting Q0.
+That latter filling is the actual unlink P union D. Its normalized
+transmission factor is zero. Thus the entire B_J shell has zero factor;
+the two-probe argument above provides a separate algebraic check.
+
+Only these two independent rational probes are used. There is no need
+to make n=1 essential, and no dual surgery circle is introduced.
+
+5. THE RESULTING SHELL IS ESSENTIAL
+
+P_2(J) is nontrivial. The torus separating E(J) from the essential pattern
+exterior is incompressible on both sides: E(J) has incompressible boundary
+because J is nontrivial, and the pattern-side boundary is incompressible
+because P_2 is not local in V. Their union is therefore an incompressible
+torus in E(P_2(J)), which is impossible in an unknot exterior. Equivalently,
+this is the elementary nontriviality theorem for an essential satellite
+with nontrivial companion.
+
+If B_J were split, it would be the two-component unlink, and every 1/n
+surgery on its second component would leave its first component an
+unknot. But its n=2 output is the nontrivial knot P_2(J). Contradiction.
+Thus B_J is a NONSPLIT actual zero-factor shell, establishing (B).
+
+6. WHAT THIS CHANGES
+
+The zero-shell target has no additional existential realization gap beyond
+the already identified unknotting-number-one Jones problem. The Brunnian
+construction converts ANY hypothetical actual flat core into an actual
+essential zero shell. Conversely, earlier work converts any such shell
+into an actual nontrivial Jones-one knot with unknotting number one.
+
+The construction escapes the type-C locality obstruction because D is
+not required to bound an invariant disk meeting P in exactly two points.
+It is a generalized local surgery in the solid torus; a disk may meet P
+in more points. Pairwise unlinking does not make the full three-component
+configuration trivial, and that collective interaction is exactly what
+survives companion insertion.
+
+This equivalence is progress in organizing the geometric search; it does
+not produce a counterexample, and it does not prove Jones detection even
+for unknotting-number-one knots. A generic Jones-one knot is not known to
+admit a reduction into this anchored class. That separate generic gap
+remains explicit.
+
+AUDIT STATUS
+
+The strong Brunnian existence input, Montesinos componentwise inversion,
+reducing-filling argument, and simplified infection/peripheral argument
+were independently checked by the braid track. The homology track independently checked the same global construction
+and the precise CGLS source scope. The result is a
+conditional construction and exact existence equivalence, not a claim
+that the unknown object exists. See geometry.txt for the separate proven
+two-puncture locality obstruction that motivated the escape.

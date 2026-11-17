@@ -1,0 +1,220 @@
+AUDIT OF THE STRONGEST PARTIAL RESULT
+1 November 2026
+
+VERDICT
+
+The candidate proof of Sikora's framed rational-solution uniqueness
+conjecture survives this audit: no fatal gap was found. Its conclusion
+appears to follow from the cited published results with the stated
+hypotheses. The revised proof is ready for focused specialist scrutiny.
+This is an internal mathematical assessment, not external certification.
+
+The potential novelty is an application/generalization of established
+methods to the exact tangle conjecture. The central proof strategy is
+not new: Gainullin's 2018 Theorem 8.2 is a close antecedent and must be
+credited. No prior exact proof was located in the bounded literature
+search, but priority remains unverified.
+
+The standing Jones proof-search goal remains paused. This audit does
+not establish Jones unknot detection or restart the general search.
+
+WHAT WAS AUDITED
+
+Input: outputs/jones-rational-tangle-uniqueness-proof.txt, pass 50.
+Revised argument: outputs/rational-tangle-uniqueness-audited-proof.txt.
+
+The theorem concerns two distinct rational probes P,Q and a rational
+tangle R. If an arbitrary tangle X gives the SAME ACTUAL FRAMED LINKS
+as R under both probes, the conclusion is X=R. The equality is balanced
+framed isotopy, as in Sikora's paper. Two different framings of the same
+underlying probe do not count as distinct probes.
+
+The target is Sikora's Conjecture 2 in arXiv:2005.08162v2 and Conjecture
+1.2 in the published paper. It concerns uniqueness among ALL tangles once
+a rational solution exists. Sikora's established uniqueness among rational
+solutions and uniqueness of the bracket vector are weaker statements.
+
+Three fresh agents separately examined the topological/surgery reduction,
+the Floer-theoretic/algebraic conclusion, and literature novelty. They did
+not treat earlier reports of successful verification as evidence. Their
+arguments and source checks were then reviewed together. These are separate
+computational reviews, not independent human referees or independent model
+families; agreement is not a substitute for checking the deductions.
+
+WHY THE ARGUMENT CURRENTLY HOLDS UP
+
+1. Correct scope and exact bracket equality.
+
+Sikora Section 4.1 explicitly requires different unframed probes and uses
+balanced framing. Theorem 21 gives equality of bracket vectors from the
+two actual framed equations. Thus the deduction does not silently assume
+the stronger rational-tangle bracket-detection conjecture.
+
+2. Integral homology and the longitude are genuinely recovered.
+
+Two auxiliary closures of the rational comparator are an unknot and a
+two-component unlink. Their matching brackets for X give determinants 1
+and 0. The first produces an integral homology-sphere filling, so the
+exterior has H_1=Z, without hidden torsion. The second identifies its
+preferred longitude with the comparator's longitude. Determinant one
+also excludes closed components in X.
+
+The proof never identifies the auxiliary integral homology sphere Y with
+S^3, nor assumes that Y is an L-space. Either assertion would be an error.
+
+3. The signed surgery coefficients match.
+
+This was the most delicate topological check. The common oriented boundary
+marking, common chosen meridian and identified longitude give the same
+signed p/q on both exteriors. The two lifts of the boundary marking differ
+by -I, which leaves the ratio unchanged. Actual link isotopies give
+orientation-preserving homeomorphisms of the filled covers. Those maps
+need not preserve the filling cores. Homology orders alone, or unoriented
+lens-space identifications, would not justify the calculation.
+
+4. Casson-Walker is applicable in the auxiliary ambient manifold.
+
+Ni--Wu Proposition 3.1 explicitly applies to null-homologous knots in
+rational homology spheres, despite the narrower title of their paper.
+For two nonlongitudinal probes it gives
+
+       0=lambda_CW(Y)+(q_i/(2p_i))*Delta_K''(1),   i=1,2.
+
+The two ratios are different, so subtraction eliminates the unknown
+lambda_CW(Y) and forces Delta_K''(1)=0. No assumption about its sign,
+or about Y being S^3, is needed.
+
+5. The Alexander-polynomial step is sound.
+
+Two distinct L-space fillings imply Floer simplicity by Rasmussen--
+Rasmussen Proposition 1.3. Their torsion coefficient restriction makes
+the polynomial's nonzero coefficients alternate +1,-1,...,+1.
+Symmetrizing BEFORE differentiating gives a strictly positive second
+derivative for every nonconstant polynomial of this form. Hence the
+vanishing derivative forces Delta_K=1.
+
+An independent algebraic check gives a useful cross-check. Write
+D=t^h*Delta_K and tau=D/(1-t)=sum a_n*t^n, with a_0=1 and a_n in {0,1}.
+Let E={n>=0:a_n=0}. It is a finite set of positive integers. Then
+
+ D=1+(t-1)*sum_(n in E)t^n,
+ |E|=D'(1)=h,
+ Delta_K''(1)=2*sum_(n in E)n-h*(h-1) >= 2h.
+
+Thus zero derivative forces h=0 and D=1. This is a verification of the
+algebra, not a separately established novelty claim.
+
+6. The final norm and irreducibility steps use the necessary hypotheses.
+
+Because H_1(M)=Z, the projected polynomial bar-Delta in RR is exactly D.
+If the boundary were incompressible, Corollary 2.3 would force Thurston
+norm degree(D)-1=-1, a contradiction. Boundary compressibility plus
+irreducibility gives a solid torus.
+
+Irreducibility is proved earlier from an ACTUAL lens-space filling:
+every closed summand must be a homology sphere, survives filling, and
+therefore must be S^3. It is not inferred merely from Floer simplicity.
+
+7. The unlink case is covered without a missing surgery hypothesis.
+
+The original use of Ni--Vafaee Theorem 1.1 and fiber capping was checked
+and found valid. The revised proof uses the shorter RR Proposition 7.8:
+a knot in S^1 x S^2 admitting an L-space surgery has generalized-solid-
+torus exterior. H_1(M)=Z forces its longitude-order parameter to be 1;
+the degree bound and Corollary 2.3 again force boundary compressibility.
+Together with irreducibility this gives an actual solid torus.
+
+8. Returning to the given tangle is justified.
+
+The classical solid-torus-cover criterion applies to the actual two-arc
+tangle and its given deck involution. Rationality then lets Sikora's
+Corollary 20 recover the marked balanced framing from bracket equality.
+
+HYPOTHESIS STRESS TESTS
+
+* A solid torus connected-summed with a nontrivial integral homology
+  L-space sphere can have H_1=Z, Delta=1 and many L-space fillings without
+  being a solid torus. It is reducible; its fillings retain the closed
+  summand and cannot be the actual lens spaces required here. This checks
+  why the irreducibility argument cannot be omitted.
+
+* A trefoil exterior has H_1=Z and is Floer simple, but its symmetric
+  Delta=t-1+t^(-1) has Delta''(1)=2. It fails the matched-surgery constraint.
+  Multiple lens fillings alone would not be enough.
+
+* Non-solid generalized-solid-torus examples do not refute the argument:
+  the familiar irreducible examples have homological torsion, excluded
+  by H_1(M)=Z. Reducible examples are separately excluded above.
+
+* A hypothetical Jones-one knot tied locally into R would preserve
+  polynomial information without supplying the actual rational-link
+  closures. This is precisely why the partial result does not prove
+  Jones unknot detection.
+
+CHANGES MADE FOR THE REVIEW VERSION
+
+There was no identified fatal error requiring repair. The revision:
+
+* chooses the auxiliary meridian before defining Y and K;
+* explains the common signed peripheral coordinates explicitly;
+* states bar-Delta=D, using torsion-free homology;
+* replaces the valid but longer unlink branch with RR Proposition 7.8;
+* credits Gainullin's closely related proof strategy;
+* removes any implication that internal verification establishes priority.
+
+NOVELTY: WHAT THE EVIDENCE DOES AND DOES NOT SHOW
+
+Gainullin, Heegaard Floer homology and knots determined by their complements
+(2018), Theorem 8.2, already uses the Casson-Walker/Alexander-derivative/
+alternating-coefficients/genus-detection chain. His assumptions include an
+ambient L-space and a null-homologous knot. They do not immediately cover
+the present auxiliary Y. Two matched fillings and Floer simplicity of the
+exterior are the relevant changes in this candidate deduction.
+https://msp.org/agt/2018/18-1/agt-v18-n1-p03-p.pdf
+
+The exact framed uniqueness statement was still presented as a conjecture
+in Sikora's 15 October 2026 IPAM talk abstract. This is affirmative evidence
+of recent conjectural status, stronger than merely obtaining no search
+hits. The abstract was read; the full recording was not reviewed.
+https://www.mathinstitutes.org/videos/25091
+
+The bounded search found no exact earlier proof. It examined the current
+Sikora preprint and journal versions, related surgery results, later citing
+papers, his publication list and the recent talk abstract. Citation
+enumeration was incomplete. Unindexed work, an unpublished argument,
+or a known corollary described in different terms may have been missed.
+Therefore "first proof," "new theorem," and a priority date are not
+established by this audit.
+
+The unknot-product special case is already closely covered by classical
+surgery characterization (Kronheimer--Mrowka--Ozsvath--Szabo). It should
+not be advertised as new surgery rigidity.
+https://annals.math.princeton.edu/2007/165-2/p03
+
+RECOMMENDED STATUS AND NEXT STEP
+
+Use: "A candidate deduction of Sikora's framed rational-solution uniqueness
+conjecture from published surgery and Floer-theoretic results; no fatal gap
+found in a fresh internal audit; external review and priority pending."
+
+The next productive step is focused specialist review of this finite proof,
+especially the common signed surgery comparison and the relationship to
+Gainullin's theorem. More unrestricted Jones proof-search is not warranted
+by this audit. No external person has been contacted.
+
+AUDIT LIMITATIONS
+
+The major Floer-theoretic inputs were checked against their source
+statements and hypotheses, not reproved from foundational definitions.
+The classical branched-cover criterion was checked in Buck--Mauricio;
+the original Lickorish PDF was inaccessible. Stoimenow's determinant
+statement was checked through indexed publisher text when the full
+publisher request returned 403. These are evidence limits, not identified
+mathematical counterexamples or gaps.
+
+Detailed component reports and query logs are retained in:
+work/final-audit/surgery.txt
+work/final-audit/floer.txt
+work/final-audit/novelty.txt
+
+The revised proof includes exact references for every substantive input.

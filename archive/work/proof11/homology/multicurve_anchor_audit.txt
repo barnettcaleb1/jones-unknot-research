@@ -1,0 +1,71 @@
+UNKNOT-ANCHORED MULTICURVES: WHAT IS RIGOROUS AND WHAT IS STILL MISSING
+2026-10-31. This note separates a geometric constraint from a realizability
+claim not established by the cited paper.
+
+SOURCE AND PRECISE SCOPE
+Kotelskiy--Lidman--Moore--Watson--Zibrowius, Cosmetic operations and Khovanov
+multicurves, Math. Ann. 389 (2024), 2903--2930, Section 4:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/
+https://doi.org/10.1007/s00208-023-02697-5
+The paper explicitly works over F_2. Integer Euler characteristics are still
+formed from the bigraded dimensions, but these are not rational-Khovanov ranks.
+
+If T(infinity)=U, choose meridian-longitude parametrization in the double
+branched cover. Section 4 proves that Kh(T) is a single r_1(s), with s an even
+integer, together with special curves all of slope infinity. There are special
+curves if T is non-rational (Theorem 2.6). The reason is an actual rank-one
+pairing at infinity, not just equality of Jones polynomials: the rational
+component meets the vertical anchor arc once, and all special components are
+disjoint from it. The paper's cosmetic conclusion uses equality of
+full homology, not just equality of Euler polynomials.
+
+EXACT EULER EQUATION FOR ANY OTHER FILLING
+Write C_i for the shifted special components and R for the shifted rational
+component. Let a_r be the rational filling arc, and define
+ E_i(r;q)=sum_(h,j) (-1)^h q^j dim_F2 HF(a_r,C_i)^(h,j).
+The direct-sum pairing theorem gives
+ J^Kh_T(r)(q)=E_R(r;q)+sum_i E_i(r;q),
+where J^Kh is the graded Euler normalization determined by reduced Khovanov
+homology. For knot fillings, J^Kh_T(r)(q)=V_T(r)(q^2). The standard common
+orientation/framing normalization is included in each summand. The anchor gives E_i(infinity;q)=0 separately for every i. Thus the
+anchor does not, by itself, compare the absolute shifts of different C_i.
+
+A PRECISE SUFFICIENT LEMMA TO TARGET
+For a filling r at which the rational sector has Euler polynomial equal to the
+unknot, it would suffice to show
+  sum_i E_i(r;q) != 0 whenever at least one C_i is present.
+This is weaker than requiring every homological group to have one parity.
+A still stronger but concrete sufficient test is that at one extremal quantum
+degree of the aggregate special sector the signed dimension is nonzero.
+If the sum vanishes, its positive and negative terms must balance at every
+quantum degree. Merely knowing each E_i is nonzero does not rule that out.
+For a filling whose rational sector is not the unknot, the exact equation
+required instead is sum_i E_i(r;q)=1-E_R(r;q); the proposed zero-sum lemma alone
+would not handle that more general case.
+
+WHY THE GEOGRAPHY STATEMENT DOES NOT ALREADY PROVE THE LEMMA
+Take one allowed graded vertical special curve C and its homological shift
+C[1], with identical quantum grading. These satisfy the same slope/length
+geography. Pairing with any arc is additive and commutes with grading shifts,
+so E_(C[1])(r;q)=-E_C(r;q) for EVERY rational filling r. Both are invisible to
+the anchor. Accordingly R union C union C[1] has the same Euler polynomial
+as R under every rational filling, while retaining extra homology away from
+the anchor. This is an exact formal curve/complex model, NOT an asserted
+classical tangle invariant. It may fail further realization constraints,
+including constraints on being the cone of the actual Bar-Natan invariant.
+The source's curve classification permits arbitrary overall component shifts
+as abstract bigraded complexes; it does not assert every such collection is
+realized by a classical tangle, nor prove the needed exclusion.
+
+WHAT ADDING JONES SAMPLES CAN AND CANNOT DO
+At the decategorified tangle level, all rational closures are linear functionals
+on the two-dimensional Temperley--Lieb/Kauffman bracket skein of a four-ended
+ball. Additional Jones samples can recover that skein vector, but cannot
+separate two curve models whose full decategorifications agree. In particular
+no number of Euler-only fillings detects the formal C plus C[1] sector.
+A proof must constrain classical-tangle realization or use genuinely additional
+homological/geometric data; an argument based only on the stated slope
+geography and more Jones fillings would omit precisely this point.
+
+The generic-tangle agent separately investigates a single-special-component
+case and its exact Euler polynomial; this note does not preempt that calculation.

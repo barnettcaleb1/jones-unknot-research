@@ -1,0 +1,102 @@
+PATTERN TRANSFER FACTOR AT THE DETERMINANT ROOT
+2026-10-31. Root's deduction; independently audited by the tangle agent.
+This is an internal research deduction, not a claim of literature novelty.
+
+ASSUMPTIONS AND NORMALIZATION
+
+Let P union A be an actual two-component pattern link with A unknotted,
+lk(P,A)=0, P(U)=U, and a component-preserving strong inversion giving the
+four-ended shell map F. Normalize F by its fixed meridian framing unit.
+As proved in whitehead_pattern_audit.txt, Section 7,
+  F(Q_0)=Q_0,   f_infinity F=f_infinity,
+  F(Q_infinity-delta Q_0)=d(A)(Q_infinity-delta Q_0),
+where d is an integral Laurent polynomial, possibly zero in general.
+Put delta=-A^2-A^-2 and
+  x(T)=(f_0(T)/f_infinity(T)-delta)/(1-delta^2).
+Then x(F(T))=d(A)x(T).
+
+Set A_0=exp(i*pi/4), so t=A^-4=-1, delta(A_0)=0, |dt/dA|=4,
+and |delta'(A_0)|=4. The denominator 1-delta^2 equals 1 there.
+
+CLAIM 1. A^4+1 DIVIDES d FOR EVERY SUCH PATTERN.
+
+Use the actual rational input Q_1 whose covering solid torus has disk
+slope lambda_U+mu_U. Its infinity filling is S^3. Its input zero filling
+is also S^3, since the zero slope lambda_U has distance one from that
+disk slope. Thus both corresponding branch closures are actual unknots.
+In particular f_infinity(Q_1) is a nonzero framing monomial and
+  x(Q_1)(A_0)=f_0(Q_1)(A_0)/f_infinity(Q_1)(A_0) != 0.
+
+Important marking distinction: Q_1 is a rational unknot exterior with a
+TWISTED input longitude marking. Its input zero slope is not its own
+preferred longitude. This does not affect the fixed shell construction.
+
+After insertion Q_1 performs 1-surgery on A and produces the knot P_1
+in S^3. Winding zero ensures that the fixed OUTPUT zero slope is the
+preferred longitude of P_1. Therefore the output zero branch link has
+determinant zero: f_0(F(Q_1))(A_0)=0. The meridian closure is an unknot,
+so its bracket is nonzero at A_0. It follows that x(F(Q_1))(A_0)=0.
+The transfer law now forces d(A_0)=0. The minimal polynomial of A_0
+over Q is A^4+1. Since d is an integral Laurent polynomial, Gauss's
+lemma gives divisibility by A^4+1 in Z[A,A^-1].
+
+CLAIM 2. IF beta(P union A) != 0, THIS FACTOR HAS MULTIPLICITY ONE.
+
+Hoste's surgery formula gives a_2(P_n)=a_2(P_0)-n beta. Here P_0=U,
+so a_2(P_1)=-beta is a nonzero integer. The exact longitudinal
+Garoufalidis--Lescop derivative identity is
+  |V'_(L_1)(-1)|=|12 a_2(P_1)-1| > 1.
+See ../fanout16/realizability_zero_filling.txt and
+sato_levine_skein_injectivity.txt for normalizations and primary sources.
+
+Orient the output meridian unknot, then orient the two components of
+the zero branch link to agree on the two tangle arcs. The standard
+zero and infinity closures add no crossings and have equal writhe.
+Consequently R=f_0/f_infinity is EXACTLY the Jones polynomial of that
+oriented zero branch link, after t=A^-4. This ratio identification does
+not require linking number zero; choosing the compatible orientation is
+enough. Orientation changes affect the derivative magnitude at -1 only
+by a unit because the polynomial itself vanishes there.
+
+At A_0 we have R=delta=0, hence x'=R'-delta'. But
+  |R'(A_0)|=4 |12 a_2(P_1)-1| > 4=|delta'(A_0)|,
+so x'(F(Q_1))(A_0) is nonzero. Differentiating the transfer law, using
+d(A_0)=0 and x(Q_1)(A_0) != 0, gives
+  x'(F(Q_1))(A_0)=d'(A_0) x(Q_1)(A_0).
+Thus d'(A_0) != 0. The irreducible factor A^4+1 occurs exactly once.
+In particular d is nonzero, recovering the injectivity criterion.
+
+CONCRETE CONSEQUENCE: ACTUAL LINKS WITH ARBITRARILY DEEP HIDDEN DEFECT
+
+Take an actual strongly inverted trefoil exterior T. Its a_2=1, so the
+same magnitude inequality shows x(T) has a simple zero at A_0. It is
+not identically zero. For the ordinary Whitehead pattern beta=+/-1,
+and Claim 2 gives a simple zero of its nonzero factor d.
+
+After r inherited untwisted Whitehead iterations,
+  x(T_r)=d(A)^r x(T).
+Thus x(T_r) is nonzero and has EXACT order r+1 at A=A_0. Since
+  R(T_r)-delta=(1-delta^2)x(T_r)
+and t=A^-4 has nonzero derivative at A_0, the Jones polynomial of the
+actual longitudinal two-component branch link L_r differs from the
+two-component unlink polynomial by a function with EXACT order r+1
+at t=-1 (using either consistent local square-root branch).
+
+Therefore its values and derivatives of orders 0 through r at -1
+agree with the unlink, while derivative r+1 differs. Nevertheless the
+full Jones polynomial differs. No formal-realizability assumption is
+used: these are the inherited strong-inversion quotients of actual
+iterated Whitehead doubles of a trefoil.
+
+This supplies a precise limitation of any finite collection of local
+Jones derivatives at the determinant root in the quotient-realization
+problem. It concerns two-component longitudinal branch links, not an
+ordinary Jones-one knot construction or a generic detection theorem.
+
+BOUNDARY CHECK: COMPOSITE WHITEHEAD HAS beta=0 BUT FULL RANK
+
+The composite pattern's rational-input family is Wh_0(Wh_n(U)). Its
+outer Alexander polynomial is 1 for every n, so Hoste's formula gives
+beta=0. Its transfer factor is d_Wh^2, however, which is nonzero and
+has a zero of order two at A_0. Thus beta=0 does not imply rank loss;
+it permits a higher-order zero rather than an identically zero map.

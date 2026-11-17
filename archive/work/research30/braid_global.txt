@@ -1,0 +1,180 @@
+PASS 30 — THE CURVE COLLISION GATE IS EXACTLY THE RESIDUAL FAITHFULNESS GATE
+1 November 2026 UTC. Bounded architecture audit; no braid-word scan.
+
+Outcome
+=======
+No new generic Jones kernel was constructed. There is, however, an exact
+architectural conclusion: finding two distinct three-puncture curves with the
+same residual B5 projector is equivalent to finding a nontrivial kernel of
+that residual representation. Fixing the first curve in advance and requiring
+the same enclosed puncture subset does not weaken the equivalence. Thus this
+geometric formulation should not be advertised as a simpler intermediate
+hypothesis. The equivalence below is derived here; no novelty claim is made.
+
+1. Definitions and the complete counterexample endpoint
+======================================================
+Work over Q(A), with raw Kauffman bracket braid generators
+ rho(sigma_i) = A I + A^-1 e_i, delta = -A^2-A^-2.
+Let rho denote the five-dimensional TL5 residual block [3,2], equivalently
+through-label 1. For a simple closed curve a enclosing exactly three of the
+five marked points in the disk, let D_a be its positive Dehn twist. The
+branching calculation, already checked exactly in research28, gives
+ rho(D_a) = A^-6 I + (A^6-A^-6) P_a,
+where P_a is a rank-one idempotent. It is equivariant:
+ P_(g(a)) = rho(g) P_a rho(g)^-1.
+
+A collision P_a=P_b with a != b gives D_a D_b^-1 != 1 in ker rho and has
+exponent sum zero. Its normal closure is nontrivial and noncentral. Intersect
+it with the known nontrivial generic B5 Burau kernel, using Long's normal
+intersection lemma, to obtain a nontrivial common kernel. The scalar TL5 block
+is also killed because the exponent sum is zero. This is a FULL generic TL5
+kernel, not merely a trace collision or a colored specialization.
+
+Ito's Theorem 1 then gives, in this normal subgroup times a fixed unknot braid,
+hyperbolic knot closures of arbitrarily large genus. The full Jones operator
+and writhe correction agree with the unknot, so these would be genuine
+Jones-one counterexamples. Nontriviality is supplied by the theorem; it is not
+inferred from a nontrivial braid word. Primary endpoint and Long locator:
+ https://arxiv.org/pdf/1402.2028
+ Theorem 1, Corollaries 1–2, and the reference to Long Lemma 2.1 on p1.
+
+2. Exact equivalence theorem
+============================
+Fix any three-puncture curve a0. The following are equivalent:
+ (i) rho is not faithful;
+ (ii) there exist distinct three-puncture curves a,b with P_a=P_b;
+ (iii) there is b != a0, enclosing the same puncture subset as a0,
+       with P_b=P_a0;
+ (iv) the inverse image under rho of the matrix centralizer of P_a0
+      strictly contains the geometric stabilizer of a0.
+Here the stabilizer fixes the curve's isotopy class; the matrix centralizer
+condition is literal commutation with P_a0.
+
+Proof of the topology input.
+The action of B5 on all three-puncture curve classes has kernel exactly the
+center. Suppose g fixes all such classes. It fixes every three-element subset
+of the punctures, so its permutation is trivial. For any two-puncture curve c,
+choose two three-puncture curves a,b containing c together with two distinct
+outside punctures, arranged with geometric intersection two. A regular
+neighborhood of a union b is a four-holed sphere. Its complementary regions
+are: the disk containing c's two punctures; two one-puncture disks; and the
+outside region, which contains the last puncture and meets the disk boundary.
+The two-puncture region is distinguished by these markings. The isotopy
+classes of a,b determine this neighborhood up to isotopy (equivalently take
+minimal representatives and the filled regular neighborhood). Thus a pure
+g fixing a,b fixes c. Since c was arbitrary, g fixes every two-puncture curve.
+The boundary of a regular neighborhood of a connecting arc and its two
+endpoints determines that arc class. Hence g fixes each standard half-twist
+arc; conjugation preserves the positive half twist, and g commutes with all
+Artin generators. Therefore g is central. Conversely boundary twists fix
+all these curves. The geometric part of this argument was independently
+audited by the homology agent during this pass.
+
+Proof (i) => (ii), including the same-subset condition.
+At A=1, rho factors through a faithful five-dimensional irreducible S5
+representation (shape [3,2], or its sign transpose under other conventions).
+It is faithful because the only possible proper nontrivial normal kernel is
+A5, and an irreducible representation of S5/A5 has dimension one. Therefore
+any generic kernel braid k is pure. The central full twist Delta5^2 acts as
+A^-12 I, so rho is injective on the center. A nontrivial kernel braid is
+therefore noncentral. By the topology input, it moves some three-puncture
+curve a. Equivariance gives P_(k(a))=P_a. Purity ensures identical puncture
+subsets. Finally conjugate both curves by a braid carrying a to a0; this
+produces (iii). Such a braid exists since all three-puncture curves form one
+B5 orbit.
+
+Proof (ii) => (i).
+The displayed twist formula gives rho(D_a D_b^-1)=I. Distinct essential
+curves have distinct positive Dehn twists, so the braid is nontrivial.
+
+Equivalence with (iv).
+P_(g(a0))=P_a0 is precisely rho(g) P_a0=P_a0 rho(g). Geometric stabilizers
+always satisfy it, and an extra element gives a distinct-curve collision.
+The reverse implication follows from (iii) and transitivity on curves with
+the same enclosed subset by pure braids (or from any braid carrying a0 to b).
+
+Framing convention check.
+The raw generator has eigenvalues A (multiplicity three) and -A^-3
+(multiplicity two), hence determinant A^-3. Every raw kernel braid has
+exponent sum zero. Passing to Hecke normalization or transposing the Young
+diagram changes parameter/scalar conventions but does not change this
+exponent-zero kernel question. The center itself is not a usable kernel.
+
+3. Known mapping-class reformulations do not remove the same gate
+===============================================================
+Kasahara, Remarks on the faithfulness of the Jones representations:
+ https://arxiv.org/pdf/0803.0304
+ Proposition 2.4: branching; Proposition 2.5: symmetric-group specialization.
+ Theorem 3.1: the sphere representation for a rectangle is faithful exactly
+ when the associated smaller braid representation is faithful.
+ Theorem 5.1: for the genus-two five-dimensional Jones representation,
+ ker rho_genus2 = <hyperelliptic involution> direct-sum
+                  (ker rho_genus2 intersect Torelli_2),
+ and faithfulness on Torelli_2 is equivalent to the B5 [2,2,1] question.
+This is the transpose convention for the residual block above. Consequently
+moving to separating curves, genus-two Torelli, or its Johnson filtration
+is a meaningful change of tools, but not a weaker sufficient hypothesis.
+
+The relevant low-dimensional mapping-class classification does not force a
+kernel here. Korkmaz's theorem in dimension at most 2g-1 reaches only dimension
+three for genus two, not this dimension five:
+ https://arxiv.org/abs/1104.4816
+The later 3g-3 bounds likewise do not cover this five-dimensional genus-two
+case; applying a higher-genus theorem would first require an actual extension
+of this representation, which has not been constructed.
+
+4. Why a skein annihilator does not yet yield an actual relation
+==============================================================
+On the six-fundamental-label sphere realization of this five-dimensional
+space, a loop around three labels has two eigenvalues
+ mu_1=-A^4-A^-4, mu_3=-A^8-A^-8.
+Thus for every such curve a the skein element
+ (a-mu_1 empty)(a-mu_3 empty)
+is annihilated by the fixed-color representation, although it is nonzero in
+the universal skein algebra: its leading multicurve is two parallel copies
+of a with coefficient one. This is a concrete annihilator, not a dimension
+argument. Its existence supplies no pair of simple curves a != b with the
+same operator. That extra geometric realization statement is exactly the
+faithfulness gate proved equivalent above.
+
+Detcherry–Santharoubane's universal quantum-torus embedding is injective:
+ https://arxiv.org/pdf/2205.03291 , Theorem 1.1 and Section 2.2.
+It keeps the full skein action, including the direct sum over boundary colors.
+It does not assert that restricting to six fixed fundamental labels remains
+injective. Root-of-unity representation/classical-shadow results in the same
+paper likewise concern a different representation-theoretic setting.
+
+Freedman–Walker–Wang explicitly separate the issue:
+ https://arxiv.org/pdf/math/0209150 , Theorem 5.1.
+Every nontrivial braid is detected after SOME cabling. This does not give
+faithfulness or nonfaithfulness of the fixed fundamental TL5 block. Likewise,
+finite-order twist images at individual roots of unity do not give a single
+nontrivial braid word invisible as a Laurent-polynomial identity.
+
+5. A genuinely faithful geometric encoding, and its missing comparison
+=====================================================================
+Ng's noncommutative cord/arc encoding offers a rigorous independent way to
+certify that a proposed geometric relation is nontrivial:
+ https://sites.math.duke.edu/~ng/math/papers/knotII.pdf
+ Proposition 2.7: polynomial degree recovers minimal arc height.
+ Corollary 2.8: the arc encoding is injective.
+ Proposition 2.9: the braid action on the cord algebra has exactly central
+ kernel, and its extension with a distinguished boundary point is faithful.
+
+This is a concrete model in which skein relations retain geometric information.
+But its coefficients live in a noncommutative free algebra, not the fixed TL5
+matrix quotient. No comparison theorem found in this pass carries its arc
+height/noncancellation property through that quotient. It can certify the
+nontriviality half of a future candidate; it does not produce Jones equality.
+
+Decision and stop condition
+===========================
+The complete counterexample route remains valid. The proposed exact
+projector collision is not an easier gate than residual nonfaithfulness.
+No source-grounded construction producing such a collision was found.
+Further local curve exclusions or unmotivated braid scans are not justified
+by this pass. A worthwhile next kernel attempt needs an explicit mechanism
+that realizes a fixed-color annihilator by a DIFFERENCE OF ACTUAL SIMPLE
+CURVES (or another actual braid relation), with nontriviality independently
+certified. Merely invoking skein positivity, quantum-torus injectivity,
+point-pushing, finite roots, or low ambient dimension does not supply it.

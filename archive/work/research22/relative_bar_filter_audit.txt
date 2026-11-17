@@ -1,0 +1,81 @@
+RELATIVE LIFTED-LEE BAR FILTER: EXACT AUDIT OF THE 54 RETAINED PAIRS
+1 November 2026. This is a necessary-condition screen, not a construction of ribbon concordances.
+
+Result
+------
+All 54 directed pairs were checked, including simultaneous mirrors.
+
+* 42 pass the one-birth/one-saddle polynomial condition.
+* 12 fail divisibility by 1+u q^2; none fail only quotient nonnegativity.
+* Allowing arbitrary positive bar lengths, 48 pass and 6 fail.
+* Of the 48 survivors, 42 admit length-one bars and 6 require maximum bar length at least two.
+
+The arbitrary-length obstruction excludes these three directed pairs and their simultaneous mirrors from being ribbon concordances:
+
+  12n_338 -> 12n_244,
+  13n_4838 -> 13n_627,
+  13n_4838 -> 13n_716.
+
+Thus 48 directed candidates, or 24 simultaneous-mirror orbits, remain after this additional necessary condition. The previous prescreen counts are unchanged; this is a subsequent filter.
+
+The three directed representatives that fail the one-band condition but pass with bars of lengths at most two are:
+
+  13n_4244 -> mirror(13n_709),
+  13n_5018 -> mirror(13n_1003),
+  13n_4640 -> 13n_1411.
+
+Their simultaneous mirrors have the same status. Each has rational reduced rank difference 10. This proves any ribbon concordance between either listed ordered pair, if one exists, has at least two saddles. It does not establish existence.
+
+Mathematical premise and convention
+----------------------------------
+P_K(u,q) records reduced rational Khovanov homological degree in u and quantum degree in q. P_U=1 and P_K(-1,q)=V_K(q^2). Mirroring sends (h,q) to (-h,-q).
+
+The separately audited argument in one_band_relative_rank.txt uses the lifted Lee complex over Q[X], deg X=(0,-2). For a ribbon concordance with d saddles, the induced split maps give
+
+  H_L(K)=H_L(J) direct-sum T,    X^d T=0.
+
+Graded PID decomposition and specialization X=0 therefore imply the necessary condition
+
+  P_K-P_J = sum_{a=1}^d (1+u q^(2a)) S_a(u,q),    S_a in Z_{>=0}[u^{+-1},q^{+-1}].
+
+The one-saddle specialization is a=1. The arbitrary-length screen uses only this general split-module consequence; it does NOT assume a multiple-saddle ribbon movie decomposes into one-saddle concordances between knots. Actual lifted-Lee bar decompositions could give additional obstructions beyond the ordinary Poincare polynomial test performed here.
+
+Source conventions were checked against Dunfield--Gong--Hockenhull--Marengon--Willis, Section 6.2: X=0 gives reduced Kh, and a length-one block is supported in one delta=q/2-h grading. Its endpoints therefore differ by (1,2), confirming the factor's sign and exponents. The relative annihilation statement comes from the two evaluations of the same cobordism in Sarkar Section 6, with the ribbon splitting identity.
+
+https://arxiv.org/html/2303.04233v1
+https://arxiv.org/pdf/1903.11095
+
+Exact algorithms and verification
+---------------------------------
+The 54 defects were recomputed from the original KnotInfo rational reduced vectors, with the selected mirror flags, then compared term-for-term against the retained defect data. Every comparison passed.
+
+For a=1, split D=P_K-P_J into diagonals q-2h=d. On a diagonal use the finite recurrence S_h=D_h-S_(h-1), starting S below the smallest h at zero. The quotient is finite precisely when the final S value is zero. Every divisible quotient was reconstructed and multiplied by 1+u q^2 to recover D exactly; all 42 divisible quotients have nonnegative integral coefficients.
+
+For arbitrary a, construct a finite capacitated bipartite graph with vertex multiplicities D_(h,q). Homological parity supplies the bipartition. An edge joins (h,q) and (h+1,q+2a) for any positive integer a. Integral maximum flow pairs every generator exactly when the required nonnegative bar decomposition exists. For every positive result, reconstruction from the saved matching recovered the full defect exactly. Restricting the graph to a=1 reproduced the Laurent-division results for all 54 pairs, providing a second independent algorithmic check. Every result is invariant under simultaneous mirroring, as required.
+
+Simple witnesses for the three excluded orbits
+--------------------------------------------
+No matching algorithm is needed to verify these obstructions.
+
+For 12n_338 -> 12n_244 the defect consists of multiplicity-one terms
+  (h,q)=(3,14),(4,14),(5,18),(6,18),(6,20),(7,20).
+The generator at (3,14) cannot be the upper end of a bar because there is no h=2 term; it cannot be the lower end because the only h=4 term has the SAME quantum degree 14. Hence it cannot occur in any positive-length bar.
+
+For 13n_4838 -> either 13n_627 or 13n_716 the defect consists of
+  (0,4),(1,4),(1,6),(2,6),(3,10),(4,10).
+The generator at (4,10) cannot be the lower end because there is no h=5 term; it cannot be the upper end because the only h=3 term has the SAME quantum degree 10. Again no positive-length bar can contain it.
+
+Files
+-----
+audit_relative_bar_filters.py: reproducible exact integer computation.
+ribbon_relative_bar_filter.json: full per-pair quotients, failure tails, matchings, unmatched vertices, and minimum maximum bar lengths.
+ribbon_relative_bar_filter_pairs.txt: readable complete passing/failing pair list.
+
+Survivor endpoint counts
+------------------------
+{'directed_pairs': 48, 'simultaneous_mirror_orbits': 24, 'distinct_underlying_KnotInfo_rows': 42, 'distinct_oriented_chirality_variants': 84}
+Distinct rows ignore the optional mirror flag; chirality variants retain it. No symmetry-based merging of amphichiral knots was performed. The new separate survivor file is ribbon_bar_survivors.json. The original ribbon_final_candidates.json remains unchanged.
+
+Maximum-flow certificates
+-------------------------
+Each matching result also records a source-side minimum cut in its residual network and the cut capacity. The checker asserts that cut capacity equals the integral flow. Each failed six-generator instance has maximum flow two, so four of its six generators can be covered and full coverage would require flow three. Together with explicit isolated-generator witnesses above, this certifies impossibility without dependence on a numerical solver.

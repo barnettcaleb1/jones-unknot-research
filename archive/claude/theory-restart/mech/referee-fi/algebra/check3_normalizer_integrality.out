@@ -1,0 +1,24 @@
+(1) twisted centralizer: solve X J = s1 J X, X M = s2 M X
+  s1=+1 s2=+1 -> [Matrix([
+[x4,  0],
+[ 0, x4]])]  dets: [x4**2]
+  s1=+1 s2=-1 -> [Matrix([
+[0, 0],
+[0, 0]])]  dets: [0]
+  s1=-1 s2=+1 -> [Matrix([
+[0, 0],
+[0, 0]])]  dets: [0]
+  s1=-1 s2=-1 -> [Matrix([
+[0, 0],
+[0, 0]])]  dets: [0]
+  tr M = A - 1/A**3 (nonzero => X M X^-1 = -M impossible)
+(2) det E = -(A**2 - A + 1)*(A**2 + A + 1)*(A**4 - A**2 + 1)/A**4 ;  squarefree part nontrivial => not unit*square in Q(A)
+    A^8+A^4+1 squarefree: True  factors: (1, [(A**2 - A + 1, 1), (A**2 + A + 1, 1), (A**4 - A**2 + 1, 1)])
+(3) integrality step
+   f = -A**5 | recovered (C W^-1)_12 = -A**5 | det W = A**(-2)
+      seed brackets divisible by f: True
+   f = A**2 + 1 | recovered (C W^-1)_12 = A**2 + 1 | det W = A**(-2)
+      seed brackets divisible by f: True
+   f = A**2 - A + 1 | recovered (C W^-1)_12 = A**2 - A + 1 | det W = A**(-4)
+      seed brackets divisible by f: True
+(4) det classes: det M = -1/A**2  det J = -1  => det(bare word) = +-A^(2k)... so alpha^2 = det h/det k = +-A^(2k); -1 not a square in Q(A) => alpha = +-A^k

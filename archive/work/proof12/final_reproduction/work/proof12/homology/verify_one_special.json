@@ -1,0 +1,166 @@
+{
+  "status": "all exact checks passed",
+  "checks": [
+    {
+      "n": 1,
+      "rank_each": 4,
+      "max_q": 9,
+      "rational_top_h": 4,
+      "special_top_h": 5,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 2,
+      "rank_each": 8,
+      "max_q": 17,
+      "rational_top_h": 8,
+      "special_top_h": 9,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 3,
+      "rank_each": 12,
+      "max_q": 25,
+      "rational_top_h": 12,
+      "special_top_h": 13,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 4,
+      "rank_each": 16,
+      "max_q": 33,
+      "rational_top_h": 16,
+      "special_top_h": 17,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 5,
+      "rank_each": 20,
+      "max_q": 41,
+      "rational_top_h": 20,
+      "special_top_h": 21,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 6,
+      "rank_each": 24,
+      "max_q": 49,
+      "rational_top_h": 24,
+      "special_top_h": 25,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 7,
+      "rank_each": 28,
+      "max_q": 57,
+      "rational_top_h": 28,
+      "special_top_h": 29,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 8,
+      "rank_each": 32,
+      "max_q": 65,
+      "rational_top_h": 32,
+      "special_top_h": 33,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 9,
+      "rank_each": 36,
+      "max_q": 73,
+      "rational_top_h": 36,
+      "special_top_h": 37,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 10,
+      "rank_each": 40,
+      "max_q": 81,
+      "rational_top_h": 40,
+      "special_top_h": 41,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 11,
+      "rank_each": 44,
+      "max_q": 89,
+      "rational_top_h": 44,
+      "special_top_h": 45,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 12,
+      "rank_each": 48,
+      "max_q": 97,
+      "rational_top_h": 48,
+      "special_top_h": 49,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 13,
+      "rank_each": 52,
+      "max_q": 105,
+      "rational_top_h": 52,
+      "special_top_h": 53,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 14,
+      "rank_each": 56,
+      "max_q": 113,
+      "rational_top_h": 56,
+      "special_top_h": 57,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 15,
+      "rank_each": 60,
+      "max_q": 121,
+      "rational_top_h": 60,
+      "special_top_h": 61,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 16,
+      "rank_each": 64,
+      "max_q": 129,
+      "rational_top_h": 64,
+      "special_top_h": 65,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 17,
+      "rank_each": 68,
+      "max_q": 137,
+      "rational_top_h": 68,
+      "special_top_h": 69,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 18,
+      "rank_each": 72,
+      "max_q": 145,
+      "rational_top_h": 72,
+      "special_top_h": 73,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 19,
+      "rank_each": 76,
+      "max_q": 153,
+      "rational_top_h": 76,
+      "special_top_h": 77,
+      "identity_and_top_gaps": true
+    },
+    {
+      "n": 20,
+      "rank_each": 80,
+      "max_q": 161,
+      "rational_top_h": 80,
+      "special_top_h": 81,
+      "identity_and_top_gaps": true
+    }
+  ],
+  "proof_scope": "symbolic argument is in one_special_bn_obstruction.txt"
+}

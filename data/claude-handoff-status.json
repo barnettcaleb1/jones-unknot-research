@@ -1,0 +1,13 @@
+{
+  "status": "requested; response pending",
+  "request_id": "20261117-140421-codex",
+  "scope": "Publication completeness only; research remains paused",
+  "roots_already_available": [
+    "workspace/collab",
+    "workspace/work",
+    "workspace/outputs",
+    "jones-lanes/cx-tools",
+    "jones-lanes/g2-proof",
+    "jones-lanes/theory-restart"
+  ]
+}

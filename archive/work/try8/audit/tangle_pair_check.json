@@ -1,0 +1,96 @@
+{
+  "X": [
+    {
+      "probe": 0,
+      "initial_crossings": 6,
+      "initial_writhe": 0,
+      "simplified_pd": [],
+      "discarded_unknots": 1
+    },
+    {
+      "probe": 1,
+      "initial_crossings": 7,
+      "initial_writhe": -5,
+      "simplified_pd": [
+        [
+          1,
+          6,
+          2,
+          7
+        ],
+        [
+          3,
+          8,
+          4,
+          9
+        ],
+        [
+          5,
+          0,
+          6,
+          1
+        ],
+        [
+          7,
+          2,
+          8,
+          3
+        ],
+        [
+          9,
+          4,
+          0,
+          5
+        ]
+      ],
+      "discarded_unknots": 0
+    }
+  ],
+  "R": [
+    {
+      "probe": 0,
+      "initial_crossings": 4,
+      "initial_writhe": 4,
+      "simplified_pd": [],
+      "discarded_unknots": 1
+    },
+    {
+      "probe": 1,
+      "initial_crossings": 5,
+      "initial_writhe": -5,
+      "simplified_pd": [
+        [
+          1,
+          6,
+          2,
+          7
+        ],
+        [
+          3,
+          8,
+          4,
+          9
+        ],
+        [
+          5,
+          0,
+          6,
+          1
+        ],
+        [
+          7,
+          2,
+          8,
+          3
+        ],
+        [
+          9,
+          4,
+          0,
+          5
+        ]
+      ],
+      "discarded_unknots": 0
+    }
+  ]
+}

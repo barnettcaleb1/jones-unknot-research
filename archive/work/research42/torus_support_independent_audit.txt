@@ -1,0 +1,56 @@
+INDEPENDENT AUDIT: T(3,5) SUPPORT MATCHING
+2026-11-01. Audit of torus_tree_support.json; no change to shared source data.
+
+PASS, with characteristic-two scope retained.
+
+1. Independently reconstructed connected components of all 1024 smoothings
+using graph traversal on arc labels, rather than importing the supplied
+verifier. Bit0 pairs (a,b),(c,d); bit1 pairs (b,c),(d,a). The list of121
+one-circle states agrees exactly with the JSON.
+
+2. For every inclusion of masks differing by two newly set bits, checked
+both intermediate states have two circles. Their circles excluding arc0
+are nonempty. With independent variables on arcs1,...,19, the coefficient
+1/w(C1)+1/w(C2) is zero in characteristic2 iff C1=C2. All500 proposed edges
+have unequal circle sets; all possible edges were reconstructed, and the
+resulting support equals the stored500-edge list exactly.
+
+3. All60 matching pairs are genuine support edges. Their120 endpoints are
+globally distinct, not merely distinct within each degree or within separate
+copies of a bipartite graph. The sole unmatched vertex is972.
+
+4. Independently checked the directed cycle after reversing matched arrows:
+15 ->159 ->135 ->207 ->195 ->231 ->39 ->63 ->15.
+Each forward edge is an unmatched differential-support edge and each
+backward edge is one of the supplied matching pairs. Thus this particular
+matching is not an algebraic discrete-Morse acyclic matching.
+
+5. Regenerated Spherogram Link(braid_closure=[1,2]*5). Its PD agrees exactly,
+tuple for tuple, with the JSON; it has one component and writhe+10. This
+certifies the positive T(3,5) diagram. Mirror conventions would not change
+the total homology rank, but are not needed for this identification.
+
+6. Read the primary sources. Jaeger arXiv1109.1805 Section4, printedp4,
+specifically allows linearly independent edge weights except on the marked
+edge and gives exactly the two inverse circle-weight sums used here.
+Corollary3.2 identifies the resulting knot homology with reduced,
+delta-graded characteristic-two Khovanov homology. Roberts, Geometry &
+Topology19(2015), printedp18, Section1.11.2(2), gives T(5,3) Poincare
+polynomial4*delta^8+3*delta^6, hence totalrank7. Roberts uses a different
+diagram with27 generators; homology invariance makes this irrelevant to
+the present121-generator diagram.
+
+Consequences: a support matching covering all but one actual tree generator
+does not imply that those60 pairs can be cancelled. In fact no acyclic
+matching on the actual differential can cover all but one generator here,
+because that would force total homology rank at most1 instead of7. The
+coefficient functions satisfy genuine differential relations; they are not
+independent generic variables attached to support edges.
+
+Precise qualification: this is the reduced characteristic-two twisted/tree
+complex over a rational FUNCTION field in independent arc variables, not a
+calculation of Khovanov homology over the rational NUMBERS.
+
+Sources read:
+https://arxiv.org/pdf/1109.1805
+https://msp.org/gt/2015/19-1/gt-v19-n1-p01-p.pdf

@@ -1,0 +1,120 @@
+SPECTRAL REALIZABILITY OBSTRUCTION FOR THE FOUR-MOMENT ROUTE
+1 November 2026 UTC. Derived lemma with two independent audits.
+No novelty claim, no faithfulness theorem, no Jones-one knot construction.
+
+Setup
+-----
+Let R=Z[A,A^-1], F=Q(A), and let rho be an actual integral Laurent
+Temperley--Lieb module of a fixed braid group B_n. Both rho(beta) and
+its inverse have entries in R. Use rho(sigma_i)=A I+A^-1 e_i,
+e_i^2=(-A^2-A^-2)e_i. The application is the five-dimensional TL5 block
+left over after the Burau and one-dimensional blocks have been removed.
+
+THEOREM. If beta belongs to [P_n,P_n] and the characteristic polynomial
+of M=rho(beta) splits completely over F, then M=I. More precisely, any
+individual eigenvalue of M that belongs to F equals one. Thus a nonidentity
+M must have at least one eigenvalue outside F. This does not assert that
+its characteristic polynomial is irreducible.
+
+Proof
+-----
+1. At A=1, the braid generators square to the identity:
+   (I+e_i)^2=I, because e_i^2=-2e_i. Thus the representation factors
+   through S_n, and every pure braid has value I at A=1.
+
+   For matrices I+(A-1)X+O((A-1)^2), multiplication adds the first
+   derivatives. Hence the first derivative on P_n is a homomorphism
+   into an additive matrix space, and vanishes on [P_n,P_n]. Therefore
+     M=I+(A-1)^2 N(A), with N regular at A=1.
+
+2. If an eigenvalue lambda lies in F, the monic characteristic polynomial
+   makes it integral over R. Its reciprocal is an eigenvalue of M^-1,
+   so lambda^-1 is also integral over R. The Laurent UFD R is integrally
+   closed; both therefore belong to R. Its units are exactly +/-A^k.
+   Specialization at A=1 gives lambda(1)=1, so lambda=A^k.
+
+3. Suppose k is nonzero and put h=A-1. Then
+     lambda I-M = k h I+O(h^2).
+   In dimension d its determinant has nonzero leading term k^d h^d.
+   This contradicts lambda being an eigenvalue. Hence k=0 and lambda=1.
+   No analytic eigenvector or simultaneous diagonalization was assumed.
+
+4. If the characteristic polynomial splits, it is (z-1)^d; M is
+   unipotent. At a fixed strand number, the TL modules have positive
+   unitary specializations on an open unit-circle arc near A=1. To see
+   the sign convention, put f_i=-e_i and d=A^2+A^-2=2cos(2theta).
+   In the positive path model f_i is self-adjoint and f_i^2=d f_i.
+   For A=e^(i theta),
+     (A I-A^-1 f_i)^*(A I-A^-1 f_i)=I-d f_i+f_i^2=I.
+   For n=5, the path weights sin(2j theta)/sin(2theta), through height
+   six, are positive on the conservative arc |theta|<pi/12, with
+   positive limiting weights at theta=0. This is a fixed-level arc;
+   no positivity interval for all strand numbers at once is claimed.
+
+   A unitary unipotent matrix is the identity. Thus M(A)=I on infinitely
+   many A in this arc. Its Laurent entries then imply M=I identically.
+   This proves the theorem.
+
+Why it applies to the generic Burau kernel
+-----------------------------------------
+Use unreduced Burau matrices with sigma_i block [[1-t,t],[1,0]]. At t=1
+they are adjacent permutation matrices, so a kernel braid is pure.
+For a standard pure generator A_ij, the derivative at t=1 is
+  L_ij=(e_i-e_j)(e_i-e_j)^T.
+Indeed sigma_i^2 has derivative [[1,-1],[-1,1]], and conjugation at t=1
+permutes its two coordinates. The matrices L_ij are linearly independent:
+the (i,j) off-diagonal entry singles out its coefficient. Since the
+standard A_ij freely generate the abelianization of P_n, a Burau-kernel
+braid has all abelianization coordinates zero. It lies in [P_n,P_n].
+
+Thus for the residual TL5 block of a Burau-kernel braid,
+  characteristic polynomial completely split over Q(A)  <=>  M=I.
+The reverse implication is immediate. M=I here would give a genuine
+generic TL kernel because the other two blocks already act as the identity. Whether
+a nontrivial braid satisfying this exists remains unresolved.
+
+What this removes from the construction search
+----------------------------------------------
+The formal matrices
+  M0=diag(A^4,A^-4,A^8,A^-8,1)
+and a weighted five-cycle Z0 with Z0^5=A^-12 I satisfy
+tr(Z0 M0^m)=0 for every integer m, have det(M0)=1, and are unitary on
+the unit circle. Nevertheless M0 cannot be the residual matrix of a
+generic Burau-kernel braid: already its first derivative at A=1 is
+diag(4,-4,8,-8,0), not zero. The theorem rules out ALL completely split
+rational-eigenvalue replacements, not just this example.
+
+Nonconstant rational functions adjusted to have value one and derivative
+zero do not evade the argument: a rational eigenvalue and its inverse
+would have to be integral over R, hence Laurent units. Matrix integrality
+is an essential realizability condition missing from a free GL5 model.
+The surviving options are a genuine kernel or a nonsplit algebraic
+spectrum satisfying the four moments plus an independent knot-genus
+certificate. Neither has been constructed.
+
+A second, purely geometric symmetry obstruction
+-----------------------------------------------
+Let C=sigma_1...sigma_4. Its braid centralizer in B5 is generated by C.
+This is Gonzalez-Meneses--Wiest, Proposition 3.3 (the relatively prime
+rotation case):
+https://www.numdam.org/item/10.1016/j.ansens.2004.04.002.pdf
+
+A Burau-kernel braid has exponent sum zero, since its Burau determinant
+is (-t) to that exponent. But exponent(C)=4. Therefore the intersection
+of the Burau kernel with the centralizer of any braid-conjugate of C is
+trivial. Requiring a candidate to commute with an actual primitive
+periodic braid cannot implement a nontrivial clock/shift symmetry model.
+Commutation of representation matrices is weaker than braid commutation;
+no faithfulness assumption is inserted here.
+
+Verification and sources
+------------------------
+The two audits are split_spectrum_audit.txt and
+split_spectrum_second_audit.txt. The exact module has been checked against
+all 42 TL5 diagram traces in work/pass2/tl5_block.py. A new jet verifier
+checks the ten pure-generator Laplacians and the cached seed's second-order
+flatness; these finite checks supplement, rather than prove, the theorem.
+The positive path model is the one used in Aharonov--Jones--Landau:
+https://arxiv.org/pdf/quant-ph/0511096
+The exact identity above and positivity of the finitely many path weights
+explain the arc needed here without an assertion about the full TL tower.

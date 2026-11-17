@@ -1,0 +1,30 @@
+{
+ "types": {
+  "('single', (0, 1), 'top', 'SITE-STAB', 'top-recut')": 492,
+  "('single', (1, -1), 'top', 'JOINT-STAB', 'axis-split')": 322,
+  "('single', (1, -1), 'top', 'JOINT-STAB', 'axis-split-recut')": 424,
+  "('single', (1, 0), 'bottom', 'SITE-STAB', 'bottom')": 32,
+  "('single', (0, 1), 'bottom', 'SITE-STAB', 'bottom')": 28,
+  "('single', (1, 0), 'bottom', 'SITE-STAB', 'bottom-recut')": 42,
+  "('single', (0, 1), 'bottom', 'SITE-STAB', 'bottom-recut')": 42,
+  "('offset', (0, 1), 'offset', 'NONE', \"legs->('c', 'v')\")": 18,
+  "('plane', (1, 0), 'top', 'PLANE-GEO', 'top|top')": 41,
+  "('plane', (1, 0), 'bottom', 'PLANE-PARTIAL', \"bottom-recut|None miss:X3('c', 'v')\")": 15,
+  "('plane', (1, 0), 'pairing-only', 'PLANE-PARTIAL', \"None|bottom-recut miss:X1('c', 'v')\")": 15,
+  "('plane', (1, 0), 'bottom', 'PLANE-PARTIAL', \"bottom|None miss:X3('c', 'v')\")": 6,
+  "('plane', (1, 0), 'pairing-only', 'PLANE-PARTIAL', \"None|bottom miss:X1('c', 'v')\")": 6
+ },
+ "cert": {
+  "('single', (0, 1), 'SITE-STAB', 'base<=24,V=1')": 562,
+  "('single', (1, -1), 'JOINT-STAB', 'base<=24,V=1')": 746,
+  "('single', (1, 0), 'SITE-STAB', 'base<=24,V=1')": 74,
+  "('offset', (0, 1), 'NONE', 'base<=24,V=1')": 18,
+  "('plane', (1, 0), 'PLANE-GEO', 'base<=24,V=1')": 41,
+  "('plane', (1, 0), 'PLANE-PARTIAL', 'base<=24,V=1')": 42
+ },
+ "exact": {
+  "('single', True)": 1382,
+  "('offset', True)": 18,
+  "('plane', True)": 83
+ }
+}

@@ -1,0 +1,5536 @@
+{
+ "candidates": [
+  {
+   "name": "T(2,+4) # Hopf[+]",
+   "pd": [
+    [
+     6,
+     9,
+     1,
+     8
+    ],
+    [
+     9,
+     2,
+     10,
+     1
+    ],
+    [
+     2,
+     7,
+     3,
+     10
+    ],
+    [
+     7,
+     4,
+     8,
+     3
+    ],
+    [
+     4,
+     11,
+     5,
+     12
+    ],
+    [
+     11,
+     6,
+     12,
+     5
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": 6,
+   "bracket": {
+    "-14": 1,
+    "-10": -1,
+    "-6": 2,
+    "-2": -1,
+    "2": 2,
+    "10": 1
+   },
+   "bracket_str": "A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10",
+   "jones_str": "t^2 + 2*t^4 - t^5 + 2*t^6 - t^7 + t^8",
+   "det": 8,
+   "linking": {
+    "0,1": 2,
+    "0,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    2
+   ],
+   "lk_total": 3,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "connected_sum_links(closure [1, 1, 1, 1], closure [1, 1])",
+   "matches": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,+4) # Hopf[-]",
+   "pd": [
+    [
+     6,
+     9,
+     1,
+     8
+    ],
+    [
+     9,
+     2,
+     10,
+     1
+    ],
+    [
+     2,
+     7,
+     3,
+     10
+    ],
+    [
+     7,
+     4,
+     8,
+     3
+    ],
+    [
+     4,
+     12,
+     5,
+     11
+    ],
+    [
+     11,
+     5,
+     12,
+     6
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": 2,
+   "bracket": {
+    "-14": 1,
+    "-10": -1,
+    "-6": 2,
+    "-2": -1,
+    "2": 2,
+    "10": 1
+   },
+   "bracket_str": "A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10",
+   "jones_str": "t^-1 + 2*t - t^2 + 2*t^3 - t^4 + t^5",
+   "det": 8,
+   "linking": {
+    "0,1": 2,
+    "0,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    2
+   ],
+   "lk_total": 1,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "connected_sum_links(closure [1, 1, 1, 1], closure [-1, -1])",
+   "matches": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,-4) # Hopf[+]",
+   "pd": [
+    [
+     6,
+     10,
+     1,
+     7
+    ],
+    [
+     7,
+     1,
+     8,
+     2
+    ],
+    [
+     2,
+     8,
+     3,
+     9
+    ],
+    [
+     9,
+     3,
+     10,
+     4
+    ],
+    [
+     4,
+     11,
+     5,
+     12
+    ],
+    [
+     11,
+     6,
+     12,
+     5
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": -2,
+   "bracket": {
+    "-10": 1,
+    "-2": 2,
+    "2": -1,
+    "6": 2,
+    "10": -1,
+    "14": 1
+   },
+   "bracket_str": "A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14",
+   "jones_str": "t^-5 - t^-4 + 2*t^-3 - t^-2 + 2*t^-1 + t",
+   "det": 8,
+   "linking": {
+    "0,1": -2,
+    "0,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    2
+   ],
+   "lk_total": -1,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "connected_sum_links(closure [-1, -1, -1, -1], closure [1, 1])",
+   "matches": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,-4) # Hopf[-]",
+   "pd": [
+    [
+     6,
+     10,
+     1,
+     7
+    ],
+    [
+     7,
+     1,
+     8,
+     2
+    ],
+    [
+     2,
+     8,
+     3,
+     9
+    ],
+    [
+     9,
+     3,
+     10,
+     4
+    ],
+    [
+     4,
+     12,
+     5,
+     11
+    ],
+    [
+     11,
+     5,
+     12,
+     6
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": -6,
+   "bracket": {
+    "-10": 1,
+    "-2": 2,
+    "2": -1,
+    "6": 2,
+    "10": -1,
+    "14": 1
+   },
+   "bracket_str": "A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14",
+   "jones_str": "t^-8 - t^-7 + 2*t^-6 - t^-5 + 2*t^-4 + t^-2",
+   "det": 8,
+   "linking": {
+    "0,1": -2,
+    "0,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    2
+   ],
+   "lk_total": -3,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "connected_sum_links(closure [-1, -1, -1, -1], closure [-1, -1])",
+   "matches": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "Hopf # Hopf (3-chain) [1, 1, 2, 2]",
+   "pd": [
+    [
+     6,
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     4,
+     2,
+     3
+    ],
+    [
+     8,
+     5,
+     7,
+     4
+    ],
+    [
+     5,
+     8,
+     6,
+     7
+    ]
+   ],
+   "crossings": 4,
+   "components": 3,
+   "writhe": 4,
+   "bracket": {
+    "-8": 1,
+    "0": 2,
+    "8": 1
+   },
+   "bracket_str": "A^-8 + 2 + A^8",
+   "jones_str": "t + 2*t^3 + t^5",
+   "det": 4,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1
+   ],
+   "lk_total": 2,
+   "span": 16,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 2, 2] (= Hopf # Hopf # unknot)",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "Hopf # Hopf (3-chain) [1, 1, -2, -2]",
+   "pd": [
+    [
+     6,
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     4,
+     2,
+     3
+    ],
+    [
+     4,
+     8,
+     5,
+     7
+    ],
+    [
+     7,
+     5,
+     8,
+     6
+    ]
+   ],
+   "crossings": 4,
+   "components": 3,
+   "writhe": 0,
+   "bracket": {
+    "-8": 1,
+    "0": 2,
+    "8": 1
+   },
+   "bracket_str": "A^-8 + 2 + A^8",
+   "jones_str": "t^-2 + 2 + t^2",
+   "det": 4,
+   "linking": {
+    "0,1": 1,
+    "0,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1
+   ],
+   "lk_total": 0,
+   "span": 16,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, -2, -2] (= Hopf # Hopf # unknot)",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "Hopf # Hopf (3-chain) [-1, -1, -2, -2]",
+   "pd": [
+    [
+     2,
+     6,
+     1,
+     3
+    ],
+    [
+     3,
+     1,
+     4,
+     2
+    ],
+    [
+     4,
+     8,
+     5,
+     7
+    ],
+    [
+     7,
+     5,
+     8,
+     6
+    ]
+   ],
+   "crossings": 4,
+   "components": 3,
+   "writhe": -4,
+   "bracket": {
+    "-8": 1,
+    "0": 2,
+    "8": 1
+   },
+   "bracket_str": "A^-8 + 2 + A^8",
+   "jones_str": "t^-5 + 2*t^-3 + t^-1",
+   "det": 4,
+   "linking": {
+    "0,1": -1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1
+   ],
+   "lk_total": -2,
+   "span": 16,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [-1, -1, -2, -2] (= Hopf # Hopf # unknot)",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "Hopf u O (split)",
+   "pd": [
+    [
+     4,
+     1,
+     3,
+     2
+    ],
+    [
+     1,
+     4,
+     2,
+     3
+    ],
+    [
+     5,
+     5,
+     6,
+     6
+    ]
+   ],
+   "crossings": 3,
+   "components": 3,
+   "writhe": 3,
+   "bracket": {
+    "-3": -1,
+    "1": -1,
+    "5": -1,
+    "9": -1
+   },
+   "bracket_str": "-A^-3 - A - A^5 - A^9",
+   "jones_str": "1 + t + t^2 + t^3",
+   "det": 0,
+   "linking": {
+    "0,1": 1
+   },
+   "lk_abs_sorted": [
+    1
+   ],
+   "lk_total": 1,
+   "span": 12,
+   "classes_mod4": [
+    1
+   ],
+   "construction": "Hopf PD plus a disjoint kink [5,5,6,6]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,4) u O (split)",
+   "pd": [
+    [
+     8,
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     6,
+     2,
+     5
+    ],
+    [
+     6,
+     3,
+     7,
+     2
+    ],
+    [
+     3,
+     8,
+     4,
+     7
+    ],
+    [
+     9,
+     9,
+     10,
+     10
+    ]
+   ],
+   "crossings": 5,
+   "components": 3,
+   "writhe": 5,
+   "bracket": {
+    "-9": -1,
+    "3": -1,
+    "7": -1,
+    "11": -1
+   },
+   "bracket_str": "-A^-9 - A^3 - A^7 - A^11",
+   "jones_str": "t + t^2 + t^3 + t^6",
+   "det": 0,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 20,
+   "classes_mod4": [
+    3
+   ],
+   "construction": "T(2,4) PD plus a disjoint kink [9,9,10,10]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,4) # T(2,4)",
+   "pd": [
+    [
+     12,
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     6,
+     2,
+     5
+    ],
+    [
+     6,
+     3,
+     7,
+     2
+    ],
+    [
+     3,
+     8,
+     4,
+     7
+    ],
+    [
+     16,
+     9,
+     13,
+     8
+    ],
+    [
+     9,
+     14,
+     10,
+     13
+    ],
+    [
+     14,
+     11,
+     15,
+     10
+    ],
+    [
+     11,
+     16,
+     12,
+     15
+    ]
+   ],
+   "crossings": 8,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-20": 1,
+    "-16": -2,
+    "-12": 3,
+    "-8": -2,
+    "-4": 3,
+    "0": -2,
+    "4": 2,
+    "12": 1
+   },
+   "bracket_str": "A^-20 - 2*A^-16 + 3*A^-12 - 2*A^-8 + 3*A^-4 - 2 + 2*A^4 + A^12",
+   "jones_str": "t^3 + 2*t^5 - 2*t^6 + 3*t^7 - 2*t^8 + 3*t^9 - 2*t^10 + t^11",
+   "det": 16,
+   "linking": {
+    "0,1": 2,
+    "0,2": 2
+   },
+   "lk_abs_sorted": [
+    2,
+    2
+   ],
+   "lk_total": 4,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of sigma_1^4 sigma_2^4",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13",
+   "pd": [
+    [
+     12,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     16,
+     11,
+     13,
+     10
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     15,
+     6,
+     14
+    ],
+    [
+     15,
+     11,
+     16,
+     12
+    ]
+   ],
+   "crossings": 8,
+   "components": 3,
+   "writhe": 6,
+   "bracket": {
+    "-14": 1,
+    "-10": -1,
+    "-6": 2,
+    "-2": -1,
+    "2": 2,
+    "10": 1
+   },
+   "bracket_str": "A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10",
+   "jones_str": "t^2 + 2*t^4 - t^5 + 2*t^6 - t^7 + t^8",
+   "det": 8,
+   "linking": {
+    "0,1": 2,
+    "0,2": 0,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    0,
+    1,
+    2
+   ],
+   "lk_total": 3,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2]",
+   "matches": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": [],
+   "snappy_identify": [],
+   "also": [
+    "sigma_1^4 A13^-1",
+    "sigma_1^4 A23",
+    "sigma_1^4 A23^-1"
+   ]
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13 A13",
+   "pd": [
+    [
+     16,
+     1,
+     9,
+     8
+    ],
+    [
+     1,
+     10,
+     2,
+     9
+    ],
+    [
+     10,
+     3,
+     11,
+     2
+    ],
+    [
+     3,
+     12,
+     4,
+     11
+    ],
+    [
+     24,
+     13,
+     17,
+     12
+    ],
+    [
+     17,
+     5,
+     18,
+     4
+    ],
+    [
+     5,
+     19,
+     6,
+     18
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ],
+    [
+     20,
+     15,
+     21,
+     14
+    ],
+    [
+     21,
+     7,
+     22,
+     6
+    ],
+    [
+     7,
+     23,
+     8,
+     22
+    ],
+    [
+     23,
+     15,
+     24,
+     16
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-20": 1,
+    "-16": -2,
+    "-12": 3,
+    "-8": -2,
+    "-4": 3,
+    "0": -2,
+    "4": 2,
+    "12": 1
+   },
+   "bracket_str": "A^-20 - 2*A^-16 + 3*A^-12 - 2*A^-8 + 3*A^-4 - 2 + 2*A^4 + A^12",
+   "jones_str": "t^3 + 2*t^5 - 2*t^6 + 3*t^7 - 2*t^8 + 3*t^9 - 2*t^10 + t^11",
+   "det": 16,
+   "linking": {
+    "0,1": 2,
+    "0,2": 0,
+    "1,2": 2
+   },
+   "lk_abs_sorted": [
+    0,
+    2,
+    2
+   ],
+   "lk_total": 4,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, 2, 1, 1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": [],
+   "also": [
+    "sigma_1^4 A23 A23"
+   ]
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13 A13^-1",
+   "pd": [
+    [
+     16,
+     1,
+     9,
+     8
+    ],
+    [
+     1,
+     10,
+     2,
+     9
+    ],
+    [
+     10,
+     3,
+     11,
+     2
+    ],
+    [
+     3,
+     12,
+     4,
+     11
+    ],
+    [
+     24,
+     13,
+     17,
+     12
+    ],
+    [
+     17,
+     5,
+     18,
+     4
+    ],
+    [
+     5,
+     19,
+     6,
+     18
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ],
+    [
+     20,
+     15,
+     21,
+     14
+    ],
+    [
+     6,
+     21,
+     7,
+     22
+    ],
+    [
+     22,
+     7,
+     23,
+     8
+    ],
+    [
+     23,
+     15,
+     24,
+     16
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 4,
+   "bracket": {
+    "-12": 1,
+    "0": 1,
+    "4": 1,
+    "8": 1
+   },
+   "bracket_str": "A^-12 + 1 + A^4 + A^8",
+   "jones_str": "t + t^2 + t^3 + t^6",
+   "det": 0,
+   "linking": {
+    "0,1": 2,
+    "0,2": 0,
+    "1,2": 0
+   },
+   "lk_abs_sorted": [
+    0,
+    0,
+    2
+   ],
+   "lk_total": 2,
+   "span": 20,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, 2, -1, -1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": [],
+   "also": [
+    "sigma_1^4 A13^-1 A13",
+    "sigma_1^4 A23 A23^-1",
+    "sigma_1^4 A23^-1 A23"
+   ]
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13 A23",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     20,
+     11,
+     15,
+     10
+    ],
+    [
+     15,
+     5,
+     16,
+     4
+    ],
+    [
+     5,
+     17,
+     6,
+     16
+    ],
+    [
+     17,
+     11,
+     18,
+     12
+    ],
+    [
+     18,
+     13,
+     19,
+     12
+    ],
+    [
+     13,
+     20,
+     14,
+     19
+    ]
+   ],
+   "crossings": 10,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-12": 1,
+    "-4": 1,
+    "4": 1,
+    "12": 1
+   },
+   "bracket_str": "A^-12 + A^-4 + A^4 + A^12",
+   "jones_str": "t^3 + t^5 + t^7 + t^9",
+   "det": 4,
+   "linking": {
+    "0,1": 2,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 4,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, 2, 2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8n3"
+   ],
+   "snappy_identify": [],
+   "also": [
+    "sigma_1^4 A23^-1 A13^-1"
+   ]
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13 A23^-1",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     20,
+     11,
+     15,
+     10
+    ],
+    [
+     15,
+     5,
+     16,
+     4
+    ],
+    [
+     5,
+     17,
+     6,
+     16
+    ],
+    [
+     17,
+     11,
+     18,
+     12
+    ],
+    [
+     12,
+     18,
+     13,
+     19
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ]
+   ],
+   "crossings": 10,
+   "components": 3,
+   "writhe": 4,
+   "bracket": {
+    "-16": 1,
+    "-12": -1,
+    "-8": 2,
+    "-4": -2,
+    "0": 3,
+    "4": -1,
+    "8": 2
+   },
+   "bracket_str": "A^-16 - A^-12 + 2*A^-8 - 2*A^-4 + 3 - A^4 + 2*A^8",
+   "jones_str": "2*t - t^2 + 3*t^3 - 2*t^4 + 2*t^5 - t^6 + t^7",
+   "det": 12,
+   "linking": {
+    "0,1": 2,
+    "0,2": -1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 2,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, -2, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8n4"
+   ],
+   "snappy_identify": [
+    "s776(0,0)(0,0)(0,0)",
+    "6^3_1(0,0)(0,0)(0,0)",
+    "L6a5(0,0)(0,0)(0,0)"
+   ],
+   "also": [
+    "sigma_1^4 A13^-1 A23"
+   ]
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13^-1 A13^-1",
+   "pd": [
+    [
+     16,
+     1,
+     9,
+     8
+    ],
+    [
+     1,
+     10,
+     2,
+     9
+    ],
+    [
+     10,
+     3,
+     11,
+     2
+    ],
+    [
+     3,
+     12,
+     4,
+     11
+    ],
+    [
+     24,
+     13,
+     17,
+     12
+    ],
+    [
+     4,
+     17,
+     5,
+     18
+    ],
+    [
+     18,
+     5,
+     19,
+     6
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ],
+    [
+     20,
+     15,
+     21,
+     14
+    ],
+    [
+     6,
+     21,
+     7,
+     22
+    ],
+    [
+     22,
+     7,
+     23,
+     8
+    ],
+    [
+     23,
+     15,
+     24,
+     16
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 0,
+   "bracket": {
+    "-16": 1,
+    "-12": -1,
+    "-8": 2,
+    "-4": -2,
+    "0": 4,
+    "4": -2,
+    "8": 2,
+    "12": -1,
+    "16": 1
+   },
+   "bracket_str": "A^-16 - A^-12 + 2*A^-8 - 2*A^-4 + 4 - 2*A^4 + 2*A^8 - A^12 + A^16",
+   "jones_str": "t^-4 - t^-3 + 2*t^-2 - 2*t^-1 + 4 - 2*t + 2*t^2 - t^3 + t^4",
+   "det": 16,
+   "linking": {
+    "0,1": 2,
+    "0,2": 0,
+    "1,2": -2
+   },
+   "lk_abs_sorted": [
+    0,
+    2,
+    2
+   ],
+   "lk_total": 0,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, -1, -1, -2, 2, -1, -1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [],
+   "snappy_identify": [],
+   "also": [
+    "sigma_1^4 A23^-1 A23^-1"
+   ]
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A13^-1 A23^-1",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     20,
+     11,
+     15,
+     10
+    ],
+    [
+     4,
+     15,
+     5,
+     16
+    ],
+    [
+     16,
+     5,
+     17,
+     6
+    ],
+    [
+     17,
+     11,
+     18,
+     12
+    ],
+    [
+     12,
+     18,
+     13,
+     19
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ]
+   ],
+   "crossings": 10,
+   "components": 3,
+   "writhe": 0,
+   "bracket": {
+    "-16": 1,
+    "-12": -2,
+    "-8": 4,
+    "-4": -4,
+    "0": 6,
+    "4": -4,
+    "8": 4,
+    "12": -2,
+    "16": 1
+   },
+   "bracket_str": "A^-16 - 2*A^-12 + 4*A^-8 - 4*A^-4 + 6 - 4*A^4 + 4*A^8 - 2*A^12 + A^16",
+   "jones_str": "t^-4 - 2*t^-3 + 4*t^-2 - 4*t^-1 + 6 - 4*t + 4*t^2 - 2*t^3 + t^4",
+   "det": 28,
+   "linking": {
+    "0,1": 2,
+    "0,2": -1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 0,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, -1, -1, -2, -2, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8a17"
+   ],
+   "snappy_identify": [
+    "o9_44098(0,0)(0,0)(0,0)",
+    "8^3_2(0,0)(0,0)(0,0)",
+    "L8a17(0,0)(0,0)(0,0)"
+   ],
+   "also": []
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A23 A13",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     20,
+     11,
+     15,
+     10
+    ],
+    [
+     11,
+     16,
+     12,
+     15
+    ],
+    [
+     16,
+     13,
+     17,
+     12
+    ],
+    [
+     17,
+     5,
+     18,
+     4
+    ],
+    [
+     5,
+     19,
+     6,
+     18
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ]
+   ],
+   "crossings": 10,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-24": -1,
+    "-20": 3,
+    "-16": -4,
+    "-12": 6,
+    "-8": -6,
+    "-4": 6,
+    "0": -4,
+    "4": 4,
+    "8": -1,
+    "12": 1
+   },
+   "bracket_str": "-A^-24 + 3*A^-20 - 4*A^-16 + 6*A^-12 - 6*A^-8 + 6*A^-4 - 4 + 4*A^4 - A^8 + A^12",
+   "jones_str": "t^3 - t^4 + 4*t^5 - 4*t^6 + 6*t^7 - 6*t^8 + 6*t^9 - 4*t^10 + 3*t^11 - t^12",
+   "det": 36,
+   "linking": {
+    "0,1": 2,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 4,
+   "span": 36,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 2, 2, 1, 1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L9a48*"
+   ],
+   "snappy_identify": [
+    "o10_146816(0,0)(0,0)(0,0)",
+    "9^3_5(0,0)(0,0)(0,0)",
+    "L9a48(0,0)(0,0)(0,0)"
+   ],
+   "also": []
+  },
+  {
+   "name": "T(2,4) + unknot: sigma_1^4 A23 A13^-1",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     20,
+     11,
+     15,
+     10
+    ],
+    [
+     11,
+     16,
+     12,
+     15
+    ],
+    [
+     16,
+     13,
+     17,
+     12
+    ],
+    [
+     4,
+     17,
+     5,
+     18
+    ],
+    [
+     18,
+     5,
+     19,
+     6
+    ],
+    [
+     19,
+     13,
+     20,
+     14
+    ]
+   ],
+   "crossings": 10,
+   "components": 3,
+   "writhe": 4,
+   "bracket": {
+    "-20": 1,
+    "-16": -2,
+    "-12": 3,
+    "-8": -3,
+    "-4": 4,
+    "0": -2,
+    "4": 3,
+    "8": -1,
+    "12": 1
+   },
+   "bracket_str": "A^-20 - 2*A^-16 + 3*A^-12 - 3*A^-8 + 4*A^-4 - 2 + 3*A^4 - A^8 + A^12",
+   "jones_str": "1 - t + 3*t^2 - 2*t^3 + 4*t^4 - 3*t^5 + 3*t^6 - 2*t^7 + t^8",
+   "det": 20,
+   "linking": {
+    "0,1": 2,
+    "0,2": 1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 2,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of 3-braid [1, 1, 1, 1, 2, 2, 2, -1, -1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8a18*",
+    "L10n68"
+   ],
+   "snappy_identify": [
+    "v3383(0,0)(0,0)(0,0)",
+    "8^3_1(0,0)(0,0)(0,0)",
+    "L8a18(0,0)(0,0)(0,0)"
+   ],
+   "also": [
+    "sigma_1^4 A23^-1 A13"
+   ]
+  },
+  {
+   "name": "pretzel (2, 2, 2)",
+   "pd": [
+    [
+     11,
+     2,
+     8,
+     3
+    ],
+    [
+     3,
+     8,
+     0,
+     9
+    ],
+    [
+     5,
+     11,
+     6,
+     10
+    ],
+    [
+     9,
+     7,
+     10,
+     6
+    ],
+    [
+     1,
+     4,
+     2,
+     5
+    ],
+    [
+     7,
+     0,
+     4,
+     1
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": -2,
+   "bracket": {
+    "-10": 1,
+    "-6": -1,
+    "-2": 3,
+    "2": -1,
+    "6": 3,
+    "10": -2,
+    "14": 1
+   },
+   "bracket_str": "A^-10 - A^-6 + 3*A^-2 - A^2 + 3*A^6 - 2*A^10 + A^14",
+   "jones_str": "t^-5 - 2*t^-4 + 3*t^-3 - t^-2 + 3*t^-1 - 1 + t",
+   "det": 12,
+   "linking": {
+    "0,1": -1,
+    "0,2": 1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": -1,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "spherogram RationalTangle(1,p) sum, numerator_closure",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6a5"
+   ],
+   "snappy_identify": [
+    "s776(0,0)(0,0)(0,0)",
+    "6^3_1(0,0)(0,0)(0,0)",
+    "L6a5(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "pretzel (2, 2, -2)",
+   "pd": [
+    [
+     10,
+     5,
+     11,
+     6
+    ],
+    [
+     6,
+     11,
+     7,
+     8
+    ],
+    [
+     2,
+     9,
+     3,
+     10
+    ],
+    [
+     8,
+     1,
+     9,
+     2
+    ],
+    [
+     3,
+     4,
+     0,
+     5
+    ],
+    [
+     7,
+     0,
+     4,
+     1
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": -6,
+   "bracket": {
+    "-10": 1,
+    "-2": 1,
+    "6": 2
+   },
+   "bracket_str": "A^-10 + A^-2 + 2*A^6",
+   "jones_str": "2*t^-6 + t^-4 + t^-2",
+   "det": 4,
+   "linking": {
+    "0,1": -1,
+    "0,2": -1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": -3,
+   "span": 16,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "spherogram RationalTangle(1,p) sum, numerator_closure",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6n1*"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "pretzel (-2, -2, -2)",
+   "pd": [
+    [
+     5,
+     10,
+     6,
+     11
+    ],
+    [
+     9,
+     6,
+     10,
+     7
+    ],
+    [
+     11,
+     2,
+     8,
+     3
+    ],
+    [
+     1,
+     8,
+     2,
+     9
+    ],
+    [
+     3,
+     4,
+     0,
+     5
+    ],
+    [
+     7,
+     0,
+     4,
+     1
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": -6,
+   "bracket": {
+    "-14": 1,
+    "-10": -2,
+    "-6": 3,
+    "-2": -1,
+    "2": 3,
+    "6": -1,
+    "10": 1
+   },
+   "bracket_str": "A^-14 - 2*A^-10 + 3*A^-6 - A^-2 + 3*A^2 - A^6 + A^10",
+   "jones_str": "t^-7 - t^-6 + 3*t^-5 - t^-4 + 3*t^-3 - 2*t^-2 + t^-1",
+   "det": 12,
+   "linking": {
+    "0,1": -1,
+    "0,2": -1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": -3,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "spherogram RationalTangle(1,p) sum, numerator_closure",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6a5*"
+   ],
+   "snappy_identify": [
+    "s776(0,0)(0,0)(0,0)",
+    "6^3_1(0,0)(0,0)(0,0)",
+    "L6a5(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "T(3,3)",
+   "pd": [
+    [
+     8,
+     1,
+     5,
+     4
+    ],
+    [
+     12,
+     2,
+     9,
+     1
+    ],
+    [
+     9,
+     6,
+     10,
+     5
+    ],
+    [
+     2,
+     7,
+     3,
+     6
+    ],
+    [
+     3,
+     11,
+     4,
+     10
+    ],
+    [
+     7,
+     12,
+     8,
+     11
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": 6,
+   "bracket": {
+    "-6": 2,
+    "2": 1,
+    "10": 1
+   },
+   "bracket_str": "2*A^-6 + A^2 + A^10",
+   "jones_str": "t^2 + t^4 + 2*t^6",
+   "det": 4,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": 3,
+   "span": 16,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of (sigma_1 sigma_2)^3",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6n1"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(3,3) mirror",
+   "pd": [
+    [
+     4,
+     8,
+     1,
+     5
+    ],
+    [
+     1,
+     12,
+     2,
+     9
+    ],
+    [
+     5,
+     9,
+     6,
+     10
+    ],
+    [
+     6,
+     2,
+     7,
+     3
+    ],
+    [
+     10,
+     3,
+     11,
+     4
+    ],
+    [
+     11,
+     7,
+     12,
+     8
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": -6,
+   "bracket": {
+    "-10": 1,
+    "-2": 1,
+    "6": 2
+   },
+   "bracket_str": "A^-10 + A^-2 + 2*A^6",
+   "jones_str": "2*t^-6 + t^-4 + t^-2",
+   "det": 4,
+   "linking": {
+    "0,1": -1,
+    "0,2": -1,
+    "1,2": -1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": -3,
+   "span": 16,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of (sigma_1^-1 sigma_2^-1)^3",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6n1*"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "Hopf u axis",
+   "pd": [
+    [
+     8,
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     6,
+     2,
+     5
+    ],
+    [
+     12,
+     7,
+     9,
+     6
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     11,
+     4,
+     10
+    ],
+    [
+     7,
+     12,
+     8,
+     11
+    ]
+   ],
+   "crossings": 6,
+   "components": 3,
+   "writhe": 6,
+   "bracket": {
+    "-6": 2,
+    "2": 1,
+    "10": 1
+   },
+   "bracket_str": "2*A^-6 + A^2 + A^10",
+   "jones_str": "t^2 + t^4 + 2*t^6",
+   "det": 4,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": 3,
+   "span": 16,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of sigma_1^2 sigma_2 sigma_1^2 sigma_2",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6n1"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "T(2,4) u axis",
+   "pd": [
+    [
+     12,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     3,
+     9,
+     2
+    ],
+    [
+     3,
+     10,
+     4,
+     9
+    ],
+    [
+     16,
+     11,
+     13,
+     10
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     15,
+     6,
+     14
+    ],
+    [
+     11,
+     16,
+     12,
+     15
+    ]
+   ],
+   "crossings": 8,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-12": 1,
+    "-4": 1,
+    "4": 1,
+    "12": 1
+   },
+   "bracket_str": "A^-12 + A^-4 + A^4 + A^12",
+   "jones_str": "t^3 + t^5 + t^7 + t^9",
+   "det": 4,
+   "linking": {
+    "0,1": 2,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 4,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of sigma_1^4 sigma_2 sigma_1^2 sigma_2 (braid axis of sigma_1^4)",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8n3"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 2): A12^1 A13^2 A23^1",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     24,
+     9,
+     15,
+     8
+    ],
+    [
+     15,
+     3,
+     16,
+     2
+    ],
+    [
+     3,
+     17,
+     4,
+     16
+    ],
+    [
+     17,
+     9,
+     18,
+     10
+    ],
+    [
+     18,
+     11,
+     19,
+     10
+    ],
+    [
+     19,
+     5,
+     20,
+     4
+    ],
+    [
+     5,
+     21,
+     6,
+     20
+    ],
+    [
+     21,
+     11,
+     22,
+     12
+    ],
+    [
+     22,
+     13,
+     23,
+     12
+    ],
+    [
+     13,
+     24,
+     14,
+     23
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-12": 1,
+    "-4": 1,
+    "4": 1,
+    "12": 1
+   },
+   "bracket_str": "A^-12 + A^-4 + A^4 + A^12",
+   "jones_str": "t^3 + t^5 + t^7 + t^9",
+   "det": 4,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": 2
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 4,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of pure 3-braid [1, 1, 2, 1, 1, -2, 2, 1, 1, -2, 2, 2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8n3"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 2): A12^1 A23^1 A13^2",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     24,
+     9,
+     15,
+     8
+    ],
+    [
+     9,
+     16,
+     10,
+     15
+    ],
+    [
+     16,
+     11,
+     17,
+     10
+    ],
+    [
+     17,
+     3,
+     18,
+     2
+    ],
+    [
+     3,
+     19,
+     4,
+     18
+    ],
+    [
+     19,
+     11,
+     20,
+     12
+    ],
+    [
+     20,
+     13,
+     21,
+     12
+    ],
+    [
+     21,
+     5,
+     22,
+     4
+    ],
+    [
+     5,
+     23,
+     6,
+     22
+    ],
+    [
+     23,
+     13,
+     24,
+     14
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 8,
+   "bracket": {
+    "-24": -1,
+    "-20": 3,
+    "-16": -4,
+    "-12": 6,
+    "-8": -6,
+    "-4": 6,
+    "0": -4,
+    "4": 4,
+    "8": -1,
+    "12": 1
+   },
+   "bracket_str": "-A^-24 + 3*A^-20 - 4*A^-16 + 6*A^-12 - 6*A^-8 + 6*A^-4 - 4 + 4*A^4 - A^8 + A^12",
+   "jones_str": "t^3 - t^4 + 4*t^5 - 4*t^6 + 6*t^7 - 6*t^8 + 6*t^9 - 4*t^10 + 3*t^11 - t^12",
+   "det": 36,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": 2
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 4,
+   "span": 36,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of pure 3-braid [1, 1, 2, 2, 2, 1, 1, -2, 2, 1, 1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L9a48*"
+   ],
+   "snappy_identify": [
+    "o10_146816(0,0)(0,0)(0,0)",
+    "9^3_5(0,0)(0,0)(0,0)",
+    "L9a48(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 2): A12^1 A13^2 A23^-1",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     24,
+     9,
+     15,
+     8
+    ],
+    [
+     15,
+     3,
+     16,
+     2
+    ],
+    [
+     3,
+     17,
+     4,
+     16
+    ],
+    [
+     17,
+     9,
+     18,
+     10
+    ],
+    [
+     18,
+     11,
+     19,
+     10
+    ],
+    [
+     19,
+     5,
+     20,
+     4
+    ],
+    [
+     5,
+     21,
+     6,
+     20
+    ],
+    [
+     21,
+     11,
+     22,
+     12
+    ],
+    [
+     12,
+     22,
+     13,
+     23
+    ],
+    [
+     23,
+     13,
+     24,
+     14
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 4,
+   "bracket": {
+    "-16": 1,
+    "-12": -1,
+    "-8": 2,
+    "-4": -2,
+    "0": 3,
+    "4": -1,
+    "8": 2
+   },
+   "bracket_str": "A^-16 - A^-12 + 2*A^-8 - 2*A^-4 + 3 - A^4 + 2*A^8",
+   "jones_str": "2*t - t^2 + 3*t^3 - 2*t^4 + 2*t^5 - t^6 + t^7",
+   "det": 12,
+   "linking": {
+    "0,1": 1,
+    "0,2": -1,
+    "1,2": 2
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 2,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of pure 3-braid [1, 1, 2, 1, 1, -2, 2, 1, 1, -2, -2, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8n4"
+   ],
+   "snappy_identify": [
+    "s776(0,0)(0,0)(0,0)",
+    "6^3_1(0,0)(0,0)(0,0)",
+    "L6a5(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 2): A12^1 A23^-1 A13^2",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     8,
+     24,
+     9,
+     15
+    ],
+    [
+     15,
+     9,
+     16,
+     10
+    ],
+    [
+     16,
+     11,
+     17,
+     10
+    ],
+    [
+     17,
+     3,
+     18,
+     2
+    ],
+    [
+     3,
+     19,
+     4,
+     18
+    ],
+    [
+     19,
+     11,
+     20,
+     12
+    ],
+    [
+     20,
+     13,
+     21,
+     12
+    ],
+    [
+     21,
+     5,
+     22,
+     4
+    ],
+    [
+     5,
+     23,
+     6,
+     22
+    ],
+    [
+     23,
+     13,
+     24,
+     14
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 4,
+   "bracket": {
+    "-20": 1,
+    "-16": -2,
+    "-12": 3,
+    "-8": -3,
+    "-4": 4,
+    "0": -2,
+    "4": 3,
+    "8": -1,
+    "12": 1
+   },
+   "bracket_str": "A^-20 - 2*A^-16 + 3*A^-12 - 3*A^-8 + 4*A^-4 - 2 + 3*A^4 - A^8 + A^12",
+   "jones_str": "1 - t + 3*t^2 - 2*t^3 + 4*t^4 - 3*t^5 + 3*t^6 - 2*t^7 + t^8",
+   "det": 20,
+   "linking": {
+    "0,1": 1,
+    "0,2": -1,
+    "1,2": 2
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 2,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of pure 3-braid [1, 1, -2, -2, 2, 1, 1, -2, 2, 1, 1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8a18*",
+    "L10n68"
+   ],
+   "snappy_identify": [
+    "v3383(0,0)(0,0)(0,0)",
+    "8^3_1(0,0)(0,0)(0,0)",
+    "L8a18(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 2): A12^1 A23^1 A13^-2",
+   "pd": [
+    [
+     14,
+     1,
+     7,
+     6
+    ],
+    [
+     1,
+     8,
+     2,
+     7
+    ],
+    [
+     24,
+     9,
+     15,
+     8
+    ],
+    [
+     9,
+     16,
+     10,
+     15
+    ],
+    [
+     16,
+     11,
+     17,
+     10
+    ],
+    [
+     2,
+     17,
+     3,
+     18
+    ],
+    [
+     18,
+     3,
+     19,
+     4
+    ],
+    [
+     19,
+     11,
+     20,
+     12
+    ],
+    [
+     20,
+     13,
+     21,
+     12
+    ],
+    [
+     4,
+     21,
+     5,
+     22
+    ],
+    [
+     22,
+     5,
+     23,
+     6
+    ],
+    [
+     23,
+     13,
+     24,
+     14
+    ]
+   ],
+   "crossings": 12,
+   "components": 3,
+   "writhe": 0,
+   "bracket": {
+    "-16": 1,
+    "-12": -2,
+    "-8": 4,
+    "-4": -4,
+    "0": 6,
+    "4": -4,
+    "8": 4,
+    "12": -2,
+    "16": 1
+   },
+   "bracket_str": "A^-16 - 2*A^-12 + 4*A^-8 - 4*A^-4 + 6 - 4*A^4 + 4*A^8 - 2*A^12 + A^16",
+   "jones_str": "t^-4 - 2*t^-3 + 4*t^-2 - 4*t^-1 + 6 - 4*t + 4*t^2 - 2*t^3 + t^4",
+   "det": 28,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": -2
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    2
+   ],
+   "lk_total": 0,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ],
+   "construction": "closure of pure 3-braid [1, 1, 2, 2, 2, -1, -1, -2, 2, -1, -1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L8a17"
+   ],
+   "snappy_identify": [
+    "o9_44098(0,0)(0,0)(0,0)",
+    "8^3_2(0,0)(0,0)(0,0)",
+    "L8a17(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 1): A12^1 A13^1 A23^1",
+   "pd": [
+    [
+     10,
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     6,
+     2,
+     5
+    ],
+    [
+     16,
+     7,
+     11,
+     6
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     13,
+     4,
+     12
+    ],
+    [
+     13,
+     7,
+     14,
+     8
+    ],
+    [
+     14,
+     9,
+     15,
+     8
+    ],
+    [
+     9,
+     16,
+     10,
+     15
+    ]
+   ],
+   "crossings": 8,
+   "components": 3,
+   "writhe": 6,
+   "bracket": {
+    "-6": 2,
+    "2": 1,
+    "10": 1
+   },
+   "bracket_str": "2*A^-6 + A^2 + A^10",
+   "jones_str": "t^2 + t^4 + 2*t^6",
+   "det": 4,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": 3,
+   "span": 16,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of pure 3-braid [1, 1, 2, 1, 1, -2, 2, 2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6n1"
+   ],
+   "snappy_identify": []
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 1): A12^1 A23^1 A13^1",
+   "pd": [
+    [
+     10,
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     6,
+     2,
+     5
+    ],
+    [
+     16,
+     7,
+     11,
+     6
+    ],
+    [
+     7,
+     12,
+     8,
+     11
+    ],
+    [
+     12,
+     9,
+     13,
+     8
+    ],
+    [
+     13,
+     3,
+     14,
+     2
+    ],
+    [
+     3,
+     15,
+     4,
+     14
+    ],
+    [
+     15,
+     9,
+     16,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 3,
+   "writhe": 6,
+   "bracket": {
+    "-18": -1,
+    "-14": 3,
+    "-10": -3,
+    "-6": 4,
+    "-2": -3,
+    "2": 4,
+    "6": -1,
+    "10": 1
+   },
+   "bracket_str": "-A^-18 + 3*A^-14 - 3*A^-10 + 4*A^-6 - 3*A^-2 + 4*A^2 - A^6 + A^10",
+   "jones_str": "t^2 - t^3 + 4*t^4 - 3*t^5 + 4*t^6 - 3*t^7 + 3*t^8 - t^9",
+   "det": 20,
+   "linking": {
+    "0,1": 1,
+    "0,2": 1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": 3,
+   "span": 28,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of pure 3-braid [1, 1, 2, 2, 2, 1, 1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L7a7*"
+   ],
+   "snappy_identify": [
+    "t12711(0,0)(0,0)(0,0)",
+    "7^3_1(0,0)(0,0)(0,0)",
+    "L7a7(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "fingers |lk|=(1, 1, 1): A12^1 A23^-1 A13^1",
+   "pd": [
+    [
+     10,
+     1,
+     5,
+     4
+    ],
+    [
+     1,
+     6,
+     2,
+     5
+    ],
+    [
+     6,
+     16,
+     7,
+     11
+    ],
+    [
+     11,
+     7,
+     12,
+     8
+    ],
+    [
+     12,
+     9,
+     13,
+     8
+    ],
+    [
+     13,
+     3,
+     14,
+     2
+    ],
+    [
+     3,
+     15,
+     4,
+     14
+    ],
+    [
+     15,
+     9,
+     16,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 3,
+   "writhe": 2,
+   "bracket": {
+    "-14": 1,
+    "-10": -2,
+    "-6": 3,
+    "-2": -1,
+    "2": 3,
+    "6": -1,
+    "10": 1
+   },
+   "bracket_str": "A^-14 - 2*A^-10 + 3*A^-6 - A^-2 + 3*A^2 - A^6 + A^10",
+   "jones_str": "t^-1 - 1 + 3*t - t^2 + 3*t^3 - 2*t^4 + t^5",
+   "det": 12,
+   "linking": {
+    "0,1": 1,
+    "0,2": -1,
+    "1,2": 1
+   },
+   "lk_abs_sorted": [
+    1,
+    1,
+    1
+   ],
+   "lk_total": 1,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ],
+   "construction": "closure of pure 3-braid [1, 1, -2, -2, 2, 1, 1, -2]",
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": [
+    "L6a5*"
+   ],
+   "snappy_identify": [
+    "s776(0,0)(0,0)(0,0)",
+    "6^3_1(0,0)(0,0)(0,0)",
+    "L6a5(0,0)(0,0)(0,0)"
+   ]
+  },
+  {
+   "name": "L2a1 # L4a1",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10",
+   "det": 8,
+   "matches": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1 # L4a1*",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14",
+   "det": 8,
+   "matches": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1* # L4a1",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10",
+   "det": 8,
+   "matches": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1* # L4a1*",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14",
+   "det": 8,
+   "matches": [
+    {
+     "m": 6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": 6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "matches_mirror": [
+    {
+     "m": -6,
+     "eps": 1,
+     "sign": 1,
+     "A_power": -6,
+     "A_power_mod4": 2,
+     "in_main_twelve": true
+    }
+   ],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1 # L7n1",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "A^-13 - A^-9 + A^-5 - 2*A^-1 - 2*A^7 - A^15",
+   "det": 8,
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1 # L7n1*",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "-A^-15 - 2*A^-7 - 2*A + A^5 - A^9 + A^13",
+   "det": 8,
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1* # L7n1",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "A^-13 - A^-9 + A^-5 - 2*A^-1 - 2*A^7 - A^15",
+   "det": 8,
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": []
+  },
+  {
+   "name": "L2a1* # L7n1*",
+   "construction": "product of brackets (connected sum along any components)",
+   "components": 3,
+   "bracket_str": "-A^-15 - 2*A^-7 - 2*A + A^5 - A^9 + A^13",
+   "det": 8,
+   "matches": [],
+   "matches_mirror": [],
+   "bracket_equals_table": []
+  }
+ ],
+ "two_component_links": [
+  {
+   "name": "L2a1",
+   "pd": [
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     0,
+     3
+    ]
+   ],
+   "crossings": 2,
+   "components": 2,
+   "writhe": -2,
+   "bracket": {
+    "-4": -1,
+    "4": -1
+   },
+   "bracket_str": "-A^-4 - A^4",
+   "jones_str": "-t^(-5/2) - t^(-1/2)",
+   "det": 2,
+   "linking": {
+    "0,1": -1
+   },
+   "lk_abs_sorted": [
+    1
+   ],
+   "lk_total": -1,
+   "span": 8,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L4a1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     7,
+     3,
+     4,
+     2
+    ],
+    [
+     3,
+     5,
+     0,
+     4
+    ]
+   ],
+   "crossings": 4,
+   "components": 2,
+   "writhe": 4,
+   "bracket": {
+    "-10": -1,
+    "-6": 1,
+    "-2": -1,
+    "6": -1
+   },
+   "bracket_str": "-A^-10 + A^-6 - A^-2 - A^6",
+   "jones_str": "-t^(3/2) - t^(7/2) + t^(9/2) - t^(11/2)",
+   "det": 4,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 16,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L5a1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     7,
+     2,
+     8,
+     3
+    ],
+    [
+     3,
+     8,
+     0,
+     9
+    ],
+    [
+     9,
+     6,
+     4,
+     7
+    ]
+   ],
+   "crossings": 5,
+   "components": 2,
+   "writhe": -1,
+   "bracket": {
+    "-9": 1,
+    "-5": -1,
+    "-1": 2,
+    "3": -1,
+    "7": 2,
+    "11": -1
+   },
+   "bracket_str": "A^-9 - A^-5 + 2*A^-1 - A^3 + 2*A^7 - A^11",
+   "jones_str": "t^(-7/2) - 2*t^(-5/2) + t^(-3/2) - 2*t^(-1/2) + t^(1/2) - t^(3/2)",
+   "det": 8,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 20,
+   "classes_mod4": [
+    3
+   ]
+  },
+  {
+   "name": "L6a1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     9,
+     0,
+     8
+    ],
+    [
+     11,
+     6,
+     4,
+     7
+    ],
+    [
+     7,
+     10,
+     8,
+     11
+    ]
+   ],
+   "crossings": 6,
+   "components": 2,
+   "writhe": 2,
+   "bracket": {
+    "-12": -1,
+    "-8": 1,
+    "-4": -3,
+    "0": 2,
+    "4": -2,
+    "8": 2,
+    "12": -1
+   },
+   "bracket_str": "-A^-12 + A^-8 - 3*A^-4 + 2 - 2*A^4 + 2*A^8 - A^12",
+   "jones_str": "-t^(-3/2) + 2*t^(-1/2) - 2*t^(1/2) + 2*t^(3/2) - 3*t^(5/2) + t^(7/2) - t^(9/2)",
+   "det": 12,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L6a2",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     11,
+     4,
+     10
+    ],
+    [
+     11,
+     5,
+     6,
+     4
+    ],
+    [
+     5,
+     9,
+     0,
+     8
+    ]
+   ],
+   "crossings": 6,
+   "components": 2,
+   "writhe": 6,
+   "bracket": {
+    "-12": -1,
+    "-8": 1,
+    "-4": -2,
+    "0": 2,
+    "4": -2,
+    "8": 1,
+    "12": -1
+   },
+   "bracket_str": "-A^-12 + A^-8 - 2*A^-4 + 2 - 2*A^4 + A^8 - A^12",
+   "jones_str": "-t^(3/2) + t^(5/2) - 2*t^(7/2) + 2*t^(9/2) - 2*t^(11/2) + t^(13/2) - t^(15/2)",
+   "det": 10,
+   "linking": {
+    "0,1": 3
+   },
+   "lk_abs_sorted": [
+    3
+   ],
+   "lk_total": 3,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L6a3",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     9,
+     2,
+     8
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     11,
+     4,
+     10
+    ],
+    [
+     11,
+     5,
+     6,
+     4
+    ],
+    [
+     5,
+     7,
+     0,
+     6
+    ]
+   ],
+   "crossings": 6,
+   "components": 2,
+   "writhe": 6,
+   "bracket": {
+    "-16": -1,
+    "-12": 1,
+    "-8": -1,
+    "-4": 1,
+    "0": -1,
+    "8": -1
+   },
+   "bracket_str": "-A^-16 + A^-12 - A^-8 + A^-4 - 1 - A^8",
+   "jones_str": "-t^(5/2) - t^(9/2) + t^(11/2) - t^(13/2) + t^(15/2) - t^(17/2)",
+   "det": 6,
+   "linking": {
+    "0,1": 3
+   },
+   "lk_abs_sorted": [
+    3
+   ],
+   "lk_total": 3,
+   "span": 24,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L7a1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     10,
+     2,
+     11
+    ],
+    [
+     7,
+     2,
+     8,
+     3
+    ],
+    [
+     3,
+     13,
+     0,
+     12
+    ],
+    [
+     9,
+     4,
+     10,
+     5
+    ],
+    [
+     11,
+     7,
+     12,
+     6
+    ],
+    [
+     13,
+     8,
+     4,
+     9
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": -1,
+   "bracket": {
+    "-13": -1,
+    "-9": 3,
+    "-5": -3,
+    "-1": 5,
+    "3": -4,
+    "7": 4,
+    "11": -3,
+    "15": 1
+   },
+   "bracket_str": "-A^-13 + 3*A^-9 - 3*A^-5 + 5*A^-1 - 4*A^3 + 4*A^7 - 3*A^11 + A^15",
+   "jones_str": "-t^(-9/2) + 3*t^(-7/2) - 4*t^(-5/2) + 4*t^(-3/2) - 5*t^(-1/2) + 3*t^(1/2) - 3*t^(3/2) + t^(5/2)",
+   "det": 24,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 28,
+   "classes_mod4": [
+    3
+   ]
+  },
+  {
+   "name": "L7a2",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     9,
+     0,
+     8
+    ],
+    [
+     11,
+     7,
+     12,
+     6
+    ],
+    [
+     7,
+     13,
+     8,
+     12
+    ],
+    [
+     13,
+     11,
+     4,
+     10
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": 7,
+   "bracket": {
+    "-13": -1,
+    "-9": 2,
+    "-5": -3,
+    "-1": 4,
+    "3": -3,
+    "7": 4,
+    "11": -2,
+    "15": 1
+   },
+   "bracket_str": "-A^-13 + 2*A^-9 - 3*A^-5 + 4*A^-1 - 3*A^3 + 4*A^7 - 2*A^11 + A^15",
+   "jones_str": "-t^(3/2) + 2*t^(5/2) - 4*t^(7/2) + 3*t^(9/2) - 4*t^(11/2) + 3*t^(13/2) - 2*t^(15/2) + t^(17/2)",
+   "det": 20,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 28,
+   "classes_mod4": [
+    3
+   ]
+  },
+  {
+   "name": "L7a3",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     10,
+     0,
+     11
+    ],
+    [
+     11,
+     6,
+     12,
+     7
+    ],
+    [
+     7,
+     12,
+     8,
+     13
+    ],
+    [
+     13,
+     8,
+     4,
+     9
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": -3,
+   "bracket": {
+    "-11": 1,
+    "-7": -1,
+    "-3": 3,
+    "1": -2,
+    "5": 3,
+    "9": -3,
+    "13": 2,
+    "17": -1
+   },
+   "bracket_str": "A^-11 - A^-7 + 3*A^-3 - 2*A + 3*A^5 - 3*A^9 + 2*A^13 - A^17",
+   "jones_str": "t^(-13/2) - 2*t^(-11/2) + 3*t^(-9/2) - 3*t^(-7/2) + 2*t^(-5/2) - 3*t^(-3/2) + t^(-1/2) - t^(1/2)",
+   "det": 16,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 28,
+   "classes_mod4": [
+    1
+   ]
+  },
+  {
+   "name": "L7a4",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     10,
+     0,
+     11
+    ],
+    [
+     13,
+     6,
+     4,
+     7
+    ],
+    [
+     7,
+     12,
+     8,
+     13
+    ],
+    [
+     11,
+     8,
+     12,
+     9
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": -3,
+   "bracket": {
+    "-15": 1,
+    "-11": -1,
+    "-7": 3,
+    "-3": -3,
+    "1": 3,
+    "5": -2,
+    "9": 2,
+    "13": -1
+   },
+   "bracket_str": "A^-15 - A^-11 + 3*A^-7 - 3*A^-3 + 3*A - 2*A^5 + 2*A^9 - A^13",
+   "jones_str": "t^(-11/2) - 2*t^(-9/2) + 2*t^(-7/2) - 3*t^(-5/2) + 3*t^(-3/2) - 3*t^(-1/2) + t^(1/2) - t^(3/2)",
+   "det": 16,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 28,
+   "classes_mod4": [
+    1
+   ]
+  },
+  {
+   "name": "L7a5",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     12,
+     4,
+     13
+    ],
+    [
+     11,
+     4,
+     12,
+     5
+    ],
+    [
+     5,
+     9,
+     0,
+     8
+    ],
+    [
+     13,
+     11,
+     6,
+     10
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": 3,
+   "bracket": {
+    "-13": -1,
+    "-9": 2,
+    "-5": -2,
+    "-1": 4,
+    "3": -3,
+    "7": 3,
+    "11": -2,
+    "15": 1
+   },
+   "bracket_str": "-A^-13 + 2*A^-9 - 2*A^-5 + 4*A^-1 - 3*A^3 + 3*A^7 - 2*A^11 + A^15",
+   "jones_str": "-t^(-3/2) + 2*t^(-1/2) - 3*t^(1/2) + 3*t^(3/2) - 4*t^(5/2) + 2*t^(7/2) - 2*t^(9/2) + t^(11/2)",
+   "det": 18,
+   "linking": {
+    "0,1": 1
+   },
+   "lk_abs_sorted": [
+    1
+   ],
+   "lk_total": 1,
+   "span": 28,
+   "classes_mod4": [
+    3
+   ]
+  },
+  {
+   "name": "L7a6",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     10,
+     4,
+     11
+    ],
+    [
+     11,
+     4,
+     12,
+     5
+    ],
+    [
+     5,
+     12,
+     0,
+     13
+    ],
+    [
+     13,
+     8,
+     6,
+     9
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": -3,
+   "bracket": {
+    "-11": 1,
+    "-7": -1,
+    "-3": 2,
+    "1": -2,
+    "5": 3,
+    "9": -2,
+    "13": 2,
+    "17": -1
+   },
+   "bracket_str": "A^-11 - A^-7 + 2*A^-3 - 2*A + 3*A^5 - 2*A^9 + 2*A^13 - A^17",
+   "jones_str": "t^(-13/2) - 2*t^(-11/2) + 2*t^(-9/2) - 3*t^(-7/2) + 2*t^(-5/2) - 2*t^(-3/2) + t^(-1/2) - t^(1/2)",
+   "det": 14,
+   "linking": {
+    "0,1": -1
+   },
+   "lk_abs_sorted": [
+    1
+   ],
+   "lk_total": -1,
+   "span": 28,
+   "classes_mod4": [
+    1
+   ]
+  },
+  {
+   "name": "L7n1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     10,
+     2,
+     11,
+     1
+    ],
+    [
+     2,
+     8,
+     3,
+     7
+    ],
+    [
+     3,
+     13,
+     0,
+     12
+    ],
+    [
+     4,
+     10,
+     5,
+     9
+    ],
+    [
+     11,
+     7,
+     12,
+     6
+    ],
+    [
+     8,
+     4,
+     9,
+     13
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": 7,
+   "bracket": {
+    "-9": -1,
+    "-5": 1,
+    "3": 1,
+    "11": 1
+   },
+   "bracket_str": "-A^-9 + A^-5 + A^3 + A^11",
+   "jones_str": "-t^(5/2) - t^(9/2) - t^(13/2) + t^(15/2)",
+   "det": 4,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 20,
+   "classes_mod4": [
+    3
+   ]
+  },
+  {
+   "name": "L7n2",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     10,
+     2,
+     11
+    ],
+    [
+     2,
+     8,
+     3,
+     7
+    ],
+    [
+     12,
+     3,
+     13,
+     0
+    ],
+    [
+     4,
+     10,
+     5,
+     9
+    ],
+    [
+     11,
+     7,
+     12,
+     6
+    ],
+    [
+     8,
+     4,
+     9,
+     13
+    ]
+   ],
+   "crossings": 7,
+   "components": 2,
+   "writhe": 3,
+   "bracket": {
+    "-13": -1,
+    "-9": 1,
+    "-5": -1,
+    "-1": 2,
+    "3": -1,
+    "7": 2
+   },
+   "bracket_str": "-A^-13 + A^-9 - A^-5 + 2*A^-1 - A^3 + 2*A^7",
+   "jones_str": "-2*t^(1/2) + t^(3/2) - 2*t^(5/2) + t^(7/2) - t^(9/2) + t^(11/2)",
+   "det": 8,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 20,
+   "classes_mod4": [
+    3
+   ]
+  },
+  {
+   "name": "L8a1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     12,
+     2,
+     13
+    ],
+    [
+     7,
+     2,
+     8,
+     3
+    ],
+    [
+     3,
+     15,
+     0,
+     14
+    ],
+    [
+     9,
+     5,
+     10,
+     4
+    ],
+    [
+     13,
+     7,
+     14,
+     6
+    ],
+    [
+     11,
+     8,
+     12,
+     9
+    ],
+    [
+     15,
+     11,
+     4,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 2,
+   "bracket": {
+    "-16": 1,
+    "-12": -3,
+    "-8": 5,
+    "-4": -7,
+    "0": 7,
+    "4": -7,
+    "8": 5,
+    "12": -4,
+    "16": 1
+   },
+   "bracket_str": "A^-16 - 3*A^-12 + 5*A^-8 - 7*A^-4 + 7 - 7*A^4 + 5*A^8 - 4*A^12 + A^16",
+   "jones_str": "t^(-5/2) - 4*t^(-3/2) + 5*t^(-1/2) - 7*t^(1/2) + 7*t^(3/2) - 7*t^(5/2) + 5*t^(7/2) - 3*t^(9/2) + t^(11/2)",
+   "det": 40,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L8a2",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     10,
+     0,
+     11
+    ],
+    [
+     11,
+     6,
+     12,
+     7
+    ],
+    [
+     7,
+     15,
+     8,
+     14
+    ],
+    [
+     13,
+     9,
+     14,
+     8
+    ],
+    [
+     15,
+     12,
+     4,
+     13
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 0,
+   "bracket": {
+    "-14": -1,
+    "-10": 2,
+    "-6": -4,
+    "-2": 5,
+    "2": -6,
+    "6": 5,
+    "10": -5,
+    "14": 3,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + 2*A^-10 - 4*A^-6 + 5*A^-2 - 6*A^2 + 5*A^6 - 5*A^10 + 3*A^14 - A^18",
+   "jones_str": "-t^(-9/2) + 3*t^(-7/2) - 5*t^(-5/2) + 5*t^(-3/2) - 6*t^(-1/2) + 5*t^(1/2) - 4*t^(3/2) + 2*t^(5/2) - t^(7/2)",
+   "det": 32,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a3",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     9,
+     0,
+     8
+    ],
+    [
+     13,
+     6,
+     14,
+     7
+    ],
+    [
+     7,
+     12,
+     8,
+     13
+    ],
+    [
+     15,
+     11,
+     4,
+     10
+    ],
+    [
+     11,
+     15,
+     12,
+     14
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 4,
+   "bracket": {
+    "-14": -1,
+    "-10": 2,
+    "-6": -4,
+    "-2": 4,
+    "2": -5,
+    "6": 5,
+    "10": -4,
+    "14": 2,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + 2*A^-10 - 4*A^-6 + 4*A^-2 - 5*A^2 + 5*A^6 - 4*A^10 + 2*A^14 - A^18",
+   "jones_str": "-t^(-3/2) + 2*t^(-1/2) - 4*t^(1/2) + 5*t^(3/2) - 5*t^(5/2) + 4*t^(7/2) - 4*t^(9/2) + 2*t^(11/2) - t^(13/2)",
+   "det": 28,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a4",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     10,
+     0,
+     11
+    ],
+    [
+     13,
+     7,
+     14,
+     6
+    ],
+    [
+     7,
+     15,
+     8,
+     14
+    ],
+    [
+     11,
+     8,
+     12,
+     9
+    ],
+    [
+     15,
+     13,
+     4,
+     12
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 2,
+   "bracket": {
+    "-16": 1,
+    "-12": -2,
+    "-8": 4,
+    "-4": -6,
+    "0": 5,
+    "4": -6,
+    "8": 4,
+    "12": -3,
+    "16": 1
+   },
+   "bracket_str": "A^-16 - 2*A^-12 + 4*A^-8 - 6*A^-4 + 5 - 6*A^4 + 4*A^8 - 3*A^12 + A^16",
+   "jones_str": "t^(-5/2) - 3*t^(-3/2) + 4*t^(-1/2) - 6*t^(1/2) + 5*t^(3/2) - 6*t^(5/2) + 4*t^(7/2) - 2*t^(9/2) + t^(11/2)",
+   "det": 32,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L8a5",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     11,
+     0,
+     10
+    ],
+    [
+     13,
+     6,
+     14,
+     7
+    ],
+    [
+     7,
+     14,
+     8,
+     15
+    ],
+    [
+     15,
+     8,
+     4,
+     9
+    ],
+    [
+     9,
+     12,
+     10,
+     13
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 0,
+   "bracket": {
+    "-14": -1,
+    "-10": 1,
+    "-6": -4,
+    "-2": 4,
+    "2": -5,
+    "6": 5,
+    "10": -4,
+    "14": 3,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + A^-10 - 4*A^-6 + 4*A^-2 - 5*A^2 + 5*A^6 - 4*A^10 + 3*A^14 - A^18",
+   "jones_str": "-t^(-9/2) + 3*t^(-7/2) - 4*t^(-5/2) + 5*t^(-3/2) - 5*t^(-1/2) + 4*t^(1/2) - 4*t^(3/2) + t^(5/2) - t^(7/2)",
+   "det": 28,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a6",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     5,
+     2,
+     4
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     11,
+     0,
+     10
+    ],
+    [
+     15,
+     6,
+     4,
+     7
+    ],
+    [
+     7,
+     14,
+     8,
+     15
+    ],
+    [
+     13,
+     8,
+     14,
+     9
+    ],
+    [
+     9,
+     12,
+     10,
+     13
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 0,
+   "bracket": {
+    "-18": -1,
+    "-14": 1,
+    "-10": -3,
+    "-6": 3,
+    "-2": -4,
+    "2": 3,
+    "6": -2,
+    "10": 2,
+    "14": -1
+   },
+   "bracket_str": "-A^-18 + A^-14 - 3*A^-10 + 3*A^-6 - 4*A^-2 + 3*A^2 - 2*A^6 + 2*A^10 - A^14",
+   "jones_str": "-t^(-7/2) + 2*t^(-5/2) - 2*t^(-3/2) + 3*t^(-1/2) - 4*t^(1/2) + 3*t^(3/2) - 3*t^(5/2) + t^(7/2) - t^(9/2)",
+   "det": 20,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a7",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     9,
+     2,
+     8
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     15,
+     0,
+     14
+    ],
+    [
+     9,
+     5,
+     10,
+     4
+    ],
+    [
+     13,
+     7,
+     14,
+     6
+    ],
+    [
+     7,
+     13,
+     8,
+     12
+    ],
+    [
+     15,
+     11,
+     4,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 8,
+   "bracket": {
+    "-14": -1,
+    "-10": 3,
+    "-6": -4,
+    "-2": 6,
+    "2": -7,
+    "6": 5,
+    "10": -6,
+    "14": 3,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + 3*A^-10 - 4*A^-6 + 6*A^-2 - 7*A^2 + 5*A^6 - 6*A^10 + 3*A^14 - A^18",
+   "jones_str": "-t^(3/2) + 3*t^(5/2) - 6*t^(7/2) + 5*t^(9/2) - 7*t^(11/2) + 6*t^(13/2) - 4*t^(15/2) + 3*t^(17/2) - t^(19/2)",
+   "det": 36,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a8",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     13,
+     4,
+     12
+    ],
+    [
+     11,
+     5,
+     12,
+     4
+    ],
+    [
+     5,
+     14,
+     0,
+     15
+    ],
+    [
+     15,
+     8,
+     6,
+     9
+    ],
+    [
+     13,
+     10,
+     14,
+     11
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 0,
+   "bracket": {
+    "-14": -1,
+    "-10": 2,
+    "-6": -4,
+    "-2": 4,
+    "2": -6,
+    "6": 5,
+    "10": -4,
+    "14": 3,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + 2*A^-10 - 4*A^-6 + 4*A^-2 - 6*A^2 + 5*A^6 - 4*A^10 + 3*A^14 - A^18",
+   "jones_str": "-t^(-9/2) + 3*t^(-7/2) - 4*t^(-5/2) + 5*t^(-3/2) - 6*t^(-1/2) + 4*t^(1/2) - 4*t^(3/2) + 2*t^(5/2) - t^(7/2)",
+   "det": 30,
+   "linking": {
+    "0,1": 1
+   },
+   "lk_abs_sorted": [
+    1
+   ],
+   "lk_total": 1,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a9",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     9,
+     2,
+     10,
+     3
+    ],
+    [
+     3,
+     14,
+     4,
+     15
+    ],
+    [
+     11,
+     5,
+     12,
+     4
+    ],
+    [
+     5,
+     13,
+     0,
+     12
+    ],
+    [
+     15,
+     8,
+     6,
+     9
+    ],
+    [
+     13,
+     11,
+     14,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 2,
+   "bracket": {
+    "-16": 1,
+    "-12": -3,
+    "-8": 4,
+    "-4": -6,
+    "0": 6,
+    "4": -6,
+    "8": 4,
+    "12": -3,
+    "16": 1
+   },
+   "bracket_str": "A^-16 - 3*A^-12 + 4*A^-8 - 6*A^-4 + 6 - 6*A^4 + 4*A^8 - 3*A^12 + A^16",
+   "jones_str": "t^(-5/2) - 3*t^(-3/2) + 4*t^(-1/2) - 6*t^(1/2) + 6*t^(3/2) - 6*t^(5/2) + 4*t^(7/2) - 3*t^(9/2) + t^(11/2)",
+   "det": 34,
+   "linking": {
+    "0,1": 1
+   },
+   "lk_abs_sorted": [
+    1
+   ],
+   "lk_total": 1,
+   "span": 32,
+   "classes_mod4": [
+    0
+   ]
+  },
+  {
+   "name": "L8a10",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     7,
+     2,
+     6
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     13,
+     4,
+     12
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     9,
+     0,
+     8
+    ],
+    [
+     15,
+     11,
+     6,
+     10
+    ],
+    [
+     11,
+     15,
+     12,
+     14
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 8,
+   "bracket": {
+    "-14": -1,
+    "-10": 2,
+    "-6": -3,
+    "-2": 4,
+    "2": -5,
+    "6": 4,
+    "10": -4,
+    "14": 2,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + 2*A^-10 - 3*A^-6 + 4*A^-2 - 5*A^2 + 4*A^6 - 4*A^10 + 2*A^14 - A^18",
+   "jones_str": "-t^(3/2) + 2*t^(5/2) - 4*t^(7/2) + 4*t^(9/2) - 5*t^(11/2) + 4*t^(13/2) - 3*t^(15/2) + 2*t^(17/2) - t^(19/2)",
+   "det": 26,
+   "linking": {
+    "0,1": 3
+   },
+   "lk_abs_sorted": [
+    3
+   ],
+   "lk_total": 3,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a11",
+   "pd": [
+    [
+     7,
+     1,
+     8,
+     0
+    ],
+    [
+     1,
+     9,
+     2,
+     8
+    ],
+    [
+     9,
+     3,
+     10,
+     2
+    ],
+    [
+     3,
+     13,
+     4,
+     12
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     7,
+     0,
+     6
+    ],
+    [
+     15,
+     11,
+     6,
+     10
+    ],
+    [
+     11,
+     15,
+     12,
+     14
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 8,
+   "bracket": {
+    "-18": -1,
+    "-14": 2,
+    "-10": -3,
+    "-6": 4,
+    "-2": -4,
+    "2": 3,
+    "6": -3,
+    "10": 1,
+    "14": -1
+   },
+   "bracket_str": "-A^-18 + 2*A^-14 - 3*A^-10 + 4*A^-6 - 4*A^-2 + 3*A^2 - 3*A^6 + A^10 - A^14",
+   "jones_str": "-t^(5/2) + t^(7/2) - 3*t^(9/2) + 3*t^(11/2) - 4*t^(13/2) + 4*t^(15/2) - 3*t^(17/2) + 2*t^(19/2) - t^(21/2)",
+   "det": 22,
+   "linking": {
+    "0,1": 3
+   },
+   "lk_abs_sorted": [
+    3
+   ],
+   "lk_total": 3,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a12",
+   "pd": [
+    [
+     9,
+     1,
+     10,
+     0
+    ],
+    [
+     1,
+     9,
+     2,
+     8
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     13,
+     4,
+     12
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     15,
+     6,
+     14
+    ],
+    [
+     15,
+     7,
+     8,
+     6
+    ],
+    [
+     7,
+     11,
+     0,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 8,
+   "bracket": {
+    "-18": -1,
+    "-14": 1,
+    "-10": -2,
+    "-6": 3,
+    "-2": -3,
+    "2": 2,
+    "6": -2,
+    "10": 1,
+    "14": -1
+   },
+   "bracket_str": "-A^-18 + A^-14 - 2*A^-10 + 3*A^-6 - 3*A^-2 + 2*A^2 - 2*A^6 + A^10 - A^14",
+   "jones_str": "-t^(5/2) + t^(7/2) - 2*t^(9/2) + 2*t^(11/2) - 3*t^(13/2) + 3*t^(15/2) - 2*t^(17/2) + t^(19/2) - t^(21/2)",
+   "det": 16,
+   "linking": {
+    "0,1": 4
+   },
+   "lk_abs_sorted": [
+    4
+   ],
+   "lk_total": 4,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a13",
+   "pd": [
+    [
+     9,
+     1,
+     10,
+     0
+    ],
+    [
+     1,
+     9,
+     2,
+     8
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     15,
+     4,
+     14
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     13,
+     6,
+     12
+    ],
+    [
+     15,
+     7,
+     8,
+     6
+    ],
+    [
+     7,
+     11,
+     0,
+     10
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 8,
+   "bracket": {
+    "-14": -1,
+    "-10": 1,
+    "-6": -3,
+    "-2": 4,
+    "2": -4,
+    "6": 4,
+    "10": -4,
+    "14": 2,
+    "18": -1
+   },
+   "bracket_str": "-A^-14 + A^-10 - 3*A^-6 + 4*A^-2 - 4*A^2 + 4*A^6 - 4*A^10 + 2*A^14 - A^18",
+   "jones_str": "-t^(3/2) + 2*t^(5/2) - 4*t^(7/2) + 4*t^(9/2) - 4*t^(11/2) + 4*t^(13/2) - 3*t^(15/2) + t^(17/2) - t^(19/2)",
+   "det": 24,
+   "linking": {
+    "0,1": 4
+   },
+   "lk_abs_sorted": [
+    4
+   ],
+   "lk_total": 4,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8a14",
+   "pd": [
+    [
+     9,
+     1,
+     10,
+     0
+    ],
+    [
+     1,
+     11,
+     2,
+     10
+    ],
+    [
+     11,
+     3,
+     12,
+     2
+    ],
+    [
+     3,
+     13,
+     4,
+     12
+    ],
+    [
+     13,
+     5,
+     14,
+     4
+    ],
+    [
+     5,
+     15,
+     6,
+     14
+    ],
+    [
+     15,
+     7,
+     8,
+     6
+    ],
+    [
+     7,
+     9,
+     0,
+     8
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 8,
+   "bracket": {
+    "-22": -1,
+    "-18": 1,
+    "-14": -1,
+    "-10": 1,
+    "-6": -1,
+    "-2": 1,
+    "2": -1,
+    "10": -1
+   },
+   "bracket_str": "-A^-22 + A^-18 - A^-14 + A^-10 - A^-6 + A^-2 - A^2 - A^10",
+   "jones_str": "-t^(7/2) - t^(11/2) + t^(13/2) - t^(15/2) + t^(17/2) - t^(19/2) + t^(21/2) - t^(23/2)",
+   "det": 8,
+   "linking": {
+    "0,1": 4
+   },
+   "lk_abs_sorted": [
+    4
+   ],
+   "lk_total": 4,
+   "span": 32,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8n1",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     12,
+     2,
+     13,
+     1
+    ],
+    [
+     2,
+     8,
+     3,
+     7
+    ],
+    [
+     3,
+     15,
+     0,
+     14
+    ],
+    [
+     4,
+     9,
+     5,
+     10
+    ],
+    [
+     13,
+     7,
+     14,
+     6
+    ],
+    [
+     8,
+     12,
+     9,
+     11
+    ],
+    [
+     10,
+     15,
+     11,
+     4
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 4,
+   "bracket": {
+    "-10": -2,
+    "-6": 2,
+    "-2": -2,
+    "2": 2,
+    "6": -2,
+    "10": 1,
+    "14": -1
+   },
+   "bracket_str": "-2*A^-10 + 2*A^-6 - 2*A^-2 + 2*A^2 - 2*A^6 + A^10 - A^14",
+   "jones_str": "-t^(-1/2) + t^(1/2) - 2*t^(3/2) + 2*t^(5/2) - 2*t^(7/2) + 2*t^(9/2) - 2*t^(11/2)",
+   "det": 12,
+   "linking": {
+    "0,1": 2
+   },
+   "lk_abs_sorted": [
+    2
+   ],
+   "lk_total": 2,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ]
+  },
+  {
+   "name": "L8n2",
+   "pd": [
+    [
+     5,
+     1,
+     6,
+     0
+    ],
+    [
+     1,
+     12,
+     2,
+     13
+    ],
+    [
+     2,
+     8,
+     3,
+     7
+    ],
+    [
+     14,
+     3,
+     15,
+     0
+    ],
+    [
+     4,
+     9,
+     5,
+     10
+    ],
+    [
+     13,
+     7,
+     14,
+     6
+    ],
+    [
+     8,
+     12,
+     9,
+     11
+    ],
+    [
+     10,
+     15,
+     11,
+     4
+    ]
+   ],
+   "crossings": 8,
+   "components": 2,
+   "writhe": 0,
+   "bracket": {
+    "-14": -1,
+    "-10": 1,
+    "-6": -1,
+    "-2": 1,
+    "2": -2,
+    "6": 1,
+    "10": -1
+   },
+   "bracket_str": "-A^-14 + A^-10 - A^-6 + A^-2 - 2*A^2 + A^6 - A^10",
+   "jones_str": "-t^(-5/2) + t^(-3/2) - 2*t^(-1/2) + t^(1/2) - t^(3/2) + t^(5/2) - t^(7/2)",
+   "det": 8,
+   "linking": {
+    "0,1": 0
+   },
+   "lk_abs_sorted": [
+    0
+   ],
+   "lk_total": 0,
+   "span": 24,
+   "classes_mod4": [
+    2
+   ]
+  }
+ ]
+}

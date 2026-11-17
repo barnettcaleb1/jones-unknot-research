@@ -1,0 +1,109 @@
+ALL-ODD PRETZELS: A COMPLETE LOW-ORDER RIGIDITY PROOF
+MIXED PRETZELS: AN EXPLICIT SHARP FAILURE
+31 October2026. Independently derived and checked; novelty not claimed.
+
+1. Result
+For every odd-strand pretzel knot P(p_1,...,p_(2g+1)) whose parameters are
+all odd, V''(1)=V'''(1)=0 forces the actual unknot. This holds for arbitrary
+integer parameters and arbitrary g, with no search bound.
+The statement fails for pretzel knots with one even parameter: the actual
+four-strand knot P(8,-3,-3,1) has both derivatives zero but determinant33.
+
+2. Derivation of the general all-odd moments
+Use y=A^4 and D=y d/dy. Let n=2g+1, S=sum p_i, and e_j be the elementary
+symmetric polynomials in the parameters. Put d=y+2+y^-1 and C=d-1.
+Diagonalizing the rank-two Temperley–Lieb multiplication gives the bracket
+ A^S [prod_i(C-y^-p_i)+C prod_i(-1-y^-p_i)] / d^(g+1).
+The knot Jones normalization is therefore
+ J(y)=[C prod_i(1+y^p_i)-prod_i(C y^p_i-1)] / d^(g+1).
+This is V(y) or V(y^-1), depending on the initial crossing convention.
+The signed monomial normalization can also be recovered uniquely by the
+universal identities V(1)=1 and V'(1)=0, avoiding any writhe ambiguity.
+Direct differentiation at y=1 yields
+ D²J(1)=-(3/2)(e_2+g),
+ D³J(1)=-(9/4)[e_3+S(e_2+2g)].
+Because J'(1)=0, the joint vanishing of ordinary second/third derivatives is
+equivalent to the joint vanishing of these logarithmic derivatives.
+By Newton identities the resulting conditions are exactly
+ P_2=sum_i p_i²=S²+2g,   P_3=sum_i p_i³=S³.
+
+3. The positive sum argument
+S is odd, hence nonzero; mirror to assume S>0. Every other parameter has
+square at least1, so P_2=S²+2g gives |p_i|<=S for each i. Now
+ sum_i (S-p_i)(p_i²-1)
+   =S(P_2-n)-(P_3-S)=0.
+Every summand is nonnegative. In fact, under the quadratic zero condition
+alone, D³J(1)=(3/4)sum_i(S-p_i)(p_i²-1)>=0. Thus the cubic invariant has a
+definite sign on that zero locus and vanishes only in the configurations
+described next. If it vanishes, each p_i belongs to {-1,1,S}.
+If S>1, the square identity forces exactly one parameter equal to S; the
+remaining2g parameters comprise g copies each of+1 and-1. If S=1, every
+parameter is+/-1 with one surplus+1.
+
+This conclusion is geometric, not merely polynomial. When S>1, cyclically
+rotate the pretzel boxes so the unique S box comes first. Every remaining
+rational tangle is1/(+/-1)=+/-1; their horizontal sum is the integer tangle0.
+The numerator closure is therefore N(<1/S>+<0>)=N(1/S), an unknot. When
+S=1, all tangles are integers with sum1, again giving the unknot. No arbitrary
+permutation of general pretzel boxes is being treated as an isotopy.
+
+4. Priority and primary literature
+Stipsicz–Szabo, Purely cosmetic surgeries and pretzel knots (2020),
+ https://arxiv.org/abs/2006.06765
+ https://real.mtak.hu/127270/2/2006.pdf
+Proposition6.6 already obtains exactly P_2=S²+4 and P_3=S³ for five odd
+parameters, using the Conway coefficient and order-three Vassiliev invariant,
+and treats the constraints by a longer sign/case argument. Their >=7-strand
+case is resolved for their surgery application using genus, Proposition5.3.
+Our all-length nonnegative-sum argument is a compact deduction from these
+sorts of known moment formulas, not an asserted new discovery.
+Their introductory discussion also explicitly records that+/-1pretzel boxes
+can commute with other boxes and opposite+/-1pairs can be eliminated.
+Sleptsov, arXiv1512.07192, already computes pretzel finite-type invariants
+through order6. No exhaustive novelty search has been undertaken.
+
+5. Exact independent verification
+odd_pretzel.py uses ordinary integer Laurent polynomials in TL2, independently
+of the exponential differentiation. It verifies BOTH full moment formulas in
+17,676 full Jones calculations: every parameter tuple in{-3,-1,1,3} at strand
+counts1,3,5,7, plus200 reproducibly sampled examples through11strands with
+parameters between-15 and15. All452 zero-jet grid cases have full Jones1 and
+precisely the geometric form proved above. Five actual Spherogram diagrams
+were separately checked with Regina; the two zero-jet examples simplify to
+one crossing-free unknot. Data: odd_pretzel.json.
+These calculations audit the proof; they are not its completeness argument.
+
+6. Explicit boundary: one even parameter
+For P(p,q,r,s), p even and q,r,s odd, let T=q+r+s,
+Q_2=q²+r²+s²,Q_3=q³+r³+s³. In one consistent mirror convention,
+ D²V=(3/4)(3-Q_2-2pT-p²),
+ D³V=(3/2)(Q_3-T)-6p+(9/4)p(T²+Q_2)+(9/2)p²T+(3/2)p³.
+After D²V=0, the second equation simplifies to
+ D³V=(3/4)[2Q_3-2T+p+3pT²-p³].
+At(p,q,r,s)=(8,-3,-3,1), T=-5,Q_2=19,Q_3=-53, and both vanish.
+The ordinary Jones polynomial, independently computed from the actual planar
+diagram by Regina and from TL2, is
+ V(t)=1+t^-8(t-1)^4 Q(t),
+ Q(t)=t^8+2t^7+4t^6+5t^5+6t^4+5t^3+4t²+2t+1.
+Therefore
+ V''(1)=V'''(1)=0, V''''(1)=720, V(-1)=33.
+It is a genuine nontrivial knot because its determinant is33. Its original
+15-crossing diagram simplifies to14crossings; minimal crossing number is not
+claimed. Its Jones span is12.
+A second explicit example is P(40,-15,-13,3), determinant5025, with the same
+zero second/third derivatives. See mixed_counterexample.py/json for both full
+Jones polynomials, original PD diagrams, and independent checks.
+
+The four-strand example also immediately gives infinitely many distinct
+ordinary knots K^(#m): their Jones polynomials are V_K(t)^m, their determinants
+are33^m, and their first nonzero derivative remains order4, with value720m.
+This is an elementary connected-sum consequence, not a claim of an infinite
+family of distinct prime pretzel knots.
+
+7. Meaning for the generic problem
+The all-odd proof succeeds because every twist parameter has |p_i|>=1 and the
+zero-jet equations force a sum of individually nonnegative terms. The mixed
+case has different quadratic/cubic constraints and no such sign conclusion;
+P(8,-3,-3,1) is an explicit certificate of that failure. A generic proof cannot
+infer Jones1 from only the first two nontrivial derivatives. Higher-order
+constraints or a geometric positivity principle are necessary.

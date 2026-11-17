@@ -1,0 +1,9 @@
+word length of Phi0: 112
+B_4, t=-1: Burau(Phi0) == I ? True
+B_4, t= 2: Burau(Phi0) == I ? False
+B_4, t= 3: Burau(Phi0) == I ? False
+B_5, t=-1: Burau(Phi0) == I ? True
+B_5, t= 2: Burau(Phi0) == I ? False
+B_5, t= 3: Burau(Phi0) == I ? False
+(s1 s2)^6 on B_5 at t=-1 == I ? True
+(s1 s2)^6 on B_5 at t= 2 == I ? False

@@ -1,0 +1,131 @@
+SELF-WRITHE NORMALIZATION REPAIR OF THE CARMI--COHEN DESCENT
+Independent audit, 2026-11-01
+
+Result: F itself fails the finite-type prerequisite. H=F^2 genuinely repairs
+that prerequisite, retains component counting, and agrees with V^2 on knots.
+However the proposed repair still cannot retain a twist-length-independent
+signed-cube compression theorem: the previously audited literal machine has
+unbounded Laurent span, which neither a framing monomial nor squaring removes.
+This does not exclude every conceivable different nonlinear descent argument.
+
+1. Conventions and orientation independence
+-------------------------------------------
+Let ell(L)=sum_{i<j}lk(L_i,L_j), x=A^-2, and p=x-x^-1. With the paper's
+normalization V=(-A^3)^(-w_total)<L>, define
+
+  F_L=(-A^3)^(-w_self)<L>=A^(6ell)V_L=x^(-3ell)V_L,
+  H_L=F_L^2=x^(-6ell)V_L^2.
+
+Here w_total=w_self+2ell. Reversing a component preserves all self-crossing
+signs and leaves the unoriented bracket unchanged, so F is genuinely
+independent of the component orientations. For a knot, ell=0 and F=V.
+
+2. F fails already in coefficient level zero
+---------------------------------------------
+For a two-component link, V(1)=-2 and V(-1)=2, because its Laurent x
+exponents are odd. Therefore
+
+  F(1)=-2,                 F(-1)=2(-1)^ell,
+  a_0(F)=-1+(-1)^ell,     b_0(F)=-1-(-1)^ell.
+
+At an intercomponent crossing change, ell changes by one. On a cube of n
+such crossing changes the alternating derivative of (-1)^ell is nonzero
+(magnitude 2^n). Such cubes exist for arbitrarily large n on two-component
+link shadows. Hence a_0 and b_0 are not finite-type invariants of ANY finite
+order. The original level-zero finite-type setup cannot be used for F.
+
+3. Squaring DOES restore finite-type layers
+------------------------------------------
+H(x) is even in x, since V has a fixed exponent parity and the exponent
+-6ell is even. Write its unique finite JVP expansion
+
+                  H(x)=a(p)+x b(p).
+
+First, every coefficient of h^n in
+
+                  H(e^h)=exp(-6ell h) V(e^h)^2
+
+is finite type of order at most n. The coefficients of exp(-6ell h) are
+powers of the order-one invariant ell; Jones exponential coefficients have
+order at most their degree; products add finite-type orders. The latter
+Jones fact also follows directly on links from
+
+ V_+-V_-=(x^4-1)V_- + p x^2 V_0,
+
+since both scalar factors vanish to first order at x=e^h=1, and repeated
+crossing differences add orders of vanishing. The classical primary source
+is Birman--Lin, Knot polynomials and Vassiliev's invariants:
+https://www.math.columbia.edu/~jb/v-inv.-knot-poly.pdf
+
+Set s(p)=sqrt(p^2+4), x_+(p)=(p+s(p))/2, and C(p)=H(x_+(p)). The change
+h=arcsinh(p/2) has no constant term, so [p^n]C(p) still has order at most n.
+The other root is x_-(p)=-x_+(-p). Evenness of H gives
+H(x_-(p))=C(-p), and hence the exact formal identities
+
+  b(p)=(C(p)-C(-p))/s(p),
+  a(p)=(C(p)+C(-p))/2 - p b(p)/2.
+
+The coefficient at p^n on either right side is a rational linear combination
+of coefficients of C of orders at most n. Thus each actual integral
+coefficient a_n(H),b_n(H) is finite type of order at most n. Moreover
+
+                c_0(H)=H(1)=4^(number_of_components-1),
+
+which still distinguishes component counts. On knots, V=1 gives H=1, and
+H=1 would give V=1 since V(1)=1. These parts of a squared-invariant repair
+are mathematically sound. It should not be rejected merely for using F^2.
+
+4. The literal uniform-compression obstruction survives
+--------------------------------------------------------
+Use exactly the hypotheses/scope of work/research36/operator_audit.txt:
+the source's direct cancelable-clasp reductions (G1) and ordinary double
+smoothing (C4), in a fixed switched-trefoil unknot host. For one actual
+locked clasp state the fixed-orientation Jones polynomial is
+
+  T_m=C(x)-p^2 R_m,
+  R_m=[x^2(x^4+1)+(1-x^6)x^(4m)]/(x^2+1),
+
+where C is a fixed Laurent polynomial independent of m. No disputed
+exceptional G2 move was used in that identity. Equivalently
+
+  T_m=U(x)+W(x)x^(4m),
+  U=C-p^2 x^2(x^4+1)/(x^2+1),
+  W=-p^2(1-x^6)/(x^2+1).
+
+Both channels are nonzero. W is visibly nonzero. U cannot vanish for a
+Laurent polynomial C: the subtracted rational function has numerator
+(x^2-1)^2(x^4+1), which equals8 at x=i, and hence a genuine pole at i.
+A Laurent polynomial can have poles only at zero or infinity.
+
+As m tends to positive infinity, the valuation at x=0 of T_m eventually
+equals the fixed finite valuation of U. At infinity, deg W=6, so for all
+sufficiently large m,
+
+                  maxdeg_x T_m=4m+6.
+
+Therefore span_x(T_m)=4m+O(1). If ell_m is its total linking number, then
+the modified invariant is F_m=x^(-3ell_m)T_m. A monomial changes neither
+Laurent span nor its growth. In the integral Laurent domain,
+
+                  span_x(F_m^2)=2 span_x(T_m).
+
+Finally a polynomial written as sum_{j<=D}(a_j+b_j x)p^j has x-exponents
+contained in [-D,D+1], so its Laurent span is at most2D+1. Thus the JVP
+degree of H_m=F_m^2 is unbounded as well. No fixed overhead or larger
+constant cap can turn this family into a length-independent compression.
+
+This supplies an orientation-independent obstruction to the same proposed
+global prerequisite. Even granting that F repairs the exceptional picture's
+component-orientation mismatch, and granting the successful finite-type
+repair for F^2, the original uniform-compression/descent architecture still
+does not follow. A different argument would have to abandon or materially
+restrict that prerequisite.
+
+Scope caveat retained: the exhibited host is a nonminimal unknot diagram.
+This refutes a local package asserted for arbitrary fixed host shadows.
+It does not refute a newly restricted theorem solely about minimal diagrams
+of hypothetical nontrivial Jones-one knots; that new geometric theorem is
+not supplied by the paper's existing relative-boundary proof.
+
+Related independent audit: generic_braid reached the same two-channel
+span obstruction and is separately recording the modified skein formulas.

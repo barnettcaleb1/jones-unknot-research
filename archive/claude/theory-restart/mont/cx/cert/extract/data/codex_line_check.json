@@ -1,0 +1,171 @@
+[
+ {
+  "k": -6,
+  "halfword": "s.l1.l1.x2.x1.y1.y1.y1.y1.y1.y1.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.y1.y1.y1.y1.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3",
+  "pd_best": 0
+ },
+ {
+  "k": -5,
+  "halfword": "s.l1.l1.x2.x1.y1.y1.y1.y1.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.y1.y1.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x3.x3.x3.x3",
+  "pd_best": 0
+ },
+ {
+  "k": -4,
+  "halfword": "s.l1.l1.x2.x1.y1.y1.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x3.x3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x3.x3",
+  "pd_best": 0
+ },
+ {
+  "k": -3,
+  "halfword": "s.l1.l1.x2.x1.y1.y1.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_a_TS24",
+  "reduced": "x2.y1.y1.y1.y1.x3.x3.x3.x3.x3.x3",
+  "pd_best": null
+ },
+ {
+  "k": -2,
+  "halfword": "s.l1.l1.x2.x1.y1.y1.y1.y1.x3.x3.x3.x3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_a_TS24",
+  "reduced": "x2.y1.y1.x3.x3.x3.x3",
+  "pd_best": null
+ },
+ {
+  "k": -1,
+  "halfword": "s.l1.l1.x2.x1.y1.y1.x3.x3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_a_TS24",
+  "reduced": "x2.x3.x3",
+  "pd_best": null
+ },
+ {
+  "k": 0,
+  "halfword": "s.l1.l1.x2.x1.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_a_TS24",
+  "reduced": "x2.x1.x1",
+  "pd_best": null
+ },
+ {
+  "k": 1,
+  "halfword": "s.l1.l1.x2.x1.x1.x1.y3.y3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_a_TS24",
+  "reduced": "x2.x1.x1.x1.y3.y3.x1",
+  "pd_best": null
+ },
+ {
+  "k": 2,
+  "halfword": "s.l1.l1.x2.x1.x1.x1.x1.x1.y3.y3.y3.y3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_a_TS24",
+  "reduced": "x2.x1.x1.x1.x1.x1.y3.y3.y3.y3.x1",
+  "pd_best": null
+ },
+ {
+  "k": 3,
+  "halfword": "s.l1.l1.x2.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.x1",
+  "pd_best": 0
+ },
+ {
+  "k": 4,
+  "halfword": "s.l1.l1.x2.x1.x1.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.y3.y3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.x1.x1.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.y3.y3.x1",
+  "pd_best": 0
+ },
+ {
+  "k": 5,
+  "halfword": "s.l1.l1.x2.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.x1",
+  "pd_best": 0
+ },
+ {
+  "k": 6,
+  "halfword": "s.l1.l1.x2.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.x1.u2.u2",
+  "J": [
+   [
+    0,
+    1
+   ]
+  ],
+  "status": "CERT_c_pd",
+  "reduced": "x2.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.x1.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.y3.x1",
+  "pd_best": 0
+ }
+]

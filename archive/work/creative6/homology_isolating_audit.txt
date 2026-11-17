@@ -1,0 +1,53 @@
+INDEPENDENT AUDIT OF THE REPAIRED ISOLATING-M1 LEMMA
+2026-10-31. Audit by homology agent of the tangle agent's proposed lemma.
+
+Verdict: the local diagram and product-handle argument are sound. Combined
+with the cited isolating decomposition, the lemma excludes ISOLATING M1
+from the rank-five Jones-one case. It does not exclude nonisolating M1.
+
+1. I independently inspected work/creative6/juhasz-fig3.png. The region D
+between alpha and beta has one boundary component, two convex corners,
+one handle, and no boundary punctures. Hence chi(D)=-1,
+e(D)=-1-2/4=-3/2, and n_x+n_y=1/2. Its Maslov index is -1.
+Putting a handles in that same region changes only chi(D), to1-2a,
+so the index is1-2a. The region remains disjoint from the boundary and
+connects the two intersection generators. The positive domain has negative
+index for a>=1, and the reverse domain has negative multiplicities, so no
+index-one differential kills these two classes. The two classes lie in
+the same Spin^c structure, in contrast to the bare four-longitude torus.
+
+2. N_a=V union(F_{a,1} x I) is F_{a,1} x I with three parallel sutures:
+the longitudinally attached solid torus is an annular collar. The generalized
+Figure3 diagram gives this model by the same collar decomposition as in
+Juhasz Example7.5. It has H_2=0, so the relative Maslov grading is integer.
+
+3. The remaining F_{b,4} really does have a relative handle decomposition
+starting with THREE incoming annular collars and adding2b+2 surface
+one-handles. The first two connect the three components, producing a
+four-boundary sphere; the remaining2b handles come in genus-adding pairs.
+All feet can be placed on outgoing boundaries. After multiplying by I,
+each attaching disk meets the sutures in one arc: these are product
+three-dimensional one-handles. Thus their cocores are product disks.
+This validates the crucial final gluing step, beyond a mere Euler count.
+Any annular gluing twists can be absorbed into the collar identifications;
+the relative handle construction does not assume a canonical marking.
+
+4. Product-disk decompositions preserve total SFH rank. The relative
+Maslov grading of the two same-Spin^c classes is preserved by the
+decomposition map, precisely as Juhasz Proposition5.4(1) states. Applying
+the Seifert-surface decomposition then gives the top HFK Maslov gap2a-1.
+Sources: https://arxiv.org/pdf/0802.3415, Example7.5 and Prop5.4.
+
+5. Given the Baker--Manjarrez-Gutierrez isolating classification used by
+the tangle agent, a>=1,b>=0 and g=a+b+1. Consequently
+             top gap=2a-1 <=2g-3.
+The independently checked rank-five sparse HFK argument requires gap2g-1.
+These are incompatible. Thus no rank-five Jones-one candidate has the
+isolating M1 geometry described in that classification.
+
+Scope of this audit: I independently checked the diagram arithmetic,
+handle decomposition and the exact grading-preservation statement. The
+classification of all isolating configurations is taken from the tangle
+agent's separate reading of Baker--Manjarrez-Gutierrez2305.08928v2; it is
+not reproved here. Nonisolating M1 still has no automatically defined
+relative Maslov grading on its two bare-guts generators and remains open.

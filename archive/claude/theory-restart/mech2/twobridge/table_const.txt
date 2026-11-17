@@ -1,0 +1,138 @@
+3_1      dimN=  3 arc=3 sq=0  detK=3  detKu=3 detKl=1  Ku=t**2 - t + 1  Kl=1 
+4_1-1    dimN=  5 arc=5 sq=0  detK=5  detKu=5 detKl=1  Ku=t**4 - t**3 + t**2 - t + 1  Kl=1 
+4_1-2    dimN=  5 arc=5 sq=0  detK=5  detKu=5 detKl=1  Ku=t**4 - t**3 + t**2 - t + 1  Kl=1 
+5_1      dimN=  5 arc=1 sq=1  detK=5  detKu=5 detKl=1  Ku=-t**2 + 3*t - 1  Kl=1 
+5_2-1    dimN=  7 arc=7 sq=0  detK=7  detKu=7 detKl=1  Ku=t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=1 
+5_2-2    dimN=  7 arc=3 sq=1  detK=7  detKu=7 detKl=1  Ku=2*t**2 - 3*t + 2  Kl=1 
+6_1-1    dimN=  9 arc=9 sq=0  detK=9  detKu=9 detKl=1  Ku=t**8 - t**7 + t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=1 
+6_1-2    dimN=  9 arc=1 sq=2  detK=9  detKu=9 detKl=1  Ku=-2*t**2 + 5*t - 2  Kl=1 
+6_2-1    dimN= 11 arc=3 sq=2  detK=11  detKu=11 detKl=1  Ku=-t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+6_2-2    dimN= 11 arc=3 sq=2  detK=11  detKu=11 detKl=1  Ku=3*t**2 - 5*t + 3  Kl=1 
+6_3-1    dimN= 13 arc=5 sq=2  detK=13  detKu=13 detKl=1  Ku=2*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+6_3-2    dimN= 13 arc=5 sq=2  detK=13  detKu=13 detKl=1  Ku=2*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+7_1      dimN=  7 arc=3 sq=1  detK=7  detKu=7 detKl=1  Ku=2*t**2 - 3*t + 2  Kl=1 
+7_2-1    dimN= 11 arc=11 sq=0  detK=11  detKu=11 detKl=1  Ku=t**10 - t**9 + t**8 - t**7 + t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=1 
+7_2-2    dimN= 11 arc=3 sq=2  detK=11  detKu=11 detKl=1  Ku=-t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+7_3-1    dimN= 13 arc=1 sq=3  detK=13  detKu=13 detKl=1  Ku=-3*t**2 + 7*t - 3  Kl=1 
+7_3-2    dimN= 13 arc=1 sq=3  detK=13  detKu=13 detKl=1  Ku=t**4 - 3*t**3 + 5*t**2 - 3*t + 1  Kl=1 
+7_4-1    dimN= 15 arc=3 sq=3  detK=15  detKu=15 detKl=1  Ku=4*t**2 - 7*t + 4  Kl=1 
+7_4-2    dimN= 15 arc=7 sq=2  detK=15  detKu=5 detKl=3  Ku=t**4 - t**3 + t**2 - t + 1  Kl=t**2 - t + 1 
+7_5-1    dimN= 17 arc=5 sq=3  detK=17  detKu=17 detKl=1  Ku=-t**6 + 3*t**5 - 3*t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+7_5-2    dimN= 17 arc=5 sq=3  detK=17  detKu=17 detKl=1  Ku=2*t**4 - 4*t**3 + 5*t**2 - 4*t + 2  Kl=1 
+7_6-1    dimN= 19 arc=3 sq=4  detK=19  detKu=19 detKl=1  Ku=-2*t**4 + 5*t**3 - 5*t**2 + 5*t - 2  Kl=1 
+7_6-2    dimN= 19 arc=7 sq=3  detK=19  detKu=19 detKl=1  Ku=2*t**6 - 3*t**5 + 3*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+7_7-1    dimN= 21 arc=5 sq=4  detK=21  detKu=21 detKl=1  Ku=3*t**4 - 5*t**3 + 5*t**2 - 5*t + 3  Kl=1 
+7_7-2    dimN= 21 arc=5 sq=4  detK=21  detKu=3 detKl=7  Ku=t**2 - t + 1  Kl=2*t**2 - 3*t + 2 
+8_1-1    dimN= 13 arc=13 sq=0  detK=13  detKu=13 detKl=1  Ku=t**12 - t**11 + t**10 - t**9 + t**8 - t**7 + t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=1 
+8_1-2    dimN= 13 arc=5 sq=2  detK=13  detKu=13 detKl=1  Ku=2*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+8_2-1    dimN= 17 arc=5 sq=3  detK=17  detKu=17 detKl=1  Ku=2*t**4 - 4*t**3 + 5*t**2 - 4*t + 2  Kl=1 
+8_2-2    dimN= 17 arc=5 sq=3  detK=17  detKu=17 detKl=1  Ku=-t**6 + 3*t**5 - 3*t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+8_3-1    dimN= 17 arc=1 sq=4  detK=17  detKu=17 detKl=1  Ku=-4*t**2 + 9*t - 4  Kl=1 
+8_3-2    dimN= 17 arc=1 sq=4  detK=17  detKu=17 detKl=1  Ku=-4*t**2 + 9*t - 4  Kl=1 
+8_4-1    dimN= 19 arc=3 sq=4  detK=19  detKu=19 detKl=1  Ku=5*t**2 - 9*t + 5  Kl=1 
+8_4-2    dimN= 19 arc=3 sq=4  detK=19  detKu=19 detKl=1  Ku=-t**4 + 5*t**3 - 7*t**2 + 5*t - 1  Kl=1 
+8_5-1    dimN= 21 arc=1 sq=5  detK=21  detKu=21 detKl=1  Ku=t**4 - 5*t**3 + 9*t**2 - 5*t + 1  Kl=1 
+8_5-2    dimN= 21 arc=9 sq=3  detK=21  detKu=7 detKl=3  Ku=t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=t**2 - t + 1 
+8_6-1    dimN= 23 arc=3 sq=5  detK=23  detKu=23 detKl=1  Ku=t**6 - 3*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 3*t + 1  Kl=1 
+8_6-2    dimN= 23 arc=7 sq=4  detK=23  detKu=23 detKl=1  Ku=-t**8 + 3*t**7 - 3*t**6 + 3*t**5 - 3*t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+8_7-1    dimN= 23 arc=3 sq=5  detK=23  detKu=23 detKl=1  Ku=-2*t**4 + 6*t**3 - 7*t**2 + 6*t - 2  Kl=1 
+8_7-2    dimN= 23 arc=3 sq=5  detK=23  detKu=23 detKl=1  Ku=t**6 - 3*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 3*t + 1  Kl=1 
+8_8-1    dimN= 25 arc=1 sq=6  detK=25  detKu=25 detKl=1  Ku=-t**6 + 3*t**5 - 5*t**4 + 7*t**3 - 5*t**2 + 3*t - 1  Kl=1 
+8_8-2    dimN= 25 arc=9 sq=4  detK=25  detKu=25 detKl=1  Ku=2*t**8 - 3*t**7 + 3*t**6 - 3*t**5 + 3*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+8_9-1    dimN= 25 arc=1 sq=6  detK=25  detKu=25 detKl=1  Ku=2*t**4 - 6*t**3 + 9*t**2 - 6*t + 2  Kl=1 
+8_9-2    dimN= 25 arc=1 sq=6  detK=25  detKu=25 detKl=1  Ku=2*t**4 - 6*t**3 + 9*t**2 - 6*t + 2  Kl=1 
+8_10     dimN= 27 arc=3 sq=6  detK=27  detKu=27 detKl=1  Ku=-2*t**4 + 7*t**3 - 9*t**2 + 7*t - 2  Kl=1 
+8_11-1   dimN= 27 arc=3 sq=6  detK=27  detKu=27 detKl=1  Ku=-3*t**4 + 7*t**3 - 7*t**2 + 7*t - 3  Kl=1 
+8_11-2   dimN= 27 arc=7 sq=5  detK=27  detKu=27 detKl=1  Ku=2*t**6 - 4*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 4*t + 2  Kl=1 
+8_12-1   dimN= 29 arc=5 sq=6  detK=29  detKu=29 detKl=1  Ku=-2*t**6 + 5*t**5 - 5*t**4 + 5*t**3 - 5*t**2 + 5*t - 2  Kl=1 
+8_12-2   dimN= 29 arc=5 sq=6  detK=29  detKu=29 detKl=1  Ku=-2*t**6 + 5*t**5 - 5*t**4 + 5*t**3 - 5*t**2 + 5*t - 2  Kl=1 
+8_13-1   dimN= 29 arc=5 sq=6  detK=29  detKu=29 detKl=1  Ku=4*t**4 - 7*t**3 + 7*t**2 - 7*t + 4  Kl=1 
+8_13-2   dimN= 29 arc=5 sq=6  detK=29  detKu=29 detKl=1  Ku=3*t**4 - 7*t**3 + 9*t**2 - 7*t + 3  Kl=1 
+8_14-1   dimN= 31 arc=7 sq=6  detK=31  detKu=31 detKl=1  Ku=2*t**6 - 4*t**5 + 6*t**4 - 7*t**3 + 6*t**2 - 4*t + 2  Kl=1 
+8_14-2   dimN= 31 arc=7 sq=6  detK=31  detKu=31 detKl=1  Ku=3*t**6 - 5*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 5*t + 3  Kl=1 
+8_15-1   dimN= 33 arc=5 sq=7  detK=33  detKu=33 detKl=1  Ku=4*t**4 - 8*t**3 + 9*t**2 - 8*t + 4  Kl=1 
+8_15-2   dimN= 33 arc=5 sq=7  detK=33  detKu=11 detKl=3  Ku=3*t**2 - 5*t + 3  Kl=t**2 - t + 1 
+8_16     dimN= 35 arc=7 sq=7  detK=35  detKu=5 detKl=7  Ku=t**4 - t**3 + t**2 - t + 1  Kl=2*t**2 - 3*t + 2 
+8_18-1   dimN= 45 arc=5 sq=10  detK=45  detKu=15 detKl=3  Ku=4*t**2 - 7*t + 4  Kl=t**2 - t + 1 
+8_18-2   dimN= 45 arc=5 sq=10  detK=45  detKu=15 detKl=3  Ku=4*t**2 - 7*t + 4  Kl=t**2 - t + 1 
+8_19     dimN=  5 arc=1 sq=1  detK=3  detKu=1 detKl=3  Ku=1  Kl=t**2 - t + 1  [detU*detL != dimN] [detK != dimN]
+8_20     dimN=  9 arc=1 sq=2  detK=9  detKu=9 detKl=1  Ku=-2*t**2 + 5*t - 2  Kl=1 
+8_21-1   dimN= 15 arc=3 sq=3  detK=15  detKu=15 detKl=1  Ku=4*t**2 - 7*t + 4  Kl=1 
+8_21-2   dimN= 15 arc=3 sq=3  detK=15  detKu=5 detKl=3  Ku=-t**2 + 3*t - 1  Kl=t**2 - t + 1 
+9_1      dimN=  9 arc=1 sq=2  detK=9  detKu=9 detKl=1  Ku=-2*t**2 + 5*t - 2  Kl=1 
+9_2-1    dimN= 15 arc=15 sq=0  detK=15  detKu=15 detKl=1  Ku=t**14 - t**13 + t**12 - t**11 + t**10 - t**9 + t**8 - t**7 + t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=1 
+9_2-2    dimN= 15 arc=3 sq=3  detK=15  detKu=15 detKl=1  Ku=4*t**2 - 7*t + 4  Kl=1 
+9_3-1    dimN= 19 arc=7 sq=3  detK=19  detKu=19 detKl=1  Ku=2*t**6 - 3*t**5 + 3*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+9_3-2    dimN= 19 arc=3 sq=4  detK=19  detKu=19 detKl=1  Ku=-t**4 + 5*t**3 - 7*t**2 + 5*t - 1  Kl=1 
+9_4-1    dimN= 21 arc=1 sq=5  detK=21  detKu=21 detKl=1  Ku=-5*t**2 + 11*t - 5  Kl=1 
+9_4-2    dimN= 21 arc=1 sq=5  detK=21  detKu=21 detKl=1  Ku=t**4 - 5*t**3 + 9*t**2 - 5*t + 1  Kl=1 
+9_5-1    dimN= 23 arc=3 sq=5  detK=23  detKu=23 detKl=1  Ku=6*t**2 - 11*t + 6  Kl=1 
+9_5-2    dimN= 23 arc=7 sq=4  detK=23  detKu=23 detKl=1  Ku=-t**8 + 3*t**7 - 3*t**6 + 3*t**5 - 3*t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+9_6-1    dimN= 27 arc=7 sq=5  detK=27  detKu=27 detKl=1  Ku=2*t**6 - 4*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 4*t + 2  Kl=1 
+9_6-2    dimN= 27 arc=3 sq=6  detK=27  detKu=27 detKl=1  Ku=-2*t**4 + 7*t**3 - 9*t**2 + 7*t - 2  Kl=1 
+9_7-1    dimN= 29 arc=9 sq=5  detK=29  detKu=29 detKl=1  Ku=-t**10 + 3*t**9 - 3*t**8 + 3*t**7 - 3*t**6 + 3*t**5 - 3*t**4 + 3*t**3 - 3*t**2 + 3*t - 1  Kl=1 
+9_7-2    dimN= 29 arc=1 sq=7  detK=29  detKu=29 detKl=1  Ku=2*t**4 - 7*t**3 + 11*t**2 - 7*t + 2  Kl=1 
+9_8-1    dimN= 31 arc=7 sq=6  detK=31  detKu=31 detKl=1  Ku=2*t**6 - 4*t**5 + 6*t**4 - 7*t**3 + 6*t**2 - 4*t + 2  Kl=1 
+9_8-2    dimN= 31 arc=11 sq=5  detK=31  detKu=31 detKl=1  Ku=2*t**10 - 3*t**9 + 3*t**8 - 3*t**7 + 3*t**6 - 3*t**5 + 3*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=1 
+9_9-1    dimN= 31 arc=3 sq=7  detK=31  detKu=31 detKl=1  Ku=-2*t**4 + 8*t**3 - 11*t**2 + 8*t - 2  Kl=1 
+9_9-2    dimN= 31 arc=3 sq=7  detK=31  detKu=31 detKl=1  Ku=-2*t**4 + 8*t**3 - 11*t**2 + 8*t - 2  Kl=1 
+9_10-1   dimN= 33 arc=5 sq=7  detK=33  detKu=33 detKl=1  Ku=t**8 - 3*t**7 + 5*t**6 - 5*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 3*t + 1  Kl=1 
+9_10-2 no chain file
+9_11-1   dimN= 33 arc=5 sq=7  detK=33  detKu=33 detKl=1  Ku=t**8 - 3*t**7 + 5*t**6 - 5*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 3*t + 1  Kl=1 
+9_11-2   dimN= 33 arc=5 sq=7  detK=33  detKu=33 detKl=1  Ku=-t**6 + 5*t**5 - 7*t**4 + 7*t**3 - 7*t**2 + 5*t - 1  Kl=1 
+9_12-1   dimN= 35 arc=3 sq=8  detK=35  detKu=35 detKl=1  Ku=-4*t**4 + 9*t**3 - 9*t**2 + 9*t - 4  Kl=1 
+9_12-2   dimN= 35 arc=3 sq=8  detK=35  detKu=35 detKl=1  Ku=-3*t**4 + 9*t**3 - 11*t**2 + 9*t - 3  Kl=1 
+9_13-1   dimN= 37 arc=1 sq=9  detK=37  detKu=37 detKl=1  Ku=3*t**4 - 9*t**3 + 13*t**2 - 9*t + 3  Kl=1 
+9_13-2   dimN= 37 arc=9 sq=7  detK=37  detKu=37 detKl=1  Ku=2*t**8 - 4*t**7 + 5*t**6 - 5*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 4*t + 2  Kl=1 
+9_14-1   dimN= 37 arc=5 sq=8  detK=37  detKu=37 detKl=1  Ku=5*t**4 - 9*t**3 + 9*t**2 - 9*t + 5  Kl=1 
+9_14-2   dimN= 37 arc=5 sq=8  detK=37  detKu=37 detKl=1  Ku=-2*t**6 + 6*t**5 - 7*t**4 + 7*t**3 - 7*t**2 + 6*t - 2  Kl=1 
+9_15-1   dimN= 39 arc=3 sq=9  detK=39  detKu=39 detKl=1  Ku=-t**8 + 3*t**7 - 5*t**6 + 7*t**5 - 7*t**4 + 7*t**3 - 5*t**2 + 3*t - 1  Kl=1 
+9_15-2   dimN= 39 arc=7 sq=8  detK=39  detKu=39 detKl=1  Ku=-2*t**8 + 5*t**7 - 5*t**6 + 5*t**5 - 5*t**4 + 5*t**3 - 5*t**2 + 5*t - 2  Kl=1 
+9_16-1   dimN= 39 arc=3 sq=9  detK=39  detKu=39 detKl=1  Ku=t**6 - 5*t**5 + 9*t**4 - 9*t**3 + 9*t**2 - 5*t + 1  Kl=1 
+9_16-2   dimN= 39 arc=7 sq=8  detK=39  detKu=13 detKl=3  Ku=2*t**4 - 3*t**3 + 3*t**2 - 3*t + 2  Kl=t**2 - t + 1 
+9_17-1   dimN= 39 arc=3 sq=9  detK=39  detKu=39 detKl=1  Ku=-t**8 + 3*t**7 - 5*t**6 + 7*t**5 - 7*t**4 + 7*t**3 - 5*t**2 + 3*t - 1  Kl=1 
+9_17-2 no chain file
+9_18-1   dimN= 41 arc=5 sq=9  detK=41  detKu=41 detKl=1  Ku=-3*t**6 + 7*t**5 - 7*t**4 + 7*t**3 - 7*t**2 + 7*t - 3  Kl=1 
+9_18-2   dimN= 41 arc=5 sq=9  detK=41  detKu=41 detKl=1  Ku=4*t**4 - 10*t**3 + 13*t**2 - 10*t + 4  Kl=1 
+9_19-1   dimN= 41 arc=1 sq=10  detK=41  detKu=41 detKl=1  Ku=t**8 - 3*t**7 + 5*t**6 - 7*t**5 + 9*t**4 - 7*t**3 + 5*t**2 - 3*t + 1  Kl=1 
+9_19-2   dimN= 41 arc=9 sq=8  detK=41  detKu=41 detKl=1  Ku=3*t**8 - 5*t**7 + 5*t**6 - 5*t**5 + 5*t**4 - 5*t**3 + 5*t**2 - 5*t + 3  Kl=1 
+9_20-1   dimN= 41 arc=5 sq=9  detK=41  detKu=41 detKl=1  Ku=-t**6 + 5*t**5 - 9*t**4 + 11*t**3 - 9*t**2 + 5*t - 1  Kl=1 
+9_20-2   dimN= 41 arc=5 sq=9  detK=41  detKu=41 detKl=1  Ku=4*t**4 - 10*t**3 + 13*t**2 - 10*t + 4  Kl=1 
+9_21-1   dimN= 43 arc=7 sq=9  detK=43  detKu=43 detKl=1  Ku=4*t**6 - 7*t**5 + 7*t**4 - 7*t**3 + 7*t**2 - 7*t + 4  Kl=1 
+9_21-2   dimN= 43 arc=3 sq=10  detK=43  detKu=43 detKl=1  Ku=2*t**6 - 6*t**5 + 9*t**4 - 9*t**3 + 9*t**2 - 6*t + 2  Kl=1 
+9_22     dimN= 43 arc=3 sq=10  detK=43  detKu=43 detKl=1  Ku=-3*t**4 + 11*t**3 - 15*t**2 + 11*t - 3  Kl=1 
+9_23-1   dimN= 45 arc=9 sq=9  detK=45  detKu=45 detKl=1  Ku=2*t**8 - 4*t**7 + 6*t**6 - 7*t**5 + 7*t**4 - 7*t**3 + 6*t**2 - 4*t + 2  Kl=1 
+9_23-2   dimN= 45 arc=1 sq=11  detK=45  detKu=9 detKl=5  Ku=-2*t**2 + 5*t - 2  Kl=-t**2 + 3*t - 1 
+9_24     dimN= 45 arc=5 sq=10  detK=45  detKu=45 detKl=1  Ku=-2*t**6 + 7*t**5 - 9*t**4 + 9*t**3 - 9*t**2 + 7*t - 2  Kl=1 
+9_25     dimN= 47 arc=3 sq=11  detK=47  detKu=47 detKl=1  Ku=-4*t**4 + 12*t**3 - 15*t**2 + 12*t - 4  Kl=1 
+9_26-1   dimN= 47 arc=3 sq=11  detK=47  detKu=47 detKl=1  Ku=2*t**6 - 6*t**5 + 10*t**4 - 11*t**3 + 10*t**2 - 6*t + 2  Kl=1 
+9_26-2   dimN= 47 arc=7 sq=10  detK=47  detKu=47 detKl=1  Ku=3*t**6 - 7*t**5 + 9*t**4 - 9*t**3 + 9*t**2 - 7*t + 3  Kl=1 
+9_27-1   dimN= 49 arc=9 sq=10  detK=49  detKu=49 detKl=1  Ku=2*t**8 - 4*t**7 + 6*t**6 - 8*t**5 + 9*t**4 - 8*t**3 + 6*t**2 - 4*t + 2  Kl=1 
+9_27-2   dimN= 49 arc=1 sq=12  detK=49  detKu=49 detKl=1  Ku=-2*t**6 + 6*t**5 - 10*t**4 + 13*t**3 - 10*t**2 + 6*t - 2  Kl=1 
+9_28-1   dimN= 51 arc=7 sq=11  detK=51  detKu=51 detKl=1  Ku=4*t**6 - 8*t**5 + 9*t**4 - 9*t**3 + 9*t**2 - 8*t + 4  Kl=1 
+9_28-2   dimN= 51 arc=7 sq=11  detK=51  detKu=17 detKl=3  Ku=2*t**4 - 4*t**3 + 5*t**2 - 4*t + 2  Kl=t**2 - t + 1 
+9_29     dimN= 51 arc=7 sq=11  detK=51  detKu=17 detKl=3  Ku=2*t**4 - 4*t**3 + 5*t**2 - 4*t + 2  Kl=t**2 - t + 1 
+9_30     dimN= 53 arc=5 sq=12  detK=53  detKu=53 detKl=1  Ku=6*t**4 - 13*t**3 + 15*t**2 - 13*t + 6  Kl=1 
+9_31-1   dimN= 55 arc=7 sq=12  detK=55  detKu=55 detKl=1  Ku=3*t**6 - 7*t**5 + 11*t**4 - 13*t**3 + 11*t**2 - 7*t + 3  Kl=1 
+9_31-2 no chain file
+9_34     dimN= 69 arc=5 sq=16  detK=69  detKu=23 detKl=3  Ku=6*t**2 - 11*t + 6  Kl=t**2 - t + 1 
+9_35-1   dimN= 27 arc=11 sq=4  detK=27  detKu=9 detKl=3  Ku=t**8 - t**7 + t**6 - t**5 + t**4 - t**3 + t**2 - t + 1  Kl=t**2 - t + 1 
+9_35-2   dimN= 27 arc=3 sq=6  detK=27  detKu=9 detKl=3  Ku=t**4 - 2*t**3 + 3*t**2 - 2*t + 1  Kl=t**2 - t + 1 
+9_36     dimN= 37 arc=1 sq=9  detK=37  detKu=37 detKl=1  Ku=2*t**4 - 9*t**3 + 15*t**2 - 9*t + 2  Kl=1 
+9_37-1   dimN= 45 arc=5 sq=10  detK=45  detKu=15 detKl=3  Ku=4*t**2 - 7*t + 4  Kl=t**2 - t + 1 
+9_37-2   dimN= 45 arc=5 sq=10  detK=45  detKu=15 detKl=3  Ku=-t**4 + 4*t**3 - 5*t**2 + 4*t - 1  Kl=t**2 - t + 1 
+9_38     dimN= 57 arc=5 sq=13  detK=57  detKu=19 detKl=3  Ku=-t**4 + 5*t**3 - 7*t**2 + 5*t - 1  Kl=t**2 - t + 1 
+9_39 no chain file
+9_40-1 no chain file
+9_40-2   dimN= 75 arc=3 sq=18  detK=75  detKu=15 detKl=5  Ku=-t**4 + 4*t**3 - 5*t**2 + 4*t - 1  Kl=-t**2 + 3*t - 1 
+9_41 no chain file
+9_42     dimN=  9 arc=1 sq=2  detK=7  detKu=7 detKl=1  Ku=2*t**2 - 3*t + 2  Kl=1  [detU*detL != dimN] [detK != dimN]
+9_43     dimN= 13 arc=1 sq=3  detK=13  detKu=13 detKl=1  Ku=-3*t**2 + 7*t - 3  Kl=1 
+9_44     dimN= 17 arc=1 sq=4  detK=17  detKu=17 detKl=1  Ku=-4*t**2 + 9*t - 4  Kl=1 
+9_45     dimN= 23 arc=3 sq=5  detK=23  detKu=23 detKl=1  Ku=6*t**2 - 11*t + 6  Kl=1 
+9_46-1   dimN=  9 arc=1 sq=2  detK=9  detKu=3 detKl=3  Ku=t**2 - t + 1  Kl=t**2 - t + 1 
+9_46-2   dimN= 15 arc=7 sq=2  detK=9  detKu=3 detKl=3  Ku=t**6 - t**5 + t**3 - t + 1  Kl=t**2 - t + 1  [detU*detL != dimN] [detK != dimN]
+9_47     dimN= 27 arc=3 sq=6  detK=27  detKu=9 detKl=3  Ku=-2*t**2 + 5*t - 2  Kl=t**2 - t + 1 
+9_48-1   dimN= 27 arc=3 sq=6  detK=27  detKu=9 detKl=3  Ku=-2*t**2 + 5*t - 2  Kl=t**2 - t + 1 
+9_48-2   dimN= 27 arc=3 sq=6  detK=27  detKu=9 detKl=3  Ku=t**4 - 2*t**3 + 3*t**2 - 2*t + 1  Kl=t**2 - t + 1 
+9_49     dimN= 25 arc=5 sq=5  detK=25  detKu=5 detKl=5  Ku=t**4 - t**3 + t**2 - t + 1  Kl=-t**2 + 3*t - 1 

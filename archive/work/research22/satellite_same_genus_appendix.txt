@@ -1,0 +1,51 @@
+SATELLITES AND SAME-GENUS PRIME RIBBON CONCORDANCES: QUICK AUDIT
+
+Conclusion: arbitrary satellite patterns preserve ribbon concordance,
+including winding-zero Whitehead patterns. Distinct prime same-genus
+ribbon-concordant knots therefore already arise by a standard construction.
+Equal genus is not a general obstruction to the remaining Jones/Kh
+dominance pairs being ribbon concordant.
+
+PRIMARY EXPLICIT STATEMENT
+Kenneth L. Baker, A note on the concordance of fibered knots,
+J. Topology 9 (2016), 1--4, DOI10.1112/jtopol/jtv024.
+https://arxiv.org/pdf/1409.7646
+In v3 (17 June 2015), Remark6 on p2 states that satellite operations
+preserve ribbon concordance, citing Kawauchi1980 Lemmas3.1--3.2. It gives
+nonisotopic twisted Whitehead doubles of ribbon-concordant companions;
+the accompanying distinction uses JSJ theory and Kouno--Motegi1993.
+The corresponding discussion was Remark5 in an earlier version.
+
+GEOMETRIC CHECK
+Choose a time-monotone arc joining the ends of a ribbon annulus C.
+Write a pattern as m parallel longitudinal strands outside a meridional
+tangle box. Off a neighborhood of that arc, take m normal parallel copies
+of C; on the neighborhood insert the fixed pattern tangle times I.
+The critical points are parallel copies of the old minima and saddles;
+the product tangle introduces no maxima. Zero framings extend across a
+concordance, so the endpoint satellites have their prescribed framings.
+This uses the geometric strand count m, not the algebraic winding number;
+winding zero causes no exception.
+
+CONCRETE SAME-GENUS PRIME PAIR
+Take J to be the trefoil and R to be the stevedore ribbon knot 6_1.
+There is a ribbon concordance J -> J#R. Applying the untwisted Whitehead
+pattern W yields
+  W(J) -> W(J#R).
+Both knots have standard genus-one surfaces and are nontrivial satellites,
+so both have genus exactly one. Every genus-one knot is prime, by genus
+additivity. They are distinct: their companion exteriors, hence the rooted
+JSJ structures of their Whitehead-double exteriors, differ. Alternatively
+use the Whitehead-double distinction explicitly discussed by Baker.
+This example makes no assertion that the two Jones polynomials agree.
+
+SCOPE OF THE DUNFIELD--GONG QUESTION
+https://arxiv.org/pdf/2512.21825
+Printed p52, Section7 item(4), asks whether prime K1>K0 can have the same
+Seifert genus, without a hyperbolic qualifier. Their finite graph has
+strict genus decrease along each recorded edge, but the unrestricted
+question as written does not impose the restriction needed to avoid the
+satellite examples above. Do not elevate that empirical observation to a
+general same-genus obstruction. In particular, the current filtered
+equal-Jones candidate pairs remain unverified ribbon pairs; their equal
+genus alone neither certifies nor excludes ribbon concordance.

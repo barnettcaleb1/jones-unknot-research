@@ -1,0 +1,124 @@
+CFK model: stairs=1,1;boxes=1 {'R': 2, 'Rm': 4, 'nu': 1, 'num': 0, 'rank': 7}
+slope inf closure generators: [(0, 0)]
+T(+0): rank Kh~ 16, max Szabo matching 8, minimal E_inf rank 0
+      levels: d=7.5:[39, 43, 45, 47] | d=8.5:[33, 37, 39, 43] | d=9.5:[27, 31, 33, 37] | d=10.5:[21, 25, 27, 31]
+T(+1): rank Kh~ 17, max Szabo matching 8, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 3, of S^3_-n(K): 5]
+      levels: d=8:[40, 44, 46, 48, 50] | d=9:[34, 38, 40, 44] | d=10:[28, 32, 34, 38] | d=11:[22, 26, 28, 32]
+T(-1): rank Kh~ 15, max Szabo matching 7, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 3, of S^3_-n(K): 5]
+      levels: d=7:[38, 42, 44] | d=8:[32, 36, 38, 42] | d=9:[26, 30, 32, 36] | d=10:[20, 24, 26, 30]
+T(+2): rank Kh~ 18, max Szabo matching 8, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 4, of S^3_-n(K): 6]
+      levels: d=8.5:[41, 45, 47, 49, 51, 53] | d=9.5:[35, 39, 41, 45] | d=10.5:[29, 33, 35, 39] | d=11.5:[23, 27, 29, 33]
+T(-2): rank Kh~ 14, max Szabo matching 6, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 4, of S^3_-n(K): 6]
+      levels: d=6.5:[37, 41] | d=7.5:[31, 35, 37, 41] | d=8.5:[25, 29, 31, 35] | d=9.5:[19, 23, 25, 29]
+T(+3): rank Kh~ 19, max Szabo matching 8, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 7]
+      levels: d=9:[42, 46, 48, 50, 52, 54, 56] | d=10:[36, 40, 42, 46] | d=11:[30, 34, 36, 40] | d=12:[24, 28, 30, 34]
+T(-3): rank Kh~ 13, max Szabo matching 5, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 7]
+      levels: d=6:[36] | d=7:[30, 34, 36, 40] | d=8:[24, 28, 30, 34] | d=9:[18, 22, 24, 28]
+T(+4): rank Kh~ 20, max Szabo matching 8, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 8]
+      levels: d=9.5:[43, 47, 49, 51, 53, 55, 57, 59] | d=10.5:[37, 41, 43, 47] | d=11.5:[31, 35, 37, 41] | d=12.5:[25, 29, 31, 35]
+T(-4): rank Kh~ 14, max Szabo matching 5, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 8]
+      levels: d=5.5:[35] | d=6.5:[29, 33, 35, 37, 39] | d=7.5:[23, 27, 29, 33] | d=8.5:[17, 21, 23, 27]
+
+CFK model: stairs=1,1;boxes=1 {'R': 2, 'Rm': 4, 'nu': 1, 'num': 0, 'rank': 7}
+slope inf closure generators: [(0, 0)]
+T(+0): rank Kh~ 16, max Szabo matching 8, minimal E_inf rank 0
+      levels: d=-0.5:[-11, -9, -7, -5, -5, -3, -1, -1] | d=0.5:[-17, -15, -13, -11, -11, -9, -7, -5]
+T(+1): rank Kh~ 17, max Szabo matching 8, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 3, of S^3_-n(K): 5]
+      levels: d=0:[-10, -8, -6, -4, -4, -2, 0, 0, 2] | d=1:[-16, -14, -12, -10, -10, -8, -6, -4]
+T(-1): rank Kh~ 15, max Szabo matching 7, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 3, of S^3_-n(K): 5]
+      levels: d=-1:[-12, -10, -8, -6, -6, -4, -2] | d=0:[-18, -16, -14, -12, -12, -10, -8, -6]
+T(+2): rank Kh~ 18, max Szabo matching 8, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 4, of S^3_-n(K): 6]
+      levels: d=0.5:[-9, -7, -5, -3, -3, -1, 1, 1, 3, 5] | d=1.5:[-15, -13, -11, -9, -9, -7, -5, -3]
+T(-2): rank Kh~ 14, max Szabo matching 6, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 4, of S^3_-n(K): 6]
+      levels: d=-1.5:[-13, -11, -9, -7, -7, -3] | d=-0.5:[-19, -17, -15, -13, -13, -11, -9, -7]
+T(+3): rank Kh~ 19, max Szabo matching 8, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 7]
+      levels: d=1:[-8, -6, -4, -2, -2, 0, 2, 2, 4, 6, 8] | d=2:[-14, -12, -10, -8, -8, -6, -4, -2]
+T(-3): rank Kh~ 13, max Szabo matching 5, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 7]
+      levels: d=-2:[-14, -12, -10, -8, -4] | d=-1:[-20, -18, -16, -14, -14, -12, -10, -8]
+T(+4): rank Kh~ 20, max Szabo matching 8, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 8]
+      levels: d=1.5:[-7, -5, -3, -1, -1, 1, 3, 3, 5, 7, 9, 11] | d=2.5:[-13, -11, -9, -7, -7, -5, -3, -1]
+T(-4): rank Kh~ 14, max Szabo matching 5, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 8]
+      levels: d=-2.5:[-15, -13, -11, -9, -5] | d=-1.5:[-21, -19, -17, -15, -15, -13, -11, -11, -9]
+
+CFK model: stairs=;boxes=2 {'R': 4, 'Rm': 4, 'nu': 0, 'num': 0, 'rank': 9}
+slope inf closure generators: [(0, 0)]
+T(+0): rank Kh~ 18, max Szabo matching 9, minimal E_inf rank 0
+      levels: d=-1.5:[7, 9, 11, 13, 13, 15, 17, 19] | d=-0.5:[-1, 1, 3, 5, 7, 7, 9, 11, 13] | d=0.5:[1]
+T(+1): rank Kh~ 17, max Szabo matching 8, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 5]
+      levels: d=-1:[8, 10, 12, 14, 14, 16, 18, 20] | d=0:[0, 2, 4, 6, 8, 8, 10, 12, 14]
+T(-1): rank Kh~ 17, max Szabo matching 8, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 5]
+      levels: d=-2:[6, 8, 10, 12, 12, 14, 16, 18] | d=-1:[0, 2, 4, 6, 6, 8, 10, 12] | d=0:[0]
+T(+2): rank Kh~ 18, max Szabo matching 8, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 6]
+      levels: d=-0.5:[9, 11, 13, 15, 15, 17, 19, 21] | d=0.5:[1, 3, 5, 5, 7, 9, 9, 11, 13, 15]
+T(-2): rank Kh~ 18, max Szabo matching 8, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 6]
+      levels: d=-2.5:[5, 7, 9, 11, 11, 13, 15, 17] | d=-1.5:[-1, 1, 3, 5, 5, 7, 9, 11] | d=-0.5:[-5, -1]
+T(+3): rank Kh~ 19, max Szabo matching 8, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 7, of S^3_-n(K): 7]
+      levels: d=0:[10, 12, 14, 16, 16, 18, 20, 22] | d=1:[2, 4, 6, 6, 8, 8, 10, 10, 12, 14, 16]
+T(-3): rank Kh~ 19, max Szabo matching 8, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 7, of S^3_-n(K): 7]
+      levels: d=-3:[4, 6, 8, 10, 10, 12, 14, 16] | d=-2:[-2, 0, 2, 4, 4, 6, 8, 10] | d=-1:[-8, -6, -2]
+T(+4): rank Kh~ 20, max Szabo matching 8, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 8, of S^3_-n(K): 8]
+      levels: d=0.5:[11, 13, 15, 17, 17, 19, 21, 23] | d=1.5:[3, 5, 7, 7, 9, 9, 11, 11, 11, 13, 15, 17]
+T(-4): rank Kh~ 20, max Szabo matching 8, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 8, of S^3_-n(K): 8]
+      levels: d=-3.5:[3, 5, 7, 9, 9, 11, 13, 15] | d=-2.5:[-3, -1, 1, 3, 3, 5, 7, 9] | d=-1.5:[-11, -9, -7, -3]
+
+CFK model: stairs=;boxes=2 {'R': 4, 'Rm': 4, 'nu': 0, 'num': 0, 'rank': 9}
+slope inf closure generators: [(0, 0)]
+T(+0): rank Kh~ 18, max Szabo matching 9, minimal E_inf rank 0
+      levels: d=-1.5:[-1, 1, 3, 5, 5, 7, 9, 11] | d=-0.5:[-7, -5, -3, -1, -1, -1, 1, 3, 5] | d=0.5:[1]
+T(+1): rank Kh~ 17, max Szabo matching 8, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 5]
+      levels: d=-1:[0, 2, 4, 6, 6, 8, 10, 12] | d=0:[-6, -4, -2, 0, 0, 0, 2, 4, 6]
+T(-1): rank Kh~ 17, max Szabo matching 8, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 5]
+      levels: d=-2:[-2, 0, 2, 4, 4, 6, 8, 10] | d=-1:[-8, -6, -4, -2, -2, 0, 2, 4] | d=0:[0]
+T(+2): rank Kh~ 18, max Szabo matching 8, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 6]
+      levels: d=-0.5:[1, 3, 5, 7, 7, 9, 11, 13] | d=0.5:[-5, -3, -1, 1, 1, 1, 3, 5, 5, 7]
+T(-2): rank Kh~ 18, max Szabo matching 8, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 6]
+      levels: d=-2.5:[-3, -1, 1, 3, 3, 5, 7, 9] | d=-1.5:[-9, -7, -5, -3, -3, -1, 1, 3] | d=-0.5:[-5, -1]
+T(+3): rank Kh~ 19, max Szabo matching 8, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 7, of S^3_-n(K): 7]
+      levels: d=0:[2, 4, 6, 8, 8, 10, 12, 14] | d=1:[-4, -2, 0, 2, 2, 2, 4, 6, 6, 8, 8]
+T(-3): rank Kh~ 19, max Szabo matching 8, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 7, of S^3_-n(K): 7]
+      levels: d=-3:[-4, -2, 0, 2, 2, 4, 6, 8] | d=-2:[-10, -8, -6, -4, -4, -2, 0, 2] | d=-1:[-8, -6, -2]
+T(+4): rank Kh~ 20, max Szabo matching 8, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 8, of S^3_-n(K): 8]
+      levels: d=0.5:[3, 5, 7, 9, 9, 11, 13, 15] | d=1.5:[-3, -1, 1, 3, 3, 3, 5, 7, 7, 9, 9, 11]
+T(-4): rank Kh~ 20, max Szabo matching 8, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 8, of S^3_-n(K): 8]
+      levels: d=-3.5:[-5, -3, -1, 1, 1, 3, 5, 7] | d=-2.5:[-11, -9, -7, -5, -5, -3, -1, 1] | d=-1.5:[-11, -9, -7, -3]
+
+CFK model: stairs=;boxes=2 {'R': 4, 'Rm': 4, 'nu': 0, 'num': 0, 'rank': 9}
+slope inf closure generators: [(0, 0)]
+T(+0): rank Kh~ 32, max Szabo matching 16, minimal E_inf rank 0
+      levels: d=7.5:[39, 43, 45, 47] | d=8.5:[33, 37, 37, 39, 39, 41, 43, 43, 43, 45, 47, 49] | d=9.5:[31, 33, 35, 37, 37, 39, 41, 43] | d=10.5:[29, 33, 35, 39] | d=11.5:[23, 27, 29, 33]
+T(+1): rank Kh~ 33, max Szabo matching 16, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 5]
+      levels: d=8:[40, 44, 46, 48, 50] | d=9:[34, 38, 38, 40, 40, 42, 44, 44, 44, 46, 48, 50] | d=10:[32, 34, 36, 38, 38, 40, 42, 44] | d=11:[30, 34, 36, 40] | d=12:[24, 28, 30, 34]
+T(-1): rank Kh~ 31, max Szabo matching 15, minimal E_inf rank 1   [HF^ rank of S^3_n(K): 5, of S^3_-n(K): 5]
+      levels: d=7:[38, 42, 44] | d=8:[32, 36, 36, 38, 38, 40, 42, 42, 42, 44, 46, 48] | d=9:[30, 32, 34, 36, 36, 38, 40, 42] | d=10:[28, 32, 34, 38] | d=11:[22, 26, 28, 32]
+T(+2): rank Kh~ 34, max Szabo matching 16, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 6]
+      levels: d=8.5:[41, 45, 47, 49, 51, 53] | d=9.5:[35, 39, 39, 41, 41, 43, 45, 45, 45, 47, 49, 51] | d=10.5:[33, 35, 37, 39, 39, 41, 43, 45] | d=11.5:[31, 35, 37, 41] | d=12.5:[25, 29, 31, 35]
+T(-2): rank Kh~ 30, max Szabo matching 14, minimal E_inf rank 2   [HF^ rank of S^3_n(K): 6, of S^3_-n(K): 6]
+      levels: d=6.5:[37, 41] | d=7.5:[31, 35, 35, 37, 37, 39, 41, 41, 41, 43, 45, 47] | d=8.5:[29, 31, 33, 35, 35, 37, 39, 41] | d=9.5:[27, 31, 33, 37] | d=10.5:[21, 25, 27, 31]
+T(+3): rank Kh~ 35, max Szabo matching 16, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 7, of S^3_-n(K): 7]
+      levels: d=9:[42, 46, 48, 50, 52, 54, 56] | d=10:[36, 40, 40, 42, 42, 44, 46, 46, 46, 48, 50, 52] | d=11:[34, 36, 38, 40, 40, 42, 44, 46] | d=12:[32, 36, 38, 42] | d=13:[26, 30, 32, 36]
+T(-3): rank Kh~ 29, max Szabo matching 13, minimal E_inf rank 3   [HF^ rank of S^3_n(K): 7, of S^3_-n(K): 7]
+      levels: d=6:[36] | d=7:[30, 34, 34, 36, 36, 38, 40, 40, 40, 42, 44, 46] | d=8:[28, 30, 32, 34, 34, 36, 38, 40] | d=9:[26, 30, 32, 36] | d=10:[20, 24, 26, 30]
+T(+4): rank Kh~ 36, max Szabo matching 16, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 8, of S^3_-n(K): 8]
+      levels: d=9.5:[43, 47, 49, 51, 53, 55, 57, 59] | d=10.5:[37, 41, 41, 43, 43, 45, 47, 47, 47, 49, 51, 53] | d=11.5:[35, 37, 39, 41, 41, 43, 45, 47] | d=12.5:[33, 37, 39, 43] | d=13.5:[27, 31, 33, 37]
+T(-4): rank Kh~ 30, max Szabo matching 13, minimal E_inf rank 4   [HF^ rank of S^3_n(K): 8, of S^3_-n(K): 8]
+      levels: d=5.5:[35] | d=6.5:[29, 33, 33, 35, 35, 37, 37, 39, 39, 39, 41, 43, 45] | d=7.5:[27, 29, 31, 33, 33, 35, 37, 39] | d=8.5:[25, 29, 31, 35] | d=9.5:[19, 23, 25, 29]
+
+slope inf closure generators: [(0, 0)]
+T(+0): rank Kh~ 64, max Szabo matching 32, minimal E_inf rank 0
+      levels: d=-1.5:[-5, -3, -3, -1, -1, 1, 1, 1, 3, 3, 3, 5, 5, 7, 7, 9] | d=-0.5:[-11, -11, -9, -9, -9, -9, -7, -7, -7, -7, -5, -5, -5, -5, -5, -5, -3, -3, -3, -3, -3, -3, -1, -1, -1, -1, -1, 1, 1, 1, 3, 3] | d=0.5:[-17, -15, -15, -13, -13, -11, -11, -11, -9, -9, -9, -7, -7, -5, -5, -3]
+T(+1): rank Kh~ 65, max Szabo matching 32, minimal E_inf rank 1
+      levels: d=-1:[-4, -2, -2, 0, 0, 2, 2, 2, 4, 4, 4, 6, 6, 8, 8, 10] | d=0:[-10, -10, -8, -8, -8, -8, -6, -6, -6, -6, -4, -4, -4, -4, -4, -4, -2, -2, -2, -2, -2, -2, 0, 0, 0, 0, 0, 2, 2, 2, 2, 4, 4] | d=1:[-16, -14, -14, -12, -12, -10, -10, -10, -8, -8, -8, -6, -6, -4, -4, -2]
+T(-1): rank Kh~ 63, max Szabo matching 31, minimal E_inf rank 1
+      levels: d=-2:[-6, -4, -4, -2, -2, 0, 0, 0, 2, 2, 2, 4, 4, 6, 6, 8] | d=-1:[-12, -12, -10, -10, -10, -10, -8, -8, -8, -8, -6, -6, -6, -6, -6, -6, -4, -4, -4, -4, -4, -4, -2, -2, -2, -2, 0, 0, 0, 2, 2] | d=0:[-18, -16, -16, -14, -14, -12, -12, -12, -10, -10, -10, -8, -8, -6, -6, -4]
+T(+2): rank Kh~ 66, max Szabo matching 32, minimal E_inf rank 2
+      levels: d=-0.5:[-3, -1, -1, 1, 1, 3, 3, 3, 5, 5, 5, 7, 7, 9, 9, 11] | d=0.5:[-9, -9, -7, -7, -7, -7, -5, -5, -5, -5, -3, -3, -3, -3, -3, -3, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 5, 5, 5] | d=1.5:[-15, -13, -13, -11, -11, -9, -9, -9, -7, -7, -7, -5, -5, -3, -3, -1]
+T(-2): rank Kh~ 62, max Szabo matching 30, minimal E_inf rank 2
+      levels: d=-2.5:[-7, -5, -5, -3, -3, -1, -1, -1, 1, 1, 1, 3, 3, 5, 5, 7] | d=-1.5:[-13, -13, -11, -11, -11, -11, -9, -9, -9, -9, -7, -7, -7, -7, -7, -7, -5, -5, -5, -5, -5, -3, -3, -3, -3, -1, -1, -1, 1, 1] | d=-0.5:[-19, -17, -17, -15, -15, -13, -13, -13, -11, -11, -11, -9, -9, -7, -7, -5]
+T(+3): rank Kh~ 67, max Szabo matching 32, minimal E_inf rank 3
+      levels: d=0:[-2, 0, 0, 2, 2, 4, 4, 4, 6, 6, 6, 8, 8, 10, 10, 12] | d=1:[-8, -8, -6, -6, -6, -6, -4, -4, -4, -4, -2, -2, -2, -2, -2, -2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 4, 4, 4, 4, 6, 6, 6, 8] | d=2:[-14, -12, -12, -10, -10, -8, -8, -8, -6, -6, -6, -4, -4, -2, -2, 0]
+T(-3): rank Kh~ 61, max Szabo matching 29, minimal E_inf rank 3
+      levels: d=-3:[-8, -6, -6, -4, -4, -2, -2, -2, 0, 0, 0, 2, 2, 4, 4, 6] | d=-2:[-14, -14, -12, -12, -12, -12, -10, -10, -10, -10, -8, -8, -8, -8, -8, -6, -6, -6, -6, -6, -4, -4, -4, -4, -2, -2, -2, 0, 0] | d=-1:[-20, -18, -18, -16, -16, -14, -14, -14, -12, -12, -12, -10, -10, -8, -8, -6]
+T(+4): rank Kh~ 68, max Szabo matching 32, minimal E_inf rank 4
+      levels: d=0.5:[-1, 1, 1, 3, 3, 5, 5, 5, 7, 7, 7, 9, 9, 11, 11, 13] | d=1.5:[-7, -7, -5, -5, -5, -5, -3, -3, -3, -3, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 5, 5, 5, 5, 7, 7, 7, 9, 11] | d=2.5:[-13, -11, -11, -9, -9, -7, -7, -7, -5, -5, -5, -3, -3, -1, -1, 1]
+T(-4): rank Kh~ 62, max Szabo matching 29, minimal E_inf rank 4
+      levels: d=-3.5:[-9, -7, -7, -5, -5, -3, -3, -3, -1, -1, -1, 1, 1, 3, 3, 5] | d=-2.5:[-15, -15, -13, -13, -13, -13, -11, -11, -11, -11, -9, -9, -9, -9, -9, -7, -7, -7, -7, -7, -5, -5, -5, -5, -3, -3, -3, -1, -1] | d=-1.5:[-21, -19, -19, -17, -17, -15, -15, -15, -13, -13, -13, -11, -11, -11, -9, -9, -7]

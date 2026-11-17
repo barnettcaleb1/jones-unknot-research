@@ -1,0 +1,72 @@
+{
+  "common_unreduced_jones": {
+    "-15": -1,
+    "-7": 1,
+    "-5": 1,
+    "-3": 1
+  },
+  "cinquefoil_rational_Kh_rank": 6,
+  "10_132_rational_Kh_rank": 12,
+  "10_132_cancelled_top_quantum_grade": -1,
+  "figure8_kappa_blocks": [
+    [
+      [
+        "0",
+        "11",
+        "1"
+      ],
+      [
+        "2",
+        "15",
+        "1"
+      ],
+      [
+        "3",
+        "17",
+        "1"
+      ],
+      [
+        "5",
+        "21",
+        "1"
+      ]
+    ],
+    [
+      [
+        "4",
+        "17",
+        "1"
+      ],
+      [
+        "6",
+        "21",
+        "1"
+      ],
+      [
+        "7",
+        "23",
+        "1"
+      ],
+      [
+        "9",
+        "27",
+        "1"
+      ]
+    ]
+  ],
+  "figure8_kappa_euler": {
+    "11": 1,
+    "15": 1,
+    "23": -1,
+    "27": -1
+  },
+  "figure8_kappa_cancelled_quantum_grades": [
+    17,
+    21
+  ],
+  "figure8_signed_center_certificate": {
+    "11": 1,
+    "17": 1
+  },
+  "scope": "Exact algebra on published actual invariants; no new knot or universal noncancellation theorem."
+}

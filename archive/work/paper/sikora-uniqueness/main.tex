@@ -1,0 +1,1728 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.12in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{25,55,110}
+\usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\hypersetup{pdftitle={Uniqueness of rational solutions of framed tangle equations},
+pdfauthor={Caleb Barnett}}
+\setlist{itemsep=3pt,topsep=5pt}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{convention}[theorem]{Convention}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Sthree}{S^3}
+\newcommand{\lCW}{\lambda_{\mathrm{CW}}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\Det}{\operatorname{det}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\bd}{\partial}
+\newcommand{\br}[1]{\langle #1\rangle}
+\newcommand{\cl}[2]{C_{#1}(#2)}
+\newcommand{\iso}{\cong_{\mathrm{or}}}
+\newcommand{\tang}[1]{\langle #1\rangle}
+\newcommand{\draftnote}[1]{\par\smallskip\noindent\textcolor{linkblue}{\textbf{Editorial placeholder.} #1}\par\smallskip}
+\title[Rational solutions of tangle equations]{Uniqueness of rational solutions of framed tangle equations:\\ a proof of Sikora's conjecture and an unframed extension}
+\author{Caleb Barnett}
+\urladdr{https://barnettcaleb1.github.io}
+\date{First complete draft for internal review: 3 November 2026}
+\subjclass[2020]{57K10, 57K30, 57R58}
+\keywords{tangle equation, rational tangle, double branched cover, Dehn filling, Casson--Walker invariant, Floer simple manifold}
+
+\begin{document}
+\begin{abstract}
+We prove that a system of two balanced framed rational-closure equations,
+with distinct underlying closing slopes, has a unique solution among
+arbitrary two-string tangles whenever it has a rational solution.
+This is Sikora's rational-solution uniqueness conjecture.
+The proof uses uniqueness of the Kauffman bracket vector to identify the
+integral peripheral homology of the double branched cover. Two actual
+matched fillings then combine with the Casson--Walker surgery formula
+and the Floer-simple manifold results of Rasmussen and Rasmussen to force
+the cover to be a solid torus. We also prove an unframed version: two
+actual closure identifications at distinct nonlongitudinal slopes,
+together with equality of determinants at any third slope, suffice.
+An elementary interpolation lemma recovers integral homology and the
+longitude from these three scalar measurements. We give an arithmetic
+condition under which two unframed probes suffice and describe the
+remaining homological alternative explicitly.
+\end{abstract}
+\maketitle
+
+\noindent\textbf{Draft status.}
+This manuscript presents a deduction from published results for
+adversarial review. It has not received external specialist review.
+No claim of priority beyond the attribution discussion in
+Section~\ref{sec:credit} is made.
+
+\section{Introduction}\label{sec:intro}
+
+A two-string tangle consists of two properly embedded arcs in a ball
+with four fixed boundary points. A rational closing tangle \(P\)
+assigns to an unknown tangle \(X\) a link
+\(\cl P X=N(X+P)\). A system
+\begin{equation}\label{eq:system}
+ \cl P X=L_P,\qquad \cl Q X=L_Q
+\end{equation}
+asks how much two such closures determine about \(X\).
+These equations arise in the topological study of DNA recombination;
+the distinction between rational and arbitrary tangle solutions is
+central to their use.
+
+Sikora proves uniqueness among \emph{rational} solutions of a framed
+system when \(P\) and \(Q\) have distinct unframed slopes
+\cite[Proposition~1]{Sikora}. His conjecture asks for uniqueness among
+all two-string tangles once a rational solution exists. The framing
+convention is balanced framed isotopy, as in \cite[Section~4]{Sikora}.
+Our first theorem proves that statement.
+
+The mechanism has two different inputs. Equality of the two framed
+closures determines the Kauffman bracket vector, by
+\cite[Theorem~21]{Sikora}. This is a linear-algebraic statement, and by
+itself does not identify the tangle. It gives determinant information
+at auxiliary closure slopes. On the double branched cover, that
+information determines integral homology and the preferred longitude.
+The \emph{actual} closure identifications then supply matched
+orientation-preserving Dehn fillings. These are the topological input
+that polynomial identities alone would not supply.
+
+For two finite-homology fillings, the Casson--Walker surgery formula
+eliminates an unknown ambient invariant and forces the second
+Alexander derivative to vanish. Two lens fillings also imply Floer
+simplicity. The resulting alternating Alexander polynomial has
+strictly positive second derivative unless it is constant.
+The Thurston-norm formula of Rasmussen and Rasmussen then forces
+boundary compression. A separate application of their generalized
+solid-torus result treats a longitudinal probe.
+
+The surgery--Alexander part of this argument has a close antecedent
+in Gainullin's proof of \cite[Theorem~8.2]{Gainullin}. Here we use two
+matched fillings and Floer simplicity of the exterior; we do not
+assume that the auxiliary integral homology sphere is an \(L\)-space.
+The relationship and the classical special cases are discussed in
+Section~\ref{sec:credit}.
+
+The unframed extension replaces the information recovered from the
+bracket vector by three homology-order measurements. Orders of first
+homology of torus-boundary fillings are absolute values of one
+integral linear functional. Agreement with a primitive functional
+at three distinct slopes forces agreement everywhere. Only two of
+the three probes must be actual closure identifications. This also
+gives an explicit arithmetic description of the ambiguity left by
+two measurements.
+
+Sikora proves that Jones unknot detection implies his framed
+uniqueness conjecture \cite[Theorem~3]{Sikora}. We do not claim the
+converse, and the argument here supplies no such implication.
+In particular, a hypothetical nontrivial Jones-unit knot tied
+locally into a rational tangle would preserve all bracket
+measurements after compatible framing, while changing the actual
+closure links. The surgery hypotheses would be missing.
+
+The abstract of Sikora's IPAM talk of 15 October 2026 still states
+the rational-solution assertion as a conjecture \cite{SikoraTalk}.
+The literature checks underlying this draft located no prior proof
+of the exact statement. This records the scope of those checks,
+not a certification of priority or of the absence of unpublished work.
+
+\section{Statements of the results}\label{sec:statements}
+
+All balls and three-manifolds are oriented. Ambient link isotopies
+preserve ambient orientation; link components need not be oriented.
+Tangle comparisons retain the complete boundary marking, not only
+the set of four endpoints. A slope on a torus is an unoriented
+primitive class in its first integral homology. Distinct slopes are
+therefore distinct elements of the projectivized integral lattice.
+
+\begin{theorem}[Framed rational-solution uniqueness]\label{thm:framed}
+Let \(P,Q\) be framed rational closing tangles with distinct
+underlying unframed slopes, and let \(R\) be a framed rational
+tangle. Suppose that \(X\) is a framed two-string tangle with the
+same boundary marking and
+\[
+ \cl P X=\cl P R,\qquad \cl Q X=\cl Q R
+\]
+as balanced framed links. Then \(X=R\) as balanced framed tangles.
+\end{theorem}
+
+This is Conjecture~2 of the specified arXiv version of
+\cite{Sikora}, numbered Conjecture~1.2 in the journal article.
+An arbitrary collection of closed components may also be allowed
+in \(X\): the proof excludes them from the hypotheses.
+The two closing tangles must differ after forgetting framing;
+two framings of one closing slope do not suffice.
+
+For a compact oriented manifold \(M\) with one torus boundary, write
+\(M(\alpha)\) for Dehn filling along \(\alpha\), and put
+\[
+ h(Z)=
+ \begin{cases}|H_1(Z;\Z)|,&H_1(Z;\Z)\text{ finite},\\
+ 0,&H_1(Z;\Z)\text{ infinite}.
+ \end{cases}
+\]
+A \emph{marked solid torus} \(V\) is a solid torus whose oriented
+boundary slope lattice has been identified with that of \(M\).
+Its disk slope will be denoted \(\lambda\).
+
+\begin{theorem}[Homology interpolation]\label{thm:homology}
+Let \(M\) be compact, connected and oriented with one torus boundary,
+and let \(V\) be a marked solid torus. Suppose that \(M\) has a
+rational-homology-sphere filling. If
+\[
+ h(M(\alpha_i))=h(V(\alpha_i)),\qquad i=1,2,3,
+\]
+at three distinct slopes, then \(H_1(M;\Z)\cong\Z\), the
+boundary-to-homology map is surjective, and its kernel is generated
+by the disk slope of \(V\).
+\end{theorem}
+
+For a rational tangle \(R\), a closing slope is
+\emph{nonlongitudinal} when it is different from the disk slope of
+its double branched cover. Equivalently, the corresponding closure
+of \(R\) has nonzero determinant.
+
+\begin{theorem}[Unframed three-probe rigidity]\label{thm:three}
+Let \(R\) be rational and \(X\) be any two-string tangle in the same
+marked ball. Let \(\alpha,\beta\) be distinct nonlongitudinal
+rational closing slopes for \(R\). Suppose
+\[
+ \cl\alpha X\simeq\cl\alpha R,\qquad
+ \cl\beta X\simeq\cl\beta R
+\]
+as unframed links by ambient isotopies. If, at one further slope
+\(\gamma\notin\{\alpha,\beta\}\),
+\[
+ \Det\cl\gamma X=\Det\cl\gamma R,
+\]
+then \(X\simeq R\) as unframed marked tangles.
+\end{theorem}
+
+\begin{corollary}[Three actual closures]\label{cor:actual}
+If three distinct rational closures of \(X\) are ambient isotopic
+to the corresponding closures of a rational tangle \(R\), then
+\(X\simeq R\) as unframed marked tangles.
+\end{corollary}
+
+\begin{corollary}[Diagnostic form]\label{cor:diagnostic}
+Suppose \(X\not\simeq R\), with \(R\) rational, and two actual
+unframed closure equalities hold at distinct nonlongitudinal slopes
+\(\alpha,\beta\). Then the determinants of the corresponding
+closures differ at every other slope.
+\end{corollary}
+
+Let \(\Delta(\alpha,\beta)\) denote slope distance, the absolute
+value of the determinant of their primitive representatives.
+
+\begin{theorem}[Arithmetic two-probe criterion]\label{thm:arithmetic}
+Under the two actual closure hypotheses of
+Theorem~\ref{thm:three}, put \(d=\Delta(\alpha,\beta)>0\).
+If
+\[
+ d\nmid 2\Det\cl\alpha R,
+\]
+then \(X\simeq R\), without any third-probe assumption.
+The divisibility condition is unchanged if \(\beta\) replaces
+\(\alpha\).
+\end{theorem}
+
+The auxiliary surgery statement used in both tangle theorems is
+worth isolating.
+
+\begin{proposition}[Two marked finite fillings]\label{prop:surgery}
+Let \(M\) be compact, connected and oriented with one torus
+boundary, and let \(V\) be a marked solid torus. Assume that
+\(H_1(M;\Z)=\Z\), the boundary map is surjective, and the
+homological longitude of \(M\) agrees with the disk slope of \(V\).
+If two distinct nonlongitudinal slopes satisfy
+\[
+ M(\alpha)\iso V(\alpha),\qquad M(\beta)\iso V(\beta),
+\]
+then \(M\) is a solid torus with the same disk slope as \(V\).
+\end{proposition}
+
+The marking in this proposition is indispensable. The
+homeomorphisms of the filled manifolds need not respect their
+filling cores. The same signed surgery coefficients are determined
+by the marking before those homeomorphisms are used.
+
+\section{Conventions and the inputs from the literature}\label{sec:prelim}
+
+\subsection{Balanced framing and the bracket}
+
+Fix four named endpoints on the boundary of an oriented ball.
+We use blackboard-framed diagrams and Sikora's balanced
+Reidemeister equivalence \cite[Section~4 and Figure~5]{Sikora}.
+It includes the usual second and third moves and the balanced
+creation or removal of opposite curls. In particular, compensating
+framing changes may be moved between components. This is more
+flexible than isotopy of independently framed components.
+An isolated positive framing twist multiplies the bracket by
+\(-A^3\). The total framing information relevant to the bracket
+is not discarded.
+
+Write \(\mathcal R=\Z[A,A^{-1}]\) and
+\(\delta=-A^2-A^{-2}\). The two trivial boundary pairings
+\(\tang0,\tang\infty\) form the basis of the relative bracket
+module of the marked ball:
+\[
+ [X]=x_0[\tang0]+x_\infty[\tang\infty],
+ \qquad x_0,x_\infty\in\mathcal R.
+\]
+This vector is invariant under balanced framed isotopy.
+Closed components in \(X\), if allowed, are evaluated by the same
+skein relations and do not change the rank of this module.
+
+For nonempty closed links we use the reduced bracket
+\(\br U=1\), so adding a disjoint trivial component multiplies
+the bracket by \(\delta\). If one starts instead with the
+absolute convention \(\br{\varnothing}_{\rm abs}=1\),
+then \(\br L=\br L_{\rm abs}/\delta\).
+This division is a polynomial division made \emph{before}
+any evaluation at a zero of \(\delta\).
+
+For a fixed closing tangle \(T\), closure is linear:
+\begin{equation}\label{eq:closurefunctional}
+ \br{\cl T X}
+ =x_0\br{N(\tang0+T)}+
+  x_\infty\br{N(\tang\infty+T)}.
+\end{equation}
+If \([T]=(a,b)^{\mathsf T}\), the row vector of this
+functional is
+\[
+ (\delta a+b,\ a+\delta b).
+\]
+For two probes its determinant is
+\begin{equation}\label{eq:closurematrix}
+ (\delta^2-1)(a_1b_2-a_2b_1).
+\end{equation}
+For distinct rational probe slopes the last factor is nonzero.
+This is the independence assertion in the proof of Sikora's
+Theorem~21; the rational bracket ratio recovers the rational
+fraction at its classical specialization
+\cite[Corollary~19 and Theorem~21]{Sikora}.
+Consequently, two equal framed closure brackets force equality
+of the two relative bracket vectors, over \(\Q(A)\) and hence
+over \(\mathcal R\).
+
+We will also use \cite[Corollary~20]{Sikora} in precisely its
+rational-only form: equal bracket vectors of two balanced framed
+rational tangles imply equality of the tangles.
+It makes no assertion here about detecting a rational tangle
+among all tangles.
+
+\subsection{Branched covers and their markings}
+
+The connected double cover of the boundary sphere, branched at
+its four marked points, is a torus. The cover of a
+rational tangle is a solid torus. Attaching a rational closing
+tangle is Dehn filling along its disk slope upstairs. Thus, if
+\(M=\Sigma_2(B,X)\), then
+\begin{equation}\label{eq:coverclosure}
+ \Sigma_2(\cl\alpha X)=M(\alpha).
+\end{equation}
+The covering orientation is the one for which the local covering
+map preserves orientation off the branch set.
+
+The fixed marking identifies the two boundary branched covers
+over the \emph{same} marked sphere. Its two possible lifts differ
+by the deck involution. In the pillowcase model
+\(T^2/(z\mapsto-z)\), this involution acts as \(-I\) on
+\(H_1(T^2;\Z)\). Therefore the lifted slope identification is
+well defined on unoriented slopes. It also preserves the boundary
+orientation.
+
+For later signed coefficients, give the peripheral torus the
+orientation as the boundary of a tubular neighborhood of the
+filling core. This is the negative of its orientation as the
+boundary of the exterior. We choose oriented representatives
+\(\mu,\lambda\) with
+\(\mu\cdot\lambda=+1\) in this peripheral convention.
+Using the exterior orientation instead reverses both
+intersection conventions at once; it does not allow an
+independent sign change on one side of a comparison.
+
+An ambient orientation-preserving isotopy of branch links lifts
+to an orientation-preserving homeomorphism of the closed covers.
+Away from the branch set this follows from the covering
+orientation, and extension over a branched tubular neighborhood
+preserves it. The lifted homeomorphism can forget both the
+marked boundary and the filling core. Neither must be preserved
+to equate invariants of the closed oriented manifolds.
+
+We use the classical rationality criterion in the form stated by
+Buck and Mauricio \cite[Theorem~3.5(2)]{BM}, attributed there to
+Lickorish \cite{Lickorish}: a two-string tangle has solid-torus
+double branched cover if and only if it is rational.
+This statement applies to the given branched cover and its
+involution. It is not a classification obtained by changing the
+involution. Rational tangles with the fixed four-point marking
+are classified by their slopes
+\cite[Theorem~3.6]{BM}. Equivalently, their disk slopes in the
+marked boundary torus classify them.
+
+\subsection{Determinants and homology}
+
+Put \(\zeta=e^{\pi i/4}\). The determinant of a link is
+\[
+ \Det L=|\br L(\zeta)|
+       =h(\Sigma_2(L)).
+\]
+The framing factor has absolute value one at \(\zeta\).
+These equalities hold also when the determinant is zero, with
+the convention defining \(h\).
+Here is a presentation argument that includes the zero case.
+Arrange a connected projection of the link; if necessary,
+Reidemeister-II moves between projected components accomplish this
+without changing the link. Let \(G\) be a reduced Goeritz matrix.
+Lickorish's Theorem~9.3 identifies the integral form of a connected
+spanning surface as a presentation of \(H_1(\Sigma_2(L);\Z)\);
+Theorem~9.4 identifies the checkerboard-surface form with \(G\),
+and Corollary~9.5 gives \(\Det L=|\det G|\)
+\cite[Chapter~9, pp.~96--99]{LickorishBook}.
+Thus the finite cokernel has order \(|\det G|\) when \(G\) is
+nonsingular, and its cokernel has positive rank when \(G\) is
+singular. The \(0\times0\) matrix presents the trivial group
+and has determinant one. This proves both cases of the displayed
+identity. See also \cite[Section~3]{DFKLS} for the
+determinant--bracket formulation.
+
+We need only the following consequence of
+\cite[Proposition~6.5]{Stoimenow}: a link has odd determinant
+if and only if it is a knot. In particular, a determinant-one
+closure of a two-string tangle is a knot. If the tangle had
+a closed component, that component would survive into every
+closure alongside at least one component containing its
+proper arcs. Thus a determinant-one closure excludes closed
+components of the tangle.
+
+\subsection{The signed surgery formula}
+
+We normalize the Alexander polynomial of a knot \(K\) in an
+integral homology sphere \(Y\) by
+\[
+ \Delta_K(t^{-1})=\Delta_K(t),\qquad \Delta_K(1)=1.
+\]
+Write \(Y_{p/q}(K)\) for filling its exterior along
+\(p\mu+q\lambda_K\), with \(\lambda_K\) the preferred
+longitude. Our lens-space convention is
+\(L(p,q)=S^3_{p/q}(U)\), including its orientation.
+
+Ni and Wu \cite[Proposition~3.1, equation~(7)]{NiWu}
+state the Casson--Walker surgery formula for a
+null-homologous knot in a rational homology sphere.
+In the integral-homology-sphere case used here it is
+\begin{equation}\label{eq:cw}
+ \lCW(Y_{p/q}(K))
+ =\lCW(Y)+\lCW(L(p,q))
+       +\frac{q}{2p}\Delta_K''(1),\qquad p\ne0.
+\end{equation}
+We cite that explicitly checked formulation, after
+Boyer and Lines \cite{BoyerLines}. No assumption that \(Y\)
+is \(S^3\), or that \(Y\) is an \(L\)-space, is present.
+Changing both \(p,q\) to their negatives changes neither
+the slope nor the coefficient \(q/(2p)\).
+Reversing the orientation of just one filled manifold
+would change its Casson--Walker invariant, so it is not
+permitted in the comparisons below. The surgery fraction \(p/q\)
+is the coordinate of the lifted filling slope, and need not equal
+the Conway fraction naming the closing tangle downstairs. The same
+fixed closing tangle supplies the same lifted slope on both covers.
+
+\subsection{The Floer-simple input}\label{subsec:floer}
+
+We state exactly the portions of Rasmussen and Rasmussen
+\cite{RR} used here; numbering refers to arXiv:1508.05900v2.
+An \(L\)-space is a rational homology sphere with minimal-rank
+Heegaard Floer homology. Lens spaces, including \(S^3\), are
+\(L\)-spaces in either orientation.
+
+For a connected oriented manifold \(M\) with one torus
+boundary and \(b_1(M)=1\), their Proposition~1.3 says that
+having more than one \(L\)-space filling is equivalent to
+Floer simplicity. Their torsion normalization preceding
+Proposition~1.4, together with Section~2.1, Proposition~1.4
+and Proposition~2.2, has the following consequence when \(M\) is Floer simple and
+\(H_1(M;\Z)=\Z\):
+\begin{equation}\label{eq:binarytorsion}
+ \tau(M)=\frac{D(t)}{1-t}
+         =\sum_{n\ge0}a_nt^n,\qquad
+ a_0=1,\quad a_n\in\{0,1\},\quad a_n=1\ (n\gg0).
+\end{equation}
+The choice of generator and a power of \(t\) fixes the
+normalization. If \(M\) is a knot exterior in an integral
+homology sphere, then \(D(t)=t^h\Delta_K(t)\), with the
+positive sign fixed by \(D(1)=\Delta_K(1)=1\).
+Here \(h\) is a shift, not an assumed genus.
+
+More generally, \(\overline\Delta(M)\) is the polynomial
+obtained by projecting the Turaev torsion to the free
+part of homology and multiplying by \(1-t\).
+When \(H_1(M)=\Z\) the projection is the identity, so
+\begin{equation}\label{eq:barD}
+ \overline\Delta(M)=D(t).
+\end{equation}
+We use degree to mean Laurent breadth:
+\(\deg f=\max\operatorname{supp}(f)-\min\operatorname{supp}(f)\).
+For \(D\) in \eqref{eq:binarytorsion}, its constant term
+is one and its lowest exponent is zero, so this is its
+ordinary polynomial degree.
+
+The first assertion of \cite[Corollary~2.3]{RR} says that
+if \(M\) is boundary incompressible and Floer simple, then
+\begin{equation}\label{eq:norm}
+ \|M\|=\deg\overline\Delta(M)-1,
+\end{equation}
+where \(\|M\|\) is the Thurston norm of a generator of
+\(H_2(M,\bd M;\Z)\). We will have irreducibility as well,
+although the stated norm assertion does not require it.
+We do not use the separate fibering assertion of that corollary.
+
+Finally \cite[Proposition~7.8]{RR} states that, for a rational
+homology sphere \(Z\), a knot in \(Z\#(S^1\times S^2)\)
+admitting an \(L\)-space surgery has
+generalized-solid-torus exterior. We use only \(Z=S^3\).
+By Definition~7.2, such an exterior is Floer simple and
+\[
+ \deg\overline\Delta(M)<g_M.
+\]
+Here \(g_M\) is the order of the image of the homological
+longitude in the torsion subgroup of \(H_1(M;\Z)\).
+The order of its zero element is one. In the torsion-free
+case \(g_M=1\); equivalently the relation
+\(|\Tor H_1(M)|=k_Mg_M\) in \cite[Section~7, introductory notation]{RR}
+forces both positive integers \(k_M,g_M\) to be one.
+Generalized solid tori need not be actual solid tori.
+We will use the torsion-free hypothesis and irreducibility
+before making that conclusion.
+
+\section{Proof of the framed theorem}\label{sec:framedproof}
+
+We give the proof in five steps and isolate the common
+surgery argument for use in the unframed theorem.
+
+\subsection*{Step 1. Equality of relative brackets}
+
+The hypotheses of Theorem~\ref{thm:framed} give two
+\emph{exact} reduced bracket equalities: the closing
+tangle and its framing are the same on both sides of
+each equation. Apply the two independent functionals
+\eqref{eq:closurefunctional} to \([X]-[R]\).
+Their determinant \eqref{eq:closurematrix} is nonzero
+because the probe slopes differ. Thus
+\begin{equation}\label{eq:vector}
+ [X]=[R]\quad\text{in }\mathcal R^2.
+\end{equation}
+This is precisely the conclusion of
+\cite[Theorem~21]{Sikora}; the displayed linear proof
+also applies if \(X\) initially has closed components.
+Every additional rational closing tangle therefore
+gives equal brackets, and hence equal determinants.
+It does not yet give isotopic links at those
+additional slopes.
+
+\subsection*{Step 2. Integral peripheral data and irreducibility}
+
+Let \(M=\Sigma_2(B,X)\) and \(V=\Sigma_2(B,R)\).
+The latter is a solid torus. Let \(\lambda\) be its
+primitive disk slope. Choose a slope \(\mu\) with
+\(\mu\cdot\lambda=1\), different from both original
+probes. Such a choice can be made before any filling:
+the slopes \(\mu_0+n\lambda\), \(n\in\Z\), give
+infinitely many choices. Orient them compatibly with
+the peripheral convention.
+
+The corresponding rational closures of \(R\) are
+the two-component unlink and an unknot. Upstairs,
+\[
+ V(\lambda)=S^1\times S^2,\qquad V(\mu)=S^3.
+\]
+Equation~\eqref{eq:vector} therefore gives
+\begin{equation}\label{eq:01}
+ h(M(\lambda))=0,\qquad h(M(\mu))=1.
+\end{equation}
+The determinant-one closure of \(X\) is a knot,
+so \(X\) has no closed components.
+
+Set \(Y=M(\mu)\). By \eqref{eq:01}, this is an integral
+homology sphere, and \(M\) is the exterior of the
+core \(K\) of the attached solid torus \(W\).
+For completeness, Mayer--Vietoris gives
+\[
+ 0=H_2(Y)\longrightarrow H_1(\bd M)
+ \longrightarrow H_1(M)\oplus H_1(W)
+ \longrightarrow H_1(Y)=0.
+\]
+Since \(H_1(\bd M)=\Z^2\) and \(H_1(W)=\Z\), it follows
+that \(H_1(M)=\Z\). The preceding part of the sequence,
+or Euler characteristic and duality, gives \(H_2(M)=0\).
+The meridian \(\mu\) maps to a generator of \(H_1(M)\).
+The kernel of the boundary map is generated by the
+primitive preferred longitude \(\lambda_K\).
+
+Filling along \(p\mu+q\lambda_K\) has first homology
+\(\Z/p\Z\), where \(p=0\) means \(\Z\).
+The first equality of \eqref{eq:01} therefore forces
+\(\lambda=\pm\lambda_K\). These are the same
+unoriented slope. We have identified a common
+\emph{integral} meridian--longitude pair for \(M\)
+and \(V\), not merely a rational longitude.
+No identification of \(Y\) with \(S^3\) has been made.
+
+At least one original probe is different from
+\(\lambda\). At that slope, the actual closure
+isotopy gives an actual finite-homology lens-space
+filling of \(M\).
+
+\begin{lemma}\label{lem:irreducible}
+If \(M\) has one torus boundary, \(H_1(M;\Z)=\Z\),
+and a finite-homology lens-space filling, then \(M\)
+is irreducible.
+\end{lemma}
+\begin{proof}
+In a prime decomposition write \(M=M_0\# Z_1\#\cdots\#Z_s\),
+where \(M_0\) carries the boundary and the \(Z_j\) are
+closed prime factors. For any compact oriented
+manifold with one torus boundary,
+\(\chi(M_0)=0\), so \(b_1(M_0)=1+b_2(M_0)\ge1\).
+The identity \(H_1(M)=\Z\) forces
+\(H_1(M_0)=\Z\) and \(H_1(Z_j)=0\).
+In particular no \(S^1\times S^2\) factor is possible.
+After filling,
+\[
+ M(\alpha)=M_0(\alpha)\#Z_1\#\cdots\#Z_s.
+ \]
+A finite-homology lens space is prime. A closed
+homology-sphere summand \(Z_j\) must be \(S^3\):
+if it were the nontrivial prime factor of the
+filling, that filling itself would be a
+homology-sphere lens space, hence \(S^3\).
+Prime decomposition therefore removes all closed
+factors. A prime orientable manifold with nonempty
+boundary is irreducible; the closed exception
+\(S^1\times S^2\) does not arise.
+\end{proof}
+
+\subsection*{Step 3. Two nonlongitudinal probes}
+
+Suppose first that neither original probe is
+\(\lambda\). Write
+\(\alpha_i=p_i\mu+q_i\lambda\), where
+\(\gcd(p_i,q_i)=1\) and \(p_i\ne0\). The choice of
+\(\mu\) away from the probes also ensures \(q_i\ne0\).
+We spell out the sign issue before applying
+\eqref{eq:cw}.
+
+\begin{lemma}[Signed comparison]\label{lem:signs}
+With the common marking and the meridian and
+longitude fixed as above, the actual closure
+isotopies give
+\begin{equation}\label{eq:signed}
+ Y_{p_i/q_i}(K)\iso S^3_{p_i/q_i}(U),\qquad i=1,2,
+\end{equation}
+with identical signed coefficients on both sides.
+\end{lemma}
+\begin{proof}
+The boundary identification is lifted from the
+identity of the marked four-punctured sphere.
+Its two choices differ by the deck action \(-I\).
+They replace both \(\mu,\lambda\) by
+\(-\mu,-\lambda\), and hence \((p_i,q_i)\) by
+\((-p_i,-q_i)\). The quotient \(p_i/q_i\)
+does not change.
+
+The chosen slope \(\mu\) is the meridian of
+both filling cores, since both are defined by
+\(\mu\)-filling. The determinant-zero argument
+has already identified their preferred
+longitudes with the same slope \(\lambda\).
+Orient the pairs so that their intersection is
+\(+1\) in the common peripheral convention. Orient each core
+so that \(\lambda\) runs once positively along it; then \(\mu\)
+is its positive meridian.
+Reversing an oriented knot reverses both
+peripheral classes; it does not change the
+coefficient. There is no independent replacement
+of a longitude by its negative, or by a
+longitude plus a meridian: the former would
+reverse the peripheral orientation without
+also reversing the meridian, and the latter
+would no longer be null-homologous.
+Likewise a meridional shear would change
+the chosen filling slope \(\mu\).
+
+The core in \(V(\mu)=S^3\) is an unknot.
+Thus the marked slope \(\alpha_i\) represents
+the same signed surgery on each core.
+Finally the original link isotopy lifts to
+an orientation-preserving homeomorphism of
+the closed branched covers. This establishes
+\eqref{eq:signed}. The lifted homeomorphism
+need not carry one core to the other: it is
+used only after the coefficients have been
+identified independently.
+\end{proof}
+
+Applying \eqref{eq:cw} to \eqref{eq:signed} and
+cancelling the common lens-space term yields
+\begin{equation}\label{eq:twoCW}
+ 0=\lCW(Y)+\frac{q_i}{2p_i}\Delta_K''(1),
+ \qquad i=1,2.
+\end{equation}
+Distinct slopes with \(p_i\ne0\) have distinct
+ratios \(q_i/p_i\). Subtracting gives
+\begin{equation}\label{eq:zeroderivative}
+ \Delta_K''(1)=0,\qquad \lCW(Y)=0.
+\end{equation}
+The second equality does not identify \(Y\).
+The use of surgery comparison and the
+Alexander derivative follows the strategy
+of \cite[Theorem~8.2 and its proof]{Gainullin};
+here the second equation removes the
+unknown \(\lCW(Y)\).
+
+Both fillings are \(L\)-spaces. Their distinct filling slopes
+and \cite[Proposition~1.3]{RR} make \(M\)
+Floer simple. Since \(H_1(M)=\Z\),
+\eqref{eq:binarytorsion} applies. The
+coefficients of \(D=(1-t)\tau(M)\) are
+\(a_n-a_{n-1}\), with \(a_{-1}=0\).
+The nonzero differences of a binary sequence
+alternate in sign, start with \(+1\), and
+end with \(+1\), because the sequence is
+eventually one. Also \(D(1)=1\).
+
+Symmetry of \(\Delta_K\) now implies that
+for some \(k\ge0\),
+\begin{equation}\label{eq:alternating}
+ \Delta_K(t)=(-1)^k+
+   \sum_{j=1}^k(-1)^{k-j}(t^{n_j}+t^{-n_j}),
+ \qquad 0<n_1<\cdots<n_k .
+\end{equation}
+Indeed the number of nonzero coefficients
+is odd, and all noncentral coefficients
+occur in symmetric pairs. A central
+coefficient must therefore be present,
+with the sign shown.
+Differentiating twice gives
+\begin{equation}\label{eq:positive}
+ \Delta_K''(1)=
+ 2\sum_{j=1}^k(-1)^{k-j}n_j^2.
+\end{equation}
+For even \(k>0\), the half-sum is
+\((n_k^2-n_{k-1}^2)+\cdots+(n_2^2-n_1^2)>0\).
+For odd \(k>0\), it is the same sum of
+positive successive differences with
+the additional term \(n_1^2>0\).
+Thus \eqref{eq:zeroderivative} forces \(k=0\)
+and \(\Delta_K=1\).
+Because \(D\) has constant term one,
+its shift is now zero: \(D=1\).
+
+If \(\bd M\) were incompressible,
+\eqref{eq:barD} and \eqref{eq:norm} would give
+\(\|M\|=0-1=-1\), contrary to nonnegativity
+of the Thurston norm. Hence the boundary
+compresses.
+
+\begin{lemma}\label{lem:compress}
+An irreducible compact orientable
+three-manifold with a single torus boundary
+and a boundary-compressing disk is a solid torus.
+\end{lemma}
+\begin{proof}
+The boundary of the compressing disk is
+essential and nonseparating on the boundary
+torus. A regular neighborhood of the
+torus together with the disk has, besides
+the original torus, a sphere boundary.
+Irreducibility fills that sphere on the
+interior side by a ball. Reversing the
+compression attaches one one-handle to
+that ball, giving a solid torus. The sphere
+cannot bound its ball on the side
+containing the original boundary torus,
+so there is no additional component left.
+\end{proof}
+
+Lemmas~\ref{lem:irreducible} and
+\ref{lem:compress} show that \(M\) is a
+solid torus. This also proves
+Proposition~\ref{prop:surgery}: its
+homology hypotheses give the same choice
+of \(Y,K,\mu,\lambda\), and its two
+oriented filling identifications are
+exactly \eqref{eq:signed}. A solid torus's
+disk slope is its homological longitude,
+so the final slope agrees with that of \(V\).
+
+\subsection*{Step 4. A longitudinal probe}
+
+If one original probe is \(\lambda\),
+the actual closure equality gives
+\[
+ M(\lambda)=S^1\times S^2,
+\]
+not merely a first-homology isomorphism.
+The other probe is nonlongitudinal and
+gives an \(L\)-space lens filling.
+Regard \(M\) as the exterior of the
+\(\lambda\)-filling core in \(S^1\times S^2\).
+Apply \cite[Proposition~7.8]{RR} with
+\(Z=S^3\) and with this other filling as
+the stipulated \(L\)-space surgery.
+It follows that \(M\) is a generalized
+solid torus.
+
+Step~2 has already proved \(H_1(M)=\Z\).
+Therefore \(g_M=1\), both directly from
+the zero image of the longitude and
+from \(|\Tor H_1(M)|=k_Mg_M=1\).
+Definition~7.2 of \cite{RR} gives
+Floer simplicity and
+\(\deg\overline\Delta(M)<1\).
+This normalized polynomial is nonzero;
+in the torsion-free case its value at
+one is one. Its degree is therefore zero.
+Boundary incompressibility would again
+give \(\|M\|=-1\) by Corollary~2.3.
+The boundary compresses, and the
+irreducibility already proved in Step~2
+allows Lemma~\ref{lem:compress} to
+conclude that \(M\) is a solid torus.
+
+This step uses Proposition~7.8 at arbitrary
+distance from the longitudinal slope.
+Neither Property \(R\) in \(S^3\) alone
+nor an assertion that every generalized
+solid torus is a solid torus would suffice.
+No uniqueness assertion for a single
+unlink closure is used.
+
+\subsection*{Step 5. The marked balanced framed tangle}
+
+In both cases the double branched cover
+of the given two-arc tangle \(X\) is a
+solid torus. By \cite[Theorem~3.5(2)]{BM},
+\(X\) is rational. This criterion is
+about the actual branched covering
+involution. Keeping the fixed
+boundary parametrization then places
+\(X\) in the usual marked rational-tangle
+classification. Extending a boundary
+parametrization over a ball uses the
+Alexander trick; no change of boundary
+marking is being inserted in the
+comparison with \(R\).
+
+We now have two balanced framed
+\emph{rational} tangles with the same
+bracket vector \eqref{eq:vector}.
+Sikora's Corollary~20 applies and gives
+\(X=R\) as balanced framed tangles.
+More explicitly, the bracket ratio
+first determines the common rational
+fraction. Any remaining balanced
+framing discrepancy is an integer \(n\)
+and multiplies the nonzero bracket
+vector by \((-A^3)^n\); equality forces
+\(n=0\). This completes the proof of
+Theorem~\ref{thm:framed}.
+
+\section{The unframed extension}\label{sec:unframed}
+
+\subsection{Homology orders as a linear functional}
+
+We prove Theorem~\ref{thm:homology} without
+any skein or Floer-theoretic input.
+A finite-homology filling implies
+\(b_1(M)\le1\), since filling kills at
+most one generator of rational first
+homology. On the other hand
+\(\chi(M)=\frac12\chi(\bd M)=0\) gives
+\(b_1(M)=1+b_2(M)\ge1\).
+Hence \(b_1(M)=1\). Write
+\[
+ H_1(M;\Z)=\Z\oplus T,\qquad t_0=|T|.
+\]
+Let \(\ell_M:H_1(\bd M;\Z)\to\Z\)
+be the free projection of the
+inclusion-induced homomorphism.
+It is not assumed primitive.
+
+For a primitive slope \(\alpha\),
+Mayer--Vietoris for filling identifies
+\[
+ H_1(M(\alpha);\Z)=
+ H_1(M;\Z)/\langle i_*(\alpha)\rangle .
+\]
+To see this quotient directly, a
+complementary boundary curve maps to
+the generator of the attached solid
+torus; eliminating that generator
+leaves exactly the relation
+\(i_*(\alpha)=0\).
+Write \(i_*(\alpha)=(n,t)\).
+If \(n=0\), the quotient still has
+rank one. If \(n\ne0\), its order is
+\(|n|\,|T|\): reduction of the free
+coordinate modulo \(n\) gives a
+surjection to \(\Z/n\Z\), whose kernel
+has order \(|T|\), since the cyclic
+relation has no nonzero element in
+\(0\oplus T\).
+Thus for every slope
+\begin{equation}\label{eq:linearh}
+ h(M(\alpha))=t_0\,|\ell_M(\alpha)|.
+\end{equation}
+
+Let \(l:H_1(\bd V;\Z)\to\Z\) be the
+primitive homology functional of the
+solid torus and use the marking to
+regard it as a functional on
+\(H_1(\bd M)\). Set \(m=t_0\ell_M\).
+The three hypotheses say
+\(m(\alpha_i)^2=l(\alpha_i)^2\).
+The homogeneous quadratic polynomial
+\[
+ m^2-l^2=(m-l)(m+l)
+\]
+therefore vanishes on three distinct
+rational directions. A nonzero linear
+form vanishes on only one such
+direction. By the pigeonhole principle
+one of \(m-l,m+l\) vanishes on two
+independent vectors, and is zero.
+Consequently \(m=l\) or \(m=-l\).
+Because \(l\) is primitive integral
+and \(m=t_0\ell_M\), the positive
+integer \(t_0\) is one and \(\ell_M\)
+is primitive. Its kernel is the disk
+slope of \(V\). This proves
+Theorem~\ref{thm:homology}.
+
+In fact the explicit assumption of
+a finite filling is redundant once
+the three equalities hold: a solid
+torus has only one zero-order filling
+slope, so at least two of the three
+orders are finite and nonzero.
+We retained the assumption to state
+the general linear-order formula
+in its natural setting.
+
+\subsection{Two isotopies and one determinant}
+
+For Theorem~\ref{thm:three}, take the
+double branched covers \(M,V\) of
+\(X,R\). The actual isotopies at
+\(\alpha,\beta\) give
+\[
+ M(\alpha)\iso V(\alpha),\qquad
+ M(\beta)\iso V(\beta).
+\]
+These are finite lens fillings by
+the nonlongitudinal assumption.
+Together with the determinant
+equality at \(\gamma\), they supply
+the three homology-order equalities.
+Theorem~\ref{thm:homology} gives
+\(H_1(M)=\Z\), surjectivity of the
+boundary map, and the common
+longitude. Proposition~\ref{prop:surgery}
+now makes \(M\) a solid torus with
+the marked disk slope of \(V\).
+
+If closed components were initially
+allowed in \(X\), the recovered
+primitive boundary map provides a
+slope \(\mu\) with \(h(M(\mu))=1\).
+Its closure is a knot, so again
+there are no closed components.
+The rationality criterion applies.
+Rational-tangle classification by
+the marked disk slope gives
+\(X\simeq R\), now without a framing
+assertion. This proves the theorem.
+The route uses neither the
+Kauffman bracket-vector theorem nor
+the generalized-solid-torus result.
+
+For Corollary~\ref{cor:actual}, at
+most one of three slopes is
+longitudinal. Use the other two as
+the actual finite probes and use
+the remaining equality only for
+its determinant. For
+Corollary~\ref{cor:diagnostic}, any
+third determinant equality would
+contradict \(X\not\simeq R\) by
+Theorem~\ref{thm:three}. The
+diagnostic applies to every
+nonidentical solution, including a
+different rational one.
+
+\subsection{The two-probe arithmetic and its residual alternative}
+
+We prove Theorem~\ref{thm:arithmetic}
+and give the exact alternative
+when its divisibility test fails.
+There is a finite filling, so
+the notation \(m=t_0\ell_M\)
+and \(l\) from \eqref{eq:linearh}
+is available. Choose primitive
+representatives and an oriented
+integral basis in which
+\[
+ \alpha=(1,0),\qquad
+ \beta=(a,d),\qquad d>0,\quad
+ \gcd(a,d)=1.
+\]
+Write \(l=(u,v)\), so \(u\ne0\)
+and \(|u|=\Det\cl\alpha R\).
+Changing the global sign of \(m\)
+if necessary, the first order
+equality gives \(m(\alpha)=u\).
+Write \(m=(u,w)\). The second
+order equality is
+\[
+ |au+dw|=|au+dv|.
+\]
+There are exactly two possibilities:
+\begin{equation}\label{eq:reflected}
+ m=l,\qquad\text{or}\qquad
+ m=m^*:=\left(u,-v-\frac{2au}{d}\right).
+\end{equation}
+In the first case, primitivity of
+\(l=t_0\ell_M\) forces torsion-free
+homology and a primitive boundary
+map, with the correct longitude.
+Proposition~\ref{prop:surgery}
+finishes.
+
+The second case is integral only
+if \(d\mid2au\), equivalently
+\(d\mid2u\), since \(\gcd(a,d)=1\).
+The hypothesis excludes this case.
+Finally \(l(\beta)=au+dv\) and
+\(\gcd(a,d)=1\) show
+\[
+ d\mid2l(\beta)\quad\Longleftrightarrow\quad
+ d\mid2u.
+\]
+This proves symmetry and the
+arithmetic theorem.
+
+Equation~\eqref{eq:reflected} gives
+more than a divisibility obstruction.
+If a nonidentical solution exists,
+then up to global sign its complete
+homology-order functional is
+\(m^*\). Thus
+\[
+ \Det\cl\gamma X=|m^*(\gamma)|
+\]
+for every closing slope \(\gamma\).
+The kernel of \(m^*\) determines
+the rational longitude, and the
+greatest common divisor of its
+two coordinates is
+\(|\Tor H_1(M)|\) times the index
+of the image of \(\ell_M\).
+This product is determined by the
+two-probe data; its two factors
+are not thereby separated.
+
+If one closure is an unknot,
+\(|u|=1\), so distance at least
+three satisfies the criterion.
+Distance two always passes the
+divisibility test and is not
+settled by this arithmetic
+argument. No new surgery
+characterization is claimed for
+the unknot-closure special case.
+
+\subsection{An exact two-probe calibration}\label{subsec:ES}
+
+The following calibration is the mirror of the first two solutions
+in \cite[Example~3, pp.~33--34]{ES1999}, followed by integer
+transfers in the Montesinos presentation. In our rational-tangle
+convention, take
+\[
+ X=\tang{-1}+\tang{1/2}+\tang{1/3},
+ \qquad R=\tang{1/4}.
+\]
+The numerator closures at add-ons
+zero and one agree: they are
+respectively an unknot and the
+same cinquefoil, with handedness
+fixed by the rational-tangle
+convention. The tangle \(X\)
+is not rational: its cover is
+Seifert fibred over a disk with
+exceptional orders two and three,
+the trefoil exterior up to
+orientation, and is not a solid
+torus.
+
+For an add-on \(\tang{p/q}\),
+the Montesinos determinant formula
+gives
+\begin{align}
+ \Det N(X+\tang{p/q})
+ &=\left|6q\left(-1+\frac12+\frac13+\frac pq\right)\right|
+   =|6p-q|,\label{eq:ESX}\\
+ \Det N(R+\tang{p/q})&=|4p+q|.\label{eq:ESR}
+\end{align}
+These formulas include \(q=0\)
+by the boundary homology
+functionals, or by the
+denominator closure. Their
+squared difference is
+\begin{equation}\label{eq:ESdiff}
+ (6p-q)^2-(4p+q)^2=20p(p-q).
+\end{equation}
+For primitive \((p,q)\) the
+determinants therefore agree
+only at the add-ons \(0\) and
+\(1\). Every third determinant
+separates these two tangles.
+For example, the denominator
+closure determinants are six
+and four. The two common
+probe slopes have distance
+one, exactly a case not
+excluded by
+Theorem~\ref{thm:arithmetic}.
+This example shows why the
+third measurement in
+Theorem~\ref{thm:three}
+cannot be omitted uniformly.
+
+\section{Stress tests and the role of the hypotheses}\label{sec:stress}
+
+The following examples identify
+which steps would fail under
+natural weakenings. They are
+not counterexamples to the
+theorems as stated.
+
+\subsection{An \texorpdfstring{\(L\)}{L}-space filling is not an actual lens filling}
+
+Let \(Z\) be a nontrivial
+integral homology sphere that
+is an \(L\)-space, for example
+the Poincare homology sphere,
+and set
+\[
+ M=(S^1\times D^2)\# Z.
+\]
+Then \(H_1(M)=\Z\), the
+longitude is primitive,
+and \(M\) has many \(L\)-space
+fillings \(L(p,q)\# Z\).
+Its torsion normalization is
+the one with
+\(\overline\Delta(M)=1\);
+compare \cite[Section~2.1]{RR}.
+Nevertheless \(M\) is not a
+solid torus. The norm
+argument allows boundary
+compression, but it does not
+remove the closed summand.
+The actual lens-space filling
+in Lemma~\ref{lem:irreducible}
+is what removes it.
+
+\subsection{Floer simplicity does not force a constant Alexander polynomial}
+
+The trefoil exterior is
+irreducible, has
+\(H_1=\Z\), and admits
+multiple \(L\)-space
+fillings. Its symmetric
+Alexander polynomial is
+\[
+ \Delta(t)=t-1+t^{-1},
+ \qquad \Delta''(1)=2.
+\]
+It therefore has precisely
+the binary torsion and
+alternating coefficients
+used in Step~3, without
+being a solid torus.
+The missing condition is
+the pair of correctly
+marked unknot-surgery
+comparisons. Their
+Casson--Walker subtraction,
+not Floer simplicity alone,
+forces the derivative to
+vanish.
+
+More generally a single
+equation of the form
+\eqref{eq:twoCW} can balance
+the ambient value
+\(\lCW(Y)\) against a
+nonzero derivative.
+Two distinct ratios remove
+that possibility. Neither
+\(\lCW(Y)=0\) by itself nor
+\(\Delta_K=1\) for an
+arbitrary knot would
+suffice for unknot detection.
+
+\subsection{Generalized solid tori with torsion}
+
+For odd \(g>1\), consider
+the two-string tangle
+\[
+ T_g=\tang{1/g}+\tang{-1/g}.
+\]
+Its numerator closure is
+the two-component unlink:
+the two rational blocks
+in that closure cancel.
+Its denominator closure
+is the connected sum of
+the two opposite
+\((2,g)\)-torus knots,
+of determinant \(g^2\).
+Its double branched cover
+is the Seifert manifold
+over a disk with two
+exceptional fibres of
+order \(g\), not a solid
+torus.
+
+One homology presentation
+of this cover has
+generators \(x,y,h\) and
+relations
+\(gx+h=0,\ gy-h=0\).
+Eliminating \(h\) leaves
+\(g(x+y)=0\), so its
+homology is \(\Z\oplus
+\Z/g\Z\). This is precisely the manifold \(N_g=M(\varnothing;1/g,-1/g)\)
+of Rasmussen and Rasmussen. These are the
+torsion-bearing examples
+appearing among
+generalized solid tori
+in \cite[Section~7]{RR}.
+They show concretely why
+an unlink closure alone
+does not force rationality.
+They are excluded here
+by the determinant-one
+calibration giving
+\(H_1(M)=\Z\).
+
+\begin{remark}
+This example also prevents
+using an asserted
+uniqueness of a
+two-string solution to
+one unlink-closure
+equation as a shortcut.
+In particular we do not
+use Proposition~10(1)
+of the arXiv version of
+\cite{Sikora}. For
+\(T_g\), the numerator
+closure is the unlink
+but the cover and the
+denominator closure
+distinguish it from the
+trivial rational tangle.
+The longitudinal case
+in this paper instead
+uses the homology
+calibration and
+\cite[Proposition~7.8]{RR}.
+\end{remark}
+
+\subsection{Orientation and marking}
+
+An unoriented
+homeomorphism of
+three-manifolds does
+not equate their
+Casson--Walker
+invariants: orientation
+reversal changes its
+sign. Thus a relation
+\(M(\alpha)\cong
+-V(\alpha)\) cannot
+be substituted in
+\eqref{eq:twoCW}.
+Likewise knowing only
+that two fillings are
+lens spaces of the
+same orders does not
+identify their signed
+lens-space terms.
+The proof obtains
+orientation-preserving
+maps from actual
+ambient link isotopies,
+and obtains coefficients
+from the common
+boundary marking,
+independently of those
+maps.
+
+\subsection{Local knotting and scalar equality}
+
+Suppose hypothetically
+that a nontrivial knot
+\(J\) has \(V_J=1\).
+Tie \(J\) locally into
+one strand of a
+rational tangle \(R\),
+and correct the local
+framing to make its
+reduced bracket one.
+The resulting tangle
+\(X\) has \([X]=[R]\).
+Every rational closure
+has the same bracket
+and determinant as
+the corresponding
+closure of \(R\).
+Nevertheless the
+closure that was an
+unknot for \(R\) is
+now \(J\), since that
+closure traverses
+the knotted strand.
+An actual closure
+identification is
+therefore absent.
+This hypothetical
+example is a test of
+the proof's logic,
+not an assumption
+or a construction
+of a Jones-unit knot.
+
+\section{What the result says about Jones unknot detection}\label{sec:jones}
+
+Theorems~\ref{thm:framed}
+and \ref{thm:three}
+convert topological
+closure information
+into rationality.
+The two actual
+closures provide
+the filling
+homeomorphisms.
+The scalar
+information fixes
+which peripheral
+homology data to
+use in those
+homeomorphisms.
+These roles cannot
+be interchanged.
+
+If a tangle has
+the bracket vector
+of a rational
+tangle, all
+rational closure
+determinants
+already agree.
+The interpolation
+lemma then
+recovers the
+integral homology
+and longitude,
+but it still
+does not supply
+a second actual
+lens filling.
+In particular,
+an actual unknot
+closure together
+with the full
+bracket vector
+does not meet
+the two-filling
+hypothesis without
+additional topology.
+
+Sikora's implication
+from Jones unknot
+detection to framed
+rational-solution
+uniqueness therefore
+remains a one-way
+implication in this
+discussion. Proving
+its consequent
+does not prove its
+antecedent.
+The stronger
+assertion that the
+bracket detects
+rational tangles
+among arbitrary
+tangles is not
+proved here.
+The local-knotting
+test in
+Section~\ref{sec:stress}
+pinpoints the
+missing actual
+closure hypotheses.
+
+\section{Prior work, attribution, and verification}\label{sec:credit}
+
+\subsection{The method antecedent}
+
+Gainullin's
+\cite[Theorem~8.2]{Gainullin}
+characterizes
+unknotted
+null-homologous
+knots in an
+ambient \(L\)-space
+under an appropriate
+graded Heegaard
+Floer comparison
+with surgery on
+the unknot.
+Its proof combines
+a surgery comparison,
+the Casson--Walker
+formula, a vanishing
+second Alexander
+derivative, the
+alternating
+\(L\)-space
+Alexander form,
+and genus detection.
+That chain is the
+antecedent for
+Step~3 here.
+
+There are four
+specific differences
+in the present
+application.
+Our reference
+filling is
+\(L(p,q)\), not
+\(Y\#L(p,q)\).
+The second matched
+slope eliminates
+\(\lCW(Y)\).
+Floer simplicity
+of the exterior
+supplies the
+torsion normal
+form, without an
+ambient \(L\)-space
+hypothesis on \(Y\).
+Finally
+\cite[Corollary~2.3]{RR}
+and irreducibility
+turn degree zero
+into a solid
+torus via boundary
+compression.
+Choosing a lens
+filling as the
+ambient space
+would not remove
+these distinctions:
+its core can be
+homologically
+essential, whereas
+Gainullin's
+theorem concerns
+null-homologous
+knots.
+
+\subsection{Classical special cases and tangle rigidity}
+
+Kronheimer,
+Mrowka, Ozsv\'ath
+and Szab\'o
+\cite[Theorem~1.1]{KMOS}
+characterize the
+unknot in \(S^3\)
+by a matched
+oriented rational
+surgery. If an
+actual closure
+in our problem
+is an unknot,
+its cover can be
+used as \(S^3\)
+after the
+peripheral
+calibration,
+and this is a
+classical special
+case. We do not
+present it as
+new surgery
+rigidity.
+
+Ernst and
+Sumners
+\cite{ES}
+developed
+two-closure
+rational-tangle
+methods in the
+DNA setting.
+Buck and
+Mauricio
+\cite{BM}
+and Baker and
+Buck
+\cite{BakerBuck}
+study closely
+related tangle
+equations and
+rational
+subtangle
+replacements.
+These are
+antecedents to
+the rigidity
+questions, not
+claims that
+two unframed
+closures always
+determine a
+tangle. The
+example in
+Section~\ref{subsec:ES}
+shows that they
+do not.
+The three-probe
+theorem adds one
+scalar measurement
+and explains
+exactly how it
+removes the
+homological
+reflection
+\eqref{eq:reflected}.
+
+The bounded
+literature review
+for this draft
+did not identify
+an earlier proof
+of the full
+framed conjecture
+or the exact
+marked
+three-probe
+statement.
+Sikora's October
+2026 talk
+abstract
+\cite{SikoraTalk}
+still describes
+the former as
+a conjecture.
+The abstract,
+not the complete
+recording, was
+checked. No
+priority claim
+is inferred
+from that
+observation.
+
+\appendix
+\section{Source versions and logical dependencies}
+
+The following map records the external statements on which the deduction
+rests. It is also intended to distinguish results about actual topology
+from results about scalar invariants. All references to Sikora and to
+Rasmussen--Rasmussen use the arXiv versions fixed in the bibliography.
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}}
+\hline
+Input & Checked location & Use in this paper \\
+\hline
+Two probes determine the bracket vector & Sikora, Theorem 21 (journal 8.1) & Step 1; only framed closure hypotheses \\
+Rational framed bracket injectivity & Sikora, Corollary 20 (journal 7.2) & Step 5; only after rationality is proved \\
+Casson--Walker surgery & Ni--Wu, Proposition 3.1, (7) & Step 3; null-homologous core in the auxiliary integral homology sphere \\
+Two \(L\)-space slopes & RR, Proposition 1.3 & Floer simplicity of the exterior, not of the auxiliary ambient manifold \\
+Binary torsion & RR, paragraph before Proposition 1.4, Section 2.1, Propositions 1.4 and 2.2 & Alternation and positivity in Step 3 \\
+Thurston norm & RR, Corollary 2.3, first assertion & Contradiction to boundary incompressibility in Steps 3 and 4 \\
+Longitudinal filling & RR, Proposition 7.8 and Definition 7.2 & Step 4 only; \(Z=S^3\), \(g_M=1\) \\
+Rationality of the given quotient & Buck--Mauricio, Theorem 3.5(2), after Lickorish & Step 5 and the unframed theorem \\
+\hline
+\end{tabular}
+\end{center}
+
+The unframed theorem replaces the first row by the elementary homology
+interpolation argument. It then uses the nonlongitudinal surgery proof
+and rational-tangle slope classification. It does not use RR Proposition
+7.8 or any assertion that a bracket vector detects a rational tangle among
+all tangles. The arithmetic criterion uses the same surgery proof after
+eliminating the second integral functional in \eqref{eq:reflected}.
+
+The title of the Buck--Mauricio article changed between preprint and
+journal publication. Its result numbers here are pinned to the preprint.
+The Boyer--Lines surgery formula and Lickorish's branched-cover criterion
+are used through the explicitly identified formulations in Ni--Wu and
+Buck--Mauricio; we do not assign unchecked original theorem numbers to
+those two classical sources.
+
+\section*{Statement on the use of AI systems}
+The mathematics in this paper was developed in a collaboration directed by the author with two AI systems: a GPT-6 instance (OpenAI, through Codex) and Claude Fable 5.1 (Anthropic, through Claude Code). The proof of the framed theorem was produced by the GPT-6 instance on 1 November 2026 and audited independently by both systems in several rounds; the unframed extension was produced by the GPT-6 instance and checked by Claude on 3 November 2026. The author takes responsibility for every statement in the paper. The argument has not yet received external specialist review, and the priority of the result has not been independently established.
+
+\begin{thebibliography}{99}
+
+\bibitem{BakerBuck}
+K.~L. Baker and D.~Buck,
+\emph{The classification of rational subtangle replacements
+between rational tangles},
+Algebr. Geom. Topol. \textbf{13} (2013), 1413--1463.
+\href{https://arxiv.org/abs/1304.7669}{arXiv:1304.7669}.
+\href{https://doi.org/10.2140/agt.2013.13.1413}{doi:10.2140/agt.2013.13.1413}.
+
+\bibitem{BoyerLines}
+S.~Boyer and D.~Lines,
+\emph{Surgery formulae for Casson's invariant and extensions
+to homology lens spaces},
+J. Reine Angew. Math. \textbf{405} (1990), 181--220.
+The surgery formula used here is cited in the explicit
+formulation of \cite[Proposition~3.1]{NiWu}.
+
+\bibitem{BM}
+D.~Buck and M.~Mauricio,
+\emph{Connect sum of lens spaces surgeries: application
+to Hin recombination},
+Math. Proc. Cambridge Philos. Soc. \textbf{150} (2011),
+505--525.
+\href{https://arxiv.org/abs/1007.0948}{arXiv:1007.0948}, with preprint title
+\emph{Tangle solutions for composite knots: applications to Hin recombination}.
+Theorem numbers~3.5(2) and~3.6 refer to the inspected preprint.
+\href{https://doi.org/10.1017/S0305004111000090}{doi:10.1017/S0305004111000090}.
+
+\bibitem{DFKLS}
+O.~T. Dasbach, D.~Futer, E.~Kalfagianni,
+X.-S. Lin, and N.~W. Stoltzfus,
+\emph{Alternating sum formulae for the determinant
+and other link invariants},
+J. Knot Theory Ramifications \textbf{19} (2010),
+765--782.
+\href{https://arxiv.org/abs/math/0611025}{arXiv:math/0611025}.
+
+\bibitem{ES}
+C.~Ernst and D.~W. Sumners,
+\emph{A calculus for rational tangles: applications
+to DNA recombination},
+Math. Proc. Cambridge Philos. Soc. \textbf{108}
+(1990), 489--515.
+
+\bibitem{ES1999}
+C.~Ernst and D.~W. Sumners,
+\emph{Solving tangle equations arising in a DNA recombination model},
+Math. Proc. Cambridge Philos. Soc. \textbf{126} (1999), 23--36.
+\href{https://doi.org/10.1017/S0305004198002989}{doi:10.1017/S0305004198002989}.
+
+\bibitem{Gainullin}
+F.~Gainullin,
+\emph{Heegaard Floer homology and knots determined
+by their complements},
+Algebr. Geom. Topol. \textbf{18} (2018), 69--109.
+\href{https://arxiv.org/abs/1504.06180}{arXiv:1504.06180}.
+\href{https://doi.org/10.2140/agt.2018.18.69}{doi:10.2140/agt.2018.18.69}.
+
+\bibitem{KMOS}
+P.~Kronheimer, T.~Mrowka, P.~Ozsv\'ath, and Z.~Szab\'o,
+\emph{Monopoles and lens space surgeries},
+Ann. of Math. (2) \textbf{165} (2007), 457--546.
+\href{https://arxiv.org/abs/math/0310164}{arXiv:math/0310164}.
+\href{https://doi.org/10.4007/annals.2007.165.457}{doi:10.4007/annals.2007.165.457}.
+
+\bibitem{Lickorish}
+W.~B.~R. Lickorish,
+\emph{Prime knots and tangles},
+Trans. Amer. Math. Soc. \textbf{267} (1981),
+321--332.
+The branched-cover criterion is used through
+\cite[Theorem~3.5(2)]{BM}.
+
+\bibitem{LickorishBook}
+W.~B.~R. Lickorish,
+\emph{An Introduction to Knot Theory},
+Graduate Texts in Mathematics 175, Springer, New York, 1997.
+Chapter~9, Theorems~9.3--9.4 and Corollary~9.5.
+\href{https://doi.org/10.1007/978-1-4612-0691-0_9}{doi:10.1007/978-1-4612-0691-0\_9}.
+
+\bibitem{NiWu}
+Y.~Ni and Z.~Wu,
+\emph{Cosmetic surgeries on knots in \(S^3\)},
+J. Reine Angew. Math. \textbf{706} (2015), 1--17.
+\href{https://arxiv.org/abs/1009.4720}{arXiv:1009.4720v2}.
+\href{https://doi.org/10.1515/crelle-2013-0067}{doi:10.1515/crelle-2013-0067}.
+
+\bibitem{RR}
+J.~Rasmussen and S.~D. Rasmussen,
+\emph{Floer simple manifolds and \(L\)-space intervals},
+Adv. Math. \textbf{322} (2017), 738--805.
+\href{https://arxiv.org/abs/1508.05900}{arXiv:1508.05900v2}.
+\href{https://doi.org/10.1016/j.aim.2017.10.014}{doi:10.1016/j.aim.2017.10.014}.
+Numbered results in this manuscript refer to this
+specified arXiv version.
+
+\bibitem{Sikora}
+A.~S. Sikora,
+\emph{Tangle equations, the Jones conjecture, slopes of
+surfaces in tangle complements, and \(q\)-deformed rationals},
+Canad. J. Math. \textbf{76} (2024), 707--727.
+\href{https://arxiv.org/abs/2005.08162}{arXiv:2005.08162v2}.
+\href{https://doi.org/10.4153/S0008414X23000755}{doi:10.4153/S0008414X23000755}.
+Unless explicitly stated otherwise, numbered results
+refer to arXiv v2: Proposition~1, Corollary~20, and
+Theorem~21 are journal Proposition~1.1, Corollary~7.2,
+and Theorem~8.1, respectively.
+
+\bibitem{SikoraTalk}
+A.~S. Sikora,
+\emph{Tangle equations, the Jones unknot conjecture,
+and lens space surgeries},
+IPAM, Workshop I: Hyperbolic Structures and Quantum
+Invariants, 15 October 2026.
+Talk abstract,
+\url{https://www.mathinstitutes.org/videos/25091}
+(accessed 3 November 2026).
+
+\bibitem{Stoimenow}
+A.~Stoimenow,
+\emph{Square numbers, spanning trees and invariants
+of achiral knots},
+Comm. Anal. Geom. \textbf{13} (2005), 591--631.
+\href{https://doi.org/10.4310/CAG.2005.v13.n3.a5}{doi:10.4310/CAG.2005.v13.n3.a5}.
+
+\end{thebibliography}
+\end{document}

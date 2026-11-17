@@ -1,0 +1,189 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,microtype,booktabs}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Jones unknot detection: fourth research pass}
+\fancyhead[R]{31 October 2026}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\J}{\mathcal J}
+\title{An exact classification for a family of Ren-pattern satellites}
+\author{Research calculation prepared with Codex}
+\date{31 October 2026}
+\begin{document}
+\maketitle
+\textbf{Result and limit.}
+We obtain an unbounded classification for a concrete family with three integer twist parameters and an arbitrary companion knot. The proof below uses exact skein coefficients, the determinant, and integrality of the colored Jones polynomial. It does not resolve Jones unknot detection in general, and no claim of publication or novelty is made.
+
+\textbf{Family.}
+Start with the annular knot in Qiuyu Ren's preprint \cite{Ren}. Replace its two added upper crossings by odd powers $p,q$ of the corresponding two-strand crossings; call this pattern $P_{p,q}$. The original pattern is $P_{1,1}$. Apply $n\in\Z$ meridional twists, and embed the solid torus along a zero-framed companion knot $C$. Write the satellite as $P_{p,q,n}(C)$. The sign of $n$ is fixed by requiring its skein action on $S_2=z^2-1$ to be multiplication by $A^{8n}$.
+
+Let $\J_3(C;y)$ be the reduced Jones polynomial colored by the three-dimensional representation, with $\J_3(U;y)=1$. We use $y=A^4$; inversion of the usual Jones variable does not affect the statement.
+
+\begin{theorem}\label{main}
+For every odd $p,q\in\Z$, every $n\in\Z$, and every companion knot $C$,
+\[
+ V_{P_{p,q,n}(C)}=1
+ \quad\Longleftrightarrow\quad
+ (p,q,n)=(-1,1,0)\ \hbox{ and }\ \J_3(C;y)=1.
+\]
+For $C=U$, the unique Jones-one member is an actual unknot.
+For the original Ren pattern, all companions and all twists satisfy
+\[
+ \det P_{1,1,n}(C)=|100n-11|>1.
+\]
+\end{theorem}
+
+Thus modifying these three twists or choosing a companion cannot independently manufacture a counterexample. The exceptional pattern converts the remaining colored-Jones condition into an ordinary Jones-one satellite.
+
+\textbf{Exact diagram specification.}
+The six-strand tangle model has braid
+\[
+ \beta=(\sigma_2^{-1}\sigma_1^3\sigma_2^{-1})
+       (\sigma_4\sigma_5^{-3}\sigma_4).
+\]
+Insert $\sigma_1^p,\sigma_5^q$ at the upper sites; cap strands $3,4$ at top and bottom and close strands $1,2,5,6$ annularly. In the published planar diagram, the two sites are zero-based crossing indices $8$ and $5$, respectively, with tuples $(31,27,32,26)$ and $(17,13,18,12)$. All four resolutions at these sites were independently matched between this model and the published diagram, using the full annular state sum.
+
+\newpage
+\textbf{Skein equation and required elementary identities.}
+Put $\delta=-A^2-A^{-2}$ and $\Delta_2=\delta^2-1=y+1+y^{-1}$. The pattern has winding number zero, writhe $p+q$, and bracket
+\[
+ \langle P_{p,q}\rangle=a_{p,q}(A)z^2+b_{p,q}(A).
+\]
+Define $F_a=\delta^2 A^{-p-q}a_{p,q}$ and
+$F_b=\delta^2 A^{-p-q}b_{p,q}$. The satellite Jones-one equation, after clearing a nonzero fixed denominator, is
+\[
+ A^{8n}F_a\Delta_2\J_3(C;y)+F_a+F_b
+       -\delta^3 A^{2(p+q)}=0.                         \tag{1}
+\]
+This uses the actual colored cable evaluation; it does not substitute the uncolored bracket of a companion as an ordinary polynomial in $z$.
+
+Let $S=p+q$, $D=p-q$, and set
+\[
+ G(y)=A^{-2}\big[(A^{8n}\Delta_2+1)F_a+F_b
+                         -\delta^3A^{2(p+q)}\big].
+\]
+For odd $p,q$, this is a Laurent polynomial in $y$. Derivatives below mean
+$\left.\frac{d^k}{dh^k}G(e^h)\right|_{h=0}$ and are denoted $M_k$.
+Direct expansion of the four skein blocks gives
+\begin{align}
+ M_0=M_1&=0, \nonumber\\
+ M_2&=3\big[S^2+(D-4)^2-36-8nS\big].                 \tag{2}
+\end{align}
+The coefficient $f(y)=A^{-2}F_a$ obeys
+\[
+ f(1)=0,\qquad
+ \left.\frac{d}{dh}f(e^h)\right|_{h=0}=-2S.          \tag{3}
+\]
+For reference, the complete cubic moment is
+\begin{align*}
+ M_3={}&90-936n+36D-144Dn-\tfrac92D^2+18D^2n\\
+      &+66S+36Sn-72Sn^2+36SD-\tfrac92SD^2\\
+      &-\tfrac92S^2+18S^2n+\tfrac32S^3.
+\end{align*}
+The same skein calculation gives
+\[
+ V_{P_{p,q,n}(U)}(-1)=
+ (-1)^{S/2}\,[36+30D-25pq-50Sn].                    \tag{4}
+\]
+Because the pattern has winding zero, the satellite Alexander formula makes its determinant independent of $C$. Thus (4) computes the absolute determinant for every companion.
+
+These identities are reproducible from the supplied four annular skein blocks and
+\[
+ (AI+A^{-1}e)^p=A^p I+
+       \frac{(-A^{-3})^p-A^p}{\delta}\,e,\qquad e^2=\delta e,
+\]
+valid for every integer $p$.
+
+\newpage
+\textbf{Proof of Theorem \ref{main}.}
+For a zero-framed knot, the reduced colored Jones polynomial satisfies
+\[
+ H(y):=\J_3(C;y)\in\Z[y^{\pm1}],\qquad H(1)=1,\qquad
+ \left.\frac{d}{dh}H(e^h)\right|_{h=0}=0.
+\]
+These follow, for example, from the integral cyclotomic expansion \cite{Habiro}. In particular
+\[
+ h_2:=\left.\frac{d^2}{dh^2}H(e^h)\right|_{h=0}\in\Z.
+\]
+Equations (1)--(3) show that the companion correction starts at order three. Consequently a Jones-one satellite must satisfy
+\[
+ M_2=0,\qquad M_3-18S h_2=0.                        \tag{5}
+\]
+
+Its determinant must also be one. The bracketed integer in (4) is $1$ modulo $5$, so it must equal $+1$, not $-1$. Eliminating $nS$ using (2) yields
+\[
+ 5S^2=32(D+2).                                      \tag{6}
+\]
+If $S=0$, this gives $D=-2$, hence $(p,q)=(-1,1)$. The cubic moment becomes $M_3=-576n$. By (5), $n=0$.
+
+Suppose instead $S\ne0$. Equation (6), with $S,D$ even, implies
+\[
+ S=8k,\qquad D=10k^2-2,\qquad
+ n=\frac{k(25k^2-14)}{16}.
+\]
+Integrality of $n$ forces $8\mid k$: for odd $k$ the numerator is odd, and for even $k$ its $2$-adic valuation is $v_2(k)+1$. Write $k=8r$, where $r\in\Z\setminus\{0\}$. All surviving parameters are therefore
+\[
+ p=320r^2+32r-1,\quad q=-320r^2+32r+1,\quad
+ n=800r^3-7r.
+\]
+Substituting into the cubic moment gives
+\[
+ M_3=2496r+2370048r^3-169574400r^5+2949120000r^7.
+\]
+Since $S=64r$, equation (5) would require
+\[
+ h_2=\frac{13+12344r^2-883200r^4+15360000r^6}{6}.
+\]
+The numerator is odd. This cannot be an integer, contradicting the integrality of $h_2$. Therefore $S\ne0$ is impossible.
+
+At the remaining parameters $(-1,1,0)$, direct skein evaluation gives
+\[
+ \langle P_{-1,1}\rangle=\delta+a(z^2-\delta^2),\qquad
+ a=-A^{-14}(A^4-1)^2(A^4+1)(A^8+1)(A^8-A^4+1)\ne0.
+\]
+Hence
+\[
+ V_{P_{-1,1,0}(C)}-1
+       =\frac{a\Delta_2}{\delta}\,[\J_3(C;y)-1].
+\]
+The prefactor is nonzero, proving the equivalence. The ordinary closure at $C=U$ simplifies to a zero-crossing, one-component diagram, independently in Regina and Spherogram. Finally (4) at $p=q=1$ gives $100n-11$, proving the last assertion. \hfill$\square$
+
+\newpage
+\textbf{Geometric content and checks.}
+The exceptional pattern is not local in the solid torus. In fact every $P_{p,q}$ has wrapping number four. An independent two-cable calculation gives
+\[
+ [z^8]\langle P_{p,q}^{(2)}\rangle
+ =A^{4(p+q)}h(A),\qquad
+ h(A)=-A^{-24}(A^4-1)^4(A^4+1)^2\sum_{j=0}^{6}A^{4j}\ne0.
+\]
+This proves the lower bound four; the diagram gives the upper bound. The computation used a 54-dimensional Temperley--Lieb module and checked the defining relations and cap normalization. Meridional twisting preserves the wrapping number.
+
+For a nontrivial companion, the companion torus is incompressible on the outside. Positive wrapping prevents compression on the pattern side. Thus a nontrivial companion with $\J_3(C)=1$ would produce a genuine nontrivial Jones-one satellite through the exceptional pattern. We did not find such a companion or prove that none exists.
+
+There are three independent checks of the ordinary-closure classification:
+\begin{itemize}
+\item The determinant and cubic-moment proof above, which also handles arbitrary companions.
+\item A complete affine-exponent cancellation algorithm for the 48-term equation in the three twist parameters. Every branch imposes a necessary equality between opposite-sign monomials and increases linear rank. It terminates by rank three and returns only $(-1,1,0)$.
+\item A different algorithm based on ties between highest exponents, with independent row reduction and 125 direct evaluations of the formula. It returns the same unique solution.
+\end{itemize}
+Neither algorithm imposes a numerical bound on the twist parameters. The exact coefficient lists, diagram identifications, arithmetic verifiers, and both algorithms are included in the evidence archive.
+
+\textbf{What this changes.}
+This pass closes an infinite family of attempted counterexamples and gives an exact description of the sole remaining satellite mechanism. It does not establish the general Jones unknot conjecture. The Carmi--Cohen preprint \cite{CC} still has the uniform-compression obstruction documented in the earlier audit; the present result neither repairs nor relies on that argument.
+
+\begin{thebibliography}{9}
+\bibitem{Ren} Q. Ren, \emph{A counterexample to the wrapping number conjecture},
+arXiv:2609.11084v2 (2026).
+\url{https://arxiv.org/html/2609.11084v2}.
+\bibitem{Habiro} K. Habiro, \emph{On the quantum $\mathfrak{sl}_2$ invariants of knots and integral homology spheres},
+Geometry \& Topology Monographs 4 (2002), 55--68, especially Theorem 3.1 and Section 3.3.
+\url{https://msp.org/gtm/2002/04/gtm-2002-04-005p.pdf}.
+\bibitem{CC} A. Carmi and E. Cohen, \emph{On trivial Jones--Vassiliev polynomials},
+arXiv:2606.22410v1 (2026).
+\url{https://arxiv.org/abs/2606.22410}.
+\end{thebibliography}
+\end{document}

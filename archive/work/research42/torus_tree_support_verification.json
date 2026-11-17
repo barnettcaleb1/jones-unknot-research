@@ -1,0 +1,286 @@
+{
+  "braid_word": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "pd": [
+    [
+      14,
+      2,
+      15,
+      1
+    ],
+    [
+      15,
+      9,
+      16,
+      8
+    ],
+    [
+      2,
+      10,
+      3,
+      9
+    ],
+    [
+      3,
+      17,
+      4,
+      16
+    ],
+    [
+      10,
+      18,
+      11,
+      17
+    ],
+    [
+      11,
+      5,
+      12,
+      4
+    ],
+    [
+      18,
+      6,
+      19,
+      5
+    ],
+    [
+      19,
+      13,
+      0,
+      12
+    ],
+    [
+      6,
+      14,
+      7,
+      13
+    ],
+    [
+      7,
+      1,
+      8,
+      0
+    ]
+  ],
+  "planar": true,
+  "components": 1,
+  "writhe": 10,
+  "states": 121,
+  "cardinality_counts": {
+    "2": 25,
+    "4": 50,
+    "6": 35,
+    "8": 10,
+    "10": 1
+  },
+  "nonzero_support_edges": 500,
+  "global_matching_pairs": 60,
+  "distinct_matched_generators": 120,
+  "unmatched_generator": [
+    972
+  ],
+  "gradient_is_acyclic": false,
+  "directed_cycle": [
+    {
+      "from": 15,
+      "to": 159,
+      "from_cardinality": 4,
+      "to_cardinality": 6,
+      "reversed_matching_edge": false,
+      "two_unmarked_arc_sets": [
+        [
+          1,
+          5,
+          6,
+          7,
+          11,
+          13,
+          14,
+          18,
+          19
+        ],
+        [
+          4,
+          5,
+          11,
+          12,
+          17,
+          19
+        ]
+      ]
+    },
+    {
+      "from": 159,
+      "to": 135,
+      "from_cardinality": 6,
+      "to_cardinality": 4,
+      "reversed_matching_edge": true,
+      "two_unmarked_arc_sets": [
+        [
+          4,
+          5,
+          11,
+          12,
+          17,
+          19
+        ],
+        [
+          3,
+          10,
+          17
+        ]
+      ]
+    },
+    {
+      "from": 135,
+      "to": 207,
+      "from_cardinality": 4,
+      "to_cardinality": 6,
+      "reversed_matching_edge": false,
+      "two_unmarked_arc_sets": [
+        [
+          4,
+          5,
+          11,
+          12,
+          17,
+          19
+        ],
+        [
+          3,
+          5,
+          10,
+          11,
+          17,
+          18
+        ]
+      ]
+    },
+    {
+      "from": 207,
+      "to": 195,
+      "from_cardinality": 6,
+      "to_cardinality": 4,
+      "reversed_matching_edge": true,
+      "two_unmarked_arc_sets": [
+        [
+          3,
+          5,
+          10,
+          11,
+          17,
+          18
+        ],
+        [
+          3,
+          9,
+          16
+        ]
+      ]
+    },
+    {
+      "from": 195,
+      "to": 231,
+      "from_cardinality": 4,
+      "to_cardinality": 6,
+      "reversed_matching_edge": false,
+      "two_unmarked_arc_sets": [
+        [
+          3,
+          5,
+          10,
+          11,
+          17,
+          18
+        ],
+        [
+          3,
+          4,
+          9,
+          11,
+          16,
+          17
+        ]
+      ]
+    },
+    {
+      "from": 231,
+      "to": 39,
+      "from_cardinality": 6,
+      "to_cardinality": 4,
+      "reversed_matching_edge": true,
+      "two_unmarked_arc_sets": [
+        [
+          1,
+          6,
+          7,
+          13,
+          14,
+          19
+        ],
+        [
+          5,
+          12,
+          19
+        ]
+      ]
+    },
+    {
+      "from": 39,
+      "to": 63,
+      "from_cardinality": 4,
+      "to_cardinality": 6,
+      "reversed_matching_edge": false,
+      "two_unmarked_arc_sets": [
+        [
+          4,
+          11,
+          17
+        ],
+        [
+          3,
+          10,
+          17
+        ]
+      ]
+    },
+    {
+      "from": 63,
+      "to": 15,
+      "from_cardinality": 6,
+      "to_cardinality": 4,
+      "reversed_matching_edge": true,
+      "two_unmarked_arc_sets": [
+        [
+          1,
+          5,
+          6,
+          7,
+          11,
+          13,
+          14,
+          18,
+          19
+        ],
+        [
+          4,
+          11,
+          17
+        ]
+      ]
+    }
+  ],
+  "homology_rank_7": "Source-backed (Roberts p.18 and Jaeger Corollary 3.2), not computed by this script",
+  "differential_rank_57": "Consequent (121-7)/2, not a matrix-elimination claim"
+}

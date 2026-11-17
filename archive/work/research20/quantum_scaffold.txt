@@ -1,0 +1,240 @@
+QUANTUM NORM ROUTE: AN END-TO-END CONDITIONAL SCAFFOLD
+1 November 2026. Strategic reset, not a claimed solution or novelty claim.
+
+ASSESSMENT
+
+A genuine positive-norm identity has been established for one explicit
+geometric family. It gives a credible narrow research target. It does
+not currently give a route from an arbitrary Jones-one knot into that
+family. A full proof would require two independent new ingredients:
+(1) a nontriviality-preserving geometric reduction into the family; and
+(2) a geometric classification of a particular quantum-vector stabilizer.
+Neither follows from unitarity, braid-representation faithfulness, or the
+classification of adjacent knots by spatial Suzuki graphs.
+
+A. THE VERIFIED ALGEBRAIC SCOPE
+
+Fix n>=3. Let beta be an actual Brunnian pure n-braid: deleting any strand
+gives the identity braid. Replace every strand by its untwisted parallel
+pair, and use the particular alternating-clasp closure in Stoimenow's
+Eq(10) construction. Call the resulting knot K_beta. The statement below
+is for that explicitly drawn construction, not for every Brunnian link,
+every spatial Suzuki graph, or every n-adjacent knot.
+
+Put delta=-A^2-A^-2. Let H be the generic Temperley--Lieb vacuum space on
+2n+2 fundamental endpoints, in the order
+
+   outer left, [first doubled strand], ...,
+               [nth doubled strand], outer right.
+
+It has the noncrossing-matching basis of size Catalan(n+1). Its Hermitian
+form at |A|=1 is reflection followed by closure, with each closed circle
+worth delta (without deleting a final circle). Let v be the adjacent-pair
+matching (0,1),(2,3),...,(2n,2n+1). Let U=rho(beta-doubled) act on the
+2n internal endpoints and fix the two outer endpoints. Put
+
+   p_i=1-e_(2i-1)/delta,    P=product_(i=1)^n p_i,    w=P v,
+
+where the index labels the adjacent endpoints of the ith internal pair.
+These mutually commuting p_i are the color-three Jones--Wenzl projectors.
+On a sufficiently short unit-circle arc about A=i, delta is near 2, the
+finite Gram form is positive definite, p_i are orthogonal projections,
+and U is unitary. The arc may omit A=i itself and other finitely many
+scalar zeros. Positivity follows from the faithful positive TL form at
+delta=2 and continuity of this fixed finite Gram matrix.
+
+The actual reflected two-crossing clasp block has the exact skein form
+
+   s_local = (1-A^4)*through-connection + A^-2*inner-cup.
+
+Projecting its inner pair kills the cup term. Composing n such blocks
+therefore gives the exact local-to-global identity
+
+   P s = (1-A^4)^n P v,
+
+where s is the reflected upper boundary state of the clasp closure.
+This is an identity over Q(A), not a numerical observation.
+
+Because beta is Brunnian, any color-one internal channel erases one
+strand and leaves the identity braid. Naturality of the cable projectors
+and purity give
+
+   U-I = P(U-I)P.
+
+In this closure the internal doubled braid has oriented writhe zero;
+each original crossing contributes two signs of each kind. The clasp
+has writhe -2n in the convention used by the explicit source diagram.
+Its closure with beta=identity is an actual unknot. Combining these
+facts gives the exact normalized identity
+
+   V_(K_beta)(A)-1 = C_n(A) <w,(U-I)w>,
+   C_n(A) = A^(2n)(A^4-1)^n/delta.                       (1)
+
+Here V is the ordinary Jones polynomial with t=A^-4. On the positive
+unitary arc, C_n is nonzero and
+
+   Re((V_(K_beta)-1)/C_n)
+                       = -1/2 ||(U-I)w||^2.             (2)
+
+Thus an IDENTICAL Jones-one polynomial forces U(A)w(A)=w(A) throughout
+that arc, hence as a generic rational-function vector identity. Conversely
+that vector identity makes V_(K_beta)=1 by (1). Only this particular
+vector is forced to be fixed. No conclusion U=I has been obtained.
+
+Exact checks independently performed:
+- The local projector identity was expanded in the two-matching skein
+  space; it has coefficients (1-A^4), A^-2 as displayed.
+- Direct full-space checks at n=1,2,3,4 agree with the general local proof.
+- For beta=[sigma1^2,sigma2^2], the complete identity (1) was verified by
+  integer Laurent arithmetic and its Jones polynomial exactly matches
+  the independently computed source PD polynomial. The verifier clears
+  denominators: with P_scaled=delta^n P, it checks
+
+ delta^(2n+1)(V-1)
+   = A^(2n)(A^4-1)^n
+       <P_scaled v,(U-I)P_scaled v>.
+
+Files: projected_clasp.py, check_norm_identity.py, norm_identity_check.json.
+These checks support the conventions; the general identity uses the
+local clasp expansion and strand-deletion argument, not extrapolation.
+
+B. WHAT THE STABILIZER TARGET MUST ACTUALLY SAY
+
+Sufficient geometric stabilizer lemma S:
+
+ For every Brunnian pure braid beta in the chosen construction,
+ rho(beta-doubled)w=w over Q(A) implies K_beta is the unknot.
+
+This is weaker and more appropriate than demanding beta=identity. A
+nonidentity braid may conceivably preserve the quantum vector through a
+geometrically harmless closure move. The proof needs only the knot-type
+conclusion. No nontrivial Brunnian stabilizer giving a nontrivial closure
+has been found, and no stabilizer classification has been proved.
+
+Faithfulness of rho alone is insufficient: a faithful representation can
+have large stabilizers of nonzero vectors. Also w is not a maximally
+entangled vector recording the entire operator on all color-three
+states. At n=3, the projected space is four-dimensional: one spin-zero
+multiplicity plus the three-dimensional spin-one multiplicity sector.
+The state chooses one vector in the latter, not three independent test
+vectors. The two outer fundamental endpoints are essential. Omitting
+them leaves only the one-dimensional invariant in spin1 tensor^3 and
+would incorrectly make every commutator invisible.
+
+By the already verified equivalence (1)--(2), lemma S is exactly Jones
+unknot detection restricted to this geometric family, rewritten as a
+stabilizer problem. It is a useful change of mathematical tools, not an
+independently easier assertion that has already been justified. It is
+plausible as a narrow target; its computational/representation-theoretic
+tractability is still unestablished.
+
+C. THE MINIMAL CONDITIONAL FULL PROOF
+
+Generic reduction hypothesis G:
+
+ Given an arbitrary knot K with V_K=1, there is a finite geometric
+ construction producing a Brunnian pure braid beta in the above family
+ such that V_(K_beta)=1 and K nontrivial implies K_beta nontrivial.
+
+If G and S both hold, the full Jones detection theorem follows:
+
+ 1. Assume V_K=1 and K is nontrivial.
+ 2. G produces nontrivial K_beta with V_(K_beta)=1.
+ 3. The proven norm identity gives rho(beta-doubled)w=w.
+ 4. S makes K_beta an unknot, contradiction.
+ 5. Therefore K was the unknot.
+
+This chain genuinely closes, but G is currently an unbuilt geometric
+operation. Merely declaring G is not a research accomplishment. Without
+a concrete operation and a skein identity proving its unit-fiber behavior,
+the norm lemma has not reduced the full conjecture to one manageable
+remaining statement.
+
+A more informative factorization of G displays the present gaps:
+
+ G1. Convert a hypothetical arbitrary Jones-one nontrivial knot into an
+     actual Jones-one nontrivial knot of unknotting number one, while
+     using only ordinary Jones information.
+
+ Established step. Such a u=1 example gives a nontrivial preferred-flat
+ strongly inverted core. Brunnian infection then gives, for every fixed
+ n>=2, a nontrivial Jones-one n-adjacent knot. This is a conditional
+ construction already verified in cancellation19/adjacency_amplification.
+
+ G2. Convert one of these actual adjacent counterexamples into the
+     specific doubled-Brunnian-pure-braid/clasp family, preserving both
+     Jones-one and nontriviality.
+
+Natural candidates for G1 have already exposed a concrete obstruction:
+ the Whitehead-double and canonical strongly inverted doubling routes
+ introduce color-three Jones data. Their required flatness is not known
+ to follow from ordinary V_K=1. Connected sum preserves Jones-one, but
+ does not supply unknotting number one. These examples are reasons to
+ demand an explicit skein identity for any proposed new G1 operation.
+
+ Neither G1 nor G2 is known here. The Askitas--Kalfagianni spatial Suzuki
+ graph classification, as reproved by Lidman--Moore Theorem1.4, does NOT
+ state that its arbitrary spatial graph can be replaced by a pure braid
+ with this closure. The elementary distinction is that an arbitrary
+ string link or spatial graph is not automatically a braid relative to
+ its marked boundary. A braid-coverage theorem needs an actual geometric
+ proof; one must not infer it from a diagram containing braided portions.
+
+Primary locator for the exact graph classification:
+https://arxiv.org/html/2308.06211#S1
+Stoimenow's particular braided family is Eq(10), not the entire graph
+classification:
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf
+
+D. WHY A DIRECT REFLECTION TRICK DOES NOT FILL G1 OR G2
+
+A one-cut knot tangle is a morphism V->V for the simple fundamental object.
+Its quantum image is scalar. Taking its reflection norm can therefore
+only repackage the already known scalar V_K; it does not expose missing
+geometric information. Claiming this scalar functor detects the trivial
+one-strand tangle is the original Jones problem in another form.
+
+Cutting more strands creates a genuinely higher-dimensional state, but
+ordinary closure does not determine it. For a 2m-strand plat with unit
+vacuum psi, the normalized Jones value is a phase times
+
+       delta^(m-1) <psi,U psi>.
+
+Thus V_K=1 imposes amplitude magnitude delta^(1-m), not the maximal
+magnitude1 when m>1. Cauchy--Schwarz equality cannot be invoked. Reflection
+and polarization produce additional closed diagrams (usually colored or
+satellite information); their values are not supplied by V_K alone.
+
+The explicit all-color Jones-collision pair already certified in proof12
+has equal ordinary Jones but different every higher colored Jones. This
+rules out a uniform reconstruction of those richer states from the full
+ordinary Jones polynomial for all knots. It does NOT refute a special
+rigidity statement only on the unknown V=1 fiber. Such a statement would
+be a new theorem requiring a geometric argument, rather than an algebraic
+consequence of cutting, doubling, or reflection positivity.
+
+There is a fundamental difference between (2) and a proposed generic
+norm formula: in (2), actual Brunnian deletion removes every unwanted
+fusion channel, and an actual local clasp identity aligns the two
+remaining boundary vectors. An arbitrary knot has neither established
+property. The proof cannot transfer by analogy.
+
+E. DECISION FOR FURTHER WORK
+
+If the goal is a full solution, prioritize a concrete candidate for G1
+or a direct replacement for G, and test whether its exact skein operation
+uses only the V=1 hypothesis. Do not invest heavily in S under the belief
+that it alone proves the generic conjecture.
+
+If a publishable restricted theorem is an acceptable goal, S for a fixed
+small n is a coherent target: the positivity identity has converted a
+scalar cancellation question into a geometric vector-stabilizer question.
+A first decisive test is whether the generic stabilizer within the
+Brunnian subgroup consists only of closure-trivial elements. A failure
+with a nontrivial closure would be an actual Jones counterexample; a
+failure consisting of harmless elements only calls for the weaker S
+formulation already used above.
+
+The current outcome is an exact family identity and an honest conditional
+proof architecture. No full proof, counterexample, generic-coverage
+theorem, or stabilizer theorem has been obtained.

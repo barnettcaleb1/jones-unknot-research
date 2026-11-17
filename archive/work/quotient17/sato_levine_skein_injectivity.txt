@@ -1,0 +1,214 @@
+SATO--LEVINE OBSTRUCTION TO LOSS OF QUOTIENT SKEIN INFORMATION
+31 October 2026. Research deduction, not a novelty claim.
+
+STATEMENT AND SCOPE
+
+Let P union A be an oriented two-component link in S3 with A unknotted and
+lk(P,A)=0. Regard P as a pattern in the solid torus S3 minus nu(A). Assume
+a component-preserving strong inversion whose quotient is a shell between
+two four-marked-point spheres, so insertion defines the linear map
+
+              F_P : S(B3,4 points;Q(A)) -> S(B3,4 points;Q(A)).
+
+Both skein spaces have dimension two. Mark the output boundary by the
+meridian and preferred longitude of P. If the Sato--Levine invariant
+beta(P union A) is nonzero, then F_P is injective.
+
+The pattern knot P(U) need not be an unknot for this injectivity statement.
+If it is an unknot, then F_P also preserves and reflects the preferred
+rational-zero skein line. All statements concern the entire marked exterior
+quotient tangle, not the ordinary Jones polynomial of its covering knot.
+
+1. RATIONAL INPUTS AND THEIR MARKINGS
+
+Let Q_n be the rational input whose solid-torus meridian disk has slope
+lambda_U+n mu_U on the input boundary. Satellite gluing identifies
+mu_U with lambda_A and lambda_U with mu_A. Thus Q_n performs 1/n surgery
+on A. Since A is an unknot, the result is S3, with P replaced by a knot
+P_n. Write a_n=a_2(P_n), where Delta_K(t) is symmetric, Delta_K(1)=1,
+and a_2(K)=Delta_K''(1)/2 is the coefficient of z^2 in the Conway polynomial.
+
+The outer meridian is fixed, and the outer longitude remains the preferred
+longitude for every n. Indeed lk(P,A)=0, so lambda_P is already nullhomologous
+in the two-component exterior; the surgery framing correction n*lk(P,A)^2
+vanishes. The meridional branch closure of each F_P(Q_n) is an actual
+unknot, since its double cover is S3. The inherited involution has fixed
+points, so this is the usual strong-inversion quotient situation.
+
+2. EXACT ALEXANDER VARIATION FROM HOSTE'S FORMULA
+
+Use the Sato--Levine sign convention of Gorsky--Liu--Moore, Section 6.2:
+their equations (6.2)--(6.3) give, for the algebraically split link P union A,
+
+ lambda(S3_(+1,1/n)(P union A))
+     = a_2(P) + n a_2(A) - n beta(P union A).
+
+Here lambda is the Casson invariant normalized by lambda(S3_+1(K))=a_2(K).
+Because A is an unknot, a_2(A)=0. Performing its surgery first gives S3,
+and the remaining +1 framing on P is unchanged because lk(P,A)=0.
+Therefore the same closed manifold is S3_+1(P_n), proving
+
+                 a_n = a_0 - n beta(P union A).                 (1)
+
+The sign changes with a convention for beta; nonvanishing is unaffected.
+Only n=0 and n=1 will be needed.
+
+3. THE LONGITUDINAL JONES DERIVATIVE REMEMBERS A_2 INJECTIVELY
+
+For an actual marked knot exterior quotient T_J whose meridian filling is
+the unknot, let L_J be its longitude branch closure. The longitude double
+cover is S3_0(J). The Garoufalidis determinant-zero formula together with
+the zero-surgery Lescop formula gives
+
+                 |V'_(L_J)(-1)| = |12 a_2(J)-1|.               (2)
+
+This was audited with conventions in
+../fanout16/realizability_zero_filling.txt. In Garoufalidis's doubled-Casson
+normalization lambda_G(S3_0(J))=2a_2(J)-1/6. His Theorem 1 has
+i^(sigma+nu) lambda_G = J'(-1)/6+J(-1)*sigma/4; here nu=1 and J(-1)=0.
+Changing Jones convention or branch-link orientation leaves (2) unchanged.
+
+Multiplying V_(L_J) by any signed Laurent monomial does not change the
+magnitude in (2): V_(L_J)(-1)=0 and that monomial has modulus one at -1.
+The function a -> |12a-1| is injective on integers. Equality with the same
+sign gives a=b; equality with opposite signs would give 6(a+b)=1, impossible.
+
+4. PROOF OF INJECTIVITY
+
+The map F_P is nonzero since its output meridional closure on Q_0 is an
+unknot. Suppose its rank were one. Then
+
+                   F_P(Q_1)=c(A) F_P(Q_0).
+
+Evaluate the common outer meridional closure. Both sides are brackets of
+actual unknots, so c(A) is a framing monomial. If the bracket convention
+assigns delta to an unknot, its common delta factor cancels; the conclusion
+is the same. In particular c is not an arbitrary rational function.
+
+Now evaluate the common preferred-longitude closure. After the usual
+writhe normalization, the two Jones polynomials differ by a signed Laurent
+monomial. Formula (2) implies
+
+                         |12a_1-1|=|12a_0-1|.
+
+Integer injectivity gives a_1=a_0. Equation (1) then gives beta(P union A)=0,
+a contradiction. Thus rank F_P=2, proving injectivity.
+
+If P(U)=U, then F_P(Q_0) is itself the preferred rational-zero vector up to
+a framing unit. Linearity and injectivity consequently give, for any input T,
+
+ T is proportional to Q_0 iff F_P(T) is proportional to the output Q_0.
+
+For actual knot exterior quotients the proportionality scalars are framing
+monomials, by evaluating the meridian-unknot closure. Compatible finite
+compositions of such pattern maps retain injectivity and this equivalence.
+
+5. A SOURCE-BACKED FAMILY OF APPLICATIONS
+
+Gorsky--Liu--Moore, Corollary 6.4, prove that a two-component L-space link
+with linking number zero and both components unknotted has beta<=0, with
+equality precisely for the unlink. Therefore every nontrivial link in this
+class that ALSO admits the stipulated compatible strong inversion defines
+an injective quotient skein map. Its unknotted pattern component ensures
+preservation and reflection of the preferred rational-zero line.
+
+The inversion hypothesis is essential to the formulation: it is not being
+asserted that every L-space link has a suitable inversion. This application
+uses a proved Floer-theoretic result only to certify beta is nonzero.
+
+6. SHARP LIMIT: BETA ZERO DOES NOT IMPLY LOSS OF INFORMATION
+
+Take the composition of two untwisted Whitehead patterns with compatible
+inversions. Each individual map is injective by the twist-knot test in
+whitehead_injectivity_audit.txt, so the composed map F_Wh squared is injective.
+
+Its rational-input family consists of
+
+                         Wh_0(Wh_n(U)),
+
+up to the fixed choice of clasp convention. The outer untwisted Whitehead
+double has Alexander polynomial one for EVERY companion; preferred longitude
+is preserved at the intermediate winding-zero gluing. Consequently every
+member of this rational-input family has a_2=0. Equation (1) shows that the
+two-component link defining the composite pattern has beta=0.
+
+Thus there is an actual compatible pattern with beta=0 and injective quotient
+skein map. All its longitudinal derivative magnitudes in (2) equal one.
+The Sato--Levine criterion is sufficient, not necessary, and even the entire
+framing family at this Casson level cannot classify injectivity. This is a
+concrete limit on trying to settle the realization question using only the
+first derivative at -1.
+
+WHAT THIS DOES AND DOES NOT ESTABLISH
+
+This supplies a geometric obstruction to hiding a non-flat exterior quotient
+inside certain winding-zero satellites, despite such satellites often erasing
+the companion's Alexander polynomial. It excludes inherited Whitehead and
+iterated-Whitehead quotients of cores with a_2 nonzero from the formal
+Jones-flat tangle target.
+
+It does not prove that an arbitrary Jones-one knot has a Jones-flat exterior
+quotient, does not promote ordinary Jones to colored Jones, and leaves cores
+with a_2=0 unresolved. No generic Jones unknot-detection claim follows.
+
+ADDENDUM: EXACT SCALAR TRANSMISSION LAW (ROOT'S FORMULATION, AUDITED)
+
+For the same shell, let f_infinity and f_0 be the meridian and longitude
+closure functionals. Filling the output meridian first leaves E(A), a solid
+torus. Its inherited strong-inversion quotient is rational. Its compressible
+slope lambda_A maps to mu_K on the input boundary. Consequently
+
+                    f_infinity composed with F = u f_infinity
+
+for one fixed framing unit u, independent of the inserted skein vector.
+Normalize F by u^-1. Assume now also P(U)=U. With the standard basis
+Q_0,Q_infinity, use f_infinity(Q_0)=1, f_infinity(Q_infinity)=delta,
+f_0(Q_0)=delta, f_0(Q_infinity)=1, where delta=-A^2-A^-2.
+The output longitude is preferred because the winding number is zero.
+Thus F(Q_0) is on the Q_0 line. Evaluating f_infinity forces F(Q_0)=Q_0.
+
+The one-dimensional kernel of f_infinity is spanned by
+
+                         v=Q_infinity-delta Q_0.
+
+Since f_infinity F=f_infinity, F preserves this kernel. Therefore, in the
+basis (Q_0,v), F has diagonal matrix diag(1,d(A)). In particular F is
+injective precisely when d(A) is nonzero.
+
+For any T with f_infinity(T) nonzero, put T_hat=T/f_infinity(T). Its normalized
+departure from Q_0 is measured by
+
+           x(T)=(f_0(T_hat)-delta)/(1-delta^2),
+           T_hat=Q_0+x(T)v.
+
+The exact transformation law is
+
+                            x(F(T))=d(A)x(T).
+
+Compositions multiply their d factors. Nonzero beta is a sufficient geometric
+certificate that d is nonzero. The composite-Whitehead example above has beta
+zero but d nonzero. No claim is made that d is a unit of Z[A,A^-1], or that
+this normalized defect is determined by the ordinary Jones polynomial of the
+covering knot. The framing normalization is a single shell normalization,
+not a choice depending on the input knot.
+
+PRIMARY SOURCES
+
+E. Gorsky, B. Liu, A. H. Moore, Surgery on links of linking number zero and the
+Heegaard Floer d-invariant, arXiv:1810.10178v2, Section 6.2 equations (6.2)--(6.3)
+and Corollary 6.4; Quantum Topology 11 (2020), 323--378.
+https://arxiv.org/pdf/1810.10178
+https://ems.press/journals/qt/articles/16990
+
+S. Garoufalidis, Signatures of links and finite type invariants of cyclic
+branched covers, Theorem 1 and Section 4.1.
+https://arxiv.org/html/math/9811021
+
+M. Hedden, Knot Floer homology of Whitehead doubles, Geometry & Topology 11
+(2007), 2277--2338, equation preceding p.2280 and opening paragraph p.2280
+(Alexander polynomial of an untwisted Whitehead double is one).
+https://msp.org/gt/2007/11-4/gt-v11-n4-p08-p.pdf
+
+J. Dubois, V. Huynh, Y. Yamaguchi, Non-abelian Reidemeister torsion for twist
+knots, arXiv:0706.2213v3, Section 2 Remark 2(4)--(5) (Whitehead surgery test).
+https://arxiv.org/pdf/0706.2213

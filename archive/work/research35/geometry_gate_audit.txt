@@ -1,0 +1,140 @@
+GEOMETRIC AUDIT OF THE DISJOINT-BAND OBSTRUCTION
+2026-11-01. Research deduction; no priority claim.
+
+Verdict: the proposed obstruction passes, with a harmless common sign in the
+Jones-at-minus-one phase. A cleaner simultaneous-surgery argument avoids that
+phase entirely and extends to any number of bands. Neither argument is a
+proof of general Jones unknot detection.
+
+SETUP AND THE EMBEDDED SURFACE
+Let U be an actual unknot and let b_1,...,b_r be disjoint embedded bands with
+disjoint attaching intervals. For the general-r normalized-Jones statement,
+assume the bands are orientable/coherent, so the local fusion strands are
+antiparallel. Their simultaneous band surgery gives L. The
+bands must be actual marked rectangles, not sites recovered after untracked
+simplification. Start with the standard disk for U in an inner 4-ball and
+place the band saddles in its outer S^3 x I collar. This gives an embedded
+ribbon surface in B^4 with one zero-handle and r one-handles. A chosen disk
+and the bands need not be disjoint in S^3: their different radial levels in
+B^4 remove that nonexistent requirement.
+
+For r=2 and three-component L, this connected surface has chi=-1 and three
+boundary components. The classification of compact surfaces forces it to be
+orientable of genus zero. Each one-band partial surface is an annulus. All
+boundary orientations are induced from the same surface.
+
+The double cover of the initial disk is B^4. A band saddle lifts to one
+2-handle. Therefore the branched cover W is B^4 with r 2-handles and has an
+integral symmetric framed-link matrix B. Its boundary first homology is
+coker B. Keeping only band i keeps only its handle: the partial cover has
+matrix [B_ii]. These assertions do not require that the bands be unknotted.
+The local handle correspondence is the Montesinos trick; Akbulut--Kirby
+also give the surface-handle construction (Sections 2 and 3).
+
+CLEANER SURGERY FORMULA AND ITS SIGN CONDITION
+Take the double cover of the complement of all the marked band balls in U.
+This is the exterior of an r-component link in Sigma_2(U)=S^3. Let mu_i be
+its meridian, and let lambda_i be the slope for the band-smoothing filling.
+Since smoothing and the original U replacement have distance one, lambda_i
+is an integral framed longitude. Relative to preferred longitudes its
+coefficient is B_ii; off-diagonal entries are the linking numbers.
+
+The local rational-tangle half-twist lifts to a Dehn twist on the boundary
+of its solid-torus cover. Adding k full twists therefore changes the U slope
+to mu_i + epsilon*2k*lambda_i. Here epsilon is one common sign if all local
+full twists have the same handedness in orientation-preserving charts.
+This is an actual local slope calculation, not an inference just from
+unlabelled eigenvalues. In the bracket convention b=A*1+A^(-1)*e,
+e^2=delta*e, the antiparallel normalized positive full twist has eigenvalues
+1,A^8 (raw b^2 has eigenvalues A^2,A^(-6), and its normalization is A^6).
+Thus the common z=A^8 convention used in the band recurrence has the same
+handedness at every site. A reflected chart reverses both z and epsilon.
+
+For simultaneous parameters k_i, the meridian homology relations have
+matrix I + epsilon*2*diag(k_i)*B (or its transpose, with the same determinant).
+For the equal-parameter diagonal k_i=k,
+
+  det(K(k,...,k)) = |det(I + epsilon*2k*B)|.
+
+This includes k=0 by continuity of the polynomial formula, where the
+branched cover is S^3. If Jones(K(k,...,k))=1 for every integer k, this
+integer polynomial has absolute value one at every integer and hence is
+the constant one. Since B is a real symmetric matrix, all its eigenvalues
+are real; det(I+tB)=1 forces every eigenvalue to be zero, hence B=0.
+
+IMPORTANT SCOPE: if sites receive independently reversed twist parameters,
+the matrix is I+2k*E*B for a diagonal sign matrix E. E*B need not be symmetric
+and can be nonzero nilpotent. The conclusion B=0 is then unavailable. One
+must retain the common-handed/common-z hypothesis, not silently apply this
+to arbitrary compensating twists.
+
+APPLICATION TO THE THREE-COMPONENT LINK UNDER STUDY
+Here H_1(Sigma_2(L)) has free rank one. With r=2 this forces rank B=1, so
+B is nonzero. Consequently the common-z diagonal cannot have Jones one
+for all k. Nonzero torsion in this homology is not needed for the rank
+argument. This rules out the entire proposed exact diagonal mechanism for
+ANY disjoint marked band pair with this actual unlink anchor and this
+branched-cover first Betti number, not just the one computed pair.
+
+ORIGINAL SIGNATURE PROOF, INDEPENDENT CROSS-CHECK
+For r=2, rank B=1 implies tr B != 0. The one-band annulus cover has signature
+sign(B_ii), and its boundary link determinant is |B_ii| (zero if B_ii=0).
+For an arbitrary properly embedded oriented surface F in B^4, the ordinary
+signature of its boundary link equals the signature of its double branched
+cover, up to the fixed global orientation convention. Gordon--Litherland--
+Murasugi Section 2 proves the more general cyclic-cover signature formula;
+in B^4 its ambient-signature and self-intersection corrections vanish.
+It is not necessary to assume F is a pushed-in Seifert surface in S^3.
+
+The classical determinant phase identity gives, in a common Jones
+square-root convention,
+
+  S_i(x=i) = kappa*B_ii,    kappa in {i,-i}, independent of i.
+
+The choice x=i versus x=-i conjugates the phase for two-component links.
+Thus a bare +i should not be claimed without aligning conventions. In either
+convention, S_1(i)+S_2(i)=kappa*tr B !=0, whereas delta(i)=0. Consequently
+S_1+S_2=2delta is impossible. This agrees with the surgery proof above.
+
+PRIMARY SOURCES
+1. S. Akbulut and R. Kirby, Branched covers of surfaces in 4-manifolds,
+   Math. Ann. 252 (1980), 111--131, Sections 2--3.
+   https://math.berkeley.edu/~kirby/papers/Akbulut%20and%20Kirby%20-%20Branched%20covers%20of%20surfaces%20in%204-manifolds%20-%20MR0593626.pdf
+   Surface zero-handles produce cover zero/one-handles; surface bands lift
+   to 2-handles. The end of Section 3 treats ribbon-surface presentations.
+2. C. McA. Gordon, R. A. Litherland, K. Murasugi, Signatures of covering
+   links, Canad. J. Math. 33 (1981), 381--394, Section 2, pp.382--383.
+   https://webhomes.maths.ed.ac.uk/~v1ranick/papers/glm.pdf
+   Their general tau_m formula identifies tau_2 with ordinary signature.
+3. P. Traczyk, A combinatorial formula for the signature of alternating
+   diagrams, Fund. Math. 184 (2004), 311--316, Appendix.
+   https://www.impan.pl/shop/en/publication/transaction/download/product/89061
+   The Appendix's determinant phase identity is general; alternation is
+   used only in its later application. It identifies the normalized bracket
+   at A=exp(i*pi/4) with det(iM), whose phase is i^signature.
+4. A note on band surgery and the signature of a knot, Section 4.1:
+   https://par.nsf.gov/servlets/purl/10182784
+   States the Montesinos distance-one correspondence for band surgery,
+   with the lifted band arc and meridian explicitly identified.
+
+This audit establishes the stated necessary obstruction, not a claim that
+B=0 forces an unknot family or that all band presentations fall under the
+common-handed diagonal.
+
+STRONGER RANK-ONE/TORSION COROLLARY (LLL1)
+Assume H_1(Sigma_2(L))=Z plus torsion of order N>1. An integral symmetric
+rank-one matrix has the form B=d*v*v^T, where v is a primitive integral
+column vector and d is a nonzero integer. For completeness, choose a
+primitive generator v for its rational image; symmetry forces this form
+over Q, and an integral row u with u*v=1 gives d=u*B*u^T in Z. The gcd of
+the matrix entries is |d| because v is primitive, so the Smith normal form
+shows N=|d|. In particular |tr B|=N*||v||^2 >= N.
+
+For any nonzero integer coherent twist k,
+  |det(I+epsilon*2kB)|=|1+epsilon*2k*tr B| != 1.
+Indeed equality could only give k=0 or k*tr B=-epsilon; the latter is
+impossible since |tr B|>=N>1. Thus EACH nonzero coherent diagonal member
+has nonunit determinant, not merely that the entire diagonal fails to be
+Jones constant. For the LLL1 cover, N=144. This conclusion holds for every
+qualifying disjoint two-band unknot completion of that link, without
+searching its band presentations. It does not cover opposite-handed twists.

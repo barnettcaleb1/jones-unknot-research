@@ -1,0 +1,101 @@
+PASS34: topology and exact all-integer exclusion for one marked EKT two-band family
+Independent audit, 2026-11-01. Scope is the explicit family in two_band_family.py/json,
+not all fusion bands on LLL(1), and not the generic Jones conjecture.
+
+1. MARKED GEOMETRY AND ORIENTATIONS
+The parent reconstructed two bands simultaneously on the ORIGINAL 19-crossing LLL(1)
+diagram. Their attaching edge pairs are (8,19) and (12,34), in distinct faces 2 and10.
+I independently recomputed both face incidences. The four attaching edges are distinct.
+Each band rectangle can be chosen inside its specified face; their interiors are disjoint.
+No simplification or relabeling occurs between the two insertions. Thus these are actual
+independent marked twist sites; undoing both bands literally recovers LLL(1).
+This is stronger than merely remembering two sequential bands after diagram simplification,
+which would not on its own certify two simultaneous local sites.
+
+The component-merger graph has three vertices and two edges and is a tree. Orient a
+first component, then orient each new component so the associated saddle is oriented.
+No orientation-cycle obstruction occurs. The boundary edges of an oriented rectangle
+have opposite directions, so the two twist strands are antiparallel. Inserting any
+integer number of full twists preserves this property and the knot connectivity.
+The oriented smoothing in the local skein relation, followed by removing the residual
+curl, is precisely the inverse band operation. Applying it at both sites recovers the
+original three-component link with the band-induced orientation.
+
+Direct signed-crossing checks give linking matrices zero for LLL(1) and for each of
+the two partial two-component links. All three saved diagrams have writhe -3.
+Consequently reversing any component leaves normalized Jones unchanged; the arbitrary
+orientation choices used by the diagram constructor do not change the coefficients
+in the oriented recurrence. In particular the double-cut Jones is delta^2.
+
+2. TWO-VARIABLE RECURRENCE AND THE TWO DIFFERENT DIAGONALS
+Write x=t^(1/2), delta=-(x+x^-1), z=x^-4, and let m,n count the full twists inserted
+by the actual code. Let S1 be the Jones polynomial with band1 cut and band2 retained,
+and S2 the polynomial with band2 cut and band1 retained, at zero twists.
+The local oriented skein recurrence, valid for positive and negative full twists,
+gives the following identity in Q(x):
+
+  V_mn - 1 = (S1/delta-1) z^n(1-z^m)
+           + (S2/delta-1) z^m(1-z^n).
+
+The denominator is harmless: both sides are Laurent polynomials after multiplying by
+delta. I independently verified this exact identity against all five saved corners
+(0,0),(1,0),(0,1),(1,1),(1,-1), with integer Laurent arithmetic; no numerical fitting
+is used for the general recurrence. The anchor K_00 simplifies to the actual unknot.
+
+For a general two-band U anchor with double-cut unlink Jones, the effective equal-
+exponent diagonal is constant Jones1 iff S1+S2=2delta. The effective opposite-exponent
+diagonal is constant Jones1 iff both S1=S2=delta. These are different conditions.
+Geometric handedness determines which physical twist directions give each diagonal;
+'compensating' must not be interpreted as a priori opposite integer exponents.
+The fact that partial links have nonunlink Jones excludes only the second identity,
+not the first. No generic positivity or topology theorem excluding S1+S2=2delta has
+been established in this pass.
+
+3. EXACT EXCLUSION FOR EVERY INTEGER PAIR IN THIS ACTUAL FAMILY
+The exact partial polynomials in two_band_family.json satisfy
+
+  S1(i)=S2(i)=144i,
+  span_x(S1-delta)=22,     span_x(S2-delta)=24.
+
+Here S1 corresponds to active_bands=[false,true] and S2 to [true,false].
+At x=i, delta=0 and z=1. The removable limits are computed directly:
+
+  delta'(i)=-2,  z'(i)=4i,
+  lim_(x->i) (1-z^m)/delta = 2mi.
+
+Substitution into the exact recurrence yields
+
+  V_mn(t=-1) = 1 - 288(m+n).
+
+Jones1 therefore forces n=-m. For m nonzero, z^m-1 is a nonzero rational function.
+On this antidiagonal the recurrence then forces
+
+  S1-delta = z^m (S2-delta).
+
+Multiplication by a monomial preserves Laurent span, contradicting 22 versus24.
+Hence the full integer Jones1 locus of this marked two-band family is exactly
+
+  {(m,n)=(0,0)}.
+
+This excludes infinitely many twist choices by a formula, rather than by a finite
+search. It does not exclude different marked band placements or more general moves.
+The independent machine-readable arithmetic check is twist_independent_audit.json.
+
+4. LINKING-FORM SCOPE AND LITERATURE BOUNDARY
+Earlier work verified H1(Sigma2(LLL1))=Z plus Z/144, with cyclic torsion linking
+form -1/144 up to the standard orientation/generator conventions. That passes the
+necessary rank-one two-handle surgery-form gate. It does not itself prohibit a
+Jones1 fusion or a constant diagonal.
+A tempting general argument would identify the two partial Jones evaluations with
+the diagonal coefficients of one symmetric rank-one surgery matrix with a common
+phase. That phase identification was not proved here and is NOT used. The explicit
+partial polynomials supply the common value144i only for this marked family.
+
+The EKT source of the actual link is Eliahou-Kauffman-Thistlethwaite, Infinite families
+of links with trivial Jones polynomial, Topology42(2003), Section4.3/Theorem4.4:
+https://homepages.math.uic.edu/~kauffman/ekt.pdf
+General oriented-band skein calculations are consistent with Kanenobu's Band Surgery
+on Knots and Links (the already-retained primary source in research25); no general
+classification of all unknot-anchored cancelling two-band families is inferred from
+Kanenobu's particular constructions. The decisive conclusion here is the exact
+all-integer exclusion in Section3, not a claimed general theorem.

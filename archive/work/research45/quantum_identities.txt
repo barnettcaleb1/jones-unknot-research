@@ -1,0 +1,177 @@
+PASS45: EXACT QUANTUM IDENTITIES VERSUS ACTUAL GEOMETRIC OPERATIONS
+
+Outcome. No Jones-one knot or generic braid kernel was constructed.
+There are two exact obstructions to the most direct realization recipes:
+  (1) no single ordinary tangle represents a nonzero scalar multiple of
+      a Jones--Wenzl projector of width at least two;
+  (2) even the actual generic TL3 braid image contains a free group while
+      its ambient algebra satisfies the degree-four standard identity.
+Thus additive polynomial identities do not supply multiplicative braid
+relations. These statements do NOT exclude a special difference of two
+actual tangles, or a genuinely geometric surgery construction.
+
+Duplicate check. Read research28/quantum_promotion.txt, research30/
+braid_global.txt, and cancellation19/algebra.txt. The formal central
+Casimir directions, finite-order clasper inverses, fixed-color curve
+annihilator, and integral shell-controller obstruction were already
+examined there. None is being presented as a new realization here.
+The tangle agent is separately auditing the precise surgery/clasper
+conversion; this note covers the exact algebra-to-diagram obstruction.
+
+1. Complete counterexample endpoints, before proposing a realization.
+
+A sufficient direct construction would give ONE actual framed tangle T,
+an actual closing context C, and all three of:
+  - the closure C(identity) is a certified unknot;
+  - its normalized whole Laurent Jones value equals that of C(T);
+  - C(T) is a knot and has an independent nontriviality certificate.
+A signed sum of diagrams is not T. A nontrivial braid word is not an
+independent nontriviality certificate for its knot closure.
+
+Alternatively, an actual noncentral braid in the FULL generic TL kernel
+does suffice: Ito's normal-subgroup theorem supplies nontrivial knot
+closures with the same Jones polynomial as an unknot anchor. If only
+one irreducible block is killed, the missing blocks still have to be
+killed; Long's intersection lemma can help only with independently
+nontrivial normal kernels. None is manufactured just by an additive PI.
+Primary endpoint: Ito, arXiv1402.2028, Theorem1 and Corollaries1--2.
+https://arxiv.org/abs/1402.2028
+
+2. A geometric nonvanishing lemma.
+
+Over R=Z[A,A^-1], no actual uncolored framed tangle in a ball has
+identically zero Kauffman bracket skein vector. Close all its endpoints
+by actual exterior arcs. This produces an actual nonempty link L, whose
+Jones value at t=1 is (-2)^(components(L)-1), hence nonzero. Its raw
+bracket differs by a framing unit and, if using empty-link normalization,
+one extra delta=-A^2-A^-2. Neither vanishes at A=1. A zero vector would
+make every such closure zero, a contradiction.
+
+The same statement applies after composing with any actual cap/cup
+tangle: the result remains an actual tangle or link. Closed components
+do not provide an escape.
+
+COROLLARY. For n>=2, let f_n be the generic Jones--Wenzl projector.
+There is no actual uncolored n-to-n tangle T and nonzero rational scalar
+c(A) for which [T]=c(A) f_n in TL_n(Q(A)).
+
+Proof: f_n e_i=0 for each adjacent cup-cap diagram e_i. Thus the actual
+composition T e_i would have zero skein vector, contradicting the lemma.
+The argument is an identity over Q(A); clearing denominators still gives
+a zero Laurent closure, so poles or a zero of c at A=1 do not help.
+
+In particular, denominator clearing is insufficient. For n=2,
+f_2=I-delta^-1 e and delta*f_2=delta I-e is integral, yet
+(delta I-e)e=0, so this integral element is not a single actual tangle.
+
+An exact quantum antisymmetrizer that is zero on the chosen tensor power
+likewise cannot be installed as a single actual uncolored tangle. A
+colored edge or a formal projector box is additional categorical data,
+not a geometric replacement by an ordinary collection of strands.
+
+Primary source for the defining annihilation identities: Morrison,
+A Formula for the Jones--Wenzl Projections, Section2, equation(2.1).
+https://arxiv.org/abs/1503.00384
+https://tqft.net/math/JonesWenzlProjections.pdf
+
+3. An exact polynomial identity in an algebra with faithful braid gates.
+
+The Amitsur--Levitzki identity for 2x2 matrices is
+
+ S_4(X1,X2,X3,X4)=sum_(pi in S4) sign(pi) X_pi1 X_pi2 X_pi3 X_pi4=0.
+
+It equates two sums of twelve products, not two individual products.
+The fundamental U_q(sl2) color being two-dimensional does not mean an
+n-strand braid is a 2x2 operator: it acts on V_2^tensor n, with growing
+Temperley--Lieb multiplicity blocks. Applying S_4 directly to an
+arbitrary larger braid block would already be an error.
+
+Even at width three, where S_4 really DOES hold on the entire generic
+TL algebra, it gives no automatic braid relation. Here is an explicit
+actual-braid test with a proof, not a word search.
+
+Use delta=-A^2-A^-2 and
+ e1=[[delta,1],[0,0]], e2=[[0,0],[1,delta]],
+ rho(sigma_i)=A I+A^-1 e_i.
+Together with chi(e_i)=0, chi(I)=1 this realizes
+
+                 TL3(Q(A)) = Q(A) direct-sum M2(Q(A)).
+
+To check injectivity, e1,e2,e1e2,e2e1 are linearly independent matrices
+because delta^2-1 is nonzero; chi then separates the remaining identity.
+Both summands satisfy S_4, so TL3 does too.
+
+Nevertheless the two actual braid images
+
+                       rho(sigma_1^3), rho(sigma_2^3)
+
+freely generate a group. Suppose a word in these images is generically
+the identity. The character chi gives A^(3s)=1, where s is the sum of
+the exponents of the two abstract generators, so s=0.
+At zeta=exp(pi*i/4), divide each Artin generator by zeta and conjugate
+by D=diag(1,i). Their two-dimensional matrices become respectively
+
+ U=[[1,1],[0,1]],  L^-1=[[1,0],[-1,1]].
+
+Thus the hypothesized word specializes to a relation in U^3 and L^-3;
+the scalar zeta^(3s) is exactly1, not an ignored projective factor.
+
+These matrices freely generate by elementary ping-pong on P1(R):
+take X={|z|>1}, Y={|z|<1}. Every nonzero power of U^3 maps Y into X,
+and every nonzero power of L^-3 maps X into Y. Hence no nonempty reduced
+word is the identity. This proves the claimed generic freeness.
+
+Therefore an EXACT dimension identity already coexists with completely
+faithful actual geometric gates inside the SAME small TL algebra. The
+failure to obtain a braid relation is substantive, not a missing choice
+of coefficient normalization.
+
+More generally GL_d(Q), d>=2, has no nontrivial group law because it
+contains these free matrices (and their block-diagonal embeddings).
+Consequently there is no universal composition/inversion recipe that
+converts a matrix polynomial identity into a nontrivial word relation
+for arbitrary invertible substitutions. This leaves specially constrained
+substitutions open, and does not assert generic TL_n braid faithfulness.
+
+Primary PI source: Amitsur--Levitzki, Minimal identities for algebras,
+Proc.AMS1(1950),449--463, DOI10.1090/S0002-9939-1950-0036751-9.
+The publisher PDF was blocked during this pass; the formula is classical
+and the independent obstruction above uses only its stated identity.
+https://doi.org/10.1090/S0002-9939-1950-0036751-9
+Primary free-matrix source (the proof needed here is given above):
+Chang--Jennings--Ree, On certain pairs of matrices which generate free
+groups, Canadian J.Math.10(1958),279--284.
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4058CC8F47D2F77D83756AD36030EB2B/S0008414X00045351a.pdf/div-class-title-on-certain-pairs-of-matrices-which-generate-free-groups-div.pdf
+
+4. What a geometric realization would still have to supply.
+
+An alternating sum over surgery sublinks is an element of the free
+abelian group on actual links. Even an exact vanishing of its quantum
+image only equates the two signed collections. To isolate a single
+nontrivial knot from that equation, every other term must be identified
+geometrically and their complete normalized invariants combined exactly.
+An associated-graded clasper/IHX identity by itself controls only the
+specified finite-type order, not every higher correction of one fixed
+surgery. The exact extra realization theorem is the missing input.
+
+Habiro's central invariant is constrained to an integral completion;
+membership in its center, or having a factor killed by the fundamental
+color, is not a surjectivity theorem onto invariants of single knots.
+The prior pass28 examples distinguish these issues explicitly, including
+actual finite-order realizations whose proposed exact limit is ruled out
+by a non-Laurent higher-color quotient. This note does not repeat them
+as a new construction.
+
+Primary sources:
+ Habiro, Claspers and finite type invariants of links, GT4(2000),1--83:
+ https://arxiv.org/abs/math/0001185
+ Habiro, On the quantum sl2 invariants of knots and integral homology
+ spheres, GT Monographs4(2002),55--68:
+ https://arxiv.org/abs/math/0211044
+
+Stopping verdict. The direct projector-gadget and universal PI-to-word
+recipes are rigorously excluded. A specific surgery cube whose other
+vertices are certified unknots, together with an exact all-orders quantum
+identity for that ENTIRE cube, would evade these objections and would be
+worth testing. Such a cube was not obtained here. Neither the projector
+identity, the matrix PI, nor a central invisible term alone supplies it.

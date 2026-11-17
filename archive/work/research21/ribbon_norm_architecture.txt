@@ -1,0 +1,93 @@
+SYMMETRIC RIBBON DOUBLING AND THE QUANTUM NORM BRIDGE
+1 November 2026. Architecture audit, not a proposed proof.
+
+1. THE GENERIC TOPOLOGICAL REDUCTION IS VALID
+
+If a nontrivial knot K has V_K=1, then R=K#mirror(K) is a ribbon knot,
+V_R=V_K V_mirror(K)=1, and R is nontrivial by unique prime decomposition
+(or connected-sum genus additivity). Thus it would suffice to prove Jones
+unknot detection for all symmetric connected-sum doubles, or for all
+ribbon knots. This removes a coverage gap only if the asserted rigidity
+lemma covers that entire class; it does not place R in the specific
+doubled-Brunnian pure-braid family already studied.
+
+2. WHAT THE DOUBLE MEASURES
+
+At a generic unitary specialization on a positive Temperley--Lieb arc,
+take a 2b-plat presentation. Let psi be the normalized cup vector, U the
+unitary braid operator, and delta>1 the loop value. In the standard
+unknot-normalized Jones convention,
+
+ V_K = phase * delta^(b-1) <psi,U psi>.
+
+Reflection conjugates the phase, so
+
+ V_(K#mirror(K)) = delta^(2b-2) |<psi,U psi>|^2.
+
+For V_K=1 and b>1 the squared normalized overlap is delta^(2-2b), strictly
+between 0 and 1. It is not the equality case of Cauchy--Schwarz. The ribbon
+property of the connected sum does not alter that normalization.
+
+In operator language put x=U psi and E=|psi><psi|. The ordinary double
+measures <x,E x>, a rank-one projection observable. Reflecting the whole
+open tangle and gluing by the identity instead measures <x,x>; that is a
+different closure. Confusing these two gluings supplies exactly the
+unjustified promotion from one Jones scalar to a full state norm.
+
+3. PRECISE LINEAR-ALGEBRA OBSTRUCTION
+
+At any one positive specialization with b>1, write a=delta^(1-b). Choose
+unit orthogonal vectors e1=psi,e2. The unit vectors
+
+ x_theta=a e1+sqrt(1-a^2) exp(i theta) e2
+
+all give the same ordinary overlap a and the same reflected connected-sum
+value 1, while ||x_theta-x_0|| is nonzero for theta not divisible by 2pi.
+Consequently no state-rigidity implication follows from unitarity,
+reflection positivity, fixed state norm, and the ordinary-double scalar.
+
+This is a countermodel to the proposed linear-algebra inference, not an
+actual knot counterexample. It does not prove these vectors are realized
+by one Laurent-polynomial braid family, nor refute a genuinely new
+all-q geometric restriction on states of symmetric ribbon doubles.
+
+A fixed single-channel boundary change S cannot repair the rank defect:
+ E becomes S^* E S, whose rank is at most one. It remains a single linear
+functional squared. Several independently probed boundary channels can
+produce a higher-rank observable, but their values are additional skein
+evaluations; no identity supplied here determines them from V_K alone.
+Noninvertible boundary operations also require an independent norm or
+success-probability calibration before an extremal inference is valid.
+
+Likewise, ||x-x_ref||^2 requires Re<x_ref,x>. The scalar <psi,x> determines
+that overlap only when x_ref is proportional to psi. A stabilized unknot
+plat has overlap delta^(1-b), so its state is not proportional to psi.
+One cannot silently replace the actual unknot reference by the cup state.
+
+4. A FULL CONDITIONAL ROUTE, WITH THE MISSING INPUT EXPOSED
+
+A valid new theorem of either form would close the original problem:
+
+ (R) Every symmetric double K#mirror(K) with Jones1 is the unknot.
+
+or a genuinely stronger structural lemma implying (R), for example an
+actual diagrammatic positive decomposition of its normalized Jones defect
+into norms whose simultaneous vanishing forces K trivial. Such a
+decomposition must exploit the ribbon disk geometry to eliminate the
+rank-one kernel; it cannot follow from the reflection gluing above alone.
+
+Statement (R) is equivalent to ordinary Jones unknot detection, via the
+unconditional doubling reduction. It is therefore a useful change of
+geometric class, not a proved weakening of the main difficulty. The prior
+Brunnian projected-vacuum norm identity uses extra deletion identities
+that arbitrary symmetric doubles do not have. No replacement for those
+identities has been derived here.
+
+5. VERDICT
+
+The ribbon reduction is exact and generic. The proposed automatic
+calibrated-norm bridge does not follow: the ordinary symmetric double
+retains a rank-one observable and an interior, rather than extremal,
+overlap. A successful ribbon-disk argument would need an additional
+geometric relation that changes this observable or controls its kernel.
+No such relation is established in this pass.

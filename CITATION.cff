@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite this ledger and the specific proof note or certificate you use; also credit its underlying sources."
+type: dataset
+title: "Jones unknot conjecture: research ledger, proof notes, and failed approaches"
+authors:
+  - family-names: Barnett
+    given-names: Caleb
+    website: "https://barnettcaleb1.github.io"
+version: "2026.11.17"
+date-released: "2026-11-17"
+url: "https://github.com/barnettcaleb1/jones-unknot-research"
+repository-code: "https://github.com/barnettcaleb1/jones-unknot-research"
+license:
+  - CC-BY-4.0
+  - MIT
+abstract: "A provenance-preserving research ledger directed by Caleb Barnett with Codex and Claude. Includes scoped arguments, exact certificates, failures, corrections, and unresolved questions. No proof of Jones unknot detection or verified counterexample is claimed."
+keywords:
+  - knot theory
+  - Jones polynomial
+  - research ledger
+  - exact verification
+  - AI collaboration

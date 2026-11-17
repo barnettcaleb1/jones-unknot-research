@@ -1,0 +1,132 @@
+M1 GUTS: TOPOLOGICAL REDUCTION AND A FAILED MASLOV SHORTCUT
+Audit 2026-10-31. This note is a bounded geometric investigation, not a Jones
+unknot detection proof. The rank-five Khovanov hypotheses are handled in the
+separate homology_rank5_audit.txt; this note assumes their M1 conclusion.
+
+PRIMARY SOURCES
+Li--Ye, The guts of nearly fibered knots, arXiv:2208.05382v3,
+https://arxiv.org/html/2208.05382, Theorem1.4, Remark2.1, Example2.2.
+Baker--Manjarrez-Gutierrez, Handle numbers of guts of sutured manifolds and
+nearly fibered knots, arXiv:2305.08928v2,
+https://arxiv.org/html/2305.08928, Theorem1.1, Lemma2.7, Proposition2.9,
+and Section5. Published Topology and its Applications367(2025),109316.
+Juhasz, The sutured Floer homology polytope,
+https://msp.org/gt/2010/14-3/gt-v14-n3-p02-s.pdf,
+Example7.5 and Proposition9.1 (arXiv:0802.3415).
+
+1. A NECESSARY CORRECTION: THE PRODUCT SURFACE CAN BE DISCONNECTED
+Let S be the minimal genus Seifert surface, genus g; let W be its complement.
+For M1 the guts V are a solid torus with four longitudinal sutures. Write the
+product region as F x I. All four guts sutures meet F, with exactly one boundary
+component of F left as the knot suture; hence |boundary F|=5 and chi(F)=1-2g.
+It is incorrect to conclude that F is always a connected genus-(g-2) surface.
+
+Baker--Manjarrez-Gutierrez Proposition2.9 explicitly clarifies Li--Ye Remark2.1.
+There are exactly two possibilities (up to relabeling):
+ (N) Non-isolating: F connected, genus g-2, five boundary components.
+ (I) Isolating: F=F_i disjoint-union F_0jk. Here F_i has one boundary
+     component, entirely glued to one guts suture. F_0jk has four boundaries,
+     three glued to the remaining guts sutures and one outer knot boundary.
+     If their genera are a,b, then a+b=g-1 and a>=1. The inequality follows
+     because F_i cannot be a disk (the gluing annulus is incompressible).
+Thus for genus2 the possibilities are a five-holed sphere OR a once-punctured
+torus together with a four-holed sphere. Both occur as geometric types.
+The g>=2 conclusion remains valid in both cases.
+
+2. ELEMENTARY DEDUCTION: THE MINIMAL SEIFERT SURFACE IS FREE
+Claim: under these attachment descriptions, W is a handlebody of genus2g.
+In particular, an M1 knot has a minimal genus free Seifert surface.
+
+Proof by van Kampen, retaining all possible annular twists/orientation choices:
+Each annulus injects its fundamental group into pi1(V)=<z> as z or z^-1;
+longitudinal winding one is essential. Basepoint choices contribute conjugation
+only and do not affect the eliminations below.
+
+Case(N): pi1(F) is free on 2g-4 handle generators and four independent inner
+boundary generators c1,c2,c3,c4 (the outer boundary is their product times
+commutators and imposes no relation). The graph of spaces has two vertices
+and four edges, hence three stable letters t2,t3,t4. Choose the first annulus
+as the maximal-tree edge. Its relation eliminates z using c1. The remaining
+three relations eliminate c2,c3,c4, each equating one of these independent
+generators to a conjugate of c1 or c1^-1. The remaining free generators are
+the 2g-4 handle generators, c1, and t2,t3,t4: total2g.
+
+Case(I): pi1(F_i) is free on 2a generators and its boundary is the usual
+product w of a commutators. First glue its sole boundary to V, eliminating
+z as w or w^-1. For F_0jk choose its 2b handle generators and three independent
+inner boundary generators c1,c2,c3. The whole graph of spaces has three
+vertices and four edges, so two stable letters. The three remaining annular
+relations eliminate c1,c2,c3 as conjugates of w or w^-1. What remains is free
+on 2a+2b+2=2g generators. No relation on the handle generators survives.
+
+W is a compact orientable irreducible3manifold with connected boundary genus2g.
+Irreducibility follows directly from its being the complement of a connected
+regular neighborhood of S in S3: a sphere disjoint from that neighborhood
+bounds a ball on the side not containing the neighborhood. The standard
+handlebody recognition theorem (Loop Theorem plus induction) says an
+irreducible compact orientable3manifold with nonempty connected boundary and
+free fundamental group is a handlebody. Thus W is the genus2g handlebody.
+This deduction concerns W, not the knot exterior, whose boundary is a torus.
+No novelty claim is made.
+
+Independently, Baker--Manjarrez-Gutierrez Theorem1.1 gives handle number h(K)=2.
+Their Lemma2.7 gives a product-DISK reduction to the guts in case(N).
+The latter disk reduction is unavailable in the isolating case; the free
+fundamental-group argument above does not require it.
+
+3. THE ADJACENT-MASLOV ARGUMENT FAILS AT THE GUTS
+Tempting inference: rank2 SFH(V,four-longitudes) is H*(S1), so its two classes
+have relative Maslov difference1, which product gluing would preserve.
+This is not justified. Juhasz Proposition9.1, following Example7.5, explicitly
+states that the two rank1 groups for T(1,0;4) occupy DIFFERENT relative Spin^c
+structures, differing by the core generator of H1(V). Intrinsic relative
+integer Maslov grading compares classes within a Spin^c structure, not these
+two distinct structures. Their gap after gluing into a knot complement must
+be computed from the embedding/gluing data. Product-disk invariance alone
+cannot fix it.
+
+The preceding presentations sharpen the distinction: in case(N), [z] maps
+to a primitive nonzero class in H1(W). In case(I), [z] maps to zero in H1(W)
+because z becomes the boundary commutator word w. After regluing the Seifert
+surface to recover the knot exterior, all H1(W) classes map to zero in H1(EK),
+since they are disjoint from S and have zero algebraic intersection with S.
+Thus the two guts Spin^c structures eventually coalesce, but their final
+Maslov separation is extra information, not supplied by the rank2 guts model.
+
+4. A CONCRETE REALIZED TEST
+Baker--Manjarrez-Gutierrez Section5.2 constructs 16n332130 from a handle-number2
+presentation of the unknot. It is a genus2 knot with ISOLATING M1 guts. Their
+displayed HFK ranks by Alexander grading2,1,0,-1,-2 are respectively2,4,5,4,2,
+total17. The two top classes are in adjacent Maslov gradings. The displayed
+Jones polynomial (their q convention) is
+ -q^-16 +q^-14 +q^-8 -q^-6 +q^-4 -q^-2 +1 -q^4 +q^6.
+Its nine nonzero coefficients already force reduced Khovanov rank at least9.
+So this example realizes the geometric type but fails the rank5/Jones1 target.
+The HFK table's outer rows cancel in Euler characteristic and its middle row
+has ranks3 and2 in adjacent Maslov gradings, giving Alexander polynomial1.
+The article's construction also produces a non-minimal incompressible
+Seifert surface of genus4, demonstrating why extra incompressible surfaces
+cannot simply be mistaken for another minimal surface or used with taut
+surface decomposition to force new top Alexander generators.
+
+5. THE REPAIRED ISOLATING-CASE COMPUTATION
+In the isolating case, first glue V to F_i x I. Topologically this is F_i x I
+with three parallel copies of its boundary suture, and now the two classes
+have the same relative Spin^c structure. One can ask for an explicit balanced
+Heegaard diagram computing their integer Maslov gap as a function of a.
+The explicit computation, now written and independently checked in
+tangle_isolating_maslov_lemma.txt and homology_isolating_audit.txt, gives
+|chi(F_i)|=2a-1. It uses Juhasz Example7.5's actual genus-a bigon domain,
+then reconstructs the remaining product region by product1handles. The
+resulting grading preservation bounds the final top gap by2g-3, because
+a<=g-1. Combined with the independently audited sparse rank5 HFK constraint
+requiring gap2g-1, this excludes isolating M1 for a nontrivial rank-five
+Jones-one candidate. Thus that restricted candidate must have NON-ISOLATING
+M1 guts. The failed bare-M1 shortcut in Section3 remains false: the repaired
+argument first glues in the isolated surface to put both generators into
+one Spin^c structure. Case(N) still requires a different argument.
+
+No KHI next-to-top nonvanishing theorem has been proved in this bounded pass.
+Handle number2/free genus and rank2 guts do not by themselves give such a
+theorem. No rational-tangle move to the unknot or trefoil is supplied by the
+annulus gluing alone.

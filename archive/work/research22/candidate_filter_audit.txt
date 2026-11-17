@@ -1,0 +1,141 @@
+INDEPENDENT RIBBON-CANDIDATE FILTER AUDIT
+2026-11-01 UTC. Necessary conditions only; no ribbon concordance certified.
+
+Reproduction: python3 work/research22/audit_candidate_filter.py
+Machine-readable result: candidate_filter_independent_audit.json.
+
+COUNTS
+
+Read all 12,965 polynomial records and their mirror variants. Independently
+grouped their rational reduced Kh Euler polynomials and compared every
+ordered pair in each group. Recovered EXACTLY the supplied 460 directed
+pairs with strict rank increase and a grade-by-grade injection inequality;
+the full sets of endpoint/mirror keys agree, not just their cardinalities.
+
+Sequential filters give:
+  460 initial directed candidates
+  314 excluded by bigraded HFK injection
+   12 additional exclusions by Alexander divisibility
+  134 survive those two tests
+    0 excluded by reduced mod2 Kh injection
+   80 excluded by Rasmussen s equality
+   54 survive
+    0 excluded by correctly parsed smooth four-genus constraints
+    0 excluded by tau equality
+    0 excluded by classical signature equality.
+
+All 54 remaining g4 entries are KNOWN EXACT equal pairs, with values
+1,2,3,or4. Float values such as 1.0 are normalized numerically to integers.
+For uncertain entries [a,b], the code only excludes disjoint intervals,
+never treats a bound as an exact genus. No interval ambiguity occurs in
+the final 54. All tau/signature entries were present. They were read from
+the already-downloaded knotinfo_data_complete.xls, not inferred from HFK
+ranks. All 54 final pairs also have identical Alexander polynomials.
+The 54 keys are closed under simultaneous mirroring, with 27 two-element
+orbits. This is an orbit count of table presentations, not a claim that
+every oriented/mirrored table entry represents a distinct knot type.
+
+CONVENTIONS
+
+KnotInfo's Kh vectors are [modulus, rank, homological, quantum].
+Modulus1 denotes Q, modulus2 denotes F2, and modulus0 denotes Z.
+The audit asserts the field marker for each rational or mod2 record;
+it does not confuse the first entry with the rank. Mirror duality negates
+both gradings of reduced Kh. The unknot normalization has q-degree0.
+
+Primary documentation:
+https://knotinfo.org/descriptions/khovanov_reduced_rational_vector.html
+
+As an independent convention check, all 2,977 records with separately
+available Jones vectors agree exactly with the Euler polynomial after
+substituting t=q^2. The remaining 9,988 records' Jones equality is derived
+from their supplied Kh Euler characteristics, not separately recomputed
+from diagrams. This is a data provenance limitation worth retaining.
+
+KnotInfo HFK vectors are [rank, Alexander, Maslov], computed over F2.
+Mirror duality negates Alexander and Maslov with no arbitrary shift.
+The normalized symmetric Alexander polynomial is the Maslov-signed Euler
+sum. Directional divisibility is Delta_source divides Delta_target.
+The code removes Laurent-unit shifts and performs exact rational
+polynomial long division. Since knot Alexander polynomials are primitive
+integral polynomials, Gauss's lemma makes this equivalent to integral
+divisibility; it does not use numerical roots or floating-point division.
+
+Primary documentation:
+https://knotinfo.org/descriptions/hfk_polynomial_vector.html
+
+The HFK filter is explicitly an F2 filter, not a claim about rational HFK.
+Zemke's Theorem1.2 supplies exactly the required grade-by-grade inequality:
+https://annals.math.princeton.edu/wp-content/uploads/annals-v190-n3-p05-s.pdf
+
+The Kh injection direction is source<=target. Ribbon concordance induces
+a bigraded split injection; the based reduced version uses the same
+left-inverse cobordism. Over either Q or F2 the necessary inequality is
+therefore valid. Equality of s, tau, signature, and smooth g4 is necessary
+for any smooth concordance; mirroring changes signs of s,tau,signature
+and leaves g4 fixed. Metadata keys remove the asterisk in the polynomial
+table's 13*a/13*n names before lookup.
+
+SCOPE AND UNSAFE CLAIMS TO AVOID
+
+The result is 27 possible directed pairs up to simultaneous mirror that
+pass this particular finite list of obstructions. They are NOT 27 ribbon
+concordances, not 27 counterexamples to Euler faithfulness, and not a
+complete enumeration of potential ribbon pairs. The initial strict-rank
+condition intentionally excludes equal-Kh-rank pairs; it targets a
+nonzero Euler-invisible cokernel. The input table covers the listed
+prime knots only, not arbitrary connected sums or larger knots.
+
+Passing graded dimension inequalities does not construct compatible
+chain maps, prove integral direct summand conditions, or establish
+concordance. The full CFK-infinity splitting, integral Kh torsion,
+Levine-Tristram signatures away from -1, and other concordance invariants
+have not been tested. No source-target isotopy, band, or ribbon movie is
+asserted here. Smooth four-genus equality was correctly checked and does
+not reduce the reported 54 survivors.
+
+APPENDIX: INTEGRAL DIRECT-SUMMAND FILTER
+
+An additional integral test leaves all 54 candidates intact. Every one
+of the 47 underlying endpoint knots has torsion-free REDUCED integral
+Kh in this dataset. Thus the integral direct-summand inequalities at
+these endpoints reduce to the already-passed free-rank inequalities.
+No finite-table non-counterexample theorem follows from this filter.
+Previous counts are unchanged.
+
+Reproduction: python3 work/research22/audit_integral_torsion.py
+Result: work/research22/ribbon_integral_filter_audit.json.
+
+The correct mirror convention was checked explicitly before filtering:
+  free summand at (h,q)       -> free summand at (-h,-q);
+  torsion summand at (h,q)    -> torsion summand at (1-h,-q).
+The latter is the Ext term in cohomological duality. It must not be
+replaced by the free summand rule. With cohomological conventions,
+an even torsion class in integral degree h contributes to mod2 Kh in
+degrees h and h-1. The displayed mirror rules therefore give mod2
+classes in degrees -h and 1-h, exactly the negation of the original
+mod2 degrees. The checker confirmed the integral-to-mod2 UCT against
+the independent mod2 vectors for EVERY original record AND its mirror:
+25,930 checks, no mismatch. In the complete reduced integral dataset,
+the only nonzero torsion modulus is 2 (14 cyclic summands in total);
+none belongs to an endpoint of a surviving candidate.
+
+For a split injection over Z, one must compare free ranks and the
+multiplicities of each cyclic prime-power elementary divisor in each
+bigrading. Merely comparing mod-p dimensions does not suffice; neither
+does allowing a Z/p summand to embed nonsplit into Z/p^2. The checker
+implements exact elementary-divisor multiplicity comparisons, with
+coprime moduli separated into their prime-power factors.
+
+Parent's separate diagram calculation is now also available:
+work/research22/candidate_polynomial_verification.json reports independent
+frontier-bracket Jones calculations on all 47 endpoint PDs. It records
+whether each supplied PD agrees with the table chirality or its mirror.
+That strengthens the final endpoint polynomial certification beyond the
+original all-table Euler-to-Jones checks. This integral audit inspected
+the result format but did not independently rerun the parent's bracket
+algorithm; retain that distinction in reporting verification provenance.
+
+
+ADDITIONAL RELATIVE LEE-BAR FILTER (1 November 2026)
+The subsequent exact test leaves 42/54 possible for a one-birth/one-saddle ribbon concordance, and 48/54 possible for arbitrary positive relative bar lengths. The latter excludes three ordered pairs and their simultaneous mirrors from ANY ribbon concordance: 12n_338 -> 12n_244; 13n_4838 -> 13n_627; 13n_4838 -> 13n_716. This does not assert ribbon concordances for the survivors. Details and explicit isolated-generator witnesses are in relative_bar_filter_audit.txt; full data are in ribbon_relative_bar_filter.json. Earlier counts above are preserved.

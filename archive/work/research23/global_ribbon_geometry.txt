@@ -1,0 +1,170 @@
+PASS 23: GEOMETRIC TESTS OF RIBBON EULER-FAITHFULNESS
+Status: bounded research deductions and exclusions; no counterexample to E or
+to Jones unknot detection was constructed. No priority claim.
+
+E means: for an actual ribbon concordance C:J -> K, the reduced rational
+Khovanov split complement E_C cannot be nonzero with graded Euler polynomial
+zero. Thus equal Jones endpoints with a strict reduced-QKh rank increase
+would falsify E. Matching polynomials and homology inequalities alone are
+not a certificate of a ribbon concordance.
+
+1. A global geometric filter removes 17 of the 24 remaining mirror classes.
+
+Theorem (established inputs). If J -> K is ribbon, K is fibered, and
+g(J)=g(K), then J and K are isotopic.
+
+Precise primary locator: Ian Zemke, Knot Floer homology obstructs ribbon
+concordance, Annals of Mathematics 190 (2019), section 1.5, printed p935:
+https://annals.math.princeton.edu/wp-content/uploads/annals-v190-n3-p05-s.pdf
+This explicitly states the needed target-fibered version, not just a
+both-endpoints-fibered version. An alternative proof uses his grading-
+preserving HFK injection: at the common top Alexander grading the target
+has rank one, so the source has rank one; Ni implies the source is fibered;
+Gordon's Lemma 3.4 then gives isotopy.
+
+Corollary. Equal-Alexander ribbon endpoints with fibered target are isotopic.
+Indeed the Alexander breadth is 2g(K), so g(J)>=g(K); ribbon genus
+monotonicity gives the reverse inequality. This uses equal Alexander, not
+equal Jones. Equal Jones does not in general supply the hypothesis.
+
+Computation on the already screened 48 directed / 24 simultaneous-mirror
+classes: 34 directed targets have top HFK rank one, and all those pairs
+have equal genus. Hence 34 directed / 17 mirror classes are excluded.
+The HFK test agrees for every target with the independent KnotInfo XLS
+fibered Y/N field, and both endpoint genera agree with its three_genus
+field. Original full-data reproducer: fibered_target_filter.py. Portable
+standard-library certificate verifier: verify_fibered_filter.py, using
+the small research22/candidate_source_subset.json and
+ribbon_bar_survivors.json. It also runs with these files all in one
+directory, as tested in a fresh temporary extracted-archive layout.
+Full output: fibered_target_filter.json; remaining data:
+nonfibered_survivors.json.
+
+The seven remaining classes, listing one representative and implicitly its
+simultaneous mirror, are:
+  mirror(13n2215) -> 13n3605             genus 3, target top HFK rank 3
+  13n3301         -> 13n3041             genus 3, target top HFK rank 2
+  mirror(13n5018) -> 13n1003             genus 3, target top HFK rank 2
+  13n3820         -> mirror(13n3898)     genus 3, target top HFK rank 2
+  13n3820         -> mirror(13n3899)     genus 3, target top HFK rank 2
+  13n3821         -> mirror(13n3939)     genus 4, target top HFK rank 2
+  13n3821         -> mirror(13n3941)     genus 4, target top HFK rank 2
+None has been certified ribbon-concordant.
+
+2. All seven require genuinely interacting bands: one-band searches cannot work.
+
+Lemma. A one-birth/one-saddle ribbon concordance J -> K with g(J)=g(K)
+has isotopic endpoints.
+
+Proof. It presents K as a band sum of the split link J disjoint-union U.
+The genus equality case of Gabai--Scharlemann gives an embedded minimal
+Seifert surface S_J union b union D_U, with D_U a disk. A regular
+neighborhood of D_U supplies a splitting sphere meeting b in a single
+cocore. The band is trivial and K=J#U=J.
+
+A precise primary source for both steps is Miyazaki, When is a
+band-connected sum equal to the connected sum?, arXiv:1903.11266:
+https://arxiv.org/html/1903.11266
+Proof of Lemma 5 recalls the equality-case surface theorem; proof of
+Theorem 1, Case 1, gives the disk-neighborhood argument. We only need
+the case with one unknot summand. We do not rely on a stronger general
+claim that genus equality trivializes every two-nontrivial-summand band.
+
+Corollary (movie-width gate). Any ribbon concordance between distinct
+equal-genus knots has at least two births. Every ribbon Morse movie for
+it has a regular level with at least three link components.
+
+Proof. In a connected genus-zero annulus with no maxima, all saddles merge
+components: writing b for births, s_+ for splitting saddles, and s_- for
+merging saddles, Euler characteristic gives s_++s_-=b, and the initial
+and final component counts give b+s_+-s_-=0, hence s_+=0. If no level
+has three components, each birth must be followed by a merging saddle
+before another birth. Thus the movie factors through knot-to-knot
+one-birth/one-saddle stages. Genus is nondecreasing at every stage; equal
+endpoint genera force equality at every stage, and the lemma makes all
+successive knots isotopic.
+
+This is a geometric obstruction additional to the relative-Lee-bar test.
+Bars of length one are a necessary algebraic condition for a one-band
+movie, not a construction of such a movie. Six of the seven remaining
+classes pass the length-one bar test while being excluded from one-band
+geometry. The 13n5018 -> mirror(13n1003) class already requires bar length
+at least two. All seven pass the arbitrary-positive-length bar test.
+
+The bound is sharp for actual ribbon concordances. Let J be the trefoil
+and let R=6_1 be the stevedore ribbon knot with its usual one-band disk.
+There is a one-birth/one-saddle ribbon J -> J#R. Apply the standard
+untwisted Whitehead pattern, which has geometric wrapping number two.
+The parallel-copy construction gives a two-birth/two-saddle ribbon
+Wh_0(J) -> Wh_0(J#R). Both endpoints are nontrivial genus-one knots, and
+they are distinct (the companion decomposition distinguishes J from
+J#R). The preceding lemma proves that the minimum birth count is exactly
+two. This does NOT assert that their Jones polynomials coincide.
+Satellite preservation and Whitehead nonisotopy references were audited
+in ../research22/satellite_same_genus_appendix.txt, using Baker's A note
+on the concordance of fibered knots, Remark 6, and its cited Kawauchi and
+Kouno--Motegi results. This template confirms why a general ribbon movie
+cannot always be decomposed into one-band knot-to-knot stages.
+
+3. Concrete genus-two mutation attempt fails before any search.
+
+Moore--Starkston construct the pair 14n22185,14n22589 and infinite
+families (K_n,K_n^tau) by twisting their ribbon bands. Each knot is itself
+a band sum of a two-component unlink, so each is ribbon. All colors of
+Jones agree across each pair. However Corollary 4.2 gives rational
+unreduced Kh dimension 26 for both, with distinct bigradings, for every
+n>=0. A grading-preserving ribbon injection between finite-dimensional
+spaces of equal total dimension would be an isomorphism, so neither
+direction is ribbon. Their HFK data gives an additional version of the
+same obstruction. Thus two individually ribbon mutant knots do not
+supply a ribbon concordance between them.
+Primary: https://msp.org/agt/2015/15-1/agt-v15-n1-p02-s.pdf
+Theorem 2.1 (colored Jones), Figure 2 / p48 (base pair and bands),
+Corollary 4.2 (different graded Kh, equal dimension).
+
+The standard Kanenobu equal-polynomial family is also unusable for a
+directional ribbon relation between distinct members: all members are
+fibered genus-two knots, so the theorem in section 1 excludes the
+relation. Their being ribbon knots individually is insufficient.
+Primary account of these properties: Hedden--Watson, On the geography
+and botany of knot Floer homology, section 6.5, Figure 6 and Theorem 6.12:
+https://d-nb.info/114370181X/34
+
+4. Two general construction traps, with exact hypotheses.
+
+(a) Reversible-movie obstruction. Suppose an involutive operation M
+exchanges J,K and carries a proposed ribbon movie J->K to an actual
+ribbon movie M(J)->M(K), preserving the critical-point types. Then it
+also gives K->J. Agol's ribbon partial-order theorem forces J=K.
+https://arxiv.org/abs/2201.03626
+This applies to a genuinely mutation-compatible movie, not to arbitrary
+mutants: mutation need not extend over a given concordance at all.
+
+(b) Connected-sum common-upper-bound circularity. The obvious common
+ribbon successor of ribbon knots A,B is A#B, with V(A#B)=V(A)V(B).
+If V(A)=V(B)=f, this has f^2, not f. Demanding equality f^2=f in the
+Laurent domain (f is nonzero since f(1)=1) forces f=1. More generally,
+adding a ribbon summand to preserve Jones requires that summand's Jones
+to equal one. This cannot manufacture an E counterexample from known
+non-unit equal-Jones mutants without reintroducing the original problem.
+
+Fixed satellites preserve actual ribbon concordances, but cannot supply
+a missing relation between two merely concordant/ribbon knots. A fixed
+satellite operation that turned every ordinary concordance into ribbon
+in the indicated direction would also do so to the reverse concordance;
+Agol would then force its outputs constant on each concordance class.
+Essential Whitehead patterns do not have that property, as the explicit
+distinct ribbon Whitehead doubles above show. Thus no orientation-blind
+satellite ribbonization argument is available.
+
+5. Result for the full goal.
+
+No falsifier of E was found. E remains an unproved sufficient statement
+for Jones unknot detection via U -> K#mirror(K); nothing here proves E.
+The concrete change of next action is substantial: the finite target
+set drops from 24 to seven mirror classes, and every remaining pair
+requires at least two interacting births/saddles. The natural infinite
+equal-Jones mutant and Kanenobu templates are rigorously ruled out as
+direct ribbon pairs. A new construction must provide an actual
+directional multi-band movie, not merely individual ribbon disks,
+mutation, or a common connected-sum successor.

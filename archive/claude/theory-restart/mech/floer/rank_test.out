@@ -1,0 +1,12 @@
+rank ineq holds for >=1 chirality: 138/138
+rank ineq holds for sign(m)=sign(k) (or km=0): 138/138
+parity D-D-(k-m) even: 138/138
+j = Arf mod 2: 138/138
+N == (det-1)/2: 135/138
+|k| == 2|sigma|: 135/138
+4 | k: 138/138
+rank inequality sharp (D - D' = ||k| - m|): ['3_1', '5_1', '7_1', '8_19', '9_1']
+exceptions to N=(det-1)/2 or |k|=2|sigma|:
+   8_19 k 8 j -1 N 2 det 3 |sig| 6 m 5 D' 5 Lspace D-Dp 3
+   9_42 k 0 j 0 N 4 det 7 |sig| 2 m 0 D' 4 thick D-Dp 12
+   9_46^2 k -4 j 2 N 7 det 9 |sig| 0 m 0 D' 4 thin D-Dp 24

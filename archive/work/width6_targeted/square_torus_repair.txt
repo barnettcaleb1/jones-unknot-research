@@ -1,0 +1,118 @@
+CANONICAL SQUARE-TORUS REPAIR AND A TIGHTNESS-COMPLEXITY COUNTEREXAMPLE
+U5-LAW / U5-KL6, bounded follow-up; no new literature or braid search.
+
+1. THE CANONICAL DUAL OBJECT EXISTS, BUT IS A TORUS, NOT A NOODLE SQUARE
+
+Let z_C be the absolute product torus of two disjoint figure-eight loops
+around the arcs of C. Let S_C be the corresponding puncture-relative
+square. Bigelow2003 section3.2 gives, with consistently chosen lifts,
+
+    i_eta(z_C) = (1-q)^2 S_C.
+
+Let j_boundary send absolute homology to boundary-relative homology.
+The extended intersection pairing of section4 is natural for these maps.
+Therefore, writing H(C,C') for the absolute torus intersection pairing,
+
+    H(C,C')
+      = <i_eta(z_C), j_boundary(z_C')>'
+      = (1-q)^2 <S_C, j_boundary(z_C')>'.
+
+Thus the canonical mixed pairing is
+
+    Phi(C,C') = <S_C, j_boundary(z_C')>'
+              = H(C,C')/(1-q)^2.
+
+The second argument is represented geometrically by the SAME compact
+product of two figure-eight loops, now viewed in boundary-relative homology.
+It is not a pair of embedded boundary-to-boundary noodles. No arbitrary
+choice of an abstract homological dual is required for this repair.
+
+Combining with the fixed existing fork/torus calibration,
+
+    H = (q-1)^2 q^-2 P/(1-t),
+
+gives the exact normalized formula
+
+    Phi = q^-2 P/(1-t),
+    Phi|_(t=-q^-1) = q^-1 J_hat.
+
+The last scalar IS a Laurent unit. This is the appropriate direct
+geometric specialization model. At the square/torus level the intersection
+set is still the set of complete matchings between two source arcs and two
+target loops; those loops are immersed figure-eights, not Jordan arcs.
+It therefore evades the earlier single-noodle-square q=1 obstruction.
+For example, an arc joining the endpoints of a figure-eight may have
+ordinary algebraic intersection magnitude2 with that loop. The identity
+self-pair can accordingly give4, as required by the TL Gram form.
+
+At t=1, the mixed pairing is the determinant of the appropriate one-point
+arc/figure-eight-loop pairing matrix, up to the fixed lift normalization.
+The earlier four torus controls become Phi(q,1)=q^-1 det(M_capGram).
+Literal arc/noodle matrices and these arc/loop matrices must not be conflated.
+
+For the14-letter witness the mixed polynomial is particularly small:
+
+    Phi = q^2(1-q)(1+qt)
+        = (q^2+q^3t) - (q^3+q^4t).
+
+This gives two formal h-partner packets. Identifying these four aggregate
+terms with particular original geometric intersection points still needs
+an explicit representative and lift-path computation; naturality alone
+does not recover those labels.
+
+2. TOTAL ONE-POINT INTERSECTION MINIMUM DOES NOT DETECT SPLITNESS
+
+This section concerns transplanting the proposed complexity to the CORRECT
+square-torus model. It does not refute a differently defined noodle model.
+
+Take target cap C0=(12)(34), with the corresponding two disjoint standard
+figure-eight loops gamma12 and gamma34. Take source caps D=(23)(56), with
+standard straight arcs. Use the identity braid.
+
+The cap/cup tangle has exactly two arcs and no closed components. It is
+the crossing-free split e-tangle; its exact TL id coefficient is zero.
+In local state indices this is probe.coefficient([],7,2)=0.
+
+Consider total geometric one-point intersections
+
+    c = #(D1 intersect gamma12) + #(D1 intersect gamma34)
+        + #(D2 intersect gamma12) + #(D2 intersect gamma34),
+
+minimized over cap-tangle representatives and their associated figure-eights.
+Ordinary first homology gives a global lower bound. Up to overall signs,
+
+    [gamma12] = x1-x2,
+    [gamma34] = x3-x4.
+
+The signed intersection of the arc from p2 to p3 with each loop is the
+difference of that loop's winding numbers at the two endpoints. Each has
+magnitude1. These homology classes are unchanged by cap slides preserving
+the endpoint pairings (cap labels/orientations may only be exchanged/reversed).
+Hence every allowed representative has c>=2.
+
+The standard geometry realizes exactly those two crossings: arc23 crosses
+each figure-eight once, while arc56 is remote from both. Thus the GLOBAL
+minimum is c=2. No algorithmic/local-minimum inference is being used.
+
+Nevertheless there is no complete two-point matching: arc56 meets neither
+loop. Thus the configuration-space intersection set is empty and Phi=0,
+consistent with J_hat=0 and actual splitness.
+
+Consequences:
+- The transplanted assertion 'split pairs have c=0' is FALSE.
+- The version of Conjecture T asserting nonzero pairing at every global
+  minimizer with total one-point c>0 is FALSE in the square-torus model.
+- This is NOT a counterexample to the nonsplit Key Lemma. It is a split
+  configuration, and it invalidates this total-intersection criterion.
+- A repaired complexity must at least distinguish incomplete matchings
+  from actual configuration-space intersections. Merely requiring fewer
+  arc/loop intersections does not do this.
+
+3. SCOPE OF THE EARLIER SQUARE-DICTIONARY NOTE
+
+square_dictionary.txt correctly rules out the literal unit-normalized
+single-boundary-noodle-square realization of the full TL Gram form. Its
+statement that a suitable dual object had not been constructed is now
+superseded by the naturality construction above. The canonical mixed
+square-torus realization resolves that gap without asserting that a torus
+is represented by one embedded noodle square.

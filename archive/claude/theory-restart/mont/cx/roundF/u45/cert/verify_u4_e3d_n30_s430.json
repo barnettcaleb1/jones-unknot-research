@@ -1,0 +1,18 @@
+{
+ "files": [
+  "cert/u4_e3d_n30_s430.jsonl.gz"
+ ],
+ "records_total": 1830,
+ "sampled": 1830,
+ "fraction": 1.0,
+ "seed": 303,
+ "records_pass": 1830,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 1830
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 1830
+ },
+ "secs": 25.7
+}

@@ -1,0 +1,153 @@
+HEEGAARD EVALUATION OF A VIRTUAL JONES-ONE TORUS DIAGRAM
+Independent algebra audit, pass 38
+
+Scope. This is an exact criterion for an actual knot diagram on a torus.
+It does not certify a particular diagram reconstructed from a published
+picture, and virtual nontriviality does not imply nontriviality in S^3.
+
+1. Fix a consistent unreduced convention.
+
+Let R=Z[A,A^{-1}], delta=-A^2-A^{-2}. The empty link has bracket 1,
+a disk-bounding zero-framed circle has bracket delta, and a positive
+framing twist multiplies the bracket by -A^3. For an actual oriented
+knot diagram D in S^3,
+
+  bracket_unred(D)=delta*(-A^3)^{w(D)} V_D(A^{-4}).
+
+For a general framed knot the exponent is its framing relative to the
+preferred zero framing. This convention avoids the factor-of-delta
+ambiguity caused by using the reduced planar bracket with a surface
+skein module.
+
+The Kauffman bracket skein module of T^2 x I has its usual multicurve
+basis. Thus a finite surface diagram expands as
+
+  F=f_empty + sum_{s,n>=1} f_{s,n} c_s^{(n)},
+
+where s=(p,q) is a primitive unoriented slope, c_s^{(n)} is the disjoint
+union of n parallel curves with torus surface framing, and contractible
+circles have already been absorbed into the Laurent coefficients.
+Distinct s are identified up to simultaneous sign reversal only.
+
+The virtual evaluator is the linear map
+
+  epsilon_v(1)=1,  epsilon_v(c_s^{(n)})=delta^n.
+
+It is the usual virtual state sum in the unreduced convention. In
+particular a virtual knot with V=1 has epsilon_v(F)=delta times a
+framing monomial.
+
+2. The actual Heegaard functional.
+
+Fix the standard unknotted Heegaard torus in S^3 and a marking
+M in SL(2,Z). The embedding of its collar induces an R-linear map H_M
+from the surface skein module to R. It sends c_s^{(n)} to the bracket
+of n parallel copies of the transformed torus slope M s, retaining
+surface framing. This is the surface-framed torus link T(np,nq)
+when M s=(p,q).
+
+The map is not an algebra homomorphism for stacking in T^2 x I.
+In particular, one must NOT replace the bracket of n parallel curves
+by the nth power of the bracket of one curve: the parallel curves can
+link. One also cannot evaluate a Laurent polynomial in different
+slope elements by a scalar substitution compatible with all products.
+
+For completeness, with coherent component orientations and the usual
+positive torus-braid convention, p>0 gives the explicit formula
+
+  H_M(c_s^{(n)})
+    =delta*(-A^3)^{n^2 p q} V_{T(np,nq)}(A^{-4}).              (1)
+
+Here each component's surface self-framing is pq and every pair has
+linking number pq. The total writhe used in Jones normalization is
+therefore n*pq + n*(n-1)*pq = n^2*pq, not merely n*pq.
+Equivalently, the standard braid (sigma_1...sigma_{np-1})^{nq}
+has writhe nq(np-1); changing its n component framings to the torus
+framings adds nq. Their sum is n^2 pq. For either coordinate-axis
+slope the evaluation is delta^n, directly. Reversing the global
+crossing convention mirrors all formulas; defining H by framed
+embedding avoids that convention issue altogether.
+
+Consequently exact actual evaluation is the finite sum
+
+  H_M(F)=f_empty+sum f_{s,n} H_M(c_s^{(n)}).                  (2)
+
+For an actual knot, the NECESSARY AND SUFFICIENT Jones-one criterion is
+
+  H_M(F)/delta is a unit of Z[A,A^{-1}].                    (3)
+
+Necessity is ordinary framing normalization. For sufficiency the
+normalized ordinary Jones is a Laurent monomial. A knot has V(1)=1
+and V'(1)=0, so that monomial must equal 1. Thus (3) does not require
+guessing the difference between a torus-diagram writhe and the framing
+of its S^3 embedding. If that framing f has been independently tracked,
+the equivalent more specific equation is H_M(F)=delta*(-A^3)^f.
+
+3. A simple, completely finite sufficient slope test.
+
+If ONE marking M sends every essential slope in the support of F to
+a meridian or longitude, then
+
+  H_M(F)=epsilon_v(F).                                    (4)
+
+Proof: any n parallel meridians or any n parallel longitudes are an
+n-component unlink with each surface framing zero. This proves (4)
+on every basis term, hence on their linear combination. If the virtual
+diagram has Jones 1, equation (3) then proves its S^3 embedding has
+Jones 1, with no further framing inference.
+
+This slope test is decidable just from the finite support:
+* zero slopes: automatic;
+* one primitive slope: always possible;
+* two distinct slopes s,t: possible exactly when |det(s,t)|=1;
+* three or more distinct slopes: impossible for this particular test.
+
+The last two assertions use invertibility of M and the fact that the
+two unoriented coordinate axes have determinant absolute value one.
+Conversely a pair with determinant absolute value one is an integral
+basis, up to orientation/sign choices.
+
+Failure of this sufficient test does NOT prove failure of (3).
+Weighted cancellation between torus-link evaluations in (2) may still
+occur. Nor does passing the test imply a counterexample: the resulting
+embedded knot may be geometrically unknotted. Filling the two sides of
+a supporting torus destroys information that virtual equivalence
+retains.
+
+4. Source audit and current concrete test.
+
+Primary source: H.A. Dye and L.H. Kauffman, Minimal surface
+representations of virtual knots and links, AGT 5 (2005), 509-535,
+https://arxiv.org/abs/math/0401035
+https://arxiv.org/pdf/math/0401035
+
+The surface-state definition is on printed pp.512-513. Section 3,
+Figures 2-7 and equations (4)-(6), gives the one-virtualized-crossing
+construction. Theorem 3.4, printed p.521, states the standard Jones
+divisibility implying that a knot with monomial Jones has Jones 1.
+Corollary 3.5 supplies nonclassical genus-one virtual Jones-one knots
+by virtualizing an unknotting crossing. This is not a statement about
+their classical images in a filled Heegaard torus.
+
+There is a convention warning when extracting a concrete F from those
+figures: if Figure 7's two essential states are read as two meridians
+and two longitudes, with precisely the alpha,beta basis of equation
+(4), forgetting curves in the printed equation (6) gives
+
+  (A alpha+A^{-1} beta)+(A^{-1}alpha+A beta)*delta
+     =-A^{-3}alpha-A^3 beta,
+
+whereas the printed switched/virtual bracket in equation (4) is
+-A^3 alpha-A^{-3} beta. Exchanging the outer smoothing weights repairs
+this algebraically, but does not by itself identify which diagram or
+basis convention needs changing. This is a reconstruction warning,
+not a settled claim of a publication error. An explicit virtual PD
+and its ribbon-surface state expansion are authoritative; the parent
+is independently computing those states. No concrete S^3 Jones-one
+candidate is certified in this algebra note.
+
+Verdict. Equations (2)-(3) are the exact finite unit test; equation (4)
+is a useful sufficient condition. The missing geometric test is
+whether a correctly reconstructed Jones-one torus diagram that passes
+them becomes a nontrivial knot after the Heegaard filling. Virtual
+nontriviality cannot substitute for that test.

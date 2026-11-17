@@ -1,0 +1,30 @@
+{
+  "source": "https://arxiv.org/html/2609.11084v2",
+  "axis_linking_number": 0.0,
+  "pattern_winding": 0,
+  "a_at_A4_minus1": 50,
+  "Jones_at_minus1_before_twist": -11,
+  "Jones_at_minus1_after_n_twists": "100*n-11",
+  "determinant_all_zero_framed_companions": "abs(100*n-11)",
+  "integer_n_can_have_determinant_one": false,
+  "twist_convention": "positive n acts on S_2 by A^(8n)",
+  "exact_twist_samples": {
+    "-3": -311,
+    "-2": -211,
+    "-1": -111,
+    "0": -11,
+    "1": 89,
+    "2": 189,
+    "3": 289
+  },
+  "independent_divisibility_obstruction": true,
+  "ordinary_polynomial_division_remainder": {
+    "7": "-3",
+    "6": "4",
+    "5": "-2",
+    "3": "3",
+    "2": "-3",
+    "1": "2",
+    "0": "-1"
+  }
+}

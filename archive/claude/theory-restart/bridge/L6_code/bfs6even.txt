@@ -1,0 +1,26 @@
+n=6 word=012034125345 eps=+++--+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034125345 eps=+--+++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=++---- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+-+--- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+++--- even=True parity=000000 TRIVIAL len=4 explored=14912
+n=6 word=012034135245 eps=+--+-- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=++-+-- even=True parity=000000 TRIVIAL len=4 explored=14912
+n=6 word=012034135245 eps=++++-- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+++-+- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=++-++- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+----+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+-+--+ even=True parity=000000 TRIVIAL len=4 explored=14912
+n=6 word=012034135245 eps=+++--+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+-+-++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032451354 eps=++---- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032451354 eps=++--++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034521345 eps=+++--- even=True parity=000000 TRIVIAL len=4 explored=30861
+n=6 word=012032435415 eps=++---- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=+-+--- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=+++--- even=True parity=000000 TRIVIAL len=5 explored=16314
+n=6 word=012032435415 eps=+-++-- even=True parity=000000 TRIVIAL len=5 explored=16314
+n=6 word=012032435415 eps=++++-- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=+-+++- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=++---+ even=True parity=000000 TRIVIAL len=5 explored=16314
+n=6 word=012032435415 eps=+++--+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=++--++ even=True parity=000000 NOT-FOUND explored=40001

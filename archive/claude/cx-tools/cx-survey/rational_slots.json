@@ -1,0 +1,272 @@
+{
+ "unfused": {
+  "corners": {
+   "00": {
+    "components": 4,
+    "crossings": 8,
+    "writhe": -8,
+    "free_loops": 0,
+    "reduced": "-A^-14 - A^-6 - 2*A^-2 - 2*A^2 - A^6 - A^14",
+    "over_delta": "A^-12 - A^-8 + 2*A^-4 + 2*A^4 - A^8 + A^12",
+    "vs_target_over_delta": "exact"
+   },
+   "0inf": {
+    "components": 3,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "A^-4 + 2 + A^4",
+    "over_delta": "-A^-2 - A^2",
+    "vs_target_over_delta": "exact"
+   },
+   "inf0": {
+    "components": 3,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "A^-4 + 2 + A^4",
+    "over_delta": "-A^-2 - A^2",
+    "vs_target_over_delta": "exact"
+   },
+   "infinf": {
+    "components": 2,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "-A^-2 - A^2",
+    "over_delta": "1",
+    "vs_target_over_delta": "exact"
+   }
+  },
+  "E1_defect": "0",
+  "E1_holds": true,
+  "E2_defect": "0",
+  "E2_holds": true,
+  "E2_defect_with_r_inf0": "0"
+ },
+ "seam_sigma2 (H2; configs 2L,2S)": {
+  "corners": {
+   "00": {
+    "components": 3,
+    "crossings": 9,
+    "writhe": -7,
+    "free_loops": 0,
+    "reduced": "-A^-13 - A^-5 - 2*A^3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   },
+   "0inf": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "A + A^5",
+    "over_delta": "-A^3",
+    "vs_target_over_delta": "different"
+   },
+   "inf0": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "A + A^5",
+    "over_delta": "-A^3",
+    "vs_target_over_delta": "different"
+   },
+   "infinf": {
+    "components": 1,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "-A^3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   }
+  },
+  "E1_defect": "0",
+  "E1_holds": true,
+  "E2_defect": "-A^-13 + A^-9 - 2*A^-5 + 2*A^-1 - 2*A^3 + 2*A^7 - A^11 + A^15",
+  "E2_holds": false,
+  "E2_defect_with_r_inf0": "-A^-13 + A^-9 - 2*A^-5 + 2*A^-1 - 2*A^3 + 2*A^7 - A^11 + A^15"
+ },
+ "seam_sigma2inv (config 5c)": {
+  "corners": {
+   "00": {
+    "components": 3,
+    "crossings": 9,
+    "writhe": -9,
+    "free_loops": 0,
+    "reduced": "-A^-15 - A^-7 - 2*A^-3 - A^5 + A^9 - A^13 + A^17",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   },
+   "0inf": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": -1,
+    "free_loops": 0,
+    "reduced": "A^-5 + A^-1",
+    "over_delta": "-A^-3",
+    "vs_target_over_delta": "different"
+   },
+   "inf0": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": -1,
+    "free_loops": 0,
+    "reduced": "A^-5 + A^-1",
+    "over_delta": "-A^-3",
+    "vs_target_over_delta": "different"
+   },
+   "infinf": {
+    "components": 1,
+    "crossings": 9,
+    "writhe": -1,
+    "free_loops": 0,
+    "reduced": "-A^-3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   }
+  },
+  "E1_defect": "0",
+  "E1_holds": true,
+  "E2_defect": "-A^-11 + A^-7 - 2*A^-3 + 2*A - 2*A^5 + 2*A^9 - A^13 + A^17",
+  "E2_holds": false,
+  "E2_defect_with_r_inf0": "-A^-11 + A^-7 - 2*A^-3 + 2*A - 2*A^5 + 2*A^9 - A^13 + A^17"
+ },
+ "top_sigma2 (configs 5a,5aL)": {
+  "corners": {
+   "00": {
+    "components": 3,
+    "crossings": 9,
+    "writhe": -7,
+    "free_loops": 0,
+    "reduced": "-A^-13 - A^-5 - 2*A^3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   },
+   "0inf": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "A + A^5",
+    "over_delta": "-A^3",
+    "vs_target_over_delta": "different"
+   },
+   "inf0": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "A + A^5",
+    "over_delta": "-A^3",
+    "vs_target_over_delta": "different"
+   },
+   "infinf": {
+    "components": 1,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "-A^3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   }
+  },
+  "E1_defect": "0",
+  "E1_holds": true,
+  "E2_defect": "-A^-13 + A^-9 - 2*A^-5 + 2*A^-1 - 2*A^3 + 2*A^7 - A^11 + A^15",
+  "E2_holds": false,
+  "E2_defect_with_r_inf0": "-A^-13 + A^-9 - 2*A^-5 + 2*A^-1 - 2*A^3 + 2*A^7 - A^11 + A^15"
+ },
+ "bottom_sigma2 (configs 5b,5bL)": {
+  "corners": {
+   "00": {
+    "components": 3,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "-A^-13 - A^-5 - 2*A^3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   },
+   "0inf": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "A + A^5",
+    "over_delta": "-A^3",
+    "vs_target_over_delta": "different"
+   },
+   "inf0": {
+    "components": 2,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "A + A^5",
+    "over_delta": "-A^3",
+    "vs_target_over_delta": "different"
+   },
+   "infinf": {
+    "components": 1,
+    "crossings": 9,
+    "writhe": 1,
+    "free_loops": 0,
+    "reduced": "-A^3",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   }
+  },
+  "E1_defect": "0",
+  "E1_holds": true,
+  "E2_defect": "-A^-13 + A^-9 - 2*A^-5 + 2*A^-1 - 2*A^3 + 2*A^7 - A^11 + A^15",
+  "E2_holds": false,
+  "E2_defect_with_r_inf0": "-A^-13 + A^-9 - 2*A^-5 + 2*A^-1 - 2*A^3 + 2*A^7 - A^11 + A^15"
+ },
+ "seam_band (c1 anchor; configs 3,3b,4L,4S,6)": {
+  "corners": {
+   "00": {
+    "components": 3,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "2 + A^8 + A^16",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   },
+   "0inf": {
+    "components": 2,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "-A^-2 - A^2",
+    "over_delta": "1",
+    "vs_target_over_delta": "different"
+   },
+   "inf0": {
+    "components": 2,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "-A^-2 - A^2",
+    "over_delta": "1",
+    "vs_target_over_delta": "different"
+   },
+   "infinf": {
+    "components": 1,
+    "crossings": 8,
+    "writhe": 0,
+    "free_loops": 0,
+    "reduced": "1",
+    "over_delta": "not divisible by delta",
+    "vs_target_over_delta": "different"
+   }
+  },
+  "E1_defect": "0",
+  "E1_holds": true,
+  "E2_defect": "-A^-12 + A^-8 - 2*A^-4 + 2 - 2*A^4 + 2*A^8 - A^12 + A^16",
+  "E2_holds": false,
+  "E2_defect_with_r_inf0": "-A^-12 + A^-8 - 2*A^-4 + 2 - 2*A^4 + 2*A^8 - A^12 + A^16"
+ }
+}

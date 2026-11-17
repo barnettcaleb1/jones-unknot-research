@@ -1,0 +1,163 @@
+{
+  "corner_jet_checks": [
+    {
+      "m": 0,
+      "n": 0,
+      "third_derivative": 0,
+      "fourth_derivative": 0
+    },
+    {
+      "m": 1,
+      "n": 0,
+      "third_derivative": 0,
+      "fourth_derivative": 2304
+    },
+    {
+      "m": 0,
+      "n": 1,
+      "third_derivative": 576,
+      "fourth_derivative": -19584
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "third_derivative": 576,
+      "fourth_derivative": -26496
+    },
+    {
+      "m": 1,
+      "n": -1,
+      "third_derivative": -576,
+      "fourth_derivative": 21888
+    }
+  ],
+  "synthetic_algebra_checks": [
+    {
+      "a": 1,
+      "b": 1,
+      "k": -3,
+      "recovered": "-3"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "k": -1,
+      "recovered": "-1"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "k": 1,
+      "recovered": "1"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "k": 2,
+      "recovered": "2"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "k": -3,
+      "recovered": "-3"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "k": -1,
+      "recovered": "-1"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "k": 1,
+      "recovered": "1"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "k": 2,
+      "recovered": "2"
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "k": -3,
+      "recovered": "-3"
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "k": -1,
+      "recovered": "-1"
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "k": 1,
+      "recovered": "1"
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "k": 2,
+      "recovered": "2"
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "k": -3,
+      "recovered": "-3"
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "k": -1,
+      "recovered": "-1"
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "k": 1,
+      "recovered": "1"
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "k": 2,
+      "recovered": "2"
+    }
+  ],
+  "actual_partials": [
+    {
+      "name": "S1_minus_delta",
+      "value_at_i_over_i": 144,
+      "euler_derivative_at_i_over_i": -576,
+      "euler_jets_at_1": [
+        0,
+        0,
+        0,
+        -288,
+        4608
+      ],
+      "order_at_1": 3
+    },
+    {
+      "name": "S2_minus_delta",
+      "value_at_i_over_i": 144,
+      "euler_derivative_at_i_over_i": -720,
+      "euler_jets_at_1": [
+        0,
+        0,
+        -96,
+        1440,
+        -30144
+      ],
+      "order_at_1": 2
+    }
+  ],
+  "actual_k_star": "-1/4",
+  "actual_all_integer_conclusion": "Jones=1 iff m=n=0, using rank-one determinant line",
+  "scope": "Synthetic pairs are algebra tests, not claimed geometric realizations."
+}

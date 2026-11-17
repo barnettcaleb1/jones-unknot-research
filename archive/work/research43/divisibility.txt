@@ -1,0 +1,105 @@
+PASS 43: CAN INCREASING DIVISIBILITY FORCE AN EXACT JONES-ONE KNOT?
+2026-11-01
+
+Concrete answer for the Eliahou--Fromentin construction: no. Both its actual
+polynomial degree and a known nonzero coefficient outrun the divisibility.
+In fact the exact content of V(K_r)-1 is 2^r, and its Jones span is
+14*2^(r-1)+1. These are all-r deductions from the published recurrence,
+not extrapolation from a finite table.
+
+Primary source and normalization
+--------------------------------
+Eliahou--Fromentin, A remarkable 20-crossing tangle, JKTR 26 (2017), 1750091:
+https://arxiv.org/pdf/1610.05560v2
+https://doi.org/10.1142/S0218216517500912
+
+Use A for their bracket variable and q=A^-4 for the Jones variable. Their
+Definitions 3.1--3.2 give M1=T10+mirror(T10), M_(r+1)=M_r+M_r and
+K_r=den(1*M_r). The diagram has 20N+1 crossings, N=2^(r-1), and writhe one.
+For bracket pair (f_r,g_r), their skein formulas give
+
+  f_(r+1)=f_r^2,
+  g_(r+1)=2 f_r g_r + delta g_r^2,    delta=-A^2-A^-2,
+  chi_r=f_r+A^-6 g_r = V(K_r;A^-4).
+
+The verifier implements the explicit T10 pair in Section 4.1 and these
+integer Laurent operations. Propositions 4.3 and 5.2 establish congruence
+modulo 2^r and nontriviality. The following sharper quantitative deductions
+are independently checked from the same seed.
+
+Exact degree and height: proof by induction
+------------------------------------------
+At r=1, f has extremes +/-28, g has extremes +/-26; all four extreme
+coefficients equal 2. Suppose for general N the f extremes are +/-28N,
+the g extremes are -28N+2 and 28N-2, and their coefficients equal L=2^N.
+Squaring f gives the claimed f extremes for 2N. At either extreme in the
+g recurrence, the two contributing coefficients are 2L^2-L^2=L^2.
+Thus no extremal cancellation occurs. Multiplication of g by A^-6 then
+gives
+
+  min degree_A chi_r=-28N-4,  max degree_A chi_r=28N,
+  min degree_q V_r=-7N,      max degree_q V_r=7N+1,
+  both extreme coefficients=2^N.
+
+Consequently span(V_r)=14N+1 and height(V_r-1)>=2^N.
+The usual diagram state bounds give span(V_K)<=crossings(D): all-A/all-B
+circle counts obey s_A+s_B<=c+2, so the bracket span is at most 4c.
+Therefore the MINIMAL crossing number, not merely the displayed crossing
+count, obeys
+
+             14N+1 <= c(K_r) <= 20N+1.
+
+Exact coefficient divisibility: proof by induction
+-------------------------------------------------
+Write f_r=1+2^r F_r and g_r=2^r G_r. The recurrence gives
+
+  F_(r+1)=F_r+2^(r-1) F_r^2,
+  G_(r+1)=G_r+2^r F_r G_r+2^(r-1) delta G_r^2.
+
+For r>=2 both reduce modulo two to F_r,G_r. Hence
+  (chi_(r+1)-1)/2^(r+1) == (chi_r-1)/2^r mod 2.
+The finite seed calculation at r=2 has coefficient one at A^56 in this
+residue (the full sixteen-term residue is saved in the JSON). Thus every
+r>=2 has a coefficient with valuation exactly r. At r=1 the content is
+directly two. Finally a common odd prime cannot divide all coefficients:
+the extreme coefficient is the pure power 2^N. It follows that
+
+                  content(V_r-1) = 2^r   for EVERY r>=1.
+
+Thus V_r is congruent to one coefficientwise modulo a positive integer m
+exactly when m divides 2^r. This family never secretly reaches a stronger
+integer modulus that could force identity. Its large coefficients remain
+nonzero while becoming increasingly 2-adically small.
+
+What a valid finite certificate would require
+---------------------------------------------
+For any c-crossing knot diagram, the bracket state sum has 2^c terms, each
+with at most c free-circle factors. Therefore ||V||_1<=4^c, and
+||V-1||_infinity<=4^c+1. Consequently the fully rigorous implication is
+
+  V==1 mod m and m>4^c+1  ==>  V=1 over Z.
+
+For the published family, log2(m)=r whereas c(K_r) is proportional to 2^r;
+even the ACTUAL height has log2 height >=2^(r-1). The gap is exponential
+in r in the wrong direction. Increasing the construction parameter cannot
+meet the coefficient bound.
+
+There is a separate exact degree certificate: if a nonzero Laurent
+polynomial P=V-1 is divisible by a polynomial Q with nonzero constant term,
+then span(P)>=degree(Q). The elementary state/writhe estimate puts all
+Jones exponents between -3c/2 and 3c/2; adjoining the constant term retains
+span(P)<=3c. Hence cyclotomic or root constraints with total distinct-factor
+degree greater than 3c would also force V=1. Repeated factors require
+derivative/multiplicity information; repeated measurements of a root do
+not add degree. No such degree-outrunning construction is established here.
+
+This is a finite certificate, not a compactness solution. A sequence with
+unbounded crossing numbers and V_r approaching one in a congruence topology
+does not supply a finite knot with V=1. The explicit family above proves
+that the distinction is substantial. No limiting or wild knot is used.
+
+Reproduction
+------------
+  python work/research43/verify_ef_growth.py
+The script checks r=1,...,6 and the base residue. The displayed inductions
+prove the all-integer results; the finite checks are not their substitute.

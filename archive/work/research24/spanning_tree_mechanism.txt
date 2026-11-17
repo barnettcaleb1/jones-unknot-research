@@ -1,0 +1,101 @@
+PASS 24 — SPANNING TREES: A GLOBAL OBSTRUCTION TO RAW STATE COMPACTNESS
+1 November 2026. Bounded strategic audit; no proof of Jones unknot detection.
+
+Outcome
+
+The spanning-tree model gives a concrete source of combinatorial chain complexes, but its simplest global compactness bridge is FALSE, even after optimizing over every diagram of a knot. The obstruction below is stronger than the previously observed cancellation in particular Kanenobu diagrams. Two actual-knot tests also rule out the simplest attempts to match invisible states locally in quantum degree. No replacement cancellation theorem was obtained; relabeling the unresolved Morse-matching hypothesis would not constitute progress.
+
+1. The complete candidate route, before its falsification
+
+Let tau(D) be the number of spanning trees of either unsigned Tait graph of a connected diagram D. Planar duality makes the two choices equal. Let tau_min(K) be its minimum over all diagrams of K. Champanerkar--Kofman construct a reduced Khovanov complex with one generator per spanning tree, so
+
+  dim_Q Kh_red(K) <= tau_min(K).
+
+A tempting genuinely combinatorial bridge is: for each whole Jones polynomial P, tau_min(K) is bounded over all knots with V_K=P. This would imply H-rank. For a hypothetical Jones-one knot K, reduced Kunneth on connected powers would then give r(K)^m <= B(1) for every m, hence r(K)=1; Kronheimer--Mrowka would imply K=U. The inference is complete, but the proposed bridge fails on known nonunit fibers.
+
+The spanning-tree theorem used here is published: Champanerkar--Kofman, Spanning trees and Khovanov homology, Proc. AMS 137 (2009), Theorem 3.
+https://arxiv.org/html/math/0607510v3
+The unknot endpoint is:
+https://people.math.harvard.edu/~kronheim/khovanov-unknot.pdf
+
+2. Elementary graph lemma: optimizing the diagram cannot rescue that bridge
+
+LEMMA. A finite connected loopless bridgeless multigraph G with at least one edge has tau(G) >= |E(G)|.
+
+Proof. First suppose G is a single nonseparable block. Start its open ear decomposition at a cycle, allowing a two-edge cycle in a multigraph. For a cycle both sides equal its length. Add an ear with l edges joining distinct vertices u,v of H, all its internal vertices new. Every spanning tree of the enlarged graph either omits exactly one ear edge, or contains the entire ear. Consequently
+
+  tau(H plus ear) = l tau(H) + F_uv(H),
+
+where F_uv(H) counts spanning two-component forests separating u and v. This number is at least one: delete an edge on the u-v path of any spanning tree. Since tau(H)>=2,
+
+  tau(H plus ear)-tau(H) >= 2(l-1)+1 >= l.
+
+This includes l=1. Induction proves the bound for a block. For a graph with articulation vertices, its nontrivial blocks have m_i>=2 edges, spanning trees multiply over blocks, and edge counts add. Therefore
+
+  tau(G)=product tau(G_i) >= product m_i >= sum m_i=|E(G)|.
+
+The last inequality holds for any list of integers at least two (with the one-block case immediate). This proves the lemma.
+
+For a reduced connected knot diagram, its Tait graphs have neither loops nor bridges: these correspond to nugatory crossings. Hence tau(D)>=c(D)>=c(K). Starting from an arbitrary diagram, remove nugatory crossings until it is reduced. On Tait graphs this deletes loops or contracts bridges, preserving the spanning-tree count; the knot type is unchanged. Thus
+
+                       tau_min(K) >= c(K).
+
+The crossing-free unknot is harmless, with tau=1 and c=0. In particular, a uniform tau_min bound on a collection of knots forces a uniform crossing-number bound and therefore only finitely many knot types.
+
+Kanenobu's original theorem supplies infinitely many distinct knots sharing ONE whole Jones polynomial. It follows that tau_min is unbounded on that exact fiber. This is an actual global counterexample to the proposed spanning-tree bound; it is not merely failure of an inconvenient chosen diagram.
+
+Primary existence source: Kanenobu, Infinitely many knots with the same polynomial invariant, Proc. AMS 97 (1986), 158--162, main theorem. The examples are distinguished independently of Jones.
+https://www.ams.org/journals/proc/1986-097-01/S0002-9939-1986-0831406-7/S0002-9939-1986-0831406-7.pdf
+
+The same obstruction applies to counting all spanning quasi-trees of the corresponding all-A ribbon graph: Champanerkar--Kofman--Stoltzfus give a bijection with the Tait spanning trees. Changing to ribbon graphs does not by itself compress the generator count.
+https://arxiv.org/html/0705.3453
+
+This does NOT disprove H-rank. Many graph generators can cancel under the differential, and known Kanenobu homology can remain bounded. Rather, it proves that those cancellations must do essential work on an infinite exact Jones fiber, no matter which diagrams are selected.
+
+3. Why simple exponent charging also fails on actual homology
+
+Use reduced grading P_K(u,q) with P_U=1 and P_K(-1,q)=V_K(q^2).
+
+(a) Interior zero coefficients need not represent contractible quantum columns.
+For K=T(3,4), the already independently checked specialization of Schütz gives
+
+  P_K = q^6 + u^2 q^10 + u^3 q^12 + u^4 q^12 + u^5 q^16,
+  V_K(q^2) = q^6 + q^10 - q^16.
+
+The absent q^12 coefficient conceals two actual homology classes. Any theorem asserting that every zero-Euler quantum column admits a complete Khovanov cancellation is therefore false. Since the ordinary differential preserves quantum degree, no choice of basis or spanning-tree presentation can make that column acyclic.
+
+More generally T(3,3k+1) has rank 4k+1 but only three Jones terms, as detailed in research23/global_homology.txt. Assigning a constant number of survivors to each nonzero coefficient is false. Exponent gaps, if useful, must be genuinely quantitative; the number of monomials is insufficient.
+
+Primary formula: Schütz, On the Khovanov homology of 3-braids, Theorem 5.3(2), reduced specialization.
+https://arxiv.org/html/2501.11547v1
+
+(b) Even confinement to the convex hull of Jones exponents is false.
+The retained KnotInfo reduced rational vector for 10_132 has one class in each of (h,q)=(-1,-2),(0,-2). Its full Euler polynomial is
+
+  -q^(-14)+q^(-12)-q^(-10)+q^(-8)+q^(-4).
+
+Thus max_q Kh_red=-2 while max_q V(q^2)=-4. On the m-fold connected sum, Kunneth and nonvanishing of the top polynomial coefficient give
+
+  max_q Kh_red(K^#m) - max_q V_(K^#m)(q^2) = 2m.
+
+No universal constant margin around the Jones exponent interval contains all reduced homology. This is an actual-knot counterexample, not a formal complex. It does not refute a bound that is allowed to depend on the entire varying polynomial V_K^m. The point is to eliminate a tempting geometric potential before investing in its proof.
+
+The original KnotInfo vector and an exact arithmetic verification are retained in spanning_tree_checks.json. Conventions:
+https://knotinfo.org/descriptions/khovanov_reduced_rational_vector.html
+
+4. What the newer explicit differential does and does not supply
+
+Banerjee--Chakraborty--Das (2025 preprint), A spanning tree model for Khovanov homology, Rasmussen's s-invariant and exotic discs in the 4-ball, gives an acyclic matching from enhanced states to spanning-tree generators, then computes induced incidences from alternating paths. Relevant statements are Theorem 1.1 and Proposition 3.17.
+https://arxiv.org/html/2504.02625v1
+
+This is useful computational structure. It does not state a Jones-controlled bound on the resulting generators or on homology. Moreover, the induced differential uses signed sums of gradient paths, not simply adjacency in the graph of spanning-tree exchanges. A large collection of admissible exchanges does not establish independent pivots: path contributions can cancel. Conversely, the actual T(3,4) example proves that some Euler cancellation must survive even the correct differential.
+
+I have not audited the entire 2025 preprint and do not rely on any new assertion from it for the graph obstruction. The published spanning-tree existence theorem is sufficient.
+
+5. Strategic conclusion and a concrete stop condition
+
+A successful method here would need to separate arbitrarily numerous contractible graph states from genuinely surviving invisible states. Bounds on raw trees, raw quasi-trees, coefficients alone, zero-Euler columns, or distance outside the Jones exponent hull all fail in the precise senses above. The prior Kanenobu cancellation-depth and Turaev-genus observations are separate and were not reused as new findings.
+
+A proposed activity-based algorithm can be meaningfully tested before any large search: it must compress the entire infinite fixed-Jones Kanenobu family despite tau_min tending to infinity, must retain the q^12 pair of T(3,4), and must allow the 2m exterior spill of #^m 10_132. If its claimed potential cannot satisfy all three, it cannot establish the global theorem. If it can, the remaining question is an explicit lower bound on the ranks of its signed gradient-path incidence matrices. No established planar-matroid theorem found in this bounded pass supplies that bound.
+
+Accordingly this pass yields a rigorous falsification of a natural global scaffold, plus two precise matching countertests. It does not yield a new proof mechanism. Continuing by merely postulating that the remaining matrices have Jones-controlled nullity would rename H-rank rather than advance it.

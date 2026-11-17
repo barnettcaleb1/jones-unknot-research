@@ -1,0 +1,8 @@
+{
+  "source_PD_match_word_reversal": [
+    false,
+    true
+  ],
+  "identity_verified_exactly": true,
+  "scaled_identity": "delta^(2n+1)(V-1)=A^(2n)(A^4-1)^n <P_scaled v,(U-I)P_scaled v>"
+}

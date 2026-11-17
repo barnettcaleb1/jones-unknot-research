@@ -1,0 +1,26 @@
+Independent audit of cyclotomic_formal_model, 2026-10-31.
+
+The listed claims pass. The standard-library exact script was rerun successfully.
+
+Normalization: In Garoufalidis-Le, The colored Jones function is q-holonomic, Section4, v=q^(1/2), {j}=v^j-v^(-j), and
+  S(N,k+1)/[N] = product_{j=1}^k {N+j}{N-j}
+              = product_{j=1}^k (q^N+q^(-N)-q^j-q^(-j)).
+Thus a_k is precisely their cyclotomic coefficient C_K(k+1), when using reduced normalization. No missing sign, monomial, or quantum dimension occurs.
+Primary: https://arxiv.org/html/math/0309214
+
+q-holonomicity: One should call P a PROPER q-hypergeometric kernel, since that property directly supplies q-holonomicity in (N,k). Its Pochhammer form is
+  P(N,k) = (-1)^k q^(-k(k+1)/2) (q^(N+1);q)_k (q^(1-N);q)_k.
+The coefficient sequence a_k is q-holonomic because E^3+4E+1 annihilates it. Extend it trivially in N, multiply by P, and sum over k>=0. For each positive integer N the summand is zero when k>=N, so the finite-support summation closure applies. This proves existence of a recurrence; it does not identify a minimal annihilator.
+
+Formal loop expansion: Put s=t+t^(-1)-2 and q=exp(h), and define the infinite formal sum
+  G(s,h) = sum_{k>=0} a_k product_{j=1}^k [s-2(cosh(jh)-1)].
+This is well-defined in Q[[s,h]]: the coefficient of s^m h^(2r) receives contributions only from k between m and m+r. Evaluating t=exp(Nh) recovers the finite colored expression, since all factors with k>=N vanish. Setting h=0 gives sum a_k s^k=1/Delta(s), exactly the claimed MMR leading coefficient. This is formal algebra, with no analytic limiting assertion.
+
+Additional rationality result: Write G(s,h)=sum_{r>=0} L_(2r)(s) h^(2r); odd coefficients vanish. For every r, L_(2r)(s) is a rational function with denominator dividing Delta(s)^(3r+1).
+Proof: A contribution using ell nonconstant factors has a factor s^(k-ell). Its coefficient in k is a polynomial of degree at most 2r+ell, by iterated sums of powers of the distinct chosen indices j. Here ell<=r. With theta=s*d/ds, summing against a_k amounts to applying a polynomial of degree at most3r in theta to R(s)=1/Delta(s), then multiplying by s^(-ell). Such derivatives have denominator dividing Delta^(3r+1). Apparent s-poles cancel because the original coefficient is a power series in s and Delta(0)=1. The resulting numerator is polynomial in s over Q.
+For example,
+  L_2(s) = -(2 theta^3+3 theta^2+theta)R(s)/(6s)
+         = -R'(s)-(3/2)s R''(s)-(1/3)s^2 R'''(s).
+Thus the model even has rational higher loop coefficients with denominator bounds no larger than the usual Delta^(2n+1) at h^n (for n=2r, 3r+1<=4r+1). This proves a rationality/bound property only; it does not verify all knot weight-system or Frobenius gluing identities.
+
+The Alexander polynomial here is NOT the constant polynomial one: it is the displayed nonconstant Delta(t), satisfying Delta(1)=Delta(-1)=1 and Delta''(1)=0. Keep this distinction explicit if abbreviating the statement.

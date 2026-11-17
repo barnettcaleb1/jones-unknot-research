@@ -1,0 +1,108 @@
+SATELLITE AFFINE DEFECT AUDIT (b)
+2026-11-02, defect_wh_gate. Status: TRUSTED within the specified compatible
+strong-inversion geometry; not a reduction of every satellite inversion.
+
+1. Exact normalization
+
+Use R=Z[A,A^-1], meridian f=(1,delta), reference Q0, and v=delta Q0-Qinf.
+Thus normalized [T]=Q0+w(T)v. A compatible two-boundary quotient shell
+gives an R-linear map M. Filling the output pattern meridian deletes P
+and leaves the axis exterior E(A). Its compressible slope lambda_A is
+identified by satellite gluing with the input companion meridian mu_J.
+The quotient cap is rational and has this exact slope, so
+  f M=u f
+as functionals on the whole rank-two module, for one framing unit u.
+No span of realizable knot quotients is needed.
+
+Set Mhat=M/u. In the ordered basis (Q0,v),
+  Mhat = [[1,0],[w0,d]],
+where w0=w(P(U)) in the physical preferred output marking and
+  d=det(M)/u^2.
+The raw eigenvalue Mv=m_raw v is det(M)/u, so d=m_raw/u.
+Consequently the EXACT normalized formula is
+  w(P(J))=w(P(U))+d*w(J).
+
+In the original basis (Q0,Qinf), this matrix is
+  [[1+delta*w0, delta*(1-d)+delta^2*w0],
+   [-w0,       d-delta*w0]].
+Its determinant is d and its meridional row is (1,delta), directly
+verifying the formula. Once normalization and generator are fixed, the
+affine identity is exact. Writing two independent "up to units" terms
+is inadequate for a cancellation or divisibility computation.
+
+2. Winding zero and the proposed F divisibility
+
+The classical satellite formula a2(P(J))=a2(P(U))+p^2*a2(J), where p is
+the algebraic winding, becomes companion-independence for p=0. That
+first-order statement alone does NOT logically force divisibility by
+F=(1-A^4)(1+A^8)(1+A^12). It controls determinant-root derivative data,
+not all roots of F. This inference must be replaced.
+
+Here is a conditional repair depending explicitly on part (a): if every
+actual preferred strongly invertible quotient has F|w, then winding zero
+does imply F|d. Insert rational Q0 and Q1 (or Q-1) into the shell.
+They are independent, and the latter has defect a Laurent unit. The
+corresponding filling of the unknotted axis is 1/n surgery, so the
+output is an actual strongly invertible knot P_n in S3. For winding zero,
+the fixed output longitude remains preferred. Therefore
+  F | w(P_1)-w(P(U))=d*w(Q1),
+and the input defect is a unit, yielding F|d. This is a full-polynomial
+root/evaluation argument, not a consequence of a2 alone.
+
+Even without part (a), the archived determinant argument proves
+(A^4+1)|d in winding zero: the fixed longitude closures of P_0 and P_1
+both have determinant zero, while Q1 has unit defect at the determinant
+root. The archives already contain this weaker unconditional factor.
+
+For nonzero winding p, 1/n axis filling changes the preferred output
+longitude by a meridian shear of magnitude n*p^2 (sign follows surgery
+conventions). A fixed shell's output coordinates therefore need not be
+the preferred coordinates of P_n. Using w(P_n) in the same affine
+formula without applying this boundary transformation is wrong. This
+is particularly relevant for cable probes.
+
+3. Equivariant JSJ scope
+
+The stated hypothesis is sufficient: an invariant separating companion
+torus with hyperelliptic restriction has four branch points downstairs,
+and the region between it and the exterior boundary becomes a four-ended
+two-boundary shell. Compatible filling on the companion side gives its
+strong inversion and preferred quotient; the physical satellite framing
+fixes the reference w(P(U)).
+
+But this does NOT yet justify a general reduction from every strongly
+invertible satellite to a smaller strongly invertible companion through
+one such matrix. One needs an equivariant decomposition statement for
+the GIVEN inversion and a classification of all relevant pieces. An
+involution may permute JSJ tori; an invariant torus may have a free
+restriction instead of the four-fixed-point hyperelliptic action.
+Those cases are not described by the assumed two-boundary sphere shell.
+This audit does not assert that every such formal possibility occurs,
+nor silently exclude it without a theorem. Multi-input pieces and
+connected-sum annuli also need their specified equivariant gluing.
+
+The Whitehead result is correspondingly for inherited inversions,
+not every axis on the same underlying satellite knot.
+
+4. Scope of any claimed hyperbolic reduction
+
+Even with the affine formula, general patterns have an offset w(P(U)).
+Their exact cancellation condition w(J)=-w(P(U))/d remains an independent
+open problem. Checking Whitehead and finitely many cable patterns does
+not settle all pattern pieces. The archived zero-shell equivalence is
+also explicitly equivalent to the anchored unknotting-one problem; it
+cannot be treated as a routine subsidiary nonvanishing theorem.
+
+Thus no unconditional reduction of U5 to hyperbolic companions follows
+from the present shell identity alone. Needed additional hypotheses are
+an equivariant decomposition coverage theorem and no-cancellation for
+all remaining pattern types, not only a finite cable table.
+
+Archives checked:
+  work/quotient17/whitehead_pattern_audit.txt
+  work/quotient17/whitehead_exact_jet_filtration.txt
+  work/cancellation19/brunnian_reduction.txt
+  work/transmission18/geometry.txt
+
+No broad literature search, new classification theorem, or collab edit
+was undertaken in this bounded subtask.

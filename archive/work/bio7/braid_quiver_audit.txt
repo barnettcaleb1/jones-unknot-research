@@ -1,0 +1,15 @@
+Independent seven-node quiver audit, 2026-10-31.
+
+The diagonal entries are four zeros and three ones, and x_i=q^(-C_ii)x, y=q^2. Direct degree-one extraction gives H2=4-3=1. At degree two, double occupation of a single node contributes4+3y, while distinct-node occupation contributes (1+y) times the signed sum of y^Cij. Therefore
+ H3=4+3y+(1+y)(S(y)-O(y)),
+ S=4+y^2+y^5+y^6+y^9+y^11,
+ O=6+2y+y^4+y^7+2y^10.
+Exact expansion gives H3=1+F, F=(y-1)(y^2-1)(y^4-1)(y^5-1).
+This depends only on the two edge multisets, not their placement.
+
+Habiro normalization: for K(N,k)=product_j=1..k (1-y^(N+j))(1-y^(j-N)), K(3,2)=y^(-3)F, hence the coefficient is C2=y^3. In the symmetric kernel convention product_j(y^N+y^(-N)-y^j-y^(-j)), the same coefficient is a2=y^6. These two conventions differ by the usual Laurent unit; they must not be conflated.
+The H3 correction vanishes to order four at y=1, so no universal low-order derivative condition up to order three fails at that color.
+
+The assigned lexicographic matrix nevertheless fails a necessary knot constraint at the next color. I independently evaluated each of the7^3 ordered words of length3. Its exponent is the quiver occupation exponent plus the ordinary inversion number of the word; summing words realizes the Gaussian multinomial without using the candidate script's binomial recurrence. This exactly reproduces H4 and yields H4(1)=1, H4'(1)=0, H4''(1)=1704. For an actual knot with H2=1, the symmetric Habiro first coefficient vanishes identically, and every remaining term has order at least four at y=1. Hence H_N''(1)=0 for all N. The displayed matrix is therefore not a knot colored-Jones sequence.
+
+This does not invalidate its role as a symmetric-quiver positivity stress test or the multiset-level H3 identity. It does prevent describing this specific matrix as an all-color Habiro-compatible formal countermodel.

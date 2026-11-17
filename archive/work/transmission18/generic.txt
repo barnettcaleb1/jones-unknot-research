@@ -1,0 +1,239 @@
+QUOTIENT TRANSMISSION: GENERIC BRIDGE AUDIT AND THE 1/2-FILLING FORMULA
+31 October 2026. Status: proved conditional reductions and exact skein
+calculation. No generic Jones unknot-detection theorem or novelty claim.
+
+1. WHAT THE ANCHORED TANGLE PROBLEM IS EXACTLY EQUIVALENT TO
+
+The following two existence statements are equivalent:
+
+(A) A nontrivial knot K has unknotting number one and V_K=1.
+(B) A nonrational actual four-ended tangle T has an actual meridional
+    unknot closure and lies on the preferred rational-zero skein line.
+
+Here 'preferred' refers to the meridian-longitude marking on the knot
+exterior that double-covers T. The tangle contains no closed components.
+
+(A) implies (B). Remove a ball around an unknotting crossing. The positive
+and negative crossing fillings give K and U. The oriented Jones skein
+relation then gives the two-component unlink's Jones polynomial for their
+oriented smoothing. The double cover of the outside tangle has an S3
+filling, so it is a knot exterior E(J). The U filling is its meridian.
+The smoothing has determinant zero and is at distance one from that
+meridian, hence is its preferred longitude. The exact two-closure/common-
+writhe lemma of quotient17 puts the entire tangle skein vector on Q0.
+If the outside tangle were rational, K would be a determinant-one
+two-bridge knot and hence U, a contradiction.
+
+(B) implies (A). Fill T along mu+2lambda, i.e. surgery slope 1/2. This
+filling and the meridional one differ by one crossing change: the matrix
+[[1,0],[1,1]] sends the standard rational crossing slopes -1,+1 to
+infinity,1/2. Equivalently two same-sign crossings become a cancelling
+pair after changing one of them. The Q0 reference gives U in both
+fillings. Proportional bracket vectors give a monomial Jones polynomial
+for the new knot; V(1)=1 and V'(1)=0 force this monomial to be exactly one.
+Its double cover is S3_(1/2)(J), which is not S3 for nontrivial J, by the
+no-nonmeridional-S3-surgery theorem. Thus this knot is nontrivial and its
+unknotting number is exactly one.
+
+This is a restricted equivalence. A construction taking an ARBITRARY
+Jones-one knot into (B) would reduce the full Jones conjecture to its
+unknotting-number-one case. None of the earlier symmetric-sum or
+Whitehead arguments establishes that missing construction.
+
+Primary sources/background:
+Gordon--Luecke's nonmeridional S3 surgery consequence is explicitly stated
+in Kronheimer--Mrowka, Witten's conjecture and Property P, Introduction,
+which cites the original theorem:
+https://people.math.harvard.edu/~kronheim/wittenp.pdf
+Sikora's general bracket-tangle formulation of Jones detection is Section9:
+https://arxiv.org/abs/2005.08162
+It does not provide an actual unknot anchor from an arbitrary scalar
+Jones-one knot. Tying such a knot locally into Q0 gives the scalar bracket
+but retains that knot in the meridian closure.
+
+2. EXACT NORMALIZED JONES FORMULA FOR THE 1/2 FILLING
+
+Use delta=-A^2-A^-2, t=A^-4, and
+
+  f_infinity(Q0)=1, f_infinity(Q_infinity)=delta,
+  f0(Q0)=delta,     f0(Q_infinity)=1.
+
+For an actual preferred exterior quotient T, normalize its bracket by
+the framed bracket of its meridional unknot. Then
+
+            T_hat=Q0+x(T)(Q_infinity-delta Q0),
+            f_infinity(T_hat)=1,
+            f0(T_hat)=delta+(1-delta^2)x(T).
+
+Choose the crossing convention in which the first rational cap is
+
+                         C1=A f0+A^-1 f_infinity.
+
+The two-crossing cap is obtained from the same Temperley--Lieb operation
+(A^-1 I+A e)^2, where e^2=delta e. Its exact closure functional is
+
+                    C2=A^-2 f_infinity+(1-A^4)f0.
+
+Indeed the coefficient of e is 2+A^2 delta=1-A^4. This cap has filling
+slope 1/2 in the corresponding marking. For the reference tangle,
+
+                              C2(Q0)=A^6.
+
+The two crossings add writhe +2, in the convention just chosen. This is
+the SAME writhe addition for T and Q0: after two half-twists the cap has
+the same endpoint connectivity as the meridional cap, so the orientation
+on the two outside tangle strands is unchanged. All crossings inside T
+retain their original signs. Consequently the additional oriented Jones
+normalization is precisely A^-6, independently of T. There is no
+uncontrolled companion-dependent monomial. Therefore the actual branch
+knot K_+(T) satisfies
+
+ V_(K_+)(A^-4)-1
+       =A^-6(1-A^4)(1-delta^2)x(T)
+       =A^-10(A^4-1)(A^8+A^4+1)x(T).                    (1)
+
+The mirrored cap gives the other half-integral slope and
+
+ V_(K_-)(A^-4)-1
+       =A^6(1-A^-4)(1-delta^2)x(T)
+       =-A^-2(A^4-1)(A^8+A^4+1)x(T).                   (2)
+
+Interchanging crossing/mirror conventions swaps these two formulas. Both
+factors have exactly one zero at A=1. The result is independent of that
+choice. The map A -> t=A^-4 has nonzero derivative at A=1.
+
+3. ACTUAL UNKNOTTING-NUMBER-ONE KNOTS WITH ARBITRARILY DEEP JONES JETS
+
+Root's separately checked preferred trefoil quotient has
+
+            x_0=A^2(A^4-1)(1+A^8)(1+A^12),
+
+up to the fixed chirality/framing convention. In particular it has a
+simple zero at A=1. The separately computed normalized Whitehead shell
+factor has a simple zero there too; changing the clasp sign only changes
+a nonvanishing Laurent unit or mirrors the variable, and does not alter
+the order.
+
+Apply r compatible inherited untwisted Whitehead layers. The exact shell
+law gives x_r=(product of r shell factors)x_0. Therefore x_r has exact
+order r+1 at A=1 and is not the zero polynomial. For either half-integral
+filling (1)--(2),
+
+                   ord_(t=1)(V_(K_{r,+/-})(t)-1)=r+2.
+
+These are actual branch knots. Each becomes the actual meridional unknot
+by one crossing change, and its Jones polynomial is nonconstant by the
+displayed exact nonzero product. Thus its unknotting number is exactly
+one. No separate nontriviality oracle is needed for this family.
+
+The polynomials agree with the unknot in derivatives of orders zero
+through r+1 and differ at order r+2. These are only the finite-type
+invariants extracted from ordinary Jones; no claim is made that all
+finite-type invariants of those orders vanish. Different r give different
+Jones polynomials by their different first nonzero Taylor orders.
+
+The trefoil quotient and Whitehead scalar formulas used in this section
+are independently being certified by the root/tangle tracks. Sections1
+and2 do not depend on those explicit formulas.
+
+4. BLIND AUDIT OF THE SHELL CONSTRUCTION
+
+No overlooked linearity or orientation failure was found. The componentwise
+strong inversion of P union A gives a shell with exactly ONE four-ended
+input ball. Skein insertion is therefore linear, not the nonlinear
+operation of making multiple copies of a tangle. Filling the outer
+meridian restores E(A); its quotient cap has compressible slope lambda_A,
+identified with the input meridian. This is the reason the meridional
+functional is preserved up to one FIXED framing unit. It cannot be replaced
+by an input-dependent arbitrary scalar. Preferred outer longitude is
+unchanged because the winding number is zero. With P(U)=U the rational-
+zero line is preserved geometrically. These hypotheses are all used.
+
+Two important forbidden replacements remain: the input is not the scalar
+V_J, and an arbitrary strong inversion of a satellite is not automatically
+the compatible inherited inversion described by the shell.
+
+5. FACTORED POLYNOMIAL AND EXACT ORDERS AT BOTH t=1 AND t=-1
+
+Using the root/tangle tracks' explicit trefoil quotient and Whitehead
+factor, write D(A)=(1-A^4)(1+A^8)(1+A^12). Each standard inherited layer
+contributes D up to a signed Laurent unit and possibly A -> A^-1. The
+mirror causes no change in its non-unit factors because
+
+                              D(A^-1)=-A^-24 D(A).
+
+Multiplication with x_0 and with either half-integral closure factor in
+(1)--(2) gives, up to a signed Laurent monomial,
+
+ V_(K_r)(A^-4)-1
+   =(A^4-1)^(r+2)(A^8+A^4+1)(A^8+1)^(r+1)(A^12+1)^(r+1).
+
+Equivalently, for an integer k depending on the coherent conventions,
+
+ V_(K_r)(t)-1
+   =+/-t^k (t-1)^(r+2)(t^2+t+1)(t^2+1)^(r+1)(t^3+1)^(r+1).       (3)
+
+The exponent is integral because both V_(K_r)-1 and the displayed
+non-unit factor are Laurent polynomials in t (all A exponents in the
+non-unit factor are multiples of four). In particular
+
+ ord_(t=1)(V_(K_r)-1)=r+2,
+ ord_(t=-1)(V_(K_r)-1)=r+1,
+ |[(t-1)^(r+2)](V_(K_r)-1)|=3*2^(2r+2)=12*4^r.
+
+The last expression denotes the first nonzero Taylor coefficient at 1;
+the corresponding derivative magnitude is (r+2)! times that number.
+Different r cannot give the same Jones polynomial.
+
+Mirror/clasp-sign changes are algebraically covered by the reciprocal
+identity for D. Covering BOTH inherited clasp placements additionally
+uses the audited geometric identification of their preferred trefoil
+probe quotient: uniqueness up to meridian-longitude-preserving markings
+and basis-preserving Conway half-turns. That is a geometric input, not
+a conclusion of multiplying the displayed factors. A different,
+non-inherited strong inversion is still outside the assertion.
+
+6. CONDITIONAL CONVERSE TO A ZERO-TRANSMISSION SHELL: ALGEBRA PASSES,
+   THE INHERITED CLASP INVOLUTION DOES NOT SUPPLY THE REQUIRED GEOMETRY
+
+Suppose an actual nontrivial J has a preferred flat quotient T_J. The
+inherited Whitehead quotient is then flat by transmission. The ordinary
+Whitehead clasp crossing change makes Wh(J) into U. If its crossing circle
+C were componentwise strongly inverted by the SAME inherited involution,
+with lk(C,Wh(J))=0, the following argument would construct an essential
+zero-transmission shell.
+
+Undo the clasp by unit surgery on C. The dual circle C' remains an unknot,
+and the resulting link P_0 union C' has P_0=U and linking number zero.
+Doing the opposite unit surgery on C' restores Wh(J), with the inherited
+strong inversion and preferred longitude. The componentwise quotient
+would be a four-ended shell F. Its two rational probes Q0 and Q_(+/-1)
+would have preferred flat outputs. Since FQ0=Q0 after normalization,
+transmission gives 0=d*x(Q_(+/-1)); the latter input defect is a nonzero
+Laurent monomial (in these conventions x(Q1)=-A^2). Thus d=0. The pattern
+would be nonsplit: surgery on a split unknot cannot change the isotopy
+type of P_0=U into nontrivial Wh(J).
+
+There is no algebraic, framing, or peripheral gap in this CONDITIONAL
+argument. However, the hypothesis about the crossing circle is not
+provided by the usual inherited Whitehead inversion. Inspection of
+Dai--Mallick--Taniguchi, arXiv:2606.05819, Example2.22/Figure4, shows the
+axis running along the standard clasp twist direction. The standard
+clasp crossing circle is transverse to that direction and is freely
+rotated by the involution. A free circle is not componentwise strongly
+inverted and does not produce the required four-ended input shell.
+
+Replacing that circle by the perpendicular crossing-circle choice is
+not an automatic repair. Locally, a strongly inverted circle bounds a
+disk containing the fixed axis. If the two intersections of that disk
+with the strongly inverted knot are exchanged, their oriented signs
+agree (both disk and knot orientations reverse), producing linking
+number +/-2 rather than zero. To get zero linking in this local model,
+the intersections must be separately fixed points. A different global
+involution or an additional explicit equivariant construction would
+therefore be needed; neither has been established here.
+
+Accordingly the proved implication remains essential zero shell =>
+nontrivial u=1 Jones-one knot. Its proposed converse has not been proved.
+The equivalence of Section1 concerns anchored flat tangles, not zero
+shells, and is unaffected by this failed shell-converse construction.

@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "exact_E2_jet_checks": 49,
+  "survivor_full_polynomial_checks": [
+    {
+      "rs": 0,
+      "framing": 1,
+      "exact_bracket": {
+        "1": 1,
+        "5": 1
+      }
+    },
+    {
+      "rs": -1,
+      "framing": -3,
+      "exact_bracket": {
+        "-7": 1,
+        "-11": 1
+      }
+    }
+  ],
+  "positive_cases_from_proof": [
+    {
+      "Y": 1,
+      "X": 1,
+      "U": "8",
+      "V": 2,
+      "required_cross_square": 5
+    },
+    {
+      "Y": 1,
+      "X": 2,
+      "U": "6",
+      "V": -4,
+      "required_cross_square": 9
+    },
+    {
+      "Y": 2,
+      "X": 3,
+      "U": "22",
+      "V": 5,
+      "required_cross_square": 25
+    },
+    {
+      "Y": 2,
+      "X": 4,
+      "U": "10",
+      "V": -1,
+      "required_cross_square": 33
+    },
+    {
+      "Y": 3,
+      "X": 6,
+      "U": "13",
+      "V": 10,
+      "required_cross_square": 73
+    }
+  ],
+  "scope": "Universal marking elimination is the accompanying written proof."
+}

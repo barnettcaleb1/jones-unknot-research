@@ -1,0 +1,61 @@
+Independent audit of the all-integer processive classification
+2026-10-31, generic_braid
+
+VERDICT: sound, for the fixed tangle X=<-1>+<1/2>+<1/3> and
+integer second probe <j>, j nonzero. No novelty claim is assessed.
+
+1. Exhaustion of rational comparators.
+Write a reduced rational tangle as <p/q>. Its numerator closure has
+determinant |p|, so an unknot closure forces p=+/-1. This gives precisely
+<1/k>, k an arbitrary integer. k=0 represents infinity and is included.
+The zero tangle is not missing: its numerator is a two-component unlink.
+
+2. Determinant filter.
+For X+<j>, the Montesinos determinant is
+ |2*3*(j-1+1/2+1/3)| = |6j-1|.
+For <1/k>+<j>, it is |1+jk|, including k=0. Equality gives either
+ j(k-6)=-2 or k=-6. Since j is a nonzero integer, the former gives
+exactly (j,k)=(1,4),(2,5),(-1,8),(-2,7). No sign branch is omitted.
+All survivors close to knots, since the common determinant is odd
+and the numerator of the rational comparator is odd.
+
+3. Infinite branch k=-6.
+In the stated inverse-A convention, the two-strand crossing b has
+eigenvalues A^-1 and -A^3. For v=(f,g),
+ delta*A^j*N(v*b^j) = (delta^2-1)f
+                         + (-1)^j*A^(4j)*(f+delta*g).
+This formula holds for negative as well as positive j, since b is
+invertible. After inserting the writhe correction, define v=X-A^h R,
+where h=30 for odd j and h=-18 for even j. The certificate computes
+C0=(delta^2-1)f and C1=f+delta*g exactly.
+Even j: C1=-C0 and C0 is nonzero, so vanishing forces j=0.
+Odd j: C0 has support endpoints [-14,50], C1 endpoints [-14,46].
+If C0-A^(4j)C1 vanished, equality of lowest exponents would force j=0
+and equality of highest exponents would force j=1. This is impossible.
+Multiplication by delta or a Laurent monomial introduces no issue,
+since the Laurent polynomial ring is an integral domain.
+
+4. Finite exceptions and orientation.
+Ran the supplied exact certificate, then independently generated the
+four exceptional diagrams in the original tangle addition order and
+computed their Jones polynomials using Regina. Only (j,k)=(1,4)
+matches. Also checked k=-6 at all j in [-8,8] except zero, confirming
+the independently assigned writhe formulas and polynomial mismatch.
+These finite tests validate conventions, not the infinite proof.
+The independent data are in processive_regina_audit.json.
+
+No Schubert alternative is needed after the determinant step:
+different normalized Jones polynomials already exclude every actual
+unoriented knot isotopy, including any alternative two-bridge slope
+presentation. The one positive case is separately established by
+Reidemeister simplification to identical planar diagrams.
+
+5. Framed systems.
+For the unique surviving unframed pair the two closure ratios are
+A^12 and 1 in the usual A convention (A^-12 and 1 in the certificate's
+inverse-A convention). Framing adjustments of either tangle multiply
+both its closures by the same unit. Framing adjustments of the fixed
+probes are shared across the two candidate solutions and cancel in
+the comparison. Consequently the two ratios cannot both be corrected.
+Thus no rational comparator solves the corresponding two framed
+equations, for any nonzero integer j.

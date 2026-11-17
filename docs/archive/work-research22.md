@@ -1,0 +1,33 @@
+# work/research22
+
+[Archive index](../ARCHIVE_INDEX.md)
+
+These are historical source files, not automatically endorsed or portable.
+
+- [work/research22/README.txt](../../archive/work/research22/README.txt)
+- [work/research22/audit_candidate_filter.py](../../archive/work/research22/audit_candidate_filter.py)
+- [work/research22/audit_integral_torsion.py](../../archive/work/research22/audit_integral_torsion.py)
+- [work/research22/audit_relative_bar_filters.py](../../archive/work/research22/audit_relative_bar_filters.py)
+- [work/research22/band_positive_control.json](../../archive/work/research22/band_positive_control.json)
+- [work/research22/candidate_filter_audit.txt](../../archive/work/research22/candidate_filter_audit.txt)
+- [work/research22/candidate_filter_independent_audit.json](../../archive/work/research22/candidate_filter_independent_audit.json)
+- [work/research22/candidate_polynomial_verification.json](../../archive/work/research22/candidate_polynomial_verification.json)
+- [work/research22/candidate_source_subset.json](../../archive/work/research22/candidate_source_subset.json)
+- [work/research22/global_fiber_test.txt](../../archive/work/research22/global_fiber_test.txt)
+- [work/research22/markov_global_constraints.txt](../../archive/work/research22/markov_global_constraints.txt)
+- [work/research22/one_band_relative_rank.txt](../../archive/work/research22/one_band_relative_rank.txt)
+- [work/research22/one_band_relative_rank_topology_audit.txt](../../archive/work/research22/one_band_relative_rank_topology_audit.txt)
+- [work/research22/relative_bar_filter_audit.txt](../../archive/work/research22/relative_bar_filter_audit.txt)
+- [work/research22/ribbon_bar_survivors.json](../../archive/work/research22/ribbon_bar_survivors.json)
+- [work/research22/ribbon_filtered_candidates.json](../../archive/work/research22/ribbon_filtered_candidates.json)
+- [work/research22/ribbon_final_candidates.json](../../archive/work/research22/ribbon_final_candidates.json)
+- [work/research22/ribbon_global_geometry.txt](../../archive/work/research22/ribbon_global_geometry.txt)
+- [work/research22/ribbon_homology_candidates.json](../../archive/work/research22/ribbon_homology_candidates.json)
+- [work/research22/ribbon_integral_filter_audit.json](../../archive/work/research22/ribbon_integral_filter_audit.json)
+- [work/research22/ribbon_relative_bar_filter.json](../../archive/work/research22/ribbon_relative_bar_filter.json)
+- [work/research22/ribbon_relative_bar_filter_pairs.txt](../../archive/work/research22/ribbon_relative_bar_filter_pairs.txt)
+- [work/research22/satellite_same_genus_appendix.txt](../../archive/work/research22/satellite_same_genus_appendix.txt)
+- [work/research22/small_band_screen.jsonl](../../archive/work/research22/small_band_screen.jsonl)
+- [work/research22/small_band_screen.py](../../archive/work/research22/small_band_screen.py)
+- [work/research22/verify_candidate_polynomials.py](../../archive/work/research22/verify_candidate_polynomials.py)
+- [work/research22/verify_relative_bar_certificates.py](../../archive/work/research22/verify_relative_bar_certificates.py)

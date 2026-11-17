@@ -1,0 +1,6 @@
+{"seed":20261031,"prime":1000003,"A":2,"freely_reduced":true,"lengths":[
+{"length":27,"generated":10000,"knots":4949,"modular_hits":45},
+{"length":31,"generated":10000,"knots":4982,"modular_hits":26},
+{"length":35,"generated":10000,"knots":4936,"modular_hits":13},
+{"length":39,"generated":10000,"knots":4982,"modular_hits":9}
+]}

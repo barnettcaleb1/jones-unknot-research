@@ -1,0 +1,190 @@
+GEOMETRIC REALIZABILITY FILTER FOR A JONES-INVISIBLE TANGLE
+Bounded research pass, 31 October 2026. No resolution of the Jones conjecture.
+
+UPDATE AFTER INDEPENDENT AUDIT: the hypothesis below can be weakened to an
+actual unknot infinity filling and a zero filling with the Jones polynomial
+of the two-component unlink. Garoufalidis' determinant-zero extension gives
+|lambda_G(S3_0J)|=1/6, while his one-knot surgery formula gives
+lambda_G(S3_0J)=2a_2(J)-1/6. Thus |12a_2(J)-1|=1, and integrality forces
+a_2(J)=0. The independent homology track developed this strengthening;
+the tangle track checked the source formula and normalization. See its
+companion audit and whitehead_quotient_followup.txt. The all-filling proof
+below remains valid but is no longer the strongest hypothesis obtained.
+
+1. The statement obtained
+
+Let T be an actual four-ended tangle with an actual unknot rational filling.
+Suppose its framed Kauffman bracket is the bracket of a rational tangle R
+(an overall framing unit is harmless). Normalize the boundary marking so
+R is Q_0 and the unknot filling is infinity. Let J be the knot in S^3 whose
+exterior is the double branched cover of T. Then
+
+                    a_2(J) = Delta_J''(1)/2 = 0.
+
+Here Delta is the symmetric Alexander polynomial with Delta(1)=1. This
+is a necessary geometric condition; it does NOT say Delta_J=1, J is
+trivial, or that the formal type-D example is impossible. The deduction
+uses established surgery and branched-cover formulas; novelty is not claimed.
+
+Proof, with normalization recorded:
+
+(i) The initial boundary normalization is possible because the rational
+comparison's anchor filling has determinant 1 and is therefore a rational
+unknot: its filling slope has distance one from the solid-torus meridian.
+The infinity filling of the cover is S^3, so the cover is the exterior
+of its filling core J. Its infinity slope is the meridian. The zero
+branch filling has the Jones polynomial of the two-component unlink,
+hence determinant zero. Thus zero is the preferred longitude: it is the
+unique primitive slope whose filling has infinite first homology.
+
+(ii) For every odd positive integer p, the branch filling K_p is a knot
+and its cover is S^3_p(J). The comparison rational filling B_p has cover
+L(p,1). Equality of the two tangle brackets gives equal Jones polynomials
+after oriented normalization. More explicitly, a potential discrepancy
+is a signed Laurent monomial; V(1)=1 and V'(1)=0 for knots force that
+monomial to be 1. Odd |H_1| also guarantees that the branch link has one
+component. Consistent reversal of all cover orientations only reverses
+the signs below and has no effect on the divisibility conclusion.
+
+(iii) Use the Casson normalization of the Casson-Walker invariant:
+
+  lambda(S^3_{p/q}(J)) - lambda(L(p,q)) = (q/p) a_2(J),
+  lambda(Sigma_2(K)) = -V_K'(-1)/(12 V_K(-1)) + sigma(K)/8.
+
+The second convention has the right-handed trefoil signature -2.
+Sources sometimes use twice this lambda; both coefficients then double.
+Subtract the second identity for K_p and B_p and use the first:
+
+                  sigma(K_p)-sigma(B_p) = 8 a_2(J)/p.
+
+The left side is an integer. Every odd p therefore divides a_2(J).
+Unbounded p forces a_2(J)=0. The same argument for coprime odd p and
+arbitrary q gives 8q a_2(J)/p. Once a_2=0, corresponding nonzero-
+determinant knot fillings also have the same signature.
+
+Finite useful test: a single odd p not dividing a_2(J) disproves the
+all-filling Jones identity for that companion. For a_2=+/-2, p=3 already
+forces the impossible signature difference +/-16/3.
+
+Primary formula sources:
+* Lidman--Sivek, https://www.ma.imperial.ac.uk/~ssivek/papers/smalldeterminant.pdf,
+  Eq. (2.1): Casson-normalized surgery formula, A(K)=Delta''(1)/2.
+* Greene--Watson, https://arxiv.org/html/1106.5559, Theorem 13, citing
+  Mullins, Topology 32 (1993), Theorem 5.1. Greene--Watson use twice-Casson
+  normalization: their coefficients are -1/6 and +1/4; divide by 2.
+* Kotelskiy--Watson--Zibrowius (KWZ), Khovanov homology and strong inversions,
+  https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf, Section 1, supplies the
+  preferred meridian/longitude marking and Montesinos correspondence.
+
+2. Application to the previously constructed formal object
+
+The earlier formal object has, over F_2, one rational component r_1(0)
+and four special components s_4(infinity), with grading shifts whose
+Euler characteristics cancel. If realized by an actual tangle, its
+infinity filling is the actual unknot by reduced Khovanov detection.
+All rational Jones pairings equal those of Q_0; its slope-one filling
+would have Jones 1 and reduced Khovanov rank 17. Such a realization must
+therefore have a strongly invertible companion J with a_2(J)=0.
+
+Its nonzero rational-filling rank is |p|+16|q|. In particular the 1/n
+fillings have rank 1+16|n|, NOT bounded rank: the meridian has determinant
+intersection |q| with p/q. Consequently the surgery rank-growth argument
+does not by itself contradict the formal object.
+
+3. Four actual small seeds with exactly the desired ungraded pattern
+
+KWZ Table 1 lists all strong inversions of prime knots through nine
+crossings. The entries with k=0 and four shortest special components are
+6_1, 8_20, 9_42, and the first strong inversion of 9_46. (The arXiv v1
+uses the name s_2 for the same shortest curve that the published paper
+calls s_4.) Actual diagram computations give:
+
+    companion     a_2
+    6_1           -2
+    8_20          +2
+    9_42          -2
+    9_46          -2
+
+All four companions fail the geometric filter, regardless of attempts
+to choose formal grading shifts. Their p=3 branch filling cannot have
+the comparator Jones polynomial. This is an actual obstruction beyond
+the ungraded curve-shape test; it does not classify larger companions.
+
+Reproduction: realizability_small_seeds.py/.json, containing original
+PD codes, exact Regina Jones polynomials, and a_2=-V''(1)/6. Trefoil
+and figure-eight controls give +1 and -1 respectively.
+An independent check from Seifert matrices is saved in
+realizability_seifert_audit.json. For a 2g-by-2g Seifert matrix V, put
+B=(V-V^t)^(-1)V; then tr(B)=g and a_2=(g-tr(B^2))/2. Exact rational
+arithmetic gives the same four values and a_2(K(31,18))=0.
+
+4. Floer-rank tests and two instructive false positives
+
+The scripts compute Ahat_s = C{max(i,j-s)=0} from the UV=0 knot Floer
+complex. Missing mixed arrows decrease both filtrations and therefore
+vanish in this boundary subquotient. All differentials are checked to
+square to zero. For positive p>=2g-1, the large-surgery formula gives
+
+       rank HFhat(S^3_p(J)) = p + sum_s(rank Ahat_s - 1).
+
+Kinoshita--Terasaka 11n42 has Ahat ranks 5,9,5 at s=-1,0,1 and rank 1
+elsewhere, yielding exactly p+16. Its Alexander polynomial is 1.
+However this is a false positive: it is NOT strongly invertible.
+Akbulut--Ruberman, Proposition 2.6, prove its symmetry group trivial:
+https://www.selmanakbulut.com/papers/absolute.pdf . No quotient tangle
+for this companion was constructed or claimed. The Conway knot also
+has large-positive excess 16, but is noninvertible; it likewise fails
+the geometric symmetry requirement.
+
+A genuinely strongly invertible false positive is the two-bridge knot
+K(31,18). It has genus 2, tau=-1 in the saved convention,
+
+ Delta=-2t^2+8t-11+8t^-1-2t^-2,
+
+so a_2=0, and again Ahat ranks 5,9,5 give p+16. Nevertheless its ACTUAL
+quotient curves do not resemble the desired formal four-component
+pattern: it is the mirror of 8_14, whose KWZ row has k=4 and FIFTEEN
+shortest special components for both strong inversions. Mirroring
+changes the sign of k, not the component count. The actual kappa rank
+is 60 rather than 16.
+
+Identification uses the primary table listing 8_14 as K(31,12):
+https://www.numdam.org/item/AFST_2020_6_29_4_761_0.pdf, p.786.
+Since 12*18=-1 mod 31, Schubert equivalence gives the mirror. Exact
+Regina Jones comparison agrees. The root's data are saved in
+rational_zero_a2_test.json. Thus symmetry, a_2, and the complete large-
+positive Floer rank bound still do not determine actual tangle geography.
+
+The independent computation here establishes the large-positive rank
+formula, not a separately audited all-rational surgery formula.
+
+5. A remaining natural geometric test, not a candidate claim
+
+Actual untwisted Whitehead doubles of both trefoil chiralities and both
+clasp signs were constructed using Regina and converted to PD diagrams.
+They all have genus 1 and a_2=0. Three cases have Ahat_0 rank 9 and
+large-positive excess 8; the positive tau=1 case has Ahat_0 rank 7 and
+excess 6. These pass the coarse p+16 Floer inequality. Their PD codes,
+Jones polynomials and UV=0 complexes are in realizability_whitehead.json.
+
+No strong-inversion quotient diagram, quotient Jones vector, or immersed-
+curve computation for these Whitehead companions was obtained in this
+pass. They are a sensible next actual-geometric test, not proposed
+Jones counterexamples. In particular the familiar quotient construction
+whose branch set is a Whitehead double has a DIFFERENT cover companion
+(a connected sum); it must not be substituted for a strong inversion
+of the Whitehead companion itself.
+
+6. Reproduction and scope
+
+Scripts: realizability_small_seeds.py, realizability_floer_test.py,
+realizability_whitehead.py; output JSON files preserve diagrams and
+calculation inputs. Packages in work/braid_classification/packages:
+Spherogram 2.4.1, Regina 7.4.1, knot_floer_homology 1.2.2.
+
+The main advance of this pass is the all-filling geometric a_2 filter
+and its successful exclusion of four actual curve-shape matches. No
+general classical-realizability theorem or actual invisible tangle has
+been established. The useful next target is an actual quotient tangle
+of an a_2=0 strongly invertible companion, with its gradings computed;
+formal direct sums and coarse surgery ranks are not adequate substitutes.

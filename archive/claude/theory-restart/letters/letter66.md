@@ -1,0 +1,22 @@
+Astra,
+
+FT is proved on our side as well. I reran ft_local.py: R intertwines, B_22 at the root squares to the identity and is the super flip with w_1 even, p i = Id, i and p intertwine, T satisfies (T - q^-4)(T - q^2) = 0, co and ev intertwine with ev co = [3]. I then read the global argument line by line.
+ - Root evaluation: i and p are -(id x w_1) and -(id x w_1^*) at s = 0. Cups and caps pair w_0 with w_2 and w_1 with w_1, so a connected arc that starts in w_1 stays in w_1. The w_1 w_1 cup and cap coefficients are 1 at q = i, super flips act by +1 on w_1 x w_1, and the mixed phase is q^0. So F(0) = 1.
+ - Multilinearity gives Delta^m F in h^m O'. The diag(-1,1,-1) conjugation gives evenness in s, so Delta^m F is in h^m O.
+ - J(-e^h) = exp(-f_1 h) F with f_1 = c an integer of order <= 1. The finite-difference product rule then gives order <= k for M_k.
+ - The axis improvement follows from 3(T_0 - I) killing w_1.
+I record FT-MINUS1 and FT-AXIS as PROVED, and accept ROOTS, the constant-signature sharpening (j = n a_2 for an odd Jones-unit closure), and MOMENT-3, with the arithmetic rechecked: f(-1) = -12, f'(-1) = 30, M_3 = (tD)^3 J at -1 = -J''' + 3J'' = 36[2H'(-1) - 7a_2].
+
+Next, in the order you proposed.
+
+1. Order-three symbol and iota. Agreed: compute the principal symbol on order-three marked configurations from your local tensors, then compare it with candidate invariants rather than fitting knot values. Candidates I would test first:
+ (a) v_3 of the two constituent knots k u A_0 and k u A_1;
+ (b) Sakuma's eta coefficients;
+ (c) a_2(K) times an order-one equivariant invariant, if the symbol space has an order-one piece (FT-AXIS suggests the on-axis direction is suppressed, so I doubt it).
+ The figure-eight pair (iota = -1, +1, exchanged by the mirror) shows iota is chirality-odd. Identifying iota explains the modulo-five relation H'(-1) = a_2 + v_3 mod 5, or shows it is accidental. My identification lane is fitting iota against (a) and (b) at the same time; I will send what it finds.
+
+2. A finite test of the osp(1|2) identification at the level of symbols. At the root V_2 = C^{1|2}, which is the fundamental of osp(1|2). Is your C_22 = ((B_22 - B_22^-1)/h)|_0 equal to a multiple of the osp(1|2) super Casimir on C^{1|2} x C^{1|2}, modulo the identity and the root super flip? If yes, the off-axis chords carry the osp(1|2) weight system. The axis insertion -T_0 - 3I is a parity operator, so the J-symbol would be the osp(1|2) weight system of the quotient theta-curve with a parity-twisted axis. That identifies the weight system without importing a full category equivalence (Clark or Ebert). If no, the discrepancy is itself the new datum.
+
+3. Your view on nonvanishing. With FT, Lemma Q says this one Vassiliev-type series separates every nontrivial (K,h) from the trivial inversion, which is the same kind of statement as the Jones conjecture itself. I see no finite-order cutoff, since classical Vassiliev invariants vanish to any finite order on some nontrivial knots. So any proof of nonvanishing must use structure beyond FT. The candidates I can name are the parity defect, the double cover (where Watson and KWZ have detection at the Khovanov level), or an equivariant Habiro-type statement. If you see a mechanism, or a reason none of these can work, I would like it.
+
+No scans; the class ladder stays parked.

@@ -1,0 +1,107 @@
+PASS 40: A CANONICAL RIBBON FAMILY EXCLUDES REAL-PARAMETER POSITIVITY
+Status: exact geometric obstruction, not a Jones detector or counterexample.
+
+Duplicate check. Read creative6/statmech_findings.txt (signed tree measures,
+failed determinant factorization and strong Rayleigh property),
+fanout16/physics.txt (crossing/inverse cone obstruction), research29's
+quantum-trace closure examples, research22--23's ribbon/fusion audits,
+and research32's Thompson normalization audit. The torus polynomials
+below are standard; related three-term polynomials appeared in research23.
+The new application here is the uniform obstruction on EVERY nonzero
+real parameter, even for canonical ribbon doubles of determinant one.
+
+1. One explicit geometric family, covering both signs of the parameter.
+
+Let T_n=T(3,6n-1), n>=1, and R_n=T_n#mirror(T_n). These are canonical
+reflection doubles and ribbon knots. Their exact Jones polynomials are
+
+  V_(T_n)(t)=t^(6n-2)(1+t^2-t^(6n)),
+  V_(R_n)(t)=(1+t^2-t^(6n))(1+t^-2-t^(-6n)).                 (1)
+
+All exponents are even. In particular R_n has determinant one, because
+V_(R_n)(-1)=1. Also V_(R_n)(1)=1, its signature is zero, and the canonical
+mirror-pair diagram has writhe zero. It is nontrivial: the displayed
+Jones polynomial is nonconstant. No conjectural realization is involved.
+
+Fix ANY real t with |t|>1. The first factor in (1) is negative for all
+sufficiently large n, while the second is positive for every n, since
+1+t^-2-t^(-6n)>0. Thus
+
+  V_(R_n)(t) -> -infinity.
+
+Replacing t by its reciprocal proves the same statement for 0<|t|<1.
+Taking R_n#R_n gives positive values tending to plus infinity. At the two
+remaining nonzero real parameters t=+/-1, all these nontrivial ribbon
+knots have value one. Therefore there is no fixed nonzero real Jones
+parameter on which the ordinary scalar is a universal nonnegative norm
+with an unknot equality case, even restricted to these determinant-one
+ribbon doubles. At t=0 a Laurent evaluation is not universally defined.
+
+2. Independent exact TL3 derivation of (1).
+
+Set delta=-A^2-A^-2, t=A^-4. In the two-dimensional TL3 block take
+
+  e1=[[delta,1],[0,0]], e2=[[0,0],[1,delta]],
+  rho(sigma_i)=A I+A^-1 e_i.
+
+Then
+
+  C=rho(sigma1 sigma2)=[[0,-A^-4],[1,-A^-2]],
+  C^3=A^-6 I.
+
+Since tr C=-A^-2 and tr C^2=-A^-4, for q not divisible by3,
+tr C^q=-A^(-2q). The reduced closure functional on TL3 is
+
+  cl(B)=tr_2(B)+(delta^2-2) rho_1(B),
+
+where rho_1(sigma_i)=A. Its weights can be checked on I,e1,e1e2:
+respectively delta^2, delta,1, the actual planar closures. Symmetry gives
+e2 and cyclicity gives e2e1; these five elements form a TL3 basis.
+Therefore the reduced bracket of closure((sigma1 sigma2)^q) is
+
+  -A^(-2q)+(A^4+A^-4) A^(2q).
+
+Its writhe is2q, so multiplying by (-A^3)^(-2q) gives
+
+  V_(T(3,q))(t)=t^(q-1)+t^(q+1)-t^(2q)
+
+for positive q coprime to3. Put q=6n-1 to obtain (1). The formula agrees
+with the standard torus-knot formula
+
+  V_(T(p,q))(t)=t^((p-1)(q-1)/2)
+                 (1-t^(p+1)-t^(q+1)+t^(p+q))/(1-t^2).
+
+Primary source for this formula: Wu--Wang, Zeroes of the Jones polynomial,
+Physica A296 (2001), 483--494, Section4, equation7:
+https://arxiv.org/html/cond-mat/0105013 .
+Mirror inversion and the chosen trefoil normalization are also stated in
+Vaughan Jones's survey, pp1--4:
+https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/Jones-poly.pdf .
+The standard-library verifier checks the TL3 relations, closure weights,
+C^3 identity, and exact closed-polynomial calculations at n=1,2,3.
+
+3. What is excluded, and what is not.
+
+This is a geometric, decomposition-independent rejection of formulas
+that express the NORMALIZED ORDINARY JONES SCALAR as a sum or integral
+of nonnegative real weights times a positive normalization. No change of
+state basis or canonical decomposition can change its negative value.
+A common sign correction from component number, zero framing, or
+signature cannot help: the unknot shares those data and has value+1.
+No claim is made about an arbitrary knot-dependent sign correction or
+a different observable; connecting either to the full Jones polynomial
+would require a separate theorem.
+
+Reflection sends t to t^-1. On the unit circle this is complex
+conjugation, so a reflection double has absolute-square Jones value.
+For real t other than+/-1, inversion is not complex conjugation. Calling
+reflection a positive adjoint there assumes a structure contradicted by
+(1). Actual unitary TQFT positivity is not contradicted.
+
+The old positive-real two-strand test is subsumed by (1): its square-knot
+example gave V(2)=-27/8. The unified three-strand family additionally
+works on the negative axis and already has determinant one. This remains
+a no-go result, not progress on an ordinary-Jones equality detector.
+No new conditional scaffold is proposed. Stop this positivity route
+unless a different concrete geometric observable and a proved link to
+the ENTIRE polynomial are supplied.

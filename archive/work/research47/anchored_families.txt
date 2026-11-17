@@ -1,0 +1,115 @@
+PASS 47 — ACTUAL COUPLED-TWIST FAMILIES WITH AN UNKNOT ANCHOR
+Bounded primary-source test. No proof or counterexample to Jones detection.
+
+Target and decision.
+The complete constructive endpoint is elementary: an actual family K_q
+with K_0=U, exact V_(K_q)=V_(K_0) for all q, and a geometric certificate
+K_q!=U for one q supplies a counterexample. Both identities and topology
+must apply to the SAME marked construction. This pass found a new-to-our-
+notes 2026 coupled-twist family, but its determinant excludes the anchor.
+A new annulus theorem provides topology but not polynomial invariance.
+Neither is a candidate. No assertion is made that this bounded search
+classifies all Jones-preserving constructions.
+
+1. A fresh three-axis family is excluded before any diagram search.
+Yuki Matsushima's 2026 conference extended abstract, On infinite families
+of knots with the same Jones polynomial (Japanese), Theorem2.1, presents
+M(1,q,-q), q positive, as an infinite equal-Jones family, distinguished
+using the Kauffman polynomial. This is a different stated three-axis
+construction from the earlier mirrored-three-braid Watson calculation.
+Remark2.2 identifies its partial knot as 4_1: the diagrams are symmetric
+unions 4_1 union mirror(4_1)(infinity,q,1,-q). 
+
+Lamm's determinant theorem for symmetric unions gives
+
+ det M(1,q,-q) = det(4_1)^2 = 25.
+
+Thus every member of that reported family has nonunit
+Jones polynomial; no exceptional parameter can create an unknot anchor.
+This exclusion does not depend on accepting the extended abstract's
+full Jones or Kauffman calculation. Its stated symmetric-union presentation
+and partial-knot identification suffice. In particular, taking q=0 or
+letting a pair of twist numbers cancel does not remove the partial knot.
+
+Primary construction, pp5--6 / Theorem2.1 and Remark2.2:
+https://www.math.sci.hokudai.ac.jp/~wakate/mcyr/2026/pdf/Matsushima%20Yuki.pdf
+Primary determinant theorem: Lamm, Symmetric unions and ribbon knots,
+Osaka J.Math.37(2000),537--550, Theorem2.6:
+https://ir.library.osaka-u.ac.jp/repo/ouka/all/5937/ojm37_03_02.pdf
+
+The closely related Kanenobu paper dated October14,2025, Infinitely many
+knots with the same polynomial invariant, II, uses a trefoil partial.
+Its new equal-HOMFLYPT/equal-Q family therefore has determinant9, also
+excluding an unknot anchor. Its introduction and source were already
+recorded in research31/projective_global_tests.txt; this is not claimed
+as a newly discovered family here.
+https://www.mathsoc.jp/publication/JMSJ/pdf/JMSJ9541.pdf
+(The PDF was available to indexed primary-source retrieval but a fresh
+open request returned404; the new Matsushima abstract also identifies
+this family and its trefoil partial in Example1.10.)
+
+2. Exact scope of the tempting one-axis symmetric-union route.
+Tanaka's formula makes a GEOMETRICALLY AMPHICHIRAL one-axis symmetric
+union of U have Jones1. Köse proves that every such knot is U; more
+generally an amphichiral one-axis symmetric union with partial J is
+J#mirror(J). This closes that proposed construction by actual topology,
+using cosmetic surgery/branched-cover arguments, not by assuming Jones
+detection. It was already cited in our pass38 and is not fresh progress.
+
+Important boundary: Jones reciprocity V(t)=V(t^-1) does not imply
+geometric amphichirality. Nor does constancy along a twist family make
+K_q isotopic to K_-q. Therefore Köse's theorem does NOT automatically
+exclude an arbitrary hypothetical Jones-constant one-axis family with
+partial unknot. We found no legitimate replacement for that geometric
+hypothesis. The known KT partial-knot inverse problem is also already
+covered by passes12 and38 and is not reopened here.
+
+Primary: Köse, On amphichirality of symmetric unions, TheoremsA,B:
+https://arxiv.org/pdf/2111.08765
+
+3. What the genuinely newer annulus theorem would certify.
+Scott Taylor, Closures of 1-tangles and annulus twists, arXiv2506.11226v1,
+Theorem1.3, assumes K_0 is U and A is an UNKNOTTED, SUFFICIENTLY
+INCOMPRESSIBLE twisting annulus with |A intersection K_0|=1. Then at most
+one nonzero twist q gives U, and any such q is +1 or -1. Consequently
+all |q|>=2 members are certified nontrivial under these hypotheses.
+
+Definition5.1 is essential: A lies in a sphere P, neither boundary
+component bounds a disk disjoint from K, and every compressing disk for
+P minus K has boundary meeting partial A more than twice. The proof
+translates the annulus operation into changing an arc in a solid torus.
+This is a real nontriviality certificate for an explicitly marked
+construction, not just a numerical invariant obstruction.
+
+Primary full text, Definition5.1 and proof of Theorem1.3:
+https://arxiv.org/html/2506.11226v1
+The paper contains no Jones-preservation theorem. No source found in this
+bounded check supplied an exact Jones identity for its U-anchored class.
+Thus it does not presently complete the constructive endpoint above.
+It becomes actionable only with an actual annulus diagram meeting those
+hypotheses and an independent exact V_(K_2)=1 calculation (or a genuine
+whole-family identity). No such diagram/certificate was produced here.
+
+4. Why surgery-preserving annulus examples do not fill that gap.
+The familiar Osoinach-type operation preserves a specified surgery
+manifold under its additional hypotheses; it does not generally preserve
+Jones. Indeed Abe--Tagami's explicit annulus-twist pair starting at6_3
+is distinguished by Jones while its0-surgeries agree:
+https://www.intlpress.com/site/pub/files/_fulltext/journals/mrl/2016/0023/0002/MRL-2016-0023-0002-a001.pdf
+proof of Theorem1.6 and AppendixB.
+
+Moreover, any actual orbit preserving0-surgery and containing U is
+entirely U: every member has0-surgery S1xS2, and Gabai's PropertyR
+characterizes U by precisely that surgery. This observation does not
+apply to arbitrary annulus twists, including Taylor's general setup;
+one must establish surgery preservation, not infer it from the word
+'annulus'. The known surgery-preserving families therefore cannot supply
+an unknot-anchored escape, and the broader families still lack the Jones
+identity. The prior unbounded-bridge annulus examples in research25 are
+not a solution to this mismatch.
+
+Stop. We have a decisive determinant rejection for a newly located
+actual coupled-twist family, and a precise scope for a newer topology
+certificate. There is no justified new U-anchored Jones-preserving family
+in this pass. Do not turn these source checks into another generic
+conditional program or launch an unmarked annulus scan.

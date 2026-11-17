@@ -1,0 +1,39 @@
+PASS47 STOP RECORD -- 1 November 2026
+
+Previous turn: PROGRESS. Exact one-disk family restriction moved next
+action to coordinated twists; geometric convergence route closed.
+
+New all-powers theorem: for every beta in B4 and k>=1, annular closure
+of (T beta)^k for the specified Ren core has degree exactly2. Proof uses
+rank-one M(1), primitive quotient flag, and leading h^k coefficient mod5.
+Root freshly reran geometric core reconstruction/all14basis trace tests;
+proof handles all k including multiples5. No repeat same-block search.
+
+Satellite composition P(Q) of the specified Ren patterns has degree8,
+not degree0; linear insertion sends z2 to actual Q2 cable, not [Q]^2.
+Do not conflate stacking and satellite composition. Different interacting
+blocks remain outside both statements; no candidate was constructed.
+
+Single-disk integrality does NOT extend across coordinated disks. Actual
+two-braid unknot with opposite twist sites has winding2 at both and
+nonzero diagonal channels. Its tensor coefficient -A^-2/Delta2 is rational
+before normalized closure. Connected-sum integral skein module is not
+the tensor polynomial lattice. Source2604.09971 low-degree relation and
+independent TL2 calculation agree. No global multi-axis exclusion proved.
+
+Explicit new torsion endpoint inspected: J1=x1*x2-delta*y is a difference
+of ACTUAL TWO-component links, both unlinks after the standard S3 fillings.
+Framed-link correction: individual framings can differ ((m,n) versus
+(m+n,0)); total framing/bracket agree. No knot pair follows by arbitrary
+banding of an absolute skein relation. Future torsion construction would
+need an actual marked relative relation before banding plus nontriviality.
+That construction was not produced; do not claim existence from the
+formal torsion basis. Whole2026preprint classification not independently
+audited; stale concluding Question1 noted.
+
+Fresh actual 2026 Matsushima coupled-twist family has determinant25,
+so excludesUanchor. Taylor2506.11226 supplies topology but no Jones
+identity in the same marked construction. Other symmetric-union and
+Watson branches duplicate earlier exclusions and were not reopened.
+
+Full goal remains active and unsolved. No proof or nontrivial Jones-one knot.

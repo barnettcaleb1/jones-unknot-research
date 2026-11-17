@@ -1,0 +1,257 @@
+ACTUAL KNOTS, COMPLETED QUANTUM INVARIANTS, AND THE COLOR-PROMOTION GAP
+Pass 28, 2026-11-01. Research deductions; no priority claim.
+
+Main finding
+------------
+There are actual knots R_N, for every N >= 5, for which
+
+  V_R_N(e^h) = 1 + O(h^(N+1)),
+  H_3(R_N;e^h) = 1 + 320 h^5 + O(h^6).
+
+Here H_m is the reduced, zero-framed m-dimensional colored Jones
+polynomial; H_2=V and H_m(U)=1. Every V_R_N is unconditionally NOT 1.
+The construction uses actual inverses modulo clasper equivalence, not
+formal linear combinations of knots. Thus finite-order realizability,
+group-likeness, and naturality cannot promote ordinary Jones data even
+to the fifth coefficient of color three. The particular completed
+ratio constructed below is nevertheless excluded from exact realization
+by a simple full-polynomial obstruction: its color-three value has a
+denominator that cannot cancel. This separates finite-order geometry
+from an actual all-orders constraint.
+
+1. Exact actual-knot input, including chirality
+--------------------------------------------
+Use the closures of these explicit braids:
+
+  K: B_2 word (-1,-1,-1,-1,-1),
+  L: B_4 word (1,1,1,-2,-1,-1,-2,-3,2,-3,-3).
+
+These are chirality choices of 5_1 and 10_132. The words, rather than
+unqualified table names, define the examples. Their whole polynomials
+are equal:
+
+  V_K(q)=V_L(q)=q^-2+q^-4-q^-5+q^-6-q^-7.
+
+In the quantum-group parameter u, with q=u^-2, their unreduced color
+three polynomials are
+
+  U3(K)=u40-u32-u30-u28+u14+u12+u10+u8+u6,
+  U3(L)=u44-u40-u30-u24+u16+u14+u10+u6+2-u^-4.
+
+An exponent after u denotes a power. Divide each by u2+1+u^-2 to get
+the reduced color. The difference at u=e^s has first nonzero term
+-30720s^5. Division by dimension 3 at s=0 and s=-h/2 gives 320h^5.
+
+Full exact braid calculations were rerun in this pass:
+  work/proof12/braid/all_color_collision_check.py
+  work/proof12/braid/all_color_collision_check.json
+They use integer Laurent arithmetic, verify the local inverse and full
+Yang--Baxter relation, check unknot stabilizations, and independently
+compute the ordinary and color-three polynomials from the braids.
+Primary table data: https://katlas.org/wiki/5_1 and
+https://katlas.org/wiki/10_132 . R-matrix convention: Jackson--Kerler,
+https://arxiv.org/abs/0912.2114 , equation 23, finite-dimensional s=u^2.
+
+The all-color coefficient does NOT follow merely by interpolating these
+two colors. Habiro's cyclotomic expansion gives
+
+  H_m = sum_(k=0)^(m-1) a_k(q) P(m,k;q),
+  P(m,k;q)=product_(j=1)^k(q^m+q^-m-q^j-q^-j).
+
+Equality of the entire H_2 implies Delta a_1=0. The exact color-three
+difference determines
+
+  Delta a_2=q^-15(q^2-1)(q^3+1)(q^5+1),
+  Delta a_2(e^h)=8h+O(h^2).
+
+All k>=3 terms are O(h^6), by cyclotomic integrality. Therefore, for
+EVERY fixed integer m>=2,
+
+  H_m(K;e^h)-H_m(L;e^h)
+    =8(m^2-1)(m^2-4)h^5+O(h^6).                     (1)
+
+Source for the integral expansion and central universal invariant:
+Habiro, On the quantum sl_2 invariants of knots and integral homology
+spheres, GT Monographs 4 (2002), Sections 2.2--2.3 and Theorem 3.1:
+https://arxiv.org/html/math/0211044 . The symmetric normalization above
+is related to its kernel by Laurent units absorbed into a_k.
+
+2. Geometric finite inverses give actual examples for every order
+----------------------------------------------------------------
+Habiro's Claspers and finite type invariants of links, GT 4 (2000),
+Theorem 5.4(1),(4), says that string knots modulo C_l form an abelian
+group. Set Sigma=D^2, n=1, k=1 and l=N+1. Every one-strand string link
+in this ball is homotopically trivial, so this includes every knot.
+Section 6.4 identifies string-knot product with ordinary connected sum.
+Theorem 6.18 identifies C_(N+1)-equivalence with equality of finite-type
+invariants through degree N. Source:
+https://arxiv.org/html/math/0001185 .
+
+Choose an ACTUAL knot L_N representing the inverse of [L] in that
+group. Thus L#L_N is C_(N+1)-equivalent to U. Define R_N=K#L_N.
+The h^j coefficient of any fixed-color Jones polynomial at q=e^h is
+finite type of order at most j. This follows directly by resolving
+singular crossings: each difference of the quantum crossing operators
+is O(h), so N+1 singular crossings annihilate all coefficients <=N.
+Knot-independent division by the quantum dimension preserves the
+statement for reduced colors. Primary finite-type reference: Bar-Natan,
+On the Vassiliev knot invariants, Topology 34 (1995), Theorem 5 and
+Remark 2.2, citing Lin and Piunikhin:
+https://www.math.toronto.edu/~drorbn/papers/OnVassiliev/OnVassiliev.pdf .
+
+Consequently, for each fixed m,
+
+  H_m(L_N) H_m(L)=1 mod h^(N+1),
+  H_m(R_N)=H_m(K)/H_m(L) mod h^(N+1).
+
+The denominator has constant coefficient 1. Taking m=2 gives the
+ordinary unknot jet through order N. Taking m>=3 and using (1), for
+N>=5, gives
+
+  H_m(R_N;e^h)=1+8(m^2-1)(m^2-4)h^5+O(h^6).
+
+This is an existence construction from a geometric clasper theorem;
+we have not produced explicit PDs for L_N. The knots are nevertheless
+actual individual knots, not rational combinations or virtual knots.
+
+Moreover V_R_N=V_K V_L_N cannot equal 1: V_K has five nonzero terms and
+is not a unit of Z[q,q^-1]. A factor of a unit in this integral ring
+would itself be a unit. Thus none of these R_N is a counterexample.
+They are deliberately composite, and are nontrivial independently of
+the Jones detection conjecture.
+
+3. Sparsity and global size consequences
+---------------------------------------
+If f(q)=sum_(i=1)^s b_i q^(e_i) is a nonzero Laurent polynomial with
+distinct exponents and vanishes at q=1 to order at least N+1, then
+s>=N+2. Otherwise its first s exponential moments give
+sum b_i e_i^j=0, 0<=j<s; the Vandermonde matrix is invertible.
+Apply this to f=V_R_N-1. Adding back 1 removes at most one monomial:
+
+  support(V_R_N-1)>=N+2,
+  support(V_R_N)>=N+1,
+  rank_Q reducedKh(R_N)>=||V_R_N||_1>=N+1.
+
+The exponent span of V_R_N-1 is also at least N+1. Thus these finite
+inverses cannot be compressed into a uniformly bounded Jones support.
+For each FIXED N, the actual knots R_N#...#R_N (r factors) still have
+the same ordinary unknot jet through degree N. Schubert's connected-sum
+formula gives bridge number r(b(R_N)-1)+1. The reduced-Q Khovanov
+Kunneth formula gives rank (rank reducedKh(R_N))^r. Both are unbounded.
+Therefore no bound depending only on ANY fixed finite ordinary-Jones
+Taylor jet can replace the full-polynomial bound in our global scaffold,
+even when the input jet is the unknot's. This is stronger than a purely
+formal perturbation counterexample.
+
+4. What group-likeness actually allows
+-------------------------------------
+Use a standard zero-framed, long-knot normalization of the Kontsevich
+invariant Z, multiplicative for connected sum and group-like. The ratio
+
+  G=Z(K) Z(L)^-1
+
+is a legitimate element of the completed group, and log G is primitive.
+Every finite truncation of G is realized by the actual R_N above. Its
+entire fundamental sl_2 series is 1, whereas its color-three series has
+fifth coefficient 320. These two conclusions hold in the completion;
+they do not assert that G is Z of a single finite knot.
+
+In the ordinary Jones h convention, the sl_2 weight of the degree-five
+primitive part of log G is 8c(c-3), with Casimir eigenvalue c=m^2-1.
+This follows from the ALL-color equation (1), not from color-three data
+alone: equality of all lower coefficients makes the logarithmic leading
+difference the same, and a polynomial identity follows from all m.
+We identify this primitive's sl_2 image, not the primitive diagram itself.
+It vanishes on both trivial and fundamental representations but not on
+color three. Thus there is an actual-knot-derived primitive invisible
+direction; connected diagrams need not be visible in the fundamental
+representation. Group-like review: Ohtsuki, A Cabling Formula for the
+2-Loop Polynomial of Knots, Publ. RIMS 40 (2004), Section 2, p.951:
+https://ems.press/content/serial-article-files/40872 .
+
+Do not equate two coproducts. Kontsevich group-likeness uses the diagram
+coproduct splitting connected dashed components. Quantum cabling uses
+the coproduct of U_h(sl_2), or distribution of legs onto parallel
+skeleton strands. The latter does NOT say Delta z_K=z_K tensor z_K.
+Parallel copies of the same long knot are not two independent locally
+knotted strands. Centrality gives naturality on representations, not
+monoidality of the resulting natural transformation.
+
+This distinction is already visible before quantum deformation: a
+single chord is primitive for the diagram coproduct but its Lie weight
+is the quadratic Casimir c. In an orthonormal Lie algebra basis,
+Delta(c)=c tensor 1+1 tensor c+2 sum_i X_i tensor X_i (up to the chosen
+Casimir scale). It is not primitive for the enveloping-algebra
+coproduct. Applying the weight system does not intertwine these two
+coproducts, so an argument transferring group-likeness across them
+fails at this elementary algebraic step.
+
+Indeed z_K on V2 tensor V2 acts as 1 on its trivial summand and H3(K)
+on its color-three summand. In contrast z_K tensor z_K acts as H2(K)^2
+everywhere. For a nontrivial trefoil polynomial these already differ on
+the trivial summand. If H2(K)=1 is assumed, imposing equality on this
+first tensor square is EXACTLY H3(K)=1. It repackages the previously
+identified missing color-promotion theorem; it does not prove it.
+
+The completion is the crucial boundary. A single actual L_infinity
+with Z(L_infinity)=Z(L)^-1 cannot exist: its ordinary Jones would be
+the reciprocal of a nonunit Laurent polynomial. In fact the RATIO G
+also cannot be realized by any single actual knot: its color-three
+value is U3(K)/U3(L), because the common quantum dimension cancels.
+The numerator has u-exponent span 40-6=34, while the denominator has
+span 44-(-4)=48. A nonzero Laurent quotient would have span -14,
+impossible because spans add under multiplication in a domain.
+
+Thus G has an unavoidable color-three pole away from the formal
+expansion point, although every finite truncation is realized by an
+actual knot. Full Laurent polynomiality supplies a decisive exact
+realizability obstruction for this particular construction. Finite
+Taylor data cannot see it. This does not prove generic promotion:
+the earlier formal cyclotomic example a0=1,a1=0,a2=q-1,ak=0 for k>=3
+has H2=1 and H3!=1 while ALL colors are Laurent polynomials. Its
+actual geometric realization remains unknown; we do NOT assert that
+this second example has a group-like Jacobi-diagram lift, or actual
+realizations of every finite truncation. These are two different
+examples, not one object satisfying both sets of properties. Neither
+finite-order geometric realization alone nor polynomiality alone
+suffices.
+
+5. Full conditional route, and why this pass does not close it
+-----------------------------------------------------------
+A logically complete quantum-to-classical route would be:
+
+  (P) For every actual knot, H2=1 implies H3=1.
+  Previously audited cabling/Habiro bootstrap then gives all H_m=1.
+  (AJ) The AJ conjecture identifies the classical specialization of
+       the colored-Jones recurrence with the A-polynomial.
+  Dunfield--Garoufalidis' theorem says the A-polynomial detects U.
+  Therefore K=U.
+
+The classical endpoint is a theorem, and AJ is an independently
+motivated quantum/classical conjecture. Dunfield--Garoufalidis state
+this endpoint explicitly as Theorem 1.1 and Corollary 1.4:
+https://msp.org/agt/2004/4-2/agt-v4-n2-p21-s.pdf .
+But P remains a distinct unproved assumption; calling it monoidal
+naturality, primitive faithfulness, or unit-fiber reconstruction does
+not make it independently established. The examples above disprove
+every finite-order substitute with a uniform order. This pass supplies
+an obstruction to a proposed mechanism, not a proof of P or AJ.
+
+Physics warning: nonabelian flat-connection/A-polynomial data are
+associated with varying color and semiclassical scaling. At fixed
+fundamental color every actual Jones polynomial is a finite sum of
+exponentials in h, so it is analytic at h=0 for EVERY knot. One cannot
+infer absence of nonabelian geometry from the absence of an essential
+singularity or a nonperturbative sector in this fixed-color function.
+Moving from fixed color to the double-scaling regime is the missing
+information step, not an automatic consequence of analytic continuation.
+
+Assessment
+----------
+Shelve finite-order/group-like positivity as a promotion proof. The
+useful new constraint on any future full proof is quantitative: it must
+use an all-orders property tied to a single finite embedded knot and
+must distinguish actual-knot finite approximations from their completed
+limit. Laurent polynomiality does this for the specific ratio G, but
+is insufficient for arbitrary formal cyclotomic data. No condition
+closing the generic promotion gap was established in this pass.

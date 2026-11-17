@@ -1,0 +1,131 @@
+BOUNDARY TEST OF EXTREME LEE-BAR IMBALANCE
+2026-10-31. Bounded exploratory pass; no novelty or Jones-detection claim.
+
+OUTCOME
+The proposed fusion-one statement survives a complete small-knot table test.
+Its apparently natural extension from fusion-one to ribbon knots with Lee
+extortion order one is FALSE, with an actual fusion-two counterexample:
+
+                R = 12n25 # mirror(12n25).
+
+This is not a knot with Jones polynomial one. Its determinant is121.
+It is a counterexample to the proposed proof mechanism's extreme-parity claim.
+
+CONVENTIONS
+P_K(t,q) is rational reduced Khovanov Poincare polynomial, with Euler
+characteristic V_K(q^2), and the unknot polynomial1. For s=0 and all
+generalized-Lee Q[X] bars of length1,
+
+ P_K = 1+(1+t q^2) S_K,             S_K has nonnegative integer coefficients.
+ V_K(q^2)-1 = (1-q^2) S_K(-1,q).
+
+The proposed sufficient geometric condition is that at at least one of the
+minimum and maximum quantum degrees supporting S_K, the even and odd
+homological source counts differ. It would imply V_K !=1 for a nonempty
+bar collection. It remains unproved here for fusion-one ribbon knots.
+
+ACTUAL COUNTEREXAMPLE TO THE BROADER CONDITION
+KnotInfo's rational data give for K=12n25:
+reduced rank21 and unreduced rank22. For a generalized-Lee Q[X] complex,
+the free summand contributes ranks1 and2, a length1 bar contributes2 and2,
+and each bar of length>=2 contributes2 and4. Thus R_unred-r_red=1 forces
+all bars to have length1. The full bigraded identities are checked in
+composite_counterexample.py, independently of that rank argument.
+
+The nonzero coefficients of S_K are the following (h,q,multiplicity):
+ (-2,-4,1),(-1,-4,1),(0,-2,1),(1,0,1),(1,2,1),
+ (2,2,2),(3,4,1),(4,6,1),(5,8,1).
+In particular its minimum source quantum degree already cancels.
+
+Mirror duality gives S_mK=t^-1 q^-2 S_K(t^-1,q^-1). Reduced Kh obeys
+the connected-sum product formula. Therefore the actual knot R has
+
+ S_R = S_K+S_mK+(1+tq^2)S_K S_mK.
+
+The two source extremes are:
+ q=-14: h=-8 and h=-7, multiplicity1 each;
+ q= 12: h= 6 and h= 7, multiplicity1 each.
+Both extreme signed counts are zero. Every bar of R is still length1:
+the connected-sum generalized-Lee complex is the tensor product over
+Q[X]; tensoring two length1 two-term complexes splits into two shifted
+length1 complexes. The result has reduced rank441 and unreduced rank442.
+
+This R has fusion number EXACTLY2. KnotInfo gives bridge(K)=3. The standard
+mirror-double ribbon presentation gives fusion(R)<=bridge(K)-1=2.
+Bleiler--Eudave-Munoz prove that a composite fusion-one ribbon knot has a
+two-bridge summand. The only prime factors of R are K and its mirror,
+both bridge3, so fusion(R) cannot equal1. Nontriviality excludes fusion0.
+This does not falsify the fusion-one conjecture, but proves one-band geometry
+cannot be replaced by sliceness plus the same short-bar algebra.
+
+TABLE TEST
+Data downloaded from KnotInfo's official public repository, linked by
+https://knotinfo.org/homelinks/database_download.php :
+https://raw.githubusercontent.com/knotinfo-org/assets/main/knot_polys.xlsx.zip
+https://raw.githubusercontent.com/knotinfo-org/assets/main/knotinfo_data_complete.xls.zip
+Original .xlsx/.xls retained. check_extremes.py performs exact integer
+division and reconstructs every accepted entire bigraded polynomial.
+
+All12965 nontrivial prime knots through13 crossings were scanned.
+3590 have a nonnegative quotient S at s=0. Among these:
+ - zero have both extremes balanced;
+ - eight have one balanced/mixed extreme;
+ - all eight have smooth four-genus1, hence none is ribbon;
+ - all511 smooth-slice entries have pure source parity at BOTH extremes;
+ - each of these511 also satisfies unreduced rank=reduced rank+1, so the
+   short-bar interpretation itself is certified, rather than merely assumed.
+
+The eight one-extreme examples are12n25,13n420,13n790,13n1588,13n1736,
+13n2014,13n2528,13n2683. The tables' names contain a typographic '*' before
+'n'; the checker explicitly normalizes it when joining the metadata.
+
+An explicitly source-certified fusion-one subset consists of24 knots:
+the21 ribbon knots of fewer than11 crossings;11n42(KT);11n139;12n582.
+Hom--Kang--Park explicitly state the first two groups have fusion1.
+The last two have ribbon number2 in KnotInfo; the ribbon singularity count
+obeys ribbon_number>=fusion_number+1 for nontrivial knots, hence fusion1.
+All24 pass both-extreme purity. Other ribbon entries were NOT simply
+assumed fusion1. A positive quotient S alone was NOT treated as a Lee-bar
+certificate for arbitrary knots; it is enough for the polynomial table
+test, and the explicit R example uses both reduced and unreduced ranks.
+
+LITERATURE AUDIT
+1. Sarkar, Ribbon distance and Khovanov homology, Cor1.2:
+https://arxiv.org/abs/1903.11095 . Fusion1 bounds Lee X-extortion by1.
+2. Dunfield--Gong--Hockenhull--Marengon--Willis,
+On the rank of knot homology theories and concordance,2023:
+https://arxiv.org/html/2303.04233v1 . Theorem1.8/6.6 gives fusion1
+reduced Kh rank1 mod4, using the same short-bar decomposition. Question1.9
+asks for rank1 mod8; the paper does NOT prove this for Khovanov homology.
+Their HFK rank1 mod8 theorem must not be confused with the Kh result.
+3. Hom--Kang--Park, Ribbon knots, cabling, and handle decompositions,p2:
+https://arxiv.org/pdf/2003.02832 . Explicit fusion1 examples as above.
+4. KnotInfo's ribbon-number documentation explicitly states that every
+known smooth-slice prime knot through13 crossings is known ribbon, and
+records the ribbon-number/fusion-number inequality:
+https://knotinfo.org/descriptions/ribbon_number.html .
+5. Bleiler--Eudave-Munoz, Composite ribbon number one knots have
+two-bridge summands, Trans.AMS321(1990),231--243, Theorem1.3:
+https://doi.org/10.1090/S0002-9947-1990-0968881-9 . Publisher PDF gave403;
+author-uploaded original text was inspected at
+https://www.researchgate.net/publication/303349776_Composite_ribbon_number_one_knots_have_two-bridge_summands
+and independently the exact theorem and mirror-double upper bound are
+quoted in Kanenobu, Band Surgery on Knots and Links,§4 p6:
+https://www.omu.ac.jp/sci/math-ryokanda/ocami/publications/preprint-series/pdf/2009/09_08.pdf .
+
+THREE-UNKNOT TWIST-SAMPLE LEMMA: INDEPENDENT AUDIT
+Parent proposed: a fixed two-strand full-twist family K_n with three distinct
+unknot members consists entirely of unknots. The proof is sound subject to
+the standard rational-tangle characterization below. Let M be the double
+branched cover of the complementary two-string tangle. The different twist
+integers give different filling slopes. One S^3 filling identifies M with
+the exterior of its filling-core knot in S^3. A second different S^3 filling
+forces this knot trivial, since no nontrivial knot admits nonmeridional S^3
+surgery. Thus M is a solid torus. A two-string tangle whose double branched
+cover is a solid torus is rational (standard equivariant disk theorem).
+All K_n are then rational closures, with determinant |an+b|. Three distinct
+n with determinant1 force a=0; hence all rational closures have determinant1
+and are unknots. No initial irreducibility assumption is needed after the
+first S^3 filling. The coherent T(2,2n+1) family has exactly two unknots and
+does not contradict the three-sample statement. This does not turn three
+Jones-one samples into three unknot samples without separate recognition.

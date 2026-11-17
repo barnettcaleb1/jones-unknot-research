@@ -1,0 +1,8 @@
+{
+  "synthetic_cases": 1505,
+  "brute_force_points_per_case": 625,
+  "synthetic_point_checks": 940625,
+  "saved_certificates_replayed": 144,
+  "TL5_basis_trace_checks": 42,
+  "status": "passed"
+}

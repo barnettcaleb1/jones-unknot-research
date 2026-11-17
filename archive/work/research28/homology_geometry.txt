@@ -1,0 +1,65 @@
+PASS 28: WHOLE JONES FIBERS AND GEOMETRIC COMPACTNESS
+Status: a bounded literature test and a conditional geometric endpoint, not a proof of Jones unknot detection.
+
+1. What the literature test actually established
+
+I did not find a primary-source construction of ONE fixed Jones knot fiber with unbounded Seifert genus, bridge number, meridional rank, or rational reduced Khovanov rank in this bounded search. This is a search outcome, not a claim that no such construction exists.
+
+Two distinctions prevent misleading positive search hits. Kanenobu's 1992 theorem gives, for EACH N, N two-bridge knots sharing a Kauffman polynomial but having distinct genera. Its polynomial may depend on N. It therefore proves arbitrarily large finite ambiguity of genus, not an unbounded genus set in a single fiber. The two-bridge hypothesis itself bounds bridge number. Primary: T. Kanenobu, Genus and Kauffman polynomial of a 2-bridge knot, Osaka J. Math. 29 (1992), 635–651, theorem on p.635: https://ir.library.osaka-u.ac.jp/repo/ouka/all/4334/ojm29_03_16.pdf .
+
+Stoimenow explicitly poses the fixed-polynomial/unbounded-twist-number problem as Question 8.1 and observes that Kanenobu's infinite fixed-polynomial families have bounded twist number. His Proposition 8.2 DOES produce arbitrary twist numbers at fixed trivial Jones polynomial for LINKS with at least two components, not knots. Primary: Non-triviality of the Jones polynomial and the crossing numbers of amphicheiral knots, §8.2, printed p.40: https://stoimenov.net/stoimeno/homepage/progs/ntrivodd.pdf . This is an older formulation of the precise missing global geometric issue, not a verified statement about the 2026 literature boundary.
+
+2. A weaker geometric presentation requirement than a bounded knot template
+
+Let Sigma(K) denote the oriented double cover of S^3 branched over K. Consider this concrete, UNPROVED property for ONE nonempty full Jones fiber P:
+
+  There are finitely many compact connected orientable 3-manifolds M_1,...,M_s,
+  each with a finite union of torus boundaries (possibly empty), such that every
+  Sigma(L) with V_L=P is a Dehn filling of some M_i.
+
+No compatibility with the deck involution is required. No branch diagram, equivariant filling, bridge surface, or knot-tangle template is required. This makes the presentation requirement less restrictive than finite equivariant twist templates. It does not establish that these finite parents exist.
+
+Here is the entire conditional endpoint. Filling gives a quotient on fundamental groups, so
+
+  rank pi_1 Sigma(L) <= B := max_i rank pi_1 M_i.
+
+Fix J with V_J=P, and suppose V_K=1. Then L_m=J#K^{#m} stays in the fiber, while the connected-sum decomposition of branched covers gives
+
+  pi_1 Sigma(L_m) = pi_1 Sigma(J) * (pi_1 Sigma(K))^{*m}.
+
+Grushko's rank theorem gives
+
+  rank pi_1 Sigma(L_m) = rank pi_1 Sigma(J) + m rank pi_1 Sigma(K).
+
+The finite bound forces pi_1 Sigma(K)=1. Poincare implies Sigma(K)=S^3, and the Smith conjecture theorem applied to its deck involution implies K=U. Thus the proposed finite-parent property would prove the full generic theorem. The group-rank argument uses no unproved relation between bridge number and meridional rank.
+
+The required new lemma is an actual finite-parent theorem deduced from the WHOLE ordinary Jones polynomial. We have no such deduction. Merely restating bounded cover-group rank would be another boundedness scaffold; the prospective geometric mechanism is specifically drilling a uniformly controlled collection of tori to produce finitely many unmarked parents. Standard mutation does preserve the double branched cover, so mutation adds no new parents. However, no theorem here says mutation and Dehn filling generate a whole Jones fiber. Even equality of all colored Jones polynomials need not determine a mutation class: Stoimenow–Tanaka, Mutation and the colored Jones polynomial, abstract and examples, https://stoimenov.net/stoimeno/homepage/papers/cjp12a.pdf .
+
+3. A decisive actual-knot failure of the available quantitative intermediaries
+
+Take T=T(3,5), R=T#mirror(T), and R_m=R^{#m}. These are actual ribbon knots. Write Y=Sigma(2,3,5), the Poincare homology sphere. Then
+
+  Sigma(R_m) = (#^m Y)#(#^m -Y).
+
+All these closed manifolds have H_1=0, Casson–Walker invariant zero, correction term d=0, simplicial volume zero, and rank HF-hat over F_2 equal to one. The branch knots have determinant one and signature zero. Nevertheless their fundamental-group generator ranks are exactly 4m: pi_1(Y) is the noncyclic two-generated binary icosahedral group, and Grushko applies to the 2m free factors.
+
+Justification: Milnor identifies Sigma(p,q,r) as the r-fold branched cover of T(p,q), and the (2,3,5) case is spherical with the binary icosahedral fundamental group: On the 3-dimensional Brieskorn manifolds M(p,q,r), §1 and §4, https://webhomes.maths.ed.ac.uk/~v1ranick/papers/milnbries.pdf . The homology-sphere and spherical properties give H_1=0 and zero simplicial volume. Casson–Walker and d cancel between Y and -Y and are additive under connected sum. Ozsvath–Szabo prove that every elliptic 3-manifold is an L-space (Proposition 2.3, PDF p.11); orientation reversal and the HF connected-sum formula therefore give rank HF-hat=1 for the entire family: On knot Floer homology and lens space surgeries, https://arxiv.org/pdf/math/0303017 .
+
+Their WHOLE Jones polynomials are not equal: V_R=V_T(t)V_T(t^{-1}) is nonconstant and V_Rm=V_R^m has growing span. The example therefore does not refute whole-fiber compactness. It does refute any attempt to obtain the needed cover-group bound from determinant, signature, Casson–Walker, d, HF-hat rank, and simplicial volume alone, even jointly, even on actual ribbon branch knots. In particular an HF-hat rank-one conclusion for an integral homology-sphere cover is insufficient for unknot detection.
+
+4. Strategic conclusion and stop condition
+
+The finite unmarked-parent condition is a legitimate complete conditional route, with fewer equivariance requirements than the diagram-template route. It has no presently established Jones-to-geometry bridge. The actual ribbon family above identifies a mandatory test for any proposed bridge: it must use more than the standard cover evaluations, low Floer ranks, or volume. Stop this route unless a theorem genuinely extracts a controlled drilling/prime-piece decomposition from the entire polynomial, or an actual fixed-polynomial family disproves the finite-parent/rank premise. More bounded-template computations would not address that missing step.
+
+The comparison is with finite MARKED TANGLE parents, not with bounded bridge number. We do not assert an implication either way between finite unmarked filling parents and bounded bridge presentations. The cover-group rank bound itself does follow from bridge boundedness, since rank pi_1 Sigma(K) <= g(Sigma(K)) <= b(K)-1.
+
+5. Independent audit of the tangle team's finite-order obstruction
+
+Habiro's Claspers and finite type invariants, Theorem 5.4(1),(4), gives an actual inverse string knot L_N to L modulo C_(N+1); §6.4 identifies string knots with knots under connected sum. Theorem 6.18 says C_(N+1) means equality of all finite-type invariants through degree N. Source directly inspected: https://arxiv.org/html/math/0001185 . Take the previously independently verified equal-Jones pair K,L with H_3(K;e^h)-H_3(L;e^h)=320h^5+O(h^6), recorded in work/proof12/braid/all_color_collision_proof.txt. For N>=5 put R_N=K#L_N. Multiplicativity and the finite-type property of each fixed-color Taylor coefficient give
+
+  V_RN(e^h)=1+O(h^(N+1)),
+  H_3(R_N;e^h)=1+320h^5+O(h^6).
+
+The nonunit Laurent polynomial V_K divides V_RN, so V_RN is not1 and R_N is nontrivial. This uses actual knots, not a formal inverse power series. For a requested ordinary jet order n<5, use N=max(n,5).
+
+For any anchor J, J#R_N^{#m} has the same ordinary Jones Taylor jet through order N as J, and has unbounded bridge number and reduced rational Kh rank as m grows. Thus EVERY fixed finite-jet fiber is unconditionally unbounded. The coefficient field Q is sufficient for the finite-type step; no positive-characteristic inference is involved. The normalized colored polynomial is allowed because dividing by its knot-independent quantum dimension only combines Taylor coefficients of no greater order. This result sharply excludes replacing the entire-polynomial hypothesis by any finite Taylor truncation. It does not settle the entire-polynomial fiber.

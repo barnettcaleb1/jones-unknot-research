@@ -1,0 +1,105 @@
+INDEPENDENT AUDIT: ALL-RATIONAL-FILLING JONES FLATNESS FORCES a_2=0
+
+Verdict: the proposed lemma is valid with the hypotheses and conventions below.
+It is a necessary condition on actual tangle realization, not an obstruction
+to every knot with Jones polynomial one.
+
+Let T be a classical four-ended tangle with a marked rational-filling coordinate.
+Assume its infinity filling is the actual unknot. Assume its zero filling has
+determinant zero. Finally, for an unbounded set of odd positive integers p,
+assume the normalized Jones polynomial of T(p) equals that of the standard
+rational-zero comparison tangle filled at p. The latter closure is the
+appropriate chirality of T(2,p), with double cover the corresponding L(p,1).
+Equality for ALL rational fillings is more than this argument needs.
+
+1. The branched double cover M of T has a filling M(infinity)=S3. The core J of
+the attached solid torus is a knot in S3, and M is its exterior. The infinity
+slope is its meridian mu. No incompressibility hypothesis is needed.
+
+2. The determinant-zero condition says H1(M(0);Q) has positive rank. In a knot
+exterior in S3, there is exactly one primitive slope with this property: the
+preferred longitude lambda. Thus the zero slope is lambda, not lambda+k mu.
+This is the step that prevents an unnoticed framing translation of p.
+
+The standard rational coordinate has distance one between 0 and infinity, so
+after choosing oriented generators it sends p/q to p mu+q lambda, up to the
+consistent sign choices inherent in the orientation convention. Such a global
+sign change affects the displayed surgery formula's sign but not its vanishing
+conclusion.
+
+3. The p-filling therefore covers p-surgery on J, whereas the comparison covers
+p-surgery on U. Both branch links are knots for odd p. One justification is
+that the branched cover has H1 of odd order p, while the mod-two first homology
+dimension of a link's double cover is its number of components minus one.
+Alternatively, equality of normalized Jones polynomials implies equality of
+component counts from their values at 1, and the comparison is a knot.
+
+4. Use the Casson-Walker normalization agreeing with the integer-valued Casson
+invariant on integral homology spheres. Lidman--Sivek Eq. (2.1) says
+
+  lambda_C(S3_(p/q)(J))-lambda_C(S3_(p/q)(U))
+      = (q/p) a_2(J),
+  a_2(J)=Delta_J''(1)/2,
+
+with Delta(t)=Delta(t^{-1}) and Delta(1)=1.
+
+Greene--Watson Theorem 13 quotes Mullins in TWICE this normalization: their
+Poincare sphere has lambda=-2. Dividing their formula by two gives
+
+  lambda_C(Sigma_2(L))
+      = -V_L'(-1)/(12 V_L(-1)) + sigma(L)/8,
+
+for nonzero determinant. The signs are checked against their stated
+positive-(3,5)-torus-knot example, with signature -8.
+
+5. Equality of the Jones polynomials cancels the logarithmic-derivative terms.
+For integer p the two formulas therefore give
+
+  sigma(T(p))-sigma(T_zero(p)) = 8 a_2(J)/p.
+
+With a globally opposite convention the right side has the opposite sign.
+The left side is an integer (indeed even). Thus p divides 8 a_2(J). This cannot
+hold for an unbounded set of positive integers p unless a_2(J)=0. More generally
+at a coprime p/q slope the same argument gives p divides 8 a_2(J), because q
+is invertible modulo p. Once a_2=0, the compared signatures agree at every
+nonzero odd-numerator filling for which Jones equality is assumed.
+
+FORMAL-D APPLICABILITY
+
+If a claimed full tangle module yields the rational-zero graded Euler pairing
+at every filling up to a common monomial grading shift, there is still a
+normalization check. At an odd-numerator filling, both actual and comparison
+closures are knots. Write V_actual(t)=epsilon t^a V_comparison(t). Evaluation
+at t=1 gives epsilon=1. Both normalized knot Jones polynomials have derivative
+zero at 1, so differentiating gives a=0. Hence the monomial ambiguity disappears
+at each knot filling. For the zero filling, a monomial cannot change whether
+V(-1) vanishes, so the longitude identification is unaffected. This verifies
+the needed implication from the stipulated Euler-pairing identity; it does not
+independently establish that the formal module is realized by any tangle.
+
+WHAT THIS DOES NOT IMPLY
+
+* a_2(J)=0 does not force J=U or Delta_J=1.
+* Equality at one fixed numerator p gives only a divisibility condition.
+* This argument does not establish a reduction from arbitrary Jones-one knots
+  to the stipulated unknot-anchored all-filling tangle.
+* Higher derivatives of ordinary Jones cannot simply replace the first
+  derivative in Mullins' formula. A new formula relating a higher cover
+  invariant to these branch-link data would be needed. Manifold WRT/LMO data
+  involve different, generally colored inputs; no such identification is
+  licensed by the present argument.
+
+PRIMARY SOURCES READ IN THIS AUDIT
+
+Lidman--Sivek, Quasi-alternating links with small determinant, Eq. (2.1):
+https://www.ma.imperial.ac.uk/~ssivek/papers/smalldeterminant.pdf
+https://arxiv.org/abs/1507.04705
+
+Greene--Watson, Turaev torsion, definite 4-manifolds, and quasi-alternating knots,
+Section 4.1, Theorem 13 and its explicit Poincare-sphere normalization:
+https://arxiv.org/pdf/1106.5559
+
+Original source of the branched-cover identity: David Mullins, The generalized
+Casson invariant for 2-fold branched covers of S3 and the Jones polynomial,
+Topology 32 (1993), 419--438, Theorem 5.1. The precise formula was checked in
+the primary Greene--Watson paper above, which states it explicitly.

@@ -1,0 +1,98 @@
+{
+  "host": "three-crossing trefoil diagram with its seed unknotting crossing switched",
+  "host_Jones": {
+    "0": 1
+  },
+  "smoothing_H": {
+    "1": -1,
+    "5": -1
+  },
+  "residual_defect_D": {
+    "0": -1,
+    "2": 1,
+    "6": 1,
+    "8": -1
+  },
+  "host_crossings": 3,
+  "paper_Bhat": 20,
+  "three_controlled_term_combination_degree_cap": 18,
+  "L7_residual_polynomial": {
+    "4": -1,
+    "8": -2,
+    "12": -2,
+    "2": 1,
+    "6": 2,
+    "10": 2,
+    "14": 2,
+    "18": 1,
+    "16": -1,
+    "20": -1
+  },
+  "L7_locked_b21": 1,
+  "checks": [
+    {
+      "m": 1,
+      "L": 1,
+      "residual_JVP_degree": 7,
+      "minus_p_squared_residual_JVP_degree": 9,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": null
+    },
+    {
+      "m": 2,
+      "L": 3,
+      "residual_JVP_degree": 11,
+      "minus_p_squared_residual_JVP_degree": 13,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": null
+    },
+    {
+      "m": 3,
+      "L": 5,
+      "residual_JVP_degree": 15,
+      "minus_p_squared_residual_JVP_degree": 17,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": null
+    },
+    {
+      "m": 4,
+      "L": 7,
+      "residual_JVP_degree": 19,
+      "minus_p_squared_residual_JVP_degree": 21,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": 21
+    },
+    {
+      "m": 5,
+      "L": 9,
+      "residual_JVP_degree": 23,
+      "minus_p_squared_residual_JVP_degree": 25,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": 25
+    },
+    {
+      "m": 6,
+      "L": 11,
+      "residual_JVP_degree": 27,
+      "minus_p_squared_residual_JVP_degree": 29,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": 29
+    },
+    {
+      "m": 7,
+      "L": 13,
+      "residual_JVP_degree": 31,
+      "minus_p_squared_residual_JVP_degree": 33,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": 33
+    },
+    {
+      "m": 8,
+      "L": 15,
+      "residual_JVP_degree": 35,
+      "minus_p_squared_residual_JVP_degree": 37,
+      "leading_b": 1,
+      "literal_locked_degree_if_L_at_least_7": 37
+    }
+  ]
+}

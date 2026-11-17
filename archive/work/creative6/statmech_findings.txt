@@ -1,0 +1,150 @@
+Statistical mechanics / electrical networks: a precise bridge and its limits
+
+Most useful direction
+
+Treat the full Jones polynomial as an interacting deformation of a determinantal
+spanning-tree observable at t=-1. The determinant point is tractable electrical
+network theory; the activity deformation contains the difficult extra information.
+Do not assume that the deformation remains determinantal or positive: exact tests
+below refute both assumptions, even for actual small knots and an actual unknot.
+
+1. Exact electrical-network identity
+
+Let G be a connected signed Tait graph, B a reduced vertex-edge incidence matrix,
+N its negative edges, and L=BB^t the unsigned reduced Laplacian. Put
+  tau=det L, K_N=B_N^t L^-1 B_N.
+The signed reduced Laplacian is L_s=L-2B_N B_N^t. The matrix-tree theorem and
+matrix determinant lemma give
+  det L_s = sum_spanning_trees T (-1)^|T intersect N|
+          = tau det(I-2K_N).
+Its absolute value is the knot determinant |V(-1)|. Equivalently this is the
+parity expectation of a determinantal uniform-spanning-tree process.
+
+Every eigenvalue of K_N lies in [0,1]. If r eigenvalues are strictly between 0
+and 1 and all satisfy |1-2lambda| >= epsilon, then
+  det(knot) >= tau epsilon^r.
+Thus tau epsilon^r>1 is an exact conditional certificate ruling out V=1.
+This is useful for structural graph families with a provable spectral gap; it
+is not a generic detector. Determinant-one knots can approach the half-eigenvalue
+precisely enough to attain equality.
+
+Actual tests, all independently checked against Regina Jones polynomials:
+  trefoil: tau=3, determinant=3.
+  figure-eight: tau=5, determinant=5.
+  8_19: tau=35; negative-edge count polynomial 4+16z+15z^2.
+  Conway 11n34 and Kinoshita--Terasaka 11n42:
+    tau=155; count polynomial 77z^2+78z^3; signed count=-1.
+For each of the last two diagrams the nontrivial transfer-current eigenvalue is
+78/155, at distance 1/310 from 1/2. The remaining eigenvalues are 0 or 1.
+Thus even a single nontrivial spectral mode already permits determinant one.
+
+2. Exact interacting deformation
+
+The spanning-tree activity expansion writes V(t)=sum_T epsilon_T t^j(T).
+At t=-1, omega_T=epsilon_T(-1)^j(T) is a diagram-wide sign eta times
+(-1)^|T intersect N|. Hence, exactly as a finite sum,
+  V(-exp(h)) = eta tau E_uniform_tree[(-1)^|T intersect N| exp(h j(T))].
+In particular V'(-1)=-sum_T omega_T j(T). Jones one would require the signed
+activity measure to be a single atom at zero, not merely its total mass to be one.
+
+The bridge to three-manifold topology is established, not speculative: Mullins'
+formula relates V'(-1)/V(-1), together with the knot signature, to the
+Casson--Walker invariant of the branched double cover. In the normalization
+lambda(Poincare sphere)=-2, it is
+  lambda(Sigma_2 K) = signature(K)/4 - V'(-1)/(6 V(-1)).
+
+For the displayed KT/Conway diagrams V(-1)=1 and V'(-1)=48. Their signed first
+activity moment is -48. This detects the mismatch hidden by 78-77=1.
+But T(3,5)=10_124 has V(-1)=1 and V'(-1)=0, while V''(-1)=-48. Even the first
+response is therefore insufficient. Its polynomial is t^4+t^6-t^10.
+
+3. Two tempting positivity shortcuts are false
+
+Edge-factorized deformation. Suppose one could write every Jones tree term as
+  W_T(t)=C(t) product_(e in T) w_e(t).
+Then two pairs of trees with the same total edge incidence must have the same
+product of weights. For KT, the verifier records four concrete trees with equal
+total incidence, but their Jones exponent sums are -5 and -4 and their sign
+products are -1 and +1. The ratio is -t^-1, not 1. Thus no such edge weighting
+on the original Tait graph exists for this activity expansion. The ratio becomes
+1 exactly at t=-1: the obstruction is an interaction appearing away from the
+determinantal point. This does not rule out different expanded-graph formulas.
+
+Real stability. Even if signs are discarded, the positive activity deformation
+  P_u(z_e)=sum_T u^j(T) product_(e in T) z_e
+need not be strongly Rayleigh. For 8_19 at u=1/2 and edges 0,3, the exact values
+are Z=67/128, Z_0=43/128, Z_3=19/64, Z_03=25/128, giving
+  Z_0 Z_3 - Z Z_03 = -41/16384 < 0.
+KT gives another exact violation, -61065/32. Trefoil and figure-eight pass the
+tested fields, so testing only the simplest examples would conceal the failure.
+
+An actual eight-crossing unknot also fails edge factorization and Rayleigh
+positivity. Its braid word is
+  sigma1 sigma2 sigma1 sigma2^-1 sigma1^-1 sigma2^-1 sigma1 sigma2.
+The first six letters are the identity by the braid relation, so its closure is
+the unknot. Its displayed diagram has no immediate type-I/II simplification
+(eight crossings remain), although global simplification gives zero crossings.
+Therefore Jones one does not force an immediate local graph reduction, and
+activity interaction or loss of stability alone cannot certify nontriviality.
+
+4. A constructive target that survives these tests
+
+Replace the desired global determinant by a controlled interaction expansion.
+If j(T) has a representation on spanning trees
+  j(T)=sum_(S subset E, |S|<=d) a_S product_(e in S) 1[e in T],
+the first response can be computed from at most d-edge Green-function minors.
+Indeed let W=diag(edge signs), L_s=BWB^t, and
+  K_s=W B^t L_s^-1 B.
+For the normalized signed tree measure, the algebraic determinant identity gives
+  E_signed[product_(e in S) 1[e in T]] = det K_s[S],
+so
+  E_signed[j]=sum_S a_S det K_s[S].
+Products of this expression similarly give every fixed activity moment. No
+positivity is claimed: K_s is generally non-Hermitian. When det L_s=+/-1,
+its entries and all principal minors are integers, permitting modular
+nonvanishing certificates analogous to the successful braid-jet obstruction.
+
+Exact first falsifiable test completed: solve for such an interaction energy
+by rational linear algebra, and independently reconstruct the moments from
+the Green-function minors. For the fixed diagrams and edge orders tested:
+  8_19: minimum degree 3; 27 nonzero interaction coefficients.
+  10_124: minimum degree 2; 10 coefficients; signed moments 0,-48.
+  KT: minimum degree 3; 45 coefficients; signed moments -48,96.
+  eight-crossing unknot: minimum degree 4; 31 coefficients; moments 0,0.
+All values agree exactly with direct tree enumeration and Jones derivatives.
+There is no claim that interaction degree is invariant or detects knots.
+
+The missing theorem is a structural bound or cancellation constraint for these
+interactions that survives diagram moves and excludes every nontrivial knot
+with all signed moments trivial. A reasonable narrower target is a class of
+signed/ribbon graphs with bounded interaction complexity and an arithmetic
+obstruction to vanishing moments. Merely asserting real stability is false.
+Already-known almost-alternating/Turaev-genus-one detection should be used as
+a benchmark, not advertised as a new target; genuinely new results must go
+beyond those classes or provide a new general certificate.
+
+Sources (primary research)
+
+Kauffman, A Tutte polynomial for signed graphs (1989), especially Section 5:
+https://homepages.math.uic.edu/~kauffman/TuttePolySignGraphs.pdf
+Burton--Pemantle, Local Characteristics, Entropy and Limit Theorems ...:
+https://arxiv.org/abs/math/0404048
+Mizuma, Ribbon knots of 1-fusion, Jones polynomial and Casson--Walker invariant,
+quoting and applying Mullins' theorem:
+https://www.ms.u-tokyo.ac.jp/preprint/pdf/2005-8.pdf
+Garoufalidis, Signatures of links and finite type invariants of cyclic covers:
+https://arxiv.org/abs/math/9811021
+Cohen, A determinant formula for the Jones polynomial of pretzel knots:
+https://arxiv.org/abs/1011.3661
+Lowrance--Spyropoulos, The Jones polynomial of an almost alternating link:
+https://arxiv.org/abs/1707.05443
+Champanerkar--Kofman, Spanning trees and Khovanov homology:
+https://arxiv.org/abs/math/0607510
+
+Reproduction
+
+statmech_bridge.py/.json records eight actual diagrams, exact graph data,
+Jones polynomials, transfer-current identities and counterexamples.
+activity_moments.py/.json records the exact low-degree representations and
+signed Green-function minor computations. tree_probe.py supplies the Tait
+graphs and signed activity expansion, checked against Regina on each example.

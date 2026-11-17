@@ -1,0 +1,45 @@
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/bulk_cert.py ../code/bulk_cert.py
+7c7
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/gen_sets.py ../code/gen_sets.py
+8c8
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/mitm_cert.py ../code/mitm_cert.py
+14c14
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/reps.py ../code/reps.py
+14c14
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/resaved_certs.py ../code/resaved_certs.py
+6c6
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/stress_tietze.py ../code/stress_tietze.py
+8c8
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/suites.py ../code/suites.py
+6c6
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/validate_group.py ../code/validate_group.py
+10c10
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')
+diff -r /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code/validate_pd.py ../code/validate_pd.py
+9c9
+< sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/cert/run/code')
+---
+> sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/code')

@@ -1,0 +1,15 @@
+{
+  "README.txt": "fdc245fc97c7d94af63c0efb4e9db72e6f4924830d509fb227029484376c51db",
+  "homology_mechanism.txt": "59d671dd76cfad25a3806ebf9d81e4ecf372cd263912d1de47f710ae61364c0a",
+  "watson_geometric_inputs.txt": "15eb09e41c690bcfb8bce2a1492ac2a4b2d79f2d6e8705f3a1d5abb531a678af",
+  "watson_independent_audit.txt": "7cac81f2446cfa67c33687d18be5e0bb6b2c61c7f7c401f3440b396631541258",
+  "watson_connectivity_check.py": "8859f774c9a4edeacb1921db38f3aef92704e0cec04c59d789c9101cb11aa5a3",
+  "watson_connectivity_check.json": "0c2e454d1d173b29de214e320cb41ecbe58fec733f49b4e2c1aa8beb144f8c29",
+  "verify_watson_independent.py": "8da97e4a50908363155964f88127565533034b9df6b7d946d239958710e8d52f",
+  "verify_watson_independent.json": "5ee376e3729c244d39a4b1d208d5572109a675d5069ce5991530197f81b65739",
+  "kernel_intersection.txt": "88e73453553306b975c8a8d06b6ea094ad2bde69b189f2a954c4ec232d078b1a",
+  "source_metadata.json": "e4102d4461dd8cd1b2bd8e9721ca3018da64770620d6c8c4437c52107319eea2",
+  "satellite_mechanism.txt": "166356095c7d0d91dff0aee8dc9f41688090169f9a7578e68b7ccd861fcf6215",
+  "satellite_certificate_braid_audit.txt": "907ac9c4d8d89c76b925d067c83dbbb076f244085dbbf90dd08abeb3a3398324",
+  "verify_satellite_certificate.py": "15b974c352c43adb5296941a113529a1d560412f91e35144333ab57ce856a12e"
+}

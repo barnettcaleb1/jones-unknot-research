@@ -1,0 +1,189 @@
+RIBBON-CONCORDANCE EULER FAITHFULNESS: FULL SCAFFOLD AND BAND TEST
+Status: the inference chain is valid; its Euler-faithfulness premise is
+unproved. A bounded source search found no counterexample, not a proof
+that none is known.
+
+1. PRECISE PROPOSED PREMISE
+
+For every actual ribbon concordance C:K0->K1, the induced map on normalized
+reduced Kh over Q is a bigraded split injection. Write its cokernel H_C.
+Proposed Euler faithfulness says
+  chi_q(H_C)=0 => H_C=0.
+Equivalently, V_K0=V_K1 forces this induced map to be an isomorphism.
+This is a condition on actual ribbon-concordance maps, not all abstract
+bigraded complexes. It allows distinct knots to have isomorphic Kh.
+
+Established split-injection source:
+Levine--Zemke, Khovanov homology and ribbon concordances,
+https://doi.org/10.1112/blms.12303 . The reduced based variant follows by
+carrying a basepoint along the concordance and the same left-inverse
+cobordism argument; it is also used explicitly in Wang's reduced results.
+
+2. COMPLETE GENERIC INFERENCE
+
+Given ANY Jones-one K, let R=K#mirror(K), with the conventional orientation
+reversal if needed. This is ribbon and V_R=V_K(t)V_K(t^-1)=1. A ribbon
+disk punctured near a minimum gives a ribbon concordance U->R. Euler
+faithfulness makes reducedKh(R)=Q. Reduced connected-sum Kunneth gives
+  rank reducedKh(R)=(rank reducedKh(K))^2,
+so reducedKh(K) has rank1. Kronheimer--Mrowka implies K=U.
+
+There is no separate generic-to-unknotting-number-one or special-braid
+coverage assumption. Restricting Euler faithfulness merely to U as source
+is equivalent to Jones detection via this construction; that restricted
+version is not intrinsically easier. The all-source version is a stronger
+testable geometric statement, and no evidence here proves it.
+
+3. WANG'S SINGLE-BAND FAMILY IS AN EXACT TEST OF THE PREMISE
+
+Let L=L1 disjoint-union L2 be a split two-component link; K_#=L1#L2.
+Let K_b be a band sum along a nontrivial band. Miyazaki supplies a ribbon
+concordance K_#->K_b. Wang proves, for the reduced theory over Q,
+
+  Kh_red(K_{b+n}) = Kh_red(K_#) direct-sum h^(2n) q^(4n) H_b,
+  H_b != 0.
+
+Here n full twists are added to the band. The reduced Euler polynomial
+obeys, in the same q convention,
+
+  V_red(K_{b+n}) = V_red(K_#) + q^(4n) P_b,
+  P_b = chi_q(H_b).
+
+PRIMARY AND COEFFICIENT AUDIT:
+Joshua Wang, The cosmetic crossing conjecture for split links,
+https://arxiv.org/pdf/2006.01070 .
+Theorems1.7--1.8 on printed pp6--7 initially state the results for
+unreduced F2 homology; Remark1.9 explicitly extends BOTH statements to
+reduced F2 and reduced Q. Thus the needed H_b!=0 over Q is justified.
+His polynomial V in the introduction is unreduced, V_U=q+q^-1; dividing
+by this common factor translates equality to normalized Jones without
+changing the question P_b=0.
+
+On printed p5, immediately after the twist formula, Wang explicitly states
+that he does not know if P_b is nonzero for every nontrivial band b.
+Therefore his theorem is not already a Jones detection theorem for bands.
+The published statement of that uncertainty is evidence of the exact
+missing bridge, not a proof that the question remains open today.
+
+4. CONSEQUENCES OF AN ACTUAL P_b=0 EXAMPLE
+
+If a nontrivial band with P_b=0 were found, ALL K_{b+n} would have exactly
+the same Jones polynomial. Since H_b!=0 and Kh_red(K_#)!=0, their quantum
+diameters would grow as 4|n|+O(1): the fixed summand stays put while the
+nonzero complement shifts arbitrarily far. That would falsify H-spread
+from the global scaffold and Euler faithfulness for this ribbon map.
+
+It would NOT falsify H-rank: Wang's decomposition makes the total reduced
+rank independent of n. This distinction is essential.
+
+Conversely, H-spread on exact Jones fibers would imply P_b!=0 for every
+nontrivial band by this formula. This supplies a concrete geometric
+consequence of that global compactness proposal, independent of the
+unit-fiber formulation.
+
+5. LIMITS OF THE BOUNDED CHECK
+
+Searches for same-Jones ribbon concordances and Jones-invisible nontrivial
+bands found Wang's explicit uncertainty and the split-injection results,
+but no primary-source example with P_b=0. Standard Kanenobu/Watson examples
+with identical Jones and Kh do not refute Euler faithfulness; their maps,
+if induced by an applicable ribbon concordance, could simply be
+isomorphisms. Nor may a diagram resembling a band be assumed to express
+a SINGLE band sum of the claimed split components: Wang's theorem would
+then force a nonzero homological complement.
+
+The earlier formal Euler-invisible objects show that split injection and
+Lee rank alone do not prove this premise. What is needed is a constraint
+on cokernels of actual ribbon concordance maps, beyond their abstract
+splitting and Euler characteristic. No such new constraint is proved here.
+
+6. APPENDIX: THE TWO GLOBAL BOUNDS WOULD DETECT NUGATORY CROSSINGS
+
+This is a CONDITIONAL consequence, not a proved Jones detection theorem.
+Let H-rank assert a finite upper bound on rational reduced Kh rank in
+each fixed normalized-Jones knot fiber. Let H-spread assert a finite
+upper bound on its quantum diameter in each such fiber. Together they
+imply: if a single crossing change preserves the Jones polynomial, that
+crossing is nugatory. More generally, two distinct members of the same
+oriented band-twist family cannot have equal Jones polynomials unless
+the underlying link is split and the band is trivial.
+
+6a. THE EXACT TWIST RECURRENCE
+
+Start with oriented knots K_-, K_+ differing at one crossing. Their
+oriented smoothing is a two-component link L. Wang's introduction,
+printed p3 and Figure2, identifies K_- with band surgery K_b on L and
+K_+ with K_{b+1}. Thus this is the oriented-band twist orbit, not an
+arbitrary coherent two-strand braid-twist orbit. Its oriented skein
+triple has the SAME smoothing L at every step.
+
+Use Wang's variable and unreduced polynomial J, with J_U=q+q^-1:
+
+  q^-2 J_{n+1} - q^2 J_n = (q^-1-q) J_L,
+  J_{n+1} = q^4 J_n + (q-q^3) J_L.
+
+Consequently D_n=J_{n+1}-J_n satisfies D_{n+1}=q^4 D_n for all
+integers n. If J_1=J_0, all J_n coincide. More generally, for m>n,
+
+  J_m-J_n = D_n (1+q^4+...+q^(4(m-n-1))).
+
+The Laurent polynomial ring is an integral domain, so equality of any
+two distinct members makes D_n=0 and hence the entire orbit constant.
+Dividing all knot polynomials by q+q^-1 gives precisely the same
+equality criterion for normalized Jones polynomials.
+
+6b. BOUNDED RANK FORCES THE SMOOTHING TO SPLIT
+
+Primary source: Joshua Wang, Split link detection for sl(P) link
+homology in characteristic P, Journal of Topology 16 (2023), 806-821,
+https://doi.org/10.1112/topo.12297 ; arXiv text:
+https://arxiv.org/pdf/2112.09110 .
+
+Despite the title's characteristic-P emphasis, Proposition1.7 is
+explicitly stated for EVERY field F and every N>=2. It says that
+bounded reduced sl(N) homology ranks along ONE band-twist orbit are
+equivalent to an embedded sphere separating the two marked components
+of L. Here N=2 and F=Q apply. The source's sl(2) convention agrees with
+the reduced Kh of a mirror; mirroring does not alter total rank.
+Since L has exactly two components, the separating sphere says it is
+geometrically split. Remark1.8 strengthens the nonsplit alternative:
+ranks diverge in both directions of twisting.
+
+Under H-rank, the constant Jones orbit from 6a has bounded rational
+reduced ranks, so Proposition1.7 makes L split.
+
+6c. BOUNDED QUANTUM DIAMETER FORCES THE BAND TO BE TRIVIAL
+
+Now Wang 2006.01070 Theorems1.7-1.8 and Remark1.9 apply in reduced
+homology over Q. If b were nontrivial, then
+
+  Kh_red(K_{b+n};Q) = Kh_red(K_#;Q) direct-sum h^(2n)q^(4n) H_b,
+  H_b != 0.
+
+The first summand is nonzero and fixed, while the second shifts in
+quantum degree by 4n. Quantum diameter therefore grows as
+4|n|+O(1). H-spread forbids this in the constant Jones fiber. Hence b
+is trivial. Wang's introduction explicitly identifies split smoothing
+plus trivial band with a nugatory crossing.
+
+The two hypotheses play different roles. H-rank handles a potentially
+nonsplit smoothing; H-spread handles a split smoothing with a
+nontrivial band. This argument does not show either hypothesis alone
+implies this strengthened crossing-detection statement.
+
+6d. WHAT THIS TEST DOES AND DOES NOT ESTABLISH
+
+A genuine non-nugatory classical crossing change preserving Jones
+would falsify at least one of H-rank and H-spread. In fact the proof
+classifies the possible failure: nonsplit smoothing forces unbounded
+ranks in that Jones fiber; split smoothing with nontrivial band forces
+unbounded quantum diameter. Such an example need not have Jones one
+and would not by itself refute Jones unknot detection.
+
+A bounded primary-source search did not locate a certified example of
+such a crossing. This is not a literature-completeness claim. Wang's
+explicit uncertainty about P_b on printed p5 concerns the split-band
+case and should not be promoted into a claim about today's complete
+status. Likewise, the usual cosmetic-crossing conjecture assumes the
+two knots are isotopic; the conditional statement here assumes only
+equality of their Jones polynomials and is correspondingly stronger.

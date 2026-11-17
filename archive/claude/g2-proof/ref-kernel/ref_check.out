@@ -1,0 +1,12 @@
+(1) ord_{A=zeta}(rho - I):
+    [(s1 s2)^3, T_d^2]  -> 1    (claimed in F_2, i.e. >= 2)
+    [(s1 s2)^6, T_d^2]  -> 2    (T_gamma T_{f gamma}^-1)
+    (T_d^2 itself is not tested: exponent sum 12, so the bracket scalar A^-12 = -1 at zeta hides F_1)
+(2) Theorem A, |R_g(zeta)|^2 vs (2D-1)^2 [kernel.md convention | mirrored convention]:
+    s3 s4 s3^-1 s2           |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok
+    s3^3                     |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok
+    s3^-3                    |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok
+    s3 s4 s5 s3              |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok
+    (s3 s4^-1)^2 s2^-1       |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok
+    s3^2 s4 s2^-1 s5         |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok
+    s4 s3^-2 s2 s5^-1 s4     |R|^2 =   1.000   D = +0 ->   1 ok   | mirrored D = +0 ->   1 ok

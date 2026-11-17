@@ -1,0 +1,52 @@
+Pass 50: the S1 x S2 / lens-space edge case is closed
+2026-11-01
+
+PROPOSITION. Let M be a compact connected orientable 3-manifold with boundary
+a torus and the integral homology of a solid torus. Let lambda be its rational
+longitude. If M(lambda) is S1 x S2 and some other Dehn filling M(alpha) is an
+L-space, then M is a solid torus.
+
+In particular this applies when M(alpha) is a nonsplit-rational-link double
+branched cover, hence a lens space with finite first homology. It needs no
+matching of the oriented lens-space parameter q with a reference solid torus.
+
+SOURCE. Yi Ni and Faramarz Vafaee, 'Null surgery on knots in L-spaces',
+Transactions AMS 372 (2019), 8279--8306, Theorem 1.1, printed page 8280
+(PDF page 2): a knot in S1 x S2 that admits an L-space surgery has fibered
+complement. The published primary PDF was read and the exact statement checked:
+https://www.its.caltech.edu/~yini/Published/NullSurgery.pdf
+DOI: https://doi.org/10.1090/tran/7510
+The statement has no irreducibility or longitudinal-surgery hypothesis.
+
+PROOF. Regard M as the exterior of the core L of the lambda filling in
+M(lambda)=S1 x S2. The alpha filling is a surgery on L producing an L-space.
+Ni--Vafaee Theorem 1.1 makes M a bundle f:M -> S1 with connected compact
+oriented surface fiber F (choose the primitive fibration class).
+
+The inclusion H1(boundary M;Z) -> H1(M;Z) is surjective: its cokernel maps
+injectively into H1(M,boundary M;Z), and this relative group equals
+H^2(M;Z)=0 by Poincare--Lefschetz duality and the homology-solid-torus
+hypothesis. Also f_*:H1(M;Z) -> Z is an isomorphism because it is surjective
+and H1(M;Z)=Z. Therefore the composite H1(boundary M;Z) -> Z is onto.
+
+The boundary restriction of f is a bundle of the torus over the circle. If its
+fiber had k circle components, its image on fundamental groups, hence on H1,
+would be kZ (monodromy cyclically permutes the k components). Surjectivity
+therefore gives k=1. Thus F has exactly one boundary component. This boundary
+lies in the kernel of H1(boundary M) -> H1(M), so its slope is lambda.
+
+Capping F with a disk and extending its monodromy over that disk extends f to
+a bundle of M(lambda)=S1 x S2 over S1 with closed connected orientable fiber
+F_hat. In any surface bundle, pi1(F_hat) injects into pi1(total space).
+Here the total group is Z. A closed connected orientable surface of positive
+genus has a fundamental group that cannot inject into Z. Consequently F_hat
+is S2, and F is a disk. An orientable disk bundle over S1 is a solid torus.
+QED.
+
+APPLICATION TO THE FRAMED TWO-PROBE AUDIT. If the earlier bracket/homology
+argument really supplies H1(M)=Z, identifies the reference longitude lambda,
+and a shared rational product is the two-component unlink, then its filling is
+S1 x S2. A second shared nonsplit rational product supplies the required lens
+space L-space filling. This proposition resolves precisely that edge case.
+It does not audit the separate argument intended to establish the integral
+homology hypothesis, nor the two-nonzero-filling Casson--Walker/Rasmussen chain.

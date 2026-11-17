@@ -1,0 +1,210 @@
+PASS 18: WHAT THE SATELLITE MULTIPLIER CANNOT BE
+31 October 2026. Research deductions; no claim of novelty.
+
+Conclusion. The exact satellite multiplier d(A) is not determined by the
+entire Kojima--Yamasaki eta-functions, either complete Cochran sequence,
+or all Milnor invariants. Even the full two-loop rational Kontsevich
+function of every rational-input covering knot can vanish while d is
+nonzero. Moreover no fixed-degree collection of rational-surgery LMO
+invariants, even at every slope and every rational input, detects whether
+d vanishes. These claims use actual iterated Whitehead patterns, not
+formal modules. The distinction between finite order and all orders is
+essential throughout.
+
+SETUP AND PREVIOUSLY ESTABLISHED INPUT
+
+Use the compatible strong inversion of the untwisted Whitehead pattern W.
+The pattern and its axis are unknots and their linking number is zero.
+The normalized quotient shell map on the two-dimensional bracket module
+has the form diag(1,d_W(A)) in the basis Q_0,Q_infinity-delta Q_0, where
+delta=-A^2-A^-2. Previous pass established d_W != 0 and
+
+                 ord_(A=zeta) d_W = 1,
+                 zeta=exp(pi i/4).
+
+For P_r=W composed with itself r times, compatibility of the inherited
+inversions and preferred longitude gives
+
+                 d_(P_r)=d_W^r != 0,
+                 ord_zeta d_(P_r)=r.                         (1)
+
+This is the exact composition law in
+outputs/jones-satellite-transmission-and-hidden-derivatives.txt.
+It concerns quotient tangles of satellite exteriors, not the ordinary
+Jones polynomial of the companion knot.
+
+1. A COMPLETE ETA/COCHRAN/MILNOR COUNTERTEST
+
+Let L_r be P_r together with its axis. It can be obtained from the Hopf
+link by untwisted Whitehead doubling the same component r times.
+Meilhan--Yasuhara Theorem 4.1(i) and Corollary 4.2 imply that L_2 is a
+boundary link; their theorem also shows the same for every r>=2.
+Their convention calls the ordinary positive or negative Whitehead
+double the Whitehead (+1) or (-1) double; this is distinct from the
+longitudinal twisting parameter of a twisted Whitehead knot.
+
+For a boundary link, choose disjoint Seifert surfaces. Its two complete
+Cochran sequences vanish, as Jin states just after the definition on
+p.294. The eta-function is the generating function of that sequence,
+under the variable x=(1-t)(1-t^-1), so both orderings of eta vanish too.
+All Milnor invariants of a boundary link vanish. Thus for every r>=2,
+
+        eta_1(L_r)=eta_2(L_r)=0,
+        beta_i(L_r)=beta_i(reverse-order L_r)=0  for all i,
+        every Milnor invariant of L_r is zero.
+
+The components themselves are unknots. Nevertheless (1) gives a nonzero
+Jones transmission multiplier with arbitrarily high exact order at zeta.
+These patterns are not split: a split two-unknot pattern link has every
+axis-twist knot unknotted; all corresponding quotient outputs are on the
+Q_0 line, forcing d=0 because two rational input vectors span the module.
+
+Therefore no formula can recover d, or merely its vanishing, solely from
+the data listed above. In particular the higher zeta-jets of d are not
+simply the successive Cochran derived Sato--Levine invariants. The first
+jet's relation to the ordinary Sato--Levine invariant does not extend in
+that straightforward way.
+
+Sources:
+J.-B. Meilhan and A. Yasuhara, Whitehead double and Milnor invariants,
+Theorem 4.1 and Corollary 4.2, pp.7--8:
+https://arxiv.org/pdf/0704.3093v2
+G. T. Jin, The Cochran sequences of semi-boundary links,
+Pacific J. Math. 149 (1991), pp.294--295:
+https://msp.org/pjm/1991/149-2/pjm-v149-n2-p05-p.pdf
+Conant--Schneiderman--Teichner, Cochran's beta^i-invariants via twisted
+Whitney towers, section 2, for the generating-function identity:
+https://arxiv.org/pdf/1607.01722
+
+2. EVEN THE ENTIRE TWO-LOOP FUNCTION DOES NOT SUFFICE
+
+Insert the rational input Q_n into the P_r shell. Its covering knot is
+
+       K_(r,n)=Wh_0^(r-1)(Wh_n(U)),                          (2)
+
+where Wh_n(U) is a twist knot and subsequent Whitehead operations are
+untwisted. The marking follows from zero winding: the outer longitude
+remains preferred after the innermost axis surgery.
+
+Garoufalidis Corollary 1.1 calculates the entire rational two-loop
+Kontsevich contribution Q_1 of Wh_epsilon(K) as a fixed nonzero diagram
+multiplied by epsilon*a(K), where a(K) is a fixed multiple of the second
+derivative of Delta_K(exp(h)) at h=0. Consequently if Delta_K=1, the
+entire Q_1 of its untwisted Whitehead double is zero.
+
+For r=3 the companion of the outermost Whitehead operation in (2) is
+Wh_0(Wh_n(U)), whose Alexander polynomial is 1. Thus simultaneously for
+every n,
+
+            Delta_(K_(3,n))=1,
+            Q_1(K_(3,n))=Q_1(U)=0,
+
+but d_(P_3)=d_W^3 !=0. This defeats a proposed criterion using all
+coefficients in the two-loop rational function, not merely a finite
+Taylor expansion of it. It does not say that every loop contribution
+vanishes for this fixed family.
+
+Source: S. Garoufalidis, Whitehead doubling persists, Algebraic &
+Geometric Topology 4 (2004), Corollary 1.1, p.938:
+https://arxiv.org/pdf/math/0003189
+
+3. NO FIXED-DEGREE SURGERY-LMO TEST CAN DECIDE d=0
+
+Lin's iterated-Whitehead result, stated by Birman on p.283, says that the
+m-fold untwisted Whitehead double of any knot has the same finite-type
+invariants as the unknot through degree m+1. Constants are understood
+to be subtracted. Applying this to (2), for r>=2 the knot K_(r,n) agrees
+with U through finite-type degree r, for every integer n.
+
+Ito Proposition 3.1 says that the degree-N part of the LMO invariant of
+S^3_(p/q)(K), p/q nonzero, depends only on the slope and the pieces of the
+Kontsevich invariant with bidegree (e,k) satisfying
+
+                    e+k/2 <= N.
+
+Here k is the number of legs, e is minus Euler characteristic, and the
+ordinary Vassiliev degree is e+k. For the zero-framed, one-colored knot
+invariant, no nonzero tree component occurs: a non-strut tree with only
+one leg color vanishes by antisymmetry, and the framing strut is absent.
+Hence each nonzero component has e>=0. This gives
+
+                    e+k <= 2(e+k/2) <= 2N.
+
+Consequently finite-type equality through degree 2N suffices for equality
+of the surgery LMO invariant through degree N, uniformly in the slope.
+Together with (1)--(2), this proves the following bounded-order statement:
+
+For every integer N>=1, choose r>=max(2,2N). Then, for EVERY integer n
+and EVERY nonzero rational slope p/q,
+
+  Z_LMO,<=N(S^3_(p/q)(K_(r,n))) = Z_LMO,<=N(L(p,q)),
+
+while d_(P_r)=d_W^r is nonzero.
+
+Thus even access to all surgery slopes and the entire rational-input
+family does not rescue a test restricted to a fixed LMO degree. The
+same construction also retains all the vanishing eta/Milnor data in
+section 1. This argument does NOT assume that ordinary Jones determines
+LMO, and does NOT produce one fixed nontrivial pattern invisible to LMO
+at every degree. The iteration depth depends on N.
+
+Sources:
+J. S. Birman, New points of view in knot theory, Bull. AMS 28 (1993),
+p.283, Remark (ii), explicitly attributing the construction to Lin:
+https://arxiv.org/pdf/math/9304209
+T. Ito, On LMO invariant constraints for cosmetic surgery and other
+surgery problems for knots in S^3, sections 2.1 and 3, Proposition 3.1:
+https://arxiv.org/pdf/1704.01755v2
+
+4. A PRECISE GEOMETRIC TARGET, AND AN ACTUAL COUNTEREXAMPLE TRIGGER
+
+Consider a compatible strongly invertible two-component link P union A
+with both components unknotted and lk(P,A)=0. Assume it is nonsplit.
+An exact, meaningful target is:
+
+   Can the normalized quotient shell multiplier d_P vanish identically?
+
+If such a pattern exists, it gives a genuine Jones-unknot counterexample,
+not just an algebraic model. Here is the conditional construction.
+
+(a) Perform +1 surgery on A and let P_1 be the image of P. Then P_1 is
+nontrivial. Otherwise A, regarded as a knot in the solid torus E(P),
+would admit a nonmeridional solid-torus surgery. Gabai's classification
+forces it into a ball or into a braid of nonzero winding. Zero linking
+rules out the braid case, and nonsplitting rules out the ball case.
+
+(b) If d_P=0, the actual quotient tangle of E(P_1), with preferred
+marking, has bracket on the Q_0 line. Its meridian closure is U. Thus its
+filling along +1 has Jones polynomial equal to that of the corresponding
+Q_0 filling, up to a framing monomial. The latter filling is U.
+
+(c) The actual +1 branch set C is a knot because its cover is the
+integral homology sphere S^3_(+1)(P_1). A Jones monomial of a knot equals
+1: V_C(1)=1 fixes the sign and V'_C(1)=0 fixes its exponent.
+
+(d) C is nontrivial. Otherwise its cover would be S^3, whereas a
+nontrivial knot P_1 cannot have a nonmeridional S^3 surgery. Equivalently
+one may invoke Property P for the +1 slope.
+
+Therefore an essential rank-collapse shell is an explicit geometric
+counterexample trigger. Proving d_P !=0 for every such essential shell
+would settle this restricted realization problem. There is still no
+proved reduction of an arbitrary Jones-one knot to this shell class.
+Accordingly this is a sharp target, not a generic unknot-detection proof.
+
+The special application of Gabai in (a) is also written out in the proof
+of Proposition 3.1 of Adjacency of three-manifolds and Brunnian links,
+Nagoya Mathematical Journal 261 (2026), article e10:
+https://www.cambridge.org/core/journals/nagoya-mathematical-journal/article/adjacency-of-threemanifolds-and-brunnian-links/477B1EF74CDC457D6FEA1B628CBB670C
+It cites D. Gabai, Surgery on knots in solid tori, Topology 28 (1989),
+1--6, DOI:10.1016/0040-9383(89)90028-1.
+
+STRATEGIC CONSEQUENCE
+
+Eta and derived Sato--Levine data are exhausted as a proposed exact
+description of d: actual boundary patterns disprove that bridge. Fixed
+perturbative order is also insufficient, even with every surgery slope.
+The remaining useful target is nonperturbative geometric nonvanishing
+of the shell determinant, or construction of a genuine essential shell
+whose determinant is exactly zero. The present results locate that gap;
+they do not solve it or imply that all-order LMO information is useless.

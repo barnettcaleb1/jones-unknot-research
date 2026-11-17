@@ -1,0 +1,47 @@
+U5-LAW: SAVED NONZERO CONTROLS, EXTREMAL SECOND-JET CONTRIBUTIONS
+No new braid evaluation or search. Read only the four saved nonzero controls.
+Source: c3_samples.json. Reproduction: python3 jet_extrema.py.
+
+Variables: q=s^2. The exponent a in the stored pairs below is an s exponent,
+so the collapsed degree is a-2b. In q units it is a/2-b.
+
+Using the raw FORK lattice normalization,
+  L_raw=-(1-t)(1+s^2t)^2(s^2-1)^2 t^-2 s^-6 P.
+With t=-s^-2(1+u), the coefficient contributed to its second derivative by
+c*s^a*t^b is c*(-1)^b*b*(b-1) at s-degree a-2b.
+The complete identity was checked on each saved sample:
+  d_u^2 L_raw|0 = -2(s^2-s^-2)^2 J_hat.
+
+Sample       top deg_q J_hat   J leading coeff   top deg_q raw second jet
+Bigelow             5                 1                      7
+Long-Paton         20                 1                     22
+one generator      0                 1                      2
+arc word          -1                 1                      1
+Every raw second-jet leading coefficient is -2.
+
+Raw top-line monomials (a,b,c) and weighted contributions:
+Bigelow: (6,-4,-1) -> -20; (8,-3,-2) -> +24; (10,-2,-1) -> -6.
+Long-Paton: (40,-2,-1) -> -6; (42,-1,-2) -> +4; (44,0,-1) -> 0.
+one generator: (2,-1,+1) -> -2; (4,0,+2) -> 0; (6,1,+1) -> 0.
+arc word: (0,-1,+1) -> -2; (2,0,+2) -> 0; (4,1,+1) -> 0.
+
+There are multiple nonzero weighted polynomial contributions in the
+Bigelow and Long-Paton raw second jets. HOWEVER, the regularized P has
+only ONE monomial on its highest surviving collapsed line in every sample:
+  Bigelow:    +s^8 t^-2, collapsing to s^12;
+  Long-Paton: +s^42, collapsing to s^42;
+  generator:  -s^4 t, collapsing to s^2;
+  arc word:   -s^2 t, collapsing to 1.
+P|line=(1+s^2) J_hat, so the P top degree is J top degree plus two.
+Thus the three-term raw top lines are produced by restoring the known
+normalization/universal factors. This is NOT evidence of three independent
+geometric extremal intersection pairs.
+
+Important scope: all entries are AGGREGATED Laurent monomials. A coefficient
+such as -2 has not been resolved into its individual intersection points,
+and opposite contributions may already have cancelled in collecting like
+terms. The data do not identify the diagonal/off-diagonal geometry, a
+separating-disk involution, or whether any pair has minimum intersection.
+Multiplying by deck monomials and switching fork vs absolute lattices changes
+the displayed terms and jet order. The table is exact in the stated fixed
+normalization; a geometric interpretation needs an unaggregated chain model.

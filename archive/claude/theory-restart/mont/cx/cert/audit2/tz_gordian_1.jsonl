@@ -1,0 +1,1 @@
+{"label": "U1:gordian_retry", "expect": "unknot", "hw": null, "runs": [{"seed": 1, "success": true, "final_gens": 1, "final_rels": 0, "secs": 1.47, "attempts": 2, "replay": [true, "ok"], "mine": [true, "reached <a|>"], "nmoves": 144}], "n": 141}

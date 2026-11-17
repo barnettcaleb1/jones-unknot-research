@@ -1,0 +1,30 @@
+# work/cancellation19
+
+[Archive index](../ARCHIVE_INDEX.md)
+
+These are historical source files, not automatically endorsed or portable.
+
+- [work/cancellation19/README.txt](../../archive/work/cancellation19/README.txt)
+- [work/cancellation19/adjacency_amplification.txt](../../archive/work/cancellation19/adjacency_amplification.txt)
+- [work/cancellation19/adjacency_amplification_braid_audit.txt](../../archive/work/cancellation19/adjacency_amplification_braid_audit.txt)
+- [work/cancellation19/algebra.txt](../../archive/work/cancellation19/algebra.txt)
+- [work/cancellation19/brunnian_reduction.txt](../../archive/work/cancellation19/brunnian_reduction.txt)
+- [work/cancellation19/brunnian_zero_shell_converse.txt](../../archive/work/cancellation19/brunnian_zero_shell_converse.txt)
+- [work/cancellation19/geometry.txt](../../archive/work/cancellation19/geometry.txt)
+- [work/cancellation19/homology.txt](../../archive/work/cancellation19/homology.txt)
+- [work/cancellation19/homology_adjacency_audit.txt](../../archive/work/cancellation19/homology_adjacency_audit.txt)
+- [work/cancellation19/homology_brunnian_audit.txt](../../archive/work/cancellation19/homology_brunnian_audit.txt)
+- [work/cancellation19/homology_brunnian_coefficient.txt](../../archive/work/cancellation19/homology_brunnian_coefficient.txt)
+- [work/cancellation19/homology_k3_bracket_audit.json](../../archive/work/cancellation19/homology_k3_bracket_audit.json)
+- [work/cancellation19/homology_k3_bracket_audit.py](../../archive/work/cancellation19/homology_k3_bracket_audit.py)
+- [work/cancellation19/independent_pd_bracket.json](../../archive/work/cancellation19/independent_pd_bracket.json)
+- [work/cancellation19/independent_pd_bracket.py](../../archive/work/cancellation19/independent_pd_bracket.py)
+- [work/cancellation19/progress.txt](../../archive/work/cancellation19/progress.txt)
+- [work/cancellation19/stoimenow_exact_seed.txt](../../archive/work/cancellation19/stoimenow_exact_seed.txt)
+- [work/cancellation19/stoimenow_factor.json](../../archive/work/cancellation19/stoimenow_factor.json)
+- [work/cancellation19/stoimenow_factor.py](../../archive/work/cancellation19/stoimenow_factor.py)
+- [work/cancellation19/stoimenow_fig10.png](../../archive/work/cancellation19/stoimenow_fig10.png)
+- [work/cancellation19/stoimenow_k3.json](../../archive/work/cancellation19/stoimenow_k3.json)
+- [work/cancellation19/stoimenow_k3.py](../../archive/work/cancellation19/stoimenow_k3.py)
+- [work/cancellation19/stoimenow_p476.png](../../archive/work/cancellation19/stoimenow_p476.png)
+- [work/cancellation19/stoimenow_versions.json](../../archive/work/cancellation19/stoimenow_versions.json)

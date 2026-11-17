@@ -1,0 +1,79 @@
+INDEPENDENT AUDIT: FINITE JONES PROBES AND UNBOUNDED VOLUME
+1 November 2026. Audit of finite_probe_volume_obstruction.txt; no edits to it.
+
+Verdict: the ordinary-Jones theorem and its quantifiers pass. The direct
+TL2 argument avoids the reduced/unreduced normalization trap entirely.
+
+1. Exact TL2 periodicity.
+With g=A I+A^-1 e and e^2=(-A^2-A^-2)e, direct multiplication gives
+  g^2=A^2 I+(1-A^-4)e.
+The minimal polynomial divides (X-A^2)(X-A^-6). For t=A^-4 not equal to
++1 or -1, these roots are distinct. If A^R=1, both eigenvalues have
+R-th power1, and hence (g^2)^R=I in TL2 itself. This is an algebra
+identity before any closure; no quantum dimension is divided out.
+A twist of R full turns changes writhe by +2R or -2R depending on the
+local orientation, and (-A^3)^(2R)=A^(6R)=1. Thus normalized Jones
+values are preserved for both orientation choices and both twist signs.
+Taking a common multiple of the finitely many A-orders is legitimate.
+
+2. The exceptional root -1.
+For a classical knot, V is an integer Laurent polynomial, V(1)=1 and
+V'(1)=0. Reduction of sum_j j a_j=0 modulo2 gives sum_odd a_j even,
+also when exponents are negative. Hence V(-1)=1 modulo4. Since
+Delta=1 implies |V(-1)|=1, its value is +1. No assumption about an
+orientation-dependent determinant sign is needed. At t=1 the usual
+knot normalization gives1 directly.
+
+3. Geometric quantifiers and adjacency.
+Fix the probe data first. Then choose n>2 satisfying both the finite-type
+order threshold and a strict cusp-volume margin above the desired B.
+Kalfagianni's 2007 Lemma2.4 gives one hyperbolic (n+1)-component parent
+with disjoint generalized-crossing supports and all proper partial
+operations unknotted. After all n fillings, reversing any nonempty
+subset is exactly a proper partial operation on the parent, so the
+resulting knot is n-adjacent to U. The 2004 Theorem2.3, printed p1115,
+then gives Delta=1 and agreement with U of finite-type invariants of
+orders <2n-1. Thus 2n-1>d suffices for the Jones Taylor condition.
+
+For each fixed n, the allowed positive multiples of R are unbounded
+on every filling torus. Hyperbolic Dehn filling therefore provides
+hyperbolicity and convergence of volume to that of the parent, which
+has at least (n+1)v3 volume. Choose the fillings sufficiently long to
+retain volume>B. One must vary n to obtain unbounded volume overall.
+The source's displayed equality between filled and parent volumes in
+its Equation(2) is not literally correct; the proof uses convergence,
+and the audited note correctly uses convergence rather than copying
+that equality.
+
+4. Separate unreduced all-color strengthening in the source variable.
+Let r_1,...,r_s>2 be fixed orders and R a common multiple. Use the same
+construction with every filling order divisible by R. For each r_i,
+a full twist of order m r_i can be realized as m successive order-r_i
+generalized crossing changes. Apply Kalfagianni Corollary2.3 at each
+successive step; equality of evaluations is transitive, so no extra
+claim about a transitive version of its congruence definition is needed.
+All moves have algebraic intersection zero and preserve the zero
+framing. Thus, simultaneously for every positive color N,
+  J_N(K,e_(r_i))=J_N(U,e_(r_i))
+in Kalfagianni's UNREDUCED variable convention. Integer Laurent
+coefficients extend this to Galois-conjugate primitive roots as well.
+The same knots can have arbitrarily large volume, Delta1, and any
+prescribed bounded finite-type agreement, by the preceding choice of n.
+
+This equality is informative for normalized H_N only if the evaluated
+unknot quantum dimension [N] is nonzero. At zeros it is vacuous and
+cannot be divided. The source itself emphasizes this in concluding
+Remark3(1), with N=r. No claim about all reduced colored values at
+quantum-dimension zeros is justified. The direct TL2 proof and Delta
+argument above are why the ORDINARY Jones statement nevertheless holds
+at every prescribed ordinary root, including -1, without translating
+between the source's colored variable and the usual t convention.
+
+Primary sources independently read:
+Kalfagianni, A note on quantum3-manifold invariants and hyperbolic volume,
+arXiv:0710.0076v2, Definition2.1, Corollary2.3, Lemma2.4,
+proof of Theorem1.2, and concluding Remark3(1).
+https://arxiv.org/html/0710.0076v2
+Kalfagianni, Alexander polynomial, finite type invariants and volume of
+hyperbolic knots, AGT4(2004),1111--1123, Theorem2.3 and Lemma2.4.
+https://msp.org/agt/2004/4-2/agt-v4-n2-p19-p.pdf

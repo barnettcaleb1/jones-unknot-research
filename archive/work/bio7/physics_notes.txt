@@ -1,0 +1,53 @@
+PHYSICS PASS: FINITE TOPOLOGICAL ORDERS, EXACT INVISIBILITY, AND RESOLUTION
+2026-10-31. These are elementary consequences of established TQFT and polynomial algebra; no novelty claim and no resolution of Jones unknot detection.
+
+1. Exact finite-theory invisibility theorem.
+Take any finite collection of unitary modular tensor categories. Let M be a common positive order of every topological twist theta_a in the collection. The nontrivial torus knot K=T(2,2M+1) has normalized zero-framed colored invariant 1 for EVERY simple color a in EVERY category in the collection.
+Proof: In a fusion channel c of a tensor a, the ribbon identity gives (R_aa)^2=(theta_c/theta_a^2) I, including fusion multiplicities. Set U_a=theta_a^(-1)R_aa. Then U_a^2=(theta_c/theta_a^4)I, so U_a^(2M)=I. The zero-framed invariant of the odd two-braid closure is Tr_q(U_a^m)/d_a. For m=2M+1 this equals Tr_q(U_a)/d_a=1, since Tr_q(R_aa)=theta_a d_a. The latter is exactly the one-crossing unknot normalization. The knot T(2,2M+1) has genus M>0; it is not an unknot.
+Framing is essential: the correction is theta_a^(-m), not merely the fundamental Jones writhe factor applied to every color. The argument incorporates this correction before taking powers.
+
+Primary source for every categorical identity used: Bonderson-Shtengel-Slingerland, Interferometry of non-Abelian Anyons, equations (2.33)-(2.34), p13 of arXiv PDF. Equation (2.33) is the ribbon identity, the following sentence states theta_a is a root of unity, and equation (2.34) gives the quantum-trace normalization.
+https://arxiv.org/pdf/0707.4206
+
+For SU(2) level k, with r=k+2 and integer label a=0,...,k, theta_a=exp(2pi i*a(a+2)/(4r)), so M=4*lcm(k_j+2) is a safe simultaneous order. It need not be minimal. For the Ising and Fibonacci-type SU(2) levels 2 and3, M=80 works, giving T(2,161). If only ordinary fundamental Jones evaluations are requested, a sharper construction is T(2,2R+1), R=lcm(r_j): at t_j=exp(2pi i/r_j), r_j>=3, normalized fundamental braid eigenvalues have 2R-th power1. The two-strand TL algebra is semisimple because delta is nonzero. The root t=-1 is excluded from this sharper claim: the torus-knot determinant is 2R+1, and the TL eigenvalues collide there.
+
+All annular satellite probes evaluated inside the fixed finite theories also agree with the unknot, by expansion into the finitely many simple-color core states. This does not include arbitrary new probes outside those theories. Therefore finite topological order, even with all its simple colors available, cannot uniformly certify knot triviality without a complexity bound. This is a concrete actual-knot effect, beyond a purely formal scalar-oracle countermodel.
+
+2. Positive counterpart: arithmetic gives a level/precision threshold.
+Suppose P(t)=V_K(t)-1 is supported in a known Laurent exponent interval of width W, after adjoining exponent0 if needed. A primitive r-th root zeta_r satisfying P(zeta_r)=0 implies Phi_r divides the integer polynomial obtained by shifting P to nonnegative exponents. Thus exact unknot values at distinct orders r_j certify V_K identically1 whenever sum phi(r_j)>W. In particular ONE prime order p with p-1>W is enough. This certifies the Jones polynomial, not the knot.
+
+A diagram with c crossings provides safe universal bounds W<=3c and coefficient l1 norm ||P||_1<=B=4^c+1. For the degree bound, each bracket state contributes A^s delta^(ell-1), |s|<=c and ell-1<=c, hence A-degrees lie in [-3c,3c]. Writhe normalization shifts by at most3c, giving integer t-degrees in [-3c/2,3c/2]. For the coefficient bound there are2^c states, and each delta power has l1 norm2^(ell-1)<=2^c. These bounds are conservative.
+
+Choose prime p>max(3c+1,2). If P is nonzero, P(zeta_p) is a nonzero algebraic integer. Its field norm is a nonzero integer, while every other conjugate has absolute value at mostB. Therefore
+  |V_K(zeta_p)-1| >= B^(-(p-2)).
+An evaluation certified below this threshold forces V_K identically1. This explicitly relates a priori diagram complexity, physical level k=p-2, and measurement precision. In practice the bound is extremely small, and statistical estimates must carry their own certified error probability.
+
+3. A useful additional observable: charge leakage, not another copy of the same scalar.
+In SU(2)_k, a fundamental meridian loop around a region acts on total charge j by
+  lambda_j = S_(1j)/S_(0j) = 2 cos((j+1)pi/(k+2)).
+These eigenvalues are distinct. Consequently all total-charge projectors are explicit Lagrange polynomials in this single meridian operator W. This reconstructs charge probabilities from finitely many meridian moments, but not the state inside a fusion multiplicity space.
+For a region containing two fundamental anyons, j is0 or2 (k>=2). Put d=2cos(pi/(k+2)), normalize M=W/d, and let p2 be nonvacuum fusion probability in a normalized state. Since M has eigenvalues1 and d^2-3,
+  p2 = (1-<M>)/(4-d^2).
+This is an exact nonnegative leakage witness. It is computed by a reflected tangle closure with an added linked meridian, rather than by V_K alone. The denominator4-d^2=4sin^2(pi/(k+2)) becomes small at large level: the first charge distinction scales as level^-2.
+Primary loop-removal identity: Bonderson-Shtengel-Slingerland, equation(2.37); normalized monodromy is equation(2.38). The construction of projectors and leakage identity are direct algebraic consequences.
+
+4. Why physical locality alone does not supply the missing theorem.
+Four fundamental anyons with total charge0 have a two-dimensional fusion space for k>=2. Every meridian enclosing all four sees total charge0 and acts as d times the identity, while a braid of the middle pair acts nontrivially on the encoded qubit. Even complete total-charge interferometry misses this logical information. To access it one needs overlapping pair probes, which do not commute.
+A precise conditional lemma is available: on a fixed irreducible TL path-space block, let p_i=e_i/d be the adjacent-pair vacuum projectors. If a unitary U commutes with every p_i, then U is scalar, since these projectors generate the full matrix algebra on that block. The commutator can be tested by the positive echo quantity
+  epsilon_i = tau([U,p_i]^*[U,p_i])
+            = 2[tau(p_i)-Re tau(p_i U^* p_i U)] >=0.
+Thus vanishing of all echo quantities removes within-sector logical freedom; an additional phase measurement is required to get U=I. This is a useful defect-tomography certificate, but original Jones1 provides neither these echoes nor a canonical presentation in which to demand them. Arbitrary unknot presentations already preclude simply assuming all such echoes vanish.
+
+Primary physical context: Cui et al., Kitaev's quantum double model as an error correcting code, Quantum4,331(2020), proves local indistinguishability for its code and also shows Wilson loops need not form a complete commuting observable family. This is motivation, not a theorem transferred from finite-group lattice gauge theory to Jones detection.
+https://quantum-journal.org/papers/q-2020-09-24-331/
+
+Concrete next test: work with a geometrically fixed tangle cut and compute the positive overlapping-pair echo polynomials, asking which extra topological hypotheses make ordinary closure data control them. First reject any proposed implication on the two distinct one-crossing unknot plats and on the finite-theory torus-knot family above. A successful theorem must use new geometric information or a rigorously defined presentation minimization. Merely adding more measurements at finitely many fixed levels cannot be sufficient.
+
+Verification: physics_probe_check.py verifies exact phase orders for every color at SU(2) levels1 through8, and numerically verifies44 independent one-crossing framing normalizations. The proof, not those finite checks, supplies the all-level/all-category result.
+
+Independent polynomial check: for s=60 the standard formula
+  V_(T(2,2s+1))(t)=t^s*(1+sum_{j=2}^{2s+1}(-1)^j*t^j)
+gives T(2,121). Exact polynomial division verifies V-1 divisible by Phi3, Phi4, and Phi5, while V(-1)=121. The whole sharper family obeys
+  (1+t)(V_(T(2,2R+1))-1)
+    =(t^R-1)*(1+t-t^(R+2)-t^(2R+2)).
+This also isolates the exceptional determinant root t=-1 without relying on a numerical eigenvalue calculation. These torus knots are not plausible counterexamples to the full Jones question; they are deliberate exact stress tests for any argument using finitely many fixed topological theories. Increasing the set of levels increases the required knot complexity, so there is no fixed finite-knot limit supplied by this construction.

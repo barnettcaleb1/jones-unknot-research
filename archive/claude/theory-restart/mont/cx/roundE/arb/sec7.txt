@@ -1,0 +1,29 @@
+## 7. What can be stated, and the exact residual frontier
+ THEOREM ARB (combined; PROVED modulo the C1 framework -- Lemma W, BX1-BX4/BX4', T2, the jet automaton (refGen: PROVED), R0/R2 --
+ Theorem N (horizontal), Theorem V (vertical; skein-dictionary GAP upstream) and the halfword dictionary).
+ Let (K,h) be strongly invertible with quotient the ROOT CLOSURE (horizontal X^mu, any mu != 0, or vertical, any odd a) of
+ Y^N (B_1 ... B_k u_1 ... u_n), u_i non-integral rational tangles (n >= 0), B_j non-rational boxes, k + n >= 2.  Then J(K,h) != 1 if
+   (i)   k = 0  (Q-MONT, V3, and 5a for the vertical n = 0 pretzels);
+   (ii)  every B_j is eligible (|lc b/lc a| = 1 at both ends), has span a >= 3 and an order-2 signature in S** (10,877 classes:
+         top-300, D36, 10,541 depth-one signatures; lists in gen1_*.pkl minus greedy_n2.pkl['D'], plus certtest2.pkl['safe'])
+         -- ARB-2, containing M300, D36* and D2x2 (5c, 5d) -- any multiplicities;
+   (iii) k = 1, n >= 1 and B in the per-class lists: horizontal closures for the 578 classes of hb_o3.pkl['closed'] (H3(B)),
+         vertical closures for the XXXV classes of o3v.pkl['vclosed'] (V3(B)), both for XXXB classes;
+   (iv)  the non-rational part is any multiset of top-300 + d2pos boxes and the weak end is in configuration F1 (lpgen 5.5') or F1'
+         (5b, 5b'): these configurations are empty at every multiplicity.
+ THE RESIDUAL FRONTIER (an arborescent counterexample must contain one of these; every listed family was searched exactly, 0 units):
+  F-A TWO-ENDED, RESONANT factors: an eligible factor whose signature is outside S** -- in the computed lists: 666 dangerous n=2
+      classes (per-class closures above remove most of them for k = 1 only), 3,460 unsafe n=3/4 classes, 260 classes with sigma in
+      Z/3, Z/4.  Structure (CHECKED): sigma(B) = sigma*-type classes (sigma = -1: vertical second-order tie), delta(B) >= 0 classes
+      (the delta-law no longer caps the number of factors in offset-0 configurations), positive-potential classes; 84% of the n=2
+      ones are near-resonant nests; the certificates they break are 'd=0 r=1' slices and second-order ties (two-ended), only 68
+      of 4,126 break offset cases alone.  After order 3 (single box): ties with the tau-law satisfied (T3 possible; need order 4)
+      and a few offset 'd=-2 e=1' at mu = +-1.
+  F-B INELIGIBLE factors (GAP-ELIG): |lc b/lc a| != 1 at an end.  Generated in infinite families by M-LEAD (lc 1/(k+1)); excluded
+      by every certificate theorem (C1, lpgen, ARB).  At a unit closure the non-coincident end forces |lc a_i| = 1 (S1-dominated) or
+      |lc b_i| = 1 (S2-dominated) for all children, but eps = lc S2/lc S1 may be ANY integer: the casework must be extended to
+      integer eps (offset +-1, +-2 rows become eps-dependent; slice eps).  E-D6: 0 units.
+  F-C SINGLE-CHILD closures (k = 1, n = 0): engineA E1 territory, computational only; every open LP case of D36* lives there.
+  F-D NOT ENUMERATED: depth >= 2 nests beyond lpgen's lists, |m| > 7 or |N| > 4 on special products (clipping thresholds grow there),
+      children outside R(5)/R(4).  By N-INF no finite list covers them: they need the parametrised-family LP (section 2) or a
+      uniform order-3 two-ended lemma.

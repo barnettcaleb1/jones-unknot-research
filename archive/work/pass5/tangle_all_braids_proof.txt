@@ -1,0 +1,110 @@
+Ren's capped core cannot lose its remaining annular Jones channel
+
+Statement. Let T be the four-strand tangle obtained from the six-strand braid
+
+  sigma_2^-1 sigma_1^3 sigma_2^-1 sigma_4 sigma_5^-3 sigma_4
+
+by capping strands 3 and 4 at both the top and bottom, retaining the outside
+strands 1,2,5,6. For every four-strand braid B, the annular closure of TB has
+Kauffman bracket degree exactly two in the essential-circle variable z.
+There is no bound on the length of B or on its positive or negative exponents.
+The closure need not be a knot. Braids on both sides of T are also covered,
+since annular closure is cyclic.
+
+This rules out annular bracket degree zero in this entire family. It does
+not say that the ordinary S^3 Jones polynomial cannot equal one: the top
+braid sigma_1^-1 sigma_3 gives an ordinary unknot, while retaining a nonzero
+annular z^2 coefficient. The two conditions must not be conflated.
+
+Conventions and exact coefficient calculation
+
+Use delta=-A^2-A^-2 and sigma_i=A I+A^-1 e_i. The element T in TL_4 has
+zero coefficient on the all-through diagram. This is reproduced by expanding
+the ten crossings in TL_6, adding the two caps, and collecting TL_4 diagrams.
+Consequently it lies in the ideal of diagrams with at most two through
+strands. Multiplication by any braid preserves that ideal, so the degree of
+the annular bracket is at most two.
+
+The three-dimensional TL_4 representation rho with two through strands has
+basis v_1,v_2,v_3 and
+  e_i v_i=delta v_i, e_i v_(i+/-1)=v_i, all other images zero.
+For every nonidentity TL_4 basis diagram, its matrix trace is its annular
+z^2 coefficient. For the identity, the trace is 3 and the z^2 coefficient
+is zero. Thus on the ideal containing TB the z^2 coefficient equals tr rho(TB).
+The verifier checks this identity separately on all fourteen TL_4 diagrams.
+
+Put x=-A^-4 and S=diag(1,A^2,A^4). Define
+  M(x)=A^-2 S^-1 rho(T) S,
+  R_i(x)=A^-1 S^-1 rho(sigma_i) S=I+E'_i,
+where row i of E'_i has diagonal x-1, predecessor entry -x and successor
+entry 1; all other entries vanish. Each R_i has determinant x, and
+  R_i^-1=I-x^-1 E'_i.
+Therefore every braid matrix U(x) is in GL_3(Z[x,x^-1]), including braids
+with negative crossings. If w is the braid exponent sum, then
+  [z^2] <annular(TB)> = A^(w+2) tr(M(x)U(x)).
+All scalar factors are nonzero monomials; no division by delta is involved
+in this trace identity or in the following specialization at x=1.
+
+The exact matrix M is as follows. Unlisted entries M12 and M32 are zero.
+  M11=-x^5-2x^4-3x^3-4x^2-3x-2
+  M13=x^3+2x^2+3x+3+3x^-1+2x^-2+x^-3
+  M21=-x^5-3x^4-4x^3-5x^2-5x-4-2x^-1-x^-2
+  M22=-x^3-x^2+x^-1+x^-2
+  M23=x^3+2x^2+4x+5+5x^-1+4x^-2+3x^-3+x^-4
+  M31=-x^4-2x^3-3x^2-3x-3-2x^-1-x^-2
+  M33=2x+3+4x^-1+3x^-2+2x^-3+x^-4.
+
+In particular,
+             [-15   0  15]                [-33   0   0]
+  M(1) =    [-25   0  25],     M'(1) =   [-40  -8 -15].
+             [-15   0  15]                [-15   0 -18]
+
+Hence M(1) is zero modulo 5 and M'(1) is 2I modulo 5.
+
+Proof of nonvanishing for every braid
+
+Let u=(1,0,1)^t, v=(0,1,0)^t and r=(1,0,-1). The specialized generators
+R_i(1) fix u and have determinant one; their inverses do also. Thus U_0=U(1)
+is an integral determinant-one matrix fixing the primitive vector u. Moreover,
+  M(1)=(-15u-25v)r,
+so
+  tr(M(1)U_0)=-15rU_0u-25rU_0v=-25rU_0v.
+
+Suppose the entire Laurent polynomial tr(MU) were zero. Its value at 1
+would be zero, forcing rU_0v=0. Consider the integral quotient Z^3/Z u.
+It is free, with basis the classes of e_1 and e_2, since e_3=-e_1 in this
+quotient. The first coordinate of a class is exactly the functional r.
+Thus the induced two-dimensional integer matrix has upper-right entry zero.
+Its determinant is one, because U_0 fixes u and det U_0=1. Its diagonal
+entries are integers with product one, hence are both 1 or both -1.
+It follows that
+  tr U_0=1+2=3, or tr U_0=1-2=-1.
+
+Now differentiate the allegedly zero Laurent polynomial. Since all entries
+of U and M are integral Laurent polynomials, their derivatives at 1 are
+integers. Reduction modulo 5 gives
+  (tr(MU))'(1)
+   =tr(M'(1)U_0+M(1)U'(1))
+   =2 tr U_0 (mod 5).
+The right side is respectively 6=1 or -2=3 modulo 5. It is never zero.
+This contradicts identically zero tr(MU), proving that the annular z^2
+coefficient is nonzero for every B. Together with the upper bound, its
+annular bracket degree is exactly two.
+
+Reproduction and independent checks
+
+Run: python3 -S tangle_all_braids_obstruction.py
+Required accompanying files are tangle_core_stdlib.py and search.py.
+The verifier uses only the Python standard library and exact integers.
+It rebuilds the 132-dimensional TL_6 expansion from the ten crossings,
+performs the two caps, constructs the fourteen-dimensional TL_4 element,
+and constructs the three-dimensional matrix M from TL generator products.
+It reads no saved coefficient JSON or knot-theory software output. It then
+checks the two exact matrices, the modulo-five identities, the annular
+trace identity on all fourteen basis diagrams, and eight noncommuting
+mixed-sign braid examples against the separate full TL_4 computation.
+
+The matrix, gauge, all basis trace identities, and integral quotient argument
+were also checked independently by the braid subagent from a separately
+constructed exact TL_4 matrix. These are internal checks, not claims of
+external peer review.

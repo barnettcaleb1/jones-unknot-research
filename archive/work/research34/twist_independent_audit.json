@@ -1,0 +1,52 @@
+{
+  "z": "x^-4, where x=t^(1/2)",
+  "cut_first_active": [
+    false,
+    true
+  ],
+  "cut_second_active": [
+    true,
+    false
+  ],
+  "checks": [
+    {
+      "m": 0,
+      "n": 0,
+      "exact_recurrence": true
+    },
+    {
+      "m": 1,
+      "n": 0,
+      "exact_recurrence": true
+    },
+    {
+      "m": 0,
+      "n": 1,
+      "exact_recurrence": true
+    },
+    {
+      "m": 1,
+      "n": 1,
+      "exact_recurrence": true
+    },
+    {
+      "m": 1,
+      "n": -1,
+      "exact_recurrence": true
+    }
+  ],
+  "S1_at_i": "144j",
+  "S2_at_i": "144j",
+  "S1_minus_delta_span": 22,
+  "S2_minus_delta_span": 24,
+  "delta_prime_at_i": -2,
+  "z_prime_at_i": "4i",
+  "V_mn_at_t_minus1": "1-288(m+n)",
+  "all_integer_Jones_one_locus": [
+    [
+      0,
+      0
+    ]
+  ],
+  "proof": "Evaluation forces m+n=0. For m nonzero, recurrence in Q(x) forces (S1-delta)=x^(-4m)(S2-delta), impossible because spans22 and24 differ."
+}

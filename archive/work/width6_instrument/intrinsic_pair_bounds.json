@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Bigelow_nonzero",
+    "nonzero_monomials": 42,
+    "l1_lower_bound_on_intersection_pairs": 180,
+    "largest_aggregated_coefficient": 10
+  },
+  {
+    "label": "LP_nonzero",
+    "nonzero_monomials": 767,
+    "l1_lower_bound_on_intersection_pairs": 57513874,
+    "largest_aggregated_coefficient": 1019759
+  },
+  {
+    "label": "prior_zero_kernel_arc_commutator",
+    "nonzero_monomials": 332,
+    "l1_lower_bound_on_intersection_pairs": 3772080,
+    "largest_aggregated_coefficient": 73983
+  }
+]

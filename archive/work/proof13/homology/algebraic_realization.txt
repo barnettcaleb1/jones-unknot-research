@@ -1,0 +1,190 @@
+PROOF13: THE FOUR-SPECIAL MODEL PASSES FULL TANGLE-ALGEBRA EXTENSION TESTS
+2026-10-31. This is an algebraic construction, NOT a classical tangle diagram.
+
+RESULT
+The four-special boundary model from proof12 is not excluded by the ordinary
+Bar-Natan tangle algebra, its Kh mapping cone, rational-filling pairing functors,
+central connectivity actions, or the A-infinity extension required in the 2026
+geography theorem. We construct the requisite objects explicitly, including
+the higher correction to the central-G cone map. There is a signed integral
+version as well as the characteristic-two model.
+
+This determines a useful stopping point: merely imposing those algebraic
+extension conditions cannot establish the hoped-for no-cancellation statement.
+It does NOT show that the object is the invariant of any actual tangle.
+It does NOT provide a generic reduction from a Jones-one knot to this particular
+unknot-anchored situation.
+
+PRIMARY SOURCES AND CONVENTIONS
+Kotelskiy--Watson--Zibrowius, On mutation invariance in Khovanov homology,
+arXiv:2602.23442 (2026): https://arxiv.org/pdf/2602.23442
+ - Definition 2.6: the tangle algebra B, with mixed DS and SD products zero;
+   q(S)=-1, q(D)=-2, and central G=S^2-D.
+ - Section 2.2: Kh is the cone q^-1 h^-1 D --G--> q^1 D of a BN object D.
+ - Definition 9.4 and Remark 9.5: twisted complexes and the signed MC relation
+   sum_m (-1)^m mu_(2m)(delta,...,delta)=0 in even underlying homological degree.
+ - Definition 10.1 and Remark 10.3: B^infinity_U, deg U=(h,q)=(-2,-6), and
+   its higher products. Theorem 10.4 requires extensions of BN and Kh objects.
+ - Proposition 3.24: the central action imposed by tangle connectivity.
+ - Remark 10.17: naive G times identity need not be a closed lifted morphism.
+
+KWZ, Khovanov homology and strong inversions, Open Book Series5 (2022):
+https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+Figure6 gives the 12-generator s4(infinity) module used below, and Lemma2.5
+gives its four-dimensional a(0) pairing. Their standard local system is +1
+over F_2; over general coefficients the 2026 convention is -1.
+
+1. THE COMPLETE SPECIAL TYPE-D MODULE X
+There are generators x0,...,x5 and y0,...,y5. Their idempotents are bullet for
+indices0,5 and circle for indices1,2,3,4. The x row has (q,h) values
+ (-5,-3),(-4,-2),(-2,-1),(0,0),(2,1),(3,2).
+The y row is shifted from x by (q,h)=(2,1).
+Along EACH row, arrows point from index i to i+1 with labels
+  S, D, S^2, D, S.
+There are also vertical arrows x0 -> y0 and x5 -> y5, labelled D over F_2.
+Over Z take the first vertical label -D and the second +D, implementing the
+rank-one local system -1. All other original labels have coefficient +1.
+The B differential squares to zero because every two-step product is mixed DS
+or SD. This is X=C(s4(infinity)), not just the four-dimensional closed pairing.
+
+2. AN EXPLICIT A-INFINITY EXTENSION
+Over F_2 add two arrows
+  x1 --U--> y3,       x2 --U--> y4.
+They have total degree (h,q)=(1,0). The signed integral version instead uses
+  x1 ---U--> y3,      x2 --+U--> y4.
+There is no change to any original arrow apart from the local-system sign above.
+
+Here is the entire Maurer-Cartan check. The two mixed products involving D and U
+from x1 to y4 cancel. The remaining mu2 terms are US from x0 to y3 and US from
+x2 to y5. They are canceled by mu4 applied to the original paths with labels
+  D,S,D,S^2       and       S^2,D,S,D,
+respectively. Other four-step paths have zero mu4. Higher products involving a
+new U times idempotent arrow vanish by strict unitality. Every remaining
+six-step path has input quantum degree -10, while the underlying mu6 raises
+quantum degree by12; B has no positive-degree output, so mu6 vanishes. No longer
+paths occur. Over Z the signs agree with Remark9.5: -mu2+mu4=0.
+
+3. G IS NULLHOMOTOPIC, AND THE CONE LIFT NEEDS EXTRA TERMS
+The certificate solves delta H + H delta = G times identity over B, with
+deg H=(h,q)=(-1,-2). The solution is integral: no division is required.
+Over F_2 one explicit H has these arrows (unlisted arrows are zero):
+ x1->x0:S; x2->x1:1; x3->x2:1; x4->x3:1; x5->x4:S;
+ y0->x0:1; y1->x1:1; y2->x2:1; y3->x3:1; y4->x4:1; y5->x5:1;
+ y1->y0:S; y2->y1:1; y3->y2:1; y4->y3:1; y5->y4:S.
+The signed integral solution is recorded explicitly in check_integral_extension.json.
+
+Crucially, we did NOT assume naive G times identity is closed over B^infinity_U.
+The twisted morphism differential of H gives the following corrected map in F_2:
+  G_tilde = G times identity
+          + U(x1->x3 + x2->x4 + y1->y3 + y2->y4).
+It is exact upstairs and reduces to G times identity at U=0. The certificate
+computes it, including the mu4 terms; it does not simply discard higher products.
+The analogous signed map is computed from the integral nullhomotopy and saved
+in the integral certificate.
+
+The complete 24-generator cone of G_tilde also satisfies MC directly. Its
+source copy of X has shift q^-1 h^-1 (and hence negated internal differential
+over Z), its target copy shift q^1 h^0, and its between-copy arrows are G_tilde.
+The certificate checks every possible nonzero arity. Since G_tilde is exact in
+the twisted category, this cone is equivalent there to the direct sum of the
+two shifted X copies. Over B this is the standard splitting of a nullhomotopic
+mapping cone.
+
+4. THE FULL FORMAL BN AND Kh TANGLE OBJECTS
+Let A=C(a(0)), the one-generator rational-arc BN object, and set
+  D = A direct-sum q h X direct-sum q h^2 X.
+The h shifts use the standard suspension sign on the differential over Z.
+By the preceding nullhomotopy, its G cone is equivalent over B to
+  C(r1(0)) direct-sum X direct-sum q^2 h X
+             direct-sum h X direct-sum q^2 h^2 X.
+This is exactly the proposed four-special model, now as a full type-D object.
+X has12 generators, D has25, and its unsimplified mapping-cone presentation has50; these
+counts are different from the rank18 of the zero-filling reduced Kh vector space.
+
+A is trivially extendable. The explicit extension of X and the lifted cone map
+give compatible extensions of D and its Kh cone. Alternatively the split cone
+is the direct sum of four shifted copies of the explicitly extended X and the
+two-generator rational cone. This also makes the extension property immediate.
+
+5. WHAT HOLDS FOR ALL RATIONAL FILLINGS
+Pairing with any rational filling is an additive gluing functor and preserves
+mapping cones. Thus it applies to the entire construction, not just the a(0)
+pairing used in proof12. For every such pairing F, the extra Euler contribution
+is
+  Euler(F(X)) (1-Q^2-1+Q^2)=0.
+Therefore all these formal filled Euler polynomials equal those of the rational
+anchor. At infinity the special-sector pairing is zero, while the rational
+anchor pairs to the one-dimensional unknot group.
+
+Moreover G times identity on X is nullhomotopic. After G is inverted, or after
+specializing G=1, X is contractible; the same is true after any gluing functor.
+Consequently the deformed filling homology agrees with that of the rational
+anchor for every filling. This is stronger than prescribing a differential on
+one chosen rank18 vector space.
+
+All three central actions D_circle, D_bullet, and S^2 on X are nullhomotopic.
+The characteristic-two certificate records their explicit nullhomotopies, and
+an additional integral linear calculation gives integral nullhomotopies too.
+The rational arc supplies its ordinary connectivity, so the corresponding
+connectivity/basepoint-action condition is met.
+
+6. PRECISE LIMITATION
+D is an object of the formal tangle algebra / additive cobordism-complex
+category, and passes the required A-infinity-extension test. We have not shown
+that it is in the image of the invariant of actual classical tangle diagrams.
+In particular, no actual cube of crossing resolutions, connected tangle, or
+unknot-anchored classical embedding has been constructed. The derived category
+admits direct sums and shifts; those operations do not by themselves realize
+a prescribed object as the invariant of a single geometric tangle.
+
+We also do not claim every conceivable naturality requirement of a fully
+geometric tangle/cobordism functor follows merely from these objectwise checks.
+The concrete requirements checked are the B module, G cone, all rational
+pairing/cone operations, deformed filling ranks, listed central actions, and
+the B^infinity_U object and cone extensions. Any remaining obstruction must
+use additional geometric realization information or a stronger specified
+compatibility condition, rather than reimposing these tests.
+
+REPRODUCIBLE CERTIFICATES
+ check_extension.py / .json: exact F_2 arithmetic, explicit type-D module,
+ A-infinity MC, G-nullhomotopy, corrected lifted G, full cone MC, central actions.
+ check_integral_extension.py / .json: signed integral module, integral
+ nullhomotopy, higher lifted map, and full cone MC. Uses only the Python standard
+ library, including exact rational Gaussian elimination and an integrality check.
+
+The all-color, colored-satellite, and generic unknot questions remain separate.
+
+7. CONDITIONAL GEOMETRIC CONSEQUENCE: REALIZATION WOULD GIVE A COUNTEREXAMPLE
+There is a sharper interpretation of the remaining realization problem.
+Suppose a classical tangle T has this bigraded type-D invariant D, allowing
+ONE global bigrading shift while preserving the specified relative shifts.
+Then its slope1 filling would be a NONTRIVIAL knot with Jones polynomial1.
+
+Indeed, rational gluing gives the same Euler polynomial as the rational anchor
+at every slope, up to the global monomial. The rational tangle Q0 with slope1
+filling is the unknot, so the actual slope1 filling has signed-monomial Jones
+polynomial. The identity |V_L(1)|=2^(number of components-1) forces a knot.
+For knots, V_K(1)=1 fixes the monomial sign and V'_K(1)=0 fixes its exponent.
+Thus the normalized Jones polynomial is exactly1, even without an absolute
+grading/framing calibration. The derivative identity follows from the Jones
+skein relation: changing a self-crossing does not change V'_K(1), and every
+knot can be changed to the unknot.
+Its reduced F_2 Kh rank, however, would be
+  dim HF(a1,r1(0)) + 4 dim HF(a1,s4(infinity)) = 1+4*4 = 17.
+The first equality follows by the curve pairing decomposition. The rational
+rank is1, while KWZ2022 Lemma2.5 and the proof of Lemma3.6 give special rank4
+for every integer filling. Thus this knot cannot be the unknot, whose rank is1.
+No surgery argument or hypothetical geometric nontriviality assumption is needed.
+
+For completeness, the infinity filling has reduced F_2 Kh rank1, since its
+special-sector pairings vanish. It is consequently the unknot: rank1 over F_2
+implies rank1 over Q, and apply Kronheimer--Mrowka's unknot-detection theorem.
+Primary: https://arxiv.org/abs/1005.4346
+The zero filling has the unlink Euler polynomial and Kh rank18. These claims
+are conditional on actual classical realization, which remains completely open
+in this calculation. No such tangle or counterexample has been constructed.
+
+The integral certificate means a signed formal lift with integer structure
+constants. The 2026 geometric equivalence is invoked only in its stated field
+setting; no integral version of that equivalence is assumed. The integer
+certificate in particular supplies the algebraic construction over Q.

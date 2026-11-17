@@ -1,0 +1,127 @@
+{
+  "variable": "u=q^(1/2)",
+  "unknot_checks": 13,
+  "leading_ratio_checks": [
+    {
+      "label": 1,
+      "leading_x_degree": 3,
+      "second_x_degree": 1,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 2,
+      "leading_x_degree": 8,
+      "second_x_degree": 6,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 3,
+      "leading_x_degree": 15,
+      "second_x_degree": 13,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 4,
+      "leading_x_degree": 24,
+      "second_x_degree": 22,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 5,
+      "leading_x_degree": 35,
+      "second_x_degree": 33,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 6,
+      "leading_x_degree": 48,
+      "second_x_degree": 46,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 7,
+      "leading_x_degree": 63,
+      "second_x_degree": 61,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 8,
+      "leading_x_degree": 80,
+      "second_x_degree": 78,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 9,
+      "leading_x_degree": 99,
+      "second_x_degree": 97,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 10,
+      "leading_x_degree": 120,
+      "second_x_degree": 118,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 11,
+      "leading_x_degree": 143,
+      "second_x_degree": 141,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    },
+    {
+      "label": 12,
+      "leading_x_degree": 168,
+      "second_x_degree": 166,
+      "ratio_in_u": {
+        "0": -1,
+        "2": -1,
+        "4": -1
+      }
+    }
+  ],
+  "fundamental_checks": 8
+}

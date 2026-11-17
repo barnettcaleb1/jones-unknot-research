@@ -1,0 +1,141 @@
+PASS 48: GEOMETRIC AUDIT OF THE LOW-DEGREE SKEIN TORSION ROUTE
+2026-11-01. Bounded deduction and route identification, not a solution.
+
+No actual knot-minus-unknot torsion pair, marked relative lift, or Jones-one
+nontrivial knot was constructed. The useful outcome is a structural boundary
+on the proposal and recognition of a previously investigated bottleneck.
+
+Setup
+-----
+M is the exterior of a two-component unlink, equivalently ST#ST. Its
+separating sphere is S. Let x1,x2 be the two core knots and y their standard
+connected sum through the neck. Put R=Z[A,A^-1], delta=-A^2-A^-2.
+The explicit source relation is
+  (A^2-A^-2)([x1 disjoint-union x2]-delta[y])=0.
+Its two actual link representatives are x1 disjoint-union x2 and y
+ disjoint-union U, each with two components.
+
+Primary source checked this pass: Bakshi--Le--Przytycki,
+https://arxiv.org/html/2604.09971v1 , Sections 2.2, 3.1, 3.5.
+The source develops handle-slide relations by using marked relative arcs;
+it does not supply a band-compatible knot-minus-unknot version of J1.
+
+1. The banded J1 proposal re-enters the old one-band problem
+----------------------------------------------------------
+In every reciprocal-integer filling of the two axes giving S^3, both
+unbanded links above are unframed U_2. Any single band connecting the two
+components therefore produces a fusion-one ribbon knot. If one endpoint
+is U and the other is nontrivial, the latter is U#_b U for a nontrivial band b.
+
+Miyazaki's theorem says that a band sum of a split pair J,K equals J#K if
+and only if the band is trivial (a splitting sphere meets it in one cocore).
+Consequently band triviality, not the closed torsion class, is exactly what
+separates the unknot from a nontrivial knot for these filled U_2 inputs.
+Primary source:
+https://arxiv.org/pdf/1903.11266 , Theorem 1, definition preceding it.
+This theorem and its relevant application were already used in passes21/23.
+They must not be counted as new mathematics here.
+
+The exact remaining Jones condition is also old: Wang's band-twist formula
+for a split input is V(K_{b+n})=V(J#K)+q^(4n)P_b (consistent normalization).
+For J=K=U, a nontrivial Jones-one band would require P_b=0. The absence of a
+proof that nontrivial b forces P_b nonzero was explicitly isolated in
+work/research21/ribbon_euler_audit.txt. That note independently audited
+Wang's primary source https://arxiv.org/pdf/2006.01070 .
+Thus the current closed torsion witness does not give a new family of
+candidate bands; a concrete marked lift would be the new ingredient.
+
+The lack of extra geometry is substantial: start with ANY one-band ribbon
+presentation U_2 -> K. Around small arcs of the two unlink components,
+away from band attachment arcs and band interior, choose disjoint standard
+meridian circles C1,C2 in disjoint small balls. They form an unlink and are
+disjoint from the band. Each pair (Ui,Ci) is a standard Hopf pair in its
+unlink-component ball. The U_i represent x_i in the resulting M. Hence the
+same unbanded J1 relation is available before applying this arbitrary band.
+It imposes no Jones condition on the banded result. This is an explicit
+geometric universality statement for the unbanded setup, not a realization
+of its missing relative lift.
+
+2. A two-intersection sphere gate reduces to one-axis patterns
+-------------------------------------------------------------
+Suppose an ACTUAL framed knot P in M intersects S transversely in exactly
+two points. Cap its two pieces by the standard boundary arcs in the
+punctured solid tori, obtaining framed solid-torus knots P1,P2. Then P is
+P1#P2 through the neck. Let pi(xi) be their integral annular skein classes.
+Over F=Q(A), the connected-sum skein is F[x1,x2]. In this module,
+
+  delta[P] = p1(x1)p2(x2).                                      (1)
+
+One justification of (1) retains all geometry. Each punctured solid torus
+contains a regular neighborhood of its spherical boundary, a thin arc
+leading to P_i, and a solid-torus neighborhood of P_i. This is a punctured
+solid torus with the inner spherical boundary fixed. Gluing the two such
+neighborhoods along S gives an embedded ST#ST in M whose core curves map
+to P1,P2 and whose connected-sum core maps to P. Apply the actual n=1
+source relation by this embedding, and invert A^2-A^-2. The construction
+uses an embedding, which induces a skein map; it does not attach a band to
+an unmarked class. Framings of the capped pieces are chosen to sum to the
+framing of P.
+
+The generic connected-sum identification itself is established in
+Przytycki, https://arxiv.org/pdf/math/9911120 , Theorem1.2/Corollary1.3.
+No use is made here of that paper's later integral Theorem7.1, whose general
+claim was subsequently corrected/disproved; only the generic theorem and
+the explicit ST#ST low-degree relation are needed.
+
+Assume now [P]-[y] is R-torsion. Since delta[y]=x1x2 generically, (1) gives
+
+  p1(x1)p2(x2)=x1x2.
+
+Independence of the two polynomial variables forces p1=c1*x1 and
+p2=c2*x2 with c1*c2=1. Since both p_i are integral Laurent polynomials,
+c1 and c2 are units of R, hence c1=+/- A^r and c2=c1^-1.
+
+Consequently a putative torsion counterexample with only two neck
+intersections already contains one-axis patterns whose annular brackets
+are monomial multiples of the core. In any S^3 filling P becomes the
+ordinary connected sum of the filled P1 and P2. Its normalized Jones
+polynomial is their product, so if V(P)=1 each factor is a Laurent unit;
+V(1)=1 and V'(1)=0 force each factor to equal1. If P is nontrivial, at
+least one factor is a nontrivial Jones-one knot.
+
+This proves no detection theorem. It says that a genuinely new interaction
+from the two-axis torsion setup must avoid this simple two-intersection
+neck situation; otherwise it reduces to the earlier one-axis Jones-trivial
+pattern problem. Since S separates, transverse intersection counts are
+even. A P disjoint from S lies entirely in one summand and cannot have the
+generic class of y, which depends on both variables. Thus any torsion
+candidate not reducible as above must have geometric intersection at least
+four with the chosen reducing sphere.
+
+3. A whole family of geometric operations is automatically harmless
+-------------------------------------------------------------------
+Let phi:M->M be orientation preserving and preserve the filling slopes
+on the boundary tori (allowing simultaneous permutation of tori/slopes).
+It extends over the filling solid tori. If that filling is S^3, the extended
+map carries P to phi(P), so these are the same knot type in S^3. For the
+unknot conclusion no mapping-class theorem is needed: the extended map
+carries an embedded spanning disk to an embedded spanning disk.
+
+In particular, sphere twists or sphere-slide homeomorphisms supported in
+the interior of M cannot turn an unknot into a nontrivial knot in any fixed
+S^3 filling. The same is true for a band carried along by the homeomorphism.
+A relation created solely by these genuine geometric moves cannot give the
+needed knot pair. One needs a skein-linear relation not realized by a
+slope-preserving homeomorphism of the marked objects.
+
+This statement does NOT assert that all torsion relations come from such
+homeomorphisms. The source's closed J1 relation changes connectivity and
+is obtained by taking a linear combination of resolved diagrams. It is
+exactly that linear step whose endpoint data cannot be discarded.
+
+Conclusion / next-action consequence
+------------------------------------
+Do not search arbitrary one-band diagrams merely because J1 is available:
+that reopens the previous fusion-one P_b problem without adding a constraint.
+Do not use sphere-supported homeomorphism or a two-point neck factorization
+as a source of new Jones-one topology. A viable genuinely new torsion
+construction would need an explicit marked relation with interacting neck
+strands (at least four for a knot candidate), together with a band that
+survives in that relation and an independent nontriviality certificate.
+No such construction was found in this bounded pass.

@@ -1,0 +1,163 @@
+APPROXIMATION, ARITHMETIC SEPARATION, AND EXACT JONES ONE
+1 November 2026. Bounded pass 43; no counterexample or detection proof.
+
+Outcome
+
+There is an exact arithmetic certificate, but the known density/compilation
+theorems do not produce a nontrivial knot satisfying it. The precise hurdle
+is a simultaneous degree--height--precision inequality. Fixed-root exactness
+and arbitrarily strong p-adic congruence are already achieved by actual
+nontrivial knots, so neither is the missing construction on its own.
+
+1. A self-contained degree and height bound
+
+Let D be a diagram of a classical knot with c crossings, V its normalized
+Jones polynomial in t=A^{-4}, and P=V-1. Set H=||P||_1. Then
+  H <= 4^c+1,
+and all exponents of P lie in [-3c/2,3c/2]. Thus multiplying P by its
+lowest-power inverse gives an ordinary integer polynomial of degree <=3c.
+
+Proof: there are 2^c bracket states. Each has at most c+1 circles, so its
+factor delta^{s-1}, delta=-A^2-A^{-2}, has coefficient l1 norm <=2^c.
+The sum has norm <=4^c. Its A-exponents have absolute value <=3c;
+the writhe correction shifts by at most 3c more. Division of exponents
+by -4 gives the claimed t interval. Subtracting 1 raises l1 norm by
+at most one and does not enlarge this interval. These are deliberately
+coarse bounds; an actual computed height or support may be much smaller.
+
+2. The exact root-of-unity separation threshold
+
+Let zeta be primitive of order r and d=phi(r). If P(zeta)!=0, then
+  |P(zeta)| >= H^{-(d-1)}.                              (1)
+Indeed P(zeta) is an algebraic integer, and its nonzero norm is an integer
+of absolute value at least one. All its other d-1 conjugates have absolute
+value at most H. Negative powers cause no problem because zeta is a unit.
+
+If every coefficient of P is divisible by an integer M>=1, the stronger
+bound is
+  |P(zeta)| >= M^d/H^{d-1}.                            (2)
+The same bound holds under the weaker condition P(zeta) in M Z[zeta].
+Apply the preceding norm argument to P(zeta)/M.
+
+Consequently, a RIGOROUS certified error interval proving
+  |V(zeta)-1| < M^d/H^{d-1}
+forces V(zeta)=1 exactly. It forces V=1 as a Laurent polynomial only if
+the shifted degree is less than d. A sufficient diagram-only condition is
+  phi(r)>3c.                                          (3)
+Without (3), exactness only says Phi_r divides the shifted P.
+For distinct root orders one can instead use the degree of the product
+of their distinct cyclotomic polynomials. This is an exact verification
+criterion, not a construction of a knot meeting it.
+
+3. What braid compilation would actually have to beat
+
+Write x=log(1/epsilon), where epsilon bounds the error in the NORMALIZED
+Jones scalar itself. Any conversion from operator error to scalar error
+must include its plat/trace normalization; it cannot be silently dropped.
+With M=1 and only the diagram bound, (1) requires
+  x > (phi(r)-1) log(4^c+1).                           (4)
+Combining with (3), this sufficient threshold is of order c^2 when r
+is chosen as a prime just larger than 3c. At a fixed root it is of order
+c, but then cyclotomic equality is not whole-polynomial equality.
+
+The original Freedman--Larsen--Wang density/compilation discussion gives
+length polynomial in log(1/epsilon), not a method meeting (3)--(4).
+The modern general Solovay--Kitaev bound is substantially better than
+the often-quoted exponent near four: Kuperberg's October 2025 v2 gives
+O(x^{1.44042...+delta}) word length for fixed generators. It still does
+not give the crossing control c=O(sqrt(x)) that would close this coarse
+adaptive-root certificate. Generator constants also change with r.
+
+This is NOT a lower bound on every conceivable algorithm and NOT a claim
+that every Jones polynomial has exponential height. It says the cited
+upper bounds do not certify the required self-consistent inequality.
+Even a fixed-root O(x) existence theorem would need appropriate constants
+for (4), and would still leave (3) unresolved. Using a smaller actual H
+could improve the test, but no topology-preserving construction controlling
+H, r, epsilon, and nontriviality simultaneously was obtained.
+
+Primary sources:
+Freedman--Larsen--Wang, The two-eigenvalue problem and density of Jones
+representation of braid groups, Theorem 0.1, Theorem 5.6, Corollary 5.7:
+https://arxiv.org/html/math/0103200
+Kuperberg, Breaking the cubic barrier in the Solovay--Kitaev algorithm,
+arXiv:2306.13158v2, 8 October 2025:
+https://arxiv.org/abs/2306.13158v2
+Aharonov--Arad, The BQP-hardness of approximating the Jones Polynomial,
+Sections 1.3 and 1.5 explain normalization and varying-level issues;
+their growing-level universality result does not give (3)--(4):
+https://arxiv.org/html/quant-ph/0605181
+
+4. All Galois embeddings: exact rigidity, and why density cannot supply it
+
+If |P(zeta^a)|<1 for every a coprime to r, then its norm has absolute
+value <1, so P(zeta)=0. More generally, if one conjugate is <=epsilon
+and all the others are <=B, nonzero P requires
+  epsilon B^{d-1} >=1.                                 (5)
+Thus smallness in one embedding must be paid for elsewhere, unless the
+evaluation is already exactly zero.
+
+This is genuine arithmetic rigidity but not a free additional consequence
+of unitary braid density. The full integral Temperley--Lieb representation
+can be written using its diagram basis over Z[A,A^{-1}]. At a root A=eta,
+its regular-representation matrices have algebraic-integer entries.
+The diagonal collection of ALL Galois conjugates of each entry lies in
+the discrete Minkowski lattice of Z[eta]. If every conjugate of every
+entry of rho(beta)-I has absolute value <1, the norm argument makes
+every entry zero. Therefore this full all-place image cannot be a dense
+product around the identity. Density in a selected compact Jones sector
+does not provide simultaneous approximation in all these places.
+
+No assumption is made that a particular orthonormal quantum basis has
+integral entries: the argument uses the integral diagram basis. Nor is
+specialized equality of the full TL matrices asserted to be equality
+over the generic Laurent ring. These are separate requirements.
+
+At one fixed order, exact equality already automatically holds at every
+Galois-conjugate primitive root. Those conjugates do not add independent
+cyclotomic factors. At infinitely many distinct orders, equality would
+force P=0, but changing the knot with the order is not that assertion.
+
+5. The p-adic construction has the wrong height growth for exactness
+
+Coefficientwise congruence P=0 mod M implies exact P=0 if M exceeds a
+certified upper bound on every coefficient (H is one such bound).
+The simple diagram-only criterion is M>4^c+1. Combining it with (2)
+can help verify an already constructed example; it does not automatically
+turn a congruence sequence into a single exact knot.
+
+The actual Eliahou--Fromentin family has V(K_r)=1 mod 2^r and a displayed
+diagram with c_r=20*2^{r-1}+1 crossings. More decisively, their Proposition
+4.3 and Proposition 5.2 give the normalized-bracket leading term
+  (2 A^{28})^{2^{r-1}}.
+Its coefficient is 2^{2^{r-1}}, so these polynomials are explicitly nonunit;
+their heights grow far faster than the guaranteed modulus 2^r. This is an
+actual-knot obstruction to promoting that particular recursion to exactness,
+not merely a failure to estimate it tightly enough. The source variable in
+that displayed leading term is the bracket variable, renamed A here.
+https://arxiv.org/html/1610.05560v2
+
+Similarly, Kalfagianni's actual hyperbolic constructions realize prescribed
+finite root data (and hence their Galois conjugates). The previously audited
+ordinary-Jones version in work/research32/finite_probe_independent_audit.txt
+handles normalization directly. This fact was already established earlier;
+it is cited here only to rule out a fixed finite root set as the endpoint.
+https://arxiv.org/html/0710.0076v2
+
+6. Nontriviality remains an independent geometric condition
+
+Density concerns represented operators or closed scalar values. It does not
+certify that a resulting closure is a knot rather than a link, or that it is
+nontrivial. Pseudo-Anosov braid dynamics is insufficient: an actual unknot
+has such a presentation, as established in work/research39/braid.txt.
+Even if those topological conditions were arranged separately, the arithmetic
+conditions above would still have to be met for the SAME constructed word.
+
+Conclusion: no approximation-to-exact counterexample mechanism was obtained.
+The useful concrete output is the certificate (2)--(3), and the explicit
+all-Galois tradeoff (5). Neither a density theorem, a growing sequence of
+congruences, nor finite exact root agreement supplies its missing hypotheses.
+
+Independent audit: generic_braid checked the state height/support bounds,
+the M^d norm bound, the shifted degree condition, and the Minkowski-lattice
+argument during this pass; no issue was found.

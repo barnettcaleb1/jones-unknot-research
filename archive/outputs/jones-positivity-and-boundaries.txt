@@ -1,0 +1,212 @@
+JONES UNKNOT DETECTION: POSITIVITY, EXACT EXCEPTIONS, AND FINITE CERTIFICATES
+31 October 2026. Continuation of the bounded research passes.
+
+This pass extended the preceding proof to arbitrary-length all-odd pretzels,
+completely classified a mixed four-strand subfamily, and obtained a finite
+geometric certification tool for independent twist families. It also found
+actual counterexamples to two tempting extensions of our proposed methods.
+The general Jones unknot problem is not solved here. No novelty is claimed.
+
+1. POSITIVITY FOR EVERY ALL-ODD PRETZEL KNOT
+
+Let K=P(p_1,...,p_(2g+1)) with every p_i odd. Then
+
+                    V_K''(1)=V_K'''(1)=0  implies K=U.
+
+There is no bound on g or on the signed twist parameters. The transferable
+idea is to find a sign-definite invariant after imposing the vanishing of
+an earlier invariant.
+
+Here is the full short argument. Set S=sum p_i, n=2g+1, and let e_j denote
+the elementary symmetric polynomials in the parameters. In a consistent
+Jones or mirror-Jones convention, put D=t d/dt. Exact differentiation of
+the general pretzel bracket gives
+
+ D^2V(1)=-(3/2)(e_2+g),
+ D^3V(1)=-(9/4)[e_3+S(e_2+2g)].
+
+The normalization V(1)=1,V'(1)=0 makes simultaneous ordinary second/third
+vanishing equivalent to simultaneous logarithmic second/third vanishing.
+Newton's identities then give
+
+        sum p_i^2=S^2+n-1,          sum p_i^3=S^3.
+
+Mirror if necessary so S>0; S is odd, so it cannot vanish. Since each of
+the other n-1 parameters has square at least1, the square equation implies
+|p_i|<=S for every i. Consequently every term in
+
+        sum (S-p_i)(p_i^2-1)
+          = S(sum p_i^2-n)-(sum p_i^3-S)=0
+
+is nonnegative. Therefore each p_i belongs to{-1,1,S}. If S>1, the square
+equation permits exactly one copy of S; the remaining parameters have
+equal numbers of+1 and-1. If S=1, every parameter is+/-1 with one surplus+1.
+
+The result is an actual unknot. Cyclically rotate the unique nonunit box to
+the first position. All remaining rational tangles have slopes+1 or-1 and
+sum to the integer tangle0. The closure reduces to N(1/S), an unknot.
+If every box is a unit, their sum is the integer tangle1. No arbitrary
+permutation of nonunit pretzel boxes is being mistaken for an isotopy.
+
+In fact the stronger sign certificate, assuming only V''(1)=0, is
+
+             D^3V(1)=(3/4) sum (S-p_i)(p_i^2-1) >=0.
+
+Equality occurs exactly in the unknot configurations above.
+
+Verification: the moments were derived independently by two routes and
+checked against17,676 exact full Laurent-polynomial computations, with
+additional independent evaluations of actual diagrams in Regina. These
+checks audit the algebra; the positive-sum argument establishes the result
+for all parameters.
+
+Literature: Stipsicz--Szabo already derived the square/cube conditions for
+five odd strands in Proposition6.6 of Purely cosmetic surgeries and pretzel
+knots, and treated them by a sign/case argument. Their larger-strand surgery
+argument uses genus. The positive-sum proof here is a compact derived
+extension; its novelty has not been established. General pretzel detection
+and low-order formulas also have prior literature.
+https://arxiv.org/abs/2006.06765
+https://arxiv.org/abs/1512.07192
+https://arxiv.org/abs/math/0609584
+
+2. A COMPLETE MIXED FOUR-STRAND CLASSIFICATION
+
+For every four-strand pretzel K with at least one parameter+/-1,
+
+ V_K''(1)=V_K'''(1)=0
+   implies K is U, P(8,-3,-3,1), or its mirror.
+
+Consequently vanishing of derivatives2,3,AND4 detects the unknot throughout
+this entire class. This is an exhaustive symbolic classification, not a
+bounded parameter search.
+
+Proof. Such a pretzel is a knot exactly when one parameter is even. Mirror
+to make the selected unit parameter+1, and move that unit box to the end.
+Unit boxes commute with other boxes by isotopy. Cyclic rotation permits the
+notation P(p,q,r,1), where p is even and q,r are odd. Write
+
+ q=a+b, r=a-b, T=q+r+1, Q_j=q^j+r^j+1.
+
+The independently checked mixed moments are
+
+ D^2V=(3/4)(3-Q_2-2pT-p^2),
+ D^3V=(3/4)(2Q_3-2T+p+3pT^2-p^3), provided D^2V=0.
+
+The quadratic condition gives
+
+ b^2=1-a^2-p^2/2-p(2a+1).
+
+Substituting this into the cubic condition factors it completely:
+
+          0=-(p+2a)^3+4(p+2a).
+
+Thus c=p+2a is0,-2,or2. For c=0 or-2 the quadratic condition becomes
+b^2=(a+1)^2. One of q,r is-1; cancel that box with+1. The remaining
+two-box pretzel is T(2,c+1)=T(2,+/-1), an unknot.
+
+For c=2, we get (a+1-b)(a+1+b)=4. The factors are integers of the same
+parity, so they are(2,2) or(-2,-2). This leaves only
+P(0,1,1,1), an unknot, and K*=P(8,-3,-3,1).
+
+The exceptional knot has the exact Jones polynomial
+
+ V_K*(t)=1+t^-8(t-1)^4 Q(t),
+ Q(t)=t^8+2t^7+4t^6+5t^5+6t^4+5t^3+4t^2+2t+1.
+
+Hence its second and third derivatives vanish, its fourth derivative is
+24Q(1)=720, and its determinant is V_K*(-1)=33. The determinant proves
+nontriviality independently of the conjecture being investigated. Mirroring
+preserves the order-four leading Taylor coefficient. This excludes the
+only nontrivial possibilities when the fourth derivative also vanishes.
+
+The full polynomial was checked independently using Temperley--Lieb
+arithmetic and Regina on an actual planar diagram. A further independent
+exact polynomial calculation verifies the elimination identity and every
+branch. The original15-crossing diagram simplifies to14crossings; no claim
+of minimal crossing number is needed.
+
+Scope: this does not cover four-strand pretzels without a unit parameter.
+For example P(40,-15,-13,3) also has zero second/third derivatives but
+determinant5025. Its diagram and full Jones polynomial were independently
+checked and are included in the evidence.
+
+3. A FINITE GEOMETRIC CERTIFICATE FOR TWIST FAMILIES
+
+Fix the diagram outside one two-strand twist ball, and let K_n insert n
+full twists, with initial parity fixed. If three distinct K_n are certified
+unknots, EVERY K_n is an unknot.
+
+Reason: in the double branched cover, the fixed outside tangle becomes a
+manifold M with torus boundary; the twists give different Dehn fillings.
+Two unknot fillings give two S^3 fillings. Gordon--Luecke's theorem forces
+M to be a solid torus. The outside tangle is therefore rational, and each
+K_n is two-bridge with determinant |an+b| for fixed integers a,b. Three
+values equal to1 force a=0, so every closure is a two-bridge unknot.
+
+The coherent family T(2,2n+1) has exactly two unknot members and also contains
+trefoils, showing why two arbitrary samples do not suffice.
+
+For d independent disjoint two-strand twist sites, certifying the3^d grid
+members n_i in{0,1,2} as unknots certifies every integer tuple, by applying
+the lemma one coordinate at a time. This can turn axis-aligned families
+from the cancellation solver into complete geometric proofs. It requires
+actual unknot recognition; three Jones-one evaluations are not substituted
+for three unknot certificates. Coupled directions such as(n,-n) are not
+covered, since one parameter then changes two physical sites.
+
+Inputs: Gordon--Luecke's no-nonmeridional-S^3-surgery theorem, and the
+solid-torus/rational-tangle equivalence. The latter is used explicitly in
+the mathematical study of DNA recombination. This is a concrete biological
+connection through a shared geometric method.
+https://doi.org/10.1090/S0894-0347-1989-0965210-7
+https://arxiv.org/html/1007.0948 (Theorem3.5)
+
+4. TWO BROADER PROOF ROUTES THAT WERE STRESS-TESTED
+
+Ribbon geometry and cancellation
+
+Our proposed one-band ribbon route asks whether extreme Lee-bar source
+gradings must have unequal even/odd multiplicities. Official KnotInfo data
+for12,965 prime knots through13crossings were checked. All511 smooth-slice
+entries (known ribbon in these tables) have short bars certified by their
+reduced/unreduced ranks and pure parity at both source extremes. A subset
+of24 has fusion number one explicitly certified by source-backed criteria.
+This is evidence, not a proof of the proposed geometric condition.
+
+The broader claim for ribbon knots with the same short-bar algebra is false.
+The actual knot R=12n25#mirror(12n25) has fusion number exactly2 and its
+extreme sources cancel at BOTH ends. The two groups at q=-14 have h=-8,-7;
+those at q=12 have h=6,7, each of rank1. Its determinant is121, so this is
+a counterexample to the proposed proof mechanism, not to Jones detection.
+Exact fusion2 follows from the bridge-three construction and the theorem
+that a composite fusion-one knot must have a two-bridge summand.
+https://knotinfo.org/homelinks/database_download.php
+https://doi.org/10.1090/S0002-9947-1990-0968881-9
+
+Root-of-unity quantum reconstruction
+
+Habiro's cyclotomic expansion proves that all root-of-unity colored values
+whose colors are congruent to+/-1 or+/-2 contain exactly ordinary Jones
+information. They add no information about the next fixed color. As an
+actual-knot check,5_1 and10_132 have equal ordinary Jones polynomials but
+different color-three polynomials, while that entire infinite set of root
+evaluations agrees.
+
+The apparent continuity route toward the volume conjecture also fails:
+for the figure-eight, color r-2 at an rth root tends to1, yet its first
+derivative in the quantum parameter already has the positive exponential
+growth rate of the color-r Kashaev sequence. The evidence contains the
+exact positive-product comparison and its independent audit. Ordinary
+Jones-one might satisfy an additional special rigidity theorem, but root
+reflection and continuity alone do not supply it.
+https://arxiv.org/abs/math/0211044
+https://letu.math.gatech.edu/Papers/Lectures_Luminy_2014_new.pdf
+https://arxiv.org/abs/math/0502428
+
+The resulting research target is sharper: seek nonnegative combinations of
+Jones moments on their earlier vanishing loci, and use geometric filling
+theorems to certify cancellation families. The results above demonstrate
+both mechanisms and give explicit examples that any proposed extension
+must survive. They do not establish a universal positivity identity or
+reduce arbitrary knots to finitely many twist patterns.

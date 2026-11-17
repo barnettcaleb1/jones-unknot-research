@@ -1,0 +1,19 @@
+{
+ "files": [
+  "../out/residues/S1.jsonl.gz",
+  "../out/residues/S2.jsonl.gz"
+ ],
+ "records_total": 7488,
+ "sampled": 7488,
+ "fraction": 1.0,
+ "seed": 1,
+ "records_pass": 7488,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 7488
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 7488
+ },
+ "secs": 328.8
+}

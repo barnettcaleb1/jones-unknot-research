@@ -1,0 +1,382 @@
+{
+ "kwz-thin": {
+  "key": "kwz-thin",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/kwz-thin/REPORT.md",
+  "status": "complete",
+  "headline": "Neither paper restricts the relative delta- or q-gradings of same-slope components, except conditionally: a thin (A-link) filling at s_0 forces equal delta (equal mod 2) at every slope other than s_0 (Thin v3, Lemma 2.5 + Thm 6.16). For a strong-inversion quotient, Kh~(T) = specials of slope infinity + one r_1(s), s even (Cosmetic v1, proof of Thm 1.2, p.11-12), and the only a priori thin slope is infinity itself, so the constraint is vacuous there. Counterexample to any parity rule: figure-eight quotient T_{4_1} has two s_4(infinity) in delta_H = 3 and 4 (Table 1, p.45).",
+  "key_statements": [
+   "Conventions (Thin v3 p.2; Cosmetic v1 p.12): delta = q/2 - h, V_L(t) = sum (-1)^h t^{q/2} dim Kh~. T(p/q) = Q_{-p/q} cup T, computed as HF(r_1(p/q), Kh~(T)) = Kh~ (x) V or HF(a(p/q), Kh~(T)). A delta-thin summand in grading d contributes (-1)^d sum_q dim_q (-t)^{q/2}, so Jones cancellation needs delta-gradings differing by an ODD integer in this normalization (2 mod 4 in a doubled one).",
+   "Thin v3 Def/Lemma 6.7 (p.32): for linear curves of different slopes s, s', HF(gamma,gamma') lies in one delta-grading: delta_H(gamma') - delta_V(gamma) - 1/2 or delta_V(gamma') - delta_H(gamma) - 1/2 depending on the position of s. Cor 6.8: delta(g,g') + delta(g',g) = 0 (same slope), -1 (different). Thm 6.9: delta(g,g') + delta(g',g'') = delta(g,g'') for increasing triples. Lemma 6.10: same slope gives 0 (rational vs special) or two consecutive gradings delta(g,g'), delta(g,g') - 1.",
+   "Thin v3 Remark 2.1 (p.7): the grading function is gr(c,c') = floor(eta(c') - eta(c)), where eta is a lift of the slope to the universal cover R of RP^1. So each component carries a lifted slope; for two components of one slope the offset k = delta(g,g') is an integer constant, independent of the test slope (integrality: proof of Thm 6.16, delta_H in Z, delta_V in Z + 1/2).",
+   "Thin v3 Lemma 2.5 + Thm 6.16(ii): if s_0 is a thin filling slope of T then all components of each slope s != s_0 have equal delta; mod 2 for A-link fillings. Lemma 2.7: with all slopes s_1 <= ... <= s_n increasing, s_1 != s_n, (s_n,s_1) subset Theta iff delta(c_i,c_j) = 0 for all i<j, and then Theta subset [s_n,s_1]. Thm 6.17: Theta_Kh(T) is empty, a point, two points or an interval; A_Kh(T) never two points.",
+   "Thin v3 Thm 6.20 (p.35): if not both T1, T2 are Khovanov exceptional, T1 cup T2 is thin iff Theta_Kh(T1)^mirror cup Theta_Kh(T2) = QP^1 and, at each common boundary slope, one of m(Kh~(T1)), Kh~(T2) has only rational components there. Thm 6.19: same for A-links with A_Kh, no exceptionality hypothesis. No Khovanov exceptional tangle is known (Conj 6.12, Prop 6.13).",
+   "Cosmetic v1 Thm 1.2 (p.2): if T has an unknot closure and T(r), T(r') are isotopic, then r = r' or T is rational. Proof (p.11-14): in Seifert framing Kh~(T) = gamma_1..gamma_m (special, slope infinity) + rho = r_1(s), s even integer, m > 0 iff T non-rational. For slopes +-1/n: dim HF(a_+-, rho) = |1 -+ sn|; generators of HF(a_+-, gamma_i) correspond with q(x_-) - q(x_+) = 8j - 4 - 4n, j = 1..floor(n/2) (and -2 extra for n odd).",
+   "Cosmetic v1 Lemma 2.10 (p.8): for s != r and gamma rational or special of length l, slope r: dim HF(a(s), gamma) = l * |qp' - pq'|. Thm 3.1 (p.9): T is split iff every component of Kh~(T) is r_1 of one slope. Thm 5.6 (p.17): if T(0) is a split link (e.g. an unlink) then Kh~(T) has only slope-0 components. Conj 5.8 (converse), Conj 5.10 (rational components have length 1 over F_2) are open.",
+   "HFT comparison (Thin v3 Sec. 3-4): Thm 3.10 conjugation symmetry puts conjugate special pairs s_n(p/q;i,j), s_n(p/q;k,l) in identical delta-gradings; no Khovanov analogue is stated. HFT signs are opposite (symmetry constant +1, transitivity for decreasing triples). Theta_HF = Theta_Kh in all Table 1 examples; Example 7.14 shows slopes of Kh~ components depend on the field (r_1(4/3) over F_2, r_1(2), r_2(2) over F_3)."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "confirmed",
+    "reason": "Thin v3 Def/Lemma 6.7 (p.32) proves it for closed linear curves, i.e. for the test curve r_1(s) = Kh~(Q_s); the arc version is not stated literally but follows from HF(r_1(s),gamma) = HF(a(s),gamma) (x) V with V in one delta-grading (or the same rectangle argument). At s equal to the slope of gamma it fails: Lemma 6.10 gives zero or two consecutive gradings."
+   },
+   {
+    "claim": "C2",
+    "verdict": "confirmed",
+    "reason": "Exact criterion (Thin v3 Def 2.3, Lemma 2.7, Thm 6.16(ii)): T(s) is thin iff Kh~(T) has no rational component of slope s and delta(r_1(s),gamma) is the same for all components of slope != s; equivalently delta(gamma_i,gamma_j) = 0 for i<j in the increasing order of slopes starting after s. A-link: same mod 2. Gluing form: Thm 6.20, needs non-exceptionality."
+   },
+   {
+    "claim": "C3",
+    "verdict": "confirmed",
+    "reason": "No such theorem exists in either paper; example: Kh~(T_{4_1}) (figure-eight quotient) has s_4(infinity) in delta_H = 3 and in delta_H = 4 plus r_1(4) in delta_H = 3, described as specials 'in adjacent delta-gradings' (Thin v3 Table 1 p.45, text p.44). Also T_b (Table 2: delta_H = 11/2, 9/2, 7/2 with multiplicities 4, 12, 8) and Example 7.15 (three consecutive gradings)."
+   }
+  ],
+  "surprises": [
+   "The unknot closure sees none of the special components: specials of slope infinity are disjoint from the arc a_infinity, so T(infinity) = unknot pins only the bigrading of the single rational component r_1(s) (Cosmetic v1 p.11-12). All the unknown grading data of a strong-inversion quotient sits in the specials at one slope.",
+   "My inference, not in the papers: since each HF(a(p/q),gamma) is delta-thin and |V(-1)| = det = |p|, the signed total length of the special components (signs = parity of their delta-offset relative to rho) equals the rational slope s up to a global sign. Trefoil: one s_4, s = 4. This is a genuine constraint tying delta-parities of same-slope specials to s.",
+   "The multicurve depends on the field of coefficients, including slopes of rational components (Thin v3 Examples 7.14, 7.15), while the Jones polynomial does not; any Jones calculus on components must be insensitive to this.",
+   "Version trap: Cosmetic v1 cites the thin paper by v2 numbering (Theorem 6.5, 6.41, Corollary 6.42); those results now live in arXiv:2202.01460 (Theorems 1.2, 5.6, Corollary 5.7), and v3 of the thin paper has different numbers."
+  ],
+  "open_questions": [
+   "Is HF(a(1/n), gamma_i) for a special gamma_i of slope infinity exactly a sum of floor(n/2) translates (q by 4, h by 2) of one local block? The Cosmetic proof suggests it but prints only q-gradings of the arcs; it would give the special part of V(T(1/n)) as a geometric sum times an n-independent polynomial.",
+   "What determines the even integer s (slope of the rational component in Seifert framing)? Probably in KWZ 'Khovanov homology and strong inversions' (arXiv:2104.13592), not read here; the determinant identity suggests a signed count of special lengths.",
+   "Is there a Khovanov analogue of conjugation symmetry, or any duality, relating the delta- or q-gradings of special components of one slope? Nothing is stated in either paper.",
+   "Are same-slope special components always in consecutive delta-gradings (no gaps)? True in every example; for links this is Conjecture 6.12 / full support, open."
+  ]
+ },
+ "boyle-spyropoulos": {
+  "key": "boyle-spyropoulos",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/boyle-spyropoulos/REPORT.md",
+  "status": "complete",
+  "headline": "arXiv:2609.40122v1 is the right paper (\"Myopic Tutte polynomials and Khovanov homology in RP^3\", 43 pp). Its route to T is one unproved inequality, Conjecture 1.1(2), p.5: for a knot K in S^3 viewed as a local knot in RP^3, breadth V_K >= beta_Re(K) := min over all RP^2 diagrams D of c(D) - alpha_Re(D). The implication to T is rigorous (via Thm 5.3(1)), but the J=1 case is equivalent to T itself, nothing is proved beyond alternating links, and no classical knot with beta_Re(K) < c(K) is exhibited. Turaev genus is never mentioned.",
+  "key_statements": [
+   "Conventions (Def 2.1, eq (4), p.8): bracket <X> = A<A-res> + A^{-1}<B-res>, class-0 circle factor -A^2 - A^{-2}, class-0 unknot = 1; J_L(t) = (-A^3)^{-w(D)}<D> at A = t^{-1/4}. For nullhomologous L, J = J^Re + J^Im (integer / half-integer exponents); for local L one part is zero. Kh is the APS theory over Z/2 with 1-1 bifurcations acting by zero (sec 2.3).",
+   "Def 3.1 / Prop 3.3 / Prop 3.5 (pp.15-18): myopic Tutte polynomial psi_G for G in RP^2: deletion-contraction with weight x for bridges, y for nullhomologous loops, 1 for essential loops; equals the sum over LOCAL spanning subgraphs H of (x-1)^{b0(H)-b0(G)}(y-1)^{b1(H)}; equals sum over spanning trees of x^{internal activity} y^{local external activity}.",
+   "Thm 1.2 (p.2): for a connected reduced alternating diagram D of a non-split non-local alternating L with Tait graphs G_+, G_-: J_L(t) = (-1)^{w(D)} ( t^{k_+} psi_{G_+}(-t,-1/t) + t^{k_-} psi_{G_-}(-1/t,-t) ), k_+ - k_- = 1/2. Thm 1.4 (p.3): breadth J_L^{+-} = c(L) - alpha^{+-}(D), where alpha(G) = min number of edges whose deletion makes G local.",
+   "Def 1.6 (p.4): alpha_eps(L) = min_D alpha_eps(D); beta_eps(L) = min_D [c(D) - alpha_eps(D)] (eps local crossing number), minima over all diagrams in RP^2. Thm 5.3 (p.29): for non-split prime nullhomologous L, beta_eps = 0 forces L = Upsilon_n (two strands through the cross-cap with n crossings); beta_eps = 1 forces the family V_n; beta_eps = 2 forces W_n, X_n, Y_n, Z_n or the Hopf link.",
+   "Conjecture 1.1 (p.5): for nullhomologous L, (1) (breadth J_L - breadth J_L^eps) + 1/2 <= alpha_eps(L); (2) breadth J_L^eps >= beta_eps(L), where for local L one assumes L is a knot and eps = Re. Stated consequence: (2) implies T, since J_K = 1 gives beta_Re(K) = 0, hence K = Upsilon_n by Thm 5.3(1), hence K = Upsilon_0. Only motivation offered: the reversed inequalities fail on 4_3^2 (Examples 1.7, 1.8).",
+   "Thm 1.1 (p.2, proof p.41): for a non-local alternating link L in RP^3, Kh(L; Z/2) is supported on exactly four diagonals j - 2i = -sigma_{+-}(L) +- 1 and is equivalent to {J_L^+, J_L^-, sigma_+, sigma_-}. Proof via a spanning tree complex C_+ + C_- (Thms 6.10, 6.12, p.39) whose v-grading is constant on each summand for alternating D; sec 6 proofs are sketched by reference to Champanerkar-Kofman.",
+   "Dasbach-Lowrance (arXiv:1604.03501v2, Thm 1.3, Lemma 4.2): for almost alternating or Turaev genus one L, the leading or trailing coefficient of V_L is +-1. Mechanism: <D> = A<D(R)> + A^{-1}<N(R)>, leading +-1 terms cancel, next coefficient is +-(1 - adj(u1,u2)) at one end and +-(1 - adj(v1,v2)) at the other; planar duality plus minimality puts one adj in {0,2}. Lowrance-Spyropoulos (arXiv:1707.05443v2, Thm 1.1): V_L != t^k(-t^{1/2}-t^{-1/2})^{l-1}; uses second coefficients (Thm 3.1) and Stoimenow.",
+   "Digest derivation (not in paper): for a Conway tangle T with bracket vector [T] = x id + y e, the antipodal closure a(T) in RP^3 has <a(T)> = x + y, and J^Re, J^Im are x and y separately; Upsilon_n = a(Q_n) (paper's eq (5) is the bracket vector of the n-twist tangle); the paper's plat-like closures D^{+-} are N(T), D(T). If a(T) is a local knot K then one of x, y vanishes and the other is V_K up to a unit."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "modified",
+    "reason": "The paper gives a sufficient condition, not a reduction: Conjecture 1.1(2) (p.5), breadth J_K >= beta_Re(K) for local knots K in RP^3, implies T by a proved argument using Thm 5.3(1) (p.29); no class of cases is settled, and the J=1 instance of the conjecture is logically equivalent to T."
+   },
+   {
+    "claim": "C2",
+    "verdict": "confirmed",
+    "reason": "Thm 1.1 (p.2): for non-local alternating L, Kh(L; Z/2) lies on exactly four diagonals j - 2i = -sigma_{+-}(L) +- 1 (one diagonal per parity summand of reduced Kh) and is determined by J^+, J^-, sigma_+, sigma_-; scope is Z/2 coefficients, APS theory, and 'thin in RP^3' is not formally defined."
+   },
+   {
+    "claim": "C3",
+    "verdict": "modified",
+    "reason": "The source never mentions Turaev genus (zero occurrences); the strategy is conditional on Conjecture 1.1(2) for all non-alternating knots including Turaev genus one, whose unconditional treatment is Lowrance-Spyropoulos 2017 (arXiv:1707.05443, Thm 1.1) by an extreme-coefficient mechanism unrelated to this paper."
+   }
+  ],
+  "surprises": [
+   "Conjecture 1.1 fails as literally stated outside the knot case (my check): (1) fails for every local knot (left side 1/2, alpha_Re = 0); (2) fails for the non-local link Upsilon_2 # L_2 with L_2 a trivial-Jones 2-component link: one half of J is -t^{1/2} - t^{3/2} (breadth 1) but the beta <= 1 list (Upsilon_m, V_m) excludes it. The knot case used for T is unaffected.",
+   "The authors' own Question 5.4(1),(3) (is beta additive with c under connected sum; is alpha + beta = c), if answered yes for local links, gives beta_Re(8_19) = 8 > 5 = breadth V(8_19) and so contradicts Conjecture 1.1(2). The strategy requires non-local RP^2 diagrams of classical knots to beat the classical crossing number, and the paper shows no instance of this.",
+   "The board's pointer for Lowrance-Spyropoulos should be arXiv:1707.05443 (NYJM 23, 2017); the paper under review does not cite it or Dasbach-Lowrance, and has no Turaev genus content.",
+   "By my estimate, Conjecture 1.1(2) would imply a universal bound vol(S^3 - K) <= C(breadth V_K + 1), since diagrams with c - alpha <= n have Tait graphs with at most n+1 vertices and O(n) twist regions; constants unchecked, no such bound is known."
+  ],
+  "open_questions": [
+   "Is there any classical knot K with beta_Re(K) < c(K)? Concretely, is beta_Re(8_19) <= 5 (and <= 6 for 8_20, 8_21) as Conjecture 1.1(2) demands? A finite enumeration of signed graphs in RP^2 with e - alpha <= 5 would decide it.",
+   "Is the Khovanov-level dictionary correct: APS homology of the antipodal closure a(T) over Z/2 equals the homology of the KWZ type D structure of T with the saddle (S) arrows deleted, split by idempotent?",
+   "Which Conway tangles T have a(T) local (equivalently T union its antipodal image is a split link of two isotopic knots)? For these x(T)y(T) = 0, a strong constraint on the bracket vector.",
+   "Does the implied bound vol(K) <= C(breadth V_K + 1) hold, or does a known family with bounded Jones breadth and unbounded volume refute Conjecture 1.1(2)?"
+  ]
+ },
+ "bn-torsion": {
+  "key": "bn-torsion",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/bn-torsion/REPORT.md",
+  "status": "complete",
+  "headline": "The identity V~ = q^s + (1-q^-2) chi_q(Tors BN~(K;F)) and chi_1(Tors) = -s/2 are correct (one line from LZ Thm 3.16, plus V'(1)=0) and check on all five knots. Neither was found in print; only the all-knights-length-1 case is (Bar-Natan 2002 Conj. 1, Turner, Rasmussen). C1 holds over every field, most cleanly via Lewark-Marino-Zibrowius arXiv:2409.05743 (not in the brief): max torsion order = lambda(K;F) <= u_q(K). The knot Floer analogue holds, and Delta=1 knots with u=1 (W+(T_{2,3})) show the algebraic package alone cannot prove Lemma Q.",
+  "key_statements": [
+   "LZ (2208.13612v2) Thm 3.16, p.18: for any knot K and field k, CBN~(K;k) ~ [q^s h^0 k[H]] (+) sum_i [q^{a_i} h^{b_i} k[H] --H^{c_i}--> q^{a_i+2c_i} h^{b_i+1} k[H]], with s, a_i even, c_i > 0, uniquely determined; H has (h,q) = (0,-2). Def/Prop 3.17: s = s_c(K) depends only on char k. Stated without proof, attributed to Lee, Khovanov, Turner, MTV, KWZ 3.3.2.",
+   "Alishahi (1710.07874v1; arXiv title 'The Bar-Natan homology and unknotting number') Thm 1.2, p.2: max order of h-torsion in UNREDUCED Bar-Natan homology over F_2[h] is <= u(K). Alishahi-Dowlin (1710.07875v1) Thm 1.2: max X-torsion order u_X in the unreduced Lee lift over Q[X,t]/(X^2=t) is <= u(K); Lee spectral sequence collapses at page ceil(u_X/2)+1; Thm 1.3: at E_2 if u(K) <= 2.",
+   "ILM (2110.15107v2) Def 1.3, p.1: a rational replacement (rational tangle T replaced by rational T') is proper if T and T' connect the same end points; u_q = minimal number of proper replacements to the unknot. Def 1.7: lambda(K) = min k with ungraded chain maps f,g between [[K]] and [[U]] over Z[G], gf ~ G^k, fg ~ G^k. Thm 1.1: lambda <= u_q <= u. Prop 3.22, p.30: u_X <= u_G <= lambda, u_h <= lambda, u_(X,p) <= lambda.",
+   "LMZ (2409.05743v2) Prop 3.33, p.22, F a field: lambda(K;F) = u(K;F) := max G-torsion order of BN~(K;F[G]); lambda^0(K;F) = max{|s_F(K)|/2, u(K;F)}. Remark 3.2: lambda(.;R) <= lambda(.;Z). Thm 1.2: lambda(K,J) <= u_q(K,J); Thm 1.1: lambda^0(K,J) <= u(K,J). Prop 3.31: |u_i(K_1;R) - u_i(K_2;R)| <= lambda(K_1,K_2;R) in each homological degree i. Crossing-change maps have h-degree 0 and q-degrees -2 and 0 (p.2).",
+   "LZ Def 3.9, Rem 3.10, Rem 3.15 (p.15-17): the double tangle T_K is cap-trivial (T_K(inf) = U), T_K(0) = K with 0-framed longitude, and is the quotient tangle of K#K under the swap inversion; filling convention T(p/q) := Q_{-p/q} u T; W^+(K) = T_K(1/2), W^-(K) = T_K(-1/2); P(K) = T_P u T_K (Lemma 3.12).",
+   "LZ Thm 5.14, p.30: BN~(K;k) = h^0 q^1 HF(-BN~(T), BN~(T')) with WRAPPED Floer homology. Prop 5.20, p.33: s_c(K) = s(-BN~_a(T), BN~_a(T')) + 1, arcs only (compact curves give only H-torsion). Lemma 6.2 (Four Curves). Cor 6.14, p.40: theta_c(K) = ceil(sigma_c/2), sigma_c = slope of BN~_a(T_K;F_c) at the lower right end. Cor 2.8: s_2(W^+_t(K)) = 2 iff t < theta_2(K), s_2(W^-_t(K)) = -2 iff t > theta_2(K).",
+   "Derived and checked (report 4.1-4.2): V~_K(q) = q^{s_F} + (1-q^-2) chi_q(Tors), V~(q) = V_Jones(t = q^-2); sum_i (-1)^{b_i} c_i = s_F/2; further, sum over Tors of (-1)^h j = -6 a_2(K) - s(s+2)/4. Verified on 3_1, 4_1, 8_19, 10_124, 9_42 from KnotInfo reduced ranks; the knight decomposition is forced by the ranks in each case (9_42: s = 0, four knights of length 1, pawn alone on delta = 0).",
+   "Knot Floer analogue (derived): Delta_K(T) = T^{-tau} + (1-T^-1) chi_T(Tors HFK^-(K)), U of (Maslov, Alexander) degree (-2,-1), and chi_1(Tors) = tau; checked on the right-handed trefoil. For Delta = 1: chi_T(Tors) = 0 if tau = 0, = 1 if tau = 1, with Tors nonzero."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "confirmed",
+    "reason": "For every field F: max H-torsion order of BN~(K;F) = lambda(K;F) (LMZ 2409.05743v2 Prop 3.33(iv), p.22) <= lambda(K;Z) (Rem 3.2) <= u_q(K) (LMZ Thm 1.2; ILM Thm 1.1). Hypotheses: K a knot, reduced theory, proper = same connectivity. The brief's four papers state it only for unreduced F_2[h] and Q[X] (vs u) and via lambda (ILM Prop 3.22); the reduced any-field form is implicit in ILM, explicit in LMZ."
+   },
+   {
+    "claim": "C2",
+    "verdict": "confirmed",
+    "reason": "Follows from LZ Thm 3.16 (p.18) with H of bidegree (0,-2), chi_q = sum (-1)^h q^j, s = s_F, V~(q) = Jones V at t = q^-2; verified on 3_1, 4_1, 8_19, 10_124, 9_42 (report 4.2). Not found in print in this form; the c_i = 1 case is the t = -1 specialisation of Bar-Natan 2002 Conj. 1 (Sec. 3.6), Turner math/0411225 Thm 5.2, Rasmussen math/0402131 Sec. 5."
+   },
+   {
+    "claim": "C3",
+    "verdict": "confirmed",
+    "reason": "Differentiating C2 at q = 1 and using V_K'(1) = 0 gives chi_1(Tors) = -s/2, equivalently sum (-1)^{b_i} c_i = s/2 with b_i the homological degree of the knight source; so it is not purely algebraic. Verified on the five knots; not found in print."
+   },
+   {
+    "claim": "C4",
+    "verdict": "confirmed",
+    "reason": "Same computation over F[U] gives Delta_K(T) = T^{-tau} + (1-T^-1) chi_T(Tors HFK^-); Delta = 1 knots (tau = 0, or W^+(T_{2,3}) with tau = 1 and u = 1) have nonzero torsion with chi_T(Tors) = 0 or 1, so the algebraic structure cannot force a nontrivial polynomial. Derived in report 4.4; Hedden's tau formula and the Alishahi-Eftekhary bound are cited from memory."
+   }
+  ],
+  "surprises": [
+   "LMZ arXiv:2409.05743v2 (not in the brief) sharpens the torsion bounds: bigraded crossing-change maps (h-degree 0, q-degrees -2 and 0), lambda(K;F) = max torsion order, lambda^0(K;F) = max{|s_F|/2, u(K;F)} <= u(K), degreewise control (Prop 3.31), and Thm 5.6 (p.31) constraining the slope p/q of a proper replacement Q_{-1} -> Q_{p/q} by quantum degrees. For u = 1 knots this is far more than 'all knights have length 1'.",
+   "LZ Thm 5.6 / Prop 5.7 / Rem 5.8 (p.27-29): mapping class group naturality of the full multicurve BN~(T) is proved only over F_2; over other fields only for the arc BN~_a (sketch proof), and local systems on compact curves can change under twisting. Evenness of the lower-right slope of BN~_a(T_K) is proved only for c = 2 (Lemma 6.7). A Jones calculus on compact curves over Q inherits this gap.",
+   "9_42 (KnotInfo chirality, signature +2, s = 0): the pawn sits alone on delta = q-2h = 0 and all eight other generators on delta = -2; all four knights have length 1 although the knot is thick. Long knights occur for 8_19 and 10_124 (max c = 2, matching ILM Prop 1.14 lambda = 2).",
+   "The identity has higher moments: the second derivative at q = 1 with V''(1) = -6 a_2 gives sum over Tors of (-1)^h j = -6 a_2 - s(s+2)/4 (checked on all five knots); Taylor coefficients of chi_q(Tors) at q = 1 are governed by s and Vassiliev invariants. For u_q = 1 knots, V~ = 1 iff P(-1,q) is 0, 1 or -q^-2 (s = 0, 2, -2), P = Poincare polynomial of knight sources."
+  ],
+  "open_questions": [
+   "Is the general identity or its corollary written anywhere? Not found in ILM, LZ, LMZ, Alishahi, Alishahi-Dowlin, KWZ, Naot's paper, Turner, MTV, Khovanov, Rasmussen, Bar-Natan 2002, Schuetz, Sano, Benheddi's thesis. Naot's thesis and Morrison's unpublished notes were not checked.",
+   "For u(K) = 1: what do the bigraded maps f, g (gf ~ G, q-degrees -2 and 0) and LMZ Thm 5.6 imply for P(-1,q)? Lemma Q is the statement that P(-1,q) is not 0, 1 or -q^-2. The Floer analogue fails (W^+(T_{2,3})), so a Khovanov-specific input is required.",
+   "LZ Conjecture 2.13 (Thm 1.1 over all characteristics) and the extension of KWZ Thm 1.13 beyond F_2 are open in the version read; does the mathematician's calculus need compact components over Q, where naturality is unproved?",
+   "LZ determine only the free part of BN~ of satellites. What are the compact components of BN~(T_K) (equivalently Kh~(T_K)), which carry the torsion and hence the Jones polynomial of W^+-(K) = T_K(+-1/2)?"
+  ]
+ },
+ "kwz-immersed": {
+  "key": "kwz-immersed",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/kwz-immersed/REPORT.md",
+  "status": "complete",
+  "headline": "KWZ v2 (17 Dec 2019) proves classification and pairing: BN~(L(T1,T2)) = q^1 HF(m(BN~(T1)),BN~(T2)) as k[H]-modules, Kh~(L) = HF(m(BN~(T1)),Kh~(T2)) (Thm 7.2), delta = q/2 - h. It contains no planar cover R^2-Z^2, no slopes or linearity, nothing on Jones/Euler characteristic, and no rule for H-torsion orders; twist naturality is proved only over F_2. In its own example all torsion of BN~(mT(3,4)), including F[H]/(H^2), comes from the arc-arc pair (BN~(T_{2,-3}) has no compact component), so torsion is not confined to compact components (C3).",
+  "key_statements": [
+   "Gradings (Sec 2.1 p.11; Def 4.10 p.27; Def 4.19 p.29; proof of Thm 4.21 p.30): delta = q/2 - h; differentials have (h,q)-degree (1,0), delta-degree -1. B = path algebra of the quiver with vertices \u25cf (tangle \u224d), \u25cb (tangle )( ), loops D, arrows S both ways, relations DS = 0 = SD; gr(D) = q^-2 h^0, gr(S) = q^-1 h^0, gr(H) = q^-2 h^0, H = D - S^2. The paper never states the centre of B.",
+   "Thm 7.2 (p.62), any field: (P1) BN~(L) = q^1 h^0 HF(m(BN~(T1)),BN~(T2)); (P2) Kh~(L) = HF(m(BN~(T1)),Kh~(T2)) = HF(m(Kh~(T1)),BN~(T2)); (P4) HF(m(Kh~(T1)),Kh~(T2)) = q^-1 h^-1 Kh~(L) + q^1 h^0 Kh~(L); (P5) homology of cone(H^i) on CBN~(L) = HF(m(BN~(T1)),L_i(T2)). The first curve is wrapped at its ends. Prop 7.1: m(BN~(T)) = BN~(mT), m(L_i(T)) = h^1 L_i(mT); m negates gradings.",
+   "Def 6.5 (p.58): Kh~(T) is the curve of cone[q^-1 h^-1 \u0414(T) --H--> q^+1 h^0 \u0414(T)]. Ex 6.6: Kh~()( ) is the figure-8 around the arc, generators \u25cb at (q,h) = (-1,-1), (1,0), both delta 1/2, differential D - S^2; for every rational tangle over F_2 by Thm 8.1. Prop 3.9 (p.24): 0 -> q^-2 CBN~(L) --H--> CBN~(L) -> CKh~(L) -> 0.",
+   "Gluing (Def 4.30, Fig. 10 p.34; Ex 7.3-7.5): L()( ,\u224d) = unknot, L(\u224d,\u224d) = unlink, L()( ,T_3) = right-handed trefoil, \u0414(T_3) = [\u25cb(h0,q3) -S-> \u25cf(1,4) -D-> \u25cf(2,6) -SS-> \u25cf(3,8)]. BN~(T(2,3)) = q^2 h^0 k[H] + q^8 h^3 k (tower plus one isolated arc-arc point); Kh~ at (h,q) = (0,2),(2,6),(3,8). Unknot: points w_i <-> S^(1+2i), gr = q^-(1+2i) h^0.",
+   "Prop 6.15 (p.60): if T has l closed components, BN~(T) has exactly 2^l non-compact components, with 2^l ends at each of the two non-special punctures joined by T. Prop 3.6, 3.8 (pp.22-23): for a knot BN~(K) = q^s h^0 k[H] + sum of k[H]/(H^l_i). Prop 6.18 (p.61): no component is compact and embedded.",
+   "H-action (Remark 5.23, p.50): under HF = H_*(Mor), for intersection points lying in faces, x.H is the next intersection point on the same straight segment into the puncture, or 0. Proof of Prop 6.15 (p.61): each tower comes from the wrapping behaviour of non-compact curves. No statement reads torsion orders from the curves; only (P5) and the rank bookkeeping in the proof of Prop 9.3 (p.81).",
+   "Thm 8.1 (p.72), characteristic 2 only: BN~(rho(T)) = rho(BN~(T)), L_n(rho(T)) = rho(L_n(T)) for rho fixing *. Prop 8.2: \u0414(tau T) = \u0414(T) box tau, bimodule of Fig. 44 with shifts set by the crossing sign; no closed grading-shift formula. Prop 8.3 (p.77): pillowcase [-1,1]^2/\u00b1, * at (0,0); BN~(\u224d;F) is the line y = 1, BN~()( ;F) the line x = 1, the SW-NE-over crossing y = x - 1.",
+   "Pretzel examples (Fig. 9c p.33; Ex 6.3, 6.7, 7.7): BN~(T_{2,-3}) is one immersed arc (9 generators, one teardrop), no compact component; Kh~(T_{2,-3}) = rational figure-8 delta^-2 q^-12 Kh~(T_2) plus one component around * and TR. BN~(T_{2,-5}) = that arc plus one compact component (Fig. 29c, ungraded), a rational figure-8. Sec 10.2 (pp.88-89): for strong inversions L(\u224d,T) is the unknot closure; the x-torsion of Kh~(K_inf) matches Watson's kappa, zero iff K is trivial."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "confirmed",
+    "reason": "Ex 6.6 (p.58): Kh~ of a rational tangle is its arc turned into a figure-8 (all rational tangles only over F_2 via Thm 8.1; T_n over any field), and Prop 8.3 (p.77) makes the arc a straight line in the pillowcase; the planar cover R^2-Z^2, the word slope and a slope convention are not in this paper."
+   },
+   {
+    "claim": "C2",
+    "verdict": "modified",
+    "reason": "Not stated; it follows from (P2) of Thm 7.2 with Thm 5.25 for distance >= 1, with the arc being the mirrored one (slope negated), but at distance 0 the dimension is 2, not 0 (Ex 7.4); instances 1, 2, 3 are Ex 7.3-7.5, and rank = det for two-bridge links is external."
+   },
+   {
+    "claim": "C3",
+    "verdict": "modified",
+    "reason": "One tower from the arc-arc pair is right (Prop 3.6, Prop 6.15, Thm 7.2 (P1), with mirror and q^1 shift), but torsion also comes from the arc-arc pair: trefoil k[H] + k with no compact components (Ex 7.5, Fig. 37b) and mT(3,4) from two arcs with classes kappa_1, kappa_2, v_1 (Ex 7.7, Fig. 41)."
+   },
+   {
+    "claim": "C4",
+    "verdict": "not_addressed",
+    "reason": "The paper has no statement on torsion orders of arc-compact pairs; Remark 5.23 (p.50) and a rank count from Thm 5.25 and (P5) support it in the form: summands correspond to runs of consecutive crossings around an arc endpoint, so only double winding gives long torsion (my derivation, report section Claim checks)."
+   },
+   {
+    "claim": "C5",
+    "verdict": "modified",
+    "reason": "Not stated; it fails for the wrapped pairing of two arcs, where tower points drop by 1 in delta each step (Ex 7.3: delta(w_i) = -1/2 - i; Fig. 37b), and holds in the examples for non-tower points and arc versus figure-8 (Fig. 37c: all delta = 1)."
+   }
+  ],
+  "surprises": [
+   "Item (e) is essentially absent: no cover R^2-Z^2, no special lattice points, no slopes, no r_n(p/q) or s_2n(p/q). The only cover is the torus over the pillowcase in Prop 8.3 (pp.77-78). In those coordinates (my reading) lifts of * are (2Z)^2, \u224d has slope 0, )( slope infinity, the SW-NE-over crossing slope 1, T_n slope 1/n, and the mirror negates slopes.",
+   "The centre of B is larger than F[H] (my computation, not in the paper): D_\u25cf, D_\u25cb and S^2 are each central, being the loops around the three non-special punctures; H = D_\u25cf + D_\u25cb - S^2 is one central element among them.",
+   "In the paper's main example H^2-torsion arises from two arcs: BN~(mT(3,4)) = tower + k[H]/(H) + k[H]/(H^2) with <v_1, kappa_1> the long summand (my inference from the gradings in Ex 7.7, checked against Kh~(T(3,4))). The only compact component of any BN~ in the paper (T_{2,-5}) is a rational figure-8.",
+   "Item (g) is absent, but the decategorified pairing follows formally (mine, checked on the trefoil): with [T] = sum over generators of (-1)^h q^q [idempotent], chi(Kh~(L)) = G([T1],[T2]) with Gram matrix ((q+1/q, 1),(1, q+1/q)) in the basis \u25cf = \u224d, \u25cb = )( ; chi(Kh~(T)) = (q - 1/q)[T]; compact components of BN~ have bracket vectors divisible by q - 1/q."
+  ],
+  "open_questions": [
+   "Slope dictionary: does the convention behind Q_s, tau(infinity), tau(0) match the pillowcase coordinates here (\u224d = 0, )( = infinity, mirror = negation, det L(Q_s'',Q_s') = distance(-s'', s'))? It must be fixed against the later KWZ papers; this paper names no slopes.",
+   "Is there a run-length rule for H-torsion orders when an immersed arc (with teardrops) is paired with an embedded arc, as in the T(3,4) example? This paper has none.",
+   "The cone of H on a general immersed arc (Question 6.10) decides how Kh~(T) splits into rational and special components; is it settled in the later papers in the generality needed for quotient tangles of strong inversions?",
+   "Sec 10.2 gives a twist-invariant homological piece (Watson's kappa) that is nonzero for every nontrivial strong inversion; can its graded Euler characteristic vanish, and which twisting family matches the K_n (the example family T_{-n} is at distance 1 from the unknot slope)?"
+  ]
+ },
+ "kht": {
+  "key": "kht",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/kht/REPORT.md",
+  "status": "complete",
+  "headline": "kht++ (commit a8be0af) builds and runs. For the left-handed trefoil's quotient tangle T (F_2): BN~ is one non-compact curve with no compact components; Kh~ = r_1(-4) \u222a s4(\u221e) (s4 in kht++ = s_2 in the strong-inversions paper). T(-1) reproduces Kh~(10_124) exactly, with one H^2 torsion summand. The closures of slope \u22131/n have exactly one H^2 summand for n odd and only order-one torsion for n even, n \u2264 10, both sides. V(K_n) splits as a rational piece plus a special piece \u00b1q^k(1+q^4)(1-q^6)(1-(-q^2)^n)/(1+q^2), nonzero for n \u2265 1.",
+  "key_statements": [
+   "Conventions (code Cob.h:47,344; Cob.cpp:801-824; local runs): special end = end 0 = top-left. \u2b2e = horizontal tangle Q_0 (TL-TR), \u2b2f = vertical Q_\u221e (TL-BL). Q_1 = one crossing whose over-strand joins BL-TR. Kh~(Q_s) is printed r(s). Default field F_2; -c3,5,7,11 available; -c0 = Q is experimental.",
+   "Gradings (docs Output; runs): q/2 = h + \u03b4; unknot = h^0 q^0; positive trefoil Kh~ = q^2 + q^6h^2 + q^8h^3; V = \u03a3(-1)^h q^q with t = q^2. deg H = deg D = q^-2, deg S = q^-1, differential h^+1 q^0. Kh~(T) = cone of H: [h^-1 q^-1 BN~ -> h^0 q^+1 BN~]. Tangle bigradings depend on strand orientation.",
+   "Closures: no closure option exists. For a 1-3 tangle T with bottom ends b1,b2,b3: T.u1 = T(\u221e), T.u0 = T(0), T.x1^k.u0 = T(-k), T.y1^k.u0 = T(+k), T.y0^n.u1 = T(-1/n), T.x0^n.u1 = T(+1/n), where T(p/q) = Q_{-p/q} \u222a T as in arXiv:2104.13592v1 p.2. The -q quotient has T(\u221e) = unknot, T(0) = longitude filling (docs Options; paper p.3).",
+   "Trefoil quotient (input s.l1.y0.y0.y1.u2 is the LEFT-handed trefoil), F_2: BN~ = h^0 q^10 \u2b2e~S~>\u2b2f\u2014>\u2b2f~>\u2b2f\u2014>\u2b2f~>\u2b2e<\u2014\u2b2e~>\u2b2f\u2014>\u2b2f~>\u2b2f\u2014>\u2b2f (11 generators). Kh~ = r(-4) (10 generators, mean q 96/5) \u222a s4(\u221e) (12 generators, mean q 14). Matches Theorem 3.1 and Table 1 of 2104.13592v1 p.7 (k = -4, n = 1). Same over F_3 and Q.",
+   "Figure-eight, both inversions (F_2): BN~ one non-compact curve with 13 generators; Kh~ = r(0) \u222a s4(\u221e) \u222a s4(\u221e); the two outputs are mirror images. Gradings reproduce \u03ba(4_1^1) = h^2.5 \u03b4^5.5 V_\u03ba \u2295 h^6.5 \u03b4^4.5 V_\u03ba of 2104.13592v1 p.10. (2,-3) pretzel tangle: BN~ 9 generators; Kh~ = r(1/2) \u222a s4(0).",
+   "T(-1) (= T.x1.u0 = T.y0.u1): CKh~ = tower at (h,q) = (0,8), H-torsion at (2,12) and (6,18), H^2-torsion at (4,14); so Kh~ = q^8+q^12h^2+q^14h^3+q^14h^4+q^18h^5+q^18h^6+q^20h^7, exactly 10_124. T(+1): rank 9, V = t^5+t^7-t^11+t^12-t^13, the (-2,3,7) pretzel knot, also with one H^2 at (4,16).",
+   "Rank rule verified on every closure computed (s = \u221e, 0, \u00b11..\u00b17, \u22131/n for n \u2264 10): dim Kh~(T(s)) = \u0394(s,-4) + 4\u0394(s,\u221e), with 2 in place of \u0394(s,-4) at s = -4. Only r(-4) meets the unknot arc a(\u221e); s4(\u221e) pairs to zero with it. Ranks of the slope \u22131/n closures: 8n-1 and 8n+1.",
+   "Decategorified dictionary, checked for n = 1..5 on both sides: with e_0 = [\u2b2e], e_\u221e = [\u2b2f], \u03c7(BN~(T)) = (q^10+q^16-q^18)e_0 + (-q^11+q^13-q^15+q^19-q^21+q^23)e_\u221e is the bracket vector and reproduces V(K_n) up to \u00b1q^k. \u03c7(s4(\u221e)) = q^10(1-q^2)^2(1+q^4)(e_\u221e-(q+1/q)e_0)."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "modified",
+    "reason": "BN~(T_trefoil) has exactly one component, non-compact, and no compact components (local run; general fact recalled in 2104.13592v1 p.4). In Kh~ the special component s4(\u221e) has the unknot slope, but the rational component r_1(-4) is compact and has slope -4 (paper Example 2.1 p.5, Table 1 p.7)."
+   },
+   {
+    "claim": "C2",
+    "verdict": "confirmed",
+    "reason": "Computed over F_2: the slope -1 closure (10_124) has BN~ = F[H] \u2295 (F[H]/H)^2 \u2295 F[H]/H^2. Closures of slope \u22131/n have only order-one torsion for n = 2,4,6,8,10 and exactly one H^2 summand for n = 1,3,5,7,9, on both sides. Same over F_3 and Q for n \u2264 3. Evidence up to n = 10, not a proof."
+   },
+   {
+    "claim": "C3",
+    "verdict": "confirmed",
+    "reason": "BN~ has no compact part, so read for the special component of Kh~: its Euler vector is q^10(1-q^2)^2(1+q^4)(e_\u221e-(q+1/q)e_0), and its share of V(K_n) on the -1/n side is \u00b1q^k(1+q^4)(1-q^6)(1-(-q^2)^n)/(1+q^2), nonzero for n \u2265 1 (computed n \u2264 5 both sides) and zero for the unknot arc."
+   }
+  ],
+  "surprises": [
+   "Both distance-one closures (10_124 and the (-2,3,7) pretzel knot) carry an H^2 summand, and the parity pattern in n holds on both sides. Among integer closures, H^2 occurs exactly for slopes s > -4 (tested -7..7), i.e. on one side of the rational component's slope.",
+   "Naming hazards: the website's stored 2021 outputs have \u2b2e and \u2b2f interchanged relative to the current repository for the same input, and kht++'s s4 is the curve called s_2 in arXiv:2104.13592v1 (Fig. 7, Theorem 3.1). The mathematician's s_2n(p/q) needs to be pinned to one indexing.",
+   "A crossing change is a rational replacement at distance 2, so the closures one crossing change away from the unknot \u03c4(\u221e) are those of slope \u00b11/2 (n = \u00b12), not all K_n. K_{\u00b11} are 10_124 and the (-2,3,7) pretzel knot. The background's formulation of Lemma Q via all K_n should be rechecked against this.",
+   "Portability on macOS: appending a cup with -p segfaults and a '^' in a file name hangs the program, so every closure had to be written as its own input file. 2104.13592v1 Remark 3.10 (p.9) warns that over Z/3 other knots (7_4, second inversion) show extra s_1(\u221e) components and slope 6."
+  ],
+  "open_questions": [
+   "Can the parity statement (one H^2 summand iff n odd, always at h = 4) be proved from the curve picture, using that a(1/n) is congruent to a(\u221e) mod 2 exactly when n is even?",
+   "Is \u03c7(s_4(s)) always \u00b1q^k(1-q^2)^2(1+q^4) times the kernel vector of the slope-s closure, and what replaces 1+q^4 for longer special components? Only five s4 components (slopes 0 and \u221e) were seen; no longer one was run.",
+   "V(K_n) = (unit \u00b7 Jones polynomial of the 2-bridge closure of Q_{-4}) + (special piece). Is there a structural reason these two pieces can never sum to a unit for a nontrivial inversion? The data only show both are nonzero.",
+   "Whether the rational slope k of Kh~(T_{K,h}) is always divisible by 4 and what it means is open (Questions 3.3, 2104.13592v1 p.8). Does k control where H^2 torsion appears among integer closures, as the trefoil data suggest?"
+  ]
+ },
+ "recent": {
+  "key": "recent",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/recent/REPORT.md",
+  "status": "complete",
+  "headline": "Nothing between June and November 2026 changes the status of T. The (2,3,n) triangle-group statement is in print (McMullen, Math. Ann. 2013, Sec. 5; Funar-Kohno; Miyamoto arXiv:2609.33703), but no cosh-distance formula for two-bridge links was found. A single root of unity cannot detect the unknot among two-bridge knots: V_{T(2,2m-1)}(t) = 1 whenever t^m = 1, t != +-1. BBB v2 (14 Sep) is a substantive repair, not \"minor\"; Carmi-Cohen (v1 only, math.GM) fails a proves-too-much test. Colored-Jones detection is still listed as open in the K3 problem list.",
+  "key_statements": [
+   "McMullen, Braid groups and Hodge theory, Math. Ann. 355 (2013), Sec. 5 'Examples: n = 3' (author preprint p. 25): for p > 6 the image of A_2(-zeta_p) in PU(1,1) is the (2,3,p) triangle group acting on the hyperbolic plane; it arises as rho_q(B_3) for q = zeta_d^{-k}, k/d = 1/2 +- 1/p. Thm 5.5 (p. 24): rho_q is dual to reduced Burau at t = q.",
+   "Funar-Kohno, Geom. Dedicata 169 (2014), arXiv:0907.0568v4: Prop. 2.1 (p. 4) the B_3 representation is in U(2) or U(1,1) according to sign(q + qbar + 1); Prop. 3.3 (p. 12) Gamma_{-q} is discrete in PU(1,1) iff q = exp(+-2 pi i/n), n >= 7; Props 3.4, 3.5 triangle groups (k,k,k) and (2,3,2k+1). Thm 1.2 on the kernel is wrong when 3 | n; corrected by Dlugie, AGT 24 (2024), Thm 5.4.",
+   "Miyamoto, arXiv:2609.33703v1 (27 Sep 2026), Thm 3.2 (p. 5), Prop. 3.7 (p. 6): at a primitive d-th root zeta the q-deformed modular group (projective Burau of B_3 at t = -q) has kernel N_d = normal closure of R^d and image the (2,3,d) triangle group, Fuchsian for d >= 7. Thm A (= 3.8): Phi_d divides the denominator S_{r/s}(q) iff gamma is in <R>N_d, where gamma(infinity) = r/s.",
+   "Morier-Genoud-Ovsienko Prop. A.1 (as restated in Byakuno-Ren-Yanagawa arXiv:2603.08439v2 Sec. 2): for r/s > 1 the normalised Jones polynomial of the two-bridge link is J_{r/s}(q) = q R_{r/s}(q) + (1-q) S_{r/s}(q), with t = -1/q. BRY: the set of values J_{r/s}(zeta) is finite iff zeta = zeta_n, n = 2,...,6.",
+   "Przytycki, t_k moves on links (Contemp. Math. 78, 1988; arXiv:math/0606633), Introduction corollary (a): if t^k = (-1)^k, t != -1, then V_{t_k(L)}(t) = (-1)^m i^k V_L(t); Cor. 1.10: if t^{2k} = 1, t != -1, then V is unchanged by the antiparallel 2k-twist move. So Jones values at a root of unity are constant up to a unit on twist-move classes.",
+   "BBB arXiv:2607.05283: v1 6 Jul 2026, v2 14 Sep 2026, no erratum or published response. v2 adds Lemmas 6.4-6.6 (pp. 18-19) in the B_5 embedding step, replacing a v1 'without loss of generality' paragraph in the proof of Prop. 6.7, and adds 'with basepoint' bigon-forming configurations in Sec. 5. Main results: Thm 6.9 (p. 24), Cor. 1.1.",
+   "Carmi-Cohen arXiv:2606.22410v1 (21 Jun 2026, math.GM, single version): Thm 6.8 (p. 50) a nontrivial J_N-trivial knot has N <= 3c(K); Thm 6.9 (p. 53) V_K = 1 implies unknot; Cor. 6.10 Vassiliev invariants detect the unknot. Nontriviality of K is used only to choose a non-nugatory crossing of a minimal diagram (proof of Thm 6.8; Thm 5.11, p. 36).",
+   "S1: Andersen arXiv:1206.2785v1 (2012, no journal version found) states Thm 10 and Cor. 1 (p. 6): equal colored Jones polynomials to the unknot implies unknot; the final section is a sketch with an assumed nondegeneracy condition. K3 problem list (AMS, Problem 1.24(b), pp. 31-32) poses it as open. Conditional: Dunfield-Garoufalidis AGT 4 (2004) Cor. 1.3 (AJ conjecture); Murakami-Murakami Sec. 5 (Volume Conjecture)."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "confirmed",
+    "reason": "Stated verbatim by McMullen, Math. Ann. 355 (2013), Sec. 5 'Examples: n = 3' (preprint p. 25), and by Funar-Kohno Props 3.3-3.5 and Miyamoto arXiv:2609.33703 Thm 3.2/Prop. 3.7; precision: it is the image in PU(1,1), only for -t = e^{+-2 pi i/n} exactly, and the linear kernel is given by Dlugie AGT 2024 Thm 5.4 (Funar-Kohno Thm 1.2 is wrong when 3 | n)."
+   },
+   {
+    "claim": "C2",
+    "verdict": "confirmed",
+    "reason": "Funar-Kohno Prop. 2.1 (p. 4): sign of q + qbar + 1 is +1 for arg q in (-2pi/3, 2pi/3) and -1 on the complementary arc; McMullen Cor. 3.2 (preprint p. 15) with n = 3 gives (0,2), (1,1), (2,0); my numerical check agrees; the form is degenerate at the two primitive cube roots, so the arcs are open."
+   },
+   {
+    "claim": "C3",
+    "verdict": "confirmed",
+    "reason": "No published cosh-distance formula for two-bridge Jones values was found in web and arXiv searches or in McMullen, Funar-Kohno, Miyamoto, BRY, Elzenaar; Elzenaar-Gong-Martin-Schillewaert (arXiv:2405.15970, Introduction) call the Farey-polynomial/Jones relation open; caveat: Jones 1987 and Squier 1984 full texts were not accessible."
+   }
+  ],
+  "surprises": [
+   "For every m >= 3 and every t with t^m = 1, t != +-1, the torus knot T(2,2m-1) has V(t) = 1 exactly (identity from the torus-knot formula, checked numerically; e.g. T(2,13) at 7th roots, T(2,15) at 8th roots). So no single root of unity detects the unknot among two-bridge knots; what it detects is the N_d-orbit of the slope (Miyamoto's N_d, Przytycki's t_k moves).",
+   "My own cross-check, not found in print: for zeta = e^{2 pi i/d}, d >= 7, |J_{r/s}(zeta)| = 2 sin(pi/d) cosh(dist(S.Q, gamma.Q)/2), Q the fixed point of R, gamma(infinity) = r/s; verified numerically for d = 7, 9, 14. The unknot value 1 is attained at all d nearest neighbours of S.Q in the {3,d} tiling, not at a single point.",
+   "Carmi-Cohen: the proof of the triviality barrier uses nothing about K beyond a diagram with a non-nugatory crossing and f_r(K) = 0; applied to the trefoil shadow with one crossing changed (an unknot diagram) it would force a_2 = 0 for the trefoil. Either minimality is used silently or the descent theorem (Thm 5.11) is false.",
+   "Andersen is listed among the K3 contributors, yet K3 Problem 1.24(b) poses colored-Jones unknot detection as open and does not cite his 2012 preprint arXiv:1206.2785, whose Corollary 1 claims exactly that."
+  ],
+  "open_questions": [
+   "Sikora's IPAM talk (15 Oct 2026, recording posted, not watched) announces new results and conjectures on lens space surgeries tied to tangle equations and T; no preprint exists yet. What are the precise statements?",
+   "BBB v2: are conditions (1)-(3) of 'properly simple modulo 4-disks' actually verified for the push-map Gamma built in the proof of Prop. 6.7, and does the new 'with basepoint' case need its own argument in Prop. 5.1?",
+   "Is there any refereed proof that the colored Jones polynomials detect the unknot? Andersen's arXiv:1206.2785 was not located in a journal and its last section assumes a nondegeneracy condition.",
+   "Jones, Ann. of Math. 126 (1987), plat/two-bridge and unitary-range sections, and Squier 1984 could not be read here; they should be checked by hand for any distance-type statement before claiming novelty of the cosh formula."
+  ]
+ },
+ "kwz-linear": {
+  "key": "kwz-linear",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/kwz-linear/REPORT.md",
+  "status": "complete",
+  "headline": "arXiv:2202.01460v1 (only version, F_2 only) classifies components of Kh~(T) as r_n(p/q) or s_2n(p/q) with trivial local systems (Thm 2.15, p.7); arXiv:2602.23442 (Feb 2026, same authors) redoes it over any field. Nothing comparable holds for BN~. Derived by me: the curves disjoint from a(infty) are exactly the s_2m(infty); chi HF(a(1/n), s_2m(infty)) = +-q^c (1-q^6)[m]_{q^4}[n]_{-q^2}, never zero, and the pairing is delta-thin of dimension 2mn. Each component has non-zero K_0 class, but the source does not exclude cancellation between special components.",
+  "key_statements": [
+   "Thm 2.14 (2202.01460v1, p.7): for any pointed Conway tangle T every component of Kh~(T) is linear. Thm 2.15 (p.7): every component equals r_n(p/q) or s_2n(p/q), n>=1; local systems trivial. Paper works over F_2 exclusively (p.2). Over any field: arXiv:2602.23442v1 Thm 3.19 (p.19), up to bigrading shift, local system (-1).",
+   "Linear (p.6): gamma wraps around a puncture if for all small eps the eps-peg-board representative of its lift turns at a lift of that puncture by an angle >= alpha > 0; linear = wraps around no puncture. Def 2.12 (p.7): a linear curve is special if its singular peg-board representative contains a lift of *, rational otherwise.",
+   "Fig. 4d and p.7: the lift of s_2n(0) runs along a horizontal line through lifts of * (alternating *, non-special), passing below 2n consecutive punctures then above the next 2n, period 4n. The lift of r_n(0) runs along a horizontal line with non-special punctures only, below n then above n, period 2n. Slope p/q: image under [[q,r],[p,s]].",
+   "Thm 4.1 (p.10): no component of BN~(T) or Kh~(T) wraps around the special puncture. Thm 3.1 (p.8): no component of Kh~(T) wraps around a non-special puncture; this fails for BN~ (Example 2.13, p.7; Remark 5.3 and Fig. 15, pp.32-33, compact component of BN~(T_CKMC) with an S^3 arrow).",
+   "Complexes: r_n(0) has 2n generators in bullet, a source and a sink joined by two chains of n arrows labelled alternately D, S^2 (Lemma 5.5, p.33). s_2n(0) has 4n generators in bullet and 4 in circ: two rows circ-S->bullet-D->bullet-S^2->...-D->bullet-S->circ joined by D at both ends (p.30). Absolute gradings: 2602.23442 Def 3.12 (p.17).",
+   "Grading facts stated: q-gradings of generators have the same parity within one idempotent and different parity across idempotents (pp.12, 32); Kh~(T^*) = m(Kh~(T)) up to shift (Lemma 2.9, p.6); gluing is relatively bigraded (Thm 2.8, p.5). No statement on relative shifts between components or on any conjugation symmetry.",
+   "Thm 5.6 (p.35): an odd-length rational component r_d(p/q) is based on the two ends joined by T. Cor 5.7 (p.35): without closed components the number of odd-length rational components of Kh~(T) is odd. Dimension formula (2602.23442 p.35, citing KLMWZ Lemma 2.10): dim HF(a(0), gamma) = length times |p| for slope p/q != 0; 0 or 2 at slope 0.",
+   "DERIVED (F_2 computation, calc/): HF(a(1/n), s_2m(infty)) has Poincare polynomial (1+t^3)[m]_{t^2}[n]_t in t=q^2h, one delta-grading (m<=5, n<=10). HF(a(1/n), r_m(infty)) = [m]_t(1+t+...+t^{n-2}+t^n), thin; HF(a(infty), r_m(infty)) has 2 generators (0,0,0),(2m,m-1,1). HF(a(infty), s_2m(infty)) = 0."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "modified",
+    "reason": "True for Kh~(T): over F_2 by Thm 2.15 (2202.01460v1, p.7), over any field by 2602.23442 Thm 3.19 (p.19); Kh~ has no arcs. False for BN~(T): only Thm 4.1 (no wrapping around *) is proved, and non-linear compact components exist (Remark 5.3, Fig. 15, pp.32-33)."
+   },
+   {
+    "claim": "C2",
+    "verdict": "modified",
+    "reason": "Proved for Kh~ only: trivial over F_2 (sentence after Thm 2.15, p.7; Thms 5.1, 5.4), and the one-dimensional system (-1) over other fields (2602.23442 Def 3.11, Thm 3.19); for BN~ it is false, a 2-dimensional indecomposable local system occurs over Z/7 (2602.23442 Remark 3.20, p.19)."
+   },
+   {
+    "claim": "C3",
+    "verdict": "not_addressed",
+    "reason": "Neither paper discusses Euler characteristics or K_0; my derivation (REPORT Section 10) gives [r_n(0)] = (q-q^-1)(q^n-(-1)^n q^-n)/(q+q^-1)[bullet] and [s_2n(0)] = +-(q-q^-1)^2 (q^2n-q^-2n)/(q^2-q^-2)(-[bullet]+(q+q^-1)[circ]), both non-zero, so the claim holds per component but not for sums of components."
+   }
+  ],
+  "surprises": [
+   "2202.01460 is called an 'earlier, unpublished version' by its own authors in arXiv:2602.23442v1 (26 Feb 2026, 'On mutation invariance in Khovanov homology', 85 pp.), which proves the classification over any field, fixes absolute bigradings of r_n(0), s_2n(0) (Def 3.12) and proves mutation invariance of reduced Khovanov homology over any field. That paper is now the reference.",
+   "The mathematician's parity remark needs correcting: for n odd only one endpoint of a(1/n) (the end vertically aligned with *) lies on the special line of slope infty; for n even neither does. The pairing with s_2m(infty) has 2mn points and the same thin pattern for both parities.",
+   "Derived: if T u Q_infty is the unknot then Kh~(T) is one r_1(k), k an integer, plus curves s_2m_i(infty), and all special components enter the Jones polynomial of every filling through one Laurent polynomial P_T times (q^3 - q^-3) times the bullet-coordinate of the filling arc. The slope k need not be 0 (the P_{2,-3} example gives k = +-4).",
+   "The parallel rational pairing HF(a(infty), r_m(infty)) is the only non-thin case: two generators with delta differing by 1. Also, no tangle is known with a rational component of length >= 3 in Kh~ (p.35)."
+  ],
+  "open_questions": [
+   "Is there any constraint on the relative bigrading shifts (in particular h-parity) of different special components of the same slope in Kh~(T)? Without one, the special contribution P_T to the Jones polynomial can cancel. Neither paper states such a constraint.",
+   "Thinness and the Poincare polynomial formulas for HF(a(1/n), s_2m(infty)) and HF(a(1/n), r_m(infty)) are verified only for m <= 5 (resp. 7), n <= 10 (resp. 9); a general proof and the case of arbitrary arc slopes p/q were not done (KWZ 'Thin links and Conway spheres' should be checked).",
+   "Absolute bigradings of s_2m(infty; e) and a(p/q; e) depend on the orientation datum e of 2602.23442 Def 3.14, which I did not track; the Jones-polynomial formulas are therefore stated up to a unit per orientation choice.",
+   "The paper gives no geometric rule for how Cone(H) turns a general component of BN~(T) into components of Kh~(T); only the algebraic definition and two examples (arc to r_1; BN~(P_{2,-3}) to r_1(1/2) and s_4(0))."
+  ]
+ },
+ "kwz-inversions": {
+  "key": "kwz-inversions",
+  "report_path": "/Users/calebbarnett/jones-lanes/theory-restart/lit/kwz-inversions/REPORT.md",
+  "status": "complete",
+  "headline": "KWZ Thm 3.1 (computer check, knots up to 9 crossings, F_2): Khr(T_{K,h}) = r_1(k) + n copies of s_2(inf), k in 4Z, n>0; kappa = HF(a(0), specials). Neither paper treats chi(kappa) or Jones polynomials. From the kht++ data for all 138 inversions (data.json) I find [T] = q^{24j}[Q_0] + eta([Q_inf] - (q+1/q)[Q_0]) with eta = -chi(kappa)/(q^2+1+q^-2) + q^{24j+1}(1-q^{2k})/(1+q^2). So C3 holds only when k=0 (38 cases); eta is nonzero and divisible by 1-t^4 in all 138.",
+  "key_statements": [
+   "[KWZ] p.3: S^3_{p/q}(K) = Sigma(S^3, tau(p/q)), where tau(p/q) is T glued to Q_{-p/q}; the preferred T has tau(inf) = unknot and tau(0) <-> Seifert longitude. So K_n = tau(1/n). Non-trivial (K,h) up to equivalence <-> tangles with tau(inf) unknotted (via Gordon-Luecke; cf. [W] Prop. 9, p.10).",
+   "[W] Def. 10, p.11: A = inverse limit of Khr(T(i)) under the crossing-resolution maps f_i: Khr(T(i+1)) -> Khr(T(i)); K = sequences vanishing for j << 0; kappa(K,h) = A/K. Prop. 11: finite-dimensional, Z-graded, injects into every Khr(T(j)). Thm 1 (p.3, proof pp.14-15, uses the Ozsvath-Szabo spectral sequence): kappa = 0 iff K is trivial.",
+   "[KWZ] Def. 3.4, p.8: kappa(K,h) := HF(a(0), s(K,h)), s(K,h) = special components of Khr(T_{K,h}). Agreement with [W]'s kappa as relatively bigraded invariants is asserted on p.8 without proof. Counterexample 3.5: dim Khr(tau(n)) = dim kappa + dim HF(a(n), r_1(k)), the latter being Khr of the (2,n-k) torus link.",
+   "[KWZ] Def. 2.2 + Lemma 2.3, p.5: V_kappa is 4-dimensional, delta = 0, q = -5,-1,1,5. HF(a(0), s_2(inf)) = q^0 delta^{-1/2} h^{1/2} V_kappa; HF(a(0), s_{2n}(inf)) = sum_{i=1..n} q^{4(2i-n-1)} delta^{-1/2} h^{1/2+2(2i-n-1)} V_kappa (symmetric bigrading of Fig. 7). Convention delta + h = q/2; q is twice [W]'s, delta has opposite sign (p.10).",
+   "[KWZ] Thm 3.1, p.7 (kht++ computation, not a general theorem): for all 138 strong inversions on the 81 strongly invertible knots with <= 9 crossings, Khr(T_{K,h}) = r_1(k) union n copies of s_2(inf), k in 4Z, n >= 1. p.4: BNr(T) has exactly one non-compact component; nothing is proved about its shape. [KWZ]'s s_2 is s_4 in later papers and current kht++.",
+   "[KWZ] Counterexample 3.5, p.8: for 9_46, dim kappa = 16 vs 28 ((k,n) = (0,4) vs (-4,7)), refuting [W, Conj. 29]. Conj. 3.6 = [W, Conj. 28]: kappa is a sum of shifted V_kappa (implies 4|k via det(tau(0)) = 0, p.9). Conj. 3.7: all specials are s_{2n}(inf). Remark 3.10: over Z/3, Khr(T_{7_4^2}) = r_1(6) + 2 s_2(inf) + 5 s_1(inf).",
+   "[digest, from kht++ site data, all 138] chi_B(BNr(T)) =: eta is the bracket coefficient that vanishes iff [T] is a unit times the trivial class. eta = -q^-3(1-q^2)(1+q^4) P_kappa(q) + q^{24j+1}(1-q^{2k})/(1+q^2), P_kappa = sum_i (-1)^{a_i-1/2} q^{2(a_i+b_i)}, chi Khr(tau(inf)) = q^{24j}, 4j = lk(tau(0)), 2j = P_kappa(1) - k/4.",
+   "[digest] BNr(T_{K,h}) = one arc + 0..18 compact components. The arc has 1+|k|+6|P_kappa(1)| generators; it is a(k)-shaped iff P_kappa(1) = 0 (25 cases) and equals a(0) for 12 inversions with k = 0 = j. With bigrading it depends only on (k,j) except for 9_46^2. Sakuma's eta: absent from [KWZ]; in [W] only as a comparison invariant (pp.4, 14, Prop. 21)."
+  ],
+  "claim_checks": [
+   {
+    "claim": "C1",
+    "verdict": "confirmed",
+    "reason": "[KWZ] p.7: HF(a(inf), Khr(T)) = F so Khr(T) meets a(inf) once; the rest being special curves of slope infinity plus one r_1(k) is Thm 3.1 for <= 9 crossings (computer) and in general rests on the geography theorem cited in arXiv:2105.06308v3, which was only expected in [KWZ] p.5. All components of Khr are compact, including the one meeting the arc."
+   },
+   {
+    "claim": "C2",
+    "verdict": "confirmed",
+    "reason": "[KWZ] Def. 3.4 (p.8) defines kappa as HF(a(0), special components) and asserts, without proof and only as relatively bigraded invariants, agreement with Watson's inverse-limit quotient; non-vanishing exactly for nontrivial inversions is [W] Thm 1 (p.3, proof pp.14-15, via Heegaard Floer L-space arguments)."
+   },
+   {
+    "claim": "C3",
+    "verdict": "modified",
+    "reason": "Neither paper mentions chi(kappa) as a polynomial or Jones polynomials of closures (only det = |chi_delta|, [KWZ] p.9, [W] p.5). From kht++ data for all 138 inversions, x = -chi(kappa)/(q^2+1+q^-2) + q^{24j+1}(1-q^{2k})/(1+q^2): proportional to chi(kappa) only if k=0. For k != 0, chi(kappa) != 0 is automatic (|chi(kappa)| = |k| at q^2=-1) and does not give x != 0. Checked by direct bracket computation on the trefoil (REPORT sections 8-9)."
+   },
+   {
+    "claim": "C4",
+    "verdict": "modified",
+    "reason": "Unrestricted: [W] Thm 18 (p.19) gives one delta-grading for torus knots and Conj. 30 (p.26) predicts one iff L-space knot; in the [KWZ] Section 4 table the support has 1 (3_1, 5_1, 7_1, 9_1, 8_19), 2 (smallest 4_1: delta 4.5, 5.5), 3 (5_2^1), 4 (6_1^1), up to 7 (9_2^1) gradings, always consecutive; each V_kappa summand is delta-homogeneous."
+   }
+  ],
+  "surprises": [
+   "The kht++ site (cbz20.raspberryip.com/code/khtpp/examples/strong_inversions.html) holds full bigraded BNr and Khr for all 138 quotient tangles, including the rational component's bigrading and BNr, which the paper omits. All of it is in data.json and reproduces Table 1 and the kappa table exactly. kht++ slopes are negative reciprocals of the paper's (site s2(0)/s4(0) = paper s_2(inf), site r(-1/k) = paper r_1(k)).",
+   "The absolute bigrading of the paper's kappa table is not the one in which the unknot closure sits in degree 0: chi Khr(tau(inf)) = q^{24j}, j in {-3..4}, apparently because the tangle strands are oriented in parallel (4j = lk of tau(0)). It differs from Watson's absolute delta by 4j (checked on 3_1, 4_1, 5_1, 8_19); the paper mentions only a sign and a factor 2.",
+   "The bracket defect eta is divisible by 1 - t^4 for all 138 inversions and (eta/(1-t^4))(1) = -j, so eta = 0 would force lk(tau(0)) = 0. The non-compact component of BNr is determined, with bigrading, by (k, j) alone for 137 inversions; 9_46^2 (the knot of the counterexample) is the exception, with a D^2 arrow in its arc.",
+   "Five old kht v0.1 pages (7_6^2, 8_6^1, 8_13^1, 8_21^1, 9_17^1) print the BNr arc as two chains; gradings fit one arc with a D-arrow missing from the printout. The site index also lists a folder Jones/Thistlethwaite, which returns 404."
+  ],
+  "open_questions": [
+   "Is there a written proof that [KWZ]'s kappa = HF(a(0), specials) equals Watson's inverse-limit quotient, and does it hold with absolute gradings once the 4j shift is accounted for?",
+   "The formula for eta in terms of chi(kappa), k and j was verified numerically on 138 examples; it should follow from additivity of Euler characteristics over components of Khr given Thm 3.1-type structure, but I did not write out that derivation or the general-k normalisation of r_1(k).",
+   "What are k (Questions 3.3 of [KWZ]) and j = lk(tau(0))/4 topologically, and why is lk(tau(0)) divisible by 4 in all 138 cases? Is j related to Sakuma's eta or to a linking invariant of the inversion?",
+   "Have Conjectures 3.6 and 3.7 of [KWZ] (kappa is a sum of V_kappa; specials are s_{2n}(inf)) been settled since 2021? I did not check; I also could not confirm the mathematician's normalisation of [T] = x id + y e."
+  ]
+ }
+}

@@ -1,0 +1,418 @@
+JONES UNKNOT DETECTION: TWO EXACT GATES FOR A GEOMETRIC CONSTRUCTION
+1 November 2026. No full proof or counterexample obtained.
+
+Main result
+===========
+For one fixed disk-twist family, infinitely many Jones-one members force
+its entire zero-framed annular skein to equal that of a local unknot
+(winding zero) or a core strand (winding plus or minus one). Higher
+winding is impossible. This is proved using integral skein coefficients,
+not by assuming that colored Jones polynomials detect the unknot.
+
+There is also a finite certificate: unless the whole family has Jones
+polynomial one, at most floor(r/2)+1 distinct parameters can have that
+polynomial, where r is the number of disk intersections. Full Laurent
+polynomials are tested here, not numerical values or finite Taylor jets.
+
+A concrete sufficient counterexample construction would be a hyperbolic
+two-component link, with one component an unknot axis, whose other
+component has one of those exact annular skeins and the corresponding
+winding. Long surgery fillings would then be nontrivial Jones-one knots.
+No such link has been produced. The theorem narrows this construction;
+it neither excludes isolated counterexamples nor reduces every possible
+counterexample to this construction.
+
+The separate convergence test closes another shortcut. For a nonunit
+Jones polynomial, its vanishing order relative to one is at most its
+span, hence at most the knot's crossing number. Combined with the
+classical ropelength bound, n-fold Taylor agreement requires ropelength
+at least (4*pi*n/11)^(3/4). A sequence converging in C1 to a smooth
+embedded knot eventually has constant knot type. An exact counterexample
+cannot first appear only at the limit of such nonexact approximations.
+
+What changed in the research decision
+====================================
+Stop looking for infinite Jones-one disk-twist families of winding at
+least two. At winding zero or one, require an actual annular pattern
+with the exact scalar/core bracket before any further surgery analysis.
+Do not pursue shrinking finite-order corrections under uniform smooth
+geometric control: that proposed completion is impossible unless an
+exact Jones-one example has already occurred.
+
+The appended proofs are internal research deductions checked against
+standard primary formulas. No novelty or external-review claim is made.
+
+
+PART I: CONTEXTUAL FULL-TWIST PROOF
+=================================
+
+PASS 46: CONTEXTUAL FULL TWISTS AND THE SINGLE-CHANNEL GATE
+2026-11-01. Deduction from standard annular skein formulas; no novelty claim.
+
+Outcome
+-------
+For an arbitrary fixed exterior, an infinite full-twist family of knots
+can have Jones polynomial one only in the following two situations:
+
+  winding zero: the initially zero-framed annular bracket is delta;
+  winding +/-1: the initially zero-framed annular bracket is z.
+
+Here delta=-A^2-A^-2, z is the annular core, and the empty link has
+bracket one. In particular, larger-winding channels cannot give a new
+contextual escape, even when a meridional disk has arbitrarily many
+intersection points. This is stronger than merely listing possible
+twist eigenvalues: integrality and the unknot Jones value remove all
+higher single-channel possibilities.
+
+This does not prove the surviving patterns geometrically trivial. A
+hyperbolic annular knot with one of these skein classes would yield
+actual nontrivial Jones-one knots under all sufficiently long twists.
+No such pattern was constructed here. The winding-zero case returns
+to the previously identified scalar-pattern realization problem.
+
+1. Geometry and conventions
+---------------------------
+Let C be an unknot disjoint from an oriented knot P in S^3. Its exterior
+is a solid torus V. Fix the standard meridian-longitude marking and
+write w=lk(P,C), equivalently the signed intersection sum with a
+meridional disk of V. Let r be the geometric intersection count with
+one chosen transverse disk, so |w|<=r and w=r modulo two.
+
+Choose the framing of P which is zero in the original S^3 embedding.
+Let P_k be the knot obtained by k meridional twists of V. This is an
+actual knot for every integer k; twists do not alter component count.
+Equivalently, it is surgery on the unknot C with the corresponding
+reciprocal-integer slope. Choose the sign of k so that the annular
+twist operator has eigenvalues theta_j below.
+
+An ambient torus twist changes the transported framing of P by k*w^2.
+This is the usual surgery linking formula: the framing change is the
+product of the winding numbers of P and its parallel push-off. It can
+also be checked in an r-strand disk diagram: ordinary braid twisting
+adds k(w^2-r) to the oriented writhe, and transporting the individual
+ribbon framings adds kr. The final total is kw^2, independent of r.
+The familiar w=1 core acquires one framing twist, calibrating the sign.
+
+Consequently, to compute the normalized Jones polynomial of P_k one
+must remove (-A^3)^(kw^2), not an r-dependent framing correction.
+
+2. Exact spectral formula with integral coefficients
+----------------------------------------------------
+The annular skein is Z[A,A^-1][z]. Use the monic Chebyshev basis
+
+ e_0=1, e_1=z, e_(j+1)=z e_j-e_(j-1).
+
+Write the initially zero-framed bracket of P as
+
+                   [P]=sum_j a_j(A)e_j,
+
+where a_j belong to Z[A,A^-1]. Because the change from powers of z to
+the e_j basis is monic triangular, this coefficient integrality is
+literal, not rational-projector integrality. Only j congruent to w
+modulo two occurs, and j<=r.
+
+Let Delta_j=<e_j> and theta_j be the annular twist eigenvalue. Then
+
+ Delta_j=(-1)^j[j+1],       theta_j=(-1)^j A^(j(j+2)),
+ [n]=(A^(2n)-A^(-2n))/(A^2-A^-2),       Delta_1=delta.
+
+The normalized Jones polynomial, with t=A^-4, is therefore
+
+ V_(P_k)(A^-4)
+   =delta^-1 sum_j a_j(A)Delta_j
+                   (-A^3)^(-kw^2) theta_j^k
+   =sum_j b_j(A) A^(k d_j),
+
+ b_j=a_j Delta_j/delta,        d_j=j(j+2)-3w^2.       (1)
+
+The signs cancel because j-w^2 is even. The numbers d_j are distinct
+as j varies over nonnegative allowed labels. Formula (1) keeps all
+exterior complexity in the fixed integral coefficients a_j.
+
+Primary eigenvalue and annular-basis source: Masbaum, Skein-theoretical
+derivation of some formulas of Habiro, AGT 3 (2003), equations (2)--(4),
+printed p.539, and the twist discussion preceding them:
+https://msp.org/agt/2003/3-1/agt-v3-n1-p17-p.pdf
+Yokota's Twisting formulae of the Jones polynomial, Math. Proc. Cambridge
+Philos. Soc. 110 (1991),473--482, concerns precisely winding/wrapping and
+meridional twisting. Only its publisher extract was accessible this
+pass; no uninspected theorem or novelty claim is attributed to it:
+https://doi.org/10.1017/S0305004100070559
+
+3. Finite certificate; no infinite-root fallacy
+----------------------------------------------
+For distinct integers d_1,...,d_s and distinct integers k_1,...,k_s,
+the matrix (A^(d_i k_l)) is invertible over Q(A). Sort both integer
+lists increasingly. Strict rearrangement shows that the identity
+permutation gives the unique largest exponent in the determinant.
+Its coefficient is nonzero, so the determinant cannot vanish.
+
+Thus a nonzero sum of s distinct monomial exponentials has at most
+s-1 integer zeros. Apply this to V_(P_k)-1. If q coefficients a_j
+are nonzero, then a nonconstant family has at most q Jones-one
+parameters, or at most q-1 if some active d_j is zero. Also
+q<=floor(r/2)+1. The assertion concerns distinct parameters, not
+necessarily consecutive ones.
+
+In particular, infinitely many Jones-one parameters force (1) to be
+identically one for every k. Linear independence then forces exactly
+one active label j, with
+
+                j(j+2)=3w^2,       a_j Delta_j=delta.    (2)
+
+This argument does not treat an exponential expression as an ordinary
+polynomial in k. The generalized Vandermonde supplies the precise
+finite-dimensional certificate.
+
+4. Integrality removes every higher channel
+-------------------------------------------
+Evaluating the second equality in (2) at A=1 gives
+
+               a_j(1)(-1)^j(j+1)=-2.
+
+Since a_j(1) is an integer, j+1 divides two. Hence j=0 or j=1.
+Equation (2) now gives w=0 or |w|=1, respectively. Moreover (2)
+determines the entire annular bracket, not merely its value at A=1:
+
+       j=0: a_0=delta and [P]=delta;
+       j=1: a_1=1     and [P]=z.
+
+Conversely either displayed annular class, with its corresponding
+winding, makes (1) identically one. Thus the criterion is exact.
+
+The eigenvalue equation alone is a Pell equation
+(j+1)^2-3w^2=1 and admits higher solutions such as (j,|w|)=(6,4).
+Those are unrealizable as a single surviving channel with Jones-one
+closure because of the integral dimension equation above. Keeping
+only the spectral equation would falsely leave these possibilities.
+
+An initial framing other than zero multiplies the entire annular
+class by one power of -A^3. Removing that common factor gives exactly
+the statement above; arbitrary channel-dependent framing changes
+are not allowed.
+
+5. Actual calibration tests
+---------------------------
+For the r=3 coherent unknot closure of the braid sigma_1 sigma_2,
+the winding is three. Inserting full twists gives the actual torus
+knots T(3,3k+1), whose Jones polynomials in one chirality convention are
+
+        V_k=t^(3k)+t^(3k+2)-t^(6k+2).
+
+At k=0 this is one. For every nonzero integer k the three exponents
+are distinct, so it is not one. The two frequencies are t^(3k) and
+t^(6k), exactly those predicted by (1): labels j=3,1 have d=-12,-24.
+Thus a genuine unknot anchor does not itself annihilate either channel.
+The torus formula was independently derived in research40 from TL_3.
+
+For a zero-winding Whitehead crossing-circle context, the familiar
+unknot-to-trefoil twist family has
+
+ V_k=1+(t+t^3-t^4-1)*(t^(-2k)-1)/(t^2-1).
+
+The source's integer parameter m is -k in our positive annular-twist
+convention; in particular k=-1 gives the displayed trefoil polynomial.
+The frequencies are 1 and t^(-2k)=A^(8k), exactly the zero-winding labels
+0 and 2 in (1). Its second coefficient is nonzero. This actual marked
+example was already verified in research36/descent_audit.txt and is
+only a normalization check here, not a new construction or a generic
+two-strand argument.
+
+6. Full endpoint and its unresolved geometric content
+-----------------------------------------------------
+Suppose an actual P in V has [P]=delta,w=0, or [P]=z,|w|=1, and
+suppose the two-component exterior S^3\nu(P union C) is hyperbolic.
+Then (1) gives V_(P_k)=1 for every integer k. Hyperbolic Dehn surgery
+implies that for all sufficiently large |k| the P_k exteriors are
+hyperbolic, so these knots are nontrivial. This would be a complete
+counterexample construction with an independent nontriviality witness.
+For the filling input, see Hodgson--Kerckhoff, Universal bounds for
+hyperbolic Dehn surgery, Annals of Mathematics 162 (2005), introduction:
+https://annals.math.princeton.edu/wp-content/uploads/annals-v162-n1-p06.pdf
+
+The missing statement is the existence of that actual hyperbolic
+pattern, not a formal choice of a_j. The derived condition is much
+stronger than having one unknot closure. Conversely, an actual
+unknot anchor plus these annular equalities would suffice even if
+nontriviality were certified by a different topological method.
+
+No such pattern is supplied by this pass. Local unknot patterns and
+the ordinary core satisfy the required brackets but have trivial
+twist outputs. Ren's known annular degree-drop example retains a
+nonzero higher channel and does not satisfy either equality. The
+generalized wrapping-degree conjecture cannot be used to infer
+geometric locality from these skein classes; it is already false.
+
+This is a contextual all-exterior reduction for a single full-twist
+orbit, not a proof of Jones detection, not a reduction of every
+hypothetical counterexample to this orbit, and not an exclusion of
+isolated Jones-one parameters or multiple coupled twist sites.
+
+Audit: parent independently checked the finite generalized-Vandermonde
+extension and framing formulation, and caught the opposite parameter
+direction in the Whitehead calibration, corrected explicitly above.
+The actual diagram tests use the previously audited TL_3 torus formula
+and marked Whitehead/twist-knot family. The braid agent independently
+confirmed the raw and normalized eigenvalues and the integral annular
+single-channel argument; the proof uses integral Chebyshev coefficients,
+not possibly rational coefficients of matrix projectors.
+
+
+PART II: GEOMETRIC LIMIT PROOF
+=============================
+
+PASS 46 — FINITE-ORDER JONES CORRECTIONS CANNOT FIRST CLOSE IN A TAME LIMIT
+2026-11-01
+
+Verdict
+=======
+There is a complete compactness implication, but it does not give a new
+construction: sufficiently controlled geometric convergence makes the knot
+type eventually constant. An exact Jones-one limit would therefore already
+be an exact Jones-one knot at finite stages. Conversely, if every stage has
+V != 1, arbitrarily high Taylor agreement forces unbounded geometric
+complexity quantitatively. This rules out a proposed escape by shrinking
+successive corrections while retaining uniformly thick, bounded-length rope.
+
+1. An exact order bound, including the Laurent-support subtlety
+==============================================================
+For V_K != 1 define
+
+  nu(K) = ord_{t=1}(V_K(t)-1),   s(K)=maxdeg V_K-mindeg V_K.
+
+Then
+
+                   nu(K) <= s(K) <= c(K).                 (1)
+
+Here c is the minimal crossing number. No claim of novelty is made:
+Kauffman--Saito--Sawin, On Finiteness of Certain Vassiliev Invariants,
+q-alg/9507035, Theorem 1 and Corollary 1 (PDF pp.2--4), already give the
+crossing-level conclusion. We supply an independent elementary argument
+that also treats the potentially troublesome one-sided exponent window.
+
+https://arxiv.org/pdf/q-alg/9507035
+
+Do NOT simply write span(V-1)<=span(V): it is false, for example for the
+trefoil V=t+t^3-t^4. The needed extra input is the universal Jones identity
+V(omega)=1 at a primitive cube root omega. Together with V(1)=1 and
+V'(1)=0, these are recorded as V=1 mod (t-1)(t^3-1) in Stoimenow,
+Polynomial values, the linking form and unknotting numbers, Proposition
+3.2, citing Jones's original result:
+https://arxiv.org/pdf/math/0405076
+
+Proof of the first inequality in (1).
+If the exponent interval of V contains zero, adjoining/subtracting its
+constant term cannot increase its span. A nonzero Laurent polynomial of
+span s has at most s zeros at 1, counted with multiplicity.
+
+Otherwise mirror if necessary and write V=t^M P(t), M>=1, deg(P)=s.
+If s=0, V(1)=1 makes V=t^M, contrary to V'(1)=0. Thus s>=1.
+A Laurent polynomial with r distinct exponents has order at most r-1
+at 1, by the Vandermonde matrix for Euler derivatives (t d/dt)^j.
+Since V-1 has at most s+2 terms, the only exceptional possibility is
+nu=s+1. In that case the unique polynomial supported on M,...,M+s
+whose Taylor jet through degree s equals 1 is
+
+  V(t)=1-(1-t)^(s+1) Q(t),
+  Q(t)=sum_{j=0}^{M-1} binom(s+j,s) t^j.                 (2)
+
+Existence follows by truncating (1-t)^(-s-1): the displayed V is divisible
+by t^M, has degree M+s, and differs from 1 to order s+1 at t=1.
+Uniqueness follows from the same Vandermonde matrix on M,...,M+s.
+
+The coefficients a_j=binom(s+j,s) are strictly positive and increasing.
+Q has no unit-circle zero. For M=1 this is immediate. For M>=2, if
+Q(z)=0 and |z|=1, then
+
+  a_(M-1) z^M = a_0 + sum_{j=1}^{M-1}(a_j-a_(j-1)) z^j.
+
+The weights on the right are all positive and sum to a_(M-1).
+Equality in the triangle inequality forces z^0 and z^1 to have the same
+phase, hence z=1, where Q is positive. Therefore (2) contradicts
+V(omega)=1. This excludes nu=s+1 and proves nu<=s.
+
+The second inequality in (1) is the usual bracket state bound: for a
+connected c-crossing diagram the all-A/all-B state circle counts satisfy
+s_A+s_B<=c+2, so the bracket span is at most 4c. Writhe normalization
+does not change span, and t=A^-4 divides the span by four.
+
+2. Quantitative geometric deterioration
+=======================================
+Let length be L and thickness tau be the RADIUS of the largest embedded
+normal tube (equivalently reach), so Rop=L/tau. The classical bound is
+
+             Rop(K) >= ((4*pi/11)c(K))^(3/4).             (3)
+
+This convention and estimate appear in Cantarella--Kusner--Sullivan,
+On the Minimum Ropelength of Knots and Links, Invent. Math.150 (2002),
+257--286: definition in the introduction and Section1; Section9, printed
+article p.279 (preprint p.23), gives the crossing estimate. Their Lemma6
+and Theorem7 also give the positive-thickness compactness/isotopy result.
+https://www.jasoncantarella.com/downloads/papers/ropelength/ropelen.pdf
+https://doi.org/10.1007/s00222-002-0234-y
+
+Consequently every actual knot satisfying V!=1 and
+V=1 mod (t-1)^n obeys
+
+  c(K)>=n,
+  Rop(K)>=((4*pi/11)n)^(3/4),
+  tau <= L * (11/(4*pi*n))^(3/4).                         (4)
+
+Thus bounded physical length forces thickness to zero at least at this
+rate; fixed positive thickness forces length to diverge. This applies to
+every realization of the knot type, not just a poor diagram produced by
+the construction. Arbitrary rescaling cannot help because ropelength is
+scale invariant.
+
+The already certified finite-order inverse knots R_N in
+work/research28/quantum_promotion.txt have V_R_N!=1 and
+V_R_N=1+O((t-1)^(N+1)). Applying (4) yields c(R_N)>=N+1 and
+Rop(R_N)>=((4*pi/11)(N+1))^(3/4). This is a consequence of their
+established properties, not a new realization claim.
+
+3. Why convergence cannot postpone the exact example to infinity
+================================================================
+Suppose smooth parametrized embeddings gamma_n:S^1->R^3 converge in C^1
+to a smooth embedded gamma. A normal tube around gamma exists. For large
+n, gamma_n lies in it and is transverse to its normal fibers; the closest
+point projection has degree one and is a diffeomorphism on gamma_n.
+Sliding each point along its normal fiber gives an isotopy, extended to
+an ambient isotopy. Hence K_n=K for all sufficiently large n.
+
+If ord_1(V_Kn-1)>=n, this fixed polynomial has arbitrarily high vanishing
+order and is exactly 1. If all K_n are nontrivial, K is nontrivial. But
+the same conclusion holds for EVERY sufficiently late finite stage:
+the counterexample has not been created only by a limiting process.
+In particular, a sequence all of whose Jones polynomials are nonunit
+cannot have such a C^1 embedded limit.
+
+For the compactness version, bounds L<=L0 and tau>=tau0>0 yield bounded
+curvature and equicontinuous tangents in constant-speed parametrizations.
+After translations and a subsequence one obtains a C^1 embedded limit;
+positive thickness prevents new self-contact. This is the situation of
+the cited Lemma6 and Theorem7. Alternatively (3) gives a crossing bound,
+so (1) directly proves that n beyond the bound already forces V_Kn=1.
+
+Uniform C^0 convergence alone is insufficient. Tie a fixed nontrivial
+local knot into a shrinking ball along a round circle. The resulting
+nontrivial knots converge uniformly to that unknotted circle, with lost
+thickness and no C^1 convergence to its smooth parametrization. Infinite
+accumulating modifications may instead produce wild or singular limits;
+the ordinary Jones polynomial and the question here concern tame knots.
+Bounded length alone is meaningless as a topological compactness input,
+since any knot can be rescaled to prescribed length.
+
+4. Exact scope of the conditional endpoint
+==========================================
+The following are equivalent as existence statements:
+
+ (a) There is a nontrivial tame knot with V=1.
+ (b) There are nontrivial K_n with V_Kn=1 mod(t-1)^n and uniformly
+     bounded ropelength.
+
+(a) implies (b) by a constant sequence. Conversely (1)--(3) force an
+exact Jones-one finite stage once n exceeds the common crossing bound.
+Thus a bare uniform-geometry hypothesis is not an independently easier
+bridge. For the known all-finite-order constructions with V!=1 it is
+actually impossible, quantitatively. This pass produces an obstruction
+to the proposed limiting mechanism, not a solution of unknot detection.

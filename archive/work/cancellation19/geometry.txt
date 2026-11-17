@@ -1,0 +1,183 @@
+PASS 19: A LOCALITY OBSTRUCTION TO EQUIVARIANT SATELLITE REPAIRS
+31 October 2026. Bounded research deduction, internally audited.
+No claim of literature priority; no general Jones-detection proof.
+
+MAIN RESULT
+
+An essential pattern in a strongly inverted solid torus cannot be turned
+into a local unknot by a finite sequence of invariant winding-zero
+crossing-disk twists supported entirely in that solid torus.
+
+Here 'local' means contained in a 3-ball in the interior of the solid
+torus. Each disk is genuinely invariant, meets the knot transversely in
+exactly two points, and its boundary circle is strongly inverted. These
+hypotheses cannot be replaced by invariance of the boundary circle alone.
+The allowable operation is Boyle--Chen type C: its two punctures are the
+two fixed points on the knot.
+
+This is a geometric obstruction independent of the Jones polynomial. It
+rules out a proposed universal repair of the anchored-flat-tangle to
+zero-shell construction: changing the Whitehead pattern to any other
+fixed essential pattern with a correct-type LOCAL unknotting disk will
+not work. A construction using a disk that leaves the companion solid
+torus is outside the conclusion.
+
+1. WHY THE CORRECT CROSSING DISK IS TYPE C
+
+Let tau preserve the orientation of S^3 and strongly invert a knot P and
+a circle C=boundary D. Suppose D is invariant and intersects P in exactly
+two transverse points. The restriction of tau to D is a reflection.
+It reverses both the orientation of D and the orientation of P, so it
+preserves the oriented intersection sign of each puncture. If the two
+punctures are exchanged, they have the same sign, giving lk(C,P)=+/-2.
+Consequently lk(C,P)=0 forces the two punctures to be separately fixed.
+They are exactly the two fixed points of P. In Boyle--Chen's terminology,
+this is the type C operation, not type B.
+
+Primary reference:
+Keegan Boyle and Wenzhao Chen, Equivariant unknotting numbers of strongly
+invertible knots, arXiv:2412.09797v2, Definition2.1 and Section6,
+https://arxiv.org/html/2412.09797v2 .
+The published version is J. London Math. Soc.113(2026), e70506,
+https://doi.org/10.1112/jlms.70506 .
+Lemma6.5 explicitly describes such a disk as an interval bundle around
+an axis interval, and explains why its two punctures are fixed.
+
+2. INVARIANT CONTAINING BALL
+
+Let A=Fix(tau), let C_0 be a strongly inverted unknot, and let
+V=S^3\int N(C_0), with invariant tubular neighborhood. Thus V is a
+strongly inverted solid torus and A intersect V consists of two properly
+embedded intervals. Let P subset int V be a strongly inverted LOCAL knot.
+Then there is a tau-invariant ball B subset int V containing P.
+
+Proof. The two-component link P union C_0 is split. Its exterior is
+reducible. The equivariant sphere theorem supplies an essential sphere S
+such that S=tau(S), or such that S and tau(S) are disjoint. Every essential
+sphere in a two-component link exterior separates the two components:
+otherwise one side is a ball disjoint from the link and the sphere would
+be inessential.
+
+Choose the ball B_S bounded by S that contains P and excludes C_0. Its
+image tau(B_S) has the same property because both components are preserved
+individually. If the two boundary spheres are distinct and disjoint,
+these two balls must be strictly nested: they share P, and their union
+cannot be all S^3 because both exclude C_0. Applying tau to a strict
+inclusion reverses that inclusion, a contradiction. Hence S is invariant.
+The chosen ball side is invariant as well, since it is characterized by
+containing P and not C_0. S lies in the exterior of the chosen invariant
+neighborhoods, so B_S is disjoint from N(C_0), as required.
+
+The restriction of tau to boundary B is a nonidentity orientation-
+preserving involution of S^2, and therefore has exactly two fixed points.
+The global fixed set A is a circle, so A intersect B is a single interval.
+The action cannot be the identity on all boundary B, since a nontrivial
+finite-order smooth action is linearizable and cannot fix a surface
+pointwise while preserving ambient orientation.
+
+Primary reference for the exact equivariant sphere formulation:
+Marc Lackenby, Links with splitting number one, proof of Proposition4.1,
+printed p10, states that a reducible manifold with an involution contains
+one or two disjoint essential spheres invariant as a set, and cites
+Meeks--Simon--Yau, Theorem3 and its proof:
+https://people.maths.ox.ac.uk/lackenby/spl29121-geom-ded.pdf .
+Original input: W.H. Meeks III, L. Simon, S.-T. Yau, Embedded Minimal
+Surfaces, Exotic Spheres, and Manifolds with Positive Ricci Curvature,
+Annals of Mathematics116(1982),621--659.
+
+3. LOCALITY-PRESERVATION LEMMA
+
+Continue the preceding setup. Suppose D subset int V is an invariant
+crossing disk with two fixed punctures p,q in P. Then any integral
+full-twist surgery on boundary D produces another LOCAL knot in V.
+
+Proof. The reflection fixed set of D is an interval in A intersect V.
+Both p and q lie in this interval. Let beta be the subinterval between
+them. Because each component of A intersect V is an interval, there is
+only one interval in A intersect V joining p and q. Since the invariant
+containing ball B has A intersect B a single interval containing p,q,
+beta lies in B.
+
+Choose a slightly longer closed subinterval of Fix(tau|D), still inside
+B, with p and q in its interior. A sufficiently narrow invariant regular
+neighborhood D' of this interval in D is a disk contained in B. It
+contains both punctures and no other intersections with P. The region
+between boundary D and boundary D' is an annulus disjoint from P.
+Sliding boundary D across this annulus is an isotopy in V\P. It carries
+the disk framing to the disk framing of D'. Equivalently, shrink the
+reflection-invariant disk to D' relative to small neighborhoods of its
+two punctures and use isotopy extension relative to P.
+
+We may consequently perform the same framed surgery on boundary D'
+inside B. Since this is 1/n surgery on an unknot in B, the surgered ball
+is again a ball with the same boundary marking. P is contained in this
+ball before and after the twist. Thus the resulting knot remains local.
+For n=+/-1 this is the usual crossing-change surgery. QED.
+
+The proof requires no assertion that the original disk already lies in
+B. Its boundary is moved into B through an annulus disjoint from P.
+Any twisting of the disk around its fixed interval is retained as disk
+framing during this isotopy; it cannot evade locality.
+
+4. CONSEQUENCE FOR THE PROPOSED SATELLITE REPAIR
+
+Suppose an actual essential winding-zero pattern P in V has P(U)=U and
+an inherited componentwise strong inversion compatible with a companion.
+One seeks an invariant zero-linking crossing disk, entirely inside V,
+which unknots P to a LOCAL unknot in V. Reverse that operation. The
+locality-preservation lemma says that the result is still local, which
+contradicts essentiality. The same reasoning applies to any finite
+sequence of such type-C moves supported in V.
+
+Thus the failure of the Whitehead clasp is structural for this entire
+class of repairs, not just an unfortunate axis placement. A standard
+Whitehead clasp can unknot the pattern inside V precisely because its
+crossing circle is free under the inherited inversion; it does not meet
+the lemma's componentwise-strong/type-C hypothesis.
+
+This does NOT exclude all essential zero-factor shells. In a general
+shell P union C_0, the axis C_0 need not be the boundary of an invariant
+two-puncture disk in the pattern solid torus. Nor does it exclude a
+companion-dependent equivariant unknotting operation whose disk enters
+the companion exterior. Those operations are not fixed local satellite
+repairs, and need separate actual geometry.
+
+5. ADDITIONAL GLOBAL RESTRICTIONS, NOT USED IN THE PROOF
+
+Boyle--Chen Theorem1.8 classifies strongly invertible knots unknottable
+by a finite sequence of type-C moves: they are (1,2)-knots whose symmetry
+axis is the core of a handlebody in that decomposition. Here (1,2) means
+genus-one bridge position with TWO boundary-parallel arcs in each solid
+torus; it does NOT mean an ordinary two-bridge knot or Seifert genus one.
+Their Corollary6.3 implies tunnel number at most2. Their Theorem1.3
+excludes any connected sum with three nontrivial summands.
+
+The braid track independently proves that preferred anchored quotient
+flatness is preserved by equivariant connected sum, and in fact a
+connected sum is flat if and only if each factor is flat. Thus a
+hypothetical flat core could be copied into arbitrarily many nontrivial
+summands, where type-C unknotting is impossible. This already blocks a
+claim that every flat core itself admits the required crossing circle.
+It does not alone block applying a different satellite to that core.
+
+No unverified lower bound comparing tunnel numbers of a satellite and
+its companion is used here. The standard bridge-number inequality does
+not suffice because genus-one bridge number2 does not bound ordinary
+bridge number.
+
+AUDIT STATUS
+
+The invariant-sphere/nesting argument and the relative disk-shrinking
+argument were independently checked by the braid agent. The exact source
+statement for equivariant spheres and Boyle--Chen's disk model were read.
+This is an internally checked deduction from those standard inputs, not
+an assertion that the result is new. No actual zero shell or Jones-one
+nontrivial knot is produced.
+
+SUBSEQUENT CONSTRUCTION
+
+The generalized-disk escape has now been made concrete: see
+brunnian_reduction.txt for an actual componentwise strongly inverted
+Brunnian infection construction proving flat-core existence implies
+essential-zero-shell existence. It uses no invariant two-puncture disk,
+so does not contradict the locality theorem above.

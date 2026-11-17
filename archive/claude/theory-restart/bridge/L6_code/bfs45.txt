@@ -1,0 +1,28 @@
+n=4 word=01021323 eps=+-+- even=False parity=1001 TRIVIAL len=3 explored=519
+n=5 word=0102132434 eps=++--- even=False parity=10001 TRIVIAL len=6 explored=6234
+n=5 word=0102132434 eps=+++-- even=False parity=10001 TRIVIAL len=6 explored=6234
+n=5 word=0102134324 eps=++--- even=False parity=10010 NOT-FOUND explored=270
+n=5 word=0102134324 eps=+++-- even=False parity=10010 NOT-FOUND explored=270
+n=5 word=0102312434 eps=++--- even=False parity=11011 TRIVIAL len=4 explored=5720
+n=5 word=0102312434 eps=+++-- even=False parity=11011 TRIVIAL len=4 explored=5720
+n=5 word=0102312434 eps=+---+ even=False parity=11011 TRIVIAL len=4 explored=5552
+n=5 word=0102314234 eps=++--+ even=False parity=11110 TRIVIAL len=4 explored=14866
+n=5 word=0102314243 eps=++--- even=False parity=11101 NOT-FOUND explored=906
+n=5 word=0102314243 eps=++-+- even=False parity=11101 NOT-FOUND explored=906
+n=5 word=0102314243 eps=+---+ even=False parity=11101 NOT-FOUND explored=906
+n=5 word=0102313424 eps=++--- even=False parity=11011 NOT-FOUND explored=906
+n=5 word=0102313424 eps=+++-- even=False parity=11011 NOT-FOUND explored=906
+n=5 word=0102313424 eps=+---+ even=False parity=11011 NOT-FOUND explored=906
+n=5 word=0102313424 eps=+-+-+ even=False parity=11011 NOT-FOUND explored=906
+n=5 word=0102341423 eps=++--- even=False parity=10001 NOT-FOUND explored=151
+n=5 word=0102341423 eps=+-++- even=False parity=10001 NOT-FOUND explored=151
+n=5 word=0120314234 eps=++--- even=False parity=01010 TRIVIAL len=5 explored=6234
+n=5 word=0120314234 eps=+++-- even=False parity=01010 TRIVIAL len=5 explored=6234
+n=5 word=0120314324 eps=++-+- even=False parity=01100 TRIVIAL len=4 explored=6219
+n=5 word=0120314324 eps=+-+-+ even=False parity=01100 TRIVIAL len=4 explored=6219
+n=5 word=0120342134 eps=+++-- even=False parity=01111 TRIVIAL len=4 explored=10949
+n=5 word=0120324314 eps=+--+- even=True parity=00000 TRIVIAL len=4 explored=2892
+n=5 word=0120324314 eps=++-+- even=True parity=00000 TRIVIAL len=4 explored=2892
+n=5 word=0120324314 eps=+---+ even=True parity=00000 TRIVIAL len=4 explored=2892
+n=5 word=0120324314 eps=+-+-+ even=True parity=00000 TRIVIAL len=4 explored=2892
+n=5 word=0120324314 eps=+--++ even=True parity=00000 TRIVIAL len=4 explored=2892

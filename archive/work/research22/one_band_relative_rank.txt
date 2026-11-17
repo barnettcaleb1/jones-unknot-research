@@ -1,0 +1,69 @@
+ONE-BAND RIBBON CONCORDANCES: RELATIVE RANK CONGRUENCE
+Independent audit, 31 October 2026.
+
+Verdict. Over Q, if C:J -> K is a ribbon concordance with exactly one birth and one saddle, then
+
+  dim Kh_red(K;Q) - dim Kh_red(J;Q) is a nonnegative multiple of 4.
+
+This is a deduction from the operator identities in Sarkar's proof, not a claim that he states this precise relative corollary. Equality of Jones polynomials is unnecessary. It excludes one-birth/one-band certificates when the reduced rational rank difference is 6 or 10.
+
+1. The relative, rather than absolute, annihilation statement.
+
+Use lifted Lee homology H(-) over Q[X], with X of bidegree (0,-2). Put i=C_* and p=reverse(C)_*. The ribbon splitting theorem, in the lifted theory, gives p i=Id after choosing the overall sign of one map. Both maps have bidegree zero. Dot motion on the connected concordance identifies the endpoint X actions, up to an inessential sign convention; images and kernels remain graded Q[X] submodules.
+
+Sarkar uses the opposite direction convention for a ribbon concordance. Apply his Section 6 to F=reverse(C):K -> J, with d=1. The SAME intermediate cobordism W is evaluated in two ways. Method 1 gives W_*=+-2 X_K Id_K. Method 2 gives W_*=+-2 i X_J p. These are identities of maps before the proof takes their images. Thus, for z in ker p, X_K z=0, independently of all overall signs. Consequently
+
+  H(K)=iH(J) direct-sum T,  with T=ker p and X T=0.
+
+This is the required relative assertion. It is stronger than merely comparing the absolute extortion orders. No claim that all torsion of H(K) is killed by X is made.
+
+2. Reduced specialization and grading.
+
+The based lifted Lee complex is a bounded complex of finitely generated free Q[X] modules. Graded Smith decomposition splits it, up to contractible terms, into free summands and two-term complexes whose differential is X^a. Setting X=0 recovers the reduced Khovanov complex, with the same conventional overall quantum normalization for J and K. The homological and quantum shifts of each torsion block are determined by its graded homology module.
+
+The displayed split homology decomposition therefore means that the blocks already present for J remain, and only length-one X bars are added. Let P_L(u,q) be the reduced rational Khovanov Poincare polynomial, normalized by P_U=1. Then
+
+  P_K(u,q)-P_J(u,q)=(1+u q^2) S(u,q),
+
+where S is a finite Laurent polynomial with nonnegative integer coefficients. Using the opposite choice of which endpoint of a bar parametrizes S only shifts S and gives the same conclusion.
+
+3. Divisibility by four.
+
+The Euler specialization is P_L(-1,q)=V_L(q^2). For every knot L, V_L(1)=1 and V'_L(1)=0. Hence
+
+  0 = (d/dq)[V_K(q^2)-V_J(q^2)] at q=1
+    = (d/dq)[(1-q^2)S(-1,q)] at q=1
+    = -2 S(-1,1).
+
+Thus S has equally many total coefficients in even and odd homological degrees. In particular S(1,1) is even, and
+
+  dim Kh_red(K)-dim Kh_red(J)=2S(1,1) belongs to 4 Z_{≥0}.
+
+The first-derivative fact follows directly by differentiating the Jones skein relation at t=1 and changing crossings to the unknot. No Jones equality hypothesis is hidden here.
+
+4. Scope and cautions.
+
+This is a one-birth/one-saddle result. It does not prove rank modulo four is a concordance invariant, and it does not assume an arbitrary ribbon concordance decomposes into such concordances between knots. Intermediate components and interacting birth disks prevent using an unproved factorization to generalize the statement. The proof is over Q (indeed characteristic different from two with appropriate integer rank interpretation), and the stated conclusion uses rational ranks, not integral torsion or F2 ranks.
+
+Primary sources checked:
+
+S. Sarkar, Ribbon distance and Khovanov homology, arXiv:1903.11095v3, Section 6, printed pp.9-10, Methods 1 and 2; footnote (iv) explains the ribbon splitting identity in lifted Lee theory. Also Lemma 4.1 for dot motion.
+https://arxiv.org/pdf/1903.11095
+
+N. Dunfield, S. Gong, T. Hockenhull, M. Marengon, M. Willis, On the rank of knot homology theories and concordance, arXiv:2303.04233v1, Section 6.2 and Theorem 6.6: graded PID blocks and X=0 reduced specialization. Their stated theorem is the absolute fusion-one/ribbon version; the relative extension above uses Sarkar's operator identity.
+https://arxiv.org/html/2303.04233v1
+
+ADDENDUM: ARBITRARY NUMBER OF BIRTHS AND SADDLES.
+
+For a ribbon concordance C:J -> K with d births and d saddles, the very same two evaluations in Sarkar's proof give W_*=+-(2X_K)^d Id_K and W_*=+-2^d i X_J^d p. Applying this equality to ker p yields X_K^d ker p=0. Thus the graded lifted-Lee module of J is a direct summand of that of K, and the relative summand has only X-torsion bars of lengths a between 1 and d. Graded Smith uniqueness and reduced specialization imply the necessary positive decomposition
+
+  P_K(u,q)-P_J(u,q)=sum_{a=1}^d (1+u q^(2a)) S_a(u,q),
+  with each S_a having nonnegative integer coefficients.
+
+Consequently, even without knowing d, a ribbon concordance requires the entire difference of reduced rational Poincare polynomials to admit a positive pairing into consecutive homological degrees with positive even quantum gaps. This is a necessary condition, not a sufficient geometric realization criterion. Since the difference has finite support, testing all possible lengths is finite: only gaps between its supported quantum gradings can occur. A negative coefficient in the difference already rules out the decomposition.
+
+Differentiating the Euler specialization gives only
+
+  sum_{a=1}^d a S_a(-1,1)=0.
+
+This does not force sum_a S_a(1,1) even when both odd and even a occur, so the general extension does NOT prove rank difference divisible by four. The one-band conclusion remains the a=1 special case. If actual lifted-Lee bar data are available, their graded direct-summand matching is stronger than the existential pairing test on ordinary Khovanov dimensions alone.

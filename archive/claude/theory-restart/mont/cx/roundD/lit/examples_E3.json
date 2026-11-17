@@ -1,0 +1,751 @@
+[
+ {
+  "name": "E3",
+  "a": 3,
+  "N": 1,
+  "boxes": [
+   "XY",
+   "XXY"
+  ],
+  "slopes": [
+   "1/3",
+   "1/5"
+  ],
+  "halfword": "s.l1.y0.r2.x1.y0.u1.r2.x1.r2.x1.y0.u1.u1.x2.x2.x2.u1",
+  "J": [
+   [
+    -16,
+    1
+   ],
+   [
+    -15,
+    -4
+   ],
+   [
+    -14,
+    5
+   ],
+   [
+    -13,
+    -1
+   ],
+   [
+    -12,
+    -6
+   ],
+   [
+    -11,
+    11
+   ],
+   [
+    -10,
+    -8
+   ],
+   [
+    -8,
+    7
+   ],
+   [
+    -7,
+    -7
+   ],
+   [
+    -6,
+    3
+   ],
+   [
+    -5,
+    1
+   ],
+   [
+    -4,
+    -1
+   ]
+  ],
+  "spanJ": 12,
+  "a2": -7.0,
+  "K_crossings": 15,
+  "V_K": [
+   [
+    -10,
+    1
+   ],
+   [
+    -9,
+    -2
+   ],
+   [
+    -8,
+    3
+   ],
+   [
+    -7,
+    -4
+   ],
+   [
+    -6,
+    4
+   ],
+   [
+    -5,
+    -2
+   ],
+   [
+    -3,
+    2
+   ],
+   [
+    -2,
+    -4
+   ],
+   [
+    -1,
+    4
+   ],
+   [
+    0,
+    -4
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    -1
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "K_alex": [
+   -2,
+   3,
+   0,
+   -2,
+   3,
+   -2,
+   0,
+   3,
+   -2
+  ],
+  "K_volume": 14.456636397095826,
+  "K_solution": "Solution.Geometric",
+  "K_strict_angle_structure": true,
+  "L": [
+   {
+    "n": 1,
+    "simplified_crossings": 39,
+    "simplified_adequacy": [
+     false,
+     false,
+     10,
+     11
+    ],
+    "diagram_crossings": 43,
+    "det": 1,
+    "V": [
+     [
+      -4,
+      1
+     ],
+     [
+      -3,
+      -4
+     ],
+     [
+      -2,
+      6
+     ],
+     [
+      -1,
+      -6
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      -3
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      4,
+      -7
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      6,
+      -4
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      9,
+      -2
+     ],
+     [
+      10,
+      1
+     ],
+     [
+      11,
+      -1
+     ],
+     [
+      12,
+      1
+     ],
+     [
+      13,
+      -1
+     ]
+    ],
+    "spanV": 17,
+    "extreme": [
+     1,
+     -1
+    ],
+    "V_is_1": false,
+    "diagram_adequacy": [
+     false,
+     false,
+     12,
+     13
+    ],
+    "Sigma2_vol": 14.213074741274376,
+    "Sigma2_solution": "Solution.Geometric",
+    "Sigma2_H1": "0",
+    "nonsemiadequate_certified": false
+   },
+   {
+    "n": -1,
+    "simplified_crossings": 37,
+    "simplified_adequacy": [
+     false,
+     false,
+     10,
+     7
+    ],
+    "diagram_crossings": 43,
+    "det": 1,
+    "V": [
+     [
+      -5,
+      1
+     ],
+     [
+      -4,
+      -4
+     ],
+     [
+      -3,
+      6
+     ],
+     [
+      -2,
+      -6
+     ],
+     [
+      -1,
+      4
+     ],
+     [
+      1,
+      -3
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      3,
+      -7
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      5,
+      -4
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      7,
+      2
+     ],
+     [
+      8,
+      -2
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      10,
+      -1
+     ]
+    ],
+    "spanV": 15,
+    "extreme": [
+     1,
+     -1
+    ],
+    "V_is_1": false,
+    "diagram_adequacy": [
+     false,
+     false,
+     11,
+     12
+    ],
+    "Sigma2_vol": 14.138931314501718,
+    "Sigma2_solution": "Solution.Geometric",
+    "Sigma2_H1": "0",
+    "nonsemiadequate_certified": false
+   },
+   {
+    "n": 2,
+    "simplified_crossings": 44,
+    "simplified_adequacy": [
+     false,
+     false,
+     13,
+     13
+    ],
+    "diagram_crossings": 44,
+    "det": 1,
+    "V": [
+     [
+      -16,
+      1
+     ],
+     [
+      -15,
+      -5
+     ],
+     [
+      -14,
+      10
+     ],
+     [
+      -13,
+      -12
+     ],
+     [
+      -12,
+      10
+     ],
+     [
+      -11,
+      -4
+     ],
+     [
+      -10,
+      -3
+     ],
+     [
+      -9,
+      9
+     ],
+     [
+      -8,
+      -13
+     ],
+     [
+      -7,
+      14
+     ],
+     [
+      -6,
+      -11
+     ],
+     [
+      -5,
+      5
+     ],
+     [
+      -4,
+      1
+     ],
+     [
+      -3,
+      -4
+     ],
+     [
+      -2,
+      3
+     ],
+     [
+      -1,
+      -2
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "spanV": 18,
+    "extreme": [
+     1,
+     1
+    ],
+    "V_is_1": false,
+    "diagram_adequacy": [
+     false,
+     false,
+     13,
+     13
+    ],
+    "Sigma2_vol": 14.391794726151582,
+    "Sigma2_solution": "Solution.Geometric",
+    "Sigma2_H1": "0",
+    "nonsemiadequate_certified": false
+   },
+   {
+    "n": -2,
+    "simplified_crossings": 43,
+    "simplified_adequacy": [
+     false,
+     false,
+     13,
+     12
+    ],
+    "diagram_crossings": 44,
+    "det": 1,
+    "V": [
+     [
+      -18,
+      -1
+     ],
+     [
+      -17,
+      5
+     ],
+     [
+      -16,
+      -10
+     ],
+     [
+      -15,
+      12
+     ],
+     [
+      -14,
+      -10
+     ],
+     [
+      -13,
+      4
+     ],
+     [
+      -12,
+      3
+     ],
+     [
+      -11,
+      -9
+     ],
+     [
+      -10,
+      13
+     ],
+     [
+      -9,
+      -14
+     ],
+     [
+      -8,
+      11
+     ],
+     [
+      -7,
+      -5
+     ],
+     [
+      -6,
+      -1
+     ],
+     [
+      -5,
+      4
+     ],
+     [
+      -4,
+      -3
+     ],
+     [
+      -3,
+      2
+     ],
+     [
+      -2,
+      -1
+     ],
+     [
+      -1,
+      1
+     ]
+    ],
+    "spanV": 17,
+    "extreme": [
+     -1,
+     1
+    ],
+    "V_is_1": false,
+    "diagram_adequacy": [
+     false,
+     false,
+     11,
+     13
+    ],
+    "Sigma2_vol": 14.382579626520233,
+    "Sigma2_solution": "Solution.Geometric",
+    "Sigma2_H1": "0",
+    "nonsemiadequate_certified": false
+   },
+   {
+    "n": 3,
+    "simplified_crossings": 45,
+    "simplified_adequacy": [
+     false,
+     false,
+     14,
+     13
+    ],
+    "diagram_crossings": 45,
+    "det": 1,
+    "V": [
+     [
+      -4,
+      1
+     ],
+     [
+      -3,
+      -5
+     ],
+     [
+      -2,
+      11
+     ],
+     [
+      -1,
+      -16
+     ],
+     [
+      0,
+      16
+     ],
+     [
+      1,
+      -10
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      4,
+      -16
+     ],
+     [
+      5,
+      20
+     ],
+     [
+      6,
+      -18
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      -3
+     ],
+     [
+      9,
+      -3
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      11,
+      -4
+     ],
+     [
+      12,
+      3
+     ],
+     [
+      13,
+      -2
+     ],
+     [
+      14,
+      1
+     ],
+     [
+      15,
+      -1
+     ]
+    ],
+    "spanV": 19,
+    "extreme": [
+     1,
+     -1
+    ],
+    "V_is_1": false,
+    "diagram_adequacy": [
+     false,
+     false,
+     14,
+     13
+    ],
+    "Sigma2_vol": 14.427192080269986,
+    "Sigma2_solution": "Solution.Geometric",
+    "Sigma2_H1": "0",
+    "nonsemiadequate_certified": false
+   },
+   {
+    "n": -3,
+    "simplified_crossings": 45,
+    "simplified_adequacy": [
+     false,
+     false,
+     11,
+     14
+    ],
+    "diagram_crossings": 45,
+    "det": 1,
+    "V": [
+     [
+      -7,
+      1
+     ],
+     [
+      -6,
+      -5
+     ],
+     [
+      -5,
+      11
+     ],
+     [
+      -4,
+      -16
+     ],
+     [
+      -3,
+      16
+     ],
+     [
+      -2,
+      -10
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      9
+     ],
+     [
+      1,
+      -16
+     ],
+     [
+      2,
+      20
+     ],
+     [
+      3,
+      -18
+     ],
+     [
+      4,
+      12
+     ],
+     [
+      5,
+      -3
+     ],
+     [
+      6,
+      -3
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      8,
+      -4
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      10,
+      -2
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "spanV": 18,
+    "extreme": [
+     1,
+     1
+    ],
+    "V_is_1": false,
+    "diagram_adequacy": [
+     false,
+     false,
+     11,
+     14
+    ],
+    "Sigma2_vol": 14.424464636582492,
+    "Sigma2_solution": "Solution.Geometric",
+    "Sigma2_H1": "0",
+    "nonsemiadequate_certified": false
+   }
+  ]
+ }
+]

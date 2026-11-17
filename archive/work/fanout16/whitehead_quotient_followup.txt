@@ -1,0 +1,62 @@
+WHITEHEAD COMPANION QUOTIENT: BOUNDED FOLLOW-UP
+
+Outcome: inherited strong inversions and exact diagram constructors located;
+no marked exterior quotient diagram, quotient Jones vector, or kappa lower
+bound obtained. The existing Whitehead PD/HFK data do not establish any
+Jones-invisible tangle candidate.
+
+The geometric existence question is settled by a primary source, rather
+than an assumption: Dai--Mallick--Taniguchi, Exotic disks and singular
+instanton Floer homology, arXiv:2606.05819, Example 2.22 and Figure 4,
+explain the two inherited strong inversions of Wh_i(K), with the clasp at
+either fixed point of the companion inversion. This applies to the trefoil.
+https://arxiv.org/html/2606.05819
+
+Sano, Involutive Khovanov homology and equivariant knots II,
+arXiv:2608.07114, develops computations of involutive Khovanov invariants
+of these symmetric knots. Those invariants are not the kappa invariant
+of the exterior quotient tangle. No relation furnishing the needed
+kappa>16 bound was obtained from that paper.
+https://arxiv.org/html/2608.07114
+
+The author's actual source code provides a concrete starting fixture:
+https://github.com/taketo1024/yui/blob/5fa6f2765db65763297a3497c6e5a03d07cf50fd/lib-link/src/inv_link/construct.rs
+Its whitehead_double_at constructs the symmetric diagram at a chosen
+fixed edge, preserves the axis, and has explicit tests for both clasp
+placements, mirroring, and zero Seifert framing. The companion trefoil
+test datum is used in its tests. The source's InvLink retains the edge
+involution, which our earlier generic Regina PD diagrams do not retain.
+The two relevant source files are archived here as yui_construct.rs and
+yui_inv_link.rs, with yui_LICENSE. We have read the construction; we did
+not compile or run it in this pass.
+
+Search of that repository's quotient/branch implementations found no
+branched-exterior-quotient constructor. The missing geometric operation
+is explicit: convert the symmetric Whitehead knot plus its fixed axis
+to the marked tangle (S^3 minus nu(Wh(K)))/tau, identify its meridian as
+infinity and Seifert longitude as zero, then compute two bracket closures.
+An involution-labelled PD code does not by itself supply that marked
+quotient PD code. The longitude marking is essential, not optional.
+
+The usual Whitehead-clasp tangle replacement must not substitute for
+this operation. Its double cover has companion K#K^r, whereas the target
+here is the exterior of Wh(K). Dai--Mallick--Taniguchi Example 2.22
+explicitly distinguishes the deck involution of Sigma_2(Wh(K)) from
+the lift of the inherited Whitehead inversion. Confusing those gives
+a calculation of a different tangle.
+
+Concrete next test, if this route is resumed: use one yui symmetric
+trefoil Whitehead fixture and draw only its exterior quotient zero
+filling. Verify infinity is geometrically U and zero has determinant0.
+Its exact zero-link Jones polynomial alone can disprove the proposed
+skein-equivalence. Computing an entire involutive Kh complex first
+would not resolve this missing quotient input.
+
+Independent side audit completed during this follow-up:
+The homology agent's Garoufalidis strengthening is sound. Theorem1 and
+the one-component specialization of Section4.1 give
+|lambda_G(S3_0J)|=1/6 from JonesU2, and
+lambda_G(S3_0J)=2a2(J)-1/6. Hence |12a2-1|=1 forces a2=0.
+Thus the earlier filter needs only an actual U infinity filling and a
+Jones-unlink zero filling. It does not require all rational fillings.
+https://arxiv.org/html/math/9811021

@@ -1,0 +1,88 @@
+BIGELOW6 POWERS ARE TRIVIAL IN THE TWO TESTED CAP/CUP CONFIGURATIONS
+Status: TRUSTED. Finished family result; novelty unestablished.
+
+Conventions and statement
+------------------------
+Use one-based braid generators and strands, first braid letter at the top.
+For words, inv reverses the order and changes every sign. Set
+  psi1 = [4,-5,-2,1],
+  psi2 = [-4,5,5,2,-1,-1],
+  a = inv(psi1) [3] psi1,
+  b = inv(psi2) [3] psi2,
+  beta = a b inv(a) inv(b).
+The freely reduced beta is
+ [-1,2,5,-4,3,4,-5,-2,1,1,1,-2,-5,-5,4,3,-4,5,5,2,-1,-1,
+  -1,2,5,-4,-3,4,-5,-2,1,1,1,-2,-5,-5,4,-3,-4,5,5,2,-1,-1].
+
+Let C be the cap state with caps (2,5),(3,4) and free endpoints 1,6.
+Let D be the cap state with caps (1,2),(5,6) and free endpoints 3,4.
+These are probe.STATES[4] and probe.STATES[5], respectively.
+
+Theorem. For every integer n, cap_C beta^n cup_D and cap_D beta^n cup_C
+are split two-string tangles. Together with the independently supplied
+exact all-integer-powers bracket identity [X_n]=e for both configurations,
+they are the trivial split tangle, up to unframed boundary-relative isotopy.
+In particular this Bigelow6 power family produces no Jones-unknot
+counterexample in either configuration.
+
+Proof
+-----
+1. Actual braid identity. Use the Artin action B6 -> Aut(F6):
+     sigma_i(x_i) = x_i x_(i+1) x_i^-1,
+     sigma_i(x_(i+1)) = x_i,
+   fixing the other free generators. Exact free reduction of the images
+   under beta sigma_3 beta^-1 sigma_3^-1 gives
+                     [x1,x2,x3,x4,x5,x6].
+   This is a finite group-word certificate, recorded in central_arc_artin.json
+   and reproduced by central_arc_artin.py. Controls checked sigma_i and
+   sigma_i^-1 cancellation, sigma1 sigma2 sigma1 = sigma2 sigma1 sigma2,
+   and sigma1 sigma3 = sigma3 sigma1. Faithfulness of the Artin action
+   therefore gives [beta,sigma_3]=1 in the ACTUAL braid group.
+
+2. Central arc preservation. Conjugation of a half twist carries its
+   supporting arc to the image arc. Equality of the resulting half twists
+   identifies their arc isotopy classes. Thus beta preserves the standard
+   arc gamma from puncture 3 to puncture 4. So does beta^n for every
+   integer n, including negative n and zero.
+
+3. Cap slide and splitting. In cap_C beta^n cup_D, the cap on gamma can
+   be slid through the braid using this preserved arc isotopy class.
+   It reaches the two free D endpoints 3,4. A regular neighborhood of
+   the transported cap gives a boundary-parallel arc and a disk separating
+   it from the remaining arc. Hence the tangle is split. No coefficient
+   or homology inference is used in this step. Reflection proves the
+   same statement for cap_D beta^n cup_C, since it replaces beta^n by
+   beta^-n and exchanges the cap/cup roles.
+
+4. The possible local knot is two-bridge. Forget the two central strands.
+   What remains is a four-strand braid. The other top cap and closure of
+   its free endpoints give the nested matching; the bottom gives the
+   adjacent matching. Each is a trivial two-string tangle. Closing the
+   remaining arc therefore gives a four-plat, hence a two-bridge knot J_n.
+   This is the only possible local knot after the boundary-parallel arc
+   from step 3 has split off.
+
+5. Determinant one removes the local knot. The separately supplied exact
+   bracket identity [X_n]=e says the scalar multiplying the split tangle
+   is 1, in the chosen framing. Changing framing only multiplies by a
+   bracket unit. Thus the knot J_n has determinant 1: evaluate the
+   normalized Jones polynomial at -1 and take its absolute value.
+   A two-bridge knot K(p,q) has determinant |p|; |p|=1 is the unknot.
+   Hence J_n is unknotted, proving the claimed triviality. This determinant
+   argument also avoids any ambiguity from cap-slide framing units.
+
+Computational calibration, separate from the uniform argument
+-----------------------------------------------------------
+For n=2,3,4, both configurations were additionally checked directly:
+all six split by boundary-relative Reidemeister moves, their actual
+numerator closures simplify to the two-component unlink, and their actual
+denominator closures simplify to the unknot. The resulting Property R
+certificates agree with the uniform argument. These six cases are saved
+in powers_topology.json and reproduced by powers_topology.py.
+
+Scope
+-----
+This disposes of this explicit family. It proves neither a general
+width-six zero-implies-split statement nor Jones unknot detection. The
+mechanism is beta's preserved actual central arc, which need not occur
+for other exact coefficient-zero braids. Novelty has not been assessed.

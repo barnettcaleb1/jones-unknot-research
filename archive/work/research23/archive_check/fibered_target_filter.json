@@ -1,0 +1,866 @@
+[
+  {
+    "source": {
+      "name": "13*n_1736",
+      "mirror": true,
+      "rank": 29
+    },
+    "target": {
+      "name": "13*n_790",
+      "mirror": true,
+      "rank": 45
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_1736",
+      "mirror": false,
+      "rank": 29
+    },
+    "target": {
+      "name": "13*n_790",
+      "mirror": false,
+      "rank": 45
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_4010",
+      "mirror": true,
+      "rank": 25
+    },
+    "target": {
+      "name": "13*n_1588",
+      "mirror": true,
+      "rank": 41
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_4010",
+      "mirror": false,
+      "rank": 25
+    },
+    "target": {
+      "name": "13*n_1588",
+      "mirror": false,
+      "rank": 41
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3603",
+      "mirror": true,
+      "rank": 41
+    },
+    "target": {
+      "name": "13*n_652",
+      "mirror": true,
+      "rank": 57
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3603",
+      "mirror": true,
+      "rank": 41
+    },
+    "target": {
+      "name": "13*n_694",
+      "mirror": true,
+      "rank": 57
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3603",
+      "mirror": false,
+      "rank": 41
+    },
+    "target": {
+      "name": "13*n_652",
+      "mirror": false,
+      "rank": 57
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3603",
+      "mirror": false,
+      "rank": 41
+    },
+    "target": {
+      "name": "13*n_694",
+      "mirror": false,
+      "rank": 57
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_1840",
+      "mirror": false,
+      "rank": 35
+    },
+    "target": {
+      "name": "13*n_99",
+      "mirror": false,
+      "rank": 51
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_1840",
+      "mirror": true,
+      "rank": 35
+    },
+    "target": {
+      "name": "13*n_99",
+      "mirror": true,
+      "rank": 51
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3106",
+      "mirror": false,
+      "rank": 47
+    },
+    "target": {
+      "name": "13*n_651",
+      "mirror": false,
+      "rank": 63
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3106",
+      "mirror": false,
+      "rank": 47
+    },
+    "target": {
+      "name": "13*n_661",
+      "mirror": false,
+      "rank": 63
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3106",
+      "mirror": true,
+      "rank": 47
+    },
+    "target": {
+      "name": "13*n_651",
+      "mirror": true,
+      "rank": 63
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3106",
+      "mirror": true,
+      "rank": 47
+    },
+    "target": {
+      "name": "13*n_661",
+      "mirror": true,
+      "rank": 63
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_4244",
+      "mirror": false,
+      "rank": 55
+    },
+    "target": {
+      "name": "13*n_709",
+      "mirror": true,
+      "rank": 65
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_4244",
+      "mirror": true,
+      "rank": 55
+    },
+    "target": {
+      "name": "13*n_709",
+      "mirror": false,
+      "rank": 65
+    },
+    "source_genus": 5,
+    "target_genus": 5,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2215",
+      "mirror": true,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_3605",
+      "mirror": false,
+      "rank": 73
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 3,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_2985",
+      "mirror": false,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4034",
+      "mirror": true,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3474",
+      "mirror": false,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4034",
+      "mirror": true,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2215",
+      "mirror": false,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_3605",
+      "mirror": true,
+      "rank": 73
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 3,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_2985",
+      "mirror": true,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4034",
+      "mirror": false,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3474",
+      "mirror": true,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4034",
+      "mirror": false,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "12*n_351",
+      "mirror": false,
+      "rank": 33
+    },
+    "target": {
+      "name": "13*n_420",
+      "mirror": false,
+      "rank": 49
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "12*n_351",
+      "mirror": true,
+      "rank": 33
+    },
+    "target": {
+      "name": "13*n_420",
+      "mirror": true,
+      "rank": 49
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3301",
+      "mirror": false,
+      "rank": 41
+    },
+    "target": {
+      "name": "13*n_3041",
+      "mirror": false,
+      "rank": 57
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3301",
+      "mirror": true,
+      "rank": 41
+    },
+    "target": {
+      "name": "13*n_3041",
+      "mirror": true,
+      "rank": 57
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_5018",
+      "mirror": true,
+      "rank": 47
+    },
+    "target": {
+      "name": "13*n_1003",
+      "mirror": false,
+      "rank": 57
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_5018",
+      "mirror": false,
+      "rank": 47
+    },
+    "target": {
+      "name": "13*n_1003",
+      "mirror": true,
+      "rank": 57
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_4640",
+      "mirror": false,
+      "rank": 39
+    },
+    "target": {
+      "name": "13*n_1411",
+      "mirror": false,
+      "rank": 49
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_4640",
+      "mirror": true,
+      "rank": 39
+    },
+    "target": {
+      "name": "13*n_1411",
+      "mirror": true,
+      "rank": 49
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2003",
+      "mirror": false,
+      "rank": 43
+    },
+    "target": {
+      "name": "13*n_2618",
+      "mirror": true,
+      "rank": 59
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2003",
+      "mirror": true,
+      "rank": 43
+    },
+    "target": {
+      "name": "13*n_2618",
+      "mirror": false,
+      "rank": 59
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3024",
+      "mirror": true,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4056",
+      "mirror": false,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3024",
+      "mirror": false,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4056",
+      "mirror": true,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2301",
+      "mirror": false,
+      "rank": 55
+    },
+    "target": {
+      "name": "13*n_4032",
+      "mirror": false,
+      "rank": 71
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2660",
+      "mirror": false,
+      "rank": 55
+    },
+    "target": {
+      "name": "13*n_4032",
+      "mirror": false,
+      "rank": 71
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2301",
+      "mirror": true,
+      "rank": 55
+    },
+    "target": {
+      "name": "13*n_4032",
+      "mirror": true,
+      "rank": 71
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_2660",
+      "mirror": true,
+      "rank": 55
+    },
+    "target": {
+      "name": "13*n_4032",
+      "mirror": true,
+      "rank": 71
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3555",
+      "mirror": false,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4058",
+      "mirror": false,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3555",
+      "mirror": true,
+      "rank": 57
+    },
+    "target": {
+      "name": "13*n_4058",
+      "mirror": true,
+      "rank": 73
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 1,
+    "target_top_HFK_rank": 1,
+    "target_fibered_metadata": "Y",
+    "excluded_equal_genus_fibered_target": true
+  },
+  {
+    "source": {
+      "name": "13*n_3820",
+      "mirror": false,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3898",
+      "mirror": true,
+      "rank": 119
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3820",
+      "mirror": false,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3899",
+      "mirror": true,
+      "rank": 119
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3821",
+      "mirror": false,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3939",
+      "mirror": true,
+      "rank": 119
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3821",
+      "mirror": false,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3941",
+      "mirror": true,
+      "rank": 119
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3820",
+      "mirror": true,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3898",
+      "mirror": false,
+      "rank": 119
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3820",
+      "mirror": true,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3899",
+      "mirror": false,
+      "rank": 119
+    },
+    "source_genus": 3,
+    "target_genus": 3,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3821",
+      "mirror": true,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3939",
+      "mirror": false,
+      "rank": 119
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  },
+  {
+    "source": {
+      "name": "13*n_3821",
+      "mirror": true,
+      "rank": 103
+    },
+    "target": {
+      "name": "13*n_3941",
+      "mirror": false,
+      "rank": 119
+    },
+    "source_genus": 4,
+    "target_genus": 4,
+    "source_top_HFK_rank": 2,
+    "target_top_HFK_rank": 2,
+    "target_fibered_metadata": "N",
+    "excluded_equal_genus_fibered_target": false
+  }
+]

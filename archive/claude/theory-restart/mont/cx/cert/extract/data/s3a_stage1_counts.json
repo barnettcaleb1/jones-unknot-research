@@ -1,0 +1,9 @@
+{
+ "items": 154869,
+ "distinct_words": 131473,
+ "status": {
+  "CERT_c_empty": 23229,
+  "CERT_a_TS24": 74952,
+  "UNRESOLVED": 33292
+ }
+}

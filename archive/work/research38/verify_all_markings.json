@@ -1,0 +1,110 @@
+{
+  "exact_unit_markings": [
+    {
+      "matrix_columns": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "G_x": {}
+    },
+    {
+      "matrix_columns": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "G_x": {}
+    }
+  ],
+  "jet_sanity_checks": 232,
+  "completeness_method": "Analytic integer inequalities, not a finite search."
+}

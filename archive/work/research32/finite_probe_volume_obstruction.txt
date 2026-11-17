@@ -1,0 +1,87 @@
+FINITE JONES PROBES DO NOT CONTROL EXTERIOR VOLUME
+1 November 2026. Research deduction from published constructions; no priority claim.
+
+THEOREM.
+Fix an integer d>=0, a finite set Omega of roots of unity in the ordinary
+Jones variable t, and a real number B>0. There is a hyperbolic classical
+knot K satisfying simultaneously
+  Delta_K=1,
+  V_K(e^h)=1+O(h^(d+1)),
+  V_K(zeta)=1 for every zeta in Omega,
+  vol(S3 minus K)>B.
+All finite-type invariants of any prescribed bounded order can also be
+made equal to those of U. This does NOT assert V_K(t)=1 as a polynomial.
+The theorem is an existence construction, not an explicit knot diagram.
+
+SOURCE INPUTS.
+Kalfagianni, arXiv:0710.0076v2, Lemma2.4, supplies hyperbolic Brunnian links
+L_n=U union C_1 union ... union C_n: the C_i bound disjoint crossing disks,
+and twisting any proper subset leaves U unknotted. Their exteriors have
+(n+1) cusps. The proof of Theorem1.2 uses the cusp-volume lower bound and
+hyperbolic Dehn filling to obtain volumes approaching that of L_n.
+https://arxiv.org/pdf/0710.0076
+Kalfagianni, arXiv:math/0411384, Theorem2.3, states that n-adjacency to U,
+for n>2, forces Delta=1 and all finite-type invariants of order<2n-1 to
+agree with U.
+https://arxiv.org/pdf/math/0411384
+
+PROOF.
+Choose n>2 with 2n-1>d and (n+1)v_3>B, with enough strict margin to permit
+Dehn filling; v_3 is the volume of a regular ideal hyperbolic tetrahedron.
+Fix the link L_n above. Apply twists of positive orders r_i at all n disks.
+The result is a knot K. Undoing any nonempty subset of those twists leaves
+an operation on a proper subset of the original disks, hence gives U.
+Thus K is n-adjacent to U, independent of how large the r_i are. The second
+source supplies Delta_K=1 and the finite-type assertion. Coefficients of
+V_K(e^h) through degree d are finite-type invariants of order at most d.
+
+We now impose the root conditions while leaving arbitrarily long filling
+slopes available. The following direct two-strand computation avoids any
+division by a quantum dimension at a root of unity.
+
+At zeta not in {1,-1}, choose a root of unity A with A^(-4)=zeta. In TL_2
+write e^2=delta e, delta=-A^2-A^(-2), and g=A I+A^(-1)e for a crossing.
+Then
+  g^2=A^2 I+(1-A^(-4))e.
+The two eigenvalues of left multiplication by g^2 are A^2 and A^(-6).
+They are distinct because zeta^2 is not 1. Therefore, for any positive
+multiple R of the multiplicative order of A,
+  (g^2)^R=I
+in the specialized TL_2 algebra itself. This identity holds before closing
+the tangle and is independent of the surrounding knot. The oriented writhe
+change of 2R crossings also has normalization factor
+  (-A^3)^(+/-2R)=1.
+Consequently a crossing-disk twist whose order is a multiple of R preserves
+the normalized ordinary Jones evaluation at zeta. Choose one common R for
+all these finitely many A's and choose every r_i to be a multiple of R.
+Applying the n twists successively preserves each such evaluation from U.
+
+At zeta=1 every normalized knot Jones polynomial is 1. At zeta=-1 use
+Delta_K=1: the absolute value of V_K(-1) is the determinant, hence it is 1.
+The sign is also fixed. Write V=sum a_j t^j. The identities V(1)=1 and
+V'(1)=0 imply sum_(j odd) a_j is even, so
+  V(-1)=1-2 sum_(j odd) a_j = 1 mod4.
+It therefore cannot be -1, and equals 1. This handles the exceptional
+specialization where the two-strand algebra has a nilpotent direction.
+
+Finally let all positive multiples r_i of R tend to infinity. The Dehn
+filling slopes 1/r_i have unbounded length, so the resulting knots are
+hyperbolic for sufficiently large orders and their exterior volumes
+approach vol(S3 minus L_n)>B. This proves all assertions simultaneously.
+
+The n parameter must be allowed to increase to make volume unbounded.
+A single fixed augmented parent only yields a bounded volume sequence.
+The framing is the ordinary zero-framed Jones normalization throughout.
+
+STRATEGIC CONSEQUENCES.
+Neither a fixed finite ordinary Jones Taylor jet, nor any fixed finite
+list of exact root-of-unity evaluations, nor both together, can bound
+exterior volume, even when the full Alexander polynomial is also given.
+Thus a proof of volume boundedness in a whole Jones fiber must use the
+full polynomial or further geometry. This theorem does not contradict
+such whole-polynomial boundedness: the constructed knots are not shown
+to lie in one exact Jones fiber.
+
+The proof avoids reducing unreduced colored values by vanishing quantum
+dimensions. A separate audit considers the corresponding unreduced
+all-color statement directly in Kalfagianni's conventions.

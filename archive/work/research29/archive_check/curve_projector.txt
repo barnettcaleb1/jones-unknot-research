@@ -1,0 +1,181 @@
+PASS 29 — SAME-SUBSET CURVES, FUSION SUPPORT, AND THE POSITIVITY GAP
+1 November 2026 UTC. No random curve/word scan and no kernel constructed.
+
+0. Full endpoint before the local mechanism
+--------------------------------------------
+Let a,b be distinct curves in the five-punctured disk, each enclosing
+three punctures. In the residual generic TL5 block [3,2], write
+
+ rho(D_a)=A^-6 I+(A^6-A^-6)P_a,
+
+where P_a has rank1. If P_a=P_b, D_a D_b^-1 is an actual nontrivial
+exponent-zero braid in the residual kernel. The normal-intersection
+argument of Long combines this kernel with the known Burau kernel at
+the SAME strand count. The intersection is a nontrivial full TL5 kernel;
+Ito then produces nontrivial hyperbolic Jones-one knots.
+
+This is a complete conditional counterexample route. The missing step
+is an actual distinct-curve equality P_a=P_b. Pass28 excluded different
+enclosed subsets. This pass does not produce an equality for the
+remaining same-subset case.
+
+Ito: https://arxiv.org/pdf/1402.2028
+The projector formula, classical S5 model, and exact verification are
+in work/research28/braid_structure.txt and verify_rank_one_twists.py.
+
+1. A geometric all-parameter restriction within the same-subset case
+-------------------------------------------------------------------
+Fix a curve a enclosing a set S of three punctures. Let h1,...,hk be
+half twists on pairwise disjoint embedded arcs, each joining a puncture
+of S to a puncture of its complement. Here k is1 or2. The arcs may wind
+arbitrarily in the disk; their actual disjointness is required. Put
+
+   g=h1^(2m1) ... hk^(2mk),       mi integers.
+
+Because g is pure, g(a) encloses the SAME subset S.
+
+THEOREM. If P_(g(a))=P_a, then every mi=0.
+
+This rules out exact cancellation by compensating twists on two disjoint
+cross-partition arcs, including opposite exponents and arbitrary winding.
+It is a theorem about generic matrices, not just a geometric observation
+or a finite computation. It does not cover overlapping arcs or a product
+of several successive disjoint-arc layers.
+
+Proof. The half-twist matrices commute and have distinct generic
+eigenvalues A and -A^-3. Their spectral projectors are regular at A=1,
+since these eigenvalues specialize to1 and-1. Thus the joint spectral
+decomposition is regular there. Let v(A) be a regular nonzero vector
+spanning im(P_a), chosen so that v(1) is the vector w_S from pass28.
+
+At A=1, each hi becomes the transposition of its endpoints. On the
+five-dimensional edge-function model for [3,2], use the ordinary
+positive inner product and normalize w_S to norm1. For one cross-partition
+transposition s, <w_S,s w_S>=-1/3. Therefore the + and - eigenspace
+components have squared norms1/3 and2/3, both nonzero.
+
+For two disjoint cross-partition transpositions s1,s2, swapping both
+changes two members of S, so <w_S,s1 s2 w_S>=+1/3. The four joint
+projectors are (1+epsilon1 s1)(1+epsilon2 s2)/4. The squared norms of
+their components of w_S are
+
+       (++):1/6,   (+-):1/6,   (-+):1/6,   (--):1/2.
+
+Every joint channel therefore also has a nonzero component of v(A)
+over Q(A). This conclusion uses only the regular specialization; it
+does not assume coefficientwise positivity of the quantum matrices.
+
+On a joint channel indexed by the subset E of negative eigenvalues,
+rho(g) acts as
+
+     A^(2 sum_i mi - 8 sum_(i in E) mi).
+
+If P_(g(a))=P_a, its image line is invariant under rho(g), so v is an
+eigenvector. Since v has nonzero component in EVERY joint channel,
+all these monomials must agree. Comparing E=empty with E={i} forces
+mi=0 for each i. This proves the theorem.
+
+The regular specialization and branching inputs are Kasahara,
+Propositions2.4 and2.5, not a conjectural faithfulness theorem:
+https://arxiv.org/pdf/0803.0304
+verify_joint_support.py independently checks the four rational weights
+with standard-library exact arithmetic. There is no word enumeration.
+
+2. The full surface skein algebra does distinguish the curves
+------------------------------------------------------------
+On a six-punctured sphere, the residual B5 space can be viewed as the
+five-dimensional vacuum space with all six boundary colors equal to1.
+Let C_a be the operator obtained by adding a fundamental-colored loop
+parallel to a. The three punctures on each side admit only fusion labels
+1 and3. The encircling eigenvalues in the Kauffman convention are
+
+      mu_h=-A^(2h+2)-A^(-2h-2),       h=1,3.
+
+Hence
+
+      C_a=mu_1 I+(mu_3-mu_1)P_a,
+
+and P_a=P_b is equivalent to C_a=C_b over Q(A).
+
+In the UNIVERSAL surface skein algebra, distinct essential simple curves
+are distinct elements of its multicurve basis. Embeddings into quantum
+tori can detect these universal elements and their leading coordinates.
+They do not say that a single fixed-color finite-dimensional quotient
+distinguishes them. Detcherry--Santharoubane's construction explicitly
+uses the sum over boundary colorings in its handlebody skein action:
+Theorem1.1 and the paragraph following it; Section2.2 defines that sum.
+https://arxiv.org/pdf/2205.03291
+Published version: Geometry & Topology29(2025),313–348.
+
+Thus one cannot replace their varying colors by six fixed fundamental
+colors without a new theorem. Increasing colors would supply additional
+representations, rather than proving the required residual B5 identity.
+
+3. Exactly what happens to positivity under the projection
+----------------------------------------------------------
+The finite representation has the exact polynomial relation
+
+       (C_a-mu_1 I)(C_a-mu_3 I)=0.                 (2)
+
+Its universal skein counterpart
+
+       x=(a-mu_1 empty)(a-mu_3 empty)
+
+is NONZERO: its leading multicurve term consists of two parallel copies
+of a, with coefficient1. It is killed by the fixed-color representation.
+
+There are two different notions of positivity to keep separate.
+
+* Basis positivity concerns nonnegative multiplication coefficients in
+  a chosen skein basis. It does not imply that the finite representation
+  preserves a basis or keeps distinct positive basis elements distinct.
+  In particular, it does not give an order relation between C_a and C_b.
+  Thurston's original positive-basis theorem is at the classical
+  specialization; even granting a quantum positive-basis statement does
+  not fix this representation-theoretic issue.
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC4103368/
+
+* Reflection positivity gives a genuine positive Hermitian form on the
+  finite TL5 module on an appropriate open unitary arc. It is faithful
+  on the represented matrix algebra. Pulled back to the UNIVERSAL skein
+  algebra it is only semidefinite: x* x is nonzero but maps to zero by(2).
+  Here reflection conjugates A to A^-1, fixes the curve, and fixes mu_h;
+  x* x=x^2 has nonzero leading four-parallel-curve term. Thus this is an
+  explicit positive-square element in the kernel, not dimension counting.
+
+The last example does NOT assert that x*x has positive coefficients in
+a bracelet basis. It is positivity in the *-algebra sense. It also does
+NOT exhibit a difference of two simple curves in the kernel; that much
+more restrictive question is precisely the remaining gate.
+
+A norm computation of P_a-P_b can certify matrix equality, but zero norm
+then yields equality of represented projectors only. To conclude a=b
+requires the unproved injectivity statement for this particular set of
+simple-curve operators. The ambient skein basis theorem and reflection
+positivity do not supply it.
+
+4. What could still justify a construction attempt
+--------------------------------------------------
+The disjoint-arc theorem says a proposed same-subset equality must use
+genuinely overlapping operations, or a different geometric source of
+stabilization of the quantum line. The generic projector must retain
+both its image and kernel; fixing only its classical vector or one
+matrix coefficient is insufficient.
+
+A useful next input would predict equality in the finite skein quotient
+for two actual embedded simple curves while separately proving they are
+not isotopic. For example, one would need a geometric move whose entire
+skein difference lies in the boundary-color annihilator ideal and whose
+output is again a SINGLE embedded curve. Equation(2) alone cannot do
+that: it is a linear combination of multicurves, not a geometric curve
+move or a braid word.
+
+No such move or relation emerged in this pass. Conversely, proving that
+the annihilator ideal contains no nonzero difference of the relevant
+simple curves would establish the desired projector injectivity, but
+we have not reduced that statement to a known positivity theorem. It
+should not be described as an easier solved gate or as evidence of
+proximity to Jones unknot detection. The concrete new result here is the
+all-integer disjoint-cross-partition-twist exclusion above, together with
+an explicit explanation of why universal positivity does not survive
+as a faithful geometric test in the five-dimensional quotient.

@@ -1,0 +1,326 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black}
+\newtheorem{prop}{Proposition}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}
+\newcommand{\TL}{\mathrm{TL}}\newcommand{\id}{\mathbf 1}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\begin{document}
+{\LARGE A bounded attack on Jones unknot detection}\\[3pt]
+{\large Exact results and the remaining generic obstruction}\\
+31 October 2026 \hfill Research note; no claim of novelty
+
+\textbf{Outcome.} This pass produced neither a generic proof nor a nontrivial knot
+with Jones polynomial \(1\). It tested general mechanisms rather than extending
+the earlier EKT-family computations. The results below delimit possible
+approaches; they do not resolve the conjecture.
+
+\textbf{1. No fixed Taylor cutoff works, even on three strands.}
+Normalize \(V_U=1\), and set \([x,y]=xyx^{-1}y^{-1}\).
+In \(B_3\), define
+\[
+ a=\sigma_1^2,\quad b=\sigma_2^2,\quad
+ c_1=a,\quad c_{r+1}=[c_r,b],\quad
+ K_r=\widehat{c_r\sigma_1\sigma_2}.
+\]
+Each \(c_r\) is pure, so the closure is a knot: its permutation is a three-cycle.
+\begin{prop}
+For every \(m\geq1\),
+\[
+ V_{K_{2m}}(t)=1-3\,4^{m-1}(t-1)^{2m}
+                  +O((t-1)^{2m+1}).
+\]
+Thus \(K_{2m}\) is nontrivial, but its Jones derivatives through order \(2m-1\)
+agree with those of the unknot.
+\end{prop}
+\begin{proof}
+Put \(t=A^{-4}\), \(h=A-1\), and \(\delta=-A^2-A^{-2}\).
+The writhe-normalized Temperley--Lieb representation has
+\[
+ R_i=-A^{-2}\id-A^{-4}e_i,\qquad
+ e_i^2=\delta e_i,\quad e_1e_2e_1=e_1,\quad e_2e_1e_2=e_2.
+\]
+Direct multiplication gives
+\[
+ R_i^2=A^{-4}\id+(A^{-6}-A^{-10})e_i
+       =\id+h(-4\id+4e_i)+O(h^2).
+\]
+The formal-series identity
+\([\id+O(h^r),\id+O(h)]=\id+O(h^{r+1})\)
+implies \(R(c_r)=\id+O(h^r)\). For \(r\geq2\), write
+\(R(c_r)=\id+h^r C_r+O(h^{r+1})\). In the specialized algebra \(\delta=-2\),
+\[
+ C_2=16[e_1,e_2],\qquad C_{r+1}=4[C_r,e_2].
+\]
+For \(D(x)=[x,e_2]\), the relation \(e_2^2=\delta e_2\) gives
+\(D^3=\delta^2D=4D\). Since every \(C_r\), \(r\geq2\), lies in the image of \(D\),
+we obtain \(C_{r+2}=64C_r\).
+
+Let \(\ell\) be braid closure with one circle valued \(1\).
+At \(\delta=-2\),
+\[
+ \ell(\id)=4,\quad\ell(e_1)=\ell(e_2)=-2,\quad
+ \ell(e_1e_2)=\ell(e_2e_1)=1.
+\]
+The baseline operator at \(A=1\) is
+\(R(\sigma_1\sigma_2)=(\id+e_1)(\id+e_2)\).
+The TL relations give
+\[
+ \ell([e_1,e_2](\id+e_1)(\id+e_2))=1-\delta^2=-3.
+\]
+Since the baseline closure is the unknot, the first nonzero coefficient of
+\(V_{K_{2m}}(A^{-4})-1\) is \(-48\,64^{m-1}h^{2m}\).
+The local change of variable \(t-1=-4h+O(h^2)\) gives the displayed result.
+\end{proof}
+For any fixed \(N\), choosing \(2m>N\) defeats a test based only on derivatives
+through order \(N\). This is an explicit instance of the familiar finite-type
+limitation. It does \emph{not} exclude complexity-dependent bounds or arguments
+using the full Laurent polynomial.
+
+Exact computations checked \(r=1,\ldots,8\). For \(r=2,4,6,8\), the first nonzero
+\(t-1\) coefficients were respectively \(-3,-12,-48,-192\), in exactly degrees
+\(2,4,6,8\). The displayed braid-word lengths were \(10,34,130,514\); these are
+not claims about minimal crossing numbers. The unbounded assertion rests on
+the proof, not extrapolation.
+
+\newpage
+\textbf{2. Complete classification of two-strand skein units.}
+
+Let \(R=\Z[A,A^{-1}]\), \(\delta=-A^2-A^{-2}\), and
+\[
+ S=R[e]/(e^2-\delta e).
+\]
+Under horizontal tangle concatenation, the zero tangle represents \(\id\), the
+infinity tangle represents \(e\), and a positive integer crossing represents
+\(b=A^{-1}+Ae\). This horizontal convention differs from the vertical convention
+on page 1.
+
+\begin{prop}
+Every unit of \(S\) has the form
+\[
+ \eta A^s b^k,\qquad \eta\in\{1,-1\},\quad s,k\in\Z.
+\]
+A product of tangle brackets can equal \(\id\) only if each factor already has
+the bracket of an integer tangle up to a signed Laurent monomial.
+\end{prop}
+\begin{proof}
+The characters of \(f+ge\) are \(f\) and \(f+\delta g\).
+Both must be units if \(f+ge\) is a unit. Conversely, if both are units,
+\[
+ (f+ge)^{-1}=\frac{(f+\delta g)-ge}{f(f+\delta g)}.
+\]
+Write \(f=\eta A^m\), \(f+\delta g=\epsilon A^n\).
+Their difference is divisible by \(\delta\) precisely when the monomials agree
+modulo \(A^4+1\). Since \(A^4=-1\), with basis \(1,A,A^2,A^3\), this says
+\[
+ n-m=4k,\qquad \epsilon=\eta(-1)^k.
+\]
+The characters of \(b\) are \(A^{-1}\) and \(-A^3\), so \(f+ge\) and
+\(\eta A^{m+k}b^k\) have the same characters. They are equal since \(\delta\)
+is not a zero divisor. Negative powers are allowed:
+\(b^{-1}=A+A^{-1}e\).
+\end{proof}
+
+For an \emph{actual} tangle with unit bracket, composing with an integer tangle
+leaves a scalar bracket. Its denominator closure has a monomial bracket.
+The identities \(V_L(1)=(-2)^{\#L-1}\) and \(V_K'(1)=0\) force that closure to
+be a knot with normalized Jones polynomial \(1\). The scalar is therefore
+a framing unit \((-A^3)^w\).
+
+The missing step is geometric: must that actual tangle be the framed integer
+tangle whose bracket it shares? Sikora's Theorem 9.2 makes this implication
+equivalent to the Jones unknot conjecture [1]. The algebraic classification
+does not supply the topological conclusion.
+
+\textbf{Why composition with caps breaks a proposed induction.}
+An explicit nonrational algebraic tangle is
+\[
+ T=\langle-1\rangle+\langle1/2\rangle+\langle1/3\rangle.
+\]
+Its bracket \(f+ge\) has
+\[
+ \begin{split}
+ f&=A^2-2A^{-2}+2A^{-6}-A^{-10},\\
+ g&=A^4+A^{-8}-A^{-12},\qquad \delta f+g=1.
+ \end{split}
+\]
+At \(A=e^{\pi i/4}\), \(f=6i,g=1\), giving fraction \(-1/6\).
+That rational tangle has monomial \(g\) up to framing, unlike \(T\).
+Its six-crossing numerator independently simplifies to the unknot.
+If \(Q\) is the rotation of \(T\), then
+\[
+ [Q]=g+fe,\qquad e[Q]=(g+\delta f)e=e.
+\]
+Thus a cap absorbs a nonunit tangle. An induction that allows cups, caps, or
+changes in boundary strand count cannot simply apply the unit-factor result.
+
+\textbf{Higher strand counts.}
+The factor restriction extends to every \(\TL_n\): determinants of left
+multiplication in its finite free \(R\)-module show that every factor of a unit
+is a unit. The simple classification does not extend. In \(\TL_3\),
+\[
+ N=\delta e_1e_2-e_1,\quad N^2=0,\quad
+ (\id+N)^{-1}=\id-N.
+\]
+This formal unit is not a signed-monomial multiple of a braid image. At \(A=i\),
+where \(\delta=2\), braid images are unitary for \(e_i^*=e_i\), whereas
+\[
+ (\id+N)^*(\id+N)-\id
+ =8e_2-2(e_1e_2+e_2e_1)\ne0.
+\]
+No realization of this formal unit by a single actual tangle is asserted.
+
+\newpage
+\textbf{3. Other generic mechanisms and their exact stopping points.}
+
+\textbf{Branched-cover homology.}
+For every determinant-one knot, the double branched cover is an integral homology
+sphere. At any crossing, the two resolutions have first homology
+\(\Z/n\) and \(\Z/(n+1)\), with a suitable ordering and integer \(n\);
+the switched crossing gives \(\Z/(2n+1)\), where \(\Z/0=\Z\).
+These follow from distance-one filling slopes on a knot exterior in that homology
+sphere. Cyclic homology and consecutive smoothing determinants are thus automatic,
+rather than new evidence for unknottedness.
+
+All 44 resolutions of the standard Kinoshita--Terasaka and Conway diagrams passed
+these tests by integral Fox matrices and Smith forms. Each knot has an unknotting
+crossing whose oriented smoothing has \(H_1=\Z\), but Jones polynomial
+\[
+ x^9-x^7+x^5-x^3-x-x^{-1}-x^{-3}+x^{-5}-x^{-7}+x^{-9},
+ \qquad x=t^{1/2},
+\]
+instead of the unlink value \(-x-x^{-1}\).
+Even a band to an actual unknot plus this homology condition does not force
+the smoothing to be the unlink.
+
+\textbf{Braid representations and positivity.}
+In \(B_2\), \(\sigma\) and \(\sigma^{-1}\) both close to the unknot, although
+their normalized operators are different. Appending the same context
+\(\sigma^2\) produces a trefoil and an unknot. Hence equality of Jones
+polynomials is not a local operator replacement rule.
+
+There is a precise all-strand positivity lemma. Normalize the Markov trace by
+\(\tau(\id)=1\); then on \(n\) strands
+\[
+ V_{\widehat\beta}=\delta^{n-1}\tau(R(\beta)).
+\]
+For \(A\) on the unit circle sufficiently close to \(i\), the fixed
+finite-dimensional TL trace is positive and faithful, and braid images are
+unitary. If \(V_{\widehat\beta}=\delta^{n-1}\), then
+\[
+ \tau((R(\beta)-\id)^*(R(\beta)-\id))=0,
+\]
+so \(R(\beta)=\id\). Holding on an interval, this is a Laurent identity.
+The character \(e_i\mapsto0\) forces writhe zero.
+Thus the \(n\)-component unlink value of an \(n\)-braid forces its entire
+generic TL image to be the identity.
+
+For a \emph{knot} with \(V=1\), however, the trace is \(\delta^{1-n}\), strictly
+inside the unit disk for \(n>1\). The equality case needed for this argument is
+absent. A 2026 preprint claims faithfulness of the four-strand Burau and Jones
+representations [4]; its source and statement were checked, not the entire proof.
+Even a valid faithfulness theorem does not close the trace gap. Ito's theorem [3]
+makes a nontrivial representation kernel a sufficient route to knot counterexamples,
+but does not give the converse.
+
+\textbf{Categorification.}
+Reduced rational Khovanov homology detects the unknot by rank one [2].
+If each quantum grading occupied only one homological parity, total rank would
+equal the sum of absolute Jones coefficients, and \(V=1\) would finish the proof.
+A nontrivial Jones-trivial knot therefore requires cancellation between the
+two parities in some quantum grading.
+
+The formal unreduced series
+\[
+ P(u,q)=q+q^{-1}+q^{-1}(1+u)(1+uq^4)
+\]
+has nonnegative ranks, total rank six, Euler characteristic
+\(P(-1,q)=q+q^{-1}\), and a degree-\((1,4)\) differential leaving precisely
+\((0,\pm1)\): pair the added \((0,-1)\) with \((1,3)\), and \((1,-1)\) with
+\((2,3)\). Thus positivity of dimensions, Euler characteristic, and a Lee-shaped
+endpoint alone do not force unknot homology. This abstract model is \emph{not}
+claimed to arise from a knot or satisfy every Khovanov constraint.
+
+\textbf{Status.}
+No generic proof or counterexample was obtained. What remains is a restriction
+on topologically realizable cancellation strong enough to turn Jones value \(1\)
+into geometric triviality. None of the scalar, unit, homology, or formal homology
+arguments above supplies that missing implication.
+
+\newpage
+\textbf{Verification and primary references.}
+
+The full proofs of Propositions 1 and 2 were independently audited. The first
+was checked against exact Laurent computations through \(r=8\). The second was
+checked with 2,754 exact unit/inverse computations, including negative twists
+and scalar factors. The tangle absorption example was checked algebraically and
+by a separate diagram calculation. The branched-cover tests used all 44 crossing
+resolutions, and the stated smoothing Jones polynomial was calculated using two
+independent Regina algorithms.
+
+These finite checks validate conventions and implementations; they are not the
+basis for unbounded conclusions. The accompanying evidence archive contains
+the working proofs, exact data, verifier scripts, and this document's source.
+The basic algebra checks use Python's standard library. The optional
+diagram-based replay requires Regina and Spherogram.
+
+For the finite-order construction, a separate exact Burau recurrence additionally
+proves every \(K_r\), including odd \(r\), is nontrivial. At \(t=-1\), use
+\[
+ A=\begin{pmatrix}1&2\\0&1\end{pmatrix},\quad
+ B=\begin{pmatrix}1&0\\-2&1\end{pmatrix},\quad
+ R_0=\begin{pmatrix}0&1\\-1&1\end{pmatrix},\qquad
+ C_{r+1}=C_rBC_r^{-1}B^{-1}.
+\]
+If \(b_r,d_r\) are the top-right and bottom-right entries of \(C_r\), then
+\[
+ b_{r+1}=2b_r^2,\qquad d_{r+1}=1+2b_rd_r,\qquad
+ b_r/2\leq d_r<b_r.
+\]
+The last inequalities follow by induction from \(b_1=2,d_1=1\).
+Consequently
+\[
+ \operatorname{tr}(C_{r+1}R_0)
+ =3-2d_r^2+6b_rd_r-2b_r^2
+ \geq3+b_r^2/2\geq5.
+\]
+The Burau--Alexander formula gives
+\(\det(K_r)=|2-\operatorname{tr}(C_rR_0)|>1\);
+the base case is determinant \(3\). This fact is not needed for the even-order
+proof on page 1.
+
+[1] Adam S. Sikora, \emph{Tangle equations, the Jones conjecture, slopes of surfaces
+in tangle complements, and \(q\)-deformed rationals}, Canadian Journal of Mathematics
+76 (2024), 707--727, Theorem 9.2.
+\url{https://doi.org/10.4153/S0008414X23000755}
+
+[2] P. B. Kronheimer and T. S. Mrowka, \emph{Khovanov homology is an unknot-detector},
+Publications Math\'ematiques de l'IH\'ES 113 (2011), 97--208.
+\url{https://arxiv.org/abs/1005.4346}
+
+[3] Tetsuya Ito, \emph{A kernel of a braid group representation yields a knot with
+trivial knot polynomials}, Mathematische Zeitschrift 280 (2015), 347--353.
+\url{https://arxiv.org/abs/1402.2028}
+
+[4] Vasudha Bharathram, Joan S. Birman, and Tara E. Brendle,
+\emph{The Burau representation is faithful for \(n=4\)}, v2, 14 September 2026.
+This pass did not audit the complete proof.
+\url{https://arxiv.org/abs/2607.05283}
+
+[5] Stephen Bigelow, \emph{Does the Jones polynomial detect the unknot?}
+\url{https://arxiv.org/abs/math/0012086}
+
+[6] Dror Bar-Natan, \emph{On Khovanov's categorification of the Jones polynomial},
+Algebraic \& Geometric Topology 2 (2002), 337--370.
+\url{https://msp.org/agt/2002/2-1/agt-v2-n1-p16-p.pdf}
+
+[7] Sophie Morier-Genoud, Valentin Ovsienko, and Alexander P. Veselov,
+\emph{Burau representation of braid groups and \(q\)-rationals},
+International Mathematics Research Notices 2024, no. 10, 8618--8627.
+\url{https://doi.org/10.1093/imrn/rnad318}
+
+\textbf{Interpretation.} These are restrictions on possible approaches, not a
+resolution or a novelty claim. In particular, the explicit three-strand family
+rules out a fixed Taylor cutoff; its full Jones polynomial is nontrivial.
+\end{document}

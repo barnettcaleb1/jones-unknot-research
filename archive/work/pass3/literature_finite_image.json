@@ -1,0 +1,116 @@
+{
+  "kernel_image_order": 27,
+  "cosets": [
+    {
+      "quotient_tuple": [
+        -5,
+        2,
+        6,
+        2
+      ],
+      "target": [
+        -1,
+        0
+      ],
+      "matching_image_elements": 9,
+      "first_word": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "quotient_tuple": [
+        -2,
+        -1,
+        1,
+        7
+      ],
+      "target": [
+        -1,
+        0
+      ],
+      "matching_image_elements": 9,
+      "first_word": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "quotient_tuple": [
+        -2,
+        -1,
+        3,
+        5
+      ],
+      "target": [
+        -1,
+        0
+      ],
+      "matching_image_elements": 9,
+      "first_word": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "quotient_tuple": [
+        -2,
+        2,
+        3,
+        2
+      ],
+      "target": [
+        -1,
+        0
+      ],
+      "matching_image_elements": 9,
+      "first_word": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "quotient_tuple": [
+        -1,
+        1,
+        2,
+        3
+      ],
+      "target": [
+        -1,
+        0
+      ],
+      "matching_image_elements": 9,
+      "first_word": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "quotient_tuple": [
+        -2,
+        2,
+        1,
+        4
+      ],
+      "target": [
+        -1,
+        0
+      ],
+      "matching_image_elements": 9,
+      "first_word": [
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  ]
+}

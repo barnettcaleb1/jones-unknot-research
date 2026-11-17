@@ -1,0 +1,129 @@
+INDEPENDENT WATSON SUPPORT / RANK AUDIT
+1 November 2026. Internal research note; no novelty claim.
+
+Scope: fixed beta,T,U in Watson's actual Figure 1, allowed two-arc
+connectivities, with K_n=K_beta(T sigma^n,U sigma^(-n)) a knot. This is not
+an arbitrary compensating-twist template.
+
+1. SUPPORT ARGUMENT: PASSES
+
+I independently reread Watson's Figure 1 and equations (3),(4),(6),(7),
+including the crossing-count calculations immediately preceding them.
+Source: Liam Watson, Knots with identical Khovanov homology,
+Algebr. Geom. Topol. 7 (2007), 1389--1407, DOI 10.2140/agt.2007.7.1389.
+https://msp.org/agt/2007/7-3/agt-v7-n3-p11-s.pdf
+Author pagination pp4--10; nonsimple question p16, Section7.3.
+
+Simplicity turns each capped tangle into an unknotted arc. Without it the
+same operation produces a fixed long knotted arc. The latter can be
+localized in a ball along its strand and retained while the exterior
+beta/beta^-1 cancellation is performed. The other tangle is then capped
+as well. Twists next to a cap become RI curls. Thus the one-cap links are
+drawn from a fixed finite oriented list (including endpoint parity cases),
+not links whose knotting grows with |n|.
+
+The normalized grading correction is the important check. Watson's
+calculation reverses BOTH strands of each affected tangle, preserving
+every internal crossing sign, regardless of simplicity and regardless of
+the inserted twist count. Only the distinguished crossing is removed.
+Consequently c=-1 or 0 remains valid. There is no suppressed linear
+quantum or homological shift after RI normalization.
+
+With E the union of the cap-link bigraded supports, the exceptional set
+ E+{(0,-1),(-1,-1),(1,1),(0,1)}
+in watson_homology.txt is correct. Outside it, the two knot groups map
+isomorphically to the same intermediate group. Iterating proves a fixed
+finite unreduced bigraded support window for all integer n. The ordinary
+based reduced/unreduced exact sequence also bounds reduced quantum
+support (indeed its extremes differ by +/-1). No actual constancy of Kh
+has been proved when the tangles are nonsimple.
+
+2. FIXED CAP COMPLEXES DO NOT ALONE BOUND RANK
+
+There is a precise abstract countermodel, stronger than a dimension-count
+warning. It satisfies genuine distinguished mapping-cone triangles, fixed
+cap complexes, constant graded Euler characteristic, a fixed bigrading
+window, and a Lee-like filtered differential with constant limiting rank.
+It is NOT claimed to be realized by knot diagrams or saddle cobordisms.
+
+Use cochain complexes and let [1] be the usual homological translation.
+Let Z have zero ordinary differential and two generators a,b with
+ (h,q)(a)=(0,0), (h,q)(b)=(1,4).
+Give it a Lee differential a->b. This differential has degree (1,4), so
+Z is Lee-acyclic. Put W=Z direct-sum Z[1]. Its graded Euler polynomial
+vanishes because translation changes the Euler sign, and it is still
+Lee-acyclic. Let B be a single reduced-unknot generator, and set
+ X_n=B direct-sum W^n,       Y_n=X_n direct-sum Z[1]    (n>=0).
+
+The zero map Z->X_n gives a distinguished triangle
+ Z --0--> X_n --> Y_n --> Z[1].
+The inclusion of the Z summand in
+ X_(n+1)=X_n direct-sum Z direct-sum Z[1]
+gives another distinguished triangle
+ Z --inclusion--> X_(n+1) --> Y_n --> Z[1],
+because the cone of that inclusion contracts to X_n direct-sum Z[1].
+
+Thus two triangles have the SAME fixed cap Z and SAME intermediate Y_n,
+exactly the structural feature used to compare consecutive Watson knots.
+All maps commute with the indicated Lee differential. Nevertheless
+ rank X_n=1+4n,
+while its quantum support stays in {0,4}, its ordinary graded Euler
+polynomial stays 1, and its Lee homology stays rank1. Direct-sum inclusions
+also supply compatible maps between successive such diagrams. The model
+can be extended to n in Z using |n| and reversing the two roles at zero.
+
+This does not claim to model every grading placement or every additional
+relation of the geometric Watson saddle maps. It proves that merely
+promoting the LES to abstract natural mapping-cone triangles, or adding
+the ordinary Lee spectral-sequence constraint, cannot establish a rank
+bound. One must use an additional geometric relation not present in these
+axioms. In particular a finite-dimensional domain for each saddle map
+does not stop the common intermediate space from growing.
+
+3. A SUFFICIENT, TESTABLE CHAIN-LEVEL REPLACEMENT
+
+A genuinely fixed-size monodromy model would settle bounded rank. For
+example, if all Kh complexes C(K_n) were homotopy equivalent, up to fixed
+grading shifts, to Cone(f_n:C->D) for TWO FIXED finite complexes C,D, then
+ rank Kh(K_n) <= dim C + dim D
+uniformly. A more specific f_n=f M^n g model would be stronger than needed.
+Likewise a decomposition into a fixed complex plus uniformly boundedly
+many shifted fixed summands would suffice.
+
+No such model follows just from the braid action being invertible. A
+power of a tangle/Rouquier complex is an iterated tensor product whose
+number of terms can grow; it is not automatically an endomorphism of one
+fixed finite complex. Watson's proof identifies the cap objects, but does
+not identify a fixed ambient complex containing all iterated saddle maps.
+
+The next meaningful calculation is therefore the actual two-saddle map
+relation in the Bar-Natan tangle category after the beta/beta^-1 cap
+isotopies. If it yields a fixed finite cone or eventual cancellation, rank
+boundedness follows. If its iteration creates a nonzero repeated block
+like W, rank growth becomes a plausible target. Neither alternative has
+been established here. No long list of full knot computations is needed
+before that categorical relation is understood.
+
+4. CENTRAL-POWER TOPOLOGY: PRECISE LIMITED AUDIT
+
+The tangle agent's correction to the earlier annulus warning is valid:
+in an actual S^2 x I six-strand shell, full twists about complementary
+triples induce the same separating Dehn twist on the six-punctured sphere.
+Their opposite powers cancel in its mapping class group. A possible
+residual spherical-braid 2pi rotation is absorbed by rotating the entire
+endcap ball. Knotted pieces inside that ball move with the ball and cause
+no marking obstruction.
+
+This audits closure-triviality of an adjacent j(z)^k s(z)^k factor with
+the stated opposite signs and shell placement. It does not independently
+establish the agent's separate SL2(Z) normal form or its connected-sum
+identification. Those need their own checks.
+
+5. VERDICT
+
+The support theorem is supported by the source diagrams and the exact
+grading calculations. Its constants depend on the fixed tangles and beta.
+The rank bound supplied by the two skein triangles is only O(|n|).
+Fixed cap complexes plus abstract naturality do not improve that bound.
+Actual rank growth, actual uniform rank boundedness, and any generic
+fixed-Jones-fiber conclusion remain unproved.

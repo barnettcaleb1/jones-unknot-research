@@ -1,0 +1,18 @@
+{
+ "files": [
+  "cert/u4_e3w3_n24_s324.jsonl.gz"
+ ],
+ "records_total": 8259,
+ "sampled": 8259,
+ "fraction": 1.0,
+ "seed": 306,
+ "records_pass": 8259,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 8259
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 8259
+ },
+ "secs": 55.2
+}

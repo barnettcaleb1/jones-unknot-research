@@ -1,0 +1,10 @@
+{
+ "tops": 222,
+ "bottoms": 393,
+ "junctions_knot_ok": 58173,
+ "sampled_points": 20000,
+ "J1_points": 306,
+ "J1_points_NOT_in_window_list": 0,
+ "examples_missing": [],
+ "secs": 739.2
+}

@@ -1,0 +1,315 @@
+T(2,+4) # Hopf[+]                  comps=3 det=8 lk={'0,1': 2, '0,2': 1} w=+6 cr=6
+      construction: connected_sum_links(closure [1, 1, 1, 1], closure [1, 1])
+      <D> = A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+      V   = t^2 + 2*t^4 - t^5 + 2*t^6 - t^7 + t^8
+      PD  = [[6, 9, 1, 8], [9, 2, 10, 1], [2, 7, 3, 10], [7, 4, 8, 3], [4, 11, 5, 12], [11, 6, 12, 5]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+T(2,+4) # Hopf[-]                  comps=3 det=8 lk={'0,1': 2, '0,2': -1} w=+2 cr=6
+      construction: connected_sum_links(closure [1, 1, 1, 1], closure [-1, -1])
+      <D> = A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+      V   = t^-1 + 2*t - t^2 + 2*t^3 - t^4 + t^5
+      PD  = [[6, 9, 1, 8], [9, 2, 10, 1], [2, 7, 3, 10], [7, 4, 8, 3], [4, 12, 5, 11], [11, 5, 12, 6]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+T(2,-4) # Hopf[+]                  comps=3 det=8 lk={'0,1': -2, '0,2': 1} w=-2 cr=6
+      construction: connected_sum_links(closure [-1, -1, -1, -1], closure [1, 1])
+      <D> = A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14
+      V   = t^-5 - t^-4 + 2*t^-3 - t^-2 + 2*t^-1 + t
+      PD  = [[6, 10, 1, 7], [7, 1, 8, 2], [2, 8, 3, 9], [9, 3, 10, 4], [4, 11, 5, 12], [11, 6, 12, 5]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+T(2,-4) # Hopf[-]                  comps=3 det=8 lk={'0,1': -2, '0,2': -1} w=-6 cr=6
+      construction: connected_sum_links(closure [-1, -1, -1, -1], closure [-1, -1])
+      <D> = A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14
+      V   = t^-8 - t^-7 + 2*t^-6 - t^-5 + 2*t^-4 + t^-2
+      PD  = [[6, 10, 1, 7], [7, 1, 8, 2], [2, 8, 3, 9], [9, 3, 10, 4], [4, 12, 5, 11], [11, 5, 12, 6]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+Hopf # Hopf (3-chain) [1, 1, 2, 2] comps=3 det=4 lk={'0,1': 1, '0,2': 1} w=+4 cr=4
+      construction: closure of 3-braid [1, 1, 2, 2] (= Hopf # Hopf # unknot)
+      <D> = A^-8 + 2 + A^8
+      V   = t + 2*t^3 + t^5
+      PD  = [[6, 1, 3, 2], [1, 4, 2, 3], [8, 5, 7, 4], [5, 8, 6, 7]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+Hopf # Hopf (3-chain) [1, 1, -2, -2] comps=3 det=4 lk={'0,1': 1, '0,2': -1} w=+0 cr=4
+      construction: closure of 3-braid [1, 1, -2, -2] (= Hopf # Hopf # unknot)
+      <D> = A^-8 + 2 + A^8
+      V   = t^-2 + 2 + t^2
+      PD  = [[6, 1, 3, 2], [1, 4, 2, 3], [4, 8, 5, 7], [7, 5, 8, 6]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+Hopf # Hopf (3-chain) [-1, -1, -2, -2] comps=3 det=4 lk={'0,1': -1, '1,2': -1} w=-4 cr=4
+      construction: closure of 3-braid [-1, -1, -2, -2] (= Hopf # Hopf # unknot)
+      <D> = A^-8 + 2 + A^8
+      V   = t^-5 + 2*t^-3 + t^-1
+      PD  = [[2, 6, 1, 3], [3, 1, 4, 2], [4, 8, 5, 7], [7, 5, 8, 6]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+Hopf u O (split)                   comps=3 det=0 lk={'0,1': 1} w=+3 cr=3
+      construction: Hopf PD plus a disjoint kink [5,5,6,6]
+      <D> = -A^-3 - A - A^5 - A^9
+      V   = 1 + t + t^2 + t^3
+      PD  = [[4, 1, 3, 2], [1, 4, 2, 3], [5, 5, 6, 6]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+T(2,4) u O (split)                 comps=3 det=0 lk={'0,1': 2} w=+5 cr=5
+      construction: T(2,4) PD plus a disjoint kink [9,9,10,10]
+      <D> = -A^-9 - A^3 - A^7 - A^11
+      V   = t + t^2 + t^3 + t^6
+      PD  = [[8, 1, 5, 4], [1, 6, 2, 5], [6, 3, 7, 2], [3, 8, 4, 7], [9, 9, 10, 10]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+T(2,4) # T(2,4)                    comps=3 det=16 lk={'0,1': 2, '0,2': 2} w=+8 cr=8
+      construction: closure of sigma_1^4 sigma_2^4
+      <D> = A^-20 - 2*A^-16 + 3*A^-12 - 2*A^-8 + 3*A^-4 - 2 + 2*A^4 + A^12
+      V   = t^3 + 2*t^5 - 2*t^6 + 3*t^7 - 2*t^8 + 3*t^9 - 2*t^10 + t^11
+      PD  = [[12, 1, 5, 4], [1, 6, 2, 5], [6, 3, 7, 2], [3, 8, 4, 7], [16, 9, 13, 8], [9, 14, 10, 13], [14, 11, 15, 10], [11, 16, 12, 15]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+T(2,4) + unknot: sigma_1^4 A13     comps=3 det=8 lk={'0,1': 2, '0,2': 0, '1,2': 1} w=+6 cr=8
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2]
+      <D> = A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+      V   = t^2 + 2*t^4 - t^5 + 2*t^6 - t^7 + t^8
+      PD  = [[12, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [16, 11, 13, 10], [13, 5, 14, 4], [5, 15, 6, 14], [15, 11, 16, 12]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      same bracket also from: ['sigma_1^4 A13^-1', 'sigma_1^4 A23', 'sigma_1^4 A23^-1']
+T(2,4) + unknot: sigma_1^4 A13 A13 comps=3 det=16 lk={'0,1': 2, '0,2': 0, '1,2': 2} w=+8 cr=12
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, 2, 1, 1, -2]
+      <D> = A^-20 - 2*A^-16 + 3*A^-12 - 2*A^-8 + 3*A^-4 - 2 + 2*A^4 + A^12
+      V   = t^3 + 2*t^5 - 2*t^6 + 3*t^7 - 2*t^8 + 3*t^9 - 2*t^10 + t^11
+      PD  = [[16, 1, 9, 8], [1, 10, 2, 9], [10, 3, 11, 2], [3, 12, 4, 11], [24, 13, 17, 12], [17, 5, 18, 4], [5, 19, 6, 18], [19, 13, 20, 14], [20, 15, 21, 14], [21, 7, 22, 6], [7, 23, 8, 22], [23, 15, 24, 16]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+      same bracket also from: ['sigma_1^4 A23 A23']
+T(2,4) + unknot: sigma_1^4 A13 A13^-1 comps=3 det=0 lk={'0,1': 2, '0,2': 0, '1,2': 0} w=+4 cr=12
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, 2, -1, -1, -2]
+      <D> = A^-12 + 1 + A^4 + A^8
+      V   = t + t^2 + t^3 + t^6
+      PD  = [[16, 1, 9, 8], [1, 10, 2, 9], [10, 3, 11, 2], [3, 12, 4, 11], [24, 13, 17, 12], [17, 5, 18, 4], [5, 19, 6, 18], [19, 13, 20, 14], [20, 15, 21, 14], [6, 21, 7, 22], [22, 7, 23, 8], [23, 15, 24, 16]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+      same bracket also from: ['sigma_1^4 A13^-1 A13', 'sigma_1^4 A23 A23^-1', 'sigma_1^4 A23^-1 A23']
+T(2,4) + unknot: sigma_1^4 A13 A23 comps=3 det=4 lk={'0,1': 2, '0,2': 1, '1,2': 1} w=+8 cr=10
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, 2, 2]
+      <D> = A^-12 + A^-4 + A^4 + A^12
+      V   = t^3 + t^5 + t^7 + t^9
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [20, 11, 15, 10], [15, 5, 16, 4], [5, 17, 6, 16], [17, 11, 18, 12], [18, 13, 19, 12], [13, 20, 14, 19]]
+      bracket equals table link(s): ['L8n3']
+      MATCHES C00*: none
+      same bracket also from: ['sigma_1^4 A23^-1 A13^-1']
+T(2,4) + unknot: sigma_1^4 A13 A23^-1 comps=3 det=12 lk={'0,1': 2, '0,2': -1, '1,2': 1} w=+4 cr=10
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 1, 1, -2, -2, -2]
+      <D> = A^-16 - A^-12 + 2*A^-8 - 2*A^-4 + 3 - A^4 + 2*A^8
+      V   = 2*t - t^2 + 3*t^3 - 2*t^4 + 2*t^5 - t^6 + t^7
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [20, 11, 15, 10], [15, 5, 16, 4], [5, 17, 6, 16], [17, 11, 18, 12], [12, 18, 13, 19], [19, 13, 20, 14]]
+      snappy identify: ['s776(0,0)(0,0)(0,0)', '6^3_1(0,0)(0,0)(0,0)', 'L6a5(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L8n4']
+      MATCHES C00*: none
+      same bracket also from: ['sigma_1^4 A13^-1 A23']
+T(2,4) + unknot: sigma_1^4 A13^-1 A13^-1 comps=3 det=16 lk={'0,1': 2, '0,2': 0, '1,2': -2} w=+0 cr=12
+      construction: closure of 3-braid [1, 1, 1, 1, 2, -1, -1, -2, 2, -1, -1, -2]
+      <D> = A^-16 - A^-12 + 2*A^-8 - 2*A^-4 + 4 - 2*A^4 + 2*A^8 - A^12 + A^16
+      V   = t^-4 - t^-3 + 2*t^-2 - 2*t^-1 + 4 - 2*t + 2*t^2 - t^3 + t^4
+      PD  = [[16, 1, 9, 8], [1, 10, 2, 9], [10, 3, 11, 2], [3, 12, 4, 11], [24, 13, 17, 12], [4, 17, 5, 18], [18, 5, 19, 6], [19, 13, 20, 14], [20, 15, 21, 14], [6, 21, 7, 22], [22, 7, 23, 8], [23, 15, 24, 16]]
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+      same bracket also from: ['sigma_1^4 A23^-1 A23^-1']
+T(2,4) + unknot: sigma_1^4 A13^-1 A23^-1 comps=3 det=28 lk={'0,1': 2, '0,2': -1, '1,2': -1} w=+0 cr=10
+      construction: closure of 3-braid [1, 1, 1, 1, 2, -1, -1, -2, -2, -2]
+      <D> = A^-16 - 2*A^-12 + 4*A^-8 - 4*A^-4 + 6 - 4*A^4 + 4*A^8 - 2*A^12 + A^16
+      V   = t^-4 - 2*t^-3 + 4*t^-2 - 4*t^-1 + 6 - 4*t + 4*t^2 - 2*t^3 + t^4
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [20, 11, 15, 10], [4, 15, 5, 16], [16, 5, 17, 6], [17, 11, 18, 12], [12, 18, 13, 19], [19, 13, 20, 14]]
+      snappy identify: ['o9_44098(0,0)(0,0)(0,0)', '8^3_2(0,0)(0,0)(0,0)', 'L8a17(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L8a17']
+      MATCHES C00*: none
+T(2,4) + unknot: sigma_1^4 A23 A13 comps=3 det=36 lk={'0,1': 2, '0,2': 1, '1,2': 1} w=+8 cr=10
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 2, 2, 1, 1, -2]
+      <D> = -A^-24 + 3*A^-20 - 4*A^-16 + 6*A^-12 - 6*A^-8 + 6*A^-4 - 4 + 4*A^4 - A^8 + A^12
+      V   = t^3 - t^4 + 4*t^5 - 4*t^6 + 6*t^7 - 6*t^8 + 6*t^9 - 4*t^10 + 3*t^11 - t^12
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [20, 11, 15, 10], [11, 16, 12, 15], [16, 13, 17, 12], [17, 5, 18, 4], [5, 19, 6, 18], [19, 13, 20, 14]]
+      snappy identify: ['o10_146816(0,0)(0,0)(0,0)', '9^3_5(0,0)(0,0)(0,0)', 'L9a48(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L9a48*']
+      MATCHES C00*: none
+T(2,4) + unknot: sigma_1^4 A23 A13^-1 comps=3 det=20 lk={'0,1': 2, '0,2': 1, '1,2': -1} w=+4 cr=10
+      construction: closure of 3-braid [1, 1, 1, 1, 2, 2, 2, -1, -1, -2]
+      <D> = A^-20 - 2*A^-16 + 3*A^-12 - 3*A^-8 + 4*A^-4 - 2 + 3*A^4 - A^8 + A^12
+      V   = 1 - t + 3*t^2 - 2*t^3 + 4*t^4 - 3*t^5 + 3*t^6 - 2*t^7 + t^8
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [20, 11, 15, 10], [11, 16, 12, 15], [16, 13, 17, 12], [4, 17, 5, 18], [18, 5, 19, 6], [19, 13, 20, 14]]
+      snappy identify: ['v3383(0,0)(0,0)(0,0)', '8^3_1(0,0)(0,0)(0,0)', 'L8a18(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L8a18*', 'L10n68']
+      MATCHES C00*: none
+      same bracket also from: ['sigma_1^4 A23^-1 A13']
+pretzel (2, 2, 2)                  comps=3 det=12 lk={'0,1': -1, '0,2': 1, '1,2': -1} w=-2 cr=6
+      construction: spherogram RationalTangle(1,p) sum, numerator_closure
+      <D> = A^-10 - A^-6 + 3*A^-2 - A^2 + 3*A^6 - 2*A^10 + A^14
+      V   = t^-5 - 2*t^-4 + 3*t^-3 - t^-2 + 3*t^-1 - 1 + t
+      PD  = [[11, 2, 8, 3], [3, 8, 0, 9], [5, 11, 6, 10], [9, 7, 10, 6], [1, 4, 2, 5], [7, 0, 4, 1]]
+      snappy identify: ['s776(0,0)(0,0)(0,0)', '6^3_1(0,0)(0,0)(0,0)', 'L6a5(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L6a5']
+      MATCHES C00*: none
+pretzel (2, 2, -2)                 comps=3 det=4 lk={'0,1': -1, '0,2': -1, '1,2': -1} w=-6 cr=6
+      construction: spherogram RationalTangle(1,p) sum, numerator_closure
+      <D> = A^-10 + A^-2 + 2*A^6
+      V   = 2*t^-6 + t^-4 + t^-2
+      PD  = [[10, 5, 11, 6], [6, 11, 7, 8], [2, 9, 3, 10], [8, 1, 9, 2], [3, 4, 0, 5], [7, 0, 4, 1]]
+      bracket equals table link(s): ['L6n1*']
+      MATCHES C00*: none
+pretzel (-2, -2, -2)               comps=3 det=12 lk={'0,1': -1, '0,2': -1, '1,2': -1} w=-6 cr=6
+      construction: spherogram RationalTangle(1,p) sum, numerator_closure
+      <D> = A^-14 - 2*A^-10 + 3*A^-6 - A^-2 + 3*A^2 - A^6 + A^10
+      V   = t^-7 - t^-6 + 3*t^-5 - t^-4 + 3*t^-3 - 2*t^-2 + t^-1
+      PD  = [[5, 10, 6, 11], [9, 6, 10, 7], [11, 2, 8, 3], [1, 8, 2, 9], [3, 4, 0, 5], [7, 0, 4, 1]]
+      snappy identify: ['s776(0,0)(0,0)(0,0)', '6^3_1(0,0)(0,0)(0,0)', 'L6a5(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L6a5*']
+      MATCHES C00*: none
+T(3,3)                             comps=3 det=4 lk={'0,1': 1, '0,2': 1, '1,2': 1} w=+6 cr=6
+      construction: closure of (sigma_1 sigma_2)^3
+      <D> = 2*A^-6 + A^2 + A^10
+      V   = t^2 + t^4 + 2*t^6
+      PD  = [[8, 1, 5, 4], [12, 2, 9, 1], [9, 6, 10, 5], [2, 7, 3, 6], [3, 11, 4, 10], [7, 12, 8, 11]]
+      bracket equals table link(s): ['L6n1']
+      MATCHES C00*: none
+T(3,3) mirror                      comps=3 det=4 lk={'0,1': -1, '0,2': -1, '1,2': -1} w=-6 cr=6
+      construction: closure of (sigma_1^-1 sigma_2^-1)^3
+      <D> = A^-10 + A^-2 + 2*A^6
+      V   = 2*t^-6 + t^-4 + t^-2
+      PD  = [[4, 8, 1, 5], [1, 12, 2, 9], [5, 9, 6, 10], [6, 2, 7, 3], [10, 3, 11, 4], [11, 7, 12, 8]]
+      bracket equals table link(s): ['L6n1*']
+      MATCHES C00*: none
+Hopf u axis                        comps=3 det=4 lk={'0,1': 1, '0,2': 1, '1,2': 1} w=+6 cr=6
+      construction: closure of sigma_1^2 sigma_2 sigma_1^2 sigma_2
+      <D> = 2*A^-6 + A^2 + A^10
+      V   = t^2 + t^4 + 2*t^6
+      PD  = [[8, 1, 5, 4], [1, 6, 2, 5], [12, 7, 9, 6], [9, 3, 10, 2], [3, 11, 4, 10], [7, 12, 8, 11]]
+      bracket equals table link(s): ['L6n1']
+      MATCHES C00*: none
+T(2,4) u axis                      comps=3 det=4 lk={'0,1': 2, '0,2': 1, '1,2': 1} w=+8 cr=8
+      construction: closure of sigma_1^4 sigma_2 sigma_1^2 sigma_2 (braid axis of sigma_1^4)
+      <D> = A^-12 + A^-4 + A^4 + A^12
+      V   = t^3 + t^5 + t^7 + t^9
+      PD  = [[12, 1, 7, 6], [1, 8, 2, 7], [8, 3, 9, 2], [3, 10, 4, 9], [16, 11, 13, 10], [13, 5, 14, 4], [5, 15, 6, 14], [11, 16, 12, 15]]
+      bracket equals table link(s): ['L8n3']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 2): A12^1 A13^2 A23^1 comps=3 det=4 lk={'0,1': 1, '0,2': 1, '1,2': 2} w=+8 cr=12
+      construction: closure of pure 3-braid [1, 1, 2, 1, 1, -2, 2, 1, 1, -2, 2, 2]
+      <D> = A^-12 + A^-4 + A^4 + A^12
+      V   = t^3 + t^5 + t^7 + t^9
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [24, 9, 15, 8], [15, 3, 16, 2], [3, 17, 4, 16], [17, 9, 18, 10], [18, 11, 19, 10], [19, 5, 20, 4], [5, 21, 6, 20], [21, 11, 22, 12], [22, 13, 23, 12], [13, 24, 14, 23]]
+      bracket equals table link(s): ['L8n3']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 2): A12^1 A23^1 A13^2 comps=3 det=36 lk={'0,1': 1, '0,2': 1, '1,2': 2} w=+8 cr=12
+      construction: closure of pure 3-braid [1, 1, 2, 2, 2, 1, 1, -2, 2, 1, 1, -2]
+      <D> = -A^-24 + 3*A^-20 - 4*A^-16 + 6*A^-12 - 6*A^-8 + 6*A^-4 - 4 + 4*A^4 - A^8 + A^12
+      V   = t^3 - t^4 + 4*t^5 - 4*t^6 + 6*t^7 - 6*t^8 + 6*t^9 - 4*t^10 + 3*t^11 - t^12
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [24, 9, 15, 8], [9, 16, 10, 15], [16, 11, 17, 10], [17, 3, 18, 2], [3, 19, 4, 18], [19, 11, 20, 12], [20, 13, 21, 12], [21, 5, 22, 4], [5, 23, 6, 22], [23, 13, 24, 14]]
+      snappy identify: ['o10_146816(0,0)(0,0)(0,0)', '9^3_5(0,0)(0,0)(0,0)', 'L9a48(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L9a48*']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 2): A12^1 A13^2 A23^-1 comps=3 det=12 lk={'0,1': 1, '0,2': -1, '1,2': 2} w=+4 cr=12
+      construction: closure of pure 3-braid [1, 1, 2, 1, 1, -2, 2, 1, 1, -2, -2, -2]
+      <D> = A^-16 - A^-12 + 2*A^-8 - 2*A^-4 + 3 - A^4 + 2*A^8
+      V   = 2*t - t^2 + 3*t^3 - 2*t^4 + 2*t^5 - t^6 + t^7
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [24, 9, 15, 8], [15, 3, 16, 2], [3, 17, 4, 16], [17, 9, 18, 10], [18, 11, 19, 10], [19, 5, 20, 4], [5, 21, 6, 20], [21, 11, 22, 12], [12, 22, 13, 23], [23, 13, 24, 14]]
+      snappy identify: ['s776(0,0)(0,0)(0,0)', '6^3_1(0,0)(0,0)(0,0)', 'L6a5(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L8n4']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 2): A12^1 A23^-1 A13^2 comps=3 det=20 lk={'0,1': 1, '0,2': -1, '1,2': 2} w=+4 cr=12
+      construction: closure of pure 3-braid [1, 1, -2, -2, 2, 1, 1, -2, 2, 1, 1, -2]
+      <D> = A^-20 - 2*A^-16 + 3*A^-12 - 3*A^-8 + 4*A^-4 - 2 + 3*A^4 - A^8 + A^12
+      V   = 1 - t + 3*t^2 - 2*t^3 + 4*t^4 - 3*t^5 + 3*t^6 - 2*t^7 + t^8
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [8, 24, 9, 15], [15, 9, 16, 10], [16, 11, 17, 10], [17, 3, 18, 2], [3, 19, 4, 18], [19, 11, 20, 12], [20, 13, 21, 12], [21, 5, 22, 4], [5, 23, 6, 22], [23, 13, 24, 14]]
+      snappy identify: ['v3383(0,0)(0,0)(0,0)', '8^3_1(0,0)(0,0)(0,0)', 'L8a18(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L8a18*', 'L10n68']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 2): A12^1 A23^1 A13^-2 comps=3 det=28 lk={'0,1': 1, '0,2': 1, '1,2': -2} w=+0 cr=12
+      construction: closure of pure 3-braid [1, 1, 2, 2, 2, -1, -1, -2, 2, -1, -1, -2]
+      <D> = A^-16 - 2*A^-12 + 4*A^-8 - 4*A^-4 + 6 - 4*A^4 + 4*A^8 - 2*A^12 + A^16
+      V   = t^-4 - 2*t^-3 + 4*t^-2 - 4*t^-1 + 6 - 4*t + 4*t^2 - 2*t^3 + t^4
+      PD  = [[14, 1, 7, 6], [1, 8, 2, 7], [24, 9, 15, 8], [9, 16, 10, 15], [16, 11, 17, 10], [2, 17, 3, 18], [18, 3, 19, 4], [19, 11, 20, 12], [20, 13, 21, 12], [4, 21, 5, 22], [22, 5, 23, 6], [23, 13, 24, 14]]
+      snappy identify: ['o9_44098(0,0)(0,0)(0,0)', '8^3_2(0,0)(0,0)(0,0)', 'L8a17(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L8a17']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 1): A12^1 A13^1 A23^1 comps=3 det=4 lk={'0,1': 1, '0,2': 1, '1,2': 1} w=+6 cr=8
+      construction: closure of pure 3-braid [1, 1, 2, 1, 1, -2, 2, 2]
+      <D> = 2*A^-6 + A^2 + A^10
+      V   = t^2 + t^4 + 2*t^6
+      PD  = [[10, 1, 5, 4], [1, 6, 2, 5], [16, 7, 11, 6], [11, 3, 12, 2], [3, 13, 4, 12], [13, 7, 14, 8], [14, 9, 15, 8], [9, 16, 10, 15]]
+      bracket equals table link(s): ['L6n1']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 1): A12^1 A23^1 A13^1 comps=3 det=20 lk={'0,1': 1, '0,2': 1, '1,2': 1} w=+6 cr=8
+      construction: closure of pure 3-braid [1, 1, 2, 2, 2, 1, 1, -2]
+      <D> = -A^-18 + 3*A^-14 - 3*A^-10 + 4*A^-6 - 3*A^-2 + 4*A^2 - A^6 + A^10
+      V   = t^2 - t^3 + 4*t^4 - 3*t^5 + 4*t^6 - 3*t^7 + 3*t^8 - t^9
+      PD  = [[10, 1, 5, 4], [1, 6, 2, 5], [16, 7, 11, 6], [7, 12, 8, 11], [12, 9, 13, 8], [13, 3, 14, 2], [3, 15, 4, 14], [15, 9, 16, 10]]
+      snappy identify: ['t12711(0,0)(0,0)(0,0)', '7^3_1(0,0)(0,0)(0,0)', 'L7a7(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L7a7*']
+      MATCHES C00*: none
+fingers |lk|=(1, 1, 1): A12^1 A23^-1 A13^1 comps=3 det=12 lk={'0,1': 1, '0,2': -1, '1,2': 1} w=+2 cr=8
+      construction: closure of pure 3-braid [1, 1, -2, -2, 2, 1, 1, -2]
+      <D> = A^-14 - 2*A^-10 + 3*A^-6 - A^-2 + 3*A^2 - A^6 + A^10
+      V   = t^-1 - 1 + 3*t - t^2 + 3*t^3 - 2*t^4 + t^5
+      PD  = [[10, 1, 5, 4], [1, 6, 2, 5], [6, 16, 7, 11], [11, 7, 12, 8], [12, 9, 13, 8], [13, 3, 14, 2], [3, 15, 4, 14], [15, 9, 16, 10]]
+      snappy identify: ['s776(0,0)(0,0)(0,0)', '6^3_1(0,0)(0,0)(0,0)', 'L6a5(0,0)(0,0)(0,0)']
+      bracket equals table link(s): ['L6a5*']
+      MATCHES C00*: none
+L2a1 # L4a1                        comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+L2a1 # L4a1*                       comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+L2a1* # L4a1                       comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+L2a1* # L4a1*                      comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+      mirror MATCHES C00*: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6, 'A_power_mod4': 2, 'in_main_twelve': True}]
+L2a1 # L7n1                        comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = A^-13 - A^-9 + A^-5 - 2*A^-1 - 2*A^7 - A^15
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+L2a1 # L7n1*                       comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = -A^-15 - 2*A^-7 - 2*A + A^5 - A^9 + A^13
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+L2a1* # L7n1                       comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = A^-13 - A^-9 + A^-5 - 2*A^-1 - 2*A^7 - A^15
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+L2a1* # L7n1*                      comps=3 det=8
+      construction: product of brackets (connected sum along any components)
+      <D> = -A^-15 - 2*A^-7 - 2*A + A^5 - A^9 + A^13
+      bracket equals table link(s): none (not a prime link bracket in the table)
+      MATCHES C00*: none
+
+--- table links named in the task (from table_scan.json) ---
+L6a4     det=16 lk={'0,1': 0, '0,2': 0, '1,2': 0} <D>=-A^-12 + 3*A^-8 - 2*A^-4 + 4 - 2*A^4 + 3*A^8 - A^12 V=-t^-3 + 3*t^-2 - 2*t^-1 + 4 - 2*t + 3*t^2 - t^3 matches=none
+L6a5     det=12 lk={'0,1': 1, '0,2': 1, '1,2': 1} <D>=A^-10 - A^-6 + 3*A^-2 - A^2 + 3*A^6 - 2*A^10 + A^14 V=t - 2*t^2 + 3*t^3 - t^4 + 3*t^5 - t^6 + t^7 matches=none
+L6n1     det=4 lk={'0,1': 1, '0,2': -1, '1,2': -1} <D>=2*A^-6 + A^2 + A^10 V=t^-4 + t^-2 + 2 matches=none
+
+2-component prime links used for the composite scan: ['L2a1(det 2)', 'L4a1(det 4)', 'L5a1(det 8)', 'L6a1(det 12)', 'L6a2(det 10)', 'L6a3(det 6)', 'L7a1(det 24)', 'L7a2(det 20)', 'L7a3(det 16)', 'L7a4(det 16)', 'L7a5(det 18)', 'L7a6(det 14)', 'L7n1(det 4)', 'L7n2(det 8)', 'L8a1(det 40)', 'L8a2(det 32)', 'L8a3(det 28)', 'L8a4(det 32)', 'L8a5(det 28)', 'L8a6(det 20)', 'L8a7(det 36)', 'L8a8(det 30)', 'L8a9(det 34)', 'L8a10(det 26)', 'L8a11(det 22)', 'L8a12(det 16)', 'L8a13(det 24)', 'L8a14(det 8)', 'L8n1(det 12)', 'L8n2(det 8)']
+
+Candidates whose bracket (or mirror) matches some C00*(m, eps): ['T(2,+4) # Hopf[+]', 'T(2,+4) # Hopf[-]', 'T(2,-4) # Hopf[+]', 'T(2,-4) # Hopf[-]', 'T(2,4) + unknot: sigma_1^4 A13', 'L2a1 # L4a1', 'L2a1 # L4a1*', 'L2a1* # L4a1', 'L2a1* # L4a1*']

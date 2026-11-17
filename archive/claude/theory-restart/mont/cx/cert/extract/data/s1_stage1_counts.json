@@ -1,0 +1,44 @@
+{
+ "rehits": 76584,
+ "distinct_words": 76584,
+ "status_distinct": {
+  "CERT_c_empty": 68481,
+  "CERT_a_TS24": 8045,
+  "UNRESOLVED": 58
+ },
+ "status_by_depth_rehits": {
+  "1": {
+   "CERT_c_empty": 4
+  },
+  "2": {
+   "CERT_a_TS24": 2,
+   "CERT_c_empty": 8
+  },
+  "3": {
+   "CERT_a_TS24": 8,
+   "CERT_c_empty": 44
+  },
+  "4": {
+   "CERT_c_empty": 186,
+   "CERT_a_TS24": 36
+  },
+  "5": {
+   "CERT_a_TS24": 126,
+   "CERT_c_empty": 750
+  },
+  "6": {
+   "CERT_a_TS24": 471,
+   "CERT_c_empty": 3059
+  },
+  "7": {
+   "CERT_a_TS24": 1673,
+   "CERT_c_empty": 12555,
+   "UNRESOLVED": 8
+  },
+  "8": {
+   "CERT_a_TS24": 5729,
+   "CERT_c_empty": 51875,
+   "UNRESOLVED": 50
+  }
+ }
+}

@@ -1,0 +1,247 @@
+JONES UNKNOT INVESTIGATION: A STRUCTURAL SATELLITE RESULT
+31 October 2026
+
+Status: the general unknot-detection problem remains unresolved in this
+investigation. This note proves a restriction on a proposed method of attack.
+It does not prove Jones unknot detection or exhibit a counterexample. No claim
+of novelty is made; the argument is a deduction from standard skein and
+colored-Jones formulas, checked independently during this pass.
+
+1. THE RESULT
+
+A satellite construction fixes a knot-shaped pattern P inside a solid torus,
+then ties that torus around an input knot K. The companion longitude is always
+zero-framed. Let w be the algebraic winding number of P.
+
+Suppose one rational function f, with coefficients depending on the polynomial
+variable q but not on K, satisfies
+
+                      V_{P(K)}(q) = f(V_K(q))
+
+for every knot K at which the expression is defined. Then:
+
+  * If w is even, f is constant.
+  * If w is odd, f(X) = c(q) X for some fixed c(q).
+
+If P sends the unknot U to U, these alternatives are f = 1 and f(X) = X.
+In particular, no fixed satellite pattern can universally square the ordinary
+Jones polynomial. No winding-zero pattern can universally preserve it.
+
+In fact, a finite linear combination of colored Jones polynomials can be a
+rational function of any ONE fixed color only when that function is affine.
+This last statement concerns algebraic dependence, not the topology of the
+pattern.
+
+2. WHY THIS MATTERS FOR A PROOF ATTEMPT
+
+One proposed reduction was to turn an arbitrary hypothetical Jones-one knot
+into a ribbon knot, or a ribbon knot with a single fusion band, while retaining
+its Jones information. These classes have additional geometric and homological
+structure that might make detection easier.
+
+Any fixed satellite P that produces a slice knot for EVERY companion has
+winding zero. Indeed, Litherland's signature formula gives
+
+  sigma_{P(K)}(omega) = sigma_{P(U)}(omega) + sigma_K(omega^w).
+
+If w is nonzero, choose K to be a trefoil and a regular omega for which the
+last term is nonzero. Since both P(U) and P(K) would be slice, their signatures
+vanish, a contradiction. Ribbon knots are slice, so this applies to universal
+ribbon constructions as well.
+
+Combining this fact with Section 1 rules out any such fixed construction with
+a NONCONSTANT universal rational rule for its ordinary Jones polynomial.
+This includes exact preservation V_{P(K)} = V_K and squaring V_{P(K)} = V_K^2.
+
+The weaker implication
+
+                 V_K = 1  ==>  V_{P(K)} = 1
+
+is NOT excluded. It makes a claim only on one fiber of the invariant, whereas
+the theorem assumes an identity for all companions. A reduction also needs
+nontriviality to survive: a pattern that always gives U is of no use. Nor does
+a constant annular skein expression prove that its pattern is geometrically
+trivial. Constructions depending on K, or using K and its mirror as separate
+inputs, lie outside the fixed one-companion argument.
+
+3. PROOF BY TWO COEFFICIENTS
+
+Use reduced zero-framed colored Jones polynomials H_N, normalized by
+H_N(U) = 1, H_1 = 1, and H_2 = V. Work over F = Q(q^(1/4)).
+
+The Kauffman bracket skein of the solid torus is F[z]. Its Chebyshev basis
+S_j(z) evaluates on a companion to the color j+1 invariant, up to a quantum
+dimension absorbed in its coefficient. Thus every fixed pattern has a finite
+expansion
+
+                    V_{P(K)} = sum_j c_j(q) H_{j+1}(K).
+
+Smoothing preserves homology modulo two. Therefore c_j = 0 unless j and w
+have the same parity. The zero-framing convention makes these coefficients
+independent of the companion.
+
+Test the identity on the two-strand torus knots K_m = T(2, 2m+1), choosing
+the chirality in the following standard formula. Set
+
+       [n] = (q^(n/2) - q^(-n/2))/(q^(1/2) - q^(-1/2)).
+
+Then
+
+  H_{j+1}(K_m)
+    = 1/[j+1] sum_{a=0}^j (-1)^(j-a) [2a+1]
+        q^((2m+1)(a(a+1)-j(j+2))/2).
+
+At m=0 this equals 1. At j=1, m=1 it gives q^-1 + q^-3 - q^-4.
+Changing chirality replaces q by q^-1 and leaves the proof unchanged.
+
+Write x = q^-m. The right side is a polynomial G_j(x) over F. For every
+j >= 1, its two highest powers of x have degrees
+
+                         j(j+2),   j(j+2)-2.
+
+The ratio of their coefficients, second divided by first, is always
+
+                              R = -q[3],
+
+independent of j and nonzero. Lower colors cannot change these two
+coefficients: the degree gap from color label j to j-1 is 2j+1 >= 3.
+In particular, G_1(x) = b x^3 + a x, with a/b = R.
+
+Our assumed identity implies the rational-function identity
+
+                         sum_j c_j G_j(x) = f(G_1(x)).
+
+To see this, clear denominators. The resulting polynomial vanishes at the
+infinitely many distinct elements x = q^-m of F, so it vanishes identically.
+
+First f must be polynomial. Write f = P/Q with coprime P,Q in F[X]. A Bezout
+identity remains valid after substituting G_1, so P(G_1) and Q(G_1) remain
+coprime. Since their quotient is polynomial, Q(G_1), hence Q, is constant.
+
+Let d > 0 be the degree of f, and J the largest color label with c_J != 0.
+Comparison of highest degrees gives
+
+                              3d = J(J+2).
+
+On the left, the ratio of the next relevant coefficient to the leading one
+is R. On the right it is dR: one chooses the a x term in exactly one of d
+factors of (b x^3 + a x)^d. Lower powers of G_1 have degree at most 3d-3,
+so they cannot affect this comparison. Therefore R = dR, forcing d = 1
+and then J = 1. The distinct leading degrees of the remaining G_j imply
+
+                             f(X) = c_0 + c_1 X.
+
+Parity eliminates c_1 for even winding and c_0 for odd winding. If f was
+constant initially, the same distinct-degree argument eliminates all
+positive color labels. This proves the stated result.
+
+Replacing G_1 by G_s, s >= 1, gives the single-color extension: its leading
+degree is s(s+2) >= 3 and its coefficient ratio is the same R. The comparison
+again forces d=1, then J=s. Only H_1 and H_{s+1} can occur.
+
+4. OTHER CHECKED RESULTS FROM THIS PASS
+
+Unitarity does not supply the missing positivity. For the actual four-strand
+braids
+
+  beta_m = sigma_2^(2m) (sigma_1 sigma_2) sigma_2^(-2m) sigma_3^(-1),
+
+every closure is U: destabilize once, then conjugate to sigma_1 sigma_2.
+All have writhe 1 and identical full Jones polynomial. Nevertheless the
+two-component closure of beta_m^2 has linking number 2m, and, in t=A^-4,
+
+                 (d/dA) V_{closure(beta_m^2)}(1) = 24m.
+
+Thus even the entire first Jones trace does not bound higher trace moments
+at fixed strand number and writhe. These representatives are not minimal;
+the example does not disprove a special theorem about minimal Jones-one
+representatives, and is not a counterexample to unknot detection.
+
+Mirror doubling retains cancellations. If e_j and o_j are the even and odd
+homological dimensions of reduced rational Khovanov homology at quantum
+degree j, the quantum-degree-zero part of the mirror double has
+
+  Euler coefficient E_0 = sum_j (e_j-o_j)^2,
+  actual dimension  D_0 = sum_j (e_j+o_j)^2.
+
+Their difference is 4 sum_j e_j o_j. Jones supplies E_0, not D_0. Actual
+knots 5_1 and mirror(10_132) have the same Jones polynomial but reduced
+ranks 5 and 11. Their mirror doubles have ranks 25 and 121, respectively,
+while retaining equal Jones polynomials. The two D_0 values are 5 and 21;
+both E_0 values are 5.
+
+Twist sampling needs geometric control. Two actual unknot members of a
+single antiparallel two-strand full-twist family force all members to be
+unknots. But three unknot samples do not suffice for arbitrary coupled
+twist parameters. With a=sigma_1, b=sigma_2 and [x,y]=xyx^-1y^-1, the family
+
+                [a^(2n), [b^(2(n-1)), a^(2(n-2))]] ab
+
+closes to U at n=0,1,2, yet has determinant
+
+       |1 + 8n(n-1)(n-2)[8(n-1)^2(n-2) + 6n - 8]| > 1
+
+for every n>=3. The n=3 determinant is 2017. This family does NOT have
+constant Jones polynomial; it refutes sampling alone as a certificate.
+
+5. REMAINING RESEARCH TARGET AND LITERATURE CHECK
+
+The best geometric lead in this pass is a constrained banded-link question:
+if a two-component link has the unlink's Jones polynomial and an oriented
+band turns it into an actual unknot, must that link be split? A positive
+answer would settle a particular unknot-anchored twist-family problem.
+Known split-band theorems supply the subsequent geometric conclusion.
+Neither the splitness assertion nor a reduction of arbitrary knots to this
+case has been proved here.
+
+Khovanov multicurve theory restricts a tangle with an unknot closure to one
+rational component and special components of a common slope. The cited
+proof uses homology dimensions and gradings. Its deductions cannot simply
+be transferred to Jones Euler characteristics. Formally, a special sector
+C together with its homological shift C[1] cancels under every Euler pairing;
+no assertion that such a sector is realized by a classical tangle is made.
+Geometric realizability is an additional question, not an algebraic detail.
+
+Carmi--Cohen's arXiv record remains v1 as checked on 31 October 2026. The
+earlier identified failure of simultaneous uniform diagrammatic control is
+not repaired by the finite-channel twist formula: that formula leaves an
+uncontrolled second channel. No validated generic proof was found here.
+
+A separate September 2026 revision by Bharathram, Birman and Brendle claims
+faithfulness of the four-strand Burau representation. Its stated corollary
+concerns the Jones representation, not detection by the scalar Jones
+polynomial of a closure. This pass inspected the claim and its parity
+strategy, but did not independently verify the entire 28-page proof.
+
+6. SOURCES AND VERIFICATION
+
+Morton, The coloured Jones function and Alexander polynomial for torus
+knots, Math. Proc. Cambridge Philos. Soc. 117 (1995), 129-135, Sections 2-3:
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+
+Garoufalidis, The Jones slopes of a knot, Quantum Topology 2 (2011),
+43-69, Section 4.8, equation (26):
+https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_jones_slopes_of_a_knot.pdf
+
+Litherland, Signatures of iterated torus knots, Theorem 2:
+https://www.maths.ed.ac.uk/~v1ranick/papers/litherland.pdf
+
+Taylor, Boring split links, Pacific Journal of Mathematics 241 (2009),
+127-167, especially p.129 and Theorem 7.3:
+https://msp.org/pjm/2009/241-1/pjm-v241-n1-p04-s.pdf
+
+Kotelskiy, Lidman, Moore, Watson and Zibrowius, Cosmetic operations and
+Khovanov multicurves, Math. Ann. 389 (2024), 2903-2930, Section 4:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/
+
+Carmi and Cohen, On trivial Jones--Vassiliev polynomials:
+https://arxiv.org/abs/2606.22410
+
+Bharathram, Birman and Brendle, The Burau representation of the braid group
+is faithful for n=4, preprint v2:
+https://arxiv.org/abs/2607.05283
+
+The companion evidence archive contains full derivations, exact Laurent
+polynomials, the two selected KnotInfo inputs, independent matrix checks,
+and reproducible arithmetic scripts. Finite checks validate conventions
+and examples; the unbounded claims above follow from the supplied proofs.

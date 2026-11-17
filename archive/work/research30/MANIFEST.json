@@ -1,0 +1,38 @@
+{
+  "README.txt": {
+    "bytes": 2260,
+    "sha256": "8e0be519af5789c5eb4b125cbb5be4279c2ff010582eda080134344154707aea"
+  },
+  "projective_global_scaffold.txt": {
+    "bytes": 10943,
+    "sha256": "768d1473d8f3751c2e60126536e90b9df3bd4777f4c793b24dbd211790dbeac2"
+  },
+  "projective_templates.txt": {
+    "bytes": 6949,
+    "sha256": "2283785af2d5a9533a8eca7033c343d1657b63b56841b2122749dae0d7c7c811"
+  },
+  "projective_dual_systole_audit.txt": {
+    "bytes": 5756,
+    "sha256": "f2402c67d5b9e830d96d3cad16e409a9c55e8a9781d01ec2f05b05577d6add25"
+  },
+  "projective_final_audit.txt": {
+    "bytes": 2120,
+    "sha256": "0596256e388e048fcdfc15e37ce6ca5f5e6705740bb57f75e5e8c9c443f3b1b0"
+  },
+  "homology_global.txt": {
+    "bytes": 8484,
+    "sha256": "eff4b76b46f28477849a2b537b1916368c11719a05c4bd6668aaa26b9f08f347"
+  },
+  "braid_global.txt": {
+    "bytes": 10557,
+    "sha256": "c519b3e9e6470590f6f6b26b01d6eb5e1eaa5582935fe31398469cc051329fa6"
+  },
+  "ribbon_satellite.txt": {
+    "bytes": 3640,
+    "sha256": "181ec85548dd6a9245cf855c436ab0ad5ace5819a8959f796515e6f34da0c04c"
+  },
+  "fixed_jones_volume_check.txt": {
+    "bytes": 2151,
+    "sha256": "38f5f9884b7a6d9640d198ed5d61c1661638fd210ad61d461b57ca1002d07b78"
+  }
+}

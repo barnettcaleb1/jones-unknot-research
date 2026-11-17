@@ -1,0 +1,45 @@
+{
+  "braids": {
+    "5_1": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "10_132": [
+      -1,
+      2,
+      -3,
+      -2,
+      3,
+      -4,
+      3,
+      -2,
+      1,
+      -3,
+      2,
+      -3,
+      4,
+      -3,
+      -3,
+      -2
+    ]
+  },
+  "ordinary_Jones_in_A": {
+    "16": 1,
+    "20": -1,
+    "24": 1,
+    "28": -1,
+    "8": 1
+  },
+  "ordinary_Jones_equal": true,
+  "quantum_group_parameter_q": 2,
+  "spin_one_values": {
+    "5_1": "208357048576",
+    "10_132": "12565016366179/4"
+  },
+  "difference": "-11731588171875/4",
+  "normalization_checks": "Unknot, both two-strand Markov stabilizations, two three-strand unknot presentations, and positive/negative stabilization of the nontrivial five-braid.",
+  "conclusion": "Ordinary Jones equality does not imply equality of the three-dimensional colored Jones or of zero-framed two-parallel Jones polynomials."
+}

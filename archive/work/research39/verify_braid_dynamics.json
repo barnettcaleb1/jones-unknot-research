@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "proof_type": "symbolic identity over Z[m,lambda], not interpolation",
+  "matrix_word_identity": true,
+  "characteristic_polynomial": "(lambda-1)^2*(lambda^2-(4*m^2-2*m+2)*lambda+1)",
+  "expanded_terms": [
+    {
+      "m_power": 0,
+      "lambda_power": 0,
+      "coefficient": 1
+    },
+    {
+      "m_power": 0,
+      "lambda_power": 1,
+      "coefficient": -4
+    },
+    {
+      "m_power": 0,
+      "lambda_power": 2,
+      "coefficient": 6
+    },
+    {
+      "m_power": 0,
+      "lambda_power": 3,
+      "coefficient": -4
+    },
+    {
+      "m_power": 0,
+      "lambda_power": 4,
+      "coefficient": 1
+    },
+    {
+      "m_power": 1,
+      "lambda_power": 1,
+      "coefficient": 2
+    },
+    {
+      "m_power": 1,
+      "lambda_power": 2,
+      "coefficient": -4
+    },
+    {
+      "m_power": 1,
+      "lambda_power": 3,
+      "coefficient": 2
+    },
+    {
+      "m_power": 2,
+      "lambda_power": 1,
+      "coefficient": -4
+    },
+    {
+      "m_power": 2,
+      "lambda_power": 2,
+      "coefficient": 8
+    },
+    {
+      "m_power": 2,
+      "lambda_power": 3,
+      "coefficient": -4
+    }
+  ],
+  "topology": "Every braid closure is U by one destabilization and conjugation.",
+  "entropy": "Burau spectral-radius lower bound tends to infinity."
+}

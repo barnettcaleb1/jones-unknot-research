@@ -1,0 +1,128 @@
+INDEPENDENT AUDIT OF THE ONE-SPECIAL-COMPONENT BN OBSTRUCTION
+2026-10-31. Verdict: no gap found in the restricted theorem.
+
+Audited statement: an actual classical U-infinity-anchored four-ended tangle,
+in the preferred zero-surgery parametrization, with reduced F_2 Kh multicurve
+exactly r_1(s) union s_(4n)(infinity), n>=1, cannot have zero filling whose
+Jones polynomial equals that of the two-component unlink. The components
+have the standard rank-one local systems and multiplicity one. Length uses
+the published KWZ2022 convention. No assertion about multiple special
+components or general Jones unknot detection follows.
+
+Full proof being audited:
+../homology/one_special_bn_obstruction.txt
+
+1. INPUT SHAPES
+
+The primary published KWZ paper, Theorem 2.3 and Lemma 2.5, specifies the Kh
+component classification and the pairing with s_(4n)(infinity), including
+the relative bigradings. The displayed base pairs (q,h) are
+(-5,-2),(-1,0),(1,1),(5,3); successive blocks are shifted by (8,4).
+Consequently the special sector is thin, with no repeated q-exponents and
+with a unique top h and no generator one h-degree below its top.
+
+The determinant-zero condition of the preferred zero filling forces |s|=4n:
+the special sector has determinant magnitude 4n, whereas the rational
+sector has magnitude |s| (zero when s=0). This does not claim a stronger
+absolute grading calibration than the source supplies. Put k=4n.
+
+After choosing the chirality of the whole tangle and allowing arbitrary
+bigrading shifts, the rational reduced Kh sector has one generator
+    (q,h)=(2j+1,j),  j=0,...,k-2,k.
+This is the thin alternating two-strand torus-link sector. The chosen
+chirality is legitimate because the reflected special-sector shape agrees
+with its original shape up to a shift. Its two ends both have q-gap four.
+
+The canonical Euler polynomials are
+ R= sum_(j=0)^(k-2) (-1)^j Q^(2j+1)+Q^(2k+1),
+ E= Q^-1(1+Q^4)(1-Q^6) sum_(i=0)^(n-1)Q^(8i).
+Their extremes are:
+             bottom     next bottom     top       preceding top
+ R              1            3          2k+1         2k-3
+ E             -1            3          2k+1         2k-3.
+The top coefficients are respectively +1 and -1. Direct summation gives
+R+E=Q+Q^-1. Thus Euler cancellation alone is possible; the BN step is essential.
+
+2. INDEPENDENT DERIVATION OF THE SHIFT UNIQUENESS
+
+Suppose epsilon Q^a R+eta Q^b E=Q+Q^-1, with arbitrary monomial shifts
+a,b and signs epsilon,eta. If a!=b, the larger of a+2k+1 and b+2k+1 is
+uncanceled and must equal 1. Each sector's width exceeds two, so their
+bottoms lie below -1 and must cancel. Therefore a+1=b-1, or b=a+2.
+The E top is larger, forcing b=-2k and a=-2k-2. The common bottom is
+-2k-1, but the next R term occurs at -2k+1, before the next E term.
+It cannot cancel and is below -1 because k>=4. Contradiction.
+
+Thus a=b. Unless epsilon=eta, the common top coefficient is +/-2,
+incompatible with the right side. With epsilon=eta the identity R+E
+forces a=b=0 and epsilon=eta=+1.
+
+This argument checks all shifts, not merely a finite box of possibilities.
+The Euler signs determine that the rational top has even h and the special
+top has odd h; their actual integer h-shifts otherwise remain unrestricted.
+
+3. PERMANENT TOP CLASS
+
+Both top classes occur at the same q=2k+1, but their h parities differ,
+so their h degrees differ. Let H be the larger. Exactly one generator has
+h=H, and there are no generators above it. There is therefore no outgoing
+differential with h-degree +1. There is no possible incoming source in its
+own sector because that sector has a gap at H-1. The other sector can have
+a source at H-1 only if its own top is H-1; in that case its unique such
+generator has the same q as the target. It cannot support a differential
+that strictly raises q. The top class consequently survives all pages.
+
+This is a support argument on every page, not an assumption that the
+spectral sequence preserves the direct-sum sectors. Cross-sector maps
+are allowed and are excluded only at this particular class by their degrees.
+
+4. THE ACTUAL REDUCED BN TARGET
+
+Turner, Calculating Bar-Natan's characteristic two Khovanov homology,
+arXiv:math/0411225v3, Theorems 3.1 and 3.2 and section 3.3, gives the
+filtered characteristic-two deformation. The section 3.2 filtration yields
+d_r of degree (h,q)=(1,2r), r>=1. This has the required positive q shift.
+The unreduced homology has one class per orientation, with h degree twice
+the linking between reversed components and their complement.
+
+For the reduced link version, the specialized algebra is
+F_2[x]/(x^2=x), with orthogonal idempotents x and 1+x. Reduction at the
+basepoint by x=0 selects one idempotent, retaining exactly one orientation
+class from each globally reversed pair. For two components the two remaining
+classes have h degrees 0 and 2 lk(L). This operation is a filtered reduction
+whose associated graded is ordinary reduced Kh. No extra h shift is introduced.
+Turner's introduction explicitly mentions extension to reduced link homology,
+although section 3.3's heading focuses on knots; the idempotent argument
+verifies the needed link assertion without relying on that heading.
+
+Jones equality with the two-component unlink forces two components by
+V_L(1)=(-2)^(components-1), and forces lk=0 because for a two-component
+link V_L'(1)=-3 lk(L) in the usual convention. Hence the reduced BN limit
+is rank two entirely in h=0.
+
+The permanent top class contradicts this target if H!=0. If H=0, the
+initial page has only one generator in h=0, so its subquotient limit cannot
+have dimension two there. Thus this second case is also excluded.
+
+5. HYPOTHESES THAT MUST REMAIN EXPLICIT
+
+The rank-one and single-special assumptions are substantive. Additional
+components may provide incoming classes or a second class at maximal h.
+The integer s and the shape of the special sector come from the actual
+unknot anchor in preferred framing; this is not a theorem about arbitrary
+formal pairs of curve types. Length divisibility by four is assumed, not
+deduced from the general geography classification. Absolute grading shifts
+are not assumed and are not needed.
+
+PRIMARY SOURCES INSPECTED
+https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+Kotelskiy--Watson--Zibrowius, Khovanov homology and strong inversions,
+Open Book Series 5 (2022), 223--244, especially Lemma 2.5 and pp225,236.
+https://arxiv.org/pdf/math/0411225
+Turner, Calculating Bar-Natan's characteristic two Khovanov homology,
+v3, sections 3.1--3.3. The canonical idempotent computation is on pp5--6.
+
+CONCLUSION
+The previously displayed formal Euler cancellation is excluded from actual
+link realization with these exact two sectors. This is a valid restricted
+positive obstruction, rather than a general Jones detection theorem.

@@ -1,0 +1,65 @@
+PROPERTY R CERTIFICATES: PROVENANCE AND SCOPE OF THE PD BUG
+2026-11-03. Archive-only check; no recognition or simplification rerun.
+
+Answer: YES, all 288 Property R certificates used the old closure helper.
+However, NONE of those 288 is affected by the crossing-free-component bug.
+No rerun is needed solely to repair that bug, and it does not require
+withdrawing the count of 288. This is not an independent audit of Property R
+or of the saved simplification claims.
+
+PROVENANCE
+
+The 288 records with classification "split_certified_property_R" in
+work/width6/topology_results.json have 576 closure records. Every closure
+has the old six-field schema:
+  PD, Jones, components, simplified_components, simplified_crossings,
+  unknot_certified.
+None has restored_crossing_free_components, added by the fixed helper.
+
+Local file modification times (America/Chicago):
+  topology_results.json  2026-11-03 00:18:59 -06:00
+  topology_batch.py      2026-11-03 00:20:03 -06:00
+  probe.py (fixed)       2026-11-03 02:52:50 -06:00
+
+topology_batch.py calls probe.closure_checks and accepts the Property R
+certificate only when the saved N closure simplifies to zero crossings
+and two components and the saved D closure simplifies to zero crossings
+and one component. The old helper omitted components not represented in PD.
+
+WHY THESE RECORDS ARE UNAFFECTED
+
+1. Independently reconstruct the 12-vertex incidence graph from each saved
+   braid word and its cap/cup state indices. A positive or negative braid
+   generator swaps the same two endpoint labels; add the cap edges above
+   and cup edges below. In all 288 cases this gives exactly two proper arcs,
+   no closed components, and endpoint pairing (01)(23). This independently
+   agrees with the archived geometry fields.
+
+2. For this two-arc connectivity, the numerator matching (01)(23) gives
+   exactly TWO actual link components. The denominator matching (02)(13)
+   gives exactly ONE actual link component. These are elementary incidence
+   counts; no knot recognition is involved.
+
+3. Count components represented by each saved PD directly: create one
+   vertex for every arc label and join opposite entries (row[0],row[2])
+   and (row[1],row[3]) at each crossing. Count the resulting connected
+   components. In all 288 numerator PDs this is two; in all 288 denominator
+   PDs this is one. No saved PD is empty. These counts also agree with the
+   saved pre-simplification component counts.
+
+Consequently the PD already contains every actual closure component in
+all 576 relevant closures. The fixed helper would add zero crossing-free
+components. The omitted-component bug cannot change these diagrams or
+their saved recognition conclusions.
+
+CHECKS PERFORMED / NOT PERFORMED
+
+Performed only JSON/schema/timestamp reads, braid endpoint-permutation and
+cap incidence checks, and connected-component counts on saved PD labels.
+Did not call Regina, Spherogram, the current closure helper, an unknot
+recognizer, or a Reidemeister simplifier for these 288 records.
+Did not rerun topology_batch.py or mutate topology_results.json.
+
+This conclusion is limited to the 288 saved Property R cases. The helper
+bug is real and demonstrably affected other controls, including the
+two-component closure of beta=[2,4] described in the earlier handoff.

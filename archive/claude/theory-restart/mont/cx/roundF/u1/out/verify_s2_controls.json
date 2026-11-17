@@ -1,0 +1,18 @@
+{
+ "files": [
+  "out/cert_s2_controls.jsonl.gz"
+ ],
+ "records_total": 1883,
+ "sampled": 1883,
+ "fraction": 1.0,
+ "seed": 1,
+ "records_pass": 1883,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "rep|replay=True|a2=True": 1883
+ },
+ "status": {
+  "CERTIFIED_NONTRIVIAL": 1883
+ },
+ "secs": 2.5
+}

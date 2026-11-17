@@ -1,0 +1,43 @@
+INDEPENDENT AUDIT OF THE CONDITIONAL ACTUAL-REALIZATION CLAIM
+
+Audited work/proof13/homology/algebraic_realization.txt Section5 and the
+proposed consequence if its full bigraded object D is realized by ONE
+classical tangle. This audit is of the consequence, not of the A-infinity
+checker (which the braid agent is auditing) or of geometric realizability.
+
+Let X=s4(infinity), and suppose the Kh multicurve really is
+ r1(0) direct-sum X direct-sum q^2 h X direct-sum h X
+                 direct-sum q^2 h^2 X,
+with the specified relative bigradings, allowing one global overall shift.
+Additive rational pairing preserves these relative shifts. Therefore the
+special-sector Euler sum is E_X(1-q^2-1+q^2)=0 for every filling.
+
+At slope1, r1(0) pairs with a(1) to the rank1 homology of the corresponding
+rational unknot. Each X pairs to rank4. KWZ2022 Lemma2.5 computes rank4 at
+slope0; the proof of Lemma3.6/Figure8 identifies HF(a(n+1),X)->HF(a(n),X)
+as isomorphisms at positive integer fillings, and its conclusion identifies
+the stable pairing with HF(a(0),X). Thus the total rank is17. The direct sum
+of multicurve components remains a direct sum under the pairing, so there
+is no hidden cross-component differential to subtract from17.
+
+Framing-safe conclusion: any uncertainty from the ONE global bigrading
+shift or gluing normalization makes the ordinary Jones only a signed
+monomial, not necessarily visibly1. But for an actual nonempty link L,
+|V_L(1)|=2^(component_count-1), so a monomial forces L to be a knot. Then
+V_K(1)=1 and V'_K(1)=0 force that monomial to equal1. The reduced F2 Kh rank17
+proves that this knot is not the unknot.
+
+At infinity all special pairings vanish and the rational pairing has rank1.
+The same component-count argument first makes this a knot, and Khovanov
+unknot detection then identifies it as the actual unknot.
+
+Therefore geometric realization of this specific full bigraded object WOULD
+produce a genuine Jones-one counterexample. This deduction has no remaining
+absolute-framing assumption. It does require the given relative shifts to
+belong to a single geometric object; independent per-component shifts would
+change the statement and cannot be granted by realization terminology.
+
+Source checked directly from the locally extracted primary paper:
+Kotelskiy--Watson--Zibrowius, Khovanov homology and strong inversions,
+Open Book Series5(2022), Lemma2.5 and proof of Lemma3.6/Figure8:
+https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf

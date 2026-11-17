@@ -1,0 +1,66 @@
+SHORT WITNESS: EXACT FACTORS, ORDERS AND PAIR GROUPINGS
+Algebra-only clarification of Claude 20261103-030900.
+
+Use q (not s=sqrt(q)), h=1+qt, normal coordinate t=-q^-1(1+u), h=-u.
+Let
+  H=q^4(1-q)(1-t),
+  P=H h                       [saved regularized polynomial],
+  F=h P=H h^2                 [pairing for the divided Budney matrix],
+  c=-(1-t)h(q-1)^2 t^-2 q^-3,
+  L_raw=c F=q(q-1)^3(1-t)^2 t^-2 h^3.
+
+Thus over Q(q), the exact orders along the TL line are respectively
+  ord(P)=1, ord(F)=2, ord(L_raw)=3.
+In particular the saved P does NOT vanish to second order.
+
+The normal-coordinate expressions are
+  P = q^3(q-1)(q+1+u) u,
+  F = -q^3(q-1)(q+1+u) u^2,
+  L_raw = -q(q-1)^3 (q+1+u)^2/(1+u)^2 * u^3.
+Therefore
+  P'(0)=q^3(q^2-1) != 0,
+  F''(0)=-2q^3(q^2-1) != 0,
+  L_raw''(0)=0,
+  L_raw'''(0)=-6q(q-1)^3(q+1)^2 != 0.
+These are generic identities; q=+-1 are exceptional specializations.
+
+P has seven aggregated monomials (a,b,coefficient), meaning q^a t^b:
+  (4,0,+1), (4,1,-1), (5,0,-1), (5,1,+2),
+  (5,2,-1), (6,1,-1), (6,2,+1).
+This is eight signed monomial copies if the +2 term is split into two copies.
+An explicit h-pair grouping is
+  +(q^4     + q^5 t)
+  -(q^5     + q^6 t)
+  -(q^4 t   + q^5 t^2)
+  +(q^5 t   + q^6 t^2).
+Each pair has equal polynomial coefficient signs. After specialization,
+(-1)^b reverses the sign between its members, so its value is zero.
+Thus a geometric sign-reversing involution must distinguish intersection
+sign from the extra (-1)^b factor; these are not the same sign convention.
+
+The second grouping belongs to F=hP, not to P itself.
+For each seed epsilon*q^a*t^b in
+  H=q^4-q^5-q^4*t+q^5*t,
+F contains the four signed copies
+  epsilon * [q^a*t^b
+             +q^(a+1)*t^(b+1)
+             +q^(a+1)*t^(b+1)
+             +q^(a+2)*t^(b+2)].
+At t=-q^-1 these have common q-degree a-b and relative weights
+  1,-1,-1,1.
+Their zeroth sum is 0; their first normal-derivative sum is
+  b-(b+1)-(b+1)+(b+2)=0.
+Their second-derivative sum is
+  b(b-1)-2b(b+1)+(b+2)(b+1)=2,
+so the second derivative of F is NOT zero. Multiplication by c supplies
+one further h, giving the zero second derivative of the raw pairing.
+The raw h^3 expansion has binomial weights 1,-3,3,-1: moments of degrees
+0,1,2 vanish; the third falling-factorial moment does not.
+
+These groupings are exact polynomial identities, not geometric intersection
+pairings. The archived matrix calculation combines contributions before
+saving them. Polynomial divisibility does not identify an involution on the
+original geometric intersection set, and in general quotient coefficients
+can require cancellation between formal copies absent in the original set.
+The explicit trivial-tangle isotopy certifies a separating disk independently;
+no intersection-point involution realizing that disk was reconstructed.

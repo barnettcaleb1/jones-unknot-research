@@ -1,0 +1,181 @@
+WHOLE ORDINARY JONES DOES NOT BOUND COLOR-THREE SPAN
+1 November 2026 UTC. Bounded research deduction, not a priority claim.
+
+Outcome and complete proof scaffold
+
+There is an explicit family of actual knots K_m, m in Z, whose entire
+ordinary Jones polynomial is fixed, whereas the span of the reduced,
+zero-framed dimension-three colored Jones polynomial H3(K_m;t) is
+unbounded (indeed grows linearly in |m|). Its value at t=4 is also
+unbounded. The finite exact diagram calculations below are witnesses;
+local fusion proves the assertion for all integers, not extrapolation.
+
+Why this answers a global proof-route question: suppose ONE specified
+nonempty ordinary Jones fiber F had uniformly bounded H3 span. Choose
+J in that fiber. For any hypothetical V_K=1, all J#K^{#r} remain in F.
+Multiplicativity and Laurent span additivity force span H3(K)=0.
+H3(K;1)=1 and H3'(K;1)=0 then force H3(K)=1. Thus such a fiber bound
+would supply universal ordinary-to-color-three promotion. That promotion
+is only an intermediate step: an independently justified promotion to
+all colors and an all-colored unknot detector would still be required
+for a full proof. Neither is supplied by this pass.
+
+The universal version, 'every fixed ordinary Jones fiber has bounded
+H3 span,' is FALSE by the family below. Existence of some specially
+chosen bounded fiber is not disproved. Allowing the unspecified fiber
+to be the unit fiber merely repackages the promotion issue. This example
+does not falsify the separate proposed bounds on bridge number or
+ordinary Khovanov rank in a Jones fiber: its twisting template is fixed.
+No unbounded support-size or coefficient-norm assertion is made solely
+from unbounded span. The ordinary polynomial here is nonunit; this is
+neither a Jones-one counterexample nor an H3-one counterexample.
+
+Actual geometry and ordinary Jones constancy
+
+Use Watson's six-strand closure L_beta(T,U), Figure 7 of [W]. In braid
+word notation take
+
+ alpha = [1,1,1,-2,1],
+ beta  = [1,1,1,-2,1,-5,-5,-5,4,-5],
+ K_m   = L_beta(<2m>,<-2m>).
+
+The fixed braid is i0(alpha)i3(s(alpha)), where s(sigma1)=sigma2^-1,
+s(sigma2)=sigma1^-1. Top and bottom outside caps connect ports 1 and 6;
+the four ports of each integer tangle occupy positions 2,3,4,5.
+The exact executable endcap construction is in verify_colored_family.py.
+
+[W] Section 8 gives this exact beta, identifies L_beta(0,0) with
+5_2#mirror(5_2), and places its evaluation matrix in the form of
+Proposition 5.1. That matrix is invariant under opposite twists;
+Lemma 5.2 supplies Jones constancy when the writhe is unchanged.
+Our even twists are pure, so every K_m has the same connectivity as
+K_0 and is a knot. Endpoint orientations do not change with m. The
+variable writhe contributions are opposite linear functions, while the
+fixed mirrored braid has writhe zero. Thus total writhe is zero for
+all integers, including negative m. The raw m=0,1 diagram checks
+calibrate this orientation convention; the linearity proves all m.
+Consequently
+
+ V(K_m;t) = -t^5+2t^4-4t^3+6t^2-7t+9
+            -7t^-1+6t^-2-4t^-3+2t^-4-t^-5.                 (1)
+
+Exact color-three witness and framing
+
+Set x=sqrt(t), delta=-(x+x^-1), Delta2=x^2+1+x^-2. For the actual
+Seifert-framed two-parallel C_m of K_m, color decomposition gives
+
+ H3(K_m;t) = (delta V(C_m;x)-1)/Delta2.                    (2)
+
+The program explicitly calls Regina's Framing.Seifert, rather than
+assuming a blackboard parallel is zero framed. Equation (2) follows
+from V_fundamental tensor V_fundamental = V_trivial plus V_dimension3.
+The unknot test gives (delta^2-1)/Delta2=1. Normalized fixed-color Jones
+has H3(1)=1 and H3'(1)=0; the latter also follows from the absence of
+nonconstant order-one finite-type knot invariants.
+
+Eight stored actual PD diagrams, m=0,...,7, were regenerated and their
+whole two-parallel Jones polynomials computed exactly. The minimal
+witness consists of m=0 and m=1:
+
+ H3(K_0;4) = 648962362809961849/1073741824,
+ H3(K_1;4) = 27171282052396757/33554432.
+
+The polynomials are unequal. Their t-spans for m=0,...,7 are
+30,28,37,45,53,61,69,77. These numbers alone are not the growth proof.
+Full Laurent coefficients are in colored_family_certificate.json and
+watson_color3_samples.json.
+
+Fusion gives the all-integer proof
+
+The three-dimensional color has Jones-Wenzl label 2. Fusion of two
+such strands has labels 0,2,4. Equations (2.7),(2.9) of [F] are universal
+local skein identities. They do not require the global diagram to be
+alternating. The twist scalars square to A^16,A^8,A^-8, or their
+inverses under the opposite crossing convention. With t=A^-4, the
+three full-twist frequencies are {-4,-2,2} or {4,2,-2}.
+
+The boxes contain m and -m full twists. Their eigenvalue ratios have
+frequency set
+
+ E={-6,-4,-2,0,2,4,6}.
+
+The total writhe cancellation above removes any m-dependent framing
+shift. All remaining fusion coefficients and the division by the
+quantum dimension are fixed rational functions, independent of m.
+Therefore for EVERY integer m,
+
+ H3(K_m;t) = sum_{k in E} c_k(t) t^(km).                   (3)
+
+Coefficients can be taken in Q(t): solve the seven-by-seven Vandermonde
+system using m=0,...,6, whose entries and outputs lie in Q(t). Inverse
+full twists prove the same identity for negative m.
+
+If only one c_k survived, (3) would be c(t)t^(km). At m=0, c(1)=1 and
+c'(1)=0; at m=1, derivative zero forces k=0. This would make the whole
+sequence constant, contradicting the exact two-diagram witness.
+Hence at least two generic frequencies survive. Choose a fixed common
+Laurent denominator D and put p_k=D c_k. For sufficiently large m,
+the maximal exponent of sum p_k t^(km) comes from the unique greatest
+surviving k, and the minimal exponent from the least. Thus
+
+ span_t H3(K_m) = (k_max-k_min)|m| + O(1),                 (4)
+
+with possibly different constants in the two directions. Dividing by
+fixed D changes span by the fixed number span D. Since k_max>k_min,
+this proves unbounded span.
+
+A stronger exact specialization certificate
+
+At t=4 the seven distinct numbers 4^k permit exact rational interpolation.
+From m=0,...,6, with m=7 as an independent consistency check, (3) becomes
+
+ H3(K_m;4) = a*4^(-4m) + b + c*4^(4m),
+ a=-144137512715625/71303168,
+ b=11054702264346151433/18253611008,
+ c=14215924490625/17825792.                               (5)
+
+The fusion theorem upgrades these exact initial values to all m.
+Since a and c are nonzero, the generic modes -4 and +4 both survive;
+(4) has slope at least 8. Formula (5) also proves divergence to +infinity
+as m tends to +infinity, and to -infinity as m tends to -infinity.
+It does NOT imply c_{+/-2}(t) or c_{+/-6}(t) vanish identically merely
+because their values at t=4 vanish. No such claim is needed.
+
+Reproduction and scope of verification
+
+Portable, Python standard library only:
+  python3 verify_colored_family.py
+It reconstructs H3 by exact Laurent division, verifies normalization,
+checks all eight whole ordinary polynomials agree, and checks (5) at
+an eighth sample excluded from the seven-value interpolation.
+
+Actual diagram regeneration (same directory files, Python 3.13):
+  python3 verify_colored_family.py --diagrams --packages /absolute/path/to/packages
+Alternatively set JONES_REPLAY_PACKAGES. Default local packages path is
+../braid_classification/packages relative to this note's directory.
+Verified runtime: Python 3.13.7, Regina 7.4, Spherogram 2.4.1. Local
+interpreter /opt/homebrew/opt/python@3.13/bin/python3. Binary wheels in
+the local packages directory are cp313; use a compatible interpreter.
+Regeneration took about two seconds in this environment. It checks
+raw component count and writhe, regenerates PDs, and computes actual
+zero-framed two-parallel Jones polynomials. It passed on this pass.
+
+The independent braid audit checked fusion, the all-m framing argument,
+and span deduction. The independent homology audit checked the fixed
+color normalization argument. These are mathematical/internal checks,
+not external peer review or a claim of novelty.
+
+Primary sources
+
+[W] Liam Watson, Any tangle extends to non-mutant knots with the same
+Jones polynomial, J. Knot Theory Ramifications 15 (2006), 1153-1162,
+DOI 10.1142/S0218216506005007. Proposition 5.1, Lemma 5.2, Section 8,
+Figures 7-8. Author full text:
+https://personal.math.ubc.ca/~liam/files/preprint.pdf
+
+[F] M. Elhamdadi, M. Hajij, M. Saito, Twist Regions and Coefficients
+Stability of the Colored Jones Polynomial, arXiv:1605.04972v3,
+Section 2, equations (2.7), (2.9), printed page 7. Only its universal
+fusion and local twist identities are used, not its alternating-link
+stability theorems.
+https://arxiv.org/pdf/1605.04972

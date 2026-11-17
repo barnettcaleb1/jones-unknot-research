@@ -1,0 +1,26 @@
+ENUMERATION (5,5)
+   E-end-segment    (0, 1)   {'CERTIFIED_UNKNOT (line)': 1062}
+   E-end-segment    (1, 0)   {'CERTIFIED_UNKNOT (line)': 222}
+   J1-axis-split    (1, -1)  {'CERTIFIED_UNKNOT (line)': 14977, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 9}
+   J2-band-clasp    (1, -1)  {'CERTIFIED_UNKNOT (line)': 2236}
+   PLANE-geo        plane    {'CERTIFIED_UNKNOT (line)': 613}
+   PLANE-with-R     plane    {'UNRESOLVED (no isotopy; base certified)': 176}
+   R-residual       (0, 1)   {'UNRESOLVED (no isotopy; base certified)': 76}
+   S1-cap           (0, 1)   {'CERTIFIED_UNKNOT (line)': 10146}
+   S1-cap           (1, 0)   {'CERTIFIED_UNKNOT (line)': 532}
+   S2-cup           (0, 1)   {'CERTIFIED_UNKNOT (line)': 2574}
+   S2-cup           (1, 0)   {'CERTIFIED_UNKNOT (line)': 1580}
+   TOTAL {'CERTIFIED_UNKNOT (line)': 33942, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 9, 'UNRESOLVED (no isotopy; base certified)': 252}
+ENUMERATION (6,6)
+   E-end-segment    (0, 1)   {'CERTIFIED_UNKNOT (line)': 4884, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 2}
+   E-end-segment    (1, 0)   {'CERTIFIED_UNKNOT (line)': 1716}
+   J1-axis-split    (1, -1)  {'CERTIFIED_UNKNOT (line)': 57383, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 489}
+   J2-band-clasp    (1, -1)  {'CERTIFIED_UNKNOT (line)': 8719, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 5}
+   PLANE-geo        plane    {'CERTIFIED_UNKNOT (line)': 1439}
+   PLANE-with-R     plane    {'UNRESOLVED (no isotopy; base certified)': 572}
+   R-residual       (0, 1)   {'UNRESOLVED (no isotopy; base certified)': 759, 'UNRESOLVED (no isotopy; base uncertified)': 5}
+   S1-cap           (0, 1)   {'CERTIFIED_UNKNOT (line)': 38346, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 2}
+   S1-cap           (1, 0)   {'CERTIFIED_UNKNOT (line)': 3186, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 8}
+   S2-cup           (0, 1)   {'CERTIFIED_UNKNOT (line)': 11242, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 8}
+   S2-cup           (1, 0)   {'CERTIFIED_UNKNOT (line)': 4824}
+   TOTAL {'CERTIFIED_UNKNOT (line)': 131739, 'ONE KNOT, UNRESOLVED (base >24, no certificate)': 514, 'UNRESOLVED (no isotopy; base certified)': 1331, 'UNRESOLVED (no isotopy; base uncertified)': 5}

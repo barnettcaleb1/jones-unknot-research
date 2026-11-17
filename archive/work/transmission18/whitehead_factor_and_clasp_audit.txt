@@ -1,0 +1,106 @@
+WHITEHEAD FACTOR AND CLASP-CIRCLE AUDIT
+31 October 2026; bounded internal research audit, not a novelty claim.
+
+1. Exact shell factor up to Laurent unit and mirror
+
+Use delta=-A^2-A^-2 and t=A^-4. The preferred trefoil quotient constructed
+from R=<-1>+<1/2>+<1/3>, then T=rotate(R)+<-6>, has
+  f_infinity(T)=A^-18,
+  f_zero(T)/f_infinity(T)=-A^2+A^6-A^22-A^30.
+The parent calculation is stored in trefoil_longitude_bracket.json.
+The difference from delta is A^-2(1+A^8)(1-A^24), and therefore
+  x(T)=(R(T)-delta)/(1-delta^2)
+      =A^2(A^4-1)(1+A^8)(1+A^12).
+
+The numerator closure of the original Montesinos tangle is an actual
+unknot, and its cover is the Seifert manifold D^2(2,3). Thus the cover is
+the trefoil exterior, up to chirality. Rotation makes the actual unknot
+closure the meridian closure. The other closure at the displayed -6
+shift has determinant zero, so its filling slope is the unique preferred
+longitude. This fixes the peripheral marking, not just the underlying
+unmarked exterior.
+
+A nontrivial torus knot has a unique strong inversion up to conjugacy.
+Primary convenient statement: Hirasawa--Hiura--Sakuma, Proposition 2.1(2),
+https://www.sci.osaka-cu.ac.jp/OCAMI/publication/preprint/pdf2022/22_04.pdf
+(arXiv:2206.02097), citing Sakuma's original Proposition 3.1.
+An orientation-preserving equivalence preserves meridian and preferred
+longitude slopes, so its matrix on the peripheral torus is +/-I. No
+boundary Dehn twist remains. Downstairs residual marking ambiguity is
+one of the pillowcase half-translations (Conway flips), trivial on the
+rank-two rational-tangle skein module. More conservatively, any residual
+framed map fixes every rational slope: fixing Q0,Q_infinity,Q1 forces
+one common scalar unit, so it cannot introduce a nonmonomial channel
+change.
+
+For the Whitehead shell, one of the input probes Q_1,Q_-1 gives a trefoil;
+which one depends on clasp and surgery sign. Since x(Q_1)=-A^2 and
+x(Q_-1)=-A^-2, the normalized transmission factor is, up to a Laurent
+unit and A -> A^-1,
+  d_Wh(A)=(1-A^4)(1+A^8)(1+A^12).
+The uniqueness argument covers the two standard inherited clasp
+placements. This proves the same zero multiplicities and nonvanishing
+for both, without claiming a chosen sign/framing convention is identical.
+
+For an r-fold tower over the trefoil, x is thus a Laurent unit times
+  [(1-A^4)(1+A^8)(1+A^12)]^(r+1).
+The slope-1/2 closure factor is independently checked below. The
+complete difference is a signed t-monomial times
+  (t-1)^(r+2)(t^2+t+1)(t^2+1)^(r+1)(t^3+1)^(r+1).
+A normalization point is essential: infinity and 1/2 fillings have the
+same endpoint pairing, so orientations can agree on both tangle arcs.
+Their writhe difference comes solely from the fixed cap. Consequently
+normalizing the reference Q0 closure gives exactly 1, and the difference
+V-1 is linear in x with no unknown additive monomial. For an independent exact cap check, rotate(Q_-2) has coefficients
+(1-A^4,A^-2). Its Q0 closure is A^6 and Q_infinity closure is
+-A^4-A^-4. Dividing the reference unit and subtracting delta gives
+A^2-A^-10=A^-10(A^12-1). The standard-library file
+whitehead_factor_check.py checks this and the factorization exactly.
+
+2. Proposed converse via the Whitehead clasp: NOT CERTIFIED
+
+The proposal was to start with a nontrivial Jones-flat strongly invertible
+J, form Wh(J), unknot it by surgery on its clasp crossing circle C, and
+use the resulting U union C' as an essential zero-factor shell.
+The algebra and surgery markings are sound IF Wh(J) union C is
+componentwise strongly inverted by the SAME inherited inversion used
+in transmission. The standard clasp circle fails that condition.
+
+Primary geometry inspected directly:
+Dai--Mallick--Taniguchi, Exotic disks and singular instanton Floer homology,
+arXiv:2606.05819v1, Example 2.22, Figure 4 on printed page14, Figures5--6
+on page15. URL https://arxiv.org/pdf/2606.05819
+Local downloaded PDF exotic.pdf and rendered page exotic14.png preserve
+the inspection evidence.
+
+In Figure4, for both inherited placements the rotation axis runs along
+the clasp twist direction. The two fixed points of Wh(J) are on the
+doubled cap at the opposite fixed point of the companion. The clasp
+strands are exchanged. A standard disk transverse to this twist region
+has its boundary crossing circle rotated freely. It is NOT a strongly
+inverted component, and its quotient boundary is a torus rather than the
+four-punctured sphere needed for the rank-two shell construction.
+
+The alternate local model h(x,y,z)=(x,-y,-z), with helices
+  gamma_+/- (z)=(+/-cos(pi z), +/-sin(pi z), z), -1<=z<=1,
+and disk z=0 is valid locally: its crossing circle is strongly inverted,
+and both knot fixed points lie in this disk. But this is not the
+inherited Whitehead placement in the primary diagram. Extending that
+local action over the doubled companion, while retaining the inherited
+quotient's flatness, is an additional unproved geometric requirement.
+Thus no converse or equivalence with Jones-one unknotting-number-one
+knots follows from the standard clasp argument as currently stated.
+
+3. General local gate for an invariant crossing disk
+
+Let tau preserve ambient orientation and strongly invert K and C=boundary D.
+If D is tau-invariant, then tau restricts to a reflection of D. Because
+it reverses BOTH the orientation of D and the orientation of K, it
+preserves each oriented intersection sign in D intersect K. If the two
+punctures are interchanged by tau, their signs agree, giving lk(C,K)=+/-2.
+Hence an invariant TWO-puncture crossing disk with lk(C,K)=0 must have
+both punctures fixed individually; these are the two fixed points of K.
+This is the exact local distinction between the valid perpendicular
+helix model and the free clasp circle in the inherited Whitehead model.
+It does not rule out a more elaborate nonlocal circle or a different
+strong inversion; those require an actual construction.

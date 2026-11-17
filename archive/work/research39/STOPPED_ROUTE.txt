@@ -1,0 +1,37 @@
+PASS 39 CLOSED — 2026-11-01
+
+Outcome: no new generic implication toward ordinary Jones unknot detection,
+and no nontrivial knot with unit Jones polynomial. Do not describe this pass
+as a proof scaffold, a breakthrough, or evidence that a proof is near.
+
+Three parallel branches were completed:
+1. Braid dynamics: an actual fixed-four-strand, fixed-writhe family of unknot
+   presentations has unbounded entropy. All normalized colored polynomials
+   of the closures are one. This blocks control of arbitrary presentation
+   dynamics from closed-knot polynomial data. Root reran the exact symbolic
+   matrix verifier successfully. Axis minimization remains unproved.
+2. Homology: recent ribbon-cabling rigidity and coefficient-change formulas
+   do not supply an upper rank bound or control cancellation. See homology.txt
+   for exact scope; this was a targeted search, not an exhaustive absence claim.
+3. Skein specialization: +1 surgery on trefoil#trefoil has a positive-dimensional
+   character family despite finite generic skein dimension. Root reran the exact
+   cyclotomic matrix verifier successfully. Generic rank was not computed; this
+   is not a counterexample to rank-one detection or to a Jones-one assertion.
+
+Do not restart these branches by renaming axis control, Euler cancellation,
+or tame rank-one surgery as a new conjecture. No ordinary-Jones-to-operator,
+ordinary-Jones-to-homology-rank, or ordinary-Jones-to-integral-module bridge
+was established. Conditional endpoints alone are not progress on that gap.
+
+Primary status check: https://arxiv.org/abs/2606.22410 still lists only v1,
+submitted 21 June 2026. The supplied proof remains subject to the exact
+local-move objection documented in outputs/jones-preprint-local-move-audit.txt.
+Manolescu's 2026 ICM survey, section 2, explicitly calls ordinary Jones unknot
+detection open: https://epubs.siam.org/doi/10.1137/25M1806703 . This is evidence
+of the literature's treatment, not an exhaustive certification of all work.
+
+Strategic correction: stop treating more reformulations, narrow exclusions,
+or analogies as evidence of imminent completion. A meaningful next research
+step must identify a genuinely additional mathematical mechanism and a test
+which distinguishes it from the already rejected proposals. No such mechanism
+was obtained in this pass. The research goal remains unresolved.

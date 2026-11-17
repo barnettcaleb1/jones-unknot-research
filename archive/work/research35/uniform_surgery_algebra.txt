@@ -1,0 +1,61 @@
+UNIFORM FULL-TWIST SURGERY: INDEPENDENT LINEAR-ALGEBRA AUDIT
+Verdict: valid. The algebra requires no semidefiniteness assumption on B.
+
+GEOMETRIC INPUT, KEPT EXPLICIT
+Use the actual disk-and-r-oriented-band construction and its symmetric integer
+2-handle matrix B. The geometry audit supplies the following marked-slope fact:
+uniform full twists k at all sites, in the common calibrated handedness, give
+fillings mu_i+epsilon*2k*lambda_i with one COMMON epsilon in {1,-1}. Their first
+homology presentation matrix is I+epsilon*2k*B. Thus for the resulting knot K_k,
+
+             |V_Kk(-1)|=|det(I+epsilon*2k*B)|.          (1)
+
+This note independently audits the consequences of that geometric formula;
+it does not replace the separate proof of the slope/handedness identification.
+No signed-Jones phase or signature convention is needed in (1).
+
+PROOF
+Put P(k)=det(I+epsilon*2k*B), a real polynomial of degree at most r, with P(0)=1.
+If V_Kk is identically 1 for infinitely many distinct integers k, then P(k)^2-1
+has infinitely many roots and is the zero polynomial. Since R[k] is an integral
+domain, P is identically 1 or -1; P(0)=1 selects P=1.
+
+Write c=epsilon*2. The first two determinant coefficients are
+  [k] P = c*tr(B),
+  [k^2] P = (c^2/2)*((tr B)^2-tr(B^2)).
+Consequently tr(B)=0 and tr(B^2)=0. These identities also cover r=1, where
+the second coefficient is zero and the first already forces B=0.
+Since B is REAL SYMMETRIC,
+  tr(B^2)=sum_i B_ii^2 + 2*sum_(i<j) B_ij^2.
+Every summand is nonnegative, hence B=0. Equivalently, the real eigenvalues
+of B make det(I+ckB)=product_j(1+ck*lambda_j); a constant product forces all
+lambda_j=0 and symmetry then forces B=0.
+
+CONCLUSION AND FINITE VERSION
+If B!=0, a uniform coherent full-twist family can have Jones polynomial 1 for
+only finitely many integer k. In fact it has at most 2r such integers, because
+each is a root of the nonzero polynomial P(k)^2-1 of degree at most 2r.
+The known anchor k=0 counts among them. Thus 2r distinct NONZERO Jones-one
+parameters, together with the anchor, already force B=0.
+This is a necessary-condition obstruction. B=0 does not imply Jones-one,
+trivial geometry, or an unknot at any parameter beyond the certified anchor.
+
+WHY MIXED TWIST DIRECTIONS ARE A REAL EXCEPTION
+If the rates/signs are independent, the presentation takes the form
+I+ck*D*B (equivalently I+ck*B*D for its determinant). Even though B is symmetric,
+D*B need not be symmetric and may be a nonzero nilpotent matrix. For example,
+
+          B=2*[[1,1],[1,1]],        D=diag(1,-1)
+
+has B!=0 but (DB)^2=0 and det(I+ck*DB)=1 for every k. The example even has
+an even symmetric integer B. It is an algebraic demonstration of the precise
+failure of the inference for mixed signs, not a claimed geometric realization
+or a Jones-one knot family.
+
+SAME-SIGN WEIGHTED EXTENSION
+If all nonzero rates have the same sign, write D=epsilon*diag(a_i) with a_i>0
+on the active sites. The matrix DB is similar to the real symmetric matrix
+epsilon*D0^(1/2)*B*D0^(1/2), where D0=diag(a_i). The argument then forces the
+active principal submatrix of B to vanish. In particular, when every site is
+active, same-sign unequal rates also force B=0. Zero-rate sites are omitted
+from this conclusion. Mixed-sign rates cannot be included by this reasoning.

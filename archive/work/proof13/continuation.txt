@@ -1,0 +1,99 @@
+PROOF13 CONTINUATION — 2026-10-31
+Pass began21:02:13UTC; finished near21:31UTC, within the bounded30min guidance.
+Goal remains ACTIVE. No generic proof, actual counterexample, or novelty claim.
+This was progress (new exact reduction and formal extension/counterexample target),
+not a blocked/no-progress turn. Do not mark generic goal complete.
+
+Deliverables:
+ outputs/jones-cabling-and-realizability.txt
+ outputs/jones-cabling-and-realizability-evidence.zip
+Fresh extraction:26SHA256 inputs verified;5standard-library entry points passed.
+Archive53621bytes at creation. Logs work/proof13/reproduction_results.json.
+prepare_deliverables.py writes report and packages evidence; avoid rerunning
+without excluding reproduction_results.json from changing package input lists.
+All agents finished after independent audits. No external messages/publication.
+
+MAIN RESULT — generic/cabling_unit_fiber_reduction.txt
+For EACH fixed windingr>=2, global closure of Jones-one knots under C_r=(one
+meridian,r longitudes), zero framed, is EQUIVALENT to global implication
+V1=>ALLcoloredH_N1. Also equivalent to preservation by every fixedP withP(U)=U.
+C2ordinary expansionaH3+b, a+b1,a nonzero shows this is also equivalent to
+the GLOBAL implication V1=>H3=1. This is not proved; pointwiseH2=H3=1 forONE
+knot is NOT sufficient for the induction.
+Proof: cabling H_N finiteN coefficients withdistinct valuations, no nonempty
+zero-sumsubset. Connected powersm0..N giveVandermonde moment equations.
+Propagate universalcolorN to r(N−1)+1, soNa=r^a+1 unbounded. Habiro implies
+everyh^d coefficientpolynomialinN; unboundedzeros⇒allcolors.
+Unconditionalindividualversion: ordinaryJones1 on entire#/C_r closureG_r(K)
+iffKallcolors1. Finitepointwise tests H_N(C_r(K#^m))1 m0..N isolateNcolors.
+Exactcoefficientchecker152tests+2004subsetchecks. Rootlogicauditpassed.
+ALLCOLOREDDETECTIONITSELFISOPEN:2025Kirbyproblemlistp32 saysso; don'tinvoke
+oldAndersenannouncementasproved. MMRgivesDelta1 only.
+FormalF_N=1+(q−1)P(N,2): F1=F2=1,F3not1, integralHabiro, qholonomicwith
+productj−2..2(E−q^j), MMRdiagonal1. Notactualknot; theseformalconditions
+do notpromotecolor3.
+
+WHITEHEAD / GEOMETRY — tangle/strong_inversion_reduction.txt
+Exactpositiveuntwistedformula:
+ V_Wh+(K)−1=(1−t³)/(1+t)*(H3(K)−1).
+HenceglobalWhiteheadpreservationV1 isEQUIVALENTtothecablepromotionabove.
+VerifiedactualWh/Seifert2parallelPDsof51/10132 againstpriorRmatrixH3JSON.
+ActualequalordinaryJones, unequalWhJones witnesses. SourceManolescuOwensProp6.1:
+Σ2Wh+(K)=1/2surgeryonK#rK (r reverseorientation,NOTmirror).
+EveryK#rKstronginvertible. FirstR=K#r(mK)ribbon, thenR#rRstronginvertible
+ribbon: detectionforthatclass⇒generic. DoesNOTmakeitbranchknotnexttoU.
+Newproveddeduction: nontrivialcompositedeterminant1knotCANNOT bea rational
+fillingsharingtanglewithactualU. Doublecoverreducibleintegerhomologysphere;
+MontesinoswouldmakeitsurgeryonS3knot; GordonLuecke1989Cor3.1 saysallsuch
+homologyspheresirreducible. SimplifiedfromunnecessaryEMstronginversioncase.
+PrimaryconfirmationHomKarakurtLidmanGT20(2016)p2219,2223; notesources.
+ThusanyJones1knotinactualU-anchoredrationalfillingmustbeprime.
+
+FORMAL TANGLE TARGET — homology/algebraic_realization.txt
+Proof12four-specialmodelSURVIVESordinaryBN,fulltypeD,Khcone,allrationalpairings,
+centralconnectivityactions,2026requiredA∞extension,ANDsignedintegrallift.
+X=C(s4∞)12gens rowsx0..5,y0..5, labels S,D,S²,D,S eachrow; endpointsverticalD;
+overZfirstvertical−D,last+D. AddU arrowsx1→y3(−U),x2→y4(+U). MCpasses.
+G=S²−D nullhomotopyexplicit. CorrectliftGtilde=Gid+fourUarrowsF2:
+x1→x3,x2→x4,y1→y3,y2→y4. NOTnaiveGidupstairs. Signedμ1(−H) andfull24gen
+conechecked. Independentbraidagentverified226μ4paths,allpossiblearities/signs.
+A=rationalarc;D=A⊕qhX⊕qh²X (25gensBN;unsimplifiedKhcone50gens).
+Khcurve r1(0)+X+X[1]{2}+X[1]+X[2]{2}. Relativegradingsessential.
+AllrationalEulerpairingsequalrationalanchor;GinvertkillsX.
+
+SHARP CONDITIONAL CONSEQUENCE: actualclassicaltanglerealizingD uptoONEglobal
+shiftwouldgive slope1K withV1 and reducedKhF2rank17=1+4*4, henceNONTRIVIAL.
+Infinityfillingrank1⇒actualU viaKM. Zero fillingunlinkEuler/rank18.
+Monomialnormalizationresolved: |V_L(1)|1⇒onecomponent;V1fixsign,V'1=0fixexp.
+This is anexplicitformalrealizationtargetwhoseconstructionwouldSOLVEnegatively,
+not anactualtangle or claimedgenericrealizabilitytheorem. Tangleagentaudited.
+
+UNREDUCEDLEE CHECK — homology/unreduced_lee_check.txt
+Potentialq2reducedvsq4unreducedissue resolvedformally. Addbasepointzwith
+z²+Gz0, sendreducedparameterh→alpha=G+2z, ordinarydotY→d=Y−z.
+d²+alpha d0 andFrobeniusΔrelationscompatible;alpha²=G².
+Reducedlength1bar→matrix[[G,0],[2,−G]], cancelsunit2overQ,leavesG²bar.
+Slope1formalreducedrank17⇒8length1bars+1free;unreducedQrank18→Leerank2.
+FormalFrobeniuslift only;noassertioneverygeometric/naturalityconditionchecked.
+SourcecrosscheckSchuetz2412.05156§3. SignedintegerMCdoesnotassumegeometric
+categoryequivalenceoverZ;2026equivalenceinvokedonlyitsstatedfieldsetting.
+
+SIGN GENERALIZATION FALSE — tangle/sign_counterexample_note.txt
+ActualT(3,4)=819ribbondoublecuttemplateallcutU3butA,B,Cleading(5,−2),(5,+1),
+(4,−1). Thusmirror/ribbon/unlinkcutsdon'tforcecommonleading signs.
+Parity+nonzerosubsetsstill excludeALLtwists. ThisfamilyalreadyhasV''1=−60
+(a2=10), soNOTadvanceintoDelta1frontier. Directtwistinsertionverifiedbothsites.
+Generalfinitecriterion: fulltwistsdegreesmoveeven;nonemptycoeffsubsetswithin
+eachleadingdegreeparitycannotzero⇒globaltopcannotcancel.
+
+NEXT DIRECTIONS / AVOID REPEATS
+Do not retryB/A∞/integral/ordinaryunreducedLeeobstruction onthissameformalD:
+itpassesexactlistedtests. Neednewspecifiedgeometric/naturalityrestriction or
+actualcrossing-cuberealization. Neednotassumearbitraryderivedobjectsrealizable.
+Do notproposeWhquotientasordinaryJonescontrolled;exactlysamecolor3gap.
+Do nottrycompositedoublesasSAMEunknot-anchoredbranchknot;topologicallyimpossible.
+Alloriginalproof12resultsremainvalid;readitscontinuationforpriorwork.
+Rootbrieflylookedrotants: MacColl2016 Rotors in Khovanov homology Question1.4
+explicitlyasksnontrivrotantofunknot; n<=5wouldcounterJones. Noattemptmade;
+don'tpresentitnew. ModularJonestrivialityknown2^k,3^k;mod5wasopeninsources,
+notpursuedhere. Plane-partial-dualgraphrouteonlyconsidered,noprovedprogress.

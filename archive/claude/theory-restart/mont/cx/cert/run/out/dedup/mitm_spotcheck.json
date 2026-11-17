@@ -1,0 +1,9 @@
+{
+ "tops": 11902,
+ "bottoms": 26089,
+ "sampled_junctions": 20000,
+ "J1": 431,
+ "J1_NOT_in_survivors": 0,
+ "examples_missing": [],
+ "secs": 307.1
+}

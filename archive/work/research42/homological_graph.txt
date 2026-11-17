@@ -1,0 +1,107 @@
+PASS 42: ACTUAL SPANNING-TREE DIFFERENTIAL COUNTERTEST
+2026-11-01
+
+Outcome
+-------
+The explicit Roberts--Jaeger differential does not turn independent arc
+weights or a nearly perfect support matching into an acyclic cancellation.
+There is a small actual-knot countertest, T(3,5). This closes that proposed
+mechanism; it does not refute a Jones-unit-fiber-specific geometric theorem.
+
+Primary input and conventions
+-----------------------------
+Jaeger, A Remark on Roberts' Totally Twisted Khovanov Homology:
+https://arxiv.org/pdf/1109.1805
+Theorem 3.1 and Corollary 3.2 (printed p.3) identify the reduced twisted
+theory of a KNOT with reduced characteristic-two delta-graded Khovanov
+homology. Moving every marking to the basepoint makes its added differential
+vanish after reduction. Thus independent weights do not generically destroy
+the knot's homology. Section 4 (p.4) gives the explicit tree differential:
+
+  d(S,T) = 1 / w(C1) + 1 / w(C2),
+
+when S is changed from zero to one at two crossings to give T. C1 and C2
+are the unmarked circles in the two intermediate resolutions. Other
+coefficients vanish. Independent arc variables make this coefficient
+nonzero exactly when the two arc sets differ. This is over F_2(x_a).
+
+Roberts, Totally twisted Khovanov homology, Geometry & Topology 19 (2015):
+https://msp.org/gt/2015/19-1/gt-v19-n1-p01-p.pdf
+Definition 1.11 (printed p.9) uses delta=2h-q, with differential of delta
+degree +2. Section 1.11.2(2), printed p.18, reports T(5,3) homology of total
+rank seven, written 4 delta^8 + 3 delta^6 in that paper's chirality convention.
+Our rank argument is independent of chirality and global grading shifts.
+The paper's diagram/tree count is not the diagram/tree count used below.
+
+An integral analogue must not silently be identified with ordinary even
+integral Khovanov homology: Manion's integral spanning-tree construction is
+for reduced ODD Khovanov homology.
+https://msp.org/agt/2014/14-2/agt-v14-n2-p04-p.pdf
+
+Exact actual-diagram certificate
+--------------------------------
+Run:
+  python work/research42/verify_torus_tree_support.py
+
+The script constructs the standard braid closure (sigma1 sigma2)^5,
+compares its PD with the saved certificate, and verifies planarity, one
+component, and writhe ten. It enumerates all resolutions. In a PD row
+(a,b,c,d), bit zero joins (a,b),(c,d); bit one joins (b,c),(d,a).
+Arc zero contains the basepoint; each of the other 19 arcs has a distinct
+indeterminate. Comparing the intermediate unmarked arc sets implements
+the displayed coefficient's NONVANISHING exactly, without specialization.
+
+Results:
+  121 one-circle states;
+  cardinality multiplicities 2:25, 4:50, 6:35, 8:10, 10:1;
+  500 nonzero differential-support edges;
+  a 60-edge matching using 120 DISTINCT actual generators, leaving one.
+
+The graph has one vertex per chain generator, not separate row/column
+copies. Its bipartition is by the parity of (cardinality-2)/2 and has sizes
+61 and 60. The saved witness is maximum even as an ordinary graph matching.
+
+Reverse its matched differential arrows and retain the other arrows. The
+resulting directed graph contains this explicit cycle:
+
+  15 -> 159 -> 135 -> 207 -> 195 -> 231 -> 39 -> 63 -> 15.
+
+The verifier records the two circle-weight arc sets for each cycle edge in
+torus_tree_support_verification.json. Hence the chosen matching is visibly
+not an acyclic algebraic Morse matching. Independently, Jaeger's theorem
+and Roberts' rank-seven computation imply rank(d)=(121-7)/2=57. Therefore
+NO 60-pair matching on this complex can be an acyclic algebraic Morse
+matching with unit pivots: that would leave a one-generator complex of
+homology rank at most one. More generally such a matching has at most
+57 pairs. This last bound is source-backed, not an unreported symbolic
+matrix elimination.
+
+Why the proposed global mechanism fails
+---------------------------------------
+The independent variables are assigned to arcs, not independently to every
+matrix entry. The differential coefficients obey shared algebraic identities
+and d^2=0. Unit entries can disappear or change when other pivots are
+cancelled; a support/Hall matching does not control these effects.
+
+T(3,5) has determinant one and Jones polynomial t^4+t^6-t^10 (or its
+mirror under the opposite convention). The alternating sum of the five
+chain multiplicities is 25-50+35-10+1=1. Thus this is a concrete obstruction
+even when the collapsed Euler characteristic is one. It is NOT a Jones-one
+knot. The explicit tree complex retains delta, not the full (h,q) grading;
+its collapsed Euler information is a determinant specialization. A proof
+using the whole Jones polynomial must supply additional, genuinely
+geometric information to prevent these gradient cycles specifically on the
+unit Jones fiber. Neither the weights nor their independence supply it.
+
+A sufficient endpoint would be an actual acyclic unit matching leaving one
+generator for every Jones-one knot diagram (or for a controlled diagram
+chosen from it). This would give reduced F_2 rank one, hence reduced rational
+rank one and the established Khovanov unknot detector. The present test
+does not prove that premise, and calling ordinary graph matching a proof
+of it is demonstrably incorrect.
+
+Files
+-----
+torus_tree_support.json: original PD, all states, all support edges, matching.
+verify_torus_tree_support.py: reproducible exact support/cycle verifier.
+torus_tree_support_verification.json: successful result and weighted cycle.

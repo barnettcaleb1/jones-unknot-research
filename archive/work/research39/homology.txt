@@ -1,0 +1,89 @@
+PASS 39 — BOUNDED GLOBAL CATEGORIFICATION CHECK
+Date: 2026-11-01
+Status: no new generic proof mechanism, no certified fixed-Jones unbounded-rank
+family, and no certified equal-Jones directional ribbon concordance were found.
+This is a report of a bounded targeted check, not an exhaustive literature claim.
+
+1. WHAT WAS NOT REUSED
+The living report and prior notes already contain the connected-sum H-rank /
+H-spread endpoints, formal Lee and full-tangle countermodels, permutation and
+supertrace obstructions, the Laplacian/heat-trace no-go, finite-jet amplification,
+Watson uniform-rank theorem, and small-table necessary ribbon screens. None of
+those is a new result of this pass. In particular Grlj–Lauda 2608.24298, surfaced
+again by the searches, was already treated in research32 and was stopped on that
+basis. No further diagram scan or formal-complex construction was performed.
+
+2. A NEW PRIMARY GO/NO GATE FOR RIBBON-CABLING EXPERIMENTS
+Hom–Park, Ribbon concordance and cabling, arXiv:2608.06625v1 (6 Aug 2026):
+https://arxiv.org/html/2608.06625v1
+Theorem 1.2 states: if J is a cable of K, p>1, and J is ribbon concordant to
+K_(p,q), then J is that very (p,q)-cable of K. The paragraph immediately after
+the theorem explicitly includes J=K as the trivial cable. Therefore the
+following tempting attempt to manufacture an equal-Jones directional ribbon
+pair is invalid before a polynomial calculation: start with a ribbon/slice K,
+then posit a ribbon concordance K -> K_(p,1), or between distinct (p,1)-cables
+of the same K. Ordinary concordance of these slice knots is not enough.
+
+This is a genuine geometric obstruction, proved using minimum heights of knot
+Floer immersed curves. It does NOT prove that arbitrary equal-Jones ribbon
+concordances are homology isomorphisms. The paper gives no such example or theorem.
+Its Question 1.7 asks whether every nontrivial knot has a length-one F[U]-torsion
+summand in HFK-minus. That question is not a Jones assertion, and even an
+affirmative answer supplies extra homology rather than an upper bound from its
+Euler characteristic. No Jones-to-rank inference was made from it.
+
+3. LATEST COEFFICIENT-CHANGE RESULT DOES NOT CLOSE THE RANK GAP
+Wells, L-space knots and sl_n-like knot Floer homology, arXiv:2610.38927v1
+(28 Oct 2026): https://arxiv.org/html/2610.38927v1
+Theorem 1.4 describes HFK_n by tensor and Tor change of coefficients from
+HFK-minus for thin knots, and for L-space knots satisfying a stated Alexander-gap
+condition. Corollary 1.6 gives an actual sharp failure when n is too small:
+for T(3,4), HFK_2 has dimension 6, whereas the proposed unrestricted
+coefficient-change expression has dimension 8. Thus it is unsafe to promote
+ordinary sl_2 information to all coefficient truncations by a universal base-
+change rule. The cited reduced-Kh-to-HFK spectral sequence only gives a lower
+bound on Kh rank from HFK rank. No upper bound by the whole Jones polynomial
+is proved, and the Euler cancellation problem remains untouched.
+
+This is a concrete stop test for a particular promotion mechanism; it is not a
+counterexample to Jones detection or to H-rank. The n=2 failure above is already
+an ordinary explicit torus knot, so no hypothetical geometric realization is
+being used.
+
+4. TWO SEARCH PITFALLS CHECKED AGAINST PRIMARY SOURCES
+(a) Kanenobu's 1986 theorem provides infinitely many knots with identical HOMFLY
+(and hence Jones and Alexander polynomials) but different Alexander MODULES.
+A secondary search excerpt incorrectly suggested different Alexander polynomials.
+The primary statement is on p159:
+https://www.ams.org/journals/proc/1986-097-01/S0002-9939-1986-0831406-7/S0002-9939-1986-0831406-7.pdf
+It therefore cannot be used to infer unbounded Alexander coefficient norm,
+unbounded HFK rank, or a counterexample to H-rank. The known family has bounded
+homology as already analyzed in the report.
+
+(b) Diaz–Manchon, New torsion patterns in Khovanov homology, arXiv:2508.00606v1:
+https://arxiv.org/html/2508.00606v1
+Theorems 8 and 12 concern explicit ladders with additional periphery/even-module
+hypotheses and independence of certain resulting 2-torsion classes. They do not
+say that arbitrarily long twist boxes automatically supply independent torsion,
+nor do they link torsion multiplicity to the ordinary Jones polynomial. Thus
+these results do not contradict the fixed-Jones Watson bounds or supply a
+Jones-one rank-one criterion.
+
+5. PRECISE OUTCOME AND STOP CONDITION
+No actual pair J -> K with a certified directional ribbon movie, equal full
+Jones polynomials, and strictly larger rational reduced Kh at K was found in
+the sources checked. Mutants, slice concordance, and being independently ribbon
+do not provide that movie. No claim of nonexistence or complete status is made.
+Likewise no actual fixed-whole-Jones family with a proved unbounded reduced
+rational Kh rank was identified. Infinite cardinality of a fiber, growing braid
+index, changing Alexander modules, and varying polynomials with the same few
+coefficients are not substitutes.
+
+The pass supplies two useful rejection tests (ribbon cabling rigidity and the
+explicit failure of unrestricted coefficient change), not a new full proof
+scaffold. There is presently no justified reason to continue the generic
+categorification branch by introducing another rank budget, purity assertion,
+or diagram-selection hypothesis. A meaningful restart needs either an actual
+geometric operation preserving the WHOLE Jones polynomial together with a
+proved homology growth formula, or a geometric theorem controlling cancellation
+that is not merely a restatement of Jones-one unknot detection.

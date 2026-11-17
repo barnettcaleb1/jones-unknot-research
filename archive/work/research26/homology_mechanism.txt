@@ -1,0 +1,228 @@
+UNIFORM RATIONAL KH RANK FOR EACH FIXED WATSON ORBIT
+31 October 2026. Derived argument, independently geometrically audited.
+No novelty claim. This is a fixed-template result, not global Jones detection.
+
+RESULT AND WHY IT IS DIFFERENT FROM THE EARLIER SUPPORT ARGUMENT
+
+Fix a braid beta and tangles T,U in Watson's actual Figure 1 construction,
+with his two-arc/no-closed-component hypotheses, allowed nonvertical
+connectivities, and such that K_n=K_beta(T+sigma^n,U+sigma^(-n)) is a knot.
+Then dim_Q Kh(K_n) and dim_Q Kh_red(K_n) are uniformly bounded for n in Z.
+The constants depend on the fixed diagrams beta,T,U, not just their Jones
+polynomial. No constancy of Kh for nonsimple tangles is asserted.
+
+The mechanism is to resolve only the fixed crossings inside T and U.
+It is NOT an iteration of the paired-twist long exact sequences. Every
+resulting elementary closure is either a simple-tangle Watson knot, to
+which Watson's published theorem applies, or an explicit unlink. The
+finite resolution cube bounds rank before any middle-window maps need
+to be identified. This additional geometric input was absent from the
+abstract fixed-cap models in the previous pass.
+
+PRIMARY SOURCE AND EXACT DIAGRAM
+
+Liam Watson, Knots with identical Khovanov homology,
+Algebraic & Geometric Topology 7 (2007), 1389--1407.
+https://msp.org/agt/2007/7-3/agt-v7-n3-p11-s.pdf
+https://personal.math.ubc.ca/~liam/files/identical.pdf
+
+Figure 1 and Lemma 3.1: published p1392, author's printed p4.
+First proof paragraph (one-cap resolutions U2): published p1393,
+author's p5. Figure 3: author's p6. The connectivity/permutation check
+is on author's pp9--10; it explicitly excludes id and (23), and handles
+the other four braid permutations and all four allowed T/U pairings.
+Section 7.3 poses a nonsimple-tangle constancy question. A uniform rank
+bound neither answers that constancy question nor contradicts it.
+
+Here is an exact six-port encoding of Figure 1, rotated into a plat.
+Ports at each cap are numbered 0,...,5 from left to right. A four-ended
+tangle occupies the middle four ports; an outside arc joins ports 0,5.
+For the three endpoint connectivities the resulting endcaps are
+
+ A (zero):     (0,5), (1,2), (3,4),
+ X (crossed):  (0,5), (1,3), (2,4),
+ B (infinity): (0,5), (1,4), (2,3).
+
+In particular B is the full rainbow cap. If beta is given by a word in
+sigma_1,sigma_2, the six-strand middle braid replaces each generator by
+
+ g_i = sigma_i sigma_(6-i)^(-1),  i=1,2.
+
+Left and right factors have disjoint support, so this is beta on the
+first three strands followed by the reflected crossing-inverse word
+on the last three strands, in the SAME word order. Do not replace the
+second word by its reverse as well. This is the rotated beta/beta^-1
+wiring in Watson's figure. The exact existing Spherogram construction is
+work/pass2/watson_model.py: endcap reshapes T to four bottom or four top
+ends, adds the outside strand, and closes the six-strand word
+  beta + [-sign(i)*(6-abs(i)) for i in beta].
+The construction is only an optional check; the proof below is geometric.
+
+1. THE CAP ISOTOPY, FOR ARBITRARY BETA
+
+Each g_i fixes B up to an isotopy relative to the six external endpoints.
+Slide its first crossing through the matching pair of rainbow cups. It
+meets the reflected inverse crossing and the pair cancels by RII.
+Equivalently this is the rigid-tangle coevaluation identity
+  (f tensor (f^(-1))^*) coev = coev.
+It is an identity of actual tangles, not just an equality in their skein
+module. It holds for g_i^-1 as well. Applying it successively removes
+the entire middle braid whenever either endcap is B. The same argument
+works from the bottom cap, by reversing the height coordinate.
+
+Adding any integer twist to an infinity tangle preserves its underlying
+unframed tangle: the added crossings become curls next to its cap. Thus
+an infinity resolution of T or U is still a B cap after adding the n or
+-n crossings, up to such curls. Once the middle braid is removed, an
+A_n cap paired with B gives two trivial components; all integer twists
+again become curls. B paired with B gives three trivial components.
+The curls may change bracket framing, but never the normalized link
+type or the TOTAL Khovanov rank. These cases therefore have unreduced
+rational rank 4 and 8 respectively, for every integer n.
+
+This geometric cap identity was independently checked by both the root
+and the tangle agent. The earlier small-diagram simplifications were
+sanity checks only, not the basis for this assertion.
+
+2. THE BOTH-ZERO RESOLUTION REALLY IS A KNOT
+
+Watson's Lemma 3.1 assumes knots, so it cannot simply be invoked for all
+resolved links. The required knot condition is checked as follows.
+Let p be beta's permutation on 0,1,2. The full permutation is
+ p on the first three ports and reflection-p-reflection on the last
+three. Join this permutation to the two cap matchings and count cycles.
+The resulting table is:
+
+ p (one-line)    AA XX AX XA    AB BA XB BX    BB
+ 123              3  3  2  2     2  2  2  2     3
+ 132              3  3  2  2     2  2  2  2     3
+ 213              1  1  1  1     2  2  2  2     3
+ 231              1  1  1  1     2  2  2  2     3
+ 312              1  1  1  1     2  2  2  2     3
+ 321              1  1  1  1     2  2  2  2     3
+
+The original allowed knot hypothesis excludes the first two permutations
+(id and (23)), exactly as Watson states. For each remaining permutation,
+all four allowed cap pairs are knots. In particular when both fixed
+tangles resolve to zero, the added twists give AA for even n and XX for
+odd n, and every member is a knot. Both integer tangles are simple.
+Watson Lemma 3.1 therefore gives a constant unreduced Kh group for this
+entire both-zero orbit. Put R_beta=dim_Q Kh(K_beta(0,0)).
+
+watson_connectivity_check.py is a portable, package-free exact verifier
+of the component table; its JSON contains all nine cap-pair counts for
+all six permutations. It does not try to verify link isotopy from a
+permutation: that is the separate cup-isotopy proof in section 1.
+
+3. FINITE FIXED-CROSSING RESOLUTION BOUND
+
+Let c be the total number of crossings in the fixed diagrams T,U. Resolve
+these c crossings, not the variable twists or the beta-shell crossings.
+Every complete state replaces each fixed tangle by one of the two planar
+matchings A,B, together with ell(s) disjoint planar state circles. Such
+circles are split from the boundary-connected arcs: a planar circle
+cannot enclose an arc reaching the boundary without intersecting it.
+They may be nested with each other, which is still the trivial unlink.
+There are finitely many states and ell(s) is independent of n.
+
+For unreduced ordinary Kh over Q, the mapping-cone long exact sequence
+at a crossing gives r(L)<=r(L_0)+r(L_1). Iterating over these c fixed
+crossings gives
+
+ r(K_n) <= sum_s 2^ell(s) r(E_(s,n))
+         <= sum_s 2^ell(s) max{R_beta,8} =: C(beta,T,U).
+
+Here E_(s,n) is the elementary closure without the state circles. The
+factor 2^ell(s) is the disjoint-union tensor formula for Kh over Q.
+All grading and writhe shifts are irrelevant to total rank. The proof
+therefore does not assume a common orientation on resolved components,
+or that a link version of Watson's theorem exists. Every simple-family
+application is to a knot by section 2; all other links are explicit
+unlinks by section 1. Negative n is treated by the same isotopy and
+Watson's inverse-action clause, with no asymptotic restriction.
+
+4. PASSING TO THE REDUCED RATIONAL RANK
+
+For an actual knot let r_red and r_unred denote the rational ranks.
+The based generalized Lee complex over Q[X] splits into one free block
+and torsion blocks with differential X^a (a>=1). Setting X=0 gives
+ordinary reduced Kh; setting X^2=0 gives ordinary unreduced Kh.
+If m1 counts length-one blocks and m2 counts longer blocks, then
+
+ r_red=1+2m1+2m2,
+ r_unred=2+2m1+4m2 >= r_red+1.
+
+This elementary specialization is the same previously audited block
+calculation. Primary reference: Dirk Schuetz, arXiv:2412.05156,
+Section 2.1, equation (1); Section 3 relates the reduced Bar--Natan
+convention. https://arxiv.org/pdf/2412.05156
+Consequently the uniform unreduced bound also bounds rational reduced
+rank. We do not silently use the characteristic-two splitting over Q.
+
+5. PRECISE ROLE IN THE FULL PROOF SCAFFOLD
+
+This rules out unbounded rational Kh rank as a counterexample to H-rank
+inside ANY ONE FIXED Watson template satisfying the hypotheses above.
+It is stronger than the earlier fixed-support argument, whose exact
+triangles alone permitted unbounded multiplicities.
+
+It does not prove boundedness on an entire Jones-polynomial fiber.
+The constants depend on c, state-circle counts and R_beta, and these
+quantities can vary without bound as the template changes. No global
+finite-template covering statement is available. In particular a fixed
+template cannot be substituted for the connected-sum sequence
+J#K^#m used in the full H-rank scaffold without a new coverage theorem.
+Thus this is an actual structural theorem for the proposed adversarial
+family, not a solution to generic Jones unknot detection.
+
+6. SIMPLER CHARACTERISTIC-TWO ROUTE AND A UNIFORM-IN-BETA BOUND
+
+Watson's theorem is integral and bigraded, so the universal coefficient
+theorem makes the simple branch constant over F2 too. Run the same finite
+fixed-crossing resolution argument over F2. Shumakovitch's Corollary
+3.2.C gives
+ Kh^{i,j}(L;F2)=Kh_red^{i,j-1}(L;F2) direct-sum
+                Kh_red^{i,j+1}(L;F2).
+Hence r_red(F2)=r_unred(F2)/2; moreover r_red(Q)<=r_red(F2) by UCT.
+This provides an alternative reduced-rank argument needing no Lee bars.
+Primary source: A.N. Shumakovitch, Torsion of the Khovanov homology,
+Fund.Math.225(2014),343--364; arXiv:math/0405474v2, Corollary3.2.C,
+PDFp12. https://arxiv.org/pdf/math/0405474
+
+There is a stronger quantitative consequence using the exact geometric
+template and determinant factor already proved in research21:
+
+ K_beta(0,0)=J_beta#mirror(J_beta), with J_beta a two-bridge knot;
+ det K_n=(det J_beta)^2 det D(T) det D(U).
+
+Here D is the denominator closure. Its topology is unchanged by adding
+integer twists, since they become curls at the denominator cap. Because
+T,U have allowed A or X connectivity and no closed components, D(T),D(U)
+are knots, so their determinants are positive odd integers. If d=det K_n
+and p=det J_beta, then p^2<=d. A two-bridge knot is alternating and has
+reduced F2 Kh rank p. Thus the both-zero branch has unreduced F2 rank
+2p^2<=2d, by the reduced connected-sum tensor formula and mod2 splitting.
+One can see rank p directly from the alternating spanning-tree complex:
+it has p generators, and the absolute Jones evaluation gives lower bound p.
+Equivalently use quasi-alternating homological thinness; primary reference
+Manolescu--Ozsvath, On the Khovanov and knot Floer homologies of
+quasi-alternating links, arXiv:0708.3249.
+https://web.stanford.edu/~cm5/quasi.pdf
+
+If the two FIXED input diagrams have at most N crossings in total, then
+there are at most 2^N complete states, and ell(s)<=N. The latter follows
+by resolving crossings one at a time: each smoothing increases the number
+of components by at most one, and the original input tangles have no
+closed components. Therefore sum_s 2^ell(s)<=4^N. Combining the estimates:
+
+ dim_F2 Kh(K_n;F2) <= 4^N max{2d,8},
+ dim_Q Kh_red(K_n;Q) <= 4^N max{d,4}.
+
+These bounds are uniform over beta AND n, subject to the stated knot
+connectivity, determinant d, and input-crossing bound N. They require no
+bound on beta's word length. In particular the same conclusion applies
+to a whole Jones fiber if a separate theorem bounds the INPUT complexity
+of Watson presentations throughout that fiber. No such theorem is proved
+here. This is a concrete geometric candidate for a global bridge, with
+an explicit complexity parameter, not an assumption that all equal-Jones
+knots already lie in one fixed template.

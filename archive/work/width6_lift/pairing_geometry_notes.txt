@@ -1,0 +1,208 @@
+U5-W6 C3: THE TWO-VARIABLE PAIRING NEEDS REPAIR, AND NO-CANCELLATION FAILS
+2026-11-03. Status TRUSTED (explicit computations and geometric interpretation;
+not an audit of the existing scaffold). No general Jones result is claimed.
+
+LEAD
+The proposed raw unit-normalized specialization does not exist. After repairing
+it through the correct lattice/radical pairing, there is a 14-letter example
+with actual denominator unknot, actual numerator unlink, and a trivial relative
+tangle, yet a nonzero two-variable pairing that vanishes on the Jones line.
+Thus the ORIGINAL no-Jones-cancellation assertion is too strong even on the actual-unknot locus. Claude's later revised exact-order-at-NONSPLIT-pairs conjecture is not refuted by this trivial example; see section7.
+The generic pairing remembers the chosen disk arc system, not merely the cap
+tangle type. A separate six-letter example refutes the literal proposed
+"zero iff entire arc systems are disjoint" Key Lemma for product cycles.
+
+1. THREE DISTINCT PAIRINGS, NOT ONE
+Bigelow's original Key Lemma pairs ONE fork (with a parallel copy of its tine)
+and ONE noodle, in the two-point configuration space. It does not immediately
+assert a Key Lemma for products of TWO independent cap arcs and dual products.
+
+Budney's form is an absolute-homology sesquilinear form, linear in its FIRST
+argument. The TL cell form is ordinarily presented as a bilinear form with an
+anti-involution. Conjugating A (or s) to its inverse is necessary to turn the
+braid action into an isometry. For example a cap vector is an eigenvector of
+sigma1 with eigenvalue -A^-3, so the raw bilinear norm scales by A^-6.
+
+Primary sources:
+- Bigelow, The Lawrence-Krammer Representation (2003), §§3-6:
+  https://web.math.ucsb.edu/~bigelow/publications/08.pdf
+- Bigelow, Homological representations of the Iwahori-Hecke algebra (2004),
+  §§2,4,5,6.3:
+  https://web.math.ucsb.edu/~bigelow/publications/09.pdf
+- Budney, On the image of the Lawrence-Krammer representation,
+  arXiv:math/0202246v3, Proposition1 and Theorem2:
+  https://arxiv.org/pdf/math/0202246
+
+2. SPECIALIZATION AND DERIVATIVE REPAIR
+Use Budney/Bigelow-2003 variables q,t, and q=s^2. The Jones line is
+    h=1+qt=0, i.e. t=-q^-1=-s^-2.
+The correct collapsed exponent of s^a t^b is a-2b, with sign (-1)^b.
+For q^a t^b it is a-b, also with sign (-1)^b. Thus the earlier proposed
+q-exponent collapse a-2b used the wrong variable/line combination.
+
+Budney's Theorem2 writes his Gram matrix as c(q,t) G(q,t), where
+    c=-(1-t)(1+qt)(q-1)^2 t^-2 q^-3.
+The entire RAW Gram specializes to zero. Dividing c is not multiplication by
+a Laurent unit. Even after that division,
+    G(q,-q^-1)=-(q-1) B(q^-1)^T B(q),
+where column(i,j) of the 6x15 incidence matrix B(q) is e_i+q e_j.
+This factorization gives rank6 and a nine-dimensional radical over Q(q).
+Remember that the form is linear first: the relevant LEFT radical is
+ker B(q^-1). Numerical exact Fraction checks at q=2,3,4 agree; the displayed
+factorization supplies the generic rank statement.
+
+Let G1 be the h coefficient of G(q,(h-1)/q). The form induced by G1 on the
+radical is independent of first-order changes of lifts: cross terms contain
+G0 applied to a radical vector and vanish. It is a derivative/residue form.
+Exact rank9 checks at q=2,3,4 were followed by the C1 agent's generic identity
+    E(s)^T G1 E(s^-1)=(1+q) Gamma_TL,
+for the explicit 15x9 intertwiner E. All81 entries were checked. There is no
+unit relating the naive raw specialization to the TL form; the correct
+construction includes this derivative and the nonunit scalar 1+q.
+
+Artifacts: budney_gram.py/.json; budney_derivative.json;
+derivative_gram.py/.json and generic_intertwiner.py/.json (C1 agent).
+
+3. THE FIXED GEOMETRIC LIFT USED FOR C3
+The base cap system C0=(1,2),(3,4), with free5,6, is TL state7. Let
+    v=F13-F14-F23+F24
+in Budney's Krammer basis. His cellular formula implies
+    z=v/[(1-t)(1+qt)]=Y13-Y14-Y23+Y24
+is an absolute cycle. Its cellular boundary cancels. The identification of
+this rectangle with the product of the two figure-eight cycles around caps
+12 and34 is the geometric identification used here (TRUSTED, made explicit).
+The other cap lifts are transported by the actual short braid words saved in
+cap_braid_lifts.json, with Laurent s-units restoring the TL basis normalization.
+
+For the tracked lifts u_i define
+    P_beta(i,j)=u_i^T G(q,t) bar(rho(mirror(beta)) u_j)/(1+qt).
+Here mirror flips each generator sign, preserving word order. This is needed
+because the second variable of Budney's form is conjugate-linear.
+For every reported sample the numerator division is exact in Z[s±1,t±1], and
+    P_beta(i,j)|_(t=-s^-2)=(1+q)*J_norm(beta;i,j)
+was independently checked, including all framing units from normalizing the
+Jones generators to I+s e_i. In terms of the actual torus-cycle pairing H,
+    H=(q-1)^2 q^-2/(1-t) * P.
+At the Jones line this becomes H=(q-1)^2/q * J_norm. The prefactor is nonzero
+for generic q. This makes generic zero/nonzero comparisons legitimate; it does
+not assert that generic H descends to unframed cap-tangle types.
+
+4. A COMPACT COUNTEREXAMPLE TO NO-JONES-CANCELLATION
+Use C0 at BOTH ends, and the braid word
+    beta=[4,3,2,1,5,4,3,2,3,4,2,3,-1,-2].
+Its first ten letters are beta0. The appended four letters are r1^-1 for
+    r1=[2,1,-3,-2],
+a Tawn Hilden cap-stabilizer generator. Thus the appended move is precisely
+the kind of cap slide invisible to the cap tangle and its TL class.
+
+Exact results:
+    J(beta;7,7)=0,
+    P_beta=s^8(1-t)(1-s^2)(1+s^2 t),
+    H_beta=-q^2(q-1)^3(1+qt),
+whereas P_beta0=0. The displayed P has seven monomials; P(2,3)=19968.
+It is nonzero as a two-variable Laurent polynomial and identically zero on
+the Jones line. At the extremal t degree2, the highest s degree term is
++s^12 t^2. Its collapsed exponent is8; the three terms on that line have
+coefficients 1,2,1 at t degrees0,1,2, so after the signs from t=-s^-2 the
+sum is 1-2+1=0. Every collapsed coefficient vanishes.
+
+This is NOT a counterexample to Lemma Q or Jones detection. Direct relative
+R1/R2 moves reduce the entire tangle to ZERO crossings. Its numerator closure
+simplifies to the actual two-component unlink and its denominator to the
+actual unknot. These are actual diagram simplifications, not recognition
+from Jones polynomials. Consequently restricting NJC to the actual-unknot
+locus does not fix this counterexample. The failure is in the proposed
+lift/no-cancellation bridge, not in the original target.
+
+The essential lesson: a generic homological pairing of a chosen disk arc
+system need not be invariant under Hilden slides of that arc system, although
+the specialized TL class is invariant. One cannot define L on cap-tangle
+classes merely by selecting a two-variable fork representative.
+
+Artifacts: cancellation_14.json includes word, seven coefficients, direct
+Reidemeister move list, actual closure PDs and their simplifications.
+hilden_cap_cancel.json (C1 agent) also records the comparison with beta0.
+Earlier discovery/shrink data retained separately as cancellation_standard.json,
+cancellation_21.json, cancellation_minimal.json, shrink_cancellation.py.
+
+5. LITERAL MULTIFORK KEY LEMMA ALSO NEEDS A DIFFERENT STATEMENT
+Let C=(12)(34), with free5,6. Let D=(23)(56), with free1,4. Put
+    b=[2,1,1,1,1,-2]=sigma2 sigma1^4 sigma2^-1,
+    C'=b(D).
+This produces exactly two arcs, with no closed component. The arc56 is fixed
+and is disjoint from both arcs of C. Thus there is no complete two-point
+intersection matching between the product cycles, and their pairing is zero.
+Exact P_b(7,2)=0 and J_b(7,2)=0 confirm the structural observation.
+
+Yet alpha=b(arc23) cannot be made interior-disjoint from arc12. If it could,
+the two half twists sharing their endpoint2 would satisfy the braid relation.
+Set a=b sigma2 b^-1 and d=sigma1. Faithful Artin action gives
+    a d a != d a d.
+The lengths of the reduced images of the first three free generators are
+383,73,313 for the first side, versus61,35,23 for the second. Full images are
+in key_lemma_product_counter.json. Therefore the proposed equivalence with
+simultaneous arc-system disjointness is false, even without closed components.
+This does not contradict tangle splitness: the untouched cap56 supplies the
+splitting mechanism. A viable geometric Key Lemma must track complete
+intersection matchings / cap slides / splitting disks, not demand that every
+individual arc intersection vanish.
+
+6. BOUNDED SAMPLE COUNTS AND LIMITS
+The main C3 sample chose one two-arc zero from each represented family in the
+previous sample:12 cases. Eleven lifted pairings vanish; one does not. That
+case is prior topology index1219 (kernel_arc_commutator, states0,8), whose
+actual closures already had an unknot/unlink certificate. The original lift
+has367 Laurent terms; the targeted shrink led to21letters and7terms, then
+C1's explicit Hilden-slide construction supplied the cleaner14letter example.
+
+Four nonzero-J controls were also evaluated (Bigelow seed, Long-Paton seed,
+one generator, and an arc word). Their P supports have84,813,4,2 terms. Their
+lexicographically extremal term images survive in these four controls. This
+tiny chosen sample does NOT estimate a meaningful collision frequency.
+
+c3_samples.json saves the entire signed Laurent coefficient list for every
+sample and all collapsed-line terms for the selected extremal monomial.
+These are aggregated polynomial coefficients, not an invented list of
+individual geometric intersection points before like terms are combined.
+No fresh braid sweep was run. Eight initial calibration cases, some overlapping
+with the main sample, are in lift_pairing_results.json.
+
+Reproduction: lift_pairing.py, c3_sample.py. All inverse actions use the exact
+cubic satisfied by the generic Krammer generators; local inverse and braid
+relations are checked in the companion C1 code. Each reported sample's Jones
+specialization is compared with the independently implemented TL coefficient.
+
+7. CLAUDE'S 03:00 REVISION: THE JET CALIBRATION IS VALID, NOT YET A PROOF
+The new message 20261103-030009 replaces the old assertion by: raw fork L has
+order exactly2 along the TL line at every NONSPLIT pair. Our trivial14letter
+example does NOT refute this weaker formulation. Keep these claims separate.
+
+With epsilon=1+qt (not the s used above for sqrt(q)), the exact calibration is
+    [L_raw / epsilon^2]_(epsilon=0)=-(q-q^-1)^2 J_norm.
+For the normal coordinate u with t=-q^-1(1+u), epsilon=-u, so
+    (d^2/du^2 L_raw)|_0=-2(q-q^-1)^2 J_norm.
+The scalar is nonzero over Q(q), but it is NOT a Laurent unit. The order is
+second for the raw fork lattice; the actual absolute cap-torus pairing instead
+has zeroth-order specialization (q-1)^2/q J_norm. Lattice/regularization choice
+must be stated before assigning an intrinsic jet order.
+
+After fixing those conventions, 'nonsplit implies exact order2' is equivalent
+to nonzero J on nonsplit pairs, namely the original KL zero-implies-split
+statement. It is a useful translation, but currently supplies no independent
+geometric mechanism. The14letter trivial example shows that order3 genuinely
+occurs on the same actual-unknot locus, where it must be allowed.
+
+Individual exponents b=0 or1 do not have an intrinsic 'less than a full turn'
+meaning in this argument: changing the chosen cover lift multiplies the pairing
+by t^k and shifts all b by k. Since the lower jets vanish, the complete second
+jet still changes only by a unit, but the contribution assigned to each term
+by b(b-1) changes. A monomial proof must respect that gauge dependence.
+
+STOP
+The ORIGINAL NJC is false for this natural tracked geometric lift, even on
+the actual-unknot locus. Literal KL_L for product arc systems is also false.
+The REVISED nonsplit exact-order conjecture, U5-W6, and LemmaQ remain OPEN.
+A next proof mechanism must distinguish harmless cancellation on split tangles
+from cancellation on nonsplit tangles, and work with cap-slide-invariant data
+or an explicitly controlled representative. No additional search is needed to
+establish these calibration findings.

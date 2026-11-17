@@ -1,0 +1,78 @@
+TOTAL ONE-POINT INTERSECTION COMPLEXITY DOES NOT DETECT SPLITNESS
+Scoped test of Conjecture T after replacing one boundary square by the
+correct figure-eight-product dual. This is not an audit of a different
+boundary-noodle functional, whose Jones calibration failed separately.
+
+GEOMETRY
+Place the punctures at 1,...,6 on the real axis. Source caps are straight
+arcs D=(23)(56). The target cap type is C=(12)(34). Its torus dual is the
+product of two figure-eight loops gamma12 and gamma34. Each loop consists
+of a radius 0.26 counterclockwise circle around its first puncture, a
+clockwise circle around its second, and connecting paths below the real
+axis. The two loops have disjoint supports.
+
+The source arc23 meets gamma12 once at (2.26,0), and gamma34 once at
+(2.74,0). Both ordinary oriented intersections are -1 for the explicit
+orientations in geometric_intersections.py. Arc56 misses both loops.
+Thus the geometric and signed one-point matrices are respectively
+
+    [[1,1],[0,0]],       [[-1,-1],[0,0]].
+
+There is no complete matching: one of the two configuration points would
+have to lie on arc56 and a target loop. Therefore there are ZERO actual
+configuration-space intersection pairs. The mixed pairing and its Jones
+specialization vanish identically, without cancellation.
+
+TIGHTNESS FOR THIS TOTAL-INTERSECTION COMPLEXITY
+The figure-eight homology classes are
+    [gamma12]=[meridian1]-[meridian2],
+    [gamma34]=[meridian3]-[meridian4].
+These classes are fixed by changing a representative of the cap tangle
+type while preserving its endpoint pairs (including cap slides). The
+algebraic intersection of a path from puncture2 to puncture3 with a closed
+curve is, up to the orientation convention, the difference of the curve's
+winding indices at those endpoints. Each of the displayed figure-eights
+therefore has intersection of absolute value one with EVERY such arc23.
+The total geometric intersection count is consequently at least two for
+every allowed representative of these two cap types. The displayed
+representative attains two, so it is a GLOBAL minimizer for this corrected
+total one-point complexity, not merely a diagram with no visible bigons.
+
+TANGLE AND JONES CHECK
+In the archived W(6,2) basis the target C is state7 and source D state2.
+Direct independent TL computation gives coefficient([],7,2)={}; bare
+incidence gives no closed components and boundary pairing (01)(23).
+With no braid crossings, the resulting two-arc tangle is the trivial
+e-tangle; its separating disk is visible in the planar cap/cup diagram.
+
+Hence the statement
+    "at every total-intersection minimizer with c>0, J is nonzero"
+is FALSE for the corrected figure-eight-product dual: here c=2 and J=0,
+with an actual split two-arc tangle. This is not a counterexample to
+KL(6,2). It falsifies the proposed assertion that split pairs always have
+zero TOTAL one-point complexity in this corrected dual model.
+
+The obstruction is elementary: total intersection counts isolated edges,
+whereas the configuration pairing requires a complete matching. A viable
+replacement would have to handle matching support or use a complexity
+whose vanishing is actually equivalent to the desired split geometry.
+No such replacement is proved here.
+
+ARTIFACTS AND CONTROLS
+geometric_intersections.py builds actual PL curves and enumerates their
+intersection points and configuration pairs; it does not expand matrices.
+geometric_tight_counter.json contains the two explicit point positions,
+their signs and curve parameters, and the empty configuration-pair list.
+The simple counterexample also has the direct exact circle description
+above, so its count does not depend on a floating-point recognition claim.
+
+The same code has baseline identity and sigma2 / sigma2^-1 controls saved
+in geometric_controls.json. Their counts are stable under doubling curve
+resolution. The identity has four configuration intersections with
+(a,b,sign)=(0,0,+1),(1,0,+1),(1,0,+1),(2,0,+1), hence (1+q)^2.
+Multiplication by q^-2 gives the required mixed self value
+q^-1*delta^2=(1+q)^2/q^2. Generator controls have six configuration
+intersections each and specialize to 1+q and -(1+q^-1), compatible up to
+per-sample deck units with q^-1 times the calibrated Jones entries.
+Those controls do not establish minimum position, and the reference lift
+is chosen independently at the first intersection for each sample.

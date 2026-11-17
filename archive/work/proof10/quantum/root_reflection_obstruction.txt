@@ -1,0 +1,167 @@
+ROOT-OF-UNITY COLOR STRIPS DO NOT ADD COLORED INFORMATION
+2026-10-31. Exact reductions and an actual-knot stress test.
+No proof or counterexample to ordinary Jones unknot detection is claimed.
+
+CONVENTION.
+H_N(K;q) is the zero-framed, reduced N-dimensional colored Jones
+polynomial, with H_1=1, H_2=V, and H_N(unknot)=1. Habiro's symmetric
+cyclotomic form is
+ H_N = sum_{k=0}^{N-1} a_k(q) P(N,k),
+ P(N,k)=product_{j=1}^k(q^N+q^-N-q^j-q^-j),
+where a_k is an integral Laurent polynomial and a_0=1.
+
+EXACT INFORMATION-EQUIVALENCE THEOREM.
+Fix a positive integer s. The data consisting of H_N(K;zeta) at every
+root zeta of order r and every positive color N congruent to one of
+ +/-1,...,+/-s modulo r contain exactly the same information as the
+finite list of Laurent polynomials H_1(K;q),...,H_s(K;q).
+
+Proof. At q^r=1, q^N+q^-N depends only on N modulo r up to sign.
+If N is congruent to +/-j, the product P(N,k) vanishes as soon as
+k reaches the least positive representative of +/-j. Thus the
+cyclotomic sums for H_N and H_j reduce to identical finite sums.
+This is the Kirby--Melvin color reflection/periodicity principle,
+here derived directly from the integral cyclotomic expansion.
+Consequently the initial s Laurent polynomials determine every
+specified root evaluation. Conversely, for any fixed j<=s, the
+evaluations with N=r-j and arbitrarily large r recover H_j at
+infinitely many distinct roots, which determines its Laurent polynomial.
+
+In particular, all levels and all colors N congruent to +/-1 or
++/-2 supply exactly the ordinary Jones polynomial, and no more.
+If V_K=1, this entire infinite set of growing-color values equals1.
+This conclusion is real, but cannot by itself reconstruct color3.
+
+ACTUAL-KNOT COUNTERTEST TO RECONSTRUCTION.
+The explicit braids below have equal full ordinary Jones polynomials:
+ 5_1: [-1,-1,-1,-1,-1]
+ 10_132: [-1,2,-3,-2,3,-4,3,-2,1,-3,2,-3,4,-3,-3,-2].
+The exact Temperley--Lieb calculation gives for both
+ V(A)=A^8+A^16-A^20+A^24-A^28.
+The exact spin-one R-matrix calculation at quantum-group parameter2
+(the square root of the ordinary Jones variable, up to mirroring)
+gives different reduced color3 values:
+ H_3(5_1)=208357048576,
+ H_3(10_132)=12565016366179/4.
+Therefore the two knots are nonisotopic, yet all their root-of-unity
+data in the entire +/-1,+/-2 strip agree at every level.
+
+The accompanying script reruns both exact calculations and checks
+180 reflection identities in Z[q]/(q^r-1), for r=3,...,14, with
+deliberately arbitrary Laurent cyclotomic coefficients. Those checks
+validate implementation; the preceding proof covers all levels.
+
+PRECISE DIVISIBILITY LEFT BY ORDINARY JONES EQUALITY.
+If V_K=V_L, then a_1(K)=a_1(L), since
+ H_2=1+a_1(q)(q^2+q^-2-q-q^-1).
+Hence for every N>=3,
+ H_N(K)-H_N(L) is divisible in Z[q,q^-1] by
+ P(N,2)=q^(-2N) product_{j=1,2}(q^(N-j)-1)(q^(N+j)-1).
+For V_K=1, take L=unknot. This is a useful exact candidate filter.
+The divisor has Laurent support from -2N to2N, of width4N.
+Consequently a defect with support width less than4N must vanish.
+For N=3 its cyclotomic factorization, up to a monomial, is
+ (q-1)^4 (q+1)^2 Phi_4(q) Phi_5(q).
+It vanishes at exactly the low orders1,2,4,5, with the listed
+multiplicities. Sampling only those roots cannot resolve color3.
+The divisor is optimal for arbitrary cyclotomic coefficient sequences
+(set only a_2 unequal); optimality for sequences realized by knots is
+not asserted.
+
+AN ATTRACTIVE ASYMPTOTIC BRIDGE FAILS SHARPLY.
+One might hope that the growing colors r-2, whose normalized values
+are forced to1 by V=1, control color r at the same rth root and
+therefore hyperbolic volume. Even for actual knots, there is a severe
+boundary effect between these colors. For every knot, H_(r-1)(zeta_r)=1.
+For the figure-eight knot E, H_(r-2)(zeta_r)=V_E(zeta_r) tends to1,
+whereas H_r(zeta_r) grows exponentially. Moreover the missing
+exponential behavior is already present in the first q derivative
+of H_(r-2) at the root. This last assertion admits a short exact proof.
+
+FIGURE-EIGHT DERIVATIVE LEMMA.
+Let zeta_r=exp(2pi*i/r) and theta=pi/r. Then
+ lim (2pi/r) log |dH_(r-2)(E;q)/dq at q=zeta_r|
+ equals the corresponding limit for H_r(E;zeta_r), namely the
+hyperbolic volume of E, approximately2.0298832128.
+In contrast, (2pi/r)log|H_(r-2)(E;zeta_r)| tends to0.
+
+Proof. The figure-eight has a_k=1 for every k. Put
+ f_1=2cos(4theta)-2cos(2theta),
+ Q_r=sum_{k=2}^{r-3} product_{j=3}^k
+                  4sin((j-2)theta)sin((j+2)theta).
+All terms of Q_r are positive for r>=6. Differentiating the
+cyclotomic sum, only the unique vanishing factor j=2 contributes
+to terms k>=2. Direct differentiation gives
+ H'_(r-2)(zeta_r)=(-2i/zeta_r)*[
+   (r-2)sin(4theta)+sin(2theta)+r*f_1*sin(4theta)*Q_r ].
+
+To compare growth rates, write
+ h_k=product_{j=1}^k4sin^2(jtheta), so H_r(zeta_r)=sum_{k=0}^{r-1}h_k.
+The product appearing in Q_r obeys the telescoping identity
+
+ product_{j=3}^k4sin((j-2)theta)sin((j+2)theta)
+ ------------------------------------------------ =
+                         h_k
+
+ sin((k+1)theta)sin((k+2)theta)
+ ---------------------------------------------------------------.
+ 16sin((k-1)theta)sin(k theta) product_{j=1}^4sin(jtheta)
+
+For 2<=k<=r-3 this ratio is bounded above by C*r^6. At a largest
+term h_k, whose index is asymptotic to5r/6, the ratio is bounded
+below by c*r^4. The largest term is in this index range for all
+sufficiently large r and grows exponentially. Since a sum of r
+positive terms lies between its largest term and r times that term,
+ c*r^3*H_r <= Q_r <= C*r^6*H_r
+for large r, after changing positive constants. Thus Q_r and H_r
+have the same exponential growth rate. The coefficient
+r*f_1*sin(4theta) has magnitude asymptotic to48*pi^3/r^2; the other
+two terms in the derivative bracket are bounded. These polynomial
+factors and the bounded subtraction do not change the positive
+exponential rate. This proves the derivative assertion from the
+known figure-eight Kashaev limit. Finally
+ H_(r-2)(zeta_r)=1+2cos(4pi/r)-2cos(2pi/r)=1+O(r^-2),
+which proves its zero rate.
+
+Numerical evaluations, only illustrations of the proved comparison:
+ r       scaled log value     scaled log first derivative  scaled log H_r
+ 40      -0.011952              3.533408                     2.858168
+ 80      -0.001463              2.993118                     2.525111
+160      -0.000182              2.612030                     2.318187
+320      -0.000023              2.369902                     2.194416
+All scaled logarithms mean (2pi/r)log(abs(...)).
+
+IMPLICATION FOR THE PROOF SEARCH.
+The root-reflection mechanism yields a genuine exact reduction, but
+its infinite set of higher-color outputs is just a re-encoding of
+the ordinary Jones polynomial. Any argument using it to obtain new
+geometry needs additional information transverse to this set, such
+as controlled colored derivatives or values in an interior fusion
+channel. The actual figure-eight calculation prevents assuming such
+control from generic continuity or polynomial dependence alone.
+No assertion is made that the special fiber V=1 cannot satisfy an
+additional rigidity theorem; that would be the genuinely new step.
+
+PRIMARY SOURCES.
+Habiro, On the quantum sl_2 invariants of knots and integral homology
+spheres, Geometry & Topology Monographs4(2002),55--68.
+https://arxiv.org/abs/math/0211044
+
+T. T. Q. Le, Lectures on the colored Jones polynomial, Section4.9,
+Proposition4.9: root-of-unity reflection, and the failure of a naive
+double-limit volume conjecture when the color differs from the order.
+https://letu.math.gatech.edu/Papers/Lectures_Luminy_2014_new.pdf
+
+H. Murakami, The colored Jones polynomials and the Alexander polynomial
+of the figure-eight knot, Section2: the explicit Habiro--Le formula.
+https://arxiv.org/pdf/math/0502428
+
+H. Murakami, A version of the volume conjecture, for established
+figure-eight asymptotics and their dependence on the chosen limit.
+https://arxiv.org/abs/math/0603217
+
+REPRODUCTION.
+work/proof10/quantum/root_reflection_check.py and its JSON output.
+The R-matrix engine is the previously audited
+work/creative6/quantum_two_copy_test.py, with its exact arithmetic
+Markov-stabilization checks documented in that pass.

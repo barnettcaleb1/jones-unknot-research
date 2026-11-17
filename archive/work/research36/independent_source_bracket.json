@@ -1,0 +1,34 @@
+{
+  "horizontal_omega1": {
+    "bracket_A": {
+      "-15": 1,
+      "-11": -1,
+      "-7": 2,
+      "-3": -1,
+      "1": 2,
+      "5": -1
+    },
+    "max_frontier": 4,
+    "max_pairing_states": 2
+  },
+  "horizontal_omega5": {
+    "bracket_A": {
+      "-9": 1,
+      "-5": -1,
+      "-1": 2,
+      "3": -1,
+      "7": 2,
+      "11": -1
+    },
+    "max_frontier": 4,
+    "max_pairing_states": 2
+  },
+  "horizontal_claimed": {
+    "bracket_A": {
+      "-5": 1,
+      "-1": 1
+    },
+    "max_frontier": 4,
+    "max_pairing_states": 2
+  }
+}

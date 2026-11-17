@@ -1,0 +1,59 @@
+AN ACTUAL TWO-PARAMETER RIBBON-DOUBLE FAMILY, COMPLETELY EXCLUDED
+2026-10-31. No novelty claim. This is a family theorem, not generic Jones detection.
+
+CONSTRUCTION AND GEOMETRIC DATA
+
+Use Musick, Minimal bridge projections for 11-crossing prime knots, arXiv1208.4233v3, p71, row11n42. The source gives a 78-crossing DT projection of the Kinoshita–Terasaka knot. The exact DT and its planar diagram are stored in kt_bridge_data.json. Code verifies precisely three maximal overpasses, of lengths34,28,16, and simplifies the projection to11crossings. The simplified KT Jones polynomial matches the independent four-braid calculation in pass5.
+https://arxiv.org/abs/1208.4233
+
+A face of this projection meets all three overpasses. Select one edge on each, then make a second copy with reflected planar cyclic orders (port j maps to -j mod4), preserving over/under parity. Along selected edge i, either retain the two separate mirror edges (0) or cross-glue corresponding reflected ends (infinity). Fix one infinity join. The other two sites are the two band sites.
+
+With both band sites 0, the separating sphere meets the diagram only at the fixed join, so this is geometrically K#mirror(K), irrespective of polynomial checks. Joining both remaining sites is cutting both bands; the resulting THREE-component diagram simplifies by Reidemeister moves to three crossing-free unknots. The one-site cuts are two-component links. All pairwise linking numbers of every cut diagram are0, so reversing component orientations does not introduce a Jones monomial ambiguity. Initial and simplified PD codes are stored for all four cases in kt_double_cuts.json.
+
+The constructor now uses the stored planar diagram directly, avoiding dependence on a fresh DT decoding. The selected edges are recorded in the cut data. Its default port convention for full twists has been checked against actual planar diagrams at BOTH band sites: insert a two-crossing positive braid; its Jones polynomial agrees with n_i=-1 in the recurrence below. Actual twist PDs and exact polynomials are stored in kt_twist_check.json.
+
+DISK-GROUP SCOPE
+
+This mirror-double/bridge construction is intended as the canonical half-spin ribbon disk, whose group is the companion knot group. Folding identifies the two mirror bridge diagrams. However, no separate disk-group presentation computation was completed for this particular serialized band diagram. The all-parameter Jones exclusion below is independent of that identification: it requires only the explicit diagrams, two local full-twist sites, and their cut diagrams. Do not treat polynomial equality as a proof of a disk-group identification.
+
+THE FOUR COEFFICIENTS
+
+Put t=x^2, where x is Regina's Jones variable, and delta=-x-x^-1. Let Q_C be the Jones polynomial of the link with the bands in C cut, divided by delta^|C|. Write Q0 for neither cut, Q1,Q2 for one cut, and Q12 for both cut. Exact computation gives:
+  Q0=V_KT(t)V_KT(t^-1),
+  Q12=1.
+Complete integral coefficients are recorded in kt_double_locus.json and can be re-derived from the actual cut polynomials using kt_leading_verify.py.
+
+For integers m,n counting full band twists, the local antiparallel twist skein relation gives
+  V_(m,n)=Q0*t^(2m+2n)
+          +Q1*(1-t^(2m))*t^(2n)
+          +Q2*t^(2m)*(1-t^(2n))
+          +(1-t^(2m))*(1-t^(2n)).
+A negative m or n is allowed; this identity holds in the Laurent polynomial ring. The full-twist sign convention was fixed by the two actual twist checks above.
+
+Set
+  A=Q0-Q1-Q2+1, B=Q2-1, C=Q1-1.
+Then
+  V_(m,n)-1=A*t^(2m+2n)+B*t^(2m)+C*t^(2n).
+Their exact leading data are
+  degree_t A=10, leading coefficient=-1;
+  degree_t B=8,  leading coefficient=-1;
+  degree_t C=9,  leading coefficient=-1.
+
+PROOF OF ALL-INTEGER EXCLUSION
+
+For any integers m,n, let M=max(10+2m+2n,8+2m,9+2n). Every summand that reaches exponent M contributes coefficient -1. Every other summand has strictly lower degree. Consequently [t^M](V_(m,n)-1) is -1,-2,or-3, never0. Therefore V_(m,n) is not1 for ANY integer pair (m,n).
+
+This is a direct leading-term proof with no parameter bound and no dependence on an exhaustive numerical search. The existing affine-exponent lattice solver independently gives an empty solution locus (49 total RREF states); that computation is redundant after the leading-term proof.
+
+REPRODUCTION
+
+Geometry/polynomial packages already available at work/braid_classification/packages:
+  Spherogram2.4.1; Regina7.4.1.
+From the workspace root:
+  python3 work/proof12/tangle/kt_double_cuts.py
+  python3 work/proof12/tangle/kt_double_locus.py
+  python3 work/proof12/tangle/kt_twist_check.py
+Only Python standard library is needed to check the exact final arithmetic:
+  python3 work/proof12/tangle/kt_leading_verify.py
+
+Random choices in Reidemeister simplification can change the final simplified PD, but not the initial diagrams, linking numbers, or computed Jones polynomials. The saved initial PDs make the inputs fixed.

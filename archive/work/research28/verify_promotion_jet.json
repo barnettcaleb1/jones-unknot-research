@@ -1,0 +1,27 @@
+{
+  "ordinary_Jones_q": {
+    "-2": 1,
+    "-4": 1,
+    "-5": -1,
+    "-6": 1,
+    "-7": -1
+  },
+  "unreduced_difference_h5_u_variable": "-30720",
+  "reduced_color3_h5_q_variable": "320",
+  "Habiro_a2_difference": {
+    "-5": 1,
+    "-8": 1,
+    "-13": 1,
+    "-7": -1,
+    "-12": -1,
+    "-15": -1
+  },
+  "all_color_fifth_coefficient": "8*(m*m-1)*(m*m-4)",
+  "Casimir_image": "8*c*(c-3), c=m*m-1; inferred by the all-color proof",
+  "geometric_step": "Habiro Theorems5.4 and6.18, not computed by this script",
+  "completed_ratio_color3_span_obstruction": {
+    "numerator_span": 34,
+    "denominator_span": 48,
+    "would_be_Laurent_quotient_span": -14
+  }
+}

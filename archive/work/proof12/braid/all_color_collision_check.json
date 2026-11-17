@@ -1,0 +1,83 @@
+{
+  "braids": {
+    "5_1": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "10_132": [
+      1,
+      1,
+      1,
+      -2,
+      -1,
+      -1,
+      -2,
+      -3,
+      2,
+      -3,
+      -3
+    ]
+  },
+  "ordinary_Jones_A": {
+    "16": 1,
+    "20": -1,
+    "24": 1,
+    "28": -1,
+    "8": 1
+  },
+  "color3_unreduced_variable_u": {
+    "5_1": {
+      "40": 1,
+      "32": -1,
+      "30": -1,
+      "28": -1,
+      "14": 1,
+      "12": 1,
+      "10": 1,
+      "8": 1,
+      "6": 1
+    },
+    "10_132": {
+      "44": 1,
+      "40": -1,
+      "30": -1,
+      "24": -1,
+      "16": 1,
+      "14": 1,
+      "10": 1,
+      "6": 1,
+      "0": 2,
+      "-4": -1
+    }
+  },
+  "unreduced_difference_s_jet": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-30720",
+    "-614400"
+  ],
+  "normalization": "u=quantum-group variable; ordinary Jones q=u^-2; reduced color3=unreduced/(u\u00b2+1+u^-2)",
+  "reduced_difference_h5": "320",
+  "Habiro_a2_difference_h1": "8",
+  "Habiro_a2_difference_polynomial": {
+    "-5": 1,
+    "-8": 1,
+    "-13": 1,
+    "-7": -1,
+    "-12": -1,
+    "-15": -1
+  },
+  "Habiro_a2_factor": "q^-15(q\u00b2-1)(q\u00b3+1)(q\u2075+1)",
+  "all_N_formula": "H_N(5_1;e^h)-H_N(10_132;e^h)=8(N\u00b2-1)(N\u00b2-4)h^5+O(h^6), every N>=2",
+  "primary_data": [
+    "https://katlas.org/wiki/5_1",
+    "https://katlas.org/wiki/10_132"
+  ],
+  "R_matrix_source": "Jackson-Kerler arXiv0912.2114 eq23, s=u\u00b2; reproduced symbolically here"
+}

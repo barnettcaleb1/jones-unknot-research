@@ -1,0 +1,16 @@
+{
+  "README.txt": "b039a64fd19396e2c30f8edadc82dfb307dd61b26046bdcfeba230f52b4692e4",
+  "work/attack_search/search.py": "90716915526cb5c92500d75c38c634559339ed92a091fd6984b7cb9d56b90550",
+  "work/pass2/braid_kernel.py": "11a1bbed2878fd2ec1d0b7524dd5fb247c2a78364f66f3d3d872a593c2652772",
+  "work/pass2/tl5_block.py": "08e80801d0a14900dee301bc76b2dead0066b568ef60c61111c05ea0777376c2",
+  "work/proof12/braid/all_color_collision_check.json": "b928ba55cbbdac2187cc81486ec66febcb4eb886ffb92f209becd4572a30377b",
+  "work/proof12/braid/all_color_collision_check.py": "96a3037478ea216d747fd67c3ac49cf654858f0e761341a7c649f8d375dc75c4",
+  "work/research28/braid_structure.txt": "fa94ae55a70e4b41e33f0a67e051860ab1f3a31b3b073214465a142f5e7d02d0",
+  "work/research28/homology_geometry.txt": "08d8496c7f1d295b61491e38754cb9a645f3aacd310c3cf886cd56e68b58674a",
+  "work/research28/quantum_promotion.txt": "421ae17a8cf1d815621def44c95e0e7b2e8f4417286ccd1a5f432b9d2aa4e81e",
+  "work/research28/quantum_promotion_audit.txt": "bb1d7619c28e7bdfe491a2196959eb8056ab5afec2e5b3f31e84c4090eb818e5",
+  "work/research28/verify_promotion_jet.json": "5cf2c8acf12584f20515c28622e25cce52bd75a0e16c54d73eaba6b7a626d372",
+  "work/research28/verify_promotion_jet.py": "bc9c7fd15d680ce40ce4c0127fb81300d5582be0b6164b8ed27f119c57309862",
+  "work/research28/verify_rank_one_twists.json": "4fa4e405d64d4fb005dc6db30b939a0d8cbcb64ac4efda8aba3dda52cc6b99cf",
+  "work/research28/verify_rank_one_twists.py": "5e130201bdf23b4f23e37123c4c81254819c6dce4b50b484bee159890ffe6c0d"
+}

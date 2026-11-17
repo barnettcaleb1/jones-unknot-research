@@ -1,0 +1,122 @@
+STRATEGY15: ACTUAL GEOMETRY FOR A ROTOR OF THE UNKNOT
+Status: bounded construction audit. No non-boundary-parallel C4 rotor with a
+certified unknot completion was constructed. No Jones counterexample is claimed.
+
+1. A GEOMETRIC EARLY-KILL TEST FOR THE STATOR
+
+Write a proposed closed link as R union S, with R the rotor and S its exterior
+stator, and let tau be the spatial half-turn used in the rotant operation. If
+there is an isotopy tau(S) to S relative to the boundary endpoints, then
+ tau(R) union S is isotopic to tau(R union S).
+This follows simply by applying the global rotation and then the stator isotopy.
+Hence an unknot seed remains an unknot, independently of how complicated R is.
+A successful completion must break this flip symmetry. In particular, four
+independent, symmetrically arranged cap simplifications cannot provide the
+needed collective cancellation. This is a sufficient kill test, not a complete
+classification of stators.
+
+2. A CONCRETE CERTIFIED BUILDING BLOCK FROM KINOSHITA'S THETA GRAPH
+
+Ozawa--Taylor's Figure4 supplies an actual non-boundary-parallel 2-tangle T:
+remove a regular neighborhood of the indicated edge, including both vertices,
+from the Kinoshita theta graph. The remaining two edges are the two strands of T.
+Their explicitly depicted trivial-tangle filling produces trefoil # figure-eight.
+If T were boundary-parallel, this would be a two-bridge presentation of that
+composite knot, contradicting Schubert's bridge-number theorem.
+
+There is also an actual unknot filling: reconnect the two remaining edges locally
+at the two former vertices. This gives their constituent cycle, which is an
+unknot by the Brunnian property. Thus T is a certified nonrational, unknot-fillable
+2-tangle, with a second filling whose nontriviality is independently known.
+This is an existing geometric resource, not a new example.
+
+Source: Makoto Ozawa and Scott A. Taylor, Two More Proofs that the Kinoshita Graph
+is Knotted, Figure4 and the preceding proof; arXiv1803.05474v2 (2018), American
+Mathematical Monthly126(4) (2019).
+https://arxiv.org/html/1803.05474
+
+The missing construction is substantial: putting four copies of T in a cyclic
+arrangement does not prove that a single exterior stator closes their union to U.
+It must supply one connected knot using every rotor strand, and an actual
+spanning disk or isotopy for that knot. A proof using four separately available
+caps is vulnerable to the flip-symmetric-stator test above. This pass does not
+assert that the local building block extends to the desired rotor.
+
+3. THE NATURAL BRANCHED-DOUBLING RECIPE IS RULED OUT
+
+Let theta be a spatial theta graph and let kappa be an unknotted constituent
+cycle. Double-cover S3 branched over kappa and lift the third edge to a knot K.
+Calcut--Metcalf-Burton, Lemma2.3, proves the exact equivalence
+                  K is the unknot  <=>  theta is unknotted.
+Consequently, lifting the third edge of a NONTRIVIAL Brunnian theta graph can
+never provide an unknot anchor. The proof uses the equivariant Dehn lemma, not
+Jones detection. In their Example3.1, Kinoshita's graph lifts to T(3,5), despite
+all three constituent cycles being unknots.
+
+This is an all-examples exclusion for this particular construction, not merely
+a failed small example. It does not exclude other ribbon-boundary, unzipping,
+or stator-gluing operations on spatial graphs.
+
+Source: Jack S. Calcut and Jules R. Metcalf-Burton, Double branched covers of
+theta-curves, J. Knot Theory Ramifications25(8) (2016),1650046, Lemma2.3 and
+Example3.1. DOI10.1142/S0218216516500462.
+https://isis2.cc.oberlin.edu/faculty/jcalcut/prime_theta_curve.pdf
+
+4. WHY RIBBON THICKENING NEEDS MORE THAN CONSTITUENT UNKNOTS
+
+There is a basic control example before any knotted spatial graph is used.
+Take a planar theta graph as the core of two disks joined by three positively
+half-twisted bands. This is the standard genus-one Seifert surface of a trefoil.
+The three core cycles are unknotted, but the surface boundary is not. Therefore
+all-constituents-U data do not determine a thickened graph's knot boundary.
+The band framing and the attachment order are essential data.
+
+A C3-symmetric single classical knot traversing every edge equally must use each
+edge an even number of times: at a trivalent vertex, 3m incident strand ends
+must be paired. The minimum is two traversals per edge. Doubling is therefore
+natural, but it is precisely where ribbon framing and collective interactions
+become unavoidable. Strand deletion is not the same as capping these doubled
+strands, and neither is the same as a band fusion.
+
+There is nonetheless a controlled finite-template target. Fix an ACTUAL
+orientable surface made from two disks and three bands whose core is a chosen
+Brunnian theta graph. Record its attachment order and integer framings. Cutting
+two bands leaves an embedded disk and hence an actual unknot boundary. Cutting
+one band leaves an annulus whose core is a constituent unknot; its two boundary
+components are controlled by the recorded annular framing. Only the full
+three-band boundary retains the collective graph information.
+
+Full twists in the bands then admit an exact finite skein expansion from these
+cut surfaces. This could isolate the one joint coefficient invisible to all
+proper cuts. It supplies a tractable computation once an explicit surface diagram
+is fixed, but it does not itself force that coefficient to be the unknot value.
+No such band family was computed in this pass. A cyclic ribbon boundary also
+needs a separate check that the operation is an APR rotor, with the right number
+of boundary endpoints; a doubled C3 graph is not automatically a standard C4
+rotor.
+
+5. ACTUAL FOUR-ROTOR DIAGRAM INSPECTED
+
+MacColl's Figure1 (from Jin--Rolfsen's example) is a genuine four-rotor whose
+rotants can be distinguished by Khovanov homology. Its drawing has four repeated
+sectors, but each is a 3-tangle: two external endpoints and four connections to
+neighboring sectors. It is not a necklace of four 2-tangles. Thus replacing a
+sector by the Kinoshita block above requires a new wiring construction. The known
+completion in that figure is a two-component link, not an unknot certificate.
+
+Joseph MacColl, Rotors in Khovanov Homology, Canad. Math. Bull.59(1) (2016),159--169,
+Figure1 and Theorem1.5; DOI10.4153/CMB-2015-034-6.
+https://arxiv.org/html/1501.00851
+The source PDF and a rendered crop are saved here only for geometric inspection.
+
+RECOMMENDED NEXT CONCRETE STEP
+
+Require one drawn rotor/stator pair, together with a topological unknot
+certificate, before any word or framing enumeration. The Kinoshita edge-complement
+is an actual nontrivial unknot-fillable building block; its cyclic assembly is
+the missing problem. Reject ordinary inverse-braid completions (previous pass),
+flip-symmetric stators (Section1), and third-edge branched lifts of nontrivial
+theta graphs (Section3) at construction time. The remaining opening is an
+asymmetric global reconnection that uses all strands and has a visible spanning
+disk before the flip. This is a concrete geometric obligation, not a result
+that such a construction exists.

@@ -1,0 +1,39 @@
+{
+ "label": "C2u_unknots_60_62",
+ "count": 102,
+ "status": {
+  "CERTIFIED_UNKNOT": 102
+ },
+ "certificate_kinds": {
+  "tietze": 102
+ },
+ "tietze_success": 102,
+ "V_K=1": 102,
+ "Delta=1": 0,
+ "rep_groups": {},
+ "crossings_min_max": [
+  60,
+  62
+ ],
+ "secs_median_max_total": [
+  0.018,
+  0.19,
+  2.6
+ ],
+ "by_crossings_bucket4": {
+  "60": {
+   "count": 102,
+   "unknot": 102,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.018,
+   "max_s": 0.19
+  }
+ },
+ "wall": 0.5,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

@@ -1,0 +1,143 @@
+SIGNED PLANAR GRAPH ELIMINATION: THE MISSING BOUNDARY CHANNEL
+2026-11-01. Bounded mechanism test. No generic detection theorem is claimed.
+
+Verdict
+The electrical-network analogy has an exact obstruction at its first
+nontrivial elimination step. Decimating a degree-three vertex of a Jones
+partition function generally creates a three-terminal interaction which
+cannot be represented by any triangle of pair interactions. Among the eight
+possible crossing-sign triples, precisely the six mixed triples avoid the
+obstruction; these give the established Reidemeister III identities.
+Moreover, an actual hard unknot falsifies the proposed monotone reduction
+premise. This closes the specific local reduction mechanism, not every
+possible signed-graph proof of unknot detection.
+
+Duplicate check
+The existing work already excludes raw spanning-tree-count bounds,
+edge-factorization/strong-Rayleigh shortcuts, ferromagnetic positivity on
+the Jones specialization, and universal positive braid operators. Those
+arguments are not being repeated. Here the object checked is the FULL
+three-terminal connectivity vector, not its one scalar closed evaluation.
+
+1. Conventions and the global scalar
+Let x=A^4, delta=-A^2-A^-2, and use the planar random-cluster sum
+  Z_G(Q,{v_e})=sum_S Q^{k(S)} product_{e in S} v_e.
+For Tait edge signs epsilon_e, the bracket unknot=1 is
+  <D>=A^(-sum epsilon_e) delta^(-|V(G)|-1)
+       Z_G(delta^2,{delta A^(2 epsilon_e)}).
+Thus on the Jones curve
+  Q=x+2+x^-1, u=-1-x, v=-1-x^-1,
+  uv=Q, u+v=-Q.
+An edge of either sign carries u or v. All calculations below are over
+Q(x), with identities cleared of denominators when necessary.
+
+2. Exact three-terminal elimination lemma
+Fix three boundary vertices 1,2,3. Record separately the five noncrossing
+boundary partitions 1|2|3, 12|3, 23|1, 13|2, 123. A central star with arm
+weights a,b,c has connectivity coefficients
+  (lambda, ab, bc, ac, abc),  lambda=Q+a+b+c.
+The Q in lambda arises when the central vertex is an internal isolated
+component; the three singleton arms give a+b+c.
+
+A triangle with edge weights r12,r23,r13 has vector
+  (1, r12, r23, r13,
+   r12*r23+r12*r13+r23*r13+r12*r23*r13).
+For lambda nonzero, proportional equality forces the multiplier lambda
+and the three pair weights
+  r12=ab/lambda, r23=bc/lambda, r13=ac/lambda.
+The final coordinate agrees if and only if
+  abc = Q(Q+a+b+c).                                      (*)
+Equivalently the omitted 123 coefficient after matching the first four is
+  kappa=(abc/lambda^2)*(Q*lambda-abc).
+This is an exact local lemma, not a numerical response approximation.
+For generic Q all five planar connectivity vectors are independent;
+under the standard planar graph-to-bracket conversion they give the five
+TL_3 basis matchings with invertible diagonal rescalings. Hence equality
+of every surrounding closure requires this final coefficient too.
+
+3. Complete crossing-sign classification of this move
+If (a,b,c)=(u,u,v), then lambda=u and the triangle weights are (u,v,v).
+The other five mixed triples follow by permutation and x->x^-1. Thus (*)
+holds for all six mixed triples and the output weights again belong to
+{u,v}. The graph-to-bracket prefactors agree: u=delta*A^2 compensates for
+the removed vertex and the change in edge-sign sum. This is precisely
+the usual graphical Reidemeister III transformation.
+
+For all three arms u, the cleared obstruction is
+  abc-Q*lambda = -(x+1)^3*(x-1)^2/x^2,
+and for all three arms v it is
+  abc-Q*lambda = -(x+1)^3*(x-1)^2/x^3.
+Neither is zero as a rational function. Therefore not even arbitrary
+rational pair weights on a triangle replace these stars universally.
+Special zeros x=1 or -1 do not supply an all-polynomial identity; at
+x=-1 the eliminated coefficients themselves degenerate.
+
+This explains the precise failure of unrestricted electrical decimation:
+its scalar/linear response formalism retains pair interactions, whereas
+the Jones partition function generates the extra 123 interaction. Keeping
+that interaction gives a correct state-sum computation, but the effective
+object is no longer an ordinary signed Tait graph of individual crossings.
+Discarding it changes some actual closures. This does NOT prove that a
+particular closed graph cannot have further cancellations of such terms.
+
+4. No universal positivity of the discarded channel after knot closure
+Take the noncrossing matching associated to the 123 state and close it to
+one circle. Tie a local trefoil into one exterior arc. This preserves the
+number of components, and normalized bracket/Jones evaluation of each
+local term is multiplied by the trefoil Jones polynomial. In conventions
+V_trefoil(t)=t+t^3-t^4, one has V_trefoil(2)=-6. Consequently a nonzero
+discarded-channel evaluation and its locally knotted version have opposite
+signs at t=2. This is an actual one-component closure test, and the local
+writhe correction is already included by using normalized Jones values.
+
+Thus all-exterior sign-definiteness of the residuals is false. This does
+not refute a proposed sign rule restricted to exteriors that are separately
+proved to arise in a Jones-one host; such a restriction would require new
+geometric input and is not supplied by the local calculation.
+
+5. A precise diagram-reduction premise is already false
+A tempting complete argument would be: every signed planar diagram with
+monomial reduced bracket has a sequence of crossing-nonincreasing graph
+Reidemeister moves ending at the empty diagram; therefore it is an unknot.
+The premise fails even on actual unknots. Kauffman–Lambropoulou's Culprit,
+Section 1, Figure 2, is a ten-crossing unknot with no simplifying type-I
+or type-II move and no type-III move, including the exterior spherical
+region. Its bracket is a framing monomial but this local reduction process
+cannot even start. We use only that initial obstruction, not the paper's
+stronger historical claim about the optimal number of extra crossings.
+
+The conclusion remains valid if one renames these local operations as
+loop/bridge removal, opposite-sign series/parallel cancellation, and
+admissible signed star-triangle moves: they are the graphical versions
+of the same Reidemeister operations. Allowing temporary enlargement can
+evade this example, but no Jones-controlled enlargement or selection
+rule has been derived. Allowing arbitrary electrical weights instead
+encounters the independent-channel obstruction in Sections 2–3.
+
+6. Scope of the surviving information
+The exact Jones polynomial gives one closed evaluation, not all five
+connectivity coefficients of every cut subgraph. A monomial closed answer
+therefore cannot be promoted to vanishing of each local kappa by this
+argument. Neither deletion-contraction nor electrical response supplies
+that promotion. No new generic proof mechanism or counterexample emerged,
+and there is no reason here to launch a larger graph enumeration.
+
+Primary sources
+[1] L.H. Kauffman, Combinatorics and topology—François Jaeger's work in
+knot theory, Ann. Inst. Fourier 49 (1999), 927–953. Section 4, Figure 11
+and pp.939–940 give signed graph moves/electrical interpretation; Section
+5, Propositions 5–6 give the graph state sum.
+https://www.numdam.org/item/10.5802/aif.1700.pdf
+
+[2] L.H. Kauffman and S. Lambropoulou, Hard Unknots and Collapsing Tangles,
+arXiv:math/0601525v5, Section 1, Figure 2, printed pp.6–8.
+https://arxiv.org/pdf/math/0601525
+
+[3] S.D. Noble and D.J.A. Welsh, Knot Graphs, Section 2, Theorem 2.
+Careful: their broader abstract-matroid moves (A),(B),(C) are distinguished
+from the local planar versions (A),(C),(D). This note uses genuinely local
+plane moves, not arbitrary abstract circuit/cocircuit replacements.
+https://bura.brunel.ac.uk/bitstream/2438/1679/1/FullText.pdf
+
+The three-terminal coefficient matching and its sign specialization above
+are derived here directly; no novelty claim is made.

@@ -1,0 +1,130 @@
+INDEPENDENT SECTOR AND LOCAL-CROSSING AUDIT
+1 November 2026. Joint construction by parent and tangle agent;
+independent algebra/topology audit recorded by homology agent.
+
+Claim under the definitions of Boyle--Spyropoulos 2609.40122v1:
+for every classical knot K embedded locally in RP3,
+                     beta_Re(K) = c(K).
+
+This note supplies the sector-identification step and checks the entire
+inequality. It uses the prior balanced-subgraph identity
+ beta(G)=max over vertex lift choices of the number of edges preserving
+         those choices in the orientation double cover S2 -> RP2.
+
+1. Canonical coloring and balanced self-crossing edges.
+
+Let D be any generic RP2 diagram of K. Its lifted diagram in S2 consists
+of two immersed circles A and B=tau(A), where tau is antipodal. These
+are projections of the two lifted copies of K. Orient B by the deck
+pushforward of the orientation of A. Choose an integer winding function
+I on S2 minus A. Since tau reverses the orientation of S2,
+                  J = I - I composed with tau
+is an integer index function for the oriented union A+B and satisfies
+J composed with tau = -J. Its parity h is tau-invariant and gives a
+canonical checkerboard coloring downstairs. Changing I by a constant
+does not change J. Call the h=1 regions black.
+
+Write f=I mod2. On a black face, f(tau x)=1-f(x), so selecting the lift
+where f=1 chooses one lift of every black vertex. Across a crossing
+whose two strands belong to A (or both to B), opposite black sectors
+have the same f value. Such a Tait edge therefore preserves the chosen
+lifts. Across an A--B crossing the f value changes. Consequently every
+self-crossing of the lifted component A supplies a balanced edge of
+the black Tait graph G. Hence
+                  beta(G) >= c_self(D).
+
+After deleting B, A is a genuine spherical diagram of the lifted knot K,
+with exactly c_self(D) crossings. The cover is the usual S3 cover of
+RP3; its complement of the two projection poles is S2 times an interval.
+Thus
+                  c_self(D) >= c(K).
+
+2. Exact parity of the tree sector.
+
+Let epsilon_e=+/-1 be the Tait CROSSING sign in G (not a holonomy sign),
+and let w be the oriented diagram writhe. Table 2 of the source shows
+that an internal tree edge contributes exponent epsilon_e modulo4 and
+an external edge contributes -epsilon_e modulo4. Since every tree has
+v(G)-1 edges, every normalized tree monomial has A-exponent residue
+       r_G = 2(v(G)-1) - sum_e epsilon_e - 3w        (mod4).
+The ordinary integral Jones sector is r_G=0; the half-integral sector
+is r_G=2. This also follows from Proposition6.8. Switching a crossing
+does not change r_G, since the resulting change is +/-2 +/-6, a multiple
+of4. Thus the sector labeling is a shadow property.
+
+Here is a direct identification for the canonical black shading above.
+Perform the oriented Seifert smoothing at every crossing. The resulting
+circles in RP2 are all contractible: their total mod2 class is zero,
+and pairwise disjoint essential circles in RP2 can number at most one.
+Let s be their number and c the number of original crossings. Smoothing
+one crossing changes component parity, so
+                         s = c+1 (mod2).
+
+Let N be the neighborhood of the black state subgraph. A local crossing
+check shows that this subgraph includes precisely the edges for which
+epsilon_e equals the oriented crossing sign. This convention can also
+be checked on the two Reidemeister-I configurations: a positive Tait
+bridge is a negative oriented curl, whereas a positive local Tait loop
+is a positive oriented curl. If m counts unequal signs, the state graph
+has c-m edges, and therefore
+                         chi(N)=v(G)-c+m.
+Meanwhile the exponent formula above gives
+ r_G/2 = v(G)-1+m = chi(N)+c-1 = chi(N)+s             (mod2).
+
+The boundary of N is exactly the s state circles. For a subsurface of
+RP2, chi(N)+s modulo2 records whether N contains the unique crosscap:
+every orientable component contributes an even number; a nonorientable
+component contributes one.
+
+Finally, the oriented smoothing can be performed equivariantly in the
+lift, changing the index function J only in the crossing disks. The
+smoothed J remains antisymmetric and agrees outside those disks with
+the old index. The unique nonlocal complementary region downstairs has
+a connected, tau-invariant lift. J is constant on that lift and equals
+its own negative, hence J=0 there. Therefore the canonical odd (black)
+side of the state contains no crosscap. N is orientable and r_G=0.
+
+This proves that G is the Re graph, closing the crucial labeling gap.
+For an already local diagram the usual local graph convention gives
+the same conclusion directly; neither cellular-dual arguments nor an
+ambiguous assignment of the zero Jones sector are needed in that case.
+
+3. The minimized identity and an explicit numerical contradiction.
+
+For every RP2 diagram of the local knot,
+ beta_Re(D) >= c_self(D) >= c(K).
+Taking the minimum proves beta_Re(K)>=c(K). Conversely, a classical
+crossing-minimal disk diagram has alpha_Re=0 and beta_Re=c(K). Equality
+follows.
+
+The torus knot T(3,4) has
+ V(t)=t^3+t^5-t^8,                 span V=5,
+ Delta(t)=t^3-t^2+1-t^(-2)+t^(-3), span Delta=6.
+The usual torus formulas give these expressions directly. The general
+Seifert/Alexander inequality span Delta <= 2g(K) <= c(D) already yields
+c(T(3,4))>=6, so no crossing-number table is required to contradict
+beta_Re <= span V. The known exact crossing number8 is stronger but
+unnecessary.
+
+Scope. This refutes that proposed numerical span inequality for local
+knots, subject to the stated source definitions. It does not refute
+Jones unknot detection. It also does not refute an unspecified bound
+on crossing number in ONE suitably chosen complete exact-Jones fiber.
+It does rule out such a bound for EVERY fiber: Watson's Theorem5.1
+constructs an infinite family of distinct knots with identical Khovanov
+homology, hence identical Jones polynomial. Only finitely many knots
+have bounded ordinary crossing number, so their beta_Re values are
+unbounded. This is compatible with bounded bridge number or homology
+in that family; the implication beta-bounded => bridge-bounded cannot
+be reversed. Primary source:
+https://personal.math.ubc.ca/~liam/files/identical.pdf
+
+Question5.4(1)
+specialized to a local summand would predict the equality above; it is
+posed as a question, not as a theorem jointly asserted with the span
+conjecture.
+
+Primary source for definitions, signs and exponent conventions:
+Boyle--Spyropoulos, arXiv:2609.40122v1, Definition1.6, Table2,
+Propositions4.4 and6.8, Question5.4.
+https://arxiv.org/html/2609.40122v1

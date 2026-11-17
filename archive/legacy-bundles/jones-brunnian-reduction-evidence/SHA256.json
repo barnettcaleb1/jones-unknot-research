@@ -1,0 +1,23 @@
+{
+  "work/cancellation19/README.txt": "493563693a1ff545c9d5f818543a525360f22ca259a7c81588d87321ebd7d79b",
+  "work/cancellation19/algebra.txt": "fd83f32942714ef1fb622388d027b2dc431de81b1ac75d815e95b4f4dea7dd97",
+  "work/cancellation19/geometry.txt": "d21982d7185f023aca7db855bf7c5e14e6643d12b5107b41418b5d16d09c4736",
+  "work/cancellation19/brunnian_reduction.txt": "3f21b2617b45fcea54ca83f29dfd4da7b0ca05d3a4a918cd1c33341795951feb",
+  "work/cancellation19/homology_brunnian_audit.txt": "2671c0e9f416913df2c76945a319c7592fd236c1eb70c30595cf308eafdfa757",
+  "work/cancellation19/adjacency_amplification.txt": "96d836a4e52ca50927869a92789157626d2dc4bd9c3a60e36bb87017c496f803",
+  "work/cancellation19/adjacency_amplification_braid_audit.txt": "e9b8f4f6341655db9941d503eb6d49c1d1684071e0c98221a6289d7bb1423f6a",
+  "work/cancellation19/homology_adjacency_audit.txt": "a6b3e83180baee1f2acf3c3d6ca1526d605efaa827e84c7f0767224a7f5c0cc9",
+  "work/cancellation19/stoimenow_exact_seed.txt": "1bf5dd4ab484d1baa026e09f6db6f3d0a0e7c2a3cb3eeb713df70f1adbe842fc",
+  "work/cancellation19/stoimenow_k3.py": "171f1194916405d23de893202fb873a782743f9d83eb6d8fe4ad063e756a586b",
+  "work/cancellation19/stoimenow_k3.json": "bced960f7c9d42bdeda685b776416725ba9389aaf07885c9e3f24a5b26b85ecd",
+  "work/cancellation19/stoimenow_versions.json": "e62358fbddb46fdd73adf3e14cafe0cbdaa3b9f3663688d203dd9b2ad7b869b1",
+  "work/cancellation19/stoimenow_factor.py": "d133b0c653d5ea78f7a931b74e76d3463977e523af1451aa45083372d5be287e",
+  "work/cancellation19/stoimenow_factor.json": "896e32f1e666d2018093929c1de8e0759fc5af061d5933dd4ea0db0a830ea602",
+  "work/cancellation19/homology_k3_bracket_audit.py": "d8f30e6e8f24ff802192b22b3db228a156878683ec6794096a46b1363fceed35",
+  "work/cancellation19/homology_k3_bracket_audit.json": "482022deff49a479b02acd77fa44748cf3663a53d40af1b6bf59ad0f57a86913",
+  "work/cancellation19/homology_brunnian_coefficient.txt": "dbe4b21415592ec543856db3274c1c9672b8cb487e4e657fbeb8533765301cdb",
+  "outputs/jones-brunnian-reduction-and-exact-test.txt": "61afe486abda214346a371ab75bc2a63075d630792dc15b2c7ac291ec77626ea",
+  "work/transmission18/unknotting_one_reduction_audit.txt": "c5666da140aec6c5633dfa24161f0593bc992ecea5ebd5e0870ebe282e8f1217",
+  "work/transmission18/whitehead_factor_check.py": "e42c40ad404ea339c1cfb6c2a80fe1f2edb98fc0ed260286aa09013125e84e57",
+  "work/quotient17/sato_levine_skein_injectivity.txt": "2850f6957bfa2870be3bb656b5c3cdb71bbf87b5be48e8fe7bdb1b813250d483"
+}

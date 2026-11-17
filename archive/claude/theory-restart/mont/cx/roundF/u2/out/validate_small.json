@@ -1,0 +1,18 @@
+{
+ "N": 600,
+ "seed": 1,
+ "wrong_convention_control": false,
+ "knots_evaluated": 81,
+ "table (up_disc, down_disc, fingerprint_constant)": {
+  "(False, False, True)": 36,
+  "(False, False, False)": 35,
+  "(True, True, True)": 10
+ },
+ "up_disc": 10,
+ "down_disc": 10,
+ "agree_up_down": 81,
+ "VIOLATIONS_up": 0,
+ "VIOLATIONS_down": 0,
+ "violation_examples": [],
+ "nonconstant_families_examined": 35
+}

@@ -1,0 +1,118 @@
+A LIMITATION OF REAL-PARAMETER POSITIVITY FOR JONES UNKNOT DETECTION
+1 November 2026
+
+Status: a verified obstruction to one proposed proof mechanism. This is not
+a proof or counterexample to Jones unknot detection. No novelty is claimed.
+
+THE RESULT
+
+There is one explicit sequence of nontrivial ribbon knots R_n, each having
+determinant one and signature zero, such that
+
+  V_R_n(1) = V_R_n(-1) = 1,
+  lim_(n -> infinity) V_R_n(t) = -infinity
+
+for every fixed real t outside {0,1,-1}.
+
+Consequently, no fixed nonzero real Jones parameter makes the normalized
+ordinary Jones scalar a universally nonnegative norm with equality at the
+unknot detecting that knot. Away from +/-1 the scalar can be negative; at
++/-1 these explicit nontrivial knots already have the unknot's value.
+
+This rules out a direct nonnegative partition-sum formula for that scalar
+with positive normalization. It does not rule out other analytic functions
+of Jones data or a different positive geometric observable.
+
+THE FAMILY AND PROOF
+
+Let K_n be the torus knot T(3,6n-1), n>=1. Let -K_n denote its mirror with
+orientation reversed, and set R_n=K_n#(-K_n). The standard reverse-mirror
+construction gives a ribbon disk. Jones is unchanged by orientation reversal.
+
+The exact polynomials, with the trefoil convention V=t+t^3-t^4, are
+
+  V_K_n(t) = t^(6n-2)(1+t^2-t^(6n)),
+  V_R_n(t) = (1+t^2-t^(6n))(1+t^-2-t^(-6n)).                 (1)
+
+The second identity follows from connected-sum multiplicativity and mirror
+inversion. An independent derivation of the first is given below.
+
+Put a=t^2. For real nonzero t, a>0, and (1) becomes
+
+  (1+a-a^(3n))(1+a^-1-a^(-3n)).
+
+If a>1, the first factor tends to minus infinity and the second tends to
+1+a^-1>0. If a<1, their roles reverse. If a=1, their product is one.
+These observations prove all the asserted limits and evaluations.
+
+Expanding (1) gives
+
+  3+t^2+t^-2-t^(6n)-t^(-6n)-t^(6n-2)-t^(-6n+2).
+
+Its extreme terms cannot cancel, so each R_n is nontrivial. Also
+det(R_n)=|V_R_n(-1)|=1. Signature vanishes by additivity and mirroring.
+A diagram formed by the indicated mirror pair has writhe zero; writhe
+zero here is a property of this diagram, not a knot invariant.
+
+For example, R_1=T(3,5)#(-T(3,5)) has
+
+  V_R_1(2) = V_R_1(-2) = -4661/64.
+
+EXACT THREE-STRAND CALCULATION
+
+Set delta=-A^2-A^-2 and t=A^-4. The two-dimensional Temperley--Lieb block is
+
+  e1=[[delta,1],[0,0]],  e2=[[0,0],[1,delta]],
+  rho(sigma_i)=A I+A^-1 e_i.
+
+Then
+
+  C=rho(sigma1 sigma2)=[[0,-A^-4],[1,-A^-2]],
+  C^2=[[-A^-4,A^-6],[-A^-2,0]],  C^3=A^-6 I.
+
+For q not divisible by three, tr(C^q)=-A^(-2q). The remaining
+one-dimensional block sends each sigma_i to A. The reduced bracket closure
+functional is tr_2+(delta^2-2)rho_1: checking the basis I,e1,e2,e1e2,e2e1
+gives exactly the planar closure values delta^2,delta,delta,1,1.
+
+Thus closure((sigma1 sigma2)^q) has reduced bracket
+
+  -A^(-2q)+(A^4+A^-4)A^(2q).
+
+Its writhe is 2q. Multiplication by (-A^3)^(-2q) gives
+
+  V_T(3,q)(t)=t^(q-1)+t^(q+1)-t^(2q).
+
+Putting q=6n-1 proves (1). The q=1 and q=2 cases give the unknot and
+trefoil respectively and check the normalization.
+
+WHAT THIS CHANGES IN THE RESEARCH STRATEGY
+
+Reflection sends t to t^-1. On the unit circle this is complex conjugation,
+and V_(K#-K)=|V_K|^2 is nonnegative. On the real axis away from +/-1,
+inversion is not conjugation; the displayed family shows why treating
+reflection there as a positive adjoint is invalid.
+
+The entire polynomials in (1) vary with n and none equals one. This result
+therefore supplies no conclusion about a hypothetical nontrivial knot with
+V identically one. It closes the proposed direct real-parameter positivity
+argument, while leaving the original goal unresolved.
+
+VERIFICATION AND SOURCES
+
+The algebra received an independent internal audit. An exact integer-Laurent
+verifier checked the TL relations, all five closure weights, C^3, and the
+closed polynomials for n=1,2,3. These finite checks supplement the general
+derivation above; they are not the proof of the infinite-family statement.
+
+Wu--Wang, Zeroes of the Jones polynomial, section 4, equation 7, gives the
+standard torus-knot formula consistent with this calculation:
+https://arxiv.org/html/cond-mat/0105013
+
+Jones, The Jones Polynomial, gives conventions and mirror/connected-sum
+properties:
+https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/Jones-poly.pdf
+
+Kanenobu, Band surgery on knots and links, equation (4.4), records the
+standard ribbon construction for reverse-mirror sums:
+https://www.omu.ac.jp/sci/math-ryokanda/ocami/publications/preprint-series/pdf/2009/09_08.pdf

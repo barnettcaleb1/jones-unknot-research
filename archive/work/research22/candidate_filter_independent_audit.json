@@ -1,0 +1,3693 @@
+{
+  "polynomial_rows": 12965,
+  "directed_candidates": 460,
+  "stats": {
+    "HFK_obstructed": 314,
+    "HFK_Alexander_survive": 134,
+    "through_s_survive": 54,
+    "final_survive": 54,
+    "s_obstructed": 80,
+    "Alexander_obstructed": 12
+  },
+  "survivors": [
+    {
+      "source": {
+        "name": "13*n_1736",
+        "mirror": true,
+        "rank": 29
+      },
+      "target": {
+        "name": "13*n_790",
+        "mirror": true,
+        "rank": 45
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_1736",
+        "mirror": false,
+        "rank": 29
+      },
+      "target": {
+        "name": "13*n_790",
+        "mirror": false,
+        "rank": 45
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4010",
+        "mirror": true,
+        "rank": 25
+      },
+      "target": {
+        "name": "13*n_1588",
+        "mirror": true,
+        "rank": 41
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4010",
+        "mirror": false,
+        "rank": 25
+      },
+      "target": {
+        "name": "13*n_1588",
+        "mirror": false,
+        "rank": 41
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": true,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_652",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        -6,
+        -6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        6,
+        6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -3,
+        -3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": true,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_694",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        -6,
+        -6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        6,
+        6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -3,
+        -3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": false,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_652",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        6,
+        6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        -6,
+        -6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        3,
+        3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": false,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_694",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        6,
+        6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        -6,
+        -6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        3,
+        3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_1840",
+        "mirror": false,
+        "rank": 35
+      },
+      "target": {
+        "name": "13*n_99",
+        "mirror": false,
+        "rank": 51
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_1840",
+        "mirror": true,
+        "rank": 35
+      },
+      "target": {
+        "name": "13*n_99",
+        "mirror": true,
+        "rank": 51
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": false,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_651",
+        "mirror": false,
+        "rank": 63
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": false,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_661",
+        "mirror": false,
+        "rank": 63
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": true,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_651",
+        "mirror": true,
+        "rank": 63
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": true,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_661",
+        "mirror": true,
+        "rank": 63
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4244",
+        "mirror": false,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_709",
+        "mirror": true,
+        "rank": 65
+      },
+      "s": [
+        -6,
+        -6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        6,
+        6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -3,
+        -3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4244",
+        "mirror": true,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_709",
+        "mirror": false,
+        "rank": 65
+      },
+      "s": [
+        6,
+        6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        -6,
+        -6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        3,
+        3
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_338",
+        "mirror": false,
+        "rank": 25
+      },
+      "target": {
+        "name": "12*n_244",
+        "mirror": false,
+        "rank": 31
+      },
+      "s": [
+        8,
+        8
+      ],
+      "g4_intervals": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "signature": [
+        -8,
+        -8
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        4,
+        4
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_338",
+        "mirror": true,
+        "rank": 25
+      },
+      "target": {
+        "name": "12*n_244",
+        "mirror": true,
+        "rank": 31
+      },
+      "s": [
+        -8,
+        -8
+      ],
+      "g4_intervals": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "signature": [
+        8,
+        8
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -4,
+        -4
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2215",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_3605",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2985",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3474",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2215",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_3605",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2985",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3474",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_351",
+        "mirror": false,
+        "rank": 33
+      },
+      "target": {
+        "name": "13*n_420",
+        "mirror": false,
+        "rank": 49
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_351",
+        "mirror": true,
+        "rank": 33
+      },
+      "target": {
+        "name": "13*n_420",
+        "mirror": true,
+        "rank": 49
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": true,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_627",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": true,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_716",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": false,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_627",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": false,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_716",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3301",
+        "mirror": false,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_3041",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3301",
+        "mirror": true,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_3041",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_5018",
+        "mirror": true,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_1003",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_5018",
+        "mirror": false,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_1003",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4640",
+        "mirror": false,
+        "rank": 39
+      },
+      "target": {
+        "name": "13*n_1411",
+        "mirror": false,
+        "rank": 49
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4640",
+        "mirror": true,
+        "rank": 39
+      },
+      "target": {
+        "name": "13*n_1411",
+        "mirror": true,
+        "rank": 49
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2003",
+        "mirror": false,
+        "rank": 43
+      },
+      "target": {
+        "name": "13*n_2618",
+        "mirror": true,
+        "rank": 59
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2003",
+        "mirror": true,
+        "rank": 43
+      },
+      "target": {
+        "name": "13*n_2618",
+        "mirror": false,
+        "rank": 59
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3024",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4056",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3024",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4056",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2301",
+        "mirror": false,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2660",
+        "mirror": false,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2301",
+        "mirror": true,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2660",
+        "mirror": true,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3555",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4058",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3555",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4058",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3898",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3899",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3939",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3941",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3898",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3899",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3939",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3941",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    }
+  ],
+  "signature_tau_stats": {
+    "survive": 54
+  },
+  "survivors_after_signature_tau": [
+    {
+      "source": {
+        "name": "13*n_1736",
+        "mirror": true,
+        "rank": 29
+      },
+      "target": {
+        "name": "13*n_790",
+        "mirror": true,
+        "rank": 45
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_1736",
+        "mirror": false,
+        "rank": 29
+      },
+      "target": {
+        "name": "13*n_790",
+        "mirror": false,
+        "rank": 45
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4010",
+        "mirror": true,
+        "rank": 25
+      },
+      "target": {
+        "name": "13*n_1588",
+        "mirror": true,
+        "rank": 41
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4010",
+        "mirror": false,
+        "rank": 25
+      },
+      "target": {
+        "name": "13*n_1588",
+        "mirror": false,
+        "rank": 41
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": true,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_652",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        -6,
+        -6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        6,
+        6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -3,
+        -3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": true,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_694",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        -6,
+        -6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        6,
+        6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -3,
+        -3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": false,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_652",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        6,
+        6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        -6,
+        -6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        3,
+        3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3603",
+        "mirror": false,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_694",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        6,
+        6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        -6,
+        -6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        3,
+        3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_1840",
+        "mirror": false,
+        "rank": 35
+      },
+      "target": {
+        "name": "13*n_99",
+        "mirror": false,
+        "rank": 51
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_1840",
+        "mirror": true,
+        "rank": 35
+      },
+      "target": {
+        "name": "13*n_99",
+        "mirror": true,
+        "rank": 51
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": false,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_651",
+        "mirror": false,
+        "rank": 63
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": false,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_661",
+        "mirror": false,
+        "rank": 63
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": true,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_651",
+        "mirror": true,
+        "rank": 63
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3106",
+        "mirror": true,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_661",
+        "mirror": true,
+        "rank": 63
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4244",
+        "mirror": false,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_709",
+        "mirror": true,
+        "rank": 65
+      },
+      "s": [
+        -6,
+        -6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        6,
+        6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -3,
+        -3
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4244",
+        "mirror": true,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_709",
+        "mirror": false,
+        "rank": 65
+      },
+      "s": [
+        6,
+        6
+      ],
+      "g4_intervals": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "signature": [
+        -6,
+        -6
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        3,
+        3
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_338",
+        "mirror": false,
+        "rank": 25
+      },
+      "target": {
+        "name": "12*n_244",
+        "mirror": false,
+        "rank": 31
+      },
+      "s": [
+        8,
+        8
+      ],
+      "g4_intervals": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "signature": [
+        -8,
+        -8
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        4,
+        4
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_338",
+        "mirror": true,
+        "rank": 25
+      },
+      "target": {
+        "name": "12*n_244",
+        "mirror": true,
+        "rank": 31
+      },
+      "s": [
+        -8,
+        -8
+      ],
+      "g4_intervals": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "signature": [
+        8,
+        8
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -4,
+        -4
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2215",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_3605",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2985",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3474",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2215",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_3605",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2985",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3474",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4034",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_351",
+        "mirror": false,
+        "rank": 33
+      },
+      "target": {
+        "name": "13*n_420",
+        "mirror": false,
+        "rank": 49
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "12*n_351",
+        "mirror": true,
+        "rank": 33
+      },
+      "target": {
+        "name": "13*n_420",
+        "mirror": true,
+        "rank": 49
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": true,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_627",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": true,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_716",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        4,
+        4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": false,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_627",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4838",
+        "mirror": false,
+        "rank": 65
+      },
+      "target": {
+        "name": "13*n_716",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -4,
+        -4
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3301",
+        "mirror": false,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_3041",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3301",
+        "mirror": true,
+        "rank": 41
+      },
+      "target": {
+        "name": "13*n_3041",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_5018",
+        "mirror": true,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_1003",
+        "mirror": false,
+        "rank": 57
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_5018",
+        "mirror": false,
+        "rank": 47
+      },
+      "target": {
+        "name": "13*n_1003",
+        "mirror": true,
+        "rank": 57
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4640",
+        "mirror": false,
+        "rank": 39
+      },
+      "target": {
+        "name": "13*n_1411",
+        "mirror": false,
+        "rank": 49
+      },
+      "s": [
+        4,
+        4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        2,
+        2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_4640",
+        "mirror": true,
+        "rank": 39
+      },
+      "target": {
+        "name": "13*n_1411",
+        "mirror": true,
+        "rank": 49
+      },
+      "s": [
+        -4,
+        -4
+      ],
+      "g4_intervals": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2003",
+        "mirror": false,
+        "rank": 43
+      },
+      "target": {
+        "name": "13*n_2618",
+        "mirror": true,
+        "rank": 59
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2003",
+        "mirror": true,
+        "rank": 43
+      },
+      "target": {
+        "name": "13*n_2618",
+        "mirror": false,
+        "rank": 59
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3024",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4056",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3024",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4056",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        0,
+        0
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2301",
+        "mirror": false,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2660",
+        "mirror": false,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": false,
+        "rank": 71
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2301",
+        "mirror": true,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_2660",
+        "mirror": true,
+        "rank": 55
+      },
+      "target": {
+        "name": "13*n_4032",
+        "mirror": true,
+        "rank": 71
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3555",
+        "mirror": false,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4058",
+        "mirror": false,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3555",
+        "mirror": true,
+        "rank": 57
+      },
+      "target": {
+        "name": "13*n_4058",
+        "mirror": true,
+        "rank": 73
+      },
+      "s": [
+        0,
+        0
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3898",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3899",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3939",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": false,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3941",
+        "mirror": true,
+        "rank": 119
+      },
+      "s": [
+        2,
+        2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        -2,
+        -2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3898",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3820",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3899",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3939",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "source": {
+        "name": "13*n_3821",
+        "mirror": true,
+        "rank": 103
+      },
+      "target": {
+        "name": "13*n_3941",
+        "mirror": false,
+        "rank": 119
+      },
+      "s": [
+        -2,
+        -2
+      ],
+      "g4_intervals": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "signature": [
+        2,
+        2
+      ],
+      "ozsvath_szabo_tau_invariant": [
+        -1,
+        -1
+      ]
+    }
+  ],
+  "independent_Jones_vector_checks": 2977,
+  "unequal_Alexander_final_survivors": 0
+}

@@ -1,0 +1,10 @@
+{
+  "norm_squared": "18",
+  "joint_weights": {
+    "+1,+1": "1/6",
+    "+1,-1": "1/6",
+    "-1,+1": "1/6",
+    "-1,-1": "1/2"
+  },
+  "all_four_channels_nonzero": true
+}

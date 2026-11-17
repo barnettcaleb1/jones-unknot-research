@@ -1,0 +1,54 @@
+{
+  "source": "https://arxiv.org/html/0802.2283; Example 6.7, Table 2",
+  "factor_f": {
+    "4": 1,
+    "3": -2,
+    "2": 3,
+    "1": -4,
+    "0": 4,
+    "-1": -4,
+    "-2": 3,
+    "-3": -2,
+    "-4": 1
+  },
+  "jet_f_at_q_equals_exp_h": [
+    "0",
+    "0",
+    "6",
+    "0",
+    "23/2"
+  ],
+  "independent_KT_braid_word": [
+    1,
+    1,
+    1,
+    3,
+    3,
+    2,
+    -3,
+    -1,
+    -1,
+    2,
+    -1,
+    -3,
+    -2
+  ],
+  "independent_KT_jones": {
+    "2": 1,
+    "4": 2,
+    "-1": 2,
+    "-2": -2,
+    "5": -2,
+    "-3": 2,
+    "6": 1,
+    "3": -2,
+    "-4": -1
+  },
+  "checks_passed": true,
+  "all_parameter_conclusion": "For every integer k != 0 and color N >= 2, H_N(D_k) != 1.",
+  "exact_leading_terms": {
+    "k odd": "-4*(N^2-1)*h^2",
+    "k nonzero even": "2*k*(N^2-1)*h^3"
+  },
+  "method": "Habiro i>=2 terms vanish through order h^3; no bounded enumeration is needed."
+}

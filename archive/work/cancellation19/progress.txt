@@ -1,0 +1,38 @@
+PASS 19 — COMPLETE BOUNDED RESEARCH PASS, GENERIC GOAL STILL ACTIVE
+Started 2026-10-31 23:13:02 UTC.
+
+Substantive progress:
+1. Exact no-cancellation theorem for equivariant connected sums of preferred
+   unknot-anchored quotients; integral associated-shell controllers and the
+   first overlapping TL3 circuit also excluded.
+2. Internally audited type-C locality obstruction: invariant two-puncture,
+   zero-linking disk twists within a strongly inverted solid torus preserve
+   locality. This structurally excludes the direct Whitehead-clasp repair.
+3. Successful Brunnian repair: nontrivial preferred flat SI core implies an
+   actual essential zero shell. Together with pass18, this completes the
+   equivalence with u=1 Jones-one counterexamples, not generic counterexamples.
+4. Stronger conditional amplification: any u=1 Jones-one counterexample
+   produces Jones-one n-adjacent-to-U nontrivial knots for EVERY fixed n.
+   Distinct knots as n varies; g>=ceil((n+1)/3); for n>=3 Alexander=1.
+   Simplified proof uses seed's non-S3 full surgery and Gordon–Luecke,
+   avoiding CGLS for the main chosen-seed argument. Independently audited.
+5. Actual Stoimenow K3 reconstructed as38-crossing PD. All7 marked subsets
+   simplify geometrically to U. Exact V-1 factor and c_B nonzero verified by
+   Regina and independent integer frontier contraction from all8 ORIGINAL
+   PDs. c_B upunit=(t-1)^4(t+1)(t²+1)(t³+1)^2. Thus this whole seed family
+   cannot create its first flat input.
+
+No generic Jones proof or counterexample. Do not mark goal complete.
+
+Best current theorem/target:
+For any fixed n>=2, Jones detection for n-adjacent-to-U knots implies Jones
+detection for all u=1 knots. Need prove nonvanishing of arbitrary eligible
+Brunnian interaction coefficient, or construct a zero coefficient seed.
+The explicit commutator seed is fully excluded; further iteration of it
+only multiplies known nonzero factors and is not a productive zero search.
+Generic Jones-one => u=1 Jones-one remains unproved. No free colored lift.
+
+Final user-facing report:
+outputs/jones-brunnian-reduction-and-exact-test.txt
+Evidence:
+outputs/jones-brunnian-reduction-evidence.zip

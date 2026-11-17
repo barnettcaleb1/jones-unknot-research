@@ -1,0 +1,126 @@
+GRAPH CANCELLATION: TWO PRECISE LIMITS ON A PROPOSED PROOF
+1 November 2026
+
+No proof or counterexample to Jones unknot detection was obtained. This
+pass tested two possible general mechanisms on actual diagram models.
+The results below reject those mechanisms in their stated generality;
+they do not reject every graph-theoretic approach or a special theorem
+using the full hypothesis V_K(t)=1.
+
+1. Enough possible cancellations do not imply valid cancellation
+
+The Roberts--Jaeger spanning-tree model gives an explicit differential
+for reduced, characteristic-two Khovanov homology, with its grading
+collapsed to delta and coefficients extended to a rational-function field.
+For two connected resolutions differing at two crossings, the coefficient
+is 1/w_1+1/w_2. Each w_i is the sum of independent arc weights on the
+unmarked circle in the corresponding intermediate resolution.
+
+We tested the actual standard ten-crossing positive braid closure
+(sigma_1 sigma_2)^5, namely T(3,5). Exact reconstruction gives:
+
+    Connected-resolution generators:                 121
+    Counts by cube size 2,4,6,8,10:          25,50,35,10,1
+    Nonzero differential-support edges:               500
+    Maximum disjoint matching pairs:                   60
+    Distinct generators used by the matching:         120
+
+Thus there are enough nonzero, invertible differential entries to pair
+every generator except one. Nevertheless, the homology has dimension
+SEVEN, by Roberts's published computation and Jaeger's identification.
+The actual total differential rank is consequently (121-7)/2=57, not60.
+The rank57 conclusion uses those published results; it is not claimed
+as a new rational-function matrix elimination.
+
+Why the proposed cancellation fails: a valid algebraic Morse matching
+needs acyclicity. Reverse each matched differential arrow in the saved
+matching. One explicit directed cycle, with resolutions encoded as
+ten-bit integers, is
+
+    15 -> 159 -> 135 -> 207 -> 195 -> 231 -> 39 -> 63 -> 15.
+
+Every60-pair matching must fail the acyclicity requirement: an acyclic
+one would reduce the complex to a single generator, contradicting rank7.
+The displayed cycle directly verifies the failure for the saved witness.
+
+This falsifies the proposed implication from a nearly perfect support
+matching and generic nonzero coefficients to one-dimensional homology.
+It is an actual classical knot example, not a formal chain complex.
+Its Jones polynomial is t^4+t^6-t^10, so it is NOT a counterexample to
+Jones unknot detection. Its determinant is one, but its full Jones
+polynomial retains information that the matching argument did not use.
+
+Adding generic arc weights cannot by itself fix this: Jaeger proves that
+for a knot these markings can all move to the basepoint. The added term
+there is w*x, which vanishes in reduced homology. The deformation preserves
+the homology; it is not an arbitrary generic matrix perturbation.
+
+2. Electrical elimination loses a genuine boundary interaction
+
+For a Potts/random-cluster star with three boundary vertices and arm
+weights a,b,c, put lambda=Q+a+b+c. Its five boundary-connectivity
+coefficients are
+
+    (lambda, ab, bc, ac, abc).
+
+A triangle matching the first four coordinates must have pair weights
+ab/lambda, bc/lambda, ac/lambda, and overall factor lambda. The fifth
+coordinate agrees precisely when
+
+    abc = Q(Q+a+b+c),
+
+assuming nonzero generic weights and lambda. Otherwise the remaining
+three-terminal coefficient is
+
+    kappa = abc * (Q*lambda-abc) / lambda^2.
+
+On the Jones specialization, writing x=A^4,
+
+    Q=x+2+x^(-1),  u=-1-x,  v=-1-x^(-1),
+
+each crossing edge has weight u or v. The condition holds for the six
+mixed-sign choices, giving the familiar Reidemeister III cases. For
+three u-edges the obstruction is
+
+    abc-Q*lambda = -(x+1)^3*(x-1)^2/x^2,
+
+and for three v-edges it has x^3 in the denominator. Neither is identically
+zero. Arbitrary electrical elimination therefore does not preserve the
+full Jones boundary data while staying within pair interactions.
+
+Keeping the extra interaction is a correct computation, but supplies no
+simplification theorem. A single closed Jones value does not determine
+all five boundary coefficients, so V=1 does not make each local kappa
+vanish. This is the exact unproved step in that proposed argument.
+
+Verification and conclusion
+
+The positive braid, planar diagram, one-component condition, all121
+states, all500 supports,60 globally disjoint pairs and explicit cycle
+were reconstructed and independently checked. The star calculation was
+verified in exact Laurent arithmetic for all eight crossing-sign choices.
+
+The matching example makes the cancellation issue precise; the electrical
+calculation identifies information discarded by a proposed simplification.
+Neither supplies the missing implication from full ordinary Jones
+polynomial one to a topological unknot criterion. These mechanisms are
+closed in the stated forms; a larger enumeration is not justified by them.
+
+Primary references
+
+Jaeger, A Remark on Roberts' Totally Twisted Khovanov Homology,
+Theorem3.1, Corollary3.2 and Section4:
+https://arxiv.org/abs/1109.1805
+
+Roberts, Totally twisted Khovanov homology, Geometry & Topology19 (2015),
+Section1.11.2(2), printedp18: the T(5,3) polynomial is4*delta^8+3*delta^6.
+His27-generator diagram differs from our121-generator standard braid;
+the knot invariant is the same.
+https://msp.org/gt/2015/19-1/gt-v19-n1-p01-p.pdf
+
+Kauffman, A Tutte polynomial for signed graphs, Discrete Applied
+Mathematics25 (1989), for the signed-graph/bracket correspondence:
+https://homepages.math.uic.edu/~kauffman/TuttePolySignGraphs.pdf
+
+The finite matching witness and local coefficient derivation are our
+calculations. No claim of mathematical novelty is made.

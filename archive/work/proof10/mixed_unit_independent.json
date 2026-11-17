@@ -1,0 +1,27 @@
+{
+  "elimination_identity": "F3=-(p+2a)^3+4(p+2a)",
+  "all_three_specializations_verified": true,
+  "exception_Jones": {
+    "0": 4,
+    "-8": 1,
+    "-7": -2,
+    "-6": 2,
+    "-5": -3,
+    "-4": 3,
+    "-3": -3,
+    "-2": 4,
+    "-1": -3,
+    "1": -3,
+    "2": 2,
+    "3": -2,
+    "4": 1
+  },
+  "derivatives_0_to_4": [
+    1,
+    0,
+    0,
+    0,
+    720
+  ],
+  "determinant": 33
+}

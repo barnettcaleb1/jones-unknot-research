@@ -1,0 +1,982 @@
+[
+  {
+    "positive": [
+      153848,
+      1,
+      0,
+      1,
+      796,
+      69
+    ],
+    "negative": [
+      154178,
+      1,
+      0,
+      -1,
+      797,
+      69
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      796,
+      797
+    ],
+    "target_loop": 0,
+    "target_segment": 14,
+    "source_span": 0.0001629419359687745,
+    "target_span": 8.499766050107382e-06,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1110.9999164905087,
+        "target_parameter": 14.338465976819093,
+        "position": [
+          1.958001153972964,
+          0.26
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1111.0000794324446,
+        "target_parameter": 14.338457477053042,
+        "position": [
+          1.9579989440337908,
+          0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      153960,
+      1,
+      0,
+      1,
+      796,
+      181
+    ],
+    "negative": [
+      154290,
+      1,
+      0,
+      -1,
+      797,
+      181
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      796,
+      797
+    ],
+    "target_loop": 0,
+    "target_segment": 14,
+    "source_span": 0.0001629419359687745,
+    "target_span": 8.499766050107382e-06,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1110.9999164905087,
+        "target_parameter": 14.338465976819093,
+        "position": [
+          1.958001153972964,
+          0.26
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1111.0000794324446,
+        "target_parameter": 14.338457477053042,
+        "position": [
+          1.9579989440337908,
+          0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      153964,
+      1,
+      0,
+      1,
+      796,
+      185
+    ],
+    "negative": [
+      154294,
+      1,
+      0,
+      -1,
+      797,
+      185
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      796,
+      797
+    ],
+    "target_loop": 0,
+    "target_segment": 14,
+    "source_span": 0.0001629419359687745,
+    "target_span": 8.499766050107382e-06,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1110.9999164905087,
+        "target_parameter": 14.338465976819093,
+        "position": [
+          1.958001153972964,
+          0.26
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1111.0000794324446,
+        "target_parameter": 14.338457477053042,
+        "position": [
+          1.9579989440337908,
+          0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      154176,
+      1,
+      0,
+      1,
+      797,
+      67
+    ],
+    "negative": [
+      153846,
+      1,
+      0,
+      -1,
+      796,
+      67
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      797,
+      796
+    ],
+    "target_loop": 0,
+    "target_segment": 14,
+    "source_span": 0.0001629419359687745,
+    "target_span": 8.499766050107382e-06,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1111.0000794324446,
+        "target_parameter": 14.338457477053042,
+        "position": [
+          1.9579989440337908,
+          0.26
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1110.9999164905087,
+        "target_parameter": 14.338465976819093,
+        "position": [
+          1.958001153972964,
+          0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      154288,
+      1,
+      0,
+      1,
+      797,
+      179
+    ],
+    "negative": [
+      153958,
+      1,
+      0,
+      -1,
+      796,
+      179
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      797,
+      796
+    ],
+    "target_loop": 0,
+    "target_segment": 14,
+    "source_span": 0.0001629419359687745,
+    "target_span": 8.499766050107382e-06,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1111.0000794324446,
+        "target_parameter": 14.338457477053042,
+        "position": [
+          1.9579989440337908,
+          0.26
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1110.9999164905087,
+        "target_parameter": 14.338465976819093,
+        "position": [
+          1.958001153972964,
+          0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      154292,
+      1,
+      0,
+      1,
+      797,
+      183
+    ],
+    "negative": [
+      153962,
+      1,
+      0,
+      -1,
+      796,
+      183
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      797,
+      796
+    ],
+    "target_loop": 0,
+    "target_segment": 14,
+    "source_span": 0.0001629419359687745,
+    "target_span": 8.499766050107382e-06,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1111.0000794324446,
+        "target_parameter": 14.338457477053042,
+        "position": [
+          1.9579989440337908,
+          0.26
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 1110.9999164905087,
+        "target_parameter": 14.338465976819093,
+        "position": [
+          1.958001153972964,
+          0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      188102,
+      1,
+      0,
+      1,
+      900,
+      3
+    ],
+    "negative": [
+      188104,
+      1,
+      0,
+      -1,
+      900,
+      5
+    ],
+    "moving_source": 1,
+    "point_ids": [
+      3,
+      5
+    ],
+    "target_loop": 1,
+    "target_segment": 9,
+    "source_span": 0.663731112993208,
+    "target_span": 0.00014863593245095785,
+    "point_data": [
+      {
+        "source_arc": 1,
+        "target_loop": 1,
+        "source_parameter": 21.6687316897047,
+        "target_parameter": 9.406786780692855,
+        "position": [
+          3.4067867806928542,
+          -0.26
+        ]
+      },
+      {
+        "source_arc": 1,
+        "target_loop": 1,
+        "source_parameter": 22.332462802697908,
+        "target_parameter": 9.406935416625306,
+        "position": [
+          3.406935416625305,
+          -0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      188764,
+      1,
+      0,
+      1,
+      902,
+      5
+    ],
+    "negative": [
+      188762,
+      1,
+      0,
+      -1,
+      902,
+      3
+    ],
+    "moving_source": 1,
+    "point_ids": [
+      5,
+      3
+    ],
+    "target_loop": 1,
+    "target_segment": 9,
+    "source_span": 0.663731112993208,
+    "target_span": 0.00014863593245095785,
+    "point_data": [
+      {
+        "source_arc": 1,
+        "target_loop": 1,
+        "source_parameter": 22.332462802697908,
+        "target_parameter": 9.406935416625306,
+        "position": [
+          3.406935416625305,
+          -0.26
+        ]
+      },
+      {
+        "source_arc": 1,
+        "target_loop": 1,
+        "source_parameter": 21.6687316897047,
+        "target_parameter": 9.406786780692855,
+        "position": [
+          3.4067867806928542,
+          -0.26
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26420,
+      1,
+      0,
+      1,
+      410,
+      21
+    ],
+    "negative": [
+      27080,
+      1,
+      0,
+      -1,
+      412,
+      21
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26454,
+      1,
+      0,
+      1,
+      410,
+      55
+    ],
+    "negative": [
+      27114,
+      1,
+      0,
+      -1,
+      412,
+      55
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26466,
+      1,
+      0,
+      1,
+      410,
+      67
+    ],
+    "negative": [
+      27126,
+      1,
+      0,
+      -1,
+      412,
+      67
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26474,
+      1,
+      0,
+      1,
+      410,
+      75
+    ],
+    "negative": [
+      27134,
+      1,
+      0,
+      -1,
+      412,
+      75
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26564,
+      1,
+      0,
+      1,
+      410,
+      165
+    ],
+    "negative": [
+      27224,
+      1,
+      0,
+      -1,
+      412,
+      165
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26578,
+      1,
+      0,
+      1,
+      410,
+      179
+    ],
+    "negative": [
+      27238,
+      1,
+      0,
+      -1,
+      412,
+      179
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26582,
+      1,
+      0,
+      1,
+      410,
+      183
+    ],
+    "negative": [
+      27242,
+      1,
+      0,
+      -1,
+      412,
+      183
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26590,
+      1,
+      0,
+      1,
+      410,
+      191
+    ],
+    "negative": [
+      27250,
+      1,
+      0,
+      -1,
+      412,
+      191
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26610,
+      1,
+      0,
+      1,
+      410,
+      211
+    ],
+    "negative": [
+      27270,
+      1,
+      0,
+      -1,
+      412,
+      211
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26628,
+      1,
+      0,
+      1,
+      410,
+      229
+    ],
+    "negative": [
+      27288,
+      1,
+      0,
+      -1,
+      412,
+      229
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      26662,
+      1,
+      0,
+      1,
+      410,
+      263
+    ],
+    "negative": [
+      27322,
+      1,
+      0,
+      -1,
+      412,
+      263
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      410,
+      412
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      }
+    ]
+  },
+  {
+    "positive": [
+      27088,
+      1,
+      0,
+      1,
+      412,
+      29
+    ],
+    "negative": [
+      26428,
+      1,
+      0,
+      -1,
+      410,
+      29
+    ],
+    "moving_source": 0,
+    "point_ids": [
+      412,
+      410
+    ],
+    "target_loop": 0,
+    "target_segment": 12,
+    "source_span": 2.2118800723500556,
+    "target_span": 0.0019566875379730675,
+    "point_data": [
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 251.10600390857337,
+        "target_parameter": 12.944617095284256,
+        "position": [
+          1.74,
+          0.1156004447739066
+        ]
+      },
+      {
+        "source_arc": 0,
+        "target_loop": 0,
+        "source_parameter": 248.89412383622332,
+        "target_parameter": 12.942660407746283,
+        "position": [
+          1.74,
+          0.11509170601403337
+        ]
+      }
+    ]
+  }
+]

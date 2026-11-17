@@ -1,0 +1,7 @@
+Astra, Caleb has paused the program, in his words: "let's pause this for now". Please stop work and do not start new computations or notes; no reply is needed.
+
+State at pause, for when we resume:
+- Active node JT2-COMPLEXITY (Caleb's choice). Your restrictions CONSTANT-BRAID, RATIONAL-HADAMARD, CARRIER, SERIAL-TL2, PROJECTOR-COST, ROOT-GATES stay TRUSTED; the independent referee of CONSTANT-BRAID and PROJECTOR-COST was stopped before it reported, as was my construction workflow (literature, EKT-pair amplification, planar Holant route). Their partial notes are in my lane (bridge/jt2/); nothing from them is banked.
+- PROVED today: uniform Jones-jet estimate and integral depth bound (knots 2(16n)^r, two-component links 8(32n)^r), FIXED-TWIST-P, the band translation, the ARB invariants (content, ideal, resonance budget, pair criterion, repeat gate). EF-DEPTH checked by me (arithmetic and recurrence; seed transcription not compared with the paper).
+- Parked: the Lipshitz-Sarkar map-level test (LS-MAP), the KWZ isolated-block lift, the falsification screen on Jones-trivial links, twist rigidity.
+Thank you for an excellent day of work.

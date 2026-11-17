@@ -1,0 +1,120 @@
+U5-LAW / U5-KL6: SQUARE PAIRINGS REQUIRE A DUAL-CAP DICTIONARY
+2026-11-03. Bounded primary-source/theory check; no braid sweep.
+
+FOLLOW-UP: square_torus_repair.txt supplies the canonical repair by
+naturality: the dual is the boundary-relative IMAGE OF THE ABSOLUTE TORUS,
+not a single embedded noodle square. Its mixed pairing is
+Phi=H/(1-q)^2=q^-2 P/(1-t), with Phi|TL=q^-1 J_hat.
+Thus the missing-dual-object statement below is superseded; the obstruction
+to a single-noodle-square realization remains valid with its stated scope.
+
+PRIMARY INPUT
+Bigelow, The Lawrence-Krammer Representation (2003), local text
+work/width6_lift/bigelow_lkb.txt, sections3.1,3.2,4,5.1,6.1,6.4.
+Source: https://web.math.ucsb.edu/~bigelow/publications/08.pdf
+
+The relevant extended pairing is
+ H2(C~,eta~) x H2(C~,boundary C~) -> Z[q^+-1,t^+-1].
+A pair of disjoint puncture-to-puncture arcs c1,c2 represents the first
+square. A pair of disjoint boundary-to-boundary arcs N1,N2 represents
+the second square. Its intersections are the two complete matchings:
+ (c1 intersect N1) x (c2 intersect N2), and
+ (c1 intersect N2) x (c2 intersect N1).
+Bigelow section4 describes individual monomials using loops in configuration
+space; their sign contains the matching-permutation sign.
+
+1. t=1 FACTORIZATION: VALID FOR ACTUAL SQUARES, WITH CONVENTIONS FIXED
+At t=1 the local system is the symmetric product of the one-point q local
+systems. With ordinary product orientations, the pairing is det(M), up
+to one common deck unit, where Mij is the one-point arc/noodle pairing.
+At q=1,t=-1, the (-1)^b exchange factor cancels the permutation sign,
+so the pairing is, up to one overall sign, the permanent of the ordinary
+algebraic-intersection matrix I. This latter statement only concerns the
+literal two embedded squares, not an arbitrary homological dual class.
+
+One zero M entry does not force a zero row or determinant. If M11=0 then
+det(M)=-M12*M21, which can be nonzero. A Long-Paton zero pair must be
+completed so that the OTHER entry of its row is zero if that is required.
+
+2. EXPLICIT FAILURE OF THE OBVIOUS DUAL-NOODLE IDENTIFICATION
+Bigelow's puncture square v'14 has arcs(12)(34), our C0. His boundary
+square x14 has vertical noodles justrightp1 and justleftp4.
+Lemma5.3 gives
+ <v'14,x14>'=1,    <v'15,x14>'=0,
+where v'15 has arcs(12)(45).
+The TL Gram functional of the cap C0 instead gives
+ Gamma(C0,C0)=delta^2,    Gamma((12)(45),C0)=delta,
+with delta=-s-s^-1 and q=s^2.
+Thus x14 is NOT the TL dual of C0 even up to a common scalar. Source-unit
+choices do not alter the zero versus nonzero discrepancy. The finite check
+is recorded in square_dual_calibration.json.
+
+The 81-entry derivative calibration identifies the TL form with a torus/
+absolute pairing after the specified factors. It does not itself supply
+a map taking each cap system to ONE embedded boundary-noodle square whose
+extended square pairing realizes that same functional. Such a dual map
+must be constructed and calibrated. A general linear combination of the
+xij can represent the functional over the fraction field, but that is not
+automatically a pair of embedded noodles and changes the intersection model.
+
+3. A STRONGER OBSTRUCTION TO SINGLE-SQUARE, UNIT-NORMALIZED JONES PAIRING
+Suppose that, for C0=(12)(34), some pair of disjoint embedded boundary
+noodles N1,N2 represented its TL Gram dual, with the square-square pairing
+equal to Gamma(-,C0) up to a Laurent unit (as a generic polynomial identity).
+Specialize q=1, t=-1, s=1. An embedded boundary noodle separates the disk.
+Hence the ordinary algebraic intersection Iij of any puncture arc ci with
+Nj is0,+1,or-1: it records whether its endpoints lie on opposite sides.
+By the matching-sign calculation in section1,
+ |square_pairing(C0,N)| = |I11*I22+I12*I21| <= 2.
+But Gamma(C0,C0)=(-2)^2=4. Every Laurent unit specializes to+1 or-1.
+This is a contradiction.
+
+This REFUTES the literal claim that the ordinary TL Gram form is a
+single-embedded-square/single-embedded-square pairing up to only a Laurent
+unit, with the source cap represented by its ordinary puncture square.
+The self-pair C0/C0 has extra closed components in its cap/cup tangle;
+therefore this is an obstruction to the proposed FULL GRAM-FORM dictionary,
+not a counterexample restricted to the two-arc/no-closed-component locus.
+It does NOT refute a nonunit-normalized realization, a linear combination
+of dual squares, another lattice, or the established derivative calibration.
+Bigelow6.1 excludes q^2=1 for its module identification, but that does not
+evade this test of a proposed GENERIC LAURENT-POLYNOMIAL equality up to unit:
+such an equality would still specialize. A rational factor with a pole or
+nonunit value at q=1 is a different claim and can evade the argument.
+
+4. A POSITIVE LIMITED t=1 CALIBRATION FOR THE TORUS FORM
+For adjacent cap arcs, use the one-cup TL/Burau Gram with delta on the
+diagonal,1 between neighboring adjacent arcs,0 otherwise. Let M be its
+2x2 cap-pair matrix. Four fixed identity-braid controls give
+ P/(1-t)|t=1 = q det(M),
+ H(q,1) = (q-1)^2/q * det(M).
+Controls against C0: C0 itself(det delta²), (12)(45)(det delta),
+(23)(45)(det1), (12)(56)(det0).
+This matches the expected determinant after the actual torus normalization.
+It is not a construction of the missing single-boundary-square dual map.
+
+5. WHAT AN ACTUAL INTERSECTION CERTIFICATE WOULD NEED
+To extract geometric (a,b) and partner maps for the14-letter witness,
+one must first choose actual source arcs, actual dual relative cycle(s),
+orientations, and cover lift paths matching the calibrated form. Then keep
+the individual configuration-space intersections before combining monomials.
+Matrix multiplication currently records only their homology aggregate.
+The algebraic h=1+qt packets can be checked exactly, but they do not by
+themselves recover an involution on the original intersection set.
+
+Bigelow3.3 does provide a RELATED local geometric mechanism: a genus-two
+surface is built from two punctured-torus copies joined by an annulus;
+the half-rotation around the shared puncture changes the lift by qt, and
+the two copies have the same orientation, producing a factor1+qt in its
+relative image. This is a candidate local model for a slide defect, not
+an established identification of the witness's individual partners.
+
+6. TIGHTNESS SCOPE
+Minimizing intersections over cap slides requires the missing dual-cycle
+dictionary and an invariant definition of the representatives being varied.
+The assertion 'split implies c=0 because a boundary-parallel arc slides off'
+needs qualification: a split two-string tangle may carry a local knot on
+each arc, so splitting alone does not make either arc boundary-parallel.
+Without a precise dual map and model of c, this is a gap rather than a
+verified counterexample to Conjecture T. No sample here is claimed globally
+tight, and no geometric intersection involution has been certified.

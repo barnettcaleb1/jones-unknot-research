@@ -1,0 +1,87 @@
+Exact exclusion of a two-band Jones-one construction
+31 October 2026, America/Chicago
+
+This proves a statement about one explicitly marked infinite family. It does
+not prove that the Jones polynomial detects the unknot in general.
+
+STATEMENT
+Start from the EKT three-component link LLL(1) and the two disjoint face bands
+specified below. Let K(m,n) be the knot obtained by attaching these bands with
+2m and 2n half twists, where m,n are arbitrary integers. Then
+
+                      V(K(m,n))=1 iff m=n=0.
+
+The anchor K(0,0) is an actual unknot, as certified by diagram simplification.
+
+EXACT DIAGRAM SPECIFICATION
+Use the Spherogram PD convention. The original three-component link is
+[[30,36,31,35],[36,32,37,31],[34,21,35,22],[22,37,23,34],
+ [20,30,21,29],[32,20,33,19],[18,23,19,24],[24,17,25,18],
+ [16,13,17,0],[25,13,26,12],[15,6,16,7],[26,6,27,5],
+ [4,28,5,27],[11,29,12,28],[3,14,4,15],[10,33,11,14],
+ [9,2,10,3],[1,8,2,9],[7,0,8,1]].
+
+Crossings and half-edges are zero-indexed. The face-band attachment pairs are
+[(17,1),(5,3)] and [(9,3),(3,3)]. They lie in different faces, numbered 2 and10
+by this diagram's face traversal, and use disjoint original edges. Both bands
+are attached before rebuilding or simplifying the diagram. The retained
+generator fixes the local twist signs; each positive full twist changes the
+oriented writhe by -2. No unmarked simplified diagram is used to locate a band.
+
+PROOF
+Write x=t^(1/2), delta=-x-x^-1, and z=x^-4. The two normalized antiparallel
+full-twist operators have eigenvalues 1 and z. This follows directly from
+g=A I+A^-1 e, e^2=delta e, t=A^-4, and the writhe correction A^6 for g^2.
+Consequently the m-th operator, for every integer m, is
+
+                  z^m I+(1-z^m)e/delta.
+
+Let S1 and S2 be the Jones polynomials obtained from K(0,0) by cutting the
+first or second band, respectively. Cutting both recovers the original
+three-component link, whose polynomial is delta^2 in the induced orientation.
+The common outside writhe is -3 in the anchor and each cut diagram. Therefore
+the exact skein formula is
+
+ delta*(V(K(m,n))-1)
+   =(S1-delta)z^n+(S2-delta)z^m-(S1+S2-2delta)z^(m+n).                 (1)
+
+The two full polynomials, independently checked from the diagrams, are
+
+ S1=-x^7+4x^5-9x^3+14x-21x^-1+23x^-3-23x^-5+20x^-7
+       -15x^-9+9x^-11-4x^-13+x^-15;
+
+ S2=-x^7+3x^5-7x^3+11x-18x^-1+21x^-3-22x^-5+21x^-7
+       -17x^-9+12x^-11-7x^-13+3x^-15-x^-17.
+
+Both satisfy S_j(i)=144i. At x=i, delta=0 and z=1, so evaluate (1) by its
+removable-singularity limit, using delta'(i)=-2 and z'(i)=4i. It gives
+
+                       V(K(m,n)) at t=-1 = 1-288(m+n).              (2)
+
+Thus an identically unit Jones polynomial requires n=-m. Substitution in
+(1) then factors its right-hand side as
+
+              (z^m-1)*[(S2-delta)-z^-m(S1-delta)].                 (3)
+
+If m is nonzero, z^m-1 is nonzero, and the Laurent polynomial ring has no
+zero divisors. Equation (3) could vanish only if
+
+                         S1-delta=z^m(S2-delta).
+
+Multiplication by a monomial preserves exponent span. But S1-delta has
+span22 (degrees -15 through7), and S2-delta has span24 (-17 through7).
+They cannot be monomial translates. Therefore m=0, and (2) forces n=0.
+The converse is the independently certified unknot anchor.
+
+VERIFICATION AND SCOPE
+The eigenvalue argument establishes the identity for all integer twists;
+it is not extrapolated from numerical samples. Direct full Jones calculations
+checked the formula at (0,0),(1,0),(0,1),(1,1),(1,-1),(-2,3),(2,-2),(-1,-1).
+Separate algebra audits checked the limit, orientations, and span argument.
+This rules out this entire marked two-parameter construction, including
+isolated large-twist candidates. It does not exclude other band placements
+or other knots, and no novelty or external expert-validation claim is made.
+
+Reproduction files are retained in work/research34: two_band_family.py,
+two_band_family.json, verify_all_integer_formula.py, all_integer_formula_checks.json,
+all_integer_audit.txt, and twist_independent_audit.json.

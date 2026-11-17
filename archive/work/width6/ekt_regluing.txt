@@ -1,0 +1,117 @@
+EKT REGLUING AND TORSION-FREE DOUBLE-COVER HOMOLOGY
+2026-11-03. Bounded answer; no new family search or proof audit.
+
+RESULT BY SCOPE
+==============
+(1) Standard Jones-preserving opposite-omega EKT orbits from an actual
+    unknot-numerator seed: every NONZERO iterate has nonzero torsion.
+    They cannot yield a two-component link one band from the unknot.
+(2) Ordinary Conway mutations, or other twins with the SAME branched
+    double cover: the same torsion obstruction remains unchanged.
+(3) Arbitrary independent boundary reglueings in the SAME H(T,U) Hopf
+    outside pattern: torsion-free H1=Z DOES occur, even for nontrivial
+    two-component links. An explicit example is H(3,3/2). Its Jones
+    polynomial is NOT that of the two-component unlink.
+(4) A new essential outside tangle or a new Jones-preserving regluing
+    mechanism is not covered by (1). No universal exclusion is proved.
+
+A. STANDARD EKT ORBITS: THE EXISTING ALL-ITERATE OBSTRUCTION
+---------------------------------------------------------
+Primary construction: Eliahou--Kauffman--Thistlethwaite, Infinite families
+of links with trivial Jones polynomial, Topology42(2003),155--169,
+sections2--4. https://homepages.math.uic.edu/~kauffman/ekt.pdf
+This paper specifies the Hopf outside pattern H(T,U) and opposite omega
+boundary transformations. The homology calculation is the earlier local
+result in work/ekt_homology_notes.md; it is not asserted to be a theorem
+stated in EKT itself.
+
+For a seed T with actual numerator T^N=U, its branched cover has an S3
+filling, so it is a knot exterior. Its primitive boundary difference data
+are (p,q)=(1,k), k integral. The companion seed infinity+2 has data(1,0).
+Write the omega matrix and its powers as
+  M=[[3,8],[1,3]], M^n=[[a,8b],[b,a]], a^2-8b^2=1.
+After opposite iterates the two input pairs are
+  (p_T,q_T)=(a+8bk,b+ak), (p_U,q_U)=(a,-b).
+The archived Fox presentation is
+  H1(Sigma2(H(T,U))) = Z direct_sum coker([[p_U,-2q_T],[-2q_U,p_T]]).
+Thus the finite factor has order
+  |D|, D=1+12b(b+ak).
+For n!=0, a>|b|>0. Therefore b+ak cannot vanish for integral k. Hence
+D!=1; also D=1 mod12, so D!=-1 and D!=0. Consequently |D|>1.
+This applies to nonrational T because the actual unknot numerator supplies
+the free integral boundary module; a rational fraction alone would not.
+
+It covers the published LL2 family and LL1 unknot-seed construction and
+their further standard opposite-omega iterates. For LL2(n), if
+p_n^2-8q_n^2=1, the presentation reduces to
+  H1 = Z direct_sum Z/(1+12q_n^2).
+For the published LL1(m,n), the archived torsion order is
+  |12*4^m*(3n+2)-1|>1.
+No general arbitrary-regluing statement is implied by these formulas.
+
+B. MUTATION AND FIXED-COVER TWINS
+-------------------------------
+Conway mutation preserves the branched double cover: the lift of the
+standard four-punctured-sphere mutation can be chosen isotopic to the
+identity on its covering torus. Therefore it cannot remove the torsion
+in A. More generally, fixed-cover twins have the same H1 tautologically.
+Proof reference: H. R. Morton, Mutant knots (2014), Theorem3 and its
+covering-torus proof (the same proof applies to links):
+https://www.liverpool.ac.uk/~su14/papers/mutantchapter.pdf
+An accessible research overview explicitly records this property:
+https://etnyre.math.gatech.edu/TechTopology/2011/GreeneQuestions.pdf
+This statement is about ordinary Conway mutation, not arbitrary generalized
+rotor replacements or arbitrary torus reglueings.
+
+C. ARBITRARY BOUNDARY REGLUING: EXPLICIT TORSION-FREE FAMILY
+--------------------------------------------------------
+For rational tangles T=p_T/q_T and U=p_U/q_U, the same exact presentation
+holds with coprime numerator/denominator pairs. Therefore H1 is exactly Z
+iff this 2x2 matrix is unimodular, i.e.
+  p_T*p_U - 4*q_T*q_U = +/-1.
+
+Take T=3 and U=(4r+3)/(3r+2), for any integer r>=0. The pairs are primitive
+because 3*(4r+3)-4*(3r+2)=1. Both numerators are odd, so H(T,U) has two
+components. The determinant is identically1, and hence H1=Z throughout.
+These are actual rational tangles, all obtainable by independent boundary
+homeomorphisms of rational tangles while retaining the Hopf outside H.
+The component T^N is a trefoil, so each resulting link is nontrivial.
+This exhibits a failure of a UNIVERSAL homology obstruction for arbitrary
+reglueings; it does not exhibit Jones-preserving reglueings.
+
+Concrete r=0:
+  L=H(3,3/2), A=[[3,-2],[-4,3]], det(A)=1, SNF(A)=diag(1,1).
+The existing calibrated planar-diagram constructor produced a14-crossing,
+2-component diagram. Its full Fox presentation independently gives free
+rank1 with NO nontrivial invariant factors, confirming H1=Z. Regina gives
+  V_L(x)=x^7-x^5+x^3-2x-x^-1-x^-5+x^-7-x^-9+x^-11,
+in its x=t^(1/2) convention. Its exponent breadth18 differs from the
+unlink polynomial -(x+x^-1), of breadth2. Thus this example fails the
+Jones requirement; changing component orientation cannot fix breadth.
+Reproduction and PD certificate:
+  work/width6/ekt_regluing_example.py
+  work/width6/ekt_regluing_example.json
+This was one specified calibration, not a search for counterexamples.
+
+D. EXACT REMAINING LIMIT
+-----------------------
+The archived opposite-omega pairing calculation (research41/pairing.txt)
+classifies universally preserved forms over Q(A) as span{H,Q}. For an
+outside that is just an ordinary gluing with a boundary braid inserted,
+invariance forces a centralizing boundary map, and the opposite twists
+cancel topologically. This rules out that specific extension of the
+construction, not arbitrary essential outside tangles realizing invariant
+pairings. The formal H/delta component-removal shortcut is also excluded
+by the archived two-surgery determinant-square obstruction (8 is not a
+square). Neither fact classifies all essential outside realizations.
+
+Passing H1=Z, or the equivalent primitive corank-one Goeritz test, remains
+only NECESSARY. It does not supply a band to the unknot, prove the double
+cover is 0-surgery on a knot in S3, or ensure unlink Jones polynomial.
+The explicit example in C passes this homology gate and fails Jones.
+
+Verdict: the standard EKT Jones-preserving construction and its ordinary
+mutants are exhausted by the torsion obstruction for the required
+unknot-seed setting. Broader Jones-preserving essential reglueings remain
+unresolved. Claiming that ANY EKT-shaped regluing necessarily retains
+torsion would be false, as C demonstrates.

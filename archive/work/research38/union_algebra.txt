@@ -1,0 +1,118 @@
+Lamm--Tanaka one-region KT lead: source and algebra status
+Pass38; bounded review. No new counterexample and no novelty claim.
+
+VERDICT
+A one-twist-region symmetric-union presentation of the Kinoshita--Terasaka
+knot is KNOWN. Its partial knot is the actual unknot, as explicitly pictured
+and stated in Moore arXiv1507.07996v2, Definition4 and Figure3 (printed pp2--4).
+Thus existence of such a presentation is not the missing construction.
+The missing construction would be a DIFFERENT one-region presentation with
+a provably nontrivial partial knot. No such presentation was found here.
+
+The publisher abstract for Lamm--Tanaka, On partial knots for symmetric unions,
+Topology Appl375 (2025),109593, indeed states that every partial knot in a
+one-region KT presentation has Jones polynomial1. The accessible publisher
+section preview does not expose its exact proposition or proof. The author
+publication list gives only bibliographic metadata. Targeted searches did
+not locate a legal open full text of this joint paper. Therefore its complete
+proof and proposition number are NOT claimed verified from the original.
+  https://www.sciencedirect.com/science/article/pii/S0166864125003918
+  https://doi.org/10.1016/j.topol.2025.109593
+  https://www1.gifu-u.ac.jp/~tanakat/papers.htm
+
+However, its stated KT conclusion can be independently reconstructed from
+fully accessible primary sources and exact algebra. This was ALREADY DONE
+in pass12: work/proof12/tangle/findings.txt, Sections4--7, with the exact
+standard-library certificate kt_partial_filter.py/.json. This pass located
+that prior work, rechecked the correct source formula, and reran the entire
+finite arithmetic certificate successfully. It should not be presented as
+a newly discovered research direction or a new family calculation.
+
+THE EXACT ONE-AXIS SKEIN CONSTRAINT
+Let K_n be a one-region symmetric union with partial knot J, and use Tanaka's
+signed half-twist parameter n. Put
+  F=V_J(t)V_J(t^-1),   Q=V_(axis infinity smoothing)/(−t^.5−t^−.5).
+The off-axis mirror geometry makes F,Q reciprocal. The normalized local
+skein expansion (Tanaka2022 Theorem1.1, proof§3) gives
+  V_(K_n)=(-t^-1)^n F + (1-(-t^-1)^n)Q.
+Applying t -> t^-1 and eliminating Q gives
+
+ t^n V_(K_n)(t)+(-1)^n V_(K_n)(t^-1)
+               =(t^n+(-1)^n)V_J(t)V_J(t^-1).            (1)
+
+The primary complete source is Tanaka, A formula for the Jones polynomial
+of symmetric unions (2022), Theorem1.3 and its proof on printed pp1,4:
+  https://www.ed.gifu-u.ac.jp/file/5c3c1905e8c24e832f61fa5f837be463.pdf
+It is also explicitly restated correctly as Theorem1.1 in Kose,
+On amphichirality of symmetric unions, arXiv2111.08765:
+  https://arxiv.org/pdf/2111.08765
+These full primary texts were read in this pass; (1) was independently
+rederived by the displayed two-channel elimination.
+
+IMPORTANT SOURCE TYPO
+Tanaka's short 2025 On alternating partial knots of symmetric unions,
+printed p4 Theorem4.1, displays t^-n on the left but t^n on the right.
+That mixed-sign version is false already for V=F=1. The correct formula
+has t^n on BOTH sides as in (1). The typo was visually checked in pass12;
+this pass independently detected it algebraically and checked the correct
+formula in the two primary sources above. Do not silently use the faulty
+2025 display. Its derivative congruence is separately restated as Cor4.2.
+  https://www.ed.gifu-u.ac.jp/file/aa876b18ef60ef2ef2bcac4abdf0ec78_1.pdf
+
+SPECIALIZATION TO KT, WITH THE FINITE FILTER EXPLICIT
+Use the fixed chirality whose exact cached Jones polynomial is
+ P=-t^-4+2t^-3-2t^-2+2t^-1+t^2-2t^3+2t^4-2t^5+t^6.
+The prior pass computed this from an actual braid, and independently from
+a published KT bridge projection. Set m=-n, matching kt_partial_filter.py.
+Equation(1) becomes
+  (1+(-t)^m)F=P+(-t)^m P(t^-1).                         (2)
+Zero m gives J#mirror(J), not the prime nontrivial KT knot.
+The one-axis derivative congruence 8|m| divides P'(-1)=-48 restricts
+m to ±1,±2,±3,±6. This is an exhaustive arithmetic reduction, not a search
+cutoff. Exact Laurent division of (2) gives:
+  ±6: not Laurent;
+  -3,-2,-1: negative constant coefficient;
+  +1: constant coefficient1 but nonconstant F;
+  +3: F(primitive cube root)=7;
+  +2: F=1.
+For a Laurent integral norm V_J V_J*, its constant coefficient is the sum
+of squares of all coefficients of V_J. The negative cases are impossible;
+constant coefficient1 forces a monomial and hence F=1. At a primitive
+cube root every knot Jones polynomial is1, so the +3 case is impossible.
+Thus m=2 is the only choice in this chirality, and V_J V_J*=1. The latter
+forces V_J=±t^r; V_J(1)=1 and V'_J(1)=0 imply V_J=1.
+Mirroring reverses the signed twist. In particular every permitted one-axis
+presentation has EVEN twist number. The verified finite certificate is
+  work/proof12/tangle/kt_partial_filter.py
+  work/proof12/tangle/kt_partial_filter.json
+and was rerun unchanged in this pass.
+
+WHAT IS KNOWN GEOMETRICALLY, AND WHAT IS NOT
+Moore's primary Figure3 explicitly supplies the already known KT example
+with actual partial unknot. Definition4 uses ONE elementary tangle replacement,
+so it is the same one-region notion, not a generalized multiple-region union.
+  https://arxiv.org/pdf/1507.07996
+An arbitrary new partial J is not proved unknotted merely because V_J=1.
+Lamm's theorem says a trivial WHOLE symmetric union has trivial partial knot;
+it cannot be applied with the nontrivial whole knot KT.
+
+The earlier source-audited pass12 restrictions sharpen this remaining gap:
+even-symmetric-union genus and group theorems give Delta_J=1, g(J)<=1,
+and meridional rank mr(J)<=3. If J is nontrivial, then g(J)=1 and mr(J)=3.
+The genus-one/three-bridge classification and exact pretzel Jones moments
+exclude b(J)<=3, hence b(J)>=4. Such a partial would therefore simultaneously
+violate Jones unknot detection AND the meridional-rank conjecture.
+These restrictions and their exact primary locators are in findings.txt§§5,7;
+this pass does not re-label those earlier audits as fresh results.
+They do not prove mr(J)=b(J), nor do they classify every possible KT quotient.
+
+CONCLUSION FOR THE RESEARCH DECISION
+The one-region KT target is a known inverse-decomposition problem with a
+known trivial partial solution and a strong algebraic constraint. Merely
+varying the twist box of the known diagram preserves its partial knot.
+The task would require a genuinely different off-axis decomposition and a
+nontriviality witness for the new partial. No credible new construction or
+unconditional proof that all such partials are trivial was obtained here.
+The full 2025 joint article remains an access/proposition-verification gap;
+its abstract's main consequence is independently supported by the complete
+older primary formula and the already retained exact certificate.

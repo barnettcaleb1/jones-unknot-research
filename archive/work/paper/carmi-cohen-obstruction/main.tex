@@ -1,0 +1,411 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.12in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{25,55,110}
+\usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
+\hypersetup{pdftitle={An obstruction to uniform residual-twist compression},pdfauthor={Caleb Barnett}}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}[proposition]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Remark}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\degp}{\deg_p}
+\title[Uniform residual-twist compression]{An obstruction to the uniform residual-twist compression in Carmi--Cohen}
+\author{Caleb Barnett}
+\urladdr{https://barnettcaleb1.github.io}
+\date{First complete draft for internal review: 3 November 2026}
+\subjclass[2020]{57K10, 57K14}
+\keywords{Jones polynomial, finite-type invariant, twist knot}
+
+\begin{document}
+\begin{abstract}
+We give an exact obstruction to the length-independent residual-twist
+bound used in Carmi and Cohen, \emph{On trivial Jones--Vassiliev
+polynomials}, arXiv:2606.22410v1. An ordinary antiparallel twist family
+based at a minimal trefoil diagram has Jones--Vassiliev degree \(2L+5\)
+at odd twist length \(L\), with leading coefficient \(-1\).
+The asserted geometric package, followed by Theorem 5.6 and Lemma 5.8
+of that preprint, would bound these degrees by \(22\) independently
+of \(L\). The permitted value \(L=23\) instead has \(b_{51}=-1\).
+Thus the universal geometric package, the signed-state compression
+conclusion, and the ordinary-residual identification cannot all hold.
+This note does not refute the paper's main
+statement or the Jones unknot conjecture.
+\end{abstract}
+\maketitle
+
+\section{Scope and conventions}
+
+This note concerns the version of Carmi--Cohen \cite{CC} submitted on
+21 June 2026. All its result numbers below refer to that version.
+The issue is a uniform-control assertion in its proof, not a proposed
+counterexample to Jones unknot detection. The knots used below are
+ordinary twist knots, and their Jones polynomials are explicitly
+nontrivial.
+
+We use the preprint's variables and normalization:
+\[
+ x=t^{1/2},\qquad p=x-x^{-1},\qquad V_U=1,
+\]
+with the oriented skein relation
+\begin{equation}\label{eq:skein}
+ x^{-2}V_+-x^2V_-=pV_0.
+\end{equation}
+There is a ring isomorphism
+\begin{equation}\label{eq:ring}
+ \Z[x,x^{-1}]\cong\Z[p,x]/(x^2-px-1).
+\end{equation}
+Indeed \(x^{-1}=x-p\) in the quotient, and \(p=x-x^{-1}\)
+recovers the inverse map. The quotient is free over \(\Z[p]\)
+with basis \(1,x\), since its defining polynomial is monic of
+degree two in \(x\). Every Jones polynomial therefore has a
+unique expression
+\begin{equation}\label{eq:jvp}
+ V_K=a_K(p)+x b_K(p),\qquad
+ a_K=\sum_r a_r(K)p^r,\quad b_K=\sum_r b_r(K)p^r.
+\end{equation}
+The degree discussed here is
+\(\degp V_K=\max(\deg a_K,\deg b_K)\).
+Write \(f_r(K)=(a_r(K),b_r(K))\). In the source,
+\(G_r(\mathcal Q)\) means that \(f_r\) vanishes on every
+state in the indicated cube \(\mathcal Q\).
+
+The source's main conclusion asserts a nonzero Jones finite-type
+coefficient, at order at most three times crossing number, for
+every nontrivial knot. The calculation below neither proves nor
+disproves that assertion. It contradicts a different assertion
+used to obtain it: a bound on \emph{all} sufficiently high
+residual-twist coefficient layers, uniform in the twist length
+and depending only on the original host.
+
+\section{The ordinary twist family}\label{sec:family}
+
+Take a three-crossing trefoil in its twist-knot diagram: a
+two-crossing clasp and one marked antiparallel seed crossing.
+Replace the seed by \(L\) crossings of the same sign, where
+\(L\ge1\) is odd, and call the result \(K_L\).
+The parity retains the endpoint pairing, so every \(K_L\)
+is a knot. Choose the mirror convention for which
+\begin{equation}\label{eq:seed}
+ V_1=x^2+x^6-x^8.
+\end{equation}
+The family can also be specified as the appropriate mirror of
+the two-bridge diagram with continued fraction \([L,2]\),
+namely rational fraction \((2L+1)/2\);
+equation~\eqref{eq:seed} fixes the chirality.
+The changing \(L\)-box is the marked seed, while the
+two-crossing clasp is fixed.
+
+Switching the seed in \(K_1\) gives the unknot. Let \(H\)
+be the Jones polynomial of its oriented smoothing.
+The seed skein relation determines it without an independent
+sign choice:
+\[
+ pH=x^{-2}(x^2+x^6-x^8)-x^2=1-x^2+x^4-x^6.
+\]
+Consequently
+\begin{equation}\label{eq:smoothing}
+ H=-x-x^5.
+\end{equation}
+Changing one crossing in the positive antiparallel \(L\)-box
+allows a Reidemeister-II cancellation of two crossings,
+leaving \(K_{L-2}\). Oriented smoothing makes the other
+crossings in that box removable curls, and leaves the same
+oriented smoothing link as in \eqref{eq:smoothing}.
+The normalized Jones polynomial is invariant under their
+removal. It follows that for odd \(L\ge3\)
+\begin{equation}\label{eq:rec}
+ V_L=x^4V_{L-2}+x^2-x^4+x^6-x^8.
+\end{equation}
+The \(L=1\) seed relation has the same form with the
+switched state \(V_{-1}=1\).
+
+\begin{proposition}\label{prop:degree}
+For every positive odd \(L\),
+\[
+ \max\deg_x V_L=2L+6,\qquad
+ \degp V_L=2L+5,\qquad b_{2L+5}(K_L)=-1.
+\]
+\end{proposition}
+\begin{proof}
+The initial leading term is \(-x^8\).
+At every subsequent step of \eqref{eq:rec},
+multiplication by \(x^4\) raises its exponent by four;
+the inhomogeneous summand has degree only eight
+and cannot cancel it. Thus the unique highest
+monomial is \(-x^{2L+6}\).
+All exponents in \(V_L\) are positive.
+
+For \(n\ge1\), write \(x^n=A_n(p)+xB_n(p)\).
+Multiplication by \(x\) in \eqref{eq:ring} gives
+\[
+ (A_{n+1},B_{n+1})=(B_n,A_n+pB_n).
+\]
+Starting with \(A_1=0,B_1=1\), it follows that
+\(B_n\) is monic of degree \(n-1\), and \(A_n\)
+has degree at most \(n-2\).
+Every smaller positive power of \(x\) therefore
+has \(B\)-degree strictly less than \(2L+5\).
+The leading coefficient from \(-x^{2L+6}\)
+survives in \(b_{K_L}\), and equals \(-1\).
+This proves all three assertions.
+\end{proof}
+
+For example \(K_3=5_2\), with the convention
+\[
+ V_3=x^2-x^4+2x^6-x^8+x^{10}-x^{12}.
+\]
+The seed and this value agree with the published
+polynomials in \cite[pp.~74, 79]{GZ} under \(q=x^2\).
+The appendix gives a closed formula, four initial
+values, and exact checks independent of the
+leading-term argument.
+
+\section{The incompatible uniform bound}\label{sec:package}
+
+The relevant implication in \cite{CC} uses three
+numbered statements. Their hypotheses must be
+retained when reading the contradiction.
+\begin{enumerate}
+\item Proposition~5.12 (statement on printed
+pp.~39--40) asserts a local geometric verification
+of the clasped-twist construction and its
+conditions \((\mathrm C1)\)--\((\mathrm C4)\),
+with fixed overhead \(\kappa_{\mathrm{mach}}=11\).
+In particular condition \((\mathrm C4)\)
+identifies the double-smoothed machine with the
+ordinary residual antiparallel twist at the
+host crossing, relative to the exterior.
+
+\item Theorem~5.6 (printed pp.~30--31) assumes
+\((\mathrm C1)\)--\((\mathrm C3)\) uniformly
+over a fixed exterior host family \(\mathcal H\).
+It asserts
+\[
+ G_r(Q_M(\mathcal H))\quad\text{for all }r>\widehat B(\mathcal H),
+ \qquad \widehat B=B_{\mathrm{host}}+11.
+\]
+Its statement explicitly says:
+\emph{The conclusion is independent of the
+residual twist length \(L\).}
+
+\item Lemma~5.8 (printed pp.~31--33) assumes
+\((\mathrm C1)\)--\((\mathrm C4)\) and transfers
+this vanishing to the entire ordinary residual
+cube \(Q_\rho\):
+\begin{equation}\label{eq:claimed}
+ G_r(Q_\rho(\mathcal H))\quad
+ \text{for every }r>\widehat B(\mathcal H)+2.
+\end{equation}
+This is not restricted to a two-state residual
+face. In particular, it includes the all-positive
+length-\(L\) state.
+\end{enumerate}
+
+These assertions precede the later anchored
+descent in Theorem~5.10. Their stated hypotheses
+do not require the host to have Jones polynomial
+one, nor does Lemma~5.8 require
+\(L>\widehat B+2\). The trefoil host is therefore
+a legitimate test of the universal geometric
+verification.
+
+For a fixed host shadow with \(n\) crossings
+and \(\ell\) components, the source uses
+\(B_{\mathrm{host}}=3n+\ell-1\);
+see its Corollary~3.7, Section~5.1.1
+(printed p.~25), and Remark~5.7.
+Take \(\mathcal H\) to be the crossing-flip family
+of the fixed three-crossing trefoil shadow.
+The pre-planting count includes the seed crossing.
+The minimal trefoil host has \(n=3,\ell=1\),
+so the combined assertions give
+\begin{equation}\label{eq:cap22}
+ \degp V_L\le3\cdot3+11+2=22
+\end{equation}
+for every allowed residual length.
+Taking \(L=23\), Proposition~\ref{prop:degree}
+instead gives
+\begin{equation}\label{eq:contradiction}
+ \degp V_{23}=51,\qquad b_{51}(K_{23})=-1.
+\end{equation}
+This length also satisfies \(L>\widehat B+2\),
+so imposing that later length inequality would
+not remove the example. Changing the overhead
+eleven to another fixed constant cannot repair
+the conclusion, because the actual degree
+\(2L+5\) is unbounded.
+
+\subsection*{Why this does not refute the conditional skein algebra}
+
+The paired two-clasp identity used in Lemma~5.8 is
+\begin{equation}\label{eq:paired}
+ V_{-+}+V_{+-}=x^{-4}V_{++}+x^4V_{--}-p^2V_{00}.
+\end{equation}
+It follows by applying \eqref{eq:skein} in
+the two marked coordinates. For example,
+\begin{align*}
+ V_{-+}&=x^{-4}V_{++}-p^2V_{00}-px^2V_{0-},\\
+ V_{+-}&=x^4V_{--}+px^2V_{0-};
+\end{align*}
+adding proves \eqref{eq:paired}.
+Multiplication by \(x^{4}\) or \(x^{-4}\)
+raises the basis degree by at most four,
+since \(x^{-1}=x-p\).
+If the four signed machine states have degree
+at most \(\widehat B\), the right side solved
+for \(p^2V_{00}\) has degree at most
+\(\widehat B+4\). Freeness of the basis \(1,x\)
+then gives \(\degp V_{00}\le\widehat B+2\).
+This conditional calculation is valid.
+
+The contradiction therefore shows that the
+universal geometric verification, the
+signed-state compression conclusion, and
+the asserted ordinary-residual identification
+cannot all hold for the displayed family.
+It is not an example independently satisfying
+all of \((\mathrm C1)\)--\((\mathrm C3)\)
+and violating a conditional theorem.
+It also does not, by itself, isolate one
+diagrammatic submove as the unique error.
+The combined package is enough to expose
+the gap in the proof as written.
+
+\section{What remains open}
+
+The main assertion of \cite{CC} is not
+\eqref{eq:cap22}. It is a claim about the
+existence of a nonzero low-order coefficient
+for a nontrivial knot. This note has not
+produced a knot violating that claim.
+Every \(K_L\) has the explicit nonconstant
+Jones polynomial computed above.
+The number three in \eqref{eq:cap22}
+is the crossing count of the \emph{fixed host},
+not that of the length-\(L\) residual knot.
+Confusing those two counts would misstate
+the obstruction.
+The ordinary diagram of \(K_L\) has \(L+2\)
+crossings, so the general diagram bound from
+Corollary~3.7 is \(3L+6\), consistent with
+the actual degree \(2L+5\).
+That general bound is not contradicted.
+
+The consequence established here is that
+the length-independent uniform-control
+step needed by the submitted proof is false
+as a universal package. A repair would
+have to replace or restrict that step
+and verify the new hypotheses. Neither
+Jones unknot detection nor its negation
+follows from this calculation.
+
+\appendix
+\section{Closed formula and exact verification}\label{app:verify}
+
+Put \(m=(L-1)/2\) and \(B=x^2-x^4+x^6-x^8\).
+Iteration of \eqref{eq:rec} gives the polynomial identity
+\begin{equation}\label{eq:closed}
+ V_{2m+1}=x^{4m}(x^2+x^6-x^8)
+       +B\sum_{j=0}^{m-1}x^{4j},\qquad m\ge0,
+\end{equation}
+where the empty sum is zero.
+Multiplication by \(1-x^4\) also gives an
+equivalent expression without a sum.
+The sum form makes clear that no
+denominator specialization is involved.
+
+The first four values are
+\begin{align*}
+ V_1={}&x^2+x^6-x^8,\\
+ V_3={}&x^2-x^4+2x^6-x^8+x^{10}-x^{12},\\
+ V_5={}&x^2-x^4+2x^6-2x^8+2x^{10}-x^{12}+x^{14}-x^{16},\\
+ V_7={}&x^2-x^4+2x^6-2x^8+2x^{10}-2x^{12}
+       +2x^{14}-x^{16}+x^{18}-x^{20}.
+\end{align*}
+
+For an independent coefficient extraction, define
+\[
+ F_0(p)=0,\qquad
+ F_n(p)=\sum_{j=0}^{\lfloor(n-1)/2\rfloor}
+ \binom{n-1-j}{j}p^{n-1-2j}\quad(n\ge1).
+\]
+Pascal's identity gives \(F_{n+1}=pF_n+F_{n-1}\),
+and direct reduction in \eqref{eq:ring} gives
+\begin{equation}\label{eq:binomial}
+ x^n=F_{n-1}(p)+xF_n(p),\qquad n\ge1.
+\end{equation}
+Thus the two basis coefficients of
+\eqref{eq:closed} can be obtained from
+binomial coefficients, without iterating
+the basis multiplication used in the
+proof of Proposition~\ref{prop:degree}.
+For instance,
+\begin{align*}
+ a_{K_1}(p)&=1-3p^2-4p^4-p^6,\\
+ b_{K_1}(p)&=-6p^3-5p^5-p^7.
+\end{align*}
+Substitution of \(p=x-x^{-1}\)
+reconstructs \eqref{eq:seed} exactly.
+
+The accompanying standard-library Python
+verifier uses integer Laurent polynomials
+to evaluate \eqref{eq:closed}, uses
+\eqref{eq:binomial} to extract \(a,b\),
+and independently substitutes
+\(p=x-x^{-1}\) to reconstruct each
+Laurent polynomial. It obtains
+\[
+\begin{array}{c|r|r|r}
+ L&\max\deg_x V_L&\degp V_L&b_{\degp V_L}\\ \hline
+ 1&8&7&-1\\
+ 3&12&11&-1\\
+ 5&16&15&-1\\
+ 7&20&19&-1\\
+ 23&52&51&-1
+\end{array}
+\]
+and checks the exact skein identity with
+the same \(H=-x-x^5\) in each case.
+
+A separate diagram computation starts
+from the five actual rational closures,
+uses one uniform mirror choice to match
+\eqref{eq:seed}, and evaluates their
+normalized Jones polynomials with
+Regina, from planar-diagram codes
+generated by Spherogram.
+The crossing counts are \(3,5,7,9,25\).
+Every polynomial agrees coefficient
+for coefficient with \eqref{eq:closed};
+no additional monomial correction is
+made. The diagram codes, raw outputs,
+normalization and integer-arithmetic
+checks accompany the note.
+The general degree statement is proved
+above; the finite checks provide
+reproducibility, not a replacement
+for that proof.
+
+\section*{Statement on the use of AI systems}
+The computation in this note was carried out within an AI collaboration directed by the author (GPT-6 through Codex and Claude Fable 5.1 through Claude Code) and verified independently by both systems; the author takes responsibility for every statement.
+
+\begin{thebibliography}{9}
+\bibitem{CC}
+A.~Carmi and E.~Cohen,
+\emph{On trivial Jones--Vassiliev polynomials},
+arXiv:2606.22410v1, 21 June 2026.
+\url{https://arxiv.org/abs/2606.22410v1}.
+
+\bibitem{GZ}
+S.~Garoufalidis and D.~Zagier,
+\emph{Knots, perturbative series and quantum modularity},
+SIGMA \textbf{20} (2024), 055, 87 pp.;
+arXiv:2111.06645.
+\href{https://doi.org/10.3842/SIGMA.2024.055}{doi:10.3842/SIGMA.2024.055}.
+The initial polynomials used here appear on pp.~74 and 79.
+\end{thebibliography}
+\end{document}

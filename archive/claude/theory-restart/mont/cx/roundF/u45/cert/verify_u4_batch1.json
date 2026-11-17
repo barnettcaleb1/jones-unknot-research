@@ -1,0 +1,20 @@
+{
+ "files": [
+  "cert/u4_e3_n12_s1.jsonl.gz",
+  "cert/u4_e3b_n12_s7.jsonl.gz",
+  "cert/u4_e3w3_n14_s1.jsonl.gz"
+ ],
+ "records_total": 9743,
+ "sampled": 9743,
+ "fraction": 1.0,
+ "seed": 11,
+ "records_pass": 9743,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 9743
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 9743
+ },
+ "secs": 36.8
+}

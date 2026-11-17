@@ -1,0 +1,48 @@
+PROOF13 TANGLE RESULTS
+
+1. Universal leading-sign coherence for mirror ribbon doubles is FALSE.
+A concrete two-band 8_19=T(3,4) mirror-double has actual all-cut unlink3,
+but leading signs of its three twist coefficients are -,+,-. Full base,
+cut and twist PDs are archived. This directed test stopped after four
+valid triples on one knot. The parity/subset-sum certificate still excludes
+all parameters; more simply V''(1)=-60. This is not a Delta1 advance.
+See sign_counterexample_note.txt, sign_certificate.py.
+
+2. Generic Jones detection is equivalent to detection restricted to
+strongly invertible ribbon knots: form R=K#r(mK), then D(R)=R#rR.
+The known swapping strong inversion needs no symmetry of K. Nontriviality
+and Jones1 are preserved. A mirror reflection alone is not a strong
+inversion, so the reverse/mirror distinction must be maintained.
+See strong_inversion_reduction.txt.
+
+3. This does NOT make the same Jones-one knot a rational filling adjacent
+to an actual unknot. In fact every composite determinant1 knot is forbidden
+from such a filling presentation, by Montesinos + Gordon--Luecke1989,
+Corollary3.1: every integer homology sphere obtained by surgery on a knot
+in S^3 is irreducible. No strong-invertibility assumption is needed for
+this surgery obstruction. This is sharper than fusion>=2.
+See unknot_anchor_primality.txt; the original statement and its short
+proof reduction were checked, with an accessible2016 primary confirmation.
+
+4. The natural quotient response of D(K)=K#rK is Wh+(K), whose branched
+cover is 1/2 surgery on D(K). Exact identity:
+ V_Wh+(K)-1=(1-t^3)/(1+t)*(H3(K)-1).
+Therefore asking this quotient response to have Jones1 is EXACTLY asking
+H3(K)=1. It is the same missing color3 promotion as the cable route, not
+an independent geometric solution. Both local skein and zero-framed fusion
+were derived and checked against actual Regina Whitehead/parallel diagrams
+and the independent exact R-matrix certificate for 5_1 and10_132. These
+witness knots have equal ordinary Jones but different quotient responses.
+See whitehead_bridge_verify.py (stdlib), quotient_response_test.py/.json.
+
+Commands from workspace root:
+ python3 work/proof13/tangle/sign_certificate.py
+ python3 work/proof13/tangle/verify_counterexample.py
+ python3 work/proof13/tangle/quotient_response_test.py
+ python3 work/proof13/tangle/whitehead_bridge_verify.py
+
+The two geometry scripts use the existing local packages directory
+work/braid_classification/packages (Spherogram2.4.1, Regina7.4.1).
+The sign geometry builder imports work/proof12/tangle/kt_double_cuts.py;
+the colored verifier reads work/proof12/braid/all_color_collision_check.json.
+No generic proof, new nontrivial Jones-one knot, or novelty is claimed.

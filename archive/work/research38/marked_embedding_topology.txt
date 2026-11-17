@@ -1,0 +1,58 @@
+ACTUAL MARKED TORUS EMBEDDING: THE VIRTUALIZED TREFOIL IS A CLOSED TWO-BRAID
+Independent geometric certificate, 2026-11-01. No Jones-detection assumption.
+
+Input: the explicit virtual PD [(1,4,2,5),(5,3,0,2),(3,1,4,0)] and its rotation system. virtual_surface_states.py reconstructs its genus-one ribbon surface and integral cohomology marking. The two surviving essential state slopes are mu=(1,0) and lambda=(0,1), with knot homology -2lambda. Parent's exact state calculation gives unreduced bracket
+  F=(A^-7-2A-A^5)+(A-A^-3) mu^2+A lambda^2.
+Standard axes evaluate mu^2,lambda^2 as delta^2. Thus F=-A^3 delta and the actual normalized Jones polynomial is1. This alone is NOT an unknot certificate.
+
+1. Exact geometric realization of the marked ribbon graph
+Use the first three rational flat-torus vertex coordinates
+  c0=(0,0), c1=(-1/2,-19/30), c2=(-1/2,-11/30).
+Edge midpoints e0,...,e5 are
+  (-5/8,-1/2), (-1/4,-13/60), (1/4,13/60),
+  (-3/8,-1/2), (1/4,-13/60), (-1/4,13/60).
+Orient each edge from its first PD occurrence to its second. Its lattice displacement is
+  e0,e1,e3: (0,0); e2:(1,1); e4:(1,0); e5:(0,1).
+Connect each crossing vertex to its incident midpoint, with these lift displacements. Adding the three face centers from torus_embedding.json subdivides each face into triangles. Every triangle has the same orientation, total signed area -1; the graph therefore realizes the exact cellular marked torus rotation system. Original crossing-port cyclic orders are checked explicitly, so this is not an arbitrary polygon with the same homology.
+
+2. A short geometric proof of unknot type for every relevant marking
+Follow the knot by passing to the opposite port at each vertex. The longitudinal-coordinate triples (start, edge midpoint, end) are exactly
+  (0,-13/60,-11/30),
+  (-11/30,-1/2,-19/30),
+  (-19/30,-47/60,-1),
+  (-1,-73/60,-41/30),
+  (-41/30,-3/2,-49/30),
+  (-49/30,-107/60,-2).
+Thus the longitudinal coordinate v is strictly decreasing all the way around the knot, and decreases by2 overall. The stdlib verifier verify_two_braid.py reconstructs these triples directly from the PD, coordinates, and integral edge displacements.
+
+Resolve each crossing in the thickening by a small normal displacement of its over- and under-arcs, while retaining the torus coordinates. This preserves strict monotonicity in v. If a marking sends mu to a meridian of either complementary solid torus of the standard Heegaard torus, choose that solid torus as the braid-containing side. It is unknotted. Its longitude-angle coordinate on the original surface is +/-v: this follows from det(mu,lambda)=+/-1 and remains true with any meridional shear of lambda. A sufficiently small push puts the knot inside that solid torus without changing the strict angular monotonicity. Therefore the embedded knot is a closed two-strand braid.
+
+The two-strand braid group is Z. Such a knot is T(2,k) for an odd integer k. Its determinant is |k|. Hence if this embedded knot has Jones polynomial1, k=+/-1 and it is the actual unknot. This proves the needed topology without using general Jones unknot detection and without relying on numerical projection.
+
+Parent's separate exact all-markings argument, in verify_all_markings.py/.json, forces mu to be one of the two Heegaard coordinate axes whenever Jones is1. Combining that argument with this geometric proof excludes every orientation-preserving marked UNKNOTTED-Heegaard-torus embedding of this particular three-crossing virtual knot. Orientation-reversed versions follow by mirroring. This does not classify arbitrary virtual knots or knotted torus embeddings.
+
+3. Independent exact rational PL projection replay
+exact_torus_embedding.py gives an independent concrete PD check for all eight surviving SL2Z markings. The surface is the standard unknotted polyhedral torus
+  ||x|+|y|-3|+|z|=1.
+It has a4x4 quadrilateral parametrization, each quad triangulated along a fixed diagonal. Torus parameters are translated by (1/37,1/41), ensuring the three crossings lie strictly inside surface triangles. Every curve segment is cut EXACTLY at the parameter grid edges and diagonals before affine mapping to the torus. Each crossing is lifted in its single surface triangle by +/-10^-6 times its outward normal. The code verifies that all four trimmed crossing branches remain in that triangle.
+
+The triangle normal from (u,v) orientation points inward for this parametrization, so over-crossing ports1,3 use its NEGATIVE. This matches the radial-outward geometric thickening used in the projection code. There is nevertheless a GLOBAL MIRROR/VARIABLE convention between that projection pipeline and the algebraic torus-state calculation: its Regina output is obtained from the algebraic Jones polynomial by t -> t^-1 (equivalently x -> x^-1 for x=sqrt(t)). Thus full nonunit polynomials must be compared only after this inversion. The knot-type assertion U and every Jones=1 test are invariant under this convention. Reversing only the crossing normals changes the local crossing data and is not a legitimate substitute for applying a global mirror convention to the entire calculation.
+
+All polygon coordinates, projection intersections, and over/under comparisons use Fraction rational arithmetic. A generic rational planar projection produces explicit classical PDs. There are no ambiguous segment-endpoint crossings or zero height gaps. These are saved in exact_eight_markings.json and exact_marking_0.json through exact_marking_7.json. The projected crossing counts are3,5,3,5,5,7,5,7. Regina gives Jones1 in every case; Spherogram reduces every case to zero crossings and one component. The braid proof in section2 supplies the main topological justification; these PDs are independently reproducible checks, not substitutes for it.
+
+Matrices (columns are images of mu,lambda):
+ [[1,0],[0,1]], [[1,-1],[0,1]], [[-1,0],[0,-1]], [[-1,1],[0,-1]],
+ [[0,-1],[1,0]], [[0,-1],[1,1]], [[0,1],[-1,0]], [[0,1],[-1,-1]].
+
+The earlier virtual_resolutions.json tested only the four height choices in a planar virtual braid projection. That earlier limited test is not being used to identify these marked torus embeddings. The present construction supplies the previously missing correspondence from the actual marked surface.
+
+4. Nonunit calibration (final audit)
+For matrix [[1,1],[1,2]], the exact rational PL projection gives
+  V_Regina(x)=x^-4+2x^-8-2x^-10+x^-12-2x^-14+x^-16.
+The parent's independently computed surface-state evaluator, with t=A^-4,
+gives the polynomial with every displayed x exponent negated. The complete
+comparison is stored in exact_nonaxis_control.json and
+nonaxis_convention_control.json. This is the needed nonunit control: the axes
+examples, whose Jones polynomial is1, could not themselves detect inversion.
+No full-polynomial equality without the global inversion is asserted.
+The closed-two-braid unknot proof and the exact U simplifications are unchanged.

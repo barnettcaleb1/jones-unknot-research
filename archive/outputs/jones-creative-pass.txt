@@ -1,0 +1,197 @@
+JONES UNKNOT DETECTION: CREATIVE RESEARCH PASS
+31 October 2026
+
+OUTCOME
+No proof or counterexample to ordinary Jones unknot detection was found.
+The strongest verified deduction connects Khovanov persistence, instanton
+gauge theory, and the topology of a Seifert-surface complement. It excludes
+some abstract Jones-one models from being actual knots and gives a precise
+geometric target. No claim of novelty is made for these combined consequences.
+
+CONCRETE RESTRICTED CONSEQUENCES
+Normalize the unknot Jones polynomial to1. Let r be total reduced rational
+Khovanov dimension and R total unreduced rational Khovanov dimension.
+
+Using the mapping-cone theorem in Bhat--Li--Ye's December2025 preprint:
+  Any nontrivial knot with V=1 has R>=8.
+  If r=5, then R=10, Delta=1, and genus g>=2.
+  In this r=5 case, KHI is C^2 at Alexander degree g, C at0,
+  and C^2 at -g, with no other support.
+  Its Seifert-surface complement has NONISOLATING guts a solid torus with
+  four longitudinal sutures (Li--Ye model M1). The isolating exclusion is
+  the additional diagram-level deduction explained below.
+  Every proper rational tangle replacement K->J has reduced rank r(J)>=5.
+
+The last condition includes crossing changes. Thus a rank-five candidate
+cannot be one proper rational tangle replacement away from an unknot or
+trefoil. It would also contradict the separate proposed nonvanishing of
+first instanton differentials for every nontrivial knot.
+
+Proof sketch:
+Known rank-one and rank-three detection imply r>=5 and r is odd. If r=5,
+Baldwin--Sivek give KHI rank5. Determinant1 excludes their fibered alternatives,
+leaving the sparse2/1/2 pattern and Delta1. Li--Ye identify M1 and exclude
+genus1. Bhat--Li--Ye's first differentials change Alexander degree by +/-1,
+so they vanish on the support {-g,0,g}, g>=2. Their mapping cone has dimension10.
+The unreduced instanton spectral sequence gives R>=10, while the standard
+reduced/unreduced triangle gives R<=2r=10.
+
+For generalized Lee homology, write b for the number of torsion blocks and
+b1 for the number with exponent1. Specialization gives
+  r=1+2b, R=2+4b-2b1.
+Thus r5,R10 implies two blocks, both length>=2. Gujral--Wang's module lemma
+then gives the tangle-replacement inequality. If r>=7 instead, R>=r+1>=8,
+proving the general lower bound. If R=8, necessarily r=7 and all3 blocks
+have length1. The Jones Euler identity then forces Rasmussen s in
+{-6,-2,2,6}. Hence a nontrivial Jones-one knot with s=0 would have R>=10.
+
+This is a checked application of stated theorems, not a fresh verification
+of all analytical constructions in the cited instanton preprint. The full
+source/convention audit is included in the evidence archive.
+
+WHAT THE CREATIVE CONNECTION ADDS
+Khovanov homology is more than the signed Euler characteristic recorded by
+Jones. Persistence describes how its extra generators cancel; instanton
+theory constrains whether such cancellation data can arise from a knot.
+An explicit integral algebraic model with Jones1, reduced rank5, unreduced
+rank6 and Lee rank2 passes elementary algebraic tests but fails the geometric
+rank10 requirement above.
+
+However, there are stronger ABSTRACT models with reduced rank5 and unreduced
+rank10 that survive Lee theory, the Dowlin relative grading constraint, and
+basic bifiltered knot-Floer symmetry. Their exact all-genus certificates are
+included. They are NOT claimed to be knot complexes.
+
+The next useful target is geometric: rule out the sparse2/1/2 pattern for
+knots with NONISOLATING M1 guts. A nonzero next-to-top Floer group would do
+this in the rank-five case. This would only exclude the smallest remaining
+reduced rank; the general Jones problem still allows ranks7,9,... .
+
+The geometry is nonempty. Baker--Manjarrez-Gutierrez construct the genus-two
+knot16n332130 with isolating M1 guts. Its displayed Jones polynomial is
+ -q^-16+q^-14+q^-8-q^-6+q^-4-q^-2+1-q^4+q^6,
+and its displayed HFK Alexander ranks are2,4,5,4,2. Thus it provides a real
+test diagram with substantial next-to-top homology, not a counterexample.
+Their Theorem1.1 also gives handle number2 for all M1 knots.
+
+A rejected shortcut is worth preserving: the two SFH generators of the
+four-longitude solid torus lie in different Spin^c structures. One cannot
+assign them an intrinsic relative Maslov gap1 and assume that gap survives
+arbitrary gluing. The embedding/gluing data contain essential information.
+
+REPAIRED ARGUMENT: EXCLUDING THE ISOLATING BRANCH
+This additional deduction uses the published Floer and sutured-manifold
+results, without the Bhat--Li--Ye preprint input needed for R=10.
+
+In the rank-five case, Li--Ye and Dowlin force total HFK rank5. Its Alexander
+support is2/1/2 at g,0,-g. The spectral sequence to HFhat(S3) must cancel four
+generators in pairs. Using Maslov drop1, strictly decreasing Alexander
+degree, and HFK symmetry, the two top Maslov degrees differ by2g-1.
+The complete elementary pairing argument is in homology_rank5_audit.txt.
+
+For isolating M1, Baker--Manjarrez-Gutierrez give two product surfaces:
+F_a of genus a>=1 with one boundary and F_b of genus b>=0 with four
+boundaries, where a+b=g-1. Attach F_a x I to the guts first. The result N_a
+is F_a x I with three parallel boundary sutures. Now its two SFH classes
+belong to the SAME Spin^c structure.
+
+Juhasz Example7.5/Figure3 provides the diagram for a=1. Replacing its central
+handle by a handles leaves two intersection points and a connecting bigon
+domain with a handles. As in that source, stabilize the diagram away from
+this domain to realize its homology class by a topological Whitney disk.
+The added intersection has multiplicity zero, so the index is unchanged.
+The Lipshitz index formula gives
+  mu(D) = e(D)+n_x(D)+n_y(D)
+        = (1-2a-1/2)+1/4+1/4 = 1-2a.
+There are no periodic domains and no positive index-one disk contributing
+to a differential. Hence the two homology generators have Maslov gap2a-1.
+The other product surface is built from three incoming annular collars by
+2b+2 surface1handles. Thickening yields product1handles; their cocore disk
+decompositions preserve the same-Spin^c relative grading by Juhasz Prop5.4.
+The final top HFK gap is therefore2a-1<=2g-3, contradicting2g-1.
+
+The local diagram, index calculation, product-handle reconstruction and
+grading-preservation hypotheses were independently checked in this pass.
+This is a research deduction with an explicit proof, not a claim of novelty
+or external peer review. The nonisolating case has no such isolated bounding
+surface; its two guts classes remain in different Spin^c structures until
+the later knot-complement gluing. This argument does not apply there.
+
+ARITHMETIC AND COLORED JONES: A FORMAL OBSTRUCTION
+The idea was to use integrality, recurrences, or analytic continuation to
+recover higher colors from ordinary Jones1. An explicit formal sequence
+shows that these properties alone do not suffice.
+
+Let P(N,k;q)=product(j=1..k)(q^N+q^-N-q^j-q^-j), and let a_k be the integer
+coefficients of1/(1+4s^2+s^3). Define
+  F_N(q)=sum(k=0..N-1) a_k P(N,k;q).
+Then F_1=F_2=1 but F_3=1-4P(3,2) is nontrivial. The sequence has integer
+cyclotomic coefficients and is q-holonomic. Its formal leading loop term is
+1/Delta(t), with
+  Delta(t)=1+4(t+t^-1-2)^2+(t+t^-1-2)^3.
+This NONCONSTANT polynomial satisfies Delta(1)=Delta(-1)=1 and Delta''(1)=0.
+Even its higher loop coefficients obey the usual rationality denominator
+bounds. These statements have direct algebraic proofs and exact certificates.
+
+This is not a knot counterexample. Full knot-specific weight-system and
+Frobenius compatibility identities are not established for this sequence.
+It identifies the missing ingredient: geometric realizability, rather than
+formal integrality or the mere existence of a recurrence.
+
+QUANTUM INFORMATION AND STATISTICAL MECHANICS: EXACT TESTS
+Two actual knots,5_1 and10_132, have the same full ordinary Jones polynomial
+but different dimension-three colored Jones values. Independent exact
+Temperley--Lieb and R-matrix computations, with framing/Markov checks,
+are included. Thus ordinary Jones does not universally reconstruct cable
+data. Special rigidity at V=1 remains possible.
+
+Likewise the unknot value is not generally an extremal quantum overlap:
+different plat presentations of the actual unknot can produce different
+normalized states. Cauchy--Schwarz saturation cannot simply be assumed.
+
+For a signed Tait graph, the knot determinant equals
+  tau(G)*abs(det(I-2K_N)),
+where K_N is the negative-edge transfer-current matrix of a uniform
+spanning tree. This connects knot theory to electrical networks and
+determinantal probability. Conway and Kinoshita--Terasaka diagrams each
+have155 spanning trees: cancellation78-77 gives determinant1.
+Their Jones first derivative at -1 is48. But T(3,5) has determinant1 and
+first derivative0 while its second derivative is-48, so one response is
+insufficient. Exact interaction expansions using signed Green-function
+minors reproduce these moments.
+
+Two appealing shortcuts fail on explicit diagrams: the full Jones activity
+weights need not factor over edges, and the positive activity deformation
+need not satisfy Rayleigh inequalities. Even an actual unknot can fail
+these properties. A successful moment argument needs a new cancellation
+constraint that respects knot topology.
+
+PRIMARY REFERENCES
+Baldwin--Sivek, An instanton take on some knot detection results,
+Propositions2.3--2.4: https://arxiv.org/abs/2211.03743
+Li--Ye, The guts of nearly fibered knots, Theorem1.4, Remark2.1, Example2.2:
+https://arxiv.org/abs/2208.05382
+Bhat--Li--Ye, Instanton2-torsion and fibered knots, Theorem1.4 and Question1.13:
+https://arxiv.org/abs/2512.24206
+Gujral--Wang, A minimality property for knots without Khovanov2-torsion:
+https://arxiv.org/abs/2310.06163
+Dowlin, A spectral sequence from Khovanov homology to knot Floer homology:
+https://arxiv.org/abs/1811.07848
+Baker--Manjarrez-Gutierrez, Handle numbers of guts of sutured manifolds
+and nearly fibered knots, Theorem1.1 and Section5.2:
+https://arxiv.org/abs/2305.08928
+Juhasz, The sutured Floer homology polytope, Proposition9.1:
+https://arxiv.org/abs/0802.3415
+Garoufalidis--Le, The colored Jones function is q-holonomic:
+https://arxiv.org/abs/math/0309214
+Garoufalidis--Wheeler, A lift of the colored Jones polynomial of a knot:
+https://arxiv.org/abs/2603.01619
+Kauffman, A Tutte polynomial for signed graphs:
+https://homepages.math.uic.edu/~kauffman/TuttePolySignGraphs.pdf
+
+EVIDENCE
+The accompanying archive contains the source audits, explicitly labeled
+formal models, exact computed certificates, and verifier scripts. The
+cyclotomic and homology formal verifiers use only Python's standard library.
+Statistical-mechanics diagram reconstruction additionally uses Spherogram
+and Regina; those third-party packages are not bundled.

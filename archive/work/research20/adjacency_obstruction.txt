@@ -1,0 +1,77 @@
+STRONG ADJACENCY: AN ACTUAL TEST THAT KILLS NAIVE SMOOTHING POSITIVITY
+Status: exact computation on the audited Stoimenow K3 diagram; no generic
+nonvanishing theorem and no Jones-one counterexample are claimed.
+
+1. ITERATED SKEIN CONSEQUENCE
+
+The source K3 diagram has three marked negative crossings, and changing
+any nonempty subset gives U. Let D be their simultaneous oriented
+smoothing, delta=-(t^(1/2)+t^(-1/2)), z=t^(1/2)-t^(-1/2). Iterating the
+Jones skein relation gives
+
+  V_D = delta^3 + (-t)^3 (V_K3-1)/z^3.
+
+Thus a Jones-one knot with this crossing cube would have a full smoothing
+with the Jones polynomial of the four-component unlink. This algebraic
+identity does not say the smoothing is Brunnian or that its constituent
+contributions have a common sign.
+
+2. CONCRETE COUNTERTEST
+
+Independent files adjacency_smoothing_test.py/.json smooth the three
+audited source PD crossings33,35,37 and recover the components. When
+forming sublinks, isolated unknots omitted by Spherogram are explicitly
+restored, so zero-crossing sublinks are not miscounted.
+
+D has four components. Pairs(0,1),(0,3),(1,2),(2,3) are two-component
+unlinks. Pairs(0,2),(1,3) are opposite-chirality Whitehead links, both
+with linking number0. With x=t^(1/2), their Jones polynomials are
+
+  W_minus = -x^3+x-2x^-1+x^-3-2x^-5+x^-7,
+  W_plus  = x^7-2x^5+x^3-2x+x^-1-x^-3.
+
+Their unlink defects factor as
+  W_plus-delta  =  t^-3/2 (t-1)^3 (t^2+t+1),
+  W_minus-delta = -t^-7/2 (t-1)^3 (t^2+t+1).
+Their third logarithmic derivatives at t=1 are +18 and -18. Hence an
+actual strongly adjacent construction already exhibits cancellation of
+opposite local contributions; uniform-sign smoothing positivity is false.
+
+For the complete D, the exact defect is
+
+  V_D-delta^3 = t^-15/2 (t-1)^4 (t+1)^3
+                 (t^2+1)(t^2+t+1)(t^2-t+1)^2.
+
+Its first nonzero logarithmic coefficient is48 h^4 at t=e^h; its fourth
+logarithmic derivative is1152. This agrees with the independently audited
+source polynomial
+
+  V_K3-1 = -t^-12 (t-1)^7 (t+1)^3
+             (t^2+1)(t^2+t+1)(t^2-t+1)^2.
+
+3. PRECISE SCOPE OF RELEVANT PRIMARY RESULTS
+
+Habiro--Meilhan's theorem says that an (n+1)-component BRUNNIAN link has
+trivial finite-type invariants of degree<2n and that degree2n is a
+quadratic expression in length-(n+1) Milnor invariants. Here D is NOT
+Brunnian: its two Whitehead proper sublinks are nontrivial. Applying that
+theorem to D would be invalid. The degree4 defect, rather than degree6,
+is consistent with this failure of the hypothesis.
+Primary: https://msp.org/agt/2006/6-3/agt-v6-n3-p14-s.pdf , Theorem1.1.
+
+Stoimenow's special smoothing/adequacy argument applies to a particular
+constructed family, not to every spatial graph representing a strongly
+adjacent knot. It does not establish a generic no-cancellation lemma.
+Primary: https://stoimenov.net/stoimeno/homepage/progs/ntrivodd.pdf ,
+Proposition4.4 and its proof.
+Source K_n construction and nontriviality:
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf , Eq10/Lemma6.
+
+4. WHAT SURVIVES
+
+This kills a local same-sign/Milnor shortcut, not the peer's distinct
+whole-vector norm identity for doubled Brunnian BRAIDS. That identity
+uses the projected state in a positive vacuum space and yields a fixed-
+vector condition. It must still bridge the vector stabilizer and the
+restriction from arbitrary spatial graphs to its braid family. Those
+unproved geometric bridges cannot be replaced by smoothing positivity.

@@ -1,0 +1,843 @@
+[
+  {
+    "word": [],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "unit": {
+      "a": 2,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 4,
+    "seconds": 0.0010031252168118954
+  },
+  {
+    "word": [
+      1
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2
+      ],
+      [
+        1,
+        0,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 0,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 4,
+    "seconds": 0.01195637509226799
+  },
+  {
+    "word": [
+      2
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 1,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 6,
+    "seconds": 0.012227583210915327
+  },
+  {
+    "word": [
+      3
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2
+      ],
+      [
+        1,
+        0,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 0,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 4,
+    "seconds": 0.012031040620058775
+  },
+  {
+    "word": [
+      4
+    ],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        1
+      ]
+    ],
+    "unit": {
+      "a": 2,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 2,
+    "seconds": 0.011946917045861483
+  },
+  {
+    "word": [
+      5
+    ],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "unit": {
+      "a": 2,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 4,
+    "seconds": 0.012047040741890669
+  },
+  {
+    "word": [
+      2,
+      1
+    ],
+    "geometric": [
+      [
+        -2,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "unit": {
+      "a": -1,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 12,
+    "seconds": 0.041933208238333464
+  },
+  {
+    "word": [
+      1,
+      2
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "unit": {
+      "a": 0,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 6,
+    "seconds": 0.01965033309534192
+  },
+  {
+    "word": [
+      2,
+      3
+    ],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "unit": {
+      "a": 1,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 16,
+    "seconds": 0.042152333073318005
+  },
+  {
+    "word": [
+      3,
+      2
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "unit": {
+      "a": 0,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 6,
+    "seconds": 0.019876000005751848
+  },
+  {
+    "word": [
+      2,
+      4
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 1,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 5,
+    "seconds": 0.041447625029832125
+  },
+  {
+    "word": [
+      4,
+      2
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 1,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 5,
+    "seconds": 0.030729124788194895
+  },
+  {
+    "word": [
+      2,
+      1,
+      3
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": -1,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 18,
+    "seconds": 0.06556670926511288
+  },
+  {
+    "word": [
+      2,
+      1,
+      -3,
+      -2
+    ],
+    "geometric": [
+      [
+        -4,
+        -1,
+        -1
+      ],
+      [
+        -3,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        -3,
+        -1,
+        -1
+      ],
+      [
+        -2,
+        -1,
+        -1
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": -1,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 128,
+    "seconds": 0.09685287531465292
+  },
+  {
+    "word": [
+      2,
+      1,
+      2
+    ],
+    "geometric": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": -1,
+      "b": 0,
+      "sign": -1
+    },
+    "alternative_matches": {},
+    "configuration_count": 102,
+    "seconds": 0.06985529232770205
+  },
+  {
+    "word": [
+      1,
+      2,
+      1
+    ],
+    "geometric": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": -2,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 12,
+    "seconds": 0.04322933265939355
+  },
+  {
+    "word": [
+      2,
+      3,
+      2
+    ],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 0,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 126,
+    "seconds": 0.07069674972444773
+  },
+  {
+    "word": [
+      3,
+      2,
+      3
+    ],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 0,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 16,
+    "seconds": 0.042569208424538374
+  },
+  {
+    "word": [
+      2,
+      1,
+      -2
+    ],
+    "geometric": [
+      [
+        -3,
+        0,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": -1,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 56,
+    "seconds": 0.06771958339959383
+  },
+  {
+    "word": [
+      2,
+      3,
+      -2
+    ],
+    "geometric": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "expected": [
+      [
+        -2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "unit": {
+      "a": 2,
+      "b": 0,
+      "sign": 1
+    },
+    "alternative_matches": {},
+    "configuration_count": 28,
+    "seconds": 0.06688612513244152
+  }
+]

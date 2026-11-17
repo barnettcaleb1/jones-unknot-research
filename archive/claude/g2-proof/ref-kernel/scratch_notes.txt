@@ -1,0 +1,35 @@
+ref-kernel scratch notes (Claude subagent, 2026-11-03). Codex workspace read only, not touched.
+Checks: ref_check.py (.out), ref_check_signs.py (.out), ref_check_f4.py (.out); exact Laurent arithmetic, < 10 s total, hand-picked words.
+Ito text: ito_pdf/ito.txt (pdftotext of the arXiv PDF that WebFetch saved).
+
+1. Half-twist vs separating twist (main objection).
+   T_{c0} = (s1 s2)^3 lifts to h_c in M_2 with h_c^2 = T_gamma (= psi_0 = (s1 s2)^6), and h_c acts on H as J_c (-1 on P, +1 on P^perp).
+   kappa_f = [h_c, f] has Mess class (J_c - 1)[f] and tau_2(kappa_f) = (J_c - 1) tau_2(f): neither is 0 in general.
+   Exact: ord_{A=zeta}(rho - I) for f = T_d^2, d = s3(c0):  [(s1 s2)^3, f] -> 1,  [(s1 s2)^6, f] -> 2.
+   So kappa_f (stated form) is in F_1 \ F_2, hence not in [I_2, I_2] (phi^(1) is abelian on I_2) and not in F_2.
+   Lattice independence: TL and Kasahara lattices both have irreducible reduction at q = -1, so they are homothetic over the
+   local ring and ord is lattice-independent; commutators have exponent sum 0, so the bracket scalar cancels.
+   Correct first-order condition for ANY candidate f (rho(f) fixes [v_0]): [Delta_1(f), P_{u0}] = 0, i.e. m(f) in Q u_0.
+   For the half-twist form this is "kappa_f in F_2"; for [(s1 s2)^6, f] it is "in F_3". The pair of lines passes only order 0 for free.
+
+2. kernel.md's F_4 condition for f = [T_g1, T_g2] can never hold when the splittings differ.
+   w := (2D_20 - 1)u_1 - (2D_10 - 1)u_2 satisfies <w, u_0> = (2D_20-1)(4D_10-2) - (2D_10-1)(4D_20-2) = 0 identically.
+   So w in Q u_0 forces w = 0, hence u_1 = +-u_2 (2D-1 odd, both norms -2): same splitting. [P_0, [P_1, P_2]] = 0 iff R u_0 = 0,
+   R = u_1 (x) u_2^flat - u_2 (x) u_1^flat. Instance: d1 = s3 c0, d2 = s4 s3 c0: ord rho(f) - I = 2, ord rho([(s1s2)^6, f]) - I = 3,
+   ord rho([(s1s2)^3, f]) - I = 2. The class f = [T_g1, T_g2] with distinct splittings is excluded (not merely "coplanar").
+
+3. Theorem A re-checked independently with D outside {0,1}: D = -2 (r = 25), D = -1 (r = 9), D = +2 (r = 9). Formula is (2D-1)^2, not even in D.
+
+4. Ito (Math. Z. 280, 2015), as printed: Thm 1: H a non-trivial, non-central normal subgroup of B_n, alpha an n-braid with unknotted
+   closure; for every N there is beta in H with closure(alpha beta) a hyperbolic knot, genus >= N, braid index n. The proof takes beta
+   pseudo-Anosov and pure with beta >_D alpha^-1 Delta^{2N}. Cor 1 is for rho_V on V^{(x)n} (the FULL tensor representation); Cor 2 uses
+   Long's Lemma 2.1 as "intersection of two non-central non-trivial normal subgroups of B_n is non-trivial".
+   Application in kernel.md 5.2 is correct: kappa^ is an honest kernel element (scalar commutator = I), every nontrivial element of
+   ker W(5,1) is non-central (Delta^{2k} acts by A^{-12k}), N_h lies in PB_5 (A = 1 gives S_5 acting through the faithful (4,1) summand),
+   so closure(s1 s2 s3 s4 beta) is a knot; e(beta) = 0 since N_h is in [B_5, B_5]. V = 1 follows.
+   Plat route: V = 1 holds for ANY lift with rho = I, since for a knot <K> = unit * <U> forces V = 1 (V(1) = 1, V'(1) = 0).
+
+5. BBB: W(5,1)|B_4 = W(4,0) + Burau_4, so candidates whose curves c0, d_i all miss one 2|4 curve (all inside a 4-punctured disk)
+   are exactly the Burau_4 question (excluded if BBB is right). Not flagged in kernel.md section 4.
+
+6. Citation: "Kasahara Thm 5.1" (Ker rho = Z/2 x (Ker rho cap I_2), via Lemma 5.4) is Kasahara 2008 (arXiv:0803.0304), not AGT 2001.

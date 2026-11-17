@@ -1,0 +1,56 @@
+{
+  "retrieved_utc": "2026-11-01",
+  "primary": {
+    "authors": [
+      "Adam Piwocki",
+      "Paweł Traczyk"
+    ],
+    "title": "Representations of small braid groups in Temperley–Lieb algebra",
+    "journal": "Topology and its Applications",
+    "volume": 156,
+    "year": 2008,
+    "pages": "392–398",
+    "doi": "10.1016/j.topol.2008.07.016",
+    "url": "https://www.academia.edu/103934370/Representations_of_small_braid_groups_in_Temperley_Lieb_algebra",
+    "text_cache": "piwocki_traczyk_source_cache.json",
+    "pdf_saved": false,
+    "pdf_access_failures": [
+      "Author-upload attachment endpoint HTTP403",
+      "Publisher/API retrieval HTTP403/406"
+    ],
+    "locators": {
+      "cup_count_convention": "Section 1, printed pp393–394",
+      "one_overlap_commutator": "Theorem 1, printed pp395–397; Figure5 and immediately preceding explicit embedding",
+      "split_variant": "Theorem2, printed pp397–398",
+      "108_crossing_11_strand_example": "Section4, printed p398",
+      "380_crossing_9_strand_example": "Section4, final paragraph, printed p398"
+    }
+  },
+  "secondary_discussion": {
+    "authors": [
+      "Craig Jackson",
+      "Thomas Kerler"
+    ],
+    "title": "The Lawrence–Krammer–Bigelow representations of the braid groups via Uq(sl2)",
+    "journal": "Advances in Mathematics",
+    "volume": 228,
+    "year": 2011,
+    "pages": "1689–1717",
+    "doi": "10.1016/j.aim.2011.06.027",
+    "url": "https://go.owu.edu/~chjackso/Papers/jackson_kerler_advmath_2011.pdf",
+    "locator": "Section5, printed p1707",
+    "corrections": [
+      "Cap-plus-cup wording is inconsistent with cited PT cup-only indexing.",
+      "PT example has 108 crossings on 11 strands, not 11 crossings; four-copy unsimplified successor therefore has432, not44."
+    ]
+  },
+  "endpoint": {
+    "author": "Tetsuya Ito",
+    "title": "A kernel of a braid group representation yields a knot with trivial knot polynomials",
+    "url": "https://arxiv.org/pdf/1402.2028",
+    "locators": [
+      "Theorem1",
+      "Long Lemma2.1 cited immediately before Corollary2"
+    ]
+  }
+}

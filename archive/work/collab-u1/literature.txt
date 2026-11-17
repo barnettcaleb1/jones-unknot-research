@@ -1,0 +1,58 @@
+RB1-u1 bounded literature audit — 2026-11-02 (local date)
+Agent: u1_literature. Budget: <=10 minutes. Search started 2026-11-03 04:00:48 UTC.
+
+ASSESSMENT
+I found no primary source proving ordinary Jones unknot detection for all unknotting-number-one knots, and no published reduction of generic ordinary Jones detection to u=1 or tangle-unknotting-number-one. This is a bounded-search result, not proof that no such source exists. The closest apparent detection hits concern Khovanov homology and require actual ranks or torsion information. Lemma Q should remain OPEN, not upgraded on bibliography.
+
+PRIMARY SOURCES AND PRECISE SCOPE
+
+1. Hedden–Watson, Does Khovanov homology detect the unknot? (2008)
+https://arxiv.org/abs/0805.4423
+https://arxiv.org/html/0805.4423v1
+Theorem 1: for tangle-unknotting-number-one knots, rank of reduced Kh over F2 is 1 iff the knot is the unknot. Definition 3: a rational tangle replacement makes the unknot; includes u=1. Proof uses rank HFhat(Sigma2 K) <= rank reduced Kh(K) and surgery formulas. This is NOT ordinary Jones detection. Their Lemma 4 relates the class to surgery descriptions; do not silently extract stronger equivariance statements than needed from its converse. Introduction explicitly separates the open Jones problem from their categorified theorem. Inspected theorem and proof setup, not merely abstract.
+
+2. Y. Miyazawa, The Jones polynomial of an unknotting number one knot, Topology Appl. 83(3) (1998), 161–167.
+https://doi.org/10.1016/S0166-8641(97)00107-7
+https://www.sciencedirect.com/science/article/pii/S0166864197001077
+Publisher abstract explicitly uses Casson's invariant of the double branched cover to derive relations among Jones, signature and Conway for u=1, obstructing u=1 for some knots. It does not claim unknot detection. This is important PRIOR ART for U4's Casson/Mullins strategy. Abstract retrieved through search; publisher full-text open returned 403; exact interior formulas not audited here.
+
+3. A. Stoimenow, Polynomial values, the linking forms and unknotting numbers, Math. Res. Lett. 11 (2004), 755–769.
+https://archive.intlpress.com/site/pub/files/_fulltext/journals/mrl/2004/0011/0006/MRL-2004-0011-0006-a004.pdf
+Remark 6.1 describes Miyazawa Theorem 8 as relating V'(-1), determinant, and the Conway degree-four Vassiliev coefficient. It compares Miyazawa's obstruction with Traczyk's and linking-form tests. This corroborates that the 1998 paper contains necessary conditions, not a stated detector. Earlier author preprint also inspected:
+https://stoimenov.net/stoimeno/homepage/papers/unkn1.pdf
+Title there is The Jones and Q polynomial of an unknotting number one knot, version Nov 4 1999. Theorem 2.1 derives another knot's Jones polynomial from the u=1 skein pair; its tests become vacuous when V_K=1. No claimed generic reduction or u=1 detector found.
+
+4. Y. Miyazawa, Arf invariants of strongly invertible knots obtained from unknotting number one knots, Osaka J. Math. 32 (1995), 193–206.
+https://doi.org/10.18910/7378
+https://ir.library.osaka-u.ac.jp/repo/ouka/all/7378/ojm32_01_14.pdf
+Main theorem: Arf(C) = a4(K) mod 2, where C is a surgical strongly invertible knot associated with a chosen unknotting crossing of K, and a4 is Conway's z^4 coefficient. PDF OCR garbles theorem subscript, but p205 example explicitly confirms a4. This is another prior-art connection between K and the auxiliary kappa, not a detection theorem.
+
+5. A. S. Sikora, Tangle Equations, the Jones conjecture, slopes of surfaces in tangle complements, and q-deformed rationals, Canad. J. Math. 76 (2024), 707–727; arXiv v2 Aug 5 2023.
+https://arxiv.org/html/2005.08162v2
+https://doi.org/10.4153/S0008414X23000755
+ArXiv Theorem 24(c): generic Jones conjecture is equivalent to bracket equality with a rational tangle forcing equality of framed tangles. This is unrestricted rational-tangle detection; it does not add an actual unknot closure or supply Lemma Q. Theorem 1.3 in published numbering: Jones implies uniqueness of a rational solution among all solutions to TWO framed tangle equations. The converse is not asserted. One third-party search synopsis incorrectly reverses this implication; ignore it. Full-text search found no occurrence of 'unknotting'.
+
+6. Sikora IPAM talk abstract, Oct 15 2026, Tangle Equations, the Jones Unknot Conjecture, and Lens Space Surgeries.
+https://www.mathinstitutes.org/videos/25091
+Abstract addresses systems N(X+T1)=L1, N(X+T2)=L2 and framed rational-solution uniqueness. A failure disproves Jones; branched covers of the unframed version give lens-space surgery questions and possible counterexample guidance. No assertion of a one-actual-filling theorem, Floer simplicity from bracket data, Lemma Q, or u=1 detection. Only abstract inspected; video not audited. Thus it does not fill U5.
+
+7. S. Jabuka, The signature of an even symmetric form with vanishing associated linking form (2012).
+https://arxiv.org/html/1204.4965v2
+Theorem 1.1 explicitly states that an even unimodular symmetric integral form has signature divisible by 8. For a classical knot with determinant 1, its symmetrized Seifert matrix is even unimodular, giving sigma(K)=0 mod 8. This supplies a primary literature statement for the algebraic theorem behind U4's mod-8 step. No novelty claim warranted for this step.
+
+NEARBY LITERATURE / FALSE POSITIVES
+
+8. Pamela Shah, UBC seminar abstract, Jones-cosmetic tangle replacement, Apr 5 2023.
+https://www.math.ubc.ca/node/3411
+Claims no rational closure of the (3,-2) pretzel tangle has the unknot Jones polynomial, using immersed-curve invariants of Kotelskiy–Watson–Zibrowius. This is a specific-tangle result, not Lemma Q in general. Only abstract inspected; no proof audit. Relevant as a narrow example of the desired mechanism if separately assigned later.
+
+9. K3 problem-list Apr2026, p36 (Gujral–Wang result).
+https://bpb-us-e2.wpmucdn.com/websites.umass.edu/dist/b/22144/files/2026/04/K3-problem-list-watermarked.pdf
+The u=1 corollary concerns Shumakovitch's torsion conjecture: if K has no 2-torsion in Kh and J is obtained by a proper rational tangle replacement, reduced Kh rank(K)<=rank(J). This needs information beyond Euler characteristic. It is not ordinary Jones detection.
+
+10. Minimal Surface Representations of Virtual Knots and Links, AGT 2005.
+https://msp.org/agt/2005/5-2/agt-v5-n2-p03-s.pdf
+Corollary 3.5 explicitly assumes a classical u=1 knot diagram has NONUNIT Jones polynomial before deducing virtualization nonclassicality. It cannot be read as proving the omitted hypothesis.
+
+SEARCH LIMITS
+Queried combinations of ordinary/Jones/unknot detection/trivial or unit Jones with 'unknotting number one', 'unknotting number 1', 'unknotting-number-one', 'tangle unknotting number one', 'untangling number one', 'reduction', rational bracket, and strongly invertible quotients. Inspected sources above. Did not inspect paid Miyazawa 1998 full text or Sikora video. No broad new research or candidate proof undertaken; no collab files edited.

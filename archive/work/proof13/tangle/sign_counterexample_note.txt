@@ -1,0 +1,47 @@
+A DIRECTED COUNTERTEST OF COMMON LEADING SIGNS
+
+The last KT-double calculation does not extend to all ribbon mirror doubles
+by a universal common-leading-sign theorem. For the actual 8_19=T(3,4)
+diagram in sign_counterexample.json, take the three ordered edges
+(7,1),(0,0),(2,3) on face2. Join edge0 to its reflected copy to form
+K#mirror(K), and use the other two mirror-joining sites as two ribbon bands.
+All three joins simplify by Reidemeister moves to the actual3-component
+unlink. The four cut PDs, simplifications, free unlink counts and exact Jones
+polynomials are stored. All pairwise linking numbers of the cuts are zero.
+
+Writing Q0 for the uncut knot and Qi=V(cut_i)/delta, Q12=1, the universal
+full-band-twist formula is
+ V(m,n)-1 = A t^(2m+2n)+B t^(2m)+C t^(2n),
+ A=Q0-Q1-Q2+1, B=Q2-1, C=Q1-1.
+Here the leading degree/coefficient pairs of A,B,C are respectively
+ (5,-2), (5,+1), (4,-1).
+Thus actual unlink cuts, reflection symmetry and a ribbon disk do not force
+common signs. sign_countertest.py stopped at the first mixed-sign example,
+after four valid edge triples on this one knot; it was not a broad search.
+
+A slightly stronger finite certificate nonetheless excludes all twists:
+full twists shift exponents by even integers. Terms attaining the global
+highest exponent must therefore have the same original degree parity.
+For odd degree the possible nonempty leading sums are -2,+1,-1; for even
+degree the only sum is -1. None vanishes. This proves V(m,n) is never1 for
+all integers m,n. More generally, for any finite Laurent sum
+ sum_j H_j(t) t^(2 linear_j(n)), group nonzero leading coefficients of H_j
+by maxdegree(H_j) modulo2. If no nonempty subset in any group sums to zero,
+the sum cannot vanish for any integer parameter vector. This elementary
+sufficient criterion strictly extends the common-sign criterion; it is
+not asserted necessary or new.
+
+Geometry/normalization was checked by inserting actual positive full twists
+at each band separately and simultaneously. All three actual PD Jones
+polynomials match the recurrence, with parameter -1 at a positive insertion.
+See verify_counterexample.py and twist_checks.json.
+
+Scope: this knot does not have Alexander polynomial1. Indeed every member
+of this family has V''(1)=-60, also checked from the four Qs. The example is
+useful as a falsification of generic geometric sign coherence; it does not
+advance the determinant/Alexander-one search frontier. No further family
+search was pursued after this counterexample.
+
+Software: Spherogram2.4.1, Regina7.4.1, Python3, using the same mirror/join
+builder archived in work/proof12/tangle/kt_double_cuts.py. sign_certificate.py
+is a standard-library verifier of the exact stored algebra.

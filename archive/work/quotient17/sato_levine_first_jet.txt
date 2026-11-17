@@ -1,0 +1,70 @@
+EXACT FIRST JET OF THE QUOTIENT DEFECT MULTIPLIER
+31 October 2026. Root derivation, independently audited.
+
+Assume the compatible pattern P has winding zero and P(U)=U. Normalize its
+map between rank-two skein modules as in sato_levine_skein_injectivity.txt:
+F(Q_0)=Q_0, f_infinity F=f_infinity, and F(v)=d(A)v for
+v=Q_infinity-delta Q_0, delta=-A^2-A^-2. Put z=-A^4 and
+zeta=exp(pi i/4). The determinant argument already gives d(zeta)=0.
+
+Choose the integer rational-tangle crossing convention
+
+                     Q_1=A Q_0+A^-1 Q_infinity.
+
+For n crossings the infinity closure is a chain of curls, so
+f_infinity(Q_n)=(-A^-3)^n. The two twist eigenvalues have ratio z, giving
+
+         x(Q_n)=(1-z^n)/delta,
+         x(Q_1)=(1+A^4)/delta=-A^2.
+
+This also follows by the recurrence x_(n+1)=z*x_n+(1-z)/delta, with x_0=0;
+the formula works for negative n as well. At zeta, z=1 and delta=0, so
+l'Hopital's rule gives
+
+        x(Q_n)(zeta)=[-n z^(n-1) z']/delta' at zeta
+                    =(4n zeta^3)/(-4zeta)=-n zeta^2.          (1)
+
+The output F(Q_n) is the actual preferred exterior quotient of the pattern
+knot P_n after 1/n surgery on the unknotted axis, up to the coherent sign
+of n. Its meridian closure is U and its zero closure L_n is the preferred
+longitude branch link. With the canonical orientation matching tangle arcs
+to the infinity unknot, R_n=f_0(FQ_n)/f_infinity(FQ_n) is exactly normalized
+Jones V_(L_n)(A^-4). No input-preferred-longitude assumption is needed.
+
+Since R_n=delta+(1-delta^2)d*x(Q_n), equations d(zeta)=delta(zeta)=0 give
+
+             R_n'(zeta)=-4zeta-n zeta^2 d'(zeta).             (2)
+
+Hoste's formula gives a_2(P_n)=-n beta in a compatible convention, where
+beta is the Sato--Levine invariant of P union axis. Reversing the twist
+parameter changes the sign of n. The determinant-zero Jones/Lescop identity
+and |dt/dA|=4 therefore imply
+
+             |R_n'(zeta)|^2=16(1+12n beta)^2,                (3)
+
+or the same formula with n replaced by -n. This holds for every integer n.
+Both sides of (2)--(3) are real quadratic polynomials in n. Their quadratic
+coefficients give
+
+                   |d'(zeta)|^2=16*144 beta^2,
+                   |d'(zeta)|=48 |beta|.                    (4)
+
+Thus beta vanishes if and only if d'(zeta) vanishes. Nonzero beta is exactly
+the condition that d has a simple zero at zeta. If beta=0, d is either zero
+identically or has a zero of order at least two. Since d has Laurent-integer
+coefficients, these statements are equivalently about multiplicity of the
+cyclotomic factor A^4+1.
+
+If all signs are fixed as in (3), comparison of the linear coefficient gives
+Re(zeta*d'(zeta))=48 beta. Together with (4), this forces
+d'(zeta)=48 beta zeta^-1. The magnitude (4) is the preferred statement because
+it is independent of the chosen crossing/surgery sign convention.
+
+The double-Whitehead composite gives a concrete nonzero d with beta=0 and
+zero of order exactly two. Its higher iterates have higher exact orders.
+This links a classical geometric link invariant directly to the first
+nontrivial jet of a quantum skein transformation, without any promotion
+from uncolored to colored knot invariants.
+
+Dependencies and exact primary sources are in
+sato_levine_skein_injectivity.txt and whitehead_exact_jet_filtration.txt.

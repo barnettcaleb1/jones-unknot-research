@@ -1,0 +1,43 @@
+{
+ "types": {
+  "('single', (0, 1), 'top', 'SITE-STAB', 'top-recut')": 10146,
+  "('single', (1, -1), 'top', 'JOINT-STAB', 'axis-split-recut')": 10320,
+  "('single', (1, -1), 'top', 'JOINT-STAB', 'band-clasp-recut')": 1218,
+  "('single', (1, -1), 'top', 'JOINT-STAB', 'axis-split')": 4666,
+  "('single', (1, 0), 'bottom', 'SITE-STAB', 'bottom')": 376,
+  "('single', (1, 0), 'bottom', 'SITE-STAB', 'bottom-recut')": 1204,
+  "('single', (0, 1), 'bottom', 'SITE-STAB', 'bottom')": 384,
+  "('single', (0, 1), 'bottom', 'SITE-STAB', 'bottom-recut')": 2190,
+  "('offset', (0, 1), 'offset', 'NONE', \"legs->('c', 'v')\")": 1062,
+  "('offset', (1, 0), 'offset', 'NONE', \"legs->('c', 'v')\")": 222,
+  "('offset', (0, 1), 'offset', 'NONE', \"legs->('u', 'u')\")": 76,
+  "('plane', (1, 0), 'top', 'PLANE-GEO', 'top|top')": 291,
+  "('plane', (1, 0), 'bottom', 'PLANE-PARTIAL', \"bottom-recut|None miss:X3('c', 'v')\")": 105,
+  "('plane', (1, 0), 'pairing-only', 'PLANE-PARTIAL', \"None|bottom-recut miss:X1('c', 'v')\")": 161,
+  "('plane', (1, 0), 'pairing-only', 'NONE', \"None|None miss:X1('u', 'u'),X3('c', 'v')\")": 88,
+  "('plane', (1, 0), 'pairing-only', 'NONE', \"None|None miss:X1('c', 'v'),X3('u', 'u')\")": 88,
+  "('single', (1, -1), 'top', 'JOINT-STAB', 'band-clasp')": 1018,
+  "('plane', (1, 0), 'bottom', 'PLANE-PARTIAL', \"bottom|None miss:X3('c', 'v')\")": 42,
+  "('plane', (1, 0), 'pairing-only', 'PLANE-PARTIAL', \"None|bottom miss:X1('c', 'v')\")": 14,
+  "('single', (1, 0), 'top', 'SITE-STAB', 'top')": 532
+ },
+ "cert": {
+  "('single', (0, 1), 'SITE-STAB', 'base<=24,V=1')": 12716,
+  "('single', (1, -1), 'JOINT-STAB', 'base<=24,V=1')": 17189,
+  "('single', (1, 0), 'SITE-STAB', 'base<=24,V=1')": 2088,
+  "('single', (0, 1), 'SITE-STAB', 'base>24')": 4,
+  "('single', (1, -1), 'JOINT-STAB', 'base>24')": 33,
+  "('offset', (0, 1), 'NONE', 'base<=24,V=1')": 1126,
+  "('offset', (1, 0), 'NONE', 'base<=24,V=1')": 222,
+  "('plane', (1, 0), 'PLANE-GEO', 'base<=24,V=1')": 291,
+  "('plane', (1, 0), 'PLANE-PARTIAL', 'base<=24,V=1')": 322,
+  "('plane', (1, 0), 'NONE', 'base<=24,V=1')": 176,
+  "('single', (1, 0), 'SITE-STAB', 'base>24')": 24,
+  "('offset', (0, 1), 'NONE', 'base>24')": 12
+ },
+ "exact": {
+  "('single', True)": 32054,
+  "('offset', True)": 1360,
+  "('plane', True)": 789
+ }
+}

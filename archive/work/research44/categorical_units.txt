@@ -1,0 +1,129 @@
+PASS 44: CATEGORICAL UNIT REFLECTION FOR A CUT KNOT
+2026-11-01
+
+Verdict
+-------
+The proposed implication has a rigorous endpoint, but its unknown premise,
+restricted to actual cut knots, is equivalent to the original Jones unknot
+conjecture. Tensor language does not reduce the missing mathematical work.
+The nearby versions that discard the quantum grading, invert every nonzero
+decategorified polynomial, or use an invertible braid complex instead of a
+cut-knot object fail on actual knots.
+
+1. Precise setup and full conditional chain
+-----------------------------------------
+Cut a based oriented knot K open to a one-input, one-output tangle T_K.
+Use the writhe-normalized Khovanov tangle complex X_K. Vertical stacking
+of these tangles is connected sum. At the fundamental Temperley--Lieb
+level, the endomorphism space of the one-strand object is the coefficient
+ring, and the normalized scalar for T_K is V_K (after the usual variable
+substitution). There is no extra unknot-circle factor in this cut scalar.
+
+Bar-Natan's tangle construction respects planar composition, including
+stacking, in the homotopy category. Apply reduced rational TQFT by setting
+the basepoint dot to zero. This gives a bounded bigraded chain complex C_K
+with reduced Kh_Q(K) as homology and C_U=Q. On a resolution, the distinguished
+arc contributes Q and every free circle contributes the ordinary Frobenius
+algebra; stacking joins the distinguished arcs and leaves the circle factors
+separate. Thus this reduction is monoidal for the present operation:
+
+          C_(K#L) ~= C_K tensor_Q C_L.
+
+Now suppose X_K has a two-sided tensor inverse in this bounded tangle
+homotopy category. Applying the monoidal reduction gives an inverse D for
+C_K. Kunneth then gives
+
+          dim H(C_K) * dim H(D) = dim H(Q) = 1.
+
+Both dimensions are nonnegative integers, so reduced Kh_Q(K) has rank one.
+Kronheimer--Mrowka's unknot detector implies K=U. Conversely, if K=U its
+normalized cut complex is the identity object and is tensor-invertible.
+Consequently, for actual cut knots,
+
+          X_K tensor-invertible  <=>  K is the unknot.
+
+The same endpoint already holds for invertibility of C_K in the derived
+category of finite bigraded rational vector spaces. Every such complex
+splits up to quasi-isomorphism into its homology; an invertible one is a
+single one-dimensional grading shift. No classification theorem is needed
+beyond the displayed Kunneth argument.
+
+Primary construction: Bar-Natan, Khovanov's homology for tangles and
+cobordisms, Theorems 2 and 3, especially printed pp.1466 and1469:
+https://arxiv.org/pdf/math/0410495
+Primary endpoint: Kronheimer--Mrowka, Khovanov homology is an unknot-detector,
+Corollary1.3 and Proposition1.4 (pp.2--3) give the rational-rank endpoint:
+https://arxiv.org/pdf/1005.4346
+
+2. Why the proposed missing lemma is exactly the original problem
+----------------------------------------------------------------
+Use a quantum variable q with chi_q(C_K)=V_K(q^2), and normalize U to one.
+The Grothendieck ring for finite graded rational complexes is Z[q,q^-1],
+not Q(q). Its units are exactly +/-q^j. For knot polynomials V_K(1)=1 and
+V'_K(1)=0. Therefore chi_q(C_K) is a Laurent-ring unit if and only if it
+equals one: the value fixes the sign and the derivative forces j=0.
+
+The desired assertion
+
+  (*) For actual cut knots, a unit decategorified class implies that the
+      Khovanov tangle complex is tensor-invertible
+
+therefore implies Jones unknot detection by Section1. Conversely, Jones
+unknot detection implies (*) immediately: a unit class is V_K=1, hence
+K=U, hence X_K is the identity. This is an equivalence, not merely a claim
+that (*) is difficult or resembles the original problem.
+
+The checked primary sources supply composition and invertibility for
+specified objects. They do not supply reflection of invertibility from
+the Grothendieck class for arbitrary knot-realizable cut objects. An actual
+proof of (*) would have to construct an inverse or prove that a candidate
+unit/counit cone is contractible. Euler class zero for that cone is the
+original cancellation problem, not a contractibility criterion.
+
+3. Concrete tests of the closest stronger versions
+--------------------------------------------------
+(a) Forgetting quantum degrees is fatal. Every knot has ungraded reduced
+Euler characteristic V_K(1)=1. The trefoil has reduced rational Kh rank
+three (it is alternating with determinant three), so its reduced complex
+is not invertible. Thus unit reflection in the ungraded Grothendieck ring
+Z is false even for a three-crossing knot.
+
+(b) Extending the DECATEGORIFIED ring to Q(q) is also fatal. Every nonzero
+Jones polynomial becomes a unit there; all knot Jones polynomials are
+nonzero because V_K(1)=1. This would again label the trefoil invertible.
+The quantum grading variable is not an ordinary scalar in the original
+chain complex, and coefficient extension of the base field preserves its
+rank-three homology. A categorical localization designed to force these
+objects invertible cannot then be assumed conservative on knots.
+
+(c) Rouquier braid invertibility is the wrong operation. Rouquier's
+Proposition3.4 assigns an invertible complex to EVERY braid, its inverse
+coming from the inverse braid. In particular the complex of sigma1^3 is
+invertible, although its closure is a trefoil. Closing a braid (a trace
+operation involving caps/cups) does not preserve the relevant tensor
+inverse. A one-strand cut knot with maxima/minima is not a one-strand
+braid. The braided construction therefore cannot be substituted into
+the cut-knot inference.
+https://arxiv.org/pdf/math/0409593
+
+(d) A stronger 'equal Euler classes differ only by an invertible factor'
+principle is already false on actual knots. The previously checked pair
+5_1 and the appropriate chirality of10_132 has the same whole Jones
+polynomial but reduced rational Kh ranks5 and11. Tensoring with an
+invertible finite rational complex preserves total rank, so their reduced
+complexes cannot be related this way. This reuses established data; no
+new scan or claimed ribbon relation is involved. The primary original
+calculation already distinguishes their unreduced homologies (ranks6,12):
+https://www.math.toronto.edu/~drorbn/papers/Categorification/Categorification.pdf
+See work/research20/homology_scaffold.txt and the retained reduced KnotInfo
+records in work/research27/homology_global.txt for the reduced conventions.
+
+4. Stop condition
+-----------------
+This route currently has no independent categorical mechanism for the
+unit Jones fiber. The precise complete chain is valid, and several tempting
+shortcuts are genuinely ruled out by actual knots. Further work would be
+useful only if it produces a knot-geometric theorem about the needed
+unit/counit maps, beyond their Euler classes. Naming that assertion 'unit
+reflection', invoking braid invertibility, or passing to a fraction field
+does not provide such a theorem.

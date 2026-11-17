@@ -1,0 +1,134 @@
+RIBBON-CONCORDANCE ROUTE: GLOBAL COVERAGE AND THE GEOMETRIC GAP
+
+Status: an exact conditional route to the full Jones conjecture, with no
+generic-to-unknotting-number-one assumption. Its central hypothesis is
+unproved. This note complements ribbon_euler_audit.txt; it does not claim
+a new theorem about Jones detection or a literature-wide absence of
+counterexamples to the proposed hypothesis.
+
+1. A PRECISE GLOBAL PREMISE
+
+Work with normalized reduced Khovanov homology over Q, whose graded
+Euler characteristic is normalized Jones after the usual variable change.
+For an actual ribbon concordance C:K0 -> K1, the induced bigraded map is a
+split injection. Let E_C be its bigraded cokernel. Proposed premise EF:
+
+  chi_q(E_C)=0  implies  E_C=0.
+
+Equivalently, equal Jones polynomials at the endpoints of a ribbon
+concordance force its Khovanov map to be an isomorphism. This does not
+claim that the knots are isotopic or that the concordance is a product.
+The bigraded dimensions of E_C depend only on the endpoint homologies,
+although its geometric interpretation uses the actual map.
+
+The split-injection input is Levine--Zemke, Khovanov homology and ribbon
+concordances, https://doi.org/10.1112/blms.12303. The reduced variant and
+the rational coefficient issue are audited in ribbon_euler_audit.txt.
+
+2. COMPLETE IMPLICATION EF => JONES DETECTS THE UNKNOT
+
+Suppose V_K=1. Put R=K#(-K), where -K is the orientation-reversed mirror.
+The standard doubled disk makes R a ribbon knot and
+
+  V_R(t)=V_K(t)V_K(t^-1)=1.
+
+Puncturing that disk near one minimum gives an actual ribbon concordance
+U -> R. Its cokernel has Euler characteristic V_R-1=0. Under EF, reduced
+Kh(R) is the one-dimensional reduced homology of U. Khovanov unknot
+detection then gives R=U. Genus additivity gives 2g(K)=g(R)=0, so K=U.
+One can instead use reduced connected-sum Kunneth and rank(Kh(R))=
+rank(Kh(K))^2, but the genus argument avoids any unnecessary Kunneth
+normalization issue.
+
+Every step after EF uses the actual canonical ribbon double of the
+original arbitrary knot. There is no assertion that K itself is ribbon,
+strongly invertible, a braid of a particular kind, or an unknotting-number-
+one knot. No surgery or finite-type approximation is used.
+
+The version of EF restricted to source U is equivalent in strength to
+Jones unknot detection: the preceding argument proves one direction;
+Jones detection proves the other because a target with Jones 1 is U.
+It is therefore a reformulation, not an independently established easier
+lemma. The all-source version is a stronger statement with tests outside
+the unit Jones fiber.
+
+3. WHY AN ABSTRACT TREE OF BANDS DOES NOT GIVE WANG ITERATION
+
+A ribbon annulus with m births has m saddles. In a band presentation,
+start with K0 and m split newborn unknots and attach m fusion bands.
+The abstract connection graph is a tree. A ribbon disk similarly starts
+from an unlink and attaches a tree of fusion bands.
+
+The graph does not encode how bands pass through the complementary
+regions and interact with the other components. After some fusions, the
+components needed for the next fusion need not be geometrically split.
+Vanishing linking numbers would not supply a separating sphere. Nor is
+one entitled to move every birth immediately before its paired saddle:
+the band can pass through the birth disk or its ball, so the required
+movie interchanges need a geometric proof.
+
+This is a documented limitation, not merely a concern about a picture.
+Zemke explicitly distinguishes simultaneous band sums of three or more
+split knots from iterated band sums of pairs in the introduction to:
+  Knot Floer homology obstructs ribbon concordance,
+  Annals of Mathematics 190 (2019), 931--947, printed p934, before Thm1.6,
+  https://annals.math.princeton.edu/wp-content/uploads/annals-v190-n3-p05-s.pdf
+His all-summand genus theorem uses the ribbon-concordance argument rather
+than assuming pairwise iteration.
+
+Consequently the theorem for a single band joining a split two-component
+link does not cover a general ribbon movie. Claiming such coverage would
+insert a false unrestricted decomposition premise.
+
+4. A SECOND, INDEPENDENT GAP: EULER CANCELLATION BETWEEN STEPS
+
+Even in a special movie which genuinely factors through knot-to-knot
+ribbon concordances C_i of the appropriate split-band kind, splitting
+would only give, as bigraded vector spaces,
+
+  E_total = direct-sum_i E_i,
+  chi_q(E_total) = sum_i chi_q(E_i).
+
+Knowing every nonzero E_i has a nonzero Euler polynomial does not imply
+that the sum is nonzero. The individual polynomials have signed
+coefficients. A separate geometric no-cancellation theorem is needed,
+such as a common extremal quantum grading with controlled homological
+parity, or another pointed cone containing all applicable contributions.
+No such theorem has been established here. The rank inequalities and
+split injections alone supply no such cone.
+
+Wang's actual single-band results are an important exact test, but already
+leave an Euler-level issue: for a nontrivial band b on a split pair,
+the homological complement H_b is nonzero, while nonvanishing of its
+Euler polynomial P_b is not supplied. See the detailed primary-source
+audit in ribbon_euler_audit.txt and Wang's printed p5 discussion:
+  https://arxiv.org/pdf/2006.01070
+
+Thus a proposed proof using Wang needs THREE distinct inputs:
+  (a) genuine applicability to the geometric movie;
+  (b) Euler visibility of each nonzero band complement;
+  (c) prevention of cancellation among different steps.
+Input (a) fails for the unrestricted pairwise-reduction formulation;
+(b) is already a substantial unanswered band question in Wang's source;
+(c) does not follow from (b).
+
+5. WHAT WOULD COUNT AS A REAL ADVANCE ON THIS ROUTE
+
+The correct direct target is a geometric restriction on cokernels of
+actual ribbon-concordance maps, rather than on arbitrary bigraded spaces.
+For example, a proof that every nonzero such cokernel has an extremal
+quantum grading supported in just one homological parity would imply EF.
+That is a sufficient statement, not a verified claim; existing formal
+Euler-invisible examples explain why an actual geometric constraint is
+essential.
+
+The canonical doubled construction does not by itself supply positivity.
+Its homology is a tensor product with a grading-reversed dual, but the
+Jones polynomial is an alternating trace, not the positive dimension or
+ordinary Hilbert series of that tensor product. Passing from a split
+injection or tensor square to positivity of its Euler polynomial would
+be precisely the missing step.
+
+For now the route is a complete conditional architecture. It avoids the
+earlier global coverage gaps, but it has not reduced its central premise
+to an established band theorem or proved the Jones conjecture.

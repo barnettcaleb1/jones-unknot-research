@@ -1,0 +1,160 @@
+{
+  "seed": "BIGELOW6_REN",
+  "word": [
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1
+  ],
+  "rows": [
+    {
+      "i": 4,
+      "j": 5,
+      "id_coefficients_n0_to9": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "numerator_unnormalized_brackets_n0_to6": [
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "j": 4,
+      "id_coefficients_n0_to9": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "numerator_unnormalized_brackets_n0_to6": [
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        },
+        {
+          "4": 1,
+          "0": 2,
+          "-4": 1
+        }
+      ]
+    }
+  ],
+  "statement": "For every integer n, the framed bracket of cap_I beta^n cup_J is exactly e in TL_2 for (I,J)=(4,5),(5,4).",
+  "argument": "The id sequence is a matrix coefficient of invertible 9x9 rho(beta), hence obeys its degree-9 characteristic recurrence with unit constant term. Nine initial zeros force all integer terms zero. The numerator-minus-delta^2 sequence is a coefficient of diag(rho_W(6,0)(beta),1), an invertible 6x6 matrix. Six initial zeros force all integer terms zero. Writing X_n=a_n*id+b_n*e, N(X_n)=a_n*delta+b_n*delta^2, so a_n=0 and N=delta^2 imply b_n=1 in the integral domain Z[A^+-1].",
+  "topology": "This is an algebraic statement only. n=1 is separately proved split by actual unlink and unknot closures plus Property R. No uniform all-n topological conclusion is asserted."
+}

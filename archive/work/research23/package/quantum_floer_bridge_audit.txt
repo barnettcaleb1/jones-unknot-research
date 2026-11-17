@@ -1,0 +1,70 @@
+INDEPENDENT AUDIT: QUANTUM BRAID FLOER BRIDGE
+1 November 2026. All three proposed deductions pass, with F2 coefficients.
+
+Primary source checked: Anghel--Juhász, Quantum braid Floer homology,
+arXiv:2601.08805v4 (7 September 2026).
+https://arxiv.org/html/2601.08805v4
+
+Source facts used: Theorem 1.13 identifies the two specializations of Omega^q as the symmetrized Alexander polynomial and Jones polynomial of the mirror. Proposition 8.19 identifies its graded Euler characteristic; Theorem 8.22 supplies a spectral sequence to hat HFK. The complexes are over F2 (Section 5 and Definition 8.15). Section 9.2 explicitly gives Markov non-invariance and the quotient for Omega-prime. These source theorems were read, not independently reproved in this short audit.
+
+1. The quotient is exactly a fiber product
+
+Set S=Z[x^{+-1}], R=S[d^{+-1}], I=(d-1), J=(xd+1).
+The map
+
+  R -> S x S,    F -> (F(x,1),F(x,-x^-1))
+
+has kernel I intersection J. R is a UFD, and d-1 and xd+1 are distinct nonassociate prime elements: each quotient is isomorphic to S. Therefore their principal ideals intersect in their product. This proves injectivity of the induced map
+
+  R/((d-1)(xd+1)) -> S x S.
+
+The ideals are NOT comaximal; I+J=(d-1,x+1), whose quotient is Z. Generalized CRT says the image is the fiber product
+
+  {(A,Jones) in S x S : A-Jones is divisible by x+1}.
+
+There is also a direct constructive proof of sufficiency. If H=(A-Jones)/(x+1) belongs to S, then
+
+  F(x,d)=A(x)+x(d-1)H(x)
+
+has the required two specializations. Thus this quotient invariant is precisely the ordered Alexander/Jones pair subject to agreement at x=-1. It cannot contain an additional independent mixed invariant. This is our algebraic deduction, not an extra assertion attributed to the source.
+
+The source writes the quotient (d+1)(xd-1) for Omega-prime. Substituting d -> -d, as prescribed by Theorem 1.13, gives (d-1)(xd+1) for Omega^q. The signs therefore agree with the proposed ring.
+
+2. Unknot test
+
+Section 9.2 gives Omega-prime_(sigma1)=xd^2+xd-d. Consequently
+
+  Omega^q_(sigma1)=xd^2-xd+d.
+
+Its coefficient l1 norm is 3. The total dimension of a triply graded homology is at least the coefficient l1 norm of its bigraded Euler polynomial. Therefore
+
+  dim_F2 qHFB(sigma1) >= 3,
+
+although the braid closure is the unknot. Both specializations are exactly 1. Hence the claim that Jones-one forces one-dimensional qHFB for EVERY presentation is false even for U. No assertion about the minimum among all presentations follows from this one example.
+
+3. The minimized-rank conditional proof is valid
+
+Define
+
+  bq(K)=min {dim_F2 qHFB(beta): closure(beta)=K}.
+
+The set is nonempty and consists of positive finite integers, so its minimum exists. Taking all presentations, rather than a fixed braid or conjugacy class, makes this a knot invariant by definition even though qHFB itself is not Markov-invariant. The spectral sequence gives
+
+  dim_F2 hat HFK(K) <= bq(K).
+
+Proposed new hypothesis: for every whole Jones polynomial P there is a finite B(P) with bq(K)<=B(P) whenever V_K=P.
+
+Assume this hypothesis and let V_K=1. For all m>=1, V_(#m K)=1, and the ordinary hat-HFK connected-sum theorem over F2 gives
+
+  [dim_F2 hat HFK(K)]^m
+      =dim_F2 hat HFK(#m K)
+      <=bq(#m K)<=B(1).
+
+Thus dim_F2 hat HFK(K)=1. Genus detection and Alexander-grading symmetry imply K is the unknot. No tensor-product theorem, connected-sum formula, or Markov invariance for qHFB is used. The finite constant B(1) need not be 1.
+
+The topological endpoint is Ozsváth--Szabó, Holomorphic disks and genus bounds:
+https://arxiv.org/abs/math/0311496
+The HFK connected-sum formula is in their Holomorphic disks and knot invariants:
+https://arxiv.org/abs/math/0209056
+
+Scope: the minimized-rank boundedness hypothesis remains completely unproved. The quotient-ring observation does not imply it. A unit-fiber version alone would again be equivalent to Jones detection, rather than independent progress toward the conjecture.

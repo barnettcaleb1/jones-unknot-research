@@ -1,0 +1,115 @@
+PASS 40: ENDPOINT PERMUTATION OBSTRUCTS A DIRECT POSITIVE-BRAID PROOF
+Bounded mechanism check; no new generic Jones theorem or counterexample.
+
+Decision. Most proposed real-parameter positivity mechanisms duplicate
+work/fanout16/physics.txt, research20/quantum_scaffold.txt, and
+research22/markov_global_constraints.txt. Stop those. One short additional
+structural observation is useful: a multi-strand KNOT braid cannot have
+a positive-semidefinite full Jones operator at real parameters near 1,
+because its endpoint permutation survives there. Taking a Gram operator
+repairs positivity but changes the endpoint permutation to the identity.
+
+1. Exact real model and its limit.
+
+Use the already audited faithful positive TL tensor model, A=i r,
+r>0, d=r^2+r^{-2}, q=r^{-4}. On two tensor factors put
+
+ e(r)=[[0,0,0,0],
+       [0,r^2,-1,0],
+       [0,-1,r^{-2},0],
+       [0,0,0,0]],
+ B_i(r)=r I-r^{-1}e_i(r).
+
+The B_i satisfy braid relations, are real symmetric and invertible,
+and represent the raw Jones generators with the scalar i removed.
+For an n-braid beta of exponent sum w, write B_beta for the word product.
+The usual knot normalization multiplies by the positive scalar r^{-3w};
+the closure then has the additional positive trace factor d^{n-1}.
+
+At r=1, e is twice the projection onto the antisymmetric two-tensor
+line. Thus B_i(1) is EXACTLY the tensor-factor swap P_i. Consequently
+
+  B_beta(1)=P_(pi(beta)) on (R^2)^{tensor n}.               (1)
+
+This is an operator identity, not an asymptotic heuristic.
+
+2. Proposition: the actual knot operator cannot be positive near 1.
+
+If the ordinary closure of beta is a knot and n>1, pi(beta) is an n-cycle.
+On the invariant n-dimensional subspace with exactly one tensor factor
+equal to 1, P_(pi(beta)) acts by an n-cycle permutation matrix. Its
+eigenvalues include all nth roots of unity. In particular it has an
+eigenvalue that is not a nonnegative real number.
+
+It follows from continuity of eigenvalues that B_beta(r) cannot be
+positive semidefinite for all r sufficiently close to 1. More precisely,
+there is a neighborhood of 1 in which it is NEVER positive semidefinite:
+for n=2 the negative eigenvalue persists; for n>=3 a nonreal eigenvalue
+persists. This applies in any positive-definite inner product, since
+such a positive self-adjoint operator has real nonnegative spectrum.
+
+No continuous nonzero scalar gauge fixes the obstruction. Indeed the
+all-zero tensor is an eigenvector of B_beta(r) with eigenvalue r^w>0.
+If c(r) B_beta(r) is positive semidefinite, this forces c(r)>0. The bad
+spectral channel therefore remains bad. The ordinary writhe scalar
+already has this positive sign. Changing basis also does not change
+the spectrum.
+
+Thus a proposed proof using a direct positive normalized braid operator
+for EVERY knot presentation fails before any trace inequality is used.
+The actual unknot beta=sigma_1 in B2 is the smallest test: its eigenvalues
+are r and -r^{-3}, despite its closure Jones polynomial being exactly 1.
+
+This is not the earlier Perron--Frobenius/cone obstruction: positivity as
+a self-adjoint operator is different from preserving a positive cone.
+Here the obstruction is the endpoint permutation of every multi-strand
+knot braid, with no assumption about inverse generators individually.
+
+3. Why the natural Gram repair changes the geometric problem.
+
+Because each B_i and B_i^{-1} is symmetric, transpose reverses the order
+of letters without changing their signs. If rev(beta) denotes that word
+reversal, then
+
+  B_beta(r)^T B_beta(r)=B_(rev(beta) beta)(r).               (2)
+
+The matrix on the left is positive definite. But at the level of endpoint
+permutations, reversing a word of transpositions gives its inverse:
+
+  pi(rev(beta) beta)=pi(beta)^{-1}pi(beta)=identity.
+
+Therefore the geometric braid on the right is PURE, and its ordinary
+closure has n components. Those components need not be unknotted or
+unlinked. Its closure polynomial is not supplied by V_(closure beta).
+
+To reconnect these endpoints into one component, multiply by an actual
+braid gamma with an n-cycle permutation. The resulting operator at r=1
+again acts by that n-cycle, so the same positivity obstruction returns.
+This rules out the particular repair of taking a braid Gram operator and
+then restoring an ordinary one-component braid closure with a fixed
+permutation anchor. It does not rule out different boundary states or
+nonlocal constructions, which require independent skein identities.
+
+4. Scope and stop condition.
+
+Products of positive operators may be useful in special constructions.
+But the full ordinary Jones operator of a multi-strand knot is not such
+a positive operator near the classical real parameter, and the canonical
+Gram replacement computes additional pure-link data. Applying equality
+conditions from trace/determinant inequalities without first identifying
+that changed geometric closure would use information absent from Jones1.
+
+No genuinely new global inequality with a justified equality case emerged.
+Do not extend this pass into another scan or reprove the already established
+cone, stabilization, or Brunnian-vector obstructions. A future viable input
+would need an actual topological identity connecting a NEW positive
+quantity to ordinary Jones, with the permutation/closure issue explicitly
+resolved; merely assuming such an identity repackages the missing step.
+
+Sources and provenance. The displayed TL model and its positive Markov
+trace were derived and independently tested in work/fanout16/physics.txt.
+Equations (1)-(2) and the proposition here follow directly from that
+explicit matrix and elementary permutation topology, without a new
+literature theorem. The source conventions for Jones/Markov trace and
+the scalar normalization are those audited there and in
+work/research22/markov_global_constraints.txt. No claim of novelty is made.

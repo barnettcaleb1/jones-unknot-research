@@ -1,0 +1,48 @@
+BOUNDARY-PARALLEL C4 ROTORS: A COMPLETE OBSTRUCTION TO INVERSE-BRAID SEARCH
+
+Status: a short deduction from an equivariant bridge-disk theorem and the standard four-punctured-sphere slope description. Independently checked by the parent and the tangle agent. No novelty claim. This is a family obstruction, not a proof that Jones detects the unknot.
+
+PRECISE STATEMENT
+
+Let B be a three-ball with the standard order-four rotation rho about an axis Z. Let R consist of four disjoint properly embedded arcs with the standard rotor boundary: eight points on the equatorial circle, two in each sector. Suppose rho(R)=R and R is boundary-parallel as a four-string tangle. Let mu be a standard rotor flip, a physical half-turn about an equatorial axis between boundary points; thus mu normalizes rho by inversion and exchanges the two rho-orbits of endpoints. Then R and mu(R) are ambient isotopic relative to the whole boundary of B.
+
+Consequently replacing such a rotor by its flip changes no completed link. In particular an actual C4 rotor which is, relative to its boundary, a four-braid cannot yield a Jones-one counterexample by inverse-braid completion: braid tangles are boundary-parallel, so the replacement leaves the certified unknot unchanged.
+
+PROOF
+
+1. The four strands form one free rotation orbit.
+
+For any strand a, its stabilizer acts faithfully on the interval a. Indeed a nontrivial rotation fixing a pointwise would put the whole strand on Z, whereas its endpoints lie off Z. A finite group acting faithfully on an interval has order at most two. A stabilizer of order two would act by reflection and fix a point x of a. The fixed set of rho^2 is Z, so x lies on Z. The distinct arc rho(a) also contains rho(x)=x, a contradiction to disjointness. Thus every strand stabilizer is trivial. There are four strands and therefore a single free orbit. This argument uses the absence of closed components, which is automatic for a braid tangle.
+
+2. Choose an invariant, genuinely disjoint bridge-disk orbit.
+
+Meier and Scott, Equivariant Trisections for Group Actions on Four-Manifolds, arXiv:2501.17999v1, Definition 3.8 and Lemma 3.9, show that any invariant boundary-parallel tangle in a three-dimensional handlebody has an invariant almost-disjoint bridge-disk system. Its disks can intersect only along strands. Their proof doubles the handlebody and the tangle and applies the equivariant loop theorem with the reflection of the double included.
+
+Choose one bridge disk D and take its four translates. Their strand boundaries are distinct by Step 1. Hence these disks are actually pairwise disjoint. They avoid Z: a point of D on Z would also belong to every translated disk. The four boundary shadows, namely the arcs D intersect boundary B, are therefore disjoint and avoid the two poles N,S where Z meets the boundary.
+
+3. Pass to a four-marked quotient sphere.
+
+The quotient boundary sphere by rho is a sphere. The invariant shadow system projects to one embedded arc alpha joining the images p,q of the two endpoint orbits. It avoids the two pole images N,S. The rotor flip induces an orientation-preserving involution mu_bar of this sphere, exchanging N with S and p with q.
+
+Such an involution acts trivially on essential-curve slopes on the four-punctured sphere. One standard explanation is the pillowcase model: its mapping class is a Conway double-transposition, lying in the Klein-four kernel of the slope action. Equivalently the image in PSL(2,Z) preserves the three two-pair partitions, hence lies in the level-two subgroup; that subgroup is torsion-free, whereas the image has order at most two, so the image is identity. The finite-order hypothesis is essential here: an arbitrary mapping class with the same endpoint permutation need not act trivially.
+
+The essential boundary of a regular neighborhood of alpha together with its endpoints determines alpha's unoriented isotopy class. Once that boundary is fixed, the disk on its p,q side is a twice-marked disk, in which the joining arc is unique up to isotopy. Consequently alpha and mu_bar(alpha) are isotopic relative to all four marks.
+
+4. Lift and push into the ball.
+
+Lift the preceding isotopy from the identity on the sphere with the poles removed. It fixes all eight endpoint lifts individually. Since the shadow system is the entire preimage of alpha, its image is exactly the shadow system of mu(R); no choice of deck transformation remains. Use the bridge disks to push R and mu(R) into a small boundary collar. The shadow isotopy then induces an isotopy of these pushed-in arcs. A collar taper makes its ambient extension fix the whole boundary, not merely the eight endpoints. Thus R is isotopic to mu(R) relative to boundary B.
+
+SCOPE AND STRATEGIC CONSEQUENCE
+
+This excludes all actual boundary-parallel C4 rotors without closed components, not merely the initially proposed matching (0,3),(2,5),(4,7),(6,1). It includes any such rotor given by a braid in a consecutive top/bottom endpoint partition. It does not exclude non-boundary-parallel rotors, does not produce an unknot completion for them, and does not show that every Jones-preserving replacement of an unknot is trivial. The next construction would need an actual non-boundary-parallel rotor with an independently certified unknot completion; inverse-braid enumeration cannot supply that sector.
+
+SOURCES
+
+Meier--Scott, Equivariant Trisections for Group Actions on Four-Manifolds, arXiv:2501.17999v1, Section 3.2, especially Definition 3.8 and Lemma 3.9:
+https://arxiv.org/html/2501.17999v1
+
+The elementary four-punctured-sphere symmetry used above is the same symmetry behind the rational-tangle flipping lemma. See Kauffman--Lambropoulou, On the classification of rational tangles, arXiv:math/0311499, Lemma 2. The argument in Step 3 spells out the particular arc consequence needed here:
+https://arxiv.org/abs/math/0311499
+
+For the standard rotor and flip convention, see Anstee--Przytycki--Rolfsen, Knot polynomials and generalized mutation, arXiv:math/0405382:
+https://arxiv.org/abs/math/0405382

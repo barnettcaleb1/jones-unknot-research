@@ -1,0 +1,182 @@
+WATSON COMPENSATING TWISTS: A FIXED SUPPORT WINDOW
+31 October 2026. Derived argument from Watson's diagrams and skein sequences.
+No novelty claim; this is not a theorem about every fixed Jones fiber.
+
+SUMMARY
+For a fixed Watson template beta,T,U satisfying his connectivity assumptions,
+the whole compensating-twist orbit has uniformly bounded Khovanov quantum
+support, even when T and U are not simple. The two skein sequences confine
+changes to a fixed finite set of bidegrees. They do NOT, by themselves, bound
+the multiplicity of homology inside that set. They give a linear rank bound
+in the twist parameter. No actual example with unbounded rank has been
+established here.
+
+1. EXACT FAMILY AND SOURCE
+
+Fix beta in B3 and two 4-ended tangles T,U with two arc components and no
+closed components. Use precisely the wiring of Watson Figure1, and his
+horizontal or crossing endpoint connectivities (exclude the vertical
+connectivity discussed on printed p4). Assume the resulting diagrams are
+knots, as in the source. Set
+
+  K_n = K_beta(T^{sigma^n}, U^{sigma^{-n}}), n in Z.
+
+The sigma action adds a right-hand tangle crossing to T and its inverse to
+U; it is not a simultaneous arbitrary twist at unrelated sites. The Jones
+polynomial is independent of n without simplicity: Watson's remark before
+Lemma3.1's proof cites his earlier Lemma5.2 for exactly this fact.
+
+Primary source throughout:
+Liam Watson, Knots with identical Khovanov homology,
+Algebr.Geom.Topol.7(2007),1389--1407.
+https://personal.math.ubc.ca/~liam/files/identical.pdf
+https://msp.org/agt/2007/7-3/agt-v7-n3-p11-s.pdf
+Use the author's PDF printed pp4--10, Figures1--3, equations(3)--(8).
+Section7.3 asks whether nonsimple tangles can change Kh at all. The present
+support argument does not answer that constancy question.
+
+2. WHY THE CAP LINKS RANGE OVER A FINITE FIXED LIST
+
+Compare K_{n+1} and K_n by distinguishing the two extra crossings, as in
+Watson's proof. Resolving both in the through direction recovers K_n.
+There are four one-cap resolutions in the two orders of smoothing.
+
+Simplicity is used in the source only to identify those cap links with U2.
+For a nonsimple tangle, adjoining the vertical cap leaves a fixed properly
+embedded long knotted arc, together with the complementary trivial cap.
+The allowed connectivities and absence of closed components are important
+here. A long knot may be localized inside a small ball along its strand.
+Slide that local knot out of the braid-cancellation region. The adjacent
+beta and beta^{-1} then cancel just as in the source diagram. Any remaining
+integer twist string adjacent to a cap is a sequence of Reidemeister-I
+curls, and hence disappears from the normalized link invariant. The other
+tangle is capped in the resulting picture as well.
+
+Thus each cap link is built from the two fixed capped long knots by a fixed
+connection determined by beta's endpoint permutation. It may distribute
+the local knots among components differently in different resolutions; we
+do NOT assume the different cap links have identical Kh or are isotopic.
+Only their membership in a finite fixed list is needed. Twist parity can
+interchange the connection type, but cannot introduce further types.
+
+Orientations also cause no infinite list. A fixed link with c components
+has at most2^c orientation choices. Include all choices induced by the
+finite connectivity/permutation cases. Normalized Kh is unchanged by the
+Reidemeister-I removal of arbitrarily many curls; do not use unnormalized
+bracket grading here. The orientation changes in Watson's crossing-count
+argument reverse BOTH strands of T or U, so all their internal crossing
+signs, including all n added twists, are preserved. Consequently there is
+no omitted quantum shift growing with n. The only removed distinguished
+crossing gives c=-1 or c=0, as in Watson pp6--10.
+
+This cap-isotopy argument and the absence of an n-dependent crossing-count
+correction were independently checked by the braid subagent against the
+actual Figure1 diagram. No assumption that a knotted arc is trivial is
+made; its fixed local knot remains in the cap link.
+
+3. PRECISE NORMALIZED SKEIN SEQUENCES
+
+Write H^{i,j}(L)=Kh^{i,j}(L;Q), unreduced, in Watson's normalization. Let
+A_n and B_n be the two cap links in one of the resolution orders, and let
+Y_n be its common intermediate diagram with the induced orientation.
+Equations(3),(4) have the form
+
+ H^{i,j+1}(A_n) -> H^{i,j}(K_{n+1}) -> H^{i+1,j+2}(Y_n)
+                       -> H^{i+1,j+1}(A_n),
+ H^{i,j+1}(B_n) -> H^{i,j}(K_n)     -> H^{i+1,j+2}(Y_n)
+                       -> H^{i+1,j+1}(B_n).
+
+Simplicity was only used to replace A_n,B_n by U2. Without it, retain
+their actual homology in these exact sequences.
+
+The opposite order, equations(6),(7), instead has the form
+
+ H^{i-1,j-1}(A'_n) -> H^{i-1,j-2}(Y'_n) -> H^{i,j}(K_n)
+                       -> H^{i,j-1}(A'_n),
+ H^{i-1,j-1}(B'_n) -> H^{i-1,j-2}(Y'_n) -> H^{i,j}(K_{n+1})
+                       -> H^{i,j-1}(B'_n).
+
+Watson printed pp9--10 checks the other allowable connectivities and braid
+permutations by reordering/rotating these diagrams. The reverse sigma
+move interchanges the sequences. This check depends on orientations and
+connectivity, not on the cap links being trivial. We include both orders
+in the exceptional set below, thereby covering both directions n and all
+parity types at once.
+
+4. FIXED-SUPPORT LEMMA AND PROOF
+
+Let L be the finite oriented list of all cap links above. Put
+  E = union_{L in L} supp H(L),
+  S = E + {(0,-1),(-1,-1),(1,1),(0,1)},
+where + denotes the finite Minkowski sum of subsets of Z^2.
+
+If (i,j) is outside S, all four outside terms in either pair of sequences
+vanish. Both middle knot groups are isomorphic to the same intermediate
+group. Hence
+  H^{i,j}(K_n) ~= H^{i,j}(K_{n+1}) for (i,j) outside S.
+
+This is an isomorphism assertion about vector spaces at each bidegree;
+no canonical compatible isomorphism through all n is required. Iterating
+in either direction gives
+  supp H(K_n) subset supp H(K_0) union S   for every n.
+
+Thus the FULL unreduced bigrading support, and in particular its quantum
+diameter, has a uniform finite bound depending on beta,T,U. Let [a,b] be
+the quantum range of supp H(K_0) union S. Then all unreduced quantum
+diameters are <=b-a.
+
+For a knot, the based reduced/unreduced exact sequence has shifts +/-1.
+At the maximal quantum grade it gives maxq H=maxq H_red+1, and similarly
+minq H=minq H_red-1. Therefore the normalized reduced quantum diameter is
+the unreduced diameter minus2. In particular it is uniformly bounded on
+this Watson orbit. The same reduced skein sequences can alternatively be
+obtained by placing a basepoint away from the two crossings and reducing
+the degreewise split short exact sequence of complexes.
+
+5. WHAT CAN BE SAID ABOUT RANK
+
+For every exact triangle of finite-dimensional vector spaces, the ranks
+of two terms differ by at most the rank of the third. Applying this twice
+to the common intermediate group gives
+
+  |r_red(K_{n+1})-r_red(K_n)|
+       <= r_red(A_n)+r_red(B_n) <= C,
+
+for a finite constant C obtained from the finite based cap-link list
+(including the alternate resolution order if necessary). Hence
+  r_red(K_n) <= r_red(K_0)+C|n|.
+
+There is NO deduction here that the ranks are uniformly bounded. Repeated
+addition of Euler-cancelling classes in the finite exceptional grading
+set is not excluded by these exact sequences. A new argument controlling
+the actual saddle maps or their iteration would be necessary. Finite
+grading support does not bound multiplicities.
+
+The parameter n here counts twisting within ONE fixed template. It is not
+the number of connected-sum factors. This linear bound cannot be inserted
+into the generic connected-sum amplification proof unless a separate
+uniform-template realization theorem is supplied.
+
+6. CONSEQUENCE FOR THE GLOBAL SCAFFOLD AND NEXT DECISION
+
+This entire fixed-template Watson family cannot falsify H-spread, even
+with nonsimple tangles. It remains a possible test of H-rank, because
+growth confined to S is not ruled out. A meaningful next test should use
+the finite fixed cap complexes and their saddle maps, not recompute the
+full growing crossing diagram for a long list of n.
+
+An attempted reduction to intersection growth of one multicurve under a
+single Dehn twist needs a separate wiring theorem: the construction glues
+two 4-ended tangles through beta and beta^{-1}, and twists both inputs in
+opposite directions. Treating it as an arbitrary one-sided Dehn twist
+would discard the exact cancellation visible in the two skein sequences.
+
+Targeted searches for later answers to Watson's nonsimple-tangle question
+found the original question and related tangle/mutation papers, but no
+primary source establishing unbounded rational rank in this orbit. This
+is a bounded search report, not a claim that the question is still open.
+
+No uniform bound across ALL templates has been proved. The constants S,C
+depend on the actual capped tangles and can be arbitrarily complicated.
+Thus this result supports one broad test family but does not prove either
+H-spread or H-rank on an entire Jones-polynomial fiber.

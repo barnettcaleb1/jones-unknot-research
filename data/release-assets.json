@@ -1,0 +1,26 @@
+[
+  {
+    "name": "evidence-claude-cx-tools.tar.gz",
+    "bytes": 10277,
+    "sha256": "3497b0a0efc79db27e16d2e2f18545dfef4ab1b7756cfd6346afd9c95e618cd6",
+    "files": 9,
+    "extract_at": "repository root",
+    "url": "https://github.com/barnettcaleb1/jones-unknot-research/releases/download/snapshot-2026-11-17/evidence-claude-cx-tools.tar.gz"
+  },
+  {
+    "name": "evidence-claude-theory-restart.tar.gz",
+    "bytes": 572520411,
+    "sha256": "b8b01a92b853dee076c53e4821737146dc4149094c9332ea6fad29d54a7c7b2d",
+    "files": 11069,
+    "extract_at": "repository root",
+    "url": "https://github.com/barnettcaleb1/jones-unknot-research/releases/download/snapshot-2026-11-17/evidence-claude-theory-restart.tar.gz"
+  },
+  {
+    "name": "evidence-work.tar.gz",
+    "bytes": 57888651,
+    "sha256": "f85bc35edee1d8c89992d92e2edd37261e7e8fcd96d78fe9c304c525d0f7e42a",
+    "files": 48,
+    "extract_at": "repository root",
+    "url": "https://github.com/barnettcaleb1/jones-unknot-research/releases/download/snapshot-2026-11-17/evidence-work.tar.gz"
+  }
+]

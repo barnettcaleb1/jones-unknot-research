@@ -1,0 +1,18 @@
+{
+ "files": [
+  "/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/critic/missed/cert_missed66_bases.jsonl.gz"
+ ],
+ "records_total": 5343,
+ "sampled": 5343,
+ "fraction": 1.0,
+ "seed": 12,
+ "records_pass": 5343,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 5343
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 5343
+ },
+ "secs": 6.0
+}

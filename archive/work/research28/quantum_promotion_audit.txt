@@ -1,0 +1,37 @@
+PASS 28 AUDIT RECORD
+
+The actual collision certificate was rerun successfully:
+python3 work/proof12/braid/all_color_collision_check.py
+It recomputes both full polynomials from explicit braids and checks
+the exact Habiro a2 difference, rather than assuming table names fix
+chirality. The new portable arithmetic check was also run:
+python3 work/research28/verify_promotion_jet.py
+
+Independent braid agent audited the inverse-algebra consequence and
+Vandermonde support bound. Independent homology agent read Habiro
+Theorems5.4 and6.18 this pass and confirmed the C_(N+1)/finite-type<=N
+indexing, actual knot inverse representative, and reduced-color
+normalization. Both confirmed N>=5 preserves the320h5 coefficient.
+
+The parent identified the useful global consequences: fixed finite
+ordinary-Jones jets cannot bound bridge number or reduced-Q Khovanov
+rank; connected-sum powers amplify either example. The support proof
+also yields rank_Q reducedKh(R_N)>=N+1 without relying on unknot
+detection to establish rank>1.
+
+Critical correction made during this pass:
+The particular completed ratio Z(K)/Z(L) is NOT a currently viable
+exact-realization candidate. It is ruled out by its color-three
+Laurent divisibility obstruction: U3 numerator span34 < denominator
+span48 in u, with q=u^-2. The common quantum dimension cancels in
+the reduced ratio. All language leaving this specific ratio's exact
+realization open was removed from the main note.
+
+The formal cyclotomic example with only a2=q-1 is distinct. It passes
+all-color Laurent polynomiality, but a group-like Jacobi lift and
+finite-order actual realizability are not asserted. Do not combine
+the properties of these two examples into a single claimed object.
+
+Scope: this is a theorem about actual finite-order countertests and a
+specific exact-realization exclusion. It is not a proof of generic
+ordinary-to-colored promotion or Jones unknot detection.

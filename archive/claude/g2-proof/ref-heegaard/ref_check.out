@@ -1,0 +1,8 @@
+e_i B-symmetric: True
+s0                       rank P=1 idempotent=True B-symmetric=True max|B(v_s,ker P)|=1.40e-15 max|B(v_rs,ker P)|=1.40e-15
+sigma3(s0)               rank P=1 idempotent=True B-symmetric=False max|B(v_s,ker P)|=4.67e+00 max|B(v_rs,ker P)|=2.80e-15
+sigma3 sigma2^-1 (s0)    rank P=1 idempotent=True B-symmetric=False max|B(v_s,ker P)|=4.63e+00 max|B(v_rs,ker P)|=5.34e-14
+B(c,rho(s2s4)c) - A^6 delta = 7.105427357601002e-15
+g=[3]: bar(v_s) parallel to v_(r s): True
+g=[3, -2]: bar(v_s) parallel to v_(r s): True
+g=[2, 3, -4]: bar(v_s) parallel to v_(r s): True

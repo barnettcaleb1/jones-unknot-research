@@ -1,0 +1,141 @@
+JONES UNKNOT DETECTION: AN ARITHMETIC ROUTE, SIMPLIFIED AND CLOSED
+1 November 2026
+
+STATUS
+
+No proof of Jones unknot detection and no nontrivial knot with Jones
+polynomial identically one has been obtained. The result below explains
+why one proposed shortcut fails. It is an elementary deduction, not a
+claim of a new theorem in the literature or progress toward a full proof.
+
+The useful correction in this pass was to replace an elaborate
+three-strand commutator construction by ordinary two-strand torus knots.
+The elaborate construction had not addressed a stronger mathematical
+question. Continuing to refine it would have been a diversion.
+
+A SHORT, EXACT COUNTERTEST FOR FINITE ARITHMETIC PROBES
+
+Choose any finite nonempty list of finite fields F_(q_i), of
+characteristics p_i. Set
+
+  m = lcm_i [p_i (q_i-1)],       K = T(2,2m+1).
+
+Then K is a nontrivial classical knot, but
+
+  V_K(t) = 1 for every nonzero t in every selected field F_(q_i).
+
+This is equality of evaluation functions over those fields. It is not
+an identity of integer Laurent polynomials, nor even necessarily a
+coefficientwise identity modulo the selected characteristics. There is
+no bound on the knot's complexity independent of the selected fields.
+
+Proof.
+
+In the convention V_unknot=1 and V_trefoil=t+t^3-t^4, the standard
+two-strand torus knot formula is
+
+  V_T(2,2m+1)(t) = t^m (1+t+t^2-t^(2m+2))/(1+t).       (1)
+
+The quotient is a polynomial; its numerator vanishes at t=-1.
+For a nonzero t in F_q with t != -1, the condition (q-1)|m gives
+t^m=1. Substitution into (1) gives V_K(t)=(1+t)/(1+t)=1.
+
+At the excluded point use the polynomial value, rather than dividing
+by zero. Differentiating the numerator in (1), or performing polynomial
+division first, gives the integer identity
+
+  V_T(2,2m+1)(-1) = (-1)^m (2m+1).                    (2)
+
+Every p_i(q_i-1) is even, so m is even. Also p_i divides m. Thus (2)
+reduces to 1 in each selected characteristic, including characteristic
+two where -1=1. This covers every nonzero parameter.
+
+Over the integers, however, (2) is 2m+1>1. Since the unknot has value
+one at every parameter, K is nontrivial. In particular its determinant
+is 2m+1. All positive multiples of m yield further examples. QED.
+
+For example, selecting F_2, F_3 and F_5 gives m=60 and K=T(2,121).
+Every nonzero parameter in these three fields gives value one, while
+the integer value V_K(-1) is 121.
+
+For completeness, formula (1) follows directly from the two-strand
+Temperley--Lieb algebra. Put delta=-A^2-A^-2 and e^2=delta e. The braid
+generator is g=A I+A^-1 e. For n>0,
+
+  g^n = A^n I + [((-A^-3)^n-A^n)/delta] e.
+
+Closing I gives delta and closing e gives 1. Multiply the resulting
+bracket by (-A^3)^(-n), put n=2m+1 and t=A^-4, and simplify to (1).
+This derivation takes place over the rational function field; the
+result is a polynomial identity before any specialization. Consequently
+the exceptional specialization t=-1 is handled legitimately by (2).
+
+WHAT THIS RULES OUT, AND WHAT IT DOES NOT
+
+An unbounded search cannot promote agreement in a prescribed finite
+collection of fields into exact Jones equality. A sequence passing more
+and more tests can simply have increasing knot complexity. The same knot
+is not being shown to pass all tests simultaneously.
+
+Finite tests remain valid exact certificates when coupled to sufficient
+degree and coefficient bounds. For instance, an integer polynomial of
+degree at most D and coefficient magnitude below p is zero if it
+vanishes at an element of F_(p^k) having minimal polynomial degree k>D.
+After shifting Laurent exponents this applies to Jones polynomials too.
+The missing construction must meet these bounds for the very same knot;
+the example above does not. No claim that arithmetic methods in general
+are impossible follows.
+
+OTHER AUDITS FROM THIS PASS
+
+1. The published Eliahou--Fromentin family has V(K_r)=1 modulo 2^r.
+   Its recurrence gives, with N=2^(r-1),
+
+     content(V(K_r)-1)=2^r,
+     span V(K_r)=14N+1,
+     both extreme coefficients=2^N.
+
+   Here content means the positive gcd of all coefficients. Thus this
+   particular sequence has explicitly nonzero coefficients at every
+   stage. Its growing divisibility does not produce an exact Jones-one
+   knot. The all-r induction and exact seed checks are preserved in the
+   accompanying evidence archive. These deductions are not claimed to
+   be previously unknown.
+
+2. Quantum approximation does not itself give an exact polynomial
+   identity. If P=V-1, H is its coefficient l1 norm, and zeta has order r,
+   algebraic norm gives |P(zeta)| >= H^(-(phi(r)-1)) whenever P(zeta)
+   is nonzero. Beating this bound certifies an exact value at that root;
+   a separate degree bound is needed to certify P=0. No construction
+   meeting both requirements with certified knot nontriviality emerged.
+
+3. Finite-quotient pigeonholing using the ambient Temperley--Lieb algebra
+   did not supply a generic kernel element within its own safe degree
+   and height reconstruction range. This is a failure of that counting
+   argument, not a lower bound for every structured braid construction.
+
+RESEARCH ASSESSMENT
+
+The error in the research process was allowing formal reductions,
+necessary conditions and failed shortcuts to accumulate as though they
+constituted a developing proof. They do not. This pass closes a proposed
+arithmetic shortcut; it supplies no new bridge from V_K=1 to K=unknot.
+
+The earlier audit of Carmi--Cohen identifies a specific problem with the
+claimed fixed-clasp isotopy in Proposition 5.12(G2). That finding concerns
+the supplied proof, not the truth of the unknot-detection conjecture.
+The arXiv record checked on 1 November 2026 still lists only v1. Manolescu's
+2026 ICM survey, Section 2, describes Jones unknot detection as open.
+
+Sources:
+Carmi--Cohen, On trivial Jones--Vassiliev polynomials:
+https://arxiv.org/abs/2606.22410
+
+Manolescu, From Knots to Four-Manifolds, Section 2:
+https://epubs.siam.org/doi/10.1137/25M1806703
+
+Eliahou--Fromentin, A remarkable 20-crossing tangle:
+https://arxiv.org/abs/1610.05560
+
+The two-strand finite-field argument above is derived here explicitly;
+the cited papers are not being credited with that exact formulation.

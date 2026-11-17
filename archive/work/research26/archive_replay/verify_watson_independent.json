@@ -1,0 +1,73 @@
+{
+  "checked_cap_permutation_pairs": 54,
+  "status": "all counts agree",
+  "scope": "connectivity only; rainbow isotopy is a separate proof",
+  "rows": {
+    "123": {
+      "AA": 3,
+      "AX": 2,
+      "AB": 2,
+      "XA": 2,
+      "XX": 3,
+      "XB": 2,
+      "BA": 2,
+      "BX": 2,
+      "BB": 3
+    },
+    "132": {
+      "AA": 3,
+      "AX": 2,
+      "AB": 2,
+      "XA": 2,
+      "XX": 3,
+      "XB": 2,
+      "BA": 2,
+      "BX": 2,
+      "BB": 3
+    },
+    "213": {
+      "AA": 1,
+      "AX": 1,
+      "AB": 2,
+      "XA": 1,
+      "XX": 1,
+      "XB": 2,
+      "BA": 2,
+      "BX": 2,
+      "BB": 3
+    },
+    "231": {
+      "AA": 1,
+      "AX": 1,
+      "AB": 2,
+      "XA": 1,
+      "XX": 1,
+      "XB": 2,
+      "BA": 2,
+      "BX": 2,
+      "BB": 3
+    },
+    "312": {
+      "AA": 1,
+      "AX": 1,
+      "AB": 2,
+      "XA": 1,
+      "XX": 1,
+      "XB": 2,
+      "BA": 2,
+      "BX": 2,
+      "BB": 3
+    },
+    "321": {
+      "AA": 1,
+      "AX": 1,
+      "AB": 2,
+      "XA": 1,
+      "XX": 1,
+      "XB": 2,
+      "BA": 2,
+      "BX": 2,
+      "BB": 3
+    }
+  }
+}

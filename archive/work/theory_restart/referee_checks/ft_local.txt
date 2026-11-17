@@ -1,0 +1,27 @@
+R22 intertwines E: PASS
+B22 is unramified: PASS
+B22 fusion eigenpolynomial: PASS
+B22 root is the 1|2 super flip: PASS
+B22 root squares to identity: PASS
+fusion p i is identity: PASS
+inclusion intertwines E: PASS
+inclusion intertwines F: PASS
+projection intertwines E: PASS
+projection intertwines F: PASS
+fusion denominator is a root unit: PASS
+mixed full twist quadratic identity: PASS
+mixed inverse identity: PASS
+mixed twist difference has the exact t+1 factor: PASS
+mixed full twist root is color-two parity: PASS
+normalized axis symbol is 3(T0-I): PASS
+normalized axis symbol is -6 Qodd: PASS
+coevaluation intertwines E: PASS
+coevaluation intertwines F: PASS
+evaluation intertwines E: PASS
+evaluation intertwines F: PASS
+both snake matrix identities: PASS
+color-two loop dimension is [3]: PASS
+off-axis difference vanishes at the root: PASS
+off-axis symbol creates the stated odd pair: PASS
+local odd projector and off-axis symbol do not commute: PASS
+ALL 26 CHECKS PASSED; wrote ft_local.json

@@ -1,0 +1,18 @@
+{
+ "files": [
+  "/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/critic/engA/cert_units.jsonl.gz"
+ ],
+ "records_total": 169,
+ "sampled": 169,
+ "fraction": 1.0,
+ "seed": 5,
+ "records_pass": 169,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 169
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 169
+ },
+ "secs": 0.3
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-02",
+  "main_file": "CLAUDE_JONES_HANDOFF.txt",
+  "words": 26665,
+  "characters": 216111,
+  "result_entries": 130,
+  "entries_by_ledger": {
+    "LATE": 50,
+    "MID": 36,
+    "EARLY": 44
+  },
+  "included_evidence_files": 912,
+  "included_uncompressed_bytes": 14473808,
+  "omitted_by_reason": {
+    "generated cache": 74,
+    "render, binary, transient log or other nonselected format": 100,
+    "external source or duplicate compiled PDF": 25,
+    "external source text; obtain from cited primary URL": 50,
+    "duplicate unpacked evidence tree": 343,
+    "third-party installed package": 1633,
+    "existing archive; individual eligible source files packaged instead": 52,
+    "large raw output omitted; original workspace retains it": 7
+  }
+}

@@ -1,0 +1,2 @@
+nonzero 2 {'K': 120, 'L': 480, 'cert_nonsemiadequate': 1, 'cert_nonadequate': 64, 'natural_semiadequate': 44, 'simplified_semiadequate': 46, 'V_is_1': 0, 'det_not_1': 0}
+NON-SEMIADEQUATE: (3, 2, ('XXYY', 'xxxy'), 1, 's.l1.y0.y0.r2.x1.r2.x1.y0.y0.u1.u1.r2.y1.r2.y1.r2.y1.x0.u1.u1.u1.x2.x2.x2.u1')

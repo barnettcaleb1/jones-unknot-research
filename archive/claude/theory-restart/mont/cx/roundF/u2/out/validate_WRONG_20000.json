@@ -1,0 +1,104 @@
+{
+ "N": 20000,
+ "seed": 3,
+ "wrong_convention_control": true,
+ "knots_evaluated": 3529,
+ "table (up_disc, down_disc, fingerprint_constant)": {
+  "(False, False, False)": 990,
+  "(True, True, True)": 899,
+  "(False, False, True)": 980,
+  "(True, False, True)": 122,
+  "(True, True, False)": 455,
+  "(False, True, False)": 79,
+  "(False, True, True)": 3,
+  "(True, False, False)": 1
+ },
+ "up_disc": 1477,
+ "down_disc": 1436,
+ "agree_up_down": 3324,
+ "VIOLATIONS_up": 456,
+ "VIOLATIONS_down": 534,
+ "violation_examples": [
+  [
+   true,
+   true,
+   false,
+   "x1.y2.x3",
+   "y3.y0.x0.y3.y3.y2",
+   "X3"
+  ],
+  [
+   true,
+   true,
+   false,
+   "y2.x3.x1",
+   "y3.y1.y2.y3.x1.y0",
+   "X3"
+  ],
+  [
+   true,
+   true,
+   false,
+   "x3.y3.x0.y2.y0.x3",
+   "x3.x2.x1.y3",
+   "X1"
+  ],
+  [
+   true,
+   true,
+   false,
+   "y3.x2.y0.y0.x1",
+   "x2.y1",
+   "X3"
+  ],
+  [
+   true,
+   true,
+   false,
+   "x2",
+   "y0.x3.x2.y3",
+   "X3"
+  ],
+  [
+   true,
+   true,
+   false,
+   "x1.y1.x2",
+   "x3.x1.x2",
+   "X3"
+  ],
+  [
+   true,
+   true,
+   false,
+   "y0.y0.y0.x2.y1.x0",
+   "x1.x2",
+   "X1"
+  ],
+  [
+   true,
+   true,
+   false,
+   "x2.y3.y3",
+   "y2",
+   "X1"
+  ],
+  [
+   true,
+   true,
+   false,
+   "x1.x2.x2.y1.y2",
+   "x1.y2.y3.y2.y1.y0",
+   "X1"
+  ],
+  [
+   true,
+   true,
+   false,
+   "x2.y3.y3",
+   "y2.x1.y0",
+   "X3"
+  ]
+ ],
+ "nonconstant_families_examined": 1525
+}

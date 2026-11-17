@@ -1,0 +1,148 @@
+EXACT JONES-JET FILTRATION FROM ITERATED WHITEHEAD QUOTIENTS
+31 October 2026. Root's deduction, independently audited by homology agent.
+This is a restricted family theorem, not generic Jones unknot detection.
+
+SETUP AND NORMALIZATION
+
+Let P be a winding-zero pattern with P(U)=U and a compatible strongly
+invertible shell. Normalize its map between rank-two skein modules by one framing unit so
+that the meridian closure functional f_infinity is preserved. As proved in
+sato_levine_skein_injectivity.txt, in the basis
+
+                 Q_0, v=Q_infinity-delta Q_0,
+                 delta=-A^2-A^-2,
+
+the map has matrix diag(1,d(A)), with d(A) in Z[A,A^-1]. The integrality
+follows since the shell map has Laurent-integer coefficients, its framing
+normalization is a Laurent unit, and this basis change has determinant one.
+
+For T with f_infinity(T) nonzero define
+
+        R_T=f_0(T)/f_infinity(T),
+        x_T=(R_T-delta)/(1-delta^2).
+
+Then x_(P(T))=d(A)x_T exactly.
+
+For an ACTUAL knot-exterior quotient with infinity filling U and zero filling
+the preferred longitude, use the following orientation convention. Orient
+the infinity unknot, then orient each of the two zero-closure components
+so its tangle arc has the same direction. Each component contains exactly
+one tangle arc. Both standard closure diagrams have crossing-free exterior
+arcs, so the writhe is identical. Consequently
+
+                         R_T(A)=V_(L_T)(A^-4)                 (1)
+
+with the square-root branch t^(1/2)=A^-2 and this canonical link orientation.
+There is no extra monomial depending on A in (1). The fact that the zero
+closure has two components also follows from its determinant being zero:
+a one-component closure would be a knot, whose determinant is nonzero.
+
+Put A_0=exp(pi i/4), so t=A^-4=-1 and delta(A_0)=0. One has
+
+                 |dt/dA|_(A0)=4,  |delta'(A_0)|=4.
+
+1. EVERY SUCH WINDING-ZERO PATTERN HAS d(A_0)=0
+
+Use the rational input Q_1 whose covering disk slope is lambda_U+mu_U.
+Under the shell gluing this is 1-surgery on the unknotted axis A. The
+output is the exterior quotient of P_1 in S3. Its fixed output zero slope
+remains the preferred longitude because the winding number is zero.
+Therefore its zero closure has determinant zero:
+
+                         f_0(F(Q_1))(A_0)=0.
+
+On the other hand the input zero closure of Q_1 is an unknot (the rational
+closure with lens-space cover L(1,1)); hence f_0(Q_1)(A_0) is nonzero.
+Evaluating
+
+ f_0(F(Q_1))=delta f_infinity(Q_1)
+                    +d(A)(f_0(Q_1)-delta f_infinity(Q_1))
+
+at A_0 gives d(A_0)=0. Since d has integer Laurent coefficients and A_0
+has minimal polynomial A^4+1, this proves
+
+                            (A^4+1) divides d(A).             (2)
+
+This divisibility uses only determinants, not the Casson derivative identity.
+
+2. NONZERO SATO--LEVINE MAKES THIS ROOT SIMPLE
+
+Let beta=beta(P union axis) in the convention of Gorsky--Liu--Moore. The
+Hoste calculation gives a_2(P_1)=-beta, since P(U)=U. For the output
+longitude link L_1, the audited determinant-zero identity and (1) give
+
+                    |R'_(FQ1)(A_0)|=4|12a_2(P_1)-1|.
+
+If beta is nonzero, a_2(P_1) is a nonzero integer. Thus the right side is
+strictly greater than 4=|delta'(A_0)|. Since both R and delta vanish at A_0,
+
+               x'_(FQ1)(A_0)=R'_(FQ1)(A_0)-delta'(A_0) != 0.
+
+But x_(Q1)(A_0)=R_(Q1)(A_0) is nonzero, since its zero and infinity
+closures are both unknots. Differentiating x_(FQ1)=d x_(Q1), using d(A_0)=0,
+therefore proves
+
+                               d'(A_0) != 0.                 (3)
+
+The same conclusion holds for either Whitehead clasp convention: its twist
+family has a_2(P_1)=+/-1. In particular its d is nonzero and has exactly a
+simple zero at A_0.
+
+3. AN ACTUAL FAMILY WITH ARBITRARILY MANY MATCHING DERIVATIVES
+
+Start with any strongly invertible core J with a_2(J) nonzero, equipped with
+its preferred exterior quotient T. Let L_0 be its zero branch closure.
+The same magnitude argument gives x_T(A_0)=0 and x'_T(A_0) nonzero.
+
+Apply an untwisted Whitehead pattern r times, using compatible inherited
+inversions, and let L_r be the preferred zero branch closure of the resulting
+actual iterated Whitehead double. The exact transmission law gives
+
+                         x_(T_r)=d(A)^r x_T.
+
+Since d and x_T each have a simple zero at A_0,
+
+                  ord_(A0)(V_(L_r)(A^-4)-delta(A))=r+1.       (4)
+
+The factor 1-delta^2 used to recover R-delta from x equals one at A_0,
+so it changes no order. The coordinate t=A^-4 has nonzero derivative at
+A_0, so the same order is obtained in t at -1. Thus, with the canonical
+orientations and the corresponding local square-root branch,
+
+     V_(L_r) and V_(U2) have identical derivatives at -1 through order r,
+                  and their derivatives of order r+1 differ.
+
+These are ACTUAL branch links, not formal bigraded modules. Their Jones
+polynomials never equal the unlink polynomial, since d^r x_T is nonzero
+over Q(A). A trefoil is a concrete admissible starting core.
+
+One can vary the clasp choice at each step: the product of r multipliers
+still has order r, so (4) remains valid. More generally any r compatible
+patterns satisfying the hypotheses and having beta nonzero yield the same
+exact order.
+
+4. SCOPE AND THE ACTUAL OBSTRUCTION TO A GENERIC CONCLUSION
+
+The examples are two-component longitude branch links with an unknot
+meridional filling. They are not Jones-one knots or counterexamples to
+Jones unknot detection. They show specifically that no fixed finite jet
+at t=-1 can certify the Jones-flat longitude condition, even in this
+geometrically restricted actual satellite family.
+
+The exact full polynomial separates every member of this family from U2.
+The construction does not imply a generic knot has a Jones-flat quotient,
+and no uncolored-to-colored determination is assumed. A different strong
+inversion not inherited from the shell is outside the statement.
+
+SOURCES AND DEPENDENCIES
+
+The proof uses the normalized shell map and the independently audited
+orientation argument in whitehead_pattern_audit.txt; Hoste's formula as
+recorded in Gorsky--Liu--Moore Section 6.2; and Garoufalidis Theorem 1 plus
+its Section 4.1 zero-surgery normalization. Exact sources and the longitude
+identity are listed in sato_levine_skein_injectivity.txt and
+../fanout16/realizability_zero_filling.txt.
+
+https://arxiv.org/pdf/1810.10178
+https://arxiv.org/html/math/9811021
+https://arxiv.org/pdf/0706.2213

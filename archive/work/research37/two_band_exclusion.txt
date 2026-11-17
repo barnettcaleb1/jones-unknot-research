@@ -1,0 +1,91 @@
+SIXTEEN CERTIFIED MARKED RECORDS: COMPLETE INTEGER-TWIST EXCLUSION
+2026-11-01. Bounded follow-up of the 22 stored unknot band-fusion hits.
+
+Outcome
+Of the 22 previously stored two-stage constructions, 16 were reconstructed
+as actual pairs of disjoint band rectangles on the original LLL1 diagram.
+For every one of these 16 marked records, the entire family K(m,n), m,n in Z,
+has Jones polynomial one if and only if (m,n)=(0,0). The zero member is an
+actual unknot, verified by simplification to a zero-crossing one-component
+diagram. This is not a claim of 16 distinct isotopy classes of templates.
+No new initial-band search was performed.
+
+The certified original hit numbers are:
+  1,3,5,6,7,8,9,10,11,12,13,14,15,16,19,20.
+The unmarked records are 0,2,4,17,18,21. They remain unresolved as two-site
+families; their recorded zero-parameter diagrams were already actual unknots.
+They are not counterexamples or newly verified candidate families.
+
+Geometry and orientation tracking
+marked_hits.py reconstructs each first move from its saved band specification,
+tracks every surviving original crossing and its cyclic-port rotations,
+then reproduces exactly the saved intermediate PD. It pulls the second
+band's ports back to the original diagram. Certification requires:
+  * each band lies in an original face;
+  * its attaching edges are disjoint from those of the other band;
+  * if the bands share a face, their boundary endpoints do not alternate;
+  * the simultaneous diagram is planar and its anchor simplifies to U.
+Both bands are inserted before any orientation rebuild or simplification.
+Each carries its stored initial half-twist count (0 or -1), and parameter
+m or n adds 2m or 2n half twists. Thus the entire integer family has the
+same component connectivity as its unknot anchor.
+
+Partial smoothings inherit the orientations of the actual anchor, restricted
+to every surviving original strand; they are not independently reoriented
+by a default algorithm. All four cut states have saved PDs. Spherogram and
+Regina writhe agree. The double cut has Jones delta^2 in all sixteen cases,
+where x=sqrt(t) and delta=-(x+x^-1). The parent independently recomputed all
+48 cut brackets without Regina and confirmed the results.
+
+As a further normalization check, verify_corners.py constructs K(1,0) and
+K(0,1) directly for every certified record. Each has writhe exactly two less
+than the anchor, and the exact full Jones polynomials satisfy
+  delta*V(1,0)=delta*z+(1-z)*S1,
+  delta*V(0,1)=delta*z+(1-z)*S2,
+with z=x^-4 and S_i the Jones polynomial of the anchor with band i cut.
+Thus both sites use the same normalized full-twist convention. All 32
+checks passed; complete PDs and polynomials are retained.
+
+Exact all-integer argument
+Put P1=S1-delta and P2=S2-delta. The two-site Temperley--Lieb identity,
+with V(0,0)=1 and S12=delta^2, gives
+
+ delta*(V(m,n)-1)
+   = z^n*(1-z^m)*P1 + z^m*(1-z^n)*P2.
+
+This is valid for negative as well as positive integers because the twist
+operator is invertible and its two eigenvalues are 1 and z.
+
+In each certified record, the vanishing orders of P1,P2 at x=1 are 3 and 2,
+in one order or the other. The leading Euler moments are respectively
+-288 and +96 or -96. These are exact integer derivatives, computed as
+  (x*d/dx)^j P(1) = sum_e coefficient(e)*e^j.
+Vanishing of all preceding Euler moments makes the first nonzero Euler
+moment detect the ordinary vanishing order as well.
+
+If m,n are both nonzero, 1-z^m and 1-z^n each have a simple zero at x=1.
+The two terms on the right therefore have DIFFERENT vanishing orders, 4
+and 3, so their sum cannot be zero. If just one of m,n is zero, the surviving
+term is nonzero because its P_i and 1-z^k are nonzero Laurent polynomials.
+Therefore V(m,n)=1 only when m=n=0. No finite twist bound or determinant
+argument is needed for this conclusion.
+
+Why six records are not certified
+Their second bands lie in a face opened by the first fusion, rather than
+in a face of the original diagram. Pulling only their endpoint labels back
+does not preserve the complete marked geometry. In fact that naive
+construction becomes nonplanar when the first full twist is inserted (and
+one record fails even at its pulled-back anchor). We explicitly reject
+those diagrams. A full marked isotopy or a different simultaneous band
+presentation would be necessary before applying the two-channel formula.
+No Jones polynomials of nonplanar reconstructions are used in this result.
+
+Reproduction
+- marked_hits.py and marked_hits.json: actual original port maps, induced
+  orientations, zero-anchor and partial-cut PDs, full Jones coefficients.
+- verify_corners.py and corner_verification.json: direct twist checks.
+- verify_certificate.py: Python standard-library-only audit of all stored
+  exact polynomial identities and vanishing orders.
+- independent_marked_checks.json: parent's independent state-sum audit.
+Geometry regeneration uses Python 3.13 with Spherogram 2.4.1 and Regina 7.4.1
+from work/braid_classification/packages. No external data lookup is required.

@@ -1,0 +1,309 @@
+Pass 52: root-of-unity Galois bootstrap audit
+2026-11-01. Bounded test of one specific mechanism. No new promotion theorem.
+
+Prior work read: outputs/jones-cabling-and-realizability.txt and the finite-order
+realization/group-like discussion in outputs/jones-full-proof-scaffolds.md.
+The question tested here is narrower than those earlier arguments: can the
+Galois permutation of SU(2) modular labels turn ordinary Jones evaluations
+into higher-color evaluations at infinitely many roots of unity?
+
+VERDICT. No. The genuine modular Galois theorem does not give that scalar
+identity, and the proposed identity fails on the actual trefoil. The existing
+formal cyclotomic countermodel also obeys the root-reflection and arithmetic
+Galois identities that genuinely apply to scalar colored Jones values.
+
+1. Exact scalar reflection constraints.
+
+For zero framing and reduced normalization H_N(U)=1, write the cyclotomic
+kernel as
+
+ P(N,k)=product_(j=1)^k(q^N+q^(-N)-q^j-q^(-j)).
+
+For a root zeta of order r, dependence on N is through zeta^N+zeta^(-N).
+The integral expansion therefore gives
+
+ H_(N+r)(zeta)=H_N(zeta),       H_(r-N)(zeta)=H_N(zeta).
+
+One may compare finite sums because the j=r factor kills all terms with
+k>=r; factors with smaller indices also kill the extra terms when reflecting
+into the integrable range 1,...,r-1. This includes H_(r-1)(zeta)=H_1(zeta)=1.
+
+Primary expansion source: Garoufalidis--Kashaev, 'The descendant colored Jones
+polynomials', equation (2), with the color dependence stated explicitly just
+afterwards. Multiplying each pair of its factors shows that its kernel is P.
+https://arxiv.org/pdf/2108.07553
+
+The old formal example F_N=1+(q-1)P(N,2) passes EVERY one of these reflection
+and periodicity identities, at every root. It also has the legitimate
+arithmetic covariance sigma_a(F_N(zeta))=F_N(zeta^a). Nevertheless
+
+ F_3-1=q^(-6)(q-1)^2(q^2-1)(q^4-1)(q^5-1),
+
+which is nonzero at every primitive root of order r>5. Hence the new scalar
+tests do not remove the previously identified countermodel. This observation
+does not assert that it is realized by a knot or a modular-functor state, nor
+that it satisfies every categorical constraint.
+
+2. What modular Galois symmetry actually states.
+
+Dong--Lin--Ng, 'Congruence Property in Conformal Field Theory', Theorem II(iii)
+and section 4.1, equations (4.2)--(4.5), give
+
+ sigma(S)=G_sigma S=S G_sigma^(-1),
+ sigma^2(rho(gamma))=G_sigma rho(gamma) G_sigma^(-1),
+
+where G_sigma is a signed permutation matrix. They also explicitly give
+sigma(S_ij/S_0j)=S_i,pi(j)/S_0,pi(j). These statements concern modular data
+and modular-group representations. They are not a theorem equating Galois
+conjugation of a normalized knot scalar with a same-knot color substitution.
+https://arxiv.org/pdf/1201.6644
+
+The vacuum need not be fixed by pi. In SU(2) at level r-2, use dimension labels
+n=1,...,r-1, with vacuum n=1 and S_nm=sqrt(2/r) sin(pi*n*m/r).
+The label permutation associated to an odd cyclotomic automorphism a folds
+an modulo 2r into 1,...,r-1, with a sign. It moves the vacuum as well as the
+external color. Thus applying the full conjugation identity changes boundary
+states on both sides of a matrix element. Dropping the changed vacuum is the
+specific invalid step in this proposed bootstrap.
+
+3. Actual-knot falsification, with all colors inside the integrable range.
+
+Take r=7, zeta=exp(2*pi*i/7), and the SU(2) level-five theory. The automorphism
+a=3 acts on its cyclotomic field (one may use the usual conductor 56). The
+S-matrix label permutation sends 2 to 6 and the vacuum 1 to 3.
+
+Choose the trefoil chirality whose ordinary reduced Jones polynomial is
+
+                         H_2(q)=q+q^3-q^4.
+
+Its difference from one factors as
+
+                    H_2(q)-1=-(q-1)^2(q^2+q+1).
+
+This is nonzero at every primitive seventh root. Consequently both
+sigma_3(H_2(zeta)) and sigma_3^2(H_2(zeta)) differ from 1. But the exact
+root-reflection identity gives H_6(zeta)=H_1(zeta)=1 for this actual knot.
+Thus neither candidate scalar identity
+
+ H_pi(2)(K;zeta)=sigma_3(H_2(K;zeta)), nor its sigma_3^2 variant,
+
+is true in general. Unknot normalization cannot repair it: all reduced
+unknot colors equal one, so any knot-independent scalar correcting such an
+identity would itself have to be one. This is a geometric example, unlike
+the formal sequence in part 1.
+
+4. Full endpoint and whether its missing claim is new.
+
+A possible repair would restrict a vacuum-replacement rule to knots with
+H_2 identically one. For example, choose infinitely many odd primes r and
+a=r+2; the SU(2) label permutation sends color 2 to color 4. A rule strong
+enough to identify the changed-vacuum matrix element with the original
+normalized knot scalar would then imply H_4(K;zeta_r)=1 for infinitely many r.
+Laurent polynomiality would give H_4(K)=1 exactly.
+
+Universally over the Jones-one class, this is not a demonstrably weaker new
+target. The winding-three, meridian-one cable has ordinary Jones polynomial
+a nonzero weighted sum of H_2 and H_4, with weights summing to one. Thus
+universal H_2=1 => H_4=1 is equivalent to preservation of Jones-one by that
+cable. The already proved connected-sum moment argument in the cabling report
+then yields universal all-color promotion. The proposed special vacuum rule
+has not been proved; at the required scalar level it merely reformulates
+this existing promotion problem.
+
+Even successful all-color promotion would not by itself finish the generic
+unknot problem using presently established results. A complete conditional
+chain is: special vacuum rule => H_4 promotion => cable preservation => all
+colors trivial =>, ASSUMING the AJ conjecture for the knot, trivial A-polynomial
+=> unknot by Dunfield--Garoufalidis. The unproved AJ step is separate. Their
+paper expressly distinguishes its unconditional A-polynomial detector from
+the colored-Jones consequence conditional on AJ:
+https://msp.org/agt/2004/4-2/agt-v4-n2-p21-s.pdf
+
+Conclusion: the overlooked Galois idea is ruled out in its unconditional
+form by an actual knot; its Jones-one-specific repair reintroduces the same
+unproved color-promotion step. This pass supplies no new route around that
+gap, and no claim about general failure of quantum or categorical approaches.
+
+Verification: the displayed factorizations and reflection assertions have
+algebraic proofs above. Small numerical evaluations through root order 40
+were used only as sanity checks, not as proofs of any universal statement.
+
+5. Additional audit: the NEW 2026 arithmetic lift does not remove the model.
+
+Garoufalidis--Wheeler, 'A lift of the colored Jones polynomial of a knot',
+arXiv:2603.01619 (27 February 2026 manuscript), Theorem 1.3, constructs a
+lift in H_(Z[t^±1,Delta(t)^(-1)] / Z[t^±1]), with evaluation t=q^(N-1).
+Its root expansions obey Frobenius-twisted gluing, a stronger requirement
+than ordinary cyclotomic integrality. This is genuinely additional to the
+tests in the previous report and was checked against its precise definition.
+https://guests.mpim-bonn.mpg.de/stavros/publications/lift-colored-jones-knot.pdf
+
+For Delta=1 the old model has an explicit lift. Define the Laurent polynomial
+
+ f(t,q)=1+(q-1) product_(j=1)^2
+                    (qt+q^(-1)t^(-1)-q^j-q^(-j)).
+
+For each m>=1 define its component at the root zeta_m by
+
+ f_m(t,u)=f(t^(1/m),zeta_m+u),      u=q-zeta_m.
+
+This is a power series in u with coefficients in
+Z[t^±(1/m),zeta_m], exactly the coefficient ring required at Delta=1.
+Negative q powers are harmless because zeta_m is a unit, so their Taylor
+coefficients remain integral in Z[zeta_m].
+
+Definition 1.1, equation (7), requires
+
+ f_m(t,q-zeta_pm+zeta_pm-zeta_m)=phi_p f_pm(t,q-zeta_pm).
+
+The left side is f(t^(1/m),q). On the right, phi_p fixes q and roots of unity
+and sends t^(1/(pm)) to t^(1/m). Thus the right side is literally the same
+Laurent expression. Gluing therefore holds exactly for EVERY m and prime p,
+not merely modulo p or to a finite Taylor order.
+
+This construction is also the polynomial case of their Proposition 3.4 and
+equations (99)--(102): the inverse of the untwisting isomorphism takes an
+ordinary polynomial to the family with m-th component obtained by t->t^(1/m).
+The same construction applies to Laurent polynomials because t and q are
+units. It is essential to include this root of t: repeating f(t,q) unchanged
+at every root would in general fail the Frobenius gluing condition.
+
+At q=1 the lift has f(t,1)=1, precisely the loop constant term 1/Delta(t)
+for Delta=1 in equation (14). At color N, its q=1 expansion evaluates to
+
+                         f(q^(N-1),q)=F_N(q).
+
+The evaluation map of Theorem 1.3/equation (12) gives this same Laurent
+polynomial as an element of the usual Habiro ring: equality can be checked
+in its injective Taylor expansion at q=1. Thus F_1=F_2=1 and F_3!=1 persist
+inside the new Frobenius-compatible lift. Moreover f is q-holonomic under
+t->qt: product_(j=-2)^2(E-q^j) annihilates it, since it is a Laurent
+polynomial in t of degree between -2 and 2.
+
+This decisively excludes deriving color promotion from the new arithmetic
+lift property alone, even when combined with integral cyclotomic expansion,
+all-color Laurent polynomiality, the Delta=1 loop constant term, the exact
+root-reflection identities, and q-holonomicity already checked above.
+
+Scope: the construction is a FORMAL element of the target ring, not an element
+known to lie in the image of the knot map. It supplies neither a group-like
+Kontsevich lift nor a classical-knot realization. The paper's geometric
+compatibilities with actual skein modules and actual Dehn fillings have not
+been imposed on this example. Thus it is not a counterexample to its theorem
+or to Jones unknot detection; it is a counterexample to the proposed
+arithmetic-only implication H_2=1 => all colors=1.
+
+6. Stronger formal obstruction: erase any finite color prefix while retaining
+   the new arithmetic lift AND proven positive-volume asymptotics.
+
+Fix J to be the untwisted Whitehead double of the trefoil, with the convention
+in Zheng's theorem below. Its normalized Alexander polynomial is 1. This
+standard property of untwisted Whitehead doubling is stated in Garoufalidis,
+'Whitehead doubling persists': https://arxiv.org/abs/math/0003189 .
+Use the reduced, zero-framed, N-dimensional colored Jones polynomial H_N(J;q),
+with H_N(unknot)=1 and H_2 the ordinary Jones polynomial. Write its integral
+Habiro expansion in the kernel used throughout this note:
+
+ H_N(J;q) = 1 + sum_(k>=1) a_k(q) P(N,k),
+ P(N,k) = product_(j=1)^k (q^N+q^(-N)-q^j-q^(-j)),
+ a_k(q) in Z[q^±1].
+
+The sum truncates at k=N-1. This kernel/normalization is the one in
+Garoufalidis--Kashaev, 'The descendant colored Jones polynomials', equation
+(2), after multiplying its displayed elementary factors:
+https://arxiv.org/pdf/2108.07553 .
+
+For every FIXED integer M>=1, define
+
+ G_N^(M)(q) = H_N(J;q) - sum_(k=1)^M a_k(q) P(N,k).
+
+Then G_N^(M)=1 identically for every 1<=N<=M+1. Its cyclotomic coefficients
+are simply a_0=1, then M zero coefficients, then the original a_(M+1),....
+Thus all-color Laurent polynomiality and integral cyclotomic expansion are
+immediate. The root-reflection and arithmetic Galois properties already
+discussed in this note follow by the same kernel argument.
+
+Why ALL a_k(1)=0 for k>=1, not merely a_1(1)=0:
+the MMR diagonal, equivalently the loop constant term (14) in the 2026 paper,
+gives the identity in formal power series at t=1
+
+ 1/Delta_J(t) = sum_(k>=0) a_k(1)(t+t^(-1)-2)^k = 1.
+
+To justify this use of the infinite sum, put q=e^h and take the diagonal
+with x=Nh fixed formally. Each kernel factor has leading diagonal
+e^x+e^(-x)-2, of x-adic order 2; hence only finitely many k contribute to
+each x-degree. The shift t=q^(N-1) in the 2026 convention does not affect
+this leading diagonal. The formal substitution y=t+t^(-1)-2 has order 2
+and nonzero leading coefficient, so the map Q[[y]] -> Q[[t-1]] is injective.
+This proves a_k(1)=0 for every k>=1. In particular
+a_1(1)=-Delta_J''(1)/2=0: compare the coefficient of (t-1)^2, using the
+symmetric normalization Delta(1)=1, Delta'(1)=0.
+
+Let J_lift(t,q) be the actual lift supplied by Garoufalidis--Wheeler Theorem
+1.3 in the Delta=1 ring. The finite Laurent polynomial
+
+ C_M(t,q) = sum_(k=1)^M a_k(q)
+             product_(j=1)^k(qt+q^(-1)t^(-1)-q^j-q^(-j))
+
+has a lift by the explicit root-of-t construction in section 5 above.
+Therefore G_lift^(M)=J_lift-C_M belongs to the SAME Frobenius-compatible
+Habiro ring and evaluates to G_N^(M) at t=q^(N-1). All prescribed p-adic
+root/Frobenius gluing identities survive exactly. Since C_M(t,1)=0,
+G_lift^(M)(t,1)=1, and every higher loop coefficient remains a Laurent
+polynomial in t. No convergence of the infinite Habiro series away from
+the relevant formal topology is being assumed here; the subtraction is finite.
+
+The sequence remains q-holonomic: H_N(J) is q-holonomic, and the correction
+is a finite linear combination of q^(jN), with -M<=j<=M, over Q(q).
+Addition closure is Theorem 5.2(a) of Garoufalidis--Le,
+'A survey of q-holonomic functions': https://arxiv.org/pdf/1601.07487 .
+
+Now put zeta_N=exp(2*pi*i/N) and V=Vol(S^3 minus Whitehead link)>0.
+Zheng, 'Proof of the volume conjecture for Whitehead doubles of a family
+of torus knots', Theorem 1.4 and equation (1.6), proves for this J
+
+ 2*pi*log|H_N(J;zeta_N)| = V*N + 4*pi*log N + O(1).
+
+Source: https://arxiv.org/pdf/math/0508138 , printed page 3.
+The theorem includes the untwisted double of T(3,2). It uses the normalized
+N-dimensional Jones polynomial at exp(2*pi*i/N); its quantum-group parameter
+elsewhere in section 2 is squared to obtain this Jones variable. Thus the
+root in the theorem already matches ours, with no further square change.
+
+For every fixed k, a_k(zeta_N)=O(N^(-1)) and
+
+ P(N,k)|_(q=zeta_N) = product_(j=1)^k(2-2*cos(2*pi*j/N))
+                    = O(N^(-2k)).
+
+The total removed finite sum D_N is therefore O(N^(-3)). Zheng's theorem
+also gives |H_N(J;zeta_N)|=N^2*exp(V*N/(2*pi))*exp(O(1)), so
+
+ G_N^(M)(zeta_N)/H_N(J;zeta_N)
+       = 1 + O(N^(-5)*exp(-V*N/(2*pi))).
+
+Consequently the SAME two-term theorem holds for the formal model:
+
+ 2*pi*log|G_N^(M)(zeta_N)| = V*N + 4*pi*log N + O(1).
+
+In particular its growth rate is V>0 despite every color through M+1
+being identically 1. Constants in these estimates may depend on fixed M;
+there is no claim for a prefix length increasing with N.
+
+Conclusion and exact scope: any fixed finite set of trivial initial colors
+is compatible with integral cyclotomic coefficients, the new 2026 arithmetic
+lift and its Frobenius/root compatibility, q-holonomicity, Delta=1 loop
+rationality, and this genuine positive exponential semiclassical growth.
+The construction is an explicit FORMAL sequence, not a knot and not a
+group-like Kontsevich series. No actual-knot realization, exact TQFT gluing,
+peripheral skein-module representation, character-variety compatibility,
+or full state-integral/saddle interpretation has been established. Thus
+these listed necessary properties alone cannot force color promotion or
+zero volume; this is not a counterexample to Jones unknot detection.
+
+For comparison, the earlier proposed multiplicative modification
+1+(q-1)P(N,2)(H_N(J)-1) also preserves the leading positive exponential
+rate; its multiplier at zeta_N is 128*pi^5*i*N^(-5)(1+O(N^(-1))). It changes
+Zheng's logarithmic coefficient from 4*pi to -6*pi. The finite coefficient
+erasure above is therefore both simpler and stronger, and is the preferred
+model for any report. The preserved two-term asymptotics do not assert that
+Zheng proved a full expansion to all orders.

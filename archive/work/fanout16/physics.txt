@@ -1,0 +1,253 @@
+REVERSIBILITY, POSITIVE CONES, AND AN EXACT JONES SIGN-PROBLEM OBSTRUCTION
+
+Status: an elementary obstruction to a proposed proof mechanism, not a proof
+or disproof of Jones unknot detection. The general strategy tested was to turn
+Jones amplitudes into a finite classical partition function with nonnegative
+local weights, then use positivity to prevent cancellation. A precise class of
+such models is impossible. The obstruction has an explicit pair of knot tests.
+The arguments below make no claim of novelty.
+
+1. CONVENTIONS AND A PHYSICALLY USEFUL REAL SPECIALIZATION
+
+Use the bracket representation rho(sigma_i)=A I+A^{-1}e_i, with
+e_i^2=delta e_i, e_i e_(i+1)e_i=e_i, and delta=-A^2-A^{-2}.
+The normalized Markov trace has tau_n(I)=1, tau_n(e_i)=delta^{-1}.
+For an n-braid beta of exponent sum w,
+
+  V_cl(beta)(A^{-4})=(-A^3)^{-w} delta^(n-1) tau_n(rho(beta)).
+
+Set A=i r, r>1, q=r^{-4} in (0,1), and d=r^2+r^{-2}>2. Removing the scalar i
+from each positive generator gives real operators
+
+  B_i=r I-r^{-1}e_i,       rho(sigma_i)=i B_i.
+
+They still satisfy the braid relations. Their eigenvalues are r on ker(e_i)
+and -r^{-3} on im(e_i). In the usual fundamental tensor representation these
+have multiplicities three and one. Both are present already in the nontrivial
+two-dimensional TL_3 block. The Jones normalization simplifies to
+
+  V_cl(beta)(q)=d^(n-1) r^{-3w} tau_n(B_beta).                  (1)
+
+The TL trace is positive for d>2. One can check everything directly in the
+two-state tensor representation, without appealing to operator-algebra theory:
+in the basis 00,01,10,11 take
+
+          [0   0     0      0]
+  e =     [0   r^2  -1      0],       D=diag(r^2,r^{-2}),
+          [0  -1     r^{-2} 0]
+          [0   0     0      0]
+
+and let e_i act on adjacent tensor factors. These satisfy the TL relations;
+e is positive rank one, since its middle block is (r,-r^{-1})^T(r,-r^{-1}).
+The matrix D tensor ... tensor D commutes with every e_i, and the D-weighted
+partial trace of e on its second tensor factor is I. Consequently
+
+  tau_n(X)=Tr(D^{tensor n} X)/d^n
+
+is the positive normalized Markov trace. This specialization thus retains
+genuine operator positivity; it does not make both crossing directions
+positive. In this explicit basis B_i is entrywise nonnegative for r>=1,
+whereas its inverse has the negative entry r^{-1}-r^3 when r>1.
+
+Writing P_i=e_i/d, one has the exact factorization
+
+  B_i=r (I-2P_i) exp(-4 log(r) P_i).
+
+A crossing is a reflection multiplied by imaginary-time attenuation. The sign
+on the projected channel is essential to its reversible braid behavior.
+
+2. EVEN A CHANGE OF POSITIVE CONE DOES NOT MAKE BOTH DIRECTIONS POSITIVE
+
+A proper cone is closed, convex, pointed, and spanning in a finite-dimensional
+real vector space. A linear map preserving such a cone must have its positive
+spectral radius as an eigenvalue (the cone form of Perron--Frobenius).
+
+For r>1, B_i has eigenvalues r and -r^{-3}. Its inverse has eigenvalues r^{-1}
+and -r^3. The inverse's unique largest eigenvalue modulus is r^3, but +r^3 is
+not an eigenvalue. Therefore B_i^{-1} cannot preserve any proper cone on a
+space carrying just these two spectral channels. Choosing an overall negative
+scalar fixes the inverse's spectral-radius sign but makes B_i itself have a
+negative eigenvalue of strictly largest modulus. Thus no real scalar gauge,
+including a writhe scalar, makes BOTH B_i and B_i^{-1} preserve a proper cone.
+The r<1 case exchanges the roles of the two directions. The r=1 degeneration
+is excluded and is consistent with V_K(1)=1 for every knot.
+
+In particular, there is no common basis making a crossing and its inverse
+entrywise nonnegative. This is a representation-level assertion. Adding extra
+spectral channels is not ruled out by this paragraph alone; the next argument
+handles finite classical auxiliary states under explicit assumptions.
+
+3. FINITE REVERSIBLE NONNEGATIVE LOCAL MODELS FAIL EVEN ON KNOT CLOSURES
+
+Precise model assumptions, at one fixed q in (0,1):
+
+* There is a fixed finite state space of dimension D for three-strand tangles.
+* Positive crossings have matrices G_1,G_2 with nonnegative real entries;
+  negative crossings have nonnegative matrices G_1^{-1},G_2^{-1}.
+  These are full inverses on that state space. This is tensor-level RII,
+  not merely equality after projection or after one particular closure.
+* The same closing contraction is used for every three-braid. The only
+  diagram normalization is allowed to depend on strand number and exponent
+  sum. In particular, equal matrices with equal exponent sum give equal
+  claimed knot polynomials.
+
+Then this model cannot reproduce the Jones polynomial on all knot closures.
+
+Proof. A nonnegative matrix with nonnegative inverse is monomial: it maps the
+extreme rays of the positive orthant bijectively, so it is a permutation times
+a positive diagonal matrix. This classical result is also proved in Ding--Rhee.
+Choose an even m divisible by the orders of the permutation parts of G_1,G_2;
+for example m=2D! suffices. Then G_1^m and G_2^m are diagonal and commute.
+Consequently the two words
+
+  beta_+=sigma_1^m sigma_2^m sigma_1 sigma_2,
+  beta_-=sigma_2^m sigma_1^m sigma_1 sigma_2
+
+have the same model matrix and the same exponent sum 2m+2. Because m is even,
+their permutations are both the three-cycle sigma_1 sigma_2, so both closures
+are knots. Nevertheless their actual Jones polynomials satisfy
+
+ V_+(q)-V_-(q)
+   = -q^(m+2) (1+q+q^2) (sum_(j=0)^(m-1) (-q)^j)^2.          (2)
+
+For every q>0, q!=1 and even m this is nonzero. This is the contradiction.
+In fact the same pair also disproves the model if arbitrary equal-matrix
+closure contractions are allowed; positivity of the closure contraction was
+not used.
+
+Derivation of (2), entirely inside TL_3. Let z=-r^{-4}=-q and
+
+  c=(z^m-1)/d=-r^{-2} sum_(j=0)^(m-1) z^j.
+
+Functional calculus for the two eigenvalues gives B_i^m=r^m(I+c e_i). Hence
+
+  B_1^m B_2^m-B_2^m B_1^m=r^(2m)c^2(e_1e_2-e_2e_1).
+
+For normalized tau_3,
+
+  tau(e_1e_2)=d^{-2},
+  tau((e_1e_2-e_2e_1)I)=0,
+  tau((e_1e_2-e_2e_1)e_i)=0,
+  tau((e_1e_2-e_2e_1)e_1e_2)=d^{-2}-1.
+
+The last identity uses e_1e_2e_1e_2=e_1e_2 and
+e_2e_1^2e_2=d e_2. Since
+B_1B_2=r^2 I-e_1-e_2+r^{-2}e_1e_2,
+
+  tau(B_beta+ - B_beta-)=r^(2m-2)c^2(d^{-2}-1).
+
+Multiply by the factor d^2 r^{-3(2m+2)} from (1), substitute c, and use
+1-d^2=-(q^{-1}+1+q). This gives exactly (2).
+
+Independent verification: the preexisting exact diagrammatic TL engine,
+which uses planar matching composition rather than this matrix calculation,
+verified (2) for m=2,4,6,8,10,12. Results are in physics_check.json. At m=2,
+the polynomial difference is the familiar difference between 5_1 and the
+connected sum of two trefoils:
+
+  V_51-(q+q^3-q^4)^2=-q^4(1+q+q^2)(1-q)^2.
+
+This last identification is not required for the proof: the explicit braid
+words, their permutations, and the exact nonzero difference suffice.
+
+4. DOES A PROJECTED PHYSICAL SUBSPACE EVADE THE OBSTRUCTION?
+
+It can evade the full-inverse premise, but a POSITIVE finite classical retract
+still fails under natural invariance assumptions.
+
+Let P be a nonnegative idempotent, W=im(P), and let nonnegative crossing maps
+preserve W and be mutually inverse there. Then
+
+  C=P(R_{>=0}^D)=W intersect R_{>=0}^D
+
+is a closed pointed spanning polyhedral cone in W. The equality follows because
+P is positive and fixes every element of W. The crossing maps are cone
+automorphisms of C. They permute its finitely many extreme rays. Some common
+even power fixes every ray. Choosing a basis of W from independent extreme
+rays makes both such powers diagonal, hence commuting on W. Therefore the
+same braid-pair contradiction applies whenever all physical closure data
+factor through W. This argument allows extra physical channels and does not
+assume W is exactly the fundamental Jones representation.
+
+More generally, the argument applies to any finite-dimensional pointed
+polyhedral physical cone preserved reversibly by both generators. Its
+automorphism group is virtually diagonal in the sense used above.
+
+What genuinely escapes this theorem:
+
+(a) A nonpositive projection or a quotient on which the image of the classical
+    positive cone is not pointed/spanning. This reintroduces cancellation into
+    the physical-state extraction; its positivity cannot then be used without
+    a separate argument.
+(b) A different quantum representation on density operators. Conjugation
+    X -> B X B* and its inverse preserve the positive-semidefinite cone, which
+    is not polyhedral. This is not the original amplitude representation:
+    B and -B give the same map. Recovering coherent Jones amplitudes requires
+    additional interference information, so channel positivity alone is not
+    an unknot-detection argument.
+(c) Infinitely many geometric states, or projections depending on the whole
+    diagram. The permutation-order argument no longer applies. Such a model
+    would need a new topological theorem relating its nonlocal positive
+    quantity to ordinary Jones=1. No such theorem is established here.
+
+5. A CONSTRUCTIVE CONTROL CASE: WHY ONE-SIGN BRAIDS DO WORK
+
+For d>2, the positive Markov trace satisfies |tau(X)|<=||X||. Since B_i is
+self-adjoint with eigenvalues r,-r^{-3}, ||B_i||=r. If beta is a positive
+n-braid of length p whose closure is a knot, (1) gives
+
+  |V(q)| <= d^(n-1) r^{-2p}
+          = q^((p-n+1)/2)(1+q)^(n-1),       0<q<1.
+
+If p>n-1, the right side tends to zero as q tends to zero, contradicting V=1.
+If p=n-1, every generator must occur once: omitting sigma_i would disconnect
+the braid permutation across that cut, whereas a knot closure has one cycle.
+An outermost generator occurring once can be cyclically moved to the end and
+Markov-destabilized; induction gives the unknot. Thus this operator-norm
+argument proves Jones detection for positive braid knots, a known restricted
+result, without a fictitious positivity assumption for inverse crossings.
+
+With p positive and b negative crossings, ||B_i^{-1}||=r^3 instead gives
+
+  |V(q)| <= q^((p-3b-n+1)/2)(1+q)^(n-1).
+
+Therefore V=1 requires p-3b<=n-1; applying the mirror argument also requires
+b-3p<=n-1. These are elementary necessary inequalities, not generic detection.
+They pinpoint the defect in extending the one-sign proof: inverse crossings
+expand precisely the spectral channel that forward crossings attenuate.
+
+6. STRATEGIC CONSEQUENCE AND THE EARLIEST TEST OF A NONLOCAL ESCAPE
+
+A generic proof cannot obtain its crucial positivity merely by changing local
+bases, appending finitely many classical auxiliary labels, or positively
+projecting onto a finite physical sector. Reversibility forces the finite
+classical cone to forget noncommuting powers that Jones actually distinguishes.
+
+A spanning-disk-state proposal is a logically different possibility: use actual
+isotopy classes of disks/arcs as an infinite set of positive states. Braid
+actions can then be genuine nonperiodic permutations, so Section 3 does not
+apply. But to be useful it must specify, before assuming unknottedness, a
+Jones-determined quantity that forces existence of an embedded spanning disk.
+An algebraic intersection number or a single vacuum overlap is not that
+quantity. The earliest kill test is to state exactly where the required
+positive projection is computed: if it is a fixed finite positive retract,
+Section 4 rules it out; if it uses a spanning disk already, it assumes the
+desired conclusion; if it needs all matrix elements/cables, it uses more than
+the ordinary Jones polynomial. No candidate passing these tests emerged here.
+
+PRIMARY SOURCES
+
+Louis H. Kauffman, Quantum Computing and the Jones Polynomial, Sections 3--6,
+for the projector/TL representation and the distinction between amplitudes
+and measured probabilities:
+https://arxiv.org/abs/math/0105255
+https://userpages.cs.umbc.edu/lomonaco/ams/specialpapers/kauffman/Kauffman.pdf
+
+Jiu Ding and N. H. Rhee, When a Matrix and Its Inverse Are Nonnegative,
+Missouri Journal of Mathematical Sciences 26 (2014), 98--103, for the
+nonnegative-inverse characterization (also proved above via extreme rays):
+https://aquila.usm.edu/fac_pubs/19923/
+
+All uses of external facts are explicit above. The braid difference, the
+physical-cone extension, and the norm-bound derivations were checked directly
+in this pass; none is claimed as a new published theorem.

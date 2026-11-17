@@ -1,0 +1,161 @@
+GENERIC KHOVANOV SCAFFOLD: BOUNDED CANCELLATION, THEN CONNECTED-SUM AMPLIFICATION
+Status: complete CONDITIONAL inference chains, not a proof of Jones detection.
+No novelty claim. The sole proposed global geometric bound is unproved.
+
+1. CONVENTIONS AND THE SIMPLEST COMPLETE CHAIN
+
+Use normalized V_U(t)=1 and reduced even Khovanov homology over Q, with
+Kh_red(U)=Q in bidegree (i,j)=(0,0). Its Euler polynomial is V_K(q^2).
+Write r(K)=dim_Q Kh_red(K).
+
+Proposed bridge R: for every realized Jones polynomial P, there is a finite
+number B(P) such that r(K)<=B(P) for ALL classical knots with V_K=P.
+No effective formula for B is required.
+
+For based connected sums the normalized reduced chain complexes tensor over
+Q. This follows directly from the state complexes: the two basepoint circles
+are merged, their X-labelled reduced factors are replaced by one X-labelled
+factor, and the reduced quantum normalization exactly removes the resulting
+shift. The cube differential is the tensor differential. The field Kunneth
+theorem therefore gives a bigraded isomorphism
+
+  Kh_red(K#L;Q) = Kh_red(K;Q) tensor_Q Kh_red(L;Q).
+
+Consequently r(#^m K)=r(K)^m, with no grading shift. Jones multiplicativity
+gives V_(#^m K)=1 whenever V_K=1. Bridge R then implies
+
+  r(K)^m <= B(1) for every m; hence r(K)=1; hence K=U.
+
+The final implication is Kronheimer--Mrowka's theorem. Their Proposition1.2
+uses reduced Kh of the mirror as the source of a spectral sequence; this
+does not affect rank. Corollary1.3 and Proposition1.4 identify the relevant
+rational rank lower bound with KHI. KHI has rank>1 for a nontrivial knot.
+Thus rational rank1 is enough; no unsupported conversion from rational
+rank1 to integral torsion-freeness is being used.
+
+Primary source: Kronheimer--Mrowka, Khovanov homology is an unknot-detector,
+https://people.math.harvard.edu/~kronheim/khovanov-unknot.pdf
+https://doi.org/10.1007/s10240-010-0030-y
+
+2. ALTERNATIVE BRIDGE: BOUNDED QUANTUM DIAMETER
+
+Let h(K)=max{j:Kh_red^{i,j}!=0}-min{j:Kh_red^{i,j}!=0}.
+Let w(K)=diam_q V_K(q^2)=2 span_t V_K(t).
+
+Proposed bridge W: h(K)<=F(w(K)) for a finite-valued function F.
+A weaker sufficient global formulation is: h is bounded on every exact
+Jones-polynomial fiber, with bound H(P). An affine C*w+B bound suffices;
+there is no need to prove F(0)=0 separately.
+
+The same Kunneth isomorphism gives h(#^m K)=m h(K): the extreme tensor
+classes are nonzero over Q. If V_K=1, m h(K)<=F(0) for all m, so h(K)=0.
+
+RIGOROUS ENDPOINT h(K)=0 => r(K)=1:
+Let the sole reduced quantum grade be j0. For the based Frobenius complex
+with X of quantum degree -2, the standard reduced/unreduced sequence is
+
+  0 -> C_red{-1} -> C_unred -> C_red{+1} -> 0.
+
+Its connecting maps compare reduced groups separated by quantum degree2.
+They vanish when h=0. Unreduced Kh is supported only in j0-1,j0+1, and its
+total rank is 2r(K). The rational unreduced Lee spectral sequence has
+differentials of bidegree (1,4s), s>=1, and rank2 limiting homology for a
+knot. Its differentials must vanish on these two quantum levels, which are
+only2 apart. Thus 2r(K)=2. Apply KM as above.
+
+This avoids an unverified convention for a 'reduced Lee differential'.
+Primary Lee source: https://arxiv.org/abs/math/0210213
+https://doi.org/10.1016/j.aim.2004.10.015
+The (1,4s) spectral-sequence grading is also in Rasmussen,
+https://arxiv.org/abs/math/0402131 .
+
+The exact sequence also gives, for every knot,
+  maxq Kh_unred = maxq Kh_red +1,
+  minq Kh_unred = minq Kh_red -1.
+At either extreme the other shifted reduced term vanishes. Hence the
+unreduced quantum diameter is h(K)+2; no global splitting is asserted.
+
+3. WHAT HAS AND HAS NOT BEEN GAINED
+
+Both chains are genuinely generic: neither needs a reduction to unknotting
+number1, strong inversion, a special tangle, or a Brunnian-braid family.
+Both require only finite boundedness, not coefficientwise positivity and
+not recovery of the full homology from Jones.
+
+However, boundedness on the UNIT fiber alone is equivalent to Jones unknot
+detection by these arguments. It is not an independently established
+weakening. The broader all-fiber or all-span assertions are stronger,
+independently testable geometric hypotheses. They presently have no proof
+in this investigation. The complete chain isolates a bottleneck; it does
+not solve it or establish its plausibility by itself.
+
+Rank control and quantum-diameter control measure different failures of
+Euler cancellation. Formally neither implies the other: large multiplicity
+can sit in bounded grades, and a few generators can be arbitrarily far
+apart. The rank version is the shorter route; the width version gives a
+more specific geometric target for controlling the location of invisible
+classes.
+
+4. ACTUAL-KNOT KILL TESTS
+
+(a) Same Jones does NOT determine Kh, and extreme cancellation is real.
+Bar-Natan's original tables give a common Jones polynomial for 5_1 and
+10_132 (in the chosen chirality):
+  -t^-7+t^-6-t^-5+t^-4+t^-2.
+Its q-diameter is10. Unreduced Kh for 5_1 has q-range[-15,-3], and that
+for 10_132 has q-range[-15,-1]. Thus h(5_1)=10, h(10_132)=12. In particular
+the tempting sharp bound h<=w is FALSE, even though a finite F is not
+refuted. The unreduced ranks are6 and12, respectively.
+Primary source, printed p16 / PDF p15, examples21--23:
+https://www.math.toronto.edu/~drorbn/papers/Categorification/Categorification.pdf
+
+(b) Standard infinite fixed-Jones families do not immediately refute either
+boundedness bridge. Watson Theorem5.1 gives identical full bigraded Kh in
+his simple-tangle twist families. Lobb Theorems1.2 and3.2 give identical
+reduced/unreduced Khovanov--Rozansky homology in the corresponding fixed-sum,
+fixed-parity Kanenobu/generalized ribbon families.
+https://personal.math.ubc.ca/~liam/files/identical.pdf
+https://maths.dur.ac.uk/users/andrew.lobb/kbu.pdf
+
+(c) Moore--Starkston's genus-two mutation families illustrate an important
+false test. Their Theorem12 (n>=8) has unreduced rank26, minimal q=-1 and
+maximal q=2n+11. Both extreme coefficients survive in the Jones polynomial.
+Thus h=2n+10 and w=2n+10. The Jones polynomials agree within each mutant
+PAIR, not across all n. These examples have unbounded grading spread at
+fixed Kh rank and bounded Jones coefficient l1-norm, but NOT fixed Jones
+span. They kill a diameter bound based only on the coefficient l1-norm;
+they do not kill W or R.
+Primary: https://arxiv.org/pdf/1204.2524 , Theorem12 and Corollary13.
+
+(d) Concrete early kill test for the scaffold: Watson's Section7.3 asks
+about replacing the simple tangles in his Jones-preserving twist operation
+by NON-SIMPLE tangles. Iteration still preserves Jones, but the proven
+full-homology constancy theorem no longer applies. Establishing unbounded
+rational reduced Kh rank or quantum diameter along one such exact-Jones
+family would refute the corresponding global bridge away from the unit
+fiber. This is a sharper next test than enumerating unrelated small knots.
+
+A targeted primary-source search during this pass found no established
+fixed-Jones family with unbounded rational Kh rank or quantum diameter.
+This reports the bounded search only; it is not a literature-wide claim
+that no such family is known.
+
+5. WHY THE PREVIOUS FORMAL TANGLE MODEL DOES NOT PROVE THE BRIDGE
+
+The earlier formal D model (rational arc plus four shifted special curves)
+has an Euler-one closure of rank17 and positive quantum width. The tested
+integral type-D/A-infinity extensions and unreduced Lee local algebra do
+not prevent its invisible summands. No classical tangle realizing D has
+been constructed. Any proof of R or W must exploit actual geometric
+realizability beyond those objectwise algebraic constraints. Merely
+renaming the Euler characteristic a positive index does not supply it.
+
+6. STRATEGIC VERDICT
+
+This is a complete conditional route to the full theorem, with a single
+clearly stated unproved geometric input. Prefer the rank version for the
+shortest logical scaffold; retain the width version as a more concrete
+support-control target. The next meaningful move is to prove boundedness
+in a structurally broad Jones-preserving operation or to find a single
+fixed-polynomial family with unbounded homology. More finite tables cannot
+establish the required bound.

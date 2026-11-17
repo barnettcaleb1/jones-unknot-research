@@ -1,0 +1,282 @@
+[
+  {
+    "k": 1,
+    "torus_knot": [
+      3,
+      4
+    ],
+    "reduced_Q_rank": 5,
+    "Jones_q_exponents": {
+      "6": 1,
+      "10": 1,
+      "16": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 2,
+    "torus_knot": [
+      3,
+      7
+    ],
+    "reduced_Q_rank": 9,
+    "Jones_q_exponents": {
+      "12": 1,
+      "16": 1,
+      "28": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 3,
+    "torus_knot": [
+      3,
+      10
+    ],
+    "reduced_Q_rank": 13,
+    "Jones_q_exponents": {
+      "18": 1,
+      "22": 1,
+      "40": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 4,
+    "torus_knot": [
+      3,
+      13
+    ],
+    "reduced_Q_rank": 17,
+    "Jones_q_exponents": {
+      "24": 1,
+      "28": 1,
+      "52": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 5,
+    "torus_knot": [
+      3,
+      16
+    ],
+    "reduced_Q_rank": 21,
+    "Jones_q_exponents": {
+      "30": 1,
+      "34": 1,
+      "64": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 6,
+    "torus_knot": [
+      3,
+      19
+    ],
+    "reduced_Q_rank": 25,
+    "Jones_q_exponents": {
+      "36": 1,
+      "40": 1,
+      "76": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 7,
+    "torus_knot": [
+      3,
+      22
+    ],
+    "reduced_Q_rank": 29,
+    "Jones_q_exponents": {
+      "42": 1,
+      "46": 1,
+      "88": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 8,
+    "torus_knot": [
+      3,
+      25
+    ],
+    "reduced_Q_rank": 33,
+    "Jones_q_exponents": {
+      "48": 1,
+      "52": 1,
+      "100": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 9,
+    "torus_knot": [
+      3,
+      28
+    ],
+    "reduced_Q_rank": 37,
+    "Jones_q_exponents": {
+      "54": 1,
+      "58": 1,
+      "112": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 10,
+    "torus_knot": [
+      3,
+      31
+    ],
+    "reduced_Q_rank": 41,
+    "Jones_q_exponents": {
+      "60": 1,
+      "64": 1,
+      "124": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 11,
+    "torus_knot": [
+      3,
+      34
+    ],
+    "reduced_Q_rank": 45,
+    "Jones_q_exponents": {
+      "66": 1,
+      "70": 1,
+      "136": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 12,
+    "torus_knot": [
+      3,
+      37
+    ],
+    "reduced_Q_rank": 49,
+    "Jones_q_exponents": {
+      "72": 1,
+      "76": 1,
+      "148": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 13,
+    "torus_knot": [
+      3,
+      40
+    ],
+    "reduced_Q_rank": 53,
+    "Jones_q_exponents": {
+      "78": 1,
+      "82": 1,
+      "160": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 14,
+    "torus_knot": [
+      3,
+      43
+    ],
+    "reduced_Q_rank": 57,
+    "Jones_q_exponents": {
+      "84": 1,
+      "88": 1,
+      "172": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 15,
+    "torus_knot": [
+      3,
+      46
+    ],
+    "reduced_Q_rank": 61,
+    "Jones_q_exponents": {
+      "90": 1,
+      "94": 1,
+      "184": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 16,
+    "torus_knot": [
+      3,
+      49
+    ],
+    "reduced_Q_rank": 65,
+    "Jones_q_exponents": {
+      "96": 1,
+      "100": 1,
+      "196": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 17,
+    "torus_knot": [
+      3,
+      52
+    ],
+    "reduced_Q_rank": 69,
+    "Jones_q_exponents": {
+      "102": 1,
+      "106": 1,
+      "208": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 18,
+    "torus_knot": [
+      3,
+      55
+    ],
+    "reduced_Q_rank": 73,
+    "Jones_q_exponents": {
+      "108": 1,
+      "112": 1,
+      "220": -1
+    },
+    "determinant": 1
+  },
+  {
+    "k": 19,
+    "torus_knot": [
+      3,
+      58
+    ],
+    "reduced_Q_rank": 77,
+    "Jones_q_exponents": {
+      "114": 1,
+      "118": 1,
+      "232": -1
+    },
+    "determinant": 3
+  },
+  {
+    "k": 20,
+    "torus_knot": [
+      3,
+      61
+    ],
+    "reduced_Q_rank": 81,
+    "Jones_q_exponents": {
+      "120": 1,
+      "124": 1,
+      "244": -1
+    },
+    "determinant": 1
+  }
+]

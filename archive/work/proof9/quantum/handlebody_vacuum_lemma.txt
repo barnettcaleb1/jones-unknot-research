@@ -1,0 +1,186 @@
+HANDLEBODY VACUUM SATURATION: A PRECISE SUFFICIENT LEMMA
+2026-10-31. Research audit, not a Jones unknot-detection proof.
+No novelty claim; the argument combines standard skein and 3-manifold facts.
+
+RESULT.
+Let H be an oriented handlebody, Sigma=boundary(H), and f an
+orientation-preserving mapping class of Sigma. At SU(2) BHMV level
+r-2, write v_r=Z_r(H) for the nonzero vacuum and rho_r(f) for the
+projective mapping-class action. Then the following are equivalent:
+
+ (i) f extends to a homeomorphism of H;
+ (ii) rho_r(f) preserves the line C v_r at every level;
+ (iii) rho_r(f) preserves that line at infinitely many unbounded levels.
+
+At the standard unitary specializations these are also equivalent to
+ |<v_r,rho_r(f)v_r>| = ||v_r||^2
+at infinitely many unbounded levels. Projective phases do not matter.
+The conclusion concerns a boundary map of a handlebody. No assertion
+about equivariant extension over a branched cover or the Hilden subgroup
+is made here.
+
+KEY DISK-DETECTION LEMMA.
+For a simple curve gamma on boundary(H), with its surface framing,
+let s_gamma=[gamma]-delta*empty in the integral Kauffman bracket skein
+module S(H), where delta=-A^2-A^-2. If the quantum images of s_gamma
+vanish at infinitely many unbounded levels, then gamma bounds a disk
+in H (a boundary-parallel disk is permitted if gamma is inessential).
+
+Proof, including the passage between levels.
+
+1. Choose a fixed trivalent spine of H. Over C(A), express the fixed
+skein s_gamma as a finite linear combination of admissibly colored
+spine graphs, with rational-function coefficients c_lambda(A).
+This expansion is independent of the root of unity. It can be obtained
+by finitely many Jones--Wenzl fusion and recoupling operations on the
+fixed diagram; only finitely many labels and denominators occur.
+
+2. Once r exceeds all the finitely many labels and half-sums of labels
+at vertices, every graph in this expansion is r-admissible. Its quantum
+image belongs to the BHMV colored-spine basis, so these images remain
+linearly independent. The finitely many denominators are nonzero at
+all but finitely many distinct specializations A_r. Thus quantum
+vanishing at infinitely many r forces c_lambda(A_r)=0 infinitely often
+for each lambda, hence c_lambda(A) is identically zero.
+
+This is a finite-dimensional argument inside one fixed finite span;
+it does not identify the full vector spaces at different levels or
+assume their dimensions remain fixed. It works for any compatible
+infinite sequence of distinct standard roots A_r, regardless of whether
+their accumulation point is +1, -1, or another point.
+
+3. The integral handlebody skein module is free over C[A,A^-1]: realize
+H as the product of an interval with a planar surface, and use its
+essential crossingless multicurves as basis. It is therefore torsion
+free. The generic equality s_gamma=0 consequently holds integrally,
+and can be specialized at A=-1. No denominator is specialized at -1.
+
+4. At A=-1, every representation eta:pi_1(H)->SL_2(C) evaluates a
+skein loop gamma to -tr(eta(gamma)), and delta to -2. This follows
+directly from the SL_2 trace relation and does not require asserting
+that an arbitrary skein algebra has zero nilradical. Our equality
+implies tr(eta(gamma))=2 for every eta.
+
+5. pi_1(H) is a finitely generated free group. Choose a faithful
+Schottky representation into PSL_2(C), and lift its free generators
+to SL_2(C). Every nonidentity word is loxodromic, hence has trace
+different from +2 and -2 in any lift. Therefore gamma represents the
+identity in pi_1(H). Dehn's lemma gives a properly embedded disk
+bounded by the simple boundary curve gamma. This proves the lemma.
+
+MAIN PROOF.
+
+The implications (i)=>(ii)=>(iii) follow from TQFT functoriality.
+For the converse, choose disjoint boundaries a_1,...,a_g of a complete
+disk system in H. Let C_r(a) be the boundary curve operator, obtained
+by placing the surface-framed curve in a boundary collar.
+
+For each disk boundary, C_r(a_i)v_r=delta_r*v_r. The surface framing
+agrees with the zero disk framing: a parallel boundary copy bounds
+a parallel disjoint disk. Naturality gives
+ C_r(f(a_i)) = rho_r(f) C_r(a_i) rho_r(f)^(-1).
+If rho_r(f)v_r=c_r*v_r, this identity implies
+ C_r(f(a_i))v_r=delta_r*v_r.
+Thus [f(a_i)]-delta*empty has zero quantum image at all the infinitely
+many specified levels. The disk-detection lemma makes each f(a_i)
+a disk boundary in H.
+
+These disjoint boundary curves bound disks with disjoint interiors,
+by the usual innermost-circle surgery. They form a complete disk
+system: their boundary complement is connected with the same cut
+surface as the original complete system. Cutting H along the two
+disk systems reduces the extension problem to a homeomorphism of a
+sphere; this extends over the resulting 3-ball, and gluing the disks
+back produces an extension of f. This proves (iii)=>(i).
+
+At a unitary level, Cauchy--Schwarz gives
+ |<v_r,rho_r(f)v_r>| <= ||v_r||^2,
+with equality exactly when rho_r(f)v_r is a phase multiple of v_r.
+That proves the saturation formulation without choosing the phase.
+
+In fact a nonextending f fails to preserve the vacuum at every
+sufficiently large level, not merely at some level: one failed disk
+boundary gives a fixed nonzero rational spine coefficient, which has
+only finitely many root-of-unity zeros or poles. Consequently the
+unitary overlap inequality is eventually strict for nonextending f.
+
+A CLOSED-MANIFOLD COROLLARY.
+For a specified genus-g Heegaard gluing H union_f (-H), if the
+absolute WRT gluing amplitude reaches the double-handlebody value
+at infinitely many unitary levels, f extends over H, and the glued
+manifold is #^g(S^1 x S^2). This is a maximal-value assertion for
+that specified genus, not a claim that ordinary WRT values at the
+S^3 value saturate a higher-genus presentation.
+
+EXACT BASIC TEST.
+For genus one, the modular S transformation sends a meridian to a
+longitude and does not extend across the solid torus. In the
+orthonormal SU(2) basis, vacuum overlap S_00 is
+ sqrt(2/r)*sin(pi/r), strictly smaller than 1 for every r>=3.
+The longitude skein is the nonconstant core variable z, rather than
+delta. At A=-1 a diagonal representation with eigenvalues lambda,
+lambda^-1 gives trace lambda+lambda^-1, which is not constantly 2.
+Conversely a meridional Dehn twist extends and preserves the vacuum
+line. These tests check both directions and the scalar normalization.
+
+WHY THIS DOES NOT PROVE THE JONES CONJECTURE.
+
+For a g-bridge plat and normalized cup state Omega, the ordinary
+Jones evaluation has, up to a framing phase, the form
+ V_K = d^(g-1) <Omega,U_beta Omega>,
+where d=2cos(pi/r)>1 for r>3. Hence V_K=1 gives
+ |<Omega,U_beta Omega>| = d^(1-g),
+and exact leakage into the orthogonal complement is
+ ||(I-|Omega><Omega|) U_beta Omega||^2 = 1-d^(2-2g).
+For g>1 this is positive. The corresponding reflection Gram determinant
+of Omega and U_beta Omega is also 1-d^(2-2g), not zero. Increasing
+the number of levels never converts this interior value into equality.
+
+Moreover the ordinary Jones representation of a punctured sphere
+with all labels fixed at 1 is not the full TQFT space of a handlebody
+boundary. At a classical specialization the fixed-label representation
+can forget pure braiding; one cannot import the free-group character
+argument into it. Passing to a branched cover or allowing arbitrary
+colors adds data not supplied by the ordinary Jones polynomial.
+
+The lemma precisely identifies a sufficient additional input:
+projective vacuum preservation, or maximal reflected overlap, in the
+full handlebody theories. Deriving that premise from V_K=1 remains
+unproved. The present result is a valid endpoint for such a future
+bridge, not evidence that the bridge itself holds.
+
+PRIMARY REFERENCES AND THEIR ROLES.
+
+Freedman--Walker--Wang, Quantum SU(2) faithfully detects mapping class
+groups modulo center, Geometry & Topology6(2002),523--539.
+https://arxiv.org/html/math/0209150
+Fact2.6 supplies the colored-spine basis; proof of Proposition3.1
+explicitly gives curve-operator covariance and the disk-boundary
+eigenvalue. Their paper proves a different, related asymptotic
+faithfulness theorem; the result above is derived here, not quoted
+as their stated theorem.
+
+Bullock, Rings of SL_2(C)-characters and the Kauffman bracket skein
+module, Comment.Math.Helv.72(1997),521--542.
+https://arxiv.org/abs/q-alg/9604014
+Provides the A=-1 relation with trace functions. Only the elementary
+evaluation map is needed here, not its injectivity.
+
+Kuperberg, How Hard Is It to Approximate the Jones Polynomial?,
+Theory of Computing11(2015),183--219, Theorem1.1.
+https://theoryofcomputing.org/articles/v011a006/v011a006.pdf
+States the plat return probability with the bridge-number factor.
+
+Hovland, Bridge Positions and Plat Presentations of Links,
+arXiv:2410.22556v2 (2026; accepted JKTR).
+https://arxiv.org/abs/2410.22556
+Identifies bridge isotopy with Hilden double cosets and gives uniqueness
+for each bridge number of the unknot. This supplies geometric context;
+we do not prove the equivariant extension needed to connect our
+handlebody statement to a Hilden-subgroup statement.
+
+PRIORITY AUDIT.
+A targeted search found references proving invariance of the vacuum
+under the handlebody group and general asymptotic faithfulness, but
+did not locate this exact converse in the allotted pass. This is not
+a claim that the converse is new.

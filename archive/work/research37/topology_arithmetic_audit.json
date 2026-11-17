@@ -1,0 +1,83 @@
+{
+  "actual_partials": [
+    {
+      "active": [
+        false,
+        true
+      ],
+      "c": 144,
+      "e": -576,
+      "ordinary_jets_at_1": [
+        0,
+        0,
+        0,
+        -288,
+        6336
+      ]
+    },
+    {
+      "active": [
+        true,
+        false
+      ],
+      "c": 144,
+      "e": -720,
+      "ordinary_jets_at_1": [
+        0,
+        0,
+        -96,
+        1728,
+        -39840
+      ]
+    }
+  ],
+  "actual_k_star": "-1/4",
+  "formal_not_geometric": {
+    "Q": {
+      "11": -18,
+      "9": 18,
+      "7": -18,
+      "5": 36,
+      "3": -18,
+      "1": 18,
+      "-1": -18
+    },
+    "S1": {
+      "1": 35,
+      "-1": -19,
+      "7": -18,
+      "5": 18,
+      "3": -18,
+      "-3": 18,
+      "-5": -18
+    },
+    "S2": {
+      "1": 17,
+      "-1": -19,
+      "11": -18,
+      "9": 18,
+      "7": -18,
+      "5": 36,
+      "3": -18
+    },
+    "c_values": [
+      144,
+      144
+    ],
+    "e_values": [
+      144,
+      720
+    ],
+    "orders": [
+      2,
+      2
+    ],
+    "leading_coefficients": [
+      -432,
+      -432
+    ],
+    "k_star": "1",
+    "full_numerator_at_1_minus1": {},
+    "scope": "Only formal Laurent partial data; no actual link or band realization claimed."
+  }
+}

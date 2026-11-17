@@ -1,0 +1,101 @@
+INDEPENDENT AUDIT OF CONDITIONAL ADJACENCY AMPLIFICATION
+31 October 2026. Braid/geometry track. No novelty claim.
+
+Verdict: the theorem in adjacency_amplification.txt passes, conditional on
+the previously established actual preferred-flat-core/u=1 equivalence.
+In particular the result is NOT a conversion of an arbitrary Jones-one
+knot to the unknotting-number-one sector.
+
+The construction starts from an actual nontrivial (n+1)-adjacent knot,
+not an abstract Brunnian link with unmarked slopes. Its reverse crossing
+arcs over U lift to a componentwise strongly inverted Brunnian link
+B=C union D1 union ... union Dn. Every original surgery coefficient is
++/-1/2, and the full original surgery has cover Sigma2(K_seed) != S3.
+The latter inequality follows from the Smith theorem and the genuine
+nontriviality of K_seed.
+
+SIMPLER ESSENTIALITY ARGUMENT FOR THIS CHOSEN SEED
+
+Perform the prescribed surgeries on D1,...,D(n-1), retaining C and Dn,
+whose new image is P. Each of C and P is an unknot, since the sublink
+consisting of that component and the operated components was proper in
+B, hence an unlink. Their linking number remains zero, because all
+original pairwise linkings vanish. The ambient manifold is S3.
+
+The pair C union P is NOT the unlink. If it were, completing the two
+remaining prescribed surgeries beta_C and beta_P would give S3: their
+numerators are +/-1 and both components would be unknotted and split.
+But surgery order does not matter, and this complete surgery is precisely
+Sigma2(K_seed), known not to be S3. This contradiction proves that P is
+an essential winding-zero pattern in E(C).
+
+This argument is sufficient here and avoids extending a reducing-filling
+theorem to an arbitrary number of boundary tori. The stronger all-r
+reducing-filling lemma in the main note is not needed for amplification.
+
+Insert the hypothetical nontrivial flat strongly inverted J at C using
+the preferred untwisted gluing. The surgeries on D1,...,D(n-1) commute
+with infection. The old zero-linking conditions ensure that no longitude
+correction occurs. Their final remaining knot is exactly P(J), whose
+companion torus is incompressible because both the pattern and J are
+nontrivial in the required sense. Thus P(J) is not the unknot.
+
+Its last surgery coefficient remains beta_P=+/-1/2. The knot-complement
+surgery theorem of Gordon--Luecke implies that this nonmeridional surgery
+on nontrivial P(J) cannot produce S3. Therefore the complete infected
+surgery is not S3. This proves full-surgery nontriviality directly and
+also avoids a separate appeal to the self-adjacency classification.
+
+Alternatively, the main note's application of Lidman--Moore Proposition
+3.1 is valid: every proper sublink of the infected link is an unlink,
+all pairwise linking numbers are zero, and a hypothetical S3 result for
+the full surgery would make an S3 self-adjacency. Proposition3.1 would
+force the whole link to be an unlink, contradicted by P(J). The precise
+statement was independently read in the primary paper, Section3:
+https://arxiv.org/html/2308.06211#S3
+
+ACTUAL CROSSING CHANGES, NOT JUST DISTANCE-TWO SLOPES
+
+The original (n+1) disjoint crossing neighborhoods have fixed markings.
+Infection changes only C's quotient ball. All n other crossing balls,
+their rational tangles, and their replacement tangles remain literally
+unchanged. The boundary gluing uses the original peripheral markings;
+zero pairwise linking gives no surgery correction to the other preferred
+longitudes. Hence all surviving local operations are the original
+ordinary crossing changes, simultaneously, not merely arbitrary
+rational replacements with distance two.
+
+The infected pre-surgery ambient manifold is S3 with an orientation-
+preserving involution having fixed points. Its quotient branch knot is
+an actual unknot by the Smith theorem. Crossing changes preserve the
+component count, so the final branch set is also a knot. A diagram
+containing the n disjoint marked crossing neighborhoods exists by taking
+a projection compatible with those finitely many balls.
+
+Every proper subset of the surgeries is surgery on an actual unlink and
+has cover S3. Thus undoing any nonempty subset of the final n changes
+gives an unknot. The final cover is not S3 by the argument above, so the
+final knot is nontrivial. Its unknotting number is therefore exactly one.
+
+JONES FRAMING AUDIT
+
+The actual flat input is [T_J]=u[Q0], with u a signed A-Laurent unit,
+not an arbitrary rational factor. Applying the meridional unknot cap
+proves this assertion. Skein multilinearity replaces T_J by Q0 while
+multiplying the final bracket by this one fixed unit. With Q0 inserted,
+the final closure is the original seed with only n of its n+1 reverse
+crossing changes made, hence an actual unknot.
+
+Consequently the final Jones polynomial is a signed monomial. For a knot
+its exponents are integral, V(1)=1 removes the sign, and V'(1)=0 removes
+the exponent. Thus it is exactly 1. No equality of diagram writhes is
+assumed, and no colored-Jones promotion is used.
+
+CONCLUSION
+
+An actual u=1 Jones counterexample implies an actual nontrivial n-adjacent
+Jones counterexample for every n>=2 (and n=1 is the original hypothesis).
+Conversely any such example is itself u=1. Therefore existence of a
+counterexample within u=1 is equivalent to existence within each fixed
+n-adjacent class. This does not assert the resulting knots are distinct
+as n varies and does not settle the unrestricted Jones conjecture.

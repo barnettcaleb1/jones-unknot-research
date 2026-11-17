@@ -1,0 +1,141 @@
+PASS 44: INTEGRAL UNITS, LONG KNOTS, AND THE AMBIENT-MANIFOLD GAP
+
+Bounded conceptual audit. No new Jones-unknot proof, counterexample, or
+independently tractable missing lemma was obtained. This route should stop
+in its present form. Its proposed unit-reflection premise is precisely
+the original problem, and ordinary character-variety theorems apply to a
+different ambient manifold.
+
+Duplicate check: work/generic/tangle_notes.md sections1--3 already proves
+the analogous integral two-string unit statement and records Sikora's
+equivalence theorem. Pass39/topology.txt already audits generic versus
+specialized skein modules and their cyclotomic torsion. Those are not new
+mechanisms here. The following rank-one factorization makes the proposed
+long-knot route completely explicit, without invoking higher colors.
+
+1. Exact rank-one computation, with framing retained.
+
+Let R=Z[A,A^-1], delta=-A^2-A^-2. The relative Kauffman bracket skein
+module of a ball with two marked boundary endpoints is R*eta, where eta
+is the straight framed arc. Indeed, resolving all crossings leaves one
+planar arc and contractible circles; deleting the circles spans the
+module by eta. The normalized closure bracket sends eta to1, showing
+linear independence. Stacking makes this algebra exactly R.
+
+A zero-framed long knot K therefore has the image
+
+                    [K]=V_K(A^-4)*eta.
+
+A framing change f multiplies this by (-A^3)^f. The only units of R are
+signed monomials. For an actual normalized knot polynomial V(t), the
+identities V(1)=1 and V'(1)=0 imply
+
+                    V is a Laurent unit  <=>  V=1.
+
+Proof: a unit has the form sign*t^k; evaluation at1 fixes the sign and
+the derivative fixes k=0. If starting in the A-variable, the same proof
+uses the derivative of V(A^-4). Thus retaining integral coefficients
+does avoid the vacuous field statement, but gains no new condition.
+
+Geometric units of the long-knot connected-sum monoid are just U: genus
+is additive, nonnegative, and zero exactly for the unknot. With framings
+allowed, these units are the framed straight arcs. Consequently:
+
+  "the integral (1,1)-tangle skein functor reflects geometric units"
+
+is equivalent to V_K=1 => K=U, with no remaining weaker subproblem.
+The complete proposed chain closes, but only by naming its first step
+as the theorem to be proved.
+
+Sikora's stronger two-string version is independently established in
+Theorem9.2, Section9 of the 2023 revision: Jones detection is equivalent
+to the bracket vector (1,0) detecting the framed zero tangle. The proof
+uses local knot insertion for one direction. Source:
+https://arxiv.org/abs/2005.08162
+https://doi.org/10.4153/S0008414X23000755
+
+2. Exact limitation of integral algebraic postprocessing.
+
+For ANY R-module M and ANY R-linear map Phi:R*eta -> M,
+
+                    Phi([K])=V_K(A^-4)*Phi(eta).
+
+Thus every fixed one-hole skein context, arbitrary coefficient extension,
+completion, localization, or specialization carries an equality [K]=eta
+to the same equality. Algebraic unit tests, divisibility tests and zero
+sets of this element can extract consequences of V, but do not recover
+an omitted geometric coordinate. The assertion is about constructions
+factoring through THIS rank-one module; it does not assert that all
+possible geometric constructions factor through it.
+
+In particular, independently inserted copies of a long knot produce
+powers of V. A parallel cable does not arise by substituting independent
+one-strand boxes; claiming otherwise would reintroduce the already
+excluded colored-promotion assumption.
+
+There is also an actual failure of generic skein injectivity, not just a
+dimension heuristic: the Conway and Kinoshita--Terasaka knots have the
+same Jones polynomial but are distinct. Cutting each at a regular point
+and choosing zero framing gives distinct long knots with identical
+elements of R*eta. Piccirillo's paper recalls mutation preservation of
+Jones and proves Conway is not slice, whereas Kinoshita--Terasaka is
+slice. This disproves full injectivity; it does NOT disprove injectivity
+of the special fiber over eta, which remains the original conjecture.
+
+3. Why the character-variety theorem does not repair this.
+
+Bullock identifies the coordinate ring of the SL2(C) character variety
+of a FIXED ambient manifold M with its A=-1 skein specialization modulo
+the nilradical. For M=B^3 or S^3, that character variety is a point.
+An embedded knot in that ball is not the ambient manifold whose group
+the theorem uses. In particular every zero-framed long knot specializes
+to eta at A=-1, since V_K(1)=1, including the trefoil.
+
+To obtain the knot-group character variety one must instead use
+M=E_K, the exterior of K. Drilling the particular K changes the ambient
+manifold. No R-linear operation on the preceding relative ball module
+implements that change: its entire input has already become a scalar.
+Skein relations among links in a fixed ball do not give corresponding
+linear relations among the coordinate rings of their different exteriors.
+
+Source: Bullock, Comment. Math. Helv.72(1997),521--542, main theorem:
+https://arxiv.org/abs/q-alg/9604014
+https://ems.press/journals/cmh/articles/207
+
+The established endpoint is attractive: the A-polynomial detects U.
+Thus a claimed bridge V_K=1 => A_K is the unknot A-polynomial would
+complete the argument. But, because the endpoint is an equivalence,
+that unrestricted bridge is itself equivalent to ordinary Jones
+detection. No map producing it was found here. The source's conditional
+colored-Jones corollary requires its additional conjecture; it is not
+an unconditional colored-detection theorem.
+
+Source: Dunfield--Garoufalidis, AGT4(2004),1145--1153:
+https://arxiv.org/abs/math/0405353
+
+4. An actual countermodel to the purely ring-theoretic axioms.
+
+The Alexander polynomial is an integral, connected-sum-multiplicative
+invariant with Delta_U=1, Delta(1)=1, Delta'(1)=0 in symmetric
+normalization, and the same signed-monomial Laurent units. Nevertheless
+the nontrivial Conway knot has Delta=1. Its nontriviality is particularly
+decisive because it is not slice. Therefore integrality, multiplicativity,
+Laurent-unit classification and these normalizations, on the actual knot
+monoid, do not by themselves imply geometric unit reflection.
+
+This is NOT a counterexample to Jones detection, and no claim is made
+that Alexander satisfies every Jones-specific skein identity. It is a
+test showing that a proof using only the listed algebraic properties
+has omitted a necessary Jones-specific geometric input.
+
+Primary source: Piccirillo, Ann. Math.191(2020),581--591, introduction
+pp581--582 and Theorem1.1:
+https://annals.math.princeton.edu/wp-content/uploads/annals-v191-n2-p05-s.pdf
+
+Decision. Do not pursue more arithmetic on the already scalar (1,1)
+image as an independent route. A useful new claim would need an explicit
+geometric construction carrying V=1 to a nontrivial statement about the
+EXTERIOR or its peripheral algebra, together with a proof that it does
+not assume the desired unit-reflection property. No such construction
+was obtained in this bounded pass; generic character-variety injectivity
+and integral unit terminology alone do not supply one.

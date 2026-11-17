@@ -1,0 +1,21 @@
+Pass35 extends the pass34 exclusion geometrically, without new band scans.
+
+Proved: For any actual unknot with disjoint marked antiparallel twist balls,
+coherent uniform k-full-twists have determinant |det(I+epsilon*2kB)|, where
+B is the integral symmetric matrix of the lifted smoothing surgery link.
+If determinant1 occurs at infinitely many integer k, B=0. No PSD assumption.
+Common slope sign is essential; mixed signs give DB and can be nilpotent.
+
+For ANY qualifying two-band unknot presentation of LLL(1), cokerB=Z+Z144
+forces B=d vvT, |d|144, trace magnitude at least144. Therefore every nonzero
+coherent equal twist has determinant at least287. Do not search more such
+presentations or larger uniform twists as Jones-one candidates.
+
+Also proved independently via branched-surface signatures: for two oriented
+inverse bands on actualU, partial Jones at x=i equals common±i times Bii.
+RankB1 forbids S1+S2=2delta. Together with the prior two-site skein formula,
+this rules out all Jones-constant linear trajectories twisting BOTH bands
+when the double smoothing has Jonesdelta². It does not rule out individual
+mixed-sign pairs or coordinate trajectories. B0 constructions remain open.
+
+No proof/counterexample to the main Jones unknot conjecture was found.

@@ -1,0 +1,177 @@
+FRESH ADVERSARIAL AUDIT — TOPOLOGICAL REDUCTION AND SIGNED SURGERIES
+1 November 2026
+
+Audited: outputs/jones-rational-tangle-uniqueness-proof.txt, chiefly steps 1–3.
+The original report was not modified. Internal audit labels were not treated
+as evidence. The findings below reconstruct the argument from the hypotheses.
+
+VERDICT
+
+No fatal defect or counterexample found in the audited reduction. The stated
+orientation and boundary-marking hypotheses suffice for the SAME signed
+surgery comparisons. The Casson–Walker formula really does apply in the
+auxiliary integral homology sphere; it is not restricted to S^3. This is a
+positive audit of these steps, not an independent certification of every
+remaining step or of literature novelty.
+
+1. EXACT CONJECTURE SCOPE AND BRACKET EQUALITY
+
+Sikora's Conjecture 2 concerns framed systems with a rational solution and
+claims uniqueness among all solutions. Section 4.1 explicitly requires the
+two rational probes to be unequal as UNFRAMED tangles. Section 4 uses balanced
+Reidemeister isotopy. Thus the report has not silently strengthened the
+distinct-probe assumption. Section 2.1 allows loops in general tangles;
+the display defining framed tangles in Section 4 mentions only two intervals,
+but the report's explicit treatment of loops safely covers the larger scope.
+Theorem 21 gives uniqueness of the bracket vector, not topological uniqueness.
+These are the precise source statements being used:
+[S] https://arxiv.org/html/2005.08162v2
+Conjecture 2; Sections 2.1, 4 and 4.1; Theorem 21 and its proof in Section 8.
+
+There is NO extra global framing or orientation hypothesis narrowing
+Conjecture 2 here. A single framed unknown used in both equations is part of
+the definition of a framed system. Ambient isotopy, including the balanced
+Reidemeister equivalence after forgetting the framing, preserves ambient
+orientation. The report merely states that convention explicitly. Independent
+framing adjustments at the two probes would instead describe a different,
+unframed problem. Common boundary marking is likewise inherent in fixed-end
+tangle equations, not an additional identification of the closed links.
+
+The linear algebra can be checked directly. Write a probe bracket as (a,b)
+and an unknown bracket as (x,y), in the horizontal/vertical basis. With the
+closed bracket normalized to give the unknot value 1, the numerator closure
+is (delta*a+b)x+(a+delta*b)y. For two probes the matrix determinant is
+(delta^2-1)(a_1*b_2-a_2*b_1). The rational-probe determinant is nonzero for
+distinct slopes. Hence the two equalities force [X]=[R] over Q(A), and therefore
+as Laurent-polynomial vectors. All subsequent common rational closures have
+identical brackets.
+
+The normalization warning is correct. In the convention where a single
+circle contributes delta, a nonempty closed bracket has a polynomial factor
+delta. Divide BEFORE substituting A=exp(pi*i/4). The resulting absolute value
+is the link determinant. The identities with Jones evaluation and branched
+cover homology are also recorded in Dasbach–Futer–Kalfagianni–Lin–Stoltzfus,
+"Alternating Sum Formulae for the Determinant and Other Link Invariants,"
+Section 3, printed p. 769:
+https://faculty.cst.temple.edu/~dfuter/research/determinants.pdf
+
+2. HOMOLOGY, LONGITUDE AND IRREDUCIBILITY
+
+Fix the oriented boundary identification first. Let lambda be the meridian
+of the comparator solid torus V. Choose a primitive mu intersecting lambda
+once. The corresponding rational closures of R are respectively the
+two-component unlink and an unknot. Thus the matching closures of X have
+determinants 0 and 1. Stoimenow's Proposition 6.5 says odd determinant occurs
+exactly for knots; its proof gives divisibility by 2^(c-1) for c components.
+The reference is correct (printed p. 619):
+https://intlpress.com/site/pub/files/_fulltext/journals/cag/2005/0013/0003/CAG-2005-0013-0003-a005.pdf
+The publisher open request returned 403, but the search tool supplied the
+publisher's indexed text of the exact proposition and proof.
+
+Consequently the determinant-one closure is a knot. Any closed component of
+X would remain a separate component in every closure, alongside at least one
+component formed from the two arcs. This proves X has no closed components.
+
+Let Y=M(mu). The branched-cover homology presentation gives H_1(Y)=0, and
+orientation and duality give H_2(Y)=0. If N is the attached solid torus,
+Mayer–Vietoris gives an isomorphism
+
+ H_1(boundary M)=Z^2 --> H_1(M) direct-sum H_1(N)=H_1(M) direct-sum Z.
+
+Thus H_1(M)=Z, without a torsion ambiguity. The preceding part of the same
+sequence, using H_3(Y)-->H_2(boundary M), gives H_2(M)=0. The filling core K
+is a knot in the integral homology sphere Y, with exterior M and meridian mu.
+
+Let lambda_K generate the kernel of H_1(boundary M)-->H_1(M). A slope
+p*mu+q*lambda_K gives first homology Z/pZ (Z if p=0). The determinant-zero
+lambda filling therefore forces lambda=+/-lambda_K as a primitive slope.
+This identifies an actual integral preferred longitude, rather than merely
+a rational multiple of one. There is no inference that Y is S^3.
+
+At least one original slope is different from lambda. Its comparator filling
+is a finite-homology lens space, including S^3. The actual link equivalence
+makes the corresponding M filling the same lens space.
+
+Here is the irreducibility argument in full. In a prime decomposition of M,
+there is exactly one summand M_0 carrying the torus boundary. For any compact
+orientable manifold with that boundary, chi(M_0)=0, so b_1(M_0)=1+b_2(M_0)>=1.
+Since H_1(M)=Z, every closed summand is an integral homology sphere. Filling
+the boundary gives M_0(alpha) connected-sum those same closed summands. A lens
+space has no nontrivial homology-sphere prime factor. Prime decomposition
+(and Poincare for a simply connected closed factor) forces all those factors
+to be S^3. Nonseparating spheres would give an S^1 x S^2 factor and are already
+excluded by the rank calculation. Thus M is irreducible.
+
+3. WHY THE SIGNED p/q REALLY IS THE SAME
+
+Both branched covers inherit orientation from the SAME oriented tangle ball.
+The fixed boundary identification lifts to an orientation-preserving torus
+identification. Its two lifts differ by the hyperelliptic deck involution,
+which acts by -I on H_1; this changes (p,q) to (-p,-q) and leaves p/q unchanged.
+
+After mu filling, the filling cores in M(mu) and V(mu) have exteriors M and V.
+Their meridian slopes are the same marked mu. Their preferred longitude
+slopes are the same marked lambda, by the homology argument above. Orient the
+two peripheral pairs compatibly with the common torus orientation and the
+standard surgery convention. Any convention-wide sign change must be made
+on BOTH exteriors. There is no independent longitude sign or meridional shear
+left over. The core in V(mu)=S^3 is an unknot.
+
+Hence an original filling slope alpha_i=p_i*mu+q_i*lambda represents the
+same signed p_i/q_i surgery on each core. An ambient orientation-preserving
+isotopy of the closed branch links lifts to an orientation-preserving map of
+their covers: off the branch locus this follows immediately from the
+orientation-preserving local covering maps, and it extends over the branch
+set. Therefore
+
+ Y_(p_i/q_i)(K) is orientation-preservingly homeomorphic to
+ S^3_(p_i/q_i)(U).
+
+The lifted homeomorphism need NOT preserve the decomposition, the core, or
+the marking. The coefficient comparison was fixed independently beforehand;
+the closed-manifold homeomorphism is used only to equate invariants. This
+distinction prevents a possible, but ultimately unsuccessful, objection.
+
+Ni–Wu Proposition 3.1, equation (7), printed p. 9, explicitly treats a
+null-homologous knot in a rational homology sphere and defines L(p,q) by
+p/q surgery on the unknot. Its formula is
+
+ lambda_CW(Y_(p/q)(K)) = lambda_CW(Y) + lambda_CW(L(p,q))
+                       + q*Delta_K''(1)/(2p),
+
+with symmetric Delta_K and Delta_K(1)=1. It is not necessary for Y to be an
+L-space or S^3:
+https://archive.ymsc.tsinghua.edu.cn/pacm_download/301/8839-Cosmetic.pdf
+
+For the two nonlongitudinal original slopes p_i is nonzero. Subtracting the
+unknot reference value gives 0=lambda_CW(Y)+(q_i/2p_i)Delta_K''(1). Distinct
+unoriented primitive slopes with p_i nonzero have different q_i/p_i, so the
+two equations force Delta_K''(1)=0 and then lambda_CW(Y)=0.
+
+The remainder of step 3 has the correct cited hypotheses: Rasmussen–Rasmussen
+Proposition 1.3 uses more than one L-space filling, Proposition 1.4 gives
+zero/one torsion coefficients, and Corollary 2.3 gives the stated norm formula
+under boundary incompressibility. Its extra irreducibility assumption is for
+the separate fibering conclusion. These exact statements were checked:
+https://arxiv.org/html/1508.05900
+The binary sequence has alternating nonzero first differences. Symmetry and
+sum 1 force a central term; pairing the positive exponents in decreasing
+order makes the displayed second derivative strictly positive unless the
+polynomial is constant. Thus no algebraic sign exception appeared here.
+
+MINOR CLARIFICATION RECOMMENDED, NOT A GAP
+
+Choose mu to avoid both original slopes BEFORE defining Y and K. There are
+infinitely many choices mu+n*lambda. If mu is changed afterward, explicitly
+redefine Y=M(mu) and its core K; the old and new Y need not be identical.
+The report's wording permits the intended choice but leaves this bookkeeping
+implicit. This also avoids q_i=0, although the meridional case itself can be
+handled directly.
+
+LIMITS
+
+The argument would fail if actual link isotopies were weakened to polynomial
+equality, or if ambient orientation reversal were allowed independently in
+the two equations. Neither weakening occurs in the report's statement.
+No external person was contacted. Steps 4–5 and novelty remain outside this
+audit's principal scope.

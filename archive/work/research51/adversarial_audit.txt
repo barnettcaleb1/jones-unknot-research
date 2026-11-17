@@ -1,0 +1,129 @@
+PASS 51: SKEPTICAL AUDIT AND A DECISIVE GENERIC-ROUTE DIAGNOSTIC
+1 November 2026. Agent twist_anchor.
+
+BOTTOM-LINE AUDIT VERDICT
+I reread outputs/jones-rational-tangle-uniqueness-proof.txt and the relevant
+primary Sikora and Rasmussen--Rasmussen statements. I did not find a serious
+actual error or scope mismatch in the claimed deduction of Sikora Conjecture
+2. This remains an internally checked research argument, without a novelty
+assessment or external expert verification. Its hypotheses are stronger than
+Jones or full-bracket equality alone, and the report states that limitation.
+
+The proposed NEXT bridge, full rational bracket => Floer-simple double cover,
+is unproved by all cited material. More importantly, Floer simplicity alone
+does not supply a complete endpoint for the generic Jones problem: a precise
+local-knot construction leaves an uncontrolled closed homology-sphere summand.
+That is the decisive diagnostic below. No parameter search is warranted by the
+current scaffold.
+
+1. RECHECK OF THE EXISTING PROOF
+Sikora §4.1 explicitly requires P,Q to be distinct as UNFRAMED rational
+tangles, so his Theorem 21 really gives independent closure functionals.
+Conjecture 2 is uniqueness in two ACTUAL balanced-framed link equations.
+Theorem 24(c), in contrast, says that the assertion that the bracket detects
+rational tangles among all tangles is EQUIVALENT to Jones unknot detection.
+Thus upgrading Conjecture 2 to a statement only about equal brackets would
+be precisely an unjustified step. The present report does not take that step.
+
+RR Proposition 1.3 really requires two distinct ACTUAL L-space fillings to
+obtain Floer simplicity; it has no hidden S3 restriction. Proposition 1.4 is
+conditional on Floer simplicity. It does not assert that a torsion sequence
+with entries 0/1 is sufficient. Corollary 2.3 supplies the norm conclusion
+only under boundary incompressibility; the proof uses that assumption by
+contradiction and then invokes irreducibility, already separately established.
+
+The report's removal of homology-sphere connected-sum summands is justified
+by an actual lens-space filling. The same filling also makes the standard
+Alexander/torsion normalization unproblematic after that reduction. The
+Casson-Walker comparison is between the same oriented, marked p/q fillings,
+not merely spaces with the same first-homology order. These are the main
+vulnerable places; all remain explicit hypotheses or established reductions.
+
+The zero-determinant edge has an actual S1 x S2 filling, not just a filling
+with infinite homology. That is exactly what enables the Ni--Vafaee endpoint.
+The earlier independent audit of its one-boundary-component fiber argument
+still applies. At most one of the distinct original slopes is this longitude.
+
+The possible closed components of X are excluded by the auxiliary knot
+closure. Independently of the determinant divisibility citation, one can
+use |reduced bracket(L)(A=1)|=2^(number of components-1), proved by crossing
+switches and unlink evaluation. An auxiliary closure sharing the unknot's
+bracket has one component, hence X cannot contain a closed loop.
+
+2. THE DECISIVE TEST: LOCAL KNOT INSERTION
+Let K be any knot, choose the trivial 2-tangle R, and tie K locally into one
+of R's arcs. Call the resulting tangle T_K. After correcting the framing,
+its full bracket vector is
+
+                 [T_K]=V_K(A^-4)[R].
+
+The local knotting ball has a sphere boundary meeting the branch set twice.
+Its double cover is a separating sphere. Consequently
+
+       M_K = Sigma_2(T_K) = (S1 x D2) # Sigma_2(K).
+
+For any nonlongitudinal filling slope p/q,
+
+       M_K(p/q) = L(p,q) # Sigma_2(K).
+
+These statements concern actual geometry, not merely formal skein vectors.
+If K were a Jones-one counterexample, T_K would have exactly the rational
+bracket [R]. Also det K=1, so Z=Sigma_2(K) would be an integral homology sphere.
+
+Now suppose the proposed bridge were granted. It would say M_K is Floer
+simple. But the connected-sum formula for hat Heegaard Floer homology gives
+
+       rank HFhat(L(p,q)#Z) = |p| rank HFhat(Z).
+
+Therefore, for this entire local-knot family,
+
+       M_K is Floer simple  <=>  Z is an L-space.
+
+The reverse implication follows because every p!=0 filling is then an
+L-space; the forward implication follows from any L-space filling. The
+longitudinal filling has positive first Betti number and cannot be an L-space.
+RR Proposition 1.3 identifies the multiple-filling criterion with Floer
+simplicity. Their Lemma 2.8 and the surrounding discussion record the relevant
+connected-sum tensor-product behavior.
+
+An integral homology-sphere L-space need not be S3. Thus this bridge would
+at best force the putative counterexample's double cover to be an L-space;
+it would not prove its fundamental group trivial. The tangle cover is already
+boundary compressible regardless of whether Z is S3. Applying a Thurston-norm
+argument cannot discard Z. There is no contradiction in a manifold of the
+form (S1 x D2)#Z being Floer simple but not a solid torus.
+
+This locates the precise failed inference in an attempted generic reuse of
+pass 50: replacing 'actual lens-space fillings' by 'L-space fillings' loses
+the prime-decomposition argument that removes Z. Those two topological inputs
+are not interchangeable.
+
+The obstruction is robust to simple Casson-invariant repairs. Replace K by
+K#mirror(K). It still has Jones polynomial one if K does, while its double
+cover is Z#(-Z). If Z is an L-space then this is also an L-space, and its
+Casson invariant vanishes by additivity and orientation reversal. These
+facts do not imply Z#(-Z)=S3. Thus even adding zero Casson invariant to the
+proposed Floer-simple bridge leaves this same local-summand gap.
+
+This diagnostic is NOT a constructed Jones-one knot or a counterexample to
+the bridge. It proves that the proposed bridge-plus-current-endpoint is an
+incomplete proof scaffold. The actual generic hypothesis V_K=1 has not been
+converted into topology excluding the summand Z. Claiming otherwise would
+hide the original problem inside a new assumption.
+
+3. DECISION
+Keep the internally checked two-actual-closure theorem as a partial result.
+Do not describe the Floer-simple bridge as known, as supported by RR, or as
+by itself sufficient to finish the generic theorem. No proof of that bridge,
+and no mechanism removing the residual Z, has emerged. The honest generic
+endpoint remains absent. The local-knot diagnostic is already decisive; no
+new search through lens-filling or tangle parameter families is justified.
+
+PRIMARY SOURCE CHECKS
+Sikora, arXiv:2005.08162v2, §§4.1,8,9; Theorems 21 and 24:
+https://arxiv.org/html/2005.08162
+Rasmussen--Rasmussen, arXiv:1508.05900v2, Props 1.3/1.4, Cor 2.3,
+§2.1 and Lemma 2.8:
+https://arxiv.org/html/1508.05900
+For full detailed pass-50 source and hypothesis audit, see
+work/research50/lens_endpoint_audit.txt.

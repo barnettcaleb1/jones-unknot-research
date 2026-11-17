@@ -1,0 +1,87 @@
+PASS 25 — TESTING A CONSTRUCTIVE GLOBAL HOMOLOGY MECHANISM
+1 November 2026. Bounded primary-source investigation, no theorem of Jones unknot detection.
+
+1. Full chain before its proposed construction
+
+A usable operation-based proof of H-rank would require BOTH:
+(a) a geometric coverage theorem expressing every knot in a fixed whole Jones fiber using finitely many reference complexes and specified actual operations; and
+(b) a categorical theorem bounding the resulting TOTAL homology ranks uniformly over the allowed operation parameters and compositions.
+These two statements would give r(K)<=B(V_K). Jones multiplicativity and reduced Kunneth would then force r(K)^m<=B(1) for a Jones-one K, hence r(K)=1 and K=U by Kronheimer--Mrowka. The coverage theorem cannot exclude composites or impose fixed braid/bridge complexity, since the amplification uses connected powers.
+
+Alternatively ribbon Euler faithfulness E has unconditional coverage through U->K#mirror(K), but needs its own geometric theorem: the split homological complement of an actual ribbon concordance cannot be nonzero with zero graded Euler polynomial. Neither a fixed number of bands nor the known split injection supplies that theorem.
+
+This pass found no published construction supplying (a)+(b), and no certified equal-Jones ribbon pair with strict rational Khovanov rank increase. The bounded search does not establish that no such pair is known. Two precise structural checks below show why attractive existing constructions do not supply the missing theorem.
+
+2. A published stabilization theorem, and the exact failure of uniformity on opposite twists
+
+Andrew Lobb, 2-strand twisting and knots with identical quantum knot homologies, Geometry & Topology 18 (2014), 873--895, gives compact complexes T_i for i full twists in oppositely oriented strands, and exact comparison maps. This is stronger relevant information than merely quoting a limit of positive torus braids.
+
+Primary source:
+https://msp.org/gt/2014/18-2/gt-v18-n2-p07-p.pdf
+
+Theorem 1.10: for 0<=i<j, the map obtained by replacing T_i with T_j is an isomorphism in homological degrees
+
+                           h <= 2i-c_- -2,
+
+where c_- is the number of negative crossings in the complementary fixed diagram. Theorem 1.11 supplies the corresponding shifted high-degree comparison. Theorem 2.1 gives the compact twist complexes with alternating maps x_2-x_4 and
+A=x_2^(N-1)+x_2^(N-2)x_4+...+x_4^(N-1); for sl(2), A=x_2+x_4.
+
+Apply the quoted low-degree estimate to a simultaneous +n/-n twist family. When the positive block has i=n, the complementary negative block has c_-=2n+c_0 (after selecting the fixed parity subsequence and consistent local orientations). The guaranteed range becomes
+
+                              h <= -c_0-2.
+
+It does NOT expand with n. Thus the one-sided stabilization theorem does not sweep through the finite middle window in which the earlier Watson argument left multiplicities unresolved. If orientation conventions interchange signs, the dual statement gives the same obstruction. The common complementary diagram hypothesis is precisely where uniformity is lost; one cannot tensor a growing negative complex with the positive limit and silently retain the original convergence bound.
+
+Rozansky's infinite-twist/projector limit and the published positive-infinite-braid extension of Islambouli--Willis provide no automatic repair of this mixed direction:
+https://arxiv.org/abs/1005.3266
+https://ems.press/journals/qt/articles/15595
+
+The compact T_i models do suggest a genuinely finite algebraic next step FOR A FIXED PAIR OF TANGLES: express the repeated middle region using the actual x_2-x_4 and x_2+x_4 maps after gluing, and prove a uniform rank estimate or exhibit growing homology there. Unlike another polynomial calculation, this would resolve the outstanding H-rank test for that orbit. I have not constructed that glued middle-region complex in this pass and do not claim a generic periodicity theorem. Even success for every fixed template would leave the global coverage and uniformity-across-templates problems. This is a bounded falsification experiment, not yet a full proof mechanism.
+
+3. Actual two-band ribbon concordances can have unbounded hidden rank
+
+There is a simple actual-knot countertest to replacing categorical control by bounded topology of a ribbon movie. Let
+
+  K_k=T(3,3k+1),    R_k=K_k#mirror(K_k),    k>=1.
+
+Every K_k has bridge number three. The standard bridge-doubling ribbon construction gives
+
+                         Fus(R_k)<=2.
+
+Consequently every R_k is reached from U by a ribbon concordance with at most two births and two saddles. This count is independent of k. It is an embedded ribbon movie, not an abstract map or a proposed table relation.
+
+Primary source for the general construction:
+Taizo Kanenobu, Band surgery on knots and links, equation (4.4), states
+Fus(K#mirror(K))<=br(K)-1.
+https://ocu-omu.repo.nii.ac.jp/record/2016720/files/111F0000020-09-8.pdf
+
+The already checked reduced-rational formula from Schütz gives r(K_k)=4k+1. Hence reduced Kunneth proves
+
+                      r(R_k)=(4k+1)^2 -> infinity.
+
+The split complement of Kh_red(U) in Kh_red(R_k) therefore has rank
+(4k+1)^2-1, despite the uniform two-band movie. For the Jones polynomial, write a=3k. Multiplying the exact three-term torus polynomial by its reciprocal gives
+
+  V_Rk(t)=3+t^2+t^-2-t^a-t^-a-t^(a+2)-t^(-a-2).
+
+It has seven nonzero terms, coefficient l1 norm 9, and absolute value at most 9 on the unit circle. For even k it also has determinant one; all R_k have Rasmussen invariant zero because they are ribbon. Thus even a two-band movie plus determinant one, s=0, and bounded Jones coefficient magnitudes does not bound the rank of the actual ribbon complement.
+
+Source for r(K_k) and the torus polynomial:
+Schütz, On the Khovanov homology of 3-braids, Theorem 5.3(2), reduced specialization.
+https://arxiv.org/html/2501.11547v1
+
+This does NOT refute E, because V_Rk is not 1; it does NOT refute H-rank, because its exponent gaps vary with k. It does rule out a missing logical step in a bounded-topology-operation approach: a bound on birth/saddle count controls neither the number of lifted-Lee torsion bars nor the homological complement rank. An additional dependence on the WHOLE Jones polynomial, or a real cancellation theorem, remains essential.
+
+4. What the targeted literature search actually establishes
+
+The targeted searches found the established split-injection literature, Lobb's exact twisting results, and Silver--Whitten's Hyperbolic covering knots. The latter explicitly constructs ribbon-related knots with the same Alexander invariant and arbitrarily large hyperbolic volume, but its preservation statement is Alexander, not Jones:
+https://msp.org/agt/2005/5-4/agt-v5-n4-p08-s.pdf , Theorem 2.2.
+It therefore supplies neither a fixed-Jones rank falsifier nor a Jones-controlled geometric bound. Promoting Alexander preservation or finite-type agreement to equality of the entire Jones polynomial would be an unsupported extra premise.
+
+Lobb's identical-homology families do not themselves falsify E: equal ranks cannot support the required strict split complement. Nor does individual ribbonness of both endpoints provide a directional ribbon concordance. These are scope distinctions, not an exhaustive classification of the literature.
+
+5. Strategic verdict
+
+There is no newly justified global bridge here. The useful evidence is an exact explanation of why the available stabilization theorem stalls on compensating twists, and an actual two-band family showing that bounded movie topology cannot replace a bound on hidden categorical multiplicities.
+
+If the operation route is continued, the next finite task should be the mixed middle-region complex just specified, with the goal of producing either an actual fixed-Jones growing-rank family or a uniform orbit-rank theorem. It should be stopped if the proposed proof merely assumes the rank bound in that middle region, or if it treats the known outer stability as middle stability. Even a successful orbit theorem must not be presented as generic coverage. No additional table scan or one-band search is justified by these findings.

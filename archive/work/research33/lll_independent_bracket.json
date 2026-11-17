@@ -1,0 +1,19 @@
+{
+  "n": 1,
+  "writhe": -3,
+  "raw_bracket_A": {
+    "-5": -1,
+    "-9": -2,
+    "-13": -1
+  },
+  "normalized_A": {
+    "4": 1,
+    "0": 2,
+    "-4": 1
+  },
+  "stats": {
+    "max_frontier": 8,
+    "max_pairing_states": 13
+  },
+  "method": "independent frontier bracket; direct (-A^3)^(-w) normalization"
+}

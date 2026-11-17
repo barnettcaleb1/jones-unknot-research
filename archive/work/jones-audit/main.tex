@@ -1,0 +1,155 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,microtype}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Jones polynomial: proof audit}\fancyhead[R]{31 October 2026}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\title{Jones unknot detection:\\a concrete obstruction to the Carmi--Cohen proof}
+\author{Research and mathematical audit prepared with Codex}
+\date{31 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The June 21, 2026 preprint by Avishy Carmi and Eliahu Cohen claims to prove that the ordinary Jones polynomial detects the unknot. Its Section 5 geometric package implies a degree bound independent of the length of an ordinary anti-parallel twist. This consequence fails on an explicit twist-knot family based at the trefoil: the proposed bound is 22, whereas a permitted length-23 state has a nonzero Jones--Vassiliev coefficient $b_{51}=-1$. The calculation uses the paper's normalization and can be checked directly with the skein relation. It invalidates the proof as submitted; it gives no counterexample to the Jones unknot conjecture itself.
+\end{abstract}
+
+\section*{Scope and literature status}
+The object under discussion is a classical knot in $S^3$, with normalized ordinary Jones polynomial $V_U=1$. The question is whether $V_K=1$ implies $K=U$.
+
+The live arXiv record for Carmi--Cohen \cite{CC} lists only v1, submitted June 21, 2026, and gives no journal reference. Searches conducted for this audit did not locate a named independent mathematical validation or published refutation. This search result should not be read as a proof that no private or unindexed review exists.
+
+Manolescu's ICM 2026 survey \cite{Manolescu} still describes the ordinary Jones question as open. Its online publication postdates the preprint, but its manuscript may have been written earlier: it is an expert status reference, not a direct assessment of Carmi--Cohen.
+
+Several established results must be kept distinct:
+\begin{itemize}
+\item Tuzun--Sikora \cite{TS} verified Jones unknot detection for all knots with at most 24 crossings. A finite verification is not a proof for arbitrary crossing number.
+\item Kronheimer--Mrowka \cite{KM} proved that reduced Khovanov homology detects the unknot. Passing to the graded Euler characteristic can cancel homological information, so this does not prove the Jones assertion.
+\item Jones detection holds for alternating knots, by the classical span theorem; adequate and semi-adequate cases and the history of these partial results are discussed in \cite{AL}.
+\item Bigelow \cite{Bigelow} describes representation-theoretic routes to the problem. These illustrate that the general question reaches beyond the verified special classes.
+\end{itemize}
+The conclusion warranted by the sources located here is that there is no verified resolution to report, and the particular June 21 proof fails the explicit test below.
+
+\section*{An explicit family requiring no conjectural knot}
+Use the three-crossing trefoil diagram in the opening illustration of Section 5 of \cite{CC} (printed p.~23). Replace its circled crossing by an odd anti-parallel twist of length $L$. Let the resulting knot be $K_L$, and write $V_L=V_{K_L}$. Choose chirality so that
+\[
+V_1=x^2+x^6-x^8.
+\]
+Changing the original seed crossing unknots the trefoil. In the normalization
+\[
+x^{-2}V_+-x^2V_-=(x-x^{-1})V_0,\qquad p=x-x^{-1},
+\]
+the polynomial $H$ of the oriented smoothing is therefore determined by
+\[
+pH=x^{-2}(x^2+x^6-x^8)-x^2
+=1-x^2+x^4-x^6.
+\]
+Thus
+\[
+H=-x-x^5.
+\]
+
+For any larger odd $L$, changing one crossing of the positive twist cancels a pair by Reidemeister II, leaving $K_{L-2}$. Smoothing that crossing turns the other twist crossings into removable kinks and leaves the same smoothing $H$. Consequently,
+\begin{equation}\label{rec}
+V_L=x^4V_{L-2}+px^2H
+=x^4V_{L-2}+x^2-x^4+x^6-x^8.
+\end{equation}
+This is an ordinary exact skein computation. In particular,
+\[
+V_3=x^2-x^4+2x^6-x^8+x^{10}-x^{12}.
+\]
+It agrees, after $q=x^2$, with the published polynomial for $5_2$ in Garoufalidis--Zagier \cite{GZ}, Appendix A.2, p.~79. Their p.~74 also confirms the starting trefoil polynomial.
+
+Equation \eqref{rec} immediately shows that the unique highest monomial is
+\[
+-x^{2L+6}.
+\]
+Indeed, the initial highest exponent is 8, each step raises it by 4, and the inhomogeneous summand has degree only 8.
+
+\section*{Converting this into the paper's exact coefficients}
+The paper packages the Jones polynomial uniquely in the form
+\[
+V_L=A_L(p)+B_L(p)x,\qquad x^2=px+1,
+\]
+with $A_L,B_L\in\mathbb Z[p]$. Write
+\[
+A_L=\sum_q a_q(K_L)p^q,\qquad
+B_L=\sum_q b_q(K_L)p^q.
+\]
+
+For positive $m$ the reduction of $x^m$ has $B$-component of degree $m-1$, with leading coefficient 1. This follows by induction: multiplying $A+Bx$ by $x$ sends
+\[
+(A,B)\longmapsto (B,A+pB).
+\]
+The $A$-component has smaller degree. All monomials of $V_L$ have positive powers of $x$, and every monomial other than $-x^{2L+6}$ has strictly smaller exponent. None can cancel that monomial's leading $p$-coefficient. Hence
+\begin{equation}\label{actual}
+\deg_p V_L=2L+5,\qquad b_{2L+5}(K_L)=-1.
+\end{equation}
+Here $\deg_p(A+Bx)$ means $\max(\deg A,\deg B)$, exactly the coefficient degree used in the preprint.
+
+For $L=23$, equation \eqref{actual} gives
+\[
+\boxed{\deg_p V_{23}=51,\qquad b_{51}(K_{23})=-1.}
+\]
+No numerical approximation or search for an unknown knot is involved.
+
+\section*{The incompatible claim in the preprint}
+The relevant statements in \cite{CC} are:
+\begin{enumerate}
+\item Proposition 5.12 (printed pp.~38--48) asserts that its local construction supplies machine hypotheses (C1)--(C4), with overhead $\kappa_{\rm mach}=11$.
+\item Theorem 5.6 (p.~30) derives a signed-machine degree bound $\widehat B=B_{\rm host}+11$, independent of $L$.
+\item Lemma 5.8 (pp.~31--33), using (C4) to identify the doubly smoothed machine with the ordinary residual twist, derives
+\[
+f_r=0\quad\text{for every }r>\widehat B+2.
+\]
+\end{enumerate}
+These statements precede and do not require the vanishing-anchor hypothesis of Theorem 5.10. In particular, the host need not have Jones polynomial 1. They therefore apply, as asserted, to the trefoil host just used.
+
+That host has $n=3$ crossings and one component, so the paper's own host bound is $B_{\rm host}=3n=9$. Its package predicts
+\[
+\boxed{\deg_p V_L\le 9+11+2=22\quad\text{for every allowed odd }L.}
+\]
+Taking $L=23$ contradicts $b_{51}(K_{23})=-1$. This length also satisfies $L>\widehat B+2$, although Lemma 5.8 itself does not need that additional restriction.
+
+The conditional algebra of Lemma 5.8 is not the source of the problem. Its paired skein identity
+\[
+V_{-+}+V_{+-}=x^{-4}V_{++}+x^4V_{--}-p^2V_{00}
+\]
+is correct. Multiplication by $x^{\pm4}$ raises the $p$-degree by at most four; dividing the displayed identity by $p^2$ then gives precisely the stated residual bound if all signed machine states really have the asserted uniform bound. Therefore the signed-state compression and the ordinary-twist identification cannot simultaneously hold as claimed. The geometric package in Proposition 5.12 cannot supply all the hypotheses used to reach that conclusion.
+
+This audit does not assert that the exceptional-state move (G2), considered in isolation, has been uniquely identified as the offending move. The explicit calculation already disproves the combined geometric claims needed by the proof. A correction must say which claimed reduction or identification fails and replace it with a valid argument.
+
+Changing the number 11 to another fixed constant would not repair the issue: the actual degrees $2L+5$ are unbounded.
+
+A second check avoids the precise handedness and coefficient calculation. Choose the all-same-sign ordinary twist that preserves the reduced alternating trefoil diagram. The resulting reduced alternating knot has $L+2$ crossings, so the alternating-span theorem gives Jones span $L+2$ in $t$, or $2L+4$ in $x=t^{1/2}$; see \cite{Kauffman}. On the other hand, a $p$-degree bound of 22 in the basis $\{1,x\}$ confines the Laurent support to $[-22,23]$, because $p^q=(x-x^{-1})^q$. Its span would be at most 45. For $L=23$ the actual span is 50. This gives a separate contradiction to the same asserted bound.
+
+\section*{What checks and what remains unsupported}
+The rank-two ring construction, finite-type divisibility argument, coefficient skein recursions, and graph-support propagation were checked algebraically. No fatal error was found in these portions. This is a targeted mathematical audit, not a formal certification of every sentence.
+
+The final component-count contradiction in Section 6 is also compatible with the familiar order-two Jones invariant once its hypothesized vanishing on the two-crossing face is granted. The missing step is the construction of that vanishing face: its initialization uses the false uniform compression package.
+
+The reproducible companion \texttt{verify\_twist\_obstruction.py} uses only Python's standard library and integer arithmetic. It verifies the recurrence for every odd $1\le L\le23$, checks the trefoil and $5_2$ initial values, computes the rank-two reduction, and independently reconstructs each Laurent polynomial by substituting $p=x-x^{-1}$. The output includes:
+\[
+\begin{array}{c|r|r|r}
+L & \max\deg_x V_L & \deg_p V_L & b_{\deg_p V_L}\\ \hline
+1&8&7&-1\\
+3&12&11&-1\\
+5&16&15&-1\\
+23&52&51&-1
+\end{array}
+\]
+
+This is an obstruction to the submitted proof, not a counterexample to unknot detection. Every knot used in the calculation has a nontrivial Jones polynomial. The conjecture may still be true; Carmi--Cohen v1 does not establish it.
+
+\begin{thebibliography}{9}\small
+\bibitem{CC} A. Carmi and E. Cohen, \emph{On trivial Jones--Vassiliev polynomials}, arXiv:2606.22410v1, submitted June 21, 2026. \url{https://arxiv.org/abs/2606.22410v1}
+\bibitem{Manolescu} C. Manolescu, \emph{From Knots to Four-Manifolds}, ICM 2026, Vol.~2, pp.~154--179, especially Section 2. \url{https://doi.org/10.1137/25M1806703}
+\bibitem{TS} R. E. Tuzun and A. S. Sikora, \emph{Verification of the Jones Unknot Conjecture Up to 24 Crossings}, J. Knot Theory Ramifications 30(3), 2150020 (2021). \url{https://arxiv.org/abs/2003.06724}
+\bibitem{KM} P. B. Kronheimer and T. S. Mrowka, \emph{Khovanov homology is an unknot-detector}, Publ. Math. IHES 113 (2011), 97--208. \url{https://arxiv.org/abs/1005.4346}
+\bibitem{AL} A. M. Lowrance and D. Spyropoulos, \emph{The Jones polynomial of an almost alternating link}, New York J. Math. 23 (2017), 1611--1639. \url{https://nyjm.albany.edu/j/2017/23-71.html}
+\bibitem{Bigelow} S. Bigelow, \emph{Does the Jones polynomial detect the unknot?}, J. Knot Theory Ramifications 11 (2002), 493--505. \url{https://arxiv.org/abs/math/0012086}
+\bibitem{GZ} S. Garoufalidis and D. Zagier, \emph{Knots, Perturbative Series and Quantum Modularity}, SIGMA 20 (2024), 055, especially pp.~74 and 79. \url{https://doi.org/10.3842/SIGMA.2024.055}
+\bibitem{Kauffman} L. H. Kauffman, \emph{New Invariants in the Theory of Knots}, American Mathematical Monthly 95(3) (1988), 195--242, especially p.~212. \url{https://homepages.math.uic.edu/~kauffman/Bracket.pdf}
+\end{thebibliography}
+\end{document}

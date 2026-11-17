@@ -1,0 +1,24 @@
+[
+  {
+    "derivatives": [
+      1,
+      0,
+      0,
+      0,
+      4320,
+      79200
+    ],
+    "method": "independent enumeration of7^3 ordered words and inversion numbers"
+  },
+  {
+    "derivatives": [
+      1,
+      0,
+      0,
+      0,
+      4320,
+      144000
+    ],
+    "method": "independent enumeration of7^3 ordered words and inversion numbers"
+  }
+]

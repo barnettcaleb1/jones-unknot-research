@@ -1,0 +1,183 @@
+PASS 26 — PARTIAL KERNEL INTERSECTION: COMPLETE SCAFFOLD AND COVERAGE OBSTRUCTION
+1 November 2026 UTC. No braid enumeration and no Jones-one knot constructed.
+
+Outcome
+=======
+The normal-subgroup intersection route is mathematically valid, but the
+published partial kernels inspected here do not supply all its hypotheses.
+The Piwocki–Traczyk construction has a simple quantitative obstruction:
+from the known seeds its certified block density never exceeds 1/4,
+whereas full Temperley–Lieb coverage requires at least 1/2. Fixed-strand
+commutators do not repair this automatically: the relevant generic
+algebra ideals are idempotent, not nilpotent.
+
+1. Source audit
+===============
+Primary: Adam Piwocki and Paweł Traczyk, Representations of small braid
+groups in Temperley–Lieb algebra, Topology Appl. 156 (2008), 392–398.
+DOI https://doi.org/10.1016/j.topol.2008.07.016
+Author-uploaded complete extracted article:
+https://www.academia.edu/103934370/Representations_of_small_braid_groups_in_Temperley_Lieb_algebra
+
+Their index counts CUPS, not cups plus caps (§1, pp393–394).
+Theorems 1–2 (pp395–398) use one-overlapping-strand commutators.
+The explicit example (§4,p398) has 108 crossings on 11 strands; another
+has 380 crossings on nine strands.
+
+Jackson–Kerler, §5,p1707, uses inconsistent cap-plus-cup indexing and
+says 11 crossings where the primary example has 108. Its proposed
+44-crossing successor therefore cannot be inferred from that example.
+The unsimplified four-copy successor has 432 crossings on 21 strands.
+Their assertion that the successor is nontrivial is explicitly conditional.
+https://go.owu.edu/~chjackso/Papers/jackson_kerler_advmath_2011.pdf
+https://arxiv.org/pdf/0912.2114
+
+Access: full extracted PT article is cached in
+piwocki_traczyk_source_cache.json. A complete PDF was NOT retrieved:
+the author-upload PDF endpoint returned HTTP403 and publisher retrieval
+failed. The cache is text, not a substitute claimed to be a PDF.
+Exact locators and access metadata are in source_metadata.json.
+
+2. Uniform notation and the complete counterexample scaffold
+===========================================================
+Work over F=Q(A). Write rho_j for the generic TL_n simple block with
+partition [n-j,j], 0 <= j <= floor(n/2). Put
+  K(n,r) = intersection_{j=0}^r ker(rho_j),
+with the harmless scalar normalization fixed consistently.
+The PT quotient by diagrams with MORE THAN r cups retains these blocks.
+
+For framing safety, define at a FIXED strand count n:
+  N_j = ker(rho_j) intersect ker(w),
+where w:B_n -> Z is exponent sum.
+Suppose EVERY N_j is nontrivial. Each is a normal subgroup. Since no
+nontrivial central full twist has exponent sum zero, every N_j is
+noncentral. Long's normal-subgroup intersection lemma implies their
+finite intersection is nontrivial. At each induction step the
+intersection remains inside ker(w), so it remains noncentral.
+This intersection is the full generic TL kernel with zero writhe.
+
+Ito's Theorem 1 then turns it into hyperbolic Jones-one knots of
+arbitrarily large genus by multiplying an unknot-closing braid by a
+suitable kernel braid. His proof supplies a pure kernel element, so the
+closure stays a knot. This is a complete conditional counterexample
+chain, not a claim that the missing N_j are known to be nontrivial.
+Primary: https://arxiv.org/pdf/1402.2028, Theorem 1 and the Long Lemma 2.1
+discussion immediately preceding Corollary 2.
+
+Nonfaithfulness of an individual block WITHOUT the ker(w) condition is
+insufficient as stated: a central power can be invisible to that block.
+Likewise an arbitrarily chosen commutator of two nontrivial normal-kernel
+elements need not be a nontrivial braid. The normal-intersection theorem
+gives existence; an explicit candidate still needs nontriviality proof.
+
+3. What the one-overlap construction actually guarantees
+======================================================
+Let alpha0 in K(k,r), beta0 in K(m,s). Add m-1 trivial strands to the
+right of alpha0, and k-1 to the left of beta0. In B_(k+m-1), their
+supports share exactly one strand. The commutator belongs to
+  K(k+m-1,r+s).
+This is the unambiguous construction in PT immediately after Theorem 1
+and Figure 5; one line of the displayed hypothesis has an endpoint-index
+discrepancy, so the explicit embedding, not that isolated index, is used.
+
+Algebraically, mixed terms contain a diagram from each support region.
+Their cup counts are at least r+1 and s+1. Sharing one strand permits
+at most one loss, giving at least r+s+1 cups. This argument depends on
+the geometry of the two embeddings; it is not a generic ideal-product
+identity at fixed n.
+
+The right/left split variant of Theorem 2 has the same (n,r) bookkeeping.
+It permits weaker input hypotheses but does not change that arithmetic.
+The published right/left split example supplies (11,2).
+
+4. Quantitative no-go for iterating the verified seeds
+====================================================
+Define
+  e(n,r)=n-1-2r,       theta(n,r)=r/(n-1).
+Under the one-overlap operation,
+  e(k+m-1,r+s)=e(k,r)+e(m,s),
+and theta_out is the weighted average of theta_in, with weights k-1,m-1.
+
+The presently certified seed parameters are:
+  (5,1)  : e=2, theta=1/4  (Burau kernel);
+  (9,2)  : e=4, theta=1/4  (PT);
+  (11,2) : e=6, theta=1/5  (PT split construction).
+Therefore EVERY finite tree of these operations satisfies theta<=1/4.
+Adding unused strands only decreases theta and increases e.
+
+Full TL coverage requires r>=floor(n/2). Its required theta is 1/2
+for odd n and exceeds 1/2 for even n. Equivalently, its e is <=0.
+Thus this procedure cannot certify a full kernel from these seeds.
+
+For balanced self-iteration:
+  n_l=(n_0-1)2^l+1,     r_l=r_0 2^l,     e_l=e_0 2^l.
+The number of killed blocks increases, but so does the coverage deficit.
+
+This excludes the GUARANTEED coverage of the recipe. It does not prove
+that a particular commutator cannot accidentally kill extra blocks.
+Such an accidental identity would be new mathematical input, requiring
+exact verification and independent braid nontriviality.
+
+The same e obstruction applies to any collection of split seeds whose
+certified depths are strictly below full depth. A seed at full split
+depth would be a genuinely stronger input, not supplied by iteration
+of the cited partial examples.
+
+5. Why fixed-n multiplication/intersection is not a shortcut
+==========================================================
+At fixed n the known prefix kernels are nested:
+  K(n,r) intersect K(n,s) = K(n,max(r,s)).
+Taking the intersection of whole such kernels does not add a previously
+uncontrolled complementary block. Normal conjugation preserves every
+block kernel, so conjugating a prefix-certified word gives the same
+guarantee, not a new block range.
+
+Likewise generic TL_n is a direct sum of full matrix algebras.
+Every two-sided ideal I is a sum of blocks and satisfies I^2=I.
+In particular the cup ideal I_(n,r) is idempotent after passing to F.
+There is no nilpotent filtration argument by which commutators of
+elements in 1+I must enter a deeper cup ideal.
+
+Explicit algebraic countertest: in any surviving matrix block of size
+at least two, put
+  X=[[1,1],[0,1]],  Y=[[1,0],[1,1]].
+Their commutator is [[3,-1],[1,0]], not identity. Extend by identity in
+all other blocks. X and Y agree with identity on every already-killed
+block, yet their commutator remains nonidentity in the same first
+surviving block. These are algebra elements, not claimed braid images;
+they refute the proposed purely ideal-theoretic inference.
+
+Ordinary strand padding also cannot erase a full TL defect:
+TL_n -> TL_(n+s) adds vertical strands to each diagram and is injective.
+It preserves a known prefix guarantee, but does not create a full kernel.
+
+6. Complementary rectangular kernel does not finish the known examples
+=====================================================================
+The spherical-boundary construction audited in pass25 controls the
+top rectangular block at even strand count N. Intersecting this with a
+PT prefix still leaves all intermediate labels. For example, padding
+the (9,2) example to N=10 controls j=0,1,2; the rectangular mechanism
+controls j=5; j=3,4 are still missing.
+
+A prefix reaching j=N/2-1 plus a noncentral rectangular-block kernel
+WOULD finish by the fixed-n intersection lemma. But the known density
+bound cannot reach that prefix. This identifies a clean sufficient
+new theorem without pretending it has been established.
+
+7. Decision and exact next gate
+===============================
+Do not generate larger examples merely by repeated one-overlap
+commutators: the stated guarantee cannot reach the endpoint.
+
+A worthwhile new construction must do at least one of:
+(a) give a noncentral, exponent-zero kernel for each missing block at
+    one common strand count;
+(b) prove an additional exact cancellation that improves the e
+    bookkeeping beyond the one-overlap estimate;
+(c) establish a genuine braid/representation centralizer mismatch,
+    hence a nontrivial full kernel, as in the earlier scaffold.
+
+Known partial kernels plus normality alone do none of these. No easier
+complete gate has emerged in this pass. The source correction and the
+coverage obstruction are the concrete outputs, not a claimed solution.
+

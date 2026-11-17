@@ -1,0 +1,183 @@
+PASS 32: A SPECTRAL-GEOMETRIC ROUTE AND ITS EXACT LIMIT
+1 November 2026 UTC. Bounded research pass. No proof of Jones unknot
+detection, no counterexample, and no novelty claim.
+
+Outcome
+=======
+The new primary source Grlj–Lauda, Spectral geometry of Khovanov
+Laplacians (arXiv:2608.24298v1, 25 August 2026), supplies a genuine
+geometric object to test: a positive Laplacian of an actual enhanced-state
+complex, with graph models in extreme cube degrees. It does not supply a
+bound throughout a Jones fiber. Below is a precise obstruction to the
+most immediate route from that object to such a bound. All-temperature
+signed spectral data remain exactly the Jones polynomial. Actual knots
+with identical Jones and different harmonic dimensions demonstrate the
+loss; no hypothetical complex is needed.
+
+The targeted literature check did not locate a certified exact-Jones
+knot fiber with unbounded reduced rational Khovanov rank or bridge
+number. This is a statement about this bounded search, not a claim that
+no such result exists. The familiar fixed-template families do not close
+the missing global coverage step. No new geometric bridge was obtained.
+
+1. Complete endpoint, before the proposed mechanism
+==================================================
+Fix a realizable Jones polynomial P and an anchor knot J with V_J=P.
+Suppose an actual geometric construction bounded reduced rational
+Khovanov rank r throughout this WHOLE fiber, including composites.
+If V_K=1, then
+
+ V_(J#K^#m)=P,       r(J#K^#m)=r(J) r(K)^m.
+
+A finite bound independent of m forces r(K)=1. Kronheimer–Mrowka then
+implies K is the unknot. This is the already established global
+scaffold, not new progress. The proposed spectral mechanism would have
+to establish the uniform bound independently; its name is not a proof.
+
+Primary endpoint: P. Kronheimer and T. Mrowka,
+Khovanov homology is an unknot-detector,
+https://arxiv.org/abs/1005.4346
+
+2. Precisely what the new source offers
+======================================
+Grlj–Lauda use the enhanced-state inner product and the Laplacian
+Delta=d*d+dd*. Its kernel computes complex Khovanov homology; its positive
+spectrum depends on the diagram. In minimal/maximal cube degrees they
+identify signless graph Laplacians; loop-free bipartite components count
+harmonic classes. Proposition 4.4 assumes the relevant rational homology
+vanishes and bounds the gap in fixed-width extreme quantum bands. It
+does not prove vanishing, control the bulk, or bound zero multiplicity.
+Their Section 4.1.5 leaves graph behavior under diagram moves open.
+Theorem 7.3 transfers Lee's differential to the harmonic subspace using
+the full Hodge contraction. Sections 5–6 recover integral torsion from a
+degree-weighted spectral product with a regulator correction. None of
+these statements bounds the unsigned harmonic dimension using Jones.
+
+Primary source and exact version:
+https://arxiv.org/html/2608.24298v1
+Relevant locations: Theorem 4.1, Proposition 4.4, Section 4.1.5,
+Equation (1.6), Theorem 7.3. This is a preprint; we audited its relevant
+scope, not every proof in the paper.
+
+3. Exact functional-calculus obstruction
+=======================================
+This argument is our direct elementary deduction, valid for every finite
+Hilbert cochain complex and hence for an actual reduced Khovanov complex.
+It is not asserted to be new.
+
+Fix a quantum grading j and sum all homological degrees. Let
+
+ Q=d+d*,       Delta=Q^2,       Gamma|C^i=(-1)^i.
+
+The operator Q is odd: Gamma Q=-Q Gamma. It commutes with Delta. On the
+eigenspace E_lambda for any lambda>0, Q/sqrt(lambda) is an invertible
+map exchanging even and odd parity. Consequently these two parities
+have equal multiplicity at EACH positive eigenvalue. On E_0, their
+dimension difference is the quantum coefficient chi_j of the Euler
+polynomial. Therefore for every function f on the finite spectrum,
+
+ Str f(Delta_j)=f(0) chi_j.                              (1)
+
+In particular, for every temperature parameter t>=0 and shift s>0,
+
+ sum_i (-1)^i Tr exp(-t Delta_(i,j)) = chi_j;             (2)
+ sum_i (-1)^i Tr (Delta_(i,j)+sI)^(-1) = chi_j/s;         (3)
+ product_i det(Delta_(i,j)+sI)^((-1)^i) = s^(chi_j).      (4)
+
+The determinant equality follows by cancelling matching positive
+eigenvalue factors; the remaining factors are s for each zero mode.
+Weighting (2) by q^j gives exactly V_K(q^2) in the reduced normalization.
+The complete family of these signed observables, at ALL temperatures
+or spectral shifts, carries no extra information beyond Jones.
+
+Important distinction: (4) is the ordinary superdeterminant with parity
+exponent (-1)^i. It is NOT the analytic torsion product whose exponent
+also contains i/2. The latter need not cancel and can contain additional
+integral/lattice information. Jones does not control that extra datum;
+we make no claim that Grlj–Lauda's torsion theorem is trivial.
+
+This closes the naive statistical-mechanical hope that cooling a Jones
+supertrace, or observing it at every energy, exposes the hidden states.
+The cancellation is exact on every positive eigenspace and persists
+among zero modes of opposite parity.
+
+4. Actual-knot test, with chirality and coefficients fixed
+========================================================
+Take the chirality versions of 5_1 and 10_132 represented by
+
+ 5_1:    B_2 word [-1,-1,-1,-1,-1],
+ 10_132: B_4 word [1,1,1,-2,-1,-1,-2,-3,2,-3,-3].
+
+Both have
+
+ P(t)=t^-2+t^-4-t^-5+t^-6-t^-7.
+
+The retained KnotInfo conventions require mirroring its 5_1 entry to
+match this pair. The reduced rational ranks are 5 and 11, respectively;
+the unreduced rational ranks are 6 and 12. For 10_132 the reduced groups
+at (i,j)=(-1,-2),(0,-2) are each one dimensional, while the coefficient
+of q^-2 in P(q^2) is zero. Thus an actual classical knot has the precise
+opposite-parity zero-mode cancellation in (1).
+
+The complete reduced term lists, their Euler sums, and both rank checks
+are saved in actual_collision_check.json alongside this note. The check
+only parses the two retained records; this was not a knot-table scan.
+The ordinary Jones identity was previously recomputed from the explicit
+braids in work/proof12/braid/all_color_collision_proof.txt. The current
+pass independently checked the homology ranks and Euler agreement from
+the retained primary database data.
+
+Primary tables, whose rational unreduced ranks also directly verify the
+6-versus-12 comparison:
+https://katlas.org/wiki/5_1#Khovanov_Homology
+https://katlas.org/wiki/10_132#Khovanov_Homology
+Reduced records: KnotInfo data retained at
+work/proof10/homology/polys.json; source https://knotinfo.org/.
+
+Hence all signed heat traces (2) of the two knots coincide, at every
+t, but their unsigned heat traces converge to different ranks. This
+refutes exact recovery of rank from those observables. It does NOT
+refute a finite upper bound on rank in their common Jones fiber: the
+two ranks are both finite, and no unbounded family is claimed here.
+
+5. Why a gap estimate is not the missing bridge
+=============================================
+Let M be total dimension of the finite reduced chain complex, r its
+homology rank, and lambda its least positive Laplacian eigenvalue. Put
+Z_D(t)=Tr exp(-t Delta), WITHOUT parity signs. Then
+
+ r <= Z_D(t) <= r+(M-r) exp(-lambda t).                  (5)
+
+This is a good computational separation estimate. It places no upper
+bound on r. Knowing lambda is bounded below never controls how many
+zero eigenvalues remain. With no positive eigenvalues, Z_D(t)=r and the
+same point is even more immediate.
+
+Moreover, the proposed condition
+
+ 'for every K with V_K=P there exist a diagram D_K and t_K>0
+  with Z_(D_K)(t_K)<=B(P)'
+
+is, as a mere finiteness assertion, equivalent to H-rank on that fiber.
+One direction is (5). Conversely, given a rank bound, take any finite
+diagram and cool long enough to make the positive contribution less
+than one. The additive change from B to B+1 is immaterial. Allowing
+arbitrary diagrams and arbitrary cooling times would therefore rename
+the original missing premise rather than construct it.
+
+6. Decision and exact next-test requirement
+==========================================
+Stop this spectral branch unless a new geometric operation supplies
+independent control of the UNSIGNED harmonic space. Concretely, the
+graph model would need diagram moves controlling the number of
+bipartite components and their bulk-degree analogues across a complete
+Jones fiber; source Proposition 4.4 is not such a theorem. A local gap
+calculation, a better quantum algorithm, or an all-temperature signed
+trace identity does not advance the global rank argument by itself.
+
+No new bounded-fiber theorem or counterexample emerged in this pass.
+The useful result is the exact scope audit of a genuinely new spectral
+construction, plus a rigorous reason that its most immediate positivity
+mechanism cannot recover the lost information. This does not exclude
+all spectral or geometric approaches, and it does not establish that
+the existing H-rank scaffold is false.

@@ -1,0 +1,81 @@
+INDEPENDENT ALL-INTEGER AUDIT OF THE MARKED LLL(1) TWO-BAND FAMILY
+Verdict: the proposed exclusion is valid for the family in
+work/research34/two_band_family.py/.json. Its Jones polynomial equals 1
+if and only if (m,n)=(0,0). The zero member is the certified actual unknot.
+This is an entire two-parameter family exclusion, not a bounded search.
+
+CONVENTIONS AND LABEL CHECK
+Regina's variable is x=sqrt(t). Write delta=-x-x^-1 and z=x^-4.
+The recorded writhes are -3-2(m+n), agreeing with the antiparallel
+full-twist normalization derived in twist_formula.txt.
+
+To keep the smoothing index attached to the site that is removed, set
+ S1 = polynomial of active_bands=[false,true],
+ S2 = polynomial of active_bands=[true,false].
+Then S1-delta has support endpoints -15,7 (span 22), whereas S2-delta
+has endpoints -17,7 (span 24). The parent message used S1,S2 in the
+opposite order. This is harmless, but the formulas below use the
+explicit assignment just given.
+
+I independently checked, by exact integer Laurent arithmetic on the
+saved coefficient dictionaries, the identity
+ delta*(V_mn-1)
+  = (S1-delta)*z^n+(S2-delta)*z^m
+      -(S1+S2-2*delta)*z^(m+n)                         (1)
+for ALL FIVE saved corner polynomials: (0,0),(1,0),(0,1),(1,1),(1,-1).
+The agreement is of complete polynomials, not just one specialization.
+The general identity follows from the actual disjoint twist boxes and
+the already derived normalized TL2 relation, for every integer m,n.
+The double cut polynomial is delta^2, exactly as required.
+
+STEP 1: THE SIGNED DETERMINANT FORCES THE ANTIDIAGONAL
+Exact reduction of the two saved Laurent polynomials modulo x^2+1 gives
+  S1(i)=S2(i)=144i.
+The original, uncancelled formula is
+ V_mn=z^(m+n)
+  +z^n*((1-z^m)/delta)*S1
+  +z^m*((1-z^n)/delta)*S2
+  +(1-z^m)*(1-z^n),                                  (2)
+where the final term uses the double cut delta^2.
+
+At x=i, z=1 and delta=0, so it would be wrong to substitute separately
+into S1/delta. Instead, the quotient in (2) is regular and
+ lim_(x->i) (1-x^(-4m))/(-x-x^-1)=2mi
+for every integer m. Indeed z'(i)=4i and delta'(i)=-2; the same derivative
+calculation holds for positive, zero, and negative m. Thus (2) gives
+
+                    V_mn(t=-1)=1-288(m+n).            (3)
+
+This agrees independently with all recorded corners, whose values are
+1,-287,-287,-575,1. If V_mn is identically 1, equation (3) forces m+n=0.
+Even the weaker absolute-determinant-one condition forces m+n=0, since
+1-288(m+n)=-1 has no integer solution.
+
+STEP 2: UNEQUAL SPANS EXCLUDE EVERY NONZERO ANTIDIAGONAL POINT
+Set u=(S1-delta)/delta, v=(S2-delta)/delta. With n=-m, (1) factors as
+
+              V_(m,-m)-1=(z^m-1)*(v-u*z^-m).          (4)
+
+If m is nonzero, z^m-1 is a nonzero rational function. The coefficient
+field Q(x) is an integral domain, so a Jones-one value would require
+
+                  S1-delta=z^m*(S2-delta).            (5)
+
+Multiplication by the Laurent monomial z^m=x^(-4m) preserves the
+exponent span. The left side has span 22 and the right side span 24.
+Their extremal coefficients remain nonzero after subtracting delta,
+which changes only exponents +1,-1. Equation (5) is impossible.
+Therefore m=0, and then n=0. Conversely the recorded zero member has
+Jones polynomial 1 and simplifies to a single crossing-free circle.
+
+SCOPE OF THIS AUDIT
+The coefficient arithmetic, normalization signs, index assignment,
+removable-singularity calculation, and all-integer inference were
+independently checked. The claimed actual embedded family is supplied
+by the retained generator: it modifies two distinct original faces
+using disjoint attaching edges, with no intermediate rebuild. The
+all-integer proof uses that fixed family and the supplied exact Jones
+coefficient dictionaries; this audit did not repeat an independent
+state-sum computation of the original 19-crossing PD diagrams.
+No assertion is made about other embedded band pairs, other unknot
+anchors, or other LLL parameters. No generic Jones-unknot theorem follows.

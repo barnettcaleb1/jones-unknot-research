@@ -1,0 +1,113 @@
+PASS37: INDEPENDENT TOPOLOGICAL AND NORMALIZATION AUDIT
+2026-11-01. This excludes the saved marked family and supplies a finite exact
+criterion for any qualifying family; it does not exclude every possible band
+placement or prove Jones unknot detection.
+
+1. THE COMMON MATRIX AND THE INDEXING
+Start with the ACTUAL unknot U, not merely a knot with Jones polynomial 1.
+Attach its two disjoint coherently oriented inverse/fission bands. The disk plus
+both bands is a properly embedded orientable planar surface F in B4. Its double
+branched cover has two 2-handles with a common symmetric integral matrix B.
+Attaching inverse band i alone produces the partial link S_i and the corresponding
+one-handle submatrix [B_ii]. This is the indexing used in the two-site skein
+formula. In the original LLL-to-U fusion description, the same S_i is obtained by
+REMOVING fusion band i and retaining the other fusion band. Those are different
+starting descriptions, not a reason to exchange B11 and B22. An initial index-swap
+warning in this audit was withdrawn after checking this distinction.
+
+The signature/ordinary-determinant argument in research35 is sound:
+  S_i(i)=kappa*i*B_ii,
+with ONE common kappa=+1 or -1 determined by conventions. No independent phase
+choices or component reorientations are permitted. The proof caps the oriented
+branch surface with a Seifert surface, uses the zero normal Euler number of the
+closed oriented surface in S4, and applies the G-signature formula and Novikov
+additivity. It does not assume that a projected annulus has zero framing.
+
+If H1(Sigma2 L)=Z plus Z/144, then rank B=1 and
+  B=d v v^T,  v=(v1,v2) primitive integral, |d|=144.
+The Smith form is diag(|d|,0). The formula holds in the actual band-handle basis,
+not after an unrelated diagonalization. For any such oriented fission band, B_ii
+is even: S_i has odd integral x-exponents, S_i(1)=-2, and S_i(i)/i is congruent to
+S_i(1) modulo 2. Since at least one entry of primitive v is odd, d is even.
+This parity observation is independent of a spin-structure convention.
+
+Primary sources supporting the topology and phase, already read in research35:
+Owens--Strle, Disoriented homology and double branched covers, arXiv2207.09358v2,
+Sections 7, 9, and Lemma 10.1/Theorem 10.3:
+https://arxiv.org/pdf/2207.09358
+Eisermann, The Jones polynomial of ribbon links, GT13 (2009), Section 7.6 Eq.13,
+with the q=-sqrt(t) convention in Section 2.1:
+https://pnp.mathematik.uni-stuttgart.de/igt/eiserm/publications/ribbonlinks.pdf
+Only the ordinary determinant phase is used, never the generalized determinant
+obtained after dividing by an unlink polynomial.
+
+2. TWIST SIGNS AND THE EXACT PARAMETER LINE
+Put x=t^(1/2), delta=-(x+x^-1). In arbitrary local full-twist charts write
+X=x^(4 epsilon1 m), Y=x^(4 epsilon2 n), epsilon_i in {+1,-1}. The recurrence is
+  V_mn-1 = [(S1-delta)Y(1-X)+(S2-delta)X(1-Y)]/delta.
+At x=i, delta'(i)=-2 and X'(i)=-4i epsilon1 m, giving
+  V_mn(-1)=1+2 kappa (epsilon1 m B11+epsilon2 n B22).
+Thus local handedness must be absorbed into effective integer coordinates before
+writing a diagonal or determinant line. In the saved code both epsilon_i=-1,
+so z=x^-4 and V_mn(-1)=1-2 kappa d(v1^2 m+v2^2 n).
+
+Jones polynomial 1 therefore forces the ZERO line directly, with no absolute-value
+ambiguity. Even if only determinant 1 is used, the minus-one alternative would
+require d times an integer to equal +/-1, impossible for |d|=144 (indeed for any
+nonzero even d in this geometry).
+
+When both v_i are nonzero, put a=v2^2, b=v1^2. Since gcd(a,b)=1, the full set of
+integer solutions is (m,n)=(a k,-b k). If either v_i is zero, a separate one-axis
+case remains; the two-nonzero-entry theorem must not be extended to it.
+
+3. INDEPENDENT DERIVATION OF THE ONE-CANDIDATE CERTIFICATE
+Let D_i=S_i-delta and R=D1/D2. On the determinant line, for k != 0,
+  V_(ak,-bk)=1 iff R=z^(ak)(z^(bk)-1)/(z^(ak)-1).
+The limit at z=1 is b/a. Writing z=exp(s), the logarithmic derivative at s=0 is
+(a+b)k/2. Since x d/dx=-4 z d/dz, necessarily
+  k* = -[x R'/R]_(x=i)/(2(a+b)).
+D_i(i) is nonzero here, so the logarithmic derivative is legitimate. Define
+  c_i=D_i(i)/i, e_i=(xD_i')(i)/i.
+Odd Laurent exponents make both integers, and
+  k*=-(e1/c1-e2/c2)/(2(a+b)).
+Hence there is AT MOST ONE non-anchor Jones-one parameter pair. A nonzero integral
+k* still requires checking the complete Laurent identity; integrality alone proves
+nothing about Jones equality or knot topology.
+
+Independently reading the saved partial polynomials gives
+  (c1,e1)=(144,-576), (c2,e2)=(144,-720), a=b=1,
+so k*=-1/4. This rejects every nonzero integer pair for that actual marked family.
+A second independent check at x=1 gives
+  D1 derivatives of orders 0..4: 0,0,0,-288,6336;
+  D2 derivatives of orders 0..4: 0,0,-96,1728,-39840.
+The unequal vanishing orders 3 and 2 alone reject every nonzero pair via the two
+terms in the skein numerator, without needing the surgery-matrix hypothesis.
+Arithmetic is saved in topology_arithmetic_audit.json. This reproduces, rather
+than assumes, the braid agent's derivative calculations.
+
+4. EXACT LIMIT OF THE TOPOLOGICAL CONCLUSION
+No signature, determinant, or matrix argument here forces the unequal orders at
+x=1 for every possible band pair. Nor does the first-derivative formula by itself
+force k* to be nonintegral in every family. The following purely FORMAL Laurent
+example demonstrates the latter logical limitation:
+  Q=-18 x^-1 (x^2-1)^2 (x^4+1)(x^4+x^2+1),
+  D2=Q, D1=x^-4 Q, S_i=delta+D_i.
+These have odd integral exponents and satisfy
+  S_i(1)=-2, S_i'(1)=0, S_i(i)=144i;
+  ord_1 D1=ord_1 D2=2, with equal nonzero leading coefficients.
+The extra factors make the defects vanish at x^4=-1 and at primitive cube roots
+of x^2 as well. Their matrix-level data agree with a rank-one even matrix having
+both diagonal magnitudes 144. The derivative test gives k*=1, and the exact skein
+numerator vanishes at (m,n)=(1,-1), because D1=zD2.
+
+This is NOT an actual link, tangle, band pair, or knot. No realizability is claimed.
+It neither refutes a geometric noncancellation theorem nor supplies a counterexample
+to Jones detection. It does prove that the stated scalar constraints and elementary
+normalizations cannot, without a further geometric input, exclude every residual
+integer point. Even actual realization would require checking whether its non-anchor
+Jones-one point is a nontrivial knot, rather than a second unknot.
+
+The useful rigorous endpoint of this pass is finite and exact: for each qualifying
+actual pair with nonzero diagonals, the complete Z^2 search reduces to the anchor
+plus at most one explicitly computable point. The saved LLL(1) pair has no such
+point. There is no generic all-band exclusion in this audit.

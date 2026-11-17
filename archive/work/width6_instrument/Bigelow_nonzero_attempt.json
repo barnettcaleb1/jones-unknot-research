@@ -1,0 +1,376 @@
+{
+  "label": "Bigelow_nonzero",
+  "i": 7,
+  "j": 7,
+  "original_word": [
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1
+  ],
+  "effective_matrix_word": [
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1
+  ],
+  "status": "STOPPED_AT_TRANSPORT_BUDGET",
+  "trace": [
+    {
+      "prefix": 1,
+      "matrix_generator": -1,
+      "vertices": [
+        2,
+        2
+      ],
+      "seconds": 0.0004471251741051674
+    },
+    {
+      "prefix": 2,
+      "matrix_generator": 2,
+      "vertices": [
+        5,
+        5
+      ],
+      "seconds": 0.0023267921060323715
+    },
+    {
+      "prefix": 3,
+      "matrix_generator": 5,
+      "vertices": [
+        5,
+        5
+      ],
+      "seconds": 0.0026099588721990585
+    },
+    {
+      "prefix": 4,
+      "matrix_generator": -4,
+      "vertices": [
+        5,
+        7
+      ],
+      "seconds": 0.0045158751308918
+    },
+    {
+      "prefix": 5,
+      "matrix_generator": 3,
+      "vertices": [
+        9,
+        15
+      ],
+      "seconds": 0.009852041956037283
+    },
+    {
+      "prefix": 6,
+      "matrix_generator": 4,
+      "vertices": [
+        14,
+        17
+      ],
+      "seconds": 0.017709834035485983
+    },
+    {
+      "prefix": 7,
+      "matrix_generator": -5,
+      "vertices": [
+        26,
+        17
+      ],
+      "seconds": 0.025775374844670296
+    },
+    {
+      "prefix": 8,
+      "matrix_generator": -2,
+      "vertices": [
+        26,
+        29
+      ],
+      "seconds": 0.03840020904317498
+    },
+    {
+      "prefix": 9,
+      "matrix_generator": 1,
+      "vertices": [
+        30,
+        45
+      ],
+      "seconds": 0.052411959040910006
+    },
+    {
+      "prefix": 10,
+      "matrix_generator": 1,
+      "vertices": [
+        32,
+        53
+      ],
+      "seconds": 0.07580474996939301
+    },
+    {
+      "prefix": 11,
+      "matrix_generator": 1,
+      "vertices": [
+        34,
+        61
+      ],
+      "seconds": 0.10631583398208022
+    },
+    {
+      "prefix": 12,
+      "matrix_generator": -2,
+      "vertices": [
+        52,
+        131
+      ],
+      "seconds": 0.15888533415272832
+    },
+    {
+      "prefix": 13,
+      "matrix_generator": -5,
+      "vertices": [
+        60,
+        131
+      ],
+      "seconds": 0.17536279186606407
+    },
+    {
+      "prefix": 14,
+      "matrix_generator": -5,
+      "vertices": [
+        66,
+        131
+      ],
+      "seconds": 0.19688995881006122
+    },
+    {
+      "prefix": 15,
+      "matrix_generator": 4,
+      "vertices": [
+        126,
+        167
+      ],
+      "seconds": 0.25596133386716247
+    },
+    {
+      "prefix": 16,
+      "matrix_generator": 3,
+      "vertices": [
+        204,
+        267
+      ],
+      "seconds": 0.39664708403870463
+    },
+    {
+      "prefix": 17,
+      "matrix_generator": -4,
+      "vertices": [
+        270,
+        423
+      ],
+      "seconds": 0.6207832922227681
+    },
+    {
+      "prefix": 18,
+      "matrix_generator": 5,
+      "vertices": [
+        360,
+        621
+      ],
+      "seconds": 0.8519173339009285
+    },
+    {
+      "prefix": 19,
+      "matrix_generator": 5,
+      "vertices": [
+        410,
+        719
+      ],
+      "seconds": 1.2220750418491662
+    },
+    {
+      "prefix": 20,
+      "matrix_generator": 2,
+      "vertices": [
+        594,
+        907
+      ],
+      "seconds": 1.5516128749586642
+    },
+    {
+      "prefix": 21,
+      "matrix_generator": -1,
+      "vertices": [
+        840,
+        989
+      ],
+      "seconds": 1.8822002918459475
+    },
+    {
+      "prefix": 22,
+      "matrix_generator": -1,
+      "vertices": [
+        986,
+        1055
+      ],
+      "seconds": 2.3608613749966025
+    },
+    {
+      "prefix": 23,
+      "matrix_generator": -1,
+      "vertices": [
+        1120,
+        1103
+      ],
+      "seconds": 3.0001948750577867
+    },
+    {
+      "prefix": 24,
+      "matrix_generator": 2,
+      "vertices": [
+        2189,
+        1559
+      ],
+      "seconds": 4.092077374923974
+    },
+    {
+      "prefix": 25,
+      "matrix_generator": 5,
+      "vertices": [
+        2233,
+        1659
+      ],
+      "seconds": 4.6352709592320025
+    },
+    {
+      "prefix": 26,
+      "matrix_generator": -4,
+      "vertices": [
+        3134,
+        2857
+      ],
+      "seconds": 6.044453292153776
+    },
+    {
+      "prefix": 27,
+      "matrix_generator": -3,
+      "vertices": [
+        4928,
+        4889
+      ],
+      "seconds": 9.182551833800972
+    },
+    {
+      "prefix": 28,
+      "matrix_generator": 4,
+      "vertices": [
+        7465,
+        7621
+      ],
+      "seconds": 14.274355167057365
+    },
+    {
+      "prefix": 29,
+      "matrix_generator": -5,
+      "vertices": [
+        10875,
+        11237
+      ],
+      "seconds": 20.717766125220805
+    },
+    {
+      "prefix": 30,
+      "matrix_generator": -2,
+      "vertices": [
+        14635,
+        15091
+      ],
+      "seconds": 27.46557258395478
+    }
+  ],
+  "limits": {
+    "transport_seconds": 150,
+    "vertices_per_curve": 15000,
+    "configuration_pairs": 2000000
+  },
+  "seconds": 27.46619270881638
+}

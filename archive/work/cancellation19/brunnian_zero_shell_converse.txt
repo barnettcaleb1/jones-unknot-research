@@ -1,0 +1,2 @@
+This initial filename is superseded by brunnian_reduction.txt in the same directory.
+The latter contains the full marked proof and corrected CGLS citation.

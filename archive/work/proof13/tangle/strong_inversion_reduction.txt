@@ -1,0 +1,61 @@
+GENERIC SYMMETRY REDUCTION, AND ITS EXACT LIMIT
+Status: standard constructions and deductions; no novelty or generic detection proof claimed.
+
+1. A valid generic reduction.
+Write rK for reversal of the knot orientation, and mK for mirror image. The
+known double D(K)=K#rK has a strong inversion exchanging the two summands,
+for EVERY K, without assuming that K is invertible. See Di Prisa--Savk,
+Equivariant Q-sliceness of strongly invertible knots, Section2.4 / Figure7:
+https://arxiv.org/html/2412.09322v1#S2.SS4
+The source explicitly distinguishes rK from mK.
+
+Hence V_K=1 implies V_D(K)=V_K^2=1; D(K) is nontrivial if K is nontrivial,
+by connected-sum genus additivity. If one also wants a ribbon knot, first
+form R=K#r(mK), then take D(R). R and D(R) are ribbon, and
+V_D(R)=(V_K(t)V_K(t^-1))^2. Thus Jones detection restricted to strongly
+invertible ribbon knots would imply detection for all knots. This does not
+bound their fusion number or give a one-band ribbon presentation.
+
+2. Covering knot is not branch knot.
+The exterior of a strongly invertible knot D(K) is the double cover of a
+2-tangle T, and T has an actual unknot meridional filling. The nonmeridional
+fillings are branch links of surgeries on D(K), NOT D(K) itself. The natural
+1/2 surgery on D(K) is the double branched cover of the positive untwisted
+Whitehead double Wh+(K). This is Manolescu--Owens, A concordance invariant
+from the Floer homology of double branched covers, Proposition6.1:
+https://web.stanford.edu/~cm5/conc.pdf
+
+3. The missing polynomial bridge is exactly color three.
+Use ordinary Jones variable t, V_U=1, zero Seifert framing, and reduced
+N-dimensional colored Jones H_N with H_N(U)=1. Let P_K be the Jones
+polynomial of the Seifert-zero-framed 2-parallel of K, with its strands
+oppositely oriented, and delta=-(t^(1/2)+t^(-1/2)). Then local clasp skein and
+fusion give
+ V_Wh+(K) = t^2 + (t^(3/2)-t^(1/2))P_K,
+ delta P_K = (t+1+t^-1)H_3(K)+1.
+Indeed changing one positive clasp crossing unknots Wh+(K); its oriented
+smoothing is the stated 2-parallel. The second identity is 2 tensor 2=1+3
+with quantum dimensions and zero framing. Since Wh+(U)=U, elimination yields
+
+ V_Wh+(K)(t)-1 = [(1-t^3)/(1+t)] [H_3(K;t)-1].
+
+Consequently V_Wh+(K)=1 IFF H_3(K)=1, as identities of rational functions
+(or Laurent polynomials after cancellation). The negative clasp follows by
+mirroring. In particular the hoped-for implication V_K=1 => V_Wh+(K)=1
+is precisely V_K=1 => H_3(K)=1, the same missing implication as the
+(r,1)-cabling route at r=2. The geometry has not bypassed higher colors.
+
+4. Concrete countertest away from the unit fiber.
+Actual diagrams of 5_1 and 10_132 have identical ordinary Jones
+ t^-2+t^-4-t^-5+t^-6-t^-7.
+Their positive untwisted Whitehead doubles have different Jones; in
+x=t^(1/2), their support ranges are [-38,4] and [-42,6]. Their Seifert
+2-parallel polynomials differ as well. quotient_response_test.py recomputes
+all four satellites with Regina7.4.1 from saved PDs (Spherogram2.4.1 supplies
+the inputs); quotient_response_test.json stores all input/output PDs and
+full coefficients. whitehead_bridge_verify.py independently checks every
+coefficient against the pre-existing exact R-matrix H3 certificate in
+proof12, including both fusion and clasp identities. This is a counterexample
+to determination of quotient responses by V in general, NOT to a hypothetical
+special rigidity theorem on the V=1 fiber. The proof12 all-color witness
+already establishes the stronger separation for every color N>=3.

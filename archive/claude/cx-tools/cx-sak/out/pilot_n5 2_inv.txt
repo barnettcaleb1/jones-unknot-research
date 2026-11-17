@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/cx-sak/run_pilot.py", line 6, in <module>
+    n = int(sys.argv[1])
+ValueError: invalid literal for int() with base 10: '5 2'

@@ -1,0 +1,37 @@
+basis: [(1, 0, 3, 2, 5, 4), (1, 0, 5, 4, 3, 2), (3, 2, 1, 0, 5, 4), (5, 2, 1, 4, 3, 0), (5, 4, 3, 2, 1, 0)]
+B(c,c) == delta^3: True
+B(c, rho(s2 s4)c) == A^6 delta: True | -1*A^4 + -1*A^8
+hermitian norm of u == delta^3: True
+  s1: scalar on c? True  scalar = -1*A^-3
+  s3: scalar on c? True  scalar = -1*A^-3
+  s2 s1 s3 s2 (cap swap): scalar on c? True  scalar = 1*A^0
+  s2 s1^2 s2 (strand around cap): scalar on c? True  scalar = 1*A^0
+  (s1 s2)^3 = twist about {1,2,3}: scalar on c? True  scalar = 1*A^-6
+  half twist Delta: scalar on c? True  scalar = -1*A^-9
+  (s2 s3)^3 = twist about {2,3,4} (contains cap (34), so Hilden) fixes [c]? True (expected True)
+
+Gram determinant vs [2]^4[3]^4[4] formula:
+  delta=0.7: det=-0.0171691  formula=-0.0171691
+  delta=1.2: det=-0.0522282  formula=-0.0522282
+  delta=1.5: det=4.63486  formula=4.63486
+  delta=1.9: det=1849.93  formula=1849.93
+  delta=2.5: det=315302  formula=315302
+  delta=3.3: det=3.32856e+07  formula=3.32856e+07
+loops(m,n) = 3 + a_m + a_n mod 2 for all pairs: True
+G(-1.7) == -D G(1.7) D: True
+
+Eigenvalues of G(delta):
+  r=4 (sqrt2)    [-0.       1.41421  1.41421  1.41421  9.89949]
+  r=5            [ 0.19944  2.61803  2.61803  2.61803 13.1268 ]
+  r=6            [ 0.3949   3.4641   3.4641   3.4641  15.19355]
+  r=8            [ 0.66633  4.46088  4.46088  4.46088 17.49424]
+  delta=1.45     [ 0.02279  1.59862  1.59862  1.59862 10.42446]
+  delta=1.40     [-7.76000e-03  1.34400e+00  1.34400e+00  1.34400e+00  9.69576e+00]
+  delta=-1.6     [-12.81752  -2.496    -2.496    -2.496    -0.17448]
+  r=3 (delta=1)  [-0. -0.  0.  0.  5.]
+theta=0.3: delta=-1.6507, unitary w.r.t. G: True, G definite: True
+theta=1.2: delta=1.4748, unitary w.r.t. G: True, G definite: True
+rank G at r=4: 4  rank at r=3: 1
+
+T_{s1}, s1 = sigma_2(round curve about {3,4,5}) (no cap off s1): fixes [c]? False (expected False)
+  B(c, T_{s1} c) = -2*A^-8 + -2*A^-4 + -1*A^0 + -1*A^4 + -1*A^8 + -1*A^12  vs delta^3 A^k pattern

@@ -1,0 +1,151 @@
+INDEPENDENT AUDIT: CONDITIONAL AMPLIFICATION OF A JONES-ONE u=1 KNOT
+31 October 2026. Research deduction; no novelty or unconditional existence claim.
+
+VERDICT
+
+The construction in adjacency_amplification.txt is sound, conditional on
+the previously established equivalence between a nontrivial Jones-one
+unknotting-number-one knot and a nontrivial strongly inverted core J with
+preferred flat exterior quotient [T_J]=u[Q0], u a framing monomial.
+
+There is a shorter proof of nontriviality than the reducing-filling proof
+in that file. It needs no repeated CGLS estimate and no application of
+Lidman--Moore Proposition 3.1 at the end. Both replacements are recorded
+below. The original proofs were also checked and no contradiction found.
+
+PRECISE CONDITIONAL CONCLUSION
+
+If a nontrivial knot K has u(K)=1 and V_K(t)=1, then for every n>=2 there
+is a nontrivial knot K_n with V_K_n(t)=1 and n specified ordinary crossings
+such that changing any nonempty subset gives U. Furthermore
+
+                       n <= 3 g(K_n)-1.
+
+Thus the output genera are unbounded, and there are infinitely many
+distinct output knot types. This is not a proof of Jones unknot detection
+and not a reduction of an arbitrary hypothetical counterexample to u=1.
+
+1. SEED AND MARKINGS
+
+Choose a nontrivial (n+1)-adjacent knot H. Stoimenow's 2005 construction,
+Eq.(10), and Lemma 6 give such an H for every n+1>=3. Change all specified
+crossings to get U; lift the n+1 reverse crossing arcs to Sigma_2(U)=S3.
+The result B=C union D_1 union ... union D_n is componentwise strongly
+inverted. Its preferred crossing-change slopes are epsilon_i/2.
+
+The proof of Lidman--Moore Theorem 1.4 supplies the actual Brunnian
+property: every proper sublink is an unlink. In particular this is not
+just an algebraically split link. The full link is not the unlink, since
+otherwise the full prescribed surgeries give S3 whereas they give
+Sigma_2(H), and Smith's theorem would force H=U.
+
+Keep the original disjoint crossing balls throughout. Their lifts are
+the chosen component neighborhoods. Infection at C replaces only the
+C ball in the quotient; the other n balls, their two strand endpoints,
+and their two actual crossing pictures are untouched. Consequently the
+later operations are LITERAL ordinary crossing changes. The proof does
+not infer this merely from a distance-two assertion about arbitrary
+rational tangles.
+
+2. SHORT ESSENTIALITY PROOF
+
+Perform the prescribed surgeries on D_1,...,D_(n-1), leaving C and
+P=D_n. The ambient manifold is S3: the operated sublink is an unlink.
+Each of C and P is still an unknot, because that component together with
+the operated components forms a proper unlink in B. Their linking number
+is zero. The preferred slopes remain epsilon/2: all original pairwise
+linkings vanish, so neither longitude receives a surgery correction.
+
+Suppose C union P were split. It would then be the two-component unlink,
+so the remaining two prescribed epsilon/2 surgeries would give S3. That
+would be the FULL prescribed surgery on B, contradicting H nontrivial
+and Sigma_2(H)!=S3. Therefore C union P is nonsplit, and P is an essential
+pattern in E(C), with winding zero and P(U)=U.
+
+This proves essentiality for the particular inherited surgery signs
+needed here. Unlike the longer proof, it does not assert an arbitrary
+signs/arbitrary Brunnian preservation theorem, and does not need one.
+
+3. INFECTION AND FULL SURGERY
+
+Insert E(J) at C, with mu_J->lambda_C and lambda_J->mu_C. Because C is
+an unknot, the ambient manifold is S3. The boundary strong inversions
+are both -I and can be glued equivariantly. The remaining n components
+retain fixed points, so the ambient involution has nonempty fixed set.
+The standard involution/Smith theorem identifies its quotient with S3
+and its branch set with U.
+
+For any proper subset S of the remaining n components, S union C was
+an unlink. The whole S unlink is contained in a ball disjoint from C,
+so it remains an actual unlink after infection. This works collectively,
+not merely component by component. Pairwise linking remains zero; for
+n=2 this also follows directly from the zero-linking infection formula.
+
+Now perform the n-1 surgeries from section 2 after infection. Surgery
+and infection commute, since their tori are disjoint. The remaining knot
+is exactly P(J), with its preferred marking. The companion torus is
+incompressible on both sides: P is essential and J is nontrivial.
+Therefore P(J) is nontrivial.
+
+The last prescribed surgery has slope epsilon_n/2, so is nonmeridional.
+The knot-complement theorem implies that nonmeridional surgery on a
+nontrivial knot in S3 cannot give S3. Thus the full surgered manifold Y
+is not S3. This is the desired nontriviality certificate for the final
+branch knot; no self-adjacency classification is needed at this step.
+
+4. BRANCH CONNECTIVITY AND ADJACENCY
+
+The quotient of Y is obtained by the n retained ordinary crossing
+changes in disjoint balls. The initial branch set was U, and ordinary
+crossing changes preserve component count, so the full branch set is a
+knot K_n. Independently, its surgery matrix has zero off-diagonal linking
+entries and numerator +/-1 on every component, so Y is an integer
+homology sphere; its mod-2 first homology also rules out a multi-component
+branch link.
+
+Undo any nonempty collection of those n changes. Only a proper sublink
+of the infected Brunnian link is then surgered; that sublink is an actual
+unlink, so its surgeries give S3. The resulting branch knot is U by
+Smith. Full Y!=S3 makes K_n nontrivial. All n changes appear in one
+diagram because their balls were retained simultaneously.
+
+5. JONES NORMALIZATION
+
+The quotient of the original link exterior is a genuine multilinear
+skein shell. Replacing T_J by u Q0 makes the final bracket u times the
+bracket of the original seed with all n D crossings changed but C left
+unchanged. That is a proper subset of the original n+1 changes, hence U.
+Its bracket and u are framing monomials. Thus V_K_n is a signed monomial.
+The knot identities V(1)=1 and V'(1)=0 force that monomial to equal 1.
+No equal-writhe assumption for the intermediate diagrams is required.
+
+6. GENUS AND DISTINCTNESS
+
+Howards--Luecke Definition 1.3 calls an n-adjacent knot strongly(n-1)-
+trivial. Their Theorem 1.4 excludes a nontrivial genus-g knot from being
+strongly m-trivial when m>=3g-1. Substituting m=n-1 gives n<3g, or
+n<=3g-1. Hence g(K_n)>=floor(n/3)+1. The collection contains infinitely
+many distinct knots; this conclusion is stronger than mere existence
+of outputs for every n, and does not require guessing whether two
+particular constructed outputs coincide.
+
+PRIMARY SOURCES CHECKED
+
+Stoimenow, Some applications of Tristram--Levine signatures and relation
+to Vassiliev invariants, Adv. Math.194 (2005),463--484, Eq.(10), Lemma6:
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf
+
+Lidman--Moore, Adjacency of three-manifolds and Brunnian links, proof of
+Theorem1.4, and Proposition3.1 (the latter not needed in the short proof):
+https://arxiv.org/html/2308.06211
+Published DOI: https://doi.org/10.1017/nmj.2025.10092
+
+Howards--Luecke, Strongly n-trivial knots, Definition1.3, Theorem1.4:
+https://users.wfu.edu/howards/papers/ntrivial.pdf
+
+SCOPE WARNING
+
+This is a conditional propagation theorem within the u=1 Jones-one
+sector. No actual nontrivial flat J or actual Jones-one counterexample
+has been supplied. The generic Jones-unknot problem remains unresolved
+by this argument.

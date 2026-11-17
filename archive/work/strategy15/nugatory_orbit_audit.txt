@@ -1,0 +1,45 @@
+BOUNDED AUDIT: A CYCLIC ORBIT OF GLOBALLY NUGATORY SURGERY CIRCLES
+
+Proposed data: an actual C4-symmetric trivial rotor R0 in B, an asymmetric stator
+S with R0 union S=U, and a C4 orbit of disjoint circles eta_i in int(B) disjoint
+from R0. Require the WHOLE eta link to bound disjoint embedded disks in S3 minus
+U, with the surgery framings specified by those disks. Equal 1/k surgeries then
+keep the global knot U: the surgery link is a split unlink disjoint from U.
+The fact that the circles lie in B does not require their globally nugatory disks
+to lie in B.
+
+No immediate contradiction was found. Global splitness alone does not justify
+local harmlessness: the map pi1(B minus R0) -> pi1(S3 minus U)=Z need not be
+injective. Zero linking, null-homotopy, and the existence of separate (possibly
+intersecting) disks are each weaker than the required simultaneous embedded-disk
+certificate. These weaker conditions cannot be substituted in the construction.
+
+A definite killed subclass: if the framed eta link bounds disjoint disks already
+in B minus R0, the surgery can be performed in local balls disjoint from R0.
+It is then harmless relative to the boundary and cannot create a useful rotor.
+The desired disks must essentially leave B in their position relative to R0.
+
+For crossing circles (disks meeting U twice with opposite signs), the theorem
+that every cosmetic crossing change of U is nugatory provides no extra local
+conclusion. It only confirms the global disk property already required. For
+surgery disks meeting many strands, that crossing-change theorem does not apply.
+Primary reference for the distinction: E. Kalfagianni, Crossing Changes of
+Fibered Knots, Definition6.1 and Theorem6.3.
+https://users.math.msu.edu/users/kalfagia/mynugatory15.pdf
+
+Three geometric obligations remain before this becomes a counterexample recipe:
+1. Draw an actual orbit with the simultaneous global disk certificate, and show
+   that it does not possess the local disk certificate above.
+2. Track the rotor-ball identification after surgery. The equivariant surgery
+   description must yield an actual standard C4 rotor diagram, and its spatial
+   flip must be the proposed flipped surgery configuration. Abstract cyclic
+   invariance of a surgery presentation is not itself the finished diagram.
+3. Certify that the flipped augmented link has a geometric property that makes
+   the filled knot nontrivial. Nonsplitness alone is not enough. If using
+   hyperbolic Dehn filling, one needs a verified hyperbolic augmented-link
+   complement and a sequence of surgery slopes with lengths tending to infinity.
+
+The original augmented link is split and hence nonhyperbolic. Any hyperbolicity
+argument must concern the FLIPPED augmented link. No such link was constructed
+or tested here. No general theorem was located that upgrades global nugatoriness
+to local nugatoriness for a C4 orbit and an asymmetric stator.

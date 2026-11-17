@@ -1,0 +1,1 @@
+K_0 pairing formula chi(Mor(X,Y)) (q-q^-1) = (q+q^-1)(Xb~ Yb + Xc~ Yc) + Xb~ Yc + Xc~ Yb verified: True

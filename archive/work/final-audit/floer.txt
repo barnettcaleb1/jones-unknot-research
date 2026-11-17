@@ -1,0 +1,220 @@
+FRESH ADVERSARIAL AUDIT: STEPS 3–5
+1 November 2026
+
+Target: outputs/jones-rational-tangle-uniqueness-proof.txt, pass 50.
+Scope: Floer/torsion/Casson argument, unlink branch, and return to tangles.
+The target's assertions about earlier verification were not treated as evidence.
+
+VERDICT
+
+I found no fatal gap in Steps 3–5, conditional on Step 2's established package:
+M is a connected oriented integral homology solid torus; its identified
+longitude agrees with that of V; it is irreducible; the original products
+give the asserted oriented fillings with the common marked slopes; X has
+exactly two arcs and no circle components. These hypotheses are essential.
+This audit does not independently certify every detail of Steps 1–2 or
+establish literature novelty.
+
+The most useful revision is to shorten Step 4 using RR Proposition 7.8.
+Ni–Vafaee's theorem is correctly applicable, but unnecessary here.
+
+PRIMARY-SOURCE STATEMENTS CHECKED
+
+RR: Rasmussen–Rasmussen, arXiv:1508.05900v2, pp. 2, 6–7, 43, 45–46.
+https://arxiv.org/html/1508.05900v2
+Proposition 1.3 equates multiple L-space slopes with Floer simplicity.
+Proposition 1.4 gives torsion coefficients in {0,1}. The normalization
+preceding it has nonnegative support, nonzero constant coefficient, and
+eventual coefficients 1. Section 2.1 defines bar-tau by projecting away
+torsion in H_1 and bar-Delta=(1-t)bar-tau. Corollary 2.3 assumes boundary
+incompressibility and Floer simplicity for its norm equality. Irreducibility
+is added only in its separate fibering assertion. Definition 7.2 uses
+deg(bar-Delta)<g_M; Proposition 7.8 supplies that generalized-solid-torus
+condition for a knot in Z#(S^1 x S^2) admitting an L-space surgery.
+
+NW: Ni–Wu, Cosmetic surgeries on knots in S^3, printed p. 9,
+Proposition 3.1, equation (7).
+https://archive.ymsc.tsinghua.edu.cn/pacm_download/301/8839-Cosmetic.pdf
+The statement explicitly allows a null-homologous knot in a rational
+homology sphere. Its formula is lambda(Y_p/q(K)) = lambda(Y) +
+lambda(L(p,q)) + (q/(2p))Delta_K''(1), with symmetric Delta_K and
+Delta_K(1)=1. Thus it is not restricted to an S^3 ambient manifold.
+
+NV: Ni–Vafaee, Null surgery on knots in L-spaces, printed p. 8280,
+Theorem 1.1, and pp. 8292–8293, Remark 3.2 and proof.
+https://www.its.caltech.edu/~yini/Published/NullSurgery.pdf
+Theorem 1.1 states that a knot in S^1 x S^2 with an L-space surgery has
+a complement fibered over S^1. It imposes no extra primitive-knot or
+distance-one condition. Its proof uses RR Propositions 7.8 and Corollary
+7.12. It is therefore not an independent verification of those inputs.
+
+BM: Buck–Mauricio, arXiv:1007.0948, printed pp. 4–5, Definitions 3.1,
+3.4 and Theorem 3.5(2).
+https://arxiv.org/pdf/1007.0948
+Their tangle is a pair of properly embedded arcs in a ball, with a boundary
+parametrization. The stated equivalence is rational tangle if and only if
+solid-torus double branched cover. Their theorem attributes this to
+Lickorish, Prime knots and tangles, Trans. AMS 267 (1981), 321–332.
+The original AMS PDF returned 403 in this audit, so the original Lickorish
+proof itself was not inspected. The cited BM statement was inspected.
+
+S: Sikora, arXiv:2005.08162v2, Sections 4 and 7, Corollary 20.
+https://arxiv.org/html/2005.08162v2
+Section 4 uses balanced isotopy, allows arbitrary framing on a rational
+tangle, and makes twist location immaterial. Corollary 20 distinguishes
+framed rational tangles using their bracket vectors. Its proof first fixes
+the rational slope, then kills the remaining total framing integer.
+
+STEP 3: INDEPENDENT CHECKS
+
+1. The surgery formula has the necessary ambient generality. Once Y is an
+integral homology sphere, K is null-homologous. No L-space assumption on Y
+is needed. Each asserted oriented equality to the unknot p_i/q_i filling
+cancels exactly the corresponding lens-space Casson–Walker term. The two
+remaining linear equations have distinct coefficients q_i/p_i, because
+the slopes are distinct and neither is the longitude. Their subtraction
+does force the symmetric Delta_K''(1) to vanish.
+
+This cancellation depends on the common marked, oriented slope basis.
+An equality of filling homology orders, an unoriented lens-space equality,
+or an independently chosen basis on each solid torus would not suffice.
+Subject to Step 2's common basis, there is no additional hidden choice in
+this step. A common reversal of surgery convention changes both sides
+together. Choosing mu distinct from both probes avoids q_i=0; even q_i=0
+would be harmless algebraically, but the stated choice is convenient.
+
+2. With H_1(M)=Z, the projection used to define bar-tau is the identity.
+Consequently bar-Delta=(1-t)tau=D, in the chosen polynomial normalization.
+This is the specific reason Corollary 2.3 can be applied to D. For general
+H_1=Z plus torsion this identification would be false. Add one explicit
+sentence identifying bar-Delta with D before the norm argument; the
+current statement is mathematically correct but leaves that point implicit.
+
+3. Set a_{-1}=0. Then d_n=a_n-a_{n-1}. As a binary sequence changes
+between its two values, its nonzero successive changes alternate signs.
+It starts at 1 and eventually remains 1, so D's nonzero coefficients are
++1,-1,...,+1, with constant coefficient 1. There is no possibility of
+a larger coefficient, a leading negative coefficient, or infinitely many
+nonzero d_n. The argument does not assume the chosen filling core K is
+itself Floer simple in Y; Floer simplicity of its exterior is sufficient.
+
+4. Symmetry of the knot Alexander polynomial gives D=t^g Delta_K, with
+deg(D)=2g. Here g is initially a nonnegative integer exponent shift.
+Since D has an odd number of nonzero coefficients and symmetry pairs all
+noncentral terms, the coefficient at its center cannot vanish. The
+displayed signed expansion for Delta_K follows. Differentiating a pair
+t^n+t^(-n) at 1 gives 2n^2. For even k, the alternating sum of squares is
+(n_k^2-n_{k-1}^2)+...+(n_2^2-n_1^2). For odd k it is the analogous sum
+ending with +n_1^2. Every summand is positive. Thus the positivity claim
+is sound, including the central-coefficient issue.
+
+An independent algebraic check gives a quantitative strengthening. Let
+G(t)=sum_{a_n=0}t^n, summing only n>=0. This is a finite polynomial, with
+no constant term, and D(t)=1+(t-1)G(t). Symmetry gives D'(1)=g, so there
+are exactly g missing exponents. Hence
+
+  Delta_K''(1)=D''(1)-g(g-1)
+              =2 sum_{a_n=0} n - g(g-1) >= 2g.
+
+The inequality uses that g distinct positive integers have sum at least
+g(g+1)/2. Thus vanishing directly forces g=0 and D=1. This supplies a
+second proof of the algebraic step; either version is adequate.
+
+5. The norm argument is a contradiction under a temporary assumption of
+boundary incompressibility. Since bar-Delta=D=1, it gives norm=-1.
+The Thurston norm is nonnegative by definition. Therefore a compressing
+disk exists. Irreducibility, already obtained from an actual lens filling,
+then makes M a solid torus. No fibering inference from Delta=1 is being
+smuggled into this argument. Irreducibility must not be deleted from the
+last implication.
+
+STEP 4: INDEPENDENT CHECKS AND SIMPLIFICATION
+
+The Ni–Vafaee application is direct: the lambda filling gives an actual
+S^1 x S^2 and its core is a knot whose exterior is M. The other filling is
+an L-space. If a fibration initially has disconnected fibers, pass to its
+connected-fiber factorization over a circle; the total manifold is connected.
+For that fibration, H_1(M)=Z maps onto Z and therefore maps isomorphically.
+
+The boundary-surjectivity calculation is correct. Poincare–Lefschetz
+duality and the universal coefficient theorem give
+H_1(M,partial M)=H^2(M)=0 from H_1(M)=Z and H_2(M)=0. The long exact
+sequence makes H_1(partial M)->H_1(M) surjective. Its composition with
+the fibration map is therefore onto Z. A connected torus mapping-torus
+whose circle fiber has k components has image kZ on fundamental groups
+and H_1: going once around the base permutes those k components cyclically.
+Thus k=1. The boundary circle is null-homologous in M and consequently
+has slope lambda.
+
+Capping the boundary is legitimate: an orientation-preserving circle
+monodromy extends over a disk. It gives a closed orientable fiber bundle
+over S^1 with total space M(lambda)=S^1 x S^2. Its fiber group injects
+into pi_1(S^1 x S^2)=Z. Positive-genus closed orientable surface groups
+cannot inject into Z. The capped fiber is S^2, the original fiber is a
+disk, and its oriented mapping torus is a solid torus.
+
+Shorter replacement, using only a source already needed in Step 3:
+
+  By RR Proposition 7.8, the exterior of the filling core in S^1 x S^2,
+  which admits the other L-space filling, is a generalized solid torus.
+  Since H_1(M)=Z, the homological longitude has order g_M=1. RR
+  Definition 7.2 therefore gives deg(bar-Delta(M))<1. If partial M were
+  incompressible, Corollary 2.3 would give a negative Thurston norm.
+  Thus partial M is compressible, and irreducibility makes M a solid torus.
+
+The order of the zero element here is 1, not 0. RR's g_M is unrelated to
+the exponent shift g in Step 3. Use distinct notation if inserting this
+replacement. This route removes an entire dependency and avoids needing
+the boundary-fibration argument. It does not rely on a claim that every
+generalized solid torus is an actual solid torus.
+
+STEP 5: INVOLUTION AND FRAMING
+
+The converse in BM 3.5(2) already concerns the given double branched cover
+of the given two-arc tangle. It is not merely an existence assertion that
+some involution of a solid torus has rational quotient. Thus no extra
+assumption that the particular deck involution is standard is needed.
+Excluding circle components earlier is necessary to fit BM's stated
+definition. Rationality as an unmarked pair is enough: the inherited
+boundary marking selects its rational slope, and its arbitrary allowed
+framing makes it a framed rational tangle in Sikora's convention. Then
+Corollary 20 applies to [X]=[R]. The conclusion would require additional
+care if one silently replaced balanced isotopy with componentwise strict
+framed isotopy; the target correctly retains balanced isotopy.
+
+ATTEMPTED COUNTEREXAMPLES / HYPOTHESIS STRESS TESTS
+
+(a) M=(S^1 x D^2)#Sigma, where Sigma is a nontrivial integral homology
+L-space sphere, is the standard obstruction to overclaiming. It has
+H_1=Z, Delta=1 and many L-space fillings, but is not a solid torus. It is
+boundary compressible and reducible. Its nonlongitudinal fillings have
+the nontrivial Sigma connected summand, so they cannot be actual lens
+spaces. Therefore it does not violate the target, but shows exactly why
+the earlier irreducibility argument and actual lens topology are needed.
+
+(b) Nontrivial L-space knot exteriors, such as the trefoil exterior,
+have H_1=Z and are Floer simple. For the trefoil Delta=t-1+t^(-1),
+Delta''(1)=2, so they fail the Casson–Walker conclusion. More generally,
+the independent algebraic inequality above obstructs every nonconstant
+polynomial allowed by the binary torsion condition.
+
+(c) RR's non-solid generalized-solid-torus examples have nontrivial
+homological torsion or different longitude order. For instance the
+Seifert examples N_g have H_1=Z plus Z/g. For g>1 they are outside the
+target's H_1=Z hypothesis. At g=1 the norm obstruction forces boundary
+compressibility; in the irreducible case this is the ordinary solid torus.
+They cannot be used to falsify the proof by conflating rational and
+integral homology solid tori.
+
+(d) A hypothetical nontrivial Alexander-one knot in an integral homology
+sphere does not defeat the norm step: if its irreducible exterior were
+Floer simple, Corollary 2.3 would already exclude incompressible boundary.
+No assumption that Y itself is S^3 or an L-space is used.
+
+ACTIONABLE CHANGES
+
+No mathematical repair is required in the audited steps. Recommended
+clarifications: explicitly identify bar-Delta=D; retain irreducibility;
+either keep the valid Ni–Vafaee argument or replace it with RR 7.8 plus
+2.3; distinguish g_M from the polynomial shift g. Treat this as a source
+and deduction audit, not a novelty or independent-referee certificate.

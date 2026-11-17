@@ -1,0 +1,210 @@
+U5 / LEMMA Q: ONE-ACTUAL-FILLING AUDIT
+2026-11-02. Subagent u1_floer_gate. Bounded audit, not a claim of new research.
+
+CONCLUSION
+
+Claude identified the first missing topological input correctly: a second
+L-space filling, equivalently Floer simplicity of the exterior. The actual
+S^3 meridian makes the exterior irreducible and removes the old closed-summand
+obstruction. The bracket-only longitude already gives a_2(kappa)=0. Everything
+after Floer simplicity in LATE-41 still works. No mechanism deriving Floer
+simplicity from exact rational bracket was found.
+
+Important refinement: Floer simplicity is used twice downstream. It gives
+both (i) alternating Alexander support and (ii) sharpness of the Alexander
+degree as a Thurston-norm bound. Replacing Floer simplicity merely by binary
+torsion, or even by Delta=1, does NOT complete the argument. Actual strongly
+invertible Whitehead doubles refute that shortcut.
+
+1. PRECISE INPUT AND SURVIVING PROOF
+
+Assume T is the preferred marked exterior quotient of a strongly invertible
+knot kappa in S^3, with meridian closure ACTUALLY U, and normalized bracket
+[T]=[Q_0]. Here Q_0 is the rational tangle whose covering solid torus has
+compressible slope the preferred longitude lambda. A harmless common framing
+unit can instead be retained throughout.
+
+The actual meridian closure gives M=Sigma_2(T)=E(kappa). Thus H_1(M)=Z and M is
+irreducible. This is stronger than the old generic rational-homology-solid-
+torus situation: no nontrivial integral-homology-sphere connected summand can
+survive an actual S^3 filling.
+
+Every rational closure is a linear functional on the two-dimensional bracket
+module, so its bracket agrees with the corresponding closure of Q_0. The
+half-integral branch family has normalized V=1 once the compatible writhe
+normalization is retained. Its meridian member is ACTUALLY U; equality of the
+other Jones polynomials does not identify their branch links or covers.
+
+The longitude branch closure L has V_L=V_U2 in the compatible orientation,
+and Sigma_2(L)=S^3_0(kappa). A useful independent route to U4 is the archived
+longitude lemma in work/fanout16/realizability_zero_filling.txt:
+
+  |V'_L(-1)| = |12 a_2(kappa)-1|.
+
+For V_L=V_U2 the left side is 1. Integrality of a_2 then gives a_2=0.
+The derivation uses Garoufalidis' normalization lambda_G(S^3_0(kappa))
+=2a_2(kappa)-1/6 and his branched-cover formula, for which J_L(-1)=0 and
+|J'_L(-1)|=1. Thus |lambda_G|=1/6, so |12a_2-1|=1. A Laurent-unit ambiguity
+in the longitude polynomial also leaves the derivative magnitude unchanged.
+This argument does not need a signature-zero assertion for the longitude
+link. The direct u=1/Mullins argument is being checked by the slope agent.
+
+Primary source: Garoufalidis, Theorem 1, Remark 2.2, Section 4.1:
+https://arxiv.org/html/math/9811021
+
+Now try LATE-41. Its next indispensable sentence was: two actual lens-space
+fillings imply Floer simplicity. We have only one actual L-space, M(mu)=S^3.
+This is where the proof stops. Every knot exterior in S^3 has that filling;
+it says nothing by itself about the rank of a nonmeridional filling.
+
+If one nonmeridional L-space filling were supplied, the remaining proof is:
+
+  >1 L-space slopes -> Floer simple -> binary torsion coefficients
+  -> alternating symmetric Alexander polynomial -> a_2=0 forces Delta=1
+  -> Alexander-degree/Thurston-norm equality forces boundary compressibility
+  -> irreducibility forces solid torus -> T rational.
+
+For the elementary alternating-polynomial step, write
+Delta=(-1)^k + sum_{j=1}^k (-1)^{k-j}(t^{n_j}+t^{-n_j})
+with 0<n_1<...<n_k. Then a_2=sum_j(-1)^{k-j}n_j^2 is positive for k>0:
+pair adjacent increasing squares from the largest end. Thus a_2=0 means
+Delta=1. For an incompressible boundary, the norm equality would then give
+norm=-1, impossible. This is a contradiction, not a claim that norms can
+actually be negative.
+
+Published inputs freshly rechecked: Rasmussen--Rasmussen Proposition 1.3
+(two L-space slopes iff Floer simple), Proposition 1.4 (binary torsion), and
+Corollary 2.3 (norm equality under boundary incompressibility):
+https://arxiv.org/html/1508.05900v2
+
+2. WHY THE AVAILABLE NECESSARY CONDITIONS ARE WEAK
+
+Use kappa_r=Wh^r(trefoil), r>=1, with an inherited strong inversion. These
+are actual classical knots in S^3, with actual unknot meridional closures,
+Delta=1 and a_2=0. The standard winding-zero satellite Alexander formula
+gives Delta=1. Their exteriors are not Floer simple: nontriviality plus
+Delta=1 contradicts the norm argument above if Floer simplicity is assumed.
+Their torsion is already the binary series 1/(1-t). Thus even the FIRST
+consequence normally obtained from Floer simplicity is insufficient.
+
+The inherited strong inversion is supported by Dai--Mallick--Taniguchi,
+Example 2.22 (there are two inherited placements):
+https://arxiv.org/html/2606.05819
+
+The stored exact quotient calculation, NOT just a low-order numerical test,
+also proves these examples are not counterexamples to Q. Define
+
+  delta=-A^2-A^-2,
+  x(T)=(f_0(T)/f_infinity(T)-delta)/(1-delta^2),
+  F(A)=(1-A^4)(1+A^8)(1+A^12).
+
+The preferred trefoil quotient has x(T_0)=-A^2 F(A); the inherited untwisted
+Whitehead shell multiplies x by a Laurent unit times F(A). Consequently
+
+  x(T_r)=u_r(A) F(A)^(r+1),    u_r a nonzero Laurent unit.
+
+This is a statement about the FULL normalized skein vector, not merely one
+test closure. Write v=Q_infinity-delta Q_0 and divide [T_r] by its actual
+meridional bracket f_infinity(T_r). The latter is a framing unit because
+the meridian branch closure is actually U. Then
+
+  [T_r]/f_infinity(T_r) = Q_0 + x(T_r) v
+                       = (1-delta x(T_r)) Q_0 + x(T_r) Q_infinity.
+
+Equivalently the common framing may be adjusted by curls to set f_infinity=1.
+Both basis coefficients therefore agree with (1,0) to arbitrarily high
+finite order. Precisely, at A=1 each coefficient DIFFERENCE has order r+1,
+since delta(1)=-2. At zeta=exp(pi i/4), the Q_infinity coefficient has order
+r+1 and the Q_0 coefficient difference has order r+2, since delta has a
+simple zero there. Thus derivatives of BOTH coefficients through order r
+match the rational bracket at BOTH A=1 and zeta. These are exact orders;
+units do not change them. No claim is made for arbitrary evaluation points.
+
+Geometric scope freshly re-read in quotient17 and transmission18: the shell
+is the quotient of the standard Whitehead link exterior by a componentwise
+strong inversion, hence S^2 x I with four branch points on each boundary.
+The gluing mu_companion -> lambda_axis, lambda_companion -> mu_axis yields
+the untwisted satellite and preserves the preferred outer longitude because
+linking number is zero. It acts linearly on the rank-two tangle skein module.
+After one framing normalization it fixes Q_0 and the meridian functional;
+therefore it is diagonal in (Q_0,v). A signed unit-twist input gives a trefoil;
+uniqueness of the trefoil's strong inversion plus fixed meridian/longitude
+markings gives the factor F up to a Laurent unit/mirror. Iterating compatible
+inherited inversions is legitimate. This does NOT use a strongly inverted
+Whitehead CLASP CROSSING CIRCLE: transmission18 explicitly found that
+different proposed converse geometry uncertified. The inherited satellite
+shell itself survived that audit. I retain TRUSTED for the exact all-r family
+under the shared protocol, rather than upgrade to a fresh independent proof.
+
+This is nonzero for EVERY r. Therefore the full bracket is never rational
+zero. No counterexample is asserted. At A=exp(pi i/4), F has a simple zero;
+hence the actual longitude branch links agree with U2 through derivatives
+of order r at t=-1, while order r+1 differs. At A=1 the same multiplier has
+a simple zero. The associated +/-1/2 branch knots have
+
+ V_Br(t)-1 = epsilon t^k (t-1)^(r+2)(t^2+t+1)
+                         (t^2+1)^(r+1)(t^3+1)^(r+1).
+
+Thus any fixed finite set of ordinary Jones Taylor coefficients at t=1 and
+t=-1 can agree with U in actual unknotting-one branch knots while the core
+has Delta=1 and is not Floer simple. Increasing these jets is a dead end.
+This statement concerns the specified points and inherited inversions; it
+does not assert matching jets at arbitrary points or all inversion axes.
+
+Internal sources, already audited before this turn:
+  work/quotient17/whitehead_pattern_audit.txt
+  work/quotient17/whitehead_injectivity_geometry_audit.txt
+  work/quotient17/whitehead_exact_jet_filtration.txt
+  work/transmission18/whitehead_factor_and_clasp_audit.txt
+  outputs/jones-exact-knot-family-and-zero-factor-target.txt
+These formulas should remain TRUSTED under the shared protocol until Claude
+independently audits them. They are not newly proved in this bounded pass.
+
+The archived numerical core calculation also supplies modest concrete
+examples. Four clasp/chirality versions of the untwisted Whitehead double
+of a trefoil use 19/20-crossing displayed diagrams (no minimality asserted).
+All have a_2=0 and genus one. Stored total HFK ranks are 15,17,17,15; Ahat_0
+ranks are 9,9,9,7. These calculations are supporting evidence only; the
+structural Delta=1/norm obstruction and nonzero quotient factor do the work.
+Data: work/fanout16/realizability_whitehead.json and matching .py driver.
+KT/Conway data also show a large rank gap, but their precise inversion axes
+were not checked here, so I do not use them as the strong-inversion test.
+
+3. AT MOST TWO REPLACEMENT STATEMENTS, WITH HONEST STATUS
+
+C1 — Exact L-space realization. For an ACTUAL preferred tangle T with actual
+unknot meridian and x(T)=0 identically, there is a slope alpha != mu for which
+rank HFhat(M(alpha);F_2)=|H_1(M(alpha))|.
+
+Status OPEN. This is enough by Section 1 and is equivalent in strength to Q
+in this slice: Q gives a solid torus, which has such fillings. It is the
+precise missing statement, not an independent mechanism or new progress.
+Cheap falsification check: any purported proof must identify its use of the
+FULL polynomial identity. Replacing that identity by a_2=0, Delta=1, binary
+torsion, or any fixed number of the jets above fails on kappa_r. In particular
+an argument reading only the torsion series has lost the required information.
+
+C2 — Low-order realization shortcut. Fix any finite N. Suppose an actual
+preferred quotient has an unknot meridian, Delta=1, and matching longitude
+Jones derivatives through order N at -1 (even add matching half-integral
+branch Jones derivatives through order N at 1). Then its exterior admits
+a nonmeridional L-space filling.
+
+Status REFUTED, for every N. Take r sufficiently large in Section 2. These
+are explicit actual strongly invertible examples, not formal chain complexes.
+This candidate is worth recording only to close the tempting shortcut.
+
+No second surviving replacement mechanism was found. The extra full-
+polynomial input has not yet been connected to actual Floer ranks. The
+Kh-to-HF spectral sequence bounds ranks using total reduced Khovanov homology;
+the Jones polynomial supplies its Euler characteristic. All the bracket
+closures are linear functionals of the same rank-two skein vector, so having
+the full family of their polynomial equalities is not independent rank data.
+
+RECOMMENDED STATUS / STOP
+
+U5 remains OPEN, with its first gap correctly located. U4 has the independent
+longitude derivation above. Do not broaden computation of a_2-zero cores or
+increase Taylor order: an infinite actual family has already killed that
+approach. Resume only with a proposed mechanism using exact x(T)=0 to control
+rank/cancellation, or a genuinely independent geometric filling constraint.

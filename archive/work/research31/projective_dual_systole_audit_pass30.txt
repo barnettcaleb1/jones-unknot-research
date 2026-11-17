@@ -1,0 +1,34 @@
+PROJECTIVE EDGE-DELETION NUMBER AS A DUAL SYSTOLE
+Independent audit of the parent's proposed lemma. Status: sound under the cellular-embedding hypothesis; this computes a fixed diagram's graph invariant, not its minimum over all knot diagrams.
+
+Statement.
+Let G be a finite connected graph cellularly embedded in RP², allowing loops and multiple edges, and let G* be its geometric dual. Define alpha(G) as the least number of edges whose deletion leaves a graph contained in a disk in RP². Isolated vertices are retained and do not affect the definition. Then
+
+  alpha(G) = min { length(C) : C is a noncontractible simple cycle in G* }
+           = min_{v in V(G*)} d_{G*_or}(v+,v-),
+
+where G*_or is the graph lifted to the orientation double cover S²→RP². Length counts edges with multiplicity in a walk; a simple cycle includes a noncontractible one-edge loop or a two-edge cycle of parallel edges. All edges have weight1.
+
+Proof.
+1. Fix one lift of each vertex of G to the orientation cover. Give each edge e=uv a sign eta_e indicating whether lifting it preserves or reverses these choices. The product of eta around a closed walk is its orientation character, equivalently its mod2 homology class in RP². Every facial boundary is contractible, so these edge signs form a cellular Z/2 cocycle representing the nonzero class w1 in H¹(RP²;Z/2). This remains true when a facial boundary repeats edges.
+
+2. Changing the vertex lifts changes this cocycle by a coboundary. In sign notation, the new edge signs are eta_e s_u s_v. The positive-edge spanning subgraph has trivial orientation character on every cycle and is local. Conversely, if H⊂G is local, each component of H admits consistent vertex lifts, which can be extended to all vertices. Under the resulting switching all edges of H are positive. It follows that
+
+  alpha(G)=min_s #{e=uv : eta_e s_u s_v=-1}.
+
+The topological assertion used here is specific to RP²: a finite embedded graph is contained in a disk if and only if every cycle is homologically trivial. For a connected graph, thicken it to a regular neighborhood. Trivial orientation character makes this neighborhood orientable and hence planar; its boundary components bound disks, and the complementary side containing the unique crosscap determines an encompassing disk. For several components, first take their outermost disk neighborhoods and join them by a tree of disjoint arcs; their union still has a disk neighborhood. Thus disconnected positive-edge subgraphs cause no exception.
+
+3. By cellular Poincare duality, the negative edges of any switched cocycle correspond to an even-degree dual edge subgraph representing PD(w1), the nonzero class in H1(RP²;Z/2). Conversely every cellular dual cycle representing this class comes from a cocycle cohomologous to w1, hence from a vertex switching. Consequently alpha is the minimum number of dual edges in a representative of this nonzero homology class.
+
+4. An even-degree finite graph decomposes into edge-disjoint simple graph cycles. At least one constituent of a nonzero homology representative is itself nonzero in H1(RP²;Z/2), and its length is no greater than the original edge count. An embedded simple curve in RP² is noncontractible exactly when it is nonzero mod2. This shows that a shortest homology representative can be taken to be one noncontractible simple dual cycle.
+
+There is also a geometric verification of the reverse inequality. A noncontractible simple dual cycle is one-sided and has disk complement. Delete the primal edges it crosses. Every remaining primal edge and vertex lies in that disk complement, so the remaining graph is local. The dual cycle traverses no dual edge twice, so the number deleted is exactly its length.
+
+5. A noncontractible dual cycle based at v lifts to a path from v+ to v- of the same length. Hence the minimum orientation-cover distance is at most the dual systole. Conversely any v+→v- path projects to a closed dual walk with nontrivial orientation character. It need not project injectively: it can repeat projected vertices and edges. Reduce its mod2 edge chain and decompose the remaining even-degree subgraph into simple cycles. At least one is noncontractible and has length no greater than that path. This gives the reverse inequality and proves the distance formula.
+
+Scope and edge cases.
+• Cellularity ensures that G and G* give dual cellular chain complexes, so every representative of the cohomology class is obtained by switching and every relevant dual cycle is represented in the geometric dual graph. Do not silently extend this proof to noncellular embeddings without adding cells/edges and checking the minimization.
+• Loops and bridges require no exception. A primal loop can be switched only through its fixed holonomy; a noncontractible dual loop has length1 and lifts to an edge joining opposite sheets. Contractible dual loops do not contribute to the nontrivial class. Bridges and repeated facial incidences are handled by the mod2 cellular boundary maps.
+• The dual orientation cover is connected for a connected cellular embedding in RP², since its dual graph carries the nontrivial orientation character. Even without using this fact, infinite distances could simply be omitted in the displayed minimum.
+• The formula is for the geometric orientation-character signs. It is not a solution to an arbitrary signed-graph optimization or to the independent crossing-sign cancellations in the Jones polynomial.
+• Thus alpha, and beta=e-alpha, are computable on a fixed projective diagram by ordinary shortest-path calculations on a finite doubled dual graph. This supplies no inequality between the diagram-minimized beta of a knot and the span of its Jones polynomial.

@@ -1,0 +1,140 @@
+GLOBAL GEOMETRIC STRATEGY AUDIT
+1 November 2026 UTC. Six-minute bird's-eye pass. No claim of novelty or proof.
+
+Recommendation
+--------------
+Retain whole-Jones homology boundedness as the main conditional scaffold.
+Do not promote fixed-diagram intersection positivity to a separate proof
+route: the previous pass found exact obstructions to it. A genuinely
+different geometric bridge would control the MINIMUM PLAT bridge number,
+not closed-braid strand count. The latter proposal has a published
+counterexample, found in this pass.
+
+1. One complete alternative conditional proof
+---------------------------------------------
+Let b(K) be the classical bridge number, equivalently half the minimum
+number of strands in a plat presentation of K.
+
+Proposed hypothesis B-plat (UNPROVED): for each whole Jones polynomial P
+there is a finite B(P) such that V_K=P implies b(K)<=B(P), for all knots K.
+
+Conditional theorem. B-plat implies Jones unknot detection.
+Proof. If V_K=1, multiplicativity gives V_(K#...#K)=1. Schubert's exact
+connected-sum formula then gives
+  n(b(K)-1)+1 = b(K^{#n}) <= B(1)
+for all n. Therefore b(K)=1, and K is the unknot. This uses no promotion
+to colored Jones data, no categorification, and no unknotting-one reduction.
+Primary source for the additivity theorem and the bridge-one endpoint:
+Schultens, Additivity of bridge numbers of knots (2003),
+https://www.math.ucdavis.edu/~jcs/pubs/addbri15.pdf
+
+Logical status: restricting B-plat to P=1 is equivalent to the original
+conjecture, so that restriction is not progress. The all-polynomial claim
+is broader and independently falsifiable on known nonunit Jones fibers.
+We have not established its literature status or truth. Bounds restricted
+to prime knots would not justify the displayed connected-sum proof.
+
+2. Physics inspiration, with the mathematical content separated
+----------------------------------------------------------------
+A plat expression is a vacuum-pair-creation / braid-evolution /
+pair-annihilation matrix element. Its bridge number measures the least
+number of simultaneous pairs needed in that preparation geometry. The
+idea is to seek a bound on that geometric resource from the full response
+polynomial, while allowing arbitrarily long evolution. This is an analogy
+to state-preparation resources, not a physical law or positivity theorem.
+
+Mathematically this means looking for legitimate isotopies and plat moves
+which lower the number of cups, with the Jones polynomial constraining
+when the reduction process must stop. The actual proposed theorem is
+B-plat above. Neither a small matrix element nor a small Euler index
+implies a small resource count in a general quantum system; knot geometry
+would have to supply the missing restriction.
+
+This would bypass the homology-rank question rather than prove it.
+Bounded bridge number alone does not bound Floer/Khovanov rank, nor does
+the present argument need such an implication.
+
+3. Decisive published obstruction to the nearby braid-width proposal
+-------------------------------------------------------------------
+Replacing b(K) by minimum closed-braid strand count makes the proposed
+whole-polynomial bound FALSE.
+
+Takioka, On the Braid Index of Kanenobu Knots, Kyungpook Math. J. 55
+(2015), 169--180, Theorem 1.1, gives knots k(n) with fixed HOMFLYPT
+polynomial
+  P(k(n);v,z)=(v^-2-1+v^2-z^2)^2,
+and hence fixed Jones polynomial, but
+  braid(k(n)) >= n+3  for n>=3.
+Primary paper, DOI 10.5666/KMJ.2015.55.1.169:
+https://pdfs.semanticscholar.org/1cfd/410a7f28da8ead9f610c18d6bcce6b0886cf.pdf
+
+Takioka's theorem concerns closed-braid index and does not by itself
+determine the bridge numbers of these knots. We have not directly
+verified a bridge-number claim, including parameter exceptions, in
+Kanenobu's original primary paper: the AMS PDF was inaccessible during
+this check. Accordingly this note makes no exact or uniform bridge-number
+claim for Takioka's k(n). Its unbounded braid index alone neither proves
+nor disproves B-plat.
+
+This is a substantive restriction: no strategy may bound the minimum
+particle count in the closed-braid/trace model from the whole Jones
+polynomial. Minimizing over all Markov presentations does not repair that
+statement. Bounded homology survives this test because geometric strand
+count and homological rank are different quantities.
+
+4. One decisive next test; no local calculation proposed now
+-----------------------------------------------------------
+Before attempting a geometric proof of B-plat, try to falsify it on a
+known NONUNIT constant-Jones family with genuinely growing topology.
+A family already equipped with plats of uniformly bounded strand count
+cannot do this. Such a bound must be checked for the exact family and
+parameters. Conversely, an unbounded closed-braid index or a schematic
+twist diagram is not a certificate of unbounded bridge number.
+
+A precise sufficient falsification certificate would be actual knots K_m
+with one fixed nonunit Jones polynomial P_0, together with surjections
+  pi_1(S^3 minus K_m) -> S_m
+sending meridians to transpositions, for unbounded m. Then b(K_m)>=m-1:
+the group of a b-bridge knot has b meridional generators; transpositions
+generating S_m give a connected graph on m vertices and require at least
+m-1 edges. This lower-bound argument does not assume the meridional-rank
+conjecture. Any growing finite quotient with a comparable lower bound on
+the number of meridional generators would also suffice.
+
+This is a proposed kill test, not a claimed family or quotient. It asks
+for a genuine geometric witness in a nonunit fiber and does not invoke a
+hypothetical Jones counterexample. A positive result would terminate
+B-plat while leaving H-rank open. A failure to find one would not support
+B-plat, and should not trigger a prolonged search without a concrete
+growing-template construction.
+
+5. Why the earlier shortcuts do not fill the remaining gap
+---------------------------------------------------------
+The companion intersection_geometry.txt proves only a sufficient extreme-
+face certificate for nontrivial Jones, not that every nontrivial knot has
+such a presentation. Essential arcs can have zero abelian weighted
+intersection; equal winding labels do not provide a removable bigon.
+The Jones specialization also kills the factor used in Bigelow's generic
+intersection-detection argument. Quantum Floer unknot presentations can
+have Euler norms 3,5,9, so a presentation must be selected geometrically.
+
+Nor can a replica/swap trick simply remove the Euler signs. For a graded
+complex the chain-compatible transposition carries the Koszul sign.
+The unsigned flip is not a chain map in general: take du=v with degrees
+|u|=0, |v|=1. On u tensor v, unsigned-flip-after-d gives v tensor v,
+whereas d-after-unsigned-flip gives minus v tensor v. Over Q these differ.
+A positive ordinary trace of homology would require extra structure;
+it is not produced by replacing the signed trace in a local diagram.
+This elementary obstruction does not forbid a separately constructed
+global operation, but such an operation would need its own invariance
+and Jones-control theorem.
+
+Priority assessment
+-------------------
+B-plat supplies a clean full conditional chain and a useful distinction
+between two geometric notions of width. The new proved information is
+the failure of the closed-braid-width version, not evidence for B-plat.
+Keep B-plat as one falsifiable side hypothesis. Shelve a generic
+bigon/positivity proof until a real plat-preserving reduction with a
+well-founded complexity is exhibited; otherwise it only renames the
+desired implication.

@@ -1,0 +1,157 @@
+ONE ACTUAL JONES COLLISION DISTINGUISHED BY EVERY HIGHER COLOR
+2026-10-31. Exact calculation plus Habiro's cyclotomic expansion.
+No claim of novelty or of a Jones-unknot counterexample is made.
+
+STATEMENT
+Choose the chirality versions K=5_1 and L=10_132 specified by the braids
+ K: B_2 word[-1,-1,-1,-1,-1],
+ L: B_4 word[1,1,1,-2,-1,-1,-2,-3,2,-3,-3].
+They have the same ordinary Jones polynomial
+ V_K(q)=V_L(q)=q^-2+q^-4-q^-5+q^-6-q^-7.
+For every integer N>=3, however, their reduced N-dimensional colored
+Jones polynomials differ. More precisely, with ordinary Jones parameter
+q=e^h and zero framing,
+ H_N(K;e^h)-H_N(L;e^h)
+   =8(N^2-1)(N^2-4)h^5+O(h^6).
+The O(h^6) is for each fixed N. The displayed coefficient is nonzero
+for every N>=3; no extrapolation from finitely many colors is used.
+
+EXACT COLOR-THREE INPUT
+Use quantum-group variable u, so the ordinary Jones variable is q=u^-2.
+The zero-framed unreduced color-three polynomials, with unknot value
+[3]_u=u^2+1+u^-2, are
+ U_3(K;u)=u^40-u^32-u^30-u^28+u^14+u^12+u^10+u^8+u^6,
+ U_3(L;u)=u^44-u^40-u^30-u^24+u^16+u^14+u^10+u^6+2-u^-4.
+These are listed in the Knot Atlas A1 weight2 rows. The accompanying
+script independently reproduces them from the two explicit braids with
+exact Laurent-polynomial R-matrix arithmetic. The full ordinary Jones
+identity is separately verified in the14-dimensional TL_4 skein algebra.
+
+For u=e^s, exact exponent moments give
+ U_3(K;e^s)-U_3(L;e^s)=-30720s^5-614400s^6+O(s^7),
+with every coefficient in orders0 through4 equal to0. Dividing by
+u^2+1+u^-2=3+O(s^2) gives leading reduced coefficient-10240s^5.
+Since q=u^-2=e^h, s=-h/2, and therefore
+ H_3(K;e^h)-H_3(L;e^h)=320h^5+O(h^6).
+This explicitly fixes the possible sign and factor-of-two ambiguity.
+For example, the A1 weight1 row divided by u+u^-1 agrees with the
+ordinary Jones above under q=u^-2.
+
+HABIRO PROPAGATION TO EVERY COLOR
+Use the symmetric cyclotomic normalization
+ H_N(K;q)=sum_(k=0)^(N-1) a_k(K;q) P(N,k;q),
+ P(N,k;q)=product_(j=1)^k(q^N+q^-N-q^j-q^-j),
+with a_0=1 and integral Laurent coefficients a_k(K;q).
+Write Delta a_k=a_k(K)-a_k(L).
+Equality of H_2 implies Delta a_1=0 identically, since P(2,1) is a
+nonzero Laurent polynomial. Consequently
+ Delta H_3=Delta a_2 P(3,2).
+In fact the exact color-three polynomials give the stronger identity
+ Delta a_2(q)=q^-15(q^2-1)(q^3+1)(q^5+1)
+             =-q^-15+q^-13-q^-12+q^-8-q^-7+q^-5.
+The verifier checks this by multiplying by P(3,2) and the quantum
+dimension q+1+q^-1, obtaining exactly the unreduced polynomial difference
+under u^2=q^-1. Its value at1 is0 and its derivative at1 is8.
+At q=e^h,
+ P(3,2)=40h^4+O(h^6).
+The exact color-three calculation therefore gives
+ Delta a_2(e^h)=8h+O(h^2).
+In particular Delta a_2(1)=0; it is its first derivative, not its value,
+that distinguishes these two knots. Their equal Alexander polynomials
+are consistent with this vanishing value.
+
+For arbitrary fixed N>=3,
+ P(N,2)=(N^2-1)(N^2-4)h^4+O(h^6).
+All terms k>=3 in the cyclotomic expansion are O(h^6), because their
+kernels are products of at least three O(h^2) factors and the a_k are
+Laurent polynomials regular at q=1. Multiplying the preceding two
+expansions proves the claimed universal h^5 coefficient.
+
+APPLICATION TO FIXED SATELLITES
+This is the all-color premise needed for the parent's connected-sum
+argument. If a finite linear combination sum_N c_N H_N is determined
+by the entire ordinary Jones polynomial, compare K#J and L#J for every
+knot J. Reduced colored Jones is multiplicative under connected sum,
+so the resulting identities read
+ sum_N c_N (H_N(K)-H_N(L)) H_N(J)=0.
+The colored functions H_N(J) are linearly independent over Q(q^(1/4)),
+as seen on the two-strand torus family by their distinct largest
+frequency N^2-1. Thus each coefficient separately vanishes. The actual
+pair above then forces c_N=0 for every N>=3. Only H_1=1 and H_2=V
+remain. Unlike the preceding pass, no rational or polynomial formula
+for dependence on V is assumed; equality of Jones fibers is enough.
+This concerns universal dependence across all knots, not merely the
+hypothetical fiber V=1.
+
+CHECKS AND DATA PROVENANCE
+all_color_collision_check.py uses integer Laurent dictionaries only.
+It verifies the full local inverse and symbolic Yang--Baxter equation
+on the27-dimensional tensor cube, unknot normalizations, positive and
+negative stabilizations of the two-strand unknot, and two three-strand
+unknot presentations. It then reproduces both full table polynomials,
+computes the exponent moments exactly with rational factorials, and
+records the normalizations and coefficients in its JSON output.
+The braids and table polynomials are primary database computations:
+https://katlas.org/wiki/5_1
+https://katlas.org/wiki/10_132
+The minimum braid data are credited there to Thomas Gittings.
+
+R-matrix source:
+Craig Jackson and Thomas Kerler, The Lawrence--Krammer--Bigelow
+Representations of the Braid Groups via Quantum SL_2, equation23,
+with the finite-dimensional specialization s=u^2.
+https://arxiv.org/abs/0912.2114
+
+Cyclotomic integrality source:
+Kazuo Habiro, On the quantum sl_2 invariants of knots and integral
+homology spheres, Geometry & Topology Monographs4(2002),55--68.
+https://arxiv.org/abs/math/0211044
+
+Torus-frequency independence uses the separately audited formula in
+work/proof11/braid/satellite_functional_rigidity.txt, with primary
+cabling and torus formulas from H.R.Morton and S.Garoufalidis.
+
+CONSTRUCTIVE FINITE-PROBE COROLLARY
+IMPROVEMENT: the quadratic bound proved below has been superseded by a
+linear-size exact certificate. Let j_1<...<j_s list the possible higher
+labels j>=2 in a fixed satellite's finite expansion. Then the s pairs
+ K_m=K#T(2,2m+1), L_m=L#T(2,2m+1), m=1,...,s,
+suffice: if their satellite Jones polynomials all agree, every higher
+coefficient is zero. For wrapping at most r, parity gives
+ s=floor(r/2) for even winding,
+ s=max(0,floor((r-1)/2)) for odd winding.
+Thus at most floor(r/2) fixed collision pairs suffice.
+
+Indeed E_(m,i)=H_(j_i+1)(T(2,2m+1);q) has q-valuation
+ -m j_i(j_i+2)-j_i(j_i+1)/2
+and leading coefficient(-1)^(j_i), since for m>=1 the a=0 torus-fusion
+summand is uniquely minimal. Strict rearrangement makes the identity
+permutation the unique lowest-valuation term of det E, so E is invertible.
+The satellite differences are E times the coefficient vector
+ c_(j_i+1)(H_(j_i+1)(K)-H_(j_i+1)(L)); every colored difference is nonzero
+by the theorem above. Hence equality on all s pairs forces all c_(j_i+1)=0.
+Full proof and framing audit: whole_fiber_satellite_audit.txt section6.
+Exact verifier: finite_probe_determinant_check.py/.json, including nine
+full Laurent determinants through size4.
+
+The earlier, weaker polynomial-root bound remains correct:
+Let a fixed satellite's reduced colored expansion have largest nonzero
+label J>=2, so its largest dimension is J+1. Set
+ K_m=K#T(2,2m+1), L_m=L#T(2,2m+1), m>=0.
+Every pair has identical ordinary Jones polynomial. Its satellite-output
+difference is a polynomial D(x) over F=Q(q^(1/4)) evaluated at x=q^-m,
+where
+ D(x)=sum_N c_N (H_N(K)-H_N(L)) G_(N-1)(x).
+The leading term comes uniquely from N=J+1 and is nonzero by the
+all-color witness theorem. Hence deg D=J(J+2). A nonzero polynomial
+has at most this many roots. Consequently the pattern distinguishes
+K_m and L_m for all but at most J(J+2) nonnegative integers m.
+In particular, among m=0,...,J(J+2), at least one pair distinguishes it.
+
+If a pattern is known to have geometric wrapping number at most r,
+its skein degree J is at most r. Therefore testing the fixed r(r+2)+1
+collision pairs indexed by m=0,...,r(r+2) suffices to detect every
+higher-color contribution. Agreement on all those pairs forces the
+pattern's satellite Jones output to be c_0+c_1 V universally. This is
+a finite certificate consequence of the theorem, not a claim that the
+Jones-one locus itself has been classified.

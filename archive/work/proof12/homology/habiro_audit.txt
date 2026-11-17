@@ -1,0 +1,43 @@
+INDEPENDENT AUDIT OF THE ALL-COLOR JONES-COLLISION ARGUMENT
+2026-10-31. Data from work/proof12/braid/all_color_collision_check.json;
+I independently recomputed Laurent moments and checked the deduction below.
+
+Use the same chosen chiralities of K=5_1 and L=10_132 as the exact braid
+certificate. Their H_2 agree as complete Laurent polynomials.
+Let u denote the quantum-group variable in the unreduced color3 certificate.
+The independently recomputed difference has u=e^s expansion
+  U_3(K)-U_3(L)=-30720 s^5-614400 s^6+O(s^7).
+In particular every coefficient of degree 0 through 4 is zero.
+The reduced invariant divides by u^2+1+u^-2, whose constant is 3.
+The ordinary Jones variable is q=u^-2=e^h, hence s=-h/2, and therefore
+  H_3(K;e^h)-H_3(L;e^h)=320 h^5+O(h^6).
+
+Write the standard normalized Habiro expansion as
+  H_N(K;q)=sum_(k=0)^(N-1) a_k(K;q) B_(N,k)(q),
+  B_(N,k)=product_(j=1)^k(q^N+q^-N-q^j-q^-j).
+Here a_0=1 and the a_k are Laurent polynomials, so regular at q=1. Equivalent
+standard bases can absorb fixed units into a_k without changing the argument.
+Since H_2(K)=H_2(L), subtraction of their N=2 expansions gives Delta a_1=0
+in the Laurent polynomial domain. Their N=3 expansions then give exactly
+  Delta H_3=Delta a_2 B_(3,2).
+At q=e^h,
+  B_(N,k)=product_(j=1)^k(N^2-j^2) h^(2k)+O(h^(2k+2)).
+The N=3 leading factor is (9-1)(9-4)=40. Consequently
+  Delta a_2(e^h)=8h+O(h^2).
+For every fixed N>=3, all k>=3 terms begin at order h^6. Thus
+  Delta H_N(e^h)=8(N^2-1)(N^2-4)h^5+O(h^6),
+which is nonzero. This is an all-N proof from a finite exact color3 certificate,
+not an inference from testing a finite number of colors. It establishes that
+every single nonfundamental color separates this actual ordinary-Jones pair.
+It does not address the Jones-one fiber or imply existence of Jones-one knots.
+
+The exact stronger identity was subsequently checked by independent Laurent
+multiplication, not just by Taylor coefficients:
+ Delta a_2(q)=q^-15(q^2-1)(q^3+1)(q^5+1)
+ =-q^-15+q^-13-q^-12+q^-8-q^-7+q^-5.
+Multiplying by B_(3,2)(q) and q+1+q^-1 reproduces the unreduced U_3 difference
+after replacing u^2 by q^-1. Its value at1 is0 and its logarithmic derivative8.
+The exact basis convention was verified in Garoufalidis--Le, Asymptotics of the
+colored Jones function of a knot, Section3.2, equations(11),(12):
+https://letu.math.gatech.edu/Papers/Asymptotics.pdf
+Their opening normalization has J_(K,2) equal to ordinary Jones and J_(U,N)=1.

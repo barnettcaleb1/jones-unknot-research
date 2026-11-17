@@ -1,0 +1,36 @@
+{
+  "all_passed": true,
+  "checks": {
+    "T acts by q^-4 on the vertex inclusion": true,
+    "normalized inverse T has other eigenvalue t^-3": true,
+    "folded antisymmetric point is (I-g)/2": true,
+    "point is a rank-one idempotent": true,
+    "sheet swap preserves folded metric": true,
+    "fundamental braid root is sheet swap": true,
+    "folded y0 root is minus sheet swap": true,
+    "folded raw y0 principal operator": true,
+    "folded y0 first coefficient change is -3": true,
+    "folded preferred y0 symbol is -2(I+g)": true,
+    "folded contraction has rank one and loop dimension four": true,
+    "folded permutation fixes contraction": true,
+    "folded Fierz identity": true,
+    "paired off-axis straight symbol is -2(P-K)": true,
+    "preferred y0 coefficient discrepancy is five": true,
+    "closed Brauer loop parameters agree modulo five": true,
+    "point loop has dimension one in both models": true,
+    "ordinary cubic coefficient conversion": true
+  },
+  "marking": {
+    "X": "x1; positive color-two crossing",
+    "Y": "y0; T^-1 in the FT gauge"
+  },
+  "osp_parameters": {
+    "delta": -1,
+    "tau": -3
+  },
+  "folded_cover_parameters": {
+    "delta": 4,
+    "tau": 2
+  },
+  "scope": "Principal order-three symbols agree modulo five; lower-order residual is not determined."
+}

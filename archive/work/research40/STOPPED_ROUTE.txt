@@ -1,0 +1,34 @@
+PASS 40 CLOSED — 2026-11-01
+
+Previous goal turn classification: progress in testing and excluding proposed
+mechanisms, not progress establishing the required Jones-one implication.
+Its exact braid/surgery obstructions changed which routes should be pursued.
+
+This pass tested three concrete real-parameter positivity mechanisms with
+three agents, after searching earlier notes for duplicates. No generic proof
+or counterexample emerged. The active goal remains incomplete.
+
+Completed general statement: R_n=T(3,6n-1)#(-T(3,6n-1)) has determinant one,
+signature zero, is ribbon and nontrivial, and has
+V_R_n=(1+t^2-t^(6n))(1+t^-2-t^(-6n)). For every fixed nonzero real t other
+than +/-1 its values tend to minus infinity. At +/-1 all equal one.
+The root derived the TL3 formula independently; the homology agent audited
+normalizations and all parameter limits. Root reran the exact verifier.
+User-facing proof: outputs/jones-real-positivity-obstruction.txt.
+
+Scope: this closes direct nonnegative scalar partition-sum / reflection-norm
+models at real parameter, even restricted to determinant-one ribbon doubles.
+It does not refute arbitrary analytic transforms, unit-circle positivity,
+or any assertion restricted to the whole Jones-one fiber. Do not overstate it.
+
+Other recorded checks:
+braid.txt: endpoint permutation obstructs PSD of full knot-braid operators
+near the classical real point; Gram replacement changes to a pure-link closure.
+analytic.txt: the exact Jones--Potts curve misses real ferromagnetic Q>0
+weights, and the variable is not the Lee--Yang field fugacity.
+
+Do not restart these branches by changing positive cones, picking another
+real scalar parameter, taking canonical mirror doubles, invoking Lee--Yang
+without checking its domain, or computing more examples. A viable future
+proposal must identify additional geometric information actually forced by
+the whole Jones-one hypothesis. None was established here.

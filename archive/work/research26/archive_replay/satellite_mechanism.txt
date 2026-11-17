@@ -1,0 +1,238 @@
+SCALAR ANNULAR PATTERNS: A COMPLETE SATELLITE TEST AND CONSTRUCTION GATES
+1 November 2026. Bounded research pass; no priority claim.
+
+STATUS
+
+No actual essential winding-zero knot pattern with scalar full annular
+Kauffman bracket was found in the focused primary-source search. This is
+a search outcome, not a theorem that none exists. The new useful result
+is a finite, exact ordinary-Jones certificate for that condition, together
+with a dichotomy ruling out hidden constant subsequences in the proposed
+companion-power construction. Two tempting geometric construction classes
+are excluded below. Nothing here proves Jones unknot detection.
+
+1. WHY A NONUNIT SCALAR PATTERN WOULD MATTER
+
+Let P be a knot pattern in a solid torus, with algebraic winding zero and
+geometric wrapping w>0. Work with zero-framed companions. If its full
+annular bracket belongs to Q(A) times the empty diagram, then satellite
+evaluation makes V_{P(J)} independent of J. The framing correction is
+independent of J in this convention. Its value is V_{P(U)}, which need
+not be 1.
+
+Take J_r to be the connected sum of r copies of a trefoil. Schubert gives
+b(J_r)=r+1 and b(P(J_r))>=w b(J_r). Hence an essential scalar pattern
+would give an unbounded-bridge family in ONE ordinary Jones fiber.
+This refutes broad whole-Jones bridge boundedness without first finding
+a Jones-one knot. It does not by itself refute unknot detection when
+V_{P(U)} is nonunit. This implication was already recorded in pass25.
+
+Source for the bridge inequalities: Schultens, Additivity of Bridge
+Numbers of Knots, https://www.math.ucdavis.edu/~jcs/pubs/addbri15.pdf .
+
+This is the full ANNULAR skein of the pattern, not the 2-by-2 map on
+quotient tangles of a strongly invertible pattern exterior. The earlier
+zero shell factor d=0 and flat-quotient equivalences do not identify these
+two conditions. Nor does equality of one ordinary closure imply either.
+
+2. FINITE CERTIFICATE USING ONLY ORDINARY JONES POLYNOMIALS
+
+Proposition. Suppose a meridional disk meeting P in at most 2d points is
+given, and P has winding zero. Fix a trefoil T of the chirality below.
+The following are equivalent:
+
+ (a) P has scalar full annular bracket.
+ (b) The d+1 polynomials V_{P(U)}, V_{P(T)}, V_{P(T#T)}, ...,
+     V_{P(#^d T)} are exactly equal.
+ (c) V_{P(J)} is independent of the companion J.
+
+In particular, a pattern with a verified four-point meridional disk
+requires only THREE ordinary satellite Jones calculations for a positive
+certificate. Each equality must be of complete Laurent polynomials;
+root evaluations or finitely many Taylor coefficients are insufficient.
+The geometric disk bound is essential to the stopping criterion.
+
+Proof. Put H_N(U)=1, H_1=1, H_2=V, for reduced zero-framed colored Jones.
+The skein degree bound and parity give an expansion over Q(q^(1/4))
+
+                    V_{P(J)} = sum_{i=0}^d c_i H_{2i+1}(J).
+
+Quantum dimensions and the pattern normalization are absorbed into c_i.
+They are independent of J. The usual colored connected-sum formula gives
+H_N(J_r)=H_N(T)^r. Write lambda_i=H_{2i+1}(T), so lambda_0=1.
+
+These lambda_i are distinct and lambda_i!=1 for i>0. For completeness,
+the standard two-strand torus-knot formula, in the convention
+V_T=q^-1+q^-3-q^-4, is
+
+ H_{j+1}(T)=1/[j+1] sum_{a=0}^j (-1)^(j-a)[2a+1]
+                     q^(3(a(a+1)-j(j+2))/2),
+ [n]=(q^(n/2)-q^(-n/2))/(q^(1/2)-q^(-1/2)).
+
+The smallest numerator exponent comes uniquely from a=0. Subtracting
+the denominator valuation gives
+
+        val_q H_{j+1}(T)=-(3j^2+5j)/2,
+        val_q lambda_i= -6i^2-5i.
+
+Under (b), subtracting the r=0 equation gives
+
+             sum_{i=1}^d c_i(lambda_i^r-1)=0,  1<=r<=d.
+
+Factor lambda_i-1 from column i. The remaining row-r entries are the
+monic degree-(r-1) polynomials 1+lambda_i+...+lambda_i^(r-1).
+Consequently the determinant is, up to sign,
+
+             product_i(lambda_i-1) product_{i<j}(lambda_j-lambda_i),
+
+which is nonzero. Thus every positive-color coefficient vanishes. The
+Chebyshev/Jones-Wenzl basis is a basis of the solid-torus skein, so (a)
+follows. Skein evaluation proves (a)=>(c), and (c)=>(b) is immediate.
+
+This is an elementary deduction from the standard satellite and colored
+connected-sum formulas, not a claim that an actual passing P is known.
+It reuses the connected-power/Vandermonde method already recorded in
+outputs/jones-cabling-and-realizability.txt; the present conclusion is a
+finite scalar-pattern certificate. The same torus-knot formula was
+independently checked in outputs/jones-satellite-rigidity.txt.
+
+Primary formula sources: Morton, The coloured Jones function and
+Alexander polynomial for torus knots, Sections 2--3,
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf ; and
+Garoufalidis, The Jones slopes of a knot, Section 4.8, equation (26),
+https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_jones_slopes_of_a_knot.pdf .
+The standalone verify_satellite_certificate.py checks the determinant
+symbolically through d=4, the signed recurrence through |r|=8, and the
+trefoil valuations through color 13. It uses only Python's standard
+library. These finite arithmetic checks supplement the all-parameter
+proofs rather than establish their scope.
+
+3. THE EXACT DICHOTOMY FOR COMPANION CONNECTED POWERS
+
+For ANY fixed winding-zero P, either its annular class is scalar, or the
+Jones polynomials V_{P(J_r)} are eventually pairwise distinct and their
+q-valuations tend linearly to minus infinity.
+
+Indeed, let k>0 be the largest i with c_i!=0. The quantities
+
+                    val_q(c_i)+r val_q(lambda_i)
+
+have pairwise distinct slopes. For all sufficiently large r, the i=k
+term is the unique one of smallest valuation. Hence
+
+       val_q V_{P(J_r)}=val_q(c_k)-r(6k^2+5k).
+
+There is no cancellation at that lowest exponent. In particular, even
+an infinite sparse constant-Jones subsequence of this companion-power
+family is impossible unless P is scalar. This reduces this entire
+satellite strategy to a precise geometric realization problem; it is
+not a low-order necessary test. Reflection of the trefoil gives the
+analogous statement at the opposite degree end.
+
+This bridge-growth conclusion does NOT automatically imply growth of
+Khovanov rank. A rank conclusion requires a separate actual theorem;
+there is no general bridge-to-Khovanov-rank inequality being used here.
+
+4. SERIAL CLASPS DO NOT MAKE A SCALAR PATTERN
+
+Jimenez Pascual's lassos L(r1,...,rm) are consecutive twisted sums of
+m+1 nested core circles. His Proposition 3 gives an exact signed
+recurrence. If every ri is nonzero, its top-degree coefficient is
+
+             [z^(m+1)] <L(r1,...,rm)> = product_i f_{ri}(A),
+
+where, for s>0,
+
+       f_s=A^(s-2) sum_{j=0}^{s-1}(-A^-4)^j,
+       f_{-s}=A^(2-s) sum_{j=0}^{s-1}(-A^4)^j.
+
+Each factor is nonzero. To see the product formula, iterate the first
+twist-box recurrence. Its z times tail term gives f_r times the top
+tail coefficient, while the zero-box term removes two nested circles
+and has degree at most m-1. Induct on m, starting with the core z.
+Thus the annular degree is exactly m+1 for all choices of nonzero
+positive AND negative twist integers. Zero boxes have the explicit
+geometric reductions listed after Definition 2 in that paper. Repeat
+those reductions first; the only scalar terminal possibility is local.
+Tying an arbitrary local knot into a strand multiplies the bracket by a
+nonzero ordinary Jones factor and cannot kill the top coefficient.
+
+This excludes a whole signed serial-clasp mechanism, not just positive
+or alternating diagrams. It does not cover arbitrary arborescent or
+multi-input patterns. The paper uses a scaled scalar basis element;
+that convention does not change the positive-degree coefficient above.
+Source: https://arxiv.org/html/1501.01734 , Proposition 3 and Definition 2.
+
+Martin gives further published obstructions: Theorems 5.1 and 5.2 prove
+the wrapping conjecture for his specified adequately wrapped annular
+families, their iterated Whitehead doubles, and braid cables. These
+families cannot supply an essential scalar example.
+https://arxiv.org/html/2103.01269 .
+
+5. MUTATING A LOCAL SCALAR SEED DOES NOT SOLVE THE GEOMETRY
+
+Ordinary Conway mutation preserves splitness of a link. Thus mutating
+a split pattern-plus-unknotted-axis link, while retaining that axis,
+does not make the pattern essential. Lickorish--Thistlethwaite explicitly
+record splitness invariance in their 1988 paper, p536:
+https://www.e-periodica.ch/cntmng?pid=com-001%3A1988%3A63%3A%3A32 .
+
+The analogous no-go for CLOSED genus-two mutation follows from the
+valid Proposition 2.1 of Dunfield--Garoufalidis--Shumakovitch--Thistlethwaite
+and the following relative-boundary sphere argument.
+
+Let M be the exterior of a split two-component link, with splitting
+sphere S separating its two boundary tori. For a closed incompressible
+mutation surface F, choose S transverse to F. An innermost intersection
+circle on S bounds a disk on F by incompressibility. Inside this F-disk,
+choose an intersection circle innermost on F; its disk has interior
+disjoint from S. Surgery of S along that disk gives two spheres, each
+with fewer F-intersections. Their mod-2 classes sum to [S]. A proper arc
+between the boundary tori has odd intersection with S, so at least one
+new sphere still separates those tori. Iterate. The resulting splitting
+sphere is disjoint from F, and it survives mutation because the connected
+surface F lies on one side of it.
+
+If the genus-two F is compressible, DGST Proposition 2.1 replaces the
+mutation by mutations along one or two incompressible tori, or by a
+homeomorphism. Apply the preceding sphere argument to those tori. A
+homeomorphism also preserves the existence of a sphere separating the
+two boundary components. No special meridian-preservation claim for that
+homeomorphism is needed: after the actual mutation, a sphere separating
+the two exterior boundary tori is a splitting sphere for any subsequent
+two-component S3 link interpretation. In particular, whenever the output
+axis is again an unknot, the output annular pattern is still local.
+
+This is a deduction, independently checked for the sphere-surgery step
+by the braid agent. It does NOT use DGST Proposition 2.7, which the
+authors explicitly withdrew in their erratum. Their Proposition 2.1
+remains the input here.
+https://arxiv.org/html/math/0607258 , Proposition 2.1 and Remark 2.2.
+
+Therefore the attractive recipe 'put a local knot in a knotted genus-two
+handlebody and hyperelliptically mutate it into an essential annular
+pattern' fails this splitting-sphere test. Its skein invariance is real,
+but the needed change of geometric locality cannot occur in this class.
+
+6. WHAT THE COLORED BING-DOUBLE CONNECTION DOES AND DOES NOT GIVE
+
+Ren, Remark 1.3, notes a genuine implication: if vanishing annular
+degrees in ALL colors forced locality, colored Jones would detect the
+unknot. One component of the untwisted Bing double of a hypothetical
+all-colored-Jones-invisible knot is the test pattern in the complement
+of the other component. This is a conditional construction, not an
+actual essential scalar pattern available from known knots. Ordinary
+V_K=1 cannot be silently promoted to the required colored identities.
+https://arxiv.org/html/2609.11084 .
+
+7. STRATEGIC CONCLUSION
+
+The nonunit scalar target is a legitimate way to falsify a broad global
+bridge-bound scaffold without solving unknot detection first. It is now
+testable using finitely many complete ORDINARY satellite polynomials
+once a geometric wrapping upper bound is certified. Serial clasp
+chains, the stated adequate Whitehead/cable classes, and mutation of a
+local seed are bad places to seek it. No actual candidate survived or
+was produced in this bounded pass. The missing work is an actual
+essential pattern with all positive annular coefficients zero; there
+is no remaining formal linear-algebra uncertainty in the certificate.

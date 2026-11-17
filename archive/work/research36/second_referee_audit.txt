@@ -1,0 +1,74 @@
+SECOND REFEREE AUDIT OF PASS36 CONCRETE FINDINGS
+2026-11-01. Scope: independent algebra, orientation caveats, and a second full bracket
+calculation on the supplied geometric closure PDs; no new machine search.
+
+1. OPERATOR IDENTITY AND FINITE CAP VIOLATION: CONFIRMED ALGEBRA
+With orientations fixed and x^-2V_+-x^2V_-=pV_0, successive application at the two
+unprimed coordinates gives
+ V_-+=x^-4V_++-p^2V_00-px^2V_0-,
+ V_+-=x^4V_--+px^2V_0-.
+Thus the paired identity and all exponents in operator_audit.txt are correct.
+On primed slice(-,+), V_-+ is literally[--;++] while each of V_++,V_--,V_+- has
+at least one opposite-sign clasp pair. The signs have not been independently
+reoriented between these four states.
+
+If the source's direct cancelable-clasp reductions and double-smoothing identification
+are used, T_m=C-p^2R_m follows exactly. For the switched-trefoil unknot host,
+R_0=1, R_1=x^2+x^6-x^8, and R_(m+1)=x^4R_m+p x^2(-x-x^5).
+The relation L=2m-1 is consistent: L1 gives the trefoil at m1; L7 gives m4.
+The residual has JVP leading b-degree4m+3, coefficient-1. Hence -p^2R_m has
+leading b-degree4m+5, coefficient+1. Direct states have the conservative diagram
+cap14, so C has cap18 after multiplication by x^±4. At L7 the unavoidable b21=+1
+therefore exceeds the paper's Bhat20. I reran verify_operator_growth.py successfully.
+
+Important scope: the verifier does not calculate a new entire literal-machine PD or
+the full C polynomial. The precise locked-state identification uses the G1 direct
+reductions and C4/G4 double smoothing. I inspected the relevant source G3/G5 drawings;
+no added orientation monomial is apparent in the local RI removal. The operator
+argument does NOT depend on disputed G2. If a different source interpretation invalidates
+G1 orG4, it breaks that claimed geometric package rather than fixing all its conclusions.
+
+2. EXCEPTIONAL FIGURE: THE CUBE-IDENTIFICATION FAILURE SURVIVES ORIENTATION CAVEATS
+I directly inspected source omega_1.png and omega_5.png. At corresponding shadow
+positions, the final picture reverses over/under at both crossings of EACH clasp,
+as well as at one residual crossing. The drawn orientation of the central closed
+component also reverses. Therefore it is incorrect to infer an error from different
+caption signs alone: that component reversal can compensate the crossing-sign changes.
+The issue is that the cube fixes an oriented shadow. One must not identify the final
+picture, with its transported/reversed central orientation, with the state obtained
+by changing only the residual crossing on that fixed shadow.
+
+I independently evaluated the supplied PDs by the frontier Kauffman-bracket engine,
+separate from Regina. Full data are source_machine_second_bracket.json. Results:
+
+ horizontal omega1:
+  -x^3+x-2x^-1+x^-3-2x^-5+x^-7, span10;
+ horizontal omega5 (actual final drawing): same polynomial, span10;
+ horizontal claimed (only residual crossing changed): -x-x^-1, span2.
+
+The horizontal closure may require external orientations different from the arrows in
+the source. This does NOT weaken this particular test: any relative-boundary oriented
+isotopy is also an unoriented relative-boundary isotopy. Component orientation reversal
+only multiplies normalized Jones by a monomial. A span10 closure cannot be isotopic
+to a span2 closure under ANY such orientation adjustment. Thus the depicted final
+tangle and the claimed fixed-shadow target are genuinely different relative-boundary
+objects. This conclusion uses the supplied planar encoding of those source diagrams;
+I visually checked the four clasp over/under changes and independently checked the
+resulting state sums, rather than treating Regina agreement as a transcription proof.
+
+For the vertical closure with one fixed orientation, the initial and actual-final
+polynomials are respectively
+  x^-2+2x^-6+x^-10,
+  x^10+2x^6+x^2,
+whose ratio is x^12. The claimed fixed-shadow target instead has the INITIAL
+polynomial. This is consistent with the central-component reorientation issue.
+It is not a claim that the source's drawn unoriented Reidemeister isotopy is itself
+false. The error lies in using it as the stipulated same-coordinate, same-orientation
+state identification. A monomial cannot be discarded in a same-JVP-level argument.
+
+ASSESSMENT
+The paired-operator exponents and L7 cap20 versus b21 calculation pass. The geometric
+audit is stronger when phrased as failure of the FIXED ORIENTED CUBE identification,
+not merely a mislabeled sign or an allegedly impossible unoriented picture move.
+The independently verified horizontal span discrepancy removes the possible monomial
+orientation rescue for the claimed fixed-shadow target.

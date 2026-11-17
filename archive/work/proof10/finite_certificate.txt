@@ -1,0 +1,61 @@
+THREE-SAMPLE UNKNOT CERTIFICATION IN FIXED TWIST FAMILIES
+31 October 2026. Deduction from classical 3-manifold theorems; no novelty claim.
+
+Statement. Fix a knot diagram outside one two-strand twist ball. Let K_n
+be the knots obtained by inserting n full twists in that ball, for n in Z,
+with any fixed initial half-twist parity. If three distinct K_n are certified
+unknots, then every K_n is an unknot.
+
+Proof. The double branched cover M of the complementary two-string tangle
+has torus boundary. Filling the twist ball corresponds to filling M along
+a family of distinct slopes alpha_n=alpha_0+n beta in a fixed integral
+homology basis (the coefficient in beta may include the full-twist factor2).
+
+One unknot filling is S^3. Its filling-core circle identifies M with a knot
+exterior in S^3. A second distinct unknot filling is a nonmeridional S^3
+surgery on that core knot. Gordon--Luecke's theorem says a nontrivial knot
+admits no such surgery. Hence the core is an unknot and M is a solid torus.
+
+A two-string tangle with solid-torus double branched cover is rational.
+The K_n are therefore two-bridge closures. If mu is the solid-torus meridian,
+their determinants are |intersection(mu,alpha_n)|=|an+b| for fixed integers
+a,b. A nonconstant affine function can equal either+1 or-1 at at most two
+distinct integers. Three unknot fillings force a=0 and |b|=1. All closures
+then have determinant1, and a two-bridge link of determinant1 is the unknot.
+
+Sharpness of the sample count. The coherent family T(2,2n+1) has unknots
+at n=0 and n=-1, but a trefoil at n=1. Two arbitrary samples cannot suffice.
+This is why one must not apply the nugatory-crossing theorem without
+checking the orientation and surgery assumptions of that theorem.
+
+Several independent sites. With d disjoint two-strand full-twist sites,
+certifying the 3^d diagrams n_i in{0,1,2} as unknots certifies all integer
+tuples. Extend the first coordinate by the preceding lemma for every fixed
+choice of the other grid coordinates; then extend the second, and so on.
+The hypothesis is actual unknot certificates, not merely Jones polynomial1.
+
+Use with the exact affine-exponent solver. An axis-aligned product family
+inside a Jones-one locus can thus receive a finite geometric certificate.
+Affine loci coupling several physical twist sites, such as (n,-n), are not
+covered by this argument: changing that parameter is not a single
+two-strand local replacement. Arbitrary finite tables of knots are also
+outside its hypotheses.
+
+Classical inputs:
+Gordon--Luecke, Knots are determined by their complements, J.AMS2(1989),
+371--415, the no-nonmeridional-S^3-surgery theorem:
+https://doi.org/10.1090/S0894-0347-1989-0965210-7
+Original text also indexed at
+https://paperzz.com/doc/8704413/knots-are-determined-by-their-complements-two
+
+Lickorish, Prime knots and tangles, Trans.AMS267(1981),321--332:
+https://doi.org/10.1090/S0002-9947-1981-0621991-2
+The precise solid-torus/rational-tangle equivalence is restated as Theorem3.5
+in Buck--Mauricio, Tangle solutions for composite knots: application to Hin
+recombination. This is a genuine connection to the mathematics of DNA
+recombination, whose tangle equations use the same branched-cover method:
+https://arxiv.org/html/1007.0948
+
+The present proof was checked independently by another agent. It is a
+finite certification tool for a specified family, not a deduction from
+V_K=1 for an arbitrary individual knot.

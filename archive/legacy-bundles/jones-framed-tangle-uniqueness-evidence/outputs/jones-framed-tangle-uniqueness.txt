@@ -1,0 +1,182 @@
+JONES UNKNOT INVESTIGATION: FRAMED TANGLE UNIQUENESS AND STRATEGY AUDIT
+1 November 2026 — pass 49
+
+STATUS
+
+No proof of ordinary Jones unknot detection and no nontrivial Jones-one knot
+has been obtained. This report records a deduction from established theorems,
+internally checked during this pass. It makes no claim of publication novelty.
+
+The methodological error was allowing successful local calculations to stand
+in for a complete route to the conjecture. In particular, our construction
+for the unknotting-number-one case has no established reduction from an
+arbitrary hypothetical counterexample. Another calculation in this pass
+reproved a weaker version of our earlier satellite-rigidity result. That
+calculation is recorded as duplication, not new progress.
+
+The main useful outcome below closes an entire proposed construction. It
+does not supply the missing general proof.
+
+1. A FRAMED TWO-CLOSURE UNIQUENESS RESULT
+
+Use two-string tangles with the same marked boundary. Write C_P(X) for the
+link obtained by closing X with the rational probe P. Require the two probes
+P and Q to have distinct slopes, not merely different framings.
+
+Claim. Let R be rational. Suppose
+
+               C_P(X) = C_P(R),     C_Q(X) = C_Q(R)
+
+as balanced framed links, in Sikora's convention. If either shared underlying
+link is the unknot, then X is rational. In fact X and R are the same balanced
+framed tangle.
+
+Proof.
+
+(i) Two distinct rational probes determine the full Kauffman bracket vector
+of a tangle. This is Sikora's Theorem 21: the two closure functionals form
+an invertible matrix over the rational-function field. Consequently [X]=[R].
+This uses the full framed equalities, not just equality of normalized Jones
+polynomials for the two closures.
+
+(ii) Assume the P-closure is the unknot. Let M_X and M_R be the oriented
+double branched covers of the tangle balls. Filling along the slope alpha
+specified by P gives S^3 in both cases. Thus M_X is the exterior of a knot J
+in S^3, with meridian alpha. Since R is rational, M_R is a solid torus and
+is the exterior of the unknot. The common boundary marking identifies these
+meridian slopes.
+
+(iii) Choose an auxiliary rational probe H whose closure with R is the
+two-component unlink. Such a probe exists for every rational tangle. Its
+filling slope lambda is the preferred longitude of M_R, since the filling
+is S^1 x S^2. The equality [X]=[R] implies equal brackets after the H-closure,
+and hence equal determinants, both zero. Therefore H_1(M_X(lambda); Z) is
+infinite. For a knot exterior in S^3, the only slope with this property is
+the preferred longitude: p/q filling has first homology Z/pZ when p is
+nonzero, and infinite first homology when p=0. Hence the common marking also
+identifies the preferred longitudes.
+
+The auxiliary probe need not be distinct from Q; they coincide if Q already
+gives the unlink. This does not affect the argument.
+
+The determinant step requires a normalization detail. If the unreduced
+bracket convention assigns delta=-A^2-A^-2 to a circle, first divide the
+closed bracket by delta symbolically. Only then specialize to the determinant
+root. Direct specialization of the unreduced bracket would vanish for every
+nonempty link and give no information. Writhe corrections have modulus one
+at this root and do not affect whether the determinant vanishes.
+
+(iv) The Q-probe now represents the same rational surgery coefficient r in
+the two meridian/longitude systems. It is nonmeridional because Q and P have
+distinct slopes. The actual equality of Q-closures gives an orientation-
+preserving diffeomorphism
+
+                        S^3_r(J) = S^3_r(U).
+
+Theorem 1.1 of Kronheimer--Mrowka--Ozsvath--Szabo, Monopoles and lens space
+surgeries, implies J=U for every rational r, including r=0. Thus M_X is a
+solid torus. The branched-cover characterization of rational tangles implies
+X is rational. Finally, Sikora's Corollary 20 says that the full bracket
+distinguishes balanced framed rational tangles, so [X]=[R] gives X=R.
+
+Orientation matters here. The covers inherit the orientations of the marked
+tangle balls, and the closed-link equivalences are orientation-preserving
+ambient isotopies. The common meridian and longitude slopes, together with
+the boundary orientation, give the same signed surgery coefficient. Merely
+matching unoriented lens-space homeomorphism types would not justify (iv).
+
+2. CONSEQUENCE FOR THE DNA CONSTRUCTION
+
+An unframed two-probe ambiguity between a rational and a nonrational tangle,
+with an unknot among the shared products, cannot have equal total framing
+defects at the two probes. If it did, one common framing adjustment on the
+unknown tangle would repair both equations, contradicting the claim above.
+
+This explains why repairing the earlier four-versus-zero framing discrepancy
+was not merely a difficult parameter choice. The entire target, with an
+unknot as one shared product, is excluded under these hypotheses.
+
+The result does NOT exclude a Jones-one knot with an unknotting move. In that
+situation the second closure may have only the POLYNOMIAL of a specified
+link; step (iv) requires its actual geometric link type. Nor does it settle
+two-probe systems with two nontrivial rational-link products: their covers
+need not be knot exteriors in S^3, so the cited surgery theorem is unavailable.
+
+3. THE SATELLITE DUPLICATION AND ITS LIMITED NEW CONSEQUENCE
+
+Our earlier jones-satellite-rigidity.txt already proves that if a fixed,
+zero-framed satellite pattern P satisfies
+
+                       V_{P(K)} = F(V_K)
+
+for every companion K, with one rational function F, then F is constant
+at even winding and is c V_K at odd winding. This pass independently derived
+only the polynomial special case. That algebraic result is not new.
+
+One additional combination is useful. Assume P(U)=U, P is geometrically
+essential, its outputs on nontrivial companions are genuine satellites, and
+the universal rational law is defined at 1. If even one such output has
+unknotting number one, Scharlemann--Thompson's satellite obstruction forces
+the winding of P to be zero. Our earlier rigidity result then forces F=1.
+Consequently V_{P(J)}=1 for EVERY companion J. In particular, an ordinary
+trefoil companion would already give a nontrivial counterexample.
+
+Thus this proposed device would have to construct a counterexample outright;
+it cannot obtain its success from a hypothetical Jones-one input. This does
+not prove such a device impossible. It excludes its advertised role as an
+input-dependent reduction within this fixed universal-law framework.
+
+Companion-dependent operations, several independent infection sites, and
+identities assumed only on the unknown Jones-one class remain outside this
+argument. None of those alternatives was completed here.
+
+4. WHAT THIS CHANGES
+
+Stop searching for a framed rational/nonrational two-probe ambiguity with an
+unknot product. Stop treating the universal fixed-satellite construction as
+an established generic-to-unknotting-number-one reduction. Do not count an
+equivalent reformulation, a formal skein element, or a further necessary
+condition as a complete proof scaffold.
+
+The independent arc audit supplies an additional candidate rejection test,
+documented in the evidence archive. It constructs no nontrivial elementary-
+skein arc. Its infinite-family application has explicit exceptional cases;
+those cases are not evidence that a counterexample exists.
+
+There is currently no complete proof scaffold with a demonstrably easier
+missing lemma. Any further research must state an implication all the way
+to the original conjecture, identify its unproved geometric step, and explain
+why the proposed input can plausibly supply it. The new uniqueness deduction
+is a reason to retire one route, not a basis for promising an imminent answer.
+
+PRIMARY REFERENCES
+
+Adam Sikora, Tangle Equations, the Jones conjecture, slopes of surfaces in
+tangle complements, and q-deformed rationals, Section 4 (framing),
+Corollary 20, and Theorem 21:
+https://arxiv.org/html/2005.08162v2
+
+Peter Kronheimer, Tomasz Mrowka, Peter Ozsvath, Zoltan Szabo, Monopoles and
+lens space surgeries, Theorem 1.1:
+https://people.math.harvard.edu/~kronheim/lens.pdf
+
+Dorothy Buck and Mauro Mauricio, Tangle solutions for composite knots:
+application to Hin recombination, Theorem 3.5(2), recording Lickorish's
+solid-torus branched-cover characterization:
+https://arxiv.org/pdf/1007.0948
+
+Martin Scharlemann and Abigail Thompson, Unknotting number, genus, and
+companion tori, Corollary 3.3:
+https://doi.org/10.1007/BF01456051
+The satellite consequence is explicitly restated by Hom--Lidman--Park,
+Unknotting number and cabling, introduction immediately after Theorem 1.1:
+https://preprint.press.jhu.edu/ajm/sites/default/files/AJM-hom-lidman-park.pdf
+
+VERIFICATION AND LIMITS
+
+The main proof was checked against the cited theorem statements. The
+boundary-slope identification, determinant normalization, and orientation
+requirements were separately examined. This is internal research verification,
+not external refereeing. The archive preserves agent notes and the exact
+small-color check for the duplicated satellite argument; that finite check
+is not a substitute for its all-color proof. No new parameter scan was used.

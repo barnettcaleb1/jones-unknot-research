@@ -1,0 +1,184 @@
+JONES UNKNOT INVESTIGATION: CABLING AND CLASSICAL REALIZATION
+31 October 2026 — bounded continuation
+
+STATUS
+There is still no general proof and no constructed counterexample. This pass
+produced a proved conditional reduction and a precise algebraic target for a
+counterexample. The hypotheses missing from both are substantial. No novelty
+claim is made for any deduction here.
+
+1. ONE HIGHER COLOR WOULD FORCE ALL COLORS — WITH A GLOBAL QUANTIFIER
+
+Write H_N(K) for the reduced, zero-framed dimension-N colored Jones polynomial,
+so H_1=1 and H_2=V. The following UNIVERSAL statements are equivalent:
+
+ (i)   For every knot K, V_K=1 implies H_3(K)=1.
+ (ii)  For every knot K, V_K=1 implies H_N(K)=1 for all N.
+ (iii) Jones-one knots remain Jones-one under one fixed cable of winding r>=2,
+       with slope one meridian plus r preferred longitudes.
+ (iv)  Jones-one knots remain Jones-one under the positive untwisted
+       Whitehead-double operation.
+ (v)   Every fixed satellite pattern P with P(U)=U preserves Jones-one knots.
+
+Statement (iii) is equivalent for EACH fixed r>=2. These are reductions, not
+proofs that any of the statements is true. In particular, knowing H_2=H_3=1
+for ONE knot is not the same as the universal assertion (i).
+
+Proof of the substantive cable implication.
+The standard cabling formula expresses H_N(C_r(K)) as a sum of N terms
+ c_k H_{|2rk+1|}(K),   k=-(N-1)/2,...,(N-1)/2.
+The coefficients sum to one and have pairwise distinct lowest q-exponents.
+Consequently no nonempty subset of them sums to zero.
+
+Suppose the Jones-one class is closed under this cable. It is already closed
+under connected sums. If color N is one throughout that class, apply the cable
+formula to K, K#K, ..., K^(#N). Multiplicativity gives the moment equations
+ sum_k c_k H_{|2rk+1|}(K)^m = 1,  m=0,...,N.
+Grouping equal values and applying a Vandermonde matrix forces every value
+to be one. In particular color r(N-1)+1 is one throughout the class.
+Starting at N=2 produces the unbounded sequence of trivial colors r^a+1.
+
+Habiro's expansion implies that, for each fixed d, the h^d coefficient of
+H_N(K;e^h)-1 is a polynomial in N. Its infinitely many zeros force it to vanish
+identically. Thus every color is one. This step uses exact Taylor coefficients,
+not an exchange of asymptotic limits.
+
+For winding two, the ordinary cable formula is
+ V_{C_2(K)} = a H_3(K) + b,  a+b=1, a!=0.
+This proves equivalence with (i). A fixed satellite has a finite colored-Jones
+expansion, so (ii) implies (v), and (v) implies (iii).
+
+The Whitehead bridge is particularly explicit:
+ V_{Wh+(K)}(t)-1 = ((1-t^3)/(1+t)) (H_3(K;t)-1).
+The rational prefactor is nonzero. Hence (iv) is equivalent to (i).
+We checked the identity independently against actual Whitehead-double and
+two-parallel diagrams for 5_1 and 10_132, and their previously computed
+color-three polynomials. Those two knots have the same ordinary Jones but
+different Whitehead responses. General dependence on ordinary Jones therefore
+fails; a successful proof must exploit the particular fiber V=1.
+
+There is also an unconditional individual-knot statement: all ordinary Jones
+values on the closure of {K,U} under connected sums and one fixed C_r are one
+if and only if all colored Jones polynomials of K are one. This is an expanded
+test family, not a result about the ordinary Jones polynomial of K alone.
+
+What this does not finish.
+No proof of (i) has been found. Even all-colored unknot detection is still
+explicitly posed as an open question in the 2025 updated Kirby problem list,
+p32. The proved Melvin–Morton–Rozansky consequence of all-colored triviality
+is Delta_K=1. The categorified colored-Jones detection theorem is different.
+
+Primary formula and status sources:
+https://nyjm.albany.edu/j/2015/21-41p.pdf (cabling, equation3.2)
+https://arxiv.org/abs/math/0211044 (Habiro)
+https://arxiv.org/abs/math/0508100 (MMR)
+https://math.berkeley.edu/sites/default/files/surv-295-ruberman-watermarked-author-pdf.pdf
+
+An explicit formal obstruction to purely algebraic shortcuts.
+Let P(N,k)=product_{j=1}^k(q^N+q^-N-q^j-q^-j). The sequence
+ F_N=1+(q-1)P(N,2)
+has integral cyclotomic coefficients, F_1=F_2=1, and F_3!=1. It is also
+q-holonomic: product_{j=-2}^2(E-q^j) annihilates it, where E shifts N by one.
+Its MMR diagonal is one. These conditions therefore do not by themselves
+force color-three promotion. This is a formal sequence, not a knot invariant
+known to be realized by any knot.
+
+2. A FORMAL TANGLE WHOSE REALIZATION WOULD GIVE A COUNTEREXAMPLE
+
+The previous pass's four-special-component cancellation model survives the
+stronger algebraic tests attempted here. Let A be the rational-arc Bar–Natan
+object and X the standard 12-generator s_4(infinity) object. Consider
+ D = A direct-sum q h X direct-sum q h^2 X.
+Its Khovanov cone splits into the rational component and four shifted special
+components X, X[1]{2}, X[1], X[2]{2}.
+
+We explicitly constructed the higher-operation extension of X, the corrected
+lift of its central-G nullhomotopy, and the full 24-generator cone. The naive
+G-times-identity map upstairs would have omitted four correction arrows;
+these are included. Exact checks pass in characteristic two and with signed
+integer coefficients. An independent audit checked the operation formulas,
+gradings, signs, and all possible path lengths.
+
+The model passes these specified tests:
+ - ordinary tangle-algebra equations and the G mapping cone;
+ - rational-filling pairings and their Euler characteristics;
+ - the listed central connectivity actions;
+ - the required A-infinity object and cone extensions;
+ - a formal unreduced rational Frobenius/Lee lift.
+
+The last check matters: unreduced Lee differentials have quantum jumps four,
+whereas the reduced Bar–Natan bars here have jumps two. The relative-dot lift
+converts each reduced length-one bar into a length-two unreduced bar over Q,
+so this is not a contradiction. The formal slope-one closure has unreduced
+rational Kh rank18 and Lee rank2.
+
+The geometric consequence is sharp and conditional. If a SINGLE classical
+tangle realizes D with the prescribed relative gradings, then its slope-one
+closure has
+                  V_K=1,    rank reduced Kh_F2(K)=17.
+The rational part contributes rank1 and the four special parts contribute
+four each. Euler contributions from the special parts cancel. An overall
+grading shift causes no loophole: a signed-monomial Jones polynomial of a
+knot is forced to be1 by V(1)=1 and V'(1)=0. Rank17 excludes the unknot.
+Its infinity closure has reduced Kh rank1 and hence is actually the unknot.
+
+NO CLASSICAL TANGLE REALIZING D HAS BEEN CONSTRUCTED. An object in an additive
+algebraic category is not automatically the invariant of a diagram. We have
+not checked every conceivable geometric or naturality condition. The result
+rules out proving non-realizability merely by reimposing the specific tests
+listed above. Realizing this object would already solve the problem negatively.
+
+Primary tangle sources:
+https://arxiv.org/abs/2602.23442
+https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+https://arxiv.org/abs/2412.05156
+https://arxiv.org/abs/1005.4346
+
+3. A GEOMETRIC REDUCTION THAT WORKS, AND AN ANCHOR THAT CANNOT WORK
+
+For every K, the oriented double K#rK has a strong inversion exchanging the
+summands; r means orientation reversal, not mirror. First taking the ribbon
+double R=K#r(mK), then R#rR, shows that Jones detection for strongly invertible
+ribbon knots would imply Jones detection for all knots.
+
+This does not turn that same composite knot into a rational filling beside
+an actual unknot. In fact no nontrivial composite determinant-one knot has
+such a presentation. Its double branched cover is a reducible integer homology
+sphere. An unknot filling would make it surgery on a knot in S3, contradicting
+Gordon–Luecke's theorem that an integer homology sphere obtained by such surgery
+is irreducible. Thus any nontrivial Jones-one knot obtained from an actual
+unknot-anchored rational-tangle problem must be prime.
+
+The strong-inversion quotient still exists, but its other branch fillings
+are different knots. For the swapping inversion on K#rK, a relevant response
+is Wh+(K). Its Jones polynomial depends on H_3(K), precisely the missing bridge
+in section1. The two approaches therefore converge on the same unproved step.
+
+Sources:
+https://arxiv.org/html/2412.09322v1#S2.SS4
+https://web.stanford.edu/~cm5/conc.pdf (Proposition6.1)
+https://msp.org/gt/2016/20-4/gt-v20-n4-p08-p.pdf (pp2219,2223; Gordon–Luecke consequence)
+
+4. A PROPOSED SIGN GENERALIZATION WAS FALSE
+
+The prior Kinoshita–Terasaka two-band family was excluded for all full twists
+because its three leading coefficients had the same sign. An actual analogous
+8_19 template instead gives leading degree/coefficient pairs
+                    (5,-2), (5,+1), (4,-1).
+Thus mirror symmetry and unlink cuts do not force a common sign. Degree parity
+still excludes every twist in this example: no same-parity subset of leading
+coefficients sums to zero. This family was already excluded by its nonzero
+second Jones derivative, so this is a falsification of a proposed proof
+mechanism, not an advance into the Alexander-one counterexample search.
+
+EVIDENCE AND REPRODUCTION
+The companion archive preserves the full proofs, independent audits, exact
+certificates, and actual diagram data. Five standard-library verification
+entry points are reproduced from a fresh extraction. Optional geometry
+reconstruction uses Spherogram2.4.1 and Regina7.4.1, which are not bundled.
+The README records the commands and source dependencies. No finite check is
+presented as proving the all-parameter assertions; those have separate proofs.
+
+The original Carmi–Cohen proof audit remains unchanged by this pass. These
+results neither repair its false uniform-compression package nor provide
+an alternative proof of generic Jones unknot detection.

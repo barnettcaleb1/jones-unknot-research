@@ -1,0 +1,55 @@
+U5-JNC WIDTH CLAIM: EXPLICIT FOUR-PLAT COUNTEREXAMPLE
+Status: TRUSTED cheap falsification; no broad scan.
+
+Take standard caps/cups (12)(34) and braid
+  beta = sigma2^2 sigma1 sigma2^3 = [2,2,1,2,2,2].
+Mark the middle sigma1 crossing.
+
+The upper prefix sigma2^2 is pure. Therefore the crossing's two strands
+come from the same upper cap (12). Nevertheless this crossing is NOT
+nugatory: changing it changes the Jones polynomial.
+
+Spherogram/Regina exact checks (x is the Regina Jones variable):
+  plat([2,2,1,2,2,2]): Jones=1; actual simplification gives 0 crossings,
+  1 component.
+  plat([2,2,-1,2,2,2]):
+  Jones=x^10-2*x^8+2*x^6-2*x^4+2*x^2-1+x^-2.
+  Thus the first is actually U, and the crossing is not a kink.
+
+More strongly, its complement X is not rational and cannot have width2.
+Replace the marked crossing by e1 (horizontal smoothing):
+  E = ZeroTangle() | IdentityBraid(2)
+  L = (BraidTangle([2,2],4)*E*BraidTangle([2,2,2],4)).numerator_closure()
+Spherogram's diagrammatic deconnect_sum() splits L into the component
+connected sum of a Hopf link and a trefoil:
+  Hopf PD [(1,3,0,2),(3,1,2,0)], Jones=-x^5-x;
+  trefoil PD [(1,5,2,4),(5,3,0,2),(3,1,4,0)],
+  Jones=-x^8+x^6+x^2.
+The full smoothing PD is
+  [(9,5,8,4),(5,9,6,8),(1,7,2,6),(7,3,0,2),(3,1,4,0)].
+Thus Sigma_2(L) is a connected sum of nontrivial lens spaces of orders
+2 and3, with pi1=Z/2 * Z/3, hence not a lens space or S1 x S2.
+Every rational closure of a rational tangle has cyclic cover fundamental
+group; this closure does not. Therefore X is nonrational.
+A width2 tangle cap_empty beta cup_empty is a two-strand braid, hence
+rational. So the claim that every 4-plat crossing complement has width2
+is false. This already refutes the general width formula in Proposition C.
+
+Geometric failure: triviality of the complete upper bridge tangle does
+not imply that an arc whose ends both meet the crossing ball splits off
+relative to the remaining tangle. Its bridge disk can run across the
+other strands on the punctured level sphere. Here sigma2^2 records that
+interaction. Counting the remaining level punctures is insufficient to
+put the complement in the claimed (2,2) cap/braid/cup normal form.
+
+Reproduce using installed packages:
+  PYTHONPATH=work/braid_classification/packages python3
+  from spherogram.links.tangles import BraidTangle, ZeroTangle, IdentityBraid
+  import regina
+  # formulas above give links L; use
+  R=regina.Link.fromPD([[x+1 for x in row] for row in L.PD_code()])
+  # R.jones(), R.simplify(), R.size(), R.countComponents().
+
+Scope: This explicitly kills the universal width count and its same-cap
+kink clause. It does not itself disprove the proposed conditional JNC
+theorem for six-strand plats; that theorem loses the supplied argument.

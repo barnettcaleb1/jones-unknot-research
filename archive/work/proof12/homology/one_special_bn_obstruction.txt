@@ -1,0 +1,160 @@
+ONE SPECIAL CURVE: A BAR-NATAN REALIZABILITY OBSTRUCTION
+2026-10-31. Derived in this investigation; no novelty claim.
+
+STATUS AND SCOPE
+The proof below excludes a particular formal Euler cancellation from being the
+Khovanov homology of an actual classical link. It does not prove generic Jones
+unknot detection, and does not assert that every special curve has length
+divisible by four. The latter is not a theorem in the cited 2022 source.
+
+THEOREM (restricted tangle statement)
+Let T be a classical four-ended tangle with infinity filling the unknot. Use
+the preferred parametrization in which the zero filling L=T(0) has determinant
+zero (the double cover is zero surgery on the strongly invertible covering
+knot). Work with reduced Khovanov homology over F_2. Suppose its multicurve has
+one rational component r_1(s) and exactly one special component s_(4n)(infinity),
+where n>=1 and length is in the PUBLISHED KWZ2022 convention. Then L cannot have
+the Jones polynomial of the two-component unlink.
+Both components occur with multiplicity one and carry the standard rank-one
+local system (+1 over F_2). This is the Kh geography convention, not a claim
+about arbitrary BN curves with potentially higher-rank local systems.
+
+No absolute grading calibration of the rational curve is needed. All possible
+overall quantum and homological shifts of both components are allowed in the
+argument. Replacing the whole tangle by its mirror is permitted.
+
+INPUTS FROM PRIMARY SOURCES
+1. Kotelskiy--Watson--Zibrowius, Khovanov homology and strong inversions,
+   Open Book Series 5 (2022), 223--244:
+   https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf
+   Theorem 3.1 gives rational-plus-vertical-special shape for unknot anchors.
+   Lemma 2.5 gives the absolutely relative-to-shift pairing of a(0) with s_(4n).
+   The determinant argument on printed p236 compares the delta-Euler values.
+   Warning: their early arXiv version uses a different length convention.
+   Example 2.2 explicitly identifies the right-handed trefoil quotient as
+   r_1(4) union s_4(infinity), showing the shape hypothesis is non-vacuous.
+   Its mirror is the first row of Table 1, with slope -4 and one special curve.
+   The 2026 geography extension, arXiv:2602.23442 Theorem 3.19 and Remark 3.20,
+   explicitly confirms the fixed rank-one Kh local system. It still states
+   s_(2n), not s_(4n); we do not infer divisibility by four from it.
+2. Turner, Calculating Bar-Natan's characteristic two Khovanov homology,
+   arXiv:math/0411225v3:
+   https://arxiv.org/pdf/math/0411225
+   Theorems 3.1 and 3.2 compute filtered BN homology and its spectral sequence;
+   Section 3.3 constructs the reduced version. The filtration in Section 3.2
+   makes the rth differential have (homological,quantum) degree (1,2r).
+   The reduced two-component case follows directly from the same idempotent
+   proof, as explained below; we do not misquote its knot-focused subsection
+   as a separately stated link theorem.
+
+STEP 1: THE TWO SECTORS AND THEIR SHAPES
+The special pairing is delta-thin and has dimension 4n. The rational pairing
+has delta-Euler magnitude |s| if s!=0, or zero for s=0. Since det L=0, their
+delta-Euler characteristics sum to zero, so |s|=4n. Put k=4n.
+The rational pairing is reduced Kh of a two-strand torus link with k crossings,
+up to overall bigrading shift and orientation change. Orientation changes only
+give another overall shift. Mirror the whole link if necessary to select the
+chirality below. Its Euler polynomial, after a convenient quantum shift, is
+
+ R(Q)=sum_{j=0}^{k-2} (-1)^j Q^(2j+1) + Q^(2k+1).
+
+It is delta-thin and has one generator at each displayed exponent. Equivalently,
+before this shift its polynomial is
+ [Q^(-3k)+(Q^2+1+Q^-2)Q^(-k)]/(Q+Q^-1).
+This is the standard alternating two-strand torus-link calculation; reduced
+F_2 Kh is thin with rank k. Important shape features of R:
+  minimum quantum exponent 1, next exponent 3;
+  maximum quantum exponent 2k+1, preceding exponent 2k-3.
+Thus its unique homological top has a gap of two in homological degree below it.
+
+Lemma 2.5 of KWZ gives the special Euler polynomial, up to sign and Q monomial,
+
+ E_n(Q)=Q^(-k-1)(1+Q^4)(1-Q^6) sum_{i=0}^{n-1}Q^(8i).
+
+Define E(Q)=Q^k E_n(Q). This sector is also delta-thin, with one generator at
+each nonzero Euler monomial. Its min exponent is -1 and next exponent is 3;
+its max exponent is 2k+1 and preceding exponent is 2k-3. The min coefficient
+is +1 and max coefficient -1. In particular BOTH ends have homological gap2,
+so mirroring preserves the required special-sector shape.
+
+The exact identity is
+ R(Q)+E(Q)=Q+Q^-1.
+It follows by summing the geometric series, or multiplying by Q+Q^-1 and using
+ (1+Q^2)(1+Q^4)(1-Q^6)/(1-Q^8)=1+Q^2+Q^4.
+
+STEP 2: UNIQUENESS OF EULER CANCELLATION, ALLOWING ALL SHIFTS
+Assume the actual reduced Kh Euler polynomial is Q+Q^-1. For arbitrary shifts
+a,b and signs epsilon,eta in {+1,-1}, it must therefore satisfy
+ epsilon Q^a R(Q)+eta Q^b E(Q)=Q+Q^-1.                 (1)
+The only solution is a=b=0 and epsilon=eta=+1.
+
+Proof. If the two maximum exponents differ, the larger maximum cannot cancel,
+so it must equal 1. Both supports have width greater than 2. Consequently their
+minimum exponents must cancel, hence a+1=b-1, or a=b-2. Then the E maximum
+dominates and equals 1, giving b=-2k. The canceled minimum is -2k-1. At exponent
+-2k+1, only R contributes: its bottom gap is 2 while E's bottom gap is 4. This
+exponent is below -1 because k>=4, contradicting (1).
+Thus the maxima agree, so a=b. Their coefficients at the common maximum are
+epsilon and -eta. If they did not cancel, the coefficient would have absolute
+value 2, impossible on the right. Thus epsilon=eta. The displayed identity now
+reduces (1) to epsilon Q^a(Q+Q^-1)=Q+Q^-1, forcing a=0, epsilon=+1. QED.
+
+The actual reduced quantum grading of a two-component link is odd integral, so
+the shifts above are integers. The extremal argument in fact does not need
+integrality. Crucially, the homological shifts remain unrestricted apart from
+the Euler signs: the rational top has EVEN homological parity, and the special
+top has ODD homological parity. Both occur at the SAME maximum quantum grade.
+
+STEP 3: A SHIFT-INDEPENDENT SPECTRAL SEQUENCE OBSTRUCTION
+Here is the abstract lemma actually used.
+
+Suppose a bigraded vector space is a direct sum of two delta-thin sectors,
+each having a unique top homological class and no class one homological degree
+below its own top. Suppose the two top classes have the same quantum grading
+and opposite homological parities. Then it cannot be the E1 page of a spectral
+sequence with differential degrees (1,positive quantum degree) converging to a
+rank-two vector space supported entirely in homological degree zero.
+
+Proof. Their top homological degrees differ because their parities differ.
+Let H be the larger one. There is exactly one class in homological degree H,
+and no classes above H. It has no outgoing differential. In its own sector there
+is no incoming source in degree H-1. In the other sector, a potential source in
+degree H-1 can exist only when that sector's top degree is H-1; that top has the
+SAME quantum degree as the target, so no differential of positive quantum degree
+can connect them. If the other top is lower, there is no source at all.
+These support exclusions persist to every spectral-sequence page, since pages
+are subquotients of E1 in their bigradings. Thus the unique class at H survives.
+If H!=0 this contradicts support of the limit in degree zero. If H=0, E1 has
+only one class in degree zero and no higher classes, so its limit cannot have
+rank two in degree zero. QED.
+
+This lemma applies to the forced pair R,E by Step 2 and the top gaps in Step 1.
+
+STEP 4: WHY AN ACTUAL JONES-UNLINK LINK HAS THAT BN LIMIT
+The normalized Jones polynomial's first derivative at 1 determines the linking
+number of a two-component link (its nonzero proportionality factor is irrelevant
+here). Equality with the unlink polynomial therefore gives lk(L)=0.
+Turner's characteristic-two BN spectral sequence has E1=Kh over F_2 and
+d_r of degree (1,2r), r>=1. For the reduced theory at a basepoint, the filtered
+homology has two canonical orientation classes, of homological degrees 0 and
+2lk(L), hence rank2 at homological degree0 here.
+
+For completeness, the reduced link assertion follows from Turner's proof:
+at u=1 the Frobenius algebra splits into idempotents a=x+1 and b=x. The unreduced
+canonical basis is indexed by orientations of the components, with degree
+2 times the total linking between the reversed subset and its complement.
+Reduction at the basepoint with x=0 keeps a and kills b there, selecting exactly
+one member of each globally reversed orientation pair. For two components these
+two surviving degrees are precisely 0 and 2lk. This also shows there is no
+uncontrolled overall homological shift in the target theory.
+
+Steps 2--4 contradict one another, proving the restricted tangle statement.
+
+WHAT THIS DOES AND DOES NOT DO
+The formal all-n Euler identity is valid but is NOT classically realizable with
+these exact two sectors and unlink polynomial: BN detects an unavoidable class.
+This is a real realization obstruction, stronger than per-component Euler
+nonvanishing and independent of absolute anchor shifts. Multiple special curves
+can supply additional incoming sources, so the proof does not cover them.
+It also says nothing by itself about whether an arbitrary Jones-one knot admits
+an unknot-anchored presentation with this one-special property.

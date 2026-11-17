@@ -1,0 +1,48 @@
+INDEPENDENT AUDIT RECORD — BING ANNULAR FORMULA
+1 November 2026. No priority claim.
+
+Three agents checked different parts of tangle_realization.txt.
+
+Braid agent independently opened Suzuki arXiv1305.0602, Theorem 3.2,
+Corollary 4.4 and the explicit x_11 values. Confirmed:
+  * x_11^(1)=-{4}, x_11^(2)=-{1}{2}, others zero;
+  * the pattern's fundamental color contributes an additional {1};
+  * its j=1 probe is -{1}[3](H3-1);
+  * Hopf(E_2,P'_1)=[3](r-s)/{1};
+  * r-s=s{1}^2 gives the coefficient (1-H3)/s;
+  * all higher probes vanish, and the even-basis Hopf pairing is
+    triangular with nonzero diagonal, so separation is legitimate;
+  * conversion to the zero-framed Kauffman convention yields
+      [P_C]=delta H3(C)+(1-H3(C))z^2/delta.
+No geometric wrapping number was inferred from this degree calculation.
+
+Homology agent independently checked the satellite substitution and the
+topological essentiality argument. It also checked integrality against
+Habiro's expansion: H3(C)-1 is divisible by delta^2 after q=A^-4, since
+P(3,1)=q^-3(q^2-1)^2(q^2+1) and every higher contributing product contains
+this factor. Thus the displayed rational expressions introduce no real
+pole in the resulting knot invariant. The exact product formula implies
+V_{P_C(J)}-1 is divisible by delta^2.
+
+Parent independently inspected Suzuki Theorem 3.2/Lemma 6.1, including
+the diagonal coefficients and the dual S_j basis. Parent also checked
+the framing normalization and Borromean-exterior gluing argument.
+
+Geometric scope:
+  * P_C(U)=U because Bing components are actual unknots.
+  * Nontrivial C makes P_C essential by irreducible gluing along the
+    incompressible companion torus.
+  * We make NO numerical wrapping claim here. A two-puncture disk would
+    have to be exhibited rather than inferred from annular degree or
+    a surgery identity alone; it is unnecessary for all stated results.
+
+Provenance distinction:
+The unresolved H3=1 gate and Whitehead reduction were present in earlier
+outputs. This pass supplies a concrete full-annular realization formula
+and exact two-input product obstruction. It does not prove H3 detects
+the unknot or promote ordinary Jones-one to color three.
+
+Reproducibility:
+Run python3 verify_bing_formula.py. Its successful output checks the
+finite Laurent identities only; it is not a proof verifier for topology
+or the primary theorems.

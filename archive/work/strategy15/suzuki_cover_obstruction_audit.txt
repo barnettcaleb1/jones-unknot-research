@@ -1,0 +1,47 @@
+INDEPENDENT AUDIT: A NECESSARY COVER-SYMMETRY TEST FOR ROTORS
+
+Result. Let M be the double cover of a ball branched over an actual n-rotor with 2n boundary endpoints, for n>=3. Then MCG(M) contains a subgroup isomorphic to C_n x C_2. Consequently none of the standard Suzuki theta_n exteriors, nor any of Ushijima's M_n,k with gcd(n,2-k)=1, can be that rotor double cover.
+
+This excludes a proposed source of examples. It does not exclude other Brunnian graphs or other genus-(n-1) handlebody exteriors, and makes no claim about every unknot rotant. No novelty claim.
+
+1. LIFTING AND SPLITTING
+
+Let rho be the actual order-n rotation of the rotor ball and iota the branched-cover deck involution. The double cover is characterized by sending every branch meridian to 1 in C_2. Rotation preserves this character, so rho lifts. Every lift commutes with iota, since the only automorphism of the deck group C_2 is the identity.
+
+Choose one of the two boundary poles p of the standard rotation. It is not a branch endpoint. Choose a point y over p. Of the two lifts of rho, exactly one fixes y; denote it by r. Its nth power is a deck transformation fixing y, and hence r^n=1. Its order is exactly n because it projects to rho. The groups <r> and <iota> have trivial intersection, since every nonidentity power r^j with 0<j<n projects nontrivially. Therefore
+
+    <r,iota> = C_n x C_2,
+
+an effective group of order 2n acting on M. Using a boundary pole avoids any extra hypothesis about the interior rotation axis or closed components in the rotor.
+
+2. BOUNDARY FAITHFULNESS IMPLIES MAPPING-CLASS FAITHFULNESS
+
+The boundary of M is the connected double cover of S^2 branched at 2n points, hence has genus n-1 >=2. The above group acts faithfully on this boundary: if iota^epsilon r^j restricts to the identity, projection to the boundary sphere forces j=0 modulo n, and the nontrivial deck involution does not restrict to the identity.
+
+A nonidentity finite-order orientation-preserving homeomorphism of a closed surface of genus at least two is not isotopic to the identity. For smooth periodic maps this follows directly from Lefschetz: average a metric over the cyclic action; every fixed point of a nonidentity orientation-preserving isometry is isolated with index +1, so its Lefschetz number is nonnegative, while a map isotopic to the identity has Lefschetz number 2-2g<0. The same conclusion follows from the standard periodic-surface classification in the topological category.
+
+If one of our group elements were isotopic to the identity on M, the isotopy would restrict to an isotopy of its boundary restriction to the identity, contradicting the preceding fact. Thus the action injects into MCG(M). No theorem about realizing finite interior actions by isometries is needed for this step.
+
+3. APPLYING USHIJIMA'S FULL GROUP COMPUTATION
+
+Ushijima, The canonical decompositions of some family of compact orientable hyperbolic 3-manifolds with totally geodesic boundary, Theorem 2.4, states that for
+
+    n>=3, 0<=k<=n-1, gcd(n,2-k)=1,
+
+both the FULL isometry group and the mapping class group of M_n,k are the dihedral group of order 2n, with presentation
+
+    <t,r | t^n=r^2=1, rtrt=1>.
+
+This group is nonabelian for n>=3. It cannot contain the abelian group C_n x C_2 of the same finite order. Therefore M_n,k cannot be the double branched cover of an actual n-rotor.
+
+The paper identifies M_n,1 with the exterior of Suzuki's Brunnian theta_n graph, and k=1 always satisfies the coprimality condition. The exclusion thus applies in particular to all these standard Suzuki exteriors, including the Kinoshita theta_3 case and the proposed genus-three theta_4 source.
+
+For the main C4 target, the required subgroup is C_4 x C_2, while the full group of the standard theta_4 exterior is D_8. Their orders agree and their group structures do not. Merely seeing a dihedral symmetry in a spatial-graph picture misses this obstruction: the branched-cover deck involution must commute with the lifted rotor rotation and be independent of it.
+
+PRIMARY SOURCE CHECK
+
+Theorem 2.4 explicitly concerns full Isom and MCG, not only the symmetries of a chosen graph diagram. The preceding paragraph in the paper identifies those two groups via its canonical decomposition and rigidity. The identification M_n,1=E(theta_n) appears in the introduction and again immediately following Theorem 2.4. Corollary 2.5 separately computes the ambient graph symmetry group, but that corollary is not needed for the obstruction.
+
+https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1065-12.pdf
+
+Audit verdict: the argument is valid with the exact group and boundary hypotheses above. It is stronger and cleaner than relying on an unspecified finite-action-faithfulness theorem for the interior.

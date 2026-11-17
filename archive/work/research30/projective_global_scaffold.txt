@@ -1,0 +1,87 @@
+PASS 30: projective diagrams, an Ising identity, and a complete geometric scaffold
+
+### The full target, before the local arguments
+
+Boyle and Spyropoulos's September 2026 preprint defines a local crossing number \(\beta_\varepsilon\) for links in \(\mathbb{RP}^3\). For a classical knot placed in a ball, their Conjecture 1.1(2) would give
+
+\[
+\beta_{\Re}(K)\le \operatorname{span}V_K.
+\]
+
+They explain why this implies unknot detection; they do not prove the general inequality. Their graph definition is \(\beta(G)=e(G)-\alpha(G)\), where \(\alpha\) is the minimum number of edges deleted to leave a graph contained in a disk in \(\mathbb{RP}^2\). The knot invariant minimizes the appropriate checkerboard-graph value over projective diagrams. [Boyle–Spyropoulos, Definition 1.6 and Conjecture 1.1](https://arxiv.org/html/2609.40122v1).
+
+Our additional deduction is a geometric endpoint valid for every finite bound, not just complexity zero:
+
+\[
+\boxed{\beta_{\Re}(K)\le b\quad\Longrightarrow\quad
+b_{\mathrm{bridge}}(K)\le B(b)<\infty.}
+\]
+
+This deduction uses actual isotopies of diagrams, as detailed below. It gives the following complete conditional solution.
+
+**Projective compression hypothesis.** There exist a realizable ordinary Jones polynomial \(P\) and a finite constant \(C\) such that every classical knot with \(V_K=P\) admits a projective diagram with the relevant checkerboard graph satisfying \(\beta\le C\).
+
+**Conditional proof of detection.** Choose an anchor \(J\) with \(V_J=P\). If \(V_K=1\), every \(J\#K^{\#m}\) has polynomial \(P\), hence bridge number at most \(B(C)\). But Schubert's formula gives
+
+\[
+b_{\mathrm{bridge}}(J\#K^{\#m})=
+b_{\mathrm{bridge}}(J)+m\bigl(b_{\mathrm{bridge}}(K)-1\bigr).
+\]
+
+Letting \(m\) increase forces \(b_{\mathrm{bridge}}(K)=1\), hence \(K=U\). All knots in the fiber, including composite knots, are essential to this argument. [Schultens's proof of the bridge formula](https://arxiv.org/abs/math/0111032). □
+
+The source's span conjecture is sufficient to provide this hypothesis for every polynomial. The proof above needs only one. We have proved neither version of the Jones-to-complexity premise. Indeed, the existence of some such fiber bound is equivalent to detection: the converse follows by choosing \(P=1\) once detection is assumed. The new value of the formulation is its explicit geometric optimization and the theorem completing its endpoint, not evidence that the remaining premise is easier.
+
+### The exact statistical-mechanics connection
+
+Here and below these are our deductions from the graph definition. Give each vertex of an embedded graph \(G\subset\mathbb{RP}^2\) a chosen lift to the orientation cover \(S^2\). An edge \(uv\) then has a holonomy sign \(\eta_{uv}\in\{+1,-1\}\), according to whether its lift connects the chosen sheets. These topological signs are independent of crossing over/under signs.
+
+A subgraph lies in a disk precisely when every cycle has trivial holonomy. For a connected subgraph, its regular neighborhood is then planar, and the complementary side containing the crosscap identifies an encompassing disk. Disjoint local components can be included in one disk by joining outer disk neighborhoods along a tree. Equivalently, the subgraph is balanced: vertex signs can make all its edges positive. Extending these signs to all vertices gives
+
+\[
+\boxed{\beta(G)=\max_{s_v=\pm1}
+\#\{uv:\eta_{uv}s_us_v=+1\}
+=\frac{e(G)+\max_s\sum_{uv}\eta_{uv}s_us_v}{2}.}
+\]
+
+Thus \(\alpha\) counts unsatisfied bonds in a particular geometric Ising model. This is an exact identity, not a physical analogy or an assumption about arbitrary spin systems.
+
+There is an additional algorithmic simplification when \(G\) is connected and cellular. Its negative edges, under any vertex switching, are dual to a representative of the unique nonzero class in \(H_1(\mathbb{RP}^2;\mathbb F_2)\). A minimum representative is a single noncontractible simple dual cycle: decompose any even-degree representative into cycles and retain one with nonzero class. Hence
+
+\[
+\alpha(G)=\min_v d_{\widetilde{G^*}}(v^+,v^-),
+\]
+
+where \(\widetilde{G^*}\) is the orientation double cover of the geometric dual graph. One inequality lifts a noncontractible cycle to a path between opposite lifts. For the reverse inequality, project any such path, cancel repeated edges modulo two, and extract a noncontractible cycle. Loops, bridges, and repeated facial incidences cause no exception. If \(G\) itself is local, simply use \(\alpha=0\); no cellular-dual assertion is needed in that case.
+
+This computes complexity for one given diagram. Minimizing across all diagrams of a knot is a separate problem. Neither shortest paths nor the Ising identity relates the resulting minimum to Jones-polynomial cancellations.
+
+### Why bounded complexity really bounds bridge number
+
+Let \(G\) be a connected realized checkerboard graph with \(\beta(G)\le b\). If it is local, it has at most \(b\) edges, and already belongs to a finite list of bounded diagrams. Otherwise proceed as follows.
+
+1. A spanning tree is balanced, so \(v(G)\le b+1\). Every nonloop edge is satisfied with probability \(1/2\) under independent random spins. A local loop is always satisfied; a projective loop is never satisfied. The displayed maximum therefore bounds the total number of edges other than projective loops by \(2b\).
+
+2. Projective loops all have the same base vertex. Otherwise two such loops would be disjoint essential curves in \(\mathbb{RP}^2\), contradicting their mod-two intersection number one. At that vertex every pair of projective loops has interleaving endpoints. Their cyclic subword is consequently \(1,\ldots,n,1,\ldots,n\). The at most \(4b\) other edge ends split these loops into at most \(4b+1\) blocks consecutive in both halves.
+
+3. Remove a small disk around the vertex. The projective loops become parallel essential proper arcs in a Möbius band. Successive arcs in a block cobound a rectangle whose vertex-boundary intervals contain no other edge ends. Its interior contains no graph: an interior component could not attach without crossing the boundary, contradicting connectedness. In the medial link diagram these rectangles are empty bigons. Each block is therefore an actual two-strand braid in a disk, with arbitrary crossing signs reducing to one integer twist by Reidemeister II moves. With no other edge ends, open the cyclic bigon chain at one adjacency and use a fixed exterior closure.
+
+4. Replace each block by a marked twist placeholder. The resulting graph has at most \(2b+(4b+1)=6b+1\) edges. There are finitely many such embedded marked graphs in \(\mathbb{RP}^2\): their ribbon cyclic orders, edge twists, and complementary-surface data are finite. A connected nonlocal graph is cellular; the local case was handled separately. Thus there are finitely many actual projective twist templates, not merely graphs related by smoothing.
+
+5. Lift these templates through the unbranched cover \(S^3\to\mathbb{RP}^3\). Every disk twist box thickens to a ball and has two disjoint ball lifts. A fixed finite set of two-strand braid boxes admits a height presentation with a bounded number of maxima, independent of the twist exponents: arrange each braid box monotonically and retain the fixed exterior arcs. Take the maximum over the finite template list. A local classical knot lifts to two split copies of itself. Restrict the bounded-maxima presentation to one component to obtain the required \(B(b)\).
+
+This proves the stated implication. It supplies no crossing-number bound: integer twist exponents remain arbitrary. Its use of isotopies is essential; arbitrary graph deletion or contraction would change the represented knot. Separate internal audits checked the signed-graph formula, the dual-systole formula, and the disk-twist geometry. These are research proofs awaiting external review, not a publication or novelty claim.
+
+### A source-proof issue that does not obstruct this scaffold
+
+The induction in the source's proof of Theorem 5.3 asserts that some edge deletion reduces \(\beta\) by one. An essential projective triangle disproves this assertion: it has \(e=3,\alpha=1,\beta=2\), while deleting any edge leaves a two-edge local path with \(\beta=2\). This is a gap in that induction step, not a disproof of the stated classifications or the conjectural inequality. [Source proof](https://arxiv.org/html/2609.40122v1#S5.SS2).
+
+A valid graph reduction uses contraction. In an optimal spin assignment the satisfied spanning subgraph is connected; otherwise flipping a component satisfies every edge crossing its cut and increases the objective. Contract a satisfied nonloop edge after making it positive by switching. Assignments on the contraction correspond exactly to assignments satisfying that edge, including a global optimum, so \(\beta(G/e)=\beta(G)-1\). Once only one vertex remains, delete local loops. This reaches a projective-loop bouquet after exactly \(\beta\) reductions. These reductions are checkerboard smoothings and do not preserve the knot. They repair the graph descent statement, not the entire published induction, and are not used in our isotopy-based bridge proof.
+
+### What the parallel branches changed strategically
+
+The residual five-dimensional braid route has a useful equivalence: a nontrivial generic kernel exists if and only if two distinct three-puncture curves have identical rank-one projectors. The first curve can be fixed in advance, and the second can be required to enclose the same puncture subset. A kernel braid is pure, cannot be central, and therefore moves some such curve; equivariance gives the collision. Conversely equal projectors give a nontrivial twist-difference kernel. The supporting argument is in the evidence archive. Thus the collision target is exactly the existing faithfulness problem, not a weaker intermediate conjecture. No kernel was constructed.
+
+The bounded homology and ribbon searches produced no certified counterexample to the remaining whole-fiber or ribbon hypotheses. In particular, a published Jones-invisible link tangle retains a closed component, and applying a wrapping-two satellite with a nonzero color-three coefficient cannot erase the color-three difference in the pass-29 family. These are reasons to stop those immediate constructions, not nonexistence theorems.
+
+**Research decision.** Prioritize a global diagram-simplification or noncancellation mechanism connecting the whole Jones polynomial to minimized projective complexity. The downstream proof is now explicit. Do not spend further time on fixed-diagram Ising optimization as if it supplied that missing implication; do not assume graph smoothings preserve knots; and do not start another local braid scan without a mechanism producing an exact generic kernel. The geometric scaffold warrants investigation, but no evidence currently justifies predicting a near-term solution.

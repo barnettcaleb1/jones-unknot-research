@@ -1,0 +1,18 @@
+{
+ "files": [
+  "out/cert_e4_controls.jsonl.gz"
+ ],
+ "records_total": 24,
+ "sampled": 24,
+ "fraction": 1.0,
+ "seed": 1,
+ "records_pass": 24,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "rep|replay=True|a2=True": 24
+ },
+ "status": {
+  "CERTIFIED_NONTRIVIAL": 24
+ },
+ "secs": 0.1
+}

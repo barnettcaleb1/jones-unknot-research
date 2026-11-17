@@ -1,0 +1,4474 @@
+{
+  "projection": "Ren arXiv:2609.11084v2, published PD",
+  "sign_choices": 4096,
+  "screen1_survivors": 234,
+  "screen2_survivors": 234,
+  "joint_screen_survivors": 234,
+  "exact_degree_zero_choices": 234,
+  "not_simplified_to_unlink": 0,
+  "independent_changed_PD_checks": [
+    {
+      "mask": 1,
+      "ordinary_Jones_check": true,
+      "Hopf_axis_check": true
+    },
+    {
+      "mask": 1375,
+      "ordinary_Jones_check": true,
+      "Hopf_axis_check": true
+    },
+    {
+      "mask": 4095,
+      "ordinary_Jones_check": true,
+      "Hopf_axis_check": true
+    }
+  ],
+  "rows": [
+    {
+      "mask": 211,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        11,
+        12
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 213,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        9,
+        11,
+        12
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 227,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        11,
+        12
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 229,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        10,
+        11,
+        12
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 242,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        11,
+        12
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 244,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        10,
+        11,
+        12
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 327,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        11,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 333,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        11,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 342,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        11,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 348,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        11,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 358,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        10,
+        11,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 364,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        11,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 391,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 397,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 406,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 412,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 422,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        10,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 428,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 471,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        9,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 475,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        9,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 477,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 487,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        10,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 491,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        10,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 493,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        10,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 502,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 506,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 508,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 583,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        11,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 589,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        11,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 598,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        11,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 604,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        11,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 614,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        10,
+        11,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 620,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        11,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 647,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 653,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 662,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 668,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 678,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        10,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 684,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 727,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        9,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 731,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        9,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 733,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        9,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 743,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        10,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 747,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        10,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 749,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        10,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 758,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 762,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 764,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 847,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        8,
+        11,
+        14,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 862,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        8,
+        9,
+        11,
+        14,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 878,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        8,
+        10,
+        11,
+        14,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 911,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        8,
+        12,
+        14,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 926,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        8,
+        9,
+        12,
+        14,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 942,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        8,
+        10,
+        12,
+        14,
+        15
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1107,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        11,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1109,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        9,
+        11,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1123,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        11,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1125,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        10,
+        11,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1138,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        11,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1140,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        10,
+        11,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1171,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        12,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1173,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        9,
+        12,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1187,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        12,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1189,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        10,
+        12,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1202,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        12,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1204,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        10,
+        12,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1287,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1293,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1302,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1308,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1318,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        10,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1324,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1367,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        9,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1371,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        9,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1373,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        9,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1383,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        10,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1387,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        10,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1389,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        10,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1398,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1402,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1404,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1431,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        9,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1435,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        9,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1437,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        9,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1447,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        10,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1451,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1453,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1462,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        10,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1466,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1468,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1543,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1549,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1558,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1564,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1574,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        10,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1580,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1623,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        9,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1627,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1629,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        9,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1639,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        10,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1643,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        10,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1645,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        10,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1654,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1658,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1660,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1687,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        9,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1691,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        9,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1693,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        9,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1703,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        10,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1707,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        10,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1709,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        10,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1718,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        9,
+        10,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1722,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        10,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1724,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        10,
+        12,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1807,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        6,
+        8,
+        14,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1822,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        8,
+        9,
+        14,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 1838,
+      "changed_PD_crossings_zero_based": [
+        5,
+        6,
+        8,
+        10,
+        14,
+        15,
+        16
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2257,
+      "changed_PD_crossings_zero_based": [
+        0,
+        9,
+        11,
+        12,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2273,
+      "changed_PD_crossings_zero_based": [
+        0,
+        10,
+        11,
+        12,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2288,
+      "changed_PD_crossings_zero_based": [
+        9,
+        10,
+        11,
+        12,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2371,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2373,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2377,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2386,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2388,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2392,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2402,
+      "changed_PD_crossings_zero_based": [
+        5,
+        10,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2404,
+      "changed_PD_crossings_zero_based": [
+        6,
+        10,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2408,
+      "changed_PD_crossings_zero_based": [
+        8,
+        10,
+        11,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2435,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2437,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2441,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2450,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2452,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2456,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2466,
+      "changed_PD_crossings_zero_based": [
+        5,
+        10,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2468,
+      "changed_PD_crossings_zero_based": [
+        6,
+        10,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2472,
+      "changed_PD_crossings_zero_based": [
+        8,
+        10,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2515,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        11,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2521,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        9,
+        11,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2531,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        11,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2537,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        10,
+        11,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2546,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        11,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2552,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2627,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2629,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2633,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2642,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2644,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2648,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2658,
+      "changed_PD_crossings_zero_based": [
+        5,
+        10,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2660,
+      "changed_PD_crossings_zero_based": [
+        6,
+        10,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2664,
+      "changed_PD_crossings_zero_based": [
+        8,
+        10,
+        11,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2691,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2693,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2697,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2706,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2708,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2712,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2722,
+      "changed_PD_crossings_zero_based": [
+        5,
+        10,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2724,
+      "changed_PD_crossings_zero_based": [
+        6,
+        10,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2728,
+      "changed_PD_crossings_zero_based": [
+        8,
+        10,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2771,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        11,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2777,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        9,
+        11,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2787,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        11,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2793,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        10,
+        11,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2802,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        11,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2808,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2891,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        11,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2893,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        11,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2906,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        11,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2908,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        11,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2922,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        10,
+        11,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2924,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        11,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2955,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        12,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2957,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        12,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2970,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        12,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2972,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        12,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2986,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        10,
+        12,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 2988,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        15,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3153,
+      "changed_PD_crossings_zero_based": [
+        0,
+        9,
+        11,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3169,
+      "changed_PD_crossings_zero_based": [
+        0,
+        10,
+        11,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3184,
+      "changed_PD_crossings_zero_based": [
+        9,
+        10,
+        11,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3217,
+      "changed_PD_crossings_zero_based": [
+        0,
+        9,
+        12,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3233,
+      "changed_PD_crossings_zero_based": [
+        0,
+        10,
+        12,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3248,
+      "changed_PD_crossings_zero_based": [
+        9,
+        10,
+        12,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3331,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3333,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3337,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3346,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3348,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3352,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3362,
+      "changed_PD_crossings_zero_based": [
+        5,
+        10,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3364,
+      "changed_PD_crossings_zero_based": [
+        6,
+        10,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3368,
+      "changed_PD_crossings_zero_based": [
+        8,
+        10,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3411,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        11,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3417,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        9,
+        11,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3427,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        11,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3433,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        10,
+        11,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3442,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        11,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3448,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        10,
+        11,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3475,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        12,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3481,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        9,
+        12,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3491,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        12,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3497,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        10,
+        12,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3506,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3512,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3587,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3589,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3593,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3602,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3604,
+      "changed_PD_crossings_zero_based": [
+        6,
+        9,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3608,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3618,
+      "changed_PD_crossings_zero_based": [
+        5,
+        10,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3620,
+      "changed_PD_crossings_zero_based": [
+        6,
+        10,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3624,
+      "changed_PD_crossings_zero_based": [
+        8,
+        10,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3667,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        11,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3673,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3683,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        11,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3689,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        10,
+        11,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3698,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        11,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3704,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        10,
+        11,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3731,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        9,
+        12,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3737,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        9,
+        12,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3747,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        10,
+        12,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3753,
+      "changed_PD_crossings_zero_based": [
+        0,
+        8,
+        10,
+        12,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3762,
+      "changed_PD_crossings_zero_based": [
+        5,
+        9,
+        10,
+        12,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3768,
+      "changed_PD_crossings_zero_based": [
+        8,
+        9,
+        10,
+        12,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3851,
+      "changed_PD_crossings_zero_based": [
+        0,
+        5,
+        8,
+        14,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3853,
+      "changed_PD_crossings_zero_based": [
+        0,
+        6,
+        8,
+        14,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3866,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        9,
+        14,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3868,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        9,
+        14,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3882,
+      "changed_PD_crossings_zero_based": [
+        5,
+        8,
+        10,
+        14,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "2": -1,
+        "-2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    },
+    {
+      "mask": 3884,
+      "changed_PD_crossings_zero_based": [
+        6,
+        8,
+        10,
+        14,
+        15,
+        16,
+        17
+      ],
+      "annular_bracket_degree": 0,
+      "annular_bracket_constant": {
+        "-2": -1,
+        "2": -1
+      },
+      "Jones_K": "1",
+      "final_link_with_axis_crossings": 0,
+      "final_link_with_axis_components": 2
+    }
+  ]
+}

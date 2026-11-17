@@ -1,0 +1,244 @@
+GEOMETRIC FANOUT: A PROVED EXCLUSION AND A SMALLER CONSTRUCTION TARGET
+31 October 2026. First bounded pass, approximately 20 minutes.
+
+OUTCOME
+
+No Jones-one nontrivial knot, useful unlink rotant, or completely certified
+new rotor candidate was constructed. There is a proved geometric exclusion:
+an unknot rotor whose rotation extends to an actual global periodic rotation
+of that unknot has an unknotted flip. This holds for every order, independently
+of Jones polynomial preservation. Parent and tangle agents independently
+audited the compression and branched-cover steps below.
+
+The construction effort narrowed the useful target from FOUR orbit surgery
+circles to ONE setwise-invariant surgery circle. Shared Borromean interactions
+with that circle give an explicit small clasper template. The simplest direct
+inverse-cancellation anchor for this template fails a component-count test,
+proved below. No more elaborate anchor has been certified.
+
+A. GLOBAL PERIODICITY EXCLUSION
+
+Hypotheses. Let U be an unknot in S^3. Let B be a rotor ball, with U intersect B
+in n arcs forming one free orbit under the local standard order-n rotation rho,
+n>=2, and with no closed components. Suppose rho extends to a standard finite
+rotation of S^3 preserving U, with fixed axis A disjoint from U. Require the
+actual rotor flip mu to normalize rho on B and to induce its usual half-turn
+on the marked rotor boundary. The stator is therefore invariant under the
+global rotation, although it need not be geometrically planar.
+
+Conclusion. Replacing R=U intersect B by mu(R) gives an unknot.
+
+Proof, including the markings.
+
+1. The distinguished pair U union A is a Hopf link. A periodic symmetry of U
+preserves its orientation because an orientation-reversing circle symmetry has
+fixed points, whereas the rotation axis is disjoint from U. Paoluzzi's Claim2.1
+proves the Hopf-link statement using an equivariant disk fibration of the
+unknot exterior. The quotient pair bar(U) union bar(A) is likewise a Hopf link:
+in that disk fibration the rotation fixes the disk centers and rotates each
+disk, and its quotient again has the core-axis configuration.
+
+2. The quotient of B is a ball meeting each Hopf component in exactly one arc.
+The quotient sphere is a Conway sphere, with two axis marks and two U marks.
+The flip mu descends because mu rho mu^-1=rho^-1. Its boundary action swaps
+the two axis marks with each other and the two U marks with each other. It is
+an ordinary Conway half-turn with these component colors retained.
+
+3. Remove tubular neighborhoods of the Hopf components. The four-punctured
+Conway sphere F cannot be pi_1-injective into the Hopf exterior: pi_1(F)=F_3
+and pi_1(T^2 times I)=Z^2. The loop theorem provides a compressing disk, whose
+interior lies on one side of F. Its boundary is essential and nonperipheral,
+so it separates the four endpoint marks into two pairs. Since the disk misses
+the tangle, it cannot separate the ends of either tangle arc. Cutting that
+ball along the disk therefore gives two balls, each containing one complete
+arc, one from each Hopf component.
+
+4. Each such one-arc ball is an unknotted ball-arc pair. Its boundary sphere
+meets a globally unknotted Hopf component twice, and the resulting connected-
+sum decomposition of U has only trivial summands. Rejoining the balls along
+the compression disk makes their two arcs a boundary-parallel, hence rational,
+two-string tangle. Thus at least one side of the quotient Conway sphere is
+rational. The other side is not assumed rational or boundary-parallel.
+
+5. Rational tangles are invariant, relative to their marked boundary, under
+the Conway horizontal and vertical half-turns and their product. If the
+mutated side is the other tangle, transfer the half-turn to the rational side
+by a rotation of the entire closed diagram. This shows that the mutated Hopf
+pair is the original Hopf pair. The isotopy retains the axis color, because
+the boundary action preserves its endpoint pair and each tangle arc has a
+unique endpoint pair. No exchange of the two component roles is required.
+
+6. Take the n-fold cyclic branched cover over the distinguished axis component.
+The lift of the other component of a Hopf link is an unknot. Cutting the cover
+along the lifted Conway sphere and applying the lifted boundary half-turn
+recovers exactly the prescribed rotor flip. Possible choices of deck lift
+differ by powers of rho and do not change the rotor. Consequently the rotant
+of U is U.
+
+Scope. This does not assume an arbitrary local cyclic symmetry extends across
+an asymmetric stator. That extension is precisely the extra hypothesis. It
+excludes quotient constructions whose whole closed anchor is a periodic
+unknot, and equivariant surgery constructions retaining that global symmetry.
+It does not exclude a local rotor with an asymmetrically glued stator.
+
+Primary sources:
+Luisa Paoluzzi, Three Cyclic Branched Covers Suffice to Determine Hyperbolic
+Knots, JKTR14 (2005), 641--655, Claim2.1, p643.
+  https://www.i2m.univ-amu.fr/perso/luisa.paoluzzi/jktr05.pdf
+  https://doi.org/10.1142/S0218216505003981
+Kauffman--Lambropoulou, On the classification of rational tangles, Lemma2.
+  https://arxiv.org/abs/math/0311499
+No novelty claim is made for the deduction above.
+
+B. CONSTRUCTION ATTEMPT: WHY SIMPLE TELESCOPING DOES NOT HELP
+
+With four free-orbit unlink circles eta_i, a tempting group-theoretic design
+gives the four rotor arcs words w_i=x_i x_(i+2)^-1 in the unlink-complement
+group F_4. Close the arcs in order0,2,1,3. The total word is
+  w_0 w_0^-1 w_1 w_1^-1 =1.
+To upgrade this to an actual unlink certificate, make opposite arcs parallel
+and fill the two resulting pairs by disjoint ribbons, then connect their
+boundary disks by a standard exterior band. This gives a genuine spanning
+disk disjoint from the surgery circles, provided the specified ribbons exist.
+
+The direct planar realization is useless: its opposite-pair ribbons and
+exterior band are preserved or interchanged by the flip. The same disk
+cancellation survives. Also, a trivial word alone cannot replace the ribbon
+certificate: a null-homotopic embedded curve in an unlink complement need not
+bound an embedded disk there. This attempt therefore supplies no candidate.
+The exclusion is for this explicit ribbon realization, not all geometries
+with the same free-group word or merely the same opposite pairing.
+
+C. ONE INVARIANT CIRCLE: A STRICTLY SMALLER GEOMETRIC TARGET
+
+Instead of four distinct surgery circles, use one embedded unknot eta in
+int(B) which is preserved SETWISE by rho. The action on eta is free. Let the
+initial rotor R_0 be boundary-parallel and its stator S complete it to U.
+Require the augmented two-component link U union eta to be the unlink, with
+disk framing on eta. Then every 1/k surgery on eta leaves the global U
+unchanged. Its rotational symmetry makes the local surgery equivariant.
+One must still identify the surgered ball equivariantly with the standard
+rotor ball, keeping the boundary marking; this is a geometric obligation in
+any completed diagram, not something to omit from a certificate.
+
+If the flipped augmented link is nontrivial and some specified 1/k filling
+gives a nontrivial remaining knot, this would yield a counterexample for an
+order4 or order5 Jones-preserving rotor. This is a TWO-component unlink-rotant
+target instead of the previous five-component one. Nonsplitness alone does
+not certify that a particular filling is nontrivial.
+
+Why previous exclusions do not automatically apply:
+- eta is a closed marked component. The bridge-disk theorem for R_0 alone
+  does not supply bridge disks avoiding eta.
+- eta itself and the rotation axis form a Hopf link, but U is not assumed
+  globally periodic. SectionA therefore cannot simply be applied to U.
+- In the quotient rotor ball one sees an axis arc, one rotor arc, AND a
+  closed eta component. The rational two-string flipping argument does not
+  apply to this marked three-object configuration.
+- If eta bounds a disk already in B minus R_0, the construction is locally
+  harmless. A useful global splitting disk must essentially leave B.
+
+Elementary filter. With coherently transported rotor-arc orientations, the
+homology class of an invariant eta in H_1(B minus R_0)=Z^n is
+  m(1,...,1).
+If the global U orientation induces signs epsilon_i, unlinking requires
+  m sum_i epsilon_i =0.
+For n=5 this forces m=0. For n=4 one may have m=0 or two signs of each kind.
+This is only an abelian obstruction. It does not prove splitness or relative
+flip invariance, and length4 binary reflection symmetry explains why the
+corresponding linking-number test is especially weak.
+
+D. EXPLICIT SHARED-CLASPER TEMPLATE AND ITS DECISIVE FIRST TEST
+
+Begin with four standard small boundary-parallel rotor arcs a_0,...,a_3 and
+a central round eta, all disjoint, with eta split from the unmodified closure.
+In sector i put a Borromean (Y-clasper) interaction G_i with its three disk
+leaves meeting eta, a_i, and a_(i+1), each once. Rotate G_0 to obtain the other
+three, arranging them as disjoint claspers. The eta component is SHARED by all
+four interactions. In a local three-strand description the elementary
+interaction can be represented by a pure-braid commutator such as
+  [sigma_1^2, sigma_2^2].
+The exact braid/sign convention must be fixed in a diagram before claiming
+pairwise inverses; antisymmetry of Jacobi diagrams alone is insufficient.
+
+Two useful facts are exact for this template. If eta is deleted, each G_i
+has a trivial disk-leaf, so its surgery leaves the rotor arcs unchanged.
+If all rotor arcs are deleted, each G_i likewise has trivial disk-leaves,
+so eta remains an unknot. Thus R_0 remains a boundary-parallel tangle when
+eta is forgotten, and eta remains individually unknotted. The interaction
+is entirely in their joint embedding. These statements use Habiro's
+trivial-leaf move and hold for the disjoint forest, not just in a finite-type
+approximation.
+
+The initially intended anchor was an asymmetric stator connecting the four rotor arcs
+into U so that two neighboring commutator interactions become exact inverse
+string-link operations, and likewise for the other two. The flip changes the
+attachment order. Because eta is shared and each box has six ends, the
+independent FOUR-ended-box/Conway-mutation exclusion does not immediately
+apply. However, the direct inverse-channel cancellation mechanism fails the
+connectedness test below. This is a precisely specified geometric TEST TEMPLATE,
+not an asserted unlink, candidate counterexample, or existence theorem.
+
+Decisive first test: give the eight-endpoint stator and the three-strand
+commutator embeddings, then perform actual braid/Reidemeister cancellation
+showing the entire augmented link is U_2. If cancellation also survives the
+flip, discard this template. If the pre-flip unlink is certified but the
+flipped link is nontrivial, proceed to a filling/nontriviality certificate.
+Testing polynomial equality is not the first unresolved step: rotor theory
+already supplies the appropriate bracket equality.
+
+E. EXECUTED CONNECTIVITY TEST: DIRECT INVERSE PAIRS CANNOT GIVE ONE U
+
+Specify the economical cyclic incidence model: G_i lies on eta,a_i,a_(i+1),
+and along each a_i its two interactions are G_(i-1) and G_i, with the two
+remaining ends of a_i on the rotor boundary. Along eta the boxes occur in
+cyclic order G_0,G_1,G_2,G_3. Require direct inverse cancellation along three
+matching channels, without sliding a box through another interaction.
+
+The only initial perfect pairings of adjacent boxes on eta are
+  (G_0,G_1),(G_2,G_3), or (G_0,G_3),(G_1,G_2).
+
+For the first pairing, G_0 and G_1 already share the eta channel and a_1.
+Their remaining a_0 and a_2 channels must therefore join through the stator.
+Similarly, G_2 and G_3 share eta and a_3, and their remaining channels require
+the OTHER ends of a_0 and a_2 to join through the stator. Thus both ends of
+a_0 are connected to a_2: their union is an entire closed component, separate
+from a_1 and a_3. The latter contribute at least one more component.
+The second pairing gives the same obstruction with a_1 and a_3 interchanged
+with a_0 and a_2. Since the commutator interactions are pure, they do not alter
+these component connections.
+
+Consequently this direct pairwise inverse-channel construction cannot have
+the required SINGLE unknot U as its non-eta component. It may produce an
+unlink with more components, which is not the target and cannot be silently
+band-summed without rechecking rotor symmetry and every disk certificate.
+
+Exact scope: this excludes the specified direct pairwise cancellation anchor
+for the four-Y incidence template. It does NOT exclude all embeddings of four
+Y-claspers, higher-order cancellation identities, intervening strand moves,
+or all invariant-circle constructions. No such more elaborate anchor was
+constructed during this bounded pass. The test therefore ends this attempt
+with a concrete obstruction rather than an unexecuted promise.
+
+Do not implement an EMPTY disk-leaf wholly inside B as the anchor: Habiro's
+move would make the construction trivial relative to B before closure. A
+nonlocal trivial-leaf disk must actually leave the rotor ball, and must avoid
+the entire remaining clasper forest to certify simultaneous cancellation.
+
+Primary source for clasper statements:
+Kazuo Habiro, Claspers and finite type invariants of links, Geometry & Topology
+4 (2000), Propositions3.3--3.4 (admissible tree surgery and trivial disk-leaf).
+  https://arxiv.org/abs/math/0001185
+Rotor conventions and allowance of closed rotor components:
+Anstee--Przytycki--Rolfsen, Knot polynomials and generalized mutation, Sections1,3.
+  https://arxiv.org/abs/math/0405382
+
+FINAL STRATEGIC VERDICT
+
+The global-periodic subclass is rigorously excluded, with no reliance on
+Jones detection. The one-invariant-circle target is smaller and avoids the
+known four-independent-box trap, but its essential unlink anchor remains
+unproved. The shared-clasper template's simplest anchor has now been ruled out
+by connectedness; a higher-order geometric relation would be necessary.
+No large knot-table enumeration was performed, and no unverified diagram is
+presented as a successful construction.

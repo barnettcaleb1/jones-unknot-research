@@ -1,0 +1,18 @@
+{
+ "files": [
+  "../out/cert/far.jsonl.gz"
+ ],
+ "records_total": 800,
+ "sampled": 800,
+ "fraction": 1.0,
+ "seed": 37,
+ "records_pass": 800,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 800
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 800
+ },
+ "secs": 12.6
+}

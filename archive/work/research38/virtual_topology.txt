@@ -1,0 +1,268 @@
+PASS38 REPLACEMENT: VIRTUAL JONES-ONE KNOTS ON A HEEGAARD TORUS
+Independent topology/framing audit, 2026-11-01. No actual candidate knot is asserted.
+
+1. WHAT IS PRESERVED, AND WHAT IS NOT
+Let D be an oriented knot diagram on T^2, representing a knot in T^2 x I. Give
+its link the surface/blackboard framing and put delta=-A^2-A^-2. Use the UNREDUCED
+bracket convention: the empty link evaluates to 1 and a trivial circle to delta.
+The ordinary virtual bracket forgets the isotopy type of every state circle and
+assigns delta per circle. An embedding e:T^2 x I -> S^3 does not generally make
+that forgetting operation valid. It sends essential surface curves to framed
+torus links, whose brackets have to be evaluated honestly.
+
+Collect the surface bracket into its actual isotopy basis before applying tests:
+  [D]=c0(A) empty + sum_(s,r>=1) c_(s,r)(A) gamma_s^(r),
+where s is an unoriented primitive slope, gamma_s^(r) consists of r parallel
+essential circles, and all contractible-circle factors have been absorbed into
+c0,c_(s,r). Distinct curves in one state are parallel on the torus. Coefficients
+that cancel after grouping contribute nothing and must not be counted as support.
+For a fixed Heegaard marking M, let E_M be S3 framed-bracket evaluation and let
+E_v(gamma_s^(r))=delta^r. These are LINEAR evaluation rules here; no claim that
+E_v is an algebra homomorphism under the torus skein product is needed or correct.
+The complete framed discrepancy is exactly
+  E_M([D])-E_v([D])
+       = sum c_(s,r)(A) [ E_M(gamma_s^(r))-delta^r ].
+It can vanish by cancellation between DIFFERENT slopes. A supportwise test is
+therefore only a sufficient preservation mechanism, not a necessary condition
+for a particular D to preserve its Jones polynomial.
+
+2. EXACT STATEWISE FRAMING GATE
+Choose oriented meridian/longitude coordinates (p,q) for the standard unknotted
+Heegaard torus, with the convention that the surface push-off of slope (p,q) has
+self-linking pq. Reversing the ambient convention changes this common sign.
+A primitive slope is an underlying torus knot T(p,q). Its r parallel copies form
+T(rp,rq), with each component's torus framing pq and mutual linking pq (when
+oriented consistently). Thus the total component framing is r pq.
+
+For any framed r-component link L with total self-framing f, its unreduced bracket
+F_L obeys the first-order identity
+  F_L(1)=(-1)^f(-2)^r,  F_L'(1)/F_L(1)=3f.
+One elementary derivation uses the normalized Jones formula and
+  V_L(1)=(-2)^(r-1),
+  V_L'(1)/V_L(1)=(3/2) sum_(i<j) lk(L_i,L_j),
+where the derivative is in t. In F=delta(-A^3)^w V(A^-4), w=f+2 sum lk;
+the linking contributions cancel, and delta'(1)=0. Equivalently, the framed
+bracket's first jet is unchanged by crossing changes between distinct components,
+while self-crossing changes account exactly for the framing change. This also
+provides a direct skein proof of the displayed identity.
+
+Consequently E_M(gamma_s^(r))=delta^r implies r pq=0, hence pq=0. Conversely,
+primitive pq=0 means a meridian or longitude. Its parallel copies are genuine
+zero-framed unlinks, so their evaluation is delta^r. Therefore
+  E_M(gamma_s^(r))=delta^r  IFF  s is meridional or longitudinal in M.
+This is stronger than checking whether the underlying primitive curve is unknotted:
+(p,1) and (1,q) are unknots, but their torus framings are nonzero unless pq=0.
+Changing the framing independently in each state is not a legitimate modification
+of the original knot or its bracket expansion.
+
+3. INVARIANT SLOPE TEST FOR THE STATEWISE MECHANISM
+An SL(2,Z) change of Heegaard marking preserves the geometric intersection number
+  I((p,q),(r,s))=|ps-qr|.
+If every nonzero essential basis term is to evaluate statewise as an unlink, the
+set of its distinct slopes must fit inside a meridian-longitude pair. Thus:
+  - one slope always admits such a marking;
+  - two distinct slopes admit one exactly when their intersection is 1;
+  - three distinct slopes cannot all qualify;
+  - two slopes with intersection greater than 1 cannot qualify.
+This statement applies to the grouped nonzero SUPPORT, not all raw smoothing
+states. It blocks this particular statewise mechanism; it does not prove the full
+sum discrepancy is nonzero, and does not prohibit Jones preservation by cancellation.
+
+4. THE KNOT'S OWN FRAMING MUST ALSO BE NORMALIZED
+Let w_T(D) be the signed crossing count intrinsic to the oriented torus diagram.
+Let [D]=(p,q) in H1(T;Z). The surface framing of the embedded knot has self-linking
+  f_e(D)=w_T(D)+pq
+in the same chosen meridian-longitude convention. This can be seen by oriented
+smoothing: the resulting disjoint curves have total framing plus twice their
+pairwise linking equal to the quadratic form q(p,q)=pq; reintroducing each local
+crossing adds its signed crossing contribution.
+Therefore the two normalized Jones evaluations are
+  V_virtual(D)=(-A^3)^(-w_T(D)) E_v([D])/delta,
+  V_e(D)=(-A^3)^(-f_e(D)) E_M([D])/delta.
+The precise target for normalized equality is
+  E_M([D])=(-A^3)^(f_e(D)-w_T(D)) E_v([D]),
+not necessarily equality of the two raw brackets. If the virtual polynomial is 1
+and strict statewise preservation does give equality of raw brackets, the embedded
+Jones polynomial is the monomial (-A^3)^(-pq). An actual classical knot cannot
+have a nonconstant monomial Jones polynomial: normalization at t=1 fixes the sign,
+and the derivative there vanishes. Thus in that special situation pq must be zero.
+For computations it is safest to obtain the actual embedded PD and verify its
+writhe/framing directly, using the quadratic correction as an independent check.
+
+5. PRIMARY-SOURCE CONNECTION AND PRECISE NONTRIVIALITY LIMIT
+Dye--Kauffman, Minimal surface representations of virtual knots and links,
+Algebraic & Geometric Topology5 (2005),509--535, arXiv math/0401035v5:
+https://arxiv.org/pdf/math/0401035
+Section2 defines the surface-state bracket and explicitly warns that equal state
+classes may cancel after collecting coefficients. Section3 analyzes a single
+virtualization using the complementary tangle coefficients alpha,beta. Figure11
+and the paragraph on printed p523 explicitly give the one-VIRTUAL-CROSSING model
+with essential slopes m and m+2l. Their intersection is 2. When both coefficients
+are nonzero, Section3's model therefore fails the statewise-preservation test
+under EVERY Heegaard marking. Do not confuse that one-virtual-crossing model with
+single VIRTUALIZATION, which has two virtual crossings; the latter's Figure7
+requires separate slope tracing.
+
+Kauffman's virtualization construction gives nontrivial virtual knots with unit
+Jones polynomial; the same Dye--Kauffman paper's introduction and Corollary3.5
+explain the single-unknotting-crossing case. A direct foundational source is
+Kauffman, Virtual knot theory:
+https://homepages.math.uic.edu/~kauffman/VKT.pdf
+
+Virtual nonclassicality means no allowed stabilization/destabilization and
+surface isotopy turns the virtual knot into a classical diagram. An S3 isotopy
+of the embedded knot is allowed to pass through the two complementary solid tori;
+it need not remain inside T^2 x I. Hence a virtual nonclassicality certificate
+is NOT a certificate that e(D) is a nontrivial classical knot. This is a categorical
+scope distinction, not a claim that every such embedding is trivial.
+
+CONCRETE CHECKLIST FOR THIS ROUTE
+Supply the actual surface diagram, its grouped slope/multiplicity coefficients,
+the chosen integral Heegaard marking, and an actual classical diagram after
+embedding. Check the full normalized Jones polynomial, not only virtual Jones.
+Then certify nontriviality independently in S3. The slope test can reject the
+statewise shortcut cheaply; failure of that shortcut is not a theorem excluding
+cancellation-based embeddings. No candidate satisfying the complete requirements
+has been supplied or certified in this audit.
+
+6. SPECIFIC THREE-CROSSING CANDIDATE: INDEPENDENT EXACT AUDIT
+The parent supplied the virtual PD
+  [(1,4,2,5),(5,3,0,2),(3,1,4,0)].
+Use darts 4*vertex+port and cyclic port order 0,1,2,3. Pair equal edge labels.
+The Carter ribbon surface has face cycles
+  [0,10,2,4], [1,11,7,3,5,9], [6,8].
+Therefore V=3,E=6,F=3 and genus=1. Opposite-port traversal has precisely two
+reverse directed cycles, i.e. one knot. Orienting [0,11,4,1,8,7] gives crossing
+signs (-,+,+), hence w=1 in the stated A-smoothing convention. Direct enumeration
+of the eight states gives reduced virtual bracket -A^3, hence virtual Jones1.
+The independent reproducible script is virtual_topology_check.py/.json.
+
+Take primal spanning-tree edges 0,1. Gauging them to zero, the two independent
+face relations are e0-e3 and e1-e4+e2-e5. An integral cohomology basis assigns
+  e0,e1,e3 -> (0,0), e4 -> (1,0), e5 -> (0,1), e2 -> (1,1).
+These are integral coordinates on H1, so the coordinate primitive slopes have
+intersection magnitude1. The state homologies, up to orientation, are:
+  000: one null; 001 and010: two mu;
+  011: two mu and one null; 100: two lambda;
+  101 and110: one null; 111: two null.
+The oriented knot class is -2lambda. Collecting coefficients gives
+  [D]=c0 + (A-A^-3) mu^2 + A lambda^2,
+  c0=delta(A^3+A^-1-A^-5).
+Thus this particular candidate PASSES the statewise slope gate: choosing mu and
+lambda as the two Heegaard axes makes both parallel pairs zero-framed unlinks.
+The framed bracket then is -A^3 delta, and the normalized classical polynomial
+is1. This does not establish whether the resulting S3 knot is nontrivial.
+The two nonzero intersecting state slopes also certify minimal virtual genus1
+by Dye--Kauffman's surface criterion; that fact does not settle S3 topology.
+
+7. ALL-MARKINGS NORMALIZATION: INDEPENDENT FIRST AND SECOND JETS
+Let the images of mu,lambda in a chosen Heegaard marking be (p,q),(r,s), with
+|ps-qr|=1, and consistently take positive torus framing to be pq. Define E2(p,q)
+as the unreduced framed bracket of two parallel curves of primitive slope(p,q).
+Then the actual S3 framed bracket for this diagram is exactly
+  F=c0+(A-A^-3) E2(p,q)+A E2(r,s).
+Set h=log A, P=pq, R=rs. The first two jets are
+  E2(p,q)=4+24P h+[80P^2+16(p^2+q^2)]h^2+O(h^3).
+A direct formula providing the same jets is
+  E2(p,q)=2+A^(4pq+4q)[2p+1]_A-A^(4pq-4q)[2p-1]_A,
+  [n]_A=(A^(2n)-A^(-2n))/(A^2-A^-2), for signed integers n.
+This follows from Almeida--Gelca, Kauffman bracket versus Jones polynomial skein
+modules, Proposition3.2 and T2(gamma)=gamma^2-2:
+https://www.math.ttu.edu/~rgelca/almeida_gelca.pdf
+Their printed embedding convention gives the A-inverted expression; the formula
+above uses the opposite torus-framing convention, calibrated by
+E2(1,1)=1+A^4+A^8+A^12 (total self-framing2). Do not mix those conventions.
+
+Expanding the ACTUAL candidate F gives F(1)=2 and F'(1)=6+24rs. Since it is a
+single framed knot, F'(1)/F(1)=3f determines its framing exactly:
+  f=1+4rs.
+This verifies the global correction independently of guessing a planar writhe.
+Therefore normalized Jones1 is equivalent to the full framed equality
+  F=-delta A^(3+12rs).
+The coefficient of h^2 in their difference is
+  16[-1-3rs+6pq-4r^2s^2+r^2+s^2].
+Thus every successful marking necessarily obeys
+  6pq=4r^2s^2+3rs+1-r^2-s^2,  |ps-qr|=1.
+This is a necessary finite-jet equation, not asserted sufficient. The parent and
+braid agent are analyzing the remaining marking equations and the tangle agent
+is checking actual S3 topology. No further slope search or classification is
+claimed in this independent audit.
+
+8. INDEPENDENT THIRD-JET AND COMPLETE INTEGER REDUCTION AUDIT
+Let X=pq,Y=rs,U=p^2+q^2,V=r^2+s^2. Direct expansion of the same framed torus
+formula gives
+ E2(p,q)=4+24X h+(80X^2+16U)h^2
+          +(64/3)X(7X^2+5U+1)h^3+O(h^4).
+For example, use [n]_(exp h)=n+(2/3)n(n^2-1)h^2+O(h^4); the cubic term then
+comes only from the exponential multipliers and their product with that h^2
+term. After imposing Q2: 6X=4Y^2+3Y+1-V, the h^3 coefficient of
+F-(-delta A^(3+12Y)) is exactly
+ 32[2U+10X^2-20XY+Y^2+Y-6X-2].
+Hence Q3 is
+ 2U=-10X^2+20XY-Y^2-Y+6X+2.
+
+Here is an independently checked complete integer reduction, not a finite search.
+If X=0, primitive (p,q) gives U=1 and Q3 forces Y(Y+1)=0. If Y=0, V=1 and Q2
+forces X=0. If both are nonzero, the determinant identity
+ (ps+qr)^2=1+4XY
+forces XY>0. Integer nonzero r,s imply V<=Y^2+1. When Y<0 and X<0, Q2 would
+give 6X>=3Y(Y+1)>=0, a contradiction. Thus X,Y>0. Q2 now gives
+ X>=Y(Y+1)/2.
+For X>=2Y+1, the right side of Q3 is decreasing in X and at X=2Y+1 equals
+ -Y^2-9Y-2<0, impossible because U>0. Therefore X<=2Y, so Y<=3.
+The only remaining (Y,X) are (1,1),(1,2),(2,3),(2,4),(3,6).
+The second and fourth give V<0. The first gives U=8 although product X=1
+forces U=2. The third gives U=22 although product X=3 forces U=10.
+The last gives XY=18, but the determinant identity would make (ps+qr)^2=73.
+All fail. Consequently Jones1 requires pq=0 and rs=0 or -1. Checking the
+full bracket on those surviving primitive markings is separate and was done
+by the parent/braid exact Laurent verification. This argument is independent
+of any numerical projection of the embedded knot.
+
+9. DIRECT TOPOLOGICAL CERTIFICATE FOR ALL SURVIVING HEEGAARD MARKINGS
+The exact rational coordinates in torus_embedding.json realize the actual Carter
+ribbon surface, not just a surface with the same homology. Independently rebuilding
+its 24 barycentric triangles with rational arithmetic gives all negative areas,
+with distinct values -1/16,-13/240,-11/240,-1/40,-1/120, and total -1. Thus the
+cellular map is orientation-consistent of degree -1; it is a homeomorphism of the
+torus (no folds along edges, and a local branch point would force degree greater
+than one). The prescribed crossing rotations agree with the PD. This supplies
+an exact topological realization of the flat torus diagram.
+
+Let v be its second flat coordinate, dual to lambda. Around the oriented knot,
+the six successive (start, midpoint, end) v values are
+ (0,-13/60,-11/30),
+ (-11/30,-1/2,-19/30),
+ (-19/30,-47/60,-1),
+ (-1,-73/60,-41/30),
+ (-41/30,-3/2,-49/30),
+ (-49/30,-107/60,-2).
+They are strictly decreasing on every straight segment. Resolve each crossing
+by a small displacement in the normal collar coordinate, without changing v.
+The resulting embedded curve remains strictly monotone in v and has v-degree -2.
+
+For every marking allowed by the algebraic reduction, pq=0, so the primitive
+curve mu is the meridian of one of the TWO complementary unknotted solid tori.
+In that solid torus its angular longitude is either v or -v. Indeed any allowed
+lambda shear changes only the meridional coordinate; if mu is the other axis,
+switch to the other complementary solid torus. Push the collar curve slightly
+into this solid torus, preserving its longitude coordinate. It is a closed
+TWO-STRAND BRAID. Since B2 is generated by one crossing, it is T(2,k) for an odd
+integer k. The determinant of T(2,k) is |k|. Jones1 therefore implies |k|=1,
+which makes the knot an unknot by braid destabilization.
+
+This proves that the specific three-crossing virtual candidate cannot give a
+nontrivial classical Jones-one knot under ANY unknotted-Heegaard-torus marking
+covered by the exact skein calculation. The eight orientation-preserving signed
+markings are all unknots. Orientation-reversing Heegaard markings are covered by
+ambient reflection and mirroring; mirroring preserves both Jones1 and unknotness.
+One must mirror the crossing/framing conventions together, rather than blindly
+apply the orientation-preserving F formula to a determinant-minus-one matrix.
+
+The exact rational PL projections in exact_eight_markings.json independently
+produce diagrams simplifying geometrically to zero crossings and one component.
+They corroborate this argument, but no numerical projection assertion is needed
+for the closed-two-braid proof. This is a decisive negative result for this ONE
+virtual candidate and standard Heegaard embeddings, not a general exclusion of
+virtual-to-classical constructions, knotted torus embeddings, or the Jones
+unknot-detection problem.

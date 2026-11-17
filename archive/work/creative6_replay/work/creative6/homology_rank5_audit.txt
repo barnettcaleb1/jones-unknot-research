@@ -1,0 +1,211 @@
+RANK-FIVE JONES-ONE CANDIDATES: AUDITED RESTRICTED CONSEQUENCES
+Audit date: 2026-10-31. This is a deduction from cited results, not a proof that
+the Jones polynomial detects the unknot. One input is a December 2025 preprint.
+
+CONVENTIONS
+K is a classical knot in S^3. V_U=1. Write r=dim_Q Kh_red(K;Q),
+R=dim_Q Kh(K;Q), both ordinary even Khovanov homologies. The graded Euler
+characteristics are V_K(q^2) and (q+q^-1)V_K(q^2), respectively, up to the
+harmless convention q -> q^-1. KHI is instanton knot homology over C.
+I^natural and I^sharp(S^3,K) are reduced and unreduced singular instanton
+homology. I^sharp(S^3,K) must not be confused with I^sharp(S^3), the framed
+invariant with no knot. All total dimensions ignore grading shifts/mirroring.
+
+RESTRICTED THEOREM
+Suppose V_K=1, K is nontrivial, and r=5. Using Bhat--Li--Ye Theorem 1.4,
+the following are necessary:
+ (i) Delta_K=1; K is nonfibered; g(K)>=2.
+ (ii) KHI(K)=C^2 in Alexander grading g, C in grading 0, and C^2 in
+      grading -g, with no other support. Each outer summand has Euler
+      characteristic zero. The guts are a solid torus with four longitudes.
+ (iii) dim_C I^sharp(S^3,K;C)=10 and R=10.
+ (iv) The generalized Lee complex over Q[X] has exactly two noncontractible
+      torsion blocks, and their exponents are both >=2.
+ (v) Every proper rational tangle replacement K -> J satisfies
+      dim_Q Kh_red(J;Q)>=5. In particular K cannot be obtained from the
+      unknot or a trefoil by a single proper rational tangle replacement.
+
+PROOF AND SOURCE AUDIT
+1. Baldwin--Sivek, An instanton take on some knot detection results,
+   Propositions 2.3--2.4, gives dim KHI=5 and the possible Alexander supports.
+   In the nonfibered case symmetry and top-rank detection force (ii); the
+   Euler characteristic forces Delta=1. In the fibered genus>=2 case the
+   five one-dimensional summands lie in +/-g, +/-(g-1), 0. Their Alexander
+   polynomial has the form a(t^g+t^-g)+b(t^(g-1)+t^(1-g))+c, with a,b,c=+/-1.
+   Delta(1)=1 forces c=1 and b=-a, so Delta(-1)=1+4a(-1)^g is 5 or -3.
+   The genus-one fibered case is the figure eight (determinant 5).
+   Thus determinant 1 excludes the fibered cases.
+   Source: https://spiral.imperial.ac.uk/server/api/core/bitstreams/7b21593a-d136-413c-879a-411a7d85de92/content
+   Exact short statement (Prop2.3, p4): "Then KHI(K; Q) has total dimension 5."
+   In this paper its symbol Kh denotes REDUCED homology, as specified in
+   Theorems1.1--1.2. Passing Q -> C does not alter dimensions.
+
+2. Li--Ye, The guts of nearly fibered knots, Theorem1.4 and Remark2.1,
+   classifies the top-instanton-rank-two case. The top Euler characteristic
+   zero forces model M1; M2 and M3 have top Euler characteristic +/-2.
+   Example2.2 excludes M1 in genus one, proving g>=2 without any change
+   of Floer theory or coefficient field.
+   Source: https://arxiv.org/pdf/2208.05382 (v3, Jan1,2026), pp2,6--7.
+   Published: Algebraic & Geometric Topology26(2026),1385--1393.
+   Exact short statement (M1): "M is a solid torus and gamma consists of four longitudes."
+
+3. Bhat--Li--Ye, Instanton 2-torsion and fibered knots, Theorem1.4,
+   expresses I^sharp(S^3,K;C) as the homology of the mapping cone of
+   d_1^+ + d_1^-: KHI(K) -> KHI(K). Their proof of Proposition1.10
+   explicitly gives Alexander shifts +/-1. The support {-g,0,g}, g>=2,
+   has no adjacent integers, so both maps vanish. The zero-map cone has
+   dimension 2 dim KHI=10.
+   The introduction explicitly cites KM Theorem8.2 for the spectral sequence
+   from UNREDUCED Kh(mirror K;Z) to this I^sharp(S^3,K;Z). Extension to C
+   gives R>=10; there is no local-coefficient substitution in this argument.
+   Source: https://arxiv.org/html/2512.24206v1 (Dec30,2025 preprint), Thm1.4,
+   introduction paragraph1 and proof of Prop1.10.
+   Exact short phrase: "the (unreduced) Khovanov homology".
+   This audit verifies the statement, conventions and its application; it
+   does not independently reconstruct all analytic proofs in that preprint.
+
+4. The standard reduced/unreduced exact triangle gives R<=2r=10.
+   This is an inequality over Q (or C), not the F2 direct-sum theorem.
+   Combining it with step3 gives equality R=10.
+   Source: Baldwin--Sivek, Khovanov homology detects the trefoils,
+   https://arxiv.org/pdf/1801.07634, p2, displayed general facts (1),(2).
+   The unreduced dimension is unchanged by mirroring over a field.
+
+5. Schuetz describes the based generalized Lee complex over Q[X] as a
+   direct sum of one free Q[X] piece and two-term pieces with map X^k.
+   Contractible k=0 pieces may be removed. Setting X=0 gives ordinary
+   reduced Kh, so if m is the number of k>=1 pieces, r=1+2m.
+   Setting T=X^2=0 gives ordinary unreduced Kh. A k=1 piece contributes
+   dimension2; each k>=2 piece contributes dimension4. Consequently
+               R=2r-2m_1,
+   where m_1 counts k=1 pieces. Thus r5,R10 implies m=2,m_1=0.
+   Source for decomposition: https://arxiv.org/pdf/2412.05156, Section2.1,
+   equation(1), p2; Section3 identifies the torsion exponents with those
+   of reduced rational Bar--Natan homology. Formula above is elementary
+   specialization of those blocks, not an additional theorem assumed.
+
+6. Gujral--Wang's proof supplies Q[H]-module maps f,g for a proper rational
+   tangle replacement, with fg=gf=H. Their Lemma3 says that if every torsion
+   exponent on the K side is at least2, the torsion-summand count cannot
+   decrease. The reduced rank equals1+2 times that count, proving (v).
+   Their published theorem assumes absence of integral2-torsion only to
+   deduce absence of exponent-one summands; here step5 gives that directly.
+   Source: https://arxiv.org/pdf/2310.06163, Lemma3 and proof of Theorem1.
+   Published AGT25(2025),4073--4075. This strengthened application uses the
+   explicit proof, not the converse of their 2-torsion implication.
+
+WHAT DOES NOT FOLLOW
+R=10 and r=5 are algebraically compatible. It is not proved that every
+nontrivial knot has a length-one rational Bar--Natan torsion summand.
+The published Gujral--Wang discussion raises precisely that question.
+Likewise Bhat--Li--Ye Question1.13 asks nonvanishing of d_1^+ and d_1^-
+for nontrivial S^3 knots; our hypothetical rank-five candidate would answer
+it negatively. Neither question is an available theorem.
+Absence of length-one rational bars does NOT by itself imply that integral
+Khovanov homology has no2-torsion: only the opposite-direction implication
+is used by Gujral--Wang. No such converse is claimed here.
+
+EXPLICIT FORMAL MODULE MODELS AND THE REAL GEOMETRIC OBSTRUCTION
+Let A=Z[X,h]/(X^2-hX), deg X=deg h=-2. Let U=q A in homological degree0.
+For k>=1 let B_k be q A -> q^(1+2k) A in degrees0,1 with differential
+(2X-h)^k. Let C_k=U direct-sum B_k direct-sum B_k[1], where [1] raises
+both homological positions by1. These are ABSTRACT complexes; none is
+claimed to arise from a classical knot diagram.
+For every k, their ordinary reduced Euler characteristic is1, and their
+unreduced Euler characteristic isq+q^-1. At h=1 each B_k is contractible
+because (2X-1)^2=1, leaving rank2. The involution X -> h-X extends to a
+chain involution by multiplying the target of B_k by(-1)^k.
+For k=1, rational unreduced Poincare polynomial is
+ q+q^-1 + q^-1(1+t)(1+t q^4), rank6;
+reduced polynomial is1+(1+t)(1+t q^2), rank5.
+There are precisely two Z/2 torsion groups, in bidegrees(1,1),(2,1).
+Thus this model passes Euler, Lee, module, and simple conjugation tests,
+but steps1--4 prove it cannot be realized by a classical knot.
+For k>=2, ordinary unreduced differential is zero, giving rank10 and
+reduced rank5. These avoid the newly proved rank obstruction while still
+being merely formal. This is the remaining geometric realization gap.
+
+RESEARCH TARGET NARROWED
+It suffices for the rank-five case to prove that a classical knot whose
+guts are M1 and whose KHI has support {-g,0,g} has a length-one rational
+Bar--Natan torsion summand (or a nonzero instanton d_1 map). The existing
+results alone do not establish this. The general Jones unknot problem
+also permits reduced rank7,9,... and remains untouched by the rank-five
+assumption. This note makes no novelty or general-resolution claim.
+
+ADDENDUM: THE DOWLIN GRADING BRIDGE ALSO HAS AN EXPLICIT FORMAL ESCAPE
+Dowlin's spectral sequence is over Q, from reduced Kh(K) to HFK(mirror K).
+Its delta conventions are q-2h for Kh and2M-2A for HFK, identified up to
+an overall shift. Source: https://arxiv.org/pdf/1811.07848, Theorem1.1 and
+the following paragraph on p1. No absolute-shift claim is needed below.
+Li--Ye's top-rank equivalence and Dowlin's total-rank inequality force
+HFK total rank5 in the restricted case, hence that spectral sequence
+collapses in dimension and its delta multisets agree up to shift.
+
+Sparse HFK of rank5 and Delta1 has two top Maslov degrees a,b of opposite
+parity, two bottom degrees a-2g,b-2g, and one central degree c. The
+HFK-to-HFhat spectral sequence must cancel two pairs. A central survivor
+would require both top classes to kill the bottom classes; adding the two
+Maslov-drop-one equations gives4g=2, impossible. After mirroring we may
+put the surviving generator at Alexander g and Maslov0. The other top
+degree is then1-2g, the center is2-4g, and the bottom degrees are-2g and
+1-4g. Thus the half-delta multiset is
+                  {-g,-g,1-3g,1-3g,2-4g}.
+This elementary pairing argument was independently checked by the braid
+agent. It assumes the usual degree-one homological drop in the HFK-to-HF
+spectral sequence and strictly decreasing Alexander grading.
+
+For EVERY g>=2, the following abstract reduced Kh polynomial realizes
+exactly that multiset while satisfying Euler1:
+ P_g=q^(-2g)+t^(4g-2)+t^(4g-1)q^(2g)
+                  +t^(2g-1)q^(-2g)+t^(2g)q^(2g).
+The free Lee class is at (h,q)=(0,-2g). One bar runs
+ (4g-2,0) -> (4g-1,2g), of X-length g;
+the other runs (2g-1,-2g) -> (2g,2g), of X-length2g.
+Both lengths are>=2, so its unreduced rank is10. The cancellation
+ q^(-2g)+1-q^(2g)-q^(-2g)+q^(2g)=1
+is exact. Its s=-2g obeys the genus bound; because Dowlin targets the
+mirror, the formal tau(K)=-g is compatible with s(K)=-2g.
+
+An abstract bifiltered CFK-infinity complex also realizes the HFK pattern.
+Over Q[U,U^-1], choose generators a,b,c,a',b', with all first filtrations0,
+Alexander gradings g,g,0,-g,-g and Maslov gradings
+0,1-2g,2-4g,-2g,1-4g. Define
+ d a=d a'=0,
+ d b=a'+U^g a,
+ d b'=U^g a'+U^(2g) a,
+ d c=b'-U^g b.
+The differential squares tozero and lowers Maslov by1 and both filtrations.
+Its homology is Q[U,U^-1]. The hat differential is b->a', c->b', leavinga.
+The filtration-exchanging chain involution sends
+ a->U^-g a', a'->U^g a, b->U^-g b', b'->U^g b, c->-c.
+These identities are checked for arbitrary g by exact affine arithmetic in
+homology_formal_certificate.py and its JSON output. This is NOT a claim
+of knot realization or satisfaction of all possible knot-Floer operations.
+
+Optional integral torsion does not rescue a purely abstract argument:
+one can append an abstract Koszul complex over A on the sequence(2,h),
+ A -> A direct-sum q^2 A -> q^2 A,
+with maps (2,h) and(-h,2). It is contractible rationally and at h=1,
+but at h=0 has nonzero2-torsion. This leaves the rational model intact.
+No claim is made that this augmented complex is a knot complex.
+
+ADDENDUM: REFUTED MASLOV-GAP SHORTCUT IN THE GUTS
+It would be useful if the two generators of SFH(M1) intrinsically had
+relative Maslov gap1 and annulus gluing preserved that gap. The premise is
+wrong. Juhasz, The sutured Floer homology polytope, Proposition9.1,
+https://arxiv.org/pdf/0802.3415, p34, says the two generators of
+SFH(T(1,0;4)) lie in DISTINCT Spin^c structures, differing by the solid
+torus core generator. Thus there is no intrinsic integer relative Maslov
+grading between them to carry through gluing. The gluing may identify
+their ambient Spin^c data, but the resulting gap requires extra analysis.
+This failure was independently found by the tangle agent.
+
+SMALL-RANK COROLLARY
+Any nontrivial V=1 knot has R>=8, using the preprint input above. Indeed
+r is odd and at least5 (rank1 detects the unknot; rank3 detects trefoils).
+If r5 then R10. Otherwise r>=7 and the block formula gives R>=r+1>=8.
+If R=8, necessarily r=7 and all three torsion bars have length1.
+The reduced Euler identity is q^s+(1-q^2)sum_i epsilon_i q^(a_i)=1.
+Differentiation at q1 gives s=2sum_i epsilon_i, hence s is one of
+{-6,-2,2,6}. No contradiction for this rank-eight case has been proved.

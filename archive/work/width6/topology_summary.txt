@@ -1,0 +1,49 @@
+U5-W6 test 3: topology of the supplied exact-zero cases
+Status: TRUSTED, finite computational classification.
+
+Input: 1,314 exact coefficient-zero cases supplied in probe_candidates.json.
+These are CASES (braid word, top cap state, bottom cup state), not a claim
+of 1,314 distinct isotopy types.
+
+440 cases have internal closed components and are excluded.
+All remaining 874 two-arc tangles have a split certificate:
+  562: boundary-relative Reidemeister I/II, then disjoint arc projections.
+  288: actual N closure simplifies to the two-component unlink, and actual
+       D closure simplifies to the unknot. In the branched double cover,
+       Property R implies a solid-torus cover; the tangle is rational and
+       its unlink numerator fixes the split slope.
+   20: boundary-relative Reidemeister III plus I/II, then disjoint projections.
+    4: additional relative moves, then all mixed crossings have the same
+       arc above the other; separating their heights gives a splitting
+       disk. One of these four already has no mixed crossings at the end.
+    0: unresolved cases.
+
+The final uniform-over cases have input indices 922, 924, 985, 1151.
+Indices 924,985,1151 have respectively 4,2,2 mixed crossings, all with
+arc 1 above arc 0. Their endpoint pairs are noninterleaving, as required
+for this boundary-relative height-separation certificate. Index 922 has
+zero mixed crossings.
+
+The two nonclosed Bigelow6 cases (i,j)=(4,5),(5,4) are both certified by
+actual closures and Property R. The two initially difficult unit-Jones
+cases of word lengths 108 and 110 are directly split after relative RIII.
+
+SPLIT DOES NOT MEAN TRIVIAL: Some cases contain local knots on an arc.
+434 cases were already crossing-free after I/II. The test requested
+splitness, so local knots are retained and are not called the trivial
+tangle merely from a zero coefficient. No negative inference was made
+from a simplifier getting stuck. No Jones equality was used as an unknot
+or unlink recognition algorithm.
+
+The direct diagram procedure fuses crossing-free strands, excludes closed
+components, performs R1/R2 only away from the tangle boundary, and uses
+R3 only at internal triangular faces. R3 rewiring follows Spherogram's
+local formula, with boundary-safe endpoint connections. Saved move lists
+and deterministic seeds permit replay. The Property R route is the
+theorem-level certificate supplied by the root agent, separate from the
+direct Reidemeister certificates.
+
+Reproduction: python work/width6/topology_batch.py
+Data: work/width6/topology_results.json
+Geometry routines: work/width6/topology_classifier.py
+RIII-stage data: work/width6/topology_RIII_results.json

@@ -1,0 +1,17 @@
+Latest human steering: stop rabbit holes; produce a creative solution.
+Current pass took about eight minutes and found no solution.
+
+DO NOT restart any of these tests without an actual new mechanism:
+- Four identical two-string essential seed tangles assembled as a necklace:
+  flip factors into ordinary Conway mutations and the explicit unknot remains U.
+- Four overlapping Bigelow-kernel commutator closures in B6: all full Jones
+  polynomials nonunit. Bigger commutators alone are not a justified next step.
+- LLL(1), two face-band fusions up to two half twists: 52,485 generated
+  closures, 22 exact Jones-one hits, every hit simplifies to U. Do not mistake
+  these 22 hits for unresolved candidates. Independent state sum verifies all.
+
+Do not create another conditional scaffold merely equivalent to the main
+conjecture, or characterize unbounded cumulative analysis as approaching a
+proof. No surviving concrete knot candidate exists from this pass. The general
+three-component EKT band route is not excluded by the bounded search, but it
+needs a specific new geometric idea before expansion is warranted.

@@ -1,0 +1,8 @@
+{
+  "status": "STOPPED_NO_IMPROVEMENT",
+  "method": "priority heap by triangle area; exact safety predicates unchanged",
+  "last_completed_prefix_line": "SIMPLIFIED_PREFIX 27 -1 {'input_vertices': [2669, 1204], 'output_vertices': [2665, 1203], 'deletions': 5, 'attempts': 5, 'edge_checks': 2428, 'seconds': 5.023, 'stopped': 'time', 'method': 'priority queue by swept area; unchanged exact empty-triangle safety predicates', 'prefix': 27, 'generator': -1}",
+  "reason": "By prefix24-26 only3-6 candidates could be checked per3-second budget; crowded exact Fraction geometry dominated. Stopped bounded experiment without calibration of full LP word.",
+  "witness14_control": "same four-pair generic polynomial as FIFO",
+  "log": "work/width6_instrument/transport_priority_lp.log"
+}

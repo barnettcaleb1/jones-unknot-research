@@ -1,0 +1,175 @@
+PASS 28 — RANK-ONE THREE-PUNCTURE TWISTS: AN EXACT STRUCTURAL EXCLUSION
+1 November 2026 UTC. No braid-word scan; no kernel or Jones-one knot found.
+
+Complete counterexample endpoint
+--------------------------------
+Let rho be the generic five-dimensional [3,2] Jones block of B5. If a
+nontrivial exponent-zero braid lies in ker(rho), its normal kernel has
+nontrivial intersection with the already known generic Burau kernel by
+Long's normal-intersection lemma. The scalar block is trivial on exponent
+zero. This produces a nontrivial full generic TL5 kernel, and Ito supplies
+nontrivial hyperbolic knots with Jones polynomial one.
+
+This pass tests a concrete way of producing the first missing relation:
+commutators, or differences, of full twists about three-puncture curves.
+The outcome is a new restriction on that construction, not evidence that
+the missing relation exists. The endpoint does not use all-colored unknot
+detection.
+
+Primary endpoint: Ito, A kernel of a braid group representation yields a
+knot with trivial knot polynomial, arXiv:1402.2028.
+https://arxiv.org/pdf/1402.2028
+
+1. Exact rank-one formula
+-------------------------
+Work over Q(A), with rho(sigma_i)=A I+A^-1 e_i and
+delta=-A^2-A^-2. Let a be an essential curve enclosing exactly three of
+the five punctures, and D_a its positive Dehn twist. There is a rank-one
+idempotent P_a satisfying
+
+  rho(D_a)=A^-6 I+(A^6-A^-6)P_a.                 (1)
+
+For the standard curve a0 around punctures1,2,3, D_a0=(sigma1 sigma2)^3.
+Restricting [3,2] from B5 to B3 gives [3] once and [2,1] twice. The full
+twist has scalar A^6 on [3] and A^-6 on [2,1]. The projector is the
+three-strand Jones--Wenzl projector
+
+ P_a0 = I - delta/(delta^2-1)(e1+e2)
+             + 1/(delta^2-1)(e1e2+e2e1).
+
+It has no pole at A=1, since delta^2-1=3 there. For a=g(a0), set
+P_a=rho(g)P_a0 rho(g)^-1. Both rho(g) and its inverse have Laurent
+entries, so every P_a is regular at A=1. This definition is independent
+of g by (1).
+
+The branching and symmetric-group specialization are standard Hecke
+facts, recorded explicitly in Kasahara, Remarks on the faithfulness of
+the Jones representations, Propositions2.4 and2.5, printed p3.
+https://arxiv.org/pdf/0803.0304
+Kasahara's earlier genus-two paper, equation(2.2), also exhibits a
+separating twist as a scalar plus a rank-one matrix, after the different
+genus-two normalization. We do NOT need to identify those parameters:
+(1) is independently checked in the existing raw TL5 module.
+https://arxiv.org/pdf/math/0012216
+
+2. Every classical overlap is nonzero
+-------------------------------------
+At A=1 the module is the ordinary S5 representation [3,2]. A concrete
+model is the five-dimensional subspace of rational functions on the ten
+edges of K5 satisfying zero sum at every vertex. S5 permutes vertices,
+and the standard inner product is the sum over edges.
+
+For a three-element subset S, define the edge function w_S by
+
+  -1  on edges wholly inside S,
+  +1  on edges with one endpoint in S,
+  -3  on the single edge in its complement.
+
+Its vertex sums vanish and ||w_S||^2=18. The S3 subgroup permuting S has
+a one-dimensional invariant subspace in [3,2], spanned by w_S. Therefore
+P_a(1), where a encloses S, is the orthogonal projector onto Q w_S.
+Any pure-braid difference between choices of a disappears at A=1.
+
+For two triples S,T, elementary edge counting gives
+
+  <w_S,w_T> = 18 if S=T,
+              -6 if |S intersect T|=2,
+              +6 if |S intersect T|=1.
+
+Consequently, for arbitrary geometric three-puncture curves a,b,
+
+  tr(P_a(1) P_b(1)) = 1    if their enclosed subsets agree,
+                      1/9  otherwise.                 (2)
+
+This is not an assumption that a curve is determined by its enclosed
+punctures. Different curves with the same subset remain a genuine and
+unresolved case. The statement concerns only their specialized matrices.
+
+3. The exclusion theorem
+------------------------
+THEOREM. For any a,b as above, the matrices rho(D_a),rho(D_b) commute
+if and only if P_a=P_b. In particular, commuting matrices require a and b
+to enclose the SAME subset of punctures. The conclusion remains true for
+any two nonzero integer powers D_a^r,D_b^s.
+
+Proof. Equation(1) and the nonzero generic eigenvalue difference reduce
+commutation to P_a P_b=P_b P_a. Two commuting rank-one idempotents over
+a field are either equal or have zero product: their product is an
+idempotent whose image is contained in both one-dimensional images; if
+nonzero, the images coincide, and commutation then gives equality.
+The zero-product alternative is excluded by (2). Equality is impossible
+for different subsets, again by (2), since its trace product would be1.
+For a nonzero integer r,
+
+ rho(D_a^r)=A^-6r I+(A^6r-A^-6r)P_a,
+
+and the coefficient remains nonzero in Q(A). This proves the last claim.
+
+Thus all pairs of three-puncture twists with different enclosed subsets,
+with arbitrary geometric winding and arbitrary nonzero powers, are
+excluded from this source of commuting-image/noncommuting-braid examples.
+No unitarity assumption or root-of-unity inference is used.
+
+The same-subset alternative is stronger than a commutator condition:
+if distinct curves a,b have P_a=P_b, the actual braid D_a D_b^-1 is
+already a nontrivial exponent-zero element of ker(rho). Distinct positive
+Dehn twists are distinct mapping classes. Long/Ito then finish the full
+counterexample route. But neither (1) nor (2) predicts such equality.
+
+4. A second limitation: high powers do not produce a universal relation
+-----------------------------------------------------------------------
+For a fixed pair with different subsets there is an integer N0 such that
+rho(D_a^N),rho(D_b^N) generate a free group for every N>=N0. This is a
+statement about their matrices, not only about their braid elements.
+
+Here is a proof without a word search. Choose a positive real A0 near1,
+but different from1. All matrices and projectors are real and regular.
+By (2), the scalar s=tr(P_a P_b) lies strictly between0 and1 for A0
+sufficiently close to1. The two-dimensional space
+
+  W=im(P_a)+im(P_b)
+
+is invariant under both projectors. Its dimension is2, and neither
+projector's image or kernel in W coincides with the other's: a coincidence
+would force s=0 or1. On P(W), each D has exactly two distinct fixed points
+and eigenvalue ratio A0^12. It is a real hyperbolic projective map. The
+four fixed points are distinct. Choose disjoint small neighborhoods of
+them. Sufficiently large positive and negative powers send complements
+of repelling neighborhoods into attracting neighborhoods. The ordinary
+ping-pong argument gives a free group. One such faithful specialization
+excludes any generic word relation among these powered generators.
+
+This is only eventual freeness for each fixed pair. It supplies neither
+a universal N0 independent of the curves nor faithfulness of the original
+unpowered pair. It does show why replacing a categorical polynomial
+identity by a universal group-word identity cannot be automatic: the
+actual low-rank matrix family already contains free powered pairs.
+
+5. Verification and strategic limit
+-----------------------------------
+verify_rank_one_twists.py checks the following exact identities using
+the previously audited generic five-dimensional TL5 link-state module:
+
+ * (delta^2-1)P is a Laurent matrix, with F^2=(delta^2-1)F;
+ * tr(F)=delta^2-1, hence generic rank1;
+ * the full-twist formula(1), after clearing that denominator;
+ * regularity at A1, where the denominator is3;
+ * all ten classical subset vectors and all100 ordered overlaps:
+   ten values1 and ninety values1/9.
+
+The calculations confirm fixed algebraic formulas; they are not a
+bounded search for braid relations. The classical overlap calculation
+and commuting-idempotent argument were independently audited by the
+homology agent; the generic formulas were checked exactly in the prior
+TL5 engine as well as derived from branching.
+
+The live construction gate is now precise: two distinct three-puncture
+curves enclosing the same subset with exactly equal GENERIC projectors.
+This is a genuine sufficient certificate, but no geometric symmetry,
+operation, or primary theorem here supplies it. In particular, equality
+at A1 is automatic for this case and is no evidence for generic equality.
+An identity among linear combinations of TL diagrams is not an identity
+between braid-group elements. No enlarged curve or word enumeration is
+justified by this pass alone. This is a broad structural exclusion and a
+clean endpoint specification, not progress claimed toward existence of
+the missing kernel.

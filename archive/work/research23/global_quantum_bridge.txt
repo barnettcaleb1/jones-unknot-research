@@ -1,0 +1,100 @@
+PASS 23: POSITIVE FUSION MOMENTS, SURGERY HOLONOMY, AND A GLOBAL PROOF SCAFFOLD
+Status: one exact conditional reduction and an actual ribbon-knot countertest to its natural premise. No proof of Jones unknot detection. No novelty claim.
+
+OUTCOME FIRST
+
+A positive moment model for parallel Wilson loops would turn the ordinary unknot value into an extremal condition, unlike the non-extremal braid Markov trace. However, the actual annular closure functional is NOT positive, even for the canonical ribbon double of a trefoil. Its simplest variance is exactly -24 at a unitary root. Restricting positivity to Jones-one inputs avoids that counterexample, but on that locus positivity is equivalent to the missing promotion to all colored Jones polynomials. Thus this attractive physical bridge does not currently supply an independent geometric constraint.
+
+1. A COMPLETE CONDITIONAL CHAIN, WITH BOTH MISSING INPUTS EXPLICIT
+
+Write H_N(K;q) for the zero-framed N-dimensional colored Jones polynomial, H_N(U)=1 and H_2=V. Let R=K#mirror(K). This is an actual ribbon knot, V_R=V_K(q)V_K(q^-1), and R=U implies K=U by prime decomposition.
+
+At level r-2, r>=3, put q=exp(2pi i/r). The SU(2) fusion algebra A_r has self-adjoint basis chi_N, 1<=N<=r-1, and dimensions
+  d_N=sin(Npi/r)/sin(pi/r).
+Its generator x=chi_2 has distinct eigenvalues
+  lambda_j=2cos(jpi/r), 1<=j<=r-1.
+The largest eigenvalue d_2=lambda_1 is simple. The chi_N are the Chebyshev polynomials S_(N-1)(x), with S_0=1, S_1=x and S_(n+1)=x S_n-S_(n-1).
+
+Define the actual annular closure functional
+  phi_(R,r)(chi_N)=d_N H_N(R;q).
+It is unital. For R=K#mirror(K), these values are d_N |H_N(K;q)|^2 and hence real and nonnegative individually. Individual nonnegative values do NOT mean positivity on a*a.
+
+Proposed missing input P:
+  If V_K=1, then phi_(K#mirror(K),r) is a positive linear functional on A_r for every r.
+
+If P holds, V_R=1 gives phi(x)=d_2. A positive unital functional on the finite commutative C*-algebra A_r is a probability measure on its characters. Since d_2 is the unique largest eigenvalue of x, equality forces that measure to be the point mass at j=1. Therefore
+  phi(chi_N)=d_N, and H_N(R;exp(2pi i/r))=1
+for every admissible N. Fixing N and allowing infinitely many r>N proves H_N(R;q)=1 identically by Laurent polynomial uniqueness.
+
+Proposed missing input AJ:
+  The AJ conjecture holds for R (or, more weakly, a knot with the complete colored Jones sequence of U has the A-polynomial of U).
+
+Dunfield-Garoufalidis, Theorem 1.1 and Corollary 1.4, then give R=U, hence K=U. This completes the conditional chain for arbitrary K. It does NOT treat all-colored unknot detection as already known. The AJ step is a separate unsolved bridge in this architecture.
+
+The reduction actually diagnoses P precisely: on the Jones-one locus, P for all levels is equivalent to all-colored triviality of R. The forward implication is the elementary spectral argument above; the reverse holds because the dimension character chi_N -> d_N is positive. Consequently, stating P without a new geometric construction merely reformulates the colored-promotion gap. It is not itself progress toward proving that gap.
+
+2. EXACT COUNTERTEST: CANONICAL RIBBON GEOMETRY DOES NOT GIVE P UNCONDITIONALLY
+
+Let T be the trefoil chirality with
+  H_2(T;q)=q^-1+q^-3-q^-4.
+The two-strand torus fusion formula gives
+  H_3(T;q)=([1]q^-12-[3]q^-9+[5]q^-3)/[3],
+where [N]=(q^(N/2)-q^(-N/2))/(q^(1/2)-q^(-1/2)).
+
+At q=exp(i pi/3), r=6, [2]=sqrt(3), [3]=2 and [5]=1. Direct substitution gives H_2(T)=-i sqrt(3) and H_3(T)=1. Hence the actual ribbon knot R=T#mirror(T) satisfies
+  H_2(R)=3, H_3(R)=1.
+
+Fusion gives x^2=chi_1+chi_3, so
+  phi_R(x)=3sqrt(3),
+  phi_R(x^2)=1+2=3,
+  phi_R((x-3sqrt(3))^2)=3-27=-24.
+
+The element x-3sqrt(3) is self-adjoint; its square is positive in A_6. Therefore phi_R is not positive. This is an exact test on an actual canonical ribbon double, at a unitary level, with zero framing and no unresolved phase. Neither ribbonness, reflection, nor real nonnegative colored values individually can justify a positive moment representation.
+
+There is no conflict with unitarity of the underlying TQFT or positivity of a Turaev-Viro norm. Those statements concern their prescribed Hilbert-space pairings. The scalar annular closure functional defined here is a different functional; identifying it with a positive state is precisely the invalid extra step. A doubled/Drinfeld-center construction has a larger algebra and requires its own boundary observable calculation.
+
+This R does not have V_R=1, so it refutes the unconditional geometric premise, not the still-open unit-fiber version P.
+
+3. WHY ALL CONNECTED-SUM POWERS DO NOT REPAIR THE MOMENT DEFECT
+
+Connected sums give H_N(K#^m)=H_N(K)^m. These are products of expectations for independent copies. A Wilson power x^m on the same core instead expands by fusion and evaluates to a combination of different H_N(K).
+
+The same exact example separates them already at m=2:
+  phi_R(x)^2=27, whereas phi_R(x^2)=3.
+Thus independent-copy data cannot be substituted for same-core moments. The latter are precisely the additional parallel/cabled information needed by a fusion or Kirby-color projection. This distinction survives reflection and uses actual knots, not an abstract unitary matrix model.
+
+4. A GEOMETRIC ENDPOINT THAT A GENUINE NEW BRIDGE COULD TARGET
+
+Property P supplies a direct classical detector independent of all-colored detection. For a nontrivial knot K, +1 surgery has a nontrivial SO(3) representation (Kronheimer-Mrowka); since this surgery is an integral homology sphere, the representation lifts to SU(2). Its restriction to the knot exterior has nonidentity preferred longitude: the surgery relation is mu lambda=1, so lambda=I would force mu=I, and the meridian normally generates the knot group.
+
+Consequently, if X_+(K) is the compact SU(2) character space for +1 surgery and mu is ANY full-support probability measure on it, the nonnegative continuous function
+  f(rho)=2-tr(rho(lambda))
+has strictly positive integral whenever K is nontrivial. For U it vanishes. Full support is crucial, including near nontrivial representations; a measure concentrated on the trivial representation detects nothing.
+
+A new theorem deriving integral f=0 from V_K=1 for some canonically defined full-support measure would therefore close the original problem without invoking AJ. No such identification was obtained. The ordinary annular functional above cannot be used as that measure: it already fails positivity, and inserting the +1-filling projector requires additional colors. Merely declaring a positive measure whose integral equals a norm of V-1 would encode the desired conclusion rather than explain it.
+
+STRATEGIC VERDICT
+
+The fusion spectral calculation is exact, and it distinguishes a potentially useful extremal setting from the previously rejected Markov-trace setting. But its natural geometric positivity premise is false, and its Jones-one restriction is equivalent to the unresolved colored-promotion step. This pass therefore closes off a plausible shortcut rather than opening a sufficiently independent global proof route. The next meaningful input would have to construct a genuinely geometric positive state with controlled support from the knot exterior, and independently explain why its fundamental moment is forced by ordinary V=1. No current ribbon or connected-sum identity provides either fact.
+
+PRIMARY SOURCES CHECKED
+
+Morton, The coloured Jones function and Alexander polynomial for torus knots, Math. Proc. Camb. Phil. Soc.117 (1995), 129-135; torus colored-Jones calculation. The displayed trefoil formula also follows directly by fusing labels 2 tensor 2 into labels 0,2,4 and applying the zero-framing correction.
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+
+Dunfield-Garoufalidis, Non-triviality of the A-polynomial for knots in S^3, AGT4 (2004), 1145-1153: Theorem1.1, Section1.3, Corollary1.4. The paper explicitly distinguishes the known A-polynomial detector from the conditional colored-Jones consequence.
+https://arxiv.org/pdf/math/0405353
+
+Kronheimer-Mrowka, Witten's conjecture and Property P, Geometry & Topology8 (2004), 295-310, Theorem2.
+https://arxiv.org/pdf/math/0311489
+
+The fusion-algebra spectral claim above is proved directly from the Chebyshev relation S_(r-1)(x)=0 and its distinct real roots; it does not assume positivity of any knot evaluation functional.
+
+REPRODUCIBILITY
+
+Run the standalone standard-library verifier:
+  python3 work/research23/verify_fusion_variance.py --output work/research23/fusion_variance_exact.json
+
+It uses exact Fraction arithmetic in Q(sqrt(-3)), checks q^6=1, evaluates normalized H2 and H3, and returns the variance -24. The real quantum dimension [2]=sqrt(3) enters only through its exact square 3. The H3 source locator is Morton's Section 3, printed p.132, with his zero-framing correction and division by [3]; the displayed specialization and trefoil chirality are recorded in the verifier. No floating-point tolerance or external package is used.
+
+Final scope review: neither the note nor its verification claims all-colored Jones unknot detection as a theorem. The only complete detection route stated above explicitly assumes AJ (or a specified weaker equivalent endpoint for the relevant knot). The exact calculation establishes solely the failure of the proposed positive annular moment functional for the actual ribbon trefoil double.

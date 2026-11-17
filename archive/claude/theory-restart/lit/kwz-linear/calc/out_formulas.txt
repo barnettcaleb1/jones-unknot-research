@@ -1,0 +1,66 @@
+== special: P(HF(a(-n), s_2n'(0))) == (1+t^3)[n']_{t^2}[n]_t  (t=q^2 h, single delta) ==
+special formula verified for n'<=5, n<=10: True
+== rational: P(HF(a(-n), r_n'(0))) == [n']_t * (1+t+...+t^(n-2)+t^n) (n>=2), [n']_t (n=1) ==
+rational formula verified for n'<=7, n<=9 (and parallel case (0,0,0),(2n',n'-1,1)): True
+== opposite sign arcs a(+n) (mirror direction) ==
+  HF(a(1), s_2(0)) t-poly: [(0, 1), (3, 1)]
+  HF(a(1), r_1(0)) t-poly: [(0, 1)]
+  HF(a(2), s_2(0)) t-poly: [(0, 1), (1, 1), (3, 1), (4, 1)]
+  HF(a(2), r_1(0)) t-poly: [(0, 1), (2, 1)]
+  HF(a(3), s_2(0)) t-poly: [(0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (5, 1)]
+  HF(a(3), r_1(0)) t-poly: [(0, 1), (2, 1), (3, 1)]
+  HF(a(4), s_2(0)) t-poly: [(0, 1), (1, 1), (2, 1), (3, 2), (4, 1), (5, 1), (6, 1)]
+  HF(a(4), r_1(0)) t-poly: [(0, 1), (2, 1), (3, 1), (4, 1)]
+  HF(a(1), s_4(0)) t-poly: [(0, 1), (2, 1), (3, 1), (5, 1)]
+  HF(a(1), r_2(0)) t-poly: [(0, 1), (1, 1)]
+  HF(a(2), s_4(0)) t-poly: [(0, 1), (1, 1), (2, 1), (3, 2), (4, 1), (5, 1), (6, 1)]
+  HF(a(2), r_2(0)) t-poly: [(0, 1), (1, 1), (2, 1), (3, 1)]
+  HF(a(3), s_4(0)) t-poly: [(0, 1), (1, 1), (2, 2), (3, 2), (4, 2), (5, 2), (6, 1), (7, 1)]
+  HF(a(3), r_2(0)) t-poly: [(0, 1), (1, 1), (2, 1), (3, 2), (4, 1)]
+  HF(a(4), s_4(0)) t-poly: [(0, 1), (1, 1), (2, 2), (3, 3), (4, 2), (5, 3), (6, 2), (7, 1), (8, 1)]
+  HF(a(4), r_2(0)) t-poly: [(0, 1), (1, 1), (2, 1), (3, 2), (4, 2), (5, 1)]
+== reversed order HF(gamma, a) ==
+HF(s_2(0), a(-1)): dim=2  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (6,3,0)
+    chi = +q^0 -q^6   [#terms abs-sum = 2]
+HF(r_1(0), a(-1)): dim=1  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0)
+    chi = +q^0   [#terms abs-sum = 1]
+HF(s_2(0), a(-2)): dim=4  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (6,3,0) (8,4,0)
+    chi = +q^0 -q^2 -q^6 +q^8   [#terms abs-sum = 4]
+HF(r_1(0), a(-2)): dim=2  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0)
+    chi = +q^0 +q^4   [#terms abs-sum = 2]
+HF(s_2(0), a(-3)): dim=6  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (6,3,0) (8,4,0) (10,5,0)
+    chi = +q^0 -q^2 +q^4 -q^6 +q^8 -q^10   [#terms abs-sum = 6]
+HF(r_1(0), a(-3)): dim=3  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0) (6,3,0)
+    chi = +q^0 +q^4 -q^6   [#terms abs-sum = 3]
+HF(r_1(0), a(0)): dim=2  delta-values(rel)=['0', '1']  thin=False
+    (q,h,delta) rel: (0,0,0) (2,0,1)
+    chi = +q^0 +q^2   [#terms abs-sum = 2]
+HF(s_2(0), a(0)): HF = 0
+HF(s_4(0), a(-1)): dim=4  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0) (6,3,0) (10,5,0)
+    chi = +q^0 +q^4 -q^6 -q^10   [#terms abs-sum = 4]
+HF(r_2(0), a(-1)): dim=2  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0)
+    chi = +q^0 -q^2   [#terms abs-sum = 2]
+HF(s_4(0), a(-2)): dim=8  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (6,3,0) (6,3,0) (8,4,0) (10,5,0) (12,6,0)
+    chi = +q^0 -q^2 +q^4 -2q^6 +q^8 -q^10 +q^12   [#terms abs-sum = 8]
+HF(r_2(0), a(-2)): dim=4  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (6,3,0)
+    chi = +q^0 -q^2 +q^4 -q^6   [#terms abs-sum = 4]
+HF(s_4(0), a(-3)): dim=12  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (4,2,0) (6,3,0) (6,3,0) (8,4,0) (8,4,0) (10,5,0) (10,5,0) (12,6,0) (14,7,0)
+    chi = +q^0 -q^2 +2q^4 -2q^6 +2q^8 -2q^10 +q^12 -q^14   [#terms abs-sum = 12]
+HF(r_2(0), a(-3)): dim=6  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (6,3,0) (6,3,0) (8,4,0)
+    chi = +q^0 -q^2 +q^4 -2q^6 +q^8   [#terms abs-sum = 6]
+HF(r_2(0), a(0)): dim=2  delta-values(rel)=['0', '1']  thin=False
+    (q,h,delta) rel: (0,0,0) (4,1,1)
+    chi = +q^0 -q^4   [#terms abs-sum = 2]
+HF(s_4(0), a(0)): HF = 0

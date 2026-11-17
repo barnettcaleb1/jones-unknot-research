@@ -1,0 +1,140 @@
+PASS 39: WHY QUANTUM DETECTION OF BRAID DYNAMICS DOES NOT DETECT THE CLOSURE
+Bounded global architecture audit. No claim of a generic Jones theorem.
+
+Outcome. The asymptotic-faithfulness / AMU mechanism detects a braid WITH
+its axis. It cannot suppress that dynamics from the unknot value of its
+closure, even if the ENTIRE colored Jones sequence of the closure is
+supplied. An actual unknot has a pseudo-Anosov three-strand presentation.
+More strongly, a fixed-four-strand, fixed-writhe family of actual unknots
+has unbounded braid entropy. The latter is a new exact observable of a
+previously checked family, not a new word scan or new geometric candidate.
+
+Duplicate check. Read the STOPPED_ROUTE files for passes35,37,38 and
+the global report; searched all research notes for entropy, AMU,
+asymptotic faithfulness, Nielsen, tensor-generator/group-like promotion.
+Group-like/color promotion was already examined in pass28; geometric
+intersection cancellation in pass24; fixed-color projector collision was
+proved equivalent to residual faithfulness in pass30. None is presented
+as a new route here. The family below appeared in proof11 as a countertest
+to Markov moment rigidity. Here the point is the exact obstruction to
+recovering Nielsen--Thurston dynamics from CLOSED knot data, including
+all colors, rather than another claim about moment tomography.
+
+1. The complete proposed chain, and its first false arrow.
+
+The plausible global chain would be:
+
+  V_K=1 -> quantum braid matrices cannot have dynamical expansion
+        -> no pseudo-Anosov piece in the braid monodromy
+        -> graph-manifold braid complement and graph-knot closure
+        -> K=U, using the positive a_2 obstruction for graph knots.
+
+The first arrow is false on actual unknots. Asymptotic faithfulness and
+the AMU results do not fix it: they read the operator for the punctured
+surface, not the knot obtained after the braid axis is filled in.
+No claim about graph knots is needed to falsify this chain.
+
+2. The smallest actual test already gives positive dynamics.
+
+Let b=sigma_1 sigma_2^{-1} in B3. Its closure is U: negatively destabilize
+the third strand, then positively destabilize sigma_1 in B2. Therefore
+all zero-framed normalized colored Jones polynomials of this closure
+equal 1, identically in the parameter.
+
+Nevertheless its capped four-puncture sphere mapping class is
+pseudo-Anosov. The usual homological map is
+
+ sigma_1 -> [[1,1],[0,1]], sigma_2 -> [[1,0],[-1,1]],
+ b -> [[2,1],[1,1]].
+
+Its trace is 3 and its expanding eigenvalue is (3+sqrt(5))/2.
+Andersen--Masbaum--Ueno, Theorem1.2, Corollary1.3, and Section3 give
+the quantum/classical interpretation and the trace criterion:
+https://arxiv.org/pdf/math/0503414
+The eigenvalue approximation in their theorem uses appropriate NONUNITARY
+root choices. It must not be confused with expansion of a unitary matrix.
+
+There is an especially transparent exact Jones-block calculation.
+Put delta=-A^2-A^{-2}, and take
+
+ e1=[[delta,1],[0,0]], e2=[[0,0],[1,delta]],
+ rho(sigma_i)=A I+A^{-1}e_i.
+
+These satisfy the TL3 relations. Direct multiplication gives
+
+ rho(b)=[[1-A^{-4},-A^2],[A^2,-A^4]],
+ det rho(b)=1, tr rho(b)=1-A^4-A^{-4}=3-delta^2.
+
+For exponent sum zero the reduced bracket/Jones closure formula is
+
+ V_(closure b)=tr rho(b)+(delta^2-2)=1.
+
+At A=exp(pi i/4), delta=0, this matrix is conjugate by diag(1,i)
+to [[2,1],[1,1]]. Thus the scalar unknot value is compatible with,
+and in this normalized 3-braid block even requires, a hyperbolic trace3.
+This is not a formal matrix unrelated to a knot.
+
+3. No entropy bound from even the full colored closure sequence.
+
+For every integer m, use the previously topology-certified family
+
+ b_m=sigma_2^{2m}(sigma_1 sigma_2)sigma_2^{-2m}sigma_3^{-1} in B4.
+
+Every closure is U by negative destabilization and conjugation, and
+every exponent sum is 1. Hence all closed colored Jones polynomials
+are independent of m and equal 1. This proof is independent of any
+polynomial detection conjecture.
+
+Use the unreduced Burau convention whose generator block is
+[[1-t,t],[1,0]]. At t=-1 this is I+N, N=[[1,-1],[1,-1]], N^2=0,
+so its kth power is I+kN for every signed integer k. Consequently
+the complete specialized matrix is, identically in m,
+
+ B_m=[ [2,       2m-2,        0, 1-2m],
+       [2m+1,    4m^2-2m,     0, -4m^2],
+       [2m,      (2m-1)^2,    0, -2m(2m-1)],
+       [0,       0,          -1, 2] ].
+
+Its characteristic polynomial is
+
+ (lambda-1)^2*(lambda^2-T_m lambda+1),
+ T_m=4m^2-2m+2.
+
+The two nontrivial eigenvalues therefore give, for m!=0,
+
+ h_top(b_m) >= log((T_m+sqrt(T_m^2-4))/2),
+
+which tends to infinity as |m| tends to infinity. The inequality is the
+Burau entropy estimate: Band--Boyland, Introduction and Theorem1.1,
+https://msp.org/agt/2007/7-3/agt-v7-n3-p09-s.pdf
+https://arxiv.org/abs/math/0612716
+Using the unreduced matrix adds an eigenvalue1 and does not change
+its expanding spectral radius. No assertion that every b_m is globally
+pseudo-Anosov is needed; positive-entropy pieces suffice.
+
+The matrix word and its characteristic polynomial are checked as
+identities over Z[m,lambda] in verify_braid_dynamics.py. No numerical
+marking or braid search is used to prove the infinite-family statement.
+
+4. Precise strategic implication.
+
+Even a hypothetical perfect theorem extracting Nielsen--Thurston type
+and stretch factors from quantum representations would leave the
+Jones-unknot problem unchanged unless one separately recovers those
+representations, or suitable axis-independent information, from the
+closed knot polynomial. The actual example above shows that this
+cannot mean suppressing or bounding dynamics of arbitrary braid
+presentations, even at fixed strand number and writhe.
+
+One could instead minimize an axis-dependent quantity over all braid
+presentations. But no formula relating such a minimum to Jones was
+found, and the existence of a zero-entropy presentation specifically
+for Jones-one knots would be another unresolved geometric theorem,
+not a consequence of AMU or asymptotic faithfulness. Merely declaring
+that minimum to be the missing bridge does not make the problem easier.
+
+Conclusion: stop this global AMU/entropy route in its present form.
+The bounded search produced no new non-equivalent tractable bridge.
+It established a precise actual-knot obstruction to the proposed input
+to a dynamics theorem. This does not refute ordinary Jones detection
+or its all-colored analogue, and does not assume the latter is known.

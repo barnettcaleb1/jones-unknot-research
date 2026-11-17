@@ -1,0 +1,111 @@
+SIGNED-GRAPH CANCELLATION: BOUNDED STRUCTURAL AUDIT
+1 November 2026. Pass 42. No proof or counterexample to Jones detection.
+
+Outcome
+
+No viable new global topological mechanism was obtained. The checked graph
+methods either compute a scalar while leaving the category of actual knot
+diagrams, or require a restricted geometric input that already supplies the
+missing simplification. Continuing with unconstrained graph elimination would
+repeat previously identified gaps. Recommend stopping this branch.
+
+1. Scope of the recent determinant result
+
+Asaner--Kumar--Molander--Pease--Poudel, arXiv:2408.13410v1, Introduction and
+Section 7, treats closures of
+  sigma_1^{m_1} sigma_2^{m_2} ... sigma_{n-1}^{m_{n-1}},
+with all exponents positive or all negative. It does not give a determinant
+formula for arbitrary homogeneous braids. Its dimer weights reproduce the
+spanning-tree activity expansion on this specified class.
+https://arxiv.org/html/2408.13410
+
+Elementary geometric audit of this class (not a novelty claim): the closure
+is a knot only if every m_i is odd. An even m_i removes the only permutation
+edge crossing the cut {1,...,i}|{i+1,...,n}, so the closure cannot have a single
+component. If all are odd, the adjacent transpositions form one n-cycle.
+The standard braided connected-sum construction identifies the knot closure
+with #_i T(2,m_i): each consecutive braid block shares just its joining strand
+with the next block, and the standard closure exposes the separating spheres.
+Consequently its determinant is product_i |m_i|. Jones polynomial one forces
+every |m_i|=1, when all summands are unknots. This is a genuine geometric
+certificate for that class; it gives no transformation of an arbitrary knot
+into that class.
+
+Cohen's original determinant construction is also explicitly restricted.
+Remark 5.3 requires the indicated crossing ordering; Proposition 5.4 extends
+selected replacements, while Remark 5.5 says the construction does not
+automatically apply to arbitrary Montesinos columns.
+https://arxiv.org/html/1011.3661
+
+Neither result licenses interpreting arbitrary determinant row operations as
+isotopies. The computational complexity issue is only conditional: a uniform
+polynomial-time determinant recipe for arbitrary Jones polynomials would have
+major complexity consequences, but #P-hardness alone is not an unconditional
+nonexistence theorem.
+
+2. A precise obstruction to a literal cluster/dimer lifting proposal
+
+The urban-renewal/cluster exchange has the local form
+  a_0 a'_0 = a_1 a_2 + a_3 a_4.
+Kenyon--Pemantle discuss this exchange and its dimer interpretation in Section
+2.3 and Proposition 2.2 of Double-dimers, the Ising model and the hexahedron
+recurrence, arXiv:1308.2998 / JCTA 137 (2016).
+https://arxiv.org/abs/1308.2998
+https://www2.math.upenn.edu/~pemantle/papers/KP150619.pdf
+
+Suppose one tries to make the exchange directly into a crossing replacement
+by assigning every a_i a single evaluated Jones activity letter, hence a unit
+of Z[A,A^{-1}], namely +/-A^k. Then a'_0 cannot be such a unit. Indeed its
+numerator is the sum of two units: distinct exponents give two terms; equal
+exponents give either zero or +/-2A^k. Dividing by the unit a_0 does not change
+this obstruction. Equivalently, evaluation at A=1 gives 0 or +/-2, never +/-1.
+
+This small algebraic observation is a rejection of that PARTICULAR literal
+lifting rule. It is not a theorem that every dimer encoding fails: face
+variables are not automatically the activity entries, gauge transformations
+can change them, and a polynomial weight might be represented by an entire
+tangle rather than one crossing. Such an enlarged construction would have to
+exhibit the actual replacement tangle and prove that the complete marked
+boundary tensor, not merely a closed scalar partition function, agrees.
+No such construction was found here. Laurentness or cluster positivity alone
+does not provide it.
+
+3. Electrical graph reductions do not solve the missing topological problem
+
+Chang--Erickson's Untangling Planar Curves proves a reduction theorem for
+immersed curves and related unsigned electrical graph moves. The statement
+concerns shadows, without over/under data.
+https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2016.29
+
+Kauffman's signed-graph specialization is invariant under the particular
+signed moves corresponding to Reidemeister II and III. This is not invariance
+under an arbitrary unsigned electrical reduction sequence. The signs and
+embedding of each move must be lifted to the actual crossing diagram.
+https://homepages.math.uic.edu/~kauffman/TuttePolySignGraphs.pdf
+
+All previously established gates remain relevant, without being new results
+of this pass:
+ - work/creative6/statmech_findings.txt: the actual eight-crossing unknot
+   defeats immediate local-reduction, edge-factorization, and Rayleigh tests.
+ - work/research24/spanning_tree_mechanism.txt: actual Khovanov homology can
+   survive in a zero-Euler column; cancellation is not automatically an
+   acyclic matching, and minimum raw spanning-tree count is unbounded within
+   a fixed Jones fiber.
+ - work/research31/projective_cancellation.txt: crossing-monotone reduction
+   of all unknots is already false; the projective escape beta_Re was closed
+   by beta_Re(local K)=c(K).
+ - work/research40/geometric.txt: universal real-parameter positivity is
+   impossible even for canonical determinant-one ribbon doubles.
+
+4. Exact stopping point
+
+The missing operation would have to turn a cancellation of full Laurent
+weights into a sequence of ACTUAL marked tangle replacements, preserve the
+isotopy class (or a separately justified nontriviality obstruction), tolerate
+temporary diagram growth, and remain valid when the cancelling homology is
+not acyclic. None of the audited electrical, dimer, or cluster results implies
+such an operation. Stating its existence only for Jones-one diagrams would
+essentially restate the target problem; it is not proposed as a new scaffold.
+
+No new knot candidate, claimed generic theorem, or unsupported positivity
+assumption was produced in this pass.

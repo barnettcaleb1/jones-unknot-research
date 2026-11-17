@@ -1,0 +1,91 @@
+PASS50 — CONNECTED-SUM AND PRIME-FIBER MECHANISM AUDIT
+2026-11-01. Bounded generic endpoint search.
+
+VERDICT: No independent missing lemma survived this pass. No new full-proof
+scaffold is proposed. The apparent mechanisms either duplicate previously
+proved equivalences or fail to preserve the required entire Jones fiber.
+This is a stopped route, not a newly achieved research theorem.
+
+Authoritative prior work inspected
+---------------------------------
+outputs/jones-full-proof-scaffolds.md, particularly the common one-fiber
+amplification, polynomial-factor paragraph, and Sections4,11,15.
+work/research44/algebraic_units.txt and categorical_units.txt.
+work/research23/global_homology.txt; research30/fixed_jones_volume_check.txt;
+research32/geometric_mechanism.txt for the Mahler/cyclotomic duplicate check.
+
+1. Prime extension is not prescribed-fiber compression
+------------------------------------------------------
+A potentially useful new bridge would replace J#K^m by a prime knot in the
+SAME prescribed Jones fiber, while retaining a growing topological or
+homological obstruction. That would make prime-fiber information usable.
+
+The primary source checked was Liam Watson, Any tangle extends to non-mutant
+knots with the same Jones polynomial, 2005, main theorem and Section7:
+https://personal.math.ubc.ca/~liam/files/preprint.pdf
+It says that a prime tangle T extends to a PAIR of prime knots with equal
+Jones polynomials. Their common value is obtained from the whole bracket
+vector of T and its mirrored partner through the construction's evaluation
+matrix. The statement does not say that this value equals the polynomial
+of a specified initial closure of T, nor that it depends only on that one
+closure polynomial.
+
+Moreover, a tangle containing a nontrivial local knot is not prime under
+its definition (Section3). Inserting J#K^m as local knots in a strand cannot
+satisfy the prime-tangle hypothesis. Thus this source supplies no reduction
+of the composite amplification family to one prime fiber. Its paired-braid
+construction also overlaps the already completed Watson audits, so no new
+Watson parameter investigation was started.
+
+2. Exact topological limitation of independent long-knot boxes
+-------------------------------------------------------------
+Take any fixed actual tangle construction having disjoint input balls, each
+meeting the final knot in one properly embedded arc. In those balls insert
+copies of a long knot K (or its mirror/orientation variants). Assume all
+subsequent changes are supported outside the balls. Each boundary sphere
+continues to meet the final knot in exactly two points. Capping the inside
+and outside arcs exhibits the inserted knot as a connected-sum factor.
+Applying this to all the disjoint balls shows that the output still has
+all inserted nontrivial factors in its prime decomposition.
+
+Thus independent one-strand substitutions cannot turn J#K^m into a prime
+knot, even though their Jones values are exactly controlled as powers of V_K.
+To evade the statement, the construction must interact through a ball
+boundary or insert K through more than one strand. Ordinary Jones equality
+then does not automatically supply the needed multistrand bracket identity.
+
+This observation is an elementary geometric form of the already recorded
+rank-one limitation, not an independent new obstacle to unknot detection.
+The relative skein of a ball with two endpoints is R*eta and [K]=V_K*eta;
+all R-linear contexts preserve that scalar equality. Parallel cabling is
+not substitution into independent one-strand balls. The previous actual
+5_1/10_132 colored mismatch already blocks general scalar-to-cable promotion.
+
+3. Other tempting variants are duplicates or insufficient
+---------------------------------------------------------
+Unique factorization of Laurent polynomials bounds nonunit polynomial
+factors of a fixed Jones value, but says nothing about the number of
+Jones-one prime knot factors. The scaffold already makes this exact.
+Choosing an irreducible or cyclotomic anchor does not remove those factors.
+
+A scalar-long-knot inverse is another statement that V_K=1. Reflecting its
+algebraic invertibility into geometric invertibility is equivalent to
+unknot detection, as pass44 already proved; no independent construction of
+an inverse emerged.
+
+Replacing the full polynomial by Mahler measure or a dynamical entropy
+built from it was also considered. The figure-eight has cyclotomic Jones
+polynomial, so its connected sums have Mahler measure1 despite growing
+prime-factor count, bridge number and total exterior volume. Stronger
+prime/cyclotomic-volume countertests already occur in passes30 and32.
+This is therefore not new progress and cannot provide a selected-fiber
+bound. The whole polynomial changes along these examples.
+
+4. Decision
+-----------
+The source audit closes a specific tempting citation shortcut: Watson's
+prime extension theorem is not a prime replacement theorem for a prescribed
+Jones polynomial. All other candidates returned to earlier equivalents.
+There is no new independent missing lemma or actual fixed-fiber mechanism
+in this pass. Do not count a reformulated prime-factor bound, an entropy
+name, or the rank-one argument as evidence toward a proof.

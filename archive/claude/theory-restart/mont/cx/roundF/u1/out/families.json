@@ -1,0 +1,200 @@
+{
+ "AAbd": {
+  "w": "x1.x1.x2.x0.x1.x0.x1",
+  "f(w)": "y0.y1.y2.y2",
+  "top_stab_p": [
+   2,
+   4,
+   6
+  ],
+  "bot_stab_p": [
+   2,
+   4,
+   6
+  ],
+  "J_lp_plat2_unit_n<=8": {
+   "0": [
+    true,
+    null
+   ],
+   "1": [
+    true,
+    true
+   ],
+   "2": [
+    true,
+    true
+   ],
+   "3": [
+    true,
+    true
+   ],
+   "4": [
+    true,
+    true
+   ],
+   "5": [
+    true,
+    true
+   ],
+   "6": [
+    true,
+    true
+   ],
+   "7": [
+    true,
+    true
+   ],
+   "8": [
+    true,
+    true
+   ]
+  }
+ },
+ "Ab": {
+  "w": "x1.x2",
+  "f(w)": "y1.y2",
+  "top_stab_p": [
+   3,
+   6
+  ],
+  "bot_stab_p": [
+   3,
+   6
+  ],
+  "not_arc_n": [
+   2,
+   5,
+   8,
+   11
+  ],
+  "J_lp_plat2_unit_n<=8": {
+   "0": [
+    true,
+    null
+   ],
+   "1": [
+    true,
+    true
+   ],
+   "3": [
+    true,
+    true
+   ],
+   "4": [
+    true,
+    true
+   ],
+   "6": [
+    true,
+    true
+   ],
+   "7": [
+    true,
+    true
+   ]
+  }
+ },
+ "aB": {
+  "w": "y1.y2",
+  "f(w)": "x1.x2",
+  "top_stab_p": [
+   3,
+   6
+  ],
+  "bot_stab_p": [
+   3,
+   6
+  ],
+  "not_arc_n": [
+   2,
+   5,
+   8,
+   11
+  ],
+  "J_lp_plat2_unit_n<=8": {
+   "0": [
+    true,
+    null
+   ],
+   "1": [
+    true,
+    true
+   ],
+   "3": [
+    true,
+    true
+   ],
+   "4": [
+    true,
+    true
+   ],
+   "6": [
+    true,
+    true
+   ],
+   "7": [
+    true,
+    true
+   ]
+  }
+ },
+ "BB": {
+  "w": "y2.y2",
+  "f(w)": "x1.x1",
+  "top_stab_p": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "bot_stab_p": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "J_lp_plat2_unit_n<=8": {
+   "0": [
+    true,
+    null
+   ],
+   "1": [
+    true,
+    true
+   ],
+   "2": [
+    true,
+    true
+   ],
+   "3": [
+    true,
+    true
+   ],
+   "4": [
+    true,
+    true
+   ],
+   "5": [
+    true,
+    true
+   ],
+   "6": [
+    true,
+    true
+   ],
+   "7": [
+    true,
+    true
+   ],
+   "8": [
+    true,
+    true
+   ]
+  }
+ }
+}

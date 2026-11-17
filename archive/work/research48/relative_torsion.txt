@@ -1,0 +1,162 @@
+PASS 48: THE RELATIVE-TORSION GATE AND AN UNLINKABLE-TANGLE ENDPOINT
+1 November 2026. Bounded research audit; no proof or counterexample.
+
+Result
+------
+No usable relative lift of the connected-sum torsion relation was found.
+The source's relative module does not itself supply one: its marked arcs
+index relations after closing them, so the relevant band marks have already
+been forgotten. However, a four-endpoint lift would have a much stronger
+and more concrete consequence than an equality of two closed brackets.
+It would give an actual unlinkable two-string tangle with exactly the full
+bracket vector of a trivial tangle. Certifying that this tangle is not
+rational would then finish a counterexample, using a known topological
+theorem. The standard band choices cannot do this: their filled tangles
+are rational, and in fixed numerator/denominator coordinates are trivial.
+
+1. What the connected-sum source actually proves about relative skeins
+--------------------------------------------------------------------
+Let R=Z[A,A^-1], delta=-A^2-A^-2, and M=H_1 # H_1. In the notation of
+Bakshi--Le--Przytycki, the closed relation is
+
+ (A^2-A^-2)(x_1 x_2-delta y)=0.
+
+Here x_1 x_2 and delta y represent two actual two-component links,
+respectively x_1 disjoint union x_2 and y disjoint union a small unknot.
+
+Their Section 2.2 and Lemma 2.1 use TWO marked points u,v on the attaching
+curve gamma of a 2-handle. A relative arc alpha is closed by either of
+the two boundary arcs gamma_1,gamma_2. The differences of these closures
+span the kernel of the map from the handlebody's CLOSED skein module to
+the CLOSED skein module after attaching the handle. Lemma 3.3 then gives
+four generators for that relative module as a module over the closed
+handlebody skein algebra. None of this asserts that the displayed torsion
+relation persists after removing a band neighborhood with FOUR fixed
+endpoints. Such a statement requires a new relation in that new module.
+
+Source, checked in full text at Sections 2.2 and 3.2:
+https://arxiv.org/html/2604.09971v1
+
+In particular, cutting open selected components is not an operation on
+an unmarked closed skein module: even the contractible-circle relation
+removes a component and hence removes any proposed cutting location on it.
+This is a structural issue, not missing notation in the existing proof.
+
+2. A relative lift forces the FULL two-tangle bracket vector
+----------------------------------------------------------
+Suppose B is an embedded band ball in M, meeting each of two link
+representatives in two trivial arcs, with the same four endpoint marks.
+Set N=M minus int(B); write T_0,T_1 for their remaining tangles. Assume
+
+              f(A)([T_1]-[T_0])=0 in S(N; four points),       (1)
+
+for nonzero f in R. This is the missing RELATIVE assumption.
+
+Under any specified filling of the two axis tori giving S^3, N fills to
+S^3 minus int(B), a ball. Its four-point relative bracket module is the
+free R-module of rank two on the two crossingless pairings, denoted
+h and v. Therefore (1) implies
+
+                    [T_1]=[T_0] in R h plus R v             (2)
+
+after that filling. This uses the actual induced relative embedding map
+and torsion-freeness; it does not assume closure is injective.
+
+For completeness the two ordinary planar closure evaluations are
+
+ N(alpha h+beta v)=delta^2 alpha+delta beta,
+ D(alpha h+beta v)=delta alpha+delta^2 beta.
+
+Their matrix has determinant delta^2(delta^2-1), nonzero in R. Thus the
+two evaluations together determine the full vector over Q(A). A single
+closed torsion relation only supplies the first evaluation; banding asks
+for the other, which is independent. This explicitly locates the lost
+information.
+
+Freeness follows by resolving crossings in the ball and using the two
+crossingless diagrams; independence follows from the same closure matrix.
+This is an elementary proof, rather than an appeal to an unspecified
+relative connected-sum theorem.
+
+3. Exact counterexample scaffold and its topological endpoint
+------------------------------------------------------------
+Choose the band coordinates so that N is the closure restoring the
+original two components, and D is the band-sum closure. For a filling in
+which the original torsion witness links are the two-component unlink,
+both N(T_i) are geometrically U_2. Let the reference band's D(T_0) be U.
+
+If a relative lift (1) exists, equation (2) implies D(T_1) has the same
+framed bracket as D(T_0). With compatible zero framing this says
+V(D(T_1))=1. The D closure joins the two components into a single knot.
+
+There is a convenient independent NONTRIVIALITY criterion: prove that
+T_1 is not a rational tangle. A theorem of Scharlemann says that a
+two-string tangle admitting both an unknot closure and a split-link
+closure must be rational. Since N(T_1)=U_2 is already a split closure,
+nonrationality implies that D(T_1) cannot be the unknot. Thus the entire
+endpoint would be proved by an actual relative relation plus one
+nonrationality certificate. No exhaustive knot identification is needed.
+
+Exact accessible statement: Nogueira--Salgueiro, Theorem 4.8, page 14,
+https://arxiv.org/pdf/2110.15645
+They attribute it to Scharlemann, Smooth spheres in R^4 with four critical
+points are standard, Inventiones Mathematicae 79 (1985), 125-141.
+This audit checked the precise tangle theorem in the Nogueira--Salgueiro
+paper; it did not independently reprove Scharlemann's theorem.
+
+Equivalent direct research target:
+
+ Find an actual NONRATIONAL two-string tangle T with N(T)=U_2
+ geometrically, and [T]=[h] with matching framing.
+
+Then D(T) is a nontrivial Jones-one knot by the preceding argument.
+The target belongs to the one-band fusion/ribbon subclass. No reduction
+of the general Jones conjecture to that subclass is asserted.
+
+4. The canonical band choices have a complete geometric no-go
+------------------------------------------------------------
+For each canonical band in the closed x_1 x_2 versus y U witness, after
+filling both N closures are U_2 and both D closures are U. Consequently
+both filled tangles are rational by the same theorem. In the fixed N,D
+coordinates, a rational tangle of fraction p/q has numerator a two-bridge
+link with determinant |p|. The numerator U_2 has determinant zero, forcing
+p=0 and hence fraction 0. Therefore both tangles are the SAME trivial
+unframed tangle relative to their four boundary points. Any common
+replacement in the deleted band ball produces isotopic unframed links.
+
+This is stronger than checking that the two original simple bandings
+give y: it rules out obtaining different unframed outputs by arbitrary
+common two-tangle replacements after these canonical cuts and fillings.
+It does not rule out different cuts/bands whose candidate D closure is
+not already geometrically known to be U.
+
+The rational-tangle fraction classification is recalled with references
+in Sikora, Section 2.1:
+https://arxiv.org/pdf/2005.08162
+That paper also relates rational-solution uniqueness for systems of DNA
+tangle equations to Jones unknot detection. Its introduction explicitly
+warns that passing from unframed to framed equations matters. Here (1)
+and (2) are framed throughout; the final isotopy conclusion is unframed.
+
+5. Endpoint-parity caution, not an extra theorem used above
+--------------------------------------------------------
+Literature on relative connected sums includes localized vanishing
+phenomena when markings lie in different summands. Such vanishing is
+not automatically useful for knots in S^3. If an odd number of endpoints
+lies on each of the two boundary tori of M, the complementary two solid
+tori cannot separately pair those endpoints into arcs: each component
+of a compact one-manifold has an even total number of boundary points.
+Thus this marking choice has no closure using the disconnected S^3
+complement. The four endpoints on the NEW band-ball boundary avoid this
+elementary parity obstruction and are the correct setting for (1).
+No generic relative connected-sum classification is invoked or claimed.
+
+Conclusion
+----------
+The current evidence supplies neither the required relative lift nor an
+actual nonrational tangle of trivial bracket vector. The canonical lift
+idea, even if established algebraically, cannot yield a counterexample
+through common local replacements, because its filled tangles are
+geometrically trivial. A further search must specify the noncanonical
+band/cut and the nonrational tangle FIRST; absolute torsion alone is not
+an algebraic shortcut to their existence.

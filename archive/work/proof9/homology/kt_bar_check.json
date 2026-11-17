@@ -1,0 +1,130 @@
+{
+  "source": "https://arxiv.org/pdf/2602.17435, Proposition6.1, pp76-77",
+  "homological_conversion": "our h=-Sano h; same quantum q",
+  "reduced_rank": 33,
+  "number_length1_bars": 16,
+  "bar_sources": [
+    {
+      "h": -6,
+      "q": -12,
+      "multiplicity": 1
+    },
+    {
+      "h": -5,
+      "q": -10,
+      "multiplicity": 1
+    },
+    {
+      "h": -4,
+      "q": -8,
+      "multiplicity": 1
+    },
+    {
+      "h": -3,
+      "q": -6,
+      "multiplicity": 2
+    },
+    {
+      "h": -2,
+      "q": -6,
+      "multiplicity": 1
+    },
+    {
+      "h": -2,
+      "q": -4,
+      "multiplicity": 1
+    },
+    {
+      "h": -1,
+      "q": -4,
+      "multiplicity": 1
+    },
+    {
+      "h": -1,
+      "q": -2,
+      "multiplicity": 1
+    },
+    {
+      "h": 0,
+      "q": -2,
+      "multiplicity": 1
+    },
+    {
+      "h": 0,
+      "q": 0,
+      "multiplicity": 1
+    },
+    {
+      "h": 1,
+      "q": 0,
+      "multiplicity": 2
+    },
+    {
+      "h": 2,
+      "q": 2,
+      "multiplicity": 1
+    },
+    {
+      "h": 3,
+      "q": 4,
+      "multiplicity": 1
+    },
+    {
+      "h": 4,
+      "q": 6,
+      "multiplicity": 1
+    }
+  ],
+  "parity_by_source_q": {
+    "-12": {
+      "even": 1,
+      "odd": 0
+    },
+    "-10": {
+      "even": 0,
+      "odd": 1
+    },
+    "-8": {
+      "even": 1,
+      "odd": 0
+    },
+    "-6": {
+      "even": 1,
+      "odd": 2
+    },
+    "-4": {
+      "even": 1,
+      "odd": 1
+    },
+    "-2": {
+      "even": 1,
+      "odd": 1
+    },
+    "0": {
+      "even": 1,
+      "odd": 2
+    },
+    "2": {
+      "even": 1,
+      "odd": 0
+    },
+    "4": {
+      "even": 0,
+      "odd": 1
+    },
+    "6": {
+      "even": 1,
+      "odd": 0
+    }
+  },
+  "mixed_source_q": [
+    -6,
+    -4,
+    -2,
+    0
+  ],
+  "extreme_source_q": [
+    -12,
+    6
+  ]
+}

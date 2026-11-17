@@ -1,0 +1,449 @@
+{
+  "label": "prior_zero_kernel_arc_commutator",
+  "i": 0,
+  "j": 8,
+  "original_word": [
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -2,
+    -1,
+    3,
+    1,
+    2,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    -2,
+    -1,
+    -3,
+    1,
+    2
+  ],
+  "effective_matrix_word": [
+    4,
+    3,
+    2,
+    1,
+    5,
+    4,
+    3,
+    2,
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -2,
+    -1,
+    3,
+    1,
+    2,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    3,
+    4,
+    -5,
+    -2,
+    1,
+    1,
+    1,
+    -2,
+    -5,
+    -5,
+    4,
+    -3,
+    -4,
+    5,
+    5,
+    2,
+    -1,
+    -1,
+    -1,
+    2,
+    5,
+    -4,
+    -3,
+    4,
+    -5,
+    -2,
+    1,
+    -2,
+    -1,
+    -3,
+    1,
+    2,
+    -1,
+    -2
+  ],
+  "status": "STOPPED_AT_TRANSPORT_BUDGET",
+  "trace": [
+    {
+      "prefix": 1,
+      "matrix_generator": 4,
+      "vertices": [
+        2,
+        5
+      ],
+      "seconds": 0.0008807079866528511
+    },
+    {
+      "prefix": 2,
+      "matrix_generator": 3,
+      "vertices": [
+        2,
+        9
+      ],
+      "seconds": 0.00324887502938509
+    },
+    {
+      "prefix": 3,
+      "matrix_generator": 2,
+      "vertices": [
+        5,
+        10
+      ],
+      "seconds": 0.0062467921525239944
+    },
+    {
+      "prefix": 4,
+      "matrix_generator": 1,
+      "vertices": [
+        9,
+        10
+      ],
+      "seconds": 0.009192958008497953
+    },
+    {
+      "prefix": 5,
+      "matrix_generator": 5,
+      "vertices": [
+        9,
+        17
+      ],
+      "seconds": 0.013081917073577642
+    },
+    {
+      "prefix": 6,
+      "matrix_generator": 4,
+      "vertices": [
+        9,
+        36
+      ],
+      "seconds": 0.024878583382815123
+    },
+    {
+      "prefix": 7,
+      "matrix_generator": 3,
+      "vertices": [
+        16,
+        56
+      ],
+      "seconds": 0.04356083320453763
+    },
+    {
+      "prefix": 8,
+      "matrix_generator": 2,
+      "vertices": [
+        35,
+        83
+      ],
+      "seconds": 0.0728505002334714
+    },
+    {
+      "prefix": 9,
+      "matrix_generator": -1,
+      "vertices": [
+        43,
+        103
+      ],
+      "seconds": 0.10497683333232999
+    },
+    {
+      "prefix": 10,
+      "matrix_generator": 2,
+      "vertices": [
+        71,
+        151
+      ],
+      "seconds": 0.17942754225805402
+    },
+    {
+      "prefix": 11,
+      "matrix_generator": 5,
+      "vertices": [
+        74,
+        211
+      ],
+      "seconds": 0.2126644579693675
+    },
+    {
+      "prefix": 12,
+      "matrix_generator": -4,
+      "vertices": [
+        103,
+        360
+      ],
+      "seconds": 0.32376683317124844
+    },
+    {
+      "prefix": 13,
+      "matrix_generator": 3,
+      "vertices": [
+        205,
+        589
+      ],
+      "seconds": 0.557474875357002
+    },
+    {
+      "prefix": 14,
+      "matrix_generator": 4,
+      "vertices": [
+        322,
+        848
+      ],
+      "seconds": 0.9172257501631975
+    },
+    {
+      "prefix": 15,
+      "matrix_generator": -5,
+      "vertices": [
+        456,
+        1093
+      ],
+      "seconds": 1.2841526251286268
+    },
+    {
+      "prefix": 16,
+      "matrix_generator": -2,
+      "vertices": [
+        648,
+        1625
+      ],
+      "seconds": 1.810481000225991
+    },
+    {
+      "prefix": 17,
+      "matrix_generator": 1,
+      "vertices": [
+        828,
+        2071
+      ],
+      "seconds": 2.4094922081567347
+    },
+    {
+      "prefix": 18,
+      "matrix_generator": 1,
+      "vertices": [
+        940,
+        2331
+      ],
+      "seconds": 3.3188408752903342
+    },
+    {
+      "prefix": 19,
+      "matrix_generator": 1,
+      "vertices": [
+        1040,
+        2575
+      ],
+      "seconds": 4.483557417057455
+    },
+    {
+      "prefix": 20,
+      "matrix_generator": -2,
+      "vertices": [
+        1857,
+        4526
+      ],
+      "seconds": 6.489344167057425
+    },
+    {
+      "prefix": 21,
+      "matrix_generator": -5,
+      "vertices": [
+        1937,
+        4738
+      ],
+      "seconds": 7.167414917144924
+    },
+    {
+      "prefix": 22,
+      "matrix_generator": -5,
+      "vertices": [
+        2007,
+        4951
+      ],
+      "seconds": 8.044007332995534
+    },
+    {
+      "prefix": 23,
+      "matrix_generator": 4,
+      "vertices": [
+        3103,
+        7586
+      ],
+      "seconds": 10.486864667385817
+    },
+    {
+      "prefix": 24,
+      "matrix_generator": 3,
+      "vertices": [
+        5209,
+        12915
+      ],
+      "seconds": 16.274734999984503
+    },
+    {
+      "prefix": 25,
+      "matrix_generator": -4,
+      "vertices": [
+        8044,
+        20343
+      ],
+      "seconds": 26.24365079216659
+    }
+  ],
+  "limits": {
+    "transport_seconds": 150,
+    "vertices_per_curve": 15000,
+    "configuration_pairs": 2000000
+  },
+  "seconds": 26.244253875222057
+}

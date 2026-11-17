@@ -1,0 +1,37 @@
+PASS 44 — 2026-11-01
+
+Previous goal turn: progress, because exact evidence closed the finite-field
+arithmetic shortcut and replaced its elaborate example by a simple torus knot.
+The main objective was not completed. This pass likewise supplies evidence
+against specific proof mechanisms, not a proof of the main conjecture.
+
+Initial categorical unit reflection duplicated work/generic/tangle_notes.md.
+It is exactly equivalent to detection on actual cut knots. Stopped promptly;
+do not reopen via fraction fields, braid invertibility or Euler-class language.
+
+Concrete repair attempted: orientation-independent self-writhe normalization
+F=x^-3ell V removes G2's component-reorientation factor. F fails finite type
+at coefficient zero, but H=F^2 GENUINELY repairs finite-type coefficient order
+and retains component count. Root and both algebra/homology agents checked it.
+
+Decisive full-route obstruction: source direct-clasp plus double-smoothing
+identities give T_m=C-p²R_m=A+B x^(4m). BOTH rational channels nonzero,
+verified by residues -8 and8 at x=i. Therefore spanT_m=4m+O1. All monomial
+normalizations and fixed positive powers retain unbounded span. They cannot
+restore twist-length-independent JVP compression. Retain geometry/minimal-host
+qualifications; this is not a fresh full PD family reconstruction and not a
+no-go theorem for every nonlinear descent or differently restricted machine.
+
+New surgery countertest: square knot's full graded filtered Lee trace module
+equals unknot's for every integer framing by Ren--Willis Prop1.12. Zero surgery
+is an aspherical genus2 mapping torus, so boundary sphere inference fails.
+Its actual interior generator sphere is insufficient for a boundary3handle.
+Do not conflate Lee with Khovanov modules or use ordinary PropertyR as a
+summand theorem; Ni supplies the stronger summand theorem when needed.
+
+Exact verifier run and passed: verify_orientation_repair.py.
+Output: outputs/jones-orientation-repair-audit.txt
+Evidence: outputs/jones-orientation-repair-evidence.zip
+
+No nontrivial knot with V=1, no full detection proof, no justified near-term
+breakthrough prediction. Goal remains active; no completion or blocked claim.

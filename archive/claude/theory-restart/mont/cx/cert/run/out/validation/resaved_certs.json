@@ -1,0 +1,39 @@
+{
+ "items_checked": 28241,
+ "accepted_by_kind": {
+  "tietze:True": 21509,
+  "rep:True": 6732
+ },
+ "rep_strict_pair_in_gens": {
+  "True": 6732
+ },
+ "rejected": [],
+ "stored_counts": {
+  "bulk_bottom_d8.jsonl.gz|tietze": 76584,
+  "bulk_top_d8.jsonl.gz|tietze": 36763,
+  "final_suiteA1.jsonl|tietze": 1300,
+  "final_suiteA2bot.jsonl|tietze": 700,
+  "final_suiteA2codex.jsonl|tietze": 21,
+  "final_suiteA2top.jsonl|tietze": 700,
+  "final_suiteB_alextriv.jsonl|rep": 144,
+  "final_suiteB_mirrors.jsonl|rep": 900,
+  "final_suiteB_random.jsonl|rep": 900,
+  "final_suiteC1n.jsonl|rep": 200,
+  "final_suiteC1u.jsonl|tietze": 334,
+  "final_suiteC2n.jsonl|rep": 100,
+  "final_suiteC2u.jsonl|tietze": 102,
+  "mitm77_cert.tietze.jsonl.gz|tietze": 116124,
+  "suiteA1.jsonl|tietze": 2600,
+  "suiteA2bot.jsonl|tietze": 1400,
+  "suiteA2codex.jsonl|tietze": 42,
+  "suiteA2top.jsonl|tietze": 1400,
+  "suiteB_alextriv.jsonl|rep": 288,
+  "suiteB_mirrors.jsonl|rep": 1800,
+  "suiteB_random.jsonl|rep": 1800,
+  "suiteC1n.jsonl|rep": 400,
+  "suiteC1u.jsonl|tietze": 668,
+  "suiteC2n.jsonl|rep": 200,
+  "suiteC2u.jsonl|tietze": 204
+ },
+ "secs": 11.8
+}

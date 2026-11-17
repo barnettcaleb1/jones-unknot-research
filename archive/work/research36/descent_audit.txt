@@ -1,0 +1,149 @@
+CARMI–COHEN DESCENT: EXACT LOGICAL SCOPE AND THE MISSING SKEIN CHANNEL
+Independent bounded audit, 2026-11-01. No proof of generic unknot detection is supplied.
+
+SOURCE STATUS AND CLAIMS READ
+The arXiv record2606.22410 still lists only v1, submitted21June2026, when checked in
+this pass. The local work/carmi-cohen.txt and original TeX were read at the statements
+and proofs of5.5,5.6,5.8,5.10,5.11,5.12.
+https://arxiv.org/abs/2606.22410
+https://arxiv.org/pdf/2606.22410v1
+
+Theorem5.6 is CONDITIONAL on C1–C3, with the machine's anti-parallel relations used
+in the locked-state argument. Lemma5.8 adds C4 and converts the asserted signed-state
+cap Bhat to a residual-twist cap Bhat+2 by an exact paired skein identity.
+Theorem5.10 adds the residual anchor H1 and vanishing of the host's coefficient
+layers through Bhat+2. Theorem5.11 assumes a crossing-minimal initial host and uses
+two applications over generated anchors. Proposition5.12 claims that the geometric
+construction supplies all the requisite local facts, uniformly in the exterior.
+Neither Proposition5.12 nor the unconditional consequence of5.6+5.8 assumes that
+the host has Jones polynomial1. The host is not required to be minimal there either.
+
+1. WHAT THE EXISTING TREFOIL CONTRADICTION DOES AND DOES NOT REFUTE
+Take the THREE-CROSSING, crossing-minimal trefoil diagram, using the singleton
+anti-parallel twist crossing shown in the source's own twist1.png. Its Jones
+polynomial in the paper's variable is
+
+  V_1=x^2+x^6-x^8,      p=x-x^-1.
+
+Switching that seed crossing gives the actual unknot. Its oriented smoothing is
+fixed under further twists and has
+
+  H=-x-x^5.
+
+Replacing the seed by an odd positive block of length L gives a genuine twist-knot
+family. Changing one crossing cancels an adjacent pair by RII, and oriented smoothing
+removes the other block crossings as RI curls. Hence the exact oriented skein is
+
+  x^-2 V_L - x^2 V_(L-2)=pH,
+  V_L=x^4 V_(L-2)+(x^2-x^4+x^6-x^8).
+
+For L=2m+1 this solves to
+
+  V_L=x^(4m)V_1+(x^2-x^4+x^6-x^8) sum_(j=0)^(m-1) x^(4j).
+
+The highest x-power is2L+6 with coefficient-1. In the unique JVP reduction
+V=A(p)+xB(p), x^2=px+1, the coefficient of p^(2L+5) in B is therefore-1:
+x^N has B-degree N-1 with leading coefficient1, and every other monomial here has
+smaller positive degree. Thus JVP degree is exactly2L+5, unbounded with L.
+
+For this minimal host Bhost=3*3=9, Bhat=20, and Lemma5.8's claimed cap is22.
+At L=23 the genuine residual state instead has b_51=-1.
+The exact standard-library verifier outputs/verify_twist_obstruction.py was rerun;
+its output is saved in descent_arithmetic.txt. It also reconstructs the Laurent
+polynomial from the JVP and checks the first nontrivial value against5_2.
+
+PRECISE LOGICAL CONCLUSION:
+The universal joint package Proposition5.12 -> Theorem5.6 -> Lemma5.8 is false as
+stated. This contradiction already has a minimal host; a missing requirement of
+host minimality alone cannot repair that package.
+
+It is NOT correct to describe this example as a knot/machine proved to satisfy
+C1–C3 but violating the conditional Theorem5.6. We have not verified C1–C3 for the
+actual planted machine; the contradiction shows that the claimed package cannot
+supply all the required conditions and identifications simultaneously. In particular,
+at least one geometric premise, associated algebraic lemma, or identification is
+wrong. This bounded audit does not isolate a single false picture or declare a
+specific C1/C2/C3 clause false independently of the rest.
+
+Theorem5.8's displayed paired skein identity itself checks algebraically:
+
+  V_-+ +V_+- =x^-4 V_++ +x^4 V_-- -p^2 V_00.
+
+Multiplication by x^±4 increases JVP degree by at most4. Thus a cap Bhat on the four
+signed states really would imply cap Bhat+2 on V_00. The contradiction is not an
+obvious missing degree shift in this extraction.
+
+2. WHY SIMPLY ADDING A JONES-ONE ANCHOR DOES NOT FIX COMPRESSION
+Start instead with the same trefoil shadow after switching its unknotting crossing.
+This is an ACTUAL unknot diagram; it is nonminimal. Add positive full twists at the
+marked anti-parallel seed. Write the resulting family as K_m with K_0=U. It has the
+same fixed smoothing H=-x-x^5 and satisfies
+
+  V_(m+1)=x^4 V_m +p x^2 H.
+
+In particular K_1 is the trefoil and V_(K1)=x^2+x^6-x^8 !=1. This is a geometrically
+realized Jones-one anchor, not a formal complex or hypothetical knot. It satisfies
+the ordinary anti-parallel twist relations and the residual anchor identification.
+It cannot satisfy the entire claimed compression package, since its degrees grow.
+
+The example refutes a repair which ONLY adds V(host)=1. It does NOT refute a new
+claim simultaneously restricted to crossing-minimal diagrams of nontrivial Jones-one
+knots; no such knot is known here. That narrower statement remains unproved.
+
+3. EXACT NECESSARY AND SUFFICIENT CONDITION FOR AN ANCHORED UNIFORM CAP
+The obstruction can be stated without choosing a particular knot. For any actual
+anti-parallel full-twist family with V_0=1 and fixed oriented smoothing H, set
+
+  D=(x^4-1)+p x^2 H =p x^2(H+x+x^-1).
+
+The skein recurrence gives, for every integer m,
+
+  V_m=1+D (x^(4m)-1)/(x^4-1).
+
+The quotient is a Laurent polynomial even for negative m. Therefore the following
+conditions are equivalent for this fixed marked family:
+
+  (a) the JVP degrees are bounded independently of positive m;
+  (b) D=0;
+  (c) H=-(x+x^-1), the Jones polynomial of the two-component unlink;
+  (d) V_m=1 for every m;
+  (e) V_1=1.
+
+Proof of the only potentially subtle implication: if D!=0, the top Laurent exponent
+of D sum_(j=0)^(m-1)x^(4j) tends to infinity. A JVP degree cap B confines Laurent
+support to [-B,B+1], so bounded JVP degree is impossible. Conversely D0 makes the
+entire family constant. This is an integral-domain argument, not a numerical test.
+
+Thus the host anchor fixes one closure value but leaves a second skein channel,
+namely its oriented smoothing, undetermined. A length-independent cap would ALREADY
+force that missing channel to be the unlink channel. It cannot be deduced from
+anchor vanishing alone. The actual switched-trefoil unknot has H=-x-x^5, explicitly
+showing the undetermined channel is geometrically real.
+
+4. WHAT A MINIMAL-HOST REPAIR WOULD STILL HAVE TO DO
+A valid repair would need to establish the smoothing conclusion H=-(x+x^-1) for
+the specific marked crossings of a hypothetical minimal nontrivial Jones-one knot,
+or supply a different geometric propagation argument with the same force. That is
+a substantial theorem, not a small numerical adjustment to the overhead11.
+
+There is also a second scope issue. Theorem5.11's second-machine application uses a
+two-state host family obtained by flipping the other crossing in the original
+minimal diagram. It has the same NUMBER of crossings, but the flipped diagram need
+not be crossing-minimal for the flipped knot (and may be a nonminimal unknot).
+The source correctly only claims a common shadow cap there. A proposed replacement
+lemma valid solely on minimal host diagrams therefore cannot be substituted into
+that step without a further argument. Minimality of the original diagram does not
+supply minimality of every generated host.
+
+The two-crossing low-order endpoint is not repaired by ignoring this issue: actual
+trefoil crossing faces can have three unknot vertices and one trefoil vertex. A
+Jones-one anchor cannot simply be copied to a whole crossing face.
+
+ASSESSMENT
+The earlier audit can be made precise without overstating it. There is an exact,
+minimal-host contradiction to the unconditional compression package; a separate
+actual unknot example defeats the unrestricted anchor-only repair. The conditional
+Theorems5.6/5.10 should not be called refuted by examples whose C1–C3 premises have
+not been established. The unresolved content is precisely the geometric mechanism
+that would kill the smoothing channel, uniformly on the hosts needed by5.11.
+No proof repair satisfying those requirements was obtained in this pass.

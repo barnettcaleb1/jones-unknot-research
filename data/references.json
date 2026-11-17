@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-17",
+  "scope": "Curated bibliography and credit map. Not an exhaustive bibliography of every historical working file; source-specific references in archived notes remain necessary.",
+  "references": [
+    {
+      "id": "JONES85",
+      "topic": "Foundations",
+      "authors": "Vaughan F. R. Jones",
+      "title": "A polynomial invariant for knots via von Neumann algebras",
+      "publication": "Bulletin of the AMS 12 (1985), 103–111",
+      "url": "https://doi.org/10.1090/S0273-0979-1985-15304-2",
+      "role": "Foundational invariant and component-count specialization; not a project result.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "KAUFFMAN87",
+      "topic": "Foundations",
+      "authors": "Louis H. Kauffman",
+      "title": "State models and the Jones polynomial",
+      "publication": "Topology 26 (1987), 395–407",
+      "url": "https://doi.org/10.1016/0040-9383(87)90009-7",
+      "role": "Bracket state sum and skein calculus underlying the exact certificates.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "LM86",
+      "topic": "Foundations",
+      "authors": "W. B. R. Lickorish and Kenneth C. Millett",
+      "title": "Some evaluations of link polynomials",
+      "publication": "Comment. Math. Helv. 61 (1986), 349–359",
+      "url": "https://web.math.ucsb.edu/~millett/Papers/1986Millett6LickorishCommMathHelv.pdf",
+      "role": "Theorems 1 and 3 supply the Arf and sixth-root evaluations; Theorem 1 credits H. Murakami.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "EKT03",
+      "topic": "Foundations",
+      "authors": "Shalom Eliahou, Louis H. Kauffman and Morwen Thistlethwaite",
+      "title": "Infinite families of links with trivial Jones polynomial",
+      "publication": "Topology 42 (2003), 155–169",
+      "url": "https://homepages.math.uic.edu/~kauffman/ekt.pdf",
+      "role": "Hopf-shell construction, Omega operation, and actual Jones-trivial links; preserve component/framing conventions.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "EF17",
+      "topic": "Foundations",
+      "authors": "Shalom Eliahou and Jean Fromentin",
+      "title": "A remarkable 20-crossing tangle",
+      "publication": "arXiv:1610.05560v2; JKTR (2017), DOI 10.1142/S0218216517500912",
+      "url": "https://arxiv.org/pdf/1610.05560v2",
+      "role": "Definitions 3.1–3.2, Lemma 4.2, Proposition 5.2: source of the modular family and the seed used for the project’s depth-four deduction.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "CK06",
+      "topic": "Foundations",
+      "authors": "Abhijit Champanerkar and Ilya Kofman",
+      "title": "On links with cyclotomic Jones polynomials",
+      "publication": "Algebr. Geom. Topol. 6 (2006), 1655–1668; arXiv:math/0605631v3",
+      "url": "https://arxiv.org/abs/math/0605631v3",
+      "role": "Multivariable twist-bracket framework; Proposition 2.1 is the prior expansion behind fixed-template calculations.",
+      "verification": "metadata-checked; proof-locator-in-archived-audit"
+    },
+    {
+      "id": "SIKORA24",
+      "topic": "Tangle equations and surgery",
+      "authors": "Adam S. Sikora",
+      "title": "Tangle equations, the Jones conjecture, slopes of surfaces in tangle complements, and q-deformed rationals",
+      "publication": "Canad. J. Math. 76 (2024), 707–727; arXiv:2005.08162v2",
+      "url": "https://arxiv.org/pdf/2005.08162v2",
+      "role": "V2 Proposition 1, Conjecture 2, Theorems 3 and 21, Corollary 20. The project’s objection to Proposition 10(1) is separate from its candidate proof.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "RR17",
+      "topic": "Tangle equations and surgery",
+      "authors": "Jacob Rasmussen and Sarah Dean Rasmussen",
+      "title": "Floer simple manifolds and L-space intervals",
+      "publication": "Adv. Math. 322 (2017), 738–805; arXiv:1508.05900v2",
+      "url": "https://arxiv.org/abs/1508.05900v2",
+      "role": "Propositions 1.3–1.4, torsion normal form, Corollary 2.3, Definition 7.2 and Proposition 7.8 in the pinned version.",
+      "verification": "metadata-checked; proof-locators-in-manuscript-audits"
+    },
+    {
+      "id": "GAINULLIN18",
+      "topic": "Tangle equations and surgery",
+      "authors": "Fyodor Gainullin",
+      "title": "Heegaard Floer homology and knots determined by their complements",
+      "publication": "Algebr. Geom. Topol. 18 (2018), 69–109; arXiv:1504.06180",
+      "url": "https://arxiv.org/abs/1504.06180",
+      "role": "Theorem 8.2: methodological antecedent for surgery comparison, Alexander derivative and L-space structure.",
+      "verification": "metadata-checked; proof-locator-in-manuscript-audits"
+    },
+    {
+      "id": "NIWU15",
+      "topic": "Tangle equations and surgery",
+      "authors": "Yi Ni and Zhongtao Wu",
+      "title": "Cosmetic surgeries on knots in S3",
+      "publication": "J. Reine Angew. Math. 706 (2015), 1–17; arXiv:1009.4720v2",
+      "url": "https://arxiv.org/abs/1009.4720v2",
+      "role": "Proposition 3.1: the exact Casson–Walker surgery formula used in the manuscript.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "BOYERLINES90",
+      "topic": "Tangle equations and surgery",
+      "authors": "Steven Boyer and Daniel Lines",
+      "title": "Surgery formulae for Casson’s invariant and extensions to homology lens spaces",
+      "publication": "J. Reine Angew. Math. 405 (1990), 181–220",
+      "url": "https://doi.org/10.1515/crll.1990.405.181",
+      "role": "Antecedent for the formula cited in the explicit Ni–Wu restatement; no unchecked original theorem number is asserted.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "BUCKMAURICIO11",
+      "topic": "Tangle equations and surgery",
+      "authors": "Dorothy Buck and Mauro Maximo Mauricio",
+      "title": "Connect sum of lens spaces surgeries: application to Hin recombination",
+      "publication": "Math. Proc. Cambridge Philos. Soc. 150 (2011), 505–525; arXiv:1007.0948",
+      "url": "https://arxiv.org/abs/1007.0948",
+      "role": "Preprint title differs: Tangle solutions for composite knots: applications to Hin recombination. Theorem 3.5(2) supplies the cited form of Lickorish’s criterion.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "LICKORISH81",
+      "topic": "Tangle equations and surgery",
+      "authors": "W. B. R. Lickorish",
+      "title": "Prime knots and tangles",
+      "publication": "Trans. Amer. Math. Soc. 267 (1981), 321–332",
+      "url": "https://doi.org/10.1090/S0002-9947-1981-0621991-2",
+      "role": "Rational-tangle/solid-torus criterion; project uses the explicit Buck–Mauricio formulation.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "ES90",
+      "topic": "Tangle equations and surgery",
+      "authors": "Claus Ernst and De Witt Sumners",
+      "title": "A calculus for rational tangles: applications to DNA recombination",
+      "publication": "Math. Proc. Cambridge Philos. Soc. 108 (1990), 489–515",
+      "url": "https://doi.org/10.1017/S0305004100069383",
+      "role": "Classical rational-tangle calculus. The project’s specific two-probe example is credited instead to the 1999 paper.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "ES99",
+      "topic": "Tangle equations and surgery",
+      "authors": "Claus Ernst and De Witt Sumners",
+      "title": "Solving tangle equations arising in a DNA recombination model",
+      "publication": "Math. Proc. Cambridge Philos. Soc. 126 (1999), 23–36",
+      "url": "https://doi.org/10.1017/S0305004198002989",
+      "role": "Example 3: source of the unframed two-probe calibration, after the stated mirror and reparametrization.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "BAKERBUCK13",
+      "topic": "Tangle equations and surgery",
+      "authors": "Kenneth L. Baker and Dorothy Buck",
+      "title": "The classification of rational subtangle replacements between rational tangles",
+      "publication": "Algebr. Geom. Topol. 13 (2013), 1413–1463; arXiv:1304.7669",
+      "url": "https://arxiv.org/abs/1304.7669",
+      "role": "Prior classification and tangle-rigidity context; not superseded by a scalar bracket argument.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "KMOS07",
+      "topic": "Tangle equations and surgery",
+      "authors": "Peter Kronheimer, Tomasz Mrowka, Peter Ozsváth and Zoltán Szabó",
+      "title": "Monopoles and lens space surgeries",
+      "publication": "Ann. of Math. 165 (2007), 457–546; arXiv:math/0310164",
+      "url": "https://arxiv.org/abs/math/0310164",
+      "role": "Classical unknot-surgery special case; must not be presented as a new project theorem.",
+      "verification": "archived-reference"
+    },
+    {
+      "id": "LICKORISH97",
+      "topic": "Tangle equations and surgery",
+      "authors": "W. B. R. Lickorish",
+      "title": "An Introduction to Knot Theory",
+      "publication": "Graduate Texts in Mathematics 175, Springer (1997)",
+      "url": "https://doi.org/10.1007/978-1-4612-0691-0_9",
+      "role": "Chapter 9, Theorems 9.3–9.4 and Corollary 9.5: Goeritz presentation, including determinant-zero situations.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "STOIMENOW05",
+      "topic": "Tangle equations and surgery",
+      "authors": "Alexander Stoimenow",
+      "title": "Square numbers, spanning trees and invariants of achiral knots",
+      "publication": "Comm. Anal. Geom. 13 (2005), 591–631",
+      "url": "https://doi.org/10.4310/CAG.2005.v13.n3.a5",
+      "role": "Proposition 6.5 is used only for the checked odd-determinant/knot consequence.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "SNAPE18",
+      "topic": "Strong inversions and categorification",
+      "authors": "Michael Snape",
+      "title": "Homological invariants of strongly invertible knots",
+      "publication": "PhD thesis, University of Glasgow (2018)",
+      "url": "https://theses.gla.ac.uk/39015/",
+      "role": "Sections 2.1.1–2.1.2 and 3.2.2; Theorem 3.3.14; existing Sakuma-link detection question and encircling calculus.",
+      "verification": "metadata-checked; exact-locators-in-archived-audits"
+    },
+    {
+      "id": "WATSON17",
+      "topic": "Strong inversions and categorification",
+      "authors": "Liam Watson",
+      "title": "Khovanov homology and the symmetry group of a knot",
+      "publication": "arXiv:1311.1085v4 (2017)",
+      "url": "https://arxiv.org/abs/1311.1085v4",
+      "role": "Theorem 1, Definition 10 and Proposition 11: persistent homological invariant; homological detection does not imply Euler detection.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "KWZ19",
+      "topic": "Strong inversions and categorification",
+      "authors": "Artem Kotelskiy, Liam Watson and Claudius Zibrowius",
+      "title": "Immersed curves in Khovanov homology",
+      "publication": "arXiv:1910.14584v2",
+      "url": "https://arxiv.org/abs/1910.14584v2",
+      "role": "Curve invariant, gluing and graded algebra; Definition 4.19 and Theorem 4.21 in the pinned source.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "KWZ21",
+      "topic": "Strong inversions and categorification",
+      "authors": "Artem Kotelskiy, Liam Watson and Claudius Zibrowius",
+      "title": "Khovanov homology and strong inversions",
+      "publication": "Open Book Series 5 (2022), 223–244; arXiv:2104.13592v1",
+      "url": "https://arxiv.org/abs/2104.13592v1",
+      "role": "Published inversion table and long-special pairing; longer components were already noted after Conjecture 3.7.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "KWZ22",
+      "topic": "Strong inversions and categorification",
+      "authors": "Artem Kotelskiy, Liam Watson and Claudius Zibrowius",
+      "title": "Khovanov multicurves are linear",
+      "publication": "arXiv:2202.01460v1",
+      "url": "https://arxiv.org/abs/2202.01460v1",
+      "role": "Linearity and whole-object extension. Theorem 4.4 does not automatically split into independent summand extensions.",
+      "verification": "metadata-checked; proof-locator-in-archived-audit"
+    },
+    {
+      "id": "KWZ26",
+      "topic": "Strong inversions and categorification",
+      "authors": "Artem Kotelskiy, Liam Watson and Claudius Zibrowius",
+      "title": "On mutation invariance in Khovanov homology",
+      "publication": "arXiv:2602.23442v1",
+      "url": "https://arxiv.org/abs/2602.23442v1",
+      "role": "Definition 3.12 and Theorems 3.17, 3.19: normal forms and geography over fields; the project’s convention dictionary is separate.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "KLMWZ",
+      "topic": "Strong inversions and categorification",
+      "authors": "Artem Kotelskiy, Tye Lidman, Allison H. Moore, Liam Watson and Claudius Zibrowius",
+      "title": "Cosmetic operations and Khovanov multicurves",
+      "publication": "arXiv:2109.14049v1",
+      "url": "https://arxiv.org/abs/2109.14049v1",
+      "role": "Theorems 2.6–2.7 and proof of Theorem 1.2: actual unknot-cap structure and split-tangle detection.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "LMZ24",
+      "topic": "Strong inversions and categorification",
+      "authors": "Lukas Lewark, Laura Marino and Claudius Zibrowius",
+      "title": "Khovanov homology and refined bounds for Gordian distances",
+      "publication": "arXiv:2409.05743v2",
+      "url": "https://arxiv.org/abs/2409.05743v2",
+      "role": "Replacement-map invariants and rational Gordian distance; the project separately studies what those maps cannot detect in formal examples.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "LS22",
+      "topic": "Strong inversions and categorification",
+      "authors": "Robert Lipshitz and Sucharit Sarkar",
+      "title": "Khovanov homology of strongly invertible knots and their quotients",
+      "publication": "arXiv:2203.13895v1",
+      "url": "https://arxiv.org/abs/2203.13895v1",
+      "role": "Theorem 1.1 and Section 3: axis-moving map cone and equivariant spectral sequence. Map-level dictionary remains open in this project.",
+      "verification": "metadata-checked; proof-locator-in-archived-audit"
+    },
+    {
+      "id": "GW10",
+      "topic": "Strong inversions and categorification",
+      "authors": "J. Elisenda Grigsby and Stephan Wehrli",
+      "title": "On the Colored Jones Polynomial, Sutured Floer Homology, and Knot Floer Homology",
+      "publication": "Adv. Math. 223 (2010), 2114–2165; arXiv:0807.1432v3",
+      "url": "https://arxiv.org/pdf/0807.1432v3",
+      "role": "Proposition 5.20 and Theorem 1.2 are inputs; Proposition 6.9 and Conjecture 7.1 enter the separate conditional grading objection.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "GWANN10",
+      "topic": "Strong inversions and categorification",
+      "authors": "J. Elisenda Grigsby and Stephan Wehrli",
+      "title": "Khovanov homology, sutured Floer homology, and annular links",
+      "publication": "Algebr. Geom. Topol. 10 (2010), 2009–2039; arXiv:0907.4375v2",
+      "url": "https://arxiv.org/abs/0907.4375v2",
+      "role": "Theorem 1.1 fixes mirror conventions. Do not import the removed converse of the cutting theorem from v1.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "JUHASZ06",
+      "topic": "Strong inversions and categorification",
+      "authors": "András Juhász",
+      "title": "Holomorphic discs and sutured manifolds",
+      "publication": "Algebr. Geom. Topol. 6 (2006), 1429–1457; arXiv:math/0601443v3",
+      "url": "https://arxiv.org/abs/math/0601443v3",
+      "role": "Example 2.4 and Proposition 9.2: meridional sutures and knot Floer target.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "DAEMI15",
+      "topic": "Strong inversions and categorification",
+      "authors": "Aliakbar Daemi",
+      "title": "Abelian Gauge Theory, Knots and Odd Khovanov Homology",
+      "publication": "arXiv:1508.07650v1",
+      "url": "https://arxiv.org/abs/1508.07650v1",
+      "role": "Theorems 2, 3, 4.9 and Section 1.4: plane-Floer filtered complex underlying MATCH.",
+      "verification": "metadata-checked; proof-locators-in-archived-audits"
+    },
+    {
+      "id": "KM11",
+      "topic": "Strong inversions and categorification",
+      "authors": "Peter B. Kronheimer and Tomasz S. Mrowka",
+      "title": "Khovanov homology is an unknot-detector",
+      "publication": "arXiv:1005.4346v1",
+      "url": "https://arxiv.org/abs/1005.4346v1",
+      "role": "Reduced Khovanov rank-one detection; Euler characteristic alone is weaker.",
+      "verification": "metadata-checked"
+    },
+    {
+      "id": "HHS24",
+      "topic": "Braids, representations and class theorems",
+      "authors": "Mikami Hirasawa, Ryota Hiura and Makoto Sakuma",
+      "title": "The equivariant genera of marked strongly invertible knots associated with 2-bridge knots",
+      "publication": "arXiv:2312.06156v2",
+      "url": "https://arxiv.org/abs/2312.06156v2",
+      "role": "Proposition 2.2 supplies the scope distinction between side-preserving and side-exchanging inversions.",
+      "verification": "metadata-checked; proof-locator-in-archived-audit"
+    },
+    {
+      "id": "BIGELOW03",
+      "topic": "Braids, representations and class theorems",
+      "authors": "Stephen Bigelow",
+      "title": "Representations of braid groups",
+      "publication": "Proceedings of the ICM, Beijing 2002, vol. 2, 37–46; arXiv:math/0304212",
+      "url": "https://arxiv.org/abs/math/0304212",
+      "role": "Homological representations and pairings: background, not justification for an unproved specialization-faithfulness inference.",
+      "verification": "metadata-checked"
+    },
+    {
+      "id": "FUNARKOHNO14",
+      "topic": "Braids, representations and class theorems",
+      "authors": "Louis Funar and Toshitake Kohno",
+      "title": "On Burau representations at roots of unity",
+      "publication": "Geom. Dedicata 169 (2014), 145–163; arXiv:0907.0568v4",
+      "url": "https://arxiv.org/abs/0907.0568v4",
+      "role": "Section 3, particularly Proposition 3.5 and Lemma 3.4 on the odd sequence, in finite-index pattern arguments.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "JONESREZNIKOFF06",
+      "topic": "Braids, representations and class theorems",
+      "authors": "Vaughan F. R. Jones and Sarah A. Reznikoff",
+      "title": "Hilbert space representations of the annular Temperley–Lieb algebra",
+      "publication": "Pacific J. Math. 228 (2006)",
+      "url": "https://msp.org/pjm/2006/228-2/pjm-v228-n2-p02-p.pdf",
+      "role": "Section 2, Theorem 2.1 and preceding discussion: positive unitary specialization used in the TRUSTED constant-braid restriction.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "FLW02",
+      "topic": "Braids, representations and class theorems",
+      "authors": "Michael H. Freedman, Michael J. Larsen and Zhenghan Wang",
+      "title": "A modular functor which is universal for quantum computation",
+      "publication": "Commun. Math. Phys. 227 (2002), 605–622",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/universality-02.pdf",
+      "role": "Equations (14)–(15) for a unitary path model; no generic exact-gate universality is inferred.",
+      "verification": "archived-primary-audit"
+    },
+    {
+      "id": "BBB26",
+      "topic": "Version-specific proof discussions",
+      "authors": "Vasudha Bharathram, Joan S. Birman and Tara E. Brendle",
+      "title": "The Burau representation is faithful for n = 4",
+      "publication": "arXiv:2607.05283v2",
+      "url": "https://arxiv.org/pdf/2607.05283v2",
+      "role": "Version-specific preparation/parity/count package discussed in HUMAN_WORK_AND_CORRECTIONS; no nonfaithfulness conclusion.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "CC26",
+      "topic": "Version-specific proof discussions",
+      "authors": "Avishy Carmi and Eliahu Cohen",
+      "title": "On trivial Jones–Vassiliev polynomials",
+      "publication": "arXiv:2606.22410v1",
+      "url": "https://arxiv.org/pdf/2606.22410v1",
+      "role": "Proposition 5.12, Theorem 5.6 and Lemma 5.8: joint universal residual package challenged by the project’s explicit family.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "HLP99",
+      "topic": "Complexity",
+      "authors": "Joel Hass, Jeffrey C. Lagarias and Nicholas Pippenger",
+      "title": "The Computational Complexity of Knot and Link Problems",
+      "publication": "arXiv:math/9807016",
+      "url": "https://arxiv.org/abs/math/9807016",
+      "role": "Theorem 1.1: unknot recognition in NP; hypothesis for conditional Jones-triviality complexity statements.",
+      "verification": "metadata-checked; proof-locator-in-archived-audit"
+    },
+    {
+      "id": "LACKENBY21",
+      "topic": "Complexity",
+      "authors": "Marc Lackenby",
+      "title": "The efficient certification of knottedness and Thurston norm",
+      "publication": "arXiv:1604.00290v3",
+      "url": "https://arxiv.org/abs/1604.00290v3",
+      "role": "Theorem 1.1: knottedness in NP; no GRH assumption is needed for this input.",
+      "verification": "metadata-checked; proof-locator-in-archived-audit"
+    },
+    {
+      "id": "KUPERBERG15",
+      "topic": "Complexity",
+      "authors": "Greg Kuperberg",
+      "title": "How Hard Is It to Approximate the Jones Polynomial?",
+      "publication": "Theory of Computing 11 (6) (2015), 183–219; arXiv:0908.0512",
+      "url": "https://theoryofcomputing.org/articles/v011a006/",
+      "role": "Theorem 1.2 concerns promised root-value distinctions and Cook–Turing hardness, not exact full-polynomial many-one JT2 hardness.",
+      "verification": "primary-source-inspected"
+    },
+    {
+      "id": "WOCJANYARD",
+      "topic": "Complexity",
+      "authors": "Pawel Wocjan and Jon Yard",
+      "title": "The Jones polynomial: quantum algorithms and applications in quantum complexity theory",
+      "publication": "arXiv:quant-ph/0603069v3",
+      "url": "https://arxiv.org/abs/quant-ph/0603069v3",
+      "role": "Theorems 8.3–8.4 concern bits of normalized root evaluations, not the full unit fibre.",
+      "verification": "archived-primary-audit"
+    }
+  ]
+}

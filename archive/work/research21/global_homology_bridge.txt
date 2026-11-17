@@ -1,0 +1,146 @@
+GLOBAL BRIDGE AUDIT: ASYMPTOTIC CONTROL AND A GEOMETRIC LIFT
+Status: conditional full-solution scaffolds. None of the new coverage/lift
+assertions is proved. The Watson cap-window lemma remains subject to its
+separate geometric audit; the abstract two-triangle argument below does
+not depend on accepting that particular realization.
+
+1. WHAT IS GENUINELY WEAKER THAN A UNIFORM FIBER BOUND?
+
+For any fixed knot K, write r(K)=dim_Q reducedKh(K) and h(K)=its quantum
+diameter, with reduced U in (0,0). Kunneth gives
+  r(#^m K)=r(K)^m,       h(#^m K)=m h(K).
+
+For a Jones-one knot it therefore suffices to prove, along a subsequence
+m_k tending to infinity, either
+  log r(#^m_k K)=o(m_k),       or       h(#^m_k K)=o(m_k).
+A constant bound on the whole Jones-one fiber is unnecessary. These are
+weaker quantitative estimates than uniform boundedness, and they need
+only concern connected powers of one knot rather than an entire fiber.
+But on the unit fiber either condition is still equivalent to detection
+once the rank-one/zero-width endpoint is included. Renaming the condition
+as 'subexponential growth' does not prove a weaker theorem for free.
+
+2. A PRECISE GEOMETRIC BRIDGE USING PAIRED SKEIN MOVES
+
+Consider an actual oriented two-crossing configuration providing two
+normalized skein triangles with a common intermediate link and matching
+shifts on their knot terms. Let X and X' be those knot terms. Include in
+E the quantum supports of their cap-link terms with the exact shifts in
+the triangles. Exactness implies
+  Kh^{i,j}(X) ~= Kh^{i,j}(X') outside E
+for every i; use the adjacent homological cap groups as well when defining
+the full exceptional bidegree set. This is a formal consequence of exact
+sequences, not a positivity conjecture.
+
+For a path of such paired-skein moves, the endpoint support is contained
+in the starting support together with the UNION of all exceptional cap
+supports. Path length does not enter this support bound. The quantum
+interval controlling the union must include ABSOLUTE positions: bounding
+the diameter of each cap separately is not enough if their centers drift.
+
+NEW, UNPROVED GEOMETRIC LIFT TARGET:
+For every K with V_K=1 and a cofinal sequence m_k, construct actual
+paired-skein paths from #^m_k K to reference knots R_k such that the union
+of (i) the quantum support of R_k and (ii) every shifted cap support on the
+path is contained in one interval of length o(m_k).
+
+Then h(#^m_k K)=o(m_k), so h(K)=0. The reduced/unreduced exact sequence
+and rational Lee spectral sequence force reduced rank1, and KM gives U.
+All implications after the displayed geometric target are established.
+
+This formulation permits arbitrarily complicated templates and arbitrarily
+many moves. It is not subject to the fixed-template bridge-number bound.
+It also distinguishes the missing task from a bare homology inequality:
+one must lift equality in the decategorified skein module to a sequence of
+ACTUAL knot diagrams with controlled cap data. A formal skein expansion
+is a linear combination of links, and does not provide such a path.
+
+OFF-UNIT TEST / POSSIBLE GLOBAL VERSION:
+Ask whether two actual knots of a given Jones polynomial can be joined by
+such paths with cap windows controlled by that polynomial, allowing a
+specified finite list of reference supports. This is stronger and
+independently falsifiable. Neither Jones equality nor Watson's particular
+twisting theorem supplies this global lift.
+
+3. AN EXACT OBSTRUCTION TO THE MOST OBVIOUS CONSTRUCTION
+
+The geometric lift cannot be obtained by independently applying a fixed
+local move to each connected-sum factor. A cap link produced while only
+one factor is changed has the form
+  L_cap # K^{#(m-1)},
+with connected sum on its based component. The reduced connected-sum
+Kunneth formula, valid also when the based first factor is a link, gives
+
+  h(L_cap # K^{#(m-1)}) = h(L_cap)+(m-1)h(K).
+
+Thus if h(K)>0, even ONE such cap already has a linear-size quantum
+window. Shifts do not change this diameter. Any successful sublinear lift
+must reorganize many connected-sum factors jointly; repeated factorwise
+moves cannot work. This is a rigorous restriction on the proposed method,
+not evidence that the required global reorganization exists.
+
+4. AN ALTERNATIVE WITH AN ESTABLISHED GEOMETRIC UPPER BOUND
+
+There is a cleaner geometric quantity if one wants to leave quantum
+support and saddle maps behind. Define the reduced diagonal spread
+  d(K)=max(j/2-i)-min(j/2-i).
+It is additive under connected sum. The spanning quasi-tree model gives
+the established bound
+  d(K)<=g_T(K),
+where g_T is Turaev genus. This is a bound on DIAGONAL spread, not the
+quantum diameter h above.
+
+Primary sources:
+Champanerkar--Kofman--Stoltzfus, Graphs on surfaces and Khovanov homology,
+https://www.math.csi.cuny.edu/~ikofman/dkh_agt.pdf
+Dasbach--Lowrance, A Turaev surface approach to Khovanov homology,
+https://ems.press/content/serial-article-files/36798 , Theorem1.3.
+Their reduced width convention is d+1, hence width<=g_T+1 is exactly the
+inequality used here.
+
+NEW, UNPROVED GEOMETRIC TARGET:
+  V_K=1 => liminf_{m->infinity} g_T(#^m K)/m=0.
+
+The complete implication chain is
+  m d(K)=d(#^m K)<=g_T(#^m K), hence d(K)=0.
+If reduced Kh is supported on one diagonal j/2-i=constant, then for each
+j there is at most one possible i. Thus there is no Euler cancellation
+at any quantum grade. Euler polynomial1 forces total reduced rank1.
+KM gives the unknot. Lee theory is not needed for this diagonal version.
+
+This requires only a sublinear Turaev-genus estimate, not bounded crossing
+number, bridge number, number of templates, or full Kh rank. It supplies a
+concrete established geometric-to-categorical inequality followed by one
+missing topological bridge. However that new bridge is unsupported here,
+and on the unit fiber its conclusion again implies the full conjecture.
+The known general inequality g_T<=crossing number-Jones span does NOT
+give it: at Jones span0 it only says g_T<=crossing number.
+
+An unconditional consequence is that a nontrivial Jones-one K would have
+d(K)>=1 and therefore g_T(#^m K)>=m. Thus a candidate sublinear diagram
+construction would be decisive; a generic linear diagram estimate would
+not be enough.
+
+5. STRATEGIC CONCLUSION
+
+Finite fixed templates cannot contain all connected powers of a
+nontrivial knot when their bridge numbers are uniformly bounded. Replacing
+that failed coverage statement by 'many templates' without tracking their
+cap windows merely hides the same gap.
+
+The two defensible replacements are:
+  (A) a globally coordinated paired-skein lift with sublinear total cap
+      window, using the exact support lemma; or
+  (B) sublinear Turaev genus for connected powers, using the established
+      diagonal-width bound.
+Neither is established. Route(A) has the sharper immediate kill test:
+factorwise moves provably fail, so a proposed construction must visibly
+couple multiple summands. Route(B) has the cleaner geometric endpoint but
+currently no proposed mechanism producing its needed diagrams.
+
+Endpoint and normalization reference:
+Kronheimer--Mrowka, Khovanov homology is an unknot-detector,
+https://arxiv.org/abs/1005.4346 . Rational reduced rank1 suffices by their
+instanton rank inequality; the mirror in the spectral sequence has the
+same rank. Reduced tensor normalization and the zero-quantum-spread Lee
+endpoint are detailed in work/research20/homology_scaffold.txt.

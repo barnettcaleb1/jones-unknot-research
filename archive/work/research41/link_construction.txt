@@ -1,0 +1,59 @@
+PASS 41: BOUNDED SEARCH FOR A DIFFERENT EXACT JONES-TRIVIAL LINK INPUT
+Outcome: no new actual link-to-knot construction was obtained. Stop here.
+This is a targeted search result, not a claim to classify all published
+Jones-trivial links or prove that an undiscovered construction is impossible.
+
+Before searching, checked the existing EKT obstruction in
+band_obstructions.md and pass3/tangle_notes.md; the LLL1 marked-band work
+in research33--37; and research30/homology_global.txt. Thus neither a
+single rational replacement of an EKT two-component seed, another scan
+of the sixteen excluded marked LLL1 pairs, nor treating Kauffman's
+closed-component scalar tangle as two arcs was reconsidered.
+
+Primary sources actually located:
+
+1. Thistlethwaite, Links with trivial Jones polynomial:
+https://homepages.math.uic.edu/~kauffman/tj.pdf
+The stated examples are two- and three-component Hopf satellites, the
+same source of the already studied constructions. The PDF's text layer
+is garbled, so this pass does not newly claim to reconstruct its figures.
+
+2. Eliahou--Kauffman--Thistlethwaite, Infinite families of links with
+trivial Jones polynomial, Topology42(2003),155--169:
+https://homepages.math.uic.edu/~kauffman/ekt.pdf
+The authors' explanatory page is
+https://web.math.utk.edu/~mthistle/ekt.html .
+The general theorem adds components while multiplying the polynomial
+by the two-component-unlink factor. It does not supply an inverse
+geometric operation dividing that factor while producing a knot. Its
+split-link connected-sum observation starts with an actual split link;
+it cannot be applied to the prime Jones-trivial examples merely because
+their polynomials equal those of split unlinks.
+
+3. Kauffman, Detecting Links With The Jones Polynomial:
+https://homepages.math.uic.edu/~kauffman/MLinks.pdf
+This is the scalar-tangle construction already audited in research30.
+The closed-component obstruction is retained; it is not a new seed.
+
+4. The distinct constructive hit is Eliahou--Fromentin,
+A remarkable 20-crossing tangle, JKTR26(2017),1750091:
+https://arxiv.org/abs/1610.05560 .
+It produces actual prime knots K_r with V(K_r) congruent to1 modulo2^r,
+using a tangle bracket pair congruent to the trivial pair modulo2.
+Those are congruences for different knots as r grows. This is not an
+exact Jones-unlink input, not one knot satisfying all moduli, and not an
+operation known to preserve an exact unit polynomial. No limiting knot
+or cancellation of the remaining integral defect is provided by the
+abstracted construction. It therefore does not answer this pass's task.
+
+Additional search hits for nontrivial knots with trivial Q-polynomial
+concern a different invariant. They were not counted as Jones examples.
+Virtual Jones-one examples were also excluded from this search: the
+previous pass already completed the chosen genus-one Heegaard test.
+
+No new PD, surgery certificate, or candidate knot is asserted. There is
+no reason to spend the remainder of this pass re-enumerating the known
+families under a different name. A genuinely new next input must include
+an exact classical diagram and an operation whose full skein relation
+is verified, together with independent nontriviality data; none was
+found in this bounded search.

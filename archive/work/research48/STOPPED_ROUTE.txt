@@ -1,0 +1,47 @@
+PASS48 STOP RECORD -- 1 November 2026
+
+Previous turn classification: NO PROGRESS for the immediate final
+consolidation turn: it reread the existing pass47 report and restated the
+same torsion endpoint. The preceding substantive pass47 did make progress.
+This turn revalidated the current files and tested the marked geometry.
+
+Current turn: PROGRESS. No proof/counterexample; goal remains active.
+
+New research theorem: for a knot intersecting an annulus on S2 exactly
+once, infinitely many Jones-one opposite-twist outputs force all outputs
+Jones-one and relative-solid-torus skein equal an elementary arc, up to
+framing, with boundary linking magnitudes {0,1}. Fusion |j-l|=1 gives
+distinct frequencies. Pure graph coefficient is integral by its unique
+identity-resolution crossingless diagram of cut bidegree (j,l), coefficient1.
+Theta closure Delta_max and A1 divisibility force max1. Source graph
+conventions visually checked; second independent agent audited primitivity,
+normalization, and twist ratio. This is internal verification, no novelty
+claim or external peer review. Source: Abernathy--Gilmer NYJM22(2016),
+Sections3--5; Taylor2506.11226 §5 supplies actual marked geometric setup.
+
+Do NOT transfer zero-puncture/equal-winding diagonal cancellation into
+this one-puncture setting. Do NOT equate skein elementary with geometric
+boundary-parallel. The new endpoint still requires an ACTUAL nontrivial
+arc with elementary skein and an unknot anchor/Taylor incompressibility.
+If supplied with correct winding, Taylor gives nontriviality for |n|>=2
+and the spectral formula gives Jones1 for all n. No such arc constructed.
+
+Canonical J1 torsion cuts after S3 filling have N=U2,D=U geometrically.
+Scharlemann forces rational tangle, N determinant0 forces fraction0.
+Thus arbitrary COMMON replacements after canonical cuts give isotopic
+unframed outputs. No further local replacement search on these cuts.
+
+Noncanonical relative lift needs full bracket vector equality in ball4
+module R^2, not one closure value. This is a nonrational unlinkable tangle
+with trivial full bracket vector; its existence is missing. This branch
+returns to previous fusion-one ribbon/Wang P_b=0 question. J1 available
+for every one-band ribbon presentation; absolute relation adds no band
+constraint. Do not repackage this as a new generic proof route.
+
+Two-neck-intersection torsion candidate P-y factors into one-axis patterns
+with brackets +/-A^r*x1 and reciprocal*x2. Thus new interaction requires
+at least four reducing-sphere intersections. Slope-preserving sphere
+homeomorphisms extend over filling and preserve spanning disks.
+
+No live computation remains. All agents completed. User report:
+outputs/jones-annulus-and-marked-torsion-audit.txt

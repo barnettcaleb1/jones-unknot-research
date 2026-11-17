@@ -1,0 +1,100 @@
+ALL INTEGER REACTION POWERS FOR ONE ACTUAL NONRATIONAL DNA TANGLE
+
+Status: exact deduction and reproducible calculation, not a generic Jones
+unknot theorem and not a claim that the underlying near-miss is new.
+
+Let X=<-1>+<1/2>+<1/3>, with the rational-tangle convention implemented by
+Spherogram. Its double branched cover is Seifert over D^2 with exceptional
+orders2,3. Its group has nonabelian quotient C2*C3, so the cover is not a
+solid torus and X is nonrational. The numerator closure N(X) is an actual
+unknot. For j=1, N(X+<1>) is the negative (2,5) torus knot. A rational
+comparator R=<1/4> has exactly the same two unframed products. The two
+five-crossing reduced PD diagrams have identical crossing sets, and both
+zero-probe closures reduce to the crossing-free unknot.
+
+Ernst--Sumners, "Solving tangle equations arising in a DNA recombination
+model", Math. Proc. Camb. Phil. Soc.126 (1999), Example3 pp33--34,
+DOI10.1017/S0305004198002989, already contains the equivalent ambiguity.
+The parent investigator located that precedent. This reconstruction adds
+no novelty claim concerning that example.
+
+CLAIM: For this fixed X, any nonzero integer j and rational R with
+N(R)=U and V(N(R+<j>))=V(N(X+<j>)) must have j=1 and R=<1/4>.
+Furthermore this sole match never lifts to a common framed system.
+
+1. Every rational tangle with unknot numerator is R=<1/k>, k in Z;
+k=0 includes infinity. The Montesinos determinant formula gives
+ det N(X+<j>)=|6j-1|, det N(<1/k>+<j>)=|1+jk|.
+Consequently a Jones match requires either k=-6 or j(k-6)=-2.
+The latter gives exactly four integer pairs:
+ (j,k)=(1,4),(2,5),(-1,8),(-2,7).
+All four have knot closures. The script checks their full Jones polynomials;
+only (1,4) agrees. No bound on j or k was used.
+
+2. Exclude k=-6 for every j!=0. Use delta=-A^2-A^-2 and algebra e^2=delta e,
+with b=A^-1+Ae, the convention of our earlier TL2 script. This A is inverse
+to the usual Spherogram Jones A. For T=f+ge and F_j=N(T b^j),
+ delta A^j F_j=(delta^2-1)f+(-1)^j A^(4j)(f+delta g).
+This identity holds for every integer j, because the two eigenvalues of b
+are A^-1 and -A^3 and b is invertible.
+
+The actual diagram writhes, in Spherogram convention, are
+ w_X(j)=-j-4 if j odd, and -j if j even;
+ w_R(j)=6-j if j odd, and -6-j if j even, for R=<-1/6>.
+These follow by orienting the two parity diagrams: adding two signed twists
+returns the endpoint connectivity and reduces writhe by2. The script also
+checks every integer -10<=j<=10 independently from actual diagrams.
+
+Since our formal A is inverted, normalized Jones equality is
+ F_X,j=A^30 F_R,j for odd j, and F_X,j=A^-18 F_R,j for even j.
+Apply the preceding two-eigenvalue formula to each difference. Write its
+right side as C0+(-1)^j A^(4j) C1. Exact Laurent arithmetic gives:
+ EVEN: C0=A^6+A^-2-A^-18-A^-26, C1=-C0.
+ Thus equality forces A^(4j)=1, hence j=0.
+ ODD: minimum exponent of both C0,C1 is -14, but their maximum exponents
+ are50 and46 respectively, with nonzero extreme coefficients.
+ Equality C0=A^(4j)C1 would force j=0 from the minima and j=1 from the maxima,
+ a contradiction. The full coefficient dictionaries are in the JSON.
+This excludes the entire k=-6 branch.
+
+3. Framing at the sole remaining pair. Standard Spherogram writhes for the
+first outputs are0 (X) and4 (R); for the second outputs they are both-5.
+Thus in the standard A convention the first brackets are1 andA^12, while
+the second brackets agree exactly. Changing the framing of X or R multiplies
+both its output brackets by the SAME power of -A^3. No single such adjustment
+can simultaneously erase a four-twist defect in the first product and a
+zero-twist defect in the second. The probes can also be reframed, but that
+changes both competing outputs equally and does not repair the mismatch.
+The argument is valid in Sikora's balanced framed category as well.
+
+This is a complete processive classification for the fixed X, including
+negative reaction powers and infinity comparator. It does not classify
+other tangles or more general rational probe pairs.
+
+A CONCRETE MIRROR REPAIR AND WHY IT FAILS
+Vertically stack X with its mirror and do the same with R. The numerator
+closure of the stack is the connected sum of the two numerator closures,
+so both zero-probe outputs are actual unknots. The algebraic framing defects
+indeed cancel there. Add a single crossing probe: the rational stack still
+closes to an unknot, but the X stack closes to the actual knot10_153.
+The script mirror_geometry.py verifies this by reducing the diagram and
+matching its complete PD crossing set with Link('10_153'), not merely by
+matching an invariant. Its Jones polynomial is
+ -t^4+t^3-t^2+t+1+t^-2-t^-3+t^-4-t^-5,
+so the proposed repair fails at the second measured channel.
+
+An exact obstruction extends this failed repair beyond the tested mirror:
+under vertical composition the infinity coefficient g multiplies. For X,
+ g_X=A^4+A^-8-A^-12
+in the formal inverse-A convention. This is not a Laurent-ring unit. Therefore
+no finite vertical stack containing X, with any additional actual tangles
+and arbitrary framing twists, can have bracket (0,1): it would require g_X
+times another Laurent polynomial to equal1. This applies the previously
+proved rank-two unit obstruction to the present construction. Its scope is
+the exact rational-infinity bracket target, not every possible Jones-one
+closure of every possible stack.
+
+Independent audit: the braid agent checked the all-integer proof, reran the
+actual diagrams and four exceptions, and independently evaluated16 positive
+and negative k=-6 examples in the original X+<j> order using Regina.
+See work/try8/audit/processive_audit.txt and processive_regina_audit.json.

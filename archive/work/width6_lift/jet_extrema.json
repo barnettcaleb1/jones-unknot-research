@@ -1,0 +1,460 @@
+{
+  "variables": "q=s^2; t=-s^-2(1+u)",
+  "identity": "d_u^2 L_raw|0=-2(s^2-s^-2)^2 J_hat",
+  "samples": [
+    {
+      "label": "Bigelow_nonzero",
+      "word": [
+        -1,
+        2,
+        5,
+        -4,
+        3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1,
+        -1,
+        2,
+        5,
+        -4,
+        -3,
+        4,
+        -5,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        -5,
+        -5,
+        4,
+        -3,
+        -4,
+        5,
+        5,
+        2,
+        -1,
+        -1
+      ],
+      "i": 7,
+      "j": 7,
+      "J_hat": {
+        "10": 1,
+        "8": -1,
+        "4": 2,
+        "2": -3,
+        "0": 4,
+        "-2": 1,
+        "-4": -4,
+        "-6": 6,
+        "-8": -3,
+        "-12": 4,
+        "-14": -4,
+        "-16": 2,
+        "-20": -2,
+        "-22": 1
+      },
+      "J_top_s_degree": 10,
+      "J_leading_coefficient": 1,
+      "P_top_specialized_s_degree": 12,
+      "P_top_line_terms": [
+        {
+          "s_exponent": 8,
+          "t_exponent": -2,
+          "coefficient": 1,
+          "specialized_contribution": 1
+        }
+      ],
+      "raw_second_jet_top_s_degree": 14,
+      "raw_second_jet_leading_coefficient": -2,
+      "raw_terms": 158,
+      "collapsed_top_line_terms": 3,
+      "nonzero_weight_top_line_terms": 3,
+      "top_line_t_exponents": [
+        -4,
+        -3,
+        -2
+      ],
+      "nonzero_top_line_t_exponents": [
+        -4,
+        -3,
+        -2
+      ],
+      "positive_contribution_sum": 24,
+      "negative_contribution_sum": -26,
+      "contributions": [
+        {
+          "s_exponent": 6,
+          "t_exponent": -4,
+          "coefficient": -1,
+          "derivative_weight": 20,
+          "weighted_contribution": -20
+        },
+        {
+          "s_exponent": 8,
+          "t_exponent": -3,
+          "coefficient": -2,
+          "derivative_weight": 12,
+          "weighted_contribution": 24
+        },
+        {
+          "s_exponent": 10,
+          "t_exponent": -2,
+          "coefficient": -1,
+          "derivative_weight": 6,
+          "weighted_contribution": -6
+        }
+      ],
+      "interpretation": "Aggregated polynomial monomials; no geometric intersection-point identities."
+    },
+    {
+      "label": "LP_nonzero",
+      "word": [
+        -1,
+        2,
+        3,
+        -4,
+        -5,
+        -1,
+        -1,
+        -1,
+        3,
+        3,
+        3,
+        2,
+        -4,
+        3,
+        -5,
+        4,
+        5,
+        -4,
+        5,
+        -3,
+        4,
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        1,
+        1,
+        5,
+        4,
+        -3,
+        -2,
+        1,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        2,
+        3,
+        4,
+        5,
+        -1,
+        2,
+        3,
+        -4,
+        -5,
+        -1,
+        -1,
+        -1,
+        3,
+        3,
+        3,
+        2,
+        -4,
+        3,
+        -5,
+        4,
+        -5,
+        -4,
+        5,
+        -3,
+        4,
+        -2,
+        -3,
+        -3,
+        -3,
+        1,
+        1,
+        1,
+        5,
+        4,
+        -3,
+        -2,
+        1,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2,
+        -5,
+        -4,
+        -3,
+        -2
+      ],
+      "i": 7,
+      "j": 7,
+      "J_hat": {
+        "40": 1,
+        "38": -8,
+        "36": 31,
+        "34": -67,
+        "32": 53,
+        "30": 175,
+        "28": -820,
+        "26": 1860,
+        "24": -2679,
+        "22": 1979,
+        "20": 1573,
+        "18": -7957,
+        "16": 14562,
+        "14": -16520,
+        "12": 9331,
+        "10": 7317,
+        "8": -27334,
+        "6": 40152,
+        "4": -36605,
+        "2": 15309,
+        "0": 15148,
+        "-2": -40358,
+        "-4": 48336,
+        "-6": -36361,
+        "-8": 11983,
+        "-10": 12176,
+        "-12": -25901,
+        "-14": 26225,
+        "-16": -17175,
+        "-18": 5738,
+        "-20": 2583,
+        "-22": -5918,
+        "-24": 5434,
+        "-26": -3389,
+        "-28": 1502,
+        "-30": -415,
+        "-32": 10,
+        "-34": 56,
+        "-36": -30,
+        "-38": 8,
+        "-40": -1
+      },
+      "J_top_s_degree": 40,
+      "J_leading_coefficient": 1,
+      "P_top_specialized_s_degree": 42,
+      "P_top_line_terms": [
+        {
+          "s_exponent": 42,
+          "t_exponent": 0,
+          "coefficient": 1,
+          "specialized_contribution": 1
+        }
+      ],
+      "raw_second_jet_top_s_degree": 44,
+      "raw_second_jet_leading_coefficient": -2,
+      "raw_terms": 1016,
+      "collapsed_top_line_terms": 3,
+      "nonzero_weight_top_line_terms": 2,
+      "top_line_t_exponents": [
+        -2,
+        -1,
+        0
+      ],
+      "nonzero_top_line_t_exponents": [
+        -2,
+        -1
+      ],
+      "positive_contribution_sum": 4,
+      "negative_contribution_sum": -6,
+      "contributions": [
+        {
+          "s_exponent": 40,
+          "t_exponent": -2,
+          "coefficient": -1,
+          "derivative_weight": 6,
+          "weighted_contribution": -6
+        },
+        {
+          "s_exponent": 42,
+          "t_exponent": -1,
+          "coefficient": -2,
+          "derivative_weight": 2,
+          "weighted_contribution": 4
+        },
+        {
+          "s_exponent": 44,
+          "t_exponent": 0,
+          "coefficient": -1,
+          "derivative_weight": 0,
+          "weighted_contribution": 0
+        }
+      ],
+      "interpretation": "Aggregated polynomial monomials; no geometric intersection-point identities."
+    },
+    {
+      "label": "simple_nonzero",
+      "word": [
+        2
+      ],
+      "i": 7,
+      "j": 7,
+      "J_hat": {
+        "0": 1,
+        "-2": 1
+      },
+      "J_top_s_degree": 0,
+      "J_leading_coefficient": 1,
+      "P_top_specialized_s_degree": 2,
+      "P_top_line_terms": [
+        {
+          "s_exponent": 4,
+          "t_exponent": 1,
+          "coefficient": -1,
+          "specialized_contribution": 1
+        }
+      ],
+      "raw_second_jet_top_s_degree": 4,
+      "raw_second_jet_leading_coefficient": -2,
+      "raw_terms": 28,
+      "collapsed_top_line_terms": 3,
+      "nonzero_weight_top_line_terms": 1,
+      "top_line_t_exponents": [
+        -1,
+        0,
+        1
+      ],
+      "nonzero_top_line_t_exponents": [
+        -1
+      ],
+      "positive_contribution_sum": 0,
+      "negative_contribution_sum": -2,
+      "contributions": [
+        {
+          "s_exponent": 2,
+          "t_exponent": -1,
+          "coefficient": 1,
+          "derivative_weight": 2,
+          "weighted_contribution": -2
+        },
+        {
+          "s_exponent": 4,
+          "t_exponent": 0,
+          "coefficient": 2,
+          "derivative_weight": 0,
+          "weighted_contribution": 0
+        },
+        {
+          "s_exponent": 6,
+          "t_exponent": 1,
+          "coefficient": 1,
+          "derivative_weight": 0,
+          "weighted_contribution": 0
+        }
+      ],
+      "interpretation": "Aggregated polynomial monomials; no geometric intersection-point identities."
+    },
+    {
+      "label": "arc_noncancellation",
+      "word": [
+        2,
+        1,
+        -2,
+        3,
+        2,
+        -3
+      ],
+      "i": 3,
+      "j": 7,
+      "J_hat": {
+        "-2": 1
+      },
+      "J_top_s_degree": -2,
+      "J_leading_coefficient": 1,
+      "P_top_specialized_s_degree": 0,
+      "P_top_line_terms": [
+        {
+          "s_exponent": 2,
+          "t_exponent": 1,
+          "coefficient": -1,
+          "specialized_contribution": 1
+        }
+      ],
+      "raw_second_jet_top_s_degree": 2,
+      "raw_second_jet_leading_coefficient": -2,
+      "raw_terms": 19,
+      "collapsed_top_line_terms": 3,
+      "nonzero_weight_top_line_terms": 1,
+      "top_line_t_exponents": [
+        -1,
+        0,
+        1
+      ],
+      "nonzero_top_line_t_exponents": [
+        -1
+      ],
+      "positive_contribution_sum": 0,
+      "negative_contribution_sum": -2,
+      "contributions": [
+        {
+          "s_exponent": 0,
+          "t_exponent": -1,
+          "coefficient": 1,
+          "derivative_weight": 2,
+          "weighted_contribution": -2
+        },
+        {
+          "s_exponent": 2,
+          "t_exponent": 0,
+          "coefficient": 2,
+          "derivative_weight": 0,
+          "weighted_contribution": 0
+        },
+        {
+          "s_exponent": 4,
+          "t_exponent": 1,
+          "coefficient": 1,
+          "derivative_weight": 0,
+          "weighted_contribution": 0
+        }
+      ],
+      "interpretation": "Aggregated polynomial monomials; no geometric intersection-point identities."
+    }
+  ]
+}

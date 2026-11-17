@@ -1,0 +1,153 @@
+n=6 word=010212343545 eps=+--+-- even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=++-+-- even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=+--++- even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=++-++- even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=+----+ even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=++---+ even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=+---++ even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010212343545 eps=++--++ even=False parity=101101 NOT-FOUND explored=40001
+n=6 word=010213245354 eps=++-+-- even=False parity=100111 TRIVIAL len=8 explored=15696
+n=6 word=010213432545 eps=+-++-- even=False parity=100111 NOT-FOUND explored=1801
+n=6 word=010213432545 eps=++--+- even=False parity=100111 NOT-FOUND explored=1801
+n=6 word=010213432545 eps=+-+--+ even=False parity=100111 NOT-FOUND explored=363
+n=6 word=010213454325 eps=++---+ even=False parity=100111 NOT-FOUND explored=381
+n=6 word=010231245354 eps=++-+-- even=False parity=110011 NOT-FOUND explored=40001
+n=6 word=010231425345 eps=+-++-- even=False parity=111010 NOT-FOUND explored=1801
+n=6 word=010231425345 eps=+--++- even=False parity=111010 NOT-FOUND explored=1801
+n=6 word=010231425354 eps=+-++-- even=False parity=111001 NOT-FOUND explored=40001
+n=6 word=010231425435 eps=++--+- even=False parity=111100 TRIVIAL len=4 explored=37614
+n=6 word=010231425435 eps=+-+-+- even=False parity=111100 TRIVIAL len=4 explored=31823
+n=6 word=010231425435 eps=++---+ even=False parity=111100 TRIVIAL len=4 explored=38919
+n=6 word=010231425435 eps=+--+-+ even=False parity=111100 TRIVIAL len=4 explored=15602
+n=6 word=010231432545 eps=+---+- even=False parity=110011 NOT-FOUND explored=40001
+n=6 word=010231432545 eps=+-+++- even=False parity=110011 NOT-FOUND explored=40001
+n=6 word=010231452435 eps=+-++-- even=False parity=110101 TRIVIAL len=7 explored=15696
+n=6 word=010231452435 eps=+-+--+ even=False parity=110101 NOT-FOUND explored=40001
+n=6 word=010231452534 eps=+-++-- even=False parity=110101 NOT-FOUND explored=1432
+n=6 word=010231452543 eps=+++--- even=False parity=110011 NOT-FOUND explored=2919
+n=6 word=010231345254 eps=+++--- even=False parity=111111 NOT-FOUND explored=2919
+n=6 word=010231345254 eps=+---++ even=False parity=111111 NOT-FOUND explored=2919
+n=6 word=010231435254 eps=+-++-- even=False parity=111001 NOT-FOUND explored=1432
+n=6 word=010231435425 eps=+-+-+- even=False parity=110000 TRIVIAL len=4 explored=26149
+n=6 word=010231435425 eps=+--+-+ even=False parity=110000 TRIVIAL len=4 explored=26148
+n=6 word=010231453524 eps=+-++-- even=False parity=110101 NOT-FOUND explored=40001
+n=6 word=010231454325 eps=+----+ even=False parity=110011 NOT-FOUND explored=1137
+n=6 word=010231454325 eps=+-++-+ even=False parity=110011 NOT-FOUND explored=1137
+n=6 word=010232145354 eps=+-++-- even=False parity=101011 NOT-FOUND explored=2919
+n=6 word=010234125354 eps=+-++-- even=False parity=101011 NOT-FOUND explored=1432
+n=6 word=010234125354 eps=+--++- even=False parity=101011 NOT-FOUND explored=1432
+n=6 word=010232415345 eps=+--++- even=False parity=111010 NOT-FOUND explored=1432
+n=6 word=010234125435 eps=+-+--- even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010234125435 eps=+++--- even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010232451354 eps=+--+-- even=False parity=101000 NOT-FOUND explored=40001
+n=6 word=010232451354 eps=+--+++ even=False parity=101000 NOT-FOUND explored=40001
+n=6 word=010232415354 eps=++-+-- even=False parity=111001 NOT-FOUND explored=40001
+n=6 word=010232415354 eps=+-++-- even=False parity=111001 NOT-FOUND explored=40001
+n=6 word=010232415354 eps=+-+-+- even=False parity=111001 NOT-FOUND explored=367
+n=6 word=010232415354 eps=+--+-+ even=False parity=111001 NOT-FOUND explored=2919
+n=6 word=010232415354 eps=+---++ even=False parity=111001 NOT-FOUND explored=2919
+n=6 word=010234152435 eps=++---+ even=False parity=100111 TRIVIAL len=4 explored=37985
+n=6 word=010234152435 eps=+-+--+ even=False parity=100111 TRIVIAL len=4 explored=38287
+n=6 word=010234152543 eps=+-+--- even=False parity=100001 NOT-FOUND explored=378
+n=6 word=010234152543 eps=+-+++- even=False parity=100001 NOT-FOUND explored=378
+n=6 word=010234135254 eps=+-++-- even=False parity=101011 NOT-FOUND explored=40001
+n=6 word=010234153245 eps=++---+ even=False parity=101101 NOT-FOUND explored=2919
+n=6 word=010234153245 eps=+---++ even=False parity=101101 NOT-FOUND explored=2919
+n=6 word=010234153254 eps=+---+- even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010234153254 eps=++--+- even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010234145235 eps=+---++ even=False parity=101110 TRIVIAL len=4 explored=33250
+n=6 word=010234145235 eps=++--++ even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010234145325 eps=++---- even=False parity=100010 NOT-FOUND explored=4789
+n=6 word=010234145325 eps=++++-- even=False parity=100010 NOT-FOUND explored=396
+n=6 word=010234145325 eps=+----+ even=False parity=100010 NOT-FOUND explored=396
+n=6 word=010234145325 eps=+-++-+ even=False parity=100010 NOT-FOUND explored=4789
+n=6 word=010234153452 eps=+-+--+ even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010234153452 eps=+++--+ even=False parity=101110 NOT-FOUND explored=40001
+n=6 word=010232414535 eps=+++--- even=False parity=111111 NOT-FOUND explored=404
+n=6 word=010232414535 eps=++-+-- even=False parity=111111 NOT-FOUND explored=202
+n=6 word=010232414535 eps=+-++-- even=False parity=111111 NOT-FOUND explored=404
+n=6 word=010232414535 eps=+-+-+- even=False parity=111111 NOT-FOUND explored=202
+n=6 word=010232414535 eps=++---+ even=False parity=111111 NOT-FOUND explored=404
+n=6 word=010232414535 eps=+-+--+ even=False parity=111111 NOT-FOUND explored=202
+n=6 word=010232414535 eps=+--+-+ even=False parity=111111 NOT-FOUND explored=404
+n=6 word=010232414535 eps=+---++ even=False parity=111111 NOT-FOUND explored=202
+n=6 word=010232415435 eps=+--++- even=False parity=111100 NOT-FOUND explored=40001
+n=6 word=010234215435 eps=+++--- even=False parity=110110 NOT-FOUND explored=40001
+n=6 word=010234215435 eps=++---+ even=False parity=110110 NOT-FOUND explored=40001
+n=6 word=010234512435 eps=+++--- even=False parity=110110 NOT-FOUND explored=2919
+n=6 word=010234512435 eps=++---+ even=False parity=110110 NOT-FOUND explored=2919
+n=6 word=010234515243 eps=++---- even=False parity=111001 NOT-FOUND explored=1137
+n=6 word=010234515243 eps=+-+--- even=False parity=111001 NOT-FOUND explored=1137
+n=6 word=010234515243 eps=++-++- even=False parity=111001 NOT-FOUND explored=1137
+n=6 word=010234515243 eps=+-+++- even=False parity=111001 NOT-FOUND explored=1137
+n=6 word=012031425345 eps=+--++- even=False parity=010010 NOT-FOUND explored=40001
+n=6 word=012031425435 eps=+--++- even=False parity=010100 NOT-FOUND explored=742
+n=6 word=012031435245 eps=+---+- even=False parity=010010 NOT-FOUND explored=40001
+n=6 word=012031435245 eps=+-+-+- even=False parity=010010 NOT-FOUND explored=40001
+n=6 word=012031435245 eps=+--++- even=False parity=010010 NOT-FOUND explored=40001
+n=6 word=012031435245 eps=+-+++- even=False parity=010010 NOT-FOUND explored=40001
+n=6 word=012031453245 eps=+---++ even=False parity=010111 NOT-FOUND explored=40001
+n=6 word=012031435425 eps=+-++-- even=False parity=011000 NOT-FOUND explored=40001
+n=6 word=012031435425 eps=+-+++- even=False parity=011000 NOT-FOUND explored=40001
+n=6 word=012031435425 eps=++---+ even=False parity=011000 NOT-FOUND explored=40001
+n=6 word=012031435425 eps=++--++ even=False parity=011000 NOT-FOUND explored=40001
+n=6 word=012031453425 eps=+-++-- even=False parity=011101 TRIVIAL len=5 explored=39145
+n=6 word=012031453425 eps=+-+++- even=False parity=011101 NOT-FOUND explored=40001
+n=6 word=012031453425 eps=++---+ even=False parity=011101 TRIVIAL len=5 explored=39145
+n=6 word=012031453425 eps=+--+-+ even=False parity=011101 TRIVIAL len=5 explored=36958
+n=6 word=012031453425 eps=++--++ even=False parity=011101 NOT-FOUND explored=40001
+n=6 word=012034125345 eps=+++--+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034125345 eps=+--+++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034152435 eps=+-+--+ even=False parity=001111 TRIVIAL len=5 explored=15674
+n=6 word=012034135245 eps=++---- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+-+--- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+++--- even=True parity=000000 TRIVIAL len=4 explored=14912
+n=6 word=012034135245 eps=+--+-- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=++-+-- even=True parity=000000 TRIVIAL len=4 explored=14912
+n=6 word=012034135245 eps=++++-- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+++-+- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=++-++- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+----+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+-+--+ even=True parity=000000 TRIVIAL len=4 explored=14912
+n=6 word=012034135245 eps=+++--+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034135245 eps=+-+-++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012034153245 eps=+-++-- even=False parity=000101 NOT-FOUND explored=40001
+n=6 word=012034153245 eps=+-+++- even=False parity=000101 NOT-FOUND explored=40001
+n=6 word=012034153245 eps=++---+ even=False parity=000101 NOT-FOUND explored=40001
+n=6 word=012034153245 eps=++--++ even=False parity=000101 NOT-FOUND explored=40001
+n=6 word=012034153254 eps=+---++ even=False parity=000110 NOT-FOUND explored=742
+n=6 word=012032451354 eps=++---- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032451354 eps=++--++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032415435 eps=+--++- even=False parity=010100 NOT-FOUND explored=194
+n=6 word=012034215435 eps=+++--- even=False parity=011110 NOT-FOUND explored=40001
+n=6 word=012034512534 eps=+++--- even=False parity=011110 NOT-FOUND explored=40001
+n=6 word=012034512534 eps=+--++- even=False parity=011110 NOT-FOUND explored=40001
+n=6 word=012034251435 eps=+-+--+ even=False parity=001111 TRIVIAL len=6 explored=15696
+n=6 word=012034521345 eps=+++--- even=True parity=000000 TRIVIAL len=4 explored=30861
+n=6 word=012032453145 eps=++-+-- even=False parity=010111 TRIVIAL len=4 explored=32880
+n=6 word=012032453145 eps=+---++ even=False parity=010111 TRIVIAL len=4 explored=32880
+n=6 word=012032453154 eps=+--+-- even=False parity=010100 NOT-FOUND explored=40001
+n=6 word=012032453154 eps=+--+++ even=False parity=010100 NOT-FOUND explored=40001
+n=6 word=012034253145 eps=++-+-- even=False parity=011101 TRIVIAL len=4 explored=37647
+n=6 word=012034253145 eps=++-++- even=False parity=011101 NOT-FOUND explored=40001
+n=6 word=012034253145 eps=+-+--+ even=False parity=011101 TRIVIAL len=4 explored=37647
+n=6 word=012034253145 eps=+--+-+ even=False parity=011101 TRIVIAL len=4 explored=36200
+n=6 word=012034253145 eps=+-+-++ even=False parity=011101 NOT-FOUND explored=40001
+n=6 word=012034253145 eps=+--+++ even=False parity=011101 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=++---- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=+-+--- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=+++--- even=True parity=000000 TRIVIAL len=5 explored=16314
+n=6 word=012032435415 eps=+-++-- even=True parity=000000 TRIVIAL len=5 explored=16314
+n=6 word=012032435415 eps=++++-- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=+-+++- even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=++---+ even=True parity=000000 TRIVIAL len=5 explored=16314
+n=6 word=012032435415 eps=+++--+ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012032435415 eps=++--++ even=True parity=000000 NOT-FOUND explored=40001
+n=6 word=012304152435 eps=+--++- even=False parity=101011 NOT-FOUND explored=1801
+n=6 word=012304152435 eps=++---+ even=False parity=101011 NOT-FOUND explored=1801
+n=6 word=012304153245 eps=+---+- even=False parity=100001 NOT-FOUND explored=40001
+n=6 word=012304153245 eps=+-+++- even=False parity=100001 NOT-FOUND explored=40001
+n=6 word=012304153425 eps=+-++-- even=False parity=101011 NOT-FOUND explored=40001
+n=6 word=012304153425 eps=++--+- even=False parity=101011 TRIVIAL len=4 explored=36551
+n=6 word=012304153425 eps=+--++- even=False parity=101011 TRIVIAL len=4 explored=36551
+n=6 word=012304153425 eps=+--+-+ even=False parity=101011 NOT-FOUND explored=40001

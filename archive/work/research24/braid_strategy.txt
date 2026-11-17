@@ -1,0 +1,147 @@
+BRAID COUNTEREXAMPLE STRATEGY: COMPLETE CHAINS AND A STOP RULE
+1 November 2026 UTC. Strategic audit of the full-proof scaffolds and
+research24 notes. No new computation, novelty claim, or claim of proximity
+to a solution.
+
+Decision in one paragraph
+-------------------------
+The genuine generic Temperley--Lieb kernel route has a complete known
+bridge from its algebraic target to nontrivial Jones-one knots. The
+four-moment route has a cheaper certificate but currently TWO unresolved
+construction requirements: an actual braid-image point on its exact
+moment locus, and a nontrivial knot among its closures. Our spectral
+lemma removes the only explicit formal diagonal family previously offered
+as intuition for the first requirement. Prefer a structural kernel
+construction if one is available; do not continue a word search merely
+because four equations look smaller than a matrix identity.
+
+A. Genuine kernel: a complete counterexample scaffold
+----------------------------------------------------
+Fix n and the FULL generic fundamental TL_n representation over Q(A),
+with raw generator A I+A^{-1}e_i. The gates are:
+
+1. Produce an actual braid word b with rho(b)=I as an exact Laurent
+   identity on every TL block. A numerical or root-of-unity identity,
+   one block alone, or an uncorrected projective scalar is insufficient.
+2. Certify b != 1 as a braid, for example by a nonidentity image in the
+   faithful Artin action on the free group. Identity of its permutation
+   is not a nontriviality certificate.
+3. Apply Ito's theorem to the nontrivial normal kernel and a specified
+   unknot anchor. The raw kernel has exponent sum zero, so is not a
+   nontrivial subgroup of the braid center. Its classical specialization
+   makes its elements pure. Ito supplies kernel elements whose anchored
+   closures are hyperbolic knots of arbitrarily large genus.
+4. The exact kernel identity preserves the normalized Jones polynomial
+   of the anchor. Purity preserves its one-component closure. Thus the
+   knots supplied in step 3 are genuine counterexamples.
+
+The only unknown existence premise is the nontrivial generic kernel in
+steps 1--2. This premise is sufficient, not known necessary for Jones
+failure. In B5, choosing b in the exact Burau kernel makes the 1D and
+4D TL blocks identity; the remaining required identity is M=I in the
+5D block. The cached Bigelow word fails this last identity.
+
+If an explicit knot diagram is wanted, Ito's braid-order construction
+can be executed and checked. Its existence theorem already closes the
+mathematical implication; a second conjecture about closures is not
+required. No statement about all colored Jones polynomials is used.
+
+B. Four moments: the complete but narrower alternative
+------------------------------------------------------
+Take an actual B in the B5 Burau kernel, hence pure and exponent-zero.
+Set C=sigma1 sigma2 sigma3 sigma4, M=rho5(B), Z=rho5(C). The exact TL
+trace decomposition gives
+  V_(closure(B^m C))(A^-4)-1 = A^-12 tr(Z M^m).
+Here tr Z=0. The necessary and sufficient conditions for the ENTIRE
+integer-power family to have Jones polynomial one are the four exact
+identities tr(ZM^j)=0, j=1,2,3,4. Cayley--Hamilton supplies all other
+powers, including negative ones.
+
+The full counterexample scaffold therefore requires:
+  (i) an actual braid B with the stated Burau identity;
+ (ii) all four exact Laurent identities;
+(iii) an independent certificate that closure(B^m C) is nontrivial for
+      at least one integer m.
+A sufficient certificate for (iii) is C B^m >_D Delta^2, giving positive
+genus by Ito's bound. Other rigorous knot certificates can replace it.
+Failure of this sufficient order test alone does not prove the closure
+is the unknot.
+
+The moment locus need not be a subgroup or normal. Consequently Ito's
+normal-subgroup amplification cannot be imported at (iii). Taking
+conjugates or products to increase braid order may destroy (ii), and
+powers of one braid need not have unbounded Dehornoy floor.
+
+This is a restricted counterexample search, so it needs no theorem
+covering all knots. Conversely, excluding this family would not prove
+generic unknot detection. Requiring all powers is stronger than asking
+for one Jones-one closure; it is a certification device, not a necessary
+condition on a counterexample.
+
+C. What the spectral result changes
+----------------------------------
+An actual Burau-kernel braid lies in [P5,P5], so M=I+O((A-1)^2).
+Every eigenvalue of M in Q(A) must equal 1. Complete splitting over Q(A)
+therefore forces M=I, by fixed-level TL unitarity.
+
+Thus a moment solution either already gives a genuine TL kernel, or
+has a characteristic polynomial that does not split completely over
+Q(A). It need not be irreducible. The formal diagonal monomial/clock
+model cannot be realized by a nonidentity Burau-kernel residual image.
+Density or arbitrary diagonalization does not repair this obstruction.
+
+This is a necessary image constraint, not a construction method or a
+proof that nonsplit moment solutions exist. The four equations remain
+strictly weaker in unconstrained matrix algebra; we have not shown that
+they are easier to solve in the actual braid image with condition (iii).
+Calling them an easier reformulation of the original problem would be
+unsupported. They describe a more structured sufficient subclass.
+
+D. Minimal worthwhile next test, and when to stop
+-------------------------------------------------
+A useful kernel construction target is a CENTRALIZER MISMATCH. Start
+with an actual nontrivial B in the Burau kernel and construct an actual
+braid h such that
+  [rho5(B),rho5(h)]=I, but [B,h] != 1 in B5.
+Then [B,h] is in the Burau kernel and has identity residual block, hence
+is a nontrivial full TL kernel element. Section A finishes the route.
+The Artin-action and exact 5D matrix checks are finite, independently
+checkable certificates. Linear algebra alone cannot lift a matrix in
+the centralizer to an actual braid h.
+
+This target is NOT a request to repeat the earlier short-conjugator and
+commutator scans. Before any further expensive work, provide a new
+geometric or representation-theoretic reason that predicts such a
+mismatch and an actual word construction to test. If no such mechanism
+is available, pause this branch. We currently have none certified.
+
+For a supplied candidate, stop that candidate immediately if its exact
+Artin commutator is trivial, or if a valid exact specialization makes
+its residual commutator nonidentity. For a claimed parameterized family,
+a proof that residual commutation implies actual braid commutation closes
+that entire mechanism; a finite cutoff does not. An exact common-gcd-one
+specialization can similarly close an entire proposed moment family, as
+already done for all single-generator-power anchor conjugations of the
+cached seed. Do not respond by enlarging the word cutoff without a new
+structural idea. These are branch-specific stop conditions, not a proof
+that no counterexample exists.
+
+Relation to the global proof scaffolds
+-------------------------------------
+The homology and ribbon proposals in outputs/jones-full-proof-scaffolds.md
+would prove detection if their global geometric premises were established.
+The present route instead seeks one counterexample and therefore avoids
+their coverage requirements. It does not remove the central difficulty:
+exact generic representation nonfaithfulness, or an exact trace collision
+with certified nontrivial topology. A restricted algebra lemma earns
+further investment only when its conclusion feeds one of these complete
+chains without an additional unnamed assumption.
+
+Primary endpoint: Ito, A kernel of a braid group representation yields a
+knot with trivial knot polynomials, Math. Z. 280 (2015), Theorems 1--3.
+https://arxiv.org/pdf/1402.2028
+Historical distinction between kernels and closures: Bigelow,
+Does the Jones polynomial detect the unknot?, Sections 1 and 3.
+https://arxiv.org/pdf/math/0012086
+Exact identities and audits: braid_kernel_route.txt,
+spectral_realizability_obstruction.txt, split_spectrum_audit.txt.

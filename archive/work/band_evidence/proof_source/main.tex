@@ -1,0 +1,145 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Jones polynomial: EKT band obstruction}\fancyhead[R]{31 October 2026}\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{3pt}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Sig}{\Sigma_2}
+\title{An obstruction to banding EKT links\newline into Jones-trivial knots}
+\author{Research calculation prepared with Codex}
+\date{31 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A proposed counterexample search starts with a nontrivial two-component link having the Jones polynomial of the unlink and tries to fuse its components by a band. We compute the first homology of the double branched covers of the two-component Eliahou--Kauffman--Thistlethwaite links produced from an unknot numerator. Every nonzero opposite-$\omega$ iterate has nonzero finite torsion. The Montesinos trick then rules out every band fusion to a determinant-one knot, including every Jones-trivial knot. This eliminates this construction as a source of counterexamples; it does not resolve the Jones unknot-detection conjecture. No novelty claim is made.
+\end{abstract}
+
+\section{The obstruction supplied by a single band}
+An embedded band joining the two components of a link $L\subset S^3$ changes it into a knot $K$. Write $\Sig(L)$ for the double cover of $S^3$ branched over $L$.
+\begin{lemma}\label{band}
+If $b_1(\Sig(L))=1$ and a band fusion of $L$ produces a knot $K$ with determinant one, then $H_1(\Sig(L);\Z)\cong\Z$.
+\end{lemma}
+\begin{proof}
+The cover $Y=\Sig(K)$ is an integral homology sphere because the order of its first homology is $\det K=1$. Reverse the band. The Montesinos trick identifies this band surgery with integral Dehn surgery on a knot in $Y$: the two local rational-tangle filling slopes have distance one. For surgery coefficient $r\in\Z$ on a knot in an integral homology sphere, the resulting first homology is $\Z/r\Z$. Our assumption that it has positive first Betti number forces $r=0$. Thus the resulting group is $\Z$, without finite torsion. See \cite{Baker} for the band/surgery correspondence.
+\end{proof}
+In particular, nonzero torsion together with $b_1=1$ rules out \emph{all} bands to determinant-one knots, including bands of arbitrarily complicated diagrammatic appearance. A knot with normalized Jones polynomial $V_K=1$ has determinant $|V_K(-1)|=1$, so it is covered by the lemma.
+
+\section{Homology of the doubled Hopf pattern}
+Use the diagram $H(T,U)$ and the tangle operation $\omega$ of EKT \cite{EKT}. For rational tangles write $T=p_T/q_T$, $U=p_U/q_U$, with relatively prime integral pairs. The universal abelian Fox-coloring presentation of a link is $\Z\oplus H_1(\Sig(L);\Z)$ \cite[Theorem 3.3]{Przytycki}; the free summand is constant coloring. We use the presented group, which retains torsion, rather than just integer-valued solutions of the coloring equations.
+
+The doubled Hopf clasp is represented by
+\[
+C=(\sigma_2^{-1}\sigma_3^{-1}\sigma_1^{-1}\sigma_2^{-1})^2.
+\]
+Watson \cite[Section 8.5, p.~157]{Watson} gives the closed braid $\sigma_3^3C\sigma_1^{-3}$ for the first linked-trefoil member. Under the Fox transfer $(s,t)\mapsto(2s-t,s)$ at a positive braid generator, the matrix for $C$ is
+\[
+\begin{pmatrix}
+1&0&-2&2\\0&1&-2&2\\-2&2&1&0\\-2&2&0&1
+\end{pmatrix}.
+\]
+A vertical rational tangle $p/q$ has two integral generators $s,z$, with top endpoint colors $(s,s-qz)$ and bottom colors $(s+pz,s+(p-q)z)$, in a compatible convention. These formulas follow from integral rational-tangle coloring \cite{KL}; integer tangles give the usual braid transfer, and boundary twists give the general case.
+
+Place $U$ in the left pair and $T$ in the right pair, apply $C$, and close. The closure relations reduce to
+\[
+p_Uu-2q_Tt=0,\qquad p_Tt-2q_Uu=0.
+\]
+The two offset colors are unrestricted. Removing one common constant color gives
+\begin{equation}\label{matrix}
+H_1(\Sig(H(T,U));\Z)\cong\Z\oplus\operatorname{coker}
+\begin{pmatrix}p_U&-2q_T\\-2q_U&p_T\end{pmatrix}.
+\end{equation}
+For checks, this gives $\Z$ for $H(\infty,\infty)$, $\Z^2$ for $H(0,\infty)$, and $\Z\oplus(\Z/2)^2$ for $H(0,0)$, in agreement with the two-component unlink, three-component unlink, and doubled Hopf link, respectively.
+
+\section{The whole orbit from an unknot numerator}
+Let $S$ be any two-string tangle whose numerator closure $S^N$ is the unknot, and set $U_0=\infty+2$. Define
+\[
+L_j=H\bigl(\omega^j S,\omega^{-j}U_0\bigr),\qquad j\in\Z.
+\]
+The member $L_0$ is the two-component unlink. EKT's bracket identity produces the familiar two-component Jones-trivial families from these orbits, with the stated orientation/writhe qualifications for odd iterates \cite{EKT}.
+
+\textbf{Why the homology computation also applies to nonrational seeds.}
+The tangle cover $X=\Sig(B^3,S)$ has a Dehn filling equal to $\Sig(S^N)=S^3$. It is therefore the exterior of the core knot of the filling solid torus, and $H_1(X)=\Z$. In the numerator/denominator peripheral coordinates its map from boundary homology has primitive data $(p,q)=(1,k)$ for an integer $k$, after choosing the generator sign; the numerator filling has homology order $|p|=1$. A rational tangle of fraction $1/k$ has exactly the same peripheral homology data. Replacing $X$ by that rational tangle's solid-torus cover does not change the first homology of the glued manifold: Mayer--Vietoris uses only these homology groups and their boundary maps. The same remains true after boundary reparametrization. Thus equation \eqref{matrix} applies with these data even though $S$ itself need not be rational. No inference from a numerical fraction alone is being made.
+
+On the boundary data, EKT's operation acts by
+\[
+M=\begin{pmatrix}3&8\\1&3\end{pmatrix},\qquad
+M^j=\begin{pmatrix}a&8b\\b&a\end{pmatrix},\qquad a^2-8b^2=1.
+\]
+Hence the two transformed pairs are
+\[
+(p_T,q_T)=(a+8bk,b+ak),\qquad (p_U,q_U)=(a,-b).
+\]
+The determinant of the matrix in \eqref{matrix} is
+\begin{equation}\label{D}
+D=p_Tp_U-4q_Tq_U
+=a^2+4b^2+12abk=1+12b(b+ak).
+\end{equation}
+Because $a$ is odd and $\gcd(a,b)=1$, the entries of that matrix have gcd one: they include $a$ and $2b$. Its Smith invariants are therefore $1,|D|$ when $D\ne0$.
+
+For $j\ne0$, $a>|b|>0$. No integer $k$ can satisfy $b+ak=0$, so $D\ne1$. Also $D\equiv1\pmod {12}$, ruling out $D=0$ and $D=-1$. We conclude:
+\begin{proposition}\label{main}
+For every $j\ne0$ and every tangle $S$ with unknot numerator,
+\[
+H_1(\Sig(L_j);\Z)\cong\Z\oplus\Z/|1+12b(b+ak)|,
+\qquad |1+12b(b+ak)|>1.
+\]
+No embedded band fusion of $L_j$ can produce a determinant-one knot. In particular it cannot produce an unknot or any knot with Jones polynomial $1$.
+\end{proposition}
+This follows immediately from \eqref{D} and Lemma \ref{band}. The exception $j=0$ is the actual unlink seed. The proposition covers both explicit EKT two-component families and their further opposite-$\omega$ iterates, except the seed itself.
+
+\section{Examples and independent checks}
+For $LL_2(n)=H(T_n,-T_n)$, use
+\[
+(p_0,q_0)=(1,0),\qquad
+(p_{n+1},q_{n+1})=(3p_n+8q_n,p_n+3q_n).
+\]
+Then $p_n^2-8q_n^2=1$ and
+\[
+H_1(\Sig(LL_2(n));\Z)=\Z\oplus\Z/(1+12q_n^2).
+\]
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$n$&$p_n$&$q_n$&finite torsion order\\\midrule
+1&3&1&13\\2&17&6&433\\3&99&35&14701\\4&577&204&499393\\\bottomrule
+\end{tabular}
+\end{center}
+The even-$n$ members have precisely the two-component unlink's Jones polynomial. In particular $LL_2(2)$ is ruled out by its $\Z/433$ torsion despite having the required Jones polynomial.
+
+For EKT's $LL_1(m,n)$, $m\ge0$, $n\in\Z$, let $A=4^m(3n+2)$. The displayed tangle word is read left-associatively, repeating the factors $1,1/2$ separately. Its primitive data after the final $\omega$ move are
+\[
+(p_T,q_T)=((8A-1)/3,A),\qquad (p_U,q_U)=(-3,1),
+\]
+so
+\[
+H_1(\Sig(LL_1(m,n));\Z)=\Z\oplus\Z/|12\cdot4^m(3n+2)-1|.
+\]
+This order is always greater than one. EKT Proposition 4.2 supplies the unknot numerator required for the nonrational-seed argument.
+
+The checks performed for this note were:
+\begin{itemize}
+\item A standard-library calculation of all minors of the Fox matrix of Watson's published $LL_2(1)$ braid gives Smith form $\operatorname{diag}(1,13,0,0)$ before removing constant coloring.
+\item Separate full planar diagrams constructed with Spherogram and evaluated with Regina give the Jones polynomials and Fox Smith forms above for $LL_2(1),\ldots,LL_2(4)$.
+\item All 28 full diagrams with $0\le m\le3$, $-3\le n\le3$ agree with the $LL_1$ formula and EKT's Jones/parity statements. An additional 35 iterated $LL_1$ diagrams agree with the orbit formula.
+\item Twenty full diagrams from rational seeds $(1,k)$, $-2\le k\le2$, at iterates $j=-2,-1,1,2$ agree with Proposition \ref{main}, including both signs of iteration.
+\end{itemize}
+The formulas for arbitrary parameters are proved above; the finite checks calibrate the diagrams, signs and normalizations.
+
+\section{Status of the separate braid search}
+The earlier sample contained 40,000 four-strand braid words, of which 19,849 closed to knots and 93 had exact Jones polynomial one. Ninety-one already had braid/Markov unknot certificates. Both remaining cases now have exact Reidemeister certificates: entry 82 reduces from 35 crossings to zero in 70 moves; entry 86 reduces from 39 crossings to zero in 38 moves. The latter certificate includes two temporary Reidemeister-I additions. Independent braid-strand tracing verifies each initial diagram, and Regina verifies every primitive move and the final one-component zero-crossing diagram. Thus all 93 hits are certified unknots.
+
+These results close the tested EKT band-fusion route and the two unresolved computations. They neither prove Jones unknot detection nor exhibit a counterexample. Other Jones-trivial links, other constructions, or a new general proof argument remain outside this result. The homology proposition is a deduction from established tools; no search for prior publication can establish its novelty.
+
+\small\raggedright
+\begin{thebibliography}{9}
+\bibitem{EKT} S. Eliahou, L. H. Kauffman and M. B. Thistlethwaite, \emph{Infinite families of links with trivial Jones polynomial}, Topology 42 (2003), 155--169. \href{https://homepages.math.uic.edu/~kauffman/ekt.pdf}{Author-hosted paper}.
+\bibitem{Watson} L. Watson, \emph{Involutions on 3-manifolds and Khovanov homology}, PhD thesis (2009), Section 8.5. \href{https://personal.math.ubc.ca/~liam/files/doctoral.pdf}{Author-hosted thesis}.
+\bibitem{Przytycki} J. H. Przytycki, \emph{3-coloring and other elementary invariants of knots}, Theorem 3.3. \href{https://arxiv.org/abs/math/0608172}{arXiv:math/0608172}.
+\bibitem{KL} L. H. Kauffman and S. Lambropoulou, \emph{On the classification of rational tangles}. \href{https://arxiv.org/abs/math/0311499}{arXiv:math/0311499}.
+\bibitem{Baker} K. L. Baker and N. R. Hoffman, \emph{The Poincare homology sphere, lens space surgeries, and some knots with tunnel number two}, Pacific J. Math. 305 (2020), Section 3. \href{https://msp.org/pjm/2020/305-1/pjm-v305-n1-p01-s.pdf}{Published article}.
+\end{thebibliography}
+\end{document}

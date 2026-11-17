@@ -1,0 +1,68 @@
+PASS30: RIBBON SATELLITE ROUTE, BEFORE THE PROJECTIVE-GEOMETRY PIVOT
+1 November 2026. Bounded audit, no counterexample or priority claim.
+
+Full endpoint. To falsify hypothesis E, construct an ACTUAL ribbon
+concordance J->K whose ordinary Jones polynomials agree but whose reduced
+rational Khovanov ranks differ. A fixed satellite preserves an existing
+ribbon concordance; it does not manufacture a missing one between two
+knots with equal polynomials. For a full Jones proof, E would apply to
+U->H#mirror(H); E itself remains unproved.
+
+1. Exact obstruction to the most immediate use of the new Watson family.
+
+For any fixed winding-zero pattern P with annular skein degree at most
+two, its reduced satellite Jones polynomial has the form
+  V(P(C))=a(t)+b(t) H3(C;t),
+where a,b are companion-independent rational functions. This is the
+even annular basis {1,S2}, with quantum dimensions and the fixed pattern
+framing absorbed in a,b. Companion zero framing is essential. If b is
+nonzero, the Laurent field has no zero divisors, so
+  V(P(J))=V(P(K)) iff H3(J)=H3(K).
+Thus a Whitehead-type pattern cannot erase the exact H3 difference
+between the Watson m0 and m1 knots just computed. Nor can it turn that
+entire fixed-Jones family into another fixed-Jones family. The b=0 case
+is precisely scalar annular skein, an existing realizability gate, not
+an automatic construction. This is a structural channel statement, not
+a claim of new novelty.
+
+Moreover the simple Watson family has constant ordinary Khovanov
+homology. Even if a ribbon concordance between two members existed,
+its ordinary reduced-Q complement would be zero. Applying a pattern
+might change that fact, but it first requires BOTH an actual ribbon
+movie and equal output Jones polynomials. Neither follows from the
+ordinary collision or from each knot separately being ribbon.
+
+2. A concrete published ribbon-satellite family fails before any search.
+
+Cochran--Friedl--Teichner, New constructions of slice links,
+arXiv:0709.2148, Section4.1, Figure4.3 and following Remark, supplies
+infected knots I(K_i,C,eta_i) related by a ribbon movie to Wh(C). They
+explicitly compute the Alexander polynomials independently of C.
+After symmetric normalization they are
+  Delta_I1=5-2(t+t^-1),
+  Delta_I2=13-6(t+t^-1),
+whereas Delta_Wh(C)=1. Hence their Conway a2 values are -2,-6,0.
+The standard Jones identity V''(1)=-6a2 therefore gives 12,36,0.
+Consequently neither family has equal Jones endpoints for ANY companion.
+The direction convention of the ribbon movie does not affect this
+polynomial exclusion. This is a full companion-family obstruction,
+not a numerical knot-table check.
+Primary full text: https://math.berkeley.edu/~teichner/Papers/Satellite.pdf
+Satellite preservation primary reference: Baker, A note on the
+concordance of fibered knots, Remark6,
+https://arxiv.org/pdf/1409.7646
+
+3. What remains, and why this route was stopped.
+
+No actual falsifier of E was obtained. Formal annular coefficients can
+be chosen to cancel higher colors, but a formal skein combination is
+not a single ribbon satellite pattern. The low-degree obstruction above
+makes clear why ordinary collisions plus a Whitehead pattern do not
+solve that realization problem. No new diagram scan was started.
+
+At the parent's request this pass then pivoted to the more productive
+RP2 graph route. The resulting complete bounded-beta-to-bridge theorem
+is in projective_templates.txt. It advances a full conditional scaffold
+without requiring a new ribbon realization: a beta bound on one whole
+Jones fiber now implies Jones unknot detection via connected sums.
+The Jones-to-beta bound remains unproved.

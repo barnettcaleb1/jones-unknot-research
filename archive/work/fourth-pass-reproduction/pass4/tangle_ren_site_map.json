@@ -1,0 +1,17 @@
+{
+  "left_twist_PD_crossing_zero_based": 8,
+  "right_twist_PD_crossing_zero_based": 5,
+  "left_PD_tuple_source": [
+    31,
+    27,
+    32,
+    26
+  ],
+  "right_PD_tuple_source": [
+    17,
+    13,
+    18,
+    12
+  ],
+  "all_four_exact_resolved_annular_brackets_match_TL6_model": true
+}

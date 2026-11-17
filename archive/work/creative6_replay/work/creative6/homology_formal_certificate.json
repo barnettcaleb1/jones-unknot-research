@@ -1,0 +1,23 @@
+{
+  "status": "ABSTRACT algebraic models only; no classical-knot realization claimed",
+  "valid_parameter": "every integer g >= 2",
+  "reduced_Kh_P": "q^(-2g)+t^(4g-2)+t^(4g-1)q^(2g)+t^(2g-1)q^(-2g)+t^(2g)q^(2g)",
+  "Jones_Euler": "1",
+  "reduced_rank": 5,
+  "unreduced_rank": 10,
+  "generalized_Lee_torsion_exponents": [
+    "g",
+    "2g"
+  ],
+  "free_Lee_s": "-2g",
+  "half_delta_multiset": [
+    "-g",
+    "-g",
+    "1-3g",
+    "1-3g",
+    "2-4g"
+  ],
+  "CFK_check": "d^2=0, grading, filtration, conjugation chain involution, hat rank1, same delta all verified symbolically",
+  "CFK_tau": "g for the modeled HFK; Dowlin targets the mirror of the Kh knot",
+  "tests": "exact affine arithmetic, valid for all g, no floating point or sample inference"
+}

@@ -1,0 +1,43 @@
+{
+  "fresh_geometric_core_reconstruction": true,
+  "TL4_basis_trace_checks": 14,
+  "M0": [
+    [
+      -15,
+      0,
+      15
+    ],
+    [
+      -25,
+      0,
+      25
+    ],
+    [
+      -15,
+      0,
+      15
+    ]
+  ],
+  "M1": [
+    [
+      -33,
+      0,
+      0
+    ],
+    [
+      -40,
+      -8,
+      -15
+    ],
+    [
+      -15,
+      0,
+      -18
+    ]
+  ],
+  "all_k_nonzero_trace_values": [
+    3,
+    -1
+  ],
+  "reason": "Coefficient at (x-1)^k modulo5 is 2^k times one of these values; proof covers every positive k."
+}

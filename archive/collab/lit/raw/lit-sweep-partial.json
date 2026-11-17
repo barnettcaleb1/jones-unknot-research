@@ -1,0 +1,488 @@
+{
+ "detection-classes": {
+  "track": "Classes where Jones provably detects the unknot, the mechanism each proof uses to get past Euler-characteristic cancellation (B5), and whether it transfers to the u=1 slice (Lemma Q) or the twist family K'_n. Also 2024-2026 arXiv claims and Sikora's Oct 2026 IPAM talk.",
+  "findings": [
+   {
+    "claim": "Alternating knots (Kauffman, Murasugi, Thistlethwaite 1987). In a reduced alternating diagram the all-A and all-B states are the only states reaching the extreme degrees, so the extreme coefficients are +-1 and span V = c(D). Nontrivial alternating knots therefore have V != 1. B5 mechanism: in the extreme q-gradings the state sum (and the Khovanov complex) has exactly one generator, so cancellation is impossible. The only non-Euler input is membership in the diagram class.",
+    "source": "Kauffman, Topology 26 (1987) 395-407; Murasugi, Topology 26 (1987) 187-194; Thistlethwaite, Topology 26 (1987) 297-309",
+    "verified": "abstract_or_snippet",
+    "relevance": "Checked only as cited in the full texts of arXiv:1707.05443 Sec. 1 and arXiv:math/0606255 Sec. 1; primary sources not read. Slice: rational bracket gives V(X(s)) = unit*V(Q_lambda(s)) for every slope s, so L_0 = X(lambda) and every K_q = X(mu+q*lambda) (q != 0) must be non-alternating. This gives no mechanism for general X.",
+    "locator": "LS arXiv:1707.05443 Sec. 1; Stoimenow math/0606255 Sec. 1",
+    "node": "U5"
+   },
+   {
+    "claim": "Adequate links (Lickorish-Thistlethwaite 1988). Both extreme coefficients are +-1, so nontrivial adequate links have nontrivial V. For Montesinos links LT get only the adequate range (-n+1 < e < -1).",
+    "source": "Lickorish-Thistlethwaite, Comment. Math. Helv. 63 (1988) 527-539",
+    "verified": "abstract_or_snippet",
+    "relevance": "Checked as cited in Stoimenow math/0606255 Sec. 1 and Sec. 4.2 (full text) and LS Sec. 1. Same extreme-state mechanism as alternating. Superseded by Stoimenow's Theorem 4.1 below.",
+    "locator": "Stoimenow math/0606255 Sec. 4.2 (LT handled only part of the Montesinos case)",
+    "node": "U5"
+   },
+   {
+    "claim": "Semiadequate links. Thm 4.1: no nontrivial semiadequate link has the Jones polynomial of the unlink with the same number of components, even up to units. Mechanism (Prop 3.1, Cor 3.1): for a connected A-adequate D, V0 = +-1 and |V1| = b1 of the reduced A-graph. For a knot, V=1 forces V1 = 0, so the reduced A-graph is a tree, D is positively orientable, L is positive (and fibered), and positive knots have V != 1 [St6]. For links, V0*V1 = n-1 > 0 contradicts Cor 3.1 (1 - floor(2c/3) <= V0*V1 <= 0). Non-Euler input: positivity forces genus = canonical genus (Cromwell/Bennequin).",
+    "source": "A. Stoimenow, J. reine angew. Math. 657 (2011) 1-55; arXiv:math/0606255v2",
+    "verified": "full_text",
+    "relevance": "The strongest link-level tool for the slice. Rational bracket gives V(L_0) = unit*V(unlink_2). If L_0 has any semiadequate diagram, then L_0 is the unlink, so S^3_0(kappa) = S^1xS^2 and kappa = U (Gabai, Property R). So Lemma Q holds for every kappa whose X has a diagram with a semiadequate lambda-closure. The same holds for each K_q (q != 0, nontrivial by Gordon-Luecke). B1 passes because the EKT links are not semiadequate.",
+    "locator": "Thm 4.1 p.15; Prop 3.1 and Cor 3.1 pp.7-8",
+    "node": "U5"
+   },
+   {
+    "claim": "Montesinos (including pretzel) links. Cor 4.1: no Montesinos link has trivial Jones polynomial up to units. Every Montesinos link has an alternating or semiadequate diagram; the e=-1 case is handled by rewriting an entry. Arborescent links are NOT covered: Example 4.1 is an inadequate arborescent knot (-3,-3,-3)2,(3,3,-3)1 with extreme coefficients +-3.",
+    "source": "Stoimenow, arXiv:math/0606255v2, Sec. 4.2",
+    "verified": "full_text",
+    "relevance": "A torus knot kappa has a Montesinos quotient tangle, so every closure is Montesinos and Lemma Q holds (U4 already excludes these, since a_2(T(p,q)) > 0). This also implies, at the decategorified level, Shah's P(-2,3) Jones-cosmetic result. The arborescent gap is harmless here because graph-manifold kappa are already excluded by U4+RC3.",
+    "locator": "Cor 4.1 and proof p.16; Example 4.1 p.17",
+    "node": "U5"
+   },
+   {
+    "claim": "Closed 3-braids. 3-braid links are semiadequate (Thm 6.1 via minimal conjugacy length, Lemmas 6.2-6.3), so they have nontrivial Jones polynomial up to units (Cor 6.3). This also reproves faithfulness of Burau on B3. Stoimenow notes that Birman's 1985 claim came without proof, and that Takahashi 1989 claimed the knot case after an 18-page calculation.",
+    "source": "Stoimenow arXiv:math/0606255v2 Sec. 6; Birman, Invent. Math. 81 (1985) 287-294; M. Takahashi, Comment. Math. Univ. St. Paul. 38(2) (1989)",
+    "verified": "full_text",
+    "relevance": "Verified in Stoimenow's full text; Birman and Takahashi are known only via Stoimenow. Mechanism is again semiadequacy. Slice: neither L_0 nor any K_q can be a closed 3-braid.",
+    "locator": "Cor 6.3 p.28 and the remark after it",
+    "node": "U5"
+   },
+   {
+    "claim": "Positive and almost positive knots. Positive diagrams are A-adequate, with A-state equal to the Seifert circles. No positive knot has trivial polynomial ([St6]; the abstract gives the proof route as Gauss-diagram Vassiliev formulas plus the Bennequin inequality). Thm 4.2 (citing [St16]): nontrivial k-almost positive knots have nontrivial V for k <= 3.",
+    "source": "Stoimenow, Ann. Sc. Norm. Sup. Pisa (5) 2 (2003) 237-285, arXiv:math/9805078 (abstract); arXiv:math/0606255 Sec. 3 and Thm 4.2",
+    "verified": "abstract_or_snippet",
+    "relevance": "[St6] seen only as an abstract; the Thm 4.2 statement is in full text but its proof is in another paper. Non-Euler input is genus (canonical surface is minimal). No transfer to general X.",
+    "locator": "math/0606255 Thm 4.2 p.19",
+    "node": "U5"
+   },
+   {
+    "claim": "Homogeneous knots. No general theorem found that homogeneous knots have V != 1. Cromwell: Seifert's algorithm is genus-minimal on homogeneous diagrams (Manchon's abstract). Stoimenow, Fund. Math. 200 (2008), classifies genus 2 and 3 diagrams with applications to homogeneous knots. A search snippet says genus-two homogeneous knots are alternating or positive, hence covered.",
+    "source": "Manchon arXiv:1102.0890 (abstract); Stoimenow arXiv:math/0303012 (abstract)",
+    "verified": "abstract_or_snippet",
+    "relevance": "Treat homogeneous knots beyond low genus as OPEN. The semiadequacy mechanism does not obviously apply when positive and negative blocks mix.",
+    "node": "U5"
+   },
+   {
+    "claim": "Almost alternating and Turaev genus one links. Thm 1.1: V_L != t^k(-t^(1/2)-t^(-1/2))^(l-1) for every l. Mechanism: apply the skein relation at the dealternator, <D> = A<D_A> + A^-1<D_B>, where D_A and D_B are the two closures of one alternating tangle R. Dasbach-Lin formulas (Thm 2.1) give Thm 3.1: alpha_0 = (-1)^v(P-1) plus explicit alpha_1. The extreme terms CAN cancel (P=1), but Lemma 3.4 forces one end to be +-1. Total vanishing forces semiadequacy up to mutation (Lemma 4.2) or alternating (Lemma 4.3). Turaev genus one reduces to almost alternating through Armond-Lowrance (mutant) plus mutation invariance of V. Also: the EKT links have Turaev genus >= 2.",
+    "source": "Lowrance-Spyropoulos, New York J. Math. 23 (2017) 1611-1639, arXiv:1707.05443v2",
+    "verified": "full_text",
+    "relevance": "The only published mechanism that survives actual extreme-degree cancellation, and structurally it IS the u=1 problem. At the unknotting crossing c: <K> = A<L_0> + A^-1<K_1>, <U> = A<K_1> + A^-1<L_0>, with L_0 = X(lambda) the oriented smoothing and K_1 = X(mu+lambda) the unoriented one. It transfers when X is an alternating tangle (both smoothings alternating), and plausibly when both smoothings are adequate; general X has no extreme-coefficient formula. In a twist-region diagram g_T(D_n) is independent of n, so twisting K'_n never reaches g_T <= 1.",
+    "locator": "Thm 1.1 p.2; Thm 2.1 p.5; Thm 3.1 p.8; proof of Thm 1.1 pp.20-22; EKT remark p.3",
+    "node": "U5"
+   },
+   {
+    "claim": "Turaev genus two. No nontriviality theorem found. arXiv:2601.09077 (Jan 2026) only computes crossing numbers for one Turaev-genus-2 family (Qazaqzeh-Chbili-Lowrance conjecture). Dasbach-Lowrance (Turaev genus one): at least one extreme coefficient is +-1 (as cited by LS).",
+    "source": "arXiv:2601.09077 (abstract); LS arXiv:1707.05443 Sec. 1",
+    "verified": "abstract_or_snippet",
+    "relevance": "If some EKT 2-component link has g_T exactly 2, then 'Turaev genus 2 implies V nontrivial' is false for links, and any knot proof must use the one-component hypothesis (B1).",
+    "node": "U5"
+   },
+   {
+    "claim": "Whitehead doubles. Prop 4.3: if K is semiadequate and nontrivial, the untwisted Wh+-(K) have V != 1. Proof: a switching formula reduces V(Wh)=1 to the blackboard 2-cable D~ of an A-adequate D having the Jones polynomial of the (2,2w) torus link up to units. D~ is A-adequate, so V1 = 0 forces positivity, and doubles of positive knots are nontrivial [St6]. Remark 4.2: only untwisted doubles can have V=1.",
+    "source": "Stoimenow arXiv:math/0606255v2 Sec. 4.3",
+    "verified": "full_text",
+    "relevance": "Direct precedent for the L_0 route. Wh(J) has u=1 with a clasp crossing as the unknotting crossing, and D~ is exactly L_0 (the oriented smoothing). With Manolescu-Owens Prop 6.1, Sigma_2(Wh(J)) = S^3_{1/2}(J#J^r). So Lemma Q is PROVED for kappa = J#J^r with the clasp strong inversion whenever J is semiadequate. U4 additionally forces a_2(J) = 0. Use this as a calibration point for U5b and U5c.",
+    "locator": "Prop 4.3 and proof p.17; Remark 4.2",
+    "node": "U5b"
+   },
+   {
+    "claim": "The double branched cover of the untwisted Whitehead double is 1/2-surgery: Sigma_2(Wh+(K)) = S^3_{1/2}(K # K^r), via the clasp crossing.",
+    "source": "Manolescu-Owens, IMRN 2007, arXiv:math/0508065, Prop 6.1",
+    "verified": "abstract_or_snippet",
+    "relevance": "Identifies kappa for the Wh sub-slice (calibration of U3).",
+    "locator": "Prop 6.1",
+    "node": "U3"
+   },
+   {
+    "claim": "Bigelow 2002. Prop 1.5: for B4 the Jones (Hecke), Temperley-Lieb and Burau representations are all faithful or all unfaithful. V(3,1) is Burau; V(2,2) factors through Burau of B3; V(2,1,1) has Burau's kernel; the commutator with (s1s2)^3 is used. A TL-kernel element beta makes the closure of beta*s1...s_{n-1} have V=1. Nontriviality is left as Conj 3.1/3.2.",
+    "source": "Bigelow, JKTR 11 (2002) 493-505, arXiv:math/0012086",
+    "verified": "full_text",
+    "relevance": "Restart gate E at n=4 is equivalent to Burau(B4) being unfaithful.",
+    "locator": "Prop 1.5 pp.2-4; Conj 3.2 p.4",
+    "node": "gate E"
+   },
+   {
+    "claim": "Ito 2015. Thm 1 (Bigelow's Conj 3.2): every nontrivial noncentral normal subgroup H of B_n contains beta with closure(alpha*beta) a hyperbolic knot of genus >= N and braid index n, for any unknot braid alpha. The proof uses the Dehornoy ordering (Thm 3). Cor 2 uses Long's Lemma 2.1 (two nontrivial noncentral normal subgroups intersect nontrivially). Cor 3: if Burau(B4) is unfaithful, then Jones fails to detect the unknot.",
+    "source": "T. Ito, Math. Z. 280 (2015) 347-353, arXiv:1402.2028",
+    "verified": "full_text",
+    "relevance": "The Long/Ito endpoint of gate E is a theorem. What is missing is a kernel element.",
+    "locator": "Thm 1, Cors 1-3 pp.1-2; Thm 3 p.2",
+    "node": "gate E"
+   },
+   {
+    "claim": "NEW (Jul 2026, v2 14 Sep 2026, unrefereed). Main Theorem: Burau rho_4 of B4 is faithful. Cor 1.1: the Jones representation of B4 is faithful. Proof ingredients: Long's reduction to the Brunnian subgroup (Prop 1.2); a Moody-polynomial obstruction with a parity condition that excludes cancellation (Lemma 4.2); products of push maps; embedding K4 in B5 to repair 4-disks (Sec. 6.3). The paper does not discuss unknot detection. Wikipedia notes the result is unverified by the community.",
+    "source": "Bharathram-Birman-Brendle, arXiv:2607.05283v2",
+    "verified": "full_text",
+    "relevance": "Statements read in the arXiv HTML; proof not audited. If correct, Ito's Cor 3 hypothesis fails: B4 has no TL kernel, so gate E is permanently closed at n=4. Only n >= 5 remains, e.g. the 5-dimensional [3,2] TL summand of B5, where Burau is already unfaithful. It does NOT prove Jones detects the unknot among closed 4-braids; KLS Sec. 2.3 makes the same point.",
+    "locator": "Main Theorem, Cor 1.1, Prop 1.2, Secs. 2-6",
+    "node": "gate E"
+   },
+   {
+    "claim": "4-braids (Feb 2024). Thm 3.1: no nontrivial 4-strand knot has V = Delta = 1 with HOMFLY H != 1. Proof: H-1 is divisible by (A^2-1)(A^2-q^+-2)(A^2-q^+-4) (differential expansion), which contradicts the MFW bound a-span <= 2(b-1). Thm 3.2: a candidate one-parameter HOMFLY family for V=1 4-braid knots, writhe W = 2m+5 (odd, >= 5), chiral. Prop 3.4 attributes the 3-strand case to Stoimenow. No detection result for 4-braids.",
+    "source": "Korzun-Lanina-Sleptsov, arXiv:2402.02553v2",
+    "verified": "full_text",
+    "relevance": "Statements read in the HTML. Non-Euler input is braid index via MFW. No transfer to the slice, since the braid index of K'_n is uncontrolled.",
+    "locator": "Props 3.1-3.4, Thms 3.1-3.2, Sec. 4.1",
+    "node": "U5"
+   },
+   {
+    "claim": "24 crossings (Tuzun-Sikora). Thm 1: Jones separates every nontrivial knot with a diagram of <= 24 crossings from the unknot. Method: non-thin Conway polyhedra (<= 24 vertices) filled with algebraically trivializable algebraic tangles (bracket (p,q) with pr+qs=1), plus closures of algebraic tangles; pass-move pruning; determinant filter; brackets of det-1 diagrams. Monomial-bracket candidates are certified as unknots by SnapPy (cyclic pi_1) or Dynnikov. About 5.95e13 diagrams at 24 crossings. No extension beyond 24 found as of 2026-11.",
+    "source": "Tuzun-Sikora, JKTR 30 (2021), DOI 10.1142/S0218216521500206, arXiv:2003.06724v2",
+    "verified": "full_text",
+    "relevance": "Every K_q in a u=1 counterexample has crossing number >= 25. Non-Euler input is actual unknot recognition. 'Algebraically trivializable' is a weak shadow of the rational-bracket condition on X.",
+    "locator": "Thm 1 p.1; Sec. 2 steps (1)-(8)",
+    "node": "B3"
+   },
+   {
+    "claim": "Machine learning. No ML search for Jones-trivial knots found. Applebaum et al. (2024; Exp. Math. 2025) use RL to find unknotting sequences on diagrams up to 200 crossings (about 57k knots; 2.6M hard unknot diagrams). Gukov et al. 2020 ('Learning to unknot') report that Jones degree correlates with prediction confidence, with Jones not used in training. A 2025 data-driven survey states the problem is open and verified through 24 crossings.",
+    "source": "arXiv:2409.09032; arXiv:2010.16263; arXiv:2503.15103",
+    "verified": "abstract_or_snippet",
+    "relevance": "No learned mechanism or candidate exists. RL hard-unknot datasets could seed searches for coherent band moves from the unknot to Jones-trivial links (see the band-trivializable reformulation below).",
+    "node": "B3"
+   },
+   {
+    "claim": "CLAIMED FULL PROOF (21 Jun 2026, filed in math.GM, unrefereed). Main theorem 6.8: a nontrivial J_N-trivial knot has N <= 3c(K); Thm 6.9 deduces Jones detection. Since V-1 has bounded span, 6.8 is EQUIVALENT to the conjecture. Red flags from a partial reading of the HTML through a summarizer: (i) the clasping-twist machine's geometric hypotheses (C1)-(C4) and (H1) are stated as hypotheses, and the constant kappa_mach = 11 is not derived; (ii) vanishing on cube vertices comes from the 'descent' Thms 5.10-5.11, not from V_K = 1; (iii) EKT links (B1) and virtual knots (B2) are never mentioned; the only visible classical inputs are planar nugatory-crossing and Reidemeister notions (Lemma 6.2).",
+    "source": "Carmi-Cohen, arXiv:2606.22410v1",
+    "verified": "abstract_or_snippet",
+    "relevance": "Do not trust. Cheap audit: run the descent argument (Thms 5.10-5.11, Lemma 6.4) on a Kauffman virtual knot with V=1 and on an EKT link. If no step fails, the paper is refuted by B2 or B1.",
+    "locator": "Thms 5.10, 5.11, 6.8, 6.9; Def 5.4; Prop 5.12; Lemma 6.2",
+    "node": "T"
+   },
+   {
+    "claim": "Sikora, IPAM talk, 15 Oct 2026 ('Tangle Equations, the Jones Unknot Conjecture, and Lens Space Surgeries'; Workshop I, Hyperbolic Structures and Quantum Invariants). Abstract only: tangle equations modelling DNA recombination, related to the nugatory crossing and cosmetic surgery conjectures. Conjecture: a framed rational solution is unique, and failure would disprove Jones. Double branched covers of the unframed version give lens-space surgery problems, with new results/conjectures and possible guidance toward counterexamples. No slides or preprint found on mathinstitutes.org, the IPAM pages, or arXiv; the video exists but was not audited.",
+    "source": "https://www.mathinstitutes.org/videos/25091",
+    "verified": "abstract_or_snippet",
+    "relevance": "His lens-space reduction needs TWO actual 2-bridge closures. The slice has one actual closure (U at mu). An actual second lens or L-space filling is exactly the missing C1 input, so the talk (as abstracted) does not address Lemma Q. Sikora co-organized the workshop.",
+    "node": "U5"
+   },
+   {
+    "claim": "KWZ (Feb 2026). Thm 3.17: the tangle invariant D1(T) is homotopic to C(r1(p/q)) (up to grading shift) iff T = Q_{p/q}, over any ring; the proof glues T to rho(T) and uses Kronheimer-Mrowka. Thm B / Thm 3.19 (geography): every component of the reduced Khovanov multicurve over a field is r_n(p/q) or s_{2n}(p/q) up to bigrading shift, with trivial local systems. Def 3.12 gives explicit bigraded complexes. Lemma 3.18: if two 4-ended tangles glue to the unknot, one is rational. Thm 3.22: connectivity detection. Thm A: component-preserving mutation invariance of reduced Kh over any field.",
+    "source": "Kotelskiy-Watson-Zibrowius, arXiv:2602.23442",
+    "verified": "full_text",
+    "relevance": "The categorified Lemma Q is a theorem. The geography Claude's parked KWZ route assumed (Kh(X) = r_1(s) plus special curves at mu) now rests on a proved classification. chi of each component type is explicitly computable from Def 3.12, so w_kappa becomes a finite signed sum of explicit polynomials; B5 lives exactly in sign cancellation among the shifted chi(s_{2n}(mu)). Example: the circle-idempotent part of chi(s_{2n}(0)) equals (-1)^n (q-q^-1)(q^-2n - q^2n), which vanishes at q = +-1.",
+    "locator": "Thm 3.17 and Lemma 3.18 p.18; Thm 3.19 p.19; Def 3.12 p.17; Thm 3.22",
+    "node": "U5"
+   },
+   {
+    "claim": "Equivariant cosmetic surgery conjecture for strongly invertible knots, via Khovanov multicurves of the quotient tangle plus Hanselman. The same tools reprove Wang's split-link cosmetic crossing result, and the multicurves detect split Conway tangles.",
+    "source": "Kotelskiy-Lidman-Moore-Watson-Zibrowius, Math. Ann. 389 (2023) 2903-2930, arXiv:2109.14049",
+    "verified": "abstract_or_snippet",
+    "relevance": "Precedent for applying multicurves to the quotient tangle of a strongly invertible kappa, which is our exact setting. Categorified, so it does not address B5.",
+    "node": "U5"
+   },
+   {
+    "claim": "Cosmetic crossing conjecture for knots whose Sigma_2 is an L-space with square-free homology summands, proved via Gainullin's surgery characterization of the unknot in L-spaces plus an equivariant Dehn's lemma.",
+    "source": "Lidman-Moore, Trans. AMS 369 (2017) 3639-3654, arXiv:1507.00699",
+    "verified": "abstract_or_snippet",
+    "relevance": "The Floer analogue of Lemma Q ('cosmetic' in place of 'Jones-cosmetic'). Same Floer-simplicity input as LATE-41 and C1. Prior art for the Gainullin step in the LATE-41 audit.",
+    "node": "RB4"
+   },
+   {
+    "claim": "Shah, MSc thesis 'Jones-cosmetic tangle replacement' (UBC 2023, supervised by Watson; poster at the Young Topologists Meeting 2025). UBC seminar on 23 Sep 2026: 'Curves for rational tangles and Schubert normal form'. The thesis PDF (Google Drive) returned HTTP 401 and UBC cIRcle blocked access, so the full text was not read.",
+    "source": "https://sites.google.com/view/pamelashah; UBC math events page",
+    "verified": "abstract_or_snippet",
+    "relevance": "The known P(-2,3) claim is Lemma Q for the trefoil. Decategorified, it already follows from Stoimenow's Cor 4.1. Retry access, since any general criterion in the thesis would be directly on target.",
+    "node": "U5"
+   },
+   {
+    "claim": "EKT 2003. Every example is a Hopf-link satellite H(T,U), formed by clasping the numerators of T and U. Prop 2.1: <H(T,U)> = delta{g<(T+U)^N> + <T^N><U^N> - g<T^D><U^D>}, with g = a^-8 - 2a^-4 + 2 - 2a^4 + a^8. A regluing omega preserves the bracket (Thm 3.2). Thm 3.3 gives infinite prime (k+1)-component families with V = u*V_L. LL2(n) = H(T_n, -T_n) with rational T_n whose numerators are distinct 2-bridge knots; even n gives boundary links with Delta = 0. LL1(m,n) uses non-rational algebraic tangles T_{m,n} whose numerator is the unknot (Prop 4.2). Sec. 5 notes all sublinks are alternating.",
+    "source": "Eliahou-Kauffman-Thistlethwaite, Topology 42 (2003) 155-169",
+    "verified": "full_text",
+    "relevance": "Factor (computed here): g = a^-8(1+a^8)(1-a^4)^2, vanishing exactly at t in {1, +-i}. This is a worked bilinear satellite bracket formula of the U5b type, consistent with F-divisibility. B1 test for the slice: is any EKT or Thistlethwaite link with V = u reachable from U by one coherent band move? See the next finding.",
+    "locator": "Prop 2.1 p.158; Thm 3.3 p.164; Sec. 4.1-4.2, Prop 4.2 pp.164-166; Sec. 5",
+    "node": "B1"
+   },
+   {
+    "claim": "DERIVED HERE (not found in the literature). Let X be a tangle with X(mu) = U and rational bracket. Then V(X(s)) = unit*V(Q_lambda(s)) for every slope s. (a) K_q = X(mu+q*lambda), q in Z, all have V=1 and Sigma_2 = S^3_{+-1/q}(kappa): q even gives K'_{q/2}, q = +-1 gives the unoriented smoothing of the unknotting crossing. (b) L_0 = X(lambda) is the oriented smoothing; it is coherently band-adjacent to U, and its V equals -t^(1/2)-t^(-1/2) EXACTLY with the band-induced orientation (forced unit computed from the skein relation; lk = 0). Conversely, a nontrivial 2-component link with V = u that is one coherent band move from the unknot gives, via the band's complement tangle, a Z-family of nontrivial V=1 knots (Property R, Gordon-Luecke), and K_{+-2} have u=1. Hence the Jones conjecture restricted to u=1 knots is equivalent to: every band-trivializable 2-component link with V = u is the unlink.",
+    "source": "Derivation from: rank-2 skein module, Montesinos trick, Gabai 1987 (Property R), Gordon-Luecke 1989; cross-checked against Stoimenow Prop 4.3, which runs exactly this reduction for Wh(J)",
+    "verified": "memory_unverified",
+    "relevance": "Restates U5 as a direct confrontation with B1: Lemma Q is equivalent to EKT-type links never being band-trivializable. Cheap falsification tests on EKT LL1/LL2 and Thistlethwaite's 15-crossing links: H_1(Sigma_2) must be exactly Z; pi_1(Sigma_2) must have weight one; then a SnapPy band search. Classical band obstructions (Kanenobu-Moriuchi V(e^{i pi/3}) ratios; signature; Arf) vanish automatically for V = u, consistent with F.",
+    "node": "U5a"
+   }
+  ],
+  "prior_art_risks": [
+   "Stoimenow 2011 Prop 4.3 (arXiv:math/0606255) already reduces V(Wh(J)) = 1 to V(oriented smoothing L_0) = V(unlink) up to units and kills it by semiadequacy. 'Apply link-level detection to L_0' is prior art in the Whitehead case, and Lemma Q for kappa = J#J^r (J semiadequate) is effectively proved there.",
+   "Stoimenow Cor 4.1 (Montesinos) already implies Lemma Q for torus-knot kappa, and decategorified Shah P(-2,3) Jones-cosmetic statement.",
+   "The tangle bracket-vector formalism and satellite bracket formulas (U5a, U5b) are prior art: EKT 2003 Sec. 2 (bracket vector br(T), Prop 2.1 Hopf-clasp formula) and Rolfsen 1993 ('diagram surgery and the Temperley-Lieb algebra', NATO ASI C 399, 195-210; seen only in the reference list).",
+   "KWZ arXiv:2602.23442 (Feb 2026) Thms 3.17 and 3.19: rational-tangle detection and multicurve geography over any field. This is prior art for the categorified Lemma Q and for every structural input of the parked KWZ route.",
+   "Lidman-Moore arXiv:1507.00699 uses Gainullin's theorem plus an equivariant Dehn's lemma for cosmetic crossings. This overlaps the Gainullin and equivariance steps flagged in the LATE-41 audit.",
+   "Sikora CJM 76 (2024) Thm 24(c), and his Oct 2026 IPAM lens-space framing: any 'two closures imply rational' or lens-space-surgery result may already be in his unpublished talk material.",
+   "KLMWZ Math. Ann. 2023: strong inversion plus quotient-tangle Khovanov multicurves is established technology.",
+   "The F-factor zeros are classical: V(-1) gives det; V(e^{i pi/3}) gives H_1(Sigma_2; Z3) (Lickorish-Millett); V(i) gives Arf; V'(-1) gives Casson-Walker (Mullins). Kanenobu-Moriuchi band-surgery criteria use V(e^{i pi/3}). Do not present F | w_kappa as new without citing these.",
+   "Kanenobu (2011 talk abstract): band-trivializability of prime 2-component links up to 9 crossings, decided by signature, Jones, Q and Arf. Check this literature before claiming the band-trivializable reformulation is new.",
+   "Miyazawa 1998 (Astra) for U4, and Hedden-Watson 2008 for Khovanov detection when tangle unknotting number is 1."
+  ],
+  "searches_run": [
+   "Sikora IPAM Tangle Equations Jones Unknot Conjecture Lens Space Surgeries (standard)",
+   "Lowrance Spyropoulos Jones polynomial almost alternating arXiv (standard)",
+   "Ito kernel braid group representation knot trivial knot polynomials (standard)",
+   "Stoimenow Coefficients and non-triviality of the Jones polynomial semiadequate (standard)",
+   "Turaev genus two links nontrivial Jones polynomial arXiv (standard)",
+   "\"Jones unknot conjecture\" arXiv 2025 (extended)",
+   "Tuzun Sikora Verification Jones unknot conjecture 24 crossings (standard)",
+   "Jones unknot conjecture verified 25 OR 26 crossings (extended)",
+   "machine learning reinforcement learning trivial Jones polynomial counterexample (extended)",
+   "homogeneous knots Jones polynomial nontrivial Cromwell (standard)",
+   "\"trivial Jones polynomial\" knot arXiv 2026 (extended)",
+   "Bharathram Birman Brendle Burau representation faithful n=4 (extended)",
+   "Sikora 2026 arXiv tangle equations lens space surgeries (extended)",
+   "Pamela Shah Jones-cosmetic tangle replacement immersed curves thesis (extended)",
+   "Cosmetic operations and Khovanov multicurves arXiv (standard)",
+   "Khovanov multicurve rational tangles detect KWZ (standard)",
+   "open.library.ubc.ca 1.0435691 thesis (standard)",
+   "branched double cover Whitehead double 1/2 surgery K#K^r Manolescu Owens (standard)",
+   "Stoimenow canonical genus knots Jones polynomial non-trivial (standard)",
+   "\"unknotting number one\" \"Jones polynomial\" 2024-2026 (extended)",
+   "satellite knots cables Jones polynomial nontrivial (standard)",
+   "Thistlethwaite Links with trivial Jones polynomial 15 crossings (standard)",
+   "coherent band surgery unknot two-component link Jones Kanenobu (standard)",
+   "band surgery two-component link trivial Jones unknot Montesinos trick (extended)",
+   "Lidman Moore cosmetic crossing L-space branched double covers (standard)",
+   "strongly quasipositive / arborescent Jones nontrivial (standard)",
+   "IPAM Hyperbolic Structures and Quantum Invariants 2026 Sikora slides (standard)",
+   "WebFetch full texts read: arXiv 1402.2028 (Ito), math/0012086 (Bigelow), 1707.05443 (LS), math/0606255 (Stoimenow), 2003.06724 (TS24), 2602.23442 (KWZ 2026), EKT Topology 2003 PDF, 2607.05283 HTML (BBB), 2402.02553 HTML (KLS), 2606.22410 HTML (Carmi-Cohen, partial), Lowrance 2019 slides"
+  ],
+  "mechanisms_seen": [
+   "M1 Extreme-state uniqueness (alternating, adequate). The extreme q-grading has one state or generator, so chi cannot cancel. The input is the diagram class only.",
+   "M2 Second-coefficient plus positivity (Stoimenow, semiadequate). |V1| = b1(reduced A-graph); V1 = 0 forces a tree, then a positive diagram, then genus = canonical genus = min deg V. Non-Euler input: genus minimality of canonical surfaces (Cromwell/Bennequin). In Kh terms the first two extreme gradings are thin, so there is no cancellation.",
+   "M3 Controlled cancellation at one bad crossing (Lowrance-Spyropoulos). Skein at the dealternator; both resolutions are closures of one alternating tangle; Dasbach-Lin gives exact extreme coefficients; total cancellation forces a simplifying move (semiadequate up to mutation, or alternating). This is the only published mechanism that handles real extreme cancellation, and the one closest to the u=1 problem.",
+   "M4 Mutation invariance plus structure theorem (Armond-Lowrance): reduces Turaev genus one to almost alternating.",
+   "M5 Cabling preserves adequacy (Stoimenow, Wh doubles). In effect this is the slice's L_0 reduction for kappa = J#J^r.",
+   "M6 Braid representations: Burau faithfulness on B3 plus semiadequacy of minimal 3-braid words. For 4-braids: MFW braid-index bound plus differential expansion (KLS) gives only constraints. The Bigelow/Ito kernel-to-counterexample route is closed at n=4 if Bharathram-Birman-Brendle is right.",
+   "M7 Exhaustive enumeration (Tuzun-Sikora): Conway polyhedra, unimodular-bracket algebraic tangles, det filter, then actual unknot recognition (SnapPy/Dynnikov). Non-Euler input: actual topology of the candidates.",
+   "M8 Categorified rank (Kronheimer-Mrowka; Hedden-Watson for tangle unknotting number one; KWZ rational-tangle detection). The non-Euler input is rank, invisible to V.",
+   "Derived for the slice: rational bracket transports every link or knot detection theorem to ALL closures X(s). L_0 (V = u exactly, coherently band-adjacent to U) and the Z-family K_q (Sigma_2 = S^3_{1/q}(kappa), q odd included) must all avoid every class above. Turaev genus is constant along twist families.",
+   "Classical evaluation points {1, +-i, -1, e^{+-i pi/3}} (plus Mullins' V'(-1)) carry all known Sigma_2-topological content of V. The EKT clasp factor g = a^-8(1+a^8)(1-a^4)^2 vanishes on part of this set, consistent with F | w_kappa."
+  ],
+  "open_questions": [
+   "Is any EKT link (LL1(m,n), LL2(n), 3-parameter omega-families) or Thistlethwaite 15-crossing 2-component link with V = -t^(1/2)-t^(-1/2) reachable from the unknot by one coherent band move? A YES gives a Jones counterexample family. Cheap necessary tests: H_1(Sigma_2) exactly Z; pi_1(Sigma_2) of weight one; then a SnapPy band search.",
+   "Does the Lowrance-Spyropoulos dealternator analysis extend from alternating to adequate (or semiadequate) smoothing closures? That would prove Lemma Q for every X with one diagram whose two smoothings X(lambda) and X(mu+lambda) are adequate.",
+   "Compute chi of KWZ components r_n(p/q) and s_{2n}(p/q) from Def 3.12 of arXiv:2602.23442. Is chi(s_{2n}(mu)) = c_n(q)*v_mu with F | c_n? Can a signed, shifted sum of c_n equal -d_s? This is the exact decategorified form of the parked KWZ route.",
+   "Is the Bharathram-Birman-Brendle proof (arXiv:2607.05283) correct? For n=5, is the [3,2] Temperley-Lieb summand of B5 faithful (gate E's last open block at small n)?",
+   "Carmi-Cohen arXiv:2606.22410: where does classical (non-virtual) input enter Thms 5.10-5.11? Run the argument on a Kauffman virtual knot with V=1 (B2) and on an EKT link (B1).",
+   "Sikora IPAM video (mathinstitutes.org/videos/25091): does he state a lens-space surgery conjecture or result that bears on the one-actual-closure case?",
+   "Does any EKT 2-component link have Turaev genus exactly 2? If so, a Turaev-genus-2 detection theorem must use the one-component hypothesis.",
+   "Retrieve Shah's thesis (Drive returned 401; UBC cIRcle blocked). Does it contain a general Jones-cosmetic criterion beyond P(-2,3)?",
+   "Homogeneous knots and arborescent knots: no detection theorem found; arborescent fails for semiadequacy (Stoimenow Example 4.1)."
+  ]
+ },
+ "bridges": {
+  "track": "Bridges from the Jones polynomial / Kauffman bracket to actual topology beyond rank inequalities, applied to the u=1 slice (Lemma Q, node U5)",
+  "findings": [
+   {
+    "node": "U5 / B5",
+    "claim": "Sikora v2 has no theorem tying bracket DEGREES to surfaces. It defines the KB ratio {T}_q = A^-2[T]_inf/[T]_0 with q=-A^4, which is framing independent (Thm 6), and proves {<x>}_q equals the Morier-Genoud-Ovsienko q-rational [x]_q (Thm 7, Sec. 7) with {<x>}_1 = x (Cor 19). Conj 8 says every dividing m-essential surface in any tangle complement has slope {T}_1. Thm 9 proves this only for algebraic tangles ({T}_1 = Ozawa's slope s(T)), by matching additivity and rotation rules (Ozawa Prop 2.4 vs Sikora Prop 18). Prop 26 gives |{T}_1| = det N(T)/det D(T). Since q=1 means t=-1, the 'slope' is the determinant (H_1 of Sigma_2) slope.",
+    "source": "Sikora, arXiv:2005.08162v2 (Canad. J. Math. 76 (2024) 707-727), Secs 1.3, 6, 7, 10: Thm 6, Thm 7, Conj 8, Thm 9, Prop 18, Prop 26, Cor 19, Cor 20",
+    "locator": "Sec 10 (Slopes of tangles): Thm 9 and Prop 26; Sec 1.3: Conj 8",
+    "verified": "full_text",
+    "relevance": "Classical (Euler-level) only. For any X with Sigma_2(X)=E(kappa), {X}_1 is automatically the rational-longitude slope for every kappa, so it cannot see kappa. Conj 8, if true, would constrain actual surfaces, but its input is H_1 data. No non-Euler information is available for Lemma Q."
+   },
+   {
+    "node": "RB6 / U5",
+    "claim": "Sikora Thm 24: JC is equivalent to each of: (a) [T]=(1,0) implies T=<0>^0; (b) [T]=(rA^n,0) implies T=<0> unframed; (c) [T']=[T] with T rational implies T'=T as framed tangles. Prop 25 is the crossing-bounded version. Prop 13: the nugatory crossing conjecture is equivalent to 'N(X+<1>)=N(X+<-1>) a knot implies X unlinked'. Prop 5: no algebraic solutions when L is a nontrivial rational or torus knot.",
+    "source": "Sikora arXiv:2005.08162v2, Lemma 23, Thm 24, Prop 25 (Sec 9), Prop 13 and Prop 5 (Sec 3)",
+    "locator": "Thm 24(a)-(c); Prop 13",
+    "verified": "full_text",
+    "relevance": "Lemma Q is (c) plus one actual unknot closure; without that anchor it is JC-equivalent. Supplies no mechanism."
+   },
+   {
+    "node": "U5 (defect F | w_kappa)",
+    "claim": "For knots, every known 'classical' evaluation is a function of H_1(Sigma_2) and its linking pairing: V(1)=1; V(-1)=+-det; V(i)=(-1)^Arf (Murakami 1986), where Arf is fixed by det mod 8; V(e^{2 pi i/6}) = eps_K (i sqrt3)^{dim H_1(Sigma_2;F_3)} (Lickorish-Millett). Jost-Lewark (Jan 2026) prove V_K(e^{2 pi i/6}) and the Kauffman Q-polynomial at 1/golden ratio are fixed by the oriented homeomorphism type of Sigma_2, with explicit formulas via the linking pairing. They report Lipson's singular determinant delta_3 = eps_K. Inference (mine): S^3_{p/q}(kappa) has the same H_1 and linking pairing as L(p,q), for every kappa. So every classical evaluation of every knot closure of X equals the rational tangle's, and the defect vanishes at t in {1,-1,+-i,e^{+-i pi/3}} for all strongly invertible kappa. This conceptually explains the zeros of F=(1-A^4)(1+A^8)(1+A^12), but not their multiplicities.",
+    "source": "Jost-Lewark arXiv:2601.16588 (abstract, plus list quoted in search snippet from their arXiv:2303.04233); Murakami, J. Math. Soc. Japan 38 (1986); Lickorish-Millett, Comment. Math. Helv. 61 (1986); Lipson, Math. Proc. Camb. Phil. Soc. 100 (1986) 361-364 (DOI 10.1017/S0305004100077367; content not seen)",
+    "locator": "2601.16588 abstract",
+    "verified": "abstract_or_snippet",
+    "relevance": "Blind to kappa by construction: these evaluations cannot apply to Lemma Q. The Q-polynomial at 1/phi (golden ratio, Fibonacci-type, Z/5 data) is Kauffman-polynomial data, not determined by V. I found no theorem giving V at any non-classical root (e.g. e^{2 pi i/5}) a Sigma_2, SO(3) or Fibonacci-TQFT meaning."
+   },
+   {
+    "node": "U5 / B4",
+    "claim": "Jaeger-Vertigan-Welsh: Tutte-polynomial evaluation is #P-hard except on (x-1)(y-1)=1 and 8 special points. My computation of the Jones line xy=1: the tractable points are t in {+-1, +-i, e^{+-i pi/3}, e^{+-2 pi i/3}}. At e^{+-2 pi i/3}, delta^2=1, so the N and D closure functionals (delta,1) and (1,delta) are proportional. So V is constant there and the defect need not vanish, consistent with F having no zero there. The zeros of F are therefore exactly the tractable points where the closure functionals are independent.",
+    "source": "Jaeger-Vertigan-Welsh, Math. Proc. Camb. Phil. Soc. 108 (1990) 35-53",
+    "locator": "main classification theorem (Tutte); Jones corollary computed by me",
+    "verified": "abstract_or_snippet",
+    "relevance": "B4: everything that distinguishes kappa lives at #P-hard points, where no classical topological interpretation is known."
+   },
+   {
+    "node": "U5 / B5",
+    "claim": "Spectral sequences from Khovanov homology: Ozsvath-Szabo (Kh variant => HF-hat(Sigma(L))); Bloom (reduced Kh => monopole Floer of Sigma(L); pages E_k for k>1 are mutation-invariant); Scaduto (reduced odd Kh => framed instanton of -Sigma(L)); Kronheimer-Mrowka (reduced Kh => singular instanton knot homology; rank 1 iff unknot); Dowlin (rank Kh~(K) >= rank HFK-hat(K)); Lipshitz-Ozsvath-Thurston (bordered computation of OS); Baldwin-Levine (spanning-tree model of delta-graded HFK via Manolescu's skein triangle; abstract states no Kh relation). All yield rank inequalities only. The Floer-side Euler characteristics are classical: |H_1| = |V(-1)| for Sigma_2 theories, Delta_K for HFK. The quantum grading has no Floer counterpart.",
+    "source": "arXiv:math/0309170 (Adv. Math. 194 (2005) 1-33); arXiv:0909.0816; arXiv:1401.2093 (J. Topol. 8 (2015) 744-810); arXiv:1005.4346 (Publ. IHES 113 (2011)); arXiv:1811.07848; arXiv:1011.0499 (J. Topol. 7 (2014) 1155-1199); arXiv:1105.5199 (Adv. Math. 231 (2012))",
+    "locator": "abstracts",
+    "verified": "abstract_or_snippet",
+    "relevance": "None of these turns V into Floer data. For Lemma Q they require actual Kh ranks (non-Euler input), e.g. a thin closure of rank equal to det, which would give the missing L-space filling."
+   },
+   {
+    "node": "U5 (categorified analogue)",
+    "claim": "Watson Thm 1: an invariant kappa(K,h) of strongly invertible knots vanishes iff K is trivial. It is a finite quotient of the inverse limit of Kh~(T(n)) over integer closures of the quotient tangle. Proof: kappa=0 forces Kh~(T(n)) into a single delta-grading of rank det=n; OS then makes S^3_n(K) an L-space for |n|>>0 of both signs, so tau=g=0. Watson notes that the quantity 'is not one that can be extracted from the Jones polynomial'. In Lemma Q coordinates these closures are X(n mu+lambda), whose Jones polynomials all equal V(T(2,n)) under a rational bracket (my computation).",
+    "source": "Watson, arXiv:1311.1085, Adv. Math. 313 (2017); Thm 1 and its proof in Sec 3.3; Definition 10; Prop 11",
+    "locator": "Sec 3.3 'Detecting the trivial knot'",
+    "verified": "full_text",
+    "relevance": "Exact categorified analogue of Lemma Q on the integer-surgery family. The non-Euler input is delta-thinness/rank; a counterexample needs kappa != 0 while every Euler characteristic matches the trivial knot."
+   },
+   {
+    "node": "U5 (categorified analogue)",
+    "claim": "KWZ (Thin links and Conway spheres, Thm 5.7; over any field in KWZ 2026, Thm 3.17): Kh~(T) is a single component r_1(p/q) iff T = Q_{p/q}. Components are only rational r_n(p/q) or special s_2n(p/q) (KWZ21b Thm 6.5; any field: KWZ 2026 Thm B/3.19). Proof of 3.17: the Floer pairing makes Kh~(rho(T) u T) rank 1, so the closure is the unknot (KM); Lemma 3.18 says two tangles gluing to the unknot force one to be rational. Bracket shadow (my inference): if [X] is rational then the double rho(X) u X has V=1. So any non-rational X with rational bracket gives a nontrivial V=1 knot with an essential Conway sphere.",
+    "source": "Kotelskiy-Watson-Zibrowius arXiv:2602.23442 (Feb 2026), Thm B, Thm 3.17, Lemma 3.18; 'Thin links and Conway spheres' Thm 5.7 and 6.41 as quoted in arXiv:2109.14049 Thms 2.5-2.7",
+    "locator": "2602.23442 Sec 3 (Thm 3.17, Lemma 3.18)",
+    "verified": "full_text",
+    "relevance": "The categorified Lemma Q is known. The gap is exactly whether the special components of slope mu (KLMWZ: C = gamma_1..gamma_m u r_1(s), s even) can have zero total Euler characteristic. This matches Claude's parked route; the literature gives shape constraints only, nothing on bigradings."
+   },
+   {
+    "node": "U5",
+    "claim": "KLMWZ Thm 1.2: a Conway tangle with an unknot closure and isotopic fillings T(r) = T(r') has r = r' or is rational. This is equivalent to the equivariant cosmetic surgery Thm 1.1 and implies Scharlemann-Thompson (cosmetic crossings on the unknot). The proof uses the structure C = specials of slope inf plus rational r_1(s) with s even, Hanselman's restriction of cosmetic slopes to +-2 or +-1/n, and absolute gradings of actual Kh. Thm 1.6: Kh~/BN~ detect split tangles, using Xie's annular detection. Thm 1.4: generalized cosmetic crossing holds asymptotically.",
+    "source": "Kotelskiy-Lidman-Moore-Watson-Zibrowius, arXiv:2109.14049 (Math. Ann. 389 (2024) 2903-2930 per search snippet), Thms 1.1, 1.2, 1.4, 1.6, 2.6, 2.7, 3.1, Sec 4",
+    "locator": "Sec 4 proof of Thm 1.2",
+    "verified": "full_text",
+    "relevance": "Closest categorified relative of Lemma Q. Its non-Euler input is actual isotopy, so equal bigraded Kh. Lemma Q replaces that with equal Euler characteristic only."
+   },
+   {
+    "node": "U2 / U5",
+    "claim": "Xie: a spectral sequence AKh(mirror L) => annular instanton AHI(L) that preserves the annular grading (Thm 1.1); AHI(L,+-2g) != 0 for a minimal-genus admissible surface (Thm 1.5); AKh supported in annular degree 0 implies L lies in a 3-ball in S^1 x D (Cor 1.6); unlink detection (Cor 1.7); the degree-i summand AKh(T^,i) is the tangle homology TKh(T) for balanced admissible T (Cor 1.2, Thm 1.3). Inference (mine): for a non-nugatory crossing circle c of U, the pattern P = U in S^3 - N(c) is null-homologous with wrap(P)=2. A Seifert surface of c tubed off U has genus 1, so AKh(P,+-2) != 0. Lemma Q's hypothesis is equivalent to the graded Euler characteristic of AKh(P,2) = TKh(X') vanishing; that Euler characteristic is the z^2 coefficient = the identity coefficient of [X'] in TL_2.",
+    "source": "Xie, arXiv:1809.01568v2, Thms 1.1, 1.3, 1.5, Cors 1.2, 1.6, 1.7; definition of balanced admissible tangle: Def 2.2",
+    "locator": "Intro pp. 1-3",
+    "verified": "full_text",
+    "relevance": "Sharpens the IDEAS.md 'annular form': the rank side is a theorem. Lemma Q is equivalent to: this one explicitly identified nonzero bigraded group TKh(X') never has zero Euler characteristic when the S^3 image is U. Pure Euler cancellation, in one place."
+   },
+   {
+    "node": "B5 / U5",
+    "claim": "Floer counterpart of AKh(P,2) is Euler-blind (my inference from cited theorems). Grigsby-Wehrli give a spectral sequence from Kh of an admissible balanced tangle T in D x I to SFH(Sigma(D x I,T)). For X' this cover is (E(kappa), two sutures of slope lambda), because the crossing-circle suture lifts to two copies of lambda. Juhasz: taut implies SFH != 0, and here taut holds iff kappa is nontrivial (the annuli R_+- are incompressible). FJR Thm 1: chi(SFH(M,gamma,s)) = T(M,gamma)(s), with the torsion set to 0 when H_*(M,R_-;F) != 0. Here H_1(E(kappa),R_-;Q(t)) = Q(t) because lambda maps to 1, so chi = 0 in every spin^c structure, for every kappa.",
+    "source": "Grigsby-Wehrli arXiv:0907.4375 (AGT 10 (2010)) (snippet); Juhasz arXiv:math/0609779 (Geom. Topol. 12 (2008) 299-350) abstract; Friedl-Juhasz-Rasmussen arXiv:0903.5287 (J. Topol. 4 (2011) 431-478), Thm 1 and Sec 3 torsion convention",
+    "locator": "FJR Thm 1 and the 'if this complex is not acyclic ... we set tau=0' convention",
+    "verified": "full_text",
+    "relevance": "Shows that no Floer-side Euler argument can see kappa at the relevant grading: the target group is nonzero exactly when kappa is nontrivial, yet its Euler characteristic is identically 0. The Khovanov-side Euler characteristic ([X']_id) is generically nonzero and vanishes exactly under Lemma Q's hypothesis."
+   },
+   {
+    "node": "U2",
+    "claim": "Grigsby-Licata-Wehrli: sutured annular Khovanov homology carries an action of the exterior current algebra of sl_2, and for cables a commuting S_n action. Inference: AKh(P,+-2) is the weight +-2 part, i.e. the multiplicity space M_2 of the 3-dimensional irreps. chi(M_2) is the annular bracket's z^2 (Chebyshev S_2) coefficient, so the sl_2 structure adds no Euler constraint. Baldwin-Grigsby (trivial-braid detection) and Grigsby-Ni (braid detection) are rank results.",
+    "source": "Grigsby-Licata-Wehrli arXiv:1505.04386, Compositio 154 (2018) 459-502 (abstract); Grigsby-Ni arXiv:1305.2183 (snippet); Baldwin-Grigsby PAMS 2015 (memory)",
+    "locator": "abstracts",
+    "verified": "abstract_or_snippet",
+    "relevance": "No Euler-level help for Lemma Q."
+   },
+   {
+    "node": "U5 / new barrier",
+    "claim": "Ren (Sept 2026) disproves the Hoste-Przytycki wrapping number conjecture wrap(L) = deg_z<L> (HP95 Conj 4; K3 Problem 1.28(a)). The annular knot K (winding number 0) has wrap 4 and deg_z <= 2; the 3-component J is also a counterexample. Mechanism (Sec 2.2): the z^4 coefficient is the matrix coefficient l_3 rho(psi_1 psi_2^-1) v_3 of the one-cup TL_6-module, which is the reduced Burau of B_6. It vanishes because Bigelow's B_6 Burau kernel element [psi_1^-1 s_3 psi_1, psi_2^-1 s_3 psi_2] makes two rank-one operators commute. AKh(K) is nonzero in grading 4 via an explicit cocycle, so the categorified conjecture (Grigsby) survives. The example and proofs were found by GPT-6 Astra. Remark 1.3: a colored-degree version would imply that colored Jones detects the unknot (via Bing doubles).",
+    "source": "Q. Ren, arXiv:2609.11084v2 (14 Sep 2026), Conj 1.1, Thm 1.2, Remark 1.3, Secs 2.1-2.2, 3.1-3.2",
+    "locator": "Sec 2.2 'Method 2: 6-strand Burau representation'",
+    "verified": "full_text",
+    "relevance": "Top-annular-degree Euler cancellation provably happens in nature at wrap 4. Any Lemma Q mechanism that would also prove deg_z = wrap for all null-homologous annular knots is refuted by Ren's K (proposed barrier B6). Ren's knot K is a cheap falsification test for annular mechanisms."
+   },
+   {
+    "node": "U5",
+    "claim": "Inference (mine): Lemma Q is exactly the wrap <= 2, null-homologous, S^3-unknotted case of HP95 Conj 4. With P = U in S^3 - N(c): deg_z<P>=0 iff the bracket is rational (U2), and wrap(P)=0 iff the crossing is nugatory iff X is rational. K3 Problem 1.28 (scribe Baldwin): HP proved the conjecture for +- adequately wrapped diagrams; the categorified version holds for string links (Grigsby-Ni); AKh is nontrivial in the grading given by the generalized meridional Thurston norm (GW10, Xie21, XZ25), which can be far smaller than wrap (Martin). At null-homologous wrap 2 the norm bound already gives 2, so the categorified version holds there by Xie Thm 1.5. Daniels-Zhang prove the categorified version for alternating annular links and some tangle closures.",
+    "source": "K3 problem list (Baykur-Kirby-Ruberman eds., AMS Surveys 295, 2026), Problem 1.28 and Remarks; Daniels-Zhang arXiv:2501.02623 (abstract); Martin arXiv:2103.01269 (JKTR 32 (2023)) (abstract)",
+    "locator": "K3 preprint p.34, Problem 1.28(a),(b), Remarks (3)-(4)",
+    "verified": "full_text",
+    "relevance": "Places Lemma Q in a named open problem. HP's adequately-wrapped proof is the only Euler-level (decategorified) technique; it needs a diagram hypothesis. I found no proof of the decategorified wrap-2 case; Ren's counterexample is at wrap 4."
+   },
+   {
+    "node": "U5 / B4",
+    "claim": "Inference (mine; unverified sketch). Run Ren's Sec 2.2 one level down. If the crossing-disk cut X' is a 4-plat, X' = cap_i . beta . cup_j with beta in B_4, then [X']_id = l_i rho(beta) v_j where rho is the one-cup TL_4-module, i.e. reduced Burau_4. (1) If this vanishes while the arcs a_i and beta(a_j) are not isotopically disjoint, the rank-one operators rho(tau_{a_i}) and rho(tau_{beta(a_j)}) commute but the half-twists do not, giving a nontrivial Burau_4 kernel element. The adjoint coefficient must also vanish; this should follow from Squier unitarity and needs checking. (2) If the arcs are disjoint, sweeping the cup upward shows X' is isotopic to cup-cap, i.e. split, so the crossing is nugatory. Hence Burau_4 faithful implies Lemma Q (indeed HP at wrap 2) for every tangle whose cut is a 4-plat. Bigelow (2002) argued a nontrivial Burau_4 kernel braid is 'almost certainly sufficient' for a nontrivial V=1 knot; Ito proved that a nontrivial non-central normal subgroup of B_n contains braids with hyperbolic-knot closures, so an unfaithful quantum representation means its invariant need not detect the unknot. Burau_4 faithfulness is open (shown faithful 'almost everywhere' in arXiv:2209.10826; unfaithful mod 2). Cuts needing m >= 2 cups use the 2-through-strand TL_{2m+2} module (e.g. the 9-dim (4,2) irrep of B_6), where E_i is not rank one.",
+    "source": "Ren arXiv:2609.11084v2 Sec 2.2 (template); Bigelow arXiv:math/0012086 (abstract); Ito arXiv:1402.2028, Math. Z. 280 (2015) 347-353 (abstract); arXiv:2209.10826 and arXiv:2309.05547 (snippets)",
+    "locator": "derivation, not a published statement",
+    "verified": "memory_unverified",
+    "relevance": "B4 'where hardness lives': in the 4-plat sector, Lemma Q's Euler gap is (conditionally) the Burau_4 faithfulness problem. It also gives a counterexample recipe: a Ren-style search for zero 2-through-strand matrix coefficients, then a test that the S^3 image is U."
+   },
+   {
+    "node": "U5 (pillowcase)",
+    "claim": "Hedden-Herald-Hogancamp-Kirk: for a 2-tangle diagram, a twisted complex of compact Lagrangians in the Fukaya category of the smooth pillowcase. It factors Bar-Natan's functor, and its Hom with a fixed non-compact Lagrangian is naturally isomorphic to the reduced Kh CHAIN complex of the closure. Cazassus-Herald-Kirk-Kotelskiy: the earring tangle's traceless moduli space is a genus-3 surface immersed as a Lagrangian in P x P (Thm A); circles away from corners are doubled and arcs near corners become homology figure-eights (Thm B); honest figure-eights are conjectured; Atiyah-Floer for I^natural is open. Kotelskiy: bordered algebra for immersed-curve Floer in the pillowcase. Fukumoto-Kirk-Pinzon-Caicedo: pillowcase images of traceless reps of 2-tangles, linear for pretzel tangles; a trivial tangle gives a straight arc.",
+    "source": "arXiv:1808.06957 (Trans. AMS 373 (2020) 8391-8437); arXiv:2010.04320 (Thms A, B; Conj C); arXiv:1707.07481 (Math. Res. Lett., per arXiv comment); arXiv:1305.6042",
+    "locator": "abstracts / intro excerpts",
+    "verified": "abstract_or_snippet",
+    "relevance": "These are chain-level Lagrangian models of Kh whose Euler characteristic is the bracket. They carry real SU(2) data, but only at rank level. No published traceless-variety theorem detects rational tangles from Euler data."
+   },
+   {
+    "node": "U4 / U5 (pillowcase)",
+    "claim": "Kronheimer-Mrowka 2004: for nontrivial K and |r| <= 2, pi_1(S^3_r(K)) has an SU(2) representation with non-cyclic image. The abstract renders this as 'r <= 2'; |r| <= 2 is forced by mirror symmetry and the trefoil's lens-space surgeries. Inference: every V=1 closure in the Lemma Q family has Sigma_2 = S^3_{1/m}(kappa) with |1/m| <= 1, so it actually has non-abelian representations. Signed (Euler) counts are Casson-type: Casson's surgery formula gives n*a_2, which is already 0 by U4. In pillowcase terms, R(E(kappa)) meets the slope-1/m lines geometrically but with algebraic intersection 0. Sivek-Zentner study SU(2)-cyclic surgeries via the pillowcase.",
+    "source": "Kronheimer-Mrowka arXiv:math/0312322 (Math. Res. Lett. 11 (2004)); Sivek-Zentner arXiv:1710.01957 (J. Differential Geom. 121 (2022) 101-185)",
+    "locator": "abstracts",
+    "verified": "abstract_or_snippet",
+    "relevance": "Actual topology that sees kappa, but only through gauge-theoretic nonvanishing. The Euler part is a_2 (U4) and is spent."
+   },
+   {
+    "node": "U5 (skein)",
+    "claim": "Skein-to-character bridges exist only for skein modules of 3-manifolds. Bullock and Przytycki-Sikora: S(M) at A=-1 corresponds to the SL2 character variety (coordinate ring). Bonahon-Wong and Frohman-Kania-Bartoszynska-Le treat skein algebras at roots of unity (Chebyshev/classical shadow; unicity). Detcherry-Kalfagianni-Sikora: if S(M) is tame and the character variety is reduced, then dim_{Q(A)} S(M) equals the number of characters. [X] lives in S(B^3, 4 pts) = Z[A^+-1]^2, and I found no map from [X] to S(E(kappa)), S(B^3 - X) or S(Sigma_2(X(s))).",
+    "source": "Detcherry-Kalfagianni-Sikora arXiv:2305.16188 (Adv. Math. 467 (2025) 110169) abstract; Bullock CMH 72 (1997); Przytycki-Sikora Topology 39 (2000); Bonahon-Wong Invent. Math. 204 (2016); FKL Invent. Math. 215 (2019) (memory)",
+    "locator": "DKS abstract",
+    "verified": "abstract_or_snippet",
+    "relevance": "Not applicable. The bracket of a tangle in the ball is a 2-dimensional shadow with no character-variety content."
+   },
+   {
+    "node": "U2 / U3 / B3",
+    "claim": "Inference (mine, by solving the Kauffman bracket). If V(K_+) = V(K_-) = 1 at the unknotting crossing, one smoothing has unit bracket and the other is unlink-like. The oriented smoothing L_0 must be the unlink-like one, so the UNORIENTED smoothing K_inf is a KNOT with V=1. Its slope is mu+eps*lambda, so Sigma_2(K_inf) = S^3_{+-1}(kappa), an integer homology sphere; by Gordon-Luecke it is nontrivial iff kappa is. More generally, all closures at slopes mu+m*lambda (m in Z) are V=1 knots with Sigma_2 = S^3_{1/m}(kappa); odd m lies outside the preferred K'_n family. K_inf differs from U by one non-coherent band (H(2)) move.",
+    "source": "derivation from bracket skein relations; Gordon-Luecke 1989 via arXiv:2109.14049 intro",
+    "locator": "n/a",
+    "verified": "memory_unverified",
+    "relevance": "Every Lemma Q counterexample also produces a V=1 knot with homology-sphere double cover. This adds test cases and links Lemma Q to band moves on the unknot."
+   },
+   {
+    "node": "DEAD_ENDS #2",
+    "claim": "Ito (genus-one cosmetic crossings) uses w_3 = V'''(1)/36 + V''(1)/12 and lambda(Sigma_2) via the 2-loop part of the Kontsevich integral (Thm 1.3, a mod-16 condition). Ichihara-Wu give a Jones-derivative obstruction to purely cosmetic surgery. For V=1 knots these finite-type quantities vanish identically.",
+    "source": "Ito arXiv:2102.09116 (Proc. AMS 150 (2022) 871-876); Ichihara-Wu (cited as [IW19] in arXiv:2109.14049)",
+    "locator": "2102.09116 Thm 1.3 (snippet)",
+    "verified": "abstract_or_snippet",
+    "relevance": "Finite jets: blind, consistent with DEAD_ENDS #2."
+   },
+   {
+    "node": "B3",
+    "claim": "K3 Problem 1.24 (Jones unknot detection) remarks: Sikora-Tuzun found no nontrivial knot with trivial Jones polynomial up to 24 crossings; Thistlethwaite and EKT links with trivial Jones polynomial do not have trivial HOMFLYPT; KM11 (Khovanov detects the unknot).",
+    "source": "K3 problem list (AMS Surveys 295, 2026), Problem 1.24 and Remarks (1)-(5)",
+    "locator": "preprint pp. 31-32",
+    "verified": "full_text",
+    "relevance": "Confirms B1/B3/B5 citations. Nothing new for Lemma Q."
+   }
+  ],
+  "prior_art_risks": [
+   "Lemma Q is (by my reduction) the wrap-2, null-homologous, S^3-unknotted case of Hoste-Przytycki's wrapping conjecture (J. Knot Theory Ramif. 4 (1995) 411-427, Conj 4; K3 Problem 1.28(a)). Any write-up must cite HP95, the K3 list and Ren arXiv:2609.11084 (general conjecture false at wrap 4).",
+   "The categorified Lemma Q is already in print in several forms: KWZ 'Thin links and Conway spheres' Thm 5.7 (and arXiv:2602.23442 Thm 3.17), KLMWZ arXiv:2109.14049 Thm 1.2, Watson arXiv:1311.1085 Thm 1, Xie arXiv:1809.01568 Thm 1.5/Cor 1.6, Hedden-Watson arXiv:0805.4423 Thm 1.",
+   "Bracket-level JC equivalences: Sikora Thm 24(c). The doubling rho(X) u X (V=1 whenever [X] is rational) is the Euler shadow of the KWZ 2026 Thm 3.17/Lemma 3.18 proof; treat it as folklore, not new.",
+   "Burau_4 link: Bigelow arXiv:math/0012086 (JKTR 2002) and Ito Math. Z. 280 (2015) already tie Burau_4 kernels to Jones unknot detection, and Bigelow 2002 likely uses 4-braids and plats. Read its full text before claiming the 4-plat Lemma Q / HP wrap-2 statement as new.",
+   "Classical-evaluation vanishing (zeros of F): Jost-Lewark arXiv:2601.16588 (Jan 2026) already prove Sigma_2/linking-pairing determination of V(e^{2 pi i/6}). JVW 1990 for tractable points. Murakami and Lickorish-Millett are classical. No novelty in that part of cycle-2 (a).",
+   "U4-type finite-type steps: Miyazawa 1998 (already flagged), plus Ito arXiv:2102.09116 and Ichihara-Wu for Jones-derivative/Casson cosmetic obstructions.",
+   "The K_inf (unoriented smoothing, Sigma_2 = S^3_{+-1}(kappa)) observation may already appear in the H(2)-move / band-surgery Jones literature (e.g. Kanenobu-Miyazawa). Not checked.",
+   "SFH Euler-blindness at (E(kappa), Gamma_lambda) follows directly from FJR Thm 1 plus GW10. Experts likely know it; low novelty."
+  ],
+  "searches_run": [
+   "WebFetch arXiv abs+html 2005.08162v2 (Sikora), full text incl. Secs 9-10",
+   "WebSearch standard: Kotelskiy Watson Zibrowius immersed curves Khovanov homology detects rational tangles theorem",
+   "WebFetch arXiv 1910.14584v2 abstract",
+   "WebSearch standard: \"Cosmetic operations and Khovanov multicurves\" Kotelskiy Lidman Moore Watson Zibrowius; full PDF 2109.14049 read locally",
+   "WebFetch arXiv 2602.23442 abstract; PDF read locally (Thm B, Thm 3.17, Lemma 3.18)",
+   "PDF 1809.01568v2 (Xie) read locally: Thms 1.1-1.5, Cors 1.2/1.6/1.7, Def 2.2",
+   "WebSearch standard: Lipson 'An evaluation of a link polynomial' Goeritz; Lipson 'Link signature, Goeritz matrices and polynomial invariants'; Cambridge page fetch",
+   "WebSearch standard: Jones polynomial V(e^{i pi/3}) H_1 double cover Z/3 Lickorish Millett V(i) Arf Murakami Jaeger Vertigan Welsh",
+   "WebFetch arXiv 2601.16588 (Jost-Lewark) abstract",
+   "WebSearch standard: Jaeger Vertigan Welsh 1990 #P-hard exceptional points",
+   "WebSearch standard: Ito cosmetic crossing conjecture genus one knots Jones polynomial arXiv",
+   "WebSearch standard: Euler characteristic singular instanton I^natural signature Poudel Saveliev",
+   "WebSearch standard: Hedden Herald Hogancamp Kirk Fukaya category pillowcase; WebFetch 1808.06957 abstract; ar5iv 2010.04320 intro",
+   "WebSearch standard: traceless SU(2) character variety 2-tangle pillowcase rational tangle Kotelskiy bordered pillowcase; WebFetch 1707.07481",
+   "WebFetch 1505.04386 (GLW) abstract",
+   "WebSearch standard: Grigsby Wehrli spectral sequence sutured Khovanov to SFH balanced tangle",
+   "WebSearch standard: Watson Khovanov homology and the symmetry group of a knot / Lobb Watson refinement; PDF 1311.1085 read locally",
+   "WebFetch abstracts: 0903.5287 (FJR; PDF read locally for Thm 1 and torsion convention), 0706.0741 (Roberts), 1811.07848 (Dowlin), 2305.16188 (DKS), math/0609779 (Juhasz), math/0312322 (KM 2004), 1710.01957 (Sivek-Zentner), math/0309170 (OS), 1005.4346 (KM 2011), 0909.0816 (Bloom), 1401.2093 (Scaduto), 1105.5199 (Baldwin-Levine), 1011.0499 (LOT)",
+   "WebSearch standard: Bapat Becker Licata q-deformed rational numbers 2-Calabi-Yau A2",
+   "WebSearch standard: annular Jones polynomial / annular Kauffman bracket detects wrapping number contained in a ball braid closure",
+   "WebFetch 2609.11084 abstract; PDF v2 read locally in full (Ren)",
+   "WebSearch standard: Gage Martin Annular Khovanov homology and meridional disks categorified wrapping; WebFetch 2103.01269v1 and 2501.02623 abstracts",
+   "K3 problem list PDF (umass) read locally: Problems 1.24 and 1.28",
+   "WebFetch math/0012086 (Bigelow 2002) abstract; WebSearch standard: Ito kernel of braid group representation Burau B_4; WebFetch 1402.2028 abstract"
+  ],
+  "mechanisms_seen": [
+   "Classical evaluations through the linking pairing of Sigma_2 (V at 1, -1, i, e^{2 pi i/6}; Q at 1/phi): blind to kappa because S^3_{p/q}(kappa) has the lens-space linking pairing",
+   "Sikora q=1 algebraic slope = determinant ratio = Ozawa essential-surface slope (algebraic tangles only)",
+   "Spectral sequences Kh => Floer (OS, Bloom, Scaduto, KM, Dowlin, LOT, Roberts, Grigsby-Wehrli, Xie): rank inequalities; Floer Euler characteristics are det or Delta, never V",
+   "Multicurve geography plus Lagrangian Floer pairing (KWZ), combined with Hanselman's cosmetic-slope theorem (KLMWZ)",
+   "Doubling trick rho(T) u T plus Kh unknot detection plus Lemma 3.18 (KWZ 2026 rational-tangle detection)",
+   "Inverse-limit stabilization plus delta-thinness gives L-space surgeries, hence tau=g=0 (Watson kappa)",
+   "Annular instanton nonvanishing from sutured theory: AHI(L,+-2g) != 0 (Xie)",
+   "Tautness detection SFH != 0 (Juhasz) vs torsion decategorification (FJR): nonzero group with identically zero Euler characteristic",
+   "Burau/Jones-representation kernel forces a vanishing top annular coefficient (Ren / GPT-6 Astra via Bigelow's B_6 kernel; Bigelow 2002 and Ito 2015 for B_4 and JC)",
+   "Adequacy-type diagrammatic proofs (HP95 for adequately wrapped diagrams; Lickorish-Thistlethwaite semi-adequate): Euler-level but need diagram hypotheses",
+   "Non-cyclic SU(2) representations of small surgeries (KM 2004) read in the pillowcase: geometric vs algebraic intersection",
+   "Skein module to character variety (Bullock, Przytycki-Sikora, DKS): applies to 3-manifold skein modules, not to tangle brackets",
+   "Finite-type and Kontsevich 2-loop obstructions (Ito, Ichihara-Wu): vanish identically when V=1"
+  ],
+  "open_questions": [
+   "Is the Hoste-Przytycki wrapping conjecture true for null-homologous annular knots of wrapping number 2? Equivalently: is [X']_id != 0 for every non-split (2,2)-tangle X'? This contains Lemma Q. The categorified version holds at wrap 2 (via Xie Thm 1.5); no decategorified proof found; Ren's counterexample is at wrap 4.",
+   "Check the 4-plat/Burau_4 sketch: Squier unitarity making both coefficients l_i rho(beta) v_j and l_j rho(beta^-1) v_i vanish together; the half-twist non-commutation; the cup-sweep showing disjoint arcs give a split X'. Then read Bigelow 2002 in full to see whether it already states this.",
+   "Ren-style computer search at wrap 2 (new territory compared with Burau_4-kernel searches): find beta in B_6 with a zero matrix coefficient of the 9-dim 2-through-strand TL_6 module (Young shape (4,2)) between the two-cup vector and two-cap functional, with non-split X'. Then test whether the S^3 image is U, which would give a JC counterexample once twisted. B3 forces more than 24 crossings.",
+   "Does Ren's knot K (winding 0, wrap 4) have an unknotted S^3 image, and what are the Jones polynomials of its twist family around the axis? Run it as the falsification test for any annular Lemma Q mechanism (proposed barrier B6).",
+   "Is the graded Euler characteristic of Watson's kappa(K,h) determined by the quotient-tangle bracket? If so, Lemma Q is equivalent to: 'kappa != 0 implies chi(kappa) != 0'.",
+   "Where can the S^3-unknottedness of the pattern (an actual unknot closure) enter an annular/Burau argument? Ren's barrier shows that the top coefficient alone, without it, cannot suffice in general."
+  ]
+ }
+}

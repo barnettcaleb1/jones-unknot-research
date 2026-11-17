@@ -1,0 +1,188 @@
+PASS 33: CONCRETE CANDIDATE AUDIT
+1 November 2026 UTC. No knot with Jones polynomial one has been obtained.
+
+RESULT
+======
+The existing two-component EKT band-fusion route remains excluded. A
+concrete, previously untested distinction is the published THREE-component
+family LLL(n). Its smallest orientation-independent member LLL(1) is an
+actual 19-crossing link with Jones polynomial equal to the three-component
+unlink. It survives both the elementary homology gate and the stronger
+torsion-linking-form gate for a possible two-band fusion to a determinant-one
+knot. This makes it a valid input for a bounded two-band experiment, not a
+Jones-one knot candidate by itself. Parent is performing that experiment.
+
+1. WHAT WAS RECHECKED, AND WHAT WAS NOT
+=====================================
+I read the existing full-family EKT obstruction and rotor-surgery notes.
+The two-component LL1/LL2 families have H1(double cover)=Z plus nonzero
+finite torsion, so NO single embedded band can fuse them to any
+determinant-one knot. That exclusion is independent of how complicated the
+band is. There is no reason to repeat a short-band search on those links.
+
+That argument cannot be applied unchanged to a three-component link and
+two fusion bands. Two integral surgery components can present an infinite
+group with one free generator and nonzero torsion. Confusing its free rank
+with components-minus-one would wrongly discard the concrete LLL family.
+
+2. ACTUAL LLL DIAGRAMS AND EXACT CHECKS
+====================================
+Primary source: Eliahou–Kauffman–Thistlethwaite, Infinite families of links
+with trivial Jones polynomial, Topology 42 (2003), Section 4.3/Theorem 4.4:
+https://homepages.math.uic.edu/~kauffman/ekt.pdf
+
+Its transformed tangle is the LEFT-ASSOCIATED dot expression
+
+ T=2 dot (1/2 dot 1)^n dot 1 dot 2,
+ LLL(n)=H(T,-3),
+
+where each repeated pair inserts the two separate factors 1/2,1, and
+X dot Y means reciprocal reflection of X followed by horizontal sum Y.
+The constructor reuses the already calibrated EKT clasp and dot operation.
+It does not replace these nonrational sums by their numerical fractions.
+
+The actual PD diagrams are in lll_candidates.json; construction is in
+lll_candidates.py. Exact full-diagram results are:
+
+ n   crossings   components   Jones in x=t^(1/2)       H1(Sigma2)
+ 0      16           3        x^-10+2x^-12+x^-14       Z + Z/36
+ 1      19           3        x^2+2+x^-2               Z + Z/144
+ 2      22           3        x^2+2+x^-2               Z + Z/576
+ 3      25           3        x^2+2+x^-2               Z + Z/2304
+
+The n=0 orientation caveat agrees with the source; use n=1 as the clean
+experiment. The n>=1 unlink-Jones identity is independently supplied by
+the source theorem, not extrapolated from these four computations.
+
+For n=1 I also recomputed the entire bracket using the independent frontier
+state sum, not Regina's Jones method:
+
+ <D>=-A^-5-2A^-9-A^-13,       writhe(D)=-3.
+
+Multiplying by (-A^3)^(-w) gives A^4+2+A^-4 exactly. Certificate:
+lll_independent_bracket.json. Its maximum frontier is eight arcs and
+maximum number of pairing states is thirteen.
+
+The nonzero torsion itself proves LLL(1) is not the three-component unlink.
+It does not prove that any particular fusion of it is nontrivial.
+
+3. STRONGER TWO-BAND HOMOLOGY GATE: ALSO PASSED
+============================================
+Suppose two band moves take LLL(1) to a determinant-one knot K. Reversing
+the lifted cobordism describes Sigma2(LLL(1)) by integral surgery on a
+two-component framed link in the integral homology sphere Sigma2(K).
+The 2x2 symmetric linking matrix A then has rank one because b1=1.
+Its kernel is primitive. An integral basis extending that kernel makes
+A congruent to diag(epsilon*144,0), epsilon=+/-1. Consequently its cyclic
+torsion linking form must be represented by +/-1/144, up to changing the
+generator by a unit modulo144.
+
+I computed the actual diagram's Goeritz matrix using the crossing-corner
+convention of Spherogram's white_graph/goeritz_matrix implementation, then
+performed exact rational linear algebra independently of Regina. Its
+primitive one-dimensional kernel has a coordinate +/-1, so replacing that
+standard basis vector by the kernel vector is an integral unimodular
+change of basis. The resulting form splits as B direct-sum [0].
+
+For LLL(1), det(B)=+144 and a torsion generator e has
+
+                    e^T B^-1 e = 143/144 mod Z.
+
+Thus the linking pairing is -1/144, up to the overall boundary-orientation
+sign convention. It PASSES the required test. The sign of det(B), a
+six-dimensional block, is not the sign of a one-dimensional presentation
+of its torsion pairing.
+
+The same bounded check for n=0,2,3 gives numerator/order
+11/36, 479/576, and 1559/2304. Each numerator is plus or minus a square
+unit modulo its order, and each also passes. No all-n linking-form theorem
+is asserted from these samples.
+
+Full exact matrices, primitive kernels, generator vectors and residues:
+lll_linking_form.json. Portable verifier: lll_linking_form.py. It uses
+integer/Fraction Gaussian elimination and an explicit finite unit-square
+test; no floating point or symbolic-algebra package is involved.
+
+The Goeritz intersection-form construction and resulting boundary linking
+pairing are the Gordon–Litherland construction. An accessible primary
+algorithmic account explicitly recalls the simply-connected branched
+four-manifold interpretation:
+Owens–Swenton, An Algorithm to Find Ribbon Disks for Alternating Knots,
+https://www.tandfonline.com/doi/full/10.1080/10586458.2022.2158968
+The present graph need not be alternating; only the general Goeritz
+intersection-form construction is used. After splitting off the primitive
+radical, the torsion pairing is the inverse of B modulo integers, up to
+orientation. The +/-square gate is unaffected by that global sign.
+
+4. IMPORTANT IMPLEMENTATION CORRECTION FOR THE BAND EXPERIMENT
+============================================================
+The installed Spherogram banded_links() routine is a FISSION enumerator:
+it chooses both ends on the same component and asserts that the number
+of components increases by one. Calling it unchanged on LLL(1) does not
+test fusion bands. Its min_len_bands() has the same endpoint restriction.
+
+A 3 -> 2 -> 1 experiment must explicitly permit ends on DISTINCT components,
+use add_one_band or an adapted generator, and check the actual component
+count after each move. The parity/orientation condition must be verified
+on the resulting link, not copied from the same-component case blindly.
+This warning was sent to the parent before its bounded experiment.
+
+5. WHAT WOULD CERTIFY A SUCCESS, CONCRETELY
+=========================================
+For an LLL input, retain the exact two embedded-band specifications and
+the intermediate/final PDs. A final one-component diagram must have its
+FULL normalized Jones polynomial equal to1; determinant1 alone is only a
+cheap preliminary filter. Then certify nontriviality independently, e.g.
+nontrivial Alexander polynomial, Khovanov rank>1, a nonabelian finite
+quotient of the knot group, or a certified non-S3 double branched cover.
+Failure of an unknot simplifier is not a nontriviality certificate.
+
+The existing rotor-surgery data do not yet contain a symmetric augmented
+unlink whose flip is nontrivial. The known one-circle rational-to-essential
+tangle family supplies a correct locally nontrivial building block, but
+does not supply the required simultaneous unlink disks for a C4 orbit.
+Before surgery, a usable rotor candidate must give an actual augmented
+unlink diagram with marked rotation/flip data and a simultaneous disk or
+unlink-isotopy certificate. Its flipped augmented link must already be
+nontrivial; otherwise every prescribed disk-framed 1/k surgery is harmless.
+Zero linking numbers cannot certify this distinction and are automatic on
+both sides in the standard C4 setup. No new rotor candidate was found here.
+
+LIMIT
+=====
+The positive result of this audit is narrowly concrete: LLL(1) is a valid
+actual, small-enough two-band input that is not eliminated by the previous
+one-band argument or its natural linking-form strengthening. Neither a
+Jones-one knot nor a successful fusion band system is certified in this
+note. Parent's separately recorded band experiment supplies its own scope
+and counts; they are not inferred here.
+
+APPENDIX: THE BOUNDED TWO-BAND TEST FINISHED, AND ALL HITS ARE UNKNOTS
+==================================================================
+Parent's two_band_test.py enumerated 355 first face bands and 52,485
+two-band knot closures, with at most two half twists on each band. It
+completed in about47.5 seconds. These are generated closures, NOT counts
+of distinct knot types. Among them88 had determinant1 and22 had Jones1.
+All22 simplified to the unknot. This is not an exhaustive test of arbitrary
+embedded bands, alternative input diagrams, or the entire LLL family.
+
+I independently audited ALL22 saved successful cases:
+* Replayed both bands from the actual lll(1) constructor, checking the
+  stored intermediate and final PDs exactly.
+* Checked X lies in a diagram face and Z.opposite() lies in that same
+  face, and that the endpoint strands belong to different components.
+  This is the correct face-band convention for add_one_band, obtained
+  from edge_and_face_to_crossing_strands and the existing path code.
+* Checked component counts decrease 3 -> 2 -> 1.
+* Recomputed each final FULL normalized Jones polynomial by the independent
+  frontier bracket implementation: all equal1.
+* Freshly simplified each final diagram globally: all had zero crossings
+  and exactly one unlinked unknot component, agreeing with the stored
+  results. Thus nontriviality is positively excluded for these22 hits;
+  this is not merely a failed attempt to recognize their knot types.
+* Independently checked that none of the22 intermediate two-component
+  links has the two-component-unlink Jones polynomial.
+
+Verifier and exact output: two_band_independent_audit.py/.json.
+The initially surviving homological input therefore produced no surviving
+knot candidate in this bounded, explicitly realized band class.

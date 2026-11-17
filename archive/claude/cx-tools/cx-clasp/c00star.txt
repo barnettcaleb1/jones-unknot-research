@@ -1,0 +1,124 @@
+delta              = -A^-2 - A^2
+delta^2 - 3        = A^-4 - 1 + A^4
+F = (d^2-2)(d^2-4) = A^-8 - 2*A^-4 + 2 - 2*A^4 + A^8
+delta (d^2-3)^2    = -A^-10 + A^-6 - A^-2 - A^2 + A^6 - A^10
+delta(zeta_8) = 0    F(zeta_8) = +8
+
+Hopf diagram sigma_1^2  PD=[[4, 1, 3, 2], [1, 4, 2, 3]] writhe=+2 comps=2  r_H = -A^-4 - A^4
+
+Hopf diagram sigma_1^-2 PD=[[2, 4, 1, 3], [3, 1, 4, 2]] writhe=-2 comps=2  r_H = -A^-4 - A^4
+
+Turning each bigon site of the Hopf diagrams back (cup-cap for identity):
+  sigma_1^2  site (2,4) face 0 -> [[4, 3, 1, 4], [2, 1, 3, 2]] : comps=1 writhe=-2  u=A^-6  unknot=True  => r/u = A^6 r_H (m=+6, eps=+1)
+  sigma_1^2  site (4,1) face 1 -> [[4, 4, 1, 3], [2, 2, 3, 1]] : comps=1 writhe=+2  u=A^6  unknot=True  => r/u = A^-6 r_H (m=-6, eps=+1)
+  sigma_1^2  site (1,3) face 2 -> [[4, 1, 1, 2], [2, 3, 3, 4]] : comps=1 writhe=-2  u=A^-6  unknot=True  => r/u = A^6 r_H (m=+6, eps=+1)
+  sigma_1^2  site (3,2) face 3 -> [[4, 2, 1, 1], [2, 4, 3, 3]] : comps=1 writhe=+2  u=A^6  unknot=True  => r/u = A^-6 r_H (m=-6, eps=+1)
+  sigma_1^-2 site (3,2) face 0 -> [[4, 3, 1, 4], [2, 1, 3, 2]] : comps=1 writhe=-2  u=A^-6  unknot=True  => r/u = A^6 r_H (m=+6, eps=+1)
+  sigma_1^-2 site (2,4) face 1 -> [[4, 4, 1, 3], [2, 2, 3, 1]] : comps=1 writhe=+2  u=A^6  unknot=True  => r/u = A^-6 r_H (m=-6, eps=+1)
+  sigma_1^-2 site (4,1) face 2 -> [[4, 1, 1, 2], [2, 3, 3, 4]] : comps=1 writhe=-2  u=A^-6  unknot=True  => r/u = A^6 r_H (m=+6, eps=+1)
+  sigma_1^-2 site (1,3) face 3 -> [[4, 2, 1, 1], [2, 4, 3, 3]] : comps=1 writhe=+2  u=A^6  unknot=True  => r/u = A^-6 r_H (m=-6, eps=+1)
+  realised (m, eps) by 2-crossing Hopf diagrams: [(-6, 1), (6, 1)]
+
+T1 = delta (d^2-3)^2 r_H = A^-14 - A^-10 + 2*A^-6 + 2*A^6 - A^10 + A^14  classes mod 4: [2]
+F                        = A^-8 - 2*A^-4 + 2 - 2*A^4 + A^8  classes mod 4: [0]
+
+Bare Hopf corner r = -A^4 - A^-4 (m = 0) with u = 1:  C00* = A^-14 - A^-10 - A^-8 + 2*A^-6 + 2*A^-4 - 2 + 2*A^4 + 2*A^6 - A^8 - A^10 + A^14
+   exponent classes mod 4: [0, 2]  -> two classes, not the bracket of any diagram (inadmissible)
+
+=== C00*(m, eps) = eps A^m T1 - F,  m in [-10, -6, -2, 2, 6, 10], eps = +-1 ===
+
+m=-10 eps=+1 :  r = A^-10 (-A^4 - A^-4)
+   C00* = A^-24 - A^-20 + 2*A^-16 - A^-8 + 4*A^-4 - 3 + 3*A^4 - A^8
+   classes mod 4 = [0], span_A = 32 (span_t = 8)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-t^-2 + 3*t^-1 - 3 + 4*t - t^2 + 2*t^4 - t^5 + t^6) ;  up to units: 1 - 3*t + 3*t^2 - 4*t^3 + t^4 - 2*t^6 + t^7 - t^8
+   P(1) = +4, P'(1) = +10  => total linking number of any realising 3-component link is odd
+
+m=-10 eps=-1 :  r = -A^-10 (-A^4 - A^-4)
+   C00* = -A^-24 + A^-20 - 2*A^-16 - A^-8 - 1 + A^4 - A^8
+   classes mod 4 = [0], span_A = 32 (span_t = 8)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-t^-2 + t^-1 - 1 - t^2 - 2*t^4 + t^5 - t^6) ;  up to units: 1 - t + t^2 + t^4 + 2*t^6 - t^7 + t^8
+   P(1) = -4, P'(1) = -10  => total linking number of any realising 3-component link is odd
+
+m= -6 eps=+1 :  r = A^-6 (-A^4 - A^-4)
+   C00* = A^-20 - A^-16 + 2*A^-12 - A^-8 + 2*A^-4 + A^4
+   classes mod 4 = [0], span_A = 24 (span_t = 6)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (t^-1 + 2*t - t^2 + 2*t^3 - t^4 + t^5) ;  up to units: 1 + 2*t^2 - t^3 + 2*t^4 - t^5 + t^6
+   P(1) = +4, P'(1) = +6  => total linking number of any realising 3-component link is odd
+
+m= -6 eps=-1 :  r = -A^-6 (-A^4 - A^-4)
+   C00* = -A^-20 + A^-16 - 2*A^-12 - A^-8 + 2*A^-4 - 4 + 3*A^4 - 2*A^8
+   classes mod 4 = [0], span_A = 28 (span_t = 7)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-2*t^-2 + 3*t^-1 - 4 + 2*t - t^2 - 2*t^3 + t^4 - t^5) ;  up to units: 2 - 3*t + 4*t^2 - 2*t^3 + t^4 + 2*t^5 - t^6 + t^7
+   P(1) = -4, P'(1) = -6  => total linking number of any realising 3-component link is odd
+
+m= -2 eps=+1 :  r = A^-2 (-A^4 - A^-4)
+   C00* = A^-16 - A^-12 + A^-8 + 2*A^-4 - 2 + 4*A^4 - 2*A^8 + A^12
+   classes mod 4 = [0], span_A = 28 (span_t = 7)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (t^-3 - 2*t^-2 + 4*t^-1 - 2 + 2*t + t^2 - t^3 + t^4) ;  up to units: 1 - 2*t + 4*t^2 - 2*t^3 + 2*t^4 + t^5 - t^6 + t^7
+   P(1) = +4, P'(1) = +2  => total linking number of any realising 3-component link is odd
+
+m= -2 eps=-1 :  r = -A^-2 (-A^4 - A^-4)
+   C00* = -A^-16 + A^-12 - 3*A^-8 + 2*A^-4 - 2 - A^12
+   classes mod 4 = [0], span_A = 28 (span_t = 7)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-t^-3 - 2 + 2*t - 3*t^2 + t^3 - t^4) ;  up to units: 1 + 2*t^3 - 2*t^4 + 3*t^5 - t^6 + t^7
+   P(1) = -4, P'(1) = -2  => total linking number of any realising 3-component link is odd
+
+m= +2 eps=+1 :  r = A^2 (-A^4 - A^-4)
+   C00* = A^-12 - 2*A^-8 + 4*A^-4 - 2 + 2*A^4 + A^8 - A^12 + A^16
+   classes mod 4 = [0], span_A = 28 (span_t = 7)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (t^-4 - t^-3 + t^-2 + 2*t^-1 - 2 + 4*t - 2*t^2 + t^3) ;  up to units: 1 - t + t^2 + 2*t^3 - 2*t^4 + 4*t^5 - 2*t^6 + t^7
+   P(1) = +4, P'(1) = -2  => total linking number of any realising 3-component link is odd
+
+m= +2 eps=-1 :  r = -A^2 (-A^4 - A^-4)
+   C00* = -A^-12 - 2 + 2*A^4 - 3*A^8 + A^12 - A^16
+   classes mod 4 = [0], span_A = 28 (span_t = 7)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-t^-4 + t^-3 - 3*t^-2 + 2*t^-1 - 2 - t^3) ;  up to units: 1 - t + 3*t^2 - 2*t^3 + 2*t^4 + t^7
+   P(1) = -4, P'(1) = +2  => total linking number of any realising 3-component link is odd
+
+m= +6 eps=+1 :  r = A^6 (-A^4 - A^-4)
+   C00* = A^-4 + 2*A^4 - A^8 + 2*A^12 - A^16 + A^20
+   classes mod 4 = [0], span_A = 24 (span_t = 6)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (t^-5 - t^-4 + 2*t^-3 - t^-2 + 2*t^-1 + t) ;  up to units: 1 - t + 2*t^2 - t^3 + 2*t^4 + t^6
+   P(1) = +4, P'(1) = -6  => total linking number of any realising 3-component link is odd
+
+m= +6 eps=-1 :  r = -A^6 (-A^4 - A^-4)
+   C00* = -2*A^-8 + 3*A^-4 - 4 + 2*A^4 - A^8 - 2*A^12 + A^16 - A^20
+   classes mod 4 = [0], span_A = 28 (span_t = 7)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-t^-5 + t^-4 - 2*t^-3 - t^-2 + 2*t^-1 - 4 + 3*t - 2*t^2) ;  up to units: 1 - t + 2*t^2 + t^3 - 2*t^4 + 4*t^5 - 3*t^6 + 2*t^7
+   P(1) = -4, P'(1) = +6  => total linking number of any realising 3-component link is odd
+
+m=+10 eps=+1 :  r = A^10 (-A^4 - A^-4)
+   C00* = -A^-8 + 3*A^-4 - 3 + 4*A^4 - A^8 + 2*A^16 - A^20 + A^24
+   classes mod 4 = [0], span_A = 32 (span_t = 8)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (t^-6 - t^-5 + 2*t^-4 - t^-2 + 4*t^-1 - 3 + 3*t - t^2) ;  up to units: 1 - t + 2*t^2 - t^4 + 4*t^5 - 3*t^6 + 3*t^7 - t^8
+   P(1) = +4, P'(1) = -10  => total linking number of any realising 3-component link is odd
+
+m=+10 eps=-1 :  r = -A^10 (-A^4 - A^-4)
+   C00* = -A^-8 + A^-4 - 1 - A^8 - 2*A^16 + A^20 - A^24
+   classes mod 4 = [0], span_A = 32 (span_t = 8)
+   C00*(zeta_8) = -8, |.|^2 = 64, det = 8
+   in t: A^0 * (-t^-6 + t^-5 - 2*t^-4 - t^-2 - 1 + t - t^2) ;  up to units: 1 - t + 2*t^2 + t^4 + t^6 - t^7 + t^8
+   P(1) = -4, P'(1) = +10  => total linking number of any realising 3-component link is odd
+
+=== connected sums T(2,4) # Hopf (explicit PD via connected_sum_links; product formula checked) ===
+T(2,+4) # Hopf[+]    PD=[[6, 9, 1, 8], [9, 2, 10, 1], [2, 7, 3, 10], [7, 4, 8, 3], [4, 11, 5, 12], [11, 6, 12, 5]]  comps=3 writhe=+6 det=8  bracket=A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+   matches: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6}]
+T(2,+4) # Hopf[-]    PD=[[6, 9, 1, 8], [9, 2, 10, 1], [2, 7, 3, 10], [7, 4, 8, 3], [4, 12, 5, 11], [11, 5, 12, 6]]  comps=3 writhe=+2 det=8  bracket=A^-14 - A^-10 + 2*A^-6 - A^-2 + 2*A^2 + A^10
+   matches: [{'m': -6, 'eps': 1, 'sign': 1, 'A_power': -6}]
+T(2,-4) # Hopf[+]    PD=[[6, 10, 1, 7], [7, 1, 8, 2], [2, 8, 3, 9], [9, 3, 10, 4], [4, 11, 5, 12], [11, 6, 12, 5]]  comps=3 writhe=-2 det=8  bracket=A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14
+   matches: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6}]
+T(2,-4) # Hopf[-]    PD=[[6, 10, 1, 7], [7, 1, 8, 2], [2, 8, 3, 9], [9, 3, 10, 4], [4, 12, 5, 11], [11, 5, 12, 6]]  comps=3 writhe=-6 det=8  bracket=A^-10 + 2*A^-2 - A^2 + 2*A^6 - A^10 + A^14
+   matches: [{'m': 6, 'eps': 1, 'sign': 1, 'A_power': 6}]
+
+wrote c00star.json

@@ -1,0 +1,162 @@
+PASS 25: STRUCTURAL KERNEL MECHANISMS AND TWO OBSTRUCTIONS
+1 November 2026 UTC. Bounded conceptual pass, with no braid-word scan.
+No nontrivial generic Jones kernel or Jones-one knot was constructed.
+
+Complete endpoint retained throughout
+-------------------------------------
+For B in the generic B5 Burau kernel, a braid h satisfying
+  [rho5(B),rho5(h)]=I,  [B,h] != 1
+would give a nontrivial FULL generic TL5 kernel element. Its other blocks
+are already identity. Ito's normal-subgroup theorem then supplies
+nontrivial hyperbolic Jones-one knots. Matrix identity must be generic;
+braid nontriviality must be certified independently. This remains the
+complete counterexample scaffold, not an existence theorem for h.
+https://arxiv.org/pdf/1402.2028
+
+Outcome
+-------
+No credible new geometric mechanism forcing this mismatch emerged.
+There are, however, two exact restrictions worth retaining: the Burau
+kernel contains no nontrivial virtually multitwist braids, and the
+natural spherical-boundary kernel in B6 leaves precisely a 9-dimensional
+block uncontrolled. The latter is a real structural construction of a
+partial kernel, but it does not close the argument. Existing short-word
+centralizer searches in work/pass3/braid_notes.md were not repeated.
+
+1. A broad geometric no-go: virtually multitwist inputs
+-----------------------------------------------------
+PROPOSITION. Let beta belong to the generic unreduced Burau kernel of
+B_n. If beta^r is a multitwist about a disjoint multicurve in the
+punctured disk, for some positive integer r, then beta=1. Boundary
+parallel full twists are allowed; peripheral twists about one puncture
+are omitted since they are already trivial as punctured-disk mappings.
+
+Proof. The Burau derivative at t=1 identifies pairwise pure-braid
+linking coordinates: on A_ij it is the matrix
+  (e_i-e_j)(e_i-e_j)^T.
+These matrices are independent, so every kernel braid is pure and all
+its pairwise linking numbers vanish. The same holds for beta^r.
+
+Write beta^r=product_c T_c^{m_c}, where the distinct c are disjoint and
+enclose subsets S_c of at least two punctures. The subsets form a
+laminar family. For any pair i,j the linking coordinate is
+  sum_{c: i,j in S_c} m_c.
+For an outermost S_c, choose i,j in different maximal proper child
+clusters, treating punctures outside the child curves as singleton
+children. Such a pair exists: otherwise c would coincide with its sole
+child or enclose at most one puncture. No proper child contains both.
+Thus the displayed linking number determines m_c, which is zero.
+Continue inward, subtracting the already zero ancestor exponents.
+Every m_c is zero. Hence beta^r=1, and torsion-freeness of B_n gives
+beta=1.
+
+The proof uses actual geometric disjointness, not the unsupported claim
+that arbitrary curves enclosing the same puncture set are isotopic.
+Within a disjoint multicurve, equal enclosed subsets would bound a
+puncture-free annulus and have already been identified as one curve.
+
+Consequences. Simultaneously conjugated products of nested full twists,
+or of the corresponding geometric Jucys--Murphy braids, cannot furnish
+a nontrivial Burau-kernel input. Nor can a nontrivial periodic input:
+a suitable positive power of a periodic braid is a boundary full twist.
+This agrees with, but does not require, the stronger representation
+spectral obstruction from pass24. It is valid for every n.
+
+Scope. This does NOT exclude all reducible braids, since a reducible
+braid may have pseudo-Anosov components. It also does NOT exclude a
+multitwist helper h paired with a complicated Burau-kernel B. Its exact
+use is to kill a tempting source of simultaneous diagonalization for B.
+For context, Lee--Song prove a stronger exclusion of reducible kernel
+elements for B4 modulo primes; their introduction explicitly explains
+why this does not extend automatically to larger strand counts.
+https://arxiv.org/pdf/math/0403347
+
+2. The spherical-boundary trick: an exact partial construction
+-------------------------------------------------------------
+Generic TL6 has blocks of dimensions 1,5,9,5, corresponding to through
+labels k=6,4,2,0 and Young diagrams [6],[5,1],[4,2],[3,3]. Let D_m be
+the full twist on the first m strands and put
+  P=D_6 D_5^{-1}.
+Here D_m denotes Delta_m^2, so the inverse is of the full twist, not
+the half twist. P has exponent sum 10.
+
+The raw full-twist scalar on a through-k TL_m block is
+  A^{k(k+2)-3m}.
+One way to verify the normalization is to divide the ribbon twist of
+the fused label k by the m individual fundamental twists; the signs
+cancel because k and m have the same parity. It gives A^20 on the
+1D TL5 block and A^-12 on its residual 5D block, matching the existing
+exact model.
+
+The rectangular [3,3] module restricts irreducibly to the [3,2] B5
+module. Thus rho_[3,3](P)=A^-6 I. Every conjugate H=gPg^-1 also acts
+as this scalar on the rectangular block. Consequently [B,H] kills
+that entire block for ANY B.
+
+Now take an actual B5 Burau-kernel braid B, embedded in B6. Its Burau6
+matrix is identity (the unreduced representation simply adds an
+unused coordinate). The braid [B,H] therefore kills the 1D and Burau
+blocks as well. This is an actual word construction, with three of
+the four generic blocks automatically killed.
+
+The remaining [4,2] block restricts to [3,2] plus [4,1], of dimensions
+5 and 4. On these two subspaces P has eigenvalues
+  A^2  (multiplicity 5),   A^-10 (multiplicity 4).
+They are distinct generically. Killing the last block requires B's
+9-dimensional image to preserve the conjugated 5+4 decomposition.
+That is exactly an additional centralizer condition; it is not forced
+by the Burau identity or the scalar rectangular block.
+
+There is also a direct geometric tautology to avoid: if g lies in the
+original B5 subgroup, then P commutes with that whole subgroup, since
+D6 is central in B6 and D5 is central in B5. In this case [B,H]=1 as
+an actual braid. A potentially nontrivial construction must move the
+five-puncture boundary curve and then solve the remaining 9D condition.
+No such solution is furnished here. This is not presently simpler than
+the original B5 residual problem, and does not justify a new scan.
+
+The generic branching rule and rectangular descent are recorded in
+Kasahara, Propositions 2.4 and 2.6. His Theorem 3.1 also identifies the
+faithfulness of the B5 [3,2] representation with the corresponding
+six-punctured-sphere Jones representation (up to the standard transpose
+and scalar conventions). The geometric reinterpretation therefore
+connects to an established faithfulness problem; it is not an independent
+proof of nonfaithfulness.
+https://arxiv.org/pdf/0803.0304
+
+3. A literature trap: a partial kernel is not the missing B6 block
+----------------------------------------------------------------
+The abstract of Piwocki--Traczyk, Representations of small braid groups
+in Temperley--Lieb algebra, mentions a representation into TL_{9,2}.
+That subscript is a quotient of a nine-strand diagram algebra, not the
+nine-dimensional [4,2] block of B6. Thus their result cannot simply be
+combined with section 2 to conclude that all B6 blocks have kernels.
+
+Jackson--Kerler's explicit discussion, printed pages 1707--1708 (arXiv
+PDF pages 19--20), makes the distinction clear: they describe a
+380-crossing element in ker J_{9,2}, then a possible passage to J_{17,4}
+and the [15,2] representation, with nontriviality verification still
+specified. Neither is the missing B6 representation. I did not obtain
+the complete Piwocki--Traczyk text and do not extrapolate its theorem
+to an unverified iterative full-kernel construction.
+https://arxiv.org/pdf/0912.2114
+https://doi.org/10.1016/j.topol.2008.07.016
+
+4. What would justify continuation
+----------------------------------
+The next useful input would be a geometric reason a nontrivial B
+preserves the conjugated quantum fusion decomposition while moving
+the actual associated curve. Such a theorem or explicit construction
+would predict a centralizer mismatch before matrix checking. An arbitrary
+commuting matrix in End(V), a rational diagonal model, a root-of-unity
+kernel, or separate partial kernels at different strand numbers provides
+no such input.
+
+For a proposed construction, the endpoint is still exact generic matrix
+commutation plus nonidentity Artin action, followed by Ito. A nonzero
+exact specialized commutator disproves that candidate. A proof that the
+preserved decomposition forces the curve to be preserved would instead
+close that mechanism. We currently have neither implication for the
+remaining genuinely interacting class. Stop this bounded branch here;
+larger word bounds would repeat the old computational approach without
+a new structural reason to expect success.

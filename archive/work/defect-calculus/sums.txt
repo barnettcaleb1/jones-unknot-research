@@ -1,0 +1,124 @@
+U5c: CONNECTED-SUM DEFECT AUDIT
+2026-11-02. Bounded check for Claude assignment 20261102-224844.
+
+Conclusion: the predicted identity and no-cancellation theorem hold for
+the directed equivariant connected sum of actual preferred exterior
+quotients. They were already obtained in work/cancellation19/algebra.txt
+Sections 1--3; this is a re-audit/calibration, not a new result.
+
+1. Exact conventions and multiplication
+
+Use R=Z[A,A^-1], delta=-A^2-A^-2, and horizontal TL2 algebra
+R[e]/(e^2=delta e), with Q0=1, Q_infinity=e. The meridian functional is
+f_infinity(1)=1, f_infinity(e)=delta, hence it is an algebra homomorphism.
+The archived kernel generator is v=e-delta and v^2=-delta v.
+An actual meridian-normalized quotient is T_hat=1+xv.
+Claude's sign convention w=-x uses v_Claude=delta-e. Thus
+
+ x_(1#2)=x1+x2-delta*x1*x2,
+ w_(1#2)=w1+w2+delta*w1*w2,
+ m_(sum with kappa)=1+delta*w_kappa,
+ c0=-delta,
+ H_kappa=1+delta*w_kappa=1-delta*x_kappa,
+ H_(1#2)=H1*H2.
+
+This directly computes c0; commutativity alone would only show equality
+of fractions where nonzero denominators occur, not its polynomial value.
+Framings and preferred mu/lambda markings are fixed before normalizing.
+No independently chosen Laurent units can be inserted into these identities.
+
+2. Why the geometric composition is connected sum
+
+Choose directions/half-axes of the two strong inversions, then remove a
+small invariant neighborhood of the terminal fixed point of the first
+and initial fixed point of the second. Glue the boundary data so the
+directions concatenate. This is the directed equivariant connected sum.
+Downstairs its quotients are joined by the horizontal two-tangle gluing.
+The covering gluing disk is a meridional annulus; gluing the two exteriors
+along this annulus gives E(kappa1#kappa2). Preferred longitudes concatenate
+without a meridian twist. The two meridional unknot closures become their
+connected sum, again U, so f_infinity normalization is multiplicative.
+
+Primary source checked freshly: Miller--Powell arXiv:2208.11571v1,
+Definition 2.9 and Proposition 2.14 proof (meridional-annulus exterior
+description). https://arxiv.org/html/2208.11571
+The archive's source points at the same construction. The first author-
+hosted PDF fetch timed out; the arXiv full text was read successfully.
+
+3. Unit exclusion needs LESS than full F divisibility
+
+Suppose w_(1#2)=0. Then H1*H2=1 in R, so each Hi=epsilon_i A^ki.
+For every actual preferred quotient, the longitude closure has determinant
+zero. At zeta=exp(pi*i/4), delta(zeta)=0, and
+
+ f0(T_hat)=delta+(1-delta^2)x
+
+therefore gives x(zeta)=0. Consequently
+
+ H(zeta)=1, H'(zeta)=-delta'(zeta)x(zeta)-delta(zeta)x'(zeta)=0.
+
+For the Laurent unit epsilon A^k, the derivative at nonzero zeta vanishes
+only if k=0; its value then forces epsilon=1. Hence H=1 and x=w=0 for
+both factors. Conversely, zero input defects plainly give zero output.
+The same proof applies to every finite number of directed equivariant
+summands. F|w is unnecessary; Phi8=A^4+1 dividing w already suffices.
+
+This is not merely a truncated-jet claim. Exact multiplicativity first
+forces each entire Laurent polynomial to be a unit; the one-jet test
+then excludes all those units except 1.
+
+4. Requested calibrations and explicit inversion choices
+
+Trefoil: choose the inversion whose preferred exterior quotient is the
+archived T=rotate(<-1>+<1/2>+<1/3>)+<-6>. Its exact normalized defect is
+
+ x_T=-A^2 F, F=(1-A^4)(1+A^8)(1+A^12).
+
+Mirror trefoil: reflect this entire marked quotient/involution. Then
+ x_mirror=x_T(A^-1)=A^-26 F.
+Form the sums by the directed fixed-point gluing specified in Section 2.
+Exact standard-library Laurent arithmetic gives:
+
+ x_(3_1#3_1) = -A^2+A^6-A^10+A^14-A^18+A^22-2A^30
+               +3A^34-3A^38+A^42+A^46-A^50+A^54 != 0.
+
+ x_(3_1#mirror(3_1)) = -A^-14+2A^-10-2A^-6+A^-2
+                      +A^2-2A^6+2A^10-A^14 != 0.
+
+Both checks also confirm exact H multiplicativity. Note the substantial
+cancellation in the second polynomial: no-cancellation means the whole
+defect cannot vanish, not that individual coefficients cannot cancel.
+
+Figure eight: choose the specific involution depicted in Miller--Powell
+Figure 4, referenced explicitly in their Example 2.5(ii); take the same
+direction for both copies and use Section 2's gluing. Its normalized
+Alexander polynomial is -t+3-t^-1, so a2=-1. The audited longitude/Casson
+test implies x_(4_1) != 0 for this inversion (indeed for any inversion).
+Writing its actual defect as z, the exact composite test is
+
+ x_(4_1#4_1)=z(2-delta*z) != 0.
+
+The second factor cannot vanish as a Laurent polynomial: at zeta its
+value is 2 because delta(zeta)=0. This is a rigorous symbolic test on
+the specified actual quotient. A fresh full bracket/PD computation for
+the figure-eight quotient was not done and is not claimed.
+
+5. Essential scope caveat for reduction to hyperbolic cores
+
+This does NOT classify every strong inversion on a composite knot.
+An inversion can exchange two prime summands. Miller--Powell Example
+2.5(iii) explicitly gives the flipping involution on J#J^r for arbitrary
+J; it need not be a directed sum of separately strongly inverted copies.
+The archived double-tangle calculation assigns that block
+
+ H_(flipping J#J^r)=H3(J),
+
+where H3 is the reduced 3-dimensional colored Jones polynomial.
+The archived global decomposition source gate (Sakuma's primary theorem)
+was not reopened here. Thus generic composite elimination requires both
+that decomposition theorem AND control of flipping blocks; plain U5-hyp
+for strongly invertible hyperbolic knots does not automatically cover
+arbitrary J with H3(J)=1. Keep this extra gap visible.
+
+Shared status: TRUSTED for the directed-sum identity/no-cancellation proof,
+pending Claude's independent check; not an unconditional generic reduction.

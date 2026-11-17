@@ -1,0 +1,152 @@
+RIBBON PROJECTORS: WHAT EULER-FAITHFULNESS WOULD REQUIRE
+1 November 2026. Independent architectural audit.
+
+1. THE SPLIT INJECTION IS REAL, BUT IS NOT POSITIVITY
+
+Levine--Zemke, Khovanov homology and ribbon concordances, Theorem1:
+a ribbon concordance C:L0->L1 induces a bigrading-preserving injection,
+with left inverse induced by the reverse movie (after fixing its sign).
+https://arxiv.org/html/1903.01546v2
+Bull. Lond. Math. Soc.51 (2019),1099--1103, DOI10.1112/blms.12303.
+Use the corrected v2 source. Proposition7 and the proof of Theorem1 give
+the sphere/dot relations underlying the left inverse.
+
+Consequently e=i p on Kh(L1), where i=Kh(C), p=Kh(reverse C), is an
+idempotent. Its image is Kh(L0). Thus the complement is a genuine bigraded
+direct summand. Its graded Euler characteristic is the difference of the
+two Jones-type Euler characteristics. This does not make that Euler
+characteristic positive or faithful on nonzero summands.
+
+The same based construction gives the reduced statement for knot
+concordances; equivalently one can retain unreduced homology throughout
+and its extra (q+q^-1) normalization factor. None of the obstructions below
+depends on that choice.
+
+Normalization used for the data below: reduced Kh(U)=Q in (h,q)=(0,0).
+Writing Q for the quantum-grading variable and t for ordinary Jones,
+chi_Q(Kh_red(K))=V_K(Q^2), so t=Q^2. A mirror changes (h,q) to (-h,-q).
+
+2. MOVIE REVERSAL CANNOT BE A POSITIVE DAGGER
+
+Already the local Khovanov Frobenius algebra rules this out. Over Q take
+ A=Q[X]/(X^2), eta(1)=1, epsilon(1)=0, epsilon(X)=1.
+The birth eta is nonzero, whereas its reversed death satisfies
+ epsilon eta=0.
+If reversal were the adjoint for a positive-definite Hilbert structure,
+this would say ||eta(1)||^2=0, a contradiction. Equivalently the Frobenius
+pairing epsilon(ab) has matrix [[0,1],[1,0]], which is indefinite.
+
+Geometrically these are exactly the undotted sphere=0 and dotted sphere=1
+relations in Levine--Zemke Proposition7. The ribbon inverse theorem uses
+those cancellations; it does not furnish a positive inner product. A
+positive structure on a different quantum representation cannot simply
+be transported to the Khovanov movie maps without an additional theorem.
+
+There is also an abstract obstruction to positivity of an additive Euler
+trace on the entire triangulated category: [X[1]]=-[X]. A trace that is
+both nonnegative on every identity and respects this relation must vanish
+on every X. Thus nontrivial Euler additivity and such global positivity
+are incompatible.
+
+3. EVEN THE MOST FAVORABLE End(H) IDENTIFICATION DOES NOT CLOSE THE GAP
+
+For H=Kh_red(K;Q), the usual mirror duality and connected-sum Kunneth
+identification give, as bigraded vector spaces,
+ Kh_red(K#mirror K)=H tensor H^*=End(H).
+This vector-space statement does not by itself identify the particular
+canonical ribbon map with a coevaluation movie. Grant even the favorable
+identifications i(1)=I_H and p(f)=supertrace(f). They are algebraically
+compatible because superdimension(H)=V_K(1)=1, so p i=1.
+
+Then e(f)=supertrace(f) I_H and the complementary summand is ker(p).
+Its graded Euler polynomial is
+ V_K(Q^2) V_K(Q^-2)-1.
+If V_K=1, that polynomial vanishes. It still need not imply ker(p)=0.
+
+Concrete formal model: let Z have zero ordinary differential with
+generators at (h,q)=(0,0),(1,4). Equip it with a Lee differential joining
+these two generators. Put H=Q_(0,0) direct-sum Z direct-sum Z[1]. Then
+dim H=5, its graded Euler polynomial is1, and its Lee homology is Q.
+The supertrace projector above has one-dimensional image and a
+24-dimensional complement of graded Euler polynomial0. This model has
+duality, a split unit, and the indicated Lee structure. It is NOT asserted
+to be a knot homology. It shows why those formal structures alone do not
+give Euler-faithfulness.
+
+4. ACTUAL SMALL KNOTS REFUTE A UNIVERSAL POSITIVE DEFECT TRACE
+
+The exact elementary braid computations are
+ V_T(t)=t+t^3-t^4,                       T=trefoil,
+ V_F(t)=t^2-t+1-t^-1+t^-2,               F=figure-eight.
+They are independently encoded by the already-validated TL calculation
+in work/attack_search/search.py: closures sigma1^3 and
+sigma1 sigma2^-1 sigma1 sigma2^-1, respectively; t=A^-4.
+
+At t=exp(i theta), theta near0,
+ V_(T#mirror T)-1 = +6 theta^2 + O(theta^4),
+ V_(F#mirror F)-1 = -6 theta^2 + O(theta^4).
+Both doubles have canonical ribbon concordances from U. This region is
+compatible with the positive finite Temperley--Lieb arc near A=i.
+Therefore their Jones defects cannot all be a positive norm or a faithful
+positive trace times a universal nonzero scalar of fixed sign. The
+complementary projectors are genuine, but their Euler traces change sign.
+Taking an absolute value or squaring the defect would evade this sign
+test but would not establish faithfulness; the formal zero-Euler model
+would still survive.
+
+5. EVEN UNIVERSAL EXTREME-GRADING PARITY PURITY FAILS ON ACTUAL DOUBLES
+
+The previously verified KnotInfo rational data retained in
+work/proof10/homology/polys.json, entry name='12*n_25', field
+'khovanov_reduced_rational_vector', give for K=12n25:
+ qmin=-4, with one generator each at h=-2,-1;
+ qmax=10, with one generator at h=6.
+Hence End(H_K)=Kh_red(K#mirror K) has
+ qmax=14, with one generator each at h=7,8;
+ qmin=-14, with one generator each at h=-7,-8.
+At each extreme the Euler coefficient is zero. Any ribbon-concordance
+image of reduced Kh(U) is supported at (0,0), so these extreme classes
+remain in the complement, independently of the particular ribbon map.
+
+The full reduced Euler check in that normalization is
+ Q^-2-1+2Q^2-2Q^4+2Q^6-2Q^8+Q^10=V_K(Q^2).
+Thus the extra q=-4 pair is an actual cancelling homology pair, not a
+grading-normalization artifact. The earlier exact reconstruction script
+is work/proof10/homology/composite_counterexample.py; its companion JSON
+records the PD code and source-bar polynomial, not the whole reduced
+polynomial, so consult polys.json for the raw reduced groups.
+
+Thus a proposed geometric theorem that every such complementary summand
+has parity-pure extreme quantum grading is false. This is an actual
+symmetric-double example, not a formal-model objection. Its full Jones
+polynomial is nontrivial, so it does not refute the special conditional
+statement that a complement with ENTIRE Euler polynomial0 must vanish.
+The raw data and provenance were audited in the earlier pass; no fresh
+large-diagram homology computation is claimed here.
+
+6. THE EXACT MISSING GEOMETRIC STATEMENT
+
+For canonical ribbon concordances C_K:U->K#mirror K, the statement
+
+  chi_q(im(1-e_K))=0  implies  im(1-e_K)=0
+
+would close the original problem: the target would have reduced Kh rank1,
+hence be the unknot, and then K would be the unknot. It is also equivalent
+in strength to Jones unknot detection when restricted to this canonical
+class. Indeed if Jones detects U, chi_q=0 gives
+V_K(t)V_K(t^-1)=1; Laurent units plus V_K(1)=1,V_K'(1)=0 force V_K=1,
+and detection gives K=U. Conversely a Jones1 counterexample would give a
+nonzero zero-Euler complement by the ribbon reduction and Kh detection.
+
+A stronger sufficient mechanism would be a faithful positive trace on
+these PARTICULAR complementary summands whose vanishing is forced by
+their full Euler polynomial. It must use a new relation specific to
+actual knot ribbon geometry: ordinary Euler/supertrace, arbitrary positive
+inner products, split injections, and the local cobordism relations do
+not supply it. The local dagger obstruction and the actual sign/extreme
+countertests eliminate the most immediate formulations.
+
+VERDICT: the ribbon-projector scaffold is logically complete conditional
+on a sharply stated Euler-faithfulness lemma, but the proposed categorical
+positivity justification does not prove that lemma. No weaker geometric
+relation establishing it has been identified in this audit.

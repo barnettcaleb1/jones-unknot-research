@@ -1,0 +1,212 @@
+PASS 41: WHAT THE MULTI-BAND LINKING-FORM GATE CAN ACTUALLY DECIDE
+2026-11-01. No repeated band enumeration and no new Jones-one knot.
+
+Concrete outcome
+----------------
+LLL(1) has H1 of its double cover equal to Z plus Z/144, not Z^2. Its
+linking form is -1/144 up to overall orientation. The previously checked
+two-band surgery gate therefore passes. A primary realization theorem
+shows that this is the COMPLETE obstruction involving only the first
+homology and its bilinear linking form, when the starting integral homology
+sphere is unrestricted. There is no additional metabolizer requirement.
+
+There is also an immediate selection rule: split-padding an excluded EKT
+two-component input with unknots, or combining maximal-nullity excluded
+inputs by split union or component-connected sum, cannot rescue minimal
+fusion to a determinant-one knot. This excludes arbitrarily many-band
+variants without inspecting any bands.
+
+1. General necessary gate, with exact surgery scope
+--------------------------------------------------
+Let Y=Sigma_2(L), with H1(Y;Z)=Z^b plus T. Suppose k embedded band moves
+take L to a knot K of determinant one. Reverse the band cobordism. The
+Montesinos correspondence lifts each saddle to an integral 2-handle, so
+Y is obtained by k-component integral surgery in the integral homology
+sphere Sigma_2(K). Let A be the k-by-k symmetric integral linking matrix.
+
+Then coker(A)=H1(Y), and nullity(A)=b. The integral radical of A is a
+primitive sublattice: Z^k/ker(A) embeds in the free group Z^k. Extending
+a basis of the radical to an integral basis makes A congruent to
+
+                         0_b direct-sum B,
+
+where B is a nonsingular (k-b)-by-(k-b) integral symmetric matrix. The
+torsion linking form of Y is presented by B^(-1) modulo Z, up to the
+single overall orientation convention. Thus
+
+  k >= b + m(lambda_Y) >= b + max_p dim_Fp(T tensor Fp),             (1)
+
+where m(lambda) is the smallest size of a nonsingular integral symmetric
+matrix presenting the linking form lambda. In particular:
+
+* k=b: T must be zero.
+* k=b+1: T must be cyclic. If |T|=N and a generator has self-linking a/N,
+  then a must be plus or minus a unit square modulo N. Conversely that
+  arithmetic condition gives a size-one presentation [N] or [-N].
+
+These statements concern the full group, not just rational Betti numbers.
+No assumption about orientations of the bands is needed for this necessary
+integral surgery statement. No claim of an even matrix is being added.
+
+2. The converse at the algebraic surgery level is an established theorem
+------------------------------------------------------------------------
+Cochran–Melvin, Corollary 1.2, states that a symmetric integral matrix with
+the correct nullity and linking form for a closed oriented 3-manifold Y
+is realized as a surgery matrix for Y in some integral homology sphere.
+Their Section 1 also gives the radical splitting and inverse-matrix rule.
+
+Consequently the minimum number of surgery components, when the starting
+integral homology sphere is allowed to vary, is exactly b+m(lambda_Y).
+This is our deduction from their realization result and the preceding
+lower bound. It is NOT a band-realization theorem: the source sphere need
+not be a double branched cover with the required quotient, the surgery
+link need not be equivariant, and the branch knot need not have Jones1.
+
+In particular, for the actual LLL(1) cover, the matrix
+
+                              diag(0,-144)
+
+has precisely the required data (reverse the global sign if needed).
+The realization theorem supplies a two-component surgery description in
+some integral homology sphere. Thus a stronger obstruction based solely
+on these same homological data cannot exclude that cover. Independently,
+the stored actual two-band fusions to the unknot show directly that an
+input-only theorem forbidding EVERY two-band determinant-one fusion of
+LLL(1) would be false.
+
+If a different three-component Jones-unlink input really had H1=Z^2,
+its two-band algebraic gate would also pass: the matrix is simply 0_2.
+The same realization result then applies. Torsion-free maximal nullity
+is not a sufficient certificate of actual bands or a Jones-one output.
+
+3. Concrete exclusion of padded and combined EKT inputs
+-------------------------------------------------------
+For a mu-component link, minimal fusion uses k=mu-1 bands. Call the
+homology maximal-nullity here if b1(Sigma_2 L)=mu-1. If it also has any
+nonzero torsion, equation (1) excludes EVERY such minimal fusion to any
+determinant-one knot, regardless of band complexity.
+
+For a split union L=L_1 split-union ... split-union L_r,
+
+  Sigma_2(L) = (#_i Sigma_2(L_i)) # (r-1)(S^1 x S^2),
+  b(L)=sum_i b(L_i)+(r-1),   T(L)=direct-sum_i T(L_i).
+
+Thus if each input is maximal-nullity, their split union is again
+maximal-nullity. Nonzero torsion cannot disappear. The same conclusion
+holds under component-connected sum: component counts subtract one,
+branched covers form ordinary connected sums, and nullities add.
+
+Apply this to the already established EKT LL2(2m), m>=1: each has two
+components, unlink Jones polynomial, and
+
+  H1=Z plus Z/(1+12 q_(2m)^2),
+
+with the displayed finite factor nonzero. Any split union or iterated
+component-connected sum made from such inputs and unknots remains an
+actual unlink-Jones link, yet no minimal fusion can yield a determinant-
+one knot. For example LL2(2) has torsion order433; its split union with
+one unknot is a THREE-component unlink-Jones link with H1=Z^2 plus Z/433.
+Every pair of fusion bands on it is excluded, unlike LLL(1).
+
+The cover formula follows by lifting a splitting sphere: its lift is two
+spheres, producing the extra S^1 x S^2. A component-connected-sum sphere
+meets the branch link twice and lifts to one separating sphere. Jones
+multiplicativity supplies the stated unlink-Jones identities.
+
+4. Why a metabolizer cannot be imposed on an arbitrary band trace
+----------------------------------------------------------------
+A band trace is not a rational homology ball. There is no general reason
+its boundary linking form must be metabolic. A concrete countertest is
+the Hopf link: cutting its standard annular Seifert surface along a
+spanning arc gives a disk, so an inverse band fuses its boundary to the
+unknot. Its double cover is L(2,1), with linking form (1/2) on Z/2. That
+form has no metabolizer, since a metabolizer would have order sqrt(2).
+The surgery trace has matrix [2], exactly as the general gate allows.
+
+The Hopf link is not Jones-unlink; this example only blocks importing an
+unjustified rational-ball condition from band topology alone. To obtain
+a further obstruction one must use an additional proven property of the
+specific Jones-unlink input and its geometric bands. None was obtained
+in this bounded check.
+
+5. Practical stop condition
+---------------------------
+For a proposed input, compute b, the full torsion group, and its linking
+pairing before any band search. Reject immediately if (1) fails; at
+k=b+1 use the explicit unit-square test. Once those pass for LLL(1),
+further homology-only refinement has reached its stated limit. The next
+required data would be an actual equivariant surgery link / embedded band
+system and the full Jones polynomial of its knot output. No new band
+system or successful candidate is supplied by this note.
+
+Primary sources and existing certificates
+------------------------------------------
+T. Cochran and P. Melvin, The Milnor degree of a three-manifold,
+Journal of Topology 3 (2010), 405–423. Section 1, Theorem 1.1,
+Corollary 1.2 and Proposition 1.7. In particular Corollary 1.2 concerns
+an unrestricted integral homology sphere, an essential qualification.
+https://arxiv.org/pdf/0902.1731
+https://doi.org/10.1112/jtopol/jtq011
+
+A. H. Moore and M. Vazquez, A note on band surgery and the signature of
+a knot, Section 4.1: band surgery lifts to distance-one Dehn filling.
+https://par.nsf.gov/servlets/purl/10182784
+
+S. Eliahou, L. H. Kauffman and M. B. Thistlethwaite, Infinite families
+of links with trivial Jones polynomial, Topology 42 (2003), 155–169.
+https://homepages.math.uic.edu/~kauffman/ekt.pdf
+
+Existing exact diagram certificates used, not recomputed:
+work/ekt_homology_notes.md (LL2 full-family homology),
+work/research33/lll_linking_form.json (LLL(1) actual linking pairing),
+work/research33/two_band_independent_audit.json (actual unknot fusions).
+
+ADDENDUM: A CONCRETE AUXILIARY INPUT THAT ESCAPES THE OLD GATE
+============================================================
+The parent proposed replacing trivial split-padding by a NONTRIVIAL
+Jones-unlink auxiliary link. This genuinely changes the deficit k-b.
+I checked the single proposed input, without a band scan:
+
+                         L = LL2(2) split-union LLL(1).
+
+It has five components, Jones polynomial delta^4, and cover homology
+
+             Z^3 plus Z/433 plus Z/144 = Z^3 plus Z/62352.
+
+The actual 24-crossing LL2(2) PD was reconstructed as H(17/6,-17/6),
+and its entire Jones polynomial checked again. Computing its Goeritz
+matrix, splitting its primitive one-dimensional radical, and inverting
+the resulting six-dimensional block gives self-linking 75/433 on a
+torsion generator. This is not inferred merely from a symmetric-looking
+Fox-coloring matrix. Exact square witnesses are
+
+             75 = 178^2 = -180^2 modulo433.
+
+Use the existing LLL(1) generator with self-linking -1/144. The ordered
+pair of these generators generates the cyclic direct sum, since the
+orders are coprime, and has self-linking
+
+        75/433 - 1/144 = 10367/62352.
+
+The exact unit-square certificate
+
+                   1727^2 = -10367 modulo62352
+
+shows that the total pairing is isomorphic to -1/62352. Therefore the
+four-band input passes the precise gate, with allowable surgery matrix
+
+                         diag(0,0,0,-62352).
+
+Cochran–Melvin's theorem makes that an actual surgery presentation in
+some integral homology sphere. It does NOT supply the covering involution,
+four embedded bands, or a Jones-one knot. Those are still unprovided.
+The concrete distinction is useful for construction selection: LL2(2)
+split-union U is excluded for every pair of fusion bands; LL2(2)
+split-union LLL(1) is not excluded for four fusion bands by this complete
+homology/linking-form gate. Thus adding unknots is ineffective, while this
+specific nontrivial auxiliary Jones-unlink link removes that obstruction.
+
+Full new certificate: ll2_auxiliary_pairing.json.
+Portable replay: verify_auxiliary_pairing.py, which checks the actual PD,
+Jones polynomial, Fox homology, Goeritz block, and modular square witness.
+No band or knot diagram was claimed or generated in this addendum.

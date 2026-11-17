@@ -1,0 +1,182 @@
+GEOMETRIC INTERSECTIONS AT THE JONES SPECIALIZATION
+1 November 2026 UTC. Bounded pass24; research deductions, no novelty claim.
+
+Outcome
+-------
+The naive route “opposite polynomial contributions imply a removable bigon”
+fails on actual geometric objects, and the smallest quantum-Floer unknot
+already requires cancellations that an ordinary Floer differential cannot
+perform. There is nevertheless a precise extremal-intersection certificate
+for nontrivial Jones polynomial. Its geometric coverage, not its algebra,
+is the missing theorem. None of the following proves unknot detection.
+
+1. The cancellation has the wrong parity for a Floer bigon
+---------------------------------------------------------
+Use the conventions of Anghel--Juhasz, Quantum braid Floer homology,
+arXiv:2601.08805v4, Sections 6 and 9:
+https://arxiv.org/html/2601.08805v4
+Their graded Euler polynomial is Omega(x,d), and the Jones specialization
+is d=-x^-1. A generator of degrees (A,Q,M) therefore contributes
+  (-1)^(M+Q) x^(A-Q)
+to Jones, rather than the usual Euler sign (-1)^M.
+
+For the actual unknot braid sigma_1 the paper gives
+  Omega = x d^2 - x d + d.
+The cancelling Jones contributions are x d^2 and d: their ordinary Euler
+signs agree, their A degrees differ by one, and their Q degrees differ by
+one. They cannot be directly cancelled by a basepoint-free index-one HFK
+disk, which preserves A and reverses Maslov parity. A quantum differential
+also preserves Q. Here the displayed coefficients are net Euler blocks;
+we are not inferring exact homology ranks from the coefficients.
+
+There is a different possible HFK cancellation, between x d^2 and -x d,
+which preserves A and changes Q. It does not cancel a pair of Jones terms.
+Thus “run the HFK spectral sequence until only the Jones terms remain” is
+not a valid operation. The trefoil example in Section 9.1 makes this actual:
+qHFB has five generators, HFK has three, and the intervening disk changes Q.
+
+For three actual unknot presentations the Euler coefficient norms are
+3,5,9. Those are lower bounds for their qHFB dimensions, not proven equalities.
+Any useful minimum-presentation result must allow changes of braid
+presentation. Cancelling acyclic pairs inside one fixed quantum complex
+cannot lower that complex's homology rank.
+
+2. Actual essential arcs can have identically zero weighted intersection
+-----------------------------------------------------------------------
+Bigelow, The Burau representation is not faithful for n=5,
+Geometry & Topology 3 (1999), Theorem 1.4 and Section 3:
+https://web.math.ucsb.edu/~bigelow/publications/02.pdf
+constructs embedded arcs in a five-punctured disk that cannot be homotoped
+apart relative to endpoints, but whose Laurent weighted intersection is
+zero. Put them in minimal position: they still intersect, and have no
+removable empty bigon. This is an actual geometric counterexample to
+weighted-intersection cancellation implying geometric cancellation.
+
+The example is the one-point/Burau model, not a Jones-one knot and not a
+counterexample to a special theorem about Jones fork systems. Its lesson
+is precise: equal abelian winding labels do not give a null-homotopic
+Whitney boundary. Retaining nonabelian path or Nielsen-class labels could
+test that obstruction, but these labels are not recovered from Jones.
+
+3. The existing geometric positivity proof degenerates exactly at Jones
+-----------------------------------------------------------------------
+Bigelow, Braid groups are linear, JAMS 14 (2001), Sections 2.3 and 3:
+https://www.maths.ed.ac.uk/~v1ranick/papers/bigelow2.pdf
+proves that the unspecialized fork--noodle pairing detects intersection.
+In minimal position its lexicographically maximal q^a t^b terms have a
+common sign. Separately, passage from a proper fork surface to a closed
+homology cycle multiplies it by
+  (1-q)^2(1+qt).
+The proof cancels this nonzero factor over Z[q^+-1,t^+-1].
+
+Bigelow's actual Jones formula uses t=-q^-1, precisely where 1+qt vanishes:
+A homological definition of the Jones polynomial, Theorem 2.8,
+https://web.math.ucsb.edu/~bigelow/publications/06.pdf
+Consequently the unspecialized argument cannot simply be base-changed:
+its normalizing factor becomes zero, and lexicographic extremality need
+not survive the projection (a,b) -> a-b. This does NOT prove that any
+particular specialized representation is unfaithful. It identifies a
+specific invalid step in trying to import the faithful-representation proof.
+
+4. A valid geometric certificate: surviving extreme faces
+---------------------------------------------------------
+For a transverse Bigelow plat diagram let the actual intersection points p
+have signs epsilon_p and winding labels (a_p,b_p). Put
+  j_p=a_p-b_p,  s_p=epsilon_p (-1)^b_p.
+Let j_minus and j_plus be the minimum and maximum of the j_p.
+
+PROPOSITION. If the signs s_p are constant among the points attaining
+j_minus, and also constant among the points attaining j_plus, then
+  span V_K = j_plus-j_minus-1.
+In particular j_plus-j_minus>=2 certifies V_K!=1.
+
+Proof. Neither extreme coefficient can cancel after t=-q^-1, so the
+specialized intersection polynomial has exactly that span. The Jones
+formula multiplies this polynomial by a Laurent monomial and divides
+by -(q^(1/2)+q^(-1/2)), of span one. Laurent polynomial spans add under
+multiplication. This proves the assertion, including the normalization.
+
+The hypothesis is a condition on winding numbers and intersection signs;
+one need not compute any interior coefficient. A sufficient version is
+that each extreme face consists of just one intersection. For the
+two-variable fork--noodle model, Bigelow's positive maximal monomial also
+survives if no other exponent pair projects to its a-b value. These are
+checkable certificates, not generic coverage theorems.
+
+Analogously, for Omega(x,d), extreme coherent faces of A-Q give span V
+without the extra subtraction of one (Omega is already normalized).
+For the paper's trefoil:
+  Omega=x^-1 d^3-d^3+x d^3-x^2 d^3+x^2 d^4.
+The projected extreme degrees -4 and -1 each have one contribution.
+They survive, while the two terms at degree -2 cancel. Thus the extreme
+certificate detects it despite an actual interior Jones cancellation.
+For sigma_1 the lower extreme degree -1 contains opposite specialized
+signs, so the hypothesis fails, as it must for this unknot example.
+
+5. Exact complete conditional route, and where it remains open
+------------------------------------------------------------
+A proposed geometric-normal-form theorem would have to say more than
+“Jones-one knots have bounded homology.” One concrete possible statement:
+
+  Every plat can be changed by the actual plat-preserving moves to either
+  an explicit one-bridge unknot, or a diagram satisfying the extreme-face
+  condition above with projected width at least two.
+
+If proved, this yields detection immediately: the second output has
+nontrivial Jones by the proposition; the first has an actual unknot
+isotopy. Its moves must be the full plat moves (handlebody braid actions
+and stabilization), not arbitrary alterations of the fork surfaces.
+
+This is an unproved strong geometric coverage statement, not a result
+obtained here and not evidence that every knot has such a normal form.
+An extremal-coherence assertion solely for minimal-position arcs is too
+weakly motivated: the Burau example shows that absence of bigons does
+not control abelian cancellation, and the quantum unknot already shows
+that Jones cancellation is different from differential cancellation.
+
+A falsifiable local research target is to retain the actual path classes
+between extreme cancelling intersections and ask which of them can be
+changed by a specified plat-preserving move to expose an extreme face.
+Each proposed move must come with (i) an endpoint-marked isotopy, (ii) a
+strictly decreasing well-founded diagram complexity, and (iii) a proof
+that the path obstruction has actually disappeared. Equal winding number
+alone establishes none of these. We have no descent theorem of this kind.
+
+In particular, formal fork/skein relations are not substitutes for those
+plat-preserving moves: a relation in an intersection module can change
+the actual embedded tangle. This is the same realizability distinction
+that blocked the earlier formal tangle candidates, now with a published
+embedded-arc stress test available.
+
+For the minimum-rank question, a normal form that explicitly identifies
+the unknot would yield the finite bound m(K)<=dim qHFB(sigma_1) on the
+Jones-one fiber. We do not need to assert that this fixed finite number
+is three. Merely assuming such a fiber bound without the geometric
+normal-form construction is the earlier unproved scaffold in new notation.
+
+6. Why adding a transverse derivative is not free extra information
+------------------------------------------------------------------
+One might try to recover the lost factor 1+qt by a divided difference
+normal to the Jones locus. The actual quantum-braid examples obstruct
+assuming such data is automatically a knot invariant. With A,B denoting
+the sigma_1 and sigma_1 sigma_2 polynomials, respectively,
+  B-A = x d^2(d-1)(xd+1).
+The polynomials have the same Jones specialization, while their first
+derivatives normal to xd+1=0 differ by a nonzero Laurent polynomial.
+The presentations are related by an actual Markov stabilization.
+Therefore a repair via nearby-cycle/derived information would first
+need its own presentation-invariance theorem and a bridge back to Jones.
+Explicitly, setting z=xd+1 makes the derivative of B-A at z=0 equal to
+  -x^-2-x^-1,
+which is nonzero. The accompanying standard-library verifier checks this
+factorization, both specializations of the three unknot examples, their
+Euler norms, and the trefoil's surviving extreme coefficients.
+
+Next-action conclusion
+----------------------
+Do not invest in a general empty-bigon cancellation claim: it has a
+published geometric counterexample and a separate parity obstruction.
+The viable geometric problem is presentation change at the resonant
+specialization, with nonabelian path information retained until the move
+is certified. The extremal-face proposition supplies a clean success
+certificate for such a move, but generic coverage is still unproved.

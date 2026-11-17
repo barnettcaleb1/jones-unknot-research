@@ -1,0 +1,185 @@
+{
+  "independent_matrix": [
+    [
+      {
+        "1": -3,
+        "4": -2,
+        "5": -1,
+        "2": -4,
+        "3": -3,
+        "0": -2
+      },
+      {},
+      {
+        "0": 3,
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "-1": 3,
+        "-2": 2,
+        "-3": 1
+      }
+    ],
+    [
+      {
+        "1": -5,
+        "3": -4,
+        "4": -3,
+        "5": -1,
+        "0": -4,
+        "-1": -2,
+        "2": -5,
+        "-2": -1
+      },
+      {
+        "2": -1,
+        "3": -1,
+        "-1": 1,
+        "-2": 1
+      },
+      {
+        "0": 5,
+        "1": 4,
+        "2": 2,
+        "-1": 5,
+        "3": 1,
+        "-2": 4,
+        "-3": 3,
+        "-4": 1
+      }
+    ],
+    [
+      {
+        "1": -3,
+        "2": -3,
+        "3": -2,
+        "4": -1,
+        "0": -3,
+        "-1": -2,
+        "-2": -1
+      },
+      {},
+      {
+        "0": 3,
+        "1": 2,
+        "-1": 4,
+        "-2": 3,
+        "-3": 2,
+        "-4": 1
+      }
+    ]
+  ],
+  "constant_jet": [
+    [
+      -15,
+      0,
+      15
+    ],
+    [
+      -25,
+      0,
+      25
+    ],
+    [
+      -15,
+      0,
+      15
+    ]
+  ],
+  "first_jet": [
+    [
+      -33,
+      0,
+      0
+    ],
+    [
+      -40,
+      -8,
+      -15
+    ],
+    [
+      -15,
+      0,
+      -18
+    ]
+  ],
+  "generic_generators_and_Laurent_inverses_verified": true,
+  "exact_TL4_basis_trace_checks": 13,
+  "identity_channel_absent_and_preserved": true,
+  "integral_change_of_basis": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "inverse_integral_change_of_basis": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "quotient_generator_matrices": [
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  ],
+  "trace_values_if_quotient_upper_right_is_zero": [
+    3,
+    -1
+  ],
+  "derivative_residues_mod5": [
+    1,
+    3
+  ],
+  "conclusion": "For every beta in B4, the annular z^2 coefficient of T beta is nonzero.",
+  "proof_scope": "All words, with no length or connectivity restriction. The matrix trace alone does not classify ordinary closures as knots or unknots."
+}

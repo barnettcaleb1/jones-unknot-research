@@ -1,0 +1,59 @@
+Third bounded Jones investigation, 31 October 2026
+
+Outcome: no general proof, no nontrivial Jones-one knot, no unresolved candidate.
+
+Main constructive test
+----------------------
+Use the quotient B4 -> B3 sending sigma1,sigma3 to a and sigma2 to b.
+Its kernel is free on u=sigma1 sigma3^-1 and
+v=sigma2 u sigma2^-1. The six fixed quotient lifts use exponent tuples
+(-5,2,6,2), (-2,-1,1,7), (-2,-1,3,5), (-2,2,3,2),
+(-1,1,2,3), (-2,2,1,4) in a^r b^s a^t b^w.
+All have writhe5, so a connected Jones-one closure would automatically be
+nontrivial by the unknot writhe bound for four-strand braids.
+
+Every freely reduced kernel word of length at most16 was examined:
+86,093,441 words, 258,260,640 connected closure instances across six seeds.
+A modular evaluation excluded all but245. Full exact Laurent evaluation
+rejected all245. These are diagram instances, not distinct knot types.
+This is an exhaustive radius16 result for these six exact cosets, not a
+classification of all four-braids or all quotient words.
+
+Reproduce from work/pass3:
+  clang++ -O3 -std=c++17 coset_search.cpp -o coset_search
+  ./coset_search 16
+  python3 coset_verify.py
+The source tables and exact evaluator are included. The enumeration took
+about33seconds here. The verifier also checks known knots and scattered
+modular samples. Scripts overwrite their adjacent JSON/text records.
+
+Other completed directions
+--------------------------
+1. Products/commutators of Bigelow-kernel conjugates left only geometric
+   unknot tautologies and modular false positives. An exact leading-degree
+   argument excludes every positive word in two specified noncommuting
+   blocks; see braid_notes.md.
+2. All six four-braid trace targets pass exact continuous-unitarity tests
+   and two complete finite-image tests, including the first infinitesimal
+   neighborhood in characteristic2. See literature_notes.md.
+3. Ren's annular example has exactly degree2, verified by full state sums
+   and an independent Hopf pairing. No meridional twist has Jones1.
+   All4096 crossing-sign choices in its projection were checked; the234
+   degree-zero cases are all actual two-component unlinks with their axis.
+   See tangle_notes.md. This does not exclude other annular projections.
+
+Contents and dependencies
+-------------------------
+work/pass3 contains proof notes, source code, and exact JSON records.
+Required helper modules from earlier passes are included under work/pass2,
+work/attack_search, and work/generic. Pure braid and matrix calculations
+use the Python standard library. Tangle reconstruction uses Regina7.4.1
+and Spherogram2.4.1, tested with Python3.13. Third-party packages, compiled
+executables, and primary-source PDFs/TeX are not included. The notes link
+primary literature. Paths mentioning the original workspace are provenance.
+
+Assessment
+----------
+These are bounded exclusions and restricted mathematical results.
+They do not resolve the Jones unknot-detection problem, establish that a
+proof is close, or justify treating more of the same search as a solution.

@@ -1,0 +1,60 @@
+ACTUAL FOUR-SECTOR ROTOR TEST — 1 NOVEMBER 2026
+Result: the explicit unknot flips to the unknot. The two tested asymmetric
+completions are nontrivial before the flip. No counterexample.
+
+Actual input, not a formal skein vector:
+ T=[-1]+[1/2]+[1/3]=T_1 from the globally nugatory surgery family.
+Use four identical radially arranged copies T_i, i modulo4. In each copy the
+bottom-left/right ports0,1 face inward; top-left/right ports2,3 face outward.
+Join inward port1 of T_i to inward port0 of T_(i+1), along the central face.
+These four connectors have no crossings. The eight remaining ports lie on
+the boundary of a disk, two per side. Rotation by90degrees preserves every
+crossing, so this is an actual C4 rotor.
+
+First stator S0: cap the two outward endpoints of each sector. This gives an
+actual unknot: each capped T_i is an unknotted proper arc because N(T_i)=U;
+the central connectors make the standard connected sum of four such unknots.
+Direct computation independently verifies both this knot and its rotant:
+
+ stator          initial crossings  Jones    crossings after simplification
+ S0              24                 1        0, one component
+ S0, rotor flip  24                 1        0, one component
+
+The flip is a spatial half-turn about a radial in-plane axis, not a mirror.
+It reverses the order of sectors; since all are identical, the result is
+represented by applying the same left-right/height flip to each local T_i.
+The program implements this directly on crossing half-edges by
+ i -> 1-i mod4, and interchanges ports0/1 and2/3. It reverses planar cyclic
+order AND swaps over/under. No Jones equality is assumed in the computation.
+
+Two bounded asymmetric modifications were also tested: put sigma_2^2 or
+sigma_2^-2 on the eight outward strands before the adjacent caps. They break
+the displayed C4 symmetry of the stator. Each initial diagram has26crossings;
+each is a knot and simplifies to12crossings. The exact Jones polynomials
+match across the flip but are nonunit. Regina's variable is x=sqrt(t):
+
+ +2: x^4-x^2+1+x^-2-3x^-4+4x^-6-5x^-8+5x^-10-4x^-12+3x^-14-x^-16.
+ -2: -x^8+x^6-x^2+4-4x^-2+5x^-4-5x^-6+4x^-8-3x^-10+x^-12.
+
+All six initial and simplified PD codes are in rotor_candidate.json.
+The construction and exact recomputation are in rotor_candidate.py.
+Run with /opt/homebrew/opt/python@3.13/bin/python3; dependencies are
+Spherogram2.4.1 and Regina7.4.1 in work/braid_classification/packages.
+The Link constructor checks planarity. Spherogram's isotopy simplification
+ends at zero crossings and one component for the two unit cases; this is a
+geometric unknot check, not an inference from Jones1.
+
+WHY THIS ASSEMBLY SHOULD NOW BE STOPPED
+The necklace's global flip equals four ordinary Conway mutations, one inside
+each identical two-string sector. The central connections return to the same
+connections under reflection. This statement holds for any stator S, not just
+S0. Ordinary Conway mutation preserves the double branched cover, and a knot
+with double branched cover S3 is U. Therefore ANY unknot completion of this
+specific two-tangle necklace has an unknot rotant. Changing only its stator
+cannot rescue it. One must change the sector-interaction geometry; that was
+not attempted or assumed here.
+
+The primary rotor convention, including the over/under change under a spatial
+flip, is Anstee–Przytycki–Rolfsen, Section1, especially Figure2 and Lemma2.1:
+ https://arxiv.org/html/math/0405382
+No new construction claim is attached to the general rotor theorem.

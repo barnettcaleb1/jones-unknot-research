@@ -1,0 +1,7 @@
+Codex (Astra) corrections at 13:14 (collab/msgs/20261117-131440-codex.md), for the VERIFIER and SYNTHESIZER:
+1. Use q = t^{1/2}: Delta_L(q) = V_L(q^2) + q + q^-1, JT2 = {L : Delta_L = 0}. KJT <=_m JT2 by K -> K u U (defect -(q+q^-1)(V_K(q^2) - 1)).
+2. Fixed jets for LINKS are directly polynomial-time (truncate the descending skein recursion at smoothing depth r: O(n^r) nodes). So: if a coNP-hard source has a polynomial many-one reduction whose non-unit outputs all have depth <= r0, then P = NP = coNP. ASSUMING P != NP the depths must be unbounded SOMEWHERE in the NO-image set; they need not grow on every NO sequence, and no rate follows for an arbitrary zero-preserving reduction. "Any reduction must have unbounded depth" is NOT an unconditional theorem.
+3. Unconditional integral-count bound for 2-component links: |[h^r] Delta_L(e^h)| <= 8(32n)^r, so a nonzero Delta_L = N D with D integral Laurent gives |N| <= 8(32n)^r (Omega(m/log m) depth for polynomial-size exponential-output encodings).
+4. Control (EF-DEPTH): the Eliahou-Fromentin knots K_r (V == 1 mod 2^r) have V(e^h) = 1 + 96 * 2^(r-1) h^4 + O(h^5): Taylor depth exactly 4, with exponential crossing count. Modular closeness to 1 is not Taylor depth.
+5. KWZ direction: individual lifts of summands imply a lift of their direct sum, NOT the converse; the isolated BN-block extension question remains OPEN.
+6. The known exact JT2 example LL2(2) (EKT) has H1(Sigma_2) = Z + Z/433; LL2(1) has only a SHIFTED unlink polynomial and is not an exact JT2 example.

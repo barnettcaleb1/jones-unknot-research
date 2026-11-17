@@ -1,0 +1,144 @@
+WHY THE SURGERY ROUTE DOES NOT YET REACH JONES UNKNOT DETECTION
+1 November 2026 — bounded audit, pass 51
+
+Status: no proof of Jones unknot detection and no counterexample. The
+previous two-actual-closure tangle argument survived another internal
+audit, but remains without external validation or a novelty assessment.
+This pass verifies a restricted extension and identifies why it does not
+provide a generic proof. Further calculations within this route are not
+justified without a new geometric input.
+
+THE RESTRICTED EXTENSION
+
+Let X be a framed two-string tangle whose full Kauffman bracket equals
+that of a rational tangle R. If the double branched cover M of X is both
+irreducible and Floer simple, then X is rational. Consequently X and R
+agree as balanced framed tangles.
+
+Here Floer simplicity can be characterized by the existence of at least
+two distinct L-space Dehn fillings. Neither Floer simplicity nor
+irreducibility is supplied by equality of brackets.
+
+Argument. Choose rational caps which turn R into the unknot and the
+two-component unlink. Their cover slopes mu and lambda intersect once.
+Bracket equality supplies determinants one and zero for the corresponding
+closures of X. Thus Y=M(mu) is an integral homology sphere, M is the
+exterior of its filling-core knot C, and lambda is C's preferred longitude.
+This does not identify Y with S3. Write Delta_C for the symmetric Seifert
+Alexander polynomial, normalized by Delta_C(1)=1.
+
+The longitude branch link L has the unlink Jones polynomial up to a signed
+monomial. In particular J_L(-1)=0 and |J_L'(-1)|=1. Garoufalidis's formula
+therefore gives |lambda_G(Y_0(C))|=1/6. In this doubled normalization the
+zero-surgery formula, valid for an arbitrary integral homology sphere Y, is
+
+                 lambda_G(Y_0(C))=Delta_C''(1)-1/6.
+
+Hence |6 Delta_C''(1)-1|=1. Integrality excludes the alternative 1/3 and
+forces Delta_C''(1)=0. There is no ambient Casson term in the zero-surgery
+formula. Poudel equation (4.1) gives the same formula in Lescop's convention
+as lambda_L=Delta_C''(1)/2-1/12. The normalization and its general-Y
+extension were separately checked; details are retained in the audit notes.
+[G, P, GH]
+
+Floer simplicity gives a normalized torsion series D(t)/(1-t) with
+coefficients zero or one. Thus the nonzero coefficients of D alternate
++1,-1,+1,...,+1. After symmetrizing,
+
+ Delta_C(t)=(-1)^k + sum_(j=1)^k (-1)^(k-j)(t^n_j+t^-n_j),
+                         0<n_1<...<n_k.
+
+Therefore Delta_C''(1)=2 sum_j (-1)^(k-j)n_j^2 is positive unless k=0:
+pair terms from the largest exponent downward. Its vanishing forces
+Delta_C=1. If the boundary were incompressible, the Floer-simple norm
+formula would give Thurston norm deg D-1=-1, impossible. The boundary
+compresses; irreducibility then makes M a solid torus. The branched-cover
+criterion makes X rational, and the bracket distinguishes framed rational
+tangles. [RR, S]
+
+Without irreducibility the same argument stops at
+
+                    M=(S1 x D2)#Z,
+
+where Z is an integral homology sphere. The connected-sum formula for
+Heegaard Floer homology makes Z an L-space. It does not make Z equal S3.
+
+THE GENERIC TEST THAT THE ROUTE FAILS
+
+Tie an arbitrary knot J into one arc of R, with framing adjusted to the
+Jones normalization. Call the resulting tangle X_J. Directly,
+
+             [X_J]=V_J(A^-4)[R],
+             Sigma_2(X_J)=(S1 x D2)#Sigma_2(J).
+
+Thus a hypothetical nontrivial Jones-one knot produces exactly the bracket
+equality we want, while its topology survives as a closed connected-sum
+factor. For every nonlongitude slope p/q the filling is
+
+                       L(p,q)#Sigma_2(J).
+
+This tangle cover is Floer simple if and only if Sigma_2(J) is an L-space.
+Even proving that implication from V_J=1 would leave the closed factor
+uncontrolled. Assuming irreducibility instead excludes this construction;
+it does not provide a replacement construction for arbitrary J.
+
+Crucially, C and J are different knots. In this construction the auxiliary
+core C is an unknot in a ball of Sigma_2(J), so Delta_C=1 already. The new
+derivative constraint is therefore automatic, irrespective of the topology
+of J. It supplies no extra information on the generic candidate.
+
+A CONCRETE CHECK AGAINST AN OVERSTRONG CONCLUSION
+
+Let P be the Poincare homology sphere and take Z=P#(-P). This is a
+nontrivial integral homology sphere with minimal Heegaard Floer rank,
+Casson invariant zero, and correction term d=0. Ozsvath and Szabo explicitly
+discuss this example as an invisible homology sphere. [OS]
+
+For M=(S1 x D2)#Z, every nonlongitude filling L(p,q)#Z is an L-space and
+has the same Casson-Walker invariant and correction terms as L(p,q).
+Nevertheless it is not a lens space. Thus these tests, even for all slopes,
+cannot replace actual lens-space identifications in the earlier proof.
+
+This is a counterexample to that proposed inference, not a Jones-one knot.
+It is reducible and does not refute a statement with an irreducibility
+hypothesis. No rational-bracket equality is claimed for this explicit model.
+
+RESEARCH CONSEQUENCE
+
+The previous proof used actual rational-link closures to remove Z. A generic
+argument has only polynomial equalities, which do not supply that topology.
+Sikora Theorem 24 explicitly identifies rational-tangle bracket detection
+with the original Jones conjecture. Merely replacing the actual closures
+by their polynomials would assume the missing theorem. [S]
+
+The serious process error was continuing to refine the downstream surgery
+argument without a mechanism supplying its upstream geometric hypotheses.
+This pass closes that attempted extension. It does not justify another
+parameter search, a claim that a solution is close, or a promise of a proof.
+
+SOURCES
+
+[G] Garoufalidis, Signatures of links and finite type invariants of cyclic
+branched covers, Theorem 1 and Section 4.1:
+https://people.mpim-bonn.mpg.de/stavros/publications/signature.pdf
+
+[P] Poudel, Lescop's Invariant and Gauge Theory, Section 4, equation (4.1):
+https://ms.mcmaster.ca/~ppoudel/Research/Lescop.pdf
+
+[GH] Garoufalidis-Habegger, The Alexander polynomial and finite type
+3-manifold invariants, Theorem 1. Used to check the fixed-b1 normalization
+via equal Alexander polynomials for zero surgeries:
+https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_alexander_polynomial_and_finite_type_3manifold_invariants.pdf
+
+[RR] Rasmussen-Rasmussen, Floer Simple Manifolds and L-Space Intervals,
+Propositions 1.3, 1.4 and Corollary 2.3:
+https://arxiv.org/html/1508.05900
+
+[S] Sikora, Tangle Equations, the Jones conjecture, slopes of surfaces in
+tangle complements, and q-deformed rationals, Corollary 20 and Theorem 24:
+https://arxiv.org/html/2005.08162v2
+
+[OS] Ozsvath-Szabo, Absolutely graded Floer homologies and intersection
+forms for four-manifolds with boundary, Theorems 1.2, 1.3, 4.3 and
+Section 6 (the explicit example on printed page 34):
+https://arxiv.org/pdf/math/0110170

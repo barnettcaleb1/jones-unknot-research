@@ -1,0 +1,11 @@
+Pass34 completed the exact all-integer analysis for an actually marked
+two-band family based on the EKT LLL(1) link and prior unknot hit5.
+
+Result: V(K(m,n))=1 iff m=n=0. Do not rescan larger twist ranges or treat
+opposite twists as untested. The exact evaluation V(-1)=1-288(m+n) forces
+n=-m; unequal spans22,24 of the cut-link deviations then exclude m!=0.
+
+The proposed general common-phase surgery argument remains unproved and was
+not needed or used. The algebraic cancellation condition S1+S2=2delta is
+possible for formal data; no actual nontrivial Jones-one family realizes it
+here. No main-conjecture solution or surviving candidate has been found.

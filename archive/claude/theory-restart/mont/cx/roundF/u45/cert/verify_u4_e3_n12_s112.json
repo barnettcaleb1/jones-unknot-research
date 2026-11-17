@@ -1,0 +1,18 @@
+{
+ "files": [
+  "cert/u4_e3_n12_s112.jsonl.gz"
+ ],
+ "records_total": 136492,
+ "sampled": 136492,
+ "fraction": 1.0,
+ "seed": 301,
+ "records_pass": 136492,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 136492
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 136492
+ },
+ "secs": 224.8
+}

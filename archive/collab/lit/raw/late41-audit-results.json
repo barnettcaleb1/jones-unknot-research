@@ -1,0 +1,957 @@
+{
+ "audit:S2-peripheral-irreducible": {
+  "step": "S2-peripheral-irreducible",
+  "verdict": "holds_with_minor_fix",
+  "summary": "Step 2 is mathematically correct. I found no gap in the topology, only citation slips and a few routine steps that the text compresses.\n\nWhat checks out:\n- V is a solid torus with meridian lambda. For any slope mu meeting lambda once, R's lambda- and mu-closures are the 2-component unlink and the unknot, with covers S^1xS^2 and S^3. Choosing mu different from both probes is always possible (and not actually needed).\n- Sikora's Theorem 21 assumes T1 and T2 are unequal unframed rational tangles, which matches the proof's hypothesis. It gives [X]=[R], so every closure of X has the same bracket as the matching closure of R. Using Sikora's normalization (unknot = 1, so delta vanishes at A=e^{i pi/4} only through extra circles), X's lambda- and mu-closures have determinants 0 and 1.\n- Stoimenow Prop 6.5 says det is odd exactly for knots, so the mu-closure is a knot and X has no loops.\n- |H_1(Sigma_2(L))| = det(L), with det 0 exactly when H_1 is infinite, so Y = M(mu) is an integral homology sphere. Then H_1(M)=Z and H_2(M)=0 (Mayer-Vietoris checked). lambda, the unique slope whose filling has infinite H_1, is K's preferred longitude, and mu is K's meridian.\n- Each probe other than lambda gives an actual lens-space filling, possibly S^3.\n\nIrreducibility is valid:\n- b_1(M_0) >= 1 and H_1(M)=Z force every closed summand to have H_1=0, so each is a homology sphere. This also rules out an S^1xS^2 summand; H_2(M)=0 rules out a nonseparating sphere a second way.\n- Lens spaces and S^3 are prime (S^3 by Alexander's theorem). So a homology-sphere summand of a lens-space filling must be S^3. If M_0(alpha) were S^3, the closed part would be the lens space, which homology forbids unless p=+-1, and then Alexander's theorem settles it.\n- The Poincare conjecture is not needed.\n- A local knot J in X makes Sigma_2(J) a closed summand of M, so it is excluded here. Concluding that the arc itself is unknotted uses Lickorish's criterion [BM, Theorem 3.5(1)], which contains Waldhausen's Z/2 Smith theorem.",
+  "sources_checked": [
+   {
+    "source": "A. Stoimenow, Square numbers, spanning trees and invariants of achiral knots, Comm. Anal. Geom. 13(3) (2005) 591-631",
+    "location": "Section 6.1, Proposition 6.5 and its proof (p. 619)",
+    "statement_paraphrase": "The proposition says det(L) is odd if and only if L is a knot. Its proof notes that the Alexander polynomial of an n-component link is divisible by (t^{1/2}-t^{-1/2})^{n-1}, so 2^{n-1} divides det(L).",
+    "hypotheses_satisfied": true,
+    "note": "The 2^(c-1) divisibility is in the proof, not the statement. The statement alone ('det odd iff knot') is exactly what Step 2 uses for 'det 1 implies knot'."
+   },
+   {
+    "source": "O. Dasbach, D. Futer, E. Kalfagianni, X.-S. Lin, N. Stoltzfus, Alternating sum formulae for the determinant and other link invariants, J. Knot Theory Ramifications 19(6) (2010) 765-782 (preprint PDF at the cited URL)",
+    "location": "Section 3 ('Dessins Determine the Determinant'), opening paragraph before Definition 3.1",
+    "statement_paraphrase": "A passing remark: the determinant is |Alexander(-1)| = |Jones(-1)|, and it is the order of H_1 of the double branched cover. The text loosely says 'of the link complement'. There is no proof and no theorem number.",
+    "hypotheses_satisfied": true,
+    "note": "Supports only the finite-order clause, and informally. The clause 'det 0 iff H_1 infinite' is not in the source. It is standard (H_1 of the double branched cover has a square presentation matrix V+V^T or a Goeritz matrix of determinant +-det)."
+   },
+   {
+    "source": "A. S. Sikora, arXiv:2005.08162v2",
+    "location": "Section 1.1, system (1); Conjecture 2; Section 4 and 4.1",
+    "statement_paraphrase": "System (1) is N(X+T_i)=L_i with T1 != T2 rational. Conjecture 2: a rational solution of a framed system is unique among all solutions. In Section 4, framed tangles are embeddings of two bands J1xI and J2xI (so no loops) and are taken up to balanced isotopy, where the location of framing twists does not matter. Section 4.1 requires T1 and T2 to be unequal as unframed tangles.",
+    "hypotheses_satisfied": true,
+    "note": "The proof's 'distinct underlying unframed slopes' matches 4.1. Balanced isotopy implies an ambient isotopy of the unframed, unoriented links, so double branched covers are homeomorphic (preserving orientation), which is all Step 2 needs."
+   },
+   {
+    "source": "A. S. Sikora, arXiv:2005.08162v2",
+    "location": "Section 5 (bracket normalization); Section 8, Theorem 21 and proof; Corollary 19",
+    "statement_paraphrase": "The bracket is normalized so the trivially framed unknot is 1, with each extra circle giving delta. Theorem 21: in any framed system (1), the bracket vector of a solution is uniquely determined. The proof expresses the two closure brackets through a 2x2 matrix whose determinant is (delta^2-1) times det([T_i]_0,[T_i]_inf). That determinant is nonzero because distinct rational tangles have distinct q-rationals (Corollary 19).",
+    "hypotheses_satisfied": true,
+    "note": "I re-derived det B myself. This gives [X]=[R], hence equal brackets, and so equal determinants, for the lambda- and mu-closures of X and R."
+   },
+   {
+    "source": "D. Buck and M. Mauricio, arXiv:1007.0948 (citing Lickorish, Prime knots and tangles, Trans. AMS 267 (1981))",
+    "location": "Definition 3.1, Definition 3.4, Theorem 3.5",
+    "statement_paraphrase": "Tangles here have exactly two arcs. A tangle is locally knotted iff its double branched cover is non-prime with torus boundary. It is rational iff the cover is a solid torus. It is prime iff the cover is irreducible and boundary-irreducible.",
+    "hypotheses_satisfied": true,
+    "note": "Checked only for the local-knot question. Once Step 2 rules out loops, X fits Definition 3.1, and the irreducibility from Step 2 plus 3.5(1) excludes local knots."
+   },
+   {
+    "source": "Standard 3-manifold topology (not opened)",
+    "location": "Kneser-Milnor prime decomposition; Alexander's theorem; irreducibility of lens spaces; half-lives-half-dies; Mayer-Vietoris and Alexander duality for knot exteriors; lifting isotopies to double branched covers",
+    "statement_paraphrase": "Every compact orientable 3-manifold has a unique prime decomposition. Every 2-sphere in S^3 bounds balls, so S^3 is prime. L(p,q) with p>=2 is prime. A manifold with torus boundary has b_1>=1. A knot exterior in an integral homology sphere has H_1=Z, H_2=0, and the longitude is its only filling slope with infinite H_1. Homeomorphisms of link pairs lift to the double branched covers.",
+    "hypotheses_satisfied": true,
+    "note": "Primality of L(p,q) needs no Poincare conjecture. Lift a homotopy-sphere summand to the universal cover S^3 and apply Alexander's theorem."
+   },
+   {
+    "source": "W. B. R. Lickorish, An Introduction to Knot Theory (GTM 175), Chapter 9 'Cyclic Branched Covers and the Goeritz Matrix'",
+    "location": "Chapter 9 (chapter title confirmed by web search; theorem numbers not verified)",
+    "statement_paraphrase": "A textbook treatment of presenting H_1 of the double branched cover by a symmetrized Seifert or Goeritz matrix, giving order |det| when det is nonzero and infinite H_1 when det is zero.",
+    "hypotheses_satisfied": true,
+    "note": "Suggested as a replacement for the [D] citation. The book itself was not opened."
+   }
+  ],
+  "findings": [
+   {
+    "id": "S2-peripheral-irreducible-1",
+    "severity": "minor",
+    "claim": "\"a link with c components has determinant divisible by 2^(c-1) [St, Proposition 6.5]\"",
+    "why": "Stoimenow's Proposition 6.5 states only that det(L) is odd iff L is a knot. The 2^(c-1) divisibility appears inside its proof, via Torres/Hosokawa divisibility of the Alexander polynomial. The mathematics is right, and the proposition as stated is exactly what is needed (det 1 is odd, so the closure is a knot). The citation points to the proof rather than the statement.",
+    "suggested_fix": "Write: 'det 1 is odd, so the closure is a knot [St, Prop. 6.5: det(L) is odd iff L is a knot]'. Add the bibliographic data Comm. Anal. Geom. 13(3) (2005) 591-631."
+   },
+   {
+    "id": "S2-peripheral-irreducible-2",
+    "severity": "minor",
+    "claim": "\"The order of first homology of a double branched cover is the determinant, with determinant zero indicating infinite first homology [D, Section 3].\"",
+    "why": "DFKLS Section 3 contains only an unproved remark that the determinant is the order of H_1 of the double branched cover, loosely worded as 'of the link complement'. It says nothing about the det = 0 case, and Step 2 needs that case to identify lambda. The fact is true and standard, but the cited source does not establish the clause Step 2 relies on. The reference also omits its journal data.",
+    "suggested_fix": "Cite a textbook proof: H_1(Sigma_2(L)) has the square presentation matrix V+V^T (or a Goeritz matrix) with |determinant| = det(L), so it is finite of order det(L) iff det(L) != 0. For example, Lickorish, An Introduction to Knot Theory, Ch. 9. If [D] is kept, add J. Knot Theory Ramifications 19(6) (2010) 765-782."
+   },
+   {
+    "id": "S2-peripheral-irreducible-3",
+    "severity": "minor",
+    "claim": "\"Prime decomposition of an actual lens-space filling forces each closed homology-sphere summand to be S^3. Hence no nontrivial sphere decomposition of M remains.\"",
+    "why": "The conclusion is correct, but four routine inputs are not stated:\n(a) L(p,q) with p>=2 is prime, and S^3 is prime (Alexander's theorem). Homology alone cannot see a summand like the Poincare sphere, so primality is genuinely needed.\n(b) A case split. From L = M_0(alpha) # N with N a homology sphere, primality gives either M_0(alpha) = S^3 or N = S^3. The first case makes N = L, which homology forbids unless p=+-1; then L = S^3 and N = S^3 by Alexander.\n(c) M_0(alpha) may be reducible, so the argument should use primality of L, not a naive matching of prime factors.\n(d) A prime manifold with torus boundary is irreducible.\nNone of this needs the Poincare conjecture.",
+    "suggested_fix": "Insert two sentences. 'If M = M' # N with N closed, then H_1(N)=0 and L = M'(alpha) # N. Since lens spaces and S^3 are prime [Kneser-Milnor; Alexander; lens spaces are irreducible], either N = S^3, or M'(alpha) = S^3 and N = L, which forces |H_1(L)|=1 and hence N = S^3. Thus every sphere in M bounds a ball. A prime manifold with torus boundary is irreducible.'"
+   },
+   {
+    "id": "S2-peripheral-irreducible-4",
+    "severity": "minor",
+    "claim": "Exclusion of a local knot in a string of X, implicit in \"This also implies that M is irreducible ... Hence no nontrivial sphere decomposition of M remains.\"",
+    "why": "A local knot J contributes the closed summand Sigma_2(J). H_1(M)=Z forces det(J)=1, and the lens-space argument forces Sigma_2(J) = S^3. So the step correctly kills any local knot whose double branched cover is nontrivial. Concluding that the arc is actually unknotted needs Waldhausen's Z/2 Smith theorem. That theorem is packaged inside Lickorish's criterion [BM, Thm 3.5(1),(2)], but the proof never makes this connection; it is only implicit in Step 5.",
+    "suggested_fix": "After proving irreducibility, add: 'By [BM, Theorem 3.5(1)] (Lickorish), X is therefore not locally knotted.'"
+   },
+   {
+    "id": "S2-peripheral-irreducible-5",
+    "severity": "minor",
+    "claim": "\"X an arbitrary framed 2-tangle\" together with \"Thus X has no closed components ...\"",
+    "why": "In Sikora's framed setting (Section 4), framed tangles are by definition two bands J1xI and J2xI, so loops are already excluded. The determinant argument matters only under the broader Section 2.1 reading, where tangles may have loops. It is valid there, and it is also what places X within BM Definition 3.1 (exactly two arcs), which Step 5 needs. This is a presentation point, not a gap.",
+    "suggested_fix": "Add one sentence: Sikora's framed tangles have no loops by definition, and the argument shows the result also holds if loops are allowed, which is needed to apply [BM, Def. 3.1/Thm. 3.5]."
+   }
+  ]
+ },
+ "audit:S4-longitude-case": {
+  "step": "S4-longitude-case",
+  "verdict": "holds_with_minor_fix",
+  "summary": "The mathematics of Step 4 is correct. I found no gap. I checked it against the arXiv:1508.05900v2 PDF (pdftotext copy at /private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/rr/rr.txt).\n\n(1) Prop 7.8 (p. 45) covers a knot in Z#(S^1xS^2) with an L-space surgery and concludes that its complement is a generalized solid torus (GST). Here Z = S^3. The knot K' is the core of the lambda-filling, and the other probe gives a lens-space filling (S^3 at distance one), so the hypotheses hold exactly.\n\n(2) Def 7.2 (p. 43) defines a GST as a Floer simple Y with deg of Delta-bar(Y) < g_Y. The overline is present, and Delta-bar = (1-t)*tau-bar (p. 6). So the proof's \"Floer simple and deg bar-Delta < g_M\" is exactly the definition.\n\n(3) g_Y (Section 7 preamble, p. 42) is the positive generator of the image of boundary homology in H_1/T. RR print this as \"im phi\", an evident misprint. RR list as equivalent: the minimal number of boundary components of a surface generating H_2(Y, boundary), and the order of the homological longitude in H_1(Y). They also note |T| = k_Y*g_Y. With H_1(M) = Z, every reading gives g_M = 1 (and k_M = 1). So deg bar-Delta(M) = 0; Cor 7.4 and the torsion formula in the proof of 7.8 even give bar-Delta(M) ~ 1.\n\n(4) The first clause of Cor 2.3 (p. 7) needs only boundary-incompressible plus Floer simple, and gives ||Y|| = deg bar-Delta - 1. In the counterfactual this is -1, which is impossible. So the boundary is compressible, and since M is irreducible, M is a solid torus. This is RR's own observation after Def 7.2 (||Y|| <= g_Y - 2) specialized to g_Y = 1, and RR's introduction says such manifolds with H_1 = Z are boundary compressible.\n\n(5) The argument is consistent with GSTs that are not solid tori:\n- N_g and nontrivial closed-braid complements in S^1xS^2 have H_1 = Z+Z/g with g >= 2, which the torsion-free hypothesis excludes.\n- S^1xD^2 # (Poincare sphere) is a GST with H_1 = Z, which irreducibility excludes.\n- Gillespie (arXiv:1603.05016) independently defines g_Y as ord(i(lambda)) and uses the same compressing-disk mechanism.\n\nIn this case both imported facts (H_1(M) = Z and irreducibility) can also be re-derived from the actual fillings alone. Only the minor items below remain: a wording slip and some hypotheses that should be stated explicitly.",
+  "sources_checked": [
+   {
+    "source": "Rasmussen-Rasmussen, Floer simple manifolds and L-space intervals, arXiv:1508.05900v2 (24 Nov 2015)",
+    "location": "Section 7 preamble, p. 42",
+    "statement_paraphrase": "Standing assumption: Y is a rational homology S^1xD^2 with H_1 = Z+T and phi the projection to the free part. g_Y > 0 is the index of the image in Z (printed 'im phi = g_Y Z', evidently meaning the image of H_1(boundary)). Equivalent descriptions: the minimal intersection of a boundary curve with a generating surface of H_2(Y, boundary); the minimal number of boundary components of such a surface; the order of the homological longitude l in H_1(Y). k_Y is the order of T/(T cap im iota), so |T| = k_Y g_Y.",
+    "hypotheses_satisfied": true,
+    "note": "M is a rational homology solid torus with T = 0, so g_M = k_M = 1 under every listed description and by |T| = k g. The proof's 'order of the homological longitude' reading is one of RR's stated equivalents. Under the literal misprint (phi surjective), g = 1 as well."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Definition 7.2, p. 43",
+    "statement_paraphrase": "A generalized solid torus is a Floer simple manifold whose Delta-bar has degree strictly less than g_Y (the overline is present in the PDF; pdftotext drops it).",
+    "hypotheses_satisfied": true,
+    "note": "This is exactly the proof's 'Floer simplicity and degree(bar-Delta(M)) < g_M'."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Section 2.1, p. 6 (definitions of tau-bar, Delta-bar, normalization)",
+    "statement_paraphrase": "tau is normalized with no terms of negative phi-degree and a nonzero constant term. tau-bar is its image under phi and Delta-bar = (1-t)*tau-bar. Delta-bar can differ from the Alexander polynomial, e.g. Z#(S^1xD^2) with b_1(Z)=0 has Delta = 0 but Delta-bar = |H_1(Z)|.",
+    "hypotheses_satisfied": true,
+    "note": "Delta-bar(M) is a polynomial with nonzero constant term, so it is nonzero. deg < 1 forces degree 0, as the proof says."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Proposition 7.8 and proof, pp. 45-46 (Z introduced on p. 45 as a rational homology sphere)",
+    "statement_paraphrase": "If a knot in Z#(S^1xS^2) has an L-space surgery, its complement is a GST. The proof uses the Ai-Peters twisted exact triangle to show that all non-longitudinal slopes are L-space slopes, reducing to the distance-one case by a connected sum with a lens-space core. A torsion product formula then gives tau-bar ~ |H_1(Z)|(1-t^g)/(1-t)^2.",
+    "hypotheses_satisfied": true,
+    "note": "Z = S^3, M(lambda) = S^1xS^2 from the actual unlink closure, and the other probe's actual closure gives a lens space (S^3 if at distance one), which is an L-space. The meridian lambda of K' is automatically M's homological longitude, since b_1(M(lambda)) = 1 and M has a QHS filling. With Z = S^3 and g = 1 the proof's formula gives tau-bar(M) ~ 1/(1-t), so bar-Delta(M) ~ 1."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Corollary 2.3, p. 7",
+    "statement_paraphrase": "For boundary-incompressible Floer simple Y, the Thurston norm of a generator of H_2(Y, boundary) equals deg Delta-bar minus 1. If Y is also irreducible, Y fibers iff Delta-bar is monic.",
+    "hypotheses_satisfied": true,
+    "note": "The norm clause needs only boundary incompressibility (assumed for contradiction) and Floer simplicity (from the GST), so it yields norm -1, which is impossible. The underlying norm-detection results usually assume irreducibility, but M is irreducible anyway."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Remark after Definition 7.2 (p. 43); Corollary 7.4 (p. 43); Lemma 7.3 (p. 43)",
+    "statement_paraphrase": "For a GST, Cor 2.3 gives norm <= g_Y - 2, and a generating surface has at least g_Y boundary components, so it has genus 0. Cor 7.4: Delta-bar ~ k_Y(1 - t^{g_Y})/(1-t).",
+    "hypotheses_satisfied": true,
+    "note": "With g = k = 1: Delta-bar ~ 1, and norm <= -1 is impossible unless the boundary is compressible. This matches the proof's argument."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Section 1.1 discussion, p. 3",
+    "statement_paraphrase": "The authors remark that a Floer simple manifold with empty D^tau is easily seen to be boundary compressible when H_1 is Z, or more generally when it is semi-primitive.",
+    "hypotheses_satisfied": true,
+    "note": "This independently confirms the compressibility conclusion in the H_1 = Z case."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Section 7.1 example N_g (p. 42) and Corollary 7.12 (p. 48)",
+    "statement_paraphrase": "N_g = M(empty; 1/g, -1/g) has H_1 = Z+Z/g and all non-longitudinal fillings are L-spaces. An irreducible semi-primitive GST is the complement of a closed g_Y-strand braid in S^1xS^2.",
+    "hypotheses_satisfied": true,
+    "note": "These are GSTs that are not solid tori, and all have torsion Z/g with g >= 2, so g_M = 1 excludes them. With g = 1, Cor 7.12 would also give a 1-braid complement, i.e. a solid torus, but its proof is degenerate at g = 1, so the proof's Cor 2.3 route is cleaner. S^1xD^2 # (Poincare sphere) is a GST with H_1 = Z excluded only by irreducibility, which confirms the proof's remark that both hypotheses are needed."
+   },
+   {
+    "source": "Rasmussen-Rasmussen arXiv:1508.05900v2",
+    "location": "Introduction: L-space definition, Definition 1.2, Proposition 1.3 (pp. 1-2)",
+    "statement_paraphrase": "An L-space is a QHS^3 whose hat-HF has rank one in each Spin^c structure. Floer simple means some filling core is a Floer simple knot. Having more than one L-space filling is equivalent to being Floer simple.",
+    "hypotheses_satisfied": true,
+    "note": "Lens spaces and S^3 are L-spaces, and the L-space property does not depend on orientation."
+   },
+   {
+    "source": "T. Gillespie, L-space fillings and generalized solid tori, arXiv:1603.05016v1",
+    "location": "Section 2, notation table (Fig. 1), Definition 2.2, Corollary 2.9",
+    "statement_paraphrase": "Defines g_Y as the order of the image of the homological longitude, and a GST exactly as in RR. Shows solid-torus-like manifolds have g_Y = 1, so a genus-0 generator is a disk and the boundary is compressible.",
+    "hypotheses_satisfied": true,
+    "note": "Independent corroboration of the reading of g_Y and of the g = 1 compressing-disk mechanism. Text at /private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/gill/g.txt."
+   }
+  ],
+  "findings": [
+   {
+    "id": "S4-longitude-case-1",
+    "severity": "minor",
+    "claim": "The actual shared product at this slope is the two-component unlink, so M(lambda)=S^1 x S^2.",
+    "why": "'Product' is a wording slip. What is meant is the common closure link C_lambda(X) = C_lambda(R), whose double branched cover is S^1xS^2. The mathematics is unaffected.",
+    "suggested_fix": "Replace 'shared product' with 'shared closure link'."
+   },
+   {
+    "id": "S4-longitude-case-2",
+    "severity": "minor",
+    "claim": "By [RR, Proposition 7.8], this exterior is a generalized solid torus.",
+    "why": "RR state Prop 7.8 for a knot in Z#(S^1xS^2), with Z introduced in the preceding sentence as a rational homology sphere. Their proof writes Y(l) = Z#(S^1xS^2), which implicitly requires the knot's meridian to be the complement's homological longitude. The proof does not spell out that Z = S^3, that the L-space surgery is M(alpha_2) (a lens space, or S^3 at distance one), or that lambda is M's homological longitude. All three are automatic: b_1(M(lambda)) = 1 and M has a QHS filling. Stating them keeps a reader from suspecting a hypothesis mismatch.",
+    "suggested_fix": "Add one sentence. Here Z = S^3. The core K' of the lambda-filling has the lens-space (or S^3) surgery M(alpha_2), and its meridian lambda is the homological longitude of M. Optionally note that the torsion formula in RR's proof of 7.8 (or Cor 7.4) gives bar-Delta(M) ~ 1 directly."
+   },
+   {
+    "id": "S4-longitude-case-3",
+    "severity": "minor",
+    "claim": "In RR's notation, the order g_M of the homological longitude in H_1(M) is 1, because H_1(M)=Z and the longitude represents zero.",
+    "why": "RR's formal definition of g_Y (p. 42) is the index of the image of boundary homology in H_1/T. It is printed as 'im phi = g_Y Z', where phi is the surjective projection, an evident misprint. 'Order of the homological longitude' is one of RR's stated equivalents. The proof's value is correct under every reading, but citing only the equivalent invites a quibble about the misprinted primary definition.",
+    "suggested_fix": "Also cite RR's identity |T| = k_M g_M from the Section 7 preamble: T = 0 forces g_M = k_M = 1. Alternatively cite Gillespie's g_Y = ord(i(lambda)). No change to the argument is needed."
+   },
+   {
+    "id": "S4-longitude-case-4",
+    "severity": "minor",
+    "claim": "The boundary is compressible, and irreducibility from Step 2 makes M a solid torus. (Also the use of H_1(M)=Z from Step 2.)",
+    "why": "Step 4 imports H_1(M) = Z and irreducibility from Step 2, which uses the determinant of the auxiliary mu-closure and so Step 1's bracket-vector equality. In the lambda-probe case both facts follow from the actual fillings alone. M(lambda) = S^1xS^2 forces T to be cyclic of order g_M, generated by the longitude. Then |H_1(M(alpha_2))| = g_M^2 * Delta(alpha_2, lambda) must equal |H_1(V(alpha_2))| = Delta(alpha_2, lambda), so g_M = 1 and H_1(M) = Z. S^1xS^2 is prime and b_1(M) = 1, so M is irreducible. This is not a defect. It is a cheap way to make Step 4 independent of Steps 1-2 (only Step 5 still needs [X]=[R]).",
+    "suggested_fix": "Optionally add this two-line derivation of H_1(M)=Z and irreducibility in the lambda-probe case, so Step 4 does not depend on the determinant argument of Step 2."
+   }
+  ]
+ },
+ "audit:S3b-floer-simple-endpoint": {
+  "step": "S3b-floer-simple-endpoint",
+  "verdict": "holds_with_minor_fix",
+  "summary": "This half of Step 3 holds. Each RR result it uses says what the proof needs, under hypotheses M satisfies. (1) Two lens-space fillings at distinct slopes give Floer simplicity by RR Prop 1.3, which needs only a compact oriented manifold with torus boundary: no irreducibility or incompressibility. (2) RR's normalization (Introduction p.2, Section 2.1 p.6, Prop 2.2) together with Prop 1.4 gives tau(M) = sum a_n t^n with a_n in {0,1}, a_0 = 1, and a_n = 1 for large n. No torsion-free hypothesis is needed, and the orientation of t is fixed by phi(mu) > 0, which is harmless here because Delta_K is symmetric. (3) Since H_1(M) = Z, the projection Phi is the identity and tau ~ Delta(M)/(1-t) (RR Section 2.1). So bar-Delta(M) = D = t^h Delta_K, with the sign forced because D(1) = 1 = Delta_K(1). (4) The coefficient argument is correct: alternating +1,-1,...,+1, an odd number of terms, a nonzero central term, and Delta''(1) = 2 sum (-1)^(k-j) n_j^2 > 0 unless Delta = 1. I checked this by hand and by enumerating every 0/1 torsion sequence up to degree 16 (765 symmetric cases, no violations). (5) RR Corollary 2.3 (p.7) states that a boundary-incompressible Floer simple Y has ||Y|| = deg bar-Delta(Y) - 1, where ||Y|| is the Thurston norm of a generator of H_2(Y,dY). Irreducibility is required only for its fibration clause, and its source, Ni's Theorem 1.1 and Remark 1.2, also has no irreducibility hypothesis. With D = 1 the formula gives -1, which is impossible, so dM compresses. With irreducibility, which I rechecked from Step 2 via uniqueness of prime decomposition, M is a solid torus. RR independently remark (p.3) that a Floer simple Y with D^tau(Y) empty and H_1(Y) = Z is boundary compressible, and tau = 1/(1-t) gives D^tau(M) empty, so this agrees. Only the homeomorphism type of the fillings in (1) matters here; the orientation-sensitive part of (1) is not used. What I found are citation and attribution slips only. Not audited here: the inputs from Step 2 (H_1(M) = Z, that Y is an integral homology sphere, the lens-space fillings) and from the first half of Step 3 (Delta''(1) = 0).",
+  "sources_checked": [
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Section 1, Definitions 1.1 and 1.2, p.1",
+    "statement_paraphrase": "L(Y) is the set of slopes giving L-space fillings of a compact connected oriented 3-manifold with torus boundary; if L(Y) is nonempty then b_1(Y)=1. Y is Floer simple if some filling's core is a Floer simple knot, meaning rank HFK = |H_1| (equivalently, the ambient manifold is an L-space and the spectral sequence to HF-hat degenerates).",
+    "hypotheses_satisfied": true,
+    "note": "M is the double branched cover of B^3 over two arcs: compact, connected, oriented, with torus boundary. Irreducibility and boundary incompressibility are not standing assumptions."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Proposition 1.3, p.2; proof in Section 3.1 (Lemmas 3.2, 3.3 and Corollary 3.4), pp.10-12",
+    "statement_paraphrase": "Y has more than one L-space filling slope if and only if Y is Floer simple. The proof uses the core of one L-space filling, a knot in an L-space with another L-space surgery, and shows its HFK consists of coherent chains.",
+    "hypotheses_satisfied": true,
+    "note": "M(alpha_1) and M(alpha_2) are lens spaces (possibly S^3) at distinct slopes, since q_1/p_1 != q_2/p_2, so |L(M)| >= 2. Only the homeomorphism type of the fillings is needed."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Section 1, normalization paragraph immediately before Proposition 1.4, p.2",
+    "statement_paraphrase": "With phi the projection of H_1(Y) = Z + T onto Z, tau(Y) can be normalized to a sum over h with phi(h) >= 0, with a_0 nonzero and a_h = 1 for all but finitely many h with phi(h) > 0. When H_1(Y) = Z, tau(Y) = Delta(Y)/(1-t), with Delta(Y) normalized to lie in Z[t] and the denominator expanded in positive powers of t.",
+    "hypotheses_satisfied": true,
+    "note": "This, not Proposition 1.4, is the source of the normal form the proof writes down."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Proposition 1.4, p.2 (proof via Lemma 3.3, p.11)",
+    "statement_paraphrase": "If Y is Floer simple, every coefficient a_h of the normalized torsion is 0 or 1.",
+    "hypotheses_satisfied": true,
+    "note": "There is no torsion-free hypothesis; the coefficients are indexed by all of H_1(Y). Combined with a_0 != 0 this gives a_0 = 1."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Section 2 preamble (p.5) and Section 2.1 (p.6)",
+    "statement_paraphrase": "Section 2 sets Y as the complement of an oriented knot in a rational homology sphere, with phi the projection to H_1/T and its sign chosen so that phi(meridian) > 0. tau(Y) lives in a Novikov ring and is determined up to multiplication by elements of H_1(Y); it is normalized to vanish where phi < 0 and to have a_0 nonzero. For H_1(Y) = Z, tau(Y) ~ Delta(Y)/(1-t), described as well known. bar-tau = Phi(tau) and bar-Delta = (1-t) bar-tau, where Phi is induced by phi. Example: Z#(S^1 x D^2) has Delta = 0 but bar-Delta = |H_1(Z)|.",
+    "hypotheses_satisfied": true,
+    "note": "H_1(M) = Z and the meridian of K generates it, so Phi is the identity and bar-Delta(M) = D. Delta(M) = Delta_K because Y is an integral homology sphere. The sign is fixed by D(1) = 1 = Delta_K(1). The Z#(S^1 x D^2) example is the reducible case with bar-Delta = 1, which the proof's irreducibility argument excludes."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2 (citing Turaev, Torsions of 3-dimensional manifolds, Lemma II.4.5.1 and Theorem II.4.2.1)",
+    "location": "Proposition 2.2, p.6",
+    "statement_paraphrase": "If ||Y|| is the Thurston norm of a generator of H_2(Y,dY), then with the normalization above a_h = 1 whenever phi(h) > ||Y||.",
+    "hypotheses_satisfied": true,
+    "note": "This justifies the proof's 'a_n = 1 for all sufficiently large n', and with it D(1) = 1."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Corollary 2.3 and the paragraph before it, p.7",
+    "statement_paraphrase": "For Y boundary incompressible and Floer simple, ||Y|| equals deg bar-Delta(Y) minus 1. If Y is also irreducible, Y fibres over S^1 exactly when bar-Delta(Y) is monic. RR derive this from HFK detecting the Thurston norm and fibredness (Ni [35], Ni [34], Juhasz [26]) plus the fact that HFK of a Floer simple knot is determined by its Euler characteristic.",
+    "hypotheses_satisfied": true,
+    "note": "The proof applies the contrapositive: Floer simple, with boundary incompressibility assumed for contradiction. The norm clause does not need irreducibility (M is irreducible anyway). The sign of the generator is irrelevant because the norm is symmetric. The Thurston norm is nonnegative by definition, so deg D - 1 = -1 is a genuine contradiction. 'deg' is not defined in RR, but with lowest term t^0 the degree of D = 1 is 0 under any reading."
+   },
+   {
+    "source": "Y. Ni, Link Floer homology detects the Thurston norm, arXiv:math/0604360v1 (Geom. Topol. 13 (2009)), reference [35] of RR",
+    "location": "Theorem 1.1 and Remark 1.2, p.2",
+    "statement_paraphrase": "For an oriented link in a rational homology sphere with complement M and an integral class h, -chi(h) plus the sum of |h . meridian_i| equals 2y(h), where chi(h) is the largest Euler characteristic of a representing surface with no sphere components. If all boundary tori are incompressible, -chi(h) can be replaced by the Thurston norm x(h).",
+    "hypotheses_satisfied": true,
+    "note": "There is no irreducibility hypothesis. The ambient manifold here is the L-space M(alpha), a rational homology sphere. This supports RR's Corollary 2.3: with tau = 1/(1-t) it forces chi = 1, a disk, matching the conclusion that the boundary compresses."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2",
+    "location": "Section 1, discussion after Theorem 1.8, p.3",
+    "statement_paraphrase": "RR remark that a Floer simple manifold with D^tau(Y) empty is boundary compressible when H_1(Y) = Z, calling this easily seen, and more generally when Y is semi-primitive.",
+    "hypotheses_satisfied": true,
+    "note": "An independent corroboration. With tau(M) = 1/(1-t), the support is all n >= 0, so D^tau(M) is empty. Not cited by the proof."
+   },
+   {
+    "source": "Rasmussen-Rasmussen, arXiv:1508.05900v2 and Advances in Mathematics 322 (2017)",
+    "location": "Erratum search (web search)",
+    "statement_paraphrase": "No erratum or correction to the paper was found.",
+    "hypotheses_satisfied": true,
+    "note": "Absence of evidence only."
+   },
+   {
+    "source": "Independent verification (hand computation plus an exhaustive enumeration script)",
+    "location": "Proof, Step 3, lines 151-166",
+    "statement_paraphrase": "For 0/1 sequences with a_0 = 1 that are eventually 1 and whose D = (1-t) sum a_n t^n is palindromic: D(1) = 1; the nonzero coefficients are +-1, alternate, begin and end with +1, are odd in number, and include the central term; and Delta''(1) = 2 sum (-1)^(k-j) n_j^2 > 0 unless D = 1. Pairing squares from the top gives positivity.",
+    "hypotheses_satisfied": true,
+    "note": "765 symmetric cases up to degree 16, with no violations. The formula agrees with the trefoil (Delta''(1) = 2)."
+   },
+   {
+    "source": "Standard 3-manifold topology (own argument; e.g. the Kneser-Milnor prime decomposition and the compressing-disk lemma)",
+    "location": "Proof, Step 2, lines 100-106, and Step 3, lines 171-172",
+    "statement_paraphrase": "(a) The H_1(M) = Z constraint and a lens-space filling force every closed prime summand to be absent, so M is prime with nonempty boundary and hence irreducible. (b) In an irreducible, connected, orientable M with torus boundary, compressing the boundary gives a sphere that bounds a ball, and the ball must lie away from dM, so M is a solid torus.",
+    "hypotheses_satisfied": true,
+    "note": "(a) Each closed summand Z_i would be a homology sphere and would survive as a prime factor of L(p,q) or S^3, which is impossible by uniqueness of prime decomposition. (b) The ball cannot contain dM because dM is in the boundary of M but not of the ball."
+   }
+  ],
+  "findings": [
+   {
+    "id": "S3b-floer-simple-endpoint-1",
+    "severity": "minor",
+    "claim": "Proposition 1.4 supplies a torsion normalization tau(M)=D(t)/(1-t)=sum_(n>=0) a_n*t^n, where a_0=1, a_n belongs to {0,1}, and a_n=1 for all sufficiently large n.",
+    "why": "In RR v2, Proposition 1.4 only says each coefficient is 0 or 1 when Y is Floer simple. The normal form (support where phi >= 0, a_0 nonzero, eventual coefficients 1) comes from the paragraph before Proposition 1.4 (p.2) and Section 2.1 (p.6). The eventual-1 property is Proposition 2.2 (Turaev), and a_0 = 1 combines a_0 != 0 with Proposition 1.4. The mathematics is right; only the attribution is off.",
+    "suggested_fix": "Write: 'By the normalization in [RR, Section 1, p.2 and Section 2.1] (with eventual coefficients 1 by [RR, Prop. 2.2]) and by [RR, Prop. 1.4], tau(M) = sum a_n t^n with a_n in {0,1}; since a_0 != 0, a_0 = 1.'"
+   },
+   {
+    "id": "S3b-floer-simple-endpoint-2",
+    "severity": "minor",
+    "claim": "Since H_1(M)=Z, D is the polynomial normalization of Delta_K. ... Write D=t^h*Delta_K, with degree(D)=2h.",
+    "why": "The identification of RR's torsion with Delta_K/(1-t) has no citation, and the sign is left implicit. RR's Section 2.1 gives tau ~ Delta(M)/(1-t) only up to a group element, calling it well known (Milnor/Turaev). Delta(M) = Delta_K needs Y to be an integral homology sphere, which holds here. The plus sign follows because D(1) = lim a_n = 1 = Delta_K(1). The claim is correct, but it rests on an unstated citation and an unstated one-line argument.",
+    "suggested_fix": "Cite [RR, Section 2.1] (or Turaev, Torsions of 3-dimensional manifolds, or Milnor's theorem on the torsion of a knot exterior in a homology sphere). Add: 'since D(1) = lim a_n = 1 = Delta_K(1), D = +t^h Delta_K.'"
+   },
+   {
+    "id": "S3b-floer-simple-endpoint-3",
+    "severity": "minor",
+    "claim": "An irreducible orientable manifold with a single torus boundary and a compressing disk is a solid torus. Hence M is a solid torus.",
+    "why": "The claim is true but uncited. It also relies silently on M being connected and on irreducibility proved in Step 2, which Step 3 does not point back to. (Step 4 does say 'irreducibility from Step 2'.) A reader checking Step 3 alone cannot see where irreducibility comes from. Without it the conclusion fails: Z#(S^1 x D^2), with Z a homology sphere, is Floer simple with H_1 = Z and bar-Delta = 1 (RR p.6), yet it is not a solid torus.",
+    "suggested_fix": "Add 'M is connected and, by Step 2, irreducible'. Then either give the two-line argument (compressing dM gives a sphere bounding a ball that cannot contain dM, so M = (T^2 x I with a 2-handle) plus a ball = S^1 x D^2) or cite a standard text such as Hatcher's 3-manifold notes or Jaco's Lectures on Three-Manifold Topology."
+   },
+   {
+    "id": "S3b-floer-simple-endpoint-4",
+    "severity": "minor",
+    "claim": "[RR, Corollary 2.3] and (2) would give the Thurston norm of a generator of H_2(M,boundary M) as degree(D)-1=-1, contrary to nonnegativity.",
+    "why": "RR never define 'deg'. Under their normalization bar-Delta has lowest term t^0, so deg is the top exponent. For D = 1 any reasonable reading gives deg = 0, so the contradiction stands. This is presentation only: the argument is unaffected, and RR's ||Y|| is the ordinary nonnegative Thurston norm (it is used that way in Prop. 2.2 and Section 7.1).",
+    "suggested_fix": "Optionally add 'deg denotes the top exponent of bar-Delta normalized to have nonzero constant term; for D = 1 it is 0'. Optionally also note that RR (p.3) remark that a Floer simple manifold with D^tau empty and H_1 = Z is boundary compressible, which corroborates the conclusion."
+   }
+  ]
+ },
+ "audit:S1-scope-and-bracket": {
+  "step": "S1-scope-and-bracket",
+  "verdict": "holds_with_minor_fix",
+  "summary": "The proof's STATEMENT matches Sikora's Conjecture 2 (arXiv v2), which is Conjecture 1.2 in the published version, with nothing weakened. P and Q are Sikora's T1 and T2: framed rational tangles that differ as unframed tangles (Section 4.1). By Conway's bijection, \"distinct unframed slopes\" means the same thing. C_P(X) is N(X+P), equality is balanced isotopy (Section 4), and X=R is the conjecture's uniqueness claim. One harmless strengthening: Section 4 defines a framed tangle as exactly two bands, while the proof lets X have closed components, which Step 2 rules out. Step 1 is correct. Theorem 21's proof writes [N(X+T_i)] as row_i(B) times [X], with det B = (delta^2-1) times det([T1]0 [T1]inf; [T2]0 [T2]inf). This is nonzero for distinct rational probes (Cor. 19); I checked the closure expansion against the PDF figure. Figure 5 shows that the balanced first move adds or removes a pair of opposite kinks on parallel strands, so the bracket is a balanced-isotopy invariant. The closures therefore have exactly equal brackets, and [X]=[R] holds exactly, not just up to a unit. The normalization is also right. Sikora sets [U^0]=1, and his proof of Prop. 26 uses det(L)=|[L]| at A=e^{pi i/4}. delta vanishes there, so dividing by delta first is needed in the other convention. Framing factors and the A to A^{-1} sign convention do not change the modulus. A numerical check found no mismatch (3000 random rational tangles; 5252 distinct-slope pairs, det B nonzero in every case). What remains is citation and presentation fixes only.",
+  "sources_checked": [
+   {
+    "source": "Sikora, arXiv:2005.08162v2 (HTML and PDF)",
+    "location": "Section 1.1, display (1); Section 2.3 restatement",
+    "statement_paraphrase": "A system of tangle equations is N(X+T1)=L1, N(X+T2)=L2. T1 and T2 are different rational 2-tangles, L1 and L2 are links, and X is an unknown 2-tangle. A rational solution is one given by a rational tangle.",
+    "hypotheses_satisfied": true,
+    "note": "Proof's C_P(X)=N(X+P), with P and Q playing T1 and T2 and L_i := N(R+T_i)."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 1.1, Conjecture 2 (also Proposition 1, Theorem 3, Conjecture 4)",
+    "statement_paraphrase": "If a framed system (1) has a rational solution, that solution is the only one among all solutions. Prop. 1: at most one framed rational solution. Thm 3: the Jones conjecture implies Conj. 2. Conj. 2 fails for unframed systems.",
+    "hypotheses_satisfied": true,
+    "note": "The proof's statement is the same claim with L_i written as closures of R. Nothing is weakened."
+   },
+   {
+    "source": "Sikora, Canadian J. Math. 76 (2024) 707-727, DOI 10.4153/S0008414X23000755 (Cambridge Core HTML)",
+    "location": "Conjecture 1.2; Proposition 1.1; Theorem 8.1; Corollary 7.2; Sections 2.1, 4, 4.1, 5",
+    "statement_paraphrase": "The published wording matches v2. Conj. 1.2 = Conj. 2, Thm 8.1 = Thm 21, Cor. 7.2 = Cor. 20. Framed tangles are again two bands, and T1, T2 are again assumed unequal as unframed tangles. The bracket is normalized to 1 on the 0-framed unknot.",
+    "hypotheses_satisfied": true,
+    "note": "No hypothesis changed between arXiv v2 and the journal version."
+   },
+   {
+    "source": "arXiv abstract page 2005.08162",
+    "location": "Submission history / journal ref",
+    "statement_paraphrase": "v1 posted 17 May 2020, v2 posted 5 Aug 2023. Journal reference: Can. J. Math. 76 (2024) 707-727.",
+    "hypotheses_satisfied": true,
+    "note": "Matches the proof's [S] reference data."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 2.1",
+    "statement_paraphrase": "Tangles are proper embeddings of 1-manifolds in D^2 x (-1,1) with ends at NE, SE, SW, NW, taken up to isotopy fixing the boundary. Loops are allowed in general. Conway's continued-fraction map gives a bijection from rational tangles to Q union {infinity}.",
+    "hypotheses_satisfied": true,
+    "note": "So unframed rational tangles are unequal exactly when their fractions (slopes) differ, which justifies the proof's 'distinct underlying unframed slopes'."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2 (PDF p.9, Figure 5 viewed directly)",
+    "location": "Section 4, definitions and Figure 5",
+    "statement_paraphrase": "A framed tangle is a proper embedding of two bands J1xI and J2xI, with framings drawable as blackboard framings. Equivalence is balanced isotopy: R2, R3, and a move that cancels mirror-image kinks on two parallel strands. The text says this is looser than ordinary framed isotopy and that twist location does not matter.",
+    "hypotheses_satisfied": true,
+    "note": "Opposite kinks multiply the bracket by (-A^3)(-A^-3)=1, so the bracket is invariant under balanced isotopy. Theorem 21 relies on this. The literal definition has no closed components (see finding 1)."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 4.1",
+    "statement_paraphrase": "T1 and T2 are framed rational tangles that differ as unframed tangles. If they differ only by framing twists, the system is inconsistent or reduces to one equation.",
+    "hypotheses_satisfied": true,
+    "note": "Matches the proof's distinct-slope hypothesis and its remark that changing a probe's framing does not give a second slope."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2 (HTML text and PDF p.11)",
+    "location": "Section 5, skein relations and tangle bracket",
+    "statement_paraphrase": "The bracket of framed unoriented links satisfies the usual skein relations with delta=-A^2-A^-2 and gives the 0-framed unknot value 1. Every framed tangle expands uniquely as [T]0 times the 0-tangle plus [T]inf times the infinity-tangle. The Jones polynomial at t=A^-4 equals (-A)^(-3w) times the bracket.",
+    "hypotheses_satisfied": true,
+    "note": "Sikora's convention is the proof's 'unknot value 1' bracket."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2 (HTML text and PDF p.16 figure)",
+    "location": "Section 8, Theorem 21 and its proof",
+    "statement_paraphrase": "For any framed system (1), the bracket vector [X] of a solution is uniquely determined. The proof expands N(X+T_i) as a linear combination of [X]0 and [X]inf with coefficients ([T_i]0*delta+[T_i]inf, [T_i]0+[T_i]inf*delta). det B equals (delta^2-1) times the 2x2 determinant of the probe brackets, which is nonzero by Cor. 19. Cramer's rule then gives [X].",
+    "hypotheses_satisfied": true,
+    "note": "The probes are rational and unequal as unframed tangles. Their framings only multiply rows of B by units. The closures are equal as balanced framed links, so their brackets are exactly equal and [X]=[R] holds exactly, not up to a unit. My numerical check of det B found it nonzero for all 5252 distinct-slope pairs, at generic A and at A=e^{i pi/4}."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 7, Corollary 19 and Corollary 20",
+    "statement_paraphrase": "Cor. 19: the q-ratio of the rational tangle <x> evaluates to x at q=1. Cor. 20: the bracket separates framed rational tangles. Equal q-ratios force the same fraction, and adding n twists multiplies the bracket by (-A)^(3n), so n=0.",
+    "hypotheses_satisfied": true,
+    "note": "Cor. 19 is what makes det B nonzero for distinct slopes. Cor. 20 is used in the final step, X=R, once X is shown rational."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 10, Proposition 26 and its proof",
+    "statement_paraphrase": "The absolute algebraic slope equals det N(T) divided by det D(T). The proof uses det(L) = |J(L,-1)| = |[L]| at A=e^{pi i/4}, with the unknot-value-1 bracket, where [N(T)] reduces to [T]inf because delta vanishes.",
+    "hypotheses_satisfied": true,
+    "note": "This is the source for the proof's normalization paragraph. It confirms that the determinant is read from the unknot-value-1 bracket and that the unreduced bracket vanishes at that A. My inline check found |[N<x>]|=|numerator|, |[D<x>]|=|denominator| for 3000 random rational tangles."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 9, Theorem 24(c) and remark after Proposition 25",
+    "statement_paraphrase": "The Jones conjecture is equivalent to: the bracket detects each framed rational tangle among all framed tangles. Theorems 21 and 24 together give Theorem 3.",
+    "hypotheses_satisfied": true,
+    "note": "Supports the proof's STATUS remark that its target is weaker than bracket detection, which is equivalent to Jones, and that proving Conj. 2 does not prove Jones."
+   },
+   {
+    "source": "IPAM talk page (mathinstitutes.org/videos/25091), Sikora, 15 Oct 2026",
+    "location": "Talk abstract",
+    "statement_paraphrase": "The abstract calls uniqueness of rational solutions for framed systems a conjecture. Its only result is that a failure would disprove the Jones Unknot Conjecture. It also links the unframed version to lens space surgeries.",
+    "hypotheses_satisfied": true,
+    "note": "Consistent with the proof's claim that the assertion is still stated as a conjecture. Gives no new or changed hypotheses."
+   }
+  ],
+  "findings": [
+   {
+    "id": "S1-scope-and-bracket-1",
+    "severity": "minor",
+    "claim": "STATEMENT: 'X an arbitrary framed 2-tangle' together with Step 1: 'By [S, Theorem 21] ... Hence [X]=[R].'",
+    "why": "Sikora Section 4 (v2 and CJM) defines a framed tangle as exactly two bands J1xI and J2xI, with no closed components. Theorem 21 is stated for that class. The proof's statement allows closed components, which makes it slightly stronger than Conjecture 2 (fine, and Step 2 rules them out). But it applies Theorem 21 literally outside its stated scope. The argument still works, because the skein expansion and the invertibility of B do not depend on the number of components.",
+    "suggested_fix": "Add one sentence: Theorem 21's proof applies verbatim to framed tangles with closed annulus components, since each closed loop is absorbed into [X]0 and [X]inf through delta factors. Alternatively, restrict X to two-band framed tangles, which is all Conjecture 2 requires, and drop the closed-component sentence in Step 2."
+   },
+   {
+    "id": "S1-scope-and-bracket-2",
+    "severity": "minor",
+    "claim": "STATEMENT/Step 1: closures equal 'by balanced framed isotopy', followed directly by '[X]=[R]'.",
+    "why": "Exact equality [X]=[R] needs the brackets of the two closures to be exactly equal, which means the bracket must be invariant under Sikora's balanced isotopy. The proof never says this. It is true: Figure 5 of [S] (checked in the PDF) shows the balanced first move adding or removing mirror-image kinks on two parallel strands, which multiplies the bracket by (-A^3)(-A^-3)=1. Sikora's Theorem 21 assumes this implicitly. Without the remark, a reader could think only unframed closure equality is used, which would give [X] only up to unknown units.",
+    "suggested_fix": "Add: 'Balanced moves ([S, Fig. 5]) cancel opposite kinks in pairs, so the Kauffman bracket is a balanced-isotopy invariant. Hence [C_P(X)]=[C_P(R)] and [C_Q(X)]=[C_Q(R)] exactly.'"
+   },
+   {
+    "id": "S1-scope-and-bracket-3",
+    "severity": "minor",
+    "claim": "Step 1: 'Every further rational closure therefore has the same bracket as its counterpart for R, and in particular the same determinant.' Also the normalization paragraph: 'Its absolute value at A=exp(pi*i/4) is the link determinant.'",
+    "why": "Both claims are correct but neither is cited or derived. The first needs the closure expansion [N(X+T)] = [X]0[N(T)] + [X]inf[D(T)], with the same framed closing tangle used for X and R. That expansion is the displayed identity in the proof of Theorem 21, not its statement. The second is the identity Sikora uses in his proof of Proposition 26. The determinant reading also does not depend on the Conway-versus-Kauffman sign convention (A to A^-1), because the bracket has integer coefficients and |A|=1.",
+    "suggested_fix": "State the closure expansion explicitly and cite [S, proof of Thm 21]. Cite [S, Section 5 normalization; proof of Prop. 26] for det(L)=|[L](e^{i pi/4})|. Note that the same framed closing tangle is used for X and R."
+   },
+   {
+    "id": "S1-scope-and-bracket-4",
+    "severity": "minor",
+    "claim": "REFERENCES: '[S] ... Conjecture 2; Section 4; Corollary 20; Theorem 21 ... Journal target: Conjecture 1.2.'",
+    "why": "Only the conjecture's journal number is given. In the published CJM version, Theorem 21 is Theorem 8.1 and Corollary 20 is Corollary 7.2. A referee working from the journal version would not find 'Theorem 21' or 'Corollary 20'.",
+    "suggested_fix": "Add the journal equivalents: Theorem 21 = CJM Theorem 8.1, Corollary 20 = CJM Corollary 7.2, Corollary 19 = CJM Corollary 7.1 (the last inferred from the numbering pattern; check it)."
+   }
+  ]
+ },
+ "audit:S3a-signed-surgery-cassonwalker": {
+  "step": "S3a-signed-surgery-cassonwalker",
+  "verdict": "holds_with_minor_fix",
+  "summary": "Step 3a holds. I found no gap.\n\n**Orientation and sign.** Sikora's balanced isotopy (Sec. 4, Fig. 5) is built from three diagram moves:\n- cancelling a pair of curls on two strands;\n- Reidemeister II;\n- Reidemeister III.\n\nEach is an ambient isotopy of the underlying unframed links, so each hypothesis gives an orientation-preserving homeomorphism of S^3. Its lift to the double branched covers is also orientation-preserving.\n\nThe identification of dM with dV covers the identity of the 4-punctured Conway sphere. Any such identification is either the identity or the elliptic involution, which acts by -I on homology. A Dehn twist (shear) would have to cover a nontrivial mapping class of the sphere, so none can appear. The involution sends (p,q) to (-p,-q) and fixes every slope and every ratio p/q.\n\nThe torus T gets the same boundary orientation from M and from V, because both orientations are pulled back from dB. So one oriented pair (mu, lambda) meets the p/q sign convention for K in Y and for U in S^3 simultaneously. The closing solid torus is common to both closures, and either lift of the gluing gives the same closed manifold. Equation (1), with the same signed coefficient on both sides, is therefore correct. That orientation is preserved matters: under a mirror identification the equations would pick up 2*lambda(L(p_i,q_i)) terms and would not force Delta''(1) = 0.\n\n**Casson-Walker.** Ni-Wu, Proposition 3.1 / eq. (7) (Sec. 3.1, journal p. 9; same numbering in arXiv v2) does state the formula for a null-homologous knot in any rational homology sphere. Their conventions:\n- L(p,q) is defined as p/q surgery on the unknot in S^3;\n- normalization lambda(S^3_{+1}(right-handed trefoil)) = 1;\n- Delta symmetric with Delta(1) = 1.\n\nNi-Wu give no proof. They call it a special case of a more general formula and point to Boyer-Lines, Theorem 2.8. The restatements I found give that theorem only for knots in integral homology spheres; the general rational case rests on Walker. Step 2 makes Y an integral homology sphere, so Boyer-Lines covers exactly the case used.\n\n**The subtraction.** It forces Delta_K''(1) = 0 whatever the normalization. In any consistent version of the formula, the lens-space term must equal lambda(S^3_{p/q}(U)) in that source's own conventions (apply the formula to the unknot in S^3), so it cancels exactly. Rescaling, or flipping the sign of the Delta'' term, multiplies every term by the same nonzero constant. Walker's general formula gives the same result: its tau correction depends only on intersection data on the boundary torus, which is identical for M and V. As a check, (7) gives lambda(S^3_5(RHT)) = 1/10 = lambda(-L(5,1)), which agrees with the known identification by d-invariants.\n\n**Limitation.** I could not open Boyer-Lines (the GDZ link returned no PDF) or Walker's book. I checked both through restatements by Ni-Wu, Ichihara-Jong, Ichihara-Ito-Saito, Z. Wu (2009) and Ravelomanana.\n\nThe four findings below are all minor: citation precision, an unstated normalization, and two sentences that should be spelled out.",
+  "sources_checked": [
+   {
+    "source": "Y. Ni and Z. Wu, Cosmetic surgeries on knots in S^3, J. reine angew. Math. 706 (2015) 1-17, DOI 10.1515/crelle-2013-0067 (author's copy at the archive.ymsc.tsinghua.edu.cn link in the proof); also arXiv:1009.4720v2",
+    "location": "Section 3.1, Proposition 3.1, equation (7), journal p. 9 (same numbering in arXiv v2); Definition 3.2 and Proposition 3.3 for lens spaces",
+    "statement_paraphrase": "For a null-homologous knot K in a rational homology 3-sphere Y, with L(p,q) defined as p/q surgery on the unknot in S^3: lambda(Y_{p/q}(K)) = lambda(Y) + lambda(L(p,q)) + (q/2p) Delta_K''(1). Normalization: lambda of +1 surgery on the right-handed trefoil is 1 (Casson scaling). Delta_K is symmetric with Delta_K(1) = 1. Prop 3.3 gives lambda(L(p,q)) = -s(q,p)/2, where the Dedekind sum carries sign(p). Ni-Wu state Prop 3.1 without proof, as a special case of a more general surgery formula, citing Boyer-Lines Theorem 2.8.",
+    "hypotheses_satisfied": true,
+    "note": "The proof's description of the generality is accurate. Hypotheses hold: Y is an integral homology sphere (Step 2), so K is null-homologous; p_i != 0, so the surgered manifold is a rational homology sphere. Ni-Wu's L(p,q) is literally S^3_{p/q}(U), the right side of (1), so the lens terms cancel by definition. Sanity check: (7) with Prop 3.3 gives lambda(S^3_5(RHT)) = -1/10 + 1/5 = 1/10 = lambda(-L(5,1)), which agrees with S^3_5(RHT) = -S^3_5(U) as confirmed by d-invariants."
+   },
+   {
+    "source": "S. Boyer and D. Lines, Surgery formulae for Casson's invariant and extensions to homology lens spaces, J. reine angew. Math. 405 (1990) 181-220",
+    "location": "Theorem 2.8. Not opened directly (the GDZ full-text resolver returned an empty page). Checked through restatements: Ichihara-Jong, arXiv:2506.02682v2, eq. (1) in the proof of Prop. 1; Ichihara-Ito-Saito, arXiv:1707.00152v2, Section 2; Ni-Wu Section 3.1.",
+    "statement_paraphrase": "For a knot K in an integral homology sphere Sigma and p != 0: lambda(Sigma_K(p/q)) = lambda(Sigma) + (q/p)(Delta_K''(1)/2) - (sgn p/2) s(q,p), in Casson normalization, with Delta symmetric and Delta(1) = 1. The Dedekind-sum term is lambda of p/q surgery on the unknot. Ichihara-Jong credit Boyer-Lines only with the integral-homology-sphere case.",
+    "hypotheses_satisfied": true,
+    "note": "This is the primary source for exactly the case the proof uses (Y an integral homology sphere). Ni-Wu's rational-homology-sphere wording goes beyond what Boyer-Lines Thm 2.8 is reported to cover; that wider case rests on Walker's formula. The proof does not need it."
+   },
+   {
+    "source": "K. Walker, An extension of Casson's invariant, Annals of Math. Studies 126 (1992)",
+    "location": "General surgery formula. Book not accessible online; checked via Z. Wu, Cosmetic surgery in integral homology L-spaces, arXiv:0911.5333v1, Theorem 2.1(5) and Proposition 2.2.",
+    "statement_paraphrase": "For a knot in a rational homology sphere with exterior N, longitude l, and primitive slopes a, b with <a,l> and <b,l> nonzero: lambda(N_a) = lambda(N_b) + tau(a,b;l) + <a,b>/(<a,l><b,l>) * Delta''(1). Here tau is built from Dedekind sums of intersection numbers on the boundary torus. Wu's specialization reads lambda(Y_{p/q}(K)) = lambda(Y) + lambda(L(p,q)) - (q/p) Delta_K''(1), with lambda(L(p,q)) = s(q,p). That is a different scaling and sign from Ni-Wu.",
+    "hypotheses_satisfied": true,
+    "note": "This gives a convention-free confirmation of the subtraction. Take a = alpha_i, b = mu, l = lambda. The tau term depends only on intersection data on T, which is the same for M and V because the identification preserves orientation, so it cancels. What remains is lambda(Y) + c*(q_i/p_i)*Delta_K''(1) = 0 with the same nonzero c for i = 1, 2, which forces Delta_K''(1) = 0."
+   },
+   {
+    "source": "A. S. Sikora, Tangle equations, the Jones conjecture, slopes of surfaces in tangle complements, and q-deformed rationals, arXiv:2005.08162v2",
+    "location": "Section 4 and Figure 5 (p. 9); Section 2.1 (tangle conventions, mirror image); Section 2.2 (N(X+T), balls B and D)",
+    "statement_paraphrase": "Framed links live in R^3 and framed tangles in D^2 x (-1,1), with ends NE, SE, SW, NW. Tangles are taken up to isotopies fixing the boundary. Framed objects are taken up to balanced isotopy, generated on blackboard-framed diagrams by: removing a pair of curls on two strands, Reidemeister II, and Reidemeister III. Sikora calls this more flexible than standard framed isotopy. The mirror image -T is a separate operation and is never identified with T.",
+    "hypotheses_satisfied": true,
+    "note": "Every balanced move is an unframed planar Reidemeister move. So C_P(X) = C_P(R) up to balanced isotopy gives an orientation-preserving ambient isotopy of the underlying unframed links, and its lift to the double branched covers is orientation-preserving. N(X+P) splits along the Conway sphere into (B,X) and (D,P), as the cover decomposition M(alpha_P) needs."
+   },
+   {
+    "source": "A. S. Sikora, arXiv:2005.08162v2",
+    "location": "Section 1.1 (Conjecture 2, system (1) with T1 != T2 rational); Section 8, proof of Theorem 21 (uses Corollary 19)",
+    "statement_paraphrase": "The proof of Theorem 21 says the coefficient matrix has nonzero determinant 'even for q = 1 by Corollary 19'. At q = 1 the KB ratio of a rational tangle equals its fraction, so this determinant is a nonzero multiple of x_2 - x_1. Hence 'T1 != T2' must mean distinct fractions, i.e. distinct unframed slopes.",
+    "hypotheses_satisfied": true,
+    "note": "This matches the proof's reading of 'distinct underlying unframed slopes', which is what gives q_1/p_1 != q_2/p_2 in Step 3."
+   },
+   {
+    "source": "H. C. Ravelomanana, Exceptional cosmetic surgeries on homology spheres, arXiv:1605.04587v3",
+    "location": "Section 2: Proposition 2.1 and the proof of Lemma 2.2",
+    "statement_paraphrase": "Records the Boyer-Lines result that if two distinct surgeries on a knot in a homology sphere are homeomorphic preserving orientation, then Delta''(1) = 0. Uses lambda(Y_K(p/q)) = lambda(Y) + lambda(L(p,q)) + (q/2p) Delta_K''(1) for knots in an integral homology sphere, citing Saveliev, Invariants for homology 3-spheres, Cor. 4.5.",
+    "hypotheses_satisfied": true,
+    "note": "Independently corroborates the formula for knots in an integral homology sphere and the subtraction technique. The candidate compares K in Y with U in S^3 at two matched slopes, instead of two slopes on one knot; the algebra is the same."
+   }
+  ],
+  "findings": [
+   {
+    "id": "S3a-signed-surgery-cassonwalker-1",
+    "severity": "minor",
+    "claim": "The Casson-Walker surgery formula [NW, Proposition 3.1] applies to a null-homologous knot in any rational homology sphere, including Y.",
+    "why": "This accurately paraphrases Ni-Wu Prop. 3.1 / eq. (7), Sec. 3.1. But Ni-Wu state it without proof and attribute it to Boyer-Lines Theorem 2.8, which by its restatements covers knots in integral homology spheres only; the general rational-homology-sphere case rests on Walker's formula. So the proof leans on a secondary restatement whose own attribution is loose for the generality claimed. There is no mathematical consequence, because Step 2 makes Y an integral homology sphere.",
+    "suggested_fix": "Cite Boyer-Lines, J. reine angew. Math. 405 (1990), Theorem 2.8 (knots in integral homology spheres) as the primary source. Add Walker (1992) for the general formula and keep [NW, Prop. 3.1, (7)] as a convenient restatement. Replace 'any rational homology sphere, including Y' with 'an integral homology sphere, which Y is by Step 2'."
+   },
+   {
+    "id": "S3a-signed-surgery-cassonwalker-2",
+    "severity": "minor",
+    "claim": "0 = lambda_CW(Y) + (q_i/(2p_i))*Delta_K''(1), i=1,2.",
+    "why": "The proof never fixes the normalization of lambda_CW. The coefficient q/(2p) is right only in Ni-Wu's Casson scaling, where lambda(S^3_{+1}(right-handed trefoil)) = 1 and Delta is symmetric with Delta(1) = 1. Other sources differ: Z. Wu (arXiv:0911.5333, Prop. 2.2) has coefficient -(q/p) with lambda(L(p,q)) = s(q,p). The conclusion Delta''(1) = 0 does not depend on this. In any consistent version the lens term equals lambda(S^3_{p/q}(U)) and cancels exactly against the right side of (1), and rescaling or a sign change multiplies every term by the same nonzero constant. Still, the displayed equation is literally correct only in one normalization.",
+    "suggested_fix": "Add one sentence: 'Normalize as in [NW]: lambda(S^3_{+1}(right-handed trefoil)) = 1, Delta symmetric with Delta(1) = 1, L(p,q) = S^3_{p/q}(U). Any other normalization rescales the Delta'' term by a fixed nonzero constant, which does not affect the subtraction.'"
+   },
+   {
+    "id": "S3a-signed-surgery-cassonwalker-3",
+    "severity": "minor",
+    "claim": "Both covers inherit orientation from the same oriented tangle ball, and the boundary identification preserves orientation.",
+    "why": "I verified this is correct, but the step from it to 'same signed p/q' is left implicit. The missing links are:\n- The sign convention for p/q (the sign of mu.lambda relative to the exterior's boundary orientation) depends only on how T is oriented as the boundary of the exterior.\n- That orientation is the same for dM and dV, since both are pulled back from dB (outward normals map to outward normals), so a lift of the identity on dB preserves orientation.\n- No shear can occur: an identification covering the identity of the 4-punctured sphere is either the identity or the elliptic involution -I, while a Dehn twist would have to cover a nontrivial mapping class.\n- The closing solid torus is common to both closures, and both lifts of the gluing give the same closed manifold, because the deck involution extends over that solid torus.\nThis matters because orientation preservation carries the argument: under a mirror identification the equations become lambda(Y) + 2*lambda(L(p_i,q_i)) + (q_i/2p_i)Delta'' = 0, which do not force Delta'' = 0.",
+    "suggested_fix": "Add: 'The sign convention for p/q surgery depends only on the orientation of the peripheral torus as the boundary of the exterior. dM and dV both carry the orientation pulled back from dB, and any identification covering the identity of the 4-punctured sphere is the identity or -I. Hence the same oriented pair (mu, lambda) is a standard meridian-longitude pair for both K in Y and U in S^3.'"
+   },
+   {
+    "id": "S3a-signed-surgery-cassonwalker-4",
+    "severity": "minor",
+    "claim": "A link isotopy lifts to an orientation-preserving map of the closed covers.",
+    "why": "The hypothesis is Sikora's balanced isotopy (Sec. 4, Fig. 5), which Sikora calls more flexible than standard framed isotopy: the paired-curl move can shift framing between strands. The proof should say why this still yields an ambient isotopy. Each balanced move is an R1 pair, RII or RIII on the unframed diagram, so a balanced isotopy is an orientation-preserving ambient isotopy of the underlying unframed links in R^3 inside S^3. The statement is true, so there is no gap, but the proof never makes this bridge explicit.",
+    "suggested_fix": "Insert before the sentence: 'Each balanced Reidemeister move of [S, Fig. 5] is a pair of R1 moves, an RII or an RIII on the unframed diagram. A balanced isotopy is therefore an ambient isotopy of S^3 carrying C_P(X) onto C_P(R).'"
+   }
+  ]
+ },
+ "audit:S5-recovery-and-coverage": {
+  "step": "S5-recovery-and-coverage",
+  "verdict": "holds_with_minor_fix",
+  "summary": "Step 5 holds, and the case analysis covers every case.\n\n1. Buck–Mauricio record the criterion as an unconditional equivalence for a ball with exactly two properly embedded arcs: rational if and only if the double branched cover is a solid torus. It needs no primeness or local-knot assumption and says nothing about the deck involution. Step 2 supplies the two-arc hypothesis: the mu-closure has determinant 1, and a c-component link has determinant divisible by 2^(c-1). I re-derived that fact from the Conway polynomial.\n\n2. Sikora's Corollary 20 compares two framed rational tangles only; the proof correctly avoids the much stronger Theorem 24(c), which is equivalent to the Jones conjecture. Theorem 21 gives the exact equality [X]=[R], so once X is rational, X=R under balanced isotopy. Sikora's Figure 5 confirms that balanced moves cancel opposite kinks on two separate strands, so only the total framing matters. This last deduction is exactly Sikora's own Proposition 1.\n\n3. The case split is exhaustive: both probe slopes differ from lambda (Step 3), or exactly one equals it (Step 4). Both cannot, since the slopes are distinct.\n- Probes whose R-closures are unknots (p=+-1, giving S^3) are covered by Step 3.\n- One probe at lambda with the other giving S^3 is covered by Step 4. RR Proposition 7.8 requires only a knot in Z#(S^1 x S^2) with an L-space surgery; here Z=S^3.\n- Y=S^3 is never assumed: Ni–Wu Proposition 3.1 is stated for a null-homologous knot in any rational homology sphere.\n- Y being an L-space is never assumed: Floer simplicity comes from RR Proposition 1.3, using the two actual lens-space fillings.\n- Primeness and absence of local knots are never assumed: irreducibility is derived in Step 2 from H_1(M)=Z plus an actual lens-space filling.\n\n4. The proof never replaces an actual homeomorphism with equality of invariants. Determinants are used only for homology orders, where they are exact: the longitude identification and Y being an integral homology sphere. Every lens space and S^1 x S^2 identification comes from an actual link isotopy lifted to the covers.\n\nThe two minor issues are both in Step 5's citations:\n- (a) Nothing is cited for passing from \"pair homeomorphic to the trivial tangle\" to \"isotopic rel boundary to Conway's tangle in the marked ball\". Buck–Mauricio Theorem 3.6 plus the Alexander trick fills this.\n- (b) Only Buck–Mauricio's recording of the Lickorish attribution could be checked. The AMS copy of the original was behind a bot check, which I did not bypass.",
+  "sources_checked": [
+   {
+    "source": "Buck & Mauricio, arXiv:1007.0948v1",
+    "location": "Section 3, Theorem 3.5(2) (p. 5); Definitions 3.1, 3.3, 3.4",
+    "statement_paraphrase": "Def 3.1: a tangle is a 3-ball with a pair of properly embedded arcs and an orientation-preserving boundary parametrization. Def 3.4(2): it is rational if the pair is homeomorphic to (D^2 x I, two points x I), ignoring the parametrization. Thm 3.5(2), attributed to Lickorish [34]: a tangle is rational if and only if its double branched cover is a solid torus. There is no primeness hypothesis and no condition on the involution; the text notes the cover is unique because the ball is contractible.",
+    "hypotheses_satisfied": true,
+    "note": "The only hypothesis is two arcs and no closed components. Step 2 supplies it: det(C_mu(X))=1 is odd, so C_mu(X) is a knot. I re-derived the divisibility of det by 2^(c-1) from nabla_L(z)=z^(c-1)p(z^2), det=|nabla_L(2i)|; I did not check the [St] numbering. The proof's remark about the deck involution is accurate but is not in BM's text, and it is harmless."
+   },
+   {
+    "source": "Buck & Mauricio, arXiv:1007.0948v1",
+    "location": "Section 3, Theorem 3.6 (Conway) and Definition 3.3",
+    "statement_paraphrase": "Every parametrized rational tangle is isomorphic to some T(p/q), and two T(p/q) are isomorphic exactly when the fractions agree. Isomorphism means a homeomorphism compatible with the boundary parametrizations.",
+    "hypotheses_satisfied": true,
+    "note": "The proof does not cite this, but it is needed to go from BM's homeomorphism-level rationality to Sikora's marked Conway tangle up to isotopy rel boundary. An isomorphism is the identity on the boundary, so by the Alexander trick it is isotopic to the identity. See finding 1."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Corollary 20 (Section 7, p. 16)",
+    "statement_paraphrase": "Two framed rational tangles with the same bracket vector are equal. Proof: equal KB ratios give the same fraction (Corollary 19, evaluation at q=1), so the tangles differ only by n framing twists. The bracket then scales by (-A)^(3n), forcing n=0.",
+    "hypotheses_satisfied": true,
+    "note": "Both tangles must be rational, and the proof uses it only after Step 5 shows X is rational. It does not misuse it as Theorem 24(c), the bracket detecting a rational tangle among all tangles, which is equivalent to the Jones conjecture. The fraction is computed in the fixed marked basis, so the marking is respected."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Theorem 21 and its proof (Section 8, p. 16); remark before Section 9",
+    "statement_paraphrase": "For a framed system whose two rational tangles differ as unframed tangles, the solution's bracket vector is uniquely determined. The coefficient matrix has determinant (delta^2-1) times det[[T1]0,[T1]inf;[T2]0,[T2]inf], which is nonzero. Sikora remarks that Theorem 21 and Corollary 20 together give Proposition 1: at most one framed rational solution.",
+    "hypotheses_satisfied": true,
+    "note": "Gives exact vector equality [X]=[R], not equality up to a unit. Step 5's last deduction is exactly Sikora's Proposition 1 applied to the two rational solutions X and R."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Section 4, Figure 5 (rendered and inspected), and Section 4.1 (pp. 9-10)",
+    "statement_paraphrase": "Framed tangles are two bands, with integer framing relative to the page. They are considered up to balanced isotopy: R2, R3, and cancelling a pair of opposite kinks on two separate strands. Where the twists sit therefore does not matter. A framed rational tangle is a rational tangle with any framing. T1 and T2 are assumed to differ as unframed tangles.",
+    "hypotheses_satisfied": true,
+    "note": "Balanced isotopy implies unframed ambient isotopy, which the covering arguments need, and it preserves the bracket, which Theorem 21 needs. The proof's 'distinct underlying unframed slopes' and 'balanced' conventions match Sikora's setup."
+   },
+   {
+    "source": "Sikora, arXiv:2005.08162v2",
+    "location": "Conjecture 2 (Section 1.1, p. 2); Lemma 14 proof (Section 3, p. 9)",
+    "statement_paraphrase": "Conjecture 2: if a framed system has a rational solution, it is the only solution. In Lemma 14's proof Sikora himself uses the same implication: a solid-torus double branched cover makes the tangle rational.",
+    "hypotheses_satisfied": true,
+    "note": "The proof's statement matches Conjecture 2. Lemma 14 independently corroborates the use of the solid-torus criterion."
+   },
+   {
+    "source": "Rasmussen & Rasmussen, arXiv:1508.05900v2",
+    "location": "Prop 1.3, Prop 1.4 (p. 2); Cor 2.3 (p. 7); Section 7 setup, Def 7.2 (p. 43), Prop 7.8 (p. 45)",
+    "statement_paraphrase": "Prop 1.3: a manifold is Floer simple exactly when it has more than one L-space filling. Prop 1.4: for a Floer simple manifold, the normalized torsion coefficients are 0 or 1. Cor 2.3: if the boundary is incompressible and the manifold is Floer simple, the Thurston norm equals deg(bar-Delta) minus 1. Section 7 setup: g_Y is the order of the homological longitude. Def 7.2: a generalized solid torus is Floer simple with deg(bar-Delta) < g_Y. Prop 7.8: a knot in Z#(S^1 x S^2), Z a rational homology sphere, with an L-space surgery has a generalized-solid-torus complement.",
+    "hypotheses_satisfied": true,
+    "note": "Checked for coverage. The edge case of a probe at lambda with the other probe giving S^3 or a lens space satisfies Prop 7.8 with Z=S^3. The meridian of the lambda-core is the null-homologous slope, so g_M=1. Cor 2.3 is used only by contradiction. No assumption that Y=M(mu) is an L-space is needed anywhere."
+   },
+   {
+    "source": "Ni & Wu, Cosmetic surgeries on knots in S^3 (author copy)",
+    "location": "Section 3.1, Proposition 3.1, equation (7) (p. 9)",
+    "statement_paraphrase": "For a null-homologous knot in a rational homology sphere, the Casson-Walker invariant of p/q surgery equals that of the ambient manifold, plus that of L(p,q), plus (q/2p) times Delta''(1). L(p,q) is defined as p/q surgery on the unknot in S^3.",
+    "hypotheses_satisfied": true,
+    "note": "Answers the hidden-use-of-Y=S^3 question: the formula is stated for any rational homology sphere, so applying it to K in Y needs only that Y is an integral homology sphere. That is established, and Y=S^3 is never assumed."
+   },
+   {
+    "source": "Lickorish, Prime knots and tangles, Trans. AMS 267 (1981) 321-332",
+    "location": "Original paper (ams.org)",
+    "statement_paraphrase": "Not read: the server returned a bot-verification page, which I did not bypass. Secondary sources state the criterion and attribute related results to Lickorish: Buck–Verjovsky Marcotte (math/0412467, Section 2) and Yang (arXiv:1709.01785, Section 2).",
+    "hypotheses_satisfied": true,
+    "note": "Attribution not independently verified (finding 2). I sketched the classical proof of the solid-torus-implies-rational direction (equivariant Dehn lemma plus Waldhausen's Z/2 Smith theorem) and found no gap."
+   }
+  ],
+  "findings": [
+   {
+    "id": "S5-recovery-and-coverage-1",
+    "severity": "minor",
+    "claim": "Step 5: 'The classical branched-cover criterion makes X rational [BM, Theorem 3.5(2)] ... Finally, [S, Corollary 20] distinguishes balanced framed rational tangles by their bracket vectors.'",
+    "why": "BM's 'rational' (Def 3.4(2)) only says the pair is homeomorphic to the trivial tangle, ignoring the boundary parametrization. Sikora's Corollary 20 compares Conway rational tangles in the fixed marked ball, up to balanced isotopy rel boundary. The proof needs one more step: a parametrized rational tangle is isomorphic to some T(p/q) (BM Theorem 3.6, Conway). Such an isomorphism is the identity on the boundary, so by the Alexander trick it is isotopic to the identity rel boundary. Carrying X's framing along, X is balanced-isotopic to a Conway rational tangle with some number of twists. This step is standard and true but neither stated nor cited.",
+    "suggested_fix": "Add one sentence: 'By Conway's classification [BM, Theorem 3.6] and the Alexander trick, X is isotopic rel boundary to a Conway rational tangle, so X with its framing is a framed rational tangle in Sikora's sense.' Then cite Corollary 20, or simply Sikora's Proposition 1 (at most one framed rational solution), which is exactly Theorem 21 plus Corollary 20."
+   },
+   {
+    "id": "S5-recovery-and-coverage-2",
+    "severity": "minor",
+    "claim": "[BM] reference: 'Records the classical solid-torus-cover/rational-tangle criterion, attributed there to W. B. R. Lickorish, Prime knots and tangles (1981).'",
+    "why": "I verified only the secondary recording, BM Theorem 3.5(2), which is stated without hypotheses beyond two arcs in a ball. Lickorish's original could not be checked here. The solid-torus-implies-rational direction classically relies on the equivariant Dehn lemma (Meeks–Yau; Kim–Tollefson) and Waldhausen's Z/2 Smith theorem, so a referee may want a primary proof cited. This is a citation-robustness issue, not a logical one: Sikora uses the same implication in proving his own Lemma 14, and other tangle papers state it.",
+    "suggested_fix": "Optionally add a primary citation for the solid-torus criterion, or note that Sikora uses the same implication in Lemma 14. No change to the argument is needed."
+   }
+  ]
+ },
+ "G1-counterexample-hunt": {
+  "found_counterexample": false,
+  "candidates": [
+   {
+    "construction": "Ernst-Sumners / Sikora Lemma 14-15 unframed pair: R = <inf>, X = <-1/2>, probes T1 = <0>, T2 = <1>. Both tangles give the unknot under both closures.",
+    "outcome": "Not a framed counterexample. Sikora v2 Lemma 15: <inf>^f lifts to a framed solution only when the framing gap m-n is 1, and <-1/2>^f only when m-n is -3. So no single framed system has both as solutions, and Proposition 1 (Thm 21 + Cor 20) is proved. The proof blocks this pair at Steps 1-2. [X] != [R], and at the lambda_R closure (+<inf>), R gives the 2-component unlink (det 0) while X gives the Hopf link (det |ad+bc| = 2). No framed variant survives."
+   },
+   {
+    "construction": "Framing redistribution: X = R with one extra positive twist on arc 1 and one extra negative twist on arc 2, with probes chosen so that both closures of R are knots.",
+    "outcome": "Under ordinary framed isotopy rel boundary, this X solves the system and differs from R, so the theorem would be false. Sikora Sec. 4 uses balanced isotopy instead. I rasterized Fig. 5 from the arXiv source in memory: opposite kinks on different strands cancel, and twist location does not matter. That makes X = R. Cor 20's proof only controls the total twist number, which is consistent. The candidate states the balanced convention in both hypothesis and conclusion, so this is not a counterexample, but the convention is essential."
+   },
+   {
+    "construction": "Orientation-reversed lens surgery. The trefoil exterior is Sigma2(X) via the Montesinos trick (strong inversion), with lambda the Seifert longitude. Then S^3_5(T2,3) = L(5,4), which is -L(5,1) = -S^3_5(U). Also S^3_7(T2,3) = L(7,4), homeomorphic to L(7,2).",
+    "outcome": "Fails the hypothesis. N(X+S_5) is the mirror of N(R+S_5) = 5_1, which is chiral, and isotopy preserves ambient orientation. L(7,2) is not homeomorphic to L(7,1) at all. Casson-Walker check: lambda(S^3_5(T)) = -1/10 + 2/10 = +1/10 = -lambda(L(5,1)), consistent with the orientation reversal. I checked the sign bookkeeping in (1) independently. M and V cover the same oriented ball, so they induce the same orientation on the common torus. The deck involution is -I, which preserves orientation and slopes. The signed coefficients in (1) are therefore correct."
+   },
+   {
+    "construction": "Dual knots in homology spheres: Y = S^3_{1/n}(J) with K* the dual knot, e.g. J = right-handed trefoil, so Y is a Brieskorn homology sphere.",
+    "outcome": "There is exactly one orientation-preserving match, Y_{-1/n}(K*) = S^3 = S^3_{-1/n}(U), with K* nontrivial. So one equation is not enough. V(alpha) depends only on alpha relative to lambda, so a second match at K*-slope a/(b-na) is equivalent to S^3_{a/b}(J) = S^3_{a/b}(U), which KMOS excludes. The paired Casson-Walker equations also fail, since lambda(Y) = (n/2)Delta''_J(1) = n != 0."
+   },
+   {
+    "construction": "Reducible Floer-simple manifolds with H1 = Z and Delta = 1. Example: X = R # T(3,5) as a local knot, so M = V # P with P = Sigma2(T(3,5)) the Poincare sphere. Also X = R # J with J a hypothetical nontrivial Jones-trivial knot.",
+    "outcome": "M = (S^1xD^2) # P is Floer simple (every non-longitudinal filling L(p,q) # P is an L-space), has H1 = Z and Delta = 1, and is not a solid torus. So Steps 3-4 genuinely need irreducibility. Step 2 supplies it correctly: an actual lens-space filling is prime, so closed homology-sphere summands are S^3. The isotopy hypothesis fails anyway, since N(X+T_i) = N(R+T_i) # J != N(R+T_i). With J Jones-trivial, [X] = [R] could hold while the actual closures differ. This matches the candidate's remark that the argument does not give Jones unknot detection."
+   },
+   {
+    "construction": "Generalized solid tori that are not solid tori: N_g = M(empty; 1/g, -1/g) for g >= 2 (g = 2 is the twisted I-bundle over the Klein bottle), and exteriors of Berge / Baker-Buck-Lecuona knots in S^1xS^2 with lens-space surgeries.",
+    "outcome": "All of these have H1 = Z + Z/g, where g is the winding number and g >= 2. RR Prop 1.9 notes that such S^1xS^2 knot complements are Floer simple of genus 0. The framed bracket gives closures of determinant 0 and 1, which forces H1(M) = Z and g_M = 1. Then Def 7.2 forces deg bar-Delta = 0, and Cor 2.3 forces a compressing disk. So the homological input excludes them, as the candidate's Step 4 caveat says."
+   },
+   {
+    "construction": "Knots in homology spheres other than S^3 with Casson invariant 0, with two lens-space surgeries matching the unknot's. Examples: Y = P # -P (an L-space homology sphere with lambda = 0), or a Berge exterior M = S^3 - P(-2,3,7) with lens fillings at 18 and 19.",
+    "outcome": "No example survives. The paired Casson-Walker equations force Delta''(1) = 0. RR Props 1.3 and 1.4 make Delta alternating with +-1 coefficients, so Delta = 1. Cor 2.3 then rules out an incompressible boundary, so M is a solid torus and Y = S^3. For the Berge exterior, distance data alone does not pin down lambda: besides lambda_K, the slope 684/37 is at distance 18 and 19 from the two fillings. Step 2 excludes it, because that closure of X has det 684 while the corresponding closure of R has det 0. Taking V's meridian = lambda_K instead, KMOS rules out the match. This shows Step 2's determinant identification of lambda is load-bearing."
+   },
+   {
+    "construction": "Tangles with closed components, e.g. R together with a split or linked unknotted loop.",
+    "outcome": "Excluded by definition: Sikora's framed tangles are J1xI u J2xI, two ribbons and no loops. Step 2 excludes them independently. A det-1 closure is a knot (Stoimenow Prop 6.5: det is odd iff the link is a knot), and any loop would survive every closure as an extra component. A split loop also multiplies the bracket by delta, so [X] != [R]."
+   }
+  ],
+  "weakest_point": "The weakest point is the imported Rasmussen-Rasmussen machinery (arXiv:1508.05900v2), which Steps 3-4 depend on entirely. Prop 1.4 supplies the 0/1 torsion coefficients. Cor 2.3 gives ||M|| = deg bar-Delta - 1 for boundary-incompressible Floer-simple M. Prop 7.8 is the only source of Floer simplicity in Step 4, when one probe is the longitude. RR state Cor 2.3 with only a citation to Thurston-norm detection results. The candidate applies it to an irreducible M, where detection (Ni; Juhasz) is established. RR's proof of Prop 7.8 for an L-space slope at distance >= 2 from the longitude is a brief sketch. It converts to integer surgery on K_mu # (lens-space core), then uses the attached cable space to get infinitely many fillings of the original manifold. I reconstructed that sketch and found it sound. The g = 1 torsion computation alone already gives Delta(M) = 1. These are refereed results (Adv. Math. 322, 2017), quoted accurately, so I rate them a concentration of risk rather than a gap. A second dependency: the statement holds only under Sikora's balanced isotopy. Under ordinary framed isotopy, moving framing twists between the two arcs gives an immediate counterexample. The candidate states the convention correctly.",
+  "summary": "I read the whole file and did not open any of the excluded files. I checked every cited statement against its primary source, processing fetched material in memory, and created no files. Overall: no counterexample, nothing fatal, and no possible_gap. Every construction I tried violates a hypothesis or is excluded by a correctly cited result.\n\nThe argument reduces to two inputs. First, the framed hypothesis gives [X] = [R] by Theorem 21. That yields closure determinants 0 and 1, so H1(M) = Z and lambda is the longitude. Second, the two actual isotopies give oriented lens-space fillings. Framing enters only through Thm 21 and Cor 20.\n\nCitations checked:\n- Sikora v2: Conj 2, Sec 4 with the Fig. 5 balanced moves, Cor 20 and Thm 21 match the journal's Conj 1.2, Cor 7.2 and Thm 8.1. I rederived det B = (delta^2-1)*det([Ti]_0, [Ti]_inf).\n- Ni-Wu Prop 3.1, eq. (7): stated for null-homologous knots in any rational homology sphere, exactly as used.\n- RR: Props 1.3 and 1.4, Cor 2.3, Def 7.2, Prop 7.8, and g_Y as the order of the homological longitude all match. RR also remark that the H1 = Z case is easy, consistent with Steps 3-4.\n- Buck-Mauricio Thm 3.5(2): the solid-torus cover criterion, attributed to Lickorish.\n- Gainullin Thm 8.2 (pp. 104-105) is described accurately.\n- The IPAM abstract still calls the statement a conjecture.\n\nIndependent checks: the oriented signed-coefficient identification in (1) is correct. The prime-decomposition proof of irreducibility is correct. The alternating Alexander polynomial argument (Delta''(1) = 2*sum of (-1)^(k-j) n_j^2 > 0 unless Delta = 1) is correct.\n\nMinor issues:\n- (a) Stoimenow Prop 6.5 states that det is odd iff the link is a knot. The 2^(c-1) divisibility appears only in its proof. The parity statement already suffices.\n- (b) Dasbach et al. Sec. 3 mentions det = |H1(Sigma2)| only in passing and says nothing about det 0 versus infinite H1. The fact is standard but weakly sourced.\n- (c) The closed-component paragraph is redundant, since Sikora's framed tangles have exactly two ribbons.\n- (d) RR v2 garbles the definition of g_Y ('im phi = g_Y Z' with phi onto). The proof correctly uses the equivalent characterization.\n\nOne observation from the Berge test: distance data alone does not fix lambda. The determinant-0 identification in Step 2 is essential, and it is correctly supplied by the bracket."
+ },
+ "G4-gainullin-overlap": {
+  "theorem_paraphrase": "Source: F. Gainullin, Algebraic & Geometric Topology 18 (2018) 69-109, Theorem 8.2. It is first announced on p. 74 as a generalization of the Kronheimer-Mrowka-Ozsvath-Szabo (KMOS) surgery characterization of the unknot (his Thm 1.3). It is restated in Section 8.2 on p. 104 and proved on p. 105. The numbering is the same in arXiv:1504.06180v5.\n\nSetting: Y is a rational homology sphere that is an L-space, and K is a null-homologous knot in Y. L(p,q) means p/q surgery on the unknot in S^3.\n\nStatement: if HF^+ of the p/q surgery Y_{p/q}(K) is isomorphic to HF^+(Y # L(p,q)), then K is the unknot, i.e. it bounds a disk in Y. The isomorphism must respect absolute gradings, because the proof reads the Casson-Walker invariant off HF^+ through d-invariants. Gainullin states the consequence that null-homologous knots in L-spaces are determined by their complements.\n\nNormalization: Delta_K is symmetric with Delta_K(1) = |H_1(Y)|. For an integral homology sphere this is the candidate's normalization.",
+  "proof_outline": "Gainullin's proof (p. 105, drawing on Section 4, pp. 84-85, and Section 8.1, pp. 103-104):\n\n(G1) The Casson-Walker invariant is additive under connected sum and is determined by graded HF^+ through Rustamov's formula (his eq. (5), p. 84). So lambda(Y_{p/q}(K)) = lambda(Y) + lambda(L(p,q)).\n\n(G2) His surgery formula (4), p. 84 (Walker Prop. 6.2, normalized as in Ni-Wu) says lambda(Y_{p/q}(K)) = lambda(Y) + lambda(L(p,q)) + q/(2p|H_1(Y)|) Delta_K''(1). Comparing with (G1) gives Delta_K''(1) = 0 from a single slope, because lambda(Y) appears on both sides.\n\n(G3) Y_{p/q}(K) has the HF^+ of an L-space, so it is an L-space. Section 8 extends the Ozsvath-Szabo rational-surgery mapping cone to null-homologous knots in rational homology spheres (Lemma 8.1: H_1 of the exterior is Z plus H_1(Y), with the Z generated by the meridian). With both Y and the surgery L-spaces, every A^+_{(n,h)} is a tower; this uses surjectivity of the tower map for p/q > 0, from his earlier paper, Lemma 12. The algebra of Ozsvath-Szabo, Topology 44 (2005), Section 3, then shows that for each h in H_1(Y) the knot Floer homology has rank at most one in each Alexander grading, with alternating Z/2 gradings and the extreme copies in grading 0. Hence (Section 8.1, p. 104) each Spin^c summand Delta_{K,h} satisfies Delta_{K,h}''(1) >= 0, with equality only if Delta_{K,h} is 1 or t.\n\n(G4) Summing over h, Delta_K''(1) = 0 forces every Delta_{K,h} to be trivial, and symmetry makes each equal to 1. So HFK-hat is supported in Alexander grading 0.\n\n(G5) Ni-Wu, Adv. Math. 267 (2014), Thm 2.2, a reformulation of Ni's Thurston-norm detection, gives g(K) = 0, so K is the unknot.\n\nThe candidate's Step 3 follows the same skeleton:\n\n(C1, C2) Two actual orientation-preserving homeomorphisms Y_{r_i}(K) = S^3_{r_i}(U) and Ni-Wu Prop 3.1 give two linear equations, 0 = lambda(Y) + (q_i/2p_i) Delta''(1). Because the slopes are distinct, Delta''(1) = 0 and lambda(Y) = 0.\n\n(C3) The two lens-space fillings make M Floer simple [RR Prop 1.3]. RR Prop 1.4 puts the torsion coefficients in {0,1}, so Delta_K has alternating +1/-1 coefficients. An explicit computation then re-derives Gainullin's Section 8.1 inequality: Delta''(1) > 0 unless Delta = 1.\n\n(C4) Therefore Delta_K = 1.\n\n(C5) RR Cor 2.3 says a boundary-incompressible Floer simple manifold has Thurston norm deg(bar-Delta) - 1, which would be -1 here. So the boundary is compressible, and with irreducibility from Step 2, M is a solid torus.\n\nBoth endgames ultimately rest on knot Floer homology detecting the Thurston norm.",
+  "overlap": "same_method_new_setting",
+  "key_differences": "1. Hypothesis on the ambient manifold. Theorem 8.2 needs Y to be an L-space. The candidate's Y = M(mu) is only known to be an integral homology sphere, and this cannot be fixed by choosing mu cleverly in advance. By RR Thm 1.6 (arXiv:1508.05900v2), the L-space slopes of the Floer simple M form an interval containing the two probes. A priori that interval need not contain any slope 1/n, i.e. any slope at distance one from lambda. That only becomes clear after tau(M) is known, and computing tau(M) is the output of Step 3. So Step 3 is not a corollary of Theorem 8.2 as stated.\n\n2. Comparison space. Gainullin compares with Y#L(p,q), so lambda(Y) cancels and one slope is enough. The candidate compares with L(p,q) = S^3_{p/q}(U), so lambda(Y) survives. The second slope gives a 2x2 linear system with nonzero determinant (q_1/p_1 - q_2/p_2)/2. The second equation is genuinely needed. Take any nontrivial knot K' in S^3, n != 0, Y = S^3_{1/n}(K'), and K the dual knot in Y. The old meridian of K' is a slope 1/m on the boundary of the exterior (m = -n in one convention), with Y_{1/m}(K) = S^3 = S^3_{1/m}(U). Yet the exterior is not a solid torus. In that example lambda(Y) = (n/2)Delta''(1), which balances the single Casson-Walker equation.\n\n3. The hypothetical where Y is an L-space. Theorem 8.2 still does not apply verbatim. Its hypothesis needs graded HF^+(L(p,q)) to equal HF^+(Y#L(p,q)), which means d(Y) = 0. For an L-space integral homology sphere, Rustamov's formula (Gainullin eq. (5); Ni-Wu Thm 3.5) gives lambda(Y) = -d(Y)/2. So the candidate's second equation, lambda(Y) = 0, is exactly the missing input. In that case Step 3 reduces to: two-slope Casson-Walker, then Rustamov, then Thm 8.2 (K is the unknot in Y), then primality of the lens-space filling (Y = S^3, M a solid torus). If Y = S^3 were known in advance, Step 3 would be a direct one-slope corollary of KMOS Thm 1.1 (Gainullin's Thm 1.3).\n\n4. Floer input. Gainullin's Section 8 mapping cone (Lemma 8.1) requires K to be null-homologous in an L-space. The only L-spaces available to the candidate are the lens-space fillings, and their cores generate H_1 = Z/p_i, so they are not null-homologous when |p_i| > 1. RR Props 1.3-1.4 supply the same alternating structure at the level of the exterior, whichever filling is used. RR Section 3.1 presents this as an extension, via Boileau-Boyer-Cebanu-Walsh, of the Ozsvath-Szabo L-space-knot theorem that Gainullin adapts.\n\n5. Endgame. Gainullin uses Ni-Wu Thm 2.2 genus detection and concludes that K is the unknot in Y. The candidate uses RR Cor 2.3 plus irreducibility from Step 2 and concludes that M is a solid torus, hence Y = S^3. Step 2's irreducibility also covers any irreducibility hypothesis implicit in the norm-detection theorem behind Cor 2.3.\n\n6. Type of hypothesis. Gainullin assumes only a graded Floer homology isomorphism, which is weaker than a homeomorphism. The candidate uses actual orientation-preserving homeomorphisms, which it needs for irreducibility and for the sign matching in (1). I checked the sign matching conceptually: both covers inherit their boundary orientation from the same oriented ball boundary, and the deck involution acts as -I on H_1, so it fixes every slope. It is consistent.\n\nVerification against the sources. Ni-Wu Prop 3.1 (arXiv:1009.4720v2, eq. (7), credited there to Boyer-Lines Thm 2.8) is stated for null-homologous knots in rational homology spheres with Delta(1) = 1, as the candidate claims. For |H_1(Y)| = 1 it agrees with Gainullin's (4). RR Prop 1.3 (more than one L-space slope iff Floer simple), Prop 1.4 (coefficients 0 or 1), Section 2.1 (tau = Delta/(1-t) when H_1 = Z, and the definition of bar-Delta) and Cor 2.3 (boundary incompressible plus Floer simple gives norm = deg bar-Delta - 1) all match the candidate's use.\n\nIssues in Step 3: no possible_gap and nothing fatal found. Minor: (a) the torsion normalization is attributed to RR Prop 1.4, but it is stated in the paragraph before Prop 1.4 and in Section 2.1; (b) Step 3 itself never cites Gainullin, even though it re-derives his Section 8.1 inequality; (c) the original sources of the Casson-Walker formula (Boyer-Lines, Walker) are not cited.",
+  "attribution_advice": "1. Cite Gainullin inside Step 3, not only in the STATUS and RELATION sections. Suggested wording: Step 3 adapts the proof of Gainullin's surgery characterization of the unknot for null-homologous knots in L-spaces [G, Thm 8.2, AGT 18 (2018), stated pp. 74 and 104, proof p. 105; arXiv:1504.06180v5, Thm 8.2; https://msp.org/agt/2018/18-1/agt-v18-n1-p03-p.pdf].\n\n2. At the Delta''(1) > 0 computation, add \"cf. [G, Section 8.1, p. 104]\". Gainullin already records that an alternating +1/-1 Alexander polynomial of this kind has Delta''(1) >= 0, with equality only when it is trivial. The explicit pairing argument is a re-derivation and should not read as new.\n\n3. Replace \"close antecedent\" with a precise list of what changes:\n- a second matched filling eliminates lambda_CW(Y), because the comparison space is L(p,q) rather than Y#L(p,q);\n- Floer simplicity of the exterior [RR Props 1.3-1.4] replaces the L-space hypothesis on Y, which matters because the lens-space cores are not null-homologous;\n- RR Cor 2.3 plus irreducibility replaces genus detection [Ni-Wu 2014, Thm 2.2].\nClaim at most a modest adaptation, and keep the sentence saying no new Floer-theoretic machinery is introduced.\n\n4. Add a short remark covering two points. First, one slope does not suffice: the dual of 1/n surgery on any nontrivial knot is a counterexample. Second, if Y were an L-space, lambda(Y) = 0 would give d(Y) = 0, and Thm 8.2 would then apply verbatim. This tells a reader exactly where the argument departs from [G].\n\n5. Credit the lineage:\n- Boyer-Lines, J. reine angew. Math. 405 (1990), Thm 2.8, and Walker, Annals of Math. Studies 126, Prop 6.2, for the Casson-Walker surgery formula; Ni-Wu Prop 3.1 and Gainullin's eq. (4) as its normalized forms.\n- Rustamov for the Heegaard Floer formula for Casson-Walker.\n- Ozsvath-Szabo, Topology 44 (2005), for the L-space-knot structure that RR Prop 1.4 generalizes.\n- Ni, Geom. Topol. 13 (2009), and Ni-Wu, Adv. Math. 267 (2014), for norm and genus detection.\n- KMOS, Ann. of Math. 165 (2007), Thm 1.1, for the one-slope case in S^3.\n- Ravelomanana (2015 preprint) and Mauricio (thesis, integral slopes), as Gainullin credits them.\n\n6. State explicitly the intermediate theorem Step 3 proves: if K is a knot in an integral homology sphere Y and Y_{r_i}(K) is orientation-preservingly homeomorphic to S^3_{r_i}(U) for two distinct finite slopes r_1, r_2, then Y = S^3 and K = U. Present it as a two-slope variant of KMOS and Gainullin. Run a literature check on that exact statement. My brief search turned up only related Casson-Walker cosmetic-surgery work; Ichihara-Saito, arXiv:2103.16375, treats non-null-homologous knots and is not closer. That was not a full priority search.",
+  "summary": "Gainullin's Theorem 8.2 (AGT 18 (2018), pp. 74, 104-105): if K is a null-homologous knot in an L-space Y and HF^+ of Y_{p/q}(K) matches HF^+(Y#L(p,q)) as graded groups, then K is the unknot. His proof uses the Casson-Walker surgery formula to get Delta''(1) = 0, then the alternating structure of knots with L-space surgeries (Delta''(1) >= 0, with equality only when trivial), then knot Floer genus detection.\n\nThe candidate's Step 3 is the same method in a new setting, not a corollary of the theorem:\n- Its Y is only an integral homology sphere and cannot be chosen in advance to be an L-space.\n- It compares with L(p,q) instead of Y#L(p,q), so lambda(Y) has to be eliminated with a second slope. One slope really is not enough: the dual of 1/n surgery on any nontrivial knot is a counterexample.\n- Rasmussen-Rasmussen Floer simplicity of the exterior replaces Gainullin's L-space hypothesis. That substitution is needed because the cores of the lens-space fillings are not null-homologous.\n- Even if Y were an L-space, applying Theorem 8.2 would require d(Y) = 0, which the two-slope step supplies.\n\nThe cited statements check out against the primary sources: Ni-Wu Prop 3.1; Rasmussen-Rasmussen Props 1.3 and 1.4 and Cor 2.3; Gainullin Theorem 8.2 and Section 8.1. The candidate's own description of Gainullin is accurate.\n\nI found no gap in Step 3. The only problems are minor: Step 3 does not credit Gainullin in line (especially his Section 8.1 inequality), one Rasmussen-Rasmussen citation points to Prop 1.4 instead of the paragraph before it, and the original sources of the Casson-Walker formula are not cited. I did not audit Steps 1, 2, 4 or 5 beyond what Step 3 takes from them."
+ },
+ "G2-novelty-keyword-sweep": {
+  "prior_proof_found": false,
+  "closest_works": [
+   {
+    "citation": "A. S. Sikora, Tangle equations, the Jones conjecture, slopes of surfaces in tangle complements, and q-deformed rationals, arXiv:2005.08162v2 (5 Aug 2023); Canad. J. Math. 76 (2024) 707-727, DOI 10.4153/S0008414X23000755 (the 2024 erratum, DOI 10.4153/S0008414X24000208, only corrects the author's name)",
+    "relation": "This is where the conjecture comes from (Conjecture 2 in arXiv v2, Conjecture 1.2 in CJM). It proves partial results and no general case: at most one framed rational solution (Prop 1/1.1); [X] is unique (Thm 21/8.1, with det B nonzero even at q=1); the bracket distinguishes framed rational tangles (Cor 20/7.2); the Jones conjecture implies Conjecture 2 (Thm 3/1.3), so it holds for tangles up to 11 crossings; there are no algebraic solutions when L1=L2 is a nontrivial rational or torus knot (Prop 1.5); and the unknot/unknot systems have unique framed solutions (Lemma 4.1, via Gordon-Luecke). Sec. 1.1 promises 'upcoming work' on the unframed version and strongly invertible knots. I checked the cited numbering: arXiv Cor 20 and Thm 21 are CJM Cor 7.2 and Thm 8.1.",
+    "overlap": "partial_case",
+    "url": "https://arxiv.org/abs/2005.08162"
+   },
+   {
+    "citation": "A. S. Sikora, Tangle Equations, the Jones Unknot Conjecture, and Lens Space Surgeries, IPAM Workshop I (Hyperbolic Structures and Quantum Invariants), talk of 15 Oct 2026",
+    "relation": "I checked the abstract. It still presents framed uniqueness as the 'Uniqueness of Rational Solutions Conjecture'. Its only proven claim is the conditional link to the Jones conjecture. It mentions new results and conjectures on the unframed version via lens space surgeries but does not say what they are. No slides or preprint are linked, and I did not watch the recording.",
+    "overlap": "related",
+    "url": "https://www.mathinstitutes.org/videos/25091"
+   },
+   {
+    "citation": "F. Gainullin, Heegaard Floer homology and knots determined by their complements, Algebr. Geom. Topol. 18 (2018) 69-109, Theorem 8.2 (pp. 104-105)",
+    "relation": "This is the closest antecedent. It uses the same chain: Casson-Walker forces Delta''(1)=0, which gives restricted Alexander coefficients and then genus 0. It assumes Y is an L-space and compares a single surgery against Y#L(p,q). It does not cover an unknown homology sphere Y compared against L(p,q) with two slopes. I verified the statement and proof, and the candidate's description of it is accurate. It does not imply Sikora's conjecture.",
+    "overlap": "same_method",
+    "url": "https://arxiv.org/abs/1504.06180"
+   },
+   {
+    "citation": "J. Rasmussen and S. D. Rasmussen, Floer simple manifolds and L-space intervals, arXiv:1508.05900v2; Adv. Math. 322 (2017) 738-805",
+    "relation": "This paper supplies the key 3-manifold inputs. I checked each one against the v2 PDF and all match the proof's use: Prop 1.3 (two L-space fillings imply Floer simple); Prop 1.4 (torsion coefficients are 0 or 1, with the normalization stated just before it); Cor 2.3 (if the boundary is incompressible, the norm is deg Delta-bar minus 1); Def 7.2; Prop 7.8 (an L-space surgery on a knot in Z#S^1xS^2 gives a generalized solid torus). Prop 7.8 together with Cor 7.12 (an irreducible semi-primitive generalized solid torus is a closed g-strand braid complement) essentially settles Step 4 when g=1. The introduction notes that boundary compressibility is easy when H_1=Z. The paper says nothing about tangles or two matched fillings.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/1508.05900"
+   },
+   {
+    "citation": "P. Kronheimer, T. Mrowka, P. Ozsvath, Z. Szabo, Monopoles and lens space surgeries, arXiv:math/0310164; Ann. of Math. 165 (2007)",
+    "relation": "This is the surgery characterization of the unknot in S^3. Combined with Sikora's Thm 21, which pins the longitude, it would settle the special case where one closure is an unknot. I found no paper that states that deduction. It does not address an unknown homology sphere Y.",
+    "overlap": "partial_case",
+    "url": "https://arxiv.org/abs/math/0310164"
+   },
+   {
+    "citation": "C. Gordon and J. Luecke, Knots are determined by their complements (J. AMS 1989); D. Gabai, Foliations and the topology of 3-manifolds III / Property R (J. Diff. Geom. 1987)",
+    "relation": "These are the classical special cases. Gordon-Luecke handles systems where both closures are unknots (Sikora Lemma 3.2/4.1). Property R handles an unknot closure paired with a two-component unlink closure.",
+    "overlap": "partial_case"
+   },
+   {
+    "citation": "A. Kotelskiy, T. Lidman, A. H. Moore, L. Watson, C. Zibrowius, Cosmetic operations and Khovanov multicurves, arXiv:2109.14049; Math. Ann. 389, 2903-2930",
+    "relation": "Theorem 1.2 is a cosmetic tangle-filling result: for a Conway tangle T with an unknot closure, if T(r) and T(r') are isotopic, then r=r' or T is rational. It compares one tangle at two slopes, whereas Sikora compares two tangles at the same slopes. The paper does not mention Sikora's problem.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/2109.14049"
+   },
+   {
+    "citation": "T. Lidman and A. H. Moore, Cosmetic surgery in L-spaces and nugatory crossings, arXiv:1507.00699; Trans. AMS (2017)",
+    "relation": "This uses the same general strategy (Montesinos trick, a Dehn surgery characterization of the unknot, Heegaard Floer) on a tangle problem, namely N(X+1)=N(X-1). It needs L-space branched double covers and does not address Sikora's systems. Sikora cites it.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/1507.00699"
+   },
+   {
+    "citation": "T. Lidman, A. H. Moore, C. Zibrowius, L-space knots have no essential Conway spheres, Geom. Topol. 26 (2022) 2065-2102; C. Zibrowius, Peculiar modules for 4-ended tangles (arXiv:1712.05050); A. Kotelskiy, L. Watson, C. Zibrowius, Thin links and Conway spheres, Compositio Math. 160 (2024) 1467-1524",
+    "relation": "These show that Floer and Khovanov multicurve tangle invariants detect rational and split tangles (Zibrowius Thm 6.2; LMZ Thm 1.2) and give gluing theorems. Knowing two closures does not determine the tangle invariant, so none of these imply Sikora's conjecture. They do not mention it.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/2006.03521"
+   },
+   {
+    "citation": "C. Ernst and D. W. Sumners, A calculus for rational tangles (Math. Proc. Camb. Phil. Soc. 1990); C. Ernst, Tangle equations, JKTR 5 (1996) 145-159, and Tangle equations II (1997); I. K. Darcy, Solving unoriented tangle equations involving 4-plats, JKTR 14 (2005) 993-1005",
+    "relation": "These are the classical unframed theory. Unframed systems have at most two rational solutions (Sikora cites this). According to secondary summaries, unframed systems with 4-plat closures are fully solved when the distance is greater than 1 (CGLS territory), and the distance-1 case is called much harder. None of these treats the framed uniqueness statement. I could not access the World Scientific full texts (HTTP 403).",
+    "overlap": "related",
+    "url": "https://www.worldscientific.com/doi/abs/10.1142/S0218216596000114"
+   },
+   {
+    "citation": "DNA-recombination tangle analyses: D. Buck and C. Verjovsky Marcotte (math/0412467, math/0501173); I. K. Darcy, J. Luecke, M. Vazquez (arXiv:0710.4150, AGT 2009); D. Buck and M. Mauricio (arXiv:1007.0948; MPCPS 2011, published as 'Connect sum of lens spaces surgeries: application to Hin recombination'); J. Yang (arXiv:1709.01785; JKTR 2021); H. Moon and I. K. Darcy, Tangle equations involving Montesinos links (JKTR 30, 2021)",
+    "relation": "These solve specific unframed systems using double branched covers, the cyclic surgery theorem, Gordon-Luecke, Hirasawa-Shimokawa or KMOS, typically with an unknot closure. Buck-Mauricio Thm 3.5(2) records Lickorish's criterion (rational if and only if the cover is a solid torus), which I verified matches the proof's citation. None proves general framed uniqueness.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/1007.0948"
+   },
+   {
+    "citation": "Y. Ni and Z. Wu, Cosmetic surgeries on knots in S^3, J. reine angew. Math. 706 (2015) 1-17 (arXiv:1009.4720), Prop. 3.1, eq. (7)",
+    "relation": "I verified the citation: the formula is stated for a null-homologous knot in a rational homology sphere, with Delta symmetric and Delta(1)=1. It uses the same Casson-Walker surgery-comparison technique for a different problem (cosmetic surgery).",
+    "overlap": "same_method",
+    "url": "https://arxiv.org/abs/1009.4720"
+   },
+   {
+    "citation": "M. Culler, C. Gordon, J. Luecke, P. Shalen, Dehn surgery on knots (cyclic surgery theorem), Ann. of Math. 125 (1987)",
+    "relation": "Two cyclic fillings at distance 2 or more force a Seifert-fibered exterior. Classically this handles the distance-2-or-more subcase, together with Casson-Walker to exclude torus-knot exteriors. It gives nothing at distance 1, which is where Floer input is needed.",
+    "overlap": "related"
+   },
+   {
+    "citation": "T. Lidman, A. H. Moore, M. Vazquez, Distance one lens space fillings and band surgery on the trefoil knot (AGT 2019); Z. Wu and J. Yang, arXiv:1906.00381 and arXiv:2504.02325 (2025)",
+    "relation": "These study distance-one surgeries between lens spaces, which are band moves on 2-bridge links, using d-invariants. They concern which closures can occur, not the uniqueness of a tangle with given closures.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/2504.02325"
+   },
+   {
+    "citation": "T. Kadokami, Reidemeister torsion and lens surgeries on knots in homology 3-spheres I, Osaka J. Math. 43 (2006) 823-837; T. Ito, Applications of the Casson-Walker invariant to the knot complement and the cosmetic crossing conjectures, Geom. Dedicata 216 (2022) (arXiv:2103.15277)",
+    "relation": "These study lens space surgeries on knots in homology spheres (Kadokami, via torsion) and Casson-Walker for knot-complement and cosmetic-crossing problems (Ito). Neither has a two-filling characterization of the solid torus.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/2103.15277"
+   },
+   {
+    "citation": "K. L. Baker, D. Buck, A. G. Lecuona, Some knots in S^1 x S^2 with lens space surgeries (arXiv:1302.7011)",
+    "relation": "This is background for Step 4, where the lambda-probe gives knots in S^1xS^2 with lens space surgeries. The band-surgery examples there have H_1 of the exterior different from Z, so they are not counterexamples under Sikora's framed hypotheses.",
+    "overlap": "related",
+    "url": "https://arxiv.org/abs/1302.7011"
+   }
+  ],
+  "searches_run": [
+   "WebSearch (extended): Sikora \"tangle equations\" conjecture rational solution unique proof",
+   "WebSearch (extended): Sikora \"Tangle Equations, the Jones Unknot Conjecture, and Lens Space Surgeries\"",
+   "WebFetch: mathinstitutes.org/videos/25091 (IPAM talk abstract, 15 Oct 2026), fetched twice for a sentence-by-sentence paraphrase",
+   "WebSearch (extended): \"uniqueness of rational solutions\" tangle equations conjecture",
+   "Semantic Scholar API: citations of arXiv:2005.08162 (7 records, all q-rational papers)",
+   "OpenAlex: works citing W4388661112 / DOI 10.4153/S0008414X23000755 (3 records, including a name-only erratum, which I fetched and read)",
+   "OpenAlex search: \"tangle equations\" from 2015 (49 records scanned)",
+   "arXiv API: all:\"tangle equations\" sorted by date",
+   "arXiv API: abs:tangle AND abs:equation AND abs:rational",
+   "arXiv API: abs:\"rational tangle\" AND (Floer OR Khovanov OR surgery OR \"branched cover\")",
+   "arXiv API: abs:\"tangle equation\" OR abs:\"framed tangle\" OR abs:\"rational solution\" (math.GT)",
+   "arXiv API: ti:tangle OR ti:tangles, latest 60 (through 2026-10-31)",
+   "arXiv API: author searches au:Sikora_A, au:Sikora_Adam, au:Zibrowius",
+   "Sikora publication page math.buffalo.edu/~asikora/research.htm (curl): no new tangle-equation paper",
+   "WebSearch: \"detects rational tangles\" Heegaard Floer OR Khovanov immersed curves 4-ended tangles",
+   "WebSearch: \"Floer simple\" tangle \"double branched cover\" rational tangle",
+   "WebSearch: \"Floer simple\" \"rational tangle\" OR \"Conway tangle\" OR \"tangle replacement\"",
+   "WebSearch: \"Floer simple\" \"Casson-Walker\" surgery Alexander polynomial knot homology sphere lens space",
+   "WebSearch: \"Casson-Walker\" invariant tangle equations double branched cover DNA recombination",
+   "WebSearch: knot in integral homology sphere, two surgeries homeomorphic to unknot surgeries, characterization",
+   "WebSearch: \"homology solid torus\" two lens space fillings same as solid torus Casson-Walker Floer",
+   "WebSearch: \"solid torus\" characterized by two Dehn fillings, lens spaces, trivial Alexander polynomial",
+   "WebSearch: Ernst \"Tangle equations\" JKTR 1996, cyclic surgery theorem, rational tangle",
+   "WebSearch: Ernst 1996 / Darcy, solving unoriented tangle equations involving 4-plats",
+   "WebSearch: \"cyclic surgery theorem\" tangle equations, Vazquez Sumners Gin recombination",
+   "WebSearch: \"tangle equations\" \"strongly invertible\" Sikora lens space surgeries unframed",
+   "WebSearch: Sikora tangle equations lens space surgeries double branched cover 2025 arXiv",
+   "WebSearch: \"Sikora's conjecture\" tangle OR \"conjecture of Sikora\" tangle equations",
+   "WebSearch: \"framed tangle equations\" OR \"framed rational solution\" OR \"system of framed tangle equations\"",
+   "WebSearch: \"tangle equations\" Jones polynomial Kauffman bracket rational solution framed 2024-2026",
+   "WebSearch: mathoverflow tangle equations rational tangle unique solution, plus two site:mathoverflow.net variants (no MO threads found)",
+   "WebSearch: IPAM 2026 Hyperbolic Structures and Quantum Invariants workshop Sikora",
+   "WebSearch: Jones unknot conjecture 2025 2026 new results (checked the Boyle AGTW 2026 abstract: unrelated)",
+   "WebSearch: Kadokami Yamada Reidemeister torsion and lens surgeries on knots in homology 3-spheres",
+   "WebSearch: Wu Yang distance one surgeries lens space L(p,1) band surgery torus links",
+   "WebSearch: Moon Darcy \"Tangle equations involving Montesinos links\"",
+   "WebSearch: \"rational tangle\" determined by two closures, 2-bridge links",
+   "Google Scholar query attempted: blocked by CAPTCHA, not bypassed",
+   "World Scientific (Ernst 1996) abstract page: HTTP 403",
+   "Primary-source text checks: Rasmussen-Rasmussen arXiv 1508.05900v2 PDF (Props 1.3, 1.4, Cor 2.3, Def 7.2, Props 7.6-7.8, Cor 7.12); Ni-Wu arXiv 1009.4720 (Prop 3.1); Gainullin AGT 18 PDF (Thm 8.2 and proof); Buck-Mauricio arXiv 1007.0948 (Thm 3.5); Sikora arXiv v2 HTML and CJM PDF (Conj 1.2/1.4, Prop 1.5, Lemmas 3.2/4.1, Cor 7.2, Thm 8.1, Thm 9.2); KLMWZ arXiv 2109.14049; LMZ arXiv 2006.03521; KWZ arXiv 2105.06308; Buck-Verjovsky Marcotte math/0412467; Darcy-Luecke-Vazquez 0710.4150; arXiv abstracts of 2504.02325, 2504.06901, 2508.18521, 2103.15277, 2203.09319, math/0310164"
+  ],
+  "summary": "I found no existing proof, claimed proof, or announced resolution of Sikora's framed rational-solution uniqueness conjecture (arXiv v2 Conjecture 2, which is CJM Conjecture 1.2).\n\n**Status of the conjecture**\n- Sikora's own IPAM abstract (15 Oct 2026) still calls framed uniqueness a conjecture. Its only proven claim is the conditional link to the Jones conjecture.\n- His publication page and the arXiv listings through 31 Oct 2026 show no follow-up paper on tangle equations. The 'upcoming work' on the unframed version promised in CJM Sec. 1.1 has not appeared.\n- Every paper citing Sikora's paper (7 on Semantic Scholar, 3 on OpenAlex) is about q-rationals. The 2024 erratum only corrects the author's name.\n- Coverage limits: Google Scholar was CAPTCHA-blocked, the World Scientific full texts returned 403, and I did not watch the IPAM recording. An unpublished or very recent proof therefore cannot be ruled out.\n\n**Closest prior work and what is new**\n- The closest antecedent is Gainullin AGT 2018 Thm 8.2, which uses the same chain: Casson-Walker forces Delta''(1)=0, then alternating coefficients, then genus 0. It needs Y to be an L-space and compares one surgery against Y#L(p,q). The proof describes this accurately.\n- The combination in the proof appears nowhere in what I found:\n  - Sikora's bracket uniqueness (Thm 21/8.1) gives the determinants of all closures, which forces H_1(M)=Z and fixes the longitude.\n  - Two Casson-Walker equations eliminate the unknown lambda(Y).\n  - Rasmussen-Rasmussen's Floer-simple torsion and Thurston-norm results replace the L-space hypothesis.\n- The individual ingredients are standard. Rasmussen-Rasmussen Prop 7.8 plus Cor 7.12 already settle Step 4 almost immediately. An expert may see the whole argument as a short combination of known tools, but I found no record of it.\n\n**Special cases already known or implied**\n- Sikora proves several: at most one framed rational solution, uniqueness of [X], Jones conjecture implies the conjecture (so it holds up to 11 crossings), Prop 1.5, and the framed unknot/unknot systems via Gordon-Luecke.\n- Gordon-Luecke covers two unknot closures. Gabai's Property R covers an unknot closure with an unlink closure.\n- KMOS, combined with Sikora's Thm 21 to pin the longitude, would give the case with one unknot closure. I found no paper that states this deduction.\n- The cyclic surgery theorem plus the Ernst/Darcy classifications handle unframed 4-plat systems at distance 2 or more.\n- The DNA-recombination papers solve only specific unframed systems.\n\n**Citation checks**\nI checked every cited statement against the primary source, and all match how the proof uses them:\n- Rasmussen-Rasmussen Props 1.3, 1.4, 7.8, Cor 2.3 and Def 7.2.\n- Ni-Wu Prop 3.1, eq. (7): a null-homologous knot in a rational homology sphere, with Delta(1)=1.\n- Gainullin Thm 8.2.\n- Buck-Mauricio Thm 3.5(2), which attributes the criterion to Lickorish.\n- Sikora's numbering: arXiv Cor 20 and Thm 21 are CJM Cor 7.2 and Thm 8.1, and det B is nonzero even at q=1.\n\nMinor issues only:\n- [BM] was published under a different title (MPCPS 2011, 'Connect sum of lens spaces surgeries: application to Hin recombination').\n- The torsion normalization the proof attributes to Rasmussen-Rasmussen Prop 1.4 is in the text just before Prop 1.4, not in the proposition itself.\n\n**Sanity check (my own derivation, not from the literature)**\nThe unframed analogue, CJM Conjecture 1.4, appears to fail. The quotient tangle of the trefoil (by its strong inversion) has an unknot closure and a T(2,5) closure. A rational tangle of slope 1/4 or -1/6 (depending on chirality) has the same two closures. This works because S^3_5(T_{2,3}) = -L(5,1) = S^3_{-5}(U); I confirmed it with Casson-Walker values (0.1 on both sides). This shows that Step 2's bracket-based identification of the longitude is essential, so the candidate proof does not prove too much.\n\nI found no fatal gap in my spot checks. Verdict on priority: no prior proof found."
+ },
+ "G3-novelty-citation-chase": {
+  "prior_proof_found": false,
+  "known_partial_results": [
+   "[S] arXiv v2 Proposition 1 (CJM Prop. 1.1), proved in Sec. 8: every framed system has at most one framed RATIONAL solution. It follows from Theorem 21 (CJM Thm 8.1: the bracket [X] of any solution is determined by the system) and Corollary 20 (CJM Cor. 7.2: the bracket separates framed rational tangles). This is uniqueness among rational solutions only, not Conjecture 2.",
+   "[S] Theorem 3 (CJM Thm 1.3, via Thms 21 and 24): the Jones unknot conjecture implies Conjecture 2. Prop. 25 (Sec. 9) says: if JUC holds up to N crossings, [X]=[R], R is rational and c(R)+c(X)<N, then X=R. Since JUC is verified to 24 crossings (Tuzun-Sikora), the paper says Conjecture 2 holds for tangles up to 11 crossings. In the 2026 talk he restates the bound as roughly 23 total crossings.",
+   "[S] Prop. 5 (CJM Prop. 1.5; proof in Sec. 3 via Matignon and Lickorish): if L1=L2 is a nontrivial rational knot or a nontrivial torus knot, the system has no algebraic solutions, framed or unframed. Sikora says this settles Conjecture 2 in these cases. It does so vacuously, because no rational solution can exist.",
+   "[S] Lemma 14 (CJM Lemma 3.2, via Gordon-Luecke) and Lemma 15 (CJM Lemma 4.1): the framed system N(X)=U^n, N(X+<1>)=U^m has the single solution <inf>^n if m=n+1 and <-1/2>^(n+2) if m=n-3, and no solution otherwise. Through the MCG(S^2_4) equivalence this is Conjecture 2 whenever both closures are framed unknots and the probes are at distance one.",
+   "Unframed setting in [S]: Conjecture 2 fails for unframed systems, and every unframed system has at most two rational solutions (Ernst-Sumners 1990). Conjecture 4 (CJM 1.4: a rational solution forces every solution to be rational) is posed as open. The CJM version adds a sentence absent from arXiv v2: cases of Conj. 1.4, connected to strongly invertible knots, will appear in an 'upcoming work'. No such paper is on arXiv or on Sikora's Buffalo publication page as of 2 Nov 2026.",
+   "Not in [S] v2: there is no distance>=2 case, no use of the Cyclic Surgery Theorem, and Ernst-Sumners is cited only for the unframed two-rational-solution bound. arXiv v1 (May 2020; different title, with a stronger Conjecture 6: at most one framed solution up to symmetries H and R2) notes that [ES] used CGLS. It also says Sikora could not prove Conjecture 6 by surgery methods, partly because those methods do not see the framing.",
+   "IPAM talk, 15 Oct 2026 (Workshop I: Hyperbolic Structures and Quantum Invariants). The abstract calls the statement the 'Uniqueness of Rational Solutions Conjecture' and says a failure would disprove the Jones unknot conjecture. The auto-generated captions of the recording (Kaltura entry 1_zqd2sckl, about 90% accuracy) add the following. It is still a conjecture, which he considers very difficult, and the work is in progress. Existing surgery and Floer results give only special cases. He states an unpublished theorem: if some 2-bridge knot has a Jones 2-bridge detection property, the conjecture follows (the key tool is the Cyclic Surgery Theorem). He also says unframed uniqueness fails: with closures the unknot and T(2,5), both X=1/4 and the Montesinos tangle X=1/2+(-2/3) are solutions, and he has an infinite family, none of which can be framed. If the captions are accurate, this refutes the unframed CJM Conjecture 1.4.",
+   "Classical results that, given the candidate's Step 2 inputs, cover subcases, though nobody states them as cases of Conjecture 2. (a) One closure is the unknot: KMOS 2007 Thm 1.1. (b) One closure is the 2-component unlink: [S] Prop. 10(1) asserts that N(X+T)=unlink has a unique 2-string solution; Gabai-type Property R also applies. (c) Probe distance >=2: the Cyclic Surgery Theorem forces a torus-knot exterior, and Casson-Walker then excludes it; for unframed systems with 4-plat closures, Ernst 1996 (JKTR 5:145-159) and Darcy 2005 (JKTR 14:993-1005, 'completely solved' when |f1g2-g1f2|>1) treat this case. (d) Closest Floer antecedent: Gainullin, AGT 18 (2018), Thm 8.2: a null-homologous knot K in an L-space Y with HF+(Y_{p/q}(K)) = HF+(Y#L(p,q)) is the unknot, proved via Casson-Walker giving Delta''(1)=0."
+  ],
+  "citing_works": [
+   {
+    "citation": "A. S. Sikora, Erratum to 'Tangle equations, the Jones conjecture, slopes of surfaces in tangle complements, and q-deformed rationals', Canad. J. Math. 76(2) (2024) 728, DOI 10.4153/S0008414X24000208 (Zbl 1548.57017)",
+    "relevance": "Fixes only the misprinted author surname. No mathematical change; Conjecture 1.2 is untouched.",
+    "url": "https://www.cambridge.org/core/product/identifier/S0008414X24000208/type/journal_article"
+   },
+   {
+    "citation": "V. Ovsienko and A. Ustinov, On q-deformed cubic equations: the quantum heptagon and nonagon, Results Math. 80 (2025) Paper 56, DOI 10.1007/s00025-025-02365-x",
+    "relevance": "Cites [S] only for q-deformed rationals. Nothing on tangle equations or Conjecture 2.",
+    "url": "https://doi.org/10.1007/s00025-025-02365-x"
+   },
+   {
+    "citation": "V. Ovsienko and E. Pedon, Continued fractions for q-deformed real numbers, {-1,0,1}-Hankel determinants, and Somos-Gale-Robinson sequences, Adv. Appl. Math. 162 (2025) 102788, DOI 10.1016/j.aam.2024.102788",
+    "relevance": "q-rationals and continued fractions only. Nothing on Conjecture 2.",
+    "url": "https://doi.org/10.1016/j.aam.2024.102788"
+   },
+   {
+    "citation": "P. Jouteur, Burau representation of B_4 and quantization of the rational projective plane, C. R. Math. 363 (2025) 89-107, DOI 10.5802/crmath.702",
+    "relevance": "Cites [S] for the link between q-rationals and Jones polynomials of rational knots. Nothing on tangle equations.",
+    "url": "https://doi.org/10.5802/crmath.702"
+   },
+   {
+    "citation": "S. Allen and J. H. Swenberg, Do link polynomials detect causality in globally hyperbolic spacetimes?, J. Math. Phys. 62 (2021) 032503; arXiv:2011.09415",
+    "relevance": "Cites arXiv v1 Theorem 13 (the tangle reformulation of the Jones unknot conjecture). Nothing on Conjecture 2.",
+    "url": "https://arxiv.org/abs/2011.09415"
+   }
+  ],
+  "conjecture_status": "Open: no proof and no disproof located as of 2 Nov 2026. The conjecture's author (Sikora) presented it as a conjecture at IPAM on 15 Oct 2026. Per the recording's auto-captions he called it very difficult and work in progress, with only special cases available from existing surgery and Floer results. He openly hopes it fails, since a counterexample would disprove the Jones unknot conjecture. None of the five citing works found (OpenAlex, OpenCitations, zbMATH; Cambridge Core shows 3) touches it. The zbMATH review (Zbl 1544.57008, by C. Ernst) records it as conjectural. Sikora has no later tangle-equation paper on arXiv or on his publication page; the 'upcoming work' announced in the CJM version concerns the unframed Conjecture 1.4. If the candidate (dated 1 Nov 2026) is correct, it would be the first proof. Its route was not found anywhere in the literature: Thm 21, then determinants of all closures, so H_1(M)=Z with the longitude matched, then Casson-Walker on two fillings plus Rasmussen-Rasmussen Floer simplicity. Coverage caveat: Google Scholar returned a CAPTCHA (not bypassed) and the Semantic Scholar API returned 429, so citing-work coverage is incomplete. Unpublished overlapping work, which the talk hints at, cannot be excluded.",
+  "summary": "Novelty audit of /Users/calebbarnett/Documents/Codex/2026-10-31/it-is-an-open-problem-whether-4/outputs/rational-tangle-uniqueness-audited-proof.txt. I read the whole file and opened none of the excluded files.\n\nResult: no prior proof was found, and the conjecture is open according to its author as of 15 Oct 2026. The candidate's own literature claims check out against the primary sources: the [T] talk abstract, Gainullin Theorem 8.2 as an antecedent, and the [S] numbering. I spot-checked the following against their sources and found them correct in substance:\n- [S]: Conj. 2 = CJM 1.2; Thm 21 = 8.1; Cor. 20 = 7.2; Sec. 4 balanced isotopy.\n- Ni-Wu Prop. 3.1 (Casson-Walker surgery formula for a null-homologous knot in a QHS).\n- Rasmussen-Rasmussen Prop. 1.3 (more than one L-space filling iff Floer simple), Prop. 1.4 (torsion coefficients are 0 or 1), Cor. 2.3 (norm = deg Delta - 1 when boundary-incompressible), Def. 7.2 and Prop. 7.8.\n- Buck-Mauricio Thm 3.5(2) (Lickorish: rational iff the double branched cover is a solid torus).\n\nIssues:\n- Minor:\n  - [St] Prop. 6.5 states that det is odd iff the link is a knot; the 2^(c-1) divisibility is in its proof. The step det=1 implies knot is still covered.\n  - [BM] is cited by its arXiv v1 title; the published version is 'Connect sum of lens spaces surgeries...', Math. Proc. Camb. Phil. Soc. 150 (2011).\n  - [D] states the det/H_1 fact only as a remark, and the reference lacks its journal data (JKTR 19 (2010)).\n  - Journal numbering for [S] is not given.\n- Minor (positioning): once Step 2 is in place, several subcases follow from classical results.\n  - An unknot closure: KMOS.\n  - An unlink closure: [S] Prop. 10(1) or Gabai; Step 4 could use either instead of RR Prop. 7.8.\n  - Probe distance >=2: the Cyclic Surgery Theorem, with Ernst/Darcy for the unframed classification.\n  - The genuinely new content is therefore distance-one pairs of nontrivial lens-space closures, and the paper should say so.\n- Possible gap (priority, not mathematics): the announced 'upcoming work', the 'work in progress' remark in the talk, and the inaccessible Google Scholar and Semantic Scholar data mean an overlap cannot be ruled out.\n- No fatal issue found.\n\nThe author's stated view that the problem is very difficult is a caution flag for the Floer step, but I found no failing implication."
+ },
+ "editor-synthesis": {
+  "overall": "valid_with_fixes",
+  "confidence": "high",
+  "step_verdicts": [
+   {
+    "step": "Statement and Step 1 (S1-scope-and-bracket)",
+    "verdict": "holds_with_minor_fix",
+    "note": "The statement is Sikora's Conjecture 2 (arXiv v2), which is Conjecture 1.2 in CJM, and nothing is weakened. 'Distinct unframed slopes' matches Sec. 4.1 through Conway's bijection. I re-derived the proof of Theorem 21 (CJM Thm 8.1): the closure brackets are a 2x2 system in [X], and det B = (delta^2-1)det([T_i]_0,[T_i]_inf), which is a nonzero Laurent polynomial by Cor. 19 (CJM Cor. 7.1). Balanced moves preserve the bracket, so [X]=[R] holds exactly. The normalization paragraph is correct. Needed fixes: say why Theorem 21 still applies when X has closed components; state that the bracket is a balanced-isotopy invariant; write out the closure expansion and cite det(L)=|[L](e^{i pi/4})|."
+   },
+   {
+    "step": "Step 2 (S2-peripheral-irreducible)",
+    "verdict": "holds_with_minor_fix",
+    "note": "The determinant-1 closure is a knot, so X has exactly two arcs. It follows that Y=M(mu) is an integral homology sphere, H_1(M)=Z, and lambda is the preferred longitude, matched with the unknot's longitude in V. This homological matching is load-bearing: distance data alone does not fix the longitude (Berge test, slope 684/37). The irreducibility argument is correct and needs no Poincare conjecture, but it is compressed; the prime-decomposition case split must be written out. Two citations are slips: Stoimenow Prop. 6.5 states only that det is odd iff L is a knot, and Dasbach et al. Sec. 3 does not prove that det 0 is equivalent to infinite H_1."
+   },
+   {
+    "step": "Step 3a (S3a-signed-surgery-cassonwalker)",
+    "verdict": "holds_with_minor_fix",
+    "note": "The orientation bookkeeping is correct. A balanced isotopy is an ambient isotopy of the unframed links. dM and dV both carry the orientation lifted from dB, and any lift of id_{dB} is either the identity or -I, so (1) holds with the same signed coefficients on both sides. I checked Ni-Wu Prop. 3.1, eq. (7) in arXiv v2: it is stated for null-homologous knots in a rational homology sphere and attributed to Boyer-Lines Thm 2.8, which covers the integral-homology-sphere case used here. The two equations give Delta''(1)=0 and lambda_CW(Y)=0. One slope alone would not suffice (dual knots of 1/n surgeries). Needed fixes: write out the orientation argument, cite Boyer-Lines as the primary source, fix the normalization, and replace 'any rational homology sphere'."
+   },
+   {
+    "step": "Step 3b (S3b-floer-simple-endpoint)",
+    "verdict": "holds_with_minor_fix",
+    "note": "I checked RR arXiv v2 Props. 1.3 and 1.4, Sec. 2.1, Prop. 2.2 and Cor. 2.3 directly. The first clause of Cor. 2.3 needs only boundary incompressibility and Floer simplicity. I re-derived the alternation argument: Delta''(1) = 2*sum (-1)^(k-j) n_j^2 > 0 unless Delta = 1. Cor. 2.3 then forces a compressing disk, and Step 2's irreducibility makes M a solid torus. Irreducibility is genuinely needed: (S^1xD^2)#(Poincare sphere) is a counterexample without it. Needed fixes: credit the torsion normal form to the right passages in RR, justify D = +t^h Delta_K, point back to Step 2 for irreducibility, and justify the solid-torus lemma."
+   },
+   {
+    "step": "Step 4 (S4-longitude-case)",
+    "verdict": "holds_with_minor_fix",
+    "note": "I checked RR Prop. 7.8 and Def. 7.2 directly. Z = S^3, and the L-space surgery is M(alpha_2). g_M = 1 follows from any of RR's equivalent descriptions and from |T| = k_Y g_Y (the printed definition of g_Y is garbled). bar-Delta(M) ~ 1, so Cor. 2.3 plus irreducibility gives a solid torus. Needed fixes: change 'shared product' to 'shared closure link' and state the hypotheses of Prop. 7.8 explicitly. Optional shortcut: Sikora Prop. 10(1) (CJM Prop. 2.1(1)) says the unlink closure has a unique two-string solution."
+   },
+   {
+    "step": "Step 5 and case coverage (S5-recovery-and-coverage)",
+    "verdict": "holds_with_minor_fix",
+    "note": "The case split is exhaustive. The proof never assumes Y=S^3 or that Y is an L-space. Every filling identification comes from an actual isotopy; determinants are used only for orders of homology. Cor. 20 (CJM Cor. 7.2) is applied only to two rational tangles, so the proof correctly avoids Thm 24(c), which is equivalent to the Jones conjecture. Needed fix: add Conway's classification and the Alexander trick to pass from 'pair homeomorphic to the trivial tangle' (BM Thm 3.5(2), Lickorish) to a marked framed rational tangle in Sikora's sense."
+   },
+   {
+    "step": "STATUS, RELATION TO EARLIER WORK, REFERENCES",
+    "verdict": "minor_revision",
+    "note": "The description of Gainullin Thm 8.2 is accurate, but Gainullin should also be cited inside Step 3, with the exact differences listed. The [BM] arXiv title is slightly off ('applications'), and the published version (MPCPS 150 (2011)) is missing. CJM numbering for [S] is incomplete. [St] and [D] lack journal data. Primary citations for Boyer-Lines and Lickorish 1981 are missing."
+   },
+   {
+    "step": "Global counterexample search",
+    "verdict": "none_found",
+    "note": "Every construction tried violates a hypothesis or is excluded by a correctly applied result. This includes Sikora's unframed <inf>/<-1/2> pair, moving framing between arcs (absorbed by balanced isotopy), orientation-reversed lens surgeries, dual knots, reducible Floer simple exteriors, generalized solid tori with torsion, and Berge exteriors. The unframed analogue appears to fail (unknot and T(2,5) closures), which confirms that the framed hypothesis does real work, entering through Step 2."
+   }
+  ],
+  "required_fixes": [
+   "RF1 (Statement/Step 1, scope of [S, Thm 21]). Theorem 21 is stated for Sikora's framed tangles, which are two bands with no closed components. Either restrict X to that class and keep the closed-component sentence of Step 2 only as a remark, or add after the citation: 'The proof of [S, Thm 21] applies verbatim when X has closed components, since the expansion [X] = [X]_0<0> + [X]_inf<inf> holds for every framed tangle in the relative skein module of the ball with four marked points.'",
+   "RF2 (Step 1, exact bracket equality). Before 'Hence [X]=[R]' insert: 'Each balanced move of [S, Sec. 4, Fig. 5] is an R2 or R3 move, or cancels a pair of opposite kinks, which multiplies the bracket by (-A^3)(-A^-3)=1. So the bracket is a balanced-isotopy invariant, [C_P(X)]=[C_P(R)] and [C_Q(X)]=[C_Q(R)] exactly, and [S, Thm 21] gives [X]=[R] in Z[A^{+-1}]^2.'",
+   "RF3 (Step 1, closures and determinant). Replace 'Every further rational closure therefore has the same bracket as its counterpart for R' with the identity [N(X+T)] = [X]_0[N(<0>+T)] + [X]_inf[N(<inf>+T)], valid for every framed tangle T (it is the expansion in the proof of [S, Thm 21]). Apply it with the same framed closing tangle T for X and for R. Cite det(L) = |[L](e^{i pi/4})| for the bracket with unknot value 1 to [S, Sec. 5 and proof of Prop. 26] or a textbook, and note that framing factors have modulus 1 at that point.",
+   "RF4 (Step 2, [St]). Replace 'a link with c components has determinant divisible by 2^(c-1) [St, Proposition 6.5]' with 'det(L) is odd if and only if L is a knot [St, Prop. 6.5]; since 1 is odd, this closure is a knot.' Add the bibliographic data Comm. Anal. Geom. 13(3) (2005) 591-631.",
+   "RF5 (Step 2, determinant and H_1). Replace [D, Section 3] with a source that proves both clauses Step 2 uses: H_1 of the double branched cover is presented by a square matrix (a Goeritz matrix or V+V^T) of determinant +-det(L), so it is finite of order det(L) when det(L) != 0 and infinite when det(L) = 0. A suitable source is Lickorish, An Introduction to Knot Theory (GTM 175), Ch. 9. If [D] is kept as a secondary citation, add J. Knot Theory Ramifications 19(6) (2010) 765-782.",
+   "RF6 (Step 2, irreducibility). Replace the last two sentences of the irreducibility paragraph with: 'Suppose M = M' # N with N closed. Then H_1(N) = 0, and for a probe slope alpha != lambda the filling M(alpha) = M'(alpha) # N is a lens space or S^3. Since S^3 and the lens spaces L(p,q) with |p| >= 2 are prime, either N = S^3, or M'(alpha) = S^3 and N = M(alpha). The latter forces |H_1(M(alpha))| = 1, so M(alpha) = S^3 and again N = S^3. Hence M is prime, and a prime 3-manifold with nonempty boundary is irreducible.'",
+   "RF7 (Step 3, signed coefficients in (1)). After (1) add: 'Each balanced move is an unframed Reidemeister move or a pair of R1 moves, so a balanced isotopy is an orientation-preserving ambient isotopy of S^3. It therefore lifts to an orientation-preserving homeomorphism of double branched covers. dM and dV both carry the boundary orientation lifted from dB, and a lift of id_{dB} is either the identity or the deck involution, which acts as -I on H_1. So (mu, lambda) is a positively oriented meridian-longitude pair for both K in Y and U in S^3, and the coefficients in (1) agree in sign.'",
+   "RF8 (Step 3, Casson-Walker formula). Replace 'applies to a null-homologous knot in any rational homology sphere, including Y' with 'applies to a knot in an integral homology sphere, which Y is by Step 2 [Boyer-Lines, J. reine angew. Math. 405 (1990), Thm 2.8; restated as NW, Prop. 3.1, eq. (7)]'. State the normalization: lambda_CW(S^3_{+1}(right-handed trefoil)) = 1, Delta symmetric with Delta(1) = 1, and L(p,q) := S^3_{p/q}(U). Add one sentence noting that any other normalization rescales the Delta'' term by a fixed nonzero constant while the lens-space term still cancels.",
+   "RF9 (Step 3, RR attribution and the sign of D). Replace 'Proposition 1.4 supplies a torsion normalization' with 'With the normalization of tau in [RR, Sec. 1, paragraph before Prop. 1.4, and Sec. 2.1], a_n = 1 for large n by [RR, Prop. 2.2] and a_n is in {0,1} by [RR, Prop. 1.4]; since a_0 != 0, a_0 = 1.' Add: 'Since Y is an integral homology sphere, tau(M) ~ Delta_K/(1-t) [RR, Sec. 2.1]; as D(1) = lim a_n = 1 = Delta_K(1), D = +t^h Delta_K.' Define deg as the top exponent of bar-Delta normalized to have nonzero constant term.",
+   "RF10 (Step 3, solid torus). Before 'An irreducible orientable manifold...' insert 'M is connected and, by Step 2, irreducible.' Then justify the claim: compressing dM along a disk gives a 2-sphere, which bounds a ball; the ball cannot contain dM, so M is T^2 x I with a 2-handle attached, capped by a ball, which is S^1 x D^2. Alternatively, cite a standard text for this fact.",
+   "RF11 (Step 4). Replace 'shared product' with 'shared closure link'. Add: 'In [RR, Prop. 7.8] take Z = S^3. K' is the core of the lambda-filling, its L-space surgery is M(alpha_2), and lambda is the homological longitude of M.' Also justify g_M = 1 by |T| = k_M g_M with T = 0 [RR, Sec. 7 preamble], since RR's printed defining relation for g_Y is garbled.",
+   "RF12 (Step 5, marked rationality). After citing [BM, Thm 3.5(2)] insert: 'By Conway's classification [BM, Thm 3.6] and the Alexander trick, a two-string tangle whose pair is homeomorphic to the trivial tangle is isotopic rel boundary to a Conway rational tangle <x>. Carrying the framing along, X is a framed rational tangle in the sense of [S, Sec. 4].' Then apply [S, Cor. 20], or equivalently [S, Prop. 1].",
+   "RF13 (References). (a) For [S], give the CJM numbers: Prop. 1 = Prop. 1.1, Cor. 19 = Cor. 7.1, Cor. 20 = Cor. 7.2, Thm 21 = Thm 8.1, Prop. 10 = Prop. 2.1, alongside Conj. 2 = Conj. 1.2. (b) For [BM], correct the arXiv title to 'Tangle solutions for composite knots: applications to Hin recombination' and add the published version: D. Buck and M. Mauricio, Connect sum of lens spaces surgeries: application to Hin recombination, Math. Proc. Cambridge Philos. Soc. 150(3) (2011) 505-525, DOI 10.1017/S0305004111000090. Add Lickorish, Prime knots and tangles, Trans. AMS 267 (1981) 321-332, as the primary source of the criterion. (c) Add Boyer-Lines as a reference, and add arXiv:1009.4720 to [NW]. (d) Add journal data for [St] and [D].",
+   "RF14 (Attribution of the Step 3 method). In Step 3, cite [G] at the Casson-Walker comparison and at the Delta''(1) > 0 computation ('cf. [G, Sec. 8.1]'). In STATUS and RELATION, replace 'close antecedent' with the exact differences from [G, Thm 8.2]: (i) the comparison is with L(p,q) rather than Y#L(p,q); (ii) a second matched slope eliminates lambda_CW(Y); (iii) Floer simplicity of the exterior [RR, Props. 1.3-1.4] replaces the L-space hypothesis on Y; (iv) [RR, Cor. 2.3] plus irreducibility replaces genus detection."
+  ],
+  "open_issues": [
+   "Priority is not established, only plausible. Two literature sweeps (keyword search and citation chase, through 2 Nov 2026) found no prior proof, and Sikora's 15 Oct 2026 IPAM abstract still calls the statement a conjecture. Coverage had gaps: Google Scholar returned a CAPTCHA, Semantic Scholar rate-limited, and World Scientific returned 403. According to the talk's auto-captions (secondhand, roughly 90% accurate), Sikora described the problem as very difficult and work in progress, so concurrent unpublished work cannot be ruled out. The manuscript is dated about two weeks after the talk.",
+   "No external specialist in Heegaard Floer homology or Dehn surgery has reviewed the argument yet.",
+   "Several classical sources were checked only through restatements, never opened directly: Boyer-Lines Thm 2.8 (via Ni-Wu, Ichihara-Jong, Ravelomanana), Walker's monograph, Lickorish 1981 for the solid-torus criterion (via Buck-Mauricio, and Sikora's own use in Lemma 14), and Lickorish's GTM 175, Ch. 9. The risk is low because the statements are standard and every restatement agrees.",
+   "The general-case proof of RR Prop. 7.8, used in Step 4, is brief. One referee reconstructed it and found it sound. Step 4 can be cross-checked or replaced by Sikora Prop. 10(1) (CJM Prop. 2.1(1)), but the proof of that proposition was not audited here.",
+   "What Sikora said in the IPAM recording is known only from auto-captions. Neither the manuscript's authors nor this editor watched the recording."
+  ],
+  "novelty_assessment": "Neither of two independent sweeps (keyword search and forward-citation chase, through 2 Nov 2026) found a prior proof, a claimed proof, or an announcement. The partial results that exist are these. Sikora's own: at most one framed rational solution; the Jones conjecture implies Conjecture 2, so it holds up to 11 crossings; Prop. 1.5; framed unknot/unknot systems via Gordon-Luecke. Classical special cases: Gordon-Luecke, Property R, KMOS, and the cyclic surgery theorem in the unframed 4-plat setting. Sikora's 15 Oct 2026 IPAM abstract still lists the statement as a conjecture.\n\nEvery ingredient is published: Sikora's Thm 21 and Cor. 20, double-branched-cover homology, the Boyer-Lines/Walker Casson-Walker surgery formula, Rasmussen-Rasmussen's Floer-simple theory (Props. 1.3, 1.4, 7.8; Cor. 2.3), and Lickorish's criterion. The new content is two things.\n(a) The observation that framed bracket uniqueness fixes the homological peripheral structure of the double branched cover of X: H_1 = Z, with the longitude matched to that of the solid torus.\n(b) A two-slope characterization of the solid torus, combining Casson-Walker with Floer simplicity. This is the same method as Gainullin, AGT 18 (2018), Thm 8.2, and KMOS, applied in a new setting. It is not a corollary of either: the ambient Y is not known to be an L-space, and the comparison is with L(p,q).\n\nThe technique is modest; the consequence, if correct, is a resolution of a published conjecture. The novelty is plausible but the priority is unverified. The manuscript's own modest framing ('a candidate deduction from published results') is appropriate and should be kept.",
+  "recommended_next_steps": [
+   "Apply RF1-RF14. For any version that will circulate, remove internal workflow language ('audited', 'pass-50', 'a fresh audit found no fatal gap') and state the status as not yet reviewed by outside specialists.",
+   "State the intermediate result as a separate lemma: if K is a knot in an integral homology sphere Y and Y_{r_i}(K) is orientation-preservingly homeomorphic to S^3_{r_i}(U) for two distinct slopes r_1, r_2, then Y = S^3 and K = U. Its proof is Step 2's irreducibility argument plus Step 3, or Step 4 when one slope is the longitude. Run a targeted literature search on this exact statement before calling it new.",
+   "Optionally, add a remark showing where framing enters. It is used only through [S, Thm 21], to give determinants 0 and 1 for the lambda- and mu-closures of X, and through [S, Cor. 20], to fix the final framing. Record the resulting unframed corollary and contrast it with the unframed counterexample (unknot and T(2,5) closures).",
+   "Optionally, cross-check Step 4 against [S, Prop. 10(1)] = CJM Prop. 2.1(1), which gives X = R as unframed tangles directly from the unlink closure. Present it as an alternative route that does not depend on RR Prop. 7.8.",
+   "Optionally, credit the full lineage: Ozsvath-Szabo for the alternating Alexander polynomials of L-space knots that RR Prop. 1.4 generalizes; KMOS (Ann. of Math. 165 (2007)) for the one-slope case in S^3; Ni (Geom. Topol. 13 (2009)) for the norm detection behind RR Cor. 2.3. Mention RR's Sec. 1.1 remark that a Floer simple manifold with H_1 = Z and empty D^tau is boundary compressible, as corroboration.",
+   "Open and check the primary sources not yet consulted: Boyer-Lines Thm 2.8, Lickorish 1981, and Lickorish GTM 175 Ch. 9.",
+   "Get a review from a specialist in Heegaard Floer homology or Dehn surgery. Before posting publicly, consider contacting Sikora to check for overlap with his work in progress and to confirm the reading of the balanced-isotopy convention in Conjecture 2.",
+   "Watch the IPAM recording directly instead of relying on auto-captions, and update the STATUS paragraph to match.",
+   "After these steps, post the paper (for example to arXiv math.GT), presented as a short deduction from published results, with the attribution in RF14."
+  ],
+  "report_markdown": "# Handling Editor's Report\n\n**Manuscript:** *Rational solutions of framed tangle equations: audited argument* (1 Nov 2026), `/Users/calebbarnett/Documents/Codex/2026-10-31/it-is-an-open-problem-whether-4/outputs/rational-tangle-uniqueness-audited-proof.txt`\n\n**Claim:** A proof of Sikora's framed rational-solution uniqueness conjecture (arXiv:2005.08162v2, Conjecture 2; Canad. J. Math. 76 (2024) 707-727, Conjecture 1.2).\n\n**Decision:** Valid, with minor revisions. I found no fatal issue and no unresolved gap. Priority is unverified.\n\nI did not open the files excluded by the ground rules.\n\n## 1. Summary\n\nThe argument has five parts.\n\n1. **Bracket vector.** Sikora's Theorem 21 says the two framed equations determine the relative bracket vector. So [X] = [R], and every closure of X has the same bracket, and hence the same determinant, as the corresponding closure of R.\n2. **Peripheral data.** Let lambda be the disk-bounding slope of V, the double branched cover of R, and let mu be a slope meeting lambda once. The lambda- and mu-closures of X have determinants 0 and 1. Consequences:\n   - X has exactly two arcs.\n   - Y = M(mu) is an integral homology sphere and H_1(M) = Z.\n   - lambda is the preferred longitude of the core K of the mu-filling, matching the longitude of the unknot in S^3 = V(mu).\n   - Because M has an actual lens-space filling, M is irreducible.\n3. **Neither probe slope is lambda.** The two actual closure isotopies lift to orientation-preserving homeomorphisms Y_{p_i/q_i}(K) = S^3_{p_i/q_i}(U).\n   - Two Casson-Walker equations give Delta_K''(1) = 0.\n   - Rasmussen-Rasmussen (RR) Floer simplicity forces Delta_K to be alternating, hence Delta_K = 1.\n   - RR Corollary 2.3 then forces a compressing disk, so M is a solid torus.\n4. **One probe slope is lambda.** RR Proposition 7.8 and Definition 7.2 give the same conclusion.\n5. **Conclusion.** Lickorish's criterion makes X rational, and Sikora's Corollary 20 gives X = R.\n\n**Review process.** Six step referees, a counterexample hunter, two novelty sweeps and a comparison with Gainullin reported no fatal finding and no possible gap. Every finding came with a concrete repair, so no adjudication was needed.\n\nI re-read the manuscript and re-derived each implication. I also re-checked the load-bearing citations myself in the primary sources:\n- **Sikora, arXiv v2:** Conj. 2; Props. 1 and 10; Cors. 19 and 20; Thm 21 and its proof; Thm 24; Props. 25 and 26; plus the CJM numbering from Cambridge Core.\n- **RR, arXiv v2 PDF:** Defs. 1.1 and 1.2; Props. 1.3 and 1.4; Sec. 2.1; Prop. 2.2; Cor. 2.3; the Sec. 7 preamble; Def. 7.2; Lemma 7.3; Cor. 7.4; Prop. 7.8 and its proof.\n- **Ni-Wu, arXiv v2:** Prop. 3.1 and eq. (7).\n- **Buck-Mauricio:** the arXiv record and the published version.\n\nI agree with the referees. The argument is a correct deduction from published results. The revisions needed are citation corrections and short insertions that make implicit steps explicit.\n\n## 2. Step-by-step assessment\n\n**Statement and Step 1: holds, minor fixes.**\n- The statement is Conjecture 2, and nothing is weakened.\n- P and Q play the roles of T_1 and T_2, which Sikora requires to differ as unframed tangles (Sec. 4.1). By Conway's bijection this is the same as \"distinct unframed slopes\".\n- Allowing closed components in X is a harmless strengthening.\n- In the proof of Theorem 21, each closure bracket is linear in ([X]_0, [X]_inf). The coefficient determinant factors as (delta^2 - 1) times det([T_i]_0, [T_i]_inf). When the slopes differ this is a nonzero Laurent polynomial (Cor. 19 = CJM Cor. 7.1).\n- Balanced moves preserve the bracket, since opposite kinks contribute (-A^3)(-A^-3) = 1. So [X] = [R] holds exactly.\n- The normalization paragraph is correct: with unknot value 1, |[L](e^{i pi/4})| = det(L), and delta vanishes at that point.\n- Needed: RF1-RF3.\n\n**Step 2: holds, minor fixes.**\n- The determinant-1 closure is a knot. Since |H_1| of the double branched cover equals det, with det 0 exactly when H_1 is infinite, Y is an integral homology sphere, H_1(M) = Z, and lambda is the only slope whose filling has infinite H_1.\n- This homological identification carries real weight. Distance data alone does not determine lambda: for the Berge exterior with lens fillings at 18 and 19, the slope 684/37 is also at distances 18 and 19.\n- The irreducibility argument is correct and needs no Poincare conjecture, but the prime-decomposition case split should be written out (RF6).\n- Two citations do not support the claims they are attached to (RF4, RF5).\n\n**Step 3, signed surgery and Casson-Walker: holds, minor fixes.**\n- A balanced isotopy is an ambient isotopy of the underlying unframed links.\n- dM and dV carry the same boundary orientation, lifted from dB. A lift of the identity is either the identity or -I, and both fix slopes. So (1) holds with the same signed coefficient on each side.\n- I checked Ni-Wu Prop. 3.1: null-homologous knot in a rational homology sphere, Delta(1) = 1, L(p,q) defined as p/q surgery on the unknot, normalized by lambda(S^3_{+1}(RHT)) = 1. Ni-Wu attribute it to Boyer-Lines Thm 2.8, which covers the integral homology sphere case used here.\n- The lens-space terms cancel, and the distinct ratios q_i/p_i give Delta''(1) = 0.\n- **Both slopes are necessary.** Take K the dual of 1/n surgery on any nontrivial knot K'. Then Y_{-1/n}(K) = S^3 = S^3_{-1/n}(U), but the exterior is not a solid torus, and lambda_CW(Y) = (n/2)Delta_{K'}''(1) balances the single equation.\n- **Orientation is also necessary.** S^3_5(T_{2,3}) = -L(5,1) shows what a mirror identification would allow.\n- Needed: RF7, RF8.\n\n**Step 3, Floer simple endpoint: holds, minor fixes.**\n- I checked in RR v2:\n  - Prop. 1.3: more than one L-space filling iff Floer simple, with no irreducibility hypothesis.\n  - Prop. 1.4: torsion coefficients are 0 or 1. The normal form itself is stated just before Prop. 1.4 and in Sec. 2.1; eventual coefficients equal to 1 come from Prop. 2.2.\n  - Sec. 2.1: tau ~ Delta/(1-t) when H_1 = Z.\n  - Cor. 2.3, first clause: boundary-incompressible and Floer simple implies norm = deg bar-Delta - 1, with no irreducibility needed.\n- I re-derived the alternation argument: Delta''(1) = 2 sum (-1)^{k-j} n_j^2 > 0 unless Delta = 1.\n- With Delta = 1, Cor. 2.3 would give norm -1, so dM compresses. Step 2's irreducibility then makes M a solid torus.\n- Irreducibility cannot be dropped: (S^1 x D^2) # (Poincare sphere) is Floer simple with H_1 = Z and bar-Delta = 1.\n- RR's remark in Sec. 1.1, that the H_1 = Z case with empty D^tau is boundary compressible, corroborates the conclusion.\n- Needed: RF9, RF10.\n\n**Step 4: holds, minor fixes.**\n- M(lambda) = S^1 x S^2 comes from the actual unlink closure.\n- I checked RR Prop. 7.8 (a knot in Z#(S^1 x S^2) with an L-space surgery has a generalized-solid-torus complement). It applies with Z = S^3 and L-space surgery M(alpha_2).\n- Def. 7.2 gives deg bar-Delta < g_M = 1. RR's printed defining relation for g_Y is garbled, but each stated equivalent, and also |T| = k_Y g_Y, gives g_M = 1. The torsion formula in RR's proof gives bar-Delta ~ 1 directly.\n- Torsion-free H_1 and irreducibility rule out the known generalized solid tori that are not solid tori.\n- A shorter route is available: Sikora Prop. 10(1) (CJM Prop. 2.1(1)) gives a unique two-string solution for the unlink closure.\n- Needed: RF11.\n\n**Step 5 and coverage: holds, minor fixes.**\n- The case split is exhaustive, and probes with unknot closures are covered.\n- Y = S^3 and \"Y is an L-space\" are never assumed.\n- Every filling is identified through an actual homeomorphism. Determinants are used only for the orders of homology groups.\n- Cor. 20 is applied only to rational tangles, so Thm 24(c), which is equivalent to the Jones conjecture, is correctly avoided.\n- One sentence is needed to pass from Lickorish's pair-homeomorphism rationality to a marked framed rational tangle (RF12).\n\n**Counterexample search: none found.** Each candidate construction either violates a hypothesis or is excluded by a correctly applied result:\n- Sikora's unframed pair <inf>, <-1/2>.\n- Moving framing between the two arcs. Balanced isotopy absorbs this. Under ordinary framed isotopy rel boundary it would give a counterexample, so the convention matters, and the manuscript states it correctly.\n- Orientation-reversed lens surgeries.\n- Dual knots.\n- Reducible Floer simple exteriors.\n- Generalized solid tori with torsion.\n- Berge exteriors.\n\nThe unframed analogue appears to fail (unknot and T(2,5) closures). This confirms that the framed hypothesis does real work, and it enters exactly in Step 2.\n\n## 3. Required changes\n\n- **RF1.** Scope of Thm 21. Restrict X to two-band framed tangles, or note that the proof of Thm 21 applies verbatim when closed components are present.\n- **RF2.** State that the bracket is a balanced-isotopy invariant, so the closure brackets are exactly equal and [X] = [R] holds in Z[A^{+-1}]^2.\n- **RF3.** Write out the closure expansion [N(X+T)] = [X]_0[N(<0>+T)] + [X]_inf[N(<inf>+T)], using the same framed closing tangle for X and R. Cite det(L) = |[L](e^{i pi/4})|.\n- **RF4.** Stoimenow Prop. 6.5 states only that det is odd iff L is a knot. Cite it for that, and add the journal data.\n- **RF5.** Replace [D, Sec. 3] with a proof that H_1 of the double branched cover is presented by a matrix of determinant +-det. This gives finite order det when det != 0 and infinite H_1 when det = 0 (e.g. Lickorish, GTM 175, Ch. 9).\n- **RF6.** Write out the irreducibility case split: if M = M' # N, then N = S^3, or M'(alpha) = S^3 and N = M(alpha) is a homology sphere, hence S^3. Then: prime with boundary implies irreducible.\n- **RF7.** Write out the orientation argument: balanced isotopy is ambient isotopy; dM and dV carry the same lifted orientation; the lifts are the identity or -I. So the signed coefficients in (1) agree.\n- **RF8.** Cite Boyer-Lines Thm 2.8 as the primary source and Ni-Wu as a restatement. Restrict the claim to integral homology spheres, fix the normalization, and note that other normalizations do not affect the subtraction.\n- **RF9.** Credit the torsion normal form to the paragraph before RR Prop. 1.4, Sec. 2.1 and Prop. 2.2. Justify D = +t^h Delta_K from D(1) = 1 = Delta_K(1). Define deg.\n- **RF10.** Point back to Step 2 for irreducibility and justify the solid-torus lemma.\n- **RF11.** Change \"shared product\" to \"shared closure link\". In Prop. 7.8, set Z = S^3 and name the L-space surgery and the homological longitude. Also derive g_M = 1 from |T| = k_M g_M.\n- **RF12.** Add Conway's classification (BM Thm 3.6) and the Alexander trick before applying Cor. 20.\n- **RF13.** References:\n  - CJM numbering for [S]: Prop. 1 = 1.1, Cor. 19 = 7.1, Cor. 20 = 7.2, Thm 21 = 8.1, Prop. 10 = 2.1.\n  - [BM]: the arXiv title says \"applications\". Add the published version, MPCPS 150(3) (2011) 505-525.\n  - Add Lickorish (1981), Boyer-Lines, and arXiv:1009.4720.\n  - Add journal data for [St] and [D].\n- **RF14.** Cite Gainullin inside Step 3, at the Casson-Walker comparison and at the Delta'' sign argument. List the exact differences from his Thm 8.2:\n  - the comparison is with L(p,q), not Y#L(p,q);\n  - the second slope removes lambda_CW(Y);\n  - Floer simplicity of the exterior replaces the L-space hypothesis on Y;\n  - RR Cor. 2.3 plus irreducibility replaces genus detection.\n\nFull wording for each fix is given in the required_fixes field.\n\n## 4. Optional improvements\n\n- State the two-slope lemma separately: a knot in an integral homology sphere with two orientation-preserving matched unknot surgeries is the unknot in S^3.\n- Add a remark isolating where framing enters: only through Thm 21, which supplies determinants 0 and 1, and Cor. 20. Record the resulting unframed corollary.\n- Cross-check Step 4 against Sikora Prop. 10(1).\n- Credit Ozsvath-Szabo, KMOS and Ni.\n- Remove internal workflow language from the front matter.\n\n## 5. Novelty and attribution\n\nTwo independent sweeps found no prior proof. The conjecture's author presented it as open on 15 Oct 2026. The ingredients are all published. What is new:\n- the observation that Thm 21 fixes the homological peripheral structure of the cover;\n- a two-slope Casson-Walker plus Floer-simple characterization of the solid torus.\n\nThe second item is Gainullin's Thm 8.2 and KMOS method used in a new setting, not a corollary of either. The novelty is plausible but the priority is unverified, because of search coverage gaps and possible concurrent work by Sikora (based on talk captions). The modest framing should be kept.\n\n## 6. Open issues\n\n- Priority.\n- No outside specialist review yet.\n- Some classical sources were checked only through restatements: Boyer-Lines, Walker, Lickorish 1981, and Lickorish's textbook.\n- RR Prop. 7.8's general-case proof is brief. It is avoidable through Sikora Prop. 10(1), whose proof was not audited.\n- The content of the IPAM talk is known only from auto-captions.\n\n## 7. Recommendation\n\nValid with minor revisions. After RF1-RF14 are applied, the argument is a complete and correctly attributed deduction of Sikora's Conjecture 2 from published results. Before posting, I recommend a specialist read and a priority check with the conjecture's author."
+ },
+ "completeness-critic": {
+  "missing_checks": [
+   "[Verdict error; no effect on the proof] No one checked the proof or truth of Sikora arXiv v2 Prop 10(1) (= CJM Prop 2.1(1)): when L is the 2-component unlink, N(X+T)=L has only one 2-string solution. The editor nevertheless offers it as an alternative route that would make Step 4 independent of RR Prop 7.8. It appears in the Step 4 note, report section 2 Step 4, open issue 4, next step 4 and RF13(a). I checked both versions: the printed proof only exhibits <0> as a solution and never argues uniqueness. The statement is false. X = <1/3>+<-1/3> has arcs NW-NE and SW-SE, so it is 2-string. Its numerator closure N(X) is the pretzel link P(3,-3), the 2-bridge link b(0,1), which is the 2-component unlink. X is not rational: its double branched cover is RR's N_3 = M(empty; 1/3, -1/3), and D(X) = T(2,3)#T(2,-3), the square knot (det 9). My bracket computation (/private/tmp/claude-501/-Users-calebbarnett/7610ac96-4d03-4d32-b526-8a5647837809/scratchpad/scripts/bracket_check.py) gives [N(X)] = -A^2-A^-2 = [N(<0>)] exactly, and [D(X)] equals the square-knot bracket. <1/g>+<-1/g> for odd g gives infinitely many such X. Sikora's Sec. 4 remark that Prop 10 extends to framed equations fails for the same reason. The candidate proof never cites Prop 10, but the shortcut must be removed from the verdict.",
+   "[minor, robustness] Without that fallback, Step 4 in the subcase where the non-lambda probe closure of R is a nontrivial 2-bridge link (|p_2| >= 2) rests only on the general (distance >= 2) case of RR Prop 7.8. Only G1 reconstructed that case, and no one looked for independent support. What I checked: (a) I read RR v2 pp. 45-46. The distance-1 case uses the Ai-Peters twisted exact triangle. The general case reduces to integer surgery on K_mu # (lens-space core) and uses the cable-space solid-torus fillings to give Y infinitely many L-space fillings. The torsion product formula then gives bar-Delta ~ 1 when g = 1 and Z = S^3. The argument reads as sound. (b) Ni-Vafaee, Trans. AMS 372 (2019) 8279-8306 (arXiv:1608.07050), use RR 7.8 in exactly this setting: Thm 1.1, and the g = 0 case of Thm 1.5 goes through Thm 1.1. That is later refereed reliance, not an independent proof. They credit Cebanu's UQAM thesis (Thm 3.7.1) with a lens-space-specific proof, but the thesis record describes integral S^1xS^2 surgeries, so it may only cover |p_2| = 1. (c) Gabai's Property R covers only |p_2| = 1, where M(alpha_2) = S^3. A Property-R-type argument cannot replace the L-space input in a homology-sphere ambient. The standard counterexample is the belt-circle knot of a Mazur manifold's 2-handle: it lies in a nontrivial homology sphere, its exterior is irreducible with H_1 = Z, and it has an S^1xS^2 surgery. So G3's claim that a 'Gabai-type Property R also applies' to the unlink case is unsupported.",
+   "[minor] Lickorish, Prime knots and tangles, Trans. AMS 267 (1981) 321-332, was never opened (S5 was blocked by a bot check). It is the claimed primary source for Step 5's load-bearing implication: a solid-torus double cover makes the tangle rational. Every reviewer reached it only through restatements (Buck-Mauricio Thm 3.5(2), Buck-Verjovsky Marcotte, Yang), and my search found nothing more direct. RF13(b) asks the author to add it as the primary source, but no one has confirmed which statement in it contains the criterion.",
+   "[minor] Several classical sources were never read in the original. Boyer-Lines, J. reine angew. Math. 405 (1990), Thm 2.8, and Walker's Annals monograph were seen only in restatements (Ni-Wu, Ichihara-Jong, Ravelomanana, Z. Wu), yet RF8 promotes Boyer-Lines to the primary citation with an unverified theorem number. Lickorish GTM 175 Ch. 9, which RF5 proposes as the replacement for [D], was confirmed only by its chapter title. The identification tau(M) ~ Delta_K/(1-t) (RF9; RR calls it well known) was not checked against Milnor or Turaev. All of these are standard and low-risk, but the RFs would add citations no one has read.",
+   "[minor] RR's published numbering (Adv. Math. 322 (2017)) was never compared with arXiv v2, even though RF13 demands journal numbering for [S]. Indirect evidence I found: Ni-Vafaee cite RR17 Def 7.2, Prop 7.8, Cor 7.12, Lemma 3.2 and Cor 3.4 under the arXiv-v2 numbers.",
+   "[minor, novelty] No targeted search was run for the two-slope lemma the editor wants stated separately: a knot in a ZHS with two orientation-preserving matched unknot surgeries is the unknot in S^3. G4 searched only briefly, and my quick search found no prior statement. Neither novelty sweep covered the S^1xS^2 / lens-surgery literature closest to Step 4 (Ni-Vafaee 2019; the Cebanu thesis); Baker-Buck-Lecuona appears only as background in G2. Even so, novelty item (b) is presented as new content.",
+   "[minor] Coverage gaps were acknowledged but not closed: the IPAM recording was not watched (captions only), Google Scholar returned a CAPTCHA, Semantic Scholar returned 429, and World Scientific returned 403. I re-fetched the IPAM abstract: dated 15 Oct 2026, it still calls the statement the Uniqueness of Rational Solutions Conjecture and claims no proof. I did not open any excluded file. I wrote only temporary verification files in the session scratchpad and touched no project files."
+  ],
+  "unsupported_claims": [
+   "Report section 1 says the referees 'reported no fatal finding and no possible gap' and that 'every finding came with a concrete repair, so no adjudication was needed'. The record contradicts this. G3 explicitly classified priority as a 'Possible gap'. G3's positioning finding never became an RF and was never adjudicated. S2-4 (excluding local knots via BM Thm 3.5(1)) and S4-4 (deriving H_1(M)=Z and irreducibility directly in the lambda case) were dropped without comment. Dropping them is harmless, but the summary misstates the record.",
+   "The verdict says Sikora Prop 10(1) (CJM Prop 2.1(1)) 'gives X = R as unframed tangles directly from the unlink closure', and that Step 4 is 'avoidable' through it. This appears in the Step 4 note, report section 2, open issue 4, next step 4 and RF13(a). The only raw-report support is G3's one-line paraphrase of Sikora's statement, and no report audited it. It is false; the counterexample <1/3>+<-1/3> is under missing_checks. The editor's list of sources it 're-checked' includes 'Props. 1 and 10', which at most covered the wording.",
+   "The Step 3a note states as checked fact that Boyer-Lines Thm 2.8 'covers the integral-homology-sphere case used here'. S3a saw that theorem only in restatements, and the editor's own open issues concede this. The note should say 'per restatements'.",
+   "Several bibliographic details appear in no raw report: RF13(b)'s claim that the arXiv title reads 'applications' and the MPCPS data 150(3) (2011) 505-525, DOI 10.1017/S0305004111000090; and RF13(a)'s 'Cor. 19 = Cor. 7.1' and 'Prop. 10 = Prop. 2.1'. S1 explicitly flagged Cor 7.1 as an inference to check, and G3 said the proof already uses the arXiv title. I verified all of them and they are correct: the arXiv abstract page title says 'applications', Crossref gives the MPCPS data, and the Cambridge Core full text confirms both CJM numbers. Only the Prop 10 entry needs to go, together with the shortcut.",
+   "Novelty item (b) presents a two-slope Casson-Walker plus Floer-simple characterization as new content, and lists the cyclic surgery theorem only 'in the unframed 4-plat setting'. G3 argued that once Step 2 is in place, several cases are already classical: an unknot closure (KMOS), unlink plus unknot closures (Gabai), and probes at distance >= 2 (CGLS plus Casson-Walker). On that view the genuinely new cases are two nontrivial lens closures at distance one, plus the lambda-probe case with |p_2| >= 2, which goes through RR 7.8 (G3 had wrongly assigned it to Prop 10 / Property R). The verdict neither adopts nor rebuts this narrowing, and no targeted search supports the novelty of the lemma.",
+   "Confidence 'high' does not match the open items the editor itself lists: no specialist read, load-bearing primary sources (Lickorish 1981, Boyer-Lines) unread, and RR 7.8's general case only sketched. The verdict also does not engage G3's caution that the conjecture's author called the problem very difficult 17 days before the manuscript's date."
+  ],
+  "unresolved_disagreements": [
+   "Route for the unlink-closure case (Step 4). G3 says Sikora Prop 10(1) or a Gabai-type Property R handles it. S4 and G1 point to generalized solid tori with torsion (RR's N_g; Baker-Buck-Lecuona knots in S^1xS^2 with lens surgeries), so Step 4 needs H_1(M)=Z, irreducibility and RR 7.8. The editor adopted G3's route as a shortcut without evidence. The S4/G1 examples actually refute it at the cover level: N_3 is the double branched cover of <1/3>+<-1/3>, whose numerator closure is the unlink. The S4/G1 position is the correct one.",
+   "Priority. G3 classifies it as a possible gap; the editor's summary says there is no possible gap while still listing priority as an open issue. This was settled by restatement, not evidence.",
+   "Whether the norm detection behind RR Cor 2.3 needs irreducibility. S3b says no (Ni, GT 2009, Thm 1.1 and Rem 1.2); S4 and G1 say such detection results usually assume it. The editor sided with S3b without comment ('needs only boundary incompressibility and Floer simplicity'). This is immaterial because Step 2 proves M irreducible, but the RF10 wording should not depend on how it is resolved.",
+   "G2 says RR Prop 7.8 together with Cor 7.12 essentially settles Step 4; S4 says Cor 7.12's proof degenerates at g = 1 and the Cor 2.3 route is cleaner. The editor did not address this. It is immaterial, since the candidate uses Cor 2.3.",
+   "Novelty scope. G3 says only distance-one pairs of nontrivial lens closures (plus the cases that need RR 7.8) are genuinely new; the editor's item (b) claims more. Not adjudicated.",
+   "Confidence level. G3 flags the author's 'very difficult' remark as a caution for the Floer step, and G1 calls the RR dependence a 'concentration of risk'. The editor assigns 'high' without addressing either."
+  ],
+  "verdict_change": "The overall verdict should stay valid_with_fixes. I found no fatal issue and no possible_gap in the candidate proof. My own re-derivation of Steps 1-5 and my reading of RR Prop 7.8's proof agree with the referees, and every unsupported bibliographic or numbering claim in the verdict checked out. Confidence should drop from high to medium-high, or to medium on a low/medium/high scale, for four reasons. First, the verdict recommends a false proposition, Sikora Prop 10(1) (= CJM Prop 2.1(1)), as an alternative route and calls Step 4 avoidable. Second, Step 4 with a nontrivial lens probe (|p_2| >= 2) in fact rests only on RR Prop 7.8's sketched general case; Ni-Vafaee 2019 rely on that case but do not reprove it. Third, Lickorish 1981 and Boyer-Lines were never read in the original. Fourth, the report misstates the referee record on G3's possible gap. Required edits to the verdict: delete the Prop 10(1) shortcut from the Step 4 note, report section 2, open issue 4, next step 4 and RF13(a). Rewrite open issue 4 to say that Step 4 with |p_2| >= 2 depends on RR 7.8 and that Gabai's Property R covers only |p_2| = 1. Correct the 'no possible gap' sentence. In the note to Sikora, report that Prop 2.1(1) fails, with <1/3>+<-1/3> as the counterexample. Confidence can return to high once Lickorish 1981 and Boyer-Lines Thm 2.8 have been read in the original and a Heegaard Floer specialist (for example J. Rasmussen) confirms the general case of RR Prop 7.8."
+ }
+}

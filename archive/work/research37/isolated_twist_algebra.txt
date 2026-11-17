@@ -1,0 +1,174 @@
+TWO-BAND TWISTS: A FINITE-JET EXCLUSION AND AN EXACT ISOLATED-POINT CERTIFICATE
+Pass37. This is an algebraic consequence of the previously audited marked
+band geometry and the exact two-site Jones recurrence. No new Jones-one
+knot or general unknot-detection result is asserted.
+
+INPUT AND CONVENTIONS
+An actual oriented unknot has two disjoint antiparallel twist sites. The
+parameters m,n count full twists in calibrated local charts having the SAME
+normalized eigenvalue z=A^8=x^-4, where x=t^(1/2). Reversing the local
+convention at a single site reverses that parameter before applying this
+note. Let delta=-x-x^-1. The single cup-cap replacements have Jones
+polynomials S1,S2, with the orientations induced by the original knot;
+the double replacement has Jones polynomial delta^2. All full-twist
+closures remain knots.
+
+Set D1=S1-delta, D2=S2-delta. The exact recurrence is
+  V_mn-1 = [D1*z^n*(1-z^m)+D2*z^m*(1-z^n)]/delta.        (1)
+The expression has a removable singularity at x=i and is a Laurent
+polynomial. It is an identity of full polynomials, not of evaluations.
+
+0. STRONGER FIRST TEST: UNEQUAL VANISHING ORDERS EXCLUDE ALL Z^2
+This test requires NO surgery-matrix assumption. Suppose D1,D2 are both
+nonzero, with unequal finite orders r1,r2 of vanishing at x=1.
+For m,n both nonzero, the two terms in the numerator of (1) have orders
+r1+1 and r2+1: each 1-z^m has a simple zero, and z^n is a unit. Terms
+with different orders cannot cancel. If precisely one parameter is zero,
+(1) has one nonzero term. Therefore
+
+       r1 != r2, D1,D2 !=0  ==>  V_mn=1 iff m=n=0.       (0)
+
+This is a complete all-integer exclusion, including opposite signs and
+arbitrarily large twists, from a finite Taylor-jet certificate. It is not
+merely a rejection of a one-parameter trajectory.
+Explicitly, suppose r1>r2 and write
+  D_j=c_j*(x-1)^r_j + higher terms, c_j !=0.
+For arbitrary m,n the coefficient of (x-1)^(r2+1) in V_mn-1 is -2*n*c2.
+Thus Jones1 forces n=0. On that axis, the coefficient of
+(x-1)^(r1+1) is -2*m*c1, forcing m=0.
+The proof uses delta(1)=-2 and 1-x^(-4m)=4m*(x-1)+higher terms.
+The case r2>r1 is obtained by exchanging the sites.
+
+For the experimentally occurring orders (r1,r2)=(3,2), the exact finite
+conditions are
+  D1(1)=D1'(1)=D1''(1)=0, D1'''(1)!=0;
+  D2(1)=D2'(1)=0, D2''(1)!=0.
+Then V_mn'''(1)=-6*n*D2''(1). Once n=0,
+V_m0''''(1)=-8*m*D1'''(1). Consequently these third/fourth knot jets alone
+certify the entire integer locus. Euler derivatives give the same first
+nonzero coefficients, so they can be used for these input tests.
+For the saved band pair D1'''(1)=-288 and D2''(1)=-96, giving
+V_mn'''(1)=576*n and, when n=0, V_m0''''(1)=2304*m.
+
+Equal vanishing orders do NOT establish any candidate or preservation.
+The rank-one method below provides an additional, independent exact
+certificate for families that survive this first test.
+
+RANK-ONE INPUT FOR THE REMAINING SECTIONS
+Assume the symmetric integral double-cover surgery matrix has rank one:
+  B=d*v*v^T,  d nonzero integer, v=(v1,v2) primitive integral.
+Put a=v2^2 and b=v1^2. The previously audited signature/determinant formula,
+in one common global sign convention kappa in {+1,-1}, is
+  S1(i)=kappa*i*d*b,    S2(i)=kappa*i*d*a.                 (2)
+No independent reorientation of either partial link is allowed here.
+The absolute surgery determinant is
+  |V_mn(-1)|=|1+epsilon*2d*(b*m+a*n)|,
+with one common epsilon. We do not need to identify epsilon with kappa.
+
+1. THE EXACT NECESSARY PARAMETER LINE
+The limit of (1-z^m)/delta at x=i is 2*m*i, for every integer m.
+Using (2) directly in (1) therefore gives the signed identity
+  V_mn(t=-1)=1-2*kappa*d*(b*m+a*n).                       (3)
+Consequently Jones polynomial1 forces
+                         b*m+a*n=0.                    (4)
+
+Alternatively, the absolute determinant gives (4) immediately for |d|>1.
+The apparent determinant-minus-one exception when |d|=1 is not an exception
+to (3). It also cannot arise in the stated oriented fission-band geometry:
+S_i has odd integral x-exponents and S_i(1)=-2, so S_i(i)/i is even. Thus
+B_ii is even. Since v is primitive, at least one v_i is odd; hence d is
+even. This supplies a separate exclusion of |d|=1 for these actual bands.
+The signed limit argument remains useful without relying on that parity.
+
+2. BOTH BAND ENTRIES NONZERO: AT MOST ONE NON-ANCHOR SOLUTION
+Assume a,b>0. Primitivity implies gcd(a,b)=1, so (4) is precisely
+                     (m,n)=(a*k,-b*k), k in Z.
+Because D1(i),D2(i) are nonzero, the rational function R=D1/D2 is regular
+and nonzero at x=i, with R(i)=b/a. For k!=0, (1) vanishes identically iff
+
+       R(x)=z^(a*k)*(z^(b*k)-1)/(z^(a*k)-1).             (5)
+
+This is a necessary AND sufficient full-polynomial test. The apparent
+singularity of the right side at z=1 is removable, including for negative k.
+Writing z=exp(s), its logarithmic derivative at s=0 is (a+b)*k/2.
+Since x*d/dx=-4*z*d/dz, equation (5) forces
+
+ k = k_star := - [x*R'(x)/R(x)]_(x=i) / [2*(a+b)]
+             = -i*R'(i)/[2*(a+b)*R(i)].                 (6)
+
+Thus the whole integer Jones-one locus consists of the anchor (0,0), and
+AT MOST ONE additional point. It can be determined without any parameter scan:
+  (i) Compute k_star exactly.
+  (ii) If k_star is not a nonzero integer, only the anchor works.
+  (iii) Otherwise set (m,n)=(a*k_star,-b*k_star), and check exactly
+       D1*(z^(a*k_star)-1)
+         -D2*z^(a*k_star)*(z^(b*k_star)-1) = 0.          (7)
+       If it holds, that point and the anchor are the entire locus;
+       if it fails, only the anchor works.
+Equation (7) is a Laurent polynomial identity and involves no division.
+If it holds, topology of that possible Jones-one knot remains a separate issue.
+
+For completely rational arithmetic, define the integers
+  c_j=D_j(i)/i,   e_j=[x*D_j'(x)]_(x=i)/i.
+Odd Laurent exponents guarantee these are integers, even for negative powers.
+Then
+  k_star= -(e1/c1-e2/c2)/(2*(a+b)).                       (8)
+The formula is independent of the common phase kappa and the sign of d.
+If k_star=0, equation (5) was derived only for nonzero k: it means there is
+NO possible non-anchor solution, not that its formal k=0 limit needs checking.
+
+3. ZERO BAND ENTRIES
+If v1=0, primitivity gives v2=+/-1, hence b=0,a=1. Equation (4) forces n=0.
+On this axis, (1) is V_m0-1=(D1/delta)*(1-z^m). Therefore
+  S1=delta: every (m,0) has Jones1;
+  S1!=delta: only (0,0) has Jones1.
+If v2=0, exchange the two sites. These are exact coordinate-family criteria.
+The one-candidate theorem requires both v_i nonzero and must NOT be claimed
+for these cases. Rank-zero B is outside this theorem.
+
+4. CHEAP ADDITIONAL EXACT REJECTION TESTS
+For every nonzero candidate, the right side of (5) has finite nonzero limit
+b/a at each fourth root of unity in x (z=1). In particular, at x=1:
+  ord_(x=1) D1 = ord_(x=1) D2,
+and the ratio of their first nonzero Taylor coefficients must be b/a.
+The same statement holds at x=-1. Unequal vanishing orders reject every
+nonzero mixed-sign solution even before computing (6).
+There is also a full rational-function symmetry requirement R(ix)=R(x),
+because the right side of (5) is a function of x^4. These are necessary
+prechecks; they do not replace the final exact identity when they pass.
+No general topology statement forcing such a mismatch has been established.
+
+5. SAVED LLL(1) BAND PAIR: AN INDEPENDENT FINITE EXCLUSION
+Data: work/research34/two_band_family.json. S1 is the cut with active_bands
+[false,true]; S2 is [true,false]. This matches (1), since S1 smooths site1.
+Here a=b=1, and exact coefficient arithmetic gives
+  c1=144, e1=-576;   c2=144, e2=-720.
+Hence
+  k_star=-((-4)-(-5))/4=-1/4,
+which is not an integer. Thus V_mn=1 iff m=n=0 for this entire marked family.
+The x=1 precheck independently rejects it: D1 has order3, with third Euler
+derivative -288, while D2 has order2, with second Euler derivative -96.
+At the first nonzero order, Euler and ordinary derivatives agree.
+This agrees with the previous support-span exclusion, without using it.
+
+SCOPE AND REPRODUCIBILITY
+The statements are the unequal-order all-integer exclusion and the rank-one
+finite exact certificate, not a guarantee that its
+single candidate is geometrically realizable/nontrivial or always excluded.
+It applies to ANY qualifying rank-one two-band presentation with both diagonal
+entries nonzero, not merely the previously computed band pair. Inputs are the
+actual induced-orientation partial Jones polynomials and the audited band matrix.
+No claim is made for unrelated two-variable skein templates, independently
+reoriented partial links, rank-two B, or arbitrary many-band mixed-sign twists.
+
+verify_isolated_twist_algebra.py checks (6) on exact synthetic Laurent pairs
+for several signed k and unequal a,b, and independently reproduces the saved
+actual example's c_j,e_j,k_star and x=1 orders. These synthetic checks are
+algebra checks, not claimed tangle realizations. The proof above covers all
+integers without extrapolating from them.
+
+Dependencies: outputs/jones-uniform-band-twist-obstruction.txt;
+work/research34/twist_formula.txt; work/research35/algebra_gate_audit.txt.
+The geometric and primary-source assumptions remain exactly those already
+recorded there (Montesinos surgery, oriented cover signature, Eisermann signed
+ordinary determinant), with no additional literature-dependent theorem here.

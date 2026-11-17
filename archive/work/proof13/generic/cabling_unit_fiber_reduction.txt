@@ -1,0 +1,216 @@
+ONE FIXED CABLE AND THE FULL COLORED JONES FUNCTION
+2026-10-31. Conditional reduction and unconditional test-family theorem.
+No Jones-unknot proof, counterexample, or novelty claim.
+
+THEOREM
+Fix r>=2. Let C_r(K) be the cable with slope one meridian plus r preferred
+longitudes, and zero framing on the resulting knot. Thus C_r has winding r
+and C_r(U)=U. This is (1,r) in Kalfagianni--Tran's convention, or (r,1)
+when winding is listed first. The following statements are equivalent:
+(A_r) For every K, V_K=1 implies V_(C_r(K))=1.
+(B) For every K, V_K=1 implies H_N(K)=1 for every N>=1.
+(C) Every fixed knot pattern P satisfying P(U)=U preserves the V=1 fiber.
+
+The substantive implication is (A_r)=>(B). The premise (A_r) is NOT proved.
+It is exactly as strong as promoting Jones-one to all-colored-Jones-one.
+In particular, it must not be treated as an innocuous consequence of cabling.
+
+Individual-knot version: let G_r(K) be generated from K,U by connected sums
+and C_r. Every knot in G_r(K) has ordinary Jones1 if and only if K has all
+colored Jones polynomials1. Thus any nontrivial colored Jones polynomial
+can be detected by ordinary Jones on some finite expression built using
+only connected sums and this one fixed cable.
+
+CONVENTIONS
+Work over F=Q(q^(1/4)), q indeterminate. H_N is reduced, zero-framed,
+dimension-N colored Jones: H_1=1,H_2=V,H_N(U)=1.
+Write J_N=[N]H_N, [N]=(q^(N/2)-q^(-N/2))/(q^(1/2)-q^(-1/2)).
+Negative colors satisfy J_(-N)=-J_N. Reduced connected sum is exactly
+multiplicative, with no quantum-dimension or framing correction.
+
+1. MOMENT LEMMA
+Let c_1,...,c_s be nonzero field elements, sum c_i=1, with no nonempty
+zero-sum subset. If sum_i c_i x_i^m=1 for m=1,...,s, then all x_i=1.
+
+Proof. Add the automatic m=0 equation. Group equal x_i together, and add
+the node1 with coefficient-1. There are at most s+1 distinct nodes. The
+equations m=0,...,s form a Vandermonde system; the first as-many-as-needed
+rows are invertible. Thus every grouped coefficient vanishes. Any node
+other than1 would give a forbidden nonempty zero-sum subset. QED.
+Repeated x_i and x_i=0 cause no problem. Positivity is unnecessary.
+
+2. EXACT CABLE COEFFICIENTS
+The standard zero-framed cabling formula gives
+ J_N(C_r(K))=q^[r(N^2-1)/4] sum_(k in S_N) q^[-k(rk+1)] J_(2rk+1)(K),
+ S_N={-(N-1)/2,-(N-3)/2,...,(N-1)/2}.
+Therefore
+ H_N(C_r(K))=sum_(k in S_N) c_k H_(M_k)(K),
+ M_k=|2rk+1|,
+ c_k=sgn(2rk+1) q^[r(N^2-1)/4-k(rk+1)] [M_k]/[N].       (1)
+
+All N target colors are positive and distinct. A collision between opposite
+signs would require r(k+k')=-1; k+k' is an integer, impossible for r>=2.
+Evaluation on U gives sum c_k=1.
+
+Crucial valuation fact: the c_k have pairwise distinct q-valuations,
+strictly decreasing with target color. Set
+ B=r(N^2-1)/4+(N-1)/2.
+Then
+ val_q c_k=B-rk^2-k-(|2rk+1|-1)/2.
+For k>=0 this is v_+(k)=B-rk^2-(r+1)k; for k=-l<0 it is
+ v_-(l)=B-rl^2-(r-1)l+1.
+In increasing order of target color, negative and positive magnitudes
+alternate, with k=0 first when N is odd. The successive differences are
+ v_-(l)-v_+(l)=2l+1>0,
+ v_+(l-1)-v_-(l)=2l(r-1)>0
+whenever both entries occur. For odd N the initial k=0 to k=-1 comparison
+is the second formula with l=1. Thus every nonempty coefficient subset
+has a unique lowest-valuation term and cannot sum to zero.
+The largest target color is r(N-1)+1; its coefficient has valuation zero.
+
+For N=2 this simplifies to
+ V_(C_r(K))=a_r H_(r+1)(K)+b_r H_(r-1)(K),
+ a_r=q^((r-1)/2)[r+1]/[2],
+ b_r=-q^((r+1)/2)[r-1]/[2],  a_r+b_r=1.
+Two connected-sum moments force both colors1: subtracting the square
+of the first moment from the second gives a_r b_r(x-y)^2=0.
+For r=2 the lower color is H_1=1, so one cable equation already forces H_3=1.
+
+3. FINITE POINTWISE TEST, THEN GLOBAL PROPAGATION
+For any fixed actual knot K and fixed N>=2, the finite conditions
+ H_N(C_r(K^(#m)))=1 for m=0,...,N
+force H_(|2rk+1|)(K)=1 for EVERY k in S_N. Here K^(#0)=U,
+so the m=0 equation is automatic. This is a direct application of the
+moment lemma to (1), and does not assume V_K=1 or any global closure.
+Actual H_N are nonzero since H_N(K;1)=1, though the algebraic lemma
+itself does not require this extra fact.
+
+For N=2 these are just the TWO ordinary-Jones tests on C_r(K) and
+C_r(K#K), forcing H_(r-1)(K)=H_(r+1)(K)=1. For r=2, one test on
+C_2(K) is enough because H_1(K)=1 already. The two-moment identity
+in section2 verifies this special case explicitly.
+
+Iteration is a separate matter: to apply the pointwise statement again
+at larger colors requires control of those colors on the NEW cabled
+connected sums. The global fiber-closure hypothesis supplies that
+control as follows; the pointwise tests alone do not automatically do so.
+
+Let S be the set of Jones-one knots and assume (A_r). S is automatically
+closed under connected sums; the hypothesis makes it closed under C_r.
+Suppose inductively H_N=1 on all S. For every K in S and m=1,...,N,
+C_r(K#...#K), with m summands, lies in S. Apply H_N and use (1):
+ sum_k c_k H_(M_k)(K)^m=1.
+The moment lemma forces every H_(M_k)(K)=1, in particular color r(N-1)+1.
+This holds for every K in S. Starting N_0=2 gives
+ N_a=r^a+1, H_(N_a)(K)=1 for all a>=0 and every K in S.
+These colors are unbounded. The excluded r=1 case would be the identity
+operation and gives no propagation.
+
+4. UNBOUNDED TRIVIAL COLORS IMPLY ALL COLORS
+Use Habiro's integral cyclotomic expansion
+ H_N(K;q)=sum_(k=0)^(N-1) a_k(K;q) P(N,k;q),
+ P(N,k;q)=product_(j=1)^k(q^N+q^-N-q^j-q^-j),
+ a_k in Z[q^+-1], a_0=1.
+At q=e^h each kernel is O(h^(2k)). For any fixed d, the coefficient
+of h^d in H_N(K;e^h)-1 uses only k<=floor(d/2). It is a polynomial p_d(N)
+(in fact in N^2), because the kernel factors become 2cosh(Nh)-2cosh(jh).
+This one polynomial is valid for EVERY positive integer N: terms k>=N
+may be added freely since their j=N factor is identically zero.
+
+The unbounded set of roots N_a forces p_d=0. This holds for all d.
+Each fixed-color Laurent polynomial therefore has zero Taylor series at1,
+hence is zero. No uniform asymptotic limit is used. This proves (B).
+
+5. CONVERSE AND INDIVIDUAL-KNOT VERSION
+A fixed zero-longitude satellite has finite expansion
+ V_(P(K))=sum_N b_N H_N(K)
+with coefficients independent of K. If all colors of K are1, its value
+is sum b_N=V_(P(U)). Hence (B)=>(C)=>(A_r).
+For the individual-knot version, run sections3--4 on S=G_r(K), assuming
+all its ordinary Jones polynomials1. Conversely, all-colored triviality
+is preserved by connected sums and by (1), so induction on expressions
+in G_r(K) proves the converse.
+
+6. WHAT IS MISSING
+No nontrivial higher-color satellite is proved here to preserve the unit
+fiber. Trivial local-knot operations and ordinary Jones-preserving mutation
+give no new higher-color bootstrap. The preceding whole-fiber rigidity
+theorem rules out deriving such an operation from universal dependence
+on the full Jones polynomial across all fibers.
+
+The exact missing geometric lemma is
+ V_K=1 => V_(C_2(K))=1.
+For one K its conclusion is equivalent to H_3(K)=1. Proving that implication
+for EVERY K would, by the theorem above, force all colored Jones triviality.
+Cabling identities alone do not prove it.
+
+Cyclotomic integrality, q-holonomicity, and the MMR diagonal together do
+not supply the lemma. Consider the formal family
+ F_N=1+(q-1)P(N,2;q).
+It has F_1=F_2=1 but F_3!=1, with integral Habiro coefficients a_0=1,
+a_2=q-1 and all other a_k=0. Set z_N=q^N+q^-N and c_j=q^j+q^-j.
+Then P(N,2)=(z_N-c_1)(z_N-c_2), so F_N is a linear combination over
+Z[q^+-1] of q^(jN), j=-2,-1,0,1,2. With E F_N=F_(N+1), it satisfies
+  product_(j=-2)^2(E-q^j) F = 0.
+This gives an explicit q-holonomic recurrence; no closure theorem is needed.
+
+At q=e^h, each factor 2cosh(Nh)-2cosh(jh) has coefficients whose
+N-degree is at most their h-degree. Multiplication by e^h-1 therefore
+makes the h^d coefficient of F_N-1 have N-degree at most d-1. The MMR
+diagonal is consequently 1, corresponding formally to Alexander
+polynomial 1. Equivalently, in the loop expansion with t=q^N independent,
+ F=1+(e^h-1)(t+t^-1-2cosh(h))(t+t^-1-2cosh(2h))
+has constant h-coefficient 1.
+
+This family is NOT claimed to arise from a knot, and satisfying these
+particular constraints does not establish all knot-specific identities.
+It isolates the need for a knot-realizability input; the recurrence and
+MMR diagonal alone do not repair the missing cabling-preservation lemma.
+
+7. ALEXANDER CONSEQUENCE AND STATUS OF COLORED DETECTION
+All-colored triviality implies Delta_K=1 by the proved
+Melvin--Morton--Rozansky theorem. Therefore any K with Delta_K!=1 has
+some finite expression in G_r(K) whose ordinary Jones polynomial is not1.
+
+For fibered knots, Delta_K=1 forces genus0; for graph knots, the same
+conclusion follows from their construction by connected sums and cablings
+of torus knots and the Alexander cabling formula. Thus the expanded test
+family detects every nontrivial fibered knot and graph knot. This is not
+a statement that the ordinary Jones polynomial alone detects those classes,
+and the general cabling-preservation hypothesis remains unproved.
+
+All-colored Jones detection of the unknot is NOT invoked as a theorem.
+Murakami--Murakami state it as Conjecture5.4 and derive it conditionally
+from the Volume Conjecture plus MMR. Some2007 primary literature cites
+an Andersen announcement as a result, but no complete proof was located.
+A2025 updated primary problem list still explicitly asks whether a
+nontrivial knot can have all colored Jones polynomials trivial:
+https://math.berkeley.edu/sites/default/files/surv-295-ruberman-watermarked-author-pdf.pdf
+printed p32. The categorified colored-Jones detection theorem is different.
+Even proving (A_r) would leave general all-colored triviality=>unknot
+requiring separate justification.
+
+8. VERIFICATION AND PRIMARY SOURCES
+cabling_bootstrap_check.py uses integer Laurent arithmetic in u=q^(1/4).
+It verifies152 exact coefficient sums and strict valuation orderings
+(2<=r<=9,2<=N<=20), and2004 full nonempty subset sums in smaller cases.
+The proofs above establish the result for all parameters.
+
+Kalfagianni--Tran, Knot cabling and the degree of the colored Jones
+polynomial, New York J.Math.21(2015),905--941, equation3.2.
+Their variable v is q here and their cable(p,q) is (1,r) here. The source
+specifies zero framing and embeddings preserving the canonical longitude.
+https://nyjm.albany.edu/j/2015/21-41p.pdf
+van der Veen, A cabling formula for the colored Jones polynomial:
+https://arxiv.org/abs/0807.2679
+Habiro, On the quantum sl_2 invariants of knots and integral homology spheres,
+Theorem3.1 and its symmetric cyclotomic rewrite:
+https://arxiv.org/abs/math/0211044
+Garoufalidis--Le, Asymptotics of the colored Jones function (MMR):
+https://arxiv.org/abs/math/0508100
+Murakami--Murakami, The colored Jones polynomials and the simplicial volume
+of a knot, Conjecture5.4 and Lemma5.6:
+https://arxiv.org/abs/math/9905075
+Grigsby--Wehrli, the categorification detection theorem:
+https://arxiv.org/abs/0807.1432
+

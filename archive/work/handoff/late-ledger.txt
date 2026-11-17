@@ -1,0 +1,920 @@
+LATE RESEARCH LEDGER FOR CLAUDE
+Compiled 2 November 2026 from saved work dated 1 November 2026
+Coverage: work/research35--research52; work/final-audit; corresponding outputs.
+Purpose: preserve exact deductions, status, supersession, and restart gates.
+This is an inventory of existing work, not a new proof-search pass.
+
+STATUS LABELS
+IP = internally proved deduction, with a written argument; no external referee
+     certification and no priority claim unless expressly stated otherwise.
+CP = candidate proof of a substantive open statement, source/hypothesis audited
+     internally, external review and priority pending.
+FC = finite exact computation/certificate, not an all-parameter proof by itself.
+FM = formal mathematical countermodel; NOT a realized knot/tangle.
+LI = established literature input or consequence, not a new discovery.
+OPEN = unproved construction or bridge, explicitly not an achieved result.
+
+CAUTION: Most IP results are obstructions to proposed constructions. Their
+number does not measure proximity to a Jones unknot-detection proof. No actual
+nontrivial knot with V=1 and no proof of generic Jones detection was obtained.
+All late claims below retain their geometry and normalization hypotheses.
+
+AUTHORITATIVE ORDER
+1. outputs/rational-tangle-uniqueness-audited-proof.txt and its companion
+   rational-tangle-uniqueness-audit.txt supersede the pass50 report for review.
+   Fresh component audits: work/final-audit/{surgery,floer,novelty}.txt.
+2. Pass51 states the precise limits of extending that theorem from actual
+   link equivalences to bracket equality. Do not omit its closed-summand gap.
+3. For Carmi--Cohen use research36's source-grounded audit and research44's
+   repair audit; earlier broad assertions about conditional lemmas must be
+   read with their corrected logical scope.
+4. Old STOPPED_ROUTE notes call the standing goal active. That status is
+   historical: the user explicitly paused the proof search on 1 November.
+5. Final concise output notes generally supersede more elaborate scratch
+   routes (notably pass43's simple torus-knot finite-field countertest).
+
+CONVENTIONS
+Ordinary normalized Jones V_U=1; standard trefoil V=t+t^3-t^4.
+Usually x=t^(1/2), t=A^-4, delta=-A^2-A^-2=-(x+x^-1).
+Check local source conventions: some use p=x-x^-1, some use z for the
+annular core, others z=x^-4 for a twist eigenvalue. Distinguish reduced
+closed bracket (unknot=1) from empty-link normalization (unknot=delta).
+Never evaluate an unreduced closed bracket at delta=0 before canceling
+its universal delta factor. Component reorientation can change link Jones
+by a monomial; it is harmless for determinant magnitudes, not JVP layers.
+
+LATE-01 [IP] COHERENT UNIFORM MULTI-BAND TWIST OBSTRUCTION (pass35)
+Actual unknot U, r disjoint marked oriented inverse/fission bands, common
+handedness/full-twist coordinate. Let B be their integral symmetric surgery
+matrix in the branched cover, based on the actual disk of U. Then
+  det K(k,...,k)=|det(I+epsilon*2k B)|.
+If determinant one occurs at infinitely many integer k, the polynomial is
+constant one; real symmetry forces B=0. No PSD assumption is needed.
+Mixed local signs give I+2k E B; E B can be nonzero nilpotent, so the theorem
+does NOT cover arbitrary compensating twists. For any qualifying two-band
+presentation of LLL(1), coker B=Z+Z/144 implies B=d vv^T, |d|=144,
+v primitive. Thus every nonzero coherent equal twist has determinant>=287.
+Proof/evidence: research35/uniform_surgery_algebra.txt,
+geometry_gate_audit.txt; outputs/jones-uniform-band-twist-obstruction.txt.
+Retire all uniform coherent LLL(1) band-twist searches; B=0/mixed-rate cases
+are not excluded globally.
+
+LATE-02 [IP] COMMON SIGNATURE PHASE AND RANK-ONE TWO-BAND NO-GO (pass35)
+Actual U plus two disjoint coherent fission bands whose simultaneous result
+has b1 of double cover=1. The one-band partial links S_i have, in one common
+convention, V_(S_i)(x=i)=kappa*i*B_ii, kappa=+/-1 COMMON to both.
+The disk-plus-band surface in B4 and G-signature/Novikov additivity justify
+the phase; absolute determinants alone do not. Rank-one symmetric B has
+nonzero trace, so S1+S2 !=2delta. If the double-cut Jones is delta^2, the
+two-site skein formula excludes every Jones-constant nonzero linear trajectory
+twisting BOTH bands: equal effective rates need S1+S2=2delta; unequal rates
+need S1=S2=delta. Coordinate axes and isolated mixed-sign points remain.
+Quantitatively |S1(i)+S2(i)|=|d|(v1^2+v2^2)>=|d|. Same phase argument excludes
+the uniform diagonal for any nonzero semidefinite r-band B.
+Proof: research35/algebra_gate_audit.txt, general_topology_gate.txt.
+Inputs: Owens--Strle arXiv:2207.09358; Eisermann ordinary signed determinant.
+Do NOT substitute Eisermann's generalized determinant phase (false).
+
+LATE-03 [IP/FC] CARMI--COHEN: EXACT FAILURE OF THE UNIVERSAL PACKAGE (pass36)
+Authoritative source audited: arXiv:2606.22410v1, submitted 21 June 2026;
+as checked 1 November only v1 was listed. This is a saved-status observation.
+Minimal three-crossing trefoil host, marked antiparallel seed, odd twist L:
+V_1=x^2+x^6-x^8, smoothing H=-x-x^5,
+  V_L=x^4 V_(L-2)+(x^2-x^4+x^6-x^8).
+Top x exponent=2L+6, coefficient -1; in V=a(p)+x b(p), x^2=px+1,
+JVP degree=2L+5, with b_(2L+5)=-1. At L=23, b51=-1 violates claimed
+residual cap 3*3+11+2=22. This contradicts the universal joint package
+Proposition5.12 -> Theorem5.6 -> Lemma5.8, not a conditional theorem on
+C1--C3 for an example independently proved to satisfy those conditions.
+The paired skein extraction identity itself is correct:
+  V_-+ + V_+-=x^-4 V_++ +x^4 V_-- -p^2 V_00.
+Proof: research36/descent_audit.txt, descent_arithmetic.txt;
+portable verifier outputs/verify_twist_obstruction.py.
+
+LATE-04 [IP/FC] CARMI--COHEN: SOURCE-GROUNDED G2 MISIDENTIFICATION (pass36)
+Reconstructed the actual omega_1/omega_5 drawing ports. The depicted movie
+flips ALL FOUR clasps and one residual crossing on the fixed oriented shadow;
+the source also reverses the central closed-component arrows. The legitimate
+relation has factor x^(12s) and a four-clasp coordinate change, not the
+claimed same-clasp/same-JVP-layer identification. Multiplying by x^12 mixes
+levels r,...,r-12, not supplied by the two higher-level vanishing assumptions.
+Horizontal relative-boundary closure: initial Jones
+  -x^3+x-2x^-1+x^-3-2x^-5+x^-7
+versus claimed same-clasp target -x-x^-1. Spans10 vs2 cannot be rescued by
+component orientation or framing monomials. Literal final movie preserves
+the full bracket up to RI factors; the movie itself is NOT declared false.
+Exact TL2 vectors: initial f=A-2A^-3+3A^-7-A^-11+A^-15,
+g=A^3-2A^-1+A^-5; literal final=A^6 times both; claimed target
+f=A^3+A^-9, g=A-2A^-3+A^-7.
+Geometry: research36/machine_geometry.txt; source_machine.py/.json;
+independent_source_bracket.json, source_machine_second_bracket.json;
+transfer_matrix.py, transfer_vectors.json; second_referee_audit.txt.
+This supersedes speculative wiring in old work/test_machine.py.
+
+LATE-05 [IP] ACTUAL UNKNOT ANCHOR DOES NOT GIVE TWIST COMPRESSION (pass36)
+Switch the trefoil seed to produce an actual nonminimal unknot anchor R0=1.
+Residual family: R_(m+1)=x^4 R_m+p x^2 H, H=-x-x^5,
+  R_m=1+D (x^(4m)-1)/(x^4-1), D=p x^2(H+x+x^-1).
+For ANY actual anchored antiparallel family of this form, uniformly bounded
+positive-m JVP degree iff D=0 iff H=delta iff R_m=1 for every m iff R1=1.
+Thus anchor equality leaves a genuine second smoothing channel undetermined.
+For literal clasp machine using source G1/C4, locked state T_m=C-p^2 R_m;
+its JVP degree is 2L+7 for odd L>=7. At L7 the b21 coefficient is +1,
+exceeding signed cap20. Direct states have fixed conservative cap14 and
+the combination C cap18. This uses directly reducible source states and
+double-smoothing, not disputed G2; it is not a fresh full PD family computation.
+Minimal hypothetical nontrivial Jones-one host restrictions remain unproved;
+generated hosts in Theorem5.11 need not be minimal even if the original is.
+Proof: research36/operator_audit.txt, second_referee_audit.txt;
+verify_operator_growth.py/.json.
+
+LATE-06 [IP] EXACT TWO-BAND INTEGER-LOCUS CERTIFICATES (pass37)
+Actual two-site unknot anchor, partial oriented Jones S1,S2, double cut delta^2;
+D_i=S_i-delta, z=x^-4:
+  delta(V_mn-1)=z^n(1-z^m)D1+z^m(1-z^n)D2.
+If both D_i are nonzero and ord_1 D1 != ord_1 D2, the ONLY Jones-one integer
+pair is (0,0), because the two nonzero terms have unequal vanishing orders.
+Additional rank-one matrix B=d vv^T, v1*v2!=0: put a=v2^2,b=v1^2.
+Signed determinant forces b m+a n=0, i.e. (m,n)=(a k,-b k). For k!=0,
+V=1 iff R=D1/D2=z^(ak)(z^(bk)-1)/(z^(ak)-1), hence necessarily
+  k*= -[x R'/R]_(x=i)/(2(a+b)).
+At most ONE non-anchor point exists. If k* not a nonzero integer, reject all;
+otherwise verify full Laurent identity, not just derivative integrality.
+With c_i=D_i(i)/i,e_i=(xD_i')(i)/i, k*=-(e1/c1-e2/c2)/(2(a+b)).
+If one v_i=0, retain the separate coordinate family: it is constant iff the
+corresponding S_i=delta. Actual coherent fission geometry makes diagonal B_ii
+even, hence d even; do not invent independent partial-link reorientations.
+Proof: research37/isolated_twist_algebra.txt, topology_audit.txt;
+verify_isolated_twist_algebra.py/.json, topology_arithmetic_audit.json.
+
+LATE-07 [IP/FC/FM] SIXTEEN ACTUAL LLL(1) FAMILIES EXCLUDED, SIX NOT MARKED
+Of22 earlier sequential unknot band hits,16 admit certified simultaneous
+disjoint marked band rectangles on the original diagram. Hit IDs:
+1,3,5,6,7,8,9,10,11,12,13,14,15,16,19,20. All integer twist pairs have
+V=1 iff (0,0); that anchor is geometrically U. Not16 asserted distinct templates.
+All partial defects have orders3 and2 at x=1; 48 independent cut-bracket
+checks and32 direct corner twists verify formula/normalization. Original pair
+(c1,e1)=(144,-576),(c2,e2)=(144,-720), giving k*=-1/4. Third/fourth jets
+for the saved order: V_mn'''(1)=576 n, then V_m0''''(1)=2304 m.
+Hits0,2,4,17,18,21 are NOT certified simultaneous marked families; naive pullback
+becomes nonplanar. Their anchors are U but all-integer family claims not made.
+Formal limitation: Q=-18x^-1(x^2-1)^2(x^4+1)(x^4+x^2+1), D2=Q,D1=zQ
+passes scalar phase/normalization tests and has k*=1. It is NOT realized geometry.
+Files: research37/{marked_hits.py,.json}, verify_corners.py,
+corner_verification.json, verify_certificate.py, independent_marked_checks.json,
+two_band_exclusion.txt. Pure arithmetic replay is standard-library only;
+geometry uses Spherogram2.4.1/Regina7.4.1 in braid_classification/packages.
+
+LATE-08 [IP/FC] ALL HEEGAARD MARKINGS OF ONE VIRTUAL UNIT DIAGRAM EXCLUDED
+Actual torus ribbon PD [(1,4,2,5),(5,3,0,2),(3,1,4,0)], writhe1, virtual
+Jones1. Surface bracket C+(A-A^-3)mu^2+A lambda^2,
+C=A^-7-2A-A^5. For SL2Z marking mu->(p,q),lambda->(r,s),ps-qr=1,
+use exact torus-framed two-parallel evaluation E(p,q), not unlink evaluation.
+Two jet equations plus integer inequalities force precisely8 markings:
+pq=0,p^2+q^2=1,rs in{0,-1}. All8 full Laurent identities give Jones1.
+Exact rational flat-torus embedding proves these are closed2-braids; their
+determinant1 forces T(2,+/-1), so all actual survivors are U.
+Scope: this explicit diagram on STANDARD UNKNOTTED Heegaard torus under all
+integral markings, not other virtual knots or knotted tori. Projection's
+global mirror convention is explicitly recorded, not silently equated.
+Proof: outputs/jones-virtual-torus-exclusion.txt; research38/README-evidence.txt,
+virtual_algebra.txt, virtual_geometry.txt, virtual_marking_jets.txt,
+marked_embedding_topology.txt; scripts virtual_surface_states.py,
+verify_virtual_marking_jets.py, exact_torus_embedding.py, verify_flat_braid.py,
+verify_all_markings.py plus exact_marking_0..7.json and associated checks.
+
+LATE-09 [IP/LI] CLOSED UNKNOT DATA DOES NOT CONTROL BRAID DYNAMICS (pass39)
+b=sigma1 sigma2^-1 in B3 closes to U, yet its four-punctured-sphere matrix
+[[2,1],[1,1]] is pseudo-Anosov with eigenvalue(3+sqrt5)/2. Full colored Jones
+closure data are all1. More strongly
+b_m=sigma2^(2m)(sigma1 sigma2)sigma2^(-2m)sigma3^-1 in B4 all close to U
+and have writhe1. Burau(-1) characteristic polynomial is
+(lambda-1)^2(lambda^2-T_m lambda+1), T_m=4m^2-2m+2.
+Entropy >=log((T_m+sqrt(T_m^2-4))/2) is unbounded. No global pseudo-Anosov
+claim for every member needed. AMU/asymptotic faithfulness detects braid WITH
+axis, not axis-filled knot. Fixed strand count/writhe do not repair this.
+Files: research39/braid.txt, verify_braid_dynamics.py/.json. Earlier family
+already existed in proof11; new observable, not new knot construction.
+
+LATE-10 [LI/IP] TAME SKEIN-RANK ENDPOINT AND ITS SPECIALIZATION OBSTRUCTION
+For integral homology sphere Y, tame universal skein module + generic rank1
+implies S3: tame specialization bounds character algebra; Zentner supplies an
+irreducible character if Y!=S3. Missing V=1 -> tame rank1 is unproved.
+Actual Y=+1 surgery on trefoil#trefoil has positive-dimensional SL2 character
+variety by explicit bending. z primitive11th root, M=diag(z,z^-1),
+a=(z^-1-z)^-1,c=-1-a^2,X=[[a,1],[c,-a]],Y0=M^-1X; X²=Y0³=-I,
+mu=M,lambda=-M^-6. Conjugate second summand by diag(t,t^-1); filling holds
+M^-11=I and tr(x1x2)=2a²+c(t²+t^-2) varies. Generic skein dimension finite
+by published theorem but S_-1 infinite-dimensional; tameness fails.
+NOT claimed generic rank1 here, NOT Jones-unit example.
+Files: research39/topology.txt, verify_bending.py. Endpoint sources therein.
+
+LATE-11 [LI/NEGATIVE AUDIT] CATEGORIFICATION CITATION GATES (pass39)
+Hom--Park arXiv:2608.06625 prohibits specified directional ribbon concordances
+between distinct cables; independent sliceness/concordance is insufficient.
+Wells arXiv:2610.38927 gives explicit coefficient-change failure: for T(3,4),
+HFK2 dimension6 vs unrestricted predicted8. No universal color/base-change
+promotion follows. Kanenobu identical Alexander POLYNOMIALS but different
+MODULES must not be advertised as unbounded polynomial coefficients/HFK rank.
+No actual equal-whole-Jones directional ribbon pair with increasing reduced
+Kh or fixed-Jones family of proven unbounded reduced rational Kh was found.
+This is bounded search status, not nonexistence. File research39/homology.txt.
+
+LATE-12 [IP] JONES RANDOM-CLUSTER CURVE MISSES FERROMAGNETIC DOMAIN (pass40)
+For planar Tait graph n vertices, edge signs epsilon, s=sum epsilon:
+<D>=A^-s delta^(-n-1) Z_G(delta²,{delta A^(2epsilon)}), reduced bracket.
+Writing x=A4 gives Q=x+2+x^-1, v_e=-1-x^epsilon. If any v_e real>=0 then
+Q<=0; no nondegenerate Q>0/all v_e>=0 point. Mixed signs force x=-1,Q=0.
+Lee--Yang fugacity variable is not this simultaneous Q/interaction variation.
+Trefoil V=t+t³-t4 has non-unit-circle real root and nonreal pair (cubic
+discriminant-31), excluding universal circle/real rootedness.
+Files: research40/analytic.txt. Source/formula conventions explicitly derived.
+
+LATE-13 [IP] FULL KNOT BRAID OPERATOR CANNOT BE PSD NEAR REAL CLASSICAL LIMIT
+Positive TL tensor model A=i r,r>0 has B_i=rI-r^-1 e_i and B_i(1)=swap.
+An n-strand knot braid, n>1, has n-cycle permutation; one-excitation sector
+contains all nth roots of unity. Nonpositive/nonreal eigenvalues persist
+near r=1, excluding positive semidefinite operator under any positive metric.
+No scalar gauge fixes it (all-zero tensor fixes scalar to positive real).
+B_beta^T B_beta represents rev(beta)beta, a PURE braid with n-component
+closure. Restoring an n-cycle restores the obstruction. New positive
+observable would require its own proven relation to ordinary Jones.
+File research40/braid.txt; explicit tensor model earlier fanout16/physics.txt.
+
+LATE-14 [IP] ONE RIBBON FAMILY RULES OUT EVERY FIXED REAL POSITIVITY PARAMETER
+R_n=T(3,6n-1)#reverse-mirror(T(3,6n-1)), n>=1, is nontrivial ribbon,
+determinant1, signature0, V(1)=V(-1)=1. Exactly
+V_Rn=(1+t²-t^(6n))(1+t^-2-t^(-6n)). For every fixed real t not0,+/-1,
+V_Rn(t)->-infinity; their connected-sum squares give +infinity.
+TL3 proof: C=rho(sigma1sigma2), C³=A^-6 I; reduced closure trace gives
+V_T(3,q)=t^(q-1)+t^(q+1)-t^(2q) for3 not dividingq.
+Thus ordinary Jones scalar cannot itself be a universal nonnegative norm
+at a fixed nonzero real parameter. Unit-circle positivity of mirror doubles
+is NOT contradicted. Whole polynomials vary and never1.
+Files: outputs/jones-real-positivity-obstruction.txt; research40/geometric.txt,
+unified_audit.txt, verify_real_ribbon.py.
+
+LATE-15 [IP] EKT OMEGA PAIRINGS: TWO DIMENSIONS, BOUNDARY-BRAID NO-GO (pass41)
+For source2x2 omega matrix, both EKT Hopf pairing H and ordinary numerator
+pairing Q=[[delta,1],[1,delta]] satisfy Omega^t G=G Omega. Over Q(A), all
+invariant bilinear forms span{H,Q}; over integral Laurent ring symmetric
+G=[[u,v],[v,w]] obeys b u+(e-a)v-c w=0, b=A^-3 a unit. Two pairings do
+NOT force scalar action. Enumeration of105 endpoint matchings leaves four
+component tables: (4,3,3,2):1, (3,2,2,1):8, (2,1,1,2):4,(2,1,1,1):4.
+These are connectivity necessary conditions, not realization certificates.
+If outside is Q times a boundary B3 mapping cylinder, modular specialization
+Omega~[[3,1],[8,3]] has cyclic projective centralizer generated by itself
+(Pell a²-8b²=1). Hence outside braid=omega^k modulo center, and opposite
+omega moves cancel geometrically. U anchor remains U.
+Essential outside tangles beyond cylinders remain unconstructed, not excluded.
+Files: research41/pairing.txt, verify_pairing.py/.json.
+
+LATE-16 [IP] FORMAL COMPONENT DIVISION H/delta IS NOT AN ACTUAL OUTSIDE TANGLE
+No two-slot outside tangle realizes closure bracket matrix
+[[g,delta],[delta,1]], g=A12-A8+2A4+2A^-4-A^-8+A^-12.
+At primitive8th root determinants are8,0,0,1. Determinant-one corner is an
+integral homology-sphere cover (need not S3); disjoint distance-one band
+replacements have symmetric integral surgery matrix[[a,b],[b,c]]. Single
+zero determinants force a=c=0, hence double determinant=b² or0, never8.
+Common framing monomials do not change this obstruction.
+Reusable form: two disjoint band moves from determinant-one knot, each single
+result determinant0 => simultaneous determinant0 or perfect square.
+Files: research41/quotient_realization_audit.txt;
+outputs/jones-component-removal-obstruction.txt.
+
+LATE-17 [IP/LI/FC] COMPLETE HOMOLOGY/LINKING-FORM MULTI-BAND GATE
+If k bands take L to determinant-one knot, H1(Sigma2L)=Z^b+T must admit
+symmetric kxk surgery matrix. Splitting primitive radical yields
+k>=b+m(lambda_L)>=b+max_p dim(T tensor Fp), where m is minimal size of
+nonsingular integral symmetric presentation of linking form. k=b =>T=0;
+k=b+1 =>T cyclic with generator self-linking +/-unit-square/N. Cochran--
+Melvin gives converse at unrestricted HOMOLOGY-SPHERE SURGERY level, not
+equivariant band/Jones realization. No metabolizer requirement for arbitrary
+band trace (Hopf->U, form1/2 onZ2 is explicit countertest).
+Maximal-nullity EKT inputs with nonzero torsion remain excluded under split
+padding by U and split/component-connected sums, for minimal fusion.
+LLL(1) H1=Z+Z144, pairing-1/144 PASSES2-band gate (indeed actual U fusions).
+Auxiliary five-component LL2(2) split-union LLL(1): H1=Z³+Z62352, pairing
+10367/62352~-1/62352 since1727²=-10367 mod62352; passes4-band gate with
+diag(0,0,0,-62352). LL2(2) local pairing75/433 has square witnesses178²=75,
+180²=-75 mod433. This supplies NO bands/counterexample.
+Files: research41/surgery_gate.txt, ll2_auxiliary_pairing.json,
+verify_auxiliary_pairing.py. No further homology-only refinement can exclude
+what the unrestricted realization theorem already realizes.
+
+LATE-18 [IP] EXACT STAR--TRIANGLE BOUNDARY CHANNEL GATE (pass42)
+Star arms a,b,c have five terminal coefficients(lambda,ab,bc,ac,abc),
+lambda=Q+a+b+c. Matching triangle's first4 fixes r12=ab/lambda etc;
+full equality iff abc=Q(Q+a+b+c). Remaining123 defect
+kappa=abc(Qlambda-abc)/lambda². On Jones curve weights u=-1-x,v=-1-x^-1,
+uv=Q,u+v=-Q, exactly6 mixed sign triples work (RIII); uniform u orv triples
+have nonzero cleared defects -(x+1)^3(x-1)^2/x² or /x³.
+Dropping123 loses actual marked boundary data. All-exterior positivity of
+discarded term fails by local trefoil insertion multiplying normalized
+evaluation by V_trefoil(2)=-6. Culprit hard unknot has no initial I/II
+simplification or III move, refuting universal crossing-nonincreasing local
+reduction premise. Allowing larger moves is outside theorem, needs mechanism.
+Files: research42/graph.txt, verify_star_triangle.py/.json;
+outputs/jones-graph-cancellation-audit.txt.
+
+LATE-19 [IP/FC/LI] SUPPORT MATCHING IS NOT ACYCLIC KHOVANOV CANCELLATION
+Actual T(3,5) braid (sigma1sigma2)^5: Roberts--Jaeger F2 rational-function
+tree complex has121 one-circle states,500 nonzero differential supports,
+60 disjoint matching pairs leaving1. Reversing matching yields explicit
+cycle15,159,135,207,195,231,39,63,15. Published homology rank7 implies
+rank d57, so NO60-pair acyclic unit Morse matching can exist.
+Jaeger moves arc weights to basepoint, where added reduced differential
+vanishes; independent arc weights are NOT independent differential entries.
+This knot determinant1 and collapsed Euler1 but V=t4+t6-t10 !=1.
+Files: research42/homological_graph.txt, torus_support_independent_audit.txt,
+torus_tree_support.json, verify_torus_tree_support.py and resultJSON.
+
+LATE-20 [IP/LI] SMALL GRAPH CLASS AND CLUSTER-LETTER LIMITS (pass42)
+Closure sigma1^m1 ...sigma_(n-1)^m(n-1) is knot iff all m_i odd; then it
+is connected sum of T(2,m_i), determinant product|m_i|, so Jones1 =>U.
+Published cited dimer determinant formula only treats this restricted
+same-sign block class, NOT every homogeneous braid. No generic reduction.
+Literal cluster exchange a0 a0'=a1a2+a3a4 cannot send all Laurent monomial
+crossing letters +/-A^k to another such unit: numerator has0,2 or coefficient2.
+Whole-tangle weights could evade this but need actual complete-boundary identity.
+File research42/structural.txt; use as restricted deduction, not new detector.
+
+LATE-21 [IP] FINITE FIELD FALSE POSITIVES BY ORDINARY TORUS KNOTS (pass43)
+For any finite nonempty list F_qi (characteristics pi), set m=lcm pi(qi-1).
+Then nontrivial K=T(2,2m+1) satisfies V_K(t)=1 at EVERY nonzero parameter in
+every selected field. Formula V=t^m(1+t+t²-t^(2m+2))/(1+t); at t=-1 use
+polynomial value (-1)^m(2m+1)=1 modpi. Integer determinant2m+1>1.
+This is equality of evaluation functions, NOT coefficientwise congruence
+or integer Laurent identity. Complexity grows with selected tests.
+Preferred minimal report: outputs/jones-arithmetic-route-verdict.txt;
+research43/verify_torus_finite_fields.py/.json. Earlier more elaborate B3
+commutator knot example is correct backup, not extra progress.
+
+LATE-22 [IP] EXACT CERTIFICATES AND LIMIT OF AMBIENT PIGEONHOLING (pass43)
+TL_n word lengthL: A support[-3L,3L], total coefficient l1<=3^L. Difference
+of2 words length<=L has shifted degree<=6L,height<=2*3^L. Evaluation at
+alpha inF_(p^k), minimal degree k>6L, prime p>height certifies generic equality.
+But ambient finite TL size p^(k C_n) > number words (2n-2)^(L+1) in this
+safe range, so THAT pigeonhole bound never forces collision. Not a lower
+bound on actual image size or all structured arithmetic methods.
+Universal additive separator on degreeD,heightH box needs target size
+>=(H+1)^(D+1), or exponent C_n(D+1) for independent TL coefficients.
+Full-operator false positives also explicit: N divisible all p(q-1),
+beta_N=[sigma1^N,sigma2^N] specializes toI in wholeTL at every nonzeroA in
+selected fields; generic block at8th root=[[1+N²,N³],[N³,N4-N²+1]] !=I.
+K=closure(beta_N sigma1sigma2) knot with integer determinantN²-1. To cover
+every Jones t inF_q, test A inF_(q4). Simple torus example supersedes scalar
+knot construction but this operator statement remains distinct.
+Files research43/arithmetic_braid.txt, verify_finite_field_family.py/.json.
+
+LATE-23 [IP] DEGREE/HEIGHT/ARCHIMEDEAN PRECISION GATE (pass43)
+For c-crossing knot, P=V-1 has ||P||1=H<=4^c+1, exponents within[-3c/2,3c/2].
+If zeta orderr,d=phi(r), P(zeta)!=0 implies |P(zeta)|>=H^-(d-1).
+If P(zeta) inM Z[zeta], stronger bound M^d/H^(d-1). Beating bound proves
+root value0; also d>3c forces whole polynomial0. All Galois conjugates<1
+forces zero by norm. Full integral TL all-place images lie in discrete
+Minkowski lattice, so selected unitary density is not all-place density.
+Known compilation bounds do not supply required simultaneous degree/height/
+precision/nontriviality control; this is NOT impossibility of every algorithm.
+File research43/approximation.txt. All estimates exact, no float tolerance proof.
+
+LATE-24 [IP/FC/LI] ELIAHOU--FROMENTIN CONGRUENCE FAMILY NEVER BECOMES EXACT
+Published recurrence f_next=f²,g_next=2fg+delta g², V=f+A^-6g.
+N=2^(r-1): exact spanV=14N+1, both extremes coefficient2^N,
+content(V-1)=2^r, 14N+1<=minimal crossing<=20N+1. Proof induction on
+extremes plus mod2 residue of(f-1)/2^r,g/2^r; a2-seed coefficient prevents
+greater2-adic content, extremes exclude odd content. Thus actual sequence
+has V!=1 at EVERY stage despite growing2-adic agreement.
+Modulus>4^c+1 would certify exactness, but here height grows exponentially
+inN while log2modulus=r. Not a limit knot construction.
+Files research43/divisibility.txt, verify_ef_growth.py, ef_quantitative_check.json.
+
+LATE-25 [IP] GENUINE ORIENTATION REPAIR, BUT COMPRESSION STILL IMPOSSIBLE
+For links ell=sum pairwise linking, F=x^-3ell V=(-A³)^-w_self <L> is
+orientation independent. F itself fails JVP finite-type order at degree0:
+a0=-1+(-1)^ell,b0=-1-(-1)^ell. H=F² DOES have a_n,b_n order<=n and
+H(1)=4^(components-1); derive via h=arcsinh(p/2), evenness inx, universal
+Jones exponential finite-type order. On knots H=V², so H=1 iffV=1.
+However F's skein coefficients depend on linking and squaring adds cross
+product2abF_-F_0; original linear descent does not transfer.
+General span lemma: nonzero rational channels T_m=A+B x^(dm), A B!=0,
+give spanT_m=dm+O1. Any monomial normalization/fixed positive power retains
+unbounded span. Literal machine T_m=C-p²R_m has both channels nonzero;
+after multiplying x²+1 residues atx=i are-8,+8. Therefore spanF=4m+O1,
+spanH=8m+O1; no fixed JVP cap. Host/source-identity caveats as LATE-05.
+Files outputs/jones-orientation-repair-audit.txt; research44/
+self_writhe_repair.txt, orientation_repair_algebra.txt, verify_orientation_repair.py/.json.
+
+LATE-26 [IP/LI] UNIT REFLECTION AND SCALAR-TO-EXTERIOR TRANSFER ARE NOT BRIDGES
+Ball2-endpoint skein=R eta; zero-framed long knot [K]=V_K eta.
+Integral Laurent-unit condition iffV=1 (V1=1,V'1=0); geometric long-knot
+units onlyU by genus additivity. Thus functor reflects units is EXACTLY
+Jones detection. Every R-linear postprocessing preserves this scalar loss.
+Tensor-invertible reduced Kh complex implies rank1=>U, but V-unit implies
+tensor-invertible again equivalent to detection. Fraction field makes all
+nonzero scalars units. Bullock A=-1 character theorem uses AMBIENT manifold,
+not embedded-knot exterior; drilling is not linear operation on ball skein.
+Actual Alexander-one knots refute using only multiplicativity/integrality/
+unit axioms as a detector. Source files research44/algebraic_units.txt,
+categorical_units.txt. Mainly cleaned-up equivalences/old result, not novelty.
+
+LATE-27 [IP/LI] FOUR-DIMENSIONAL MODULE SIMPLICITY DOES NOT GIVE HANDLE CANCEL
+Actual surfaces T_K=S1xK inS1xB3 all map to same magnitude2 scalar in the
+one-dimensional sl2 lasagna module atq=1, while complement groups ZxG_K
+distinguishU fromtrefoil. Stronger: square knot R ribbon concordantU has,
+by Ren--Willis, identical full graded/quantum-filtered LEE trace modules
+X_n(R),X_n(U) for everyintegern. Yet0-surgery onR is aspherical genus2
+mapping torus, no nonseparating sphere. Actual capped slice-disk generator
+sphere INSIDE X0 is not boundary sphere for3-handle.
+No Jones equality or KHOVANOV-lasagna equality claimed. Ni's summand
+PropertyR gives legitimate boundary-sphere endpoint; missing V1->sphere
+is detection-equivalent and not supplied by these modules.
+File research44/surgery_units.txt; published inputs cited precisely there.
+
+LATE-28 [IP] NO ACTUAL UNCOLORED PROJECTOR GADGET; PI DOES NOT MAKE BRAID LAW
+Any actual uncolored ball tangle has nonzero skein vector: close by actual
+arcs and evaluate atA1, a signed power of2. Therefore no actualT=c(A)f_n,
+n>=2,c!=0, since composing with actual e_i gives zero. Clearing denominators
+doesn't help (delta f2=delta I-e still annihilatese).
+TL3=Q(A)+M2(Q(A)) satisfies Amitsur--Levitzki S4=0, yet actual images of
+sigma1³,sigma2³ freely generate: specialize8th root toU³,L^-3 and ping-pong;
+scalar character fixes total exponent0 in any proposed relation. Thus additive
+sum identity does not supply a word identity. Does not decide fullTL faithfulness.
+File research45/quantum_identities.txt. Actual full generic kernel endpoint
+via Long/Ito remains valid but no missing block kernel constructed.
+
+LATE-29 [IP] NO FINITE UNIVERSAL ANNULAR SURGERY-TWIST IMPLEMENTATION
+Annular skein R[z], Hopf eigenvalue lambda_j=-A^(2j+2)-A^(-2j-2),
+twist theta_j=(-1)^j A^(j(j+2)). Every finite actualF(A,z) has
+lambda2-lambda0 dividing F(lambda2)-F(lambda0). Former has double zero
+atA1; desired A8-1 has simple zero. Impossible even with common regular
+g(A),g(1)!=0 normalization or any nonzero integer twistpower. Actual gadget
+vacuum g(1) nonzero. Formal first interpolation coefficient=-A6/(A4-1),
+with essential pole; agrees Habiro/Masbaum. Even rationalF matching N+1
+consecutive (or even) channels needs deg_z>=N by nonzero divided difference.
+Scope: fixed finite annular insertion acting universally, NOT actual surgery,
+drawn braid twists on specified strands, or one-exterior identities.
+Files research45/geometric_realization.txt, verify_annular_twist.py,
+verification.json; source Masbaum2003 eqs2--4 andTheorem1.1.
+
+LATE-30 [LI/IP] MULTICURVE AND ALL-FILLING LIMITS (pass45)
+Special curve s_(4n)(infinity) againsta0 has NONZERO full Euler
+Q^(-4n-1)(1+Q4)(1-Q6)sum_(i=0)^(n-1)Q^(8i); atQ1 zero, atQi magnitude4n.
+Do not call it invisible or conflate ordinary and delta Euler. s_(2n)
+geography does not imply all actual lengths divisible4. Earlier four-special
+formal cancellation remains NOT realized despite BN/A-infinity compatibility.
+Actual local insertion T_J into0-tangle gives [T_J]=V_J[0]. Same-Jones pair
+5_1/10_132 gives same entire bracket and ALL rational-filling Jones, yet
+different reduced Kh ranks5/11. Thus all-filling Jones does not determine
+curves generally; these examples lack U anchor and do not refute unit fiber.
+File research45/kh_curves.txt. Most antecedents from proof12/13; do not count
+rechecks as new claims. Unknown condition is actual classical cube realization.
+
+LATE-31 [IP] ONE-DISK TWIST FAMILY EXACT CLASSIFICATION AND FINITE BOUND
+Actual knotP in unknot-axis exterior, windingw, chosen disk intersectsr times;
+initial zero-framed integral annular expansion[P]=sum a_j e_j, j<=r,j=w mod2.
+Transported framing changeskw², so
+V_Pk=sum (a_j Delta_j/delta) A^{k[j(j+2)-3w²]}.
+Distinct frequencies and generalized Vandermonde: nonconstant family has
+at mostq Jones-one parameters (q active labels), orq-1 withzero activefrequency;
+in particular at mostfloor(r/2)+1. Infinitely many =>allk Jones1 and single
+channel with j(j+2)=3w²,a_j Delta_j=delta. Integrality atA1 impliesj+1 divides2,
+so exactly[P]=delta,w0 or[P]=z,|w|1. Higher Pell solutions excluded.
+No geometric triviality from scalar/core skein. Actual hyperbolicP-axis exterior
+with either class would yield counterexamples by long surgery; none found.
+Files research46/contextual_surgery.txt, twist_calibration.json,
+verify_twist_calibration.py; outputs/jones-contextual-twist-and-limit-audit.txt.
+Whitehead calibration uses source m=-k; keep transported vs diagram framing.
+
+LATE-32 [IP/LI] FINITE-ORDER CORRECTIONS CANNOT FIRST CLOSE IN TAME LIMIT
+ForV!=1, nu=ord_(t=1)(V-1)<=spanV<=minimalcrossing c. Proof treats one-sided
+support using V(omega3)=1 (do not use false span(V-1)<=spanV universally).
+Known crossing-level conclusion alreadyKauffman--Saito--Sawin1995; no novelty.
+Ropelength L/thickness >=(4pi c/11)^(3/4), so nonexact ordern approximation
+requiresrop >=(4pi n/11)^(3/4). C1 convergence to smooth embedded knot makes
+eventual knot type constant; Jones-one limit already achieved at finite stages.
+Uniformboundedrop sequence of nontrivial ordern approximations exists iff
+actualcounterexampleexists (constantsequence reverse). C0 shrinking localknot
+is explicit failure of weakercompactness. File research46/geometric_limit.txt.
+
+LATE-33 [IP/FC, TABLE-DEPENDENT] ORDINARY JONES DOES NOT DETERMINE A-POLYNOMIAL
+Specified chiralities of 5_1 and 10_132 have the same Jones polynomial
+q^-2+q^-4-q^-5+q^-6-q^-7 and the same Alexander polynomial, but their table
+A-polynomials have L-width 1 and 8 (abelian factor removed). Width survives
+Laurent units, mirroring and inversion. The checker verifies
+A_10_132(L,1)=(L-1)^3(L+1)^5 and a point disagreement. This is verified
+transcription/algebra, not an independent character-variety computation.
+The bottom-tangle exterior construction maps relations to counit evaluation;
+it does not invert that map. A unit-fiber assertion V=1 => A=1 remains
+an equivalent formulation of detection, without an additional mechanism.
+Files: research46/complement_character.txt, verify_peripheral_collision.py,
+peripheral_collision.json; Jones certificate in
+proof12/braid/all_color_collision_proof.txt.
+
+LATE-34 [IP] REN CORE REPEATED STACKS AND SATELLITE COMPOSITION OBSTRUCTIONS
+Define T from the six-strand word
+b=sigma2^-1 sigma1^3 sigma2^-1 sigma4 sigma5^-3 sigma4,
+by capping positions 3,4 at both ends. For every beta in B4 and k>=1,
+the annular closure of (T beta)^k has degree EXACTLY TWO.
+Proof: the zero four-through coefficient defines a two-sided ideal. The
+coefficient of z^2 is f_k=tr((M U)^k), up to a nonzero monomial. Core jets:
+M(1)=w v, w=-15u-25e2, u=(1,0,1)^t, v=(1,0,-1),
+M(1)=0 mod5, M'(1)=2I mod5; U(1) is in SL3(Z) and fixes u.
+If the constant trace vanishes, an invariant primitive flag forces
+tr(U(1)^k)=1+2 epsilon^k. Hence the coefficient of (x-1)^k is
+2^k(1+2 epsilon^k) !=0 mod5. Includes k divisible by 5; also ord_1 f_k<=k.
+Products with DIFFERENT intervening braids beta_i are not covered.
+Satellite composition of standard Ren patterns P,Q instead has degree EIGHT:
+[P(Q)]=b_P+a_P[Q^(2)], not b_P+a_P[Q]^2. Its top coefficient is
+ a_P A^(4(p+q)) h(A),
+ h=-A^-24 (A^4-1)^4 (A^4+1)^2 sum_(j=0)^6 A^(4j),
+which is nonzero. Blackboard framing changes multiply by a nonzero unit.
+Files: research47/ren_composition.txt, ren_power_certificate.json;
+old geometric jets in work/ren-braid-obstruction-note/main.tex;
+cable certificate in work/pass4/braid_ren_cable.py and .json.
+
+LATE-35 [IP] SINGLE-DISK INTEGRALITY FAILS FOR COORDINATED DISKS
+Actual two-braid unknot anchor:
+ K_mn=closure(sigma1^(2m) sigma1 sigma1^(2n))=T(2,2(m+n)+1).
+Both axis windings are 2. On m+n=0 this is GEOMETRICALLY the unknot for
+every m. Exactly
+ V=delta^-1 [A^(-6p)-A^(-2p) Delta2],
+ p=2(m+n)+1, Delta2=A^4+1+A^-4.
+The generic tensor Chebyshev expansion of the zero-framed pattern in ST#ST is
+ A^-6(e0 tensor e0)-A^-2/Delta2(e2 tensor e2).
+The essential denominator appears BEFORE Jones normalization: the integral
+skein module of ST#ST is not the integral tensor polynomial lattice.
+The opposite-twist criterion groups terms by
+ d_jl=j(j+2)-l(l+2)-3(w1^2-w2^2).
+All nonzero-frequency coefficient sums must vanish and the zero-frequency
+sum must equal 1. This is necessary and sufficient for a Jones-constant
+family. When |w1|=|w2|, every diagonal j=l has zero frequency.
+The example is geometrically trivial, not a counterexample.
+Files: research47/coordinated_twists.txt, verify_coordinated_twists.py,
+verification.txt. The low-degree relation in Bakshi--Le--Przytycki
+arXiv:2604.09971 was checked; the entire 2026 torsion classification was NOT
+independently audited.
+
+LATE-36 [IP/LI] ABSOLUTE TORSION DOES NOT SUPPLY A BANDED KNOT PAIR
+J1=x1*x2-delta*y is a difference of actual TWO-component links in ST#ST,
+annihilated by A^2-A^-2. All reciprocal-axis fillings give unframed U2 on
+both sides. Individual framings (m,n) versus (m+n,0) may differ; total
+framing agrees. Natural bands on the two representatives both give y.
+Band attachment is not an operation on an unmarked absolute skein class.
+One needs a FOUR-ENDPOINT relative relation f([T1]-[T0])=0. Filling to a
+ball then forces FULL rank-two bracket-vector equality by torsion-freeness,
+not merely one closure equality. Existing source two-point arcs describe
+closed handle-slide relations and do not supply that four-point lift.
+Canonical cuts after filling have N=U2,D=U. Scharlemann forces rationality;
+determinant N=0 forces fraction 0. Hence ANY common local replacement at
+these canonical cuts gives isotopic unframed outputs.
+A noncanonical tangle with N=U2, [T]=[0] and proven nonrationality would
+produce a nontrivial Jones-one D closure; none was constructed.
+Files: research47/coordinated_twists.txt section6;
+research48/relative_torsion.txt.
+
+LATE-37 [IP] TORSION NECK-INTERSECTION AND HOMEOMORPHISM GATES
+Any fusion-one presentation U2 -> K can be placed in ST#ST with the unbanded
+J1 relation available. Therefore absolute J1 adds NO constraint on the band;
+this returns to the old Wang P_b=0 problem.
+If an actual P meets the reducing sphere exactly twice, it decomposes as
+P1#P2 and generically delta[P]=p1(x1)p2(x2). If [P]-[y] is torsion, the
+product equals x1*x2, forcing p1=c*x1,p2=c^-1*x2 with c=+/-A^r. Any
+counterexample here already solves a one-axis unit-skein pattern problem.
+Genuinely new interaction requires at least FOUR sphere intersections.
+A slope-preserving homeomorphism extends over filling and carries spanning
+disks, so it cannot turn an unknot into a nontrivial knot. This does NOT
+assert that all torsion relations arise from such homeomorphisms.
+File: research48/torsion_geometry.txt. Do not revive arbitrary band searches
+merely because the absolute J1 relation is available.
+
+LATE-38 [IP] ONE-PUNCTURED ANNULUS JONES-CONSTANT CLASSIFICATION
+Taylor annulus A lies in S2 and intersects K once. Complementary disk windings
+satisfy w1-w2=+/-1. Relative solid-torus graph labels satisfy |j-l|=1, so
+opposite-twist frequencies
+ j(j+2)-l(l+2)-3(w1^2-w2^2)
+are ALL DISTINCT. Infinitely many Jones-one parameters imply every parameter
+is Jones-one and only one zero-frequency channel survives.
+Each pure graph has a unique leading crossingless diagram with coefficient1.
+Thus an INTEGRAL relative skein equal to c*g_jl forces c Laurent-integral.
+Its theta closure is c*Delta_max=u*delta; evaluation at A=1 forces
+max(j,l)+1 to divide2. Only (1,0),(0,1) remain, winding magnitudes are {0,1},
+and the actual arc skein must be elementary up to framing.
+DO NOT infer boundary-parallel geometry from elementary skein.
+Conditional counterexample endpoint: actual unknot anchor + Taylor sufficient
+incompressibility + this exact arc skein gives nontrivial K_q for |q|>=2
+with Jones1 for all q. No actual arc satisfying these hypotheses was found.
+Files: research48/twist_anchor.txt, twist_anchor_independent_audit.txt;
+outputs/jones-annulus-and-marked-torsion-audit.txt. Graph source:
+Abernathy--Gilmer, NYJM22(2016), sections3--5; geometry: Taylor2506.11226§5.
+
+LATE-39 [IP/LI] BRUNNIAN THETA-ARC LINEAR UNZIP FILTER
+For a relative arc G with planar-theta comparison, unzipping a COMPLEMENTARY
+edge is R-linear in [G]. Elementary skein therefore forces the unzip Jones
+to match T(2,k). An actual unzip J with det(J)>span(V_J), det(J)>1 (or the
+stronger det(J)>displayed crossing count) excludes that arc.
+Jang et al.'s Gamma(n,m) has red unzip
+ trefoil # denominator-closure(-3/(6(n+m)+5)).
+Writing s=n+m, its determinant 3|6s+5| exceeds the diagram crossing bound
+|2s+1|+6 whenever s!=-1. This excludes retained blue/green edges on those
+parameters. Retaining red makes the tested unzip double G, so it is not
+linear; the exceptional line s=-1 also escapes this test.
+The source argument misses denominator -1 at s=-1. This is a gap in that
+specific argument, NOT a disproof of the full paper's theorem. No exceptional
+candidate was established. Drilling a Brunnian theta curve does not simply
+provide two rational unknot closures; one condition becomes edge deletion.
+File: research49/arc_geometry.txt.
+
+LATE-40 [IP/LI, PARTLY DUPLICATE] UNIVERSAL SATELLITE u=1 PROMOTER LIMIT
+Earlier stronger result: a universal RATIONAL ordinary-Jones law
+V_P(K)=F_A(V_K) forces F constant for even winding, or b(A)V_K for odd
+winding. Pass49 rederived only the polynomial case by connected-sum trefoil
+Vandermonde; DO NOT count it as a new theorem.
+New combination: geometrically essential fixed P, P(U)=U, and a genuine
+unknotting-number-one satellite output for EVEN ONE nontrivial companion
+force winding0 by Scharlemann--Thompson. The universal rational law is then
+constant1 for EVERY companion. Such a promoter would already be an
+unconditional counterexample constructor, not an input-dependent reduction
+from generic Jones-one knots to unknotting number one. No such pattern exists
+in our results. Escapes include companion-dependent operations, multiple
+infection boxes, extra colors, or a unit-fiber-only law (still unproved).
+Files: research49/generic_scaffold.txt;
+check_satellite_independence.py and satellite_independence_check.json.
+
+LATE-41 [CP] FULL FRAMED RATIONAL-SOLUTION UNIQUENESS
+Strongest candidate: rational probes P,Q with distinct UNFRAMED slopes,
+rational R and arbitrary X, common marked boundary; actual balanced-framed
+C_P(X)=C_P(R), C_Q(X)=C_Q(R) imply X=R. This is Sikora arXiv Conjecture2 /
+journal Conjecture1.2. It is NOT full bracket detection.
+Proof chain:
+* Independent closure functionals imply [X]=[R]. Auxiliary U/U2 closures
+  give determinants1/0, H1 of cover M=Z, the same preferred longitude,
+  and no closed tangle components.
+* An ACTUAL lens-space filling forces M irreducible.
+* If both observed slopes are nonlongitudinal, actual oriented fillings
+  match the unknot at SAME signed p_i/q_i. Ni--Wu surgery gives
+  lambda_CW(Y)+(q_i/(2p_i))*Delta''=0 twice, so Delta''=0.
+* Two L-space fillings imply Floer simplicity. Binary torsion coefficients
+  give alternating Alexander coefficients, hence Delta''>0 unless Delta=1.
+  RR's norm formula under boundary incompressibility would give -1;
+  thus boundary compressibility plus irreducibility makes M a solid torus.
+* In the longitude case an actual S1xS2 filling plus another L-space filling
+  gives a generalized solid torus by RR7.8. H1=Z makes longitude order1
+  and degree(barDelta)=0. The same norm contradiction gives a solid torus.
+* The classical branched-cover criterion and Sikora's distinction of framed
+  rational tangles by bracket give X=R.
+No extra assumption that Y is S3 or an L-space is made. Latest revision
+chooses mu before Y, and states explicitly barDelta=D. The old valid
+Ni--Vafaee fibering/capping longitude branch is replaced by shorter RR7.8.
+No fatal gap was found by fresh surgery and Floer audits. Major cited input
+proofs were not reproved from foundations.
+Possible NEW APPLICATION, not new method: Gainullin2018 Theorem8.2 already
+uses Casson--Walker / Delta'' / alternation / genus detection. His ambient
+L-space assumption does not immediately cover auxiliary Y; two matched
+fillings replace it here. Sikora's Oct15,2026 talk abstract still states the
+exact conjecture. No exact prior proof located; priority UNVERIFIED.
+Original Lickorish PDF inaccessible; criterion checked in Buck--Mauricio.
+Authoritative files:
+ outputs/rational-tangle-uniqueness-audited-proof.txt
+ outputs/rational-tangle-uniqueness-audit.txt
+ work/final-audit/{surgery,floer,novelty}.txt
+Old pass49 unknot-product case is largely known surgery characterization;
+pass50 general argument supersedes it. Search retirement based on this
+candidate remains subject to correction if external review finds a flaw.
+
+LATE-42 [IP] POSITIVE HERMITIAN BRAID GENERATORS ABELIANIZE
+For positive-definite Hermitian P,Q, PQP=QPQ implies P=Q.
+Let C=PQ, similar to a positive Hermitian matrix. C^3 is central; cubing is
+injective on its positive eigenvalues, so C is a polynomial in C^3. Thus C
+is central, P,Q commute, and the braid relation forces equality.
+Consequently braid representations with generators positive in one common
+metric factor through abelianization. Individual nonzero scalar gauges do
+not help: conjugate generators have common trace, forcing gauges onto one
+complex ray; a common gauge then suffices and the theorem applies.
+Calibration: b=sigma1 sigma2^-1 closes to U, b^2 to the figure-eight, with
+same three strands and writhe0 but different Jones. Abelianizing erases this
+actual distinction. Scope excludes entrywise-positive nonsymmetric matrices,
+diagram-dependent factors, infinite-dimensional settings or new observables.
+The figure-eight Jones t^-2 Phi10(t) has zero LOGARITHMIC Mahler measure;
+this old known example rules out zero free energy => unknot.
+File: research50/quantum_endpoint.txt.
+
+LATE-43 [IP/NEGATIVE AUDIT] PRIME EXTENSION DOES NOT PRESERVE PRESCRIBED FIBER
+Watson's prime-tangle extension gives a PAIR of prime knots with equal Jones,
+not a prime replacement of an arbitrary specified closure with prescribed
+Jones. Local nontrivial knot insertion violates the prime-tangle hypothesis.
+Any construction with independent one-strand input balls and subsequent
+changes outside those balls retains inserted knots as connected-sum factors.
+It cannot prime-compress an amplification family while claiming that scalar
+control suffices. Multistrand interaction requires additional colored or
+relative information. Laurent factorization does not bound the number of
+Jones-one prime factors. No new proof scaffold resulted.
+File: research50/global_endpoint.txt.
+
+LATE-44 [IP] GENERAL-Y ZERO-SURGERY DERIVATIVE OBSTRUCTION
+Let K lie in ANY integral homology sphere Y. If Y_0(K)=Sigma2(L) and V_L
+equals the U2 polynomial up to a signed Laurent monomial, then Delta_K''(1)=0.
+Poudel/Lescop gives lambda_L(Y_0K)=Delta''/2-1/12, with NO ambient Casson
+term. Garoufalidis's branched-cover formula in the DOUBLED normalization
+gives |lambda_G|=1/6. The matching formula is lambda_G=Delta''-1/6;
+general Y was checked via H1=Z LMO/Alexander comparison. Thus
+|6Delta''-1|=1; integrality excludes 1/3.
+Full rational bracket equality provides the auxiliary determinant-one and
+longitude closures, hence this obstruction without actual rational-product
+equivalences. It does NOT alone imply Delta=1, Floer simplicity, solid-torus
+cover, or Y=S3.
+Files: research51/general_y_formula.txt;
+outputs/jones-generic-route-audit.txt.
+
+LATE-45 [IP/LI] FLOER ENDPOINT LEAVES A CLOSED HOMOLOGY-SPHERE SUMMAND
+Suppose H1(M)=Z, M is a knot exterior in an integral homology sphere, M is
+Floer simple, and symmetric Delta''(1)=0. Binary torsion alternation gives
+Delta=1; RR norm then forces boundary compression. Hence M=ST#Z where Z
+is an integral homology-sphere L-space. Conversely such Z makes M Floer
+simple. If M is irreducible, it is ST. An ACTUAL lens filling removes Z in
+LATE-41; merely L-space fillings do not.
+Concrete OLD model Z=Poincare#(-Poincare) is a nontrivial L-space homology
+sphere with Casson0 and d0. ST#Z has all nonlongitudinal fillings L(p,q)#Z
+with the lens-space HF ranks, Casson--Walker invariants and correction terms.
+This is not asserted to satisfy rational bracket equality, is not a Jones
+counterexample, and is explicitly reducible.
+Local insertion of J into R gives [X_J]=V_J[R] and cover ST#Sigma2(J).
+For hypothetical V_J=1, the auxiliary filling core is already a BALL UNKNOT
+in Sigma2(J), so its Delta=1 is automatic. Floer simplicity of that cover
+is equivalent to Sigma2(J) being an L-space, which does not imply S3.
+Assuming irreducibility discards this generic local-insertion construction.
+Kh-to-HF spectral sequence only bounds HF rank by TOTAL Kh rank; an Euler
+polynomial1 does not bound that rank. TWO missing bridges remain: actual
+Floer information from bracket data, and removal of the closed summand.
+Files: research51/floer_endpoint.txt, adversarial_audit.txt.
+
+LATE-46 [IP/FM] MODULAR GALOIS SYMMETRY DOES NOT PROMOTE ORDINARY COLOR
+Use reduced zero-framed H_N and Habiro kernel
+ P(N,k)=product_(j=1)^k(q^N+q^-N-q^j-q^-j).
+At roots of order r, H_(N+r)=H_N and H_(r-N)=H_N by kernel truncation.
+The modular Galois signed permutation moves VACUUM as well as color, so it
+is not an ordinary scalar color-substitution rule. Actual trefoil at r=7,
+a=3 sends color2 to6 and vacuum1 to3. H6(zeta)=1 by reflection, while
+H2(q)-1=-(q-1)^2(q^2+q+1) is nonzero at primitive seventh roots, as are its
+Galois images. This falsifies the unconditional proposed bootstrap.
+Formal F_N=1+(q-1)P(N,2) has F1=F2=1,F3!=1 and satisfies the legitimate
+reflection, periodicity and arithmetic Galois constraints.
+A unit-fiber vacuum replacement rule remains unproved. Universal H2=>H4
+promotion is equivalent, via the (3,1) cable/moment argument, to universal
+all-color promotion. Even all-color triviality is not known here to imply
+unknot unconditionally; the AJ step is a separate conjectural input.
+File: research52/color_bootstrap.txt sections1--4.
+
+LATE-47 [FM/IP] 2026 FROBENIUS ARITHMETIC LIFT ALLOWS HIDDEN COLORS
+The formal F_N above has an explicit Delta=1 lift:
+ f(t,q)=1+(q-1) product_(j=1)^2(qt+q^-1 t^-1-q^j-q^-j),
+ f_m(t,u)=f(t^(1/m),zeta_m+u).
+Frobenius sends t^(1/(pm)) to t^(1/m), so Garoufalidis--Wheeler root gluing
+holds EXACTLY for every m,p. We have f(t,1)=1 and f(q^(N-1),q)=F_N.
+Finite Laurent support in t gives q-holonomicity, with annihilator
+product_(j=-2)^2(E-q^j).
+Thus integral cyclotomic expansion, all-color Laurent polynomiality, loop
+constant, reflection, Galois covariance, q-holonomicity and Frobenius lift
+TOGETHER do not force color promotion. This is a formal target-ring element,
+NOT known to lie in the knot-map image, not a group-like Kontsevich series,
+and not an actual peripheral or surgery-compatible geometric object.
+File: research52/color_bootstrap.txt section5; primary lift arXiv:2603.01619.
+
+LATE-48 [FM/IP/LI] ERASE FINITE COLOR PREFIX WHILE RETAINING VOLUME ASYMPTOTICS
+Take the actual untwisted Whitehead double J of the trefoil, Delta_J=1,
+with Habiro coefficients a_k. For fixed M>=1 define
+ G_N=H_N(J)-sum_(k=1)^M a_k(q)P(N,k).
+Then G_N=1 for N<=M+1, while integral cyclotomic expansion, all-color Laurent
+polynomiality, q-holonomicity, root reflection and the 2026 Frobenius-compatible
+lift remain. MMR diagonal with Delta=1 forces a_k(1)=0 for every k>=1;
+the finite correction preserves loop constant1 and loop Laurentness.
+At zeta_N the correction is O(N^-3). Zheng's theorem for actual J gives
+ 2pi log|H_N(J;zeta_N)|=V*N+4pi logN+O(1),
+where V is the positive Whitehead-link volume. BOTH leading terms persist
+for formal G_N; relative correction is O(N^-5 exp(-V*N/(2pi))). This is
+stronger than the older multiplicative model, which changed the log term.
+M is FIXED; no assertion when its size grows with N.
+FORMAL SEQUENCE, not knot or group-like universal invariant. It shows that
+the listed arithmetic and asymptotic necessary properties are insufficient.
+File: research52/color_bootstrap.txt section6.
+
+LATE-49 [IP/FC/LI] BRUNNIAN/BURAU CONSTRAINTS KEEP RESIDUAL B5 BLOCK DENSE
+Let N be the generic reduced Burau kernel in B5, H=Brun5, J=N intersection H,
+and rho the residual five-dimensional TL block [3,2]. The cached Bigelow seed
+has a nonidentity residual image. Explicit Brunnian braid
+ b=[A15,[A25,[A35,A45]]]
+satisfies rho(b)=I+4^4(A-1)^4 C+O((A-1)^5), with C nonzero on [3,2].
+Exact permutation-module squared Frobenius norms are88 on two-subsets,8 on
+vertices, hence80 on the residual summand. This is a predicted-term check,
+not a word search.
+Kuperberg projective Zariski density plus normality gives closures rho(N)
+and rho(H) equal PGL5. Since [N,H] is contained in J, rho(J) is dense, and
+every finite lower-central or derived-series stage remains dense. Yet the
+intersection of all lower-central stages is {1} by residual nilpotence of
+pure braid groups. Thus an entire deep commutator subgroup is not a kernel;
+infinite depth does not produce a finite nontrivial word. A specially chosen
+exact relation remains possible.
+Odd uniform parallel cabling retains the original fundamental operator as a
+direct summand, so cannot repair a braid already detected there. Even cabling
+requires NEW mixed-color identities, not consequences of Burau-kernel status.
+Files: research52/global_kernel.txt, brunnian_leading.py/.json.
+Status: written deduction using published inputs; no external referee audit.
+
+LATE-50 [FM/IP] UNIVERSAL FROBENIUS COMPLEX HIDES ARBITRARY KH HOMOLOGY
+R=Z[h,t], A=R[X]/(X^2-hX-t). Genus-one cylinder H=2X-h has
+H^2=D=h^2+4t. Define a formal Bar--Natan two-term cobordism complex
+ E0=O direct-sum O{-2}, E1=O direct-sum O{+2},
+ d=[[2,H],[H,0]].
+Entries are genuine cobordisms or integer linear combinations. Multiplying
+by [[0,H],[H,-2]] gives D*I, so E is contractible at every semisimple D!=0
+specialization, integrally at Bar--Natan h=1,t=0, and rationally at Lee h=0,t=1.
+The ordinary Kh fiber h=t=0 reduces by graded row/column operations to
+ diag(2,0), giving H0=A0{-2}, H1=A0{+2} direct-sum A0/2A0.
+C_N=O direct-sum (E direct-sum E[1])^N has the unknot's full Euler polynomial,
+reduced rational rank1+4N, integral 2-torsion summands2N, mod2 rank1+8N,
+yet all semisimple homologies are the unknot's.
+The special fiber can be modeled by wedges of spheres and Moore spectra,
+with required nonzero Sq1/Bockstein. This is NOT an actual Lipshitz--Sarkar
+knot stable type. Coherent universal deformations, integrality and ordinary
+Steenrod axioms do not force Jones-unit rank1. The missing constraint is
+origin as the signed planar cube of ONE actual knot diagram, not membership
+in the ambient cobordism-complex category. No diagram realization is claimed.
+File: research52/categorical_realizability.txt.
+
+OTHER CHECKED LITERATURE LEADS THAT ARE NOT RESULTS OF OUR OWN
+- Matsushima's 2026 coupled-twist M(1,q,-q) has partial figure-eight and
+  determinant25 by the symmetric-union theorem, so cannot contain U.
+  Kanenobu's trefoil-partial family has the analogous determinant9 gate.
+- A geometrically amphichiral one-axis symmetric union with partial U is U
+  by Kose (arXiv:2111.08765). Jones reciprocity does NOT imply geometric
+  amphichirality; the topology hypothesis cannot be dropped.
+- Taylor2506.11226 gives nontriviality for |q|>=2 under the one-punctured,
+  unknotted, sufficiently incompressible annulus and U-anchor hypotheses,
+  but provides NO Jones-preservation theorem.
+- A genuine zero-surgery-preserving annulus orbit containing U consists of
+  unknots by Property R. Arbitrary annulus twists need not preserve zero
+  surgery or Jones. See research47/anchored_families.txt.
+- Lamm--Tanaka's 2025 one-twist Kinoshita--Terasaka presentation lead was
+  abstract-only: existence/nature of the required presentation NOT verified.
+  See research37/literature_lead_not_verified.txt. It is NOT a known Jones
+  counterexample.
+- The full 2026 ST#ST torsion classification and its concluding question
+  appear in tension. Only explicit low-degree relations used here were
+  checked. Never cite the whole classification as independently verified.
+
+CURRENT JUDGMENT / CONDITIONS FOR REOPENING A ROUTE
+The strongest potentially publishable result is LATE-41, pending expert
+scrutiny and literature priority. Many IP items may be useful lemmas, but
+were not novelty-screened; standard consequences should not be marketed as
+discoveries. LATE-44/45 give a conditional endpoint but NO generic
+Jones-to-Floer bridge. LATE-47--50 show formally how much necessary structure
+can coexist with hidden data; they are NOT evidence of actual nontrivial
+Jones-one knots. Nothing establishes a credible near-term full-solution
+route or that more time alone will produce one.
+
+Actionable restart gates, if another agent independently supplies new input:
+A. Referee LATE-41 at signed peripheral identification, norm/irreducibility,
+   and Gainullin relationship. A real flaw supersedes all positive audits.
+   Never replace actual products by polynomial equality.
+B. An actual essential/hyperbolic scalar-or-core annular pattern with the
+   exact full skein class would complete a counterexample via LATE-31;
+   none has been supplied.
+C. An actual one-punctured Taylor arc with elementary relative skein AND
+   sufficient incompressibility and U anchor would complete via LATE-38;
+   none has been supplied.
+D. A noncanonical FOUR-ENDPOINT torsion lift plus a nonrational unlinkable
+   tangle could complete via LATE-36. Absolute J1 adds no band information.
+E. An actual finite residual generic TL relation (not one partial block,
+   finite-field collision, or infinite-depth limit) activates Long/Ito.
+   Current automatic recipes do not produce it.
+F. A new geometric restriction on actual knot cubes, beyond the listed
+   deformation/algebraic properties, could evade LATE-50. No such restriction
+   is proved; simply asserting Jones1=>rank1 restates the conjecture.
+These are conditional endpoints, not a recommendation to reopen six broad
+search fronts. The latest user request is inventory/handoff, not resumption.
+
+RECOMMENDED BUNDLE CONTENTS
+Include all OWN .txt reports and .py/.json certificates in research35--52,
+work/final-audit, and corresponding outputs. Exclude __pycache__, downloaded
+third-party PDFs/text, source screenshots, environments/packages, and huge
+older scan databases. Specifically EXCLUDE research38/dye_kauffman.txt and
+its PDF, research48/abernathy-gilmer.pdf, and externally copied figure PNGs.
+Include research38's GENERATED embedding/certificate JSON (actual evidence).
+Dependencies outside late scope:
+- research34/two_band_family.json and twist_formula.txt;
+- research33 linking-form and unknot-band certificates;
+- second-pass Bigelow seed certificate;
+- pass4 Ren two-cable certificate;
+- ren-braid-obstruction-note/main.tex;
+- proof12/braid all-color collision certificate;
+- initial outputs twist verifiers.
+The parent inventory should include these without duplicate copies.
+
+COMPLETENESS LIMIT
+This ledger covers substantive .txt reports in every research35--52 directory
+and the final audit, grouping repeated derivations and audits. It does not
+claim every JSON row, transient search hit, source theorem or failed numerical
+trial is a separate theorem. No scripts were rerun during this compilation;
+prior exact execution records are referenced. No fresh literature-status check
+was performed on 2 November; source-status observations are dated to the
+saved 1 November audits.

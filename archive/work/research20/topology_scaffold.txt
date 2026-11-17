@@ -1,0 +1,344 @@
+FULL TOPOLOGICAL PROOF SCAFFOLD: GENERIC BRIDGE, THEN RIGIDITY
+1 November 2026. Conditional research architecture, not a proof of Jones
+unknot detection and not a novelty claim.
+
+MAIN CONCLUSION
+
+There is a logically complete two-gate proof route:
+
+  G: an arbitrary nontrivial Jones-one knot can be converted, preserving
+     nontriviality, into a Jones-one knot of unknotting number one;
+  R: a specified connected skein coefficient of every actual marked
+     strongly inverted Brunnian triple is nonzero when the triple arises
+     from a nontrivial 3-adjacent knot.
+
+The intervening geometric constructions and algebra turn G's output into
+an object violating R. Neither G nor R has been proved. R has the same
+existential strength as Jones detection in the u=1 sector; its advantage
+is a concrete coefficient to study, not an automatic simplification of
+the problem. Three distinct, explicit designs for G appear below.
+
+If one instead uses the positive quantum norm identity in the companion
+quantum_scaffold.txt, there is an ADDITIONAL coverage gate: arbitrary
+spatial Brunnian-Suzuki graphs have not been converted into that particular
+doubled-pure-braid/clasp family. That gate must not disappear from the
+proposed proof.
+
+1. OBJECTS, MARKINGS, AND THE AUDITED DOWNSTREAM CHAIN
+
+Use normalized Jones V_U(t)=1, R=Z[A,A^-1], t=A^-4, and
+delta=-A^2-A^-2. Let C mean existence of a nontrivial knot K with V_K=1,
+and C1 the same statement with u(K)=1. Plainly C1 implies C; the reverse
+implication is the generic bridge still missing.
+
+For a strongly invertible knot J, its exterior quotient is an actual
+four-ended tangle T_J. The meridian filling is an ACTUAL unknot and the
+preferred longitude specifies the zero filling. For the rational basis
+Q0,Qinf let f_inf(Q0)=1, f_inf(Qinf)=delta and put
+
+               v=Qinf-delta Q0,        f_inf(v)=0.
+
+After removing the framing monomial of the meridional unknot, write
+               [T_J]=Q0+x(J)v.
+The preferred quotient is flat when x(J)=0. This is equality of the full
+two-coordinate skein vector, not merely equality of one knot closure.
+
+The prior implications were re-read and their essential dependencies
+checked here. Their precise scope is:
+
+  C1 <=> existence of a nontrivial strongly invertible flat core J
+     <=> existence of an essential zero-factor two-component shell
+     <=> existence of a nontrivial Jones-one n-adjacent knot,
+         for each one fixed n>=2.
+
+Here a shell is the componentwise strongly inverted exterior of a
+two-component link of unknots with linking number zero; essential means
+the link is nonsplit. Its preferred normalized quotient operator is
+F(Q0+xv)=Q0+d(A)xv. Zero-factor means d is identically zero.
+
+The first equivalence has two essential geometric steps. Removing an
+actual unknotting crossing of a Jones-one knot gives both an actual
+unknot filling and, by the oriented skein relation, the unlink Jones
+polynomial for its smoothing. The determinant-zero smoothing is the
+preferred longitude; the two closure functionals then force flatness.
+Conversely, the marked 1/2 filling of a nontrivial flat core has monomial
+Jones polynomial, hence Jones one because V(1)=1 and V'(1)=0. Its cover
+is nonmeridional 1/2 surgery on nontrivial J, so is not S3 by the knot
+complement theorem. Its actual crossing-change filling is U. Thus this
+is a nontrivial u=1 knot. An arbitrary distance-two pair of slopes is
+not being declared a crossing change without marking data.
+
+The flat-core-to-zero-shell implication uses an ACTUAL strongly inverted
+Brunnian triple lifted from a published nontrivial 3-adjacent knot.
+Infection of one component by J makes the two-component shell factor
+zero by skein multilinearity. Essentiality is proved by performing the
+seed's prescribed surgery on another component: the resulting winding-
+zero pattern is essential, and its satellite of nontrivial J has an
+incompressible companion torus. These are geometric nontriviality checks,
+not inferences from a Jones polynomial.
+
+The amplification likewise uses an actual (n+1)-adjacent seed and its
+marked +/-1/2 reverse-crossing surgeries. Insert the flat J at one
+component. Every proper sublink of the remaining n-component link stays
+an actual unlink. The final cover is not S3: the first n-1 prescribed
+surgeries leave an essential satellite P(J), and its last +/-1/2 surgery
+cannot give S3. The retained crossing neighborhoods prove ordinary
+n-adjacency. Multilinearity makes the final Jones polynomial a signed
+monomial, and the two knot normalizations make it exactly 1.
+
+These are internally audited deductions using the cited published
+inputs, not published new theorems whose priority or external review has
+been established. Full marked arguments and independent audits are in
+work/cancellation19/brunnian_reduction.txt and adjacency_amplification.txt.
+
+2. A PRECISE SEPARATE RIGIDITY TARGET THAT CLOSES THE PROOF
+
+Choose n=3 in amplification. Let L be the resulting nontrivial
+3-adjacent Jones-one knot. Reverse all three distinguished crossings to
+the unknot and lift the three reverse arcs into its S3 double cover.
+The result B=P union C union D is an actual componentwise strongly
+inverted Brunnian triple with inherited slopes +/-1/2. It is nontrivial:
+if it were an unlink, full prescribed surgery would give S3 and force
+L=U. The proof of Lidman--Moore Theorem 1.4 supplies the actual proper-
+unlink property and these exact slopes.
+
+The preferred two-input quotient shell has the exact form
+
+        F_B(Q0+xv,Q0+yv)=Q0+c_B(A)xyv,     c_B in R.
+
+Indeed filling either input with Q0 leaves a split pair, so both terms
+linear in only one v vanish. The outer meridional functional is the
+product of the two input meridional functionals; therefore the remaining
+all-v term lies in Rv. This algebra does not imply c_B is nonzero.
+
+In the inherited crossing marking, the two inputs are Q_(+/-2), with
+
+   x(Q2)= A^2(A^4-1),     x(Q-2)= -A^-6(A^4-1).
+
+The final +/-1/2 cap has nonzero defect coefficient, up to the fixed
+framing convention,
+
+   h_+= A^-10(A^4-1)(A^8+A^4+1),
+   h_-= -A^-2(A^4-1)(A^8+A^4+1).
+
+The normalized closure identity consequently gives
+
+   V_L-1 = (nonzero Laurent unit) h_epsilon c_B
+                         x(Q_(2epsilon1)) x(Q_(2epsilon2)).       (R0)
+
+The reference contribution is 1, not an unknown monomial: the same
+marked crossing neighborhoods applied with one proper input left at
+Q0 give an actual unknot, and their local writhe changes fix the relative
+normalization. The prior exact cap computation uses this marking; merely
+knowing two unframed links are unknots would not justify (R0).
+
+RIGIDITY LEMMA R (UNPROVED): For every B obtained in this way from an
+actual nontrivial 3-adjacent knot, c_B(A) is not identically zero.
+
+Now the complete conditional proof is seven lines:
+  1. Assume a nontrivial K with V_K=1.
+  2. G supplies a nontrivial u=1 Jones-one knot.
+  3. The audited equivalence supplies a nontrivial flat core J.
+  4. Amplification at n=3 supplies nontrivial 3-adjacent L with V_L=1.
+  5. Lift its marked arcs to the actual triple B just described.
+  6. Equation (R0), V_L=1, and the integral-domain property give c_B=0.
+  7. R gives c_B!=0, a contradiction. Therefore K was U.
+
+This is a full logical route, but R is not an independent easy invariant
+bound: equation (R0) makes it exactly Jones detection on the marked
+3-adjacent class, which amplification equates in existential strength
+to u=1 detection. A useful attack on R must add a real mechanism, such
+as a positive norm plus a geometric stabilizer theorem, not just rename
+nonvanishing as essentiality. The computed Stoimenow triple is one
+verified nonzero example, not a proof for all B.
+
+3. BRIDGE DESIGN G1: CERTIFIED NON-MUTATION SKEIN MOVES
+
+Here is an exact move test whose polynomial part is already proved.
+Take two specified crossings, with signs (+,-), and reverse both. Write
+K_(+-), K_(-+) for the two knot diagrams. In the associated two-crossing
+square, let L_(0-) and L_(-0) be the oriented smoothing links. Subtract
+the two oriented skein relations sharing K_(--):
+
+ V_(K+-)-V_(K-+) = t(t^(1/2)-t^(-1/2))
+                                    (V_(L0-)-V_(L-0)).            (G1a)
+
+Consequently equality of the TWO ENTIRE smoothing-link polynomials
+certifies that this paired crossing switch preserves the entire Jones
+polynomial. It is enough to certify the smoothing links by isotopy, or
+by another independently proved skein identity. Matching a few jets,
+determinants, or ranks does not certify the move. This operation is not
+restricted by definition to Conway mutation; some individual examples
+may nevertheless be mutations or isotopies.
+
+MISSING GEOMETRIC REACHABILITY LEMMA G1: For every nontrivial Jones-one
+knot, there is a finite sequence of isotopies and paired switches
+certified by (G1a), ending at a knot L with both (i) a displayed crossing
+whose change gives an actual unknot, and (ii) an independent certificate
+that L is nontrivial.
+
+G1 implies G immediately. The polynomial preservation is proved;
+reachability and the endpoint's topology are the remaining assertions.
+No such complete move library or reachability theorem has been built.
+Arriving at U is not a successful endpoint. Nor does assigning a skein
+difference to a formal linear combination produce an actual knot.
+
+REJECTED VERSION: use Conway mutations alone. Gordon--Luecke Theorem 7.1
+proves that having unknotting number one is mutation invariant. Thus a
+finite mutation sequence, even chosen adaptively from the entire diagram,
+cannot carry a u>1 knot into u=1. A generic skein-equivalence bridge must
+escape this operation class. The claim that EVERY Jones polynomial is
+realized by a u=1 knot is much stronger than G and is not being assumed.
+
+4. BRIDGE DESIGN G2: AN ACTUAL TWO-CUT DEFECT COMPILER
+
+The most explicit all-diagram construction target is as follows. For
+each knot diagram D of K, build an actual four-ended tangle S_D with
+specified boundary marking, a signed framing monomial u_D, and a
+nonzero c_D(A) in R, satisfying
+
+         [S_D] = u_D Q0 + c_D(A)(V_K(A^-4)-1)v.                   (G2a)
+
+Require two SEPARATE geometric certificates:
+ (i) the marked meridian closure of S_D is an ACTUAL unknot;
+ (ii) K nontrivial implies that the double cover of S_D is not a solid
+      torus, equivalently its associated core J_D is nontrivial.
+
+Then V_K=1 makes [S_D]=u_D Q0, (i) supplies the required S3 knot exterior,
+and (ii) supplies the nontrivial flat core. Thus G2 directly gives G.
+The nonzero c_D makes this an informative all-diagram identity; it is
+not needed for the implication on the unit fiber itself.
+
+A possible independent certificate for (ii) is a demonstrated epimorphism
+pi1(E(J_D)) -> pi1(E(K)), since the unknot's cyclic group cannot map onto
+the nonabelian group of a nontrivial knot. Another is an incompressible
+companion torus with nontrivial companion. Neither certificate has been
+constructed for the proposed compiler. In particular, an abstract group
+presentation is not yet an embedded strongly inverted knot exterior.
+
+Why two cuts matter: a construction that leaves K tied into one isolated
+strand often retains a local-knot factor and loses the actual-unknot
+anchor. Cutting and reconnecting at least two arcs could let the new
+geometry interact with K globally. This is a design constraint, not a
+theorem that two cuts suffice.
+
+REJECTED FORMAL VERSION: the rank-one skein map T -> f_inf(T)Q0 is easy
+to write. Its obvious geometric realization closes T as a local knot
+beside a rational tangle; its meridian closure still contains K. Equality
+V_K=1 does not turn that closure into an actual unknot. Similarly a
+formal affine subtraction V_K-1 is not a permitted tangle operation
+until an actual diagram realizes it.
+
+REJECTED COLORED VERSION: the canonical strongly inverted double and
+Whitehead constructions have defects governed by color-three Jones
+data. Equation (G2a) must involve the ordinary V_K itself. Replacing it
+by H3(K)-1 adds the unproved implication V_K=1 => H3(K)=1 and therefore
+does not complete G2. Diagram dependence is allowed, but it must be
+specified geometrically; it does not erase these requirements.
+
+5. BRIDGE DESIGN G3: MINIMAL-GENUS COUNTEREXAMPLE DESCENT
+
+There is a legitimate minimal-counterexample reduction before any hard
+lemma. Jones multiplication gives V_(K1#K2)=V_K1 V_K2. If this product is
+1, both factors are Laurent units. V(1)=1 and V'(1)=0 force each factor
+to be 1. Seifert genus is additive and every nontrivial knot has positive
+genus. Therefore a counterexample of minimum Seifert genus is prime.
+
+MISSING DESCENT LEMMA G3: If a nontrivial Jones-one knot K has u(K)>1,
+then a geometric construction supplies either
+ (a) a nontrivial Jones-one u=1 knot, or
+ (b) a nontrivial Jones-one knot L with g(L)<g(K).
+
+If any counterexample exists, choose one of minimum genus. Alternative
+(b) is impossible, so (a) holds; if its unknotting number was already one
+there is nothing to do. Thus G3 implies G. For a surface-based proof one
+may start with a certified minimal-genus Seifert surface for K and aim
+to construct a surface for L of strictly smaller genus, together with
+a topological certificate that L is not U. The latter condition cannot
+be dropped: crossing changes that simply unknot K are always available
+and prove no bridge.
+
+This is a precise descent problem, but no operation satisfying it has
+been found. Genus is chosen deliberately: crossing-number additivity is
+not available. A proof must not silently take a prime summand after a
+diagram simplification and assume it has fewer crossings. Nor may it
+infer that skein smoothings remain knots or remain nontrivial.
+
+6. THE QUANTUM NORM OPTION HAS THREE GATES, NOT TWO
+
+The companion quantum_scaffold.txt establishes a norm identity for the
+specific Stoimenow doubled-Brunnian-pure-braid/clasp construction K_beta.
+On its positive unitary arc it has the form
+
+   Re((V_(K_beta)-1)/C_n) = -1/2 ||(rho(beta_doubled)-I)w||^2.
+
+For that family, Jones one forces rho(beta_doubled)w=w. The precise
+additional rigidity lemma needed is that such a fixed vector forces
+the ACTUAL CLOSURE K_beta to be U. Faithfulness of the representation
+alone does not imply that conclusion about a vector stabilizer.
+
+To use that result after any of G1--G3, a further COVERAGE lemma is
+needed: the amplified nontrivial Jones-one adjacent knot must be turned
+into a nontrivial Jones-one K_beta in this exact braid family. The
+Askitas--Kalfagianni/Lidman--Moore spatial graph classification does not
+assert this. An arbitrary spatial graph or string link is not automatically
+a pure braid with the same marked closures. The chain is therefore
+
+   generic bridge G + braid coverage + geometric stabilizer rigidity
+                    => full Jones unknot detection.
+
+Alternatively, proving the unrestricted marked-coefficient rigidity R
+of Section 2 would avoid the braid-coverage lemma. At present neither
+version has all its gates proved.
+
+7. QUANTIFIER AND SCOPE TRAPS TO EXCLUDE FROM THE FINAL PROOF
+
+* Amplification says: for every n there exists a possibly different K_n.
+  It does not give one fixed knot adjacent for all n. Howards--Luecke's
+  theorem applies to a fixed knot and bounds n by 3g(K_n)-1. The outputs'
+  increasing genus is compatible with that theorem; it is no contradiction.
+* A global bounded-genus assertion for all Jones-one knots is a disguised
+  solution: connected sums of any nontrivial counterexample have unbounded
+  genus and still Jones one. Finite cardinality of the Jones-one fiber is
+  similarly not an independent cheap lemma. A restricted geometric bound
+  requires an actual argument and must survive the amplification outputs.
+* n-adjacent means any nonempty subset of specified ORDINARY crossings
+  unknots the knot; it does not mean n unrelated unknotting crossings,
+  n generalized crossing sets, or a braid representation.
+* Actual unknot closure, nontriviality, preferred slope marking, and
+  equality of the WHOLE Jones polynomial are separate side conditions.
+* The equivalences in Section 1 concern existence in the u=1 sector.
+  They do not prove G, and a zero-factor shell has not been produced.
+
+RECOMMENDED RESEARCH ORDER
+
+First choose one explicit operation for G2, or one geometric move class
+for G1, and demand the two topological certificates alongside its exact
+skein identity. This is the largest uncovered arrow. In parallel the
+norm/stabilizer route gives a specific way to attack R on a limited
+family, but extending that family must remain an explicit coverage task.
+G3 is an alternative proof architecture if a genuine genus-reducing move
+appears; it should not be advertised as an operation already available.
+
+PRIMARY INPUTS RECHECKED
+
+Gordon--Luecke, Knots with unknotting number 1 and essential Conway
+spheres, AGT 6 (2006), Theorem 7.1, printed pp2082--2083:
+https://msp.org/agt/2006/6-5/agt-v6-n5-p02-p.pdf
+
+Lidman--Moore, Adjacency of three-manifolds and Brunnian links, proof of
+Theorem 1.4: lifts, actual proper unlinks, +/-1/2 slopes, and spatial
+Brunnian-Suzuki graphs. This is not a pure-braid normal-form theorem:
+https://arxiv.org/html/2308.06211
+
+Howards--Luecke, Strongly n-trivial knots, Definition 1.3 and Theorem 1.4:
+https://users.wfu.edu/howards/papers/ntrivial.pdf
+
+Stoimenow, Some applications of Tristram--Levine signatures and relation
+to Vassiliev invariants, Adv.Math.194 (2005), Eq(10), Lemma6, supplies the
+actual adjacent seed family used by the audited amplification:
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/stoim2.pdf
+
+The elementary paired-switch identity (G1a), prime/minimum-genus argument,
+and conditional implications G1/G2/G3 => G were derived explicitly here.
+They are not claims that any of the three missing bridge lemmas holds.

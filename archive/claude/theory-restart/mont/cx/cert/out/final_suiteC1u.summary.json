@@ -1,0 +1,55 @@
+{
+ "label": "C1u_unknots_26_32",
+ "count": 334,
+ "status": {
+  "CERTIFIED_UNKNOT": 334
+ },
+ "certificate_kinds": {
+  "tietze": 334
+ },
+ "tietze_success": 334,
+ "V_K=1": 334,
+ "Delta=1": 0,
+ "rep_groups": {},
+ "crossings_min_max": [
+  26,
+  32
+ ],
+ "secs_median_max_total": [
+  0.004,
+  0.266,
+  2.4
+ ],
+ "by_crossings_bucket4": {
+  "24": {
+   "count": 203,
+   "unknot": 203,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.004,
+   "max_s": 0.085
+  },
+  "28": {
+   "count": 127,
+   "unknot": 127,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.004,
+   "max_s": 0.266
+  },
+  "32": {
+   "count": 4,
+   "unknot": 4,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.005,
+   "max_s": 0.006
+  }
+ },
+ "wall": 0.6,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

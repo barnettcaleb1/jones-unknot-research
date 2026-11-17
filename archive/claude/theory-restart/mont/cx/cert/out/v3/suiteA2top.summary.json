@@ -1,0 +1,63 @@
+{
+ "label": "A2_top_rehits",
+ "count": 700,
+ "status": {
+  "CERTIFIED_UNKNOT": 700
+ },
+ "certificate_kinds": {
+  "tietze": 700
+ },
+ "tietze_success": 700,
+ "V_K=1": 700,
+ "Delta=1": 0,
+ "rep_groups": {},
+ "crossings_min_max": [
+  20,
+  32
+ ],
+ "secs_median_max_total": [
+  0.004,
+  0.317,
+  3.5
+ ],
+ "by_crossings_bucket4": {
+  "20": {
+   "count": 33,
+   "unknot": 33,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.003,
+   "max_s": 0.004
+  },
+  "24": {
+   "count": 322,
+   "unknot": 322,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.004,
+   "max_s": 0.006
+  },
+  "28": {
+   "count": 340,
+   "unknot": 340,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.005,
+   "max_s": 0.027
+  },
+  "32": {
+   "count": 5,
+   "unknot": 5,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.011,
+   "max_s": 0.317
+  }
+ },
+ "wall": 0.7,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

@@ -1,0 +1,151 @@
+DEFECT SCALAR AUDIT — U5a
+2026-11-02, Codex subagent defect_scalar. Bounded check.
+
+VERDICT
+The rank-one defect and longitude formula are valid after fixing closure
+conventions. Universal F-divisibility is also valid; it follows cleanly
+from ONE determinant-one half-integral branch knot and the classical Jones
+evaluations, rather than an assertion that every closure has unknot values.
+Status recommended: TRUSTED (written derivation below; Claude audit pending).
+
+1. INTEGRAL SCALAR AND NORMALIZATION
+
+Use the archive convention: R=Z[A,A^-1], delta=-A^2-A^-2, relative basis
+(Q0,Qinfinity), meridian closure f_infinity=(1,delta), longitude closure
+f_0=(delta,1). The actual meridian unknot bracket is a framing unit, so
+normalizing it to 1 remains in R^2. Then
+
+  ker(f_infinity)=R*(delta Q0-Qinfinity).
+
+Indeed a+delta*b=0 iff (a,b)=(-delta*b,b). Therefore a unique w in R gives
+
+  [T]^ = Q0 + w*(delta Q0-Qinfinity),
+  f_0([T]^)=delta+(delta^2-1)w,
+  w=(f_0([T]^)-delta)/(delta^2-1).
+
+This w is -x in the previous Whitehead archive. The displayed denominator
+does not assert division is numerically permissible at its roots; polynomial
+divisibility follows from the rank-one identity itself.
+
+If Claude names the meridian closure N, his kernel generator is correct
+after relabeling to these conventions. If N literally means the archive's
+numerator f_0=(delta,1), its kernel generator instead is Q0-delta Qinfinity.
+Do not mix those two closure names.
+
+In preferred meridian/longitude coordinates, w=0 is exactly the normalized
+rational-zero bracket condition. If the bracket is that of ANY rational
+tangle, the determinant-zero preferred-longitude closure forces its solid
+torus cover's disk slope to be lambda; thus its rational tangle is Q0 up to
+framing, and the actual meridian normalization fixes that framing scalar.
+The solid-torus-cover criterion then identifies Lemma Q with
+  w_kappa=0 implies kappa is the unknot.
+The defect depends on the chosen strong inversion and peripheral marking;
+it should be written w_(kappa,h) when those choices are not fixed.
+
+2. UNIVERSAL FACTOR F: A PROOF USING ONE BRANCH KNOT
+
+For an arbitrary strongly invertible kappa with preferred quotient T,
+attach the standard +1/2 cap. The branch set B is a knot and
+Sigma_2(B)=S^3_(1/2)(kappa), so det(B)=1. The archived exact cap calculation,
+valid for every such meridian-normalized T, is
+
+  V_B(A^-4)-1 = C(A)*x(T),
+  C(A)=A^-10*(A^4-1)*(A^8+A^4+1),    x=-w.
+
+There is no unknown additive monomial: B and the meridional unknot have
+the same endpoint pairing and can be oriented compatibly on T, so their
+writhe difference comes solely from the fixed cap. The rational reference
+cap closure normalizes to 1. The opposite half-cap changes C only by a unit.
+
+Write P(t)=V_B(t)-1. The following standard facts imply
+
+  G(t)=(t-1)^2*(t^2+t+1)*(t^2+1)*(t^3+1) divides P(t).
+
+Detailed factors and phases:
+
+  (i) Every knot has V(1)=1, V'(1)=0 and V(exp(2pi*i/3))=1.
+      Thus (t-1)^2*(t^2+t+1) divides P.
+
+ (ii) det(B)=1 gives V_B(-1)=+1, not merely an undetermined sign.
+      Here is an elementary sign check: if V=sum c_j t^j, then
+      V(-1)=1-2*sum_(j odd)c_j. V'(1)=sum j*c_j=0 implies the odd
+      coefficient sum is even, hence V(-1)=1 mod 4. Since |V(-1)|=1,
+      V(-1)=1. Thus t+1 divides P.
+
+(iii) A determinant-one knot has Arf=0. For completeness, normalized
+      Delta(t)=Conway(t^1/2-t^-1/2) gives Delta(-1)=1-4*a2 mod 8.
+      Also Delta(-1)=1 mod 4 and |Delta(-1)|=1, so Delta(-1)=1 and
+      a2 is even; Arf=a2 mod 2. The classical evaluation
+      V(i)=(-1)^Arf therefore gives V(i)=V(-i)=1. Thus t^2+1 divides P.
+
+ (iv) At eta=exp(pi*i/3), Lickorish--Millett give V_B(eta)=+/-1 because
+      H_1(Sigma_2(B);Z/3)=0. The sign is fixed without an extra topology
+      theorem: if V_B(eta)=epsilon in {+1,-1}, then phi_6(t)=t^2-t+1
+      divides V_B(t)-epsilon in Z[t,t^-1]. Evaluate at -1; since
+      phi_6(-1)=3 and V_B(-1)=1, epsilon=1 mod 3, hence epsilon=+1.
+      Therefore t^2-t+1 divides P.
+
+The factors are pairwise coprime over Q except for the deliberately
+specified double root at 1. They are monic, so Gauss's lemma gives the
+displayed product divisibility over Z[t,t^-1].
+
+Substitute t=A^-4. Up to Laurent units,
+
+  G(A^-4)=(A^4-1)^2*(A^8+A^4+1)*(A^8+1)*(A^12+1),
+  C(A)=(A^4-1)*(A^8+A^4+1).
+
+Cancellation in the integral domain R gives
+
+  F(A)=(1-A^4)*(1+A^8)*(1+A^12) divides x(T), hence divides w(T).
+
+This proves the requested universal factor for every chosen strong inversion,
+not just for Whitehead towers or a2(kappa)=0 companions. In particular the
+one-half branch knot's determinant is one even when a2(kappa) is nonzero;
+do not confuse its Arf invariant with Arf(kappa).
+
+The zero set is exactly the preimage under t=A^-4 of
+  {1,+i,-i,-1,exp(pi*i/3),exp(-pi*i/3)}.
+Every root is simple. The three factors of F have disjoint roots.
+Universal factor divisibility is about those evaluations; arbitrarily high
+orders of vanishing in the Whitehead tower are strictly stronger than the
+classical single evaluations.
+
+3. CORRECTIONS TO THE PROPOSED EXPLANATION
+
+The assertion that 'all three agree with the unknot's values for every
+closure' is false literally: a p/q closure has determinant |p|, and even
+the rational reference can close to a nontrivial two-bridge knot. The
+appropriate comparator is the matching rational closure, not always U.
+At the listed A roots, F|w implies equality of the meridian-normalized
+bracket vectors, hence equality after EVERY fixed bracket closure functional
+with its rational comparator. Normalized Jones polynomials for arbitrary
+different-connectivity closures still require compatible orientation/writhe
+bookkeeping. No such broad normalization assertion is needed for this proof.
+
+The root-evaluation proof also shows why the proposed claim in (b), that
+a2(P(J)) being independent of J alone forces F|m_P, cannot be taken on
+faith: one derivative condition does not automatically impose all the
+listed evaluation roots. A separate rational-input/satellite argument may
+prove F|m_P for winding-zero patterns, but that implication needs its own
+proof. This report does not audit (b).
+
+4. PRIMARY SOURCES CHECKED
+
+A. Stoimenow, Polynomial values, the linking form and unknotting numbers,
+Math. Res. Lett. 11 (2004), 755--769, Proposition 3.2 (p759): the universal
+(t-1)(t^3-1) factor, fourth-root Arf value, and sixth-root possibilities.
+https://archive.intlpress.com/site/pub/files/_fulltext/journals/mrl/2004/0011/0006/MRL-2004-0011-0006-a004.pdf
+
+W. B. R. Lickorish and K. C. Millett, Some evaluations of link polynomials,
+Comment. Math. Helv. 61 (1986), 349--359: Theorems 1 and 3, and introduction.
+Theorem 1 gives the Arf evaluation; Theorem 3 gives the sixth-root value
+with exponent dim H_1(double branched cover;Z/3).
+https://web.math.ucsb.edu/~millett/Papers/1986Millett6LickorishCommMathHelv.pdf
+
+Exact local cap identity and compatible-orientation argument:
+work/transmission18/whitehead_factor_and_clasp_audit.txt,
+outputs/jones-exact-knot-family-and-zero-factor-target.txt, equations (2)--(4).
+
+The primary source statements, not third-party search summaries, were used.
+No claim of novelty is made for the universal factor or determinant-one
+evaluation consequences.

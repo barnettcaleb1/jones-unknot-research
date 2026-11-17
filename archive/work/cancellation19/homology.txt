@@ -1,0 +1,130 @@
+PASS 19: GEOMETRIC AUDIT AND THE ACTUAL GAUGE-THEORY GAP
+31 October 2026. Independent bounded audit; no general detection proof.
+
+1. INDEPENDENT TYPE-C LOCALITY AUDIT: PASSES
+
+The theorem in geometry.txt is sound with its full hypotheses: the
+ambient solid torus has the inherited strong inversion, the disk itself
+is invariant and lies entirely in that solid torus, its boundary is
+strongly inverted, and its two punctures have algebraic intersection zero.
+
+I checked the two delicate steps independently.
+
+(a) An invariant containing ball really exists. The split two-component
+link exterior admits an essential sphere whose involution orbit is one
+sphere or two disjoint spheres. Every essential sphere separates the two
+components. The ball containing the local knot and excluding the axis
+component is therefore mapped to another ball with the same property.
+Distinct disjoint boundary spheres would make these balls nested; the
+involution would reverse a strict inclusion, impossible. The chosen ball
+is invariant. Its boundary involution preserves orientation, so it has
+exactly two fixed points; the global fixed circle consequently meets the
+ball in one interval. There is no unaccounted closed component, since the
+global fixed set is a single circle which already crosses the boundary.
+
+(b) Shrinking the crossing disk is a framed isotopy in the knot complement.
+The disk involution is a reflection. Exchanged punctures would have the
+same oriented intersection sign, since both disk and knot orientations
+reverse. Zero linking thus makes both punctures fixed. The fixed segment
+joining them is unique within the solid torus's two fixed intervals, and
+lies in the containing ball. A thin disk neighborhood of a slightly
+extended segment lies in that ball and contains both punctures. The
+annulus between its boundary and the original disk boundary avoids the
+knot. Sliding across it preserves the disk longitude/framing. Surgery can
+therefore be done inside the ball. A 1/n surgery on this disk-bounding
+circle again produces a ball, relative to its outer boundary.
+
+No arbitrary equivariant isotopy of an entire disk through the knot is
+needed; the explicit puncture-free annulus is sufficient. This also
+explains why hypothetical twisting of the disk does not invalidate the
+argument. Finite-sequence use requires the stated symmetry hypotheses at
+each stage, as in an equivariant sequence.
+
+I read the precise sphere input in Lackenby, Links with splitting number
+one, proof of Proposition 4.1, PDF p11 (printed p10), and the disk model
+in Boyle--Chen, Lemma 6.5. Their solid torus in Lemma 6.5 has a fixed CORE
+CIRCLE, allowing two connecting intervals. Our solid torus is strongly
+inverted and has two fixed ARCS, giving the uniqueness needed here.
+This difference is helpful, not a contradiction.
+https://people.maths.ox.ac.uk/lackenby/spl29121-geom-ded.pdf
+https://arxiv.org/html/2412.09797v2
+
+Scope exclusions are essential: invariance of the boundary alone does
+not supply an invariant disk; a free crossing circle is different; a disk
+entering the companion exterior is different. No claim about all shells.
+
+2. A REAL NONPERTURBATIVE INPUT, BUT NO JONES BRIDGE
+
+Imori--Park--Taniguchi, Unknotting number, ribbon concordance, and singular
+instantons, July 2026 preprint, Theorem 1.2 / Theorem 4.2: a slice knot
+receiving ribbon concordance from K1#K2, with one summand's enriched
+instanton local class nonzero, requires both signs in any sequence of
+null-homologous unknotting twists. In particular its unknotting number
+exceeds one. Corollary 1.3 gives Wh+(K)#-Wh+(K), for nonslice strongly
+quasipositive K, as an explicit example with untwisting number exactly two.
+
+The operative input is geometric: definite cobordisms plus the
+Chern--Simons filtration. Equality in the appropriate filtered bound
+forces an irreducible SU(2) representation, contradicting a cyclic
+cobordism-complement group. This is stronger information than Euler
+characteristic. See Proposition 2.1, Theorem 3.3, and the proof on pp7--9.
+https://arxiv.org/pdf/2607.12768
+
+Consequences for the present strategy: a reduction to unknotting-one that
+preserves this ribbon-concordance structure cannot work for the detected
+class. Replacing a composite ribbon target by a prime hyperbolic ribbon
+upper target does not remove the obstruction. But Jones=1 supplies none
+of the required sliceness, local-class, or filtered-map equalities. Thus
+this theorem currently blocks a proposed reduction; it does not rule out
+a Jones-one unknotting-one knot. We found no valid way to infer a
+Chern--Simons equality from a Jones identity.
+
+3. THE PREVIOUS FORMAL MODEL PASSES THE EXTRA u=1 TORSION TEST
+
+Alishahi--Dowlin, The Lee spectral sequence, unknotting number, and the
+Knight Move Conjecture, Theorem 1.2, bounds the X-torsion order by u(K).
+https://arxiv.org/pdf/1710.07875
+
+The earlier formal model has only length-one bars in the relevant X
+variable. Its Q[G] Smith factor G^2 is not a length-two X-bar: in the
+unreduced Frobenius algebra X=G+2z and X^2=G^2. Multiplication by X has
+matrix [[G,0],[2,-G]], with Q[G] Smith form diag(1,G^2), but its cokernel
+is annihilated by X. The previously verified crossing-change-style
+nullhomotopy therefore survives this necessary u=1 condition. Do not
+misread the change of variables as a new obstruction.
+See work/proof13/homology/unreduced_lee_check.txt for the original check.
+
+4. NO FINITE-TYPE SHORTCUT EVEN WITH u=1 FIXED
+
+Ohyama--Taniyama--Yamada's theorem, restated as Theorem 1.1 in the new
+Meilhan--Ogita--Yasuhara preprint, says: for any knot K and finite n there
+is a knot J with u(J)=1 agreeing with K on every finite-type invariant
+through degree n. Setting K=U defeats any fixed finite collection of
+Jones Taylor coefficients even after restricting to unknotting-one.
+The approximating knot may depend on n; no limiting knot or exact
+Jones-one knot follows.
+https://arxiv.org/pdf/2610.39474
+Original source listed there: Y. Ohyama, Web diagrams and realization of
+Vassiliev invariants by knots, J. Knot Theory Ramifications 9 (2000),
+693--701; and the earlier Ohyama--Taniyama--Yamada reference.
+
+5. FAITHFULNESS LOGIC
+
+Bharathram--Birman--Brendle, arXiv:2607.05283 v2 (September 2026), claims
+faithfulness of B4 Burau and obtains B4 Jones faithfulness. It is a
+preprint; this pass did not independently verify its full technical proof.
+https://arxiv.org/pdf/2607.05283
+
+Ito, arXiv:1402.2028, Corollary 3, proves the direction
+  B4 Burau nonfaithful  =>  Jones does not detect the unknot.
+The converse is not supplied. Hence the new faithfulness claim does not
+establish unknot detection. A faithful operator representation still
+need not have a trace that distinguishes its unknot closures.
+https://arxiv.org/pdf/1402.2028
+
+OUTCOME
+
+The concrete result of this pass is the independently audited local
+type-C obstruction. The strongest newly checked gauge input obstructs
+ribbon-concordance-preserving simplifications but does not close the
+Jones-to-geometry gap. No counterexample and no general proof resulted.

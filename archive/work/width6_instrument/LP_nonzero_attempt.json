@@ -1,0 +1,437 @@
+{
+  "label": "LP_nonzero",
+  "i": 7,
+  "j": 7,
+  "original_word": [
+    -1,
+    2,
+    3,
+    -4,
+    -5,
+    -1,
+    -1,
+    -1,
+    3,
+    3,
+    3,
+    2,
+    -4,
+    3,
+    -5,
+    4,
+    5,
+    -4,
+    5,
+    -3,
+    4,
+    -2,
+    -3,
+    -3,
+    -3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    -3,
+    -2,
+    1,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    -1,
+    2,
+    3,
+    -4,
+    -5,
+    -1,
+    -1,
+    -1,
+    3,
+    3,
+    3,
+    2,
+    -4,
+    3,
+    -5,
+    4,
+    -5,
+    -4,
+    5,
+    -3,
+    4,
+    -2,
+    -3,
+    -3,
+    -3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    -3,
+    -2,
+    1,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2
+  ],
+  "effective_matrix_word": [
+    -1,
+    2,
+    3,
+    -4,
+    -5,
+    -1,
+    -1,
+    -1,
+    3,
+    3,
+    3,
+    2,
+    -4,
+    3,
+    -5,
+    4,
+    5,
+    -4,
+    5,
+    -3,
+    4,
+    -2,
+    -3,
+    -3,
+    -3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    -3,
+    -2,
+    1,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    2,
+    3,
+    4,
+    5,
+    -1,
+    2,
+    3,
+    -4,
+    -5,
+    -1,
+    -1,
+    -1,
+    3,
+    3,
+    3,
+    2,
+    -4,
+    3,
+    -5,
+    4,
+    -5,
+    -4,
+    5,
+    -3,
+    4,
+    -2,
+    -3,
+    -3,
+    -3,
+    1,
+    1,
+    1,
+    5,
+    4,
+    -3,
+    -2,
+    1,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2,
+    -5,
+    -4,
+    -3,
+    -2
+  ],
+  "status": "STOPPED_AT_TRANSPORT_BUDGET",
+  "trace": [
+    {
+      "prefix": 1,
+      "matrix_generator": -1,
+      "vertices": [
+        2,
+        2
+      ],
+      "seconds": 0.0004531661979854107
+    },
+    {
+      "prefix": 2,
+      "matrix_generator": 2,
+      "vertices": [
+        5,
+        5
+      ],
+      "seconds": 0.002375165931880474
+    },
+    {
+      "prefix": 3,
+      "matrix_generator": 3,
+      "vertices": [
+        9,
+        9
+      ],
+      "seconds": 0.006409458350390196
+    },
+    {
+      "prefix": 4,
+      "matrix_generator": -4,
+      "vertices": [
+        13,
+        9
+      ],
+      "seconds": 0.011917916126549244
+    },
+    {
+      "prefix": 5,
+      "matrix_generator": -5,
+      "vertices": [
+        15,
+        9
+      ],
+      "seconds": 0.015602374915033579
+    },
+    {
+      "prefix": 6,
+      "matrix_generator": -1,
+      "vertices": [
+        19,
+        16
+      ],
+      "seconds": 0.02156191598623991
+    },
+    {
+      "prefix": 7,
+      "matrix_generator": -1,
+      "vertices": [
+        21,
+        20
+      ],
+      "seconds": 0.03252624999731779
+    },
+    {
+      "prefix": 8,
+      "matrix_generator": -1,
+      "vertices": [
+        23,
+        24
+      ],
+      "seconds": 0.04772845795378089
+    },
+    {
+      "prefix": 9,
+      "matrix_generator": 3,
+      "vertices": [
+        33,
+        40
+      ],
+      "seconds": 0.06516858329996467
+    },
+    {
+      "prefix": 10,
+      "matrix_generator": 3,
+      "vertices": [
+        37,
+        50
+      ],
+      "seconds": 0.094887665938586
+    },
+    {
+      "prefix": 11,
+      "matrix_generator": 3,
+      "vertices": [
+        43,
+        58
+      ],
+      "seconds": 0.13580504106357694
+    },
+    {
+      "prefix": 12,
+      "matrix_generator": 2,
+      "vertices": [
+        88,
+        152
+      ],
+      "seconds": 0.20826925011351705
+    },
+    {
+      "prefix": 13,
+      "matrix_generator": -4,
+      "vertices": [
+        146,
+        266
+      ],
+      "seconds": 0.30308404099196196
+    },
+    {
+      "prefix": 14,
+      "matrix_generator": 3,
+      "vertices": [
+        307,
+        596
+      ],
+      "seconds": 0.5902874581515789
+    },
+    {
+      "prefix": 15,
+      "matrix_generator": -5,
+      "vertices": [
+        392,
+        714
+      ],
+      "seconds": 0.765319166239351
+    },
+    {
+      "prefix": 16,
+      "matrix_generator": 4,
+      "vertices": [
+        666,
+        1292
+      ],
+      "seconds": 1.3443554579280317
+    },
+    {
+      "prefix": 17,
+      "matrix_generator": 5,
+      "vertices": [
+        938,
+        1793
+      ],
+      "seconds": 2.01654329104349
+    },
+    {
+      "prefix": 18,
+      "matrix_generator": -4,
+      "vertices": [
+        1169,
+        2097
+      ],
+      "seconds": 3.3334577502682805
+    },
+    {
+      "prefix": 19,
+      "matrix_generator": 5,
+      "vertices": [
+        1724,
+        3005
+      ],
+      "seconds": 4.92083654133603
+    },
+    {
+      "prefix": 20,
+      "matrix_generator": -3,
+      "vertices": [
+        2400,
+        4079
+      ],
+      "seconds": 6.734716416336596
+    },
+    {
+      "prefix": 21,
+      "matrix_generator": 4,
+      "vertices": [
+        4179,
+        7070
+      ],
+      "seconds": 10.77031158329919
+    },
+    {
+      "prefix": 22,
+      "matrix_generator": -2,
+      "vertices": [
+        5743,
+        9667
+      ],
+      "seconds": 13.576452041044831
+    },
+    {
+      "prefix": 23,
+      "matrix_generator": -3,
+      "vertices": [
+        8892,
+        15018
+      ],
+      "seconds": 21.28844083333388
+    }
+  ],
+  "limits": {
+    "transport_seconds": 150,
+    "vertices_per_curve": 15000,
+    "configuration_pairs": 2000000
+  },
+  "seconds": 21.28899116627872
+}

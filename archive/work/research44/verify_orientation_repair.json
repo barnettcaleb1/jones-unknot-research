@@ -1,0 +1,82 @@
+{
+  "zero_layers": [
+    {
+      "link": "unlink",
+      "F_layer0": [
+        0,
+        -2
+      ],
+      "F_squared_layer0": [
+        4,
+        0
+      ]
+    },
+    {
+      "link": "Hopf",
+      "F_layer0": [
+        -2,
+        0
+      ],
+      "F_squared_layer0": [
+        4,
+        0
+      ]
+    }
+  ],
+  "cross_term_nonzero": true,
+  "machine_channel_residues_at_i": [
+    -8,
+    8
+  ],
+  "residual_checks": [
+    {
+      "m": 1,
+      "span_residual": 6,
+      "span_squared": 12,
+      "squared_JVP_degree": 15
+    },
+    {
+      "m": 2,
+      "span_residual": 10,
+      "span_squared": 20,
+      "squared_JVP_degree": 23
+    },
+    {
+      "m": 3,
+      "span_residual": 14,
+      "span_squared": 28,
+      "squared_JVP_degree": 31
+    },
+    {
+      "m": 4,
+      "span_residual": 18,
+      "span_squared": 36,
+      "squared_JVP_degree": 39
+    },
+    {
+      "m": 5,
+      "span_residual": 22,
+      "span_squared": 44,
+      "squared_JVP_degree": 47
+    },
+    {
+      "m": 6,
+      "span_residual": 26,
+      "span_squared": 52,
+      "squared_JVP_degree": 55
+    },
+    {
+      "m": 7,
+      "span_residual": 30,
+      "span_squared": 60,
+      "squared_JVP_degree": 63
+    },
+    {
+      "m": 8,
+      "span_residual": 34,
+      "span_squared": 68,
+      "squared_JVP_degree": 71
+    }
+  ],
+  "scope": "Algebra only; machine geometry inputs stated separately."
+}

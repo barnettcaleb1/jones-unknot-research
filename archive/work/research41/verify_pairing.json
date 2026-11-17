@@ -1,0 +1,12 @@
+{
+  "omega_preserves_H": true,
+  "omega_preserves_Q": true,
+  "outside_matchings": 105,
+  "necessary_component_tables": {
+    "2,1,1,1": 4,
+    "2,1,1,2": 4,
+    "3,2,2,1": 8,
+    "4,3,3,2": 1
+  },
+  "scope": "Connectivity is necessary only; it does not prove any outside tangle is invariant."
+}

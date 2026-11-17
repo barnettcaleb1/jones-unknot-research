@@ -1,0 +1,119 @@
+Pass 51: general-homology-sphere longitude formula
+2026-11-01. Requested implication VERIFIED. No geometric unknot conclusion.
+
+PROPOSITION. Let K be a knot in an oriented integral homology sphere Y.
+Suppose Y_0(K) is the double branched cover of a link L in S3 whose Jones
+polynomial equals that of the two-component unlink up to a signed Laurent
+monomial. Then the symmetric Alexander polynomial, normalized by Delta_K(1)=1,
+satisfies Delta_K''(1)=0. No hypothesis Y=S3, lambda_Casson(Y)=0, or L=U2
+geometrically is required.
+
+1. Direct general-Y zero-surgery formula, including normalization.
+
+Poudel, 'Lescop's Invariant and Gauge Theory', section 4, equation (4.1),
+PDF page 6, explicitly considers null-homologous knots k in arbitrary rational
+homology spheres Sigma. His normalization is
+
+ Delta_(k in Sigma)(t)=|H1(Sigma)| det(t^(1/2)V-t^(-1/2)V^T),
+ lambda_L(Sigma_0(k))=Delta_(k in Sigma)''(1)/2
+                     -|Tor H1(Sigma_0(k))|/12.
+
+He cites Lescop's monograph section 1.5 and explicitly states independence
+from the surgery presentation. For integral Y, this specializes to
+
+                   lambda_L(Y_0(K))=Delta_K''(1)/2-1/12.       (1)
+
+There is NO ambient Casson term. In particular, inserting lambda_Casson(Y)
+into (1), by extrapolating a nonzero rational surgery formula, would be wrong.
+Source: https://ms.mcmaster.ca/~ppoudel/Research/Lescop.pdf
+
+2. Branched-cover formula and the b1=1 normalization audit.
+
+Garoufalidis, 'Signatures of links and finite type invariants of cyclic branched
+covers', Theorem 1, has, in his doubled normalization lambda_G,
+
+ i^(sigma(L)+nu(L)) lambda_G(Sigma_2(L))
+          = J_L'(-1)/6 + J_L(-1)sigma(L)/4.                    (2)
+
+Here nu=b1 of the cover; J_L(t)=(-1)^(c-1)V_L(t^(-1)) is his Jones
+convention, and sqrt(-1)=i. For U2, J=t^(1/2)+t^(-1/2), so J(-1)=0
+and J'(-1)=-i. Any signed monomial multiplier has modulus one at -1;
+its derivative contributes zero since J(-1)=0. Thus (2) gives
+
+                         |lambda_G(Y_0(K))|=1/6.             (3)
+
+There is no signature assumption: its entire remaining contribution is a
+unit-modulus phase. Here H1(Y_0K)=Z, so nu=1 exactly. An actual normalized
+Jones polynomial proportional to the U2 polynomial has two components,
+as follows by evaluating its absolute value at t=1.
+
+Source, Theorem 1, Remark 2.2, section 4.1:
+https://people.mpim-bonn.mpg.de/stavros/publications/signature.pdf
+
+The matching b1=1 formula in this normalization is
+
+                   lambda_G(Y_0(K))=Delta_K''(1)-1/6.         (4)
+
+The following independent route verifies (4) without assuming that a
+normalization calibrated for rational homology spheres automatically extends
+across b1=1. Garoufalidis--Habegger, 'The Alexander polynomial and finite type
+3-manifold invariants', Theorem 1, states that the LMO invariant of EVERY
+closed manifold with H1=Z is determined by its normalized Alexander polynomial.
+The degree-one part determines lambda_G, with a fixed sign depending on b1,
+as noted in Garoufalidis's introduction. Thus two H1=Z manifolds with the same
+Alexander polynomial have the same lambda_G.
+
+Take an integral Seifert matrix for K in Y. Its skew part is unimodular
+symplectic, so the usual disk-with-bands construction realizes it as a Seifert
+matrix of a knot J in S3. The zero-filled manifolds Y_0(K) and S3_0(J) have
+the same Alexander polynomial: capping the lifted preferred longitude in the
+infinite cyclic cover does not change its H1, since that longitude already
+bounds the lifted Seifert surface. Consequently their lambda_G values agree.
+
+For S3_0(J), the one-knot calculation in Garoufalidis section 4.1 gives (4)
+directly. For framing f its terms are D=zeta(J), H0=f sign(f)/4,
+H1=-1/6, H2=-f^2/12, with outer sgn'([0])=1. At f=+1 all H terms cancel,
+so zeta(J)=lambda_G(S3_1(J))=Delta_J''(1), by the doubled Casson surgery
+normalization. At f=0 the answer is zeta(J)-1/6. This calibration was also
+audited independently in work/fanout16/realizability_zero_filling.txt.
+It proves (4) for general Y and agrees with twice (1), including the constant.
+
+Garoufalidis--Habegger primary published source, Theorem 1, printed page 486;
+normalization of the manifold Alexander polynomial is on pages 491--492:
+https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_alexander_polynomial_and_finite_type_3manifold_invariants.pdf
+
+3. Arithmetic conclusion and orientation.
+
+Equations (3)--(4) give |6 Delta_K''(1)-1|=1. Its two rational possibilities
+are Delta_K''(1)=0 and 1/3. The symmetric integral Alexander polynomial has
+integral (indeed even) second derivative at one, ruling out 1/3. Hence
+
+                              Delta_K''(1)=0.
+
+All orientations in (1)--(4) are coherent with the filling and branched-cover
+constructions. The conclusion uses an absolute value specifically to remove
+the signature/root-of-unity ambiguity. One should not use the rational-
+homology-sphere rule lambda(-M)=-lambda(M) indiscriminately at b1=1:
+the zero-surgery formulas themselves fix the convention here.
+
+4. Exact use for a rational bracket comparator.
+
+Suppose the full framed skein vectors of X and a rational tangle R agree.
+Choose rational caps with cover slopes mu,lambda at distance one such that
+the R closures are U and U2. The mu closure of X has determinant one, so its
+cover Y is an integral homology sphere; this does not assert Y=S3. Let K be
+the filling core, so its exterior is M=Sigma_2(X). Equality for the lambda
+closure supplies determinant zero, identifying lambda as the preferred
+longitude of K. Its framed bracket also equals that of U2. Removing writhe
+normalizations can introduce only a signed monomial, which the argument
+above explicitly permits. Thus the proposition applies and Delta_K''(1)=0.
+
+In particular no actual rational-product equality or unknot anchor is needed
+for THIS derivative obstruction. The determinant-one step should use the
+reduced bracket (cancel the common delta before evaluation at A=e^(pi i/4));
+the unreduced bracket itself vanishes at that root for every nonempty link.
+
+Limits: Delta''=0 alone does not imply Delta=1, M is a solid torus, Y=S3,
+or that X is rational. Any application adding Floer simplicity, a norm
+argument, or a prime-decomposition argument must supply its hypotheses
+separately. This note does not audit those additional implications.

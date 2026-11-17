@@ -1,0 +1,129 @@
+PROOF12 TANGLE GEOMETRY AUDIT — 2026-10-31
+Scope: checked deductions and targeted research proposals; no solution of generic Jones detection and no novelty claim.
+
+1. AN ACTUAL OBSTRUCTION TO THE NATURAL UNKNOT-ANCHOR REDUCTION
+
+For a nontrivial knot K, let D_K be the standard half-spin ribbon disk with boundary K#(-K). Its complement group is the knot group G_K, hence is nonabelian. Friedl–Teichner, New topologically slice knots (2005), Section 2, p2135 explicitly gives this half-spin construction and group:
+https://math.berkeley.edu/~teichner/Papers/topslice.pdf
+
+If a ribbon disk D has boundary the actual unknot, then inclusion of the boundary knot exterior surjects onto pi1(B4\D). This is the standard homotopy-ribbon property; reversing the ribbon-complement handle decomposition adds only handles of indices at least 2 to the boundary exterior. The group is therefore a quotient of Z. Its abelianization is Z, so the disk-complement group is Z. No uniqueness or standardness claim about the disk is needed.
+
+In a fixed ribbon disk-band presentation, adding even band twists and switching crossings between bands preserve the complement group: the Wirtinger relators record how bands pass through base disks, not their framings or band-band crossings. This is stated explicitly in Hitt–Silver, Ribbon knot families via Stallings' twists, J Austral Math Soc A50 (1991), p363 Remark(2) after Lemma3:
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/82437148D37FEF30ED1C6155174B382C/S1446788700032961a.pdf/ribbon_knot_families_via_stallings_twists.pdf
+
+Consequently, the standard double of ANY nontrivial K cannot be carried to an actual unknot by these moves, isotopies, and slides of the same disk. This remains an obstruction for Delta_K=1 and for a hypothetical V_K=1. A successful generic anchor reduction must change the disk group, e.g. by moves involving band/base-disk passages, whose Jones effect is not controlled here.
+
+2. THE SAME CANONICAL REDUCTION CANNOT GENERICALLY REACH FUSION ONE
+
+Bleiler–Eudave-Munoz, Composite ribbon number one knots have two-bridge summands (1990), Theorem1.3 says a composite fusion-one ribbon knot has a nontrivial two-bridge summand. Their 'ribbon number' is the modern fusion number, not number of ribbon singularities.
+https://doi.org/10.1090/S0002-9947-1990-0968881-9
+Author-uploaded original read at:
+https://www.researchgate.net/publication/303349776_Composite_ribbon_number_one_knots_have_two-bridge_summands
+
+If V_K=1, multiplicativity forces each prime factor's Jones polynomial to be a Laurent unit; V(1)=1 and V'(1)=0 then force that unit to be 1. A nontrivial two-bridge factor is impossible by alternating Jones detection. Thus a nontrivial hypothetical K has fusion(K#(-K))>=2. This is a genuine obstruction to the proposed canonical fusion-one reduction, not evidence against all possible unrelated reductions.
+
+3. POSITIVE CONSTRUCTION TARGET: AN ORBIT WITH NONTRIVIALITY BUILT IN
+
+The group obstruction is useful for counterexample search. Start with D_K for a nontrivial Delta=1 knot K and vary full band twists. Every resulting boundary remains nontrivial by (1). Any parameter yielding V=1 is then a certified counterexample, without a difficult separate unknot-recognition step.
+
+For a ribbon disk presented by b bands joining b+1 base disks (an abstract tree), let L_C be the ribbon link after cutting a subset C of the bands. It has |C|+1 components. Put delta=-(t^(1/2)+t^(-1/2)) and Q_C=V_(L_C)/delta^|C|. Eisermann's ribbon-link divisibility theorem makes Q_C an integral Laurent polynomial:
+https://msp.org/gt/2009/13-2/gt-v13-n2-p01-s.pdf
+
+Choose n_i so that the full-twist recurrence is
+V_(R with n full twists at b)=t^(2n)V_R+(1-t^(2n)) V_(R cut at b)/delta.
+This is Hitt–Silver Lemma2(b), up to the explicitly selectable sign of the full-twist convention. Iterating on the cut links gives the exact multi-affine expression
+
+V_R(n_1,...,n_b)= sum_(C subset [b]) Q_C(t)
+                    product_(i in C)(1-t^(2n_i))
+                    product_(i not in C)t^(2n_i).
+
+All-cut Q_[b]=1 (base unlink). Cutting a band in an abstract forest raises the component count by one, so the same normalization works at each step. This is also the ribbon-band analogue of Tanaka2022 Theorem1.1's explicit symmetric-union formula.
+
+A fixed b=2 template needs 4 actual cut-link polynomials; b=3 needs 8. After these are geometrically verified, V=1 is an exact affine-exponent cancellation problem, suitable for the existing unbounded lattice solver. UPDATE: a concrete two-site mirror-double template of KT has now been constructed; see newfamilyproof.txt. All four actual cut diagrams and two full-twist checks are supplied. Its Jones-one locus is empty for ALL integer twist parameters by a one-line leading-term argument. The exact identification of this serialized disk with the canonical half-spin disk group was not separately computed and is not needed for the exclusion.
+
+4. A KNOWN INVERSE-DESIGN TARGET, NOW WITH AN EXACT SMALL PARAMETER FILTER
+
+Lamm–Tanaka, On partial knots for symmetric unions, Topology Appl375 (2025),109593, proves that any partial knot J of a ONE-twist-region symmetric-union presentation of the Kinoshita–Terasaka knot has V_J=1. The publisher abstract explicitly states this result. Full article was not accessible, so its complete proof is not claimed audited:
+https://www.sciencedirect.com/science/article/pii/S0166864125003918
+https://doi.org/10.1016/j.topol.2025.109593
+
+A nontrivial partial knot in such a presentation would be a counterexample. The known presentation has partial unknot. Varying its twist does not change that partial knot. One must change the off-axis tangle/decomposition, possibly breaking and recovering symmetry. Symmetric Reidemeister moves alone preserve the partial knot.
+
+We independently recovered the Jones obstruction and a stronger parity restriction, using Tanaka's correct primary formula in A formula for the Jones polynomial of symmetric unions (2022), Thm1.3 and proof:
+https://www.ed.gifu-u.ac.jp/file/5c3c1905e8c24e832f61fa5f837be463.pdf
+
+Let P=V_KT in the chirality used by our independently checked four-braid, and choose signed twist exponent m OPPOSITE to Tanaka2022's half-twist parameter. Set star P(t)=P(t^-1). Then
+  (1+(-t)^m) F(t)=P(t)+(-t)^m star P(t),
+  F(t)=V_J(t)V_J(t^-1).
+The case m=0 is excluded because KT is prime and nontrivial, whereas zero twist is J#(-J).
+
+Tanaka's derivative congruence says 8|m| divides P'(-1). Here
+  P=1+(t^2-1) f,
+  f=t^-4(t^2+1)(t-1)^2(t^2+t+1)(t^2-t+1),
+  P'(-1)=-48.
+Thus |m| is one of 1,2,3,6. The accompanying exact Fraction-based script performs Laurent division for all eight possibilities; this is a complete number-theoretic reduction, not a bounded search.
+
+- m=+-6: RHS/(1+(-t)^m) is not a Laurent polynomial.
+- m=-3,-2,-1: the required F has negative constant coefficient. Impossible, since [t^0](Q Q*) is a sum of squares of integer coefficients.
+- m=1: F has constant coefficient 1 and is nonconstant. A norm with constant coefficient 1 comes from a single signed monomial and is identically 1.
+- m=3: F=3-(t+t^-1)+(t^3+t^-3)-(t^4+t^-4). At a primitive cube root omega this is 7, contradicting the universal knot identity V_J(omega)=1, which requires F(omega)=1.
+- m=2: F=1. Hence V_J is a signed monomial; V_J(1)=1 and V'_J(1)=0 force V_J=1.
+
+Therefore every ONE-region presentation of this fixed chirality has m=2 in our convention (Tanaka's m=-2); the mirror reverses it. In particular every such presentation is EVEN. This independently recovers the published Jones conclusion and establishes the parity needed for the next geometric restrictions. The underlying identity is in the 2022 source and the derivative congruence is restated as Cor4.2 in Tanaka2025 below. No originality claim is made.
+
+Source audit caveat: Tanaka's short 2025 On alternating partial knots of symmetric unions, printed p4 Theorem4.1, has an exponent typo in the displayed identity: it uses t^-m on the left and t^m on the right. Differentiating at t=1 contradicts V(1)=1,V'(1)=0 for m nonzero. The typo was checked visually, not inferred from OCR. The correct t^m-left formula appears in the 2022 source and its elementary proof. The following example equations inherit the typo. Do not use the 2025 identity uncorrected.
+https://www.ed.gifu-u.ac.jp/file/aa876b18ef60ef2ef2bcac4abdf0ec78_1.pdf
+
+5. GEOMETRIC RESTRICTIONS ON A NONTRIVIAL PARTIAL J
+
+Because the unique allowed twist is even, Boileau–Kitano–Nozaki's even-symmetric-union results apply: Delta_KT=Delta_J^2, g(KT)>=2g(J), and there is a meridian-preserving, longitude-killing epimorphism G_KT -> G_J.
+https://arxiv.org/html/2407.09881
+Thus a nontrivial candidate must have g(J)=1 and Delta_J=1, in addition to V_J=1.
+
+KT has a 3-bridge presentation, so G_KT has three meridional generators and mr(J)<=3. A knot generated by two meridians is two-bridge, so a nontrivial Jones1 candidate must have mr(J)=3 exactly. This does NOT unconditionally imply bridge number 3; the meridional-rank conjecture is not used as a theorem.
+
+Dutra, Meridional rank of Whitehead doubles, arXiv2212.13081, proves mr(W(C))=b(W(C))=2b(C)>=4 when C is prime algebraically tame. Proposition2.9 includes two-bridge, torus and prime three-bridge companions. Such Whitehead-double candidates are therefore excluded by the group epimorphism, regardless of their Jones polynomials:
+https://arxiv.org/abs/2212.13081
+General Whitehead doubles are not all covered. Genus1+Delta1 does not alone classify a knot as a Whitehead double, and no such reduction is claimed.
+
+A further obstruction from Boileau–Kitano–Nozaki, A preorder on the set of links with applications to symmetric unions, arXiv2510.12372v3, Thm1.7 and Prop7.2: KT is arborescent, and its pi-orbifold group surjects onto that of J; each prime factor of Sigma2(J) must have a Seifert-fibered JSJ piece. This excludes a purely hyperbolic prime double cover, not every hyperbolic knot J.
+https://arxiv.org/html/2510.12372v3
+
+No complete classification of KT's quotient knot groups was found. A 'small source' finiteness shortcut is not justified: Tillmann's 2000 character-variety calculation detects a closed essential surface in KT's exterior, so KT is not small.
+https://www.maths.usyd.edu.au/u/tillmann/papers/kino.pdf
+The word 'small' means no closed essential surface, not small crossing number.
+
+6. FINITE-TEMPLATE NEXT TEST, AND THE MISSING GENERAL STEP
+
+Two sharply bounded next tests are now clear:
+(A) Construct one explicit 2/3-band canonical double of a nontrivial Delta1 knot, certify its disk group nonabelian, compute its 4/8 cut-link Jones polynomials, and solve the complete integer twist locus. Group certifies every potential V1 point nontrivial.
+(B) Fix an off-axis tangle template for a one-region symmetric union and ask which parameters give the actual KT knot. Its axis exponent is already fixed at +-2; any geometrically nontrivial partial solution is automatically Jones1. Filter proposed partials by genus1, Delta1, mr3, and the double-cover JSJ restriction before further computation.
+
+Neither is a generic proof reduction: no complexity bound on all off-axis diagrams or all ribbon disks has been shown. We do not infer topological equality to KT merely from matching Jones. This pass found no actual counterexample. The subsequent concrete two-site KT template was constructed and completely excluded; see newfamilyproof.txt.
+
+7. INDEPENDENT AUDIT OF ROOT'S SHARPER BRIDGE OBSTRUCTION
+
+Fukuhama–Ozawa–Teragaito, Genus one, three-bridge knots are pretzel, J Knot Theory Ramifications8 (1999),879–885, Theorem1.1, proves every genus-one 3-bridge knot is a three-strand pretzel with all three parameters odd. This is explicit at the end of Case(i), p3; Case(ii) produces P(+-3,-+3,n), n odd, p5. The complete primary manuscript was read:
+https://www.komazawa-u.ac.jp/~w3c/research/pdf/pretzel.pdf
+Accessible primary-manuscript mirror:
+https://citeseerx.ist.psu.edu/document?doi=8607359ad54e3635165f912f0347ace68fadbabe&repid=rep1&type=pdf
+
+For three odd parameters p,q,r, put S=p+q+r. Our earlier independently audited exact Jones moment proof gives, under V''(1)=V'''(1)=0,
+  pq+pr+qr+1=0,
+  (p+q)(q+r)(r+p)=0.
+If p+q=0, the first equality gives p^2=1. Hence the diagram is P(1,-1,r), an actual unknot by cancellation of the integer rational tangles. The other choices are identical. Thus the genus1/bridge3 class detects U using just these two derivatives. We do NOT need to cite an unverified blanket assertion that every pretzel knot detects U.
+
+Primary table for KT's bridge number 3, with a 3-bridge projection, appears in Minimal bridge projections for 11-crossing prime knots:
+https://citeseerx.ist.psu.edu/document?doi=459a0d6e1a8117452853eb584cc126fb0951921b&repid=rep1&type=pdf
+Row 11n42 explicitly lists bridge index3. Genus2 is also established independently in the knot-Floer literature and explicitly recorded by Kindred's A simple proof of the Crowell–Murasugi theorem, AGT24(2024), p2783:
+https://msp.org/agt/2024/24-5/agt-v24-n5-p12-p.pdf
+
+Combine Sections4–5 with this theorem. If a one-region KT partial J is nontrivial, then:
+  V_J=1, Delta_J=1, g(J)=1,
+  mr(J)<=3 from the meridian-preserving epimorphism,
+  b(J)>=4 from genus1/bridge3 classification plus alternating detection for b<=2.
+Moreover mr(J)=3 since mr<=2 implies two-bridge. Thus J would ALSO contradict the meridional-rank conjecture, mr(J)=b(J).
+
+Exact conditional conclusion: if the meridional-rank conjecture holds just for genus-one knots with meridional rank at most3, every one-region symmetric-union presentation of KT has trivial partial knot. This greatly reduces the appeal of using this particular inverse target to find a Jones counterexample; it is a simultaneous counterexample hunt to two longstanding conjectures. It does not prove the meridional-rank conjecture or Jones detection.
+
+The genuinely useful remaining constructive proposal from this pass is instead Section3's fixed nonabelian disk-group orbit with its exact multiaffine Jones equation. That route has no stated implication that it must violate meridional rank, and one actual two-site KT mirror-double template is now built and excluded for all parameters; see newfamilyproof.txt.

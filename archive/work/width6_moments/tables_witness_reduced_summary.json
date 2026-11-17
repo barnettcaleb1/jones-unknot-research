@@ -1,0 +1,25 @@
+{
+  "case": "witness_reduced",
+  "source_record_file": "width6_instrument/transport_simplified_pairing_14.json",
+  "source_formula_file": "width6_parked/formula_witness_reduced.json",
+  "method": "Reconstruction from saved exact incidence records and independently validated path anchors; no new geometry",
+  "statistics": {
+    "parked_positions": 3,
+    "total_incidence_records": 4,
+    "all_moments_zero": 0,
+    "lowest_nonzero_moment_counts": {
+      "0": 3
+    },
+    "mu0_zero": 0,
+    "surviving_inner_positions": 3,
+    "P1_top_failures": 0,
+    "P1_both_extrema_mixed": 0,
+    "P2_lowest_nonzero_has_pure_extremum": 0
+  },
+  "prediction_witnesses": {
+    "P1_top_failure": [],
+    "P1_both_mixed": [],
+    "P2_failure": []
+  },
+  "seconds": 0.0007468750700354576
+}

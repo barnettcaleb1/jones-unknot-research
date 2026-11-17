@@ -1,0 +1,96 @@
+DOES THE GENERAL JONES CONJECTURE REDUCE TO UNKNOTTING NUMBER ONE?
+Focused literature audit, 31 October 2026.
+
+Finding: no such reduction was established by the primary papers checked.
+This is a bounded search result, not a claim that the entire literature
+contains no reduction. The distinction between arbitrary bracket-flat
+tangles and actual unknot-anchored bracket-flat tangles is explicit in
+the strongest relevant equivalence found.
+
+1. SIKORA'S ACTUAL EQUIVALENCE
+
+Adam Sikora, Tangle equations, the Jones conjecture, slopes of surfaces in
+tangle complements, and q-deformed rationals, Canadian J. Math. 76 (2024),
+707--727. Section 9; published Theorem 9.2, arXiv Theorem 24.
+https://arxiv.org/pdf/2005.08162
+
+The full Jones conjecture is equivalent to the claim that a framed
+four-ended tangle with bracket vector (1,0) is the trivial rational
+tangle. It is also equivalent to the corresponding rational-tangle
+bracket-detection statement.
+
+The converse proof on arXiv p.18 starts with a knot K whose Jones
+polynomial is one, normalizes its framing, and ties K locally into one
+strand of the zero tangle. This produces bracket vector (1,0).
+
+This construction DOES NOT produce an actual unknot anchor. Closing the
+strand that carries K retains K as a connected-sum factor. In particular
+the meridional knot closure is K, not a geometrically certified unknot.
+Sikora's proof in the other direction invokes the full Jones conjecture
+precisely to conclude that the two monomial-bracket closures are actual
+unknots, and then uses the double-cover surgery argument. That step
+cannot be imported into a proof of the Jones conjecture.
+
+2. WHAT OUR ANCHORED REDUCTION DOES PROVE
+
+The independently audited result in generic.txt is an existence
+equivalence between:
+  (i) a nontrivial Jones-one knot of unknotting number one; and
+  (ii) a nonrational actual four-ended tangle with a genuine unknot
+       meridian closure and bracket on its preferred rational-zero line.
+
+The reverse construction uses the 1/2 filling, whose replacement by the
+meridian is explicitly one crossing change. Nontriviality follows from
+the no-nonmeridional-S3-surgery theorem for the covering knot.
+
+The proposed Whitehead/clasp-surgery construction, if its equivariant
+geometry is verified, may identify this anchored problem with essential
+zero shell multipliers. It still starts with an actual unknot anchor.
+It does not turn Sikora's arbitrary local-knot tangle into an anchored
+tangle. Thus it does not, by itself, bridge the full conjecture to u=1.
+
+3. THE OTHER TARGETED PAPERS DO NOT PROVIDE THE MISSING STEP
+
+Garoufalidis, Whitehead doubling persists, concerns the loop expansion
+and finite-type information of Whitehead doubles. It does not show that
+V_K=1 implies V_Wh(K)=1. Our exact formula explains the issue:
+
+ V_Wh+(K)(t)-1 = ((1-t^3)/(1+t)) (H_3(K;t)-1),
+
+where H_3 is reduced, zero-framed, dimension-three colored Jones. The
+premise needed is H_3=1, whereas the ordinary Jones premise is H_2=1.
+The equality of these unit loci has not been proved here.
+https://arxiv.org/pdf/math/0003189
+
+Y. Miyazawa, The Jones polynomial of an unknotting number one knot,
+Topology and its Applications 83 (1998), 161--167, derives relations
+among Jones, signature, Conway, and the branched-cover Casson invariant.
+Its abstract and the subsequent literature describe obstructions to
+unknotting number one, not a reduction of arbitrary Jones-one knots.
+https://doi.org/10.1016/S0166-8641(97)00107-7
+
+A. Stoimenow, The Jones and Q polynomial of an unknotting number one knot,
+1999 preprint, likewise derives unknotting-number obstructions; no such
+generic reduction appears in the paper inspected.
+https://stoimenov.net/stoimeno/homepage/papers/unkn1.pdf
+
+4. WHY SIMPLY ENLARGING THE ANCHOR DOES NOT REPAIR THIS
+
+For a 2b-ended tangle, the bracket module has Catalan-number dimension.
+One ordinary Jones equality fixes one closure pairing, not the entire
+skein vector. Passing to a larger boundary therefore requires additional
+independent closure information. Conversely, tying a hypothetical
+Jones-one knot locally into a strand produces a fully invisible local
+factor in every bracket pairing, but every actual closure containing
+that strand retains the knot geometrically.
+
+This dichotomy is an exact warning for a higher-genus strategy: a new
+construction must both remove local knot factors from a certified
+unknot filling and preserve the required full skein information. Neither
+condition follows from the single original Jones equality. No general
+construction accomplishing both was found in this pass.
+
+Scope: these remarks do not disprove the possibility of a generic
+u=1 reduction, and should not be phrased as a theorem that no such
+reduction exists. They identify the missing implication in the specific
+published equivalence and in the proposed Whitehead route.

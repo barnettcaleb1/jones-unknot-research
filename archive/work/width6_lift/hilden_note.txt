@@ -1,0 +1,136 @@
+C2: HILDEN UNKNOT LOCUS, ITS FIRST NONTRIVIAL TRACE MOVES, AND AN OUTER-PAIR CALIBRATION
+2026-11-03. Status TRUSTED, except the explicit published inputs as cited.
+
+Conclusion
+----------
+The fixed-width Hilden double-coset description of the actual-unknot
+closure is sound with specified cap-system conventions. It is a useful
+dictionary, but a generating set of H_8 does not immediately parametrize
+its trace on the embedded B_6. Individual Hilden moves that remain in B_6
+only change the partial-cap representative. Paired excursions outside
+B_6 are needed to change the tangle.
+
+We supplied a concrete nonrational, minimal-width-six tangle with actual
+unknot D closure and nonzero id coefficient. Thus outer/mixed cancellation
+of the unknot closure, on its own, does not force the tangle to split or
+be rational. It must be combined with the zero-coefficient condition.
+
+One bounded depth-two Hilden trace test did leave the stabilizer orbit:
+62,500 pairs of genuine excursions gave16 returns to B_6, with one new
+projective coefficient class. All coefficients were nonzero. The earlier
+single-generator calibration gave81 zeros, all split, but these are
+tautological stabilizer translates and should not be counted as new
+evidence for NJC. No larger search was performed.
+
+1. Primary-source dictionary and precise conventions
+---------------------------------------------------
+Hovland, Bridge Positions and Plat Presentations of Links, arXiv:2410.22556v2:
+https://arxiv.org/html/2410.22556v2
+Theorem1.1 identifies bridge-isotopy classes with Hilden double cosets;
+Theorems5.2–5.3 give uniqueness for the unknot at fixed bridge index,
+using Otal/Schultens. Birman's original theorem by itself also permits
+stabilizations, so that theorem alone is not the fixed-width assertion.
+
+Tawn, A presentation for Hilden's subgroup of the braid group, MRL15(2008):
+https://www.stephentawn.info/files/Hilden.pdf
+Section5 supplies the explicit generators used here. H_8 means the
+subgroup on8 braid strands (Claude's H_4 counts four wickets instead).
+
+C0 has caps(1,2),(3,4) and free endpoints5,6. Add vertical strands7,8.
+The nested cap system C_D=(1,2),(3,4),(6,7),(5,8) at both ends reconstructs
+D(X): added strand8 connects original endpoint5 from top to bottom,
+while7 connects endpoint6. The same convention is used at top and bottom.
+
+gamma=[5,6] carries the standard adjacent cup system to C_D under our
+rightmost-first action. This is two elementary cap slides; the exact
+W(8,0) action sends the standard basis cap to the nested cap with unit1.
+Thus gamma^-1 (beta direct-sum1_2) gamma lies in the standard unknot
+double coset iff D(X_beta) is the unknot. The base braid w=[2,4,6] has
+the standard unknot plat. This verifies the convention in the proposal,
+not a general algorithm for solving the double-coset problem.
+
+2. Exact return-to-B6 test and first calibration
+---------------------------------------------
+Take the actual-zero seed
+  beta_e=[4,3,2,1,5,4,3,2,3,4].
+Its standard-C0 tangle has coefficient0, actual D=U and actual N=U2.
+For each left/right H_8 word pair form
+  (gamma h_L gamma^-1) beta_e (gamma h_R gamma^-1).
+Each completed word has actual unknot D closure by construction.
+
+Membership in the embedded B6 is NOT inferred merely from the permutation.
+We first check that strands7,8 return individually; then delete them to
+obtain a candidate B6 word and compare the full faithful Artin actions
+of the B8 word and this embedded candidate. Equality certifies membership.
+
+The9 generating words used were r1,r2,s1,s2,s3,t1,t2,t3,t4 from Tawn;
+include their inverses and the identity. Among19x19=361 pairs,81 return.
+All81 are zero and split, with actual D=U checks passing. But the81 are
+exactly9x9 moves in the inner-cap stabilizer: this is a calibration,
+not independent evidence about the hard part of the unknot locus.
+
+3. A genuinely nonrational, minimal-width-six anchor
+--------------------------------------------------
+In the9-state basis of work/width6/probe.py let i=0 and j=7=C0. Then
+  b=[-2,-2,4,4,4]
+gives X=cap_i b cup_j with actual D(X)=U. Transporting cap_i to C0 gives
+  beta_T=[4,3,2,1,5,4,3,-2,4,4,4],
+with both cap systems C0. Its exact id coefficient is
+  f(beta_T)=-A^5+2A-2A^-3+A^-7 !=0.
+
+The N closure actually decomposes, by a diagrammatic connected-sum
+decomposition, into the3-crossing trefoil and2-crossing Hopf link. Its
+Jones polynomial in x=t^(1/2) is
+  x^7-x^5+x^3-2x-x^-3.
+Hence its branched double cover is the connected sum of the nontrivial
+lens spaces L(3,*) and L(2,1), with noncyclic fundamental group Z/3 * Z/2.
+It is not a lens space, and N is not a two-bridge link. Therefore X is
+not rational. Nor can X have width4 in this cap/cup ladder, since its N
+closure would then be a4plat and hence two-bridge. The displayed width6
+is minimal. This avoids assuming that a difficult unknot diagram or a
+nontrivial Jones polynomial alone proves tangle nonrationality.
+
+Consequently a minimal-width tangle with actual unknot D closure can
+have only outer/mixed destabilizations and still be nonrational. The
+unknot hypothesis does not make those moves automatically harmless;
+the missing constraint is how f=0 interacts with them.
+
+4. Bounded paired-excursion test on the nonrational anchor
+--------------------------------------------------------
+Of307 freely reduced Hilden words of generator-length2,250 conjugated
+by gamma genuinely leave B6. Test all250^2=62,500 paired excursions on
+beta_T, using the faithful Artin criterion above. Exactly16 return.
+They give one additional projective f class beyond the anchor; no zero.
+Thus the first paired-excursion test does leave the partial-cap orbit.
+
+A representative uses left word r1 t3 and right word r1 s2^-1 and returns
+  [5,2,1,-3,-2,-5,4,3,2,1,3,3,3,4,5,1,-2,-3,-4,-5].
+Its coefficient is A^-6-2A^-2+A^2-A^6. D simplifies to the actual unknot;
+N has Jones -x^14+x^12-x^10+x^8+x^4. This is a real new point on the
+unknot-closure locus, but it supplies no vanishing coefficient and no
+counterexample. No claim that this finite set exhausts the locus is made.
+
+5. Necessary correction to the closure checker
+---------------------------------------------
+PD codes omit crossing-free unknotted components. The old helper converted
+PD directly to Regina and could misidentify a closure if one was omitted.
+For C0 and beta=[2,4], the true D closure is U2, but the old helper counted
+only the crossed component and called it U. The helper now restores
+L.unlinked_unknot_components via Regina.Link before polynomial or topology
+checks, and verifies the total component count. The corrected control
+returns Jones -x-x^-1, two components, and not an unknot. beta=[2,4,5]
+still returns the actual unknot. No previous research batch was rerun.
+The earlier zero batch had separate two-arc connectivity constraints;
+this operational finding alone does not invalidate that classification.
+
+Reproduction and artifacts
+-------------------------
+work/width6_lift/hilden_locus.py / hilden_locus_results.json
+work/width6_lift/hilden_outer_test.py / hilden_outer_results.json
+work/width6_lift/hilden_anchor.py / hilden_anchor.json
+work/width6/probe.py (closure-component correction only)
+
+All current computations are exact integer/Laurent or free-group word
+calculations. Topological unknot tests use actual simplifying moves.
+The C3 generic-lift issue reported by the parent is logically separate;
+no reason to enlarge this locus search is asserted here.

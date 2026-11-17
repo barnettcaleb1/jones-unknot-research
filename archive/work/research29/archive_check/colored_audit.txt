@@ -1,0 +1,90 @@
+Independent braid/fusion audit of the fixed-Jones Watson family
+1 November 2026 UTC. Scope: all-parameter fusion argument, normalization,
+and the implication to unbounded colored span. I did not independently
+regenerate the cabled diagrams in this pass.
+
+Reviewed verify_colored_family.py, colored_family_certificate.json, and
+the tangle agent's construction description. The ordinary family uses
+alpha=sigma1^3 sigma2^-1 sigma1 and the mirrored six-strand Watson
+template, with end tangles 2m and -2m. These are simple integer tangles;
+Watson's invariance mechanism supplies the common whole ordinary Jones
+polynomial. The stored diagrams have knot connectivity and writhe0.
+
+1. All-integer fusion is valid, not an extrapolation from samples.
+
+The dimension-three color has label2. Tensoring two copies gives labels
+0,2,4. With theta_j=(-1)^j A^(j(j+2)), the full-twist eigenvalues are
+
+  theta_0/theta_2^2=A^-16,
+  theta_2/theta_2^2=A^-8,
+  theta_4/theta_2^2=A^8.
+
+For t=A^-4, their exponents are4,2,-2. Global inversion of all crossing
+conventions gives -4,-2,2, without changing the difference set. Two
+opposite 2m-crossing boxes therefore yield a finite sum
+
+ H3(K_m)=sum_(k in {0,+/-2,+/-4,+/-6}) c_k(t)t^(km)
+
+with rational coefficients independent of m. One can work over a fixed
+square-root extension if a chosen fusion basis requires it; this does
+not affect the span conclusion. Negative m is covered by inverse full
+twists, whose eigenvalues remain nonzero generically.
+
+2. Framing is controlled by the actual diagram.
+
+Both variable tangles have even crossing count, so their endpoint
+connectivity and induced strand orientations are independent of m.
+Their oriented writhe contributions are linear in m. The fixed middle
+braid has zero writhe, and the opposite variable contributions cancel.
+The raw m0,m1 diagram checks are consistent with, and calibrate the signs
+of, this all-m cancellation; merely observing many sampled writhes would
+not otherwise be a general proof. With total writhe0 there is no extra
+m-dependent correction from the colored zero-framing normalization.
+
+The Seifert-framed two-parallel relation used in the script is
+
+  bracket(K_zero_parallel^2)=1+(delta^2-1)H3(K).
+
+Its raw bracket is delta times the normalized oriented Jones polynomial
+of that zero-framed two-parallel. Thus
+
+  H3(K)=(delta V_zero_parallel-1)/(delta^2-1),
+
+with delta=-x-x^-1 and x=sqrt(t), is correct. The unknot test gives1.
+
+3. Two unequal samples imply genuine span growth.
+
+Suppose only one generic frequency survived, so H3(K_m)=c(t)t^(km).
+The knot normalization H3(K_m)(1)=1 gives c(1)=1. The universal identity
+H3(K_m)'(1)=0 then gives c'(1)+km=0 for every m, hence k=0. Such a
+sequence would be constant in m. The two unequal stored full colored
+polynomials therefore establish at least two surviving generic modes.
+
+After multiplying by one fixed denominator, the coefficient functions
+become Laurent polynomials. For sufficiently large positive or negative
+m, the maximal and minimal exponents come from the unique extreme
+surviving slopes, so their difference grows linearly in |m|. Dividing
+back by the fixed denominator changes span by a fixed constant only.
+This proves unbounded whole-polynomial H3 span in this one ordinary
+Jones fiber.
+
+At t=4 the fitted modes +/-4 are nonzero. Given the fusion theorem this
+also proves that those two generic coefficients are nonzero, and yields
+at least8|m|+O(1) span growth. It does NOT prove that generic coefficients
+at +/-2 or +/-6 vanish just because they vanish at this specialization.
+The eighth sample is an independent arithmetic consistency check; the
+fusion theorem, not the finite recurrence fit, proves the all-m claim.
+
+4. Scope.
+
+This falsifies the proposed bound on dimension-three colored-Jones span
+throughout every whole ordinary-Jones fiber. It does not falsify a bound
+on ordinary reduced Khovanov rank or quantum diameter in such a fiber;
+indeed Watson's simple family has a different known homological
+invariance. It supplies neither a Jones-one knot nor a nontrivial H3-unit
+knot, and it does not obstruct one-way statements restricted solely to
+the unit fiber.
+
+A package-path issue was reported to the author: with HERE pointing to
+work/research29, the existing packages path is
+HERE.parent/'braid_classification/packages', not HERE.parent.parent.

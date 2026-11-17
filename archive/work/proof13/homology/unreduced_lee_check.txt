@@ -1,0 +1,68 @@
+UNREDUCED RATIONAL LEE AUDIT OF THE FORMAL TANGLE MODEL
+2026-10-31. Formal Frobenius-algebra lift; no classical diagram is asserted.
+
+THE POSSIBLE ISSUE
+The reduced BN differential can have quantum jump2, whereas the ordinary
+unreduced rational Lee spectral sequence has jumps4r. Applying the latter
+degree rule directly to the reduced model would be invalid. Conversely, merely
+checking reduced groups does not itself prove an unreduced lift exists.
+
+EXPLICIT RELATIVE-DOT LIFT
+Distinguish the reduced parameter h from the unreduced parameter G. In the
+unreduced universal Frobenius algebra adjoin a marked-component dot z, with
+ z^2+Gz=0.
+For an ordinary component dot Y, put d=Y-z and send
+ h -> G+2z.
+Since Y^2+GY=0, a direct calculation gives
+ d^2+(G+2z)d = (Y^2+GY)-(z^2+Gz)=0.
+The relative dot on the marked component is z-z=0, as required by the reduced
+tangle category. The other Frobenius relations transform correctly:
+ Delta(1)=1 tensor d+d tensor1+(G+2z)1 tensor1,
+ epsilon(1)=0, epsilon(d)=1.
+Indeed, substitute Y=d+z in the ordinary formula for Delta(1). Thus the same
+formal cobordism complex can be interpreted using relative dots, over the
+rank-two basepoint algebra A=Q[G,z]/(z^2+Gz). The reduced specialization z=0
+recovers the original parameter h=G. This is a formal algebraic lift of the
+maps as well as their groups, compatible with composition and gluing.
+
+WHY THE LEE QUANTUM RULE IS SATISFIED
+Set alpha=G+2z. Then alpha^2=G^2. Replacing h by alpha turns any free Q[h]
+complex into a complex over this basepoint algebra. Equivalently, first replace
+h by a variable X and regard the resulting Q[X] complex as a Q[T] complex via
+T=X^2. It is then a formal generalized Lee complex with deg T=-4; base extension
+T=G^2 recovers the BN form. This gives the correct unreduced quantum filtration.
+
+The essential single-bar calculation is especially transparent. A reduced
+length-one h bar becomes multiplication by alpha on A. In the basis (1,z),
+this multiplication is the matrix
+                  [ G   0 ]
+                  [ 2  -G ].
+The entry2 is a unit over Q. Grading-respecting cancellation leaves a single
+G^2 bar, up to multiplication by a nonzero constant, since the determinant is
+-G^2. Thus a reduced quantum-jump2 cancellation produces the required ordinary
+unreduced quantum-jump4 Lee cancellation. At G=0 the original matrix has rank1;
+at G=1 it is invertible. The involution z -> -G-z sends alpha -> -alpha, so
+there is no missing elementary root-exchange symmetry in this construction.
+
+APPLICATION TO THE SLOPE1 FORMAL FILLING
+The reduced Kh rank is17 and its reduced BN free rank is1. Its additional
+torsion is annihilated by h, because the full X object has h-action nullhomotopic.
+Over Q[h] the extra part therefore consists of eight length-one bars. The
+unreduced formal Kh rank is consequently 2+8*2=18, and the eight jump4 Lee
+cancellations leave rank2. Its Euler polynomial is Q+Q^-1, as required for a
+Jones-one knot. These are consistency statements about the explicit formal
+complex; they do not realize a knot.
+
+PRIMARY CROSS-CHECK
+Schuetz, A note on the X-torsion order of a knot, arXiv:2412.05156, Sections2--3:
+https://arxiv.org/pdf/2412.05156
+Section3 identifies generalized Lee X with the BN relative-dot operation
+2X-H in the convention X^2=XH, and describes unreduced blocks (2X-H)^k whose
+reductions are H^k. This is the same change of variables, with the opposite
+sign convention for the BN parameter. We use it to cross-check the algebra,
+not as a theorem that every formal complex is geometrically realized.
+
+SCOPE
+The listed reduced extension tests and this formal unreduced Frobenius/Lee
+lift are satisfied. This is not a claim that every necessary geometric or
+naturality condition for classical tangle realization has been checked.

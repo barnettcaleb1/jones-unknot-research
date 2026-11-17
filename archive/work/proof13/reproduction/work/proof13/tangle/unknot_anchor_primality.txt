@@ -1,0 +1,79 @@
+COMPOSITE DETERMINANT-ONE KNOTS CANNOT HAVE AN UNKNOT RATIONAL FILLING
+Status: deduction from standard surgery theorems, not a novelty claim.
+
+Proposition. Let L be a nontrivial composite knot with det(L)=1. There is
+no Conway 2-tangle T and two rational fillings such that one gives L and
+the other gives the actual unknot. Equivalently, L does not have rational
+unknotting number one.
+
+Proof. Suppose such T existed. The double branched cover of its unknot
+filling is S^3; the filling solid torus lifts to a solid torus in S^3.
+Let J be its core. Montesinos' trick identifies the double branched cover
+Sigma_2(L) with a rational Dehn surgery on J. No symmetry assumption on J
+is needed for the surgery obstruction below.
+
+Write L=L1#L2 with both Li nontrivial. Then
+ Sigma_2(L)=Sigma_2(L1)#Sigma_2(L2).
+Neither summand is S^3: an involution on S^3 with knot quotient branch set
+has unknotted fixed set, by the Smith theorem. Thus Sigma_2(L) is reducible.
+Moreover its first homology has order det(L)=1, so it is an integer homology
+sphere.
+
+Gordon--Luecke, Knots are determined by their complements (1989),
+Corollary3.1, states that any homology3-sphere obtained by Dehn surgery on
+a knot in S^3 is irreducible. Applying this directly to J contradicts the
+preceding paragraph. Equivalently, their Theorem3 gives a nontrivial
+lens-space summand in a reducible surgery, whose first homology prevents
+the result from being an integer homology sphere. The unknot case is
+included in the corollary and also follows directly from its lens-space
+surgeries. This argument does not require the cabling conjecture or its
+strongly invertible special case.
+
+Consequences for the present investigation.
+* Every nontrivial Jones-one knot in a genuinely unknot-anchored rational
+  filling problem must be prime, since V(-1) gives determinant1.
+* The valid generic constructions K#rK, K#r(mK), and their iterated doubles
+  produce composite knots. If K were a Jones-one counterexample, NONE of
+  these composite knots could itself appear as the nontrivial rational
+  filling of an actual unknot-anchored tangle. The restriction is stronger
+  than the previous fusion-one obstruction.
+* Strong invertibility of such a composite knot still gives a quotient
+  tangle with an unknot meridional filling. There is no contradiction: its
+  other fillings are branch sets of surgeries on the composite knot,
+  not the composite knot itself. For the swapping inversion on K#rK,
+  a relevant branch set is Wh+(K), which depends on color three.
+* An unconditional concrete illustration is KT#r(mKT): it is a nontrivial
+  composite ribbon knot with determinant1, and therefore cannot itself be
+  changed to U by a single rational tangle replacement. No Jones1 claim
+  is made for this example.
+
+Sources and verification level.
+Primary original source: C. McA. Gordon and J. Luecke, Knots are determined
+by their complements, J. Amer. Math. Soc.2(1989),371--415, Theorem3 (p371)
+and Corollary3.1 (p372). DOI10.1090/S0894-0347-1989-0965210-7.
+The original theorem and corollary, and the short proof reduction for
+Theorem3 on p373, were checked in a complete transcription of the paper:
+https://paperzz.com/doc/8704413/knots-are-determined-by-their-complements-two
+The entire classical surgery proof was not independently re-proved here.
+Accessible primary confirmation: J. Hom, C. Karakurt and T. Lidman,
+Surgery obstructions and Heegaard Floer homology, Geometry & Topology20
+(2016),2219--2251, pp2219 and2223, explicitly states this consequence:
+https://msp.org/gt/2016/20-4/gt-v20-n4-p08-p.pdf
+
+Optional older route, unnecessary for the proof above: Montesinos' trick
+also supplies a strong inversion of J, allowing use of the following
+stronger classification of reducible surgeries in that special class.
+Mario Eudave-Munoz, Band sums of links which yield composite links. The
+cabling conjecture for strongly invertible knots, Trans. AMS330(1992),
+463--501, Theorem4; DOI10.1090/S0002-9947-1992-1112545-X.
+For this optional alternate source, the original AMS PDF was not obtainable
+(403) during this bounded pass; its
+proof was not rechecked. The exact theorem statement was checked in
+Jennifer Schultens, Band sums and concordance of knots, Bol. Soc. Mat.
+Mex.31(2025),48, Theorem11, explicitly citing Eudave-Munoz Theorem4:
+https://link.springer.com/article/10.1007/s40590-025-00722-y
+https://d-nb.info/1366797914/34
+
+For the Montesinos/quotient-tangle setup, see the primary paper
+Cosmetic operations and Khovanov multicurves, Section1:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11139753/

@@ -1,0 +1,79 @@
+{
+ "label": "A1_J1_le24",
+ "count": 1300,
+ "status": {
+  "CERTIFIED_UNKNOT": 1300
+ },
+ "certificate_kinds": {
+  "tietze": 1300
+ },
+ "tietze_success": 1300,
+ "V_K=1": 1300,
+ "Delta=1": 0,
+ "rep_groups": {},
+ "crossings_min_max": [
+  7,
+  24
+ ],
+ "secs_median_max_total": [
+  0.002,
+  0.015,
+  2.6
+ ],
+ "by_crossings_bucket4": {
+  "4": {
+   "count": 1,
+   "unknot": 1,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.001,
+   "max_s": 0.001
+  },
+  "8": {
+   "count": 312,
+   "unknot": 312,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.001,
+   "max_s": 0.007
+  },
+  "12": {
+   "count": 498,
+   "unknot": 498,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.001,
+   "max_s": 0.015
+  },
+  "16": {
+   "count": 331,
+   "unknot": 331,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.002,
+   "max_s": 0.015
+  },
+  "20": {
+   "count": 157,
+   "unknot": 157,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.003,
+   "max_s": 0.014
+  },
+  "24": {
+   "count": 1,
+   "unknot": 1,
+   "nontrivial": 0,
+   "unresolved": 0,
+   "median_s": 0.003,
+   "max_s": 0.003
+  }
+ },
+ "wall": 0.8,
+ "params": {
+  "tietze_budget": null,
+  "rep_budget": 30.0,
+  "blind": false
+ }
+}

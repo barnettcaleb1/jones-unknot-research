@@ -1,0 +1,32 @@
+[
+  {
+    "script": "generic/cabling_bootstrap_check.py",
+    "returncode": 0,
+    "stdout": "PASS: 152 exact cabling coefficient sums and valuation orderings; 2004 full nonempty subset sums.\n",
+    "stderr": ""
+  },
+  {
+    "script": "homology/check_extension.py",
+    "returncode": 0,
+    "stdout": "all exact checks passed\nG-nullhomotopy arrows: [('x1', 'x0', ('S', 1, 0)), ('x2', 'x1', ('I', 0, 0)), ('x3', 'x2', ('I', 0, 0)), ('x4', 'x3', ('I', 0, 0)), ('x5', 'x4', ('S', 1, 0)), ('y0', 'x0', ('I', 0, 0)), ('y1', 'x1', ('I', 0, 0)), ('y1', 'y0', ('S', 1, 0)), ('y2', 'x2', ('I', 0, 0)), ('y2', 'y1', ('I', 0, 0)), ('y3', 'x3', ('I', 0, 0)), ('y3', 'y2', ('I', 0, 0)), ('y4', 'x4', ('I', 0, 0)), ('y4', 'y3', ('I', 0, 0)), ('y5', 'x5', ('I', 0, 0)), ('y5', 'y4', ('S', 1, 0))]\n",
+    "stderr": ""
+  },
+  {
+    "script": "homology/check_integral_extension.py",
+    "returncode": 0,
+    "stdout": "all exact checks passed\nG-nullhomotopy arrows: [('x1', 'x0', ('S', 1, 0)), ('x2', 'x1', ('I', 0, 0)), ('x3', 'x2', ('I', 0, 0)), ('x4', 'x3', ('I', 0, 0)), ('x5', 'x4', ('S', 1, 0)), ('y0', 'x0', ('I', 0, 0)), ('y1', 'x1', ('I', 0, 0)), ('y1', 'y0', ('S', 1, 0)), ('y2', 'x2', ('I', 0, 0)), ('y2', 'y1', ('I', 0, 0)), ('y3', 'x3', ('I', 0, 0)), ('y3', 'y2', ('I', 0, 0)), ('y4', 'x4', ('I', 0, 0)), ('y4', 'y3', ('I', 0, 0)), ('y5', 'x5', ('I', 0, 0)), ('y5', 'y4', ('S', 1, 0))]\nsigned integral module and cone MC checks passed\n",
+    "stderr": ""
+  },
+  {
+    "script": "tangle/sign_certificate.py",
+    "returncode": 0,
+    "stdout": "residue 0 all nonempty leading coefficient subset sums nonzero: [-1]\nresidue 1 all nonempty leading coefficient subset sums nonzero: [-2, 1]\nPASS: mixed-sign ribbon template; all twists excluded by parity, and independently by V second derivative=-60.\n",
+    "stderr": ""
+  },
+  {
+    "script": "tangle/whitehead_bridge_verify.py",
+    "returncode": 0,
+    "stdout": "5_1 : exact zero-framed fusion and positive clasp identities passed\n10_132 : exact zero-framed fusion and positive clasp identities passed\nPASS: identical ordinary Jones does not determine the quotient Whitehead response.\n",
+    "stderr": ""
+  }
+]

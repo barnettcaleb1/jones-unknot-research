@@ -1,0 +1,19 @@
+{
+ "files": [
+  "out/cert_families.jsonl.gz"
+ ],
+ "records_total": 44,
+ "sampled": 44,
+ "fraction": 1.0,
+ "seed": 1,
+ "records_pass": 44,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "unknot0|replay=True|a2=True": 4,
+  "tietze|replay=True|a2=True": 40
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 44
+ },
+ "secs": 3.2
+}

@@ -1,0 +1,174 @@
+PASS 49: THE UNKNOT-ANCHORED FRAMED DNA ROUTE IS EXCLUDED
+1 November 2026. Research deduction from established theorems; no claim
+of literature novelty, and no Jones counterexample or full detection proof.
+
+1. Duplication audit
+--------------------
+Read outputs/jones-concrete-experiments.txt,
+outputs/jones-interdisciplinary-calculations.txt, and
+outputs/jones-brunnian-reduction-and-exact-test.txt before this pass.
+The old rational/nonrational DNA ambiguity, its four-versus-zero framing
+defect, its complete integer-twist exclusion, and the failed mirrored-stack
+repair are already settled there. The general Sikora framed criterion is
+also already present. They are not new directions or new results here.
+
+The following whole-family obstruction is stronger than the previous
+fixed-example exclusion and changes which topological constructions remain
+worth considering.
+
+2. Theorem: an unknot product prevents the desired framed ambiguity
+-----------------------------------------------------------------
+Let X be a two-string tangle and R a rational tangle, with the same marked
+boundary. Let P and Q be rational closing tangles with DISTINCT SLOPES
+(a mere difference of framing is not sufficient). Suppose the
+two corresponding closures agree as framed links:
+
+                 C_P(X)=C_P(R),    C_Q(X)=C_Q(R).
+
+If either common underlying link is the unknot, then X is rational.
+Consequently such a system cannot produce a rational/nonrational pair.
+
+Proof.
+(a) Sikora's Theorem 21 says that two distinct rational probes determine
+the full framed bracket vector. Therefore [X]=[R] in the rank-two relative
+ball skein module. The theorem applies to balanced framed isotopy, the
+setting used by the existing DNA criterion.
+
+(b) Without loss, C_P(X)=C_P(R)=U geometrically. Let M_X and M_R be the
+oriented double branched covers of the tangle balls. Filling them along
+the slope alpha determined by P gives S^3. Thus M_X is the exterior of
+a knot J in S^3. M_R is a solid torus, the exterior of the unknot U.
+The common boundary marking identifies the meridian slope alpha.
+
+(c) Choose a THIRD rational closing tangle H so that C_H(R) is the
+two-component unlink. Such a probe always exists for a rational tangle.
+Write lambda for its filling slope on the common boundary torus. It is
+the preferred longitude of the unknot exterior M_R: its filling is
+S^1 x S^2. Since [X]=[R], the H-closures have equal brackets and hence
+equal determinant zero. This does NOT require Jones detection of the
+unlink. Determinant zero means H_1(M_X(lambda);Z) is infinite. In a knot
+exterior in S^3, the UNIQUE slope with this property is the preferred
+longitude. Thus the common boundary marking also identifies longitudes.
+
+(d) The second probe Q now has the SAME rational surgery coefficient r
+in both meridian/longitude systems. Since Q differs from P, this is a
+nonmeridional slope. The common link C_Q(X)=C_Q(R) is a rational link
+(possibly an unknot or unlink in degenerate cases). Its oriented double
+branched cover gives an orientation-preserving diffeomorphism
+
+                       S^3_r(J) = S^3_r(U).
+
+Kronheimer--Mrowka--Ozsvath--Szabo, Theorem 1.1 of Monopoles and lens
+space surgeries, says this implies J=U for EVERY rational r. The case
+r=0 is included through Property R. Hence M_X is a solid torus. The
+standard branched-cover characterization of rational tangles implies
+X is rational. End proof.
+
+Orientation detail: the identifications come from the same oriented
+marked tangle ball and orientation-preserving equivalences of its closed
+branch links. The common meridian and longitude slopes, with boundary
+intersection orientation, determine the rational coefficient up to
+simultaneous sign, which does not change r. Comparing merely unoriented
+lens-space homeomorphism types would be insufficient.
+
+Framing detail: the theorem does not infer a peripheral longitude from
+blackboard writhe. The full bracket equality provides the auxiliary
+determinant-zero closure, which determines the longitude homologically.
+This is exactly what the old UNFRAMED ambiguity lacks.
+
+The equality of closed brackets in (c) is first divided symbolically by
+delta to obtain equality of reduced brackets, and only then specialized
+at the determinant root. Direct specialization of the unreduced bracket
+would give zero for every nonempty link and would prove nothing.
+
+COROLLARY (unavoidable variable framing defect). Suppose an UNFRAMED
+two-probe ambiguity has rational R, nonrational X, and an unknot as one
+common product. In Sikora's balanced-framing convention, its two total
+framing defects cannot be equal. If both defects were the same integer,
+adding that many framing twists to X on one fixed arc would correct both
+closures simultaneously, contradicting the theorem. This covers every
+such ambiguity, including parameters and geometric constructions not
+covered by the old fixed-X calculation. The former four-versus-zero
+defect is one instance of this general obstruction.
+
+Sources checked:
+Sikora, Theorem 21 and Section 9,
+https://arxiv.org/html/2005.08162
+KMOS, Theorem 1.1, first page,
+https://people.math.harvard.edu/~kronheim/lens.pdf
+Rational iff solid-torus branched cover is the classical Lickorish tangle
+criterion; explicit statement, Theorem 3.5(2), in the primary paper
+Tangle solutions for composite knots: application to Hin recombination:
+https://arxiv.org/pdf/1007.0948
+
+3. What this does NOT exclude
+-----------------------------
+It does not prohibit a Jones-one knot with a rational unknotting move:
+there the new closure has only the POLYNOMIAL of the unknot, not an
+established geometric rational-link type. Step (d) would be unavailable.
+It does not exclude the existing preferred-quotient/Brunnian target.
+It does not settle framed two-probe systems whose two common geometric
+products are both nontrivial rational links. Their covers are knots in
+lens spaces, and the cited S^3 theorem does not simply extend to them.
+
+4. A concrete untested source, and a cheap exact obstruction
+-----------------------------------------------------------
+Baker--Doleshal--Hoffman give actual strongly inverted tangle families
+A'_(m,n) and B'_(p/q) with THREE rational-link fillings, in Figures 3 and
+4 of https://arxiv.org/pdf/1308.5002 . These are quotients of fillings of
+the magic manifold. The three specified filling slopes are infinity, 1,
+and 2. This source supplies actual boundary markings and branch diagrams,
+unlike an abstract list of lens-space homeomorphism types. It was not
+among the concrete families in the three checked prior deliverables.
+No member was established here to share TWO FRAMED closures with a
+rational comparator. Merely listing their lens fillings is not a result
+about the Jones problem.
+
+There is an immediate filter before any framing or bracket work. For a
+rational comparator, determinants of closures by two probes at distance
+d satisfy
+
+                gcd(det L_1,det L_2) divides d.
+
+Indeed the determinant is the absolute value of a primitive integral
+linear form on the slope lattice, namely intersection with the solid-
+torus meridian. For slope vectors v_1,v_2, a common divisor of their
+linear-form values divides det(v_1,v_2). In particular adjacent probes
+force coprime determinants. This is a necessary condition only.
+
+This already eliminates the tempting Figure-Eight-Sister triple as an
+unframed comparator source: the three fillings are mutually distance
+one and have lens-space orders 5,5,10. Every pair has determinant gcd5,
+so no rational tangle can give the same two products at those marked
+slopes. The exact lens orders and slopes are stated in the source's
+Corollary 39. No census calculation is required.
+
+For any remaining A' or B' family, a viable endpoint would require:
+two non-unknot products with a rational comparator at the SAME marked
+slopes; geometric equivalence of the branch links (not just their
+covers); and equal total framing defects for the two comparisons.
+Only then would a common framing adjustment yield the framed ambiguity
+and Sikora's implication give a Jones counterexample. None of those
+combined requirements has been achieved for a new member here.
+
+5. Recent source lead, carefully limited
+--------------------------------------
+The institute abstract for Sikora's October 15, 2026 IPAM talk says it
+develops the lens-surgery interpretation of the tangle equations:
+https://www.mathinstitutes.org/videos/25091
+The accessible abstract contains no precise new theorem or candidate.
+The video endpoint failed to load in this bounded check. Thus the talk
+is a bibliographic lead only, not evidence of a breakthrough. A 2024
+published erratum to Sikora's article corrects the author's printed name,
+not the mathematical framing issue:
+https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/tangle-equations-the-jones-conjecture-slopes-of-surfaces-in-tangle-complements-and-qdeformed-rationals-erratum/D3D1F6EBF863EABEE7BF3738470FAC67
+
+Action consequence
+------------------
+Stop trying to repair an UNKNOT-ANCHORED rational/nonrational DNA pair:
+the obstruction above excludes the whole framed target, not only the
+previous trefoil example. The remaining lens-to-lens construction must
+use two non-unknot products and keep its branch involution, peripheral
+marking, and total framing data. The explicit A'/B' source is a genuine
+new input to that construction, but its required framed coincidence
+remains unproved; it is not presented as a promising solved subproblem.

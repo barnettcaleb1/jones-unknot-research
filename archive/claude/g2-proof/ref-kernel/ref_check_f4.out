@@ -1,0 +1,4 @@
+D(c0,d1), D(c0,d2) = 0 0
+ord(rho(f) - I)                 = 2   (expect 2: f in F_2 \ F_3)
+ord(rho([(s1 s2)^6, f]) - I)    = 3   (kernel.md: >= 4 iff its condition holds; referee: exactly 3)
+ord(rho([(s1 s2)^3, f]) - I)    = 2   (half-twist form: one lower)

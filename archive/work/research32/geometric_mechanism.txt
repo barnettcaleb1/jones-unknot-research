@@ -1,0 +1,239 @@
+PASS 32 — EXTERIOR VOLUME AS A GLOBAL JONES-DETECTION SCAFFOLD
+1 November 2026 UTC. Research deductions, not a claim of novelty or a proof of
+Jones unknot detection. No report files edited.
+
+MAIN CONCLUSION
+
+A uniform bound on the total hyperbolic JSJ volume of knot EXTERIORS in ONE
+nonempty exact ordinary-Jones fiber would prove the full unknot-detection
+conjecture. This is a genuinely different quantity from crossing number,
+bridge number, braid index, colored-Jones span, and branched-cover volume.
+The downstream proof is complete. The whole-fiber volume bound is not proved.
+
+1. THE PRECISE CONDITIONAL THEOREM
+
+Write E(K)=S^3 minus the interior of a tubular neighborhood of K, and let
+
+  v(K) = v_3 ||E(K), boundary E(K)||
+       = sum of volumes of its hyperbolic JSJ pieces.
+
+Here v_3 is the volume of the regular ideal tetrahedron. This convention applies
+to satellite and composite knots as well as hyperbolic knots. It gives zero
+to graph knots, not to every non-hyperbolic knot.
+
+THEOREM (deduction). Suppose there is a realized Laurent polynomial P and a
+finite constant C(P) such that v(K)<=C(P) for EVERY knot with V_K=P. Then
+V_H=1 implies H is the unknot.
+
+Proof. We establish below that any nontrivial Jones-one H has v(H)>0. Choose
+one knot J with V_J=P. Multiplicativity gives V_(J#H#...#H)=P for every number
+m of H summands. Simplicial-volume additivity gives
+
+  v(J#H^#m)=v(J)+m v(H),
+
+contradicting the bound. This covers arbitrary H, without assuming H is prime,
+hyperbolic, ribbon, strongly invertible, or of unknotting number one. QED.
+
+The fiber must include composite knots. A bound only for hyperbolic knots
+having polynomial P would not suffice without a further construction.
+
+2. WHY A JONES-ONE COUNTEREXAMPLE HAS POSITIVE EXTERIOR VOLUME
+
+Primary classification input: Motegi–Takata, The slope conjecture for graph
+knots, arXiv:1501.01105v3, p2, states that zero Gromov volume characterizes
+graph knots, and that these are generated from U by cabling and connected
+sums. It cites C. McA. Gordon, Dehn surgery and satellite knots, Trans. Amer.
+Math. Soc. 275 (1983), 687–708, Corollary 4.2, for that characterization.
+ https://arxiv.org/pdf/1501.01105
+This includes mirrors and arbitrary signs of the cable parameter.
+
+Let the symmetric normalized Alexander polynomial satisfy Delta(1)=1, and
+write a2(K)=Delta_K''(1)/2, equivalently the z^2 Conway coefficient. Then
+
+  a2(K#L)=a2(K)+a2(L),
+  a2(cable_(p,q)(K))=p^2 a2(K)+(p^2-1)(q^2-1)/24.             (1)
+
+The second formula follows by differentiating
+Delta_cable(t)=Delta_T(p,q)(t) Delta_K(t^p), using Delta_K'(1)=0,
+and the standard torus Alexander polynomial. Take p>=1, gcd(p,q)=1;
+a genuine nontrivial cabling can be taken p>=2, q nonzero.
+
+Consequently every nontrivial graph knot has a2>0. This follows inductively:
+a connected sum of nonnegative contributions is zero only if every summand
+is U. A cable of a nontrivial graph companion has the strictly positive first
+term in (1). A cable of U is a torus knot; its second term is strictly positive
+unless it is U (|q|=1, or the degenerate winding-one case). Chirality introduces
+no negative contribution, because the formula contains only p^2 and q^2.
+This is positivity specifically for graph knots, not for arbitrary knots.
+
+For the convention V_U=1 and
+ t^-1 V_+ - t V_- = (t^(1/2)-t^(-1/2)) V_0,
+
+  V_K''(1)=-6 a2(K).                                         (2)
+
+A short normalization check: put t=e^h. A knot has expansion
+1+c2(K)h^2+O(h^3), while an oriented two-component link of linking number l
+has expansion -2-3l h+O(h^2). The skein equation gives
+c2(K_+)-c2(K_-)=-3l. The Conway skein equation gives the corresponding a2
+difference l. Both invariants vanish on U, so c2=-3a2. Since V'_K(1)=0,
+V''_K(1)=2c2(K), proving (2).
+
+Thus V_H=1 implies a2(H)=0. A nontrivial H cannot be a graph knot, and hence
+must have positive v(H). This resolves the zero-volume escape in the global
+connected-sum argument.
+
+Primary additivity reference: T. Soma, The Gromov invariant of links,
+Invent. Math. 64 (1981), 445–454, DOI 10.1007/BF01389276.
+ https://doi.org/10.1007/BF01389276
+An accessible primary paper explicitly recalling the JSJ sum and connected-
+sum additivity is Detcherry–Kalfagianni–Yang, Turaev-Viro invariants, colored
+Jones polynomials and volume, Section 5, p18 (PDF index17):
+ https://users.math.msu.edu/users/kalfagia/paper1-23.pdf
+
+3. LOGICAL STRENGTH AND NON-CIRCULARITY AUDIT
+
+The existential statement that SOME whole Jones fiber has bounded v is
+logically equivalent to detection: detection makes the unit fiber {U}.
+Accordingly, merely restating that existential claim is not a proof advance.
+What is useful is an independently motivated bound or geometric certificate
+for a SPECIFIED NONUNIT fiber, or a broadly valid all-fiber theorem. This
+would close detection without first recognizing the unit fiber geometrically.
+
+The all-fiber volume assertion is stronger than necessary and remains open
+in this investigation. No claim is made that it is logically equivalent to
+detection. Nor is bounded volume a finite-knot-type claim: infinitely many
+Dehn fillings of a fixed cusped manifold can have uniformly bounded volume.
+
+The assertion concerns exteriors. A branched double cover may have zero
+simplicial volume for a nontrivial knot, including many examples relevant to
+earlier notes. That does not affect this proof.
+
+4. WHAT THE KNOWN EXACT-JONES FAMILIES DO AND DO NOT TEST
+
+A bounded primary-source search found no established family of KNOTS with
+one exact ordinary Jones polynomial and unbounded exterior Gromov volume.
+This is a negative search result, not a theorem about all current literature.
+
+Champanerkar–Kofman, On links with cyclotomic Jones polynomials,
+AGT 6 (2006), 1655–1668, introduction, explicitly states that the then-known
+fixed-Jones families, including Kanenobu and Watson, arise by twisting at
+finitely many sites and therefore have bounded volume.
+ https://msp.org/agt/2006/6-4/agt-v6-n4-p03-s.pdf
+Their unbounded-volume construction has DISTINCT cyclotomic Jones polynomials
+of growing span; it does not contradict this scaffold.
+
+Stoimenow explicitly asks for fixed-polynomial/unbounded-volume knots in
+Question 8.2(4) of the author version linked below. Remark 8.3 explains why
+Kanenobu and the non-hyperbolic EKT links do not supply them.
+ https://stoimenov.net/stoimeno/homepage/progs/ntrivodd.pdf
+
+Our actual Watson family from pass29 has fixed ordinary Jones and unbounded
+color-three span, but still lives in a finite twist template. It therefore
+kills uniform color-three degree bounds while leaving exterior-volume bounds
+untouched. One must not infer unbounded volume from the growing cable data.
+
+Any bound based only on a fixed finite ordinary-Jones Taylor jet is impossible.
+Our earlier Habiro-inverse knots R_N are actual nontrivial knots with
+V_R_N(e^h)=1+O(h^(N+1)). For N>=2 they have a2=0, hence v(R_N)>0 by section2.
+Their connected-sum powers retain the same finite jet while their exterior
+volumes grow linearly. Thus the WHOLE polynomial matters here.
+
+5. CONCRETE GEOMETRIC CERTIFICATE TARGET
+
+A sufficient certificate for a specified fiber P is the following:
+for every K with V_K=P, obtain all hyperbolic JSJ pieces by Dehn filling a
+collection of compact cusped parents with TOTAL ideal-triangulation complexity
+at most B(P). Allow arbitrary Seifert-fibered JSJ pieces and arbitrary gluing
+parameters. The total, rather than per-piece, budget is essential.
+
+Each ideal tetrahedron contributes at most v_3 to simplicial volume, and
+Dehn filling does not increase simplicial volume. Thus v(K)<=v_3 B(P).
+This yields the full theorem by section1. Arbitrary graph pieces are free in
+this certificate, so it does not ask for bounded crossing or bridge number,
+or a finite list of actual knot diagrams/twist templates.
+
+This is an EQUIVALENT STRUCTURAL REFORMULATION of volume boundedness,
+not progress on its missing premise. For the converse direction, the
+Jorgensen–Thurston drilling/triangulation theorem, as explicitly stated in
+Detcherry–Kalfagianni Theorem2.4, gives a drilled parent with at most a universal
+constant times ||M|| partially ideal tetrahedra for each hyperbolic piece M.
+Summing over the pieces gives the stated total budget from a volume bound.
+ https://users.math.msu.edu/users/detcherr/TVboundsREVISION4.pdf
+Finite combinatorics of a bounded total number of tetrahedra then gives
+finitely many possible parents (with bounded total multiplicity).
+A Jones-based procedure producing these parents with a polynomial-controlled
+budget is the missing theorem. A useful next result must provide that actual
+reduction, not simply give the reformulation a new name.
+
+An adequate-diagram starting point is known, but it does not extend by
+changing crossings or smoothing states: those operations change the knot.
+There is presently no justified operation taking an arbitrary Jones-one
+knot to a bounded-parent adequate object while retaining nontriviality.
+
+6. PHYSICS CONNECTION WITH ITS EXACT EXTRA GAP
+
+The Detcherry–Kalfagianni–Yang Theorem1.1 expresses exterior Turaev–Viro at the
+relevant odd roots as a positive sum of squared ALL-COLOR Jones values,
+up to an explicit prefactor with subexponential growth. Hence a possible
+physical version of the missing bound controls the LARGE-COLOR EXPONENTIAL
+RATE, rather than the degree of any fixed color, on one ordinary Jones fiber.
+
+Concretely, a bound on
+ limsup_(r odd -> infinity) (2pi/r) log[sum_(1<=j<r/2)
+                       |J_K,j(exp(4pi i/r))|^2]
+by a constant depending only on P would be compatible with pass29's
+unbounded fixed-color spans. To deduce exterior volume from this bound,
+however, one also needs a general reverse comparison with volume (a form of
+the Turaev–Viro volume conjecture). This is an ADDITIONAL unproved gate.
+
+Do not reverse the established inequality: Detcherry–Kalfagianni,
+Gromov norm and Turaev–Viro invariants of 3-manifolds, Theorem1.1, proves
+LTV(M)<=C||M||, not ||M||<=C LTV(M).
+ https://users.math.msu.edu/users/detcherr/TVboundsREVISION4.pdf
+It therefore does not turn a quantum upper bound into a geometric upper bound.
+Also do not use the polynomial growth at the different unitary root
+exp(2pi i/r); the volume-sensitive expression above uses exp(4pi i/r).
+
+This explains a viable interdisciplinary inspiration without pretending that
+norm positivity recovers all colors from the ordinary polynomial. The direct
+geometric-parent route has fewer unproved inputs than this quantum version.
+
+7. A TESTED OBSTRUCTION TO A DIFFERENT GLOBAL ROUTE
+
+An operation F sending all knots to adequate knots, with V_F(K) depending
+only on V_K, cannot simultaneously have finite fibers on knot types.
+Indeed, an adequate diagram with c crossings and state counts s_A,s_B has
+ span V=(c+s_A+s_B-2)/2 >= c/2.
+Thus a fixed Jones polynomial permits only finitely many adequate knot types.
+Applying F to an actual infinite fixed-Jones family forces some output to
+have infinitely many preimages. This rules out an injective/recoverable
+adequate compiler driven only by the whole ordinary Jones polynomial.
+The weaker request to preserve only nontriviality on Jones-one inputs is not
+refuted by this argument; no construction for it was obtained.
+
+RECOMMENDATION
+
+Retain the exterior-volume theorem as a clean global endpoint. The decisive
+next test is an actual fixed-Jones mechanism that increases the TOTAL
+hyperbolic JSJ mass, or an explicit polynomial-controlled reduction removing
+Seifert/twist complexity while bounding the remaining hyperbolic parents.
+Do not treat another bounded-volume fixed twist family, the all-color volume
+conjecture alone, or a finite-jet estimate as progress on that missing theorem.
+
+8. CONNECTION TO THE EXISTING SCALAR-PATTERN REALIZATION TARGET
+
+This is a useful new interpretation of an OLD construction target, not a
+new pattern. If an actual essential winding-zero annular knot pattern P has
+scalar full skein class, all preferred satellites P(C) have one ordinary
+Jones polynomial. Choose C_m=#^m 4_1. The companion torus is incompressible
+for such an essential winding-zero pattern and nontrivial C_m. Cutting there
+and using simplicial-volume additivity gives
+
+  v(P(C_m)) >= v(C_m)=m v(4_1).
+
+Therefore such a pattern would disprove the ALL-fiber exterior-volume
+proposal, even if its scalar polynomial were nonunit. It would not by itself
+refute the theorem that a bound on ONE OTHER fiber proves detection. The
+previous finite scalarity certificate is therefore an exact test of a
+possible global obstruction here, not just a bridge-number construction.
+No actual essential scalar pattern was constructed in this pass.

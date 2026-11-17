@@ -1,0 +1,11 @@
+{
+  "lambda_difference_factorization": true,
+  "first_interpolation_coefficient": "-A^6/(A^4-1)",
+  "normalized_actual_meridian": "A^4-1+A^-4",
+  "meridian_derivative_at_A1": 0,
+  "required_twist_derivatives_at_A1": [
+    8,
+    -8
+  ],
+  "scope": "Exact small-object arithmetic; general obstruction proved in accompanying note."
+}

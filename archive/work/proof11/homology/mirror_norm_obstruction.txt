@@ -1,0 +1,58 @@
+WHY MIRROR DOUBLING DOES NOT TURN JONES INTO A POSITIVE HOMOLOGY NORM
+Status: exact algebra plus actual-knot countertest; not a Jones-one counterexample.
+
+Let H=Kh_red(K;Q). Write e_j and o_j for the dimensions in even and odd
+homological degrees at quantum degree j. Over Q, mirror duality and the
+connected-sum Kunneth theorem identify Kh_red(K#mirror(K)) with H tensor H*.
+At quantum degree zero, its Euler coefficient and its actual dimension are
+  E0 = sum_j (e_j-o_j)^2,
+  D0 = sum_j (e_j+o_j)^2.
+Consequently
+  D0-E0 = 4 sum_j e_j o_j.
+The ordinary Jones polynomial of the mirror double supplies E0, not D0.
+If V_K=1 then E0=1, but no control of the discarded nonnegative quantity
+sum_j e_j o_j follows from this identity.
+
+This loss occurs for actual classical knots, not just abstract complexes.
+The knots 5_1 and mirror(10_132) have the same Jones polynomial and different
+rational reduced Khovanov homology, of ranks 5 and 11. Their mirror doubles
+therefore have equal Jones polynomials and reduced ranks 25 and 121.
+For 5_1, (E0,D0)=(5,5). For 10_132, (E0,D0)=(5,21).
+The raw 10_132 quantum-degree (even,odd) dimensions are
+ -14:(0,1), -12:(1,0), -10:(0,1), -8:(2,1), -6:(1,1),
+ -4:(1,0), -2:(1,1).
+The computed exact data appear in verify_obstructions.json.
+These examples refute a universal formula recovering the homology norm from
+the ordinary mirror-double Jones polynomial; they do not settle its unit fiber.
+
+A MORE GENERAL TRACE OBSTRUCTION
+For a bigraded super vector space H, let c_m cyclically permute H^tensor m
+using the Koszul signs, and let Q denote total quantum grading. Then
+  str(c_m q^Q)=chi_H(q^m).
+Only basis tensors x^tensor m contribute. If x has parity p, the cyclic
+permutation gives (-1)^((m-1)p) and supertrace gives (-1)^(mp), whose product
+is (-1)^p. For a permutation with cycle lengths l_i, the trace is therefore
+product_i chi_H(q^l_i). Thus these canonical permutation traces only repack
+Euler characteristics; an equal-quantum even/odd pair remains invisible.
+An ordinary unsigned flip is not the symmetric braiding in chain complexes;
+using it without Koszul signs generally fails to commute with the differential.
+Ordinary dimensions on homology are valid extra invariants but are not supplied
+by the ordinary Jones trace.
+
+GEOMETRIC RT VERSION
+Cut a knot along a single arc. At generic q the fundamental representation is
+simple, so its (1,1)-tangle RT operator is a scalar by Schur's lemma. With
+framing normalization that scalar is V_K. Reflecting the tangle therefore
+produces a positive scalar norm |V_K|^2, but proving the scalar equals 1 gives
+no additional constraint on the knot embedding. Cutting into more strands
+creates a larger operator space; its positive norm is measured by additional
+closures/cables, not by the given scalar Jones polynomial.
+
+PRIMARY SOURCES
+Bar-Natan, On Khovanov's categorification of the Jones polynomial, Theorem 3:
+https://arxiv.org/pdf/math/0201043
+https://msp.org/agt/2002/2-1/agt-v2-n1-p16-p.pdf
+Khovanov, Categorifications of the colored Jones polynomial:
+https://arxiv.org/abs/math/0302060
+Actual polynomial tables: official KnotInfo files retained locally in
+work/proof10/homology/polys.json and knotinfo_data_complete.xls.

@@ -1,0 +1,449 @@
+[
+  {
+    "tau": [],
+    "parity_classes": [
+      {
+        "canonical_b_parity": 0,
+        "generic_monomials": 394,
+        "incidence_count_lower_bound": 74173998,
+        "specialized_signed_polynomial": {
+          "-51": 1,
+          "-49": -10,
+          "-47": 35,
+          "-45": -5,
+          "-43": -405,
+          "-41": 1593,
+          "-39": -2525,
+          "-37": -1535,
+          "-35": 16903,
+          "-33": -38923,
+          "-31": 37541,
+          "-29": 29394,
+          "-27": -159113,
+          "-25": 251315,
+          "-23": -150695,
+          "-21": -196770,
+          "-19": 605881,
+          "-17": -717588,
+          "-15": 289405,
+          "-13": 521357,
+          "-11": -1179429,
+          "-9": 1152956,
+          "-7": -361978,
+          "-5": -704582,
+          "-3": 1335932,
+          "-1": -1136369,
+          "1": 307262,
+          "3": 547493,
+          "5": -902509,
+          "7": 666382,
+          "9": -152352,
+          "11": -242162,
+          "13": 334009,
+          "15": -204370,
+          "17": 37943,
+          "19": 48826,
+          "21": -53003,
+          "23": 25537,
+          "25": -4670,
+          "27": -2043,
+          "29": 1742,
+          "31": -524,
+          "33": 34,
+          "35": 27,
+          "37": -9,
+          "39": 1
+        }
+      },
+      {
+        "canonical_b_parity": 1,
+        "generic_monomials": 394,
+        "incidence_count_lower_bound": 42374176,
+        "specialized_signed_polynomial": {
+          "-51": -1,
+          "-49": 10,
+          "-47": -35,
+          "-45": 5,
+          "-43": 404,
+          "-41": -1586,
+          "-39": 2501,
+          "-37": 1579,
+          "-35": -16903,
+          "-33": 38629,
+          "-31": -36391,
+          "-29": -32238,
+          "-27": 164332,
+          "-25": -258527,
+          "-23": 157444,
+          "-21": 195244,
+          "-19": -615139,
+          "-17": 740652,
+          "-15": -323041,
+          "-13": -488054,
+          "-11": 1161930,
+          "-9": -1163991,
+          "-7": 403615,
+          "-5": 644397,
+          "-3": -1279241,
+          "-1": 1104953,
+          "1": -311948,
+          "3": -511714,
+          "5": 852881,
+          "7": -622925,
+          "9": 128421,
+          "11": 244240,
+          "13": -320970,
+          "15": 186322,
+          "17": -22935,
+          "19": -57329,
+          "21": 55554,
+          "23": -24583,
+          "25": 2595,
+          "27": 3844,
+          "29": -2846,
+          "31": 1046,
+          "33": -226,
+          "35": 26,
+          "37": -1
+        }
+      }
+    ],
+    "total_incidence_count_lower_bound": 116548174,
+    "top_surviving_degree": 39,
+    "top_surviving_by_matching_up_to_swap": [
+      {
+        "canonical_b_parity": 0,
+        "terms": [
+          {
+            "a_s": 39,
+            "b": 0,
+            "raw_coefficient": 1,
+            "specialized_contribution": 1
+          }
+        ],
+        "incidence_count_lower_bound": 1,
+        "incidence_count_parity": 1,
+        "specialized_signed_sum": 1
+      },
+      {
+        "canonical_b_parity": 1,
+        "terms": [],
+        "incidence_count_lower_bound": 0,
+        "incidence_count_parity": 0,
+        "specialized_signed_sum": 0
+      }
+    ],
+    "top_generic_collapsed_degree": 39,
+    "top_generic_collapsed_signed_sums": [
+      {
+        "canonical_b_parity": 0,
+        "specialized_signed_sum": 1
+      },
+      {
+        "canonical_b_parity": 1,
+        "specialized_signed_sum": 0
+      }
+    ],
+    "scope": "Exact signed polynomial information and lower bounds for this fixed generic lift; no unsigned geometric counts or minimum are claimed."
+  },
+  {
+    "tau": [
+      1,
+      1
+    ],
+    "parity_classes": [
+      {
+        "canonical_b_parity": 0,
+        "generic_monomials": 418,
+        "incidence_count_lower_bound": 153090112,
+        "specialized_signed_polynomial": {
+          "-55": 1,
+          "-53": -11,
+          "-51": 45,
+          "-49": -41,
+          "-47": -383,
+          "-45": 1895,
+          "-43": -3884,
+          "-41": 1327,
+          "-39": 14791,
+          "-37": -45464,
+          "-35": 64157,
+          "-33": -17415,
+          "-31": -126601,
+          "-29": 304164,
+          "-27": -341514,
+          "-25": 71066,
+          "-23": 473131,
+          "-21": -963028,
+          "-19": 945830,
+          "-17": -214365,
+          "-15": -917832,
+          "-13": 1730332,
+          "-11": -1590032,
+          "-9": 461819,
+          "-7": 997751,
+          "-5": -1880785,
+          "-3": 1672872,
+          "-1": -595198,
+          "1": -607522,
+          "3": 1230565,
+          "5": -1064847,
+          "7": 425488,
+          "9": 184841,
+          "11": -449647,
+          "13": 373334,
+          "15": -155690,
+          "17": -15273,
+          "19": 74518,
+          "21": -57728,
+          "23": 23505,
+          "25": -2929,
+          "27": -2567,
+          "29": 1776,
+          "31": -497,
+          "33": 25,
+          "35": 28,
+          "37": -9,
+          "39": 1
+        }
+      },
+      {
+        "canonical_b_parity": 1,
+        "generic_monomials": 420,
+        "incidence_count_lower_bound": 82220788,
+        "specialized_signed_polynomial": {
+          "-55": -1,
+          "-53": 11,
+          "-51": -45,
+          "-49": 41,
+          "-47": 382,
+          "-45": -1887,
+          "-43": 3853,
+          "-41": -1260,
+          "-39": -14829,
+          "-37": 45155,
+          "-35": -62707,
+          "-33": 13509,
+          "-31": 134314,
+          "-29": -315851,
+          "-27": 354551,
+          "-25": -79135,
+          "-23": -478851,
+          "-21": 989933,
+          "-19": -994381,
+          "-17": 274031,
+          "-15": 867729,
+          "-13": -1713418,
+          "-11": 1621658,
+          "-9": -539456,
+          "-7": -896524,
+          "-5": 1790280,
+          "-3": -1624531,
+          "-1": 603594,
+          "1": 550480,
+          "3": -1150402,
+          "5": 991670,
+          "7": -380812,
+          "9": -195013,
+          "11": 433307,
+          "13": -345192,
+          "15": 129165,
+          "17": 32790,
+          "19": -82044,
+          "21": 58197,
+          "23": -20749,
+          "25": -250,
+          "27": 4890,
+          "29": -3072,
+          "31": 1072,
+          "33": -227,
+          "35": 26,
+          "37": -1
+        }
+      }
+    ],
+    "total_incidence_count_lower_bound": 235310900,
+    "top_surviving_degree": 39,
+    "top_surviving_by_matching_up_to_swap": [
+      {
+        "canonical_b_parity": 0,
+        "terms": [
+          {
+            "a_s": 39,
+            "b": 0,
+            "raw_coefficient": 1,
+            "specialized_contribution": 1
+          }
+        ],
+        "incidence_count_lower_bound": 1,
+        "incidence_count_parity": 1,
+        "specialized_signed_sum": 1
+      },
+      {
+        "canonical_b_parity": 1,
+        "terms": [],
+        "incidence_count_lower_bound": 0,
+        "incidence_count_parity": 0,
+        "specialized_signed_sum": 0
+      }
+    ],
+    "top_generic_collapsed_degree": 39,
+    "top_generic_collapsed_signed_sums": [
+      {
+        "canonical_b_parity": 0,
+        "specialized_signed_sum": 1
+      },
+      {
+        "canonical_b_parity": 1,
+        "specialized_signed_sum": 0
+      }
+    ],
+    "scope": "Exact signed polynomial information and lower bounds for this fixed generic lift; no unsigned geometric counts or minimum are claimed."
+  },
+  {
+    "tau": [
+      -1,
+      -1
+    ],
+    "parity_classes": [
+      {
+        "canonical_b_parity": 0,
+        "generic_monomials": 295,
+        "incidence_count_lower_bound": 5869720,
+        "specialized_signed_polynomial": {
+          "-49": 1,
+          "-47": -9,
+          "-45": 26,
+          "-43": 13,
+          "-41": -307,
+          "-39": 954,
+          "-37": -1269,
+          "-35": -413,
+          "-33": 5006,
+          "-31": -9713,
+          "-29": 7886,
+          "-27": 5029,
+          "-25": -23455,
+          "-23": 31706,
+          "-21": -16521,
+          "-19": -17945,
+          "-17": 48670,
+          "-15": -50544,
+          "-13": 18134,
+          "-11": 27808,
+          "-9": -56019,
+          "-7": 48625,
+          "-5": -13445,
+          "-3": -23797,
+          "-1": 39834,
+          "1": -29678,
+          "3": 6322,
+          "5": 12275,
+          "7": -16690,
+          "9": 9986,
+          "11": -1268,
+          "13": -3184,
+          "15": 3115,
+          "17": -1382,
+          "19": 146,
+          "21": 213,
+          "23": -155,
+          "25": 55,
+          "27": -11,
+          "29": 1
+        }
+      },
+      {
+        "canonical_b_parity": 1,
+        "generic_monomials": 296,
+        "incidence_count_lower_bound": 3197952,
+        "specialized_signed_polynomial": {
+          "-49": -1,
+          "-47": 9,
+          "-45": -26,
+          "-43": -13,
+          "-41": 306,
+          "-39": -948,
+          "-37": 1253,
+          "-35": 427,
+          "-33": -4947,
+          "-31": 9413,
+          "-29": -7118,
+          "-27": -6373,
+          "-25": 25086,
+          "-23": -32775,
+          "-21": 15852,
+          "-19": 21156,
+          "-17": -54037,
+          "-15": 56201,
+          "-13": -21433,
+          "-11": -28840,
+          "-9": 61373,
+          "-7": -56113,
+          "-5": 19862,
+          "-3": 20898,
+          "-1": -40930,
+          "1": 33342,
+          "3": -10355,
+          "5": -9547,
+          "7": 15763,
+          "9": -10368,
+          "11": 2127,
+          "13": 2464,
+          "15": -2745,
+          "17": 1287,
+          "19": -172,
+          "21": -171,
+          "23": 132,
+          "25": -48,
+          "27": 10,
+          "29": -1
+        }
+      }
+    ],
+    "total_incidence_count_lower_bound": 9067672,
+    "top_surviving_degree": 27,
+    "top_surviving_by_matching_up_to_swap": [
+      {
+        "canonical_b_parity": 0,
+        "terms": [
+          {
+            "a_s": 27,
+            "b": 0,
+            "raw_coefficient": -11,
+            "specialized_contribution": -11
+          }
+        ],
+        "incidence_count_lower_bound": 11,
+        "incidence_count_parity": 1,
+        "specialized_signed_sum": -11
+      },
+      {
+        "canonical_b_parity": 1,
+        "terms": [
+          {
+            "a_s": 29,
+            "b": 1,
+            "raw_coefficient": -10,
+            "specialized_contribution": 10
+          }
+        ],
+        "incidence_count_lower_bound": 10,
+        "incidence_count_parity": 0,
+        "specialized_signed_sum": 10
+      }
+    ],
+    "top_generic_collapsed_degree": 29,
+    "top_generic_collapsed_signed_sums": [
+      {
+        "canonical_b_parity": 0,
+        "specialized_signed_sum": 1
+      },
+      {
+        "canonical_b_parity": 1,
+        "specialized_signed_sum": -1
+      }
+    ],
+    "scope": "Exact signed polynomial information and lower bounds for this fixed generic lift; no unsigned geometric counts or minimum are claimed."
+  }
+]

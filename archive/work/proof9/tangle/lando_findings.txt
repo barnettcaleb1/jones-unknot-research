@@ -1,0 +1,85 @@
+PROOF-ROUTE AUDIT: EXTREME STATE CANCELLATION
+31 October 2026. Checked deduction and experiments; no novelty claim.
+
+Known frontier.
+Lowrance–Spyropoulos, The Jones polynomial of an almost alternating link,
+NYJM23(2017), Theorem1.1: almost alternating and Turaev-genus-one links
+cannot have the Jones polynomial of an unlink times a monomial.
+Primary: https://nyjm.albany.edu/j/2017/23-71p.pdf
+Thus genus two is the first unexcluded genus for this strategy.
+
+Exact layers.
+For a connected diagram D with c crossings, all-A/all-B circle numbers
+s_A,s_B, let g_D=(2+c-s_A-s_B)/2. Put M=c+2s_A-2. For a state S
+obtained by changing b crossings from A to B, with s(S) state circles,
+mu_A(S)=(s_A+b-s(S))/2 is a nonnegative integer. Expanding the usual
+Kauffman state sum gives the coefficient of A^(M-4k):
+ C_A,k = sum_{S:mu_A(S)<=k} (-1)^(s(S)-1) binom(s(S)-1,k-mu_A(S)).
+There is an analogous formula from the B end. Let k_A,k_B be the first
+nonzero layer indices. Then exactly
+ span_t V_K = c-g_D-k_A-k_B.
+In particular k_A+k_B<c-g_D is a sufficient nontriviality certificate.
+
+The extreme coefficient is
+ C_A,0=(-1)^(s_A-1) I(G_A,-1),
+where G_A is the Lando graph and I its independence polynomial. If both
+G_A and G_B are forests whose independence complexes are noncontractible,
+then their reduced Euler characteristics are +/-1; both extremes survive,
+and span=c-g_D>0 for a diagram with crossings. The empty graph is allowed,
+with independence complex the (-1)-sphere. This is an elementary sufficient
+criterion, extending the same calculation used in adequacy arguments.
+Primary forest/independence results: Przytycki–Silvero, 2024,
+https://arxiv.org/html/2305.18648 , Proposition3.6(2).
+Extreme Khovanov/Lando correspondence: Gonzalez-Meneses–Manchon–Silvero,
+https://arxiv.org/html/1511.05845 , Theorem4.
+
+Actual countertests.
+The local scripts reconstruct Lando graphs from state-circle counts, enumerate
+full Laurent brackets, and independently compare with Regina Jones polynomials
+for 254 actual diagrams: every prime knot through10 crossings, four11-crossing
+knots, and one known8-crossing unknot diagram. All254 checks pass.
+Files: lando_probe.py/json, extreme_layers.py/json.
+Examples (these are diagram genera, not claims of minimal knot Turaev genus):
+ name       c   g_D  k_A k_B   Jones span
+ 8_19       8    2    0   1       5
+ 10_133    10    2    0   0       8
+ 11n95     11    3    1   0       7
+ 11n118    11    2    1   1       7
+ known U    8    3    1   4       0
+In the minimal table diagram of11n118, G_A consists of two isolated vertices
+and G_B of one isolated vertex. Both are forests, but both extreme Euler
+characteristics vanish. Thus minimality+genus2+forest Lando graphs does not
+force even one extreme coefficient to survive. For10_133 both complexes
+are noncontractible and the sufficient criterion applies, even though one
+of the Lando graphs is nonempty (two disjoint edges).
+
+Stronger infinite obstruction: genus does not bound cancellation depth.
+The standard Kanenobu diagram D(p,q) has Turaev genus2 whenever p,q are both
+nonzero. This is explicitly computed in del Valle Vilchez–Lowrance,
+On the arc index and Turaev genus of a link, arXiv2509.21274v2(8May2026),
+proof of Theorem6.1, pp29–30:
+ https://arxiv.org/pdf/2509.21274
+Qazaqzeh–Mansour, Further study of Kanenobu knots, Proposition1.2 gives
+ V_K(p,q)(t)=(-t)^(p+q)(V_K(0,0)(t)-1)+1,
+ V_K(0,0)(t)=(t^-2-t^-1+1-t+t^2)^2.
+Primary: https://arxiv.org/pdf/1405.0683
+Consequently for n>=1 the standard D(n,-n) has c=2n+8, g_D=2, and Jones
+span8. Our exact layer identity therefore forces k_A+k_B=2n-2, unbounded.
+For n>=3 these diagrams are within one crossing of minimal: the cited2026
+paper records 2n+7<=c(K(n,-n))<=2n+8. No assertion that the standard diagrams
+are always minimal, or that these knots have minimal Turaev genus2, is needed.
+ n    c(D)   g_D   span V   k_A+k_B
+ 3     14     2      8          4
+ 5     18     2      8          8
+10     28     2      8         18
+This refutes any genus-only bound on cancellation depth for these diagrams.
+These are actual nontrivial knots, not merely complicated unknot diagrams.
+
+Research consequence.
+Inspecting a fixed number of extreme coefficients cannot settle the genus2
+frontier by a universal bounded-depth argument. A viable extension would need
+to recognize and quotient the long cancellation mechanisms themselves, such
+as opposite twist redistribution, then prove that every remaining minimal
+core has positive Jones span. Root's exact affine-exponent method provides a
+way to classify such mechanisms in each fixed twist template, but no theorem
+currently makes the number of templates finite for arbitrary knots.

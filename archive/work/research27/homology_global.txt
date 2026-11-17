@@ -1,0 +1,208 @@
+PASS 27: TESTING SMITH AND STEENROD MECHANISMS ON ACTUAL RIBBON GEOMETRY
+1 November 2026. Bounded research audit. No generic Jones proof obtained.
+
+STRATEGIC RESULT
+
+The natural connected-sum symmetry does not provide an extra positivity
+constraint: all quantum-graded Smith inequalities for its periodic lift
+are automatic polynomial inequalities in the nonnegative Khovanov ranks.
+Separately, actual hyperbolic ribbon knots support arbitrarily high
+Steenrod squares. Thus neither periodicity nor ribbon/hyperbolic geometry
+alone limits the cohomological operations in a ribbon complement.
+
+These are concrete tests of proposed mechanisms, not new boundedness
+conjectures and not counterexamples to Jones unknot detection. A theorem
+coupling these operations to the ENTIRE Jones polynomial is still missing.
+
+1. AN ACTUAL PERIODIC-CONNECTED-SUM TEST, INCLUDING QUANTUM GRADINGS
+
+Let K be any actual classical knot, and form an annular knot A_K by tying
+a local copy of K into the core of the solid torus. Its wrapping number
+is one. The p-fold cyclic annular lift, with p=2^r, is the actual knot
+K^{#p}, with a p-periodic rotation and an unknotted fixed axis disjoint
+from the knot. Its quotient in the axis complement is A_K.
+
+Put H=Kh_red(K;F2) and P(q)=sum_j dim H^{*,j} q^j, where the star sums
+over homological degree. P has nonnegative integral coefficients.
+
+Each resolution of a local diagram of A_K has exactly one essential
+circle, the circle containing the basepoint of the cut-open K. The two
+annular labels on that circle have weight k=+1 and k=-1. Taking the
+annular associated graded separates these two labels. In either sector
+the differential is exactly the based reduced Khovanov differential;
+the only quantum shift is respectively +1 or -1. Consequently
+
+ AKh(A_K;F2) = H{q+1,k+1} direct-sum H{q-1,k-1}.
+
+In particular its total rank is 2 dim H. This is a local chain argument,
+not a claim that arbitrary wrapping-one annular links have a trivial
+annular filtration (the specific local-knot/core presentation is used).
+
+Reduced connected-sum Kunneth and characteristic-two reduced/unreduced
+splitting give the quantum rank polynomial of the covering knot:
+
+   P_unred(K^{#p};q)=(q+q^-1)P(q)^p.
+
+The fixed-point grading formula for a p-periodic knot sends quotient
+quantum/annular grades (a,b) to pa-(p-1)b. A class of reduced grade j
+in A_K has a=j+b and b=+/-1. Its corresponding covering quantum degree
+is therefore pj+b. Thus the right side of the quantum-graded Smith
+inequality has polynomial
+
+   (q+q^-1) P(q^p).
+
+The entire resulting family of inequalities is exactly the coefficientwise
+inequality
+
+       (q+q^-1)P(q)^p >= (q+q^-1)P(q^p).
+
+This holds for EVERY nonnegative integral Laurent polynomial P. In the
+multinomial expansion, the pure term at pj contributes a_j^p>=a_j, and
+all mixed terms have nonnegative coefficients. The total-rank inequality
+is just 2r^p>=2r. No Jones assumption was used anywhere.
+
+Likewise the periodic Jones congruence in this example is simply
+V_K(t)^p=V_(K^{#p})(t) congruent to V_K(t^p) modulo2, the Frobenius
+identity. For a hypothetical V_K=1 knot it reduces to 1=1. Thus applying
+Smith localization to these canonical connected-sum symmetries does not
+repair the missing Euler-to-rank step, even if all quantum gradings are
+retained. This does NOT assert that Smith theory for every other actual
+symmetry, or additional equivariant maps, is powerless.
+
+Primary source: Stoffregen--Zhang, Localization in Khovanov homology,
+arXiv:1810.04769v2. Theorem1.1 is the rank inequality; the fixed-point
+formula (1.6), PDFp5, gives pa-(p-1)b.
+https://arxiv.org/pdf/1810.04769
+Independent construction: Borodzik--Politarczyk--Silvero, Khovanov
+homotopy type, periodic links and localizations, Math.Ann.380(2021),
+1233--1309, Theorems1.4--1.5.
+https://doi.org/10.1007/s00208-021-02157-y
+For characteristic-two splitting: Shumakovitch, Torsion of the Khovanov
+homology, Corollary3.2.C. https://arxiv.org/pdf/math/0405474
+
+2. RIBBON/HYPERBOLIC GEOMETRY DOES NOT BOUND STEENROD DEGREE
+
+For every n>=1 there exists an actual hyperbolic ribbon knot R_n with a
+nonzero Sq^n on reduced Khovanov homology over F2. Here is a deduction
+from established constructions; it is not a claim of a new publication.
+
+Bodish's Lemma5.3 supplies an actual knot K_n with nonzero Sq^n. Let
+D_n=K_n#mirror(K_n), an actual ribbon knot. Choose a nonzero class y in
+the highest nonzero homological degree of Kh_red(mirror(K_n);F2).
+Every Sq^i(y), i>0, vanishes by degree. If Sq^n(x) is nonzero in K_n,
+the connected-sum stable splitting and Cartan formula give
+
+   Sq^n(x tensor y)=Sq^n(x) tensor y !=0.
+
+Thus D_n is ribbon and retains the operation. Bodish's Theorem7.1,
+quoting Silver--Whitten, supplies a hyperbolic knot R_n and a ribbon
+concordance D_n -> R_n. Compose with U -> D_n: R_n is ribbon.
+Naturality of Sq^n and the split injection induced by that concordance
+preserve the nonzero operation. Since the reduced Kh of U has no such
+operation, it lies in the nontrivial ribbon complement for U -> R_n.
+
+This defeats an attempted proof of E based only on uniformly bounded
+operation degree for actual ribbon complements, including prime or
+hyperbolic ones. It does not defeat a Jones-dependent bound, and these
+knots are NOT claimed to share a Jones polynomial.
+
+Primary source: Holt Bodish, Nontrivial Steenrod Squares on Prime,
+Hyperbolic and Satellite Knots, arXiv:2006.10881v3: Theorem5.1 (stable
+connected-sum splitting), Theorem5.2 (naturality), Lemma5.3 (nonzero
+operations), Theorem7.1 (hyperbolic ribbon successor).
+https://arxiv.org/pdf/2006.10881
+
+3. CRITICAL SOURCE CORRECTION: THERE IS NO GLOBAL NO-2-TORSION ENDPOINT
+
+Gujral--Wang's theorem DOES NOT say that an actual knot whose unreduced
+integral Khovanov homology has no 2-torsion is the unknot. That unrestricted
+assertion is Shumakovitch's conjecture. Theorem1 instead says: if K has no
+2-torsion, then its reduced rational rank is no greater than that of any
+knot J obtainable by ONE proper rational tangle replacement. Corollary2
+therefore supplies 2-torsion for every nontrivial unknotting-number-one
+knot, and more generally knots obtainable from U or a trefoil in one
+proper rational replacement. The proof cannot be iterated through an
+arbitrary crossing-change sequence: its no-torsion hypothesis need not
+hold for the intermediate knots. A search snippet that runs the theorem
+into the corollary can misleadingly suggest the unrestricted endpoint.
+
+Even within that restricted endpoint, torsion absence has not been
+deduced from Euler polynomial1. Torsion has zero rational Euler contribution
+by definition, and the ordinary Jones polynomial does not even determine
+the number of Bockstein pairs.
+
+An already available actual test is 5_1 versus mirror(10_132). Both have
+  V=t^2+t^4-t^5+t^6-t^7.
+The unreduced integral table has respectively 2 and 5 Z/2 summands, and
+no other torsion. Thus their first integral Bocksteins have total ranks
+2 and 5, respectively. The rational reduced ranks are5 and11, while
+the unreduced rational ranks are6 and12. These values were extracted
+only for this known pair from the saved KnotInfo data, not by a new scan.
+Mirror changes torsion gradings but not their counts. This is not a
+ribbon-related pair and does not falsify E.
+
+Primary source: Gujral--Wang, A minimality property for knots without
+Khovanov 2-torsion, AGT25(2025),4073--4075, Theorem1 and Corollary2.
+https://msp.org/agt/2025/25-7/agt-v25-n7-p10-p.pdf
+https://arxiv.org/html/2310.06163v1
+Data: work/proof10/homology/polys.json, corresponding KnotInfo entries.
+
+4. STOP CONDITION AND THE REMAINING GEOMETRIC REQUIREMENT
+
+There is no new full proof from these operations. The following shortcuts
+have now been tested against actual constructions, not merely formal
+complexes: canonical periodic connected-sum Smith inequalities add no
+constraint; ribbon/hyperbolic geometry permits unbounded Steenrod degree;
+the whole Jones polynomial need not determine even the first Bockstein
+rank. One should not deepen those routes without an additional geometric
+statement tying an operation to the Jones-unit fiber or controlling the
+actual relative ribbon summand in a way absent from these examples.
+
+The finite-resolution Watson argument from pass26 is different: it
+supplies a concrete geometric mechanism and an explicit input-complexity
+bound. No comparable finite decomposition of arbitrary ribbon complements
+has been established here. Replacing its missing coverage theorem by
+another unexplained rank/torsion budget would only rename the problem.
+
+5. INDEPENDENT FINAL AUDIT OF THE BING-SATELLITE PRODUCT ENDPOINT
+
+The tangle and braid tracks independently derived the annular formula
+from Suzuki's Bing-doubling coefficients. This audit assumes their
+coefficient calculation; it separately verifies its satellite consequence
+and the nontriviality endpoint.
+
+Let H_C be the reduced, zero-framed dimension-three colored Jones
+polynomial, delta=-A^2-A^-2, and P_C one component of the untwisted Bing
+double B(C), regarded as a pattern in the exterior of the other component.
+Their formula is
+  [P_C]=delta H_C +(1-H_C)z^2/delta.
+On a zero-framed companion J, z^2 evaluates to
+  1+(delta^2-1)H_J.
+Divide the resulting zero-framed bracket by delta to get normalized V.
+Direct substitution gives exactly
+  V_(P_C(J))-1=-(delta^2-1)/delta^2 (H_C-1)(H_J-1).
+Both C=U and J=U give V=1, as required geometrically. There is no
+additional writhe monomial in these zero-framed conventions.
+
+An integrality check follows from Habiro's expansion. With q=A^-4,
+  P(3,1)=q^-3(q^2-1)^2(q^2+1),
+and all nonconstant color-three terms contain P(3,1). Since
+delta^2=(q+1)^2/q, H_C-1 is divisible by delta^2. Thus the displayed
+rational-looking formulas have no actual Laurent-polynomial pole.
+
+For nontrivial C, the Bing-link exterior is obtained by gluing E(C) to
+the Borromean exterior along the infection torus. Both pieces are
+irreducible with incompressible gluing boundary; their remaining boundary
+tori stay incompressible. Thus B(C) is nonsplit. Its two components are
+unknots because the corresponding proper sublinks of the Borromean link
+are unlinks. Hence P_C is geometrically essential in the exterior solid
+torus of the other component. For nontrivial J, the companion torus of
+P_C(J) is incompressible on both sides, so the resulting knot is nontrivial.
+
+Therefore for nontrivial C,J this is an actual nontrivial satellite with
+ordinary Jones polynomial1 if and only if H_C=1 or H_J=1. The equivalence
+uses that Q(A) is a field and delta^2-1 is nonzero, not numerical testing.
+This is a concrete product construction with a precise remaining colored
+condition; it does not show that either factor can vanish for a nontrivial
+knot. See the tangle track's tangle_realization.txt for primary coefficient
+and geometric sources.

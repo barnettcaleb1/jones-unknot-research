@@ -1,0 +1,42 @@
+{
+  "README.txt": {
+    "bytes": 1990,
+    "sha256": "1bb82cf43dd6308c52e924628e1a93f9fe219154aaae19a7829740e87ee1280c"
+  },
+  "projective_cancellation.txt": {
+    "bytes": 5705,
+    "sha256": "918f74bb1c65d6996382abf2a68529bc57bb17a7d81da1f34b533e90b0ede668"
+  },
+  "projective_crossing_hostile_audit.txt": {
+    "bytes": 7815,
+    "sha256": "d122dd8bdbfd534ac3a7f07af1418f5db8c1bef1e289641706f2e86e9c069423"
+  },
+  "projective_crossing_identity.txt": {
+    "bytes": 10010,
+    "sha256": "cf6691fdada3deb52ecafeae60f1fd4a41b2cdbed81d6b321034bba03c24aec5"
+  },
+  "projective_dual_systole_audit_pass30.txt": {
+    "bytes": 5756,
+    "sha256": "f2402c67d5b9e830d96d3cad16e409a9c55e8a9781d01ec2f05b05577d6add25"
+  },
+  "projective_global_tests.txt": {
+    "bytes": 9605,
+    "sha256": "8553878d72861212a4d6045dba4fce0146faff4a519a2042fa0ee59540e118bc"
+  },
+  "projective_local_crossing_audit.txt": {
+    "bytes": 6655,
+    "sha256": "0686f25c714ad7d7d0277b48fc3f27d4bccb1b1d76f9eae47e8e669056e3b2d5"
+  },
+  "projective_locality.txt": {
+    "bytes": 9753,
+    "sha256": "21d4dcada18a7b7c7c35e75e6527cd80216a4916bd40a11cd4365a3d13ee2d03"
+  },
+  "torus_countertest_result.json": {
+    "bytes": 456,
+    "sha256": "28c1e1c8d456164cc1d267b0e2fce05289537c878eb11e14bf821edd2df454cc"
+  },
+  "verify_torus_countertest.py": {
+    "bytes": 4189,
+    "sha256": "348efcc8d3fde58eb03b47653c1fe7f35fbac8c5c0a835cc51625ee3473054b7"
+  }
+}

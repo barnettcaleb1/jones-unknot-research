@@ -1,0 +1,212 @@
+SUPERSYMMETRY AND JONES-ONE: AN EXACT OBSTRUCTION TO A POSITIVITY SHORTCUT
+Bounded interdisciplinary pass, 2026-10-31. No knot realization or general
+Jones detection theorem is claimed below.
+
+THE PHYSICAL CONNECTION IS LITERAL
+Witten's Fivebranes and Knots writes the Jones invariant as
+             Tr_H (-1)^F q^P,
+an equivariant index of a proposed space of BPS states, with knot homology
+as the finer state space. This parallels the exact mathematical identity
+V_K(q^2)=sum_j q^j(dim Kh_red,even,j - dim Kh_red,odd,j).
+The gauge-theory realization involves substantial analytic/duality inputs;
+the combinatorial Euler-characteristic identity itself is rigorous.
+Primary source: https://arxiv.org/pdf/1101.3216, equation(1.9), introduction.
+Related direct four-dimensional analysis:
+https://arxiv.org/abs/1106.4789, Gaiotto--Witten.
+
+EXACT THREE-STATE SUPERSYMMETRIC MODEL
+Let u,b be even and f odd. Give u charge0 and b,f the same chargej.
+Define Q_epsilon(b)=epsilon f, Q_epsilon(u)=Q_epsilon(f)=0, and
+H_epsilon=Q_epsilon Q_epsilon^dagger+Q_epsilon^dagger Q_epsilon.
+In the ordered basis(u,b,f), H=diag(0,|epsilon|^2,|epsilon|^2), so
+ Tr((-1)^F q^P exp(-beta H))
+       =1+q^j exp(-beta|epsilon|^2)-q^j exp(-beta|epsilon|^2)=1.
+At epsilon0 there are THREE supersymmetric ground states; at epsilon!=0
+there is onlyONE. Thus unitarity, a positive Hamiltonian, supersymmetry,
+and an index identically1 do not imply a unique ground state. Identical
+charge boson/fermion pairs are genuinely invisible to the whole q-index.
+
+EXACT ADDITIONAL CONDITION THAT WOULD SUFFICE
+For a charge-preserving odd Dirac operator D=[0 A^dagger; A 0], a
+charge-wise vanishing theorem saying that at every charge the zero-mode
+kernel occupies only one parity gives
+       dim ker D = sum_j |index(A_j)|.
+For index polynomial1 this dimension is1, and Khovanov unknot detection
+would finish the argument. Such chirality is NOT automatic: actual knot
+homologies exhibit cancellations at fixed quantum grading. For example,
+the knots5_1 and10_132 have the same Jones polynomial but different
+rational Khovanov ranks. So a universal charge-wise chirality theorem for
+knot BPS spaces is false. A selective geometric vanishing theorem would
+need an additional knot-specific hypothesis, not merely supersymmetry.
+Primary computed data: https://katlas.org/wiki/5_1 and
+https://katlas.org/wiki/10_132 .
+
+Why importing 'no exotics' is unsafe: Gaiotto--Moore--Neitzke's Framed BPS
+States discusses positivity for a protected SPIN character in specified
+four-dimensional N=2 theories, involving SU(2)_R representations.
+It does not identify that character with the singly specialized Jones
+index of every knot defect. A chirality theorem for a different Dirac
+problem cannot be transferred without matching boundary conditions,
+charges, and the preserved supercharge.
+Primary source: https://arxiv.org/pdf/1006.0146, protected spin characters and no-exotics discussion, pp16-17.
+
+LEE DEFORMATION EXPLAINS ANOTHER FAILED PHYSICAL ARGUMENT
+Generic perturbations can lift invisible pairs, just as epsilon does.
+But lifting cohomology changes the invariant: isotopy continuation must
+preserve knot homology. Lee's deformation does reduce the knot state
+space to the unknot rank, but breaks the quantum grading used in the
+Jones index. Its quantum-filtration spectral sequence is the record of
+that lost information. A claim that 'a generic perturbation removes all
+hidden states' therefore does not recover Jones detection.
+
+MORE CONCRETE NEW DIRECTION: INTERACTING BPS PAIRS AND KNOT QUIVERS
+For a symmetric nonnegative integer quiver matrix C, use the standard
+motivic generating series
+ Z_C(x_1,...,x_n;q)=sum_{d_i>=0} (-q)^(d^T C d)
+                         prod_i x_i^d_i/(q^2;q^2)_{d_i},
+where (q^2;q^2)_d=prod_{k=1}^d(1-q^(2k)). Knot-quiver constructions
+specialize the x_i to signed/graded monomials in knot variables and a
+color-counting variablex. The fundamental-color coefficient sees only
+one occupied node at a time, hence no off-diagonal interactions.
+Primary source: Kucharski--Reineke--Stosic--Sulkowski,
+https://arxiv.org/pdf/1707.04017, quiver generating series and the
+knots-quivers correspondence. Universal knot realization is not assumed.
+
+Consider the ACTUAL SYMMETRIC QUIVER C_m=[[0,m],[m,1]], m>=0, and specialize
+x_1=x, x_2=q^-1 x. Then directly
+ [x] Z_Cm=(1-1)/(1-q^2)=0,
+ [x^2] Z_Cm=(1+q^2)/((1-q^2)(1-q^4))
+                             -q^(2m)/(1-q^2)^2
+           =(1-q^(2m))/(1-q^2)^2.
+Thus an invisible one-particle pair is visible at two-particle level
+whenever m>0. At m0 the entire pair cancels by the q-binomial theorem:
+ Z_C0=1/(x;q^2)_infinity times (x;q^2)_infinity=1.
+Adding a disconnected0-loop node with variablex gives an unknot-like
+fundamental normalized coefficient1, although the next coefficient differs
+for m>0. This is an ABSTRACT quiver test, not the invariant of a known knot;
+in particular it is not asserted to obey all colored-Jones congruences.
+
+These quivers remain inside the class covered by symmetric-quiver DT
+positivity. Efimov proves positivity of primitive quantum DT invariants
+with the standard parity convention. That positivity precedes the signed
+knot-variable specialization and does not prevent the cancellation above.
+Primary theorem: https://arxiv.org/abs/1103.2736 and
+https://doi.org/10.1112/S0010437X12000152 .
+
+AN EXACT REMOVABLE-PAIR LEMMA, SUGGESTING A TESTABLE GEOMETRIC TARGET
+Suppose two nodesu,v obey C_uu=C_uv=a, C_vv=a+1 and
+C_uk=C_vk for every other nodek. Suppose x_v=q^-1 x_u after specialization.
+Then the two nodes can be deleted without changing the specialized series.
+Proof: fix all external occupancies and n=d_u+d_v. Equal external rows
+make the external contribution depend only on n. The internal exponent is
+a n^2+d_v^2. The remaining sum over d_v, after factoring out the common
+weight, is
+ sum_{d=0}^n (-1)^d q^(d(d-1))/((q^2;q^2)_d(q^2;q^2)_{n-d}),
+which is0 for n>0 and1 for n0 by the q-binomial theorem. This proves the
+claim coefficient by coefficient, with no convergence assumption.
+
+Research target, explicitly conjectural: for a geometric quiver associated
+to a classical knot, can a complete fundamental-color cancellation force
+paired nodes to satisfy this removable-pair condition, or an equivalent
+finite sequence of quiver moves? The arbitrary symmetric-quiver example
+above proves positivity alone cannot do it. Any useful theorem must exploit
+the knot-conormal geometry or its skein/gluing constraints to control the
+INTERACTIONS, not just single-node counts. Even if all colored invariants
+then match the unknot, an independent geometric knot-detection step is
+still required; that step is not assumed here.
+
+WHAT THIS PASS ACHIEVES
+It identifies an exact missing physical ingredient and provides a concrete
+algebraic stress test. Index1 is blind to equal-charge pairs; positive BPS
+counts can acquire cancellations after specialization; off-diagonal quiver
+interactions measure whether a cancelling pair is truly removable. This
+gives a focused next investigation, not a proof or counterexample.
+
+CONSTRUCTIVE STRESS TEST: SEVEN NODES, EXACT FIRST HABIRO CONGRUENCE
+Here is a finite calculation, not a knot realization. Set y=q^2, use four
+nodes with diagonal0 (sign+1) and three with diagonal1 (sign-1), and set
+x_i=q^(-C_ii)x. Define
+ H_N(y)=(y;y)_(N-1) [x^(N-1)] Z_C.
+Every H_N is an integer polynomial. The signed multinomial theorem gives
+H_N(1)=1 for everyN, because the sum of node signs is1.
+Assign to the nine same-sign edges the multiset
+       {0,0,0,0,2,5,6,9,11},
+and to the twelve opposite-sign edges the multiset
+       {0,0,0,0,0,0,1,1,4,7,10,10}.
+Then, independently of the assignment within these two classes,
+ H_2=1,
+ H_3=1+(y-1)(y^2-1)(y^4-1)(y^5-1).
+Proof: diagonal terms in H_3 are4+3y, and each off-diagonal pair contributes
+(1+y)s_i s_j y^(C_ij). Expanding these two multisets proves the identity.
+
+In the Habiro basis
+ A_(N,k)=product_(j=1)^k (1-y^(N+j))(1-y^(j-N)),
+H_2=1 forces the first cyclotomic coefficientc_1=0; the displayed H_3
+has c_2=y^3, since A_(3,2)=y^-3(y-1)(y^2-1)(y^4-1)(y^5-1).
+This is stronger than merely arranging a canceling pair: it passes the
+entire first nontrivial colored-Jones divisibility condition. It still
+need not be realizable by a classical knot.
+
+The exact coefficient engine in quiver_candidate.py gives the following
+lexicographic edge assignment:
+ [0,0,0,0,0,0,0]
+ [0,0,0,2,0,0,0]
+ [0,0,0,5,1,1,4]
+ [0,2,5,0,7,10,10]
+ [0,0,1,7,1,6,9]
+ [0,0,1,10,6,1,11]
+ [0,0,4,10,9,11,1].
+Its first derivatives vanish for all colors, but H_4''(1)=1704.
+Since c_1=0, the Habiro expansion requires H_4-1 to vanish to order at
+least4 at y1. Therefore this candidate FAILS a necessary knot constraint.
+The failure is a precise interaction obstruction, not a counterexample.
+
+EXACT SIGNED ROW-SQUARE CONDITION
+Write s_i=(-1)^(C_ii), and z_i=sum_(j!=i) C_ij s_j. For this unit-weight,
+0/1-diagonal class, if H_3'(1)=H_3''(1)=0 then, for everyr>=2,
+                 H_(r+1)''(1)=r(r-1)(r-2) sum_i s_i z_i^2.
+Thus a necessary additional condition for a knot with H_2=1 is
+                 sum_positive z_i^2=sum_negative z_i^2.
+This condition involves how edges share a node, whereas H_3 sees only
+the two edge multisets. It is a mathematically exact analogue of a
+higher-order interaction test, rather than an analogy being used as proof.
+
+Proof of the row-square formula: expand each Gaussian multinomial as
+words in an ordered alphabet. For iid formal letters with signed weights
+s_i (whose sum is1), set
+ B(i,j)=C_ij+1_(i>j) for i!=j, and B(i,i)=C_ii.
+The exponent in a word of lengthr is Q=sum_(a<b)B(i_a,i_b).
+Put mu=E B, nu=E B^2, R_i=sum_j s_j B(i,j), L_i=sum_j s_j B(j,i).
+Then E Q=choose(r,2)mu, and
+ E(Q(Q-1))=choose(r,2)(nu-mu)
+       +2choose(r,3)sum_i s_i(R_i^2+R_i L_i+L_i^2)
+       +6choose(r,4)mu^2.
+The hypotheses give mu=nu=0. Here R_i+L_i=2z_i and
+sum_i s_i(R_i-L_i)^2=0: the latter follows by telescoping cubes of
+successive partial sums of the +/-1 signs, whose final sum is1.
+Consequently sum_i s_i(R_i^2+R_i L_i+L_i^2)=3sum_i s_i z_i^2,
+which proves the formula.
+
+The row-square equation is attainable with the same edge multisets. One
+explicit assignment has signed row values(4,-7,1,13,-1,15,-3), whose
+positive and negative squared sums both equal235. It has H_4''(1)=0,
+but H_4'''(1)=14508, so it too fails Habiro. The exact matrix, derivatives,
+and nonzero division remainder are in quiver_moment_repaired.json.
+A short finite assignment check produced this example; no exhaustive
+search, knot realization, or general impossibility result is claimed.
+
+THE CONCRETE GEOMETRIC NEXT TARGET
+Use a PROVED knot-to-quiver construction as a grammar of realizable
+interactions, rather than optimizing arbitrary matrices. Stosic--Wedrich,
+Tangle addition and the knots-quivers correspondence, proves that the
+colored HOMFLY-PT generating functions of arborescent links arise from
+quivers built by explicit Conway-tangle gluing formulas:
+https://arxiv.org/abs/2004.10837 .
+A useful next theorem would show that, within this realizable grammar,
+complete fundamental Jones cancellation forces cancellation of interaction
+rows or a sequence of the exact removable-pair moves above. Alternatively,
+a realizable grammar output with fundamental Jones1 and nontrivial topology
+would be a genuine counterexample. Checking only DT positivity, low-color
+Habiro constraints, or a few moments cannot establish realizability.
+This is a bounded and specific construction program, not an asserted
+solution of the unknot-detection problem.

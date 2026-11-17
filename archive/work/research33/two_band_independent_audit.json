@@ -1,0 +1,341 @@
+{
+  "count": 22,
+  "all_intermediate_jones_nonunlink": true,
+  "all_saved_band_paths_replayed": true,
+  "all_face_endpoint_conventions_checked": true,
+  "all_full_brackets_one": true,
+  "all_fresh_simplifications_unknot": true,
+  "checks": [
+    {
+      "hit": 0,
+      "raw_bracket": {
+        "-9": -1
+      },
+      "writhe": -3,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 19,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 1,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 2,
+      "raw_bracket": {
+        "-9": -1
+      },
+      "writhe": -3,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 19,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 3,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 4,
+      "raw_bracket": {
+        "-9": -1
+      },
+      "writhe": -3,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 19,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 5,
+      "raw_bracket": {
+        "-9": -1
+      },
+      "writhe": -3,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 19,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 8,
+      "max_pairing_states": 13
+    },
+    {
+      "hit": 6,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 7,
+      "raw_bracket": {
+        "-9": -1
+      },
+      "writhe": -3,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 19,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 8,
+      "max_pairing_states": 13
+    },
+    {
+      "hit": 8,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 9,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 10,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 11,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 12,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 13,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 14,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 15,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 16,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 17,
+      "raw_bracket": {
+        "-9": -1
+      },
+      "writhe": -3,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 19,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 18,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 8,
+      "max_pairing_states": 10
+    },
+    {
+      "hit": 19,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 20,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 6,
+      "max_pairing_states": 5
+    },
+    {
+      "hit": 21,
+      "raw_bracket": {
+        "-6": 1
+      },
+      "writhe": -2,
+      "normalized_A": {
+        "0": 1
+      },
+      "crossings_before": 18,
+      "fresh_simplification_crossings": 0,
+      "fresh_unknot_components": 1,
+      "max_frontier": 8,
+      "max_pairing_states": 10
+    }
+  ],
+  "scope": "Checks saved successful candidates, not completeness of the generation search."
+}

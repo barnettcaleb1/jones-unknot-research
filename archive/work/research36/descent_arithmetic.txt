@@ -1,0 +1,10 @@
+L=1: max x-exponent=8; p-degree=7; b_7=-1
+  -x^8 + x^6 + x^2
+L=3: max x-exponent=12; p-degree=11; b_11=-1
+  -x^12 + x^10 - x^8 + 2x^6 - x^4 + x^2
+L=5: max x-exponent=16; p-degree=15; b_15=-1
+  -x^16 + x^14 - x^12 + 2x^10 - 2x^8 + 2x^6 - x^4 + x^2
+L=23: max x-exponent=52; p-degree=51; b_51=-1
+Claimed residual cap = 3*3+11+2 = 22
+Contradictory residual coefficient at L=23: b_51 = -1
+All exact-arithmetic and reconstruction checks passed.

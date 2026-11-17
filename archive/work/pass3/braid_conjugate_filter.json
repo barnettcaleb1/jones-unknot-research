@@ -1,0 +1,644 @@
+{
+  "maxlen": 6,
+  "modulus": 1000003,
+  "A": 2,
+  "distinct_g": 18941,
+  "centralizers": [
+    []
+  ],
+  "conjugate_centralizers": [
+    []
+  ],
+  "trace_hits": [
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        -2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        -1,
+        2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        -2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        -3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        3,
+        -4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_Kg",
+      "g": [],
+      "anchor": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_identity": true
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "anchor": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        2,
+        3,
+        -4
+      ],
+      "anchor": [
+        1,
+        2,
+        3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        2,
+        -3,
+        4
+      ],
+      "anchor": [
+        1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        2,
+        -3,
+        -4
+      ],
+      "anchor": [
+        1,
+        2,
+        -3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        -2,
+        3,
+        4
+      ],
+      "anchor": [
+        1,
+        -2,
+        3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "anchor": [
+        1,
+        -2,
+        3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        -2,
+        -3,
+        4
+      ],
+      "anchor": [
+        1,
+        -2,
+        -3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        1,
+        -2,
+        -3,
+        -4
+      ],
+      "anchor": [
+        1,
+        -2,
+        -3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        2,
+        3,
+        4
+      ],
+      "anchor": [
+        -1,
+        2,
+        3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        2,
+        3,
+        -4
+      ],
+      "anchor": [
+        -1,
+        2,
+        3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        2,
+        -3,
+        4
+      ],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        2,
+        -3,
+        -4
+      ],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        -2,
+        3,
+        4
+      ],
+      "anchor": [
+        -1,
+        -2,
+        3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        -2,
+        3,
+        -4
+      ],
+      "anchor": [
+        -1,
+        -2,
+        3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        -2,
+        -3,
+        4
+      ],
+      "anchor": [
+        -1,
+        -2,
+        -3,
+        4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_g",
+      "g": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "anchor": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "matrix_identity": false
+    },
+    {
+      "kind": "K_Kg",
+      "g": [
+        -2,
+        1,
+        -2,
+        1,
+        1,
+        1
+      ],
+      "anchor": [
+        -1,
+        2,
+        -3,
+        4
+      ],
+      "matrix_identity": false
+    }
+  ],
+  "total_words": 156865,
+  "equivalence_checks": 868,
+  "unresolved_duplicates": [],
+  "seconds": 12.562712540850043
+}

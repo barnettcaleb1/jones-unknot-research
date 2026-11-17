@@ -1,0 +1,173 @@
+EXACTLY ONE ROOT FACTOR IN A NONZERO-SATO--LEVINE SHELL
+31 October 2026. Independent proof by generic_braid.
+
+STATEMENT
+
+Use the normalized shell map and notation from
+whitehead_pattern_audit.txt, section7. More generally take a componentwise
+strongly invertible link P union A with A=U, lk(P,A)=0, P(U)=U, and nonzero
+Sato--Levine invariant beta. With the compatible preferred boundary markings,
+the normalized shell map preserves the meridional closure functional and
+Q0, and its other eigenvalue d(A) lies in Z[A,A^-1]. Its defect law is
+
+                            x(F(T))=d(A)x(T),
+
+where delta=-A^2-A^-2 and
+
+            x(T)=(f0(T)/f_infinity(T)-delta)/(1-delta^2).
+
+Then d(A) has EXACTLY ONE factor A^4+1. In particular this holds for each
+standard positive or negative untwisted Whitehead shell. No explicit shell
+matrix or quotient diagram is needed beyond the audited geometric normal
+form and the standard filling identifications.
+
+PROOF
+
+Set zeta=exp(pi i/4), so zeta^4=-1, delta(zeta)=0, t=A^-4=-1, and
+
+                   |dt/dA| at zeta=4,  |delta'(zeta)|=4.
+
+Choose the rational input Q1 whose meridian disk has marked slope
+lambda_U+mu_U. Its two marked closures have covers given by filling a solid
+torus along slopes of distance one from this disk slope. Both are therefore
+actual unknots: they are determinant-one two-bridge knots. In particular
+f_infinity(Q1) and f0(Q1) are framing monomials, and
+
+                         |x(Q1)(zeta)|=1.                 (1)
+
+This is the crucial distinction from an actual preferred quotient of a
+nontrivial S3 knot. Q1 is a rational filling probe; its marked zero slope is
+not the longitude of its solid-torus covering exterior.
+
+Under the shell gluing, Q1 performs +1 surgery on the unknot A. Its output
+is the preferred exterior quotient of P1 in S3. Winding zero keeps the
+marked outer zero slope equal to the preferred longitude. Thus the zero
+closure L1 has double cover S3_0(P1), so V_L1(-1)=0. Its infinity closure is
+U. Hence x(F(Q1))(zeta)=0. Equation(1) and the defect law give
+
+                              d(zeta)=0.                  (2)
+
+Write R(A)=f0(F(Q1))/f_infinity(F(Q1)). Its denominator is a framing unit.
+The relation to the normalized Jones polynomial of L1 is a signed Laurent
+monomial factor times V_L1(A^-4). That factor has absolute value one at
+zeta. Since V_L1(-1)=0, differentiation of the factor contributes zero.
+The audited Garoufalidis/zero-surgery identity consequently yields
+
+                       |R'(zeta)|=4|12a2(P1)-1|.          (3)
+
+The Hoste surgery formula gives a2(P1)=a2(P)-beta=-beta, since P=P(U)=U
+before the A surgery. Therefore a2(P1) is a nonzero integer and
+
+                       |R'(zeta)| >= 44 > 4.
+
+Since delta(zeta)=0, differentiating the definition of x at zeta gives
+
+                       x(F(Q1))'(zeta)=R'(zeta)-delta'(zeta).
+
+The strict inequality above proves this derivative is nonzero, independently
+of every signature, chirality, square-root, and writhe phase convention.
+Differentiating the defect law and applying (2) now gives
+
+              x(F(Q1))'(zeta)=d'(zeta)x(Q1)(zeta).
+
+By (1), d'(zeta) is nonzero. Thus zeta is a simple root of d.
+
+Finally, multiply the Laurent polynomial d by a power of A to obtain an
+integer polynomial. The minimal polynomial of zeta over Q is A^4+1.
+Equation(2) gives divisibility by A^4+1, while d'(zeta)!=0 excludes its
+square. This proves the exact multiplicity assertion. The argument also
+independently proves d is nonzero.
+
+ITERATION
+
+For a composition of r shells satisfying these hypotheses, the normalized
+defect multipliers multiply. Therefore the composite multiplier has exact
+order r along A^4+1. For an actual fixed input tangle with nonzero defect,
+the local vanishing order of its output defect at zeta increases by exactly
+r. If the input defect is identically zero, it remains zero; no finite-order
+statement should be substituted for that case.
+
+This describes how a nonzero full Jones-tangle channel can become invisible
+to increasingly many derivatives at t=-1. It does not make the full channel
+zero, nor promote the ordinary Jones polynomial of the cover knot into
+knowledge of its quotient-tangle skein vector.
+
+SOURCES/DEPENDENCIES
+
+The shell normal form is independently audited in
+work/quotient17/whitehead_pattern_audit.txt, section7, and
+work/quotient17/sato_levine_skein_injectivity.txt.
+
+Garoufalidis's Theorem1 and Section4.1 give the longitudinal derivative
+magnitude in (3), as derived in work/fanout16/realizability_zero_filling.txt:
+https://people.mpim-bonn.mpg.de/stavros/publications/signature.pdf
+
+Hoste's surgery formula and its Sato--Levine form are recorded for arbitrary
+algebraically split links in Gorsky--Liu--Moore, Section6.2:
+https://arxiv.org/html/1810.10178#S6.SS2
+
+All claims concern the stipulated compatible/inherited involutions and the
+fixed peripheral markings. No novelty claim or generic detection theorem.
+
+ADDENDUM: EXACT FIRST-DERIVATIVE MAGNITUDE AND THE ZERO-BETA CASE
+
+The root agent's stronger calculation also passes independent audit. It
+removes the beta!=0 hypothesis until the final conclusion.
+
+Choose the standard integer crossing Q1=A Q0+A^-1 Q_infinity. Its
+meridional bracket is A+A^-1 delta=-A^-3. After division by this framing
+unit its vector is -A^4 Q0-A^2 Q_infinity. Writing z=-A^4, the normalized
+integer rational tangle Q_n is therefore
+
+               z^n Q0 + [(1-z^n)/delta] Q_infinity,
+
+for every integer n. This follows also from the two-eigenvalue integer
+twist formula. The expression is Laurent-polynomial for negative as well
+as positive n: (1-z)/delta=-A^2, and the remaining geometric sum is
+Laurent-polynomial in z. Its meridional bracket is exactly one. Thus
+
+            x(Q_n)=(1-z^n)/delta,   x(Q_n)(zeta)=-n zeta^2.
+
+The last identity follows either from the finite geometric sum or from
+l'Hopital: z'(zeta)=-4zeta^3 and delta'(zeta)=-4zeta.
+
+The output zero-closure ratio R_n=f0(F(Q_n))/f_infinity(F(Q_n)) satisfies
+
+             R_n=delta+(1-delta^2)d x(Q_n).
+
+The Q1 probe already proves d(zeta)=0 for EVERY shell under consideration,
+even when beta=0. Differentiating gives the exact identity
+
+                  R_n'(zeta)=delta'(zeta)-n zeta^2 d'(zeta).
+
+The longitudinal derivative formula and a2(P_n)=epsilon*n*beta, where
+epsilon=+1 or -1 records the coherent surgery convention, give
+
+       |delta'(zeta)-n zeta^2 d'(zeta)|^2
+                         =16(12 epsilon*n*beta-1)^2.
+
+These are real quadratic polynomials in the integer n. Comparison of the
+quadratic coefficients yields
+
+                |d'(zeta)|^2=2304 beta^2,
+                |d'(zeta)|=48 |beta|.
+
+In fact the three actual probes n=-1,0,1 suffice for this coefficient
+comparison; there is no asymptotic or uniform-family assumption hidden in
+it. This also follows by adding the n=+/-1 identities and subtracting twice
+the n=0 identity.
+
+No phase correction is missing. A framed closure ratio can differ from the
+normalized Jones polynomial by a monomial, but its magnitude at zeta is
+one. The derivative of that factor contributes zero because the longitude
+Jones polynomial vanishes at t=-1. Thus the displayed magnitude identity
+is valid whether or not one separately fixes common oriented writhe.
+
+Consequently, for these shells,
+
+          beta=0  iff  d'(zeta)=0  iff  (A^4+1)^2 divides d(A).
+
+Divisibility includes the possible identically-zero polynomial. If beta is
+nonzero, d is nonzero and A^4+1 divides it exactly once, as above. If beta
+is zero, this result alone neither proves nor disproves injectivity: d may
+be zero, or a nonzero polynomial with a higher-order zero.

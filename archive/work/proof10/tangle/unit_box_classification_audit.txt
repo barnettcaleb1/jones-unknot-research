@@ -1,0 +1,59 @@
+INDEPENDENT AUDIT: FOUR-PRETZEL KNOTS WITH A UNIT BOX
+31 October2026. Checked algebra and topology; no novelty claim.
+
+Claim. Among all four-strand pretzel knots having at least one parameter+/-1,
+V''(1)=V'''(1)=0 leaves only the unknot and
+ K*=P(8,-3,-3,1), or its mirror.
+Consequently V''(1)=V'''(1)=V''''(1)=0 detects the unknot in this entire class.
+
+Conventions and geometry. A four-strand pretzel is a knot precisely when
+exactly one parameter is even. Mirror if necessary to make the selected unit
+parameter+1. Unit boxes commute with other boxes by an actual isotopy, as
+recorded in the introduction of Stipsicz–Szabo, arXiv2006.06765. Thus the
+parameters can be arranged as(p,q,r,1), with p even and q,r odd, without
+assuming arbitrary permutation of nonunit boxes. Set q=a+b,r=a-b, where a,b
+are integers of opposite parity.
+
+Use D=t d/dt; mirror changes do not affect the joint derivative-zero condition.
+The independently derived mixed-four moment identities give
+ D²V=(3/4)(3-Q2-2pT-p²),
+ and under D²V=0,
+ D³V=(3/4)F3,
+ F3=2Q3-2T+p+3pT²-p³,
+ where T=q+r+1 and Qj=q^j+r^j+1.
+The ordinary Jones first derivative always vanishes, so ordinary derivatives
+2and3 vanish exactly when these two logarithmic moments vanish.
+
+Substituting T=2a+1 and Q2=2a²+2b²+1, D²V=0 becomes
+ b²=1-a²-p²/2-p(2a+1).
+As Q3=2a³+6ab²+1, direct substitution into F3 gives
+ F3=-(p+2a)^3+4(p+2a).
+Therefore c=p+2a belongs to{0,-2,2}.
+
+If c=0 or-2, substitution in the square equation gives
+ b²=(a+1)².
+Thus one of q,r equals-1 and the other is2a+1. Cancel the opposite integer
+boxes-1,+1. The remaining two-strand pretzel is the torus knot
+ T(2,p+2a+1)=T(2,c+1), hence the unknot because c+1=+/-1.
+
+If c=2, substitution gives
+ b²=(a+1)²-4,
+ so (a+1-b)(a+1+b)=4. The two integer factors have the same parity; the only
+possibilities are(2,2) and(-2,-2). Therefore
+ (a,b,p)=(1,0,0) or(-3,0,8).
+The first case is P(0,1,1,1), the connected sum of three T(2,1) unknots.
+The second is K*=P(8,-3,-3,1). Both obey the required parameter parity.
+There are no omitted free parameters or bounded-search assumptions.
+
+The actual PD diagram of K* was independently evaluated with Regina and TL2:
+ V_K*(t)=1+t^-8(t-1)^4 Q(t),
+ Q=t^8+2t^7+4t^6+5t^5+6t^4+5t^3+4t²+2t+1.
+Thus det(K*)=33 proves nontriviality, and V_K*''''(1)=24Q(1)=720.
+For the mirror the order-four leading Taylor coefficient is unchanged, since
+substitution t->t^-1 changes (t-1)^4 by a unit with value1 at t=1.
+Hence the fourth derivative excludes the only nontrivial possibilities.
+
+This is a complete class result, independently audited from the equations in
+mixed_moments.py and the exact diagram certificates in mixed_counterexample.py.
+It makes no claim about four-strand pretzels without a unit parameter or about
+the generic Jones unknot problem.

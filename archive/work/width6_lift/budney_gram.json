@@ -1,0 +1,23 @@
+[
+  {
+    "q": 2,
+    "t": "-1/2",
+    "rank_normalized_Gram": 6,
+    "radical_dimension": 9,
+    "factorization": "Gnorm=-(q-1)*B(q^-1)^T*B(q), Bcol(i,j)=e_i+q e_j"
+  },
+  {
+    "q": 3,
+    "t": "-1/3",
+    "rank_normalized_Gram": 6,
+    "radical_dimension": 9,
+    "factorization": "Gnorm=-(q-1)*B(q^-1)^T*B(q), Bcol(i,j)=e_i+q e_j"
+  },
+  {
+    "q": 4,
+    "t": "-1/4",
+    "rank_normalized_Gram": 6,
+    "radical_dimension": 9,
+    "factorization": "Gnorm=-(q-1)*B(q^-1)^T*B(q), Bcol(i,j)=e_i+q e_j"
+  }
+]

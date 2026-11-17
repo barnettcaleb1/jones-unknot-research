@@ -1,0 +1,50 @@
+{
+  "case": "nonzero_control",
+  "source_formula_file": "width6_parked/formula_nonzero_control.json",
+  "source_summary_file": "width6_instrument/arc_noncancellation_exact.json",
+  "method": "Exact singleton-winding inference from existing verified metadata; no new geometry or raw-record reconstruction",
+  "limitation": "Raw 4005 incidence records are not archived; exact extremal record counts unavailable. Partial sign counts follow from an exact archived line-count parity certificate.",
+  "statistics": {
+    "parked_positions": 47,
+    "total_incidence_records": 4005,
+    "all_moments_zero": 0,
+    "mu0_zero": 0,
+    "lowest_nonzero_moment_counts": {
+      "0": 47
+    },
+    "all_higher_moments_zero": 47,
+    "surviving_inner_positions": 47,
+    "P1_certified_mixed_extrema_positions": 23,
+    "P1_undetermined_sign_positions": 24,
+    "P1_net_surviving_degree_positions": [
+      8,
+      12,
+      22
+    ],
+    "P1_all_net_surviving_degree_positions_mixed": true
+  },
+  "surviving_line_parity_certificate": {
+    "definitions": "n_j counts first-point records of A_x=j in matching1; W=0 for every record.",
+    "archived_line": -4,
+    "archived_count": 21,
+    "equation": "2*n_-4+18*n_-3+3*n_-2=21",
+    "parities": "n_-4,n_-3 even; n_-2 odd because mu_0=-q^-2",
+    "all_nonnegative_parity_solutions": [
+      {
+        "n_minus4": 0,
+        "n_minus3": 0,
+        "n_minus2": 7,
+        "positive_at_minus2": 3,
+        "negative_at_minus2": 4
+      },
+      {
+        "n_minus4": 6,
+        "n_minus3": 0,
+        "n_minus2": 3,
+        "positive_at_minus2": 1,
+        "negative_at_minus2": 2
+      }
+    ],
+    "conclusion": "n_-2 is 3 or 7; coefficient -1 forces both signs in either case."
+  }
+}

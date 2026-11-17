@@ -1,0 +1,40 @@
+U5-JNC: exact local bracket check (2026-11-03)
+
+Scope: the fixed sum convention supplied by Claude, with [X]=a[0]+b[inf],
+Bplus=<N(X+[+1])>=-A^3 a-A^-3 b,
+Bminus=<N(X+[-1])>=-A^-3 a-A^3 b.
+No census or representation computation is needed: these linear identities
+are checked on the two skein basis tangles, whose closures are curls.
+
+The advertised raw bracket identity is correct:
+ A^-6 Bplus-Bminus = b A^-9(A^12-1).
+
+However the deduction about the Jones polynomial needs oriented writhe.
+Write Vplus=(-A^3)^(-wplus) Bplus and similarly for Vminus.
+
+Case 1: wplus-wminus=+2. Then Vplus=Vminus iff
+ A^-6 Bplus-Bminus=0 iff b=0.
+
+Case 2: wplus-wminus=-2. Then Vplus=Vminus iff
+ A^6 Bplus-Bminus=0 iff a=0, because
+ A^6 Bplus-Bminus = -a A^-3(A^12-1).
+
+The local geometric +1 tangle can have either oriented sign. Both cases
+occur even for a knot, rather than a multicomponent link.
+
+Decisive calibration: X=[inf], so a=0,b=1. Both Kplus and Kminus are
+nugatory unknots and have Jones polynomial 1. Their raw brackets are
+-A^-3 and -A^3, respectively; their writhes are -1 and +1. Thus the
+literal assertion 'Vplus=Vminus iff b=0' fails in this fixed sum frame.
+The complementary X=[0] calibration instead has writhes +1,-1 and b=0.
+
+This is an orientation/marking correction, not a refutation of a properly
+orientation-adapted coefficient criterion. The final theorem must specify
+which complementary skein basis coefficient is being tested, and why
+that is the TL id coefficient in the claimed plat presentation. Swapping
+or rotating the endpoint marking can interchange the two coefficients;
+that change cannot be suppressed in the width argument.
+
+Status: raw bracket identity checked exactly. The unconditional Jones
+equivalence in a fixed sum frame is false; its orientation-adapted version
+is correct. No check of the width-count theorem is contained in this note.

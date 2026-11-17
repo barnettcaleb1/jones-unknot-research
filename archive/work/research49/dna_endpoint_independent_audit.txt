@@ -1,0 +1,36 @@
+INDEPENDENT AUDIT OF dna_endpoint.txt SECTIONS 2--3
+2026-11-01. No new research claimed.
+
+I read the theorem and checked the two cited primary statements directly:
+Sikora, https://arxiv.org/html/2005.08162, Theorem21 and Section4;
+KMOS, https://people.math.harvard.edu/~kronheim/lens.pdf, Theorem1.1 and
+its following discussion of zero, positive, and negative slopes.
+
+Verdict: the inference chain is valid under the stated common marked
+boundary and orientation-preserving framed/balanced equivalences.
+
+1. Distinct rational probe slopes give linearly independent bracket
+functionals; Sikora's determinant formula in Theorem21 proves uniqueness.
+2. The geometric unknot closure makes the other tangle's cover a knot
+exterior in S^3, with the probe slope as its meridian.
+3. Equality of all closure brackets supplies a determinant-zero auxiliary
+closure. Symbolic division by delta BEFORE specialization is necessary and
+is explicitly present. This entails infinite first homology of the branched
+cover, not geometric recognition of an unlink.
+4. For an S^3 knot exterior, H_1(p/q filling)=Z/p, with Z when p=0.
+Thus the primitive determinant-zero slope is exactly the preferred longitude.
+5. The common oriented boundary marking identifies meridian and longitude
+with their intersection orientation, so the other probe has the SAME r,
+up to simultaneous sign of the basis. The branch-link equivalence yields
+an orientation-preserving cover diffeomorphism, as KMOS requires.
+6. KMOS Theorem1.1 is exactly the required all-rational same-slope statement.
+It explicitly includes r=0 using Property R. A solid-torus cover then gives
+a rational tangle by the cited classical characterization.
+
+The limits in Section3 are correct: polynomial equality alone cannot replace
+the geometric branch-link equivalence needed for KMOS; nontrivial lens-space
+anchors give knot exteriors in lens spaces, outside the cited theorem.
+
+Minor wording clarification: H is an AUXILIARY probe and need not be a third
+distinct probe. When Q already gives the unlink, H can equal Q and r=0.
+This does not affect the proof.

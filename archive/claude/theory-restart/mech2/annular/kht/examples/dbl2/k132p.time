@@ -1,0 +1,5 @@
+sh: line 1: 14262 Alarm clock: 14         perl -e 'alarm 10800; exec @ARGV' /Users/calebbarnett/jones-lanes/theory-restart/lit/kht/src/khtpp/kht++ -c2 -d examples/dbl2/k132p.kht < /dev/null > examples/dbl2/k132p.log 2>&1
+
+real	180m0.239s
+user	175m2.201s
+sys	0m45.123s

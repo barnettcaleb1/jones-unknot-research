@@ -1,0 +1,3372 @@
+{
+  "status": "PASS_ALL_81",
+  "arithmetic": "Fraction geometry and exact integer signed crossing winding",
+  "complete": 81,
+  "seconds": 137.517,
+  "entries": [
+    {
+      "label": "cap_0_against_cap_0",
+      "i": 0,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.17,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_1",
+      "i": 0,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 464310,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 30.707,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_2",
+      "i": 0,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 4620,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 1.085,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_3",
+      "i": 0,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 113,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.32,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_4",
+      "i": 0,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 46,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.21,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_5",
+      "i": 0,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 1184,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.801,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_6",
+      "i": 0,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 62,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.266,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_7",
+      "i": 0,
+      "j": 7,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 480,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.113,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_0_against_cap_8",
+      "i": 0,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        -1,
+        -2
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 764,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.229,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_0",
+      "i": 1,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -3,
+          0,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": -1,
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 433590,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 22.642,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_1",
+      "i": 1,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.652,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_2",
+      "i": 1,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": 1
+      },
+      "deck_unit": {
+        "q": -3,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 119281,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 9.49,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_3",
+      "i": 1,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": -1,
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -3,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 26512,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 2.673,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_4",
+      "i": 1,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": 1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 312311,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 16.582,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_5",
+      "i": 1,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 5422,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 3.603,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_6",
+      "i": 1,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 480,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.596,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_7",
+      "i": 1,
+      "j": 7,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 1678,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.472,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 5,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_1_against_cap_8",
+      "i": 1,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        -1,
+        -2
+      ],
+      "polynomial": [
+        [
+          -2,
+          1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": -1
+      },
+      "deck_unit": {
+        "q": -4,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 26993,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 1.887,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -4,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_0",
+      "i": 2,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 2616,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.877,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_1",
+      "i": 2,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          -1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 100983,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 7.751,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 0,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_2",
+      "i": 2,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.059,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_3",
+      "i": 2,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 46,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.097,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_4",
+      "i": 2,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": 1
+      },
+      "deck_unit": {
+        "q": -1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4187,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.645,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_5",
+      "i": 2,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1,
+        "0": -1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 18,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.074,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_6",
+      "i": 2,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 81,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.093,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_7",
+      "i": 2,
+      "j": 7,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 12,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.033,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_2_against_cap_8",
+      "i": 2,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        -1,
+        -2
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 8,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.043,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_0",
+      "i": 3,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 53,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.271,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_1",
+      "i": 3,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1,
+        "0": -1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 31560,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 3.299,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_2",
+      "i": 3,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 22,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.082,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_3",
+      "i": 3,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.022,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_4",
+      "i": 3,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1,
+        "0": -1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 148,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.213,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_5",
+      "i": 3,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 45,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.086,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_6",
+      "i": 3,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1,
+        "0": -1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 18,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.037,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_7",
+      "i": 3,
+      "j": 7,
+      "word": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": 1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 9,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.013,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_3_against_cap_8",
+      "i": 3,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        -1,
+        -2
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1,
+        "0": -1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 6,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.019,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_0",
+      "i": 4,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 22,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.161,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_1",
+      "i": 4,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -4,
+          -1,
+          -1
+        ],
+        [
+          -3,
+          0,
+          -1
+        ],
+        [
+          -2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": 1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 295085,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 21.43,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_2",
+      "i": 4,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -3,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": 1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 3963,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.812,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_3",
+      "i": 4,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -3,
+          0,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": -1,
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 214,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.294,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_4",
+      "i": 4,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.102,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_5",
+      "i": 4,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 1276,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.515,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_6",
+      "i": 4,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 51,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.192,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_7",
+      "i": 4,
+      "j": 7,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2
+      ],
+      "polynomial": [
+        [
+          -2,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-3": 1,
+        "-2": 1
+      },
+      "deck_unit": {
+        "q": -3,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 584,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.08,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_4_against_cap_8",
+      "i": 4,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        2,
+        -1,
+        -2
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": -1
+      },
+      "deck_unit": {
+        "q": -2,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 937,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.206,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_0",
+      "i": 5,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 728,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.626,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_1",
+      "i": 5,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 2488,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 1.853,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_2",
+      "i": 5,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "1": 1,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 3,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 18,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.058,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 5,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_3",
+      "i": 5,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 81,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.097,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_4",
+      "i": 5,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 1344,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.44,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_5",
+      "i": 5,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.044,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_6",
+      "i": 5,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 46,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.064,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_7",
+      "i": 5,
+      "j": 7,
+      "word": [
+        4,
+        3,
+        5,
+        4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 8,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.024,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_5_against_cap_8",
+      "i": 5,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        5,
+        4,
+        -1,
+        -2
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 12,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.033,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_0",
+      "i": 6,
+      "j": 0,
+      "word": [
+        4,
+        3,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 64,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.149,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_1",
+      "i": 6,
+      "j": 1,
+      "word": [
+        4,
+        3,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 144,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.182,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_2",
+      "i": 6,
+      "j": 2,
+      "word": [
+        4,
+        3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 45,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.084,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_3",
+      "i": 6,
+      "j": 3,
+      "word": [
+        4,
+        3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "1": 1,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 3,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 18,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.024,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 5,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_4",
+      "i": 6,
+      "j": 4,
+      "word": [
+        4,
+        3,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 51,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.096,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_5",
+      "i": 6,
+      "j": 5,
+      "word": [
+        4,
+        3,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1,
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 22,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.057,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_6",
+      "i": 6,
+      "j": 6,
+      "word": [
+        4,
+        3,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.009,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_7",
+      "i": 6,
+      "j": 7,
+      "word": [
+        4,
+        3
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1,
+        "0": -1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 6,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.006,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_6_against_cap_8",
+      "i": 6,
+      "j": 8,
+      "word": [
+        4,
+        3,
+        -1,
+        -2
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 9,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.01,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_0",
+      "i": 7,
+      "j": 0,
+      "word": [
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 144,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.174,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_1",
+      "i": 7,
+      "j": 1,
+      "word": [
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 328,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.306,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -5,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_2",
+      "i": 7,
+      "j": 2,
+      "word": [
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 12,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.032,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_3",
+      "i": 7,
+      "j": 3,
+      "word": [
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 4,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 9,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.017,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 6,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_4",
+      "i": 7,
+      "j": 4,
+      "word": [
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": -1,
+        "1": -1
+      },
+      "deck_unit": {
+        "q": 3,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 392,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.136,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_5",
+      "i": 7,
+      "j": 5,
+      "word": [
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 8,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.018,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_6",
+      "i": 7,
+      "j": 6,
+      "word": [
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "1": 1,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 3,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 6,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.004,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 5,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_7",
+      "i": 7,
+      "j": 7,
+      "word": [],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.002,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_7_against_cap_8",
+      "i": 7,
+      "j": 8,
+      "word": [
+        -1,
+        -2
+      ],
+      "polynomial": [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 6,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.005,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 3,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_0",
+      "i": 8,
+      "j": 0,
+      "word": [
+        2,
+        1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 152,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.356,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -3,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_1",
+      "i": 8,
+      "j": 1,
+      "word": [
+        2,
+        1,
+        -3,
+        -4,
+        -2,
+        -3,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -3,
+          -1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 13323,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 2.058,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_2",
+      "i": 8,
+      "j": 2,
+      "word": [
+        2,
+        1,
+        -4,
+        -5,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 8,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.036,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -2,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_3",
+      "i": 8,
+      "j": 3,
+      "word": [
+        2,
+        1,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "1": 1,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 3,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 6,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.018,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 5,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_4",
+      "i": 8,
+      "j": 4,
+      "word": [
+        2,
+        1,
+        -2,
+        -3,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -3,
+          -1,
+          -1
+        ],
+        [
+          -2,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": 1
+      },
+      "deck_unit": {
+        "q": 1,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 291,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.261,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 0,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_5",
+      "i": 8,
+      "j": 5,
+      "word": [
+        2,
+        1,
+        -4,
+        -5,
+        -3,
+        -4
+      ],
+      "polynomial": [],
+      "TL_line_specialization": {},
+      "deck_unit": {},
+      "configuration_count": 12,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.042,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -1,
+        "t": 0,
+        "sign": 1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_6",
+      "i": 8,
+      "j": 6,
+      "word": [
+        2,
+        1,
+        -3,
+        -4
+      ],
+      "polynomial": [
+        [
+          -1,
+          0,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-1": -1
+      },
+      "deck_unit": {
+        "q": 0,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 9,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.026,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 0,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_7",
+      "i": 8,
+      "j": 7,
+      "word": [
+        2,
+        1
+      ],
+      "polynomial": [
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "TL_line_specialization": {
+        "-2": 1,
+        "-1": 1
+      },
+      "deck_unit": {
+        "q": -1,
+        "t": 0,
+        "sign": -1
+      },
+      "configuration_count": 14,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.012,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": -1,
+        "t": 0,
+        "sign": -1
+      }
+    },
+    {
+      "label": "cap_8_against_cap_8",
+      "i": 8,
+      "j": 8,
+      "word": [
+        2,
+        1,
+        -1,
+        -2
+      ],
+      "polynomial": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "TL_line_specialization": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      },
+      "deck_unit": {
+        "q": 2,
+        "t": 0,
+        "sign": 1
+      },
+      "configuration_count": 4,
+      "exact_generic_Phi_match": true,
+      "float_aggregate_match": true,
+      "seconds": 0.016,
+      "exact_original_Gram_identification": true,
+      "unit_relative_to_original_cap_Phi": {
+        "s": 4,
+        "t": 0,
+        "sign": 1
+      }
+    }
+  ],
+  "original_cap_identification": "All 81 directly checked against lp.pairing([],i,j)"
+}

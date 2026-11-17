@@ -1,0 +1,110 @@
+Pass 50: quantum/statistical-mechanics endpoint audit
+2026-11-01. This is an obstruction to two proposed mechanisms, not a proof or
+counterexample to Jones unknot detection. No novelty claim is made.
+
+Prior work checked: jones-proof-mechanisms.txt, jones-real-positivity-obstruction.txt,
+and relevant portions of jones-full-proof-scaffolds.md. In particular, this pass
+does not reuse vacuum Cauchy--Schwarz saturation (the unknot-normalized plat
+overlap is d^(1-g), not 1), scalar positivity at a fixed real parameter, or a
+bounded Jones fiber as an alleged easier theorem.
+
+1. A common positive braid-generator gauge is impossible unless it is abelian.
+
+THEOREM. Let P,Q be positive-definite Hermitian matrices satisfying PQP=QPQ.
+Then P=Q. More generally, a finite-dimensional representation of B_n, n>=3,
+whose standard generators are positive definite in one common positive inner
+product factors through the abelianization B_n -> Z.
+
+PROOF. C=PQ is similar to the positive-definite Hermitian matrix
+P^(1/2) Q P^(1/2), so C is diagonalizable and all its eigenvalues are positive.
+The braid relation implies that C^3=(PQ)^3 is central in the group generated
+by P,Q. Since cubing is injective on positive numbers, polynomial interpolation
+on the finite spectrum gives a polynomial p with C=p(C^3). Consequently C
+commutes with P,Q. Thus PQ=QP. Substitution in PQP=QPQ and cancellation of the
+invertible factors gives P=Q. Apply this to every adjacent pair. A common
+positive inner product can first be conjugated to the usual Hermitian one. QED.
+
+Scalar-gauge qualification. A common nonzero scalar applied to every generator
+preserves the braid relations and hence does not escape the theorem. Even if
+different nonzero scalars c_i make the matrices G_i positive under the common
+metric, all G_i are conjugate and have a common trace T. Positivity implies
+c_i T>0, so T is nonzero and all c_i are on the same complex ray. A common
+scalar c therefore makes every c G_i positive. The theorem again forces all
+G_i equal. Allowing positive semidefinite instead of definite makes no
+difference: braid generators are invertible.
+
+This rules out the proposed generic Wick-rotation route in which an honest,
+nonabelian, finite-dimensional Jones braid representation becomes a family of
+positive self-adjoint local crossing operators, possibly after changing its
+common metric and scalar gauge. The obstruction is independent of parameter.
+It is stronger than saying that a particular real Jones value can be negative.
+
+The assertion is deliberately limited. It does not address entrywise-positive
+non-self-adjoint transfer matrices, diagram-dependent factorizations, positive
+squares of generators, infinite-dimensional representations, or observables
+that change the Jones invariant. Those alternatives would require a different
+endpoint argument; none was obtained in this pass.
+
+2. An explicit actual-knot calibration shows the information this route loses.
+
+Let b=sigma_1 sigma_2^(-1) in B_3. Its closure is the unknot, by two consecutive
+Markov destabilizations. The closure K of b^2 is also a knot: the permutation
+of b and its square is a 3-cycle. Both braids have three strands and writhe 0.
+If all braid generators have the same image, both b and b^2 have image I.
+Therefore every fixed closure functional with ordinary strand/writhe
+normalization gives identical answers on these two closures.
+
+The actual Jones polynomials are different, as a direct TL_3 calculation shows.
+Set delta=-A^2-A^(-2). In the two-dimensional TL_3 block take
+
+ e_1 = [[delta,1],[0,0]],   e_2 = [[0,0],[1,delta]],
+ G_1 = A I+A^(-1)e_1,      G_2^(-1)=A^(-1)I+A e_2.
+
+Then D=G_1 G_2^(-1) is
+
+ [[1-A^(-4), -A^2], [A^2, -A^4]],
+
+with determinant 1 and trace 1-A^4-A^(-4). The remaining one-dimensional
+block evaluates b^m to 1. Reduced bracket closure is
+
+ tr(D^m)+(delta^2-2).
+
+This normalization can be checked on the TL_3 basis I,e_1,e_2,e_1e_2,e_2e_1:
+its closure values are respectively delta^2,delta,delta,1,1. Since writhe is
+zero, these are already normalized Jones values after t=A^(-4). Hence
+
+ V_closure(b)=1,
+ V_K=t^2-t+1-t^(-1)+t^(-2).
+
+The second polynomial certifies K is nontrivial without relying on a knot-table
+identification; K is the usual figure-eight knot. Thus making the whole braid
+action positive in the proposed sense demonstrably erases an actual
+unknot/nontrivial-knot distinction. At isolated parameters these polynomials may
+coincide, of course; those isolated coincidences do not give a full polynomial.
+
+3. Averaged log partition function also fails as an unknot rigidity criterion.
+
+A different possible statistical-mechanics endpoint is the circle-averaged
+logarithm m(V)=(1/2pi) integral log|V(exp(i theta))| d theta. It is tempting to
+ask for m(V)=0 only at the unknot. The same K already refutes this:
+
+ t^2 V_K(t)=t^4-t^3+t^2-t+1=Phi_10(t).
+
+Every root lies on the unit circle, so m(V_K)=0=m(1). This is an established
+observation, explicitly discussed in Stoimenow, 'On the coefficients of the
+link polynomials', section 6 immediately before Proposition 6.1:
+https://stoimenov.net/stoimeno/homepage/papers/coeff.pdf
+(PDF page 22, printed page 22). This primary source also discusses 9_42 as
+another unit-Mahler-measure example. No claim of discovery is warranted here.
+
+4. Endpoint assessment.
+
+No complete conditional proof chain survives this bounded pass. The precise
+positive-generator mechanism is false before topology enters, by the theorem
+above; replacing it with Mahler/free-energy rigidity is false on an actual
+four-crossing knot. An arbitrary nonnegative functional of Jones coefficients,
+for example the squared distance of V from 1, can of course be formed. Proving
+its zero set consists only of the unknot is the original problem, and does not
+provide a missing lemma with independent physical content. More general
+statistical-mechanics routes remain logically possible, but no such route was
+constructed or validated here.

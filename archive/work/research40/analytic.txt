@@ -1,0 +1,123 @@
+PASS 40: LEE–YANG / POTTS ZERO-THEOREM SCOPE AUDIT
+2026-11-01. Bounded check; no unknot-detection proof or new candidate.
+
+Verdict
+-------
+The natural Lee–Yang route has a precise mismatch of variables and domains.
+The exact Jones specialization of the planar random-cluster polynomial never
+lies in the nondegenerate real ferromagnetic region Q>0, v_e>=0. Lee–Yang's
+circle theorem also concerns field fugacities at fixed interactions, whereas
+the Jones specialization varies Q and interactions at zero field. Direct
+circle-rootedness and real-rootedness of the Jones polynomial already fail
+for the trefoil. No new global analytic mechanism survives this check.
+
+This is separate from the activity-polynomial strong-Rayleigh counterexamples
+in creative6/statmech_findings.txt, and from the finite positive local-model
+obstruction in fanout16/physics.txt. It does not reprove or extend those results.
+
+1. Exact all-polynomial identity
+-------------------------------
+Take a connected planar Tait graph G with n vertices. Give edge e sign eps_e
+in {+1,-1} so the smoothing that includes that edge has coefficient A^eps_e;
+the other smoothing has coefficient A^(-eps_e). Put s=sum eps_e and
+
+  delta=-A^2-A^(-2),
+  Z_G(Q,{v_e})=sum_{S subset E} Q^{k(S)} product_{e in S} v_e.
+
+The boundary of the planar spanning ribbon subgraph S has
+
+  b(S)=2k(S)-n+|S|
+
+components. Therefore, with the bracket of one circle normalized to 1,
+
+  <D>=A^(-s) delta^(-n-1)
+      Z_G(delta^2,{delta A^(2 eps_e)}).
+
+This is an identity of rational functions whose right side simplifies to a
+Laurent polynomial; it is not a prescription for numerical division at
+delta=0. With t=A^(-4), V_K(t)=(-A^3)^(-w(D))<D>. Hence V_K=1 is exactly
+
+  Z_G(delta^2,{delta A^(2 eps_e)})
+      =(-A^3)^{w(D)} A^s delta^{n+1}.                 (1)
+
+The graph-to-bracket construction is primary-source standard (Kauffman,
+1989, Sections 3–4). The explicit normalization in (1) is derived above,
+so no change of convention is hidden in the proposed analytic bridge.
+
+2. The real ferromagnetic domain is absent
+-----------------------------------------
+Write x=A^4. Along the Jones curve,
+
+  Q=x+2+x^(-1),        v_e=-1-x^(eps_e).             (2)
+
+If even one v_e is real and nonnegative, y=x^(eps_e) is real and y<=-1.
+Consequently
+
+  Q=2+y+y^(-1)<=0,
+
+with equality only at y=-1. Thus no diagram containing an edge has a point
+on (2) with Q>0 and every v_e>=0. If both edge-sign types occur, demanding
+both weights nonnegative forces x=-1 and Q=delta=0. For t>0, every weight
+is even farther outside the physical range: v_e=-1-t^(-eps_e)<-1.
+
+The usual Potts interaction is v_e=exp(J_e/T)-1. Positive-temperature
+ferromagnetism gives v_e>=0, and real antiferromagnetism gives -1<=v_e<=0.
+Neither supplies a positivity theorem on the positive-real Jones curve.
+The obstruction is exact for this representation; it is not a claim that
+every possible change of variables or different statistical model fails.
+
+Independently, the Lee–Yang circle theorem concerns diagonal field fugacity
+z in a multiaffine field polynomial, keeping the admissible interactions
+fixed. Equation (2) instead varies the number-of-colors parameter and
+interactions simultaneously, with no magnetic-field variable. One cannot
+identify its t-variable with z merely because both arise in a partition
+function. Ruelle's primary formulation makes this distinction explicit.
+
+3. Actual-knot test with complete normalization
+----------------------------------------------
+For a trefoil use G=C_3, n=3, s=w=3, all eps=+1. Then
+
+  Z_{C_3}(Q,v)=Q^3+3Q^2v+3Qv^2+Qv^3.
+
+Substituting (2) into the bracket formula gives
+
+  <D>=-A^5-A^(-3)+A^(-7),
+  V(t)=t+t^3-t^4=t(1+t^2-t^3).
+
+Thus V(1)=1 and V(2)=-6: a nonzero root lies in (1,2), so it is not on
+the unit circle. The cubic t^3-t^2-1 has discriminant -31, so it also has
+two nonreal roots. Removing the monomial does not make Jones polynomials
+universally real-rooted or circle-rooted. Mirroring inverts these roots
+and changes neither failure.
+
+4. What would an analytic endpoint actually require?
+----------------------------------------------------
+A useful theorem would have to use additional, verified geometry of the
+signed planar graph and prove that identity (1) forces a disk-bounding
+medial knot. No such theorem was obtained here. A statement merely saying
+that every nontrivial knot has a nonzero complex Jones root is equivalent
+to the original conjecture: a Laurent polynomial with no nonzero root is
+a monomial; the knot identities V(1)=1 and V'(1)=0 force that monomial to
+be 1. Renaming detection as a zero-existence assertion adds no mechanism.
+
+Zero-free regions for a partition polynomial are not by themselves the
+needed rigidity statement either. They can hold uniformly for many
+nontrivial graphs. One would still need to connect the special identity
+(1), including its framing prefactor, to a topology-changing reduction.
+The bounded check stops here; no new budget or positivity conjecture is
+proposed as progress toward the generic theorem.
+
+Primary sources
+---------------
+[1] L. H. Kauffman, A Tutte polynomial for signed graphs, Discrete Applied
+Mathematics 25 (1989), 105–127, especially Sections 3–4.
+https://homepages.math.uic.edu/~kauffman/TuttePolySignGraphs.pdf
+
+[2] D. Ruelle, Characterization of Lee–Yang polynomials, Annals of Mathematics
+171 (2010), 589–603, Introduction, Definitions, and Section 11.
+https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n1-p16-p.pdf
+
+[3] T. D. Lee and C. N. Yang, Statistical Theory of Equations of State and
+Phase Transitions. II. Lattice Gas and Ising Model, Physical Review 87
+(1952), 410–419.
+https://journals.aps.org/pr/abstract/10.1103/PhysRev.87.410

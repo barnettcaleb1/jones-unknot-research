@@ -1,0 +1,10 @@
+{
+  "scope": "One exact formal identity certifying sharpness at four special sectors; no classical realization.",
+  "identity": "x^-12 R12 + x^-10 E2 - (x^-11+x^-8+x^-5)E1 = U",
+  "x": "Q^2",
+  "sum": {
+    "1": 1,
+    "-1": 1
+  },
+  "verified": true
+}

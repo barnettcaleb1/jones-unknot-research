@@ -1,0 +1,2 @@
+PASS: exact TL2 inverse, projector weights, source quantum-dimension relation, framing, and two-disk identities
+Opposite twists are actual braid cancellation; both channels survive with A=1 weights -1/2 3/2

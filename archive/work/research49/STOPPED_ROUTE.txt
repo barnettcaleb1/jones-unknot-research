@@ -1,0 +1,48 @@
+PASS49 STOP RECORD — 1 November 2026
+
+Previous substantive pass48: PROGRESS. It proved the internally checked
+one-punctured annulus spectral restriction and excluded canonical torsion
+cuts. Neither yielded a counterexample or a full generic proof scaffold.
+
+Current pass49: PROGRESS IN EXCLUDING A ROUTE. No resolution of ordinary
+Jones unknot detection; active goal remains unsatisfied. Do not inflate this
+classification into progress toward a complete proof whose endpoint is known.
+
+New deduction: two balanced framed rational-probe equations sharing rational
+R and arbitrary X, at distinct slopes and with one common product U, force
+X rational (indeed X=R). Two equations imply full bracket equality. A third
+unlink closure gives determinant0 and identifies the preferred longitude
+after U filling. The other product gives orientation-preserving SAME-slope
+surgery agreement with U. KMOS Theorem1.1 forces the covering knot U;
+solid-torus cover forces rational tangle. Divide unreduced bracket by delta
+before determinant specialization. Keep boundary orientations and distinct
+unframed slopes explicit. No assumption of Jones detection used.
+
+Stop the ENTIRE unknot-product framed DNA ambiguity construction, including
+attempts to repair equal total framing defects. Two nontrivial products are
+outside the theorem, but no viable matched pair was constructed. Do not turn
+the existence of lens fillings into an equality of framed branch links.
+
+DUPLICATE: connected-sum/Vandermonde satellite proof rederived a polynomial
+special case of outputs/jones-satellite-rigidity.txt, which already proves
+the stronger rational-function version. Do not count this as a new theorem.
+Only new combination: ST88 implies even ONE genuine u=1 satellite output
+forces w=0; universal rational ordinary-Jones law and P(U)=U then force
+Jones1 for EVERY companion. This would be an unconditional counterexample
+constructor, not an input-dependent generic-to-u1 bridge.
+
+Arc branch: complementary-edge unzips must have T(2,k) Jones if the relative
+arc is elementary in a planar-comparison marking. An explicit Jang et al.
+family fails the determinant/span test for n+m!=-1, retained blue/green.
+Retained red and n+m=-1 are NOT excluded. Source's denominator -1 exception
+is a gap in the displayed argument, not a disproof of its full theorem.
+No actual nontrivial elementary-skein arc obtained. Do not start a parameter
+scan on the exceptional locus without a new identity or full endpoint.
+
+Process correction: local obstructions were allowed to substitute for a
+complete proof scaffold. There remains NO established generic-to-u1 bridge.
+The user explicitly asked to stop rabbit holes. Consolidate and report
+limitations; do not start another broad search in this turn.
+
+Report: outputs/jones-framed-tangle-uniqueness.txt
+Evidence: outputs/jones-framed-tangle-uniqueness-evidence.zip

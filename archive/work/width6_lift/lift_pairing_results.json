@@ -1,0 +1,315 @@
+[
+  {
+    "label": "identity_zero",
+    "i": 2,
+    "j": 7,
+    "word": [],
+    "regularized_pairing": [],
+    "specialization": {},
+    "terms": 0,
+    "zero": true,
+    "seconds": 0.00031837495043873787
+  },
+  {
+    "label": "identity_nonzero",
+    "i": 3,
+    "j": 7,
+    "word": [],
+    "regularized_pairing": [
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ]
+    ],
+    "specialization": {
+      "2": 1,
+      "0": 1
+    },
+    "terms": 2,
+    "zero": false,
+    "seconds": 0.0003232499584555626,
+    "extremal": {
+      "max_b_then_a": [
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "collapsed_exponent": 0,
+      "collapsed_coefficient": 1,
+      "same_line_terms": [
+        [
+          2,
+          1,
+          -1
+        ]
+      ],
+      "survives": true
+    }
+  },
+  {
+    "label": "identity_self",
+    "i": 7,
+    "j": 7,
+    "word": [],
+    "regularized_pairing": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        -2
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        1,
+        -1
+      ]
+    ],
+    "specialization": {
+      "0": 3,
+      "-2": 1,
+      "2": 3,
+      "4": 1
+    },
+    "terms": 6,
+    "zero": false,
+    "seconds": 0.00032629165798425674,
+    "extremal": {
+      "max_b_then_a": [
+        4,
+        1
+      ],
+      "coefficient": -1,
+      "collapsed_exponent": 2,
+      "collapsed_coefficient": 3,
+      "same_line_terms": [
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          4,
+          1,
+          -1
+        ]
+      ],
+      "survives": true
+    }
+  },
+  {
+    "label": "handleslide_zero",
+    "i": 2,
+    "j": 7,
+    "word": [
+      2,
+      1,
+      1,
+      2
+    ],
+    "regularized_pairing": [],
+    "specialization": {},
+    "terms": 0,
+    "zero": true,
+    "seconds": 0.000873791053891182
+  },
+  {
+    "label": "handleslide_nestedzero",
+    "i": 1,
+    "j": 7,
+    "word": [
+      2,
+      1,
+      1,
+      2
+    ],
+    "regularized_pairing": [],
+    "specialization": {},
+    "terms": 0,
+    "zero": true,
+    "seconds": 0.0008454998023808002
+  },
+  {
+    "label": "handleslide_nonzero",
+    "i": 3,
+    "j": 7,
+    "word": [
+      2,
+      1,
+      1,
+      2
+    ],
+    "regularized_pairing": [
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        1,
+        -1
+      ]
+    ],
+    "specialization": {
+      "2": 1,
+      "4": 1
+    },
+    "terms": 2,
+    "zero": false,
+    "seconds": 0.0008578752167522907,
+    "extremal": {
+      "max_b_then_a": [
+        4,
+        1
+      ],
+      "coefficient": -1,
+      "collapsed_exponent": 2,
+      "collapsed_coefficient": 1,
+      "same_line_terms": [
+        [
+          4,
+          1,
+          -1
+        ]
+      ],
+      "survives": true
+    }
+  },
+  {
+    "label": "Bigelow45",
+    "i": 4,
+    "j": 5,
+    "word": [
+      -1,
+      2,
+      5,
+      -4,
+      3,
+      4,
+      -5,
+      -2,
+      1,
+      1,
+      1,
+      -2,
+      -5,
+      -5,
+      4,
+      3,
+      -4,
+      5,
+      5,
+      2,
+      -1,
+      -1,
+      -1,
+      2,
+      5,
+      -4,
+      -3,
+      4,
+      -5,
+      -2,
+      1,
+      1,
+      1,
+      -2,
+      -5,
+      -5,
+      4,
+      -3,
+      -4,
+      5,
+      5,
+      2,
+      -1,
+      -1
+    ],
+    "regularized_pairing": [],
+    "specialization": {},
+    "terms": 0,
+    "zero": true,
+    "seconds": 0.12080104183405638
+  },
+  {
+    "label": "Bigelow54",
+    "i": 5,
+    "j": 4,
+    "word": [
+      -1,
+      2,
+      5,
+      -4,
+      3,
+      4,
+      -5,
+      -2,
+      1,
+      1,
+      1,
+      -2,
+      -5,
+      -5,
+      4,
+      3,
+      -4,
+      5,
+      5,
+      2,
+      -1,
+      -1,
+      -1,
+      2,
+      5,
+      -4,
+      -3,
+      4,
+      -5,
+      -2,
+      1,
+      1,
+      1,
+      -2,
+      -5,
+      -5,
+      4,
+      -3,
+      -4,
+      5,
+      5,
+      2,
+      -1,
+      -1
+    ],
+    "regularized_pairing": [],
+    "specialization": {},
+    "terms": 0,
+    "zero": true,
+    "seconds": 0.03323916718363762
+  }
+]

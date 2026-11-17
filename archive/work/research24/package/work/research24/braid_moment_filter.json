@@ -1,0 +1,133 @@
+{
+  "modulus": 1000003,
+  "A": 2,
+  "eigenvalue_ratio": 687502,
+  "seed": "work/pass2/braid_kernel.py:KERNEL",
+  "fixed_anchor_moments_m0_through_m4": [
+    0,
+    838644,
+    819437,
+    877630,
+    442339
+  ],
+  "cases": [
+    {
+      "generator": 1,
+      "cleared_moment_polynomials": [
+        [
+          600834,
+          589491,
+          648322
+        ],
+        [
+          248775,
+          783102,
+          787563
+        ],
+        [
+          293810,
+          703560,
+          880263
+        ],
+        [
+          385599,
+          235876,
+          820867
+        ]
+      ],
+      "common_gcd": [
+        1
+      ],
+      "all_integer_h_excluded": true
+    },
+    {
+      "generator": 2,
+      "cleared_moment_polynomials": [
+        [
+          454172,
+          652548,
+          731927
+        ],
+        [
+          916812,
+          67442,
+          835186
+        ],
+        [
+          965238,
+          845838,
+          66557
+        ],
+        [
+          525137,
+          668528,
+          248677
+        ]
+      ],
+      "common_gcd": [
+        1
+      ],
+      "all_integer_h_excluded": true
+    },
+    {
+      "generator": 3,
+      "cleared_moment_polynomials": [
+        [
+          479391,
+          612570,
+          746686
+        ],
+        [
+          276936,
+          908973,
+          633531
+        ],
+        [
+          167978,
+          37165,
+          672487
+        ],
+        [
+          620730,
+          530714,
+          290898
+        ]
+      ],
+      "common_gcd": [
+        1
+      ],
+      "all_integer_h_excluded": true
+    },
+    {
+      "generator": 4,
+      "cleared_moment_polynomials": [
+        [
+          576900,
+          332343,
+          929404
+        ],
+        [
+          198943,
+          755256,
+          865241
+        ],
+        [
+          222742,
+          173693,
+          481195
+        ],
+        [
+          826168,
+          341274,
+          274900
+        ]
+      ],
+      "common_gcd": [
+        1
+      ],
+      "all_integer_h_excluded": true
+    }
+  ],
+  "conclusion": "For no integer h and no i=1,2,3,4 do ALL power closures K^m sigma_i^-h C sigma_i^h have Jones 1.",
+  "limitation": "Does not exclude isolated m, arbitrary conjugators, or other Burau-kernel braids."
+}

@@ -1,0 +1,205 @@
+JONES UNKNOT DETECTION: A CONCRETE REPAIR ATTEMPT AND ITS LIMIT
+1 November 2026
+
+RESULT
+
+We tested a repair of the Carmi--Cohen argument that removes its
+component-orientation error. The repair genuinely works at that local
+step, and a squared version retains the required finite-type coefficient
+property. However, a general span argument shows that it cannot restore
+the twist-length-independent compression needed by the proof.
+
+No proof of Jones unknot detection and no nontrivial Jones-one knot has
+been obtained. The statements below concern this specific repair. They
+do not exclude every modified machine or every nonlinear descent argument.
+
+1. THE REPAIR THAT ACTUALLY WORKS
+
+Write x=A^-2, p=x-x^-1, and let ell(L) be the sum of the pairwise linking
+numbers of an oriented link. In the normalization V_unknot=1, define
+
+  F_L(x) = x^(-3 ell(L)) V_L(x),
+  H_L(x) = F_L(x)^2.
+
+The usual Jones normalization removes total writhe. F instead removes
+only self-writhe: w_total=w_self+2ell and
+
+  F_L=(-A^3)^(-w_self) <L>.
+
+Reversing one component does not change its self-crossing signs or the
+unoriented bracket. Thus F is orientation independent. It removes the
+reorientation factor found in the preprint's exceptional local move.
+The move also changes clasp choices; the original hypothesis ranges over
+those choices, so this aspect alone need not defeat a revised argument.
+
+On a knot ell=0, so F_K=V_K and H_K=V_K^2. Therefore H_K=1 is equivalent
+to V_K=1: the Laurent polynomial ring is a domain and V_K(1)=1 excludes
+V_K=-1. This modification retains the original detection target.
+
+F itself fails a required finite-type condition. For a two-component
+link, the constant coefficients in F=a(p)+xb(p) are
+
+  a_0=-1+(-1)^ell,       b_0=-1-(-1)^ell.
+
+They change when a mixed crossing is switched, so are not invariants of
+order zero. In fact linking parity has nonzero finite differences of
+arbitrarily high order.
+
+Squaring fixes this problem. H is even in x. Every coefficient of h^n in
+
+  H(e^h)=exp(-6ell h) V(e^h)^2
+
+has finite-type order at most n: ell has order one, the Jones exponential
+coefficients have the degree/order bound, and products add orders. To
+transfer this statement to the finite p-expansion, put
+
+  s(p)=sqrt(p^2+4),
+  C(p)=H((p+s(p))/2).
+
+The substitution h=arcsinh(p/2) preserves the order bound. Evenness gives
+
+  b(p)=[C(p)-C(-p)]/s(p),
+  a(p)=[C(p)+C(-p)]/2-pb(p)/2.
+
+Consequently a_n(H) and b_n(H) have order at most n. The constant value
+is H(1)=4^(number of components-1), which still records component count.
+Thus this is a valid partial repair; it was not rejected on a superficial
+finite-type objection. These deductions are not claimed as new literature.
+
+2. WHY THE EXISTING DESCENT CANNOT SIMPLY BE REUSED
+
+The normalization changes the skein relations. At a crossing between
+components whose linking number in the positive state is m, one obtains
+
+  F_+ - x F_- = p x^(2-3m) F_0.
+
+At a self-crossing whose oriented smoothing produces two components with
+linking number m, one obtains
+
+  x^-2 F_+ - x^2 F_- = p x^(3m) F_0.
+
+These follow by substituting V=x^(3ell)F into the Jones skein relation.
+The coefficients involve global linking information. Furthermore, if
+F_+=aF_-+bF_0, then
+
+  H_+ - a^2 H_- - b^2 H_0 = 2ab F_-F_0.
+
+The additional product term is nonzero in general. The preprint's linear
+three-state recursion is therefore not a recursion for H. This alone
+does not exclude a more elaborate replacement; the next argument gives
+the decisive obstruction to preserving its compression conclusion.
+
+3. A GENERAL OBSTRUCTION TO NORMALIZATION-AND-POWER REPAIRS
+
+Suppose Laurent polynomials T_m admit an expression
+
+  T_m=A(x)+B(x)x^(dm),
+
+where A and B are nonzero rational functions and d>0. Clearing a fixed
+denominator leaves two nonzero Laurent polynomials whose supports are
+disjoint for sufficiently large m. Since Laurent span is additive under
+multiplication, it follows that
+
+  span(T_m)=dm+O(1).
+
+For any integer shifts e_m and any fixed positive integer s,
+
+  span((x^(e_m)T_m)^s)=s dm+O(1).                       (1)
+
+Monomial normalization preserves span and a positive power multiplies
+it. Both nonzero terms in the expression for T_m are essential: a lone
+moving monomial could be removed by normalization.
+
+Application to the source construction.
+
+The earlier audit used the paper's directly cancelable clasp states and
+its double-smoothing identification. In the fixed three-crossing unknot
+diagram obtained by switching the trefoil's unknotting crossing, these
+identities give a locked clasp state
+
+  T_m=C(x)-p^2 R_m,
+  R_m=[x^2(x^4+1)+(1-x^6)x^(4m)]/(x^2+1),
+
+where C is a fixed Laurent polynomial. R_m is the actual ordinary twist
+family with R_0=1 and fixed smoothing -x-x^5. The exceptional move under
+dispute is not used in deriving these identities.
+
+Here
+
+  A=C-p^2 x^2(x^4+1)/(x^2+1),
+  B=-p^2(1-x^6)/(x^2+1).
+
+Both are nonzero for every possible Laurent C. Indeed, multiplying by
+x^2+1 and setting x=i gives respectively -8 and 8. A Laurent polynomial
+C has no pole at i and cannot cancel the displayed rational pole.
+Therefore (1) applies with d=4. Whatever the state's linking number,
+
+  span(F_m)=4m+O(1),        span(H_m)=8m+O(1).
+
+A JVP degree bound D in the basis {1,x}, p=x-x^-1, confines Laurent
+exponents to [-D,D+1], giving span at most 2D+1. Thus no fixed D can
+bound the repaired family. Enlarging a constant overhead does not help.
+
+Scope of the geometric input: this application uses the source's direct
+clasp reductions and double-smoothing identification, as documented in
+the prior audit. It is not presented as a new full planar-diagram
+reconstruction of every host-machine member. If one of those source
+identifications is rejected, that is another required change to the
+geometric package. The algebraic conclusion from the identities is exact.
+The chosen host is a nonminimal unknot diagram, so this does not refute
+a new lemma restricted solely to minimal diagrams of hypothetical
+nontrivial Jones-one knots. Such a lemma would require a new proof and
+would also need to handle the generated hosts in the two-machine descent.
+
+4. TWO OTHER GLOBAL BRIDGES CHECKED IN THIS PASS
+
+Categorical units. For an actual cut knot, tensor-invertibility of its
+reduced Khovanov complex forces rank-one homology by the Kunneth formula,
+and hence the unknot. But asserting that a unit Jones polynomial forces
+that invertibility is exactly equivalent to the original detection
+problem. Passing to a field of rational functions makes every nonzero
+Jones polynomial a unit and loses the relevant distinction. This branch
+was stopped as a reformulation without a new mechanism.
+
+Four-dimensional modules. The square knot R=trefoil#mirror(trefoil)
+is slice but nontrivial. Ren--Willis Proposition 1.12 implies that, for
+every integer framing n, the Lee skein lasagna modules of X_n(R) and
+X_n(U) agree with their gradings and quantum filtration. Nevertheless,
+zero surgery on R is a closed genus-two surface mapping torus and is
+aspherical; it has no nonseparating sphere. A slice disk capped by the
+two-handle core does give a sphere inside X_0(R), illustrating the
+difference between an interior sphere and the required boundary sphere.
+Thus even this full filtered Lee-module equality cannot by itself force
+the geometric handle cancellation. No equality of Jones polynomials or
+of Khovanov lasagna modules is asserted here.
+
+VERIFICATION AND CONSEQUENCE
+
+The normalization, finite-type transfer and span argument received
+independent algebraic audits. Exact integer arithmetic checked the Hopf
+and trefoil skein identities, the extra product term, the two residues
+at i, and the residual twist recurrence. These checks support the proofs;
+they are not substitutes for the stated general arguments.
+
+The original orientation error is not the only missing ingredient.
+Removing it leaves an unbounded polynomial term that the proposed
+compression would have to eliminate. This repair therefore does not
+complete the claimed proof. The main unknot-detection objective remains
+unresolved.
+
+PRIMARY REFERENCES
+
+Carmi--Cohen, On trivial Jones--Vassiliev polynomials, v1:
+https://arxiv.org/html/2606.22410v1
+
+Birman--Lin, Knot polynomials and Vassiliev's invariants:
+https://www.math.columbia.edu/~jb/v-inv.-knot-poly.pdf
+
+Kronheimer--Mrowka, Khovanov homology is an unknot-detector:
+https://arxiv.org/abs/1005.4346
+
+Ren--Willis, Khovanov homology and exotic 4-manifolds, Proposition 1.12:
+https://arxiv.org/html/2402.10452v3
+
+Ni, Null-homotopic knots have Property R (the surgery endpoint):
+https://arxiv.org/abs/2201.10613

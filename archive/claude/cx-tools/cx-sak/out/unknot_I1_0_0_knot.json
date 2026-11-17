@@ -1,0 +1,26 @@
+{
+ "tag": "unknot_I1_0_0",
+ "pd": {
+  "pd": [],
+  "signs": [],
+  "components": [
+   []
+  ],
+  "lk": [
+   [
+    0.0
+   ]
+  ]
+ },
+ "writhe": 0,
+ "jones": {
+  "0": 1
+ },
+ "V_str": "1",
+ "det": 1,
+ "cover_lk": {
+  "K_lp": 0.0,
+  "K_lm": 0.0,
+  "lp_lm": 0.0
+ }
+}

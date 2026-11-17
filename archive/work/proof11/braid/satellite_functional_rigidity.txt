@@ -1,0 +1,141 @@
+FIXED SATELLITES CANNOT APPLY NONLINEAR RATIONAL FUNCTIONS TO JONES
+2026-10-31. Independent audit and generalization of the torus-frequency
+argument from the homology agent. No novelty claim is made.
+
+CONVENTIONS AND CLAIM
+Let q be indeterminate, F=Q(q^(1/4)), and H_N(K;q) the reduced, zero-
+framed N-dimensional colored Jones, with H_1=1 and H_2=V. Let P be a
+fixed knot pattern in a solid torus, satellites formed using the
+zero-framed companion longitude. Suppose there is a rational function
+f(X) in F(X), independent of K, such that
+ V_(P(K))(q)=f(V_K(q))
+for every knot K for which the right side is defined.
+It is enough to assume this for all T(2,2m+1), m>=0.
+
+Then f is constant or has degree1. More precisely, writing the annular
+skein expansion in the reduced-colored basis as
+ V_(P(K))=sum_(j=0)^J c_j(q) H_(j+1)(K;q),
+all coefficients with j>=2 vanish. Thus f(X)=c_0+c_1 X.
+For a single-component pattern with winding number w, parity gives:
+ - w even: f is constant and only c_0 may be nonzero;
+ - w odd: f(X)=c_1 X and only c_1 may be nonzero.
+If P(U) is the unknot, these specialize to f=1 and f=X, respectively.
+In particular, no winding-zero pattern has a universal nonconstant
+rational dependence on ordinary Jones.
+
+PROOF OF FINITE COLORED EXPANSION AND PARITY
+The Kauffman skein module of the solid torus is F[z]. The standard
+Jones--Wenzl/Chebyshev basis S_j(z) has degree j and parity j. Inserting
+a zero-framed companion evaluates S_j at its unreduced color j+1;
+normalizing by quantum dimensions only changes the coefficients c_j.
+The fixed pattern and its framing correction give coefficients
+independent of the companion. The homology class modulo2 of each state
+is preserved by smoothing. Hence the annular bracket of a knot pattern
+of winding w contains only powers z^(w mod2), and therefore only
+labels j congruent to w modulo2. All sums are finite.
+
+TORUS FORMULA AND THE UNIVERSAL COEFFICIENT RATIO
+Put [n]=(q^(n/2)-q^(-n/2))/(q^(1/2)-q^(-1/2)). In one chirality
+convention the normalized, zero-framed torus formula is
+ H_(j+1)(T(2,2m+1);q)
+   =1/[j+1] sum_(a=0)^j (-1)^(j-a)[2a+1]
+      q^((2m+1)(a(a+1)-j(j+2))/2).
+Mirroring replaces q by q^-1 and does not affect the argument.
+Set x=q^-m and define the polynomial
+ G_j(x)=1/[j+1] sum_(a=0)^j (-1)^(j-a)[2a+1]
+             q^((a(a+1)-j(j+2))/2) x^(j(j+2)-a(a+1)).
+Its exponents are nonnegative, and H_(j+1)(T(2,2m+1))=G_j(q^-m).
+For j>=1 its highest two powers of x have degrees
+ j(j+2), j(j+2)-2,
+and their coefficient ratio (second divided by first) is
+ R=-q[3],
+independent of j. Both coefficients are nonzero in F.
+In particular G_1(x)=b x^3+a x with a/b=R.
+For same-parity labels j and j-2 the leading-degree gap is4j.
+Even without using parity, the gap to j-1 is2j+1>=3 for j>=1.
+Thus lower colors do not alter the two highest coefficients of a
+nonconstant finite linear combination whose largest label is j.
+
+PASSAGE FROM KNOTS TO A POLYNOMIAL IDENTITY
+The asserted satellite dependence on the torus family implies
+ sum_j c_j G_j(x)=f(G_1(x))
+as rational functions in F(x). Indeed, after clearing denominators the
+difference is a polynomial in x that vanishes at infinitely many
+distinct elements x=q^-m of F. A nonzero polynomial over a field has
+only finitely many roots.
+
+RATIONAL f MUST BE POLYNOMIAL
+Write f=P/Q with P,Q coprime in F[X]. Bezout gives U P+W Q=1.
+Substituting G_1 shows P(G_1) and Q(G_1) are coprime in F[x]. Since
+the left side of the preceding identity is polynomial, Q(G_1) divides
+P(G_1); hence Q(G_1) is constant. As deg G_1=3, Q is constant.
+This also shows that excluding the finitely many torus inputs at which
+a rational expression is undefined does not affect the conclusion.
+
+LEADING-COEFFICIENT COMPARISON
+Suppose f has positive degree d and let J>=1 be the largest index
+with c_J nonzero. The identity first gives
+ 3d=J(J+2).
+On the left, the ratio of the coefficients at degrees3d-2 and3d is R.
+On the right, the top monomial of f contributes ratio dR, by choosing
+one factor a x and d-1 factors b x^3 in (b x^3+a x)^d.
+Every lower power of G_1 has degree at most3d-3, and therefore does
+not affect this ratio. Thus R=dR. Since R is nonzero, d=1.
+The degree equation then forces J=1. Subtracting c_1G_1 leaves the
+constant c_0, so f(X)=c_0+c_1X. If f is constant, distinct highest
+degrees of the G_j similarly force all c_j with j>0 to vanish.
+Pattern parity yields the two asserted cases.
+
+CONSEQUENCES AND LIMITS
+This forbids universal Jones-preserving ribbonization by a fixed
+winding-zero satellite pattern. It also forbids purported universal
+rules V_(P(K))=V_K^d, or any other nonconstant polynomial/rational
+rule, for such patterns. The obstruction already occurs on two-strand
+torus companions and does not require a hypothetical Jones-one knot.
+
+It does NOT rule out the much weaker implication
+ V_K=1 implies V_(P(K))=1.
+An implication on that single fiber is not a universal functional
+identity. Nor does the theorem prove that a pattern with constant
+annular skein is geometrically trivial: skein equality does not imply
+isotopy. Patterns depending on the input K, or operations other than
+one fixed satellite, are outside its hypotheses. A fixed odd-winding
+pattern with the linear rule cV is allowed; this theorem classifies
+its skein action, not its geometry.
+
+INDEPENDENT EXACT CHECK
+satellite_frequency_check.py verifies the displayed torus formula at
+m=0 (unknot) and verifies the leading-coefficient ratio for labels
+j=1,...,12. The proof above, rather than these finite checks, gives
+the theorem for every finite pattern and every rational function f.
+
+PRIMARY INPUTS
+Habiro's colored-Jones framework and the standard SU(2) ribbon/fusion
+rule: the tensor square of color j decomposes into labels2a,
+0<=a<=j, with crossing eigenvalue
+ (-1)^(j-a) q^((a(a+1)-j(j+2))/2)
+after the zero-framing correction used above. The trace coefficient
+is[2a+1]/[j+1]. See the homology agent's separately sourced formula in
+work/proof11/homology/satellite_obstruction.txt.
+The rigidity argument from the two leading coefficients is given in
+full here; no source is claimed to state this exact generalization.
+
+SINGLE-COLOR GENERALIZATION
+The same proof works with any one fixed color H_N, N>=2, in place of
+H_2. Put s=N-1. If a finite colored linear combination is universally
+f(H_N) with f rational, then f is affine and the only nonzero colors
+in the combination are H_1 and H_N. Indeed G_s has degree s(s+2)>=3
+and the same highest-coefficient ratio R. The comparison gives d=1
+and J(J+2)=s(s+2), hence J=s. After subtracting the affine expression,
+the distinct degrees of the G_j force every remaining coefficient to
+vanish. This explains why a winding-zero converter affine in H_3 is
+compatible with the theorem, whereas one nonconstant in H_2 is not.
+
+Primary formula sources inspected independently for this audit:
+H.R.Morton, The coloured Jones function and Alexander polynomial for
+torus knots, Math.Proc.Cambridge Philos.Soc.117(1995),129--135,
+Sections2--3 (cabling, twist eigenvalues, zero-framing correction).
+https://www.liverpool.ac.uk/~su14/papers/colouredjones.pdf
+Stavros Garoufalidis, The Jones slopes of a knot,
+Quantum Topology2(2011),43--69, Section4.8, equation26.
+https://guests.mpim-bonn.mpg.de/stavros/publications/printed/the_jones_slopes_of_a_knot.pdf

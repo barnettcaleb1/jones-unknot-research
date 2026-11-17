@@ -1,0 +1,119 @@
+PASS49 — BRUNNIAN THETA-CURVE TEST FOR THE ELEMENTARY-ARC CONSTRUCTION
+2026-11-01. No proof of Jones detection, no counterexample construction.
+
+Scope and change of direction
+-----------------------------
+Two unknot closures do give a large, genuinely geometric source of genus-one
+arcs: Taylor's Section4 identifies these with Brunnian theta-curves. But
+neither the two closures nor the Brunnian property supplies elementary
+relative skein. This pass finds a useful whole-family obstruction through
+an actual edge unzip, avoiding computation of every relative coefficient.
+It also records an exceptional parameter in the cited source argument.
+
+Primary sources
+---------------
+Taylor, Closures of 1-tangles and annulus twists, Section4:
+https://arxiv.org/html/2506.11226v1
+Jang, Kronaeuer, Luitel, Medici, Taylor, Zupan, New examples of Brunnian
+theta graphs, Sections4–5, especially Figure15 and Section5.3:
+https://arxiv.org/pdf/1508.03014
+No claim is made that this is a new literature theorem.
+
+1. Why the two-closure hypothesis does not reduce to rational tangles
+-------------------------------------------------------------------
+Starting with a Brunnian theta graph, remove a neighborhood of a constituent
+unknot and retain the third edge as a relative arc in the complementary
+solid torus. The other two constituent unknots give two inequivalent
+closures, with wrapping index1. Taylor gives the converse construction.
+
+There is a tempting but invalid shortcut: drill an edge to convert the
+relative arc into a two-string tangle and then claim that both original
+unknots are distinct rational closures of that tangle. One original
+constituent instead becomes an edge-deletion condition. Only the other
+is the corresponding rational closure. Thus Bleiler–Scharlemann's
+uniqueness theorem for unknot closures of prime two-tangles cannot be
+invoked twice. This diagnoses the exact failure of that short proof.
+
+2. A general linear edge-unzip obstruction
+-----------------------------------------
+Suppose the marked Brunnian theta graph is assembled from a relative arc G
+and the two edges inside the complementary solid torus W. Fix the annulus
+coordinates in which replacing G by the proposed elementary arc gives the
+planar theta graph. This is the comparison required by the pass48 candidate.
+Unzip one of the TWO W-edges, retaining the edge G only once. This operation
+is an actual complementary closure of G, so it is R-linear on its relative
+skein. If [G] equals the elementary arc up to framing, then the resulting
+knot has the Jones polynomial of the same unzip of the planar theta graph.
+
+By Jang et al. Lemma5.5, every knot obtained by unzipping an edge of a planar
+theta graph is a T(2,k), k odd (including the unknot). Thus a single such
+unzip whose Jones is not any two-strand torus-knot Jones excludes the marked
+arc. One must NOT unzip the retained G-edge itself: that doubles G and is
+not an R-linear operation on its fundamental relative skein.
+
+Simple exact sufficient rejection test: if an actual such unzip J has
+
+                    det(J)>span(V_J) and det(J)>1,
+
+its Jones is not that of any T(2,k). Indeed |k|=det(T(2,k)); for |k|>=3,
+span(V_T(2,k))=|k|. The |k|=1 cases have determinant1. A displayed diagram
+with c crossings gives span(V_J)<=c, so det(J)>c and det(J)>1 already
+suffice without computing Jones.
+
+The hypothesis that the elementary comparison produces a planar theta
+graph is explicit. Arbitrarily marked elementary classes and arbitrary
+complementary closures must not be silently identified with this comparison.
+
+3. Application to an actual infinite Brunnian family
+---------------------------------------------------
+Jang et al. construct graphs Gamma(n,m)=G(A_n,-n,m), with
+A_n=P_23^(-n)P_13, from their fixed four-braid template. Their Section5.3
+performs an explicit RED-edge unzip and obtains
+
+             J_(n,m) = 3_1 # K(-3/(6(n+m)+5)),
+
+where K(p/q) is the DENOMINATOR closure of the rational tangle p/q.
+The continued fraction displayed for its second factor is
+
+                  (0, -2(n+m)-1, -1, -1, -1).
+
+Set s=n+m. The determinant is 3*|6s+5|. The displayed diagram has at most
+3 + |2s+1| +3 = |2s+1|+6 crossings, so
+
+                    span(V_J)<=|2s+1|+6.
+
+For s>=0, 3|6s+5|=18s+15 > 2s+7.
+For s<=-2, 3|6s+5|=-18s-15 > -2s+5.
+Therefore every parameter pair with s!=-1 passes the rejection test.
+
+Consequence: for choices retaining the BLUE or GREEN edge as G, so that
+the red-edge unzip lies entirely in the complementary closure, these graphs
+cannot have the elementary relative class in any proposed planar-comparison
+marking. This excludes the whole stated parameter range using one geometric
+closure and one inequality. It does not exclude the marking retaining the
+red edge, since the red unzip would then double G. No scan was performed.
+
+4. The exceptional line and source caution
+------------------------------------------
+At s=-1, the rational fraction is -3/(-1)=3, whose denominator closure is
+the unknot. The displayed unzip is then just a trefoil. Thus this particular
+closure does not distinguish the graph from a planar theta graph's unzip.
+
+The source text claims its second factor could be trivial only if 6s+5=1,
+which is impossible. Its stated Schubert convention also allows denominator
+-1 (normalize the fraction to denominator+1). The displayed formula therefore
+leaves a gap at s=-1 in THAT argument. This is not a proof that the graph is
+trivial, nor that the paper's theorem is false; another unzip or another
+argument may handle the exception. No such repair was established in this
+bounded pass. Do not cite the all-parameter theorem as independently audited
+on the strength of this calculation.
+
+5. Endpoint status
+------------------
+No actual nontrivial elementary-skein relative arc was obtained. The new
+concrete filter is that its linear complementary edge unzips must all have
+two-strand torus-knot Jones polynomials. The explicit newly checked Brunnian
+family fails that filter for all s!=-1 and for the two stated retained-edge
+choices. The remaining line or third marking is not claimed promising;
+it merely escapes this one certificate. No further parameter scan is
+warranted without a new invariant identity.

@@ -1,0 +1,264 @@
+--- /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/e3_search.py	2026-11-17 01:02:56
++++ e3_search.py	2026-11-17 07:02:12
+@@ -7,6 +7,25 @@
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont')
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/tools')
+ import fastJ, rho2, lp, kcert, vspan
++
++# ---- u45 patch: store every J = 1 word (kcert once per distinct word, cached) ----
++U45_OUT = '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/out'
++J1 = {}
++def KC(hw, where, ev):
++    e = J1.get(hw)
++    if e is None:
++        st, why = kcert.certify(hw)
++        e = J1[hw] = {'count': 0, 'first_eval': ev, 'where': where, 'kcert': [st, why]}
++        if st != 'V=1,Delta=1':
++            print('KCERT-SAYS-NONTRIVIAL', where, hw, why, flush=True)
++            open(U45_OUT + '/KCERT_NONTRIVIAL_J1.txt', 'a').write(hw + '\t' + where + '\t' + str(why) + '\n')
++    e['count'] += 1
++    return tuple(e['kcert'])
++def BUDGET_OK(evals, restarts=None):
++    if MAXE is None: return True
++    if evals < MAXE: return True
++    return restarts is not None and restarts < MAXR
++MAXE = None; MAXR = 0
+ REL = False   # E3b: objective span(J) - span(V_K) (relative flatness)
+ LET = fastJ.LET
+ INV = {'x0': 'y0', 'y0': 'x0', 'x1': 'y1', 'y1': 'x1', 'x2': 'y2', 'y2': 'x2', 'x3': 'y3', 'y3': 'x3'}
+@@ -53,20 +72,21 @@
+         if vs is None: return None
+         s -= vs
+     return s
+-def main(n, secs, seed):
++def main(n, secs, seed, cap=None):
+     rnd = random.Random(seed)
+-    t_end = time.time() + secs
++    t_end = time.time() + (cap if cap else secs); tw0 = time.time()
+     best = {}      # key (J tuple) -> record, for a2 = 0
+     bestany = None; evals = 0; hits = []; restarts = 0
+-    while time.time() < t_end:
++    while time.time() < t_end and BUDGET_OK(evals, restarts):
+         while True:
+             W = [rnd.choice(LET) for _ in range(n)]
+             if ok(W): break
+         r = evaluate(W); cur = score(r[0], r[1], W) if r else None
++        if r and r[0] == {0: 1}: KC(rho2.halfword('l1.l1', W, 'u2.u2'), 'init', evals)
+         if cur is None: continue
+         T0 = 4.0; steps = 3000; restarts += 1
+         for s in range(steps):
+-            if time.time() > t_end: break
++            if time.time() > t_end or not BUDGET_OK(evals): break
+             T = T0 * (0.05 / T0) ** (s / steps)
+             W2 = W[:]
+             mv = rnd.random()
+@@ -81,10 +101,10 @@
+             Jn, a2 = r
+             if Jn == {0: 1}:
+                 hw = rho2.halfword('l1.l1', W2, 'u2.u2')
+-                st, why = kcert.certify(hw)
++                st, why = KC(hw, 'inner', evals)
+                 if st != 'V=1,Delta=1':
+                     hits.append(hw); print('HIT-CANDIDATE', hw, why, flush=True)
+-                    open('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/out/HIT_CANDIDATES.txt', 'a').write(hw + '\t' + str(why) + '\n')
++                    open(U45_OUT + '/HIT_CANDIDATES.txt', 'a').write(hw + '\t' + str(why) + '\n')
+                 continue
+             f = score(Jn, a2, W2)
+             if f is None: continue
+@@ -98,9 +118,12 @@
+                 W, cur = W2, f
+     recs = sorted(best.values(), key=lambda r: ((r['f'], r['span']) if REL else (r['span'], r['nnz'])))
+     res = {'n': n, 'secs': secs, 'seed': seed, 'evals': evals, 'restarts': restarts, 'distinct_a2zero_J': len(best),
+-           'best_any': bestany, 'hits': hits, 'top_a2zero': recs[:40]}
+-    json.dump(res, open('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/out/e3%s_n%d_s%d.json' % ('b' if REL else '', n, seed), 'w'))
++           'best_any': bestany, 'hits': hits, 'top_a2zero': recs[:40],
++           'u45': {'max_evals': MAXE, 'max_restarts': MAXR, 'cap': cap, 'wall': round(time.time() - tw0, 1), 'budget_reached': not BUDGET_OK(evals, restarts), 'n_j1_distinct': len(J1), 'n_j1_probes': sum(e['count'] for e in J1.values())},
++           'j1_words': J1}
++    json.dump(res, open(U45_OUT + '/e3%s_n%d_s%d.json' % ('b' if REL else '', n, seed), 'w'))
+     print('RESULT n', n, 'evals', evals, 'distinct a2=0 J', len(best), 'best a2=0 (f,span)', [(r['f'], r['span']) for r in recs[:10]], 'hits', len(hits), flush=True)
+ if __name__ == '__main__':
+     if len(sys.argv) > 4 and sys.argv[4] == 'rel': REL = True
+-    main(int(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]))
++    if len(sys.argv) > 5: MAXE = int(sys.argv[5]); MAXR = int(sys.argv[6])
++    main(int(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]), cap=(float(sys.argv[7]) if len(sys.argv) > 7 else None))
+--- /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/e3w3.py	2026-11-17 01:07:47
++++ e3w3.py	2026-11-17 07:02:12
+@@ -4,25 +4,49 @@
+ import sys, random, time, json, math
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB')
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont')
+-import fastJ3, lp, kcert, e3_search
++sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/')   # u45: the patched e3_search (z10, ord1 unchanged)
++import fastJ3, lp, kcert
++sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/')
++import e3_search
++assert e3_search.__file__.startswith('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/')
++
++# ---- u45 patch: store every J = 1 word (kcert once per distinct word, cached) ----
++U45_OUT = '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/out'
++J1 = {}
++def KC(hw, where, ev):
++    e = J1.get(hw)
++    if e is None:
++        st, why = kcert.certify(hw)
++        e = J1[hw] = {'count': 0, 'first_eval': ev, 'where': where, 'kcert': [st, why]}
++        if st != 'V=1,Delta=1':
++            print('KCERT-SAYS-NONTRIVIAL', where, hw, why, flush=True)
++            open(U45_OUT + '/KCERT_NONTRIVIAL_J1.txt', 'a').write(hw + '\t' + where + '\t' + str(why) + '\n')
++    e['count'] += 1
++    return tuple(e['kcert'])
++def BUDGET_OK(evals, restarts=None):
++    if MAXE is None: return True
++    if evals < MAXE: return True
++    return restarts is not None and restarts < MAXR
++MAXE = None; MAXR = 0
+ LET = fastJ3.LET
+ def inv(L): return ('y' if L[0] == 'x' else 'x') + L[1:]
+ def ok(W):
+     if any(inv(W[i]) == W[i + 1] for i in range(len(W) - 1)): return False
+     return fastJ3.is_knot(W)
+-def main(n, secs, seed):
+-    rnd = random.Random(seed); t_end = time.time() + secs
++def main(n, secs, seed, cap=None):
++    rnd = random.Random(seed); t_end = time.time() + (cap if cap else secs); tw0 = time.time()
+     best = {}; evals = 0; hits = []
+-    while time.time() < t_end:
++    while time.time() < t_end and BUDGET_OK(evals):
+         while True:
+             W = [rnd.choice(LET) for _ in range(n)]
+             if ok(W): break
+         J = fastJ3.J(W)
++        if J == {0: 1}: KC(fastJ3.halfword(W), 'init', evals)
+         if J is None or J == {0: 1}: continue
+         cur = (max(J) - min(J)) + 3 * min(abs(lp.a2(J)), 10)
+         steps = 2000
+         for s in range(steps):
+-            if time.time() > t_end: break
++            if time.time() > t_end or not BUDGET_OK(evals): break
+             T = 4.0 * (0.05 / 4.0) ** (s / steps)
+             W2 = W[:]; mv = rnd.random()
+             if mv < 0.5: W2[rnd.randrange(n)] = rnd.choice(LET)
+@@ -34,10 +58,10 @@
+             Jn = fastJ3.J(W2); evals += 1
+             if Jn is None: continue
+             if Jn == {0: 1}:
+-                hw = fastJ3.halfword(W2); st, why = kcert.certify(hw)
++                hw = fastJ3.halfword(W2); st, why = KC(hw, 'inner', evals)
+                 if st != 'V=1,Delta=1':
+                     hits.append(hw); print('HIT-CANDIDATE', hw, why, flush=True)
+-                    open('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/out/HIT_CANDIDATES.txt', 'a').write(hw + '\tw3 ' + str(why) + '\n')
++                    open(U45_OUT + '/HIT_CANDIDATES.txt', 'a').write(hw + '\tw3 ' + str(why) + '\n')
+                 continue
+             a2 = lp.a2(Jn)
+             f = (max(Jn) - min(Jn)) + 3 * min(abs(a2), 10)
+@@ -49,9 +73,12 @@
+             if f <= cur or rnd.random() < math.exp(-(f - cur) / T): W, cur = W2, f
+     recs = sorted(best.values(), key=lambda r: (r['span'], r['nnz']))
+     res = {'n': n, 'evals': evals, 'distinct_a2zero_J': len(best), 'hits': hits, 'top_a2zero': recs[:40],
+-           'gated': [r for r in recs if r['zeta10']][:40]}
+-    json.dump(res, open('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/out/e3w3_n%d_s%d.json' % (n, seed), 'w'))
++           'gated': [r for r in recs if r['zeta10']][:40],
++           'u45': {'max_evals': MAXE, 'cap': cap, 'wall': round(time.time() - tw0, 1), 'budget_reached': not BUDGET_OK(evals), 'n_j1_distinct': len(J1), 'n_j1_probes': sum(e['count'] for e in J1.values())},
++           'j1_words': J1}
++    json.dump(res, open(U45_OUT + '/e3w3_n%d_s%d.json' % (n, seed), 'w'))
+     print('RESULT n', n, 'evals', evals, 'distinct a2=0 J', len(best), 'best spans', [r['span'] for r in recs[:10]],
+           'gated spans', [r['span'] for r in recs if r['zeta10']][:10], 'hits', len(hits), flush=True)
+ if __name__ == '__main__':
+-    main(int(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]))
++    if len(sys.argv) > 4: MAXE = int(sys.argv[4])
++    main(int(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]), cap=(float(sys.argv[5]) if len(sys.argv) > 5 else None))
+--- /Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/e3d_alex.py	2026-11-17 01:11:20
++++ e3d_alex.py	2026-11-17 07:02:12
+@@ -7,7 +7,32 @@
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB')
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont')
+ sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/tools')
+-import fastJ, rho2, lp, kcert, e3_search, vspan, alex
++sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/')   # u45: the patched e3_search (z10, INV unchanged)
++import fastJ, rho2, lp, kcert
++sys.path.insert(0, '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/')
++import e3_search
++import vspan, alex
++assert e3_search.__file__.startswith('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/')
++
++# ---- u45 patch: store every J = 1 word (kcert once per distinct word, cached) ----
++U45_OUT = '/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/roundF/u45/e3/out'
++J1 = {}
++def KC(hw, where, ev):
++    e = J1.get(hw)
++    if e is None:
++        st, why = kcert.certify(hw)
++        e = J1[hw] = {'count': 0, 'first_eval': ev, 'where': where, 'kcert': [st, why]}
++        if st != 'V=1,Delta=1':
++            print('KCERT-SAYS-NONTRIVIAL', where, hw, why, flush=True)
++            open(U45_OUT + '/KCERT_NONTRIVIAL_J1.txt', 'a').write(hw + '\t' + where + '\t' + str(why) + '\n')
++    e['count'] += 1
++    return tuple(e['kcert'])
++def BUDGET_OK(evals, restarts=None):
++    if MAXE is None: return True
++    if evals < MAXE: return True
++    return restarts is not None and restarts < MAXR
++MAXE = None; MAXR = 0
++EVALS = [0]
+ LET = fastJ.LET; INV = e3_search.INV
+ def ok(W):
+     if any(INV[W[i]] == W[i + 1] for i in range(len(W) - 1)): return False
+@@ -18,19 +43,19 @@
+     if Jn is None: return None
+     hw = rho2.halfword('l1.l1', W, 'u2.u2')
+     if Jn == {0: 1}:
+-        st, why = kcert.certify(hw)
++        st, why = KC(hw, 'evalf', EVALS[0])
+         if st != 'V=1,Delta=1':
+             print('HIT-CANDIDATE', hw, why, flush=True)
+-            open('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/out/HIT_CANDIDATES.txt', 'a').write(hw + '\te3d ' + str(why) + '\n')
++            open(U45_OUT + '/HIT_CANDIDATES.txt', 'a').write(hw + '\te3d ' + str(why) + '\n')
+         return None
+     a2 = lp.a2(Jn); d2 = alex.alex_eval(hw, 2); dm = alex.alex_eval(hw, -1)
+     z = e3_search.z10(Jn)
+     f = (max(Jn) - min(Jn)) + 3 * min(abs(a2), 10) + 4 * lg(d2) + 2 * lg(dm) - 4 * z
+     return f, Jn, a2, d2, dm, z, hw
+-def main(n, secs, seed):
+-    rnd = random.Random(seed); t_end = time.time() + secs
++def main(n, secs, seed, cap=None):
++    rnd = random.Random(seed); t_end = time.time() + (cap if cap else secs); tw0 = time.time()
+     found = {}; evals = 0
+-    while time.time() < t_end:
++    while time.time() < t_end and BUDGET_OK(evals):
+         while True:
+             W = [rnd.choice(LET) for _ in range(n)]
+             if ok(W): break
+@@ -38,7 +63,7 @@
+         if r is None: continue
+         cur = r[0]; steps = 2500
+         for s in range(steps):
+-            if time.time() > t_end: break
++            if time.time() > t_end or not BUDGET_OK(evals): break
+             T = 5.0 * (0.05 / 5.0) ** (s / steps)
+             W2 = W[:]; mv = rnd.random()
+             if mv < 0.5: W2[rnd.randrange(n)] = rnd.choice(LET)
+@@ -47,7 +72,7 @@
+             else:
+                 i = rnd.randrange(n); del W2[i]; W2.insert(rnd.randrange(n), rnd.choice(LET))
+             if not ok(W2): continue
+-            r = evalf(W2); evals += 1
++            EVALS[0] = evals; r = evalf(W2); evals += 1
+             if r is None: continue
+             f, Jn, a2, d2, dm, z, hw = r
+             if d2 == 1 and dm == 1 and alex.alex_eval(hw, 3) == 1:
+@@ -58,9 +83,12 @@
+     recs = sorted(found.values(), key=lambda x: (not x['zeta10'], x['spanJ']))
+     for x in recs[:30]: x['spanV'] = vspan.vspan(x['word'])
+     res = {'n': n, 'evals': evals, 'alexander_trivial_distinct_J': len(found), 'best': recs[:30],
+-           'n_zeta10': sum(1 for x in found.values() if x['zeta10'])}
+-    json.dump(res, open('/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/engineB/out/e3d_n%d_s%d.json' % (n, seed), 'w'))
++           'n_zeta10': sum(1 for x in found.values() if x['zeta10']),
++           'u45': {'max_evals': MAXE, 'cap': cap, 'wall': round(time.time() - tw0, 1), 'budget_reached': not BUDGET_OK(evals), 'n_j1_distinct': len(J1), 'n_j1_probes': sum(e['count'] for e in J1.values())},
++           'j1_words': J1}
++    json.dump(res, open(U45_OUT + '/e3d_n%d_s%d.json' % (n, seed), 'w'))
+     print('RESULT n', n, 'evals', evals, 'Delta=1 distinct J', len(found), 'with zeta10', res['n_zeta10'],
+           'best (z10, spanJ, spanV)', [(x['zeta10'], x['spanJ'], x.get('spanV')) for x in recs[:8]], flush=True)
+ if __name__ == '__main__':
+-    main(int(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]))
++    if len(sys.argv) > 4: MAXE = int(sys.argv[4])
++    main(int(sys.argv[1]), float(sys.argv[2]), int(sys.argv[3]), cap=(float(sys.argv[5]) if len(sys.argv) > 5 else None))

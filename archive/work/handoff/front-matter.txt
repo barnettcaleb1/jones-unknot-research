@@ -1,0 +1,387 @@
+JONES UNKNOT DETECTION RESEARCH HANDOFF FOR CLAUDE
+Compiled 2 November 2026, America/Chicago
+
+PURPOSE AND READING ORDER
+
+This packet transfers the mathematical content of an extended investigation
+by Codex and its research subagents. It is intended for an agent with no
+access to the originating chat. It contains a result ledger, exact scope
+and status distinctions, the strongest candidate proof in full, and a map
+to the saved evidence. It is a research record, not a claim of a complete
+solution. The original proof-search goal is PAUSED. The current task was
+compilation and assessment, not further autonomous research. The user plans
+to set up agent communication separately; nothing here sets that system up.
+
+Recommended reading order:
+1. This front matter and the current judgment.
+2. The full audited rational-tangle proof following the result index.
+3. The late ledger's pass-51 obstruction to extending it to generic knots.
+4. EARLY-01--02 for Carmi--Cohen, then LATE-03--05/research36 for the
+   decisive source-grounded G2 audit.
+5. The remaining ledgers, using their stable IDs to select a specific claim.
+6. The individual source notes and scripts in the companion evidence ZIP.
+
+This file is the portable, self-contained briefing. The ZIP preserves
+relative paths from the research workspace and contains the fuller notes,
+scripts and saved evidence. File references below use those relative paths
+unless they are public URLs. No dependence on a local machine path should
+be necessary to read the mathematics. Some old scripts DO contain absolute
+paths or environment assumptions; see the reproducibility notes before use.
+
+NAVIGATION BY MATHEMATICAL QUESTION
+
+The 130 indexed entries are result clusters, NOT 130 independent new theorems.
+Some entries revisit the same deduction with stronger scope or a later audit.
+Use these cross-references to avoid counting repeated work as separate progress:
+
+* Original claimed proof and repair failures: EARLY-01--02; LATE-03--05,25.
+* EKT, fusion bands and exact twist-family exclusions: EARLY-03--04,12;
+  MID-35--36; LATE-01--02,06--07,16--17.
+* Strongest framed tangle theorem and its generic obstruction: LATE-41,44--45;
+  MID-03; the full revised proof and audit immediately after the index.
+* Satellite, Whitehead, Bing and Brunnian transmission: EARLY-14--16,34,38;
+  MID-04--10,25--27; LATE-31,34--40.
+* Generic braid kernels, traces, projectors and finite arithmetic tests:
+  EARLY-05--06,08--09,13,35; MID-22--24,29; LATE-09,21--23,28,49.
+* Khovanov/Floer restrictions, ribbon concordance and formal complexes:
+  EARLY-17--18,29,31--32,36,39--40; MID-12--21,34; LATE-19,27,30,50.
+* Global geometry, projective complexity, volume and tame limits:
+  EARLY-41--44; MID-02,28,31--33; LATE-08,10,32,38--39.
+* Quantum/physics/positivity and finite-color limitations: EARLY-19--24,30,33;
+  MID-01,11,15,20,27,30,32; LATE-12--14,18,24--29,42,46--48.
+* Exact polynomial identities and finite-template certificates:
+  EARLY-10--11,22,27--28; MID-13,25,32,36; LATE-06,20,31,35,38.
+
+In the late ledger, a shorthand path researchNN/... means work/researchNN/...
+in the archive. Brace lists denote several files in one directory. Stable
+entry IDs can be used in a later communication system without copying the
+entire history. The JSON ledger preserves each entry's text for retrieval.
+
+THE TARGET AND CURRENT JUDGMENT
+
+Target: for a classical knot K in S^3, does its ordinary normalized Jones
+polynomial V_K(t)=1 imply that K is the unknot U?
+
+Current judgment, based on the saved work and the latest audit:
+
+* No proof of the target and no counterexample were obtained.
+* The strongest positive partial result is a candidate proof of Sikora's
+  framed rational-solution uniqueness conjecture. The 1 November fresh
+  internal audit found no fatal gap. It has not received external specialist
+  review. Its novelty and priority are unverified.
+* We have a concrete obstruction to the submitted Carmi--Cohen v1 proof,
+  and later a source-grounded countercheck of its G2 local move. These are
+  refutations of claims used by that proof, not of Jones unknot detection.
+* Numerous exact algebraic deductions, family exclusions, conditional
+  reductions and finite computations survive in the record. They close
+  particular routes or specify missing lemmas. Their number is not evidence
+  that the full conjecture is close to resolution.
+* No currently developed route has a verified general mechanism bridging
+  ordinary Jones equality to the necessary geometric or homological control.
+  More time spent refining downstream lemmas does not by itself address that.
+* No publication novelty has been established for ANY result in this packet.
+  The strongest candidate is a possible new application/generalization of
+  published methods, not a demonstrated new technique or priority claim.
+
+This compilation is dated 2 November. Literature status assertions below
+report the source checks performed on 31 October and 1 November; the entire
+literature was not re-searched on the compilation date. No external person
+has been contacted to validate the results.
+
+HOW TO INTERPRET THE STATUS LABELS
+
+The ledgers retain their local labels but use the following distinctions:
+
+AUDITED CANDIDATE: a substantive proof was reconstructed and its cited
+hypotheses checked in a fresh internal audit. No fatal gap was found.
+This does not mean external acceptance or formal verification.
+
+RECORDED / INTERNALLY PROVED DEDUCTION: an actual argument is in the saved
+record, often with independent calculations or contemporaneous subagent
+checks. It is not freshly re-proved merely by inclusion in this compilation.
+Read its exact hypotheses and proof before using it as a theorem.
+
+CONDITIONAL THEOREM: the implication has a proof, but its stated premise
+remains unproved. In several cases the premise on the Jones-one fiber is
+equivalent to the original conjecture. Do not count the implication as
+progress on proving that premise.
+
+FORMAL MODEL / OBSTRUCTION TO A METHOD: a polynomial, complex, representation
+or manifold example defeats a proposed inference. Unless explicitly stated,
+it is NOT a classical knot with trivial Jones polynomial.
+
+FINITE COMPUTATION: exact checks over the recorded input set. This does not
+exhaust arbitrary tangles, bands, braid words, or knot types. Counts usually
+count generated constructions, not distinct isotopy classes.
+
+KNOWN INPUT / REAPPLICATION: an established source theorem or a deduction
+whose relevant special case is already known. It must retain attribution.
+
+OPEN / STOPPED: an unproved bridge or a route closed by an explicit failure.
+Reopening requires a new input that addresses the recorded failure.
+
+All internal reviews were performed by instances of the same research
+system. They are not independent human referees. Agreement among agents is
+not mathematical evidence beyond the arguments and computations they supply.
+Historical prose sometimes says "proved" or "complete" more strongly; apply
+the scope and status distinctions in this handoff when reading it.
+
+THE STRONGEST PARTIAL RESULT
+
+Let P,Q be rational closing tangles with distinct underlying unframed slopes.
+Let R be rational and X an arbitrary two-string tangle with the same marked
+boundary. If C_P(X)=C_P(R) and C_Q(X)=C_Q(R) as BALANCED FRAMED LINKS,
+then X=R as balanced framed tangles.
+
+This matches Conjecture 2 in Sikora arXiv:2005.08162v2, or Conjecture 1.2
+in the published paper. It is stronger than uniqueness among rational
+solutions, but weaker than rational-tangle detection by bracket alone.
+
+Proof architecture:
+  two actual framed closure equalities
+    -> equality of relative bracket vectors (Sikora)
+    -> auxiliary determinant-one and determinant-zero fillings
+    -> H_1(M)=Z and a common preferred longitude for the double covers
+    -> actual lens filling gives irreducibility
+    -> if both original slopes are nonlongitudinal: two same-signed-p/q
+       lens comparisons force Delta''(1)=0 by Casson--Walker
+    -> two L-space fillings imply Floer simplicity
+    -> binary torsion coefficients imply alternating Alexander coefficients
+    -> Delta''(1)=0 forces Delta=1
+    -> Floer-simple norm formula forces boundary compressibility
+    -> irreducibility makes the cover a solid torus
+    -> rationality and bracket equality recover the marked balanced framing.
+
+The longitude/unlink branch instead uses Rasmussen--Rasmussen Proposition
+7.8, followed by the same norm/compressibility endpoint. The full argument
+and references are included later in this file.
+
+Most delicate checks already made: equality of the signed peripheral
+coefficients; validity of Casson--Walker in an arbitrary auxiliary homology
+sphere; equality of RR's projected polynomial with the ordinary Alexander
+normalization when H_1(M)=Z; irreducibility; and balanced framing.
+
+Attribution: Gainullin's 2018 Theorem 8.2 already uses a closely related
+Casson--Walker -> second Alexander derivative -> alternating coefficients
+-> genus-detection strategy. The potential new step is the two-filling
+adaptation and application to the full framed tangle conjecture. His
+ambient-L-space/null-homology assumptions do not immediately cover our
+auxiliary Y. No claim that this adaptation is unprecedented is established.
+
+Recent status evidence: Sikora's 15 October 2026 IPAM talk abstract still
+calls the exact uniqueness assertion a conjecture. The abstract was read,
+not the whole recording. This is evidence of recent conjectural status,
+not proof that no prior or unpublished argument exists.
+
+Sources:
+https://arxiv.org/html/2005.08162v2
+https://arxiv.org/html/1508.05900v2
+https://msp.org/agt/2018/18-1/agt-v18-n1-p03-p.pdf
+https://www.mathinstitutes.org/videos/25091
+
+Authoritative local files:
+outputs/rational-tangle-uniqueness-audited-proof.txt
+outputs/rational-tangle-uniqueness-audit.txt
+work/final-audit/surgery.txt
+work/final-audit/floer.txt
+work/final-audit/novelty.txt
+
+WHY THAT RESULT DOES NOT SOLVE THE ORIGINAL PROBLEM
+
+Its key hypotheses concern actual links and actual filled manifolds.
+Polynomial equality alone does not provide them. Sikora proves
+Jones unknot detection -> framed rational-solution uniqueness. Proving
+the consequent is not a proof of the antecedent.
+
+Pass 51 makes the gap concrete. Tie an arbitrary knot J into one arc of R,
+adjusting framing for Jones normalization. Then
+
+ [X_J]=V_J(A^(-4))*[R],
+ Sigma_2(X_J)=(S^1 x D^2)#Sigma_2(J).
+
+A hypothetical nontrivial Jones-one knot would preserve the bracket while
+surviving as a closed connected-sum factor in the cover. The auxiliary
+filling-core knot is then an unknot in a ball of Sigma_2(J); its Alexander
+polynomial is already 1 and gives no information about J. The actual lens
+fillings in the candidate proof remove closed summands; Jones equality
+does not. Assuming irreducibility simply excludes this generic construction.
+
+There is a recorded restricted extension: bracket equality with a rational
+tangle plus irreducibility AND Floer simplicity of the double cover implies
+the same rationality conclusion. Its derivative argument uses a
+Garoufalidis/Lescop zero-surgery formula. It was checked in pass 51 but did
+not receive the same fresh audit as the main candidate. Crucially, neither
+extra hypothesis follows from bracket equality in the record.
+
+Source: outputs/jones-generic-route-audit.txt and work/research51/.
+
+THE ORIGINAL CLAIMED JONES PROOF
+
+The starting paper was Avishy Carmi and Eliahu Cohen, On trivial
+Jones--Vassiliev polynomials, arXiv:2606.22410v1, submitted 21 June 2026.
+The initial audit found that its Section 5 package would give a uniform
+p-degree bound 22 on a trefoil-based odd anti-parallel twist family. Direct
+skein computation gives degree 2L+5 and b_(2L+5)=-1; at L=23, b_51=-1.
+Thus the asserted uniform compression and residual-twist identification
+cannot simultaneously hold. Replacing the overhead 11 by another fixed
+constant does not fix an unbounded degree contradiction.
+
+Later work reconstructed the source's specific G2 locked-clasp move and
+found a concrete endpoint mismatch, with separate exact bracket checks.
+This is stronger localization of the failure than the original audit,
+which expressly did not identify G2 alone as the offending step.
+See the early and late ledgers for the exact formula, state diagrams and
+verification paths; do not conflate a schematic diagram with that later
+source-grounded reconstruction.
+
+Primary paper: https://arxiv.org/abs/2606.22410v1
+Our audit: work/jones-audit/main.tex and outputs/jones-unknot-proof-audit.pdf
+Later G2 audit: outputs/jones-preprint-local-move-audit.txt; work/research36/.
+
+GLOBAL CONDITIONAL SCAFFOLDS THAT REMAIN OPEN
+
+The most useful common endpoint is connected-sum amplification. If a
+nontrivial K has V_K=1 and J is any fixed anchor, then
+
+                  V_(J#K#...#K)=V_J.
+
+Consequently a finite upper bound throughout ONE nonempty whole Jones
+fiber on bridge number, reduced rational Khovanov rank, or its quantum
+spread would imply unknot detection. For example
+
+ b(J#K^(#m))=b(J)+m*(b(K)-1),
+ r(J#K^(#m))=r(J)*r(K)^m.
+
+These implications are complete. No such unrestricted whole-fiber bound
+has been established here. Restriction to prime knots misses the very
+connected sums used in the argument. On the unit fiber, the boundedness
+assertion is equivalent to the original problem.
+
+A related conditional endpoint uses bounded total hyperbolic volume of
+exteriors throughout one whole fiber, with a separate graph-knot argument
+for the zero-volume case. Another uses a genuine nontrivial kernel element
+of a generic Jones braid representation plus Ito's topological endpoint.
+Neither the required bound nor the required kernel element was found.
+
+Other complete conditional chains need a general reduction to unknotting
+number one AND rigidity there, or an essential Jones-invisible satellite
+pattern plus its nontriviality certificate. The record proves useful
+equivalences or necessary conditions in those settings, not the missing
+general construction.
+
+Many purportedly different approaches share exactly the same missing
+geometric-realizability or whole-fiber-boundedness premise. They should not
+be counted as independent indications that a solution is near.
+
+CORRECTIONS AND PRECEDENCE RULES
+
+1. The 1 November final-audit files and revised proof override the pass-50
+   proof's confidence/priority wording. The mathematical scope remains the
+   framed two-actual-closure theorem, not bracket detection or Jones.
+2. Historical ACTIVE goal instructions, "continue until proof" notes,
+   next-step recommendations and old stopped-agent logs are stale. The
+   proof search is paused; the user controls any later restart.
+3. Actual unframed rational/nonrational tangle ambiguity is compatible with
+   the candidate framed theorem. The explicit example was already known
+   from Ernst--Sumners; its two framing defects do not agree. Do not present
+   it as a new counterexample to the framed conjecture or Jones.
+4. The initial question of possible rank growth in a fixed Watson orbit
+   was superseded by the finite-resolution rank bound in pass 26. It does
+   not provide a bound uniform over all templates in a Jones fiber.
+5. The projective-complexity program's Jones-span inequality was refuted
+   by the later identity beta_Re(K)=c(K) for classical local knots and the
+   explicit T(3,4) comparison. Earlier recommendations to prove that bound
+   are obsolete. The conditional implications alone remain valid.
+6. Early low-order tests of the EKT/Ren/two-band constructions are weaker
+   than later exact family exclusions. Use the most recent applicable
+   topology and parameter conventions, not merely the earliest experiment.
+7. A formal complex, annular skein, quantum invariant sequence, virtual
+   knot, or abstract manifold is not automatically a realizable classical
+   Jones-one knot. Several late results demonstrate that exact distinction.
+8. Preserve the full hypothesis in every positivity claim: closure can
+   destroy positivity; nonzero Euler-invisible homology can survive; equal
+   determinants or correction terms do not identify actual lens spaces.
+9. Finite Taylor jets and finitely many root evaluations are not the whole
+   Laurent polynomial. There are genuine knot constructions defeating
+   finite-probe substitutes. Formal color-erasure examples prove a different,
+   weaker kind of obstruction and must not be promoted to actual knots.
+10. All 93 exact Jones-one hits in the initial 40,000-word braid sample are
+    certified unknots. The old attack_search README leaves entries 82 and
+    86 unresolved; braid_classification/deliverable resolves both. Neither
+    is an outstanding candidate. The later 22 two-band Jones-one hits are
+    likewise certified unknots, with separate limitations on marking all
+    of their twist families.
+
+NOTATION AND NORMALIZATION WARNINGS
+
+* U is the unknot; V_U=1 is the ordinary normalized Jones polynomial.
+* A common convention is t=A^(-4), x=t^(1/2), p=x-x^(-1),
+  delta=-A^2-A^(-2). Some source notes use q or x differently; each local
+  statement must be read with its own definitions.
+* The skein convention used in many notes is
+  t^(-1)V_+ - t V_- = (t^(1/2)-t^(-1/2))*V_0.
+* Raw Kauffman bracket may give the unknot delta; the reduced closed bracket
+  gives 1. Divide by delta BEFORE specializing to delta=0 for determinants.
+* Colored-Jones conventions differ between notes. In the common reduced
+  convention H_1=1 and H_2=V. Annular S_n corresponds to representation
+  dimension n+1. Never identify ordinary color 2 with all colors.
+* Tangle brackets carry framing. A single global framing adjustment acts on
+  both closures; independently fixing the two closure framings changes the
+  framed problem.
+* Balanced framed isotopy is Sikora's convention. Do not replace it by a
+  different componentwise framing equivalence without checking the theorem.
+* A slope p*mu+q*lambda is p/q surgery in the common marked convention.
+  Mirror/orientation changes can alter signs and must be tracked on both
+  sides of a surgery comparison.
+* Delta_K(t) in surgery formulas is symmetric, Delta_K(1)=1. A shifted
+  polynomial D=t^h*Delta_K must be symmetrized before taking Delta_K''(1).
+
+WHAT AN INDEPENDENT AGENT SHOULD TRY FIRST
+
+The highest-value immediate task is adversarial verification of the finite
+rational-tangle proof, together with a focused novelty search. Check the
+actual cited hypotheses rather than trusting this summary. If rejecting a
+step, identify the exact implication, missing hypothesis or counterexample.
+If accepting it, distinguish logical validity from publication priority.
+
+Second, inspect the pass-51 generic obstruction before proposing to extend
+the result to all Jones-one knots. Any proposed construction must explain
+how it removes or controls the local-knot closed summand without assuming
+Jones detection in another form.
+
+Third, select one remaining question with a falsifiable output: a concrete
+geometric realization, an exact representation-kernel certificate, a
+genuine new whole-fiber bound, or a proof/counterexample for a precisely
+stated intermediate lemma. State the full route to Jones before investing
+in the local calculation. A conditional theorem whose premise is merely
+Jones detection renamed is not such an input.
+
+The record does not support a prediction that another unrestricted pass,
+more parallel agents, or additional runtime will solve the conjecture.
+There may be worthwhile partial results here, especially the candidate
+tangle theorem. The previous process failure was repeatedly treating new
+reformulations and narrow exclusions as momentum toward a full proof.
+
+REPRODUCIBILITY AND COVERAGE
+
+The compilation consolidates substantively distinct claims from the saved
+record through pass 52 and the final audit. Repeated computations and
+alternate proofs are grouped with their parent result. The companion archive
+retains individual files and a machine-readable manifest. This is not an
+export of every chat turn; exploratory remarks with no saved mathematical
+record cannot be certified by this inventory.
+
+No mathematical search or lengthy experiment was rerun merely for this
+handoff. Saved test outputs are historical evidence with the scope stated
+in their notes. Some verifiers need only Python's standard library; others
+use SymPy, Spherogram/SnapPy, Regina, NetworkX, NumPy, or Sage. Package
+versions and all historical environments were not reconstructed here.
+Some scripts write their JSON outputs in place; use an extracted copy.
+
+External full-text papers are cited by public URL and excluded from the
+evidence bundle. Duplicate unpacked archives, caches, rendered page images
+and very large raw search outputs are omitted. The manifest records which
+workspace files were included or omitted and why. Hashes establish snapshot
+identity, not mathematical correctness.
+
+END OF FRONT MATTER

@@ -1,0 +1,30 @@
+# work/pass4
+
+[Archive index](../ARCHIVE_INDEX.md)
+
+These are historical source files, not automatically endorsed or portable.
+
+- [work/pass4/braid_locus_audit.json](../../archive/work/pass4/braid_locus_audit.json)
+- [work/pass4/braid_locus_audit.py](../../archive/work/pass4/braid_locus_audit.py)
+- [work/pass4/braid_notes.md](../../archive/work/pass4/braid_notes.md)
+- [work/pass4/braid_ren_cable.json](../../archive/work/pass4/braid_ren_cable.json)
+- [work/pass4/braid_ren_cable.py](../../archive/work/pass4/braid_ren_cable.py)
+- [work/pass4/homology_full_family.json](../../archive/work/pass4/homology_full_family.json)
+- [work/pass4/homology_full_family.py](../../archive/work/pass4/homology_full_family.py)
+- [work/pass4/homology_full_family_notes.md](../../archive/work/pass4/homology_full_family_notes.md)
+- [work/pass4/homology_ren_satellite.json](../../archive/work/pass4/homology_ren_satellite.json)
+- [work/pass4/homology_ren_satellite.py](../../archive/work/pass4/homology_ren_satellite.py)
+- [work/pass4/homology_ren_satellite_notes.md](../../archive/work/pass4/homology_ren_satellite_notes.md)
+- [work/pass4/homology_taylor_audit.json](../../archive/work/pass4/homology_taylor_audit.json)
+- [work/pass4/homology_taylor_audit.py](../../archive/work/pass4/homology_taylor_audit.py)
+- [work/pass4/ren_jones_locus.json](../../archive/work/pass4/ren_jones_locus.json)
+- [work/pass4/ren_jones_locus.py](../../archive/work/pass4/ren_jones_locus.py)
+- [work/pass4/ren_moments.json](../../archive/work/pass4/ren_moments.json)
+- [work/pass4/ren_moments.py](../../archive/work/pass4/ren_moments.py)
+- [work/pass4/tangle_notes.md](../../archive/work/pass4/tangle_notes.md)
+- [work/pass4/tangle_ren_geometry.json](../../archive/work/pass4/tangle_ren_geometry.json)
+- [work/pass4/tangle_ren_geometry.py](../../archive/work/pass4/tangle_ren_geometry.py)
+- [work/pass4/tangle_ren_site_map.json](../../archive/work/pass4/tangle_ren_site_map.json)
+- [work/pass4/tangle_ren_site_map.py](../../archive/work/pass4/tangle_ren_site_map.py)
+- [work/pass4/tangle_ren_twists.json](../../archive/work/pass4/tangle_ren_twists.json)
+- [work/pass4/tangle_ren_twists.py](../../archive/work/pass4/tangle_ren_twists.py)

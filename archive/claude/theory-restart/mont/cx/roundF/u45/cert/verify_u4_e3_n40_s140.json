@@ -1,0 +1,18 @@
+{
+ "files": [
+  "cert/u4_e3_n40_s140.jsonl.gz"
+ ],
+ "records_total": 6775,
+ "sampled": 6775,
+ "fraction": 1.0,
+ "seed": 308,
+ "records_pass": 6775,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 6775
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 6775
+ },
+ "secs": 103.9
+}

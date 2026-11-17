@@ -1,0 +1,142 @@
+TWO TAYLOR COEFFICIENTS EXCLUDE ENTIRE TWO-BAND TWIST FAMILIES
+31 October 2026, America/Chicago
+
+RESULT
+
+For 16 certified marked presentations from the stored EKT LLL(1) band
+experiment, the only integer twist pair with Jones polynomial one is
+(m,n)=(0,0), whose knot is an actual unknot. The proof includes arbitrarily
+large positive, negative, and opposite twists. It uses a short vanishing-
+order argument, with no bound on the parameters and no case enumeration.
+
+These are 16 marked records, not a claim of 16 distinct isotopy classes of
+families. Six other stored constructions remain unresolved as marked
+two-site families. This does not prove general Jones unknot detection.
+No novelty or independent expert endorsement is claimed.
+
+GENERAL ALGEBRAIC STATEMENT
+
+Let an oriented knot K_00 with Jones polynomial one have two disjoint
+antiparallel full-twist sites. Use x=sqrt(t), delta=-x-x^-1, z=x^-4.
+Orient all smoothings by the original knot. Let S1 and S2 be the Jones
+polynomials after cutting respectively band 1 or band 2, and suppose the
+double cut has polynomial delta^2. Set P1=S1-delta and P2=S2-delta.
+
+The normalized two-strand twist operator has eigenvalues 1 and z. Its
+skein expansion at the two disjoint sites gives, for all integers m,n,
+
+ delta*(V(K_mn)-1)
+   = z^n*(1-z^m)*P1 + z^m*(1-z^n)*P2.                    (1)
+
+The statement covers negative integers because the operator is invertible.
+Both local twist conventions must use the stated z; reversing a local
+convention reverses that parameter.
+
+PROPOSITION
+If P1 and P2 are nonzero and have different orders of vanishing at x=1,
+then V(K_mn)=1 if and only if m=n=0.
+
+Proof. If m,n are both nonzero, 1-z^m and 1-z^n each have a simple zero
+at x=1. Multiplication by z^m or z^n does not change vanishing order.
+Thus the two terms on the right of (1) have different vanishing orders
+and cannot cancel identically. If exactly one parameter is zero, the
+remaining term is nonzero in the Laurent polynomial integral domain.
+At m=n=0 the original knot has Jones polynomial one. This proves the claim.
+
+No surgery, positivity, or rank-one hypothesis is needed for this proposition.
+
+THE CONCRETE FINITE CERTIFICATE
+
+In every certified presentation, P1 and P2 have orders 3 and 2, in one
+order or the other. Their first nonzero Euler derivatives at x=1 are
+respectively -288 and either +96 or -96. These are computed exactly from
+the Laurent coefficients using
+
+ (x*d/dx)^j P(1) = sum_e coefficient(P,e)*e^j.
+
+When all earlier derivatives vanish, this first nonzero Euler derivative
+equals the corresponding ordinary derivative.
+
+Label the order-3 site first and the order-2 site second. Then
+
+ V(K_mn)'''(1) = -6*n*P2''(1).
+
+If the full polynomial is one, this derivative vanishes, forcing n=0.
+On that axis,
+
+ V(K_m0)''''(1) = -8*m*P1'''(1) = 2304*m,
+
+which forces m=0. For the previously studied marked pair, these two
+expressions are 576*n and, after n=0, 2304*m. Thus just two finite-type
+coefficient conditions close the entire integer parameter search for
+these presentations.
+
+GEOMETRIC VERIFICATION AND LIMITS
+
+The certified records have indices
+  1,3,5,6,7,8,9,10,11,12,13,14,15,16,19,20.
+Each pair was reconstructed as disjoint embedded band rectangles on the
+original LLL(1) diagram, with cyclic-port rotations and component
+orientations tracked. The simultaneous zero-twist anchor is planar and
+simplifies to a zero-crossing, one-component unknot diagram. The initial
+band framings are retained; m,n add full twists to those marked bands.
+
+All 48 partial/double-cut polynomials were independently checked with a
+Kauffman-bracket state sum. All 32 directly constructed single-twist
+corners satisfy the exact normalized recurrence with z=x^-4. The double
+cut is delta^2 in the induced orientation in every case. These checks
+establish the geometric inputs; equation (1) proves the all-integer
+conclusion, rather than extrapolating from the checked corners.
+
+Records 0,2,4,17,18,21 remain unresolved as marked two-site families.
+Their second bands pass through a face opened by the first fusion.
+Simply transferring endpoint labels back produces nonplanar diagrams,
+so that transfer was rejected. The original zero-parameter knots remain
+verified unknots. No conclusion about their full twist families is made.
+
+AN EXACT FALLBACK WHEN THE VANISHING ORDERS AGREE
+
+There is a second finite test for qualifying pairs whose double-cover
+surgery matrix, based at the actual unknot, has rank one:
+
+ B=d*v*v^T, with v=(v1,v2) primitive and both entries nonzero.
+
+Put a=v2^2 and b=v1^2. The signed determinant evaluation forces every
+Jones-one point onto (m,n)=(a*k,-b*k). With R=P1/P2, a nonzero such point
+must satisfy the entire rational-function identity
+
+ R = z^(a*k)*(z^(b*k)-1)/(z^(a*k)-1).
+
+Taking a logarithmic derivative at x=i determines its only possible k:
+
+ k* = -i*R'(i) / (2*(a+b)*R(i)).
+
+R is regular and nonzero there under these hypotheses. If k* is not a
+nonzero integer, the anchor is the only Jones-one point. Otherwise one
+exact Laurent identity tests the sole remaining pair. This gives at most
+one non-anchor point, not a theorem that this point always fails or is
+topologically nontrivial. Zero matrix entries and rank-zero matrices need
+separate treatment.
+
+For the previously studied pair, a=b=1 and k*=-1/4, independently
+excluding every nonzero integer pair. Equal vanishing orders or an
+integer k* alone never certifies a geometrically realized counterexample.
+
+RESEARCH CONSEQUENCE
+
+The 16 certified presentations require no further twist searches. The
+unequal-order proof does not apply to every possible band presentation,
+and general unknot detection remains unresolved. Formal polynomial
+examples can pass the determinant and normalization tests while allowing
+a second Jones-one parameter; realizing such data by actual embedded
+bands is an additional problem, not something the algebra establishes.
+
+The twisting skein relation is standard; a primary treatment is Lemma 2
+of Ribbon knot families via Stallings' twists:
+https://www.cambridge.org/core/services/aop-cambridge-core/content/view/82437148D37FEF30ED1C6155174B382C/S1446788700032961a.pdf
+The starting link construction is from Eliahou–Kauffman–Thistlethwaite,
+Infinite families of links with trivial Jones polynomial, Section 4.3:
+https://homepages.math.uic.edu/~kauffman/ekt.pdf
+
+The accompanying evidence contains the marked diagrams, full coefficients,
+exact checks, and the separate geometric and algebraic audit notes.

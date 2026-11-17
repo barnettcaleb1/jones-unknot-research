@@ -1,0 +1,17 @@
+braid relations, inverses, Gram contravariance: OK
+e1,e2,e4,e5 kill v_c: OK
+T_c=(s1 s2)^3 = A^-6 on span(D1..D4), A^6 on v_c: OK  => T_c = A^-6 (1 + (A^12-1) P_c)
+H(v~,v~) = Delta_2^2 Delta_3, i.e. H(v_c,v_c) = Delta_3 = -1A^6 -1A^2 -1A^-2 -1A^-6
+H invariant under braid action: OK
+sigma3                 H(v~,g v~): top 3, bottom -17, span 20, #terms 6 i=2
+r(c, sigma3 c) = 1/[3]^2 exactly
+sigma3^2               H(v~,g v~): top 12, bottom -20, span 32, #terms 9 i=4
+sigma3^3               H(v~,g v~): top 13, bottom -23, span 36, #terms 10 
+sigma3^4               H(v~,g v~): top 14, bottom -26, span 40, #terms 11 i=8
+sigma3^5               H(v~,g v~): top 15, bottom -29, span 44, #terms 12 
+sigma3^6               H(v~,g v~): top 16, bottom -32, span 48, #terms 13 i=12
+(s3 s4^-1)^1           H(v~,g v~): top 2, bottom -18, span 20, #terms 6 pA on disk{3,4,5}: i ~ 2.618^k
+(s3 s4^-1)^2           H(v~,g v~): top 14, bottom -22, span 36, #terms 9 pA on disk{3,4,5}: i ~ 2.618^k
+(s3 s4^-1)^3           H(v~,g v~): top 18, bottom -26, span 44, #terms 10 pA on disk{3,4,5}: i ~ 2.618^k
+(s3 s4^-1)^4           H(v~,g v~): top 22, bottom -30, span 52, #terms 10 pA on disk{3,4,5}: i ~ 2.618^k
+(s3 s4^-1)^5           H(v~,g v~): top 26, bottom -34, span 60, #terms 15 pA on disk{3,4,5}: i ~ 2.618^k

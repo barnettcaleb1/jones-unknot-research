@@ -1,0 +1,58 @@
+{
+  "configuration_ids": [
+    153848,
+    154178
+  ],
+  "exponents": [
+    1,
+    0
+  ],
+  "raw_signs": [
+    1,
+    -1
+  ],
+  "shared_source1_point_id": 69,
+  "moving_source0_point_ids": [
+    796,
+    797
+  ],
+  "source_vertex_index": 1111,
+  "target_loop_index": 0,
+  "target_segment_index": 14,
+  "target_segment_is_retraced_connector": false,
+  "triangle_vertices": [
+    [
+      "2375447/1213200",
+      "13/50"
+    ],
+    [
+      "19885/10156",
+      "660/2539"
+    ],
+    [
+      "74169/37880",
+      "13/50"
+    ]
+  ],
+  "triangle_vertices_decimal": [
+    [
+      1.958001153972964,
+      0.26
+    ],
+    [
+      1.957955888144939,
+      0.2599448601811737
+    ],
+    [
+      1.9579989440337908,
+      0.26
+    ]
+  ],
+  "twice_signed_area": "-7/57445020000",
+  "interior_target_base_crossings_by_either_source_arc": 0,
+  "interior_source_side_crossings_by_either_target_loop": 0,
+  "punctures_in_bounding_box": 0,
+  "fixed_configuration_point_in_bounding_box": false,
+  "conclusion": "This is an embedded empty local bigon. Its ordinary Reidemeister-II intersection removal pairs the two configuration intersections with opposite local sign and zero change of both deck exponents. It is a lobe-edge bigon, not cancellation from a retraced target connector, and it does not identify a separating disk for the tangle.",
+  "why_empty": "The sides form a simple triangle. Exact intersection tests show no other supporting curve enters across its boundary; all punctures and all supporting-curve endpoints are outside. The source arcs are embedded and mutually disjoint by the ambient PL homeomorphism certificate."
+}

@@ -1,0 +1,37 @@
+== sanity: reduced Khovanov homology of 2-bridge closures via HF(arc, Cone_H(arc)) ==
+HF(a(0), Kh(Q_-1)): dim=1  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0)
+    chi = +q^0   [#terms abs-sum = 1]
+HF(a(0), Kh(Q_1)): dim=1  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0)
+    chi = +q^0   [#terms abs-sum = 1]
+HF(a(0), Kh(Q_-2)): dim=2  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0)
+    chi = +q^0 +q^4   [#terms abs-sum = 2]
+HF(a(0), Kh(Q_2)): dim=2  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0)
+    chi = +q^0 +q^4   [#terms abs-sum = 2]
+HF(a(0), Kh(Q_-3)): dim=3  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0) (6,3,0)
+    chi = +q^0 +q^4 -q^6   [#terms abs-sum = 3]
+HF(a(0), Kh(Q_3)): dim=3  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (6,3,0)
+    chi = +q^0 -q^2 -q^6   [#terms abs-sum = 3]
+HF(a(0), Kh(Q_-4)): dim=4  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0) (6,3,0) (8,4,0)
+    chi = +q^0 +q^4 -q^6 +q^8   [#terms abs-sum = 4]
+HF(a(0), Kh(Q_4)): dim=4  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (8,4,0)
+    chi = +q^0 -q^2 +q^4 +q^8   [#terms abs-sum = 4]
+HF(a(0), Kh(Q_-5)): dim=5  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (4,2,0) (6,3,0) (8,4,0) (10,5,0)
+    chi = +q^0 +q^4 -q^6 +q^8 -q^10   [#terms abs-sum = 5]
+HF(a(0), Kh(Q_5)): dim=5  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0) (2,1,0) (4,2,0) (6,3,0) (10,5,0)
+    chi = +q^0 -q^2 +q^4 -q^6 -q^10   [#terms abs-sum = 5]
+HF(a(inf), Kh(Q_-3)): dim=1  delta-values(rel)=['0']  thin=True
+    (q,h,delta) rel: (0,0,0)
+    chi = +q^0   [#terms abs-sum = 1]
+HF(a(0), Kh(Q_0)): dim=2  delta-values(rel)=['0', '1']  thin=False
+    (q,h,delta) rel: (0,0,0) (2,0,1)
+    chi = +q^0 +q^2   [#terms abs-sum = 2]

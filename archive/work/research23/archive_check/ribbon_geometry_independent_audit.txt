@@ -1,0 +1,57 @@
+INDEPENDENT CRITICAL AUDIT: SAME-GENUS RIBBON MOVIES
+1 November 2026.
+
+Verdict: the one-birth/one-saddle endpoint lemma and the three-component-level obstruction are sound. The Whitehead example also supplies the claimed sharp two-birth count, with the explicit parallel-copy construction described below. None of these facts requires equal Jones polynomials, and none excludes arbitrary multi-band same-genus ribbon concordances.
+
+1. The exact equality-case input really is available
+
+Miyazaki, When is a band-connected sum equal to the connected sum?,
+https://arxiv.org/html/1903.11266
+Proof of Lemma 5, first paragraph, states that genus equality
+  g(K0 #_b K1)=g(K0)+g(K1)
+provides a Seifert surface formed from b and disjoint minimal-genus Seifert surfaces for the summands, citing Gabai and Scharlemann. The proof invokes the connected-sum hypothesis only to obtain that genus equality at this step. Its stronger subsequent conclusions are unnecessary here.
+
+A one-birth/one-saddle ribbon concordance J -> K presents K as the band sum of J and a split unknot U. Link isotopies after the birth preserve splitness. If g(K)=g(J), the equality-case surface supplies a disk D for U with interior disjoint from the band and the other Seifert surface. A sufficiently small regular neighborhood of D is a ball disjoint from J. Its boundary meets the band in one cocore. This is a splitting sphere exhibiting a trivial band. Equivalently, the disk joined to the band gives a disk across which the detour in J can be isotoped. Thus K is isotopic to J.
+
+Miyazaki's proof of Theorem 1, Case 1, is exactly this disk-neighborhood argument. There is no illicit inference that arbitrary bands between two positive-genus summands are trivial when their genera add. The unknot summand is essential to this short proof.
+
+Scope: this proves equality of endpoint knot types. It is unnecessary here to assert that every such concordance is ambiently isotopic, rel boundary, to the product concordance; no such strengthening is used or audited.
+
+2. The movie-width consequence is a separate valid argument
+
+Take a generic ribbon Morse movie of a connected orientable annulus between knots, with b births, s_m merging saddles, and s_s splitting saddles. There are no maxima. Euler characteristic and component count give
+
+  b-s_m-s_s=0,
+  b-s_m+s_s=0.
+
+Thus s_s=0 and s_m=b: all saddles merge components. If every regular level has at most two components, after each birth the next critical point must be a merge, because another birth would create three components. The movie therefore factors into knot-to-knot one-birth/one-saddle stages, interspersed with isotopies. Genus is nondecreasing at every stage by band-sum genus superadditivity. Equal endpoint genera force equality at every stage, so the preceding lemma makes all stage endpoints isotopic.
+
+Contrapositive: every ribbon Morse movie between DISTINCT equal-Seifert-genus knots has a regular level containing at least three components, and has at least two births. This quantifies over every ribbon movie, not over arbitrary concordance movies with maxima or positive-genus cobordisms. It does not assert a prescribed ordering of births in a general ribbon movie.
+
+3. Sharpness: why the satellite movie has exactly two births and two saddles
+
+Use J=trefoil and R=stevedore 6_1. Owens--Swenton display an explicit single band taking R to the two-component unlink (Figure 1 and text on printed p2):
+https://www.maths.gla.ac.uk/~bowens/papers/ribbonalg.pdf
+Reverse that band and cap one of the two initial unknots to obtain U -> R with one birth and one saddle. Taking connected sum with the product concordance of J yields J -> J#R with that same critical-point count.
+
+For the satellite count, choose a time-monotone arc on this annulus, disjoint from its critical points, and a narrow rectangle around it. Such an arc follows the component descended from the original J through the movie; since all saddles merge, it can avoid each critical point. Present the untwisted Whitehead pattern by cutting along a meridian disk with exactly two intersection points. Away from the corresponding tangle box, it has two geometric parallel strands. Take two sufficiently close normal parallel copies of the concordance outside the chosen rectangle. Replace the rectangles by the fixed cut-open Whitehead tangle times the time interval.
+
+Each parallel copy has one minimum and one saddle, because a sufficiently small normal perturbation preserves a Morse critical point and its index. The inserted product tangle is a submersion to time, so it adds no critical points. The pattern's turning strands lie in this product region; winding number zero does not remove the two geometric copies. Choose the normal framing extending the endpoint Seifert zero framings. The result is therefore a ribbon annulus
+
+  Wh_0(J) -> Wh_0(J#R)
+
+with exactly TWO births and TWO merging saddles, and no maxima. This is a handle-count refinement of satellite preservation, not a count obtained from algebraic winding number.
+
+Baker's Remark 6 explicitly states satellite preservation of ribbon concordance and the nonisotopy of the corresponding Whitehead doubles:
+https://arxiv.org/pdf/1409.7646
+The source cites Kawauchi for preservation and Kouno--Motegi / JSJ for distinction. It does not itself state the critical-point count; the preceding geometric construction supplies that count.
+
+Both outputs have the standard genus-one Whitehead surfaces. Since their nontrivial companions give essential companion tori, both outputs are nontrivial and hence have genus exactly one. They are distinct: J has trefoil exterior, while J#R has the additional composite-companion JSJ structure. The Whitehead exterior is attached along the distinguished outer companion torus; the two resulting JSJ structures differ. This is also covered by the Whitehead-double nonisotopy statement cited by Baker.
+
+Consequently no zero-birth or one-birth ribbon movie connects these two endpoints, whereas the displayed construction uses two. The minimum birth count is exactly two. Its maximum regular-level component count is at most three (there are only two births total), and the general lower bound forces that maximum to be exactly three. Thus both lower bounds are sharp for actual ribbon concordances.
+
+No claim is made that the Whitehead endpoints have equal Jones polynomials. The example defeats an unrestricted same-genus obstruction and demonstrates why knot-to-knot one-band factorization need not exist.
+
+4. Editorial issue found and already reported
+
+The previous version said all seven remaining candidate classes could pass the one-band algebraic test. One of them, the 13n5018 / 13n1003 mirror class, has rational reduced rank difference 10 and already requires bar length at least two. The geometry adds a one-band obstruction for the other six classes as well. The parent and geometry agent have corrected that wording. This does not affect any of the topology above.

@@ -1,0 +1,22 @@
+PASS41 COMPLETED: FORMAL COMPONENT REMOVAL IS IMPOSSIBLE
+
+No generic proof and no nontrivial Jones-one knot. User-facing result:
+outputs/jones-component-removal-obstruction.txt
+
+Do not reopen H/delta realization: two disjoint band moves from its
+determinant-one anchor would require surgery matrix [[0,b],[b,0]] with
+absolute determinant8, impossible. The proof is exact and independently
+audited; it does not assume Jones detection or anchor isotopic to U.
+
+Root replayed verify_pairing.py and verify_auxiliary_pairing.py successfully.
+Boundary-braid pairing classification is recorded in pairing.txt but not
+needed for the short user-facing obstruction.
+
+LL2(2) split-union LLL(1) passes the four-band homological/linking-form
+gate (surgery_gate.txt and ll2_auxiliary_pairing.json). This supplies no
+bands, equivariant realization, Jones-one knot or nontriviality proof.
+Do not launch an unconstrained band enumeration just because this
+necessary test passes. No active subagent work remains.
+
+The persistent goal remains unachieved. Do not describe exclusion of a
+proposed construction as a proof of the general conjecture.

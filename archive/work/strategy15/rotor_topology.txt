@@ -1,0 +1,125 @@
+ROTOR-UNKNOT TOPOLOGY: WHAT COMPRESSIBILITY GIVES, AND WHERE SYMMETRY FAILS
+
+Status: focused strategic pass following the proved boundary-parallel C4 rotor obstruction. No proof that every unknot rotant is trivial. Two exact reductions and an explicit counterexample to a tempting intermediate implication are obtained below.
+
+1. THE NATURAL PROOF ATTEMPT
+
+Write an unknot as U=R union S across a sphere meeting U in eight points, where R is an actual C4 rotor. In the unknot exterior E(U), that sphere becomes an eight-holed sphere F. Since pi_1(F) is free of rank seven and pi_1(E(U))=Z, F cannot be pi_1-injective. The loop theorem therefore supplies a compressing disk for F. Its interior lies entirely in one of the two complementary tangle exteriors.
+
+If there is a compression in the rotor exterior, its C4 action is available. Equivariant loop/disk theorems can be applied there, subject to the usual equivariant boundary-curve hypotheses. This may produce a useful invariant decomposition. It does not immediately produce bridge disks or imply that all four arcs are boundary-parallel.
+
+If the rotor exterior is incompressible along F, every compressing disk for F lies in the stator exterior. The rotor action is not defined on that exterior. One cannot rotate the disk, average it, or invoke an equivariant theorem there. This is the central gap in the naive argument.
+
+Unknot completion alone does not force a tangle to be inessential. Nogueira--Salgueiro exhibit essential unknottable tangles and characterize unknottable two-string tangles by punctured spanning disks, rather than disjoint bridge disks (Section 2, Figure 2; Theorem 3.2). Their distinction is directly relevant: holes in the planar spanning pieces are actual missing information, not removable by an automatic innermost-circle argument on the rotor side.
+
+2. EXPLICIT FAILURE OF AUTOMATIC GLOBAL ROTATION EXTENSION
+
+The following example already uses a completely trivial rotor, so no difficult knot recognition is involved.
+
+Label eight equatorial endpoints 0,...,7 cyclically; rho sends i to i+2 modulo 8. Let the rotor R consist of four standard small caps with pairing
+
+    R: (0,1), (2,3), (4,5), (6,7).
+
+It is literally C4 invariant. The complementary planar caps
+
+    S0: (1,2), (3,4), (5,6), (7,0)
+
+complete R to a planar unknot. Take an orientation-preserving homeomorphism h of the rotor ball that exchanges its first two trivial cap components and fixes the other two. On the endpoints, choose
+
+    pi=(0 2)(1 3).
+
+Such a cap exchange is realized by moving two small bridge-disk neighborhoods around one another. It preserves R as a set. Extend its boundary map over the complementary ball, obtaining an orientation-preserving homeomorphism of S3. The image of the completed link is still the unknot and its rotor is still R. Its stator S1 has pairing
+
+    S1: (0,3), (1,4), (5,6), (2,7).
+
+This pairing is not rho-invariant: for example rho sends (0,3) to (2,5), which is not a strand pairing of S1. Therefore NO homeomorphism of the stator pair can restrict to rho on its boundary. In particular there is no global C4 action preserving this unknot and agreeing with the given rotor action.
+
+This disproves the bridge
+
+    unknot completion + local rotor symmetry
+        => extension of that symmetry across the stator.
+
+It does not disprove unknot preservation by flipping. Indeed this rotor is covered by the previous boundary-parallel obstruction, so its flip is harmless despite the failure of the global rotation extension. A proof must allow this distinction.
+
+3. EXACT QUOTIENT DESCRIPTION OF THE NONTRIVIAL SECTOR
+
+For any actual C4 rotor with four arcs and no closed components, the four strands form one free orbit. The argument in strategy14 applies without boundary-parallelity: a nontrivial strand stabilizer has order at most two; its fixed midpoint would lie on the rotation axis and hence on a distinct rotated strand, impossible.
+
+Quotient the rotor ball by C4. The quotient is a ball with one distinguished branch arc Z_bar, the image of the rotation axis, and one other proper arc gamma, the image of the four rotor strands. Thus the rotor is exactly the fourfold cyclic branched lift, along Z_bar, of a distinguished two-string tangle
+
+    Q=(ball; Z_bar union gamma).
+
+The standard rotor flip descends to the Conway involution exchanging the ends of Z_bar and exchanging the ends of gamma. The boundary-parallel rotor theorem follows when equivariant bridge disks make the quotient arc boundary-parallel off the branch arc.
+
+More generally, a boundary-compatible realization of this flip as a symmetry of Q, preserving the distinguished branch arc and its cyclic covering data, lifts and makes the rotor flip harmless for every stator. This is a valid early rejection test for a proposed quotient tangle. Merely knowing a symmetry of the underlying unmarked ball or of the endpoint permutation is insufficient.
+
+The unknot completion upstairs does not descend to a completion of Q unless the stator also carries compatible cyclic covering data. Section 2 gives a concrete reason that it need not.
+
+4. A PRECISE SUFFICIENT BRIDGE WORTH TESTING
+
+Let Ext(R) and Ext(S) be the subgroups of the mapping class group of the eight-marked boundary sphere consisting of maps extending over the respective ball--tangle pairs. With consistent gluing conventions, membership of the rotor flip mu in Ext(S) Ext(R) is sufficient to absorb the regluing on the two sides and preserve the completed knot. This is a sufficient criterion, not asserted necessary: an isotopy of completed knots may move the decomposing sphere.
+
+A possible stronger theorem to pursue is:
+
+    For a C4-invariant rotor R admitting an unknot completion S,
+    the standard flip belongs to Ext(S) Ext(R).
+
+The old boundary-parallel result proves the simpler condition mu in Ext(R). The new proposed statement must be obtained from the placement of a spanning disk, not from automatic extension of rho. It is currently unproved. Even the existence of a compression for F is substantially weaker than the required product membership.
+
+The decisive first test is geometric, rather than another Jones calculation: take a genuinely non-boundary-parallel quotient tangle Q, certify an unknot completion of its cyclic lift, and compute whether the flip can be absorbed by the two extension groups or by a controlled sequence of disk trades. If it can, that provides a family theorem. If it cannot, one still needs a separate nontriviality certificate for the flipped closure; failure of this sufficient criterion is not such a certificate.
+
+5. LITERATURE SCOPE
+
+The broad question whether a nontrivial rotant of the unknot exists was explicitly posed by Anstee--Przytycki--Rolfsen as Question 3.5. Their paper supplies polynomial preservation for the appropriate rotor orders; it does not supply the missing topological statement. MacColl later exhibits rotants distinguished by Khovanov homology, so the general operation is not confined to ordinary mutation or isotopy.
+
+Primary sources:
+
+Anstee--Przytycki--Rolfsen, Knot polynomials and generalized mutation, Question 3.5:
+https://arxiv.org/abs/math/0405382
+
+Nogueira--Salgueiro, On embeddings of 2-string tangles into the unknot, the unlink and split links, especially Section 2, Figure 2, and Theorem 3.2:
+https://www.mat.uc.pt/preprints/ps/p2033.pdf
+
+Meier--Scott, Equivariant Trisections for Group Actions on Four-Manifolds, Section 3.2 and Lemma 3.9, for the equivariant bridge-disk statement used in the previous result:
+https://arxiv.org/html/2501.17999v1
+
+MacColl, Rotors in Khovanov Homology:
+https://doi.org/10.4153/CMB-2015-034-6
+
+STRATEGIC VERDICT
+
+The solid-torus argument correctly produces compressibility but does not solve the rotor problem. Automatic global symmetry is actually false. The remaining useful topology is the distinguished two-string quotient together with a genuinely nonsymmetric completion upstairs. A generic proof would need a new theorem controlling that completion, or a spanning-disk argument proving flip absorption without extending the rotation. No such theorem was established in this pass.
+
+APPENDIX: A DIRECT REDUCTION TO BOUNDARY-PARALLEL STATORS
+
+Status: the elementary induction received an independent audit from the tangle agent, including the precise connected-sum gluing below. It was not found as a named equivariant Fox theorem in the bounded literature search. Do not attribute it to Fox without a precise reference. It does not imply that the rotor itself is boundary-parallel or that the rotor rotation extends across the new stator.
+
+Claim. Every n-string tangle R that embeds in the unknot has SOME boundary-parallel n-string tangle S' such that R union S' is the unknot, with the original marked R held fixed.
+
+Proof by induction on n.
+
+Base n=1: a sphere meeting an unknot in two points cuts it into two unknotted arcs. Equivalently, a connected-sum decomposition of the unknot has two unknot summands. Hence the original complementary one-string tangle is already boundary-parallel.
+
+For n>=2, start from any unknot completion U=R union S. Its punctured splitting sphere F has free fundamental group of rank 2n-1, and the unknot exterior has fundamental group Z. Therefore F has a compressing disk. This disk lies in one tangle ball, is disjoint from its strands, and cuts that ball into two balls. Each side contains a nonempty proper subset of strands: the boundary circle is essential on F, and a strand cannot have endpoints on opposite sides of a disk disjoint from it. Write the two strand counts as n1,n2, where n1+n2=n and 1<=ni<n.
+
+Case A: the compression lies in the stator S.
+
+It splits S into tangles S1 in B1 and S2 in B2. Consider the COMPLEMENTARY tangle T1=U intersect (S3 minus int B1). It has n1 strands and is unknot-completable by S1. By the induction hypothesis for n1, T1 has a boundary-parallel completion S1'. Replace S1 by S1'. This keeps R, S2, and the exterior of B1 fixed and the whole knot remains the unknot. Now apply the same argument to the n2-string tangle complementary to B2 in the NEW unknot, replacing S2 by a boundary-parallel S2'. Since S1' and S2' occupy the two balls separated by the original compression disk, their union is boundary-parallel in the original stator ball. Thus the desired S' has been obtained.
+
+The quantifier is crucial: induction is applied to the complement of each small stator piece, not to that piece itself. Hence it supplies a replacement of the small piece while leaving the original rotor fixed.
+
+Case B: the compression lies in R.
+
+It presents R as the disk sum of R1 and R2 with ni strands each. Each Ri embeds in the original unknot and hence, by induction, has a boundary-parallel completion Si' to an unknot Ui. Form the standard connected sum U1#U2 using a band entirely on the stator side, with the rotor balls joined along their empty attaching disks. Their disk sum is the original marked R, and U1#U2 is the unknot.
+
+For explicit control of the stator, choose disjoint boundary shadows for all arcs of Si'. Those shadows may be chosen to avoid the empty disk used to attach the rotor balls. Choose one stator arc on each side and perform the connected-sum splice along the new boundary neck. The new shadows replace portions of those two arcs by two parallel runs through the neck, leaving all other shadows unchanged. They remain disjoint boundary arcs. Pushing them into the exterior collar exhibits the new n-string stator as boundary-parallel. No band runs through the rotor or its strands.
+
+Equivalently, use the joining operation in Nogueira--Salgueiro's Theorem 2.3(a), Figure 1: it joins the two unknot completions by one crossing on the stator side. Starting from boundary-parallel closure tangles, this crossing is an endpoint half-twist supported in a boundary collar. Applying a boundary braid to a boundary-parallel tangle preserves boundary-parallelity, since it is the image of that tangle under a homeomorphism of its ball. This supplies another description of the same gluing step.
+
+For avoidance of an arbitrary-band-sum gap, take an embedded boundary rectangle crossing the neck exactly once and avoiding all other shadows. Such a rectangle exists because the complement of the shadow forest is connected. Perform the untwisted surgery on this rectangle and its pushed-in counterpart. The two Ui lie in separate enlarged balls, and this single-neck band is specifically the ordinary connected-sum band, not an arbitrary band joining an unlink. This completes the induction.
+
+Cover consequence. Let M be the branched double cover of R, with its specified deck involution j. The new completion has double cover S3 because the branch link is U. The complement of M is the double cover of a boundary-parallel n-tangle, hence a genus-(n-1) handlebody. Moreover j extends globally by construction. Thus the desired equivariant reembedding conclusion holds in THIS special setting, without assuming a general equivariant Fox theorem. It does not preserve or extend the rotor's separate C_n action on the complementary handlebody.
+
+Literature check. Fox's ordinary reembedding statement is recalled in Nakamura, Fox reimbedding and Bing submanifolds (2015):
+https://doi.org/10.1090/tran/6044
+That source alone does not include the needed equivariance. Nogueira--Salgueiro prove the ordinary closure fact that a disk union of unknottable tangles is unknottable (their Theorem 2.3 and Figure 1 in the preprint). Case B adds the explicit boundary-shadow observation to preserve triviality of the chosen completions.

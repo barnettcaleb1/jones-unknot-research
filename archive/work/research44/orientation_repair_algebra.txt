@@ -1,0 +1,163 @@
+PASS44: ORIENTATION-INDEPENDENT REPAIR OF THE CLASP-MACHINE ARGUMENT
+
+Outcome. The normalization F_L=x^{-3 ell(L)}V_L, ell=sum of pairwise
+linking numbers, genuinely removes the component-reorientation factor.
+Squaring H=F^2 also has a plausible and independently audited finite-type
+packaging (homology agent). Neither change removes a nonzero growing
+Laurent channel. Thus they cannot repair an L-independent machine
+compression theorem that is already obstructed by that channel.
+
+This is a statement about this proposed repair. It is not a theorem that
+all nonlinear finite-type arguments, or all possible corrected machines,
+are impossible.
+
+1. Normalization.
+
+Use x=A^-2, p=x-x^-1, delta=-x-x^-1, and the source convention
+
+                 x^-2 V_+ - x^2 V_- = p V_0.
+
+For an oriented diagram w=w_self+2 ell, hence
+
+ F_L=(-A^3)^(-w_self)<L>=A^(6 ell)V_L=x^(-3 ell)V_L.
+
+Reversing a component changes w and 2ell by the same amount, leaving
+w_self invariant. Thus F is independent of the orientations chosen for
+components. It is invariant under Reidemeister moves. On knots ell=0,
+so F=V. On knots H=F^2 has H=1 iff V=1: the Laurent ring is a domain,
+and V(1)=1 excludes V=-1. Neither normalization weakens the desired
+unknot-detection conclusion on the original knot.
+
+2. Exact skein relations for F.
+
+(a) Mixed crossing. Suppose the crossing is between distinct components,
+and their linking number in D_+ is m. Their linking in D_- is m-1.
+Oriented smoothing merges them. If ell_0 denotes total linking of D_0,
+then ell_+=ell_0+m and ell_-=ell_0+m-1. Substitution gives
+
+                  F_+ - x F_- = p x^(2-3m) F_0.           (M)
+
+(b) Self crossing. Smoothing splits one component into two. Let m be
+the linking number of those two new components in D_0. The original
+total linking is the same in D_+ and D_-, while ell_0=ell_++m. Therefore
+
+                  x^-2 F_+ - x^2 F_- = p x^(3m) F_0.      (S)
+
+These linking numbers are not determined by the local crossing picture.
+They can depend on the entire residual twist block. Replacing V by F in
+the paper's original local skein formulas, leaving coefficients unchanged,
+is therefore incorrect.
+
+Actual small checks, using the positive trefoil convention:
+ V_trefoil=x^2+x^6-x^8, V_U=1,
+ V_positiveHopf=-x-x^5, ell(Hopf)=1,
+ F_positiveHopf=-x^-2-x^2, F_U2=-x-x^-1.
+The Hopf-to-unlink mixed skein has m=1 and satisfies
+ F_Hopf-x F_U2=1-x^-2=p*x^-1.
+The trefoil unknotting self skein has smoothing Hopf with m=1 and obeys
+ x^-2 F_trefoil-x^2 F_U=p*x^3*F_Hopf.
+Thus even these actual links distinguish (M),(S) from the old recurrence.
+
+For the source's two-coordinate paired identity, write ell_st for total
+linking of each oriented state. The exact replacement is
+
+ x^(3ell_-+)F_-+ + x^(3ell_+-)F_+-
+   = x^(3ell_++-4)F_++ + x^(3ell_--+4)F_--
+     - p^2*x^(3ell_00)F_00.                               (P)
+
+If a,b in{0,1} specify whether the first and second crossings are mixed
+in the unsmoothed diagram, then ell_++=ell_--+a+b,
+ell_-+=ell_--+b, ell_+-=ell_--+a. Divide (P) by x^(3ell_--) to get
+
+ x^(3b)F_-+ + x^(3a)F_+-
+   = x^(3(a+b)-4)F_++ + x^4 F_--
+     - p^2*x^(3(ell_00-ell_--))F_00.
+
+The double-smoothing normalization still carries a global linking term.
+
+3. Squaring: what is repaired and what is changed.
+
+The homology agent independently checked that F itself fails the paper's
+finite-type claim at level0 because linking parity enters F(-1), whereas
+H=F^2 is even in x and its finite JVP coefficients are finite-type of the
+claimed bounded order. Also H(1)=4^(number_of_components-1), retaining
+the component-count distinction. This note does not claim a finite-type
+failure for H.
+
+But write either exact relation above as F_+=a F_-+b F_0. Then
+
+             H_+ - a^2 H_- - b^2 H_0 = 2ab F_- F_0.      (Q)
+
+For (M), a=x and b=p*x^(2-3m). For (S), a=x^4 and
+b=p*x^(3m+2). Equation(Q) is an exact polynomial identity. It identifies
+the additional product channel that is absent from the paper's linear
+three-state coefficient recursion. In characteristic zero the cross term
+does not disappear. Introducing tensor-product states may encode it, but
+then one must prove new geometric collapse and escape relations for them;
+the existing linear proof cannot simply be reused.
+
+4. General no-repair lemma for normalization and positive powers.
+
+Let T_m in Q(x) be Laurent polynomials for all m, and suppose
+
+                    T_m=A(x)+B(x)x^(d m),
+
+where A,B are NONZERO rational functions and d>0. Choose a common
+Laurent denominator q with a=qA,b=qB nonzero Laurent polynomials. For
+sufficiently large m their supports are disjoint, giving
+
+ span(T_m)=span(a+b*x^(d m))-span(q)=d m+O(1).
+
+Here span is largest minus smallest Laurent exponent; its additivity
+under multiplication uses the nonzero extreme coefficients in a domain.
+For any integer shifts e_m and any fixed positive integer s,
+
+                 span((x^(e_m)T_m)^s)=s*d*m+O(1).        (R)
+
+Thus arbitrary monomial reorientation and squaring cannot turn a genuine
+two-channel growing family into a bounded-span family. A JVP bound D in
+the basis{1,x}, p=x-x^-1, implies Laurent support in[-D,D+1], so(R)
+also excludes any uniform JVP-degree bound.
+
+Both channels matter: a single monomial-shifted channel could have fixed
+span and would not support this argument. The next calculation checks
+the two-channel premise rather than assuming it.
+
+5. Application to the previously audited source-machine identity.
+
+work/research36/operator_audit.txt derives, from the paper's DIRECT
+canceling-clasp reductions and double-smoothing identification,
+
+ T_m=C-p^2 R_m,
+ R_m=[x^2(x^4+1)+(1-x^6)x^(4m)]/(x^2+1),
+
+for the switched-trefoil unknot host. C is a fixed Laurent polynomial
+from the three directly reducible signed states. This derivation does
+not use the disputed G2 exceptional movie. It is NOT an independent full
+PD computation of this entire host-machine family; the stated direct
+clasp/double-smoothing geometric identifications are its explicit input.
+
+The two channels of T_m are
+
+ A=C-p^2*x^2(x^4+1)/(x^2+1),
+ B=-p^2*(1-x^6)/(x^2+1).
+
+B is nonzero. A cannot vanish for ANY Laurent C: at x=i the numerator
+p^2*x^2(x^4+1) is8, so the rational term has a genuine pole, while a
+Laurent polynomial has none there. Equivalently qA evaluated at i is-8
+and qB at i is8 for q=x^2+1. Thus both channels are rigorously nonzero.
+
+Consequently span(T_m)=4m+O(1). Whatever the actual integer linking
+number ell_m of this state, F_m=x^(-3ell_m)T_m has the same span and
+H_m=F_m^2 has span8m+O(1). The corrected reorientation invariant and its
+finite-type square therefore still violate a uniform degree-compression
+conclusion, conditional on exactly those source geometric identities.
+
+Scope of the verdict: fixing the G2 orientation error with F or H is a
+legitimate local change, but it leaves the full growing-channel problem
+untouched. Any successful repaired proof must alter or independently
+restrict the compression claim, not merely adjust normalization, square
+the invariant, or enlarge its numerical cap by a fixed amount. The host
+used here is a nonminimal unknot diagram; no new theorem specifically
+restricted to minimal diagrams of hypothetical nontrivial Jones-one knots
+is disproved by this example.

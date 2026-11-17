@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "label": 0,
+      "t_min": 0,
+      "t_max": 0,
+      "terms": 1
+    },
+    {
+      "label": 1,
+      "t_min": 1,
+      "t_max": 4,
+      "terms": 3
+    },
+    {
+      "label": 2,
+      "t_min": 2,
+      "t_max": 11,
+      "terms": 7
+    },
+    {
+      "label": 3,
+      "t_min": 3,
+      "t_max": 21,
+      "terms": 11
+    },
+    {
+      "label": 4,
+      "t_min": 4,
+      "t_max": 34,
+      "terms": 15
+    },
+    {
+      "label": 5,
+      "t_min": 5,
+      "t_max": 50,
+      "terms": 21
+    },
+    {
+      "label": 6,
+      "t_min": 6,
+      "t_max": 69,
+      "terms": 28
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "all_passed": true,
+  "checks": {
+    "R22 intertwines E": true,
+    "B22 is unramified": true,
+    "B22 fusion eigenpolynomial": true,
+    "B22 root is the 1|2 super flip": true,
+    "B22 root squares to identity": true,
+    "fusion p i is identity": true,
+    "inclusion intertwines E": true,
+    "inclusion intertwines F": true,
+    "projection intertwines E": true,
+    "projection intertwines F": true,
+    "fusion denominator is a root unit": true,
+    "mixed full twist quadratic identity": true,
+    "mixed inverse identity": true,
+    "mixed twist difference has the exact t+1 factor": true,
+    "mixed full twist root is color-two parity": true,
+    "normalized axis symbol is 3(T0-I)": true,
+    "normalized axis symbol is -6 Qodd": true,
+    "coevaluation intertwines E": true,
+    "coevaluation intertwines F": true,
+    "evaluation intertwines E": true,
+    "evaluation intertwines F": true,
+    "both snake matrix identities": true,
+    "color-two loop dimension is [3]": true,
+    "off-axis difference vanishes at the root": true,
+    "off-axis symbol creates the stated odd pair": true,
+    "local odd projector and off-axis symbol do not commute": true
+  },
+  "conventions": {
+    "t": "q^2=-exp(h)",
+    "q": "i exp(h/2)",
+    "s^2": "q+q^-1"
+  },
+  "offaxis_symbol_on_w1w1": [
+    "0",
+    "0",
+    "-2",
+    "0",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0"
+  ],
+  "odd_projector_commutator_on_w1w1": [
+    "0",
+    "0",
+    "-2",
+    "0",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0"
+  ],
+  "normalized_axis_symbol_diagonal": [
+    "-6",
+    "0",
+    "-6",
+    "-6",
+    "0",
+    "-6"
+  ]
+}

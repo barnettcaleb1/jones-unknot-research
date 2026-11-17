@@ -1,0 +1,36 @@
+sign pattern +1          : alpha=13 beta=-52 gamma=-8 eps=-20 -> bilinear on all 25 points: False
+sign pattern (-1)^(m+n)  : alpha=13 beta=26 gamma=-18 eps=-88 -> bilinear on all 25 points: True
+sign pattern (-1)^m      : alpha=13 beta=26 gamma=-8 eps=36 -> bilinear on all 25 points: False
+sign pattern (-1)^n      : alpha=13 beta=-52 gamma=-18 eps=124 -> bilinear on all 25 points: False
+
+V(-1) = (-1)^(m+n) * (13 + 26 m + -18 n + -88 m n)   (verified on all 25 grid points)
+det K(m,n) = |13 + (26) m + (-18) n + (-88) m n|
+  f = +1  <=>  (-88 m + -18) (-88 n + 26) = 588
+     divisors u of 588 have residues mod 88: [1, 2, 3, 4, 6, 7, 10, 12, 14, 20, 21, 28, 29, 30, 39, 42, 46, 49, 58, 59, 60, 67, 68, 74, 76, 78, 81, 82, 84, 85, 86, 87]; need u = 70 mod 88 -> absent
+  f = -1  <=>  (-88 m + -18) (-88 n + 26) = 764
+     divisors u of 764 have residues mod 88: [1, 2, 4, 15, 28, 30, 58, 60, 73, 84, 86, 87]; need u = 70 mod 88 -> absent
+
+Integer solutions of |f| = 1 (isolated): NONE
+Solution lines (infinite families): NONE
+No degenerate case arose (eps != 0 and both right-hand sides nonzero).
+Brute-force window |m|,|n| <= 5000: no solutions (consistent with the exact enumeration)
+n = 0 slice: det K(m,0) = |13 + 26 m| = 13 * |1 + 2 m|
+
+Mod 13: f = 13 + 26 m + -18 n + -88 m n  ==  0 + 0 m + 8 n + 3 m n  (mod 13)
+gcd of the 25 grid determinants: 1
+grid points with det NOT divisible by 13: 20 of 25, e.g. [((-2, -2), 355), ((-2, -1), 197), ((-2, 1), 119), ((-2, 2), 277), ((-1, -2), 153), ((-1, -1), 83)]
+Since 13 | alpha and 13 | beta, f == n * (8 + 3 m) (mod 13); 13 | det K(m,n)  <=>  n == 0 (mod 13) or m == 6 (mod 13).
+The two site functionals are therefore independent mod 13 (f is not identically 0 mod 13); the mod-13 colouring gate does NOT reject the family by itself.
+
+Cross-check of det = |V(-1)| against |Delta(-1)|:
+  K( 0, 0): |V(-1)|=  13  regina |Delta(-1)|=  13  HFK |Delta(-1)|=  13 (total rank 13, genus 2)
+  K( 0, 1): |V(-1)|=   5  regina |Delta(-1)|=   5  HFK |Delta(-1)|=   5 (total rank 5, genus 2)
+  K( 1, 0): |V(-1)|=  39  regina |Delta(-1)|=  39
+  K( 1, 1): |V(-1)|=  67  regina |Delta(-1)|=  67  HFK |Delta(-1)|=  67 (total rank 67, genus 4)
+  K(-1, 2): |V(-1)|= 127  regina |Delta(-1)|= 127  HFK |Delta(-1)|= 127 (total rank 127, genus 5)
+  K( 2,-2): |V(-1)|= 453  regina |Delta(-1)|= 453
+  K(-2,-2): |V(-1)|= 355  regina |Delta(-1)|= 355
+  K( 2, 2): |V(-1)|= 323  regina |Delta(-1)|= 323
+  all cross-checks agree.
+
+VERDICT: REJECTED: |det K(m,n)| = 1 has no integer solutions, so no member of the family can have trivial Jones polynomial (V=1 forces det=1).

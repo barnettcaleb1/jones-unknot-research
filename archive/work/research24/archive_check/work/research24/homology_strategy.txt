@@ -1,0 +1,32 @@
+ONE-PAGE STRATEGIC ASSESSMENT: THE GLOBAL HOMOLOGY / RIBBON ROUTES
+1 November 2026. Conditional arguments, not a proof or a proximity claim.
+
+Principal scaffold. Keep fixed-Jones bounded reduced rational Khovanov rank (H-rank) as the cleanest complete global argument. Write r(K)=dim_Q Kh_red(K), normalized by Kh_red(U)=Q. The unproved premise is
+
+  for every whole Jones polynomial P, sup_{V_K=P} r(K) < infinity,
+
+including composite knots. If V_K=1, Jones multiplicativity and reduced Kunneth give V_(K^#m)=1 and r(K^#m)=r(K)^m. A uniform bound forces r(K)=1; Kronheimer--Mrowka then gives K=U. No converter to unknotting number one, braid-family coverage, or colored invariant is required.
+
+What remains mathematically missing. One needs a theorem controlling ACTUAL classical-knot complexes, not their Euler classes. A sufficiently concrete version would construct, for every fixed P, diagrams and acyclic matchings in their enhanced-state bases with uniformly bounded numbers of unmatched generators. Ordinary algebraic Morse theory would finish the rank bound. But no such matching construction or global presentation theorem has been found. This is a stronger operational target, not an established explanation of H-rank.
+
+The new spanning-tree audit sharply limits that proposal: minimizing the raw spanning-tree count over ALL diagrams does not help. For every K, tau_min(K)>=c(K); Kanenobu's infinite exact-Jones fibers therefore have unbounded minimum tree counts. Any successful construction must cancel arbitrarily many tree generators even after diagram optimization. It must also retain actual invisible homology: T(3,4) has two classes in a quantum column with zero Jones coefficient, and #^m 10_132 has quantum support extending 2m beyond the Jones exponent hull. Bounds on raw states, coefficient magnitudes, zero-Euler columns, or a universal exterior margin cannot be the missing theorem.
+
+Logical strength and the asymptotic question. H-rank restricted to P=1 is equivalent to unknot detection. The all-polynomial hypothesis is stronger and independently falsifiable on known nonunit fibers; it is not known to follow from detection. Uniform bounds are quantitatively unnecessary: along any cofinal sequence m, log r(K^#m)=o(m) suffices. Even a strict exponential-rate bound liminf log r(K^#m)/m < log 3 suffices, because r(K) is odd (Euler polynomial evaluates to 1) and every nontrivial knot has r(K)>=3. These are not genuinely weaker logical problems on the unit fiber: exact Kunneth immediately converts each into r(K)=1. Calling the missing theorem 'zero entropy' does not evade it.
+
+A geometric asymptotic formulation has a real established intermediate inequality. Reduced diagonal spread d(K)=max(j/2-i)-min(j/2-i) is additive under connected sum and satisfies d(K)<=g_T(K), by the spanning quasi-tree theorem. A construction proving g_T(K^#m)=o(m) for Jones-one K would force d(K)=0. Then each quantum degree permits only one homological degree, so Euler polynomial 1 forces rank one and the unknot. This is complete, but there is currently no construction producing those diagrams. The unit-fiber geometric assertion again implies detection and is not independent evidence for it. Similarly, paired-skein cap windows can provide sublinear quantum support only through a construction coupling different summands: a factorwise move leaves a cap tensored with K^#(m-1), already giving linear support.
+
+Best geometric falsification route. Ribbon Euler faithfulness (E) asks whether, for every actual ribbon concordance J->L, the split complement E_C in reduced Kh can be nonzero with zero graded Euler polynomial. If E holds, apply it to U->R for R=K#mirror(K): Jones-one gives Euler(E_C)=0, hence r(R)=1=r(K)^2 and K=U. This has unconditional global coverage. Restricting E to source U is again equivalent to detection; allowing all sources makes it independently testable and potentially false without settling the original question. The split injection and the ribbon property alone do not prove it.
+
+Decisive next test / stop rule. A certified directional, multiband ribbon concordance between equal-Jones endpoints with unequal rational Kh ranks would refute E. The seven surviving table pairs are potential tests, not evidence of such concordances. Their equal genus rules out one-birth/one-saddle movies; every realization must contain at least a three-component level. Do not continue one-band searches or replace an actual movie by two separate ribbon disks. Conversely, excluding this finite list would not validate E globally. For H-rank, demand an explicit planar-cobordism cancellation construction that passes the three tests above before investing in larger computations. If only a proposed bound on the nullity of the already computed homology matrices remains, stop: that is H-rank restated, not a new mechanism.
+
+Primary endpoints and geometric bounds already read:
+Kronheimer--Mrowka, Khovanov homology is an unknot-detector:
+https://arxiv.org/abs/1005.4346
+Khovanov, Patterns in knot cohomology I (reduced theory and connected sums):
+https://arxiv.org/abs/math/0201306
+Champanerkar--Kofman--Stoltzfus, Graphs on surfaces and Khovanov homology:
+https://arxiv.org/html/0705.3453
+Levine--Zemke, Khovanov homology and ribbon concordances (split injection):
+https://doi.org/10.1112/blms.12303
+The one-band equal-genus topology is audited separately in
+ribbon_geometry_independent_audit.txt, using Miyazaki arXiv:1903.11266.

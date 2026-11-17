@@ -1,0 +1,198 @@
+STRATEGY14: ROTORS, GEOMETRIC COMPLETION, AND COOPERATIVE CANCELLATION
+Scope: conceptual research design, no enumeration, no new candidate or novelty claim.
+Recommendation after structural audit: reject the inverse-braid subclass. Any
+four-rotor construction must use a NON-boundary-parallel tangle with an explicit
+unknot completion. Keep cup-trivial six-rotors as a more demanding second stage.
+
+1. WHY THIS IS DIFFERENT FROM OUR EARLIER TWIST FAMILIES
+
+A rotor is an actual tangle diagram with cyclic symmetry; its half-turn through
+three-dimensional space changes the gluing to the outside tangle. The polynomial
+identity holds before choosing that outside tangle. We can therefore spend the
+construction effort on topology rather than solve another Laurent equation.
+
+Known input (Anstee--Przytycki--Rolfsen, 1989): Theorem3.1 preserves the bracket
+for n-rotors with n<=5. Their Question3.5 explicitly asks for a nontrivial rotant
+of the unknot. Theorem4.1 extends bracket preservation to n<=7 when the rotor is
+cup-trivial: capping a specified adjacent endpoint pair makes it a trivial tangle
+relative to the remaining boundary (extra trivial circles are allowed).
+https://arxiv.org/pdf/math/0405382
+DOI10.1016/0166-8641(89)90031-X
+
+MacColl's Theorem1.5 exhibits four-rotants with different Khovanov homology, so
+ordinary mutation's Khovanov obstruction cannot simply be reused for all rotors.
+This does not imply a rotant of the unknot exists. His actual family is not an
+unknot-seed construction.
+https://arxiv.org/html/1501.00851
+DOI10.4153/CMB-2015-034-6 (2016)
+
+A normalization observation specific to our target: if a link diagram has the
+same bracket as an actual unknot diagram, its normalized Jones is a signed
+monomial. Its value at1 has absolute value 2^(components-1), forcing one component.
+For a knot, V(1)=1 and V'(1)=0 then force that monomial to be1. Thus a rotor of
+an actual unknot satisfying the bracket theorem needs no additional unproved
+writhe-equality assumption. This observation is not a general statement that
+arbitrary rotants have equal normalized Jones without orientation conditions.
+
+2. FIRST RECIPE TESTED AND RULED OUT: INVERSE COMPLETION
+
+The initially proposed recipe was a four-fold rotor R admitting a genuine
+four-strand braid presentation beta
+for a chosen division of its eight boundary endpoints. Preserve the actual
+symmetric rotor diagram as part of the data; an arbitrary braid is NOT a rotor.
+Put beta^(-1) in the exterior stator, followed by delta4=sigma1 sigma2 sigma3,
+and use ordinary braid closure. The original diagram is certified U because
+ beta beta^(-1) delta4 = delta4,
+and closure(delta4) destabilizes to the unknot. No unknot recognition or Jones
+inference is needed for the seed.
+
+After the half-turn, determine the actual braid beta^tau in exactly the same
+boundary convention. The candidate is
+ closure(beta^tau beta^(-1) delta4).
+The following structural audit answers the early stopping question: every
+boundary-parallel four-rotor of the stated standard type is flip-equivalent.
+Consequently this inverse-braid recipe CANNOT produce a counterexample.
+
+INVERSE COMPLETION IS NOT AUTOMATICALLY A DEAD END. A small conceptual control
+shows why. In B3 write a=sigma1,b=sigma2, beta=a^2, delta3=ab. A vertical spatial
+half-turn interchanges a,b. The original closure beta beta^(-1) delta3 is U; the
+flipped closure is
+ closure(b^2 a^(-2) ab) = closure(b^2 a^(-1)b)
+ = closure(b^3 a^(-1)),
+which destabilizes to the positive trefoil. This beta has NO three-fold rotor
+symmetry and hence gives NO Jones identity. It only refutes the proposed shortcut
+that inverse completion must cancel geometrically after every flip. Achieving
+actual cyclic symmetry is precisely the additional hard condition.
+
+EARLY KILL TESTS, before any large construction:
+(a) If R is isotopic rel boundary to its flipped image, discard.
+(b) More generally, cut the double branched cover of the original U along the
+lifted rotor sphere. If the lifted half-turn extends over either piece, the new
+cover is still S3 and Smith's theorem forces the rotant to be U. Extension over
+one piece is a sufficient kill test, not a necessary condition or a complete
+classification. For rational pieces, the full condition involves a product of
+two handlebody groups; the braid agent is handling that formulation.
+(c) Explicit Markov/Reidemeister cancellation of the candidate is conclusive;
+a failed simplifier proves nothing. A nonabelian finite quotient of its knot
+group or reduced Khovanov rank>1 would certify nontriviality.
+(d) Nontrivial Fox colorings cannot succeed here: exact Jones1 already forces
+determinant1. Use nonabelian conjugation quandles if using color constraints.
+
+3. SECOND MECHANISM: CUP-TRIVIAL SIX-ROTORS AS COOPERATIVE DEVICES
+
+The biology-inspired design principle is collective dependence: removing one
+interaction disables the whole arrangement. Here the exact operation is CAPPING
+an adjacent pair of endpoints, not deleting a strand. They are not equivalent.
+A Brunnian pure braid becomes trivial on strand deletion, but capping joins arcs
+and can preserve or create knotting. Likewise vanishing finitely many Vassiliev
+invariants is not the full bracket identity required here.
+
+A possible geometric implementation uses claspers, with an explicit condition
+stronger than Brunnian deletion. Start with a cup-trivial symmetric trivial
+six-tangle R0. Consider a cyclically invariant family of tree claspers G. Demand:
+ for each allowed cup c_i, EVERY connected clasper has a leaf that can be made
+ a trivial disk-leaf by an isotopy of c_i(R0), disjoint from all other leaves
+ and edges, and fixed at the remaining boundary.
+Call this the cap-slide condition. It is an exact geometric certificate to
+construct, not an asserted consequence of drawing a commutator or wheel.
+
+Conditional construction lemma: if this condition holds, surgery along G yields
+a cup-trivial six-rotor R. After capping, every clasper has a trivial disk-leaf,
+so its surgery is isotopically ineffective. Equivariance of the embedded surgery
+construction must also be checked to obtain actual six-fold diagram symmetry.
+The local trivial-leaf principle is standard clasper calculus; see Habiro,
+Claspers and finite type invariants of links, Geometry & Topology4(2000),1--83,
+Section2 and Proposition2.7.
+https://www.kurims.kyoto-u.ac.jp/EMIS/journals/GT/ftp/main/2000/2000-1.pdf
+Brunnian deletion itself is characterized using claspers in Habiro--Meilhan,
+Finite type invariants and Milnor invariants for Brunnian links, Theorem5.1:
+https://www.kurims.kyoto-u.ac.jp/preprint/file/RIMS1520.pdf
+Neither source supplies the cap-slide construction or the needed unknot completion.
+
+The second missing certificate is a stator S for which R union S is the actual U,
+but the flip destroys the cancellation. An exterior inverse construction should
+use an explicit cancelling surgery-link pair or an explicit isotopy, not a formal
+'inverse clasper' in an associated graded group. If the unknot proof only uses one
+of the designated cups, it is likely useless: cup-triviality survives the flip
+and the same local simplification remains available. The sought cancellation
+must depend on the global way several boundary arcs are connected.
+
+A cyclic orbit of claspers can supply symmetry, and trivial-leaf cap slides could
+supply the cup condition. Neither automatically supplies the compatible global
+unknot completion. Therefore this is a construction recipe with TWO concrete
+geometric obligations, not a claimed counterexample generator.
+
+4. STRUCTURAL AUDIT: WHY THE TRIVIAL-TANGLE SUBCLASS FAILS
+
+This is an internally checked deduction from a primary equivariance lemma and
+standard four-punctured-sphere topology, not a novelty claim.
+
+Label the eight endpoints cyclically0,...,7, and let r send i to i+2. For the
+braid partition top={0,1,2,3}, bottom={4,5,6,7}, the invariant perfect matchings
+crossing this partition are exactly the antipodal matching and
+ {(0,5),(2,7),(4,1),(6,3)}.
+Without the braid partition, the invariant matchings consist of the antipodal
+matching and the four orbits {(2k,2k+j): k=0,1,2,3}, j odd (labels mod8).
+Each of the latter is one free orbit of four strands. Thus the originally suggested
+'antipodal matching only' obstruction is FALSE.
+The antipodal matching is nevertheless impossible for disjoint actual spatial
+arcs with this C4 symmetry: an antipodal arc is fixed setwise by r^2 and therefore
+has a point on the rotation axis; r fixes that point while sending the arc to a
+distinct arc, forcing an intersection. Thus the relevant braid rotor has a free
+four-strand orbit. Extra internal closed components are impossible in a rotor
+with an actual unknot completion, since they remain separate components.
+
+Now suppose R is boundary-parallel. Meier--Scott, Equivariant trisections for
+group actions on four-manifolds, Lemma3.9 and Definition3.8, gives an invariant
+almost-disjoint system of bridge disks. Select the orbit of one disk. The four
+strands are distinct, so these four disks are genuinely disjoint, not just
+almost-disjoint. They avoid the rotation axis, because an axis point in one disk
+would belong to its distinct translates as well.
+https://arxiv.org/html/2501.17999#S3.SS2
+
+In the quotient boundary sphere, let N,S be the axis ends and p,q the two endpoint
+orbits. The projected disk has one shadow arc alpha joining p,q and avoiding N,S.
+The allowed half-turn descends to an involution exchanging p,q and exchanging
+N,S. It is the standard Conway double-transposition on the four-punctured sphere.
+Its pillowcase lift is a half-period translation, hence it fixes every essential
+simple closed curve slope. (The permutation alone would not suffice; the actual
+order-two Conway map is essential.) The boundary of a small neighborhood of alpha
+is such a curve. The disk it bounds containing p,q determines the unoriented arc
+class, so alpha and its flipped image are isotopic fixing all four marked points.
+
+Lift this isotopy starting at the identity through the cyclic branched cover.
+All eight endpoint lifts stay fixed individually. Considering the entire shadow
+preimage, rather than one chosen lift, eliminates deck-transformation ambiguity.
+Push both shadow systems slightly into a boundary collar and use isotopy extension
+relative to the boundary. This yields R isotopic to its flip rel the whole ball
+boundary. Thus every exterior completion has the same knot before and after.
+A braid tangle is boundary-parallel, so the proposed subclass is eliminated.
+
+The small B3 unknot-to-trefoil control above remains correct: its tangle lacks
+cyclic rotor symmetry, exactly the hypothesis needed for this obstruction.
+
+5. REVISED PRIORITY AND STOPPING RULE
+
+Do not launch an inverse-braid rotor search. A meaningful four-rotor must be a
+non-boundary-parallel tangle with an explicit unknot completion. The first design
+obligation is therefore an actual spanning-disk or Reidemeister certificate for
+such a completion; rotational symmetry alone is insufficient. This is a narrower
+and harder target than the initial proposal, and this pass supplies no such object.
+
+The cup-trivial six-rotor clasper scheme remains a conditional alternative: cup
+triviality does not assert that the unfilled rotor is boundary-parallel. It needs
+cap-slide certificates plus a global, nonlocal unknot completion. Prioritize it
+only if an explicit small cap-slide gadget is available. The present structural
+lemma is proved only in the four-rotor setting stated above; no generalized
+six-rotor exclusion is being asserted.
+
+The DNA connection supplies controlled reconnection operations and the insistence
+on distinguishing individual from collective effects; it does not supply a
+mathematical implication from biological simplification to Jones rigidity.
+Energy minimization can prioritize drawings but cannot certify nontriviality:
+hard unknots can have large simplification barriers. Maintain actual isotopy or
+spanning-disk certificates for the seed, and a separate invariant for the output.
+
+These are counterexample routes to the generic problem, not reductions proving
+that every possible Jones-one knot must be a rotant. No such completeness theorem
+is known or claimed here.

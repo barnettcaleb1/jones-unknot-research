@@ -1,0 +1,354 @@
+{
+ "summary": {
+  "tests": 49,
+  "forgeries": 44,
+  "HOLES": 0,
+  "controls": 5,
+  "controls_rejected": 0
+ },
+ "results": [
+  {
+   "name": "audit1-t1: identity rep + extra keys 999/998 on s.l1.x1.u2",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit1-t1: same after json round trip",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit1-t1 control: pair = 2 real gens, identity images",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit1-t1: identity rep + extra keys 999/998 on s.l1.l1.x2.x1.x1.x1.y3.y3.x1.u2.u2",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit1-t1: same after json round trip",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit1-t1 control: pair = 2 real gens, identity images",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit2: trivial rep + 2 fake noncommuting keys (unknot0)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit2: trivial rep + 2 fake keys (unknot, 14 crossings)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit2: abelian rep (all tau) + 1 fake key",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "audit2: fake key 0 as a non-permutation",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "bad or duplicate image key '0'"
+  },
+  {
+   "name": "audit2: negative generator id in pair",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "bad or duplicate image key '-1'"
+  },
+  {
+   "name": "audit2: non-bijective images",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "image of 1 missing or not a permutation"
+  },
+  {
+   "name": "audit2: float entries",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "image of '1' is not a list of ints"
+  },
+  {
+   "name": "audit2: degree mismatch",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "image of 1 missing or not a permutation"
+  },
+  {
+   "name": "audit2: honest abelian rep, pair inside gens",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "claimed noncommuting pair commutes"
+  },
+  {
+   "name": "new: pair (g, g)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "noncommuting pair must be two distinct Wirtinger generators"
+  },
+  {
+   "name": "new: bool in pair (True, 2)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "noncommuting pair must be two distinct Wirtinger generators"
+  },
+  {
+   "name": "new: string pair",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "noncommuting pair must be two distinct Wirtinger generators"
+  },
+  {
+   "name": "new: leading-zero key duplicate 01",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "bad or duplicate image key '01'"
+  },
+  {
+   "name": "new: int and str key for the same generator",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "bad or duplicate image key 1"
+  },
+  {
+   "name": "new: float degree 3.0",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "degree must be an int >= 2"
+  },
+  {
+   "name": "new: missing one generator image",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "images must be given for exactly the Wirtinger generators"
+  },
+  {
+   "name": "new: triple instead of pair",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "noncommuting must be a pair"
+  },
+  {
+   "name": "new: invalid halfword grammar (x-1)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "not a knot diagram"
+  },
+  {
+   "name": "new: unknown letter z silently dropped by alex",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "diagram has crossings or is not a knot"
+  },
+  {
+   "name": "audit2: tietze elim with g occurring twice",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: generator 1 does not occur exactly once"
+  },
+  {
+   "name": "audit2: nielsen x == a",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad nielsen"
+  },
+  {
+   "name": "audit2: nielsen d = 2",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad nielsen"
+  },
+  {
+   "name": "audit2: nielsen d = 0",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad nielsen"
+  },
+  {
+   "name": "audit2: nielsen with absent generator",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad nielsen"
+  },
+  {
+   "name": "audit2: mult i == j",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad mult"
+  },
+  {
+   "name": "audit2: mult e = 2",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad mult"
+  },
+  {
+   "name": "audit2: mult e = 0",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad mult"
+  },
+  {
+   "name": "audit2: negative index",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad indices"
+  },
+  {
+   "name": "audit2: bool index (True == 1)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad mult"
+  },
+  {
+   "name": "audit2: float rotation",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "checker exception (rejected): TypeError('slice indices must be integers or None or have an __index__ method')"
+  },
+  {
+   "name": "audit2: unknown kind",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: unknown kind 'delete'"
+  },
+  {
+   "name": "audit2: empty move list on a nontrivial knot",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "replay ends at 3 generators, 3 relators"
+  },
+  {
+   "name": "audit2: jones24 on a V != 1 knot",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "V_K != 1"
+  },
+  {
+   "name": "audit2: jones24 on a V = 1 diagram with 30 > 24 crossings",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "30 crossings > 24"
+  },
+  {
+   "name": "audit2: jones24 on a split link (knot + circle)",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "not a knot diagram"
+  },
+  {
+   "name": "audit2: unknot0 on a knot with crossings",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "diagram has crossings or is not a knot"
+  },
+  {
+   "name": "audit2: unknot0 on a 3-component crossing-free diagram",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "diagram has crossings or is not a knot"
+  },
+  {
+   "name": "transplant: genuine 14-crossing unknot Tietze cert onto the trefoil",
+   "accepted": false,
+   "expected": false,
+   "good": true,
+   "msg": "move 0: bad indices"
+  },
+  {
+   "name": "CONTROL jones24 on the 14-crossing unknot",
+   "accepted": true,
+   "expected": true,
+   "good": true,
+   "msg": "UNKNOT: diagram with 14 <= 24 crossings and V_K = 1 (Tuzun-Sikora)"
+  },
+  {
+   "name": "CONTROL unknot0",
+   "accepted": true,
+   "expected": true,
+   "good": true,
+   "msg": "UNKNOT: crossing-free one-component diagram"
+  },
+  {
+   "name": "CONTROL genuine tietze cert (certify.py)",
+   "accepted": true,
+   "expected": true,
+   "good": true,
+   "msg": "UNKNOT: Tietze replay reaches <14 | > (13 moves, 14 crossings)"
+  },
+  {
+   "name": "CONTROL genuine rep cert of the trefoil (certify.py)",
+   "accepted": true,
+   "expected": true,
+   "good": true,
+   "msg": "NONTRIVIAL: hom to Aff(F_3) (degree 3), all 3 relators checked, images of generators 1,2 do not commute"
+  },
+  {
+   "name": "CONTROL genuine rep cert after json round trip",
+   "accepted": true,
+   "expected": true,
+   "good": true,
+   "msg": "NONTRIVIAL: hom to Aff(F_3) (degree 3), all 3 relators checked, images of generators 1,2 do not commute"
+  }
+ ]
+}

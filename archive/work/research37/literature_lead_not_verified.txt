@@ -1,0 +1,14 @@
+Literature lead located during pass37, NOT a new theorem verified here:
+Lamm--Tanaka, On partial knots for symmetric unions (2025), DOI
+10.1016/j.topol.2025.109593.
+https://www.sciencedirect.com/science/article/pii/S0166864125003918
+Publisher abstract says a partial knot of a ONE-TWIST-region symmetric
+union presentation of Kinoshita--Terasaka has trivial Jones polynomial.
+The existence and nature of such a presentation are not established by
+the abstract; do not treat this as an existing Jones counterexample.
+Search of our scaffold found general symmetric unions but not this paper.
+Full argument has not been retrieved/read. Author page:
+https://www1.gifu-u.ac.jp/~tanakat/papers.htm
+
+Related genuinely new lead is only a research possibility. Do not interrupt
+a concrete calculation to proliferate another conditional scaffold.

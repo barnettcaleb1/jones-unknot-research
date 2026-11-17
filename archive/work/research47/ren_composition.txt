@@ -1,0 +1,202 @@
+PASS 47 — WHAT COMPOSING REN GADGETS ACTUALLY DOES
+2026-11-01
+
+Result and limit
+================
+The main extension is that stacking any positive number of copies of the
+SAME Ren-core-and-braid block has annular degree TWO, for every attached
+four-strand braid. A second observation is that satellite composition of
+two standard Ren-family patterns has annular degree EIGHT. Neither
+operation removes the surviving annular channel. These are exact all-
+parameter obstructions, not more braid-word searches. They do not cover
+arbitrary distinct interacting blocks or all multi-axis surgeries.
+
+The ordinary closure may still be an actual unknot: nonzero annular degree
+does not imply nontrivial ordinary Jones after filling the axis.
+
+1. Fixed conventions and already certified input
+================================================
+Let R=Z[A,A^-1], delta=-A^2-A^-2, and let z denote the standard framed
+core of the solid torus. Positive crossings are A*1+A^-1*e.
+
+Take the six-strand word
+
+  b=sigma_2^-1 sigma_1^3 sigma_2^-1 sigma_4 sigma_5^-3 sigma_4.
+
+Cap positions 3,4 at both ends, leaving a four-strand tangle T. Write
+K(p,q) for its annular closure after the two top twists sigma_1^p and
+sigma_3^q on the remaining four strands (sigma_1^p sigma_5^q before
+capping). For p,q odd this is a knot pattern. Ren's example is K(1,1).
+
+The old exact certificate proves
+
+  [K(p,q)] = b_(p,q)(A)+a_(p,q)(A) z^2,
+  a_(p,q) != 0,
+  [z^8][K(p,q)^(2)] = A^(4(p+q)) h(A),
+
+  h(A)=-A^-24 (A^4-1)^4 (A^4+1)^2
+               *(1+A^4+A^8+A^12+A^16+A^20+A^24) != 0.       (1)
+
+Here K^(2) is the actual two-parallel BLACKBOARD cable, not the square of
+the uncolored polynomial. The coefficient was computed in the 54-
+dimensional 12-strand/eight-through cell module and independently checked:
+
+  work/pass4/braid_ren_cable.py
+  work/pass4/braid_ren_cable.json
+  work/pass4/braid_notes.md
+
+Ren's primary paper already reports degree eight for the original
+two-cable (Remark1.3); our old certificate supplies the explicit factor
+and all top-twist parameters. No priority claim is made.
+https://arxiv.org/html/2609.11084v2
+
+2. Satellite composition raises the detected degree
+====================================================
+For a framed knot Q inside a solid torus, its tubular-neighborhood
+embedding induces an R-LINEAR skein map Phi_Q. It sends
+
+  1 -> 1,           z^j -> [Q^(j)].
+
+It need not be an algebra homomorphism for the usual annular product.
+In particular Phi_Q(z^2) is the two-parallel cable of Q, not [Q]^2.
+
+Suppose P is any Ren-core annular closure with [P]=b_P+a_P z^2 and
+a_P != 0; let Q=K(p,q) be one of the knot patterns above. Then the actual
+satellite composition has
+
+  [P(Q)] = b_P + a_P [Q^(2)],
+  [z^8][P(Q)] = a_P A^(4(p+q)) h(A) != 0.                 (2)
+
+All coefficients are in the integral domain R. Since [Q^(2)] has degree
+at most eight, the degree in (2) is EXACTLY eight. This excludes all
+choices of the two top twists in each copy, including opposite twists,
+as a way to obtain a scalar annular pattern by ordinary satellite
+composition. Mirroring either gadget replaces A by A^-1 and does not
+change this nonvanishing conclusion.
+
+The formula is stated with the inherited blackboard tubular framing.
+Changing the companion framing by s meridional twists acts on the color-
+two channel z^2-1 by A^(8s), while fixing the empty channel. Thus the top
+coefficient in (2) is merely multiplied by this nonzero monomial.
+Changing the framing of the satellite itself also only multiplies the
+whole bracket by a framing unit. Neither adjustment creates cancellation.
+
+3. New all-powers extension for actual tangle stacking
+======================================================
+For EVERY beta in B_4 and EVERY positive integer k,
+
+  degree_z [annular closure of (T beta)^k] = 2.           (3)
+
+This is a different geometric operation from satellite composition.
+It includes every component count, so no knot-connectivity assumption
+enters the proof. It extends the previously proved k=1 braid-independent
+Ren-core obstruction; it does not assert anything about products with
+different intervening braids beta_1,...,beta_k.
+
+Proof. The four-through coefficient of T is zero, and this property is
+a two-sided ideal condition in TL_4. Therefore (T beta)^k has no four-
+through term. On this ideal, the z^2 coefficient of annular closure is
+the ordinary trace in the three-dimensional two-through cell module.
+
+Use the previously verified gauge
+
+  x=-A^-4, S=diag(1,A^2,A^4),
+  M(x)=A^-2 S^-1 rho(T)S,
+  U(x)=A^-e(beta) S^-1 rho(beta)S.
+
+Both M and U have entries in Z[x,x^-1]. Set u=(1,0,1)^t,
+v=(1,0,-1), e_2=(0,1,0)^t, and w=-15u-25e_2. The exact core jets are
+
+  M(1)=w v,
+  M(1)=0 mod5,
+  M'(1)=2I mod5.                                       (4)
+
+Every U_0=U(1) lies in SL_3(Z) and fixes u. These facts, including the
+integral gauge and trace interpretation, are in the existing proof:
+
+  work/ren-braid-obstruction-note/main.tex
+  outputs/jones-ren-braid-obstruction.pdf
+
+Up to the nonzero scalar A^(k(e(beta)+2)), the desired z^2 coefficient is
+
+  f_k(x)=tr((M(x)U(x))^k).
+
+Suppose f_k is the zero Laurent polynomial. Since M(1)U_0 is rank one,
+
+  0=f_k(1)=(v U_0 w)^k,
+  v U_0 w=-25 v U_0 e_2.
+
+Thus v U_0 e_2=0. The flag <u> contained in ker(v)=<u,e_2> is invariant
+under U_0. The quotient Z^3/Z u has basis [e_1],[e_2] and determinant
+one. Its upper-right entry is zero, so its two integer diagonal entries
+are both epsilon, epsilon=+1 or -1. Consequently
+
+                   tr(U_0^k)=1+2 epsilon^k.
+
+Now reduce the ENTIRE Laurent-polynomial identity f_k=0 modulo5 and
+expand at x=1. Equation(4) gives
+
+  M(x)U(x)=2(x-1)U_0+O((x-1)^2) mod5.
+
+Every one of the k factors contributes at least one x-1, hence
+
+  [ (x-1)^k ] f_k = 2^k tr(U_0^k)
+                 = 2^k(1+2 epsilon^k) != 0 mod5.
+
+The last parenthesis is 3 or -1, neither zero modulo5. This contradicts
+f_k=0 and proves (3). There is no division by k or a derivative factorial,
+so the proof includes k divisible by five.
+
+The same argument gives the quantitative local statement
+
+                  ord_(x=1) f_k <= k.
+
+Indeed, if the constant coefficient is nonzero the order is zero; if it
+vanishes, the integer coefficient of (x-1)^k is nonzero modulo five.
+
+Independent algebra audit: the homology agent verified the rank-one
+power formula, saturated quotient/flag, and characteristic-five leading
+coefficient argument. The older M jets and geometric trace identification
+are reused from their existing exact certificate, not recomputed here.
+
+4. What remains outside these obstructions
+==========================================
+Opposite twists located at two different sites of a genuinely interacting
+multi-axis diagram can have joint spectral collisions. Neither (2) nor
+(3) excludes that situation. A construction there must specify the actual
+outside tangle, all surviving simultaneous fusion channels, their closure
+weights, and an actual unknot anchor. Replacing this information by a
+formal subtraction of two nonzero annular coefficients is not a geometric
+construction. The tangle agent is independently analyzing that joint
+spectrum; no such candidate was produced by this Ren-composition pass.
+
+5. Independent audit of the coordinated-twist warning
+=====================================================
+The other agent supplied an actual elementary example showing why the
+single-axis integral-dimension argument cannot simply be copied here.
+Take closure of sigma_1^(2m) sigma_1 sigma_1^(2n); its two disjoint twist
+sites each have oriented winding two. Put p=2(m+n)+1 and
+Delta_2=A^4+1+A^-4. Direct TL_2 decomposition gives
+
+  V_(m,n)=delta^-1 ( A^(-6p) - A^(-2p) Delta_2 ).
+
+Thus m+n=0 gives the actual unknot for all integers m, even though both
+sites have winding two. In a generic tensor Chebyshev description of the
+two-unlink-axis exterior, the zero-framed initial pattern has coefficients
+
+  a_(0,0)=A^-6,          a_(2,2)=-A^-2/Delta_2.
+
+Filling with twist parameters m,n multiplies channel (j,l) by
+A^(m*j(j+2)+n*l(l+2)); the oriented normalization contributes
+A^(-12(m+n)). These coefficients reproduce the exact formula above.
+Two successive Vandermonde arguments show uniqueness among finite
+generic tensor expansions, because the individual twist eigenvalues are
+distinct. This audit is algebraic, conditional on the usual localized
+connected-sum skein identification for the two-axis exterior; the tangle
+agent is supplying that source and the geometric axis model.
+
+The denominator 1/Delta_2 is essential. It is not permissible to treat
+this localized tensor basis as an integral R-basis and conclude that a
+product of quantum dimensions must divide delta in R. Opposite-site
+diagonal channels can therefore survive; this example is an unknot,
+not a counterexample or a proposed nontrivial Ren construction.

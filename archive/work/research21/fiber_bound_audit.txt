@@ -1,0 +1,183 @@
+ADVERSARIAL AUDIT OF JONES-FIBER BOUNDS
+1 November 2026. Primary-source search plus elementary structural audit.
+
+MAIN VERDICT
+
+No actual KNOT family was located in this bounded search that has one
+fixed full Jones polynomial and unbounded rational reduced Khovanov rank
+or quantum diameter. This is not a proof that such a family is absent,
+and it should not be reported as established boundedness. Familiar
+infinite equal-Jones examples frequently have identical Khovanov homology,
+so simply citing their infinitude does not falsify the proposed bounds.
+
+The proposed factorization through bounded TWIST NUMBER is structurally
+unhelpful: that hypothesis ALONE implies Jones unknot detection. The
+additional categorical-stability hypothesis is unnecessary for that
+conclusion. Restricted to the fiber V=1, bounded twist number is already
+equivalent to Jones detection.
+
+1. WHY BOUNDED TWIST NUMBER ALREADY CONTAINS THE WHOLE PROBLEM
+
+Use the usual diagram twist number, minimizing over diagrams. For each
+fixed N, knots admitting a diagram with at most N twist regions have a
+uniform bridge-number bound B(N).
+
+Elementary proof sufficient here: collapse every bigon chain to one
+marked two-strand twist box. There are finitely many planar decorated
+connection templates with at most N boxes. Reidemeister-II pairs can first
+be removed inside a box. For each fixed template, place its boxes in
+standard local height coordinates and put the finitely many remaining
+arcs in Morse position. In each box the two strands are monotone; adding
+any integer number of twists changes no maxima there. The external arcs
+and the finite endpoint/parity choices have a fixed finite number of
+maxima. Thus each template has a uniform bridge bound, and the finite
+union does also. No sharp linear or square-root bound is needed.
+
+Now suppose every knot in a fixed Jones fiber admits a bounded number of
+twist regions. If K is nontrivial and V_K=1, every connected power K#^m is
+in that SAME fiber. Schubert's exact theorem gives
+
+       b(K#^m)=m(b(K)-1)+1.
+
+Every nontrivial knot has b(K)>=2, so the right side is unbounded. This
+contradicts B(N). Therefore the twist-bound hypothesis by itself proves
+Jones detection; a further bound on Kh along template collision lattices
+adds nothing to this implication.
+
+Conversely, if Jones detects U, its unit fiber consists only of U and is
+trivially twist-bounded. Thus the unit-fiber part of the proposed twist
+hypothesis is exactly equivalent to the original conjecture. Requiring
+it on every Jones fiber is stronger, not a decomposition into easier
+known facts.
+
+Primary proof of bridge additivity:
+J. Schultens, Additivity of Bridge Number of Knots,
+https://arxiv.org/abs/math/0111032
+https://www.math.ucdavis.edu/~jcs/pubs/addbri15.pdf
+Published Math. Proc. Cambridge Philos. Soc.135(2003),539--544,
+DOI 10.1017/S0305004103006832.
+
+Do not confuse the elementary boundedness argument above with Lackenby's
+sharper O(sqrt(twist number)) bound, which has a tangle-prime hypothesis:
+https://arxiv.org/abs/0810.5252 , Theorem1.13. That sharper theorem cannot
+be applied indiscriminately to connected sums. Our finite-template
+argument only needs some finite B(N), and has no primeness assumption.
+
+2. THE FIXED-JONES/TWIST QUESTION HAS PRIOR LITERATURE
+
+Stoimenow, Non-triviality of the Jones polynomial and the crossing
+numbers of amphicheiral knots, Section8, Question8.1 explicitly asks
+whether there are infinitely many knots with the same Jones polynomial
+and arbitrarily large twist number. His Remark8.2 observes that the
+Kanenobu examples have bounded twist number. Proposition8.2 gives the
+contrasting result for links with at least two components.
+Primary author PDF:
+https://stoimenov.net/stoimeno/homepage/progs/ntrivodd.pdf
+
+This establishes that the proposed global twist-fiber bound is a
+pre-existing question in substantive form, not a newly justified bridge.
+This bounded search has not established its current global status.
+
+The related Silver--Stoimenow--Williams connected-sum Corollary3.6 proves
+twist growth when the Jones OR Alexander polynomial is nontrivial. Its
+polynomial proof does not apply when both are1. The bridge argument above
+avoids that restriction for connected powers; one should not cite their
+Corollary3.6 alone for the hypothetical Jones/Alexander-trivial knot.
+https://msp.org/agt/2006/6-2/agt-v6-n2-p04-p.pdf
+
+3. ACTUAL EQUAL-JONES KNOT FAMILIES CHECKED
+
+(a) Kanenobu / Watson
+Watson's Lemma3.1 and Theorem5.1 exhibit infinite families with identical
+bigraded Khovanov homology. These therefore DO NOT disprove either rank
+or quantum-diameter bounds in a Jones fiber.
+https://msp.org/agt/2007/7-3/agt-v7-n3-p11-s.pdf
+DOI 10.2140/agt.2007.7.1389.
+
+The primary distinction is relevant: Watson's remark immediately after
+Lemma3.1 states that the Jones invariance needs no simplicity condition
+on the two tangles, while his Kh invariance theorem assumes both tangles
+are simple. Thus fixed nonsimple T,U with opposite twist powers are a
+legitimate sharper test. Failure of the stronger Kh-isomorphism theorem
+there would not by itself show unbounded support or rank.
+
+Independent geometry audit of the homology track's proposed extension:
+for fixed T,U,beta, the capped resolutions lose all variable twists as
+Reidemeister-I curls after beta/beta^{-1} cancellation. Without simplicity,
+the capped arc can carry a fixed local knot; it can be localized and moved
+along its strand before the cancellation. Hence the exceptional resolution
+links remain in a finite fixed list, at worst depending on parity and
+orientation choices. The crossing-count comparison reverses both strands
+inside the fixed tangles, so their internal writhe is unchanged. This
+supports a fixed quantum-support bound via the two exact sequences. The
+homology track is auditing the categorical argument; this note does NOT
+claim uniform total rank from fixed support alone.
+
+(b) Genus-two mutation
+Moore--Starkston construct infinite families distinguished as bigraded
+Kh groups from their genus-two mutants, but their theorem explicitly
+keeps the total dimensions constant within the families. This is not an
+unbounded-rank example. The existence of mutant pairs with different
+bigradings likewise does not by itself give unbounded quantum diameter
+inside one fixed polynomial fiber.
+https://msp.org/agt/2015/15-1/agt-v15-n1-p02-s.pdf
+https://arxiv.org/abs/1204.2524
+DOI 10.2140/agt.2015.15.43.
+
+(c) Arbitrarily large finite collections of two-bridge collisions
+Kanenobu constructs, for every N, N two-bridge knots sharing a polynomial,
+including examples of different genera. The polynomial is allowed to
+change with N. This does not give infinitely increasing complexity in
+one FIXED fiber. In addition, these knots are alternating, so their
+Jones span controls crossing number inside a fixed polynomial fiber.
+https://ir.library.osaka-u.ac.jp/repo/ouka/all/4334/ojm29_03_16.pdf
+Genus and Kauffman polynomial of a 2-bridge knot (1992).
+
+(d) Finite collision pairs / connected powers
+Taking powers of two equal-Jones knots gives many collisions at P^m,
+not one fixed P unless P=1. Hence the known 5_1/10_132 pair and similar
+pairs cannot be promoted into a counterexample to fiber boundedness by
+connected sum without already having the unknown Jones-one phenomenon.
+
+(e) Generalized symmetric unions, rotants, and representation kernels
+No primary source found in this search supplied an actual knot family
+meeting BOTH requirements: one fixed full Jones polynomial AND proven
+unbounded rational reduced-Kh rank/quantum diameter. Individual pairs,
+finite-order mutations, or merely growing diagrams do not suffice.
+This is a search limitation, not a classification theorem for those
+operations.
+
+4. LINKS ARE A REAL WARNING, NOT A KNOT COUNTEREXAMPLE
+
+Eliahou--Kauffman--Thistlethwaite give infinite fixed-polynomial fibers
+of multicomponent links; Stoimenow's Proposition8.2 records examples
+with unbounded twist complexity. Their families can have two-bridge
+components with unbounded determinant. Batson--Seed's link-splitting
+spectral sequence gives a rank lower bound by the Kh of the split
+components, so these are also a route to unbounded Kh rank in link
+fibers. A band closure is not automatically Jones-preserving, so this
+does NOT supply the required knot family.
+https://homepages.math.uic.edu/~kauffman/ekt.pdf
+https://arxiv.org/abs/1303.6240
+
+The knot hypothesis must remain explicit in any proposed boundedness
+statement. No unverified band-to-knot conversion should be used to claim
+a falsification, and the earlier EKT/unknot-band obstruction should not
+be rerun as if it were new.
+
+5. STRATEGIC CONSEQUENCE
+
+The connected-sum amplification argument is a valid way to show that a
+fiber-bound theorem would imply detection. It does not itself establish
+or explain that bound. On the unit fiber, rank boundedness (using reduced
+Kh multiplicativity and unknot detection) already has exactly the same
+existential content as Jones detection; quantum-diameter boundedness has
+the same issue once zero diameter is shown to detect U.
+
+A worthwhile new mechanism must therefore prove a genuinely local or
+categorical restriction that yields the fiber bound without assuming a
+geometric complexity bound that already implies detection. The nonsimple
+Watson test can validate such a mechanism on one nontrivial family, but
+it cannot supply generic coverage. The present audit removes the proposed
+T+C factorization and finds no existing knot-family falsification of the
+remaining general Kh-fiber-bound conjecture.

@@ -1,0 +1,93 @@
+COMPLETE OBSTRUCTION FOR THE FIXED SEVEN-NODE INTERACTION FAMILY
+2026-10-31. Exact finite computation, independently checked. This is an
+obstruction to abstract colored-Jones candidates; it is not a theorem
+about all knot quivers or a proof of Jones unknot detection.
+
+STATEMENT
+Let C be a symmetric nonnegative integer 7x7 matrix with diagonal
+(0,0,0,0,1,1,1). On the nine pairs of equal-sign nodes, assign the multiset
+  {0,0,0,0,2,5,6,9,11};
+on the twelve pairs of opposite-sign nodes, assign the multiset
+  {0,0,0,0,0,0,1,1,4,7,10,10}.
+Use the specialized quiver series
+ Z_C=sum_d (-q)^(d^T C d) product_i(q^(-C_ii)x)^d_i
+                       /product_i(q^2;q^2)_(d_i),
+and define H_N(y)=(y;y)_(N-1)[x^(N-1)]Z_C, y=q^2.
+NO such assignment satisfies the necessary Habiro compatibility condition
+for colors2,3,4 of a normalized zero-framed knot colored Jones sequence.
+
+WHY THESE WERE NONTRIVIAL CANDIDATES
+Every assignment has H_2=1 and
+ H_3=1+F,  F=(y-1)(y^2-1)(y^4-1)(y^5-1).
+Also H_N(1)=1 for allN. With
+ A_(N,k)=product_(j=1)^k(1-y^(N+j))(1-y^(j-N)),
+these first two colors require cyclotomic coefficients c_1=0,c_2=y^3.
+Therefore color4 must satisfy
+ H_4=1+y^3 A_(4,2)+c_3(y)A_(4,3),  c_3 in Z[y,y^-1].
+Since A_(4,3) vanishes to order6 at1, the first six derivatives (orders0
+through5) must be
+                    (1,0,0,0,4320,86400).
+The obstruction occurs before any full polynomial division is needed.
+
+COMPLETE ENUMERATION, WITH PROVED SYMMETRY REDUCTION
+There are 9!/4!=15,120 same-sign placements, and
+12!/(6!2!2!)=166,320 opposite-sign placements. The full unquotiented
+finite family thus has 2,514,758,400 assignments.
+Permuting the four positive nodes and the three negative nodes leaves Z_C
+unchanged. prepare.py constructs all 144 actions of S4xS3 on the nine
+same-sign edges, and explicitly partitions all 15,120 placements into
+175 orbits. One representative per orbit suffices: any node permutation
+carries the opposite-sign edge multiset to another allowed placement.
+For each of these 175 representatives, search.cpp visits ALL166,320
+unique opposite placements with std::next_permutation. This gives
+29,106,000 checked assignments, with harmless residual duplicates.
+No heuristic pruning or numerical tolerance occurs.
+
+EXACT FILTERS AND COUNTS
+For s_i=(-1)^(C_ii), let z_i=sum_(j!=i) C_ij s_j. The already-fixed color3
+moments imply H_4''(1)=6sum_i s_i z_i^2. Successive counts are:
+  all reduced placements                      29,106,000
+  H_4''(1)=0                                     141,944
+  H_4'''(1)=0                                        455
+  H_4''''(1)=4320                                      2
+  H_4'''''(1)=86400                                    0
+The two fourth-order survivors have fifth derivatives79200 and144000.
+Thus neither can satisfy the color4 Habiro condition, and no assignment
+in the whole specified family can be a knot colored-Jones sequence.
+
+The direct color4 formula used in the enumerator is
+ H_4 = sum_i s_i y^(3C_ii)
+     +(1+y+y^2) sum_(i!=j) s_j y^(C_ii+2C_ij)
+     +(1+2y+2y^2+y^3)
+              sum_(i<j<k) s_i s_j s_k y^(C_ij+C_ik+C_jk).
+It follows by separating occupancy patterns3,2+1,1+1+1 in the defining
+q-multinomial sum. All derivatives and comparisons use signed integers.
+
+INDEPENDENT VERIFICATION
+The original general q-multinomial engine in work/bio7/quiver_candidate.py
+was used by audit.py to recompute H3 and H4 of both last survivors. It
+confirms their complete polynomials, derivatives, and nonzero exact Habiro
+division remainders. The direct H4 formula was additionally compared
+against that engine on20 independent matrices. These comparisons verify
+the formula implementation; completeness comes from the explicit orbit
+partition and exhaustive unique multiset permutations.
+
+FILES
+ prepare.py: orbit construction, fixed Habiro target/divisor.
+ config.json/config.h: 175 representatives and exact target coefficients.
+ search.cpp: exhaustive integer enumeration and pruning.
+ search_result.json: exact counts; completed in under1second locally.
+ finalists.txt: both fourth-order survivors and their fifth derivatives.
+ audit.py/independent_audit.json: independent full-polynomial checks.
+ hits.txt: empty, because no case passes color4.
+
+WHAT SHOULD CHANGE NEXT
+This rules out one concrete proposed interaction design completely. Merely
+rearranging its edges cannot fix it. New designs need different interaction
+multisets, additional node charges, or new nodes, and must still satisfy
+all higher-color compatibility and geometric realization conditions.
+The proved arborescent tangle-to-quiver gluing grammar is a principled
+source of realizable interactions; arbitrary symmetric-quiver positivity
+alone supplies no such guarantee. No claim is made that these constraints
+characterize knot invariants or that a surviving formal quiver would be a
+counterexample to Jones unknot detection.

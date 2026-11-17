@@ -1,0 +1,220 @@
+THREE FIXED LONG--PATON COMPLETIONS
+2026-11-03. Status TRUSTED finite exact calculations. No new word search.
+Reproduce: python3 work/width6_targeted/lp_completions.py
+All complete words, exact Laurent polynomials and certificates are in
+lp_completions.json. Variables: TL uses A; s=A^-2 and q=s^2.
+
+1. A CONCRETE ESSENTIAL BURau-ZERO ARC/NOODLE PAIR
+
+Let beta be the 106-letter Long--Paton braid from kernel_words.py.
+Let c1=beta(arc34), and let N1 be a vertical boundary-to-boundary noodle
+between punctures p2 and p3 (punctures ordered along the real diameter).
+The braid beta is pure and its W(6,4)/Burau matrix is exactly the identity.
+Thus <N1,c1> equals <N1,arc34>=0 over the generic field: the standard arc34
+lies entirely on the right of N1. The same statement follows for the
+puncture-relative arc class from the absolute Burau class after inverting
+the nonzero factor 1-q.
+
+Nevertheless c1 cannot be isotoped off N1. Its half-twist is
+  a=beta sigma3 beta^-1.
+If c1 lay in the right subdisk, a would lie in the standard braid subgroup
+on punctures3,...,6 and its Artin automorphism would fix x1,x2.
+The following finite-group evaluation proves it does not fix x1:
+map the free generator xi to [[1,i],[i,1+i^2]] in SL2(F101), i=1,...,6.
+Applying the Artin action of a sends x1 from
+  [[1,1],[1,2]]
+to
+  [[37,3],[18,67]].
+These matrices differ, so the free-group images differ. This is an exact
+nonidentity witness, not a probabilistic inference or a faithfulness claim
+for the finite quotient. Full evaluated images are retained in JSON.
+
+2. THREE COMPLETIONS WITH NO CLOSED COMPONENTS
+
+The top cap system is C. The lower system is beta(D), with D indicated.
+Each C also defines TWO LITERAL VERTICAL NOODLES, through the gaps of its
+adjacent arcs. All contain the fixed noodle N1 at gap2.5. Each D contains
+arc34, so beta(D) contains the same target c1 above.
+
+Case  C                 D                 TL states i,j
+A     (23)(45)          (34)(56)           3,0
+B     (23)(56)          (12)(34)           2,7
+C     (23)(45)          (12)(34)           3,7
+
+Every cap-beta-cup tangle has exactly two arcs and NO closed components.
+The fixed boundary pairings are through-type in A,C and e-type in B.
+Their id-coefficient breadths differ, so these are not merely framing-unit
+changes of the same marked tangle: 156,164,172 in A-degree, respectively.
+
+For literal vertical noodles, let rows correspond to N1,N2 and columns to
+the arcs of D in the displayed order. In ALL THREE CASES the genuine
+one-point matrix is
+  M_noodle = [[0,0],[0,0]].
+Indeed beta acts identically on the relevant Burau classes, and neither
+of the straight D arcs crosses either selected vertical noodle. Consequently
+det M_noodle=0 in all three cases. This zero-row property is checked for
+these choices; it would not follow from one arbitrary zero entry alone.
+
+The calibrated cap Jones coefficients are nonzero:
+Case  Laurent terms    A exponent interval   endpoint coefficients
+A       40                 [-72,84]              +1,-1
+B       41                 [-82,82]              +1,-1
+C       44                 [-88,84]              -1,+1
+
+3. THE DUALITY DISTINCTION IS MATERIAL
+
+M_noodle above is NOT the one-cup TL/Burau Gram matrix of the top cap arcs
+against the lower cap arcs. In the same row/column order, that latter matrix
+is (off-diagonal adjacent arcs have pairing1; disjoint ones0):
+  M_cap(A)=[[1,0],[1,1]], det=1;
+  M_cap(B)=[[1,1],[0,0]], det=0;
+  M_cap(C)=[[1,1],[0,1]], det=1.
+
+We computed the generic regularized pairing P and absolute torus-torus
+pairing H=(q-1)^2 q^-2 P/(1-t) for all three cases. Exact division and
+specialization give
+  H(q,1)=((q-1)^2/q) det M_cap,
+  H(q,-q^-1)=((q-1)^2/q) J_hat.
+The regularized P has 687,837,878 aggregated terms. The absolute H has
+687,838,880. Thus in A and C the determinant of the genuine vertical-noodle
+matrix is zero while H(q,1) is nonzero. This is not a contradiction: H is
+the torus-torus pairing, not the pairing against those two literal vertical
+noodles. Identifying the two would be a false dictionary.
+
+This computation therefore supplies three real Long--Paton arc/noodle
+completions and their cap Jones coefficients, but it does NOT establish
+that those J values are the exchange-twisted determinants of the specified
+M_noodle. A correct boundary dual to a TL cap is additional data.
+
+4. EXTREMAL ABSOLUTE-PAIRING DATA; NO TIGHTNESS CLAIM
+
+At the highest SURVIVING collapsed s-degree a-2b, each H has only ONE
+aggregated monomial:
+  A: -s^36 t^-1, degree38, specialized coefficient+1;
+  B: +s^43,       degree43, specialized coefficient+1;
+  C: -s^46,       degree46, specialized coefficient-1.
+Hence b is constant on that aggregated leading line. Like terms have
+already been collected, so this does not count geometric intersection
+pairs, prove diagonal-pair coherence, or exclude hidden cancellation.
+
+Boundary-relative R1/R2 simplification reduces the 106-crossing displayed
+tangles to82,88,90 crossings with24,46,24 mixed crossings. These are useful
+diagram reductions only. None is a certificate of globally minimal
+cap-arc/noodle intersections under cap slides. No Conjecture T minimizer
+is asserted, and failure of simplification is not called nonsplit.
+
+No J=0 candidate occurs, so the contingent D-closure/unknot test was not
+triggered. No new counterexample or proof of KL(6,2) is claimed.
+
+5. STRONGER FINAL SET: THREE e-TYPE COMPLETIONS
+
+To avoid using through-type cases A,C as evidence for the e-type Key Lemma,
+we also computed exactly the following three marked completions, all based
+on case B. Keep the lower arc system beta((12)(34)) fixed. Transport the
+top cap system (23)(56) by
+  tau = 1, sigma4^2, sigma4^-2.
+The two literal vertical noodles at gaps2.5 and5.5 are fixed by these
+transports: their supports are small disks about punctures4,5, disjoint
+from both noodles. Thus the same c1=beta(arc34), N1 pair remains, and the
+genuine one-point noodle matrix remains identically zero in every case.
+
+Moving the top transport to the bottom uses the effective word tau^-1 beta.
+Each case has exactly two arcs, no closed components, and e-type endpoint
+connectivity. The exact outcomes are:
+
+tau         J_id A-range  breadth  top s-degree J_hat  leading coefficient
+1            [-82,82]      164           41                  +1
+sigma4^2     [-88,88]      176           43                  -1
+sigma4^-2    [-92,80]      172           47                  +1
+
+Here J_hat=A^(-exponent_sum(tau^-1 beta))*J_id. The exponent sums are
+0,-2,+2 respectively. Different breadths show inequivalence up to framing
+units of the marked cap-Jones coefficients.
+
+The normalized one-cup CAP Gram matrix is
+  [[1,1],[0,d]],
+where d is respectively
+  0,  s^-1-s^-3,  s-s^3.
+Thus even within these three e-type completions the determinant of the
+cap Gram matrix is NOT forced to vanish by the literal noodle-zero row.
+The generic absolute torus pairing satisfies, exactly in all three:
+  H(q,1)=((q-1)^2/q)*d,
+  H(q,-q^-1)=((q-1)^2/q)*J_hat.
+No extra framing unit was needed in the first identity with these stated
+normalizations. This is another explicit demonstration that literal
+vertical-noodle duals and the cap Gram duals cannot be identified.
+
+The highest surviving collapsed lines of absolute H have just one
+aggregated monomial, respectively:
+  +s^43, -s^45, +s^49.
+Each has b=0. This is polynomial information only, not an unaggregated
+geometric intersection count. Relative R1/R2 simplifies the displayed
+tangles to88,92,92 crossings; no cap-slide minimum is certified.
+
+These are the preferred three completions for reporting task(a).
+Reproduce: python3 work/width6_targeted/lp_e_completions.py
+Exact words, both matrices, P/H supports, Jones coefficients and reduction
+logs: lp_e_completions.json. The earlier cases A,C are useful dictionary
+controls, not the substantive e-type tests.
+
+6. ESSENTIAL ZERO PAIR FOR THE PROPER ONE-CUP CAP GRAM
+
+The original e-type case B also supplies an essential zero pair directly
+for the cap Gram, independent of the literal-noodle dictionary:
+  top cap arc56 versus beta(arc34).
+Its one-cup pairing is zero because beta is a Burau kernel and arc56,
+arc34 are disjoint in the untwisted configuration. But the actual image
+arc beta(arc34) cannot be made disjoint from arc56. Half-twists about
+disjoint arcs with distinct endpoints commute, whereas
+  a=beta sigma3 beta^-1
+does NOT commute with sigma5. In the same exact SL2(F101) evaluation as
+above, a sigma5 sends x1 to [[37,3],[18,67]], while sigma5 a sends it to
+[[5,19],[26,99]]. Full data: lp_arc56_certificate.json.
+
+Thus the zero row for M_cap in original case B contains a geometrically
+essential arc/cap pair, and its two-cup J is nonzero. This is a valid
+specific instance where the two-cup pairing detects data missed by the
+one-cup pairing. The sigma4 transports in Section5 change this top cap,
+so their nonzero determinants must not be presented as further completions
+of the SAME proper cap-Gram zero pair. They preserve the literal-noodle
+zero pair of Section1 instead.
+
+7. FINAL PREFERRED SET: FIX THE ACTUAL CAP-GRAM ZERO PAIR
+
+As an authorized replacement for the sigma4 transports, take
+  tau=1, sigma1^2, sigma1^-2
+on the top system (23)(56), keeping beta((12)(34)) below. These transports
+fix the actual cap arc56, so all three retain the SAME essential zero
+pair arc56 versus beta(arc34), certified in Section6. The literal vertical
+noodles at2.5,5.5 are also fixed. All three tangles have exactly two arcs,
+no closed components, and e-type connectivity.
+
+Their cap Gram matrices are, in the displayed order,
+  [[1,1],[0,0]], [[s^-4,1],[0,0]], [[s^4,1],[0,0]].
+Thus det M_cap=0, H(q,1)=0 and M_noodle=0 in ALL THREE, while J is nonzero:
+
+tau         J_id A-range  breadth  top s-degree J_hat  leading coefficient
+1            [-82,82]      164           41                  +1
+sigma1^2     [-84,88]      172           41                  +1
+sigma1^-2    [-56,80]      136           29                  -1
+
+Their absolute H leading collapsed lines are respectively
+  +s^43,
+  +s^43,
+  -13s^31 -12s^33 t.
+The last line has constant collapsed degree31 but TWO different b-values,
+0 and1; after t=-s^-2 it contributes -13+12=-1. Therefore a unit leading
+Jones coefficient need not arise from one surviving sign or one b-value,
+even for a valid e-type two-arc completion. These are aggregated polynomial
+contributions, not individual geometric intersections; opposite terms may
+already have cancelled within each coefficient. Nor is this a refutation
+of the tight version: no global cap-slide minimum is certified.
+
+Relative R1/R2 leaves88,90,83 crossings respectively. Different coefficient
+breadths certify different marked tangles up to framing units. No zeros
+occur, so the contingent D-closure test was not triggered.
+
+These THREE are the preferred final task(a) set. The sigma4 family remains
+only a duality-control calculation. Reproduce the preferred set with
+  python3 work/width6_targeted/lp_e_completions.py 1
+Full exact data: lp_e_fixed_cap_completions.json.

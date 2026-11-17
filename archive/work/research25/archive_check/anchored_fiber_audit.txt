@@ -1,0 +1,18 @@
+ANCHORED-FIBER AMPLIFICATION — INDEPENDENT AUDIT
+1 November 2026
+
+The strengthening is correct. Let P be ANY Jones polynomial realized by a knot J. Suppose a nontrivial knot K has V_K=1, and put L_m=J#K^#m. Then V_Lm=P for every m>=1. The following formulas are exact:
+
+  r(L_m)=r(J) r(K)^m,
+  h(L_m)=h(J)+m h(K),
+  b(L_m)=b(J)+m(b(K)-1).
+
+Here r is total reduced rational Khovanov rank, h its quantum diameter with the unknot in q=0, and b bridge number. The first two follow from reduced Kunneth over Q; the third is Schubert's connected-sum bridge theorem. Since r(J)>=1, r(K)>1 by Kronheimer--Mrowka, and b(K)>=2 for a nontrivial knot, rank and bridge number are unbounded. Also h(K)>0: if reduced homology occupies one quantum degree, the reduced/unreduced exact sequence places unreduced homology in only two quantum degrees separated by two; all rational Lee differentials raise q by a positive multiple of four, so the sequence collapses to its rank-two target. Thus reduced rank is one, contrary to nontriviality.
+
+CONSEQUENCE. A hypothetical Jones counterexample forces EVERY nonempty whole Jones fiber to have unbounded r, h, and b. Therefore a bound on even ONE of these quantities in even ONE nonempty whole Jones fiber proves unknot detection. One need not start with the unit fiber or prove bounds for all polynomials.
+
+LOGICAL LIMITATION. This is a weaker sufficient hypothesis than bounds for every fiber, but it is not a logically weaker problem than the conclusion: any such chosen-fiber bound implies the full conjecture. The converse is not established. Detection alone does not provide rank, spread, or bridge bounds on an arbitrary nonunit fiber. A nonunit polynomial may supply extra coefficient or geometry constraints useful for an independent proof, but an argument must explicitly handle the invisible unit factors in J#K^#m. Bounding primes, fixed templates, or bounded bridge classes leaves that exact gap.
+
+In particular, a theorem identifying a SINGLE knot solely by its entire Jones polynomial would already imply unknot detection: its fiber would have one element, hence bounded bridge number. No such uniqueness theorem is assumed here. This observation explains why a nonunit-fiber classification should not be presumed easier without an actual mechanism.
+
+Sources already audited in the main scaffold: Khovanov's reduced connected-sum theorem; Lee's rational spectral sequence; Kronheimer--Mrowka unknot detection. The bridge identity is Schubert's classical connected-sum theorem. No new search or local computation is used in this audit.

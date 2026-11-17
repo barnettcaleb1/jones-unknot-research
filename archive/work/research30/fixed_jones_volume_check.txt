@@ -1,0 +1,40 @@
+BOUNDED STRATEGIC CHECK: FIXED WHOLE JONES POLYNOMIAL AND VOLUME
+1 November 2026 UTC. No exhaustive literature claim.
+
+No primary example was located of a sequence of hyperbolic KNOTS with one
+exact, normalized Jones polynomial and unbounded hyperbolic volume.
+This negative search result is not a proof of boundedness or a definitive
+statement of the current literature.
+
+Most directly relevant published primary source:
+Champanerkar–Kofman, On links with cyclotomic Jones polynomials,
+Algebraic & Geometric Topology 6 (2006), 1655–1668, introduction p1655:
+ https://msp.org/agt/2006/6-4/agt-v6-n4-p03-s.pdf
+ https://arxiv.org/abs/math/0605631
+They explicitly describe all then-known infinite fixed-Jones hyperbolic
+families, including Kanenobu and Watson, as finite-twist-site families and
+therefore volume-bounded. Their own unbounded-volume result concerns
+DISTINCT cyclotomic Jones polynomials, with increasing span, and does not
+contradict boundedness on an exact Jones fiber.
+
+Additional primary observations checked:
+Stoimenow's 2004 conference research transcript, The second coefficient
+of the Jones polynomial, p4, poses the fixed-polynomial/unbounded-volume
+construction as the way to obstruct a volume upper bound and explains why
+Kanenobu's series does not supply it:
+ https://stoimenov.net/stoimeno/homepage/papers/talk.pdf
+
+The 2019 numerical paper Deep learning the hyperbolic volume of a knot
+and 2025 Colored Jones Polynomials and the Volume Conjecture discuss
+same-Jones knots with DIFFERENT volumes in finite censuses. Neither source
+found here supplies unbounded volumes within one exact fiber:
+ https://arxiv.org/abs/1902.05547
+ https://arxiv.org/abs/2502.18575
+
+Consequences for the projective-beta proposal:
+The finite ACTUAL twist-template conclusion supplies finitely many augmented
+Dehn-filling parents, hence a uniform volume bound for hyperbolic members.
+Thus a verified fixed-Jones/unbounded-volume family would indeed falsify
+all-fiber beta boundedness. None was found in this bounded check. Even such
+a family would not directly refute the weaker proposal that ONE specified
+nonempty Jones fiber has bounded beta.

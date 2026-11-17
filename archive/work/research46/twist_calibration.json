@@ -1,0 +1,14 @@
+{
+  "C_cubed": "A^-6 I",
+  "actual_braid_family": "(sigma_1 sigma_2)^(3k+1)",
+  "normalized_Jones": "t^(3k)+t^(3k+2)-t^(6k+2)",
+  "direct_braid_power_checks": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "all_k_proof": "C^3=A^-6 I; scalar character chi(C)=A^2",
+  "scope": "Framing calibration, not a proof of the full research conjecture."
+}

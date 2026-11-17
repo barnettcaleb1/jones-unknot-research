@@ -1,0 +1,5 @@
+sh: line 1: 78371 Terminated: 15          perl -e 'alarm 3000; exec @ARGV' /Users/calebbarnett/jones-lanes/theory-restart/lit/kht/src/khtpp/kht++ -c2 -d examples/dbl/k132p.kht < /dev/null > examples/dbl/k132p.log 2>&1
+
+real	9m5.727s
+user	8m45.730s
+sys	0m2.269s

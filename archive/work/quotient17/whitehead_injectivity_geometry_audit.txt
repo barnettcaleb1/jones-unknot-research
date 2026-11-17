@@ -1,0 +1,218 @@
+INDEPENDENT GEOMETRIC AND NORMALIZATION AUDIT
+31 October 2026. Auditor: generic_braid.
+
+Verdict: the Whitehead quotient skein-map argument passes, with the exact
+scope and normalization distinctions below. This is not an assertion that
+the ordinary Jones polynomial detects the unknot. No novelty is claimed.
+
+1. EXACT TWO-CLOSURE JONES DATA REALLY GIVE A PROJECTIVE SKEIN VECTOR
+
+Let T be an actual four-ended tangle, with no closed components, in a fixed
+marked ball. Let the two planar closures be denoted infinity and zero.
+Suppose T(infinity) is an actual unknot and
+
+                     V_{T(0)}(t)=-(t^(1/2)+t^(-1/2)).
+
+The value at t=1 ensures T(0) has two components. Its two strands therefore
+close separately in this closure. Choose the strand orientations to be the
+ones induced by an orientation of the infinity-closure unknot. These also
+orient the two zero-closure components. If this choice reverses a component
+relative to the orientation used in the displayed Jones equality, it does
+not change that equality: for two-component links V_L'(1)=-3 lk(L), so the
+displayed equality forces lk(L)=0; component reversal changes V by a power
+t^(+/-3 lk(L)), which here is one.
+
+Draw both closure systems as planar caps outside the tangle disk. Neither
+adds any crossing, and the orientations inside the disk now agree. Thus
+the writhe of BOTH closed diagrams is one and the same integer w. With
+delta=-A^2-A^(-2), the bracket closure values are
+
+                     (-A^3)^w,       (-A^3)^w delta.
+
+The standard rational reference Q0 has closure values (1,delta). The two
+closure functionals on the two-dimensional tangle skein space have pairing
+matrix [[1,delta],[delta,1]], up to simultaneous ordering of the bases.
+Its determinant 1-delta^2 is nonzero in Q(A). Consequently
+
+                          [T]=(-A^3)^w [Q0].
+
+This is a statement in the fixed boundary marking. An arbitrary boundary
+mapping class cannot be silently absorbed into the framing scalar.
+
+The exact equality hypothesis matters. For merely
+V_{T(0)}=+/-t^r V_{U2}, linking need not vanish, and the common-writhe step
+does not prove the same projective conclusion.
+
+2. THE WEAKER MONOMIAL CASE STILL SATISFIES THE CASSON FILTER
+
+In that weaker case, V_{T(0)}(-1)=0 and |V_{T(0)}'(-1)|=1, using a local
+choice of square root and |(-1)^r|=1. Differentiation of the monomial adds
+no term because V_{U2}(-1)=0. In the convention of Garoufalidis's Theorem1
+the same absolute statements hold.
+
+If the double cover of T is E(J), with the infinity and zero fillings the
+preferred meridian and longitude, respectively, the audited surgery formula
+is lambda_G(S^3_0(J))=2a2(J)-1/6. The link formula gives
+|lambda_G|=1/6. Hence |12a2(J)-1|=1, and integrality gives a2(J)=0.
+
+Thus the rank-one contradiction below does not require an unjustified
+assertion that a framing monomial is also the normalized Jones unit.
+
+3. WHITEHEAD QUOTIENT MAP
+
+Take the standard component-preserving strong inversion of the Whitehead
+link P union A, compatible with the chosen strong inversion on the
+companion. Removing invariant tubular neighborhoods of the two components
+gives quotient underlying space S^2 times I, with four marked endpoints on
+each boundary sphere. Inserting a four-ended tangle at the inner boundary
+therefore induces a LINEAR map F between two-dimensional Q(A) skein spaces.
+Only one input tangle is inserted. This is not a nonlinear colored-cabling
+evaluation, and its input is not the scalar ordinary Jones polynomial.
+
+Use the fixed peripheral identification mu_K -> lambda_A and
+lambda_K -> mu_A, up to coherent signs. The rational input Q_n with disk
+slope lambda_U+n mu_U therefore fills A along mu_A+n lambda_A, namely
+1/n surgery. The n=0 output is the actual unknot exterior. The n=1 output
+is a nontrivial twist-knot exterior with a2=+/-1. More generally a2=+/-n;
+the sign is immaterial here. Since lk(P,A)=0, surgery changes neither the
+outer meridian marking nor the outer preferred longitude marking.
+
+The external meridional closures are actual unknots: each is the branch
+set of the extended strong inversion on S^3. The standard equivariant
+construction supplies the extension; the Smith conjecture identifies its
+nonempty fixed circle as an unknot.
+
+F(Q_0) is nonzero because its meridional bracket closure is a unit. If F
+had rank one, F(Q_1)=c(A)F(Q_0). Evaluation under the SAME outer meridional
+closure makes c a ratio of bracket values of actual unknots, hence a
+framing unit, not an arbitrary rational function. The longitude closure
+of F(Q_1) would then have Jones polynomial a monomial times V_{U2}. By
+section2 its covering knot would have a2=0, contradicting a2=+/-1.
+Therefore rank(F)=2.
+
+4. INHERITED QUOTIENTS AND ITERATION
+
+After the preferred meridian-longitude identification of input and output,
+F preserves the projective rational-zero line: Whitehead doubling the
+unknot gives the unknot. Since F is injective, it follows that
+
+            F(T) lies on that line iff T lies on that line.
+
+This conclusion concerns the PARTICULAR marked rational-zero line. From
+the bare statement that F(T) equals some rational-tangle vector one cannot
+infer that T is rational; the inverse of F need not preserve the set of
+all rational-tangle vectors.
+
+Combined with section1, an inherited Whitehead quotient with actual
+meridional unknot closure and exact longitude Jones V_{U2} forces the
+companion quotient onto the same rational-zero line, and hence forces
+a2(companion)=0 by section2. The statement iterates for any finite sequence
+of the standard positive or negative untwisted Whitehead constructions
+with their compatible inherited inversions. Thus iterated Whitehead
+doubles of a trefoil core cannot supply the proposed Jones-flat quotient,
+even though the doubled knots themselves have Alexander polynomial one.
+
+Not proved: the conclusion for a different, non-inherited strong inversion;
+geometric triviality of a tangle on the rational-zero skein line; exclusion
+of a2=0 cores; any ordinary-Jones-to-full-quotient reconstruction theorem.
+
+PRIMARY SOURCES AND DEPENDENCIES
+
+Garoufalidis, Signatures of links and finite type invariants of cyclic
+branched covers, Theorem1 and Section4.1:
+https://people.mpim-bonn.mpg.de/stavros/publications/signature.pdf
+https://arxiv.org/html/math/9811021
+
+Dubois--Huynh--Yamaguchi, Non-abelian Reidemeister torsion for twist knots,
+Remark2(4)--(5), specifies Whitehead filling W(1/n) and the Alexander
+polynomial of the resulting twist knots:
+https://arxiv.org/pdf/0706.2213
+
+The peripheral-map and twist-knot source audit is recorded independently in
+work/quotient17/whitehead_injectivity_audit.txt. The linking derivative and
+component-reversal factors above also follow directly from the normalized
+oriented Jones skein relation and writhe correction; only their vanishing
+when lk=0 is needed.
+
+5. THE GENERAL SATO--LEVINE CRITERION ALSO PASSES
+
+Let L=P union A be any two-component link with A an unknot, lk(P,A)=0,
+and a componentwise strong inversion whose exterior quotient is the marked
+shell defining a map F as above. Neither P=U nor P(U)=U is required in this
+section. Let P_n be the remaining knot after 1/n surgery on A. The ambient
+manifold is S^3, and its preferred longitude for P_n is the same marked
+outer slope, since lk(P,A)=0. Each output F(Q_n) therefore has an actual
+meridional unknot closure and a longitudinal closure L_n with
+
+                    |V_{L_n}'(-1)|=|12a2(P_n)-1|.
+
+Suppose rank(F)=1. The meridional closure implies F(Q_0) is nonzero and
+F(Q_n)=c_n F(Q_0), with c_n a framing unit. Longitudinal framed brackets
+are proportional by that unit; after oriented writhe correction their
+Jones polynomials differ by a signed Laurent monomial. Their value at -1
+vanishes because each branched cover is zero surgery. Thus their first
+derivative magnitudes at -1 coincide. Therefore
+
+                    |12a2(P_n)-1|=|12a2(P_0)-1|.
+
+The integer-valued function a -> |12a-1| is injective. Indeed the only
+alternative to a=b in an equality of these magnitudes is a+b=1/6, which
+is impossible for integers. Hence rank one would force every a2(P_n)
+to be the same.
+
+Hoste's algebraically split surgery formula supplies the contradiction
+when the Sato--Levine invariant beta(L) is nonzero. In the convention of
+Gorsky--Liu--Moore, Section6.2, equations(6.2)--(6.3), simultaneous
+(1,1/n) surgery on P union A has Casson invariant
+
+                   a2(P)+n a2(A)-n beta(L)=a2(P)-n beta(L).
+
+If instead one first performs surgery on A, one is left with +1 surgery
+on P_n in S^3. The remaining coefficient is still +1 because lk=0.
+The one-knot surgery formula consequently identifies the same invariant
+with a2(P_n), so
+
+                         a2(P_n)=a2(P)-n beta(L).
+
+Thus beta(L) != 0 implies rank(F)=2. This use of Hoste's formula has NO
+L-space hypothesis; that subsection of the source explicitly starts with
+arbitrary algebraically split links in integer homology spheres.
+
+Conversely beta(L)=0 does not imply rank(F)=1. It only means this particular
+rank test is inconclusive. The hypothesis P(U)=U is needed if one wants
+F to preserve the preferred rational-zero line, not for injectivity itself.
+
+Primary source:
+https://arxiv.org/html/1810.10178#S6.SS2
+Gorsky--Liu--Moore, Surgery on links of linking number zero and the
+Heegaard Floer d-invariant, Section6.2, citing Hoste, A formula for Casson's
+invariant, Trans. Amer. Math. Soc.297 (1986),547--562.
+
+6. PRECISE CONSEQUENCE FOR THE COUNTEREXAMPLE SEARCH
+
+Call an actual preferred quotient tangle invisible when its meridional
+closure is U and its longitudinal closure has exact Jones polynomial V_U2.
+Section1 converts this into equality of its full skein vector with the
+preferred rational-zero vector up to framing. If an invisible quotient is
+obtained from another actual quotient by a compatible shell with beta !=0
+and P(U)=U, injectivity transfers invisibility back to the input quotient.
+For the backward normalized-Jones statement, its two closure diagrams again
+have the same writhe after compatible orientations, as in section1.
+
+Consequently a finite stack of such inherited satellite layers cannot be
+the first source of invisible quotient behavior. Removing every specified
+layer must leave an invisible core, and that core must have a2=0. In
+particular no finite tower of the standard untwisted Whitehead patterns
+over a trefoil core supplies the target. This is a genuine family exclusion
+despite the Alexander polynomial of every outer Whitehead double being one.
+
+The connection to ordinary Jones is restricted but exact. If a Jones-one
+knot K has an actual unknotting crossing, remove that crossing ball. The
+other crossing filling is U, and the oriented smoothing has V_U2 directly
+from the Jones skein relation. The fixed outside tangle therefore satisfies
+section1 and is invisible. Its covering exterior cannot have any of the
+excluded inherited Whitehead-tower structures over a nonzero-a2 core.
+
+No argument here assigns such an unknotting crossing to a general Jones-one
+knot. Nor does it classify all possible strong inversions of a given cover
+knot or all zero-beta shells. Those are genuine remaining geometric gaps.

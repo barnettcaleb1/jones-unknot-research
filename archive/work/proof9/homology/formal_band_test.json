@@ -1,0 +1,357 @@
+{
+  "warning": "Abstract complexes only, not realized knots. This disproves an inference from the listed algebraic constraints, not a knot theorem.",
+  "source_bars": [
+    {
+      "h": 0,
+      "q": 4,
+      "length": 1
+    },
+    {
+      "h": 2,
+      "q": 10,
+      "length": 1
+    },
+    {
+      "h": 1,
+      "q": 4,
+      "length": 1
+    },
+    {
+      "h": 3,
+      "q": 10,
+      "length": 1
+    }
+  ],
+  "formula": "P_red(n)=1+t^(2n)q^(4n)(1+t)(1+t*q^2)(q^a+t^2*q^b)",
+  "passes": [
+    "Euler Jones1",
+    "s=0",
+    "all Lee bars length1",
+    "free summand inclusion/retraction",
+    "Wang full-twist grading law"
+  ],
+  "rows": [
+    {
+      "n": -3,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          -6,
+          -8
+        ],
+        [
+          -5,
+          -8
+        ],
+        [
+          -5,
+          -6
+        ],
+        [
+          -4,
+          -6
+        ],
+        [
+          -4,
+          -2
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -3,
+          0
+        ],
+        [
+          -2,
+          0
+        ]
+      ]
+    },
+    {
+      "n": -2,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          -4,
+          -4
+        ],
+        [
+          -3,
+          -4
+        ],
+        [
+          -3,
+          -2
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "n": -1,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ]
+      ]
+    },
+    {
+      "n": 0,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ]
+      ]
+    },
+    {
+      "n": 1,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          16
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          8,
+          20
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "reduced_rank": 9,
+      "unreduced_rank": 10,
+      "reduced_Euler": {
+        "0": 1
+      },
+      "unreduced_Euler": {
+        "-1": 1,
+        "1": 1
+      },
+      "extra_support": [
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          9,
+          24
+        ],
+        [
+          10,
+          24
+        ]
+      ]
+    }
+  ]
+}

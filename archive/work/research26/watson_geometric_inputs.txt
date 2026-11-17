@@ -1,0 +1,66 @@
+GEOMETRIC INPUTS FOR THE PASS-26 WATSON RANK BOUND
+1 November 2026 UTC. Extracted and restated from our pass-21 argument.
+Only the two inputs used in the rank proof are included here.
+
+Marking: ports 0,...,5 at either end; the outside cap is (0,5).
+The zero and infinity input caps are respectively
+ A=(05)(12)(34), B=(05)(14)(23).
+For a three-braid beta, the six-strand middle word replaces sigma_i
+by sigma_i sigma_(6-i)^(-1), i=1,2, in the same word order.
+
+1. THE BASE IS A MIRRORED TWO-BRIDGE CONNECTED SUM
+
+With both input tangles zero, a sphere between the two three-strand
+halves meets the knot twice. It exhibits the connected sum of a knot
+J_beta and its mirror. Each half is obtained by capping the inner two
+strands at both ends and closing the outer strand. This is a four-plat,
+so J_beta has bridge number at most two.
+
+The component check in the companion verifiers proves J_beta is a knot
+under the stated allowed-output hypothesis. A two-bridge knot is
+alternating. Consequently its reduced Khovanov homology over F2 has
+rank det(J_beta); the unknot case has determinant and rank one.
+
+2. THE DETERMINANT FACTOR
+
+Use the Kauffman bracket with the unknot equal to one and
+delta=-A^2-A^-2. Write the input tangle skein vectors in the zero,
+infinity basis as [T]=(a,b), [U]=(c,e). Their denominator closures are
+  <D(T)>=a+delta*b, <D(U)>=c+delta*e.
+
+The full rainbow cap B absorbs each paired middle generator by a
+crossing slide followed by a Reidemeister-II cancellation. Thus the
+four cap evaluations have matrix
+  [[X,delta],[delta,delta^2]],
+where X=<J_beta><mirror(J_beta)>.
+The mirrored framing exponents cancel, so
+  X=V_J(A^-4)V_J(A^4).
+
+By bilinearity,
+  <K_beta(T,U)>=X*a*c+delta*(a*e+b*c)+delta^2*b*e.
+
+Set zeta=exp(pi*i/4). Then delta(zeta)=0 and zeta^-4=-1.
+Taking absolute values (the writhe corrections have absolute value
+one) gives
+  det K=(det J_beta)^2 det D(T) det D(U).
+
+For each allowed nonvertical two-arc input connectivity, denominator
+closure is a knot. Its determinant is a positive odd integer, so
+  (det J_beta)^2 <= det K.
+Adding horizontal integer twists to either input makes only curls
+in its denominator closure and does not change that knot type.
+
+These are geometric and skein deductions, not conclusions inferred
+from the numerical component table. They require the marked template;
+an arbitrary placement of a braid and its inverse need not have the
+same cap cancellation.
+
+Primary diagram: Watson, Knots with identical Khovanov homology,
+Figure 1, Lemma 3.1 and Section 7.4.
+https://personal.math.ubc.ca/~liam/files/identical.pdf
+Alternating reduced thinness: Manolescu–Ozsvath, Theorem 1.
+https://web.stanford.edu/~cm5/quasi.pdf
+
+The rank proof and its independent audit are in homology_mechanism.txt
+and watson_independent_audit.txt. No global Jones-fiber presentation
+theorem, full unknot-detection proof or counterexample is supplied.

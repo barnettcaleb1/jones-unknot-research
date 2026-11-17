@@ -1,0 +1,81 @@
+C3: A FOURTEEN-LETTER HILDEN CAP-SLIDE COUNTEREXAMPLE TO NJC
+Status TRUSTED; exact algebra, direct geometric simplification supplied
+independently by the pairing agent in cancellation_14.json.
+
+Use C0=(1,2),(3,4), free endpoints5,6, and its generic fork lift
+v=F13-F14-F23+F24. Let
+
+ beta0=[4,3,2,1,5,4,3,2,3,4],
+ r1=[2,1,-3,-2],
+ w=beta0*r1^-1=[4,3,2,1,5,4,3,2,3,4,2,3,-1,-2].
+
+r1 is the elementary Tawn/Hilden cap slide of the first two caps.
+It fixes the actual cap tangle C0 and its TL vector, but not the generic
+two-variable cap-product vector. Its specialized action fixes v exactly.
+
+Let P(w)=Gnorm(v, K(mirror(w))v)/(1+qt), with linear-first Budney
+pairing and conjugation in the second argument as implemented in
+lift_pairing.py. This is the repaired two-variable pairing from C1;
+P|_(t=-q^-1)=(1+q)J in the matching normalized conventions.
+
+The exact calculations are
+                    P(beta0)=0,
+          P(w)=q^4(1-q)(1-t)(1+qt) !=0,
+          J(beta0)=J(w)=0.
+
+The expanded nonzero P(w) has only seven monomials:
+ q^4 - q^4 t - q^5 +2q^5 t -q^5 t^2 -q^6 t +q^6 t^2.
+It vanishes on the Jones specialization. The lexicographically largest
+(t-degree,q-degree) monomial q^6 t^2 dies: along collapsed weight a-b=4,
+q^4 +2q^5 t +q^6 t^2 contributes 1-2+1=0 after t=-q^-1.
+
+This is NOT a Jones counterexample. The cap slide preserves the actual
+tangle. Moreover, for w itself, boundary-relative R1/R2 simplification
+reduces X_w to the crossing-free split tangle, and its actual closures
+are U_2 and U. Thus the witness lies on the actual-unknot locus and is
+geometrically trivial. The generic lift remembers an arc-system choice
+that the three-dimensional cap tangle forgets.
+
+For an explicit action check, write q=s^2. The generic action r1(v) is
+
+ F12: (q-1)t^-1 +q(q-1),
+ F13: -q^-1 t^-1 +t^-1 -q^2 t,
+ F14: q^-1 t^-1,
+ F23: q^-1 t^-1 -t^-1 +q^2 t,
+ F24: -q^-1 t^-1,
+
+with all other coordinates zero. At t=-q^-1 this becomes exactly v;
+generically the extra F12 coordinate is (q-1)t^-1(1+qt), so it is not
+even a scalar multiple of v.
+
+Consequences
+------------
+1. The raw Budney form cannot satisfy the proposed unit specialization;
+   C1 already repairs it with a derivative. Even after that repair, NJC
+   is FALSE for these explicit geometric lifts.
+2. Restricting to D(X)=U does not repair NJC: the witness already lies
+   there and X is actually trivial.
+3. An invariant of cap tangle types must quotient or otherwise eliminate
+   this cap-slide dependence before a new extremal-monomial strategy can
+   imply KL(6,2). Generic LKB faithfulness sees precisely more data than
+   the cap tangle retains.
+4. This does not refute KL(6,2), LemmaQ, or Jones unknot detection.
+
+5. A simple equivariant quotient cannot repair the descent generically.
+   Put d=(K(r1)-I)v in the15-dimensional module overQ(q,t). The B6-span
+   of d is the entire module. Certificate: at(q,t)=(2,3), the15 columns
+   K(w)d for the following words have a nonzero exact determinant:
+     [],[2],[3],[4],[1,2],[2,2],[3,2],[4,2],[5,4],
+     [4,3,2],[3,4,2],[5,4,2],[5,4,3,2],[5,3,4,2],[5,5,4,3,2].
+   A nonzero specialization proves the corresponding generic minor
+   nonzero. Thus any B6-equivariant linear quotient overQ(q,t) that
+   identifies r1(v) with v kills d and its whole orbit, so is the zero
+   quotient. This does not exclude nonlinear invariants, integral
+   specialization constructions, or a different module. It rules out
+   keeping genericLKB by simply quotienting its cap-slide ambiguity.
+   Exact columns/determinant: cap_slide_span.py/.json.
+
+Artifacts: hilden_cap_cancel.json contains the bounded mechanism tests;
+cancellation_14.json contains the pairing agent's independent exact
+pairing and actual diagram checks. No braid scan was used: the witness
+was obtained by one specified cap slide of the standard trivial seed.

@@ -1,0 +1,18 @@
+{
+ "files": [
+  "/Users/calebbarnett/jones-lanes/theory-restart/mont/cx/critic/regbig/cert_big.jsonl.gz"
+ ],
+ "records_total": 2604,
+ "sampled": 2604,
+ "fraction": 1.0,
+ "seed": 11,
+ "records_pass": 2604,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 2604
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 2604
+ },
+ "secs": 30.2
+}

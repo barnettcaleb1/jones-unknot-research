@@ -1,0 +1,41 @@
+{
+  "all_passed": true,
+  "checks": {
+    "braid parameters differ by fifth power": true,
+    "loop parameters differ by Phi5": true,
+    "original trace channel obeys BMW": true,
+    "cover trace channel obeys BMW": true,
+    "Phi5 is fourth power modulo five": true,
+    "Phi10 is fourth power modulo five": true,
+    "change of cyclotomic variable": true,
+    "projector denominators agree cyclotomically": true,
+    "boundary denominator is a cyclotomic unit": true,
+    "boundary denominators are units at Q1": true,
+    "trace identity n=0": true,
+    "trace identity n=1": true,
+    "framed generator equality n=1": true,
+    "trace identity n=2": true,
+    "framed generator equality n=2": true,
+    "trace identity n=3": true,
+    "framed generator equality n=3": true,
+    "cover curl correction n=1": true,
+    "cover curl correction n=2": true,
+    "cover curl correction n=3": true,
+    "trefoil preferred normalization": true,
+    "trefoil exact Phi10 remainder": true,
+    "figure_eight preferred normalization": true,
+    "figure_eight exact Phi10 remainder": true,
+    "8_19 preferred normalization": true,
+    "8_19 exact Phi10 remainder": true,
+    "9_9^1 preferred normalization": true,
+    "9_9^1 exact Phi10 remainder": true,
+    "9_9^2 preferred normalization": true,
+    "9_9^2 exact Phi10 remainder": true
+  },
+  "conventions": {
+    "J": "lp.J, quotient t=A^4",
+    "V": "standard Jones, variable a^-4",
+    "uniform_form": "J_minus(t)=J_lp(t^-1)=V_K(t^-2) modulo Phi10"
+  },
+  "scope": "Fixed algebra and named calibrations only; universal claim requires annular spanning and marked projector proof."
+}

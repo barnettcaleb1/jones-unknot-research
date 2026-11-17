@@ -1,0 +1,138 @@
+WHITEHEAD QUOTIENT SKEIN MAP: INDEPENDENT AUDIT
+31 October 2026. This audits the root agent's geometric argument.
+
+VERDICT
+
+The argument is sound for the standard equivariant Whitehead pattern and its
+inherited strong inversion, with the peripheral markings below. It proves
+injectivity of a linear map on the two-dimensional Conway-tangle skein space.
+It does not assert that ordinary Jones of a companion determines its quotient
+tangle, and does not address all possible strong inversions of a satellite.
+
+1. THE LINEAR MAP AND ITS GEOMETRIC MEANING
+
+Let W be the exterior of the Whitehead link P union A, with A the unknotted
+axis and P the Whitehead pattern. Choose the standard strong inversion of this
+pattern piece compatible with the companion strong inversion. Its quotient is
+a fixed tangle in a ball with a smaller four-marked-point ball removed.
+
+Insertion in this inner ball gives a Q(A)-linear map
+
+                  F : S(B3,4 points) -> S(B3,4 points).
+
+Both spaces have dimension two; linearity is the local Kauffman skein relation.
+The input is the actual quotient tangle of the companion exterior, not the
+Jones polynomial of the companion knot. There is one input ball, so this is
+a linear map, rather than a cabling operation requiring multiple copies.
+
+Use preferred meridian-longitude markings. In satellite gluing, up to coherent
+orientation signs, the peripheral identification is
+
+                     mu_K -> lambda_A,
+                     lambda_K -> mu_A.
+
+The outer meridian is the fixed meridian of P. Its filling is an actual unknot
+branch set for each satellite, since the filled cover is S3. The outer preferred
+longitude is independent of K: lk(P,A)=0, and a Seifert surface for P lies in
+the solid torus S3 minus nu(A). Its boundary push-off remains the preferred
+zero-linking longitude after every companion insertion. Equivalently, in the
+link exterior [lambda_P]=lk(P,A)[mu_A]=0 already before the gluing.
+
+2. THE TEST FAMILY IS ACTUALLY TWIST KNOTS
+
+The rational-zero input Q0 is the quotient of the unknot exterior with its
+preferred marking. More generally choose the rational input Qn whose meridian
+disk, expressed on the marked boundary of that exterior, is
+
+                         lambda_U + n mu_U.
+
+Under the satellite identification this becomes mu_A+n lambda_A. Thus the
+inserted solid torus performs 1/n surgery on the Whitehead-link component A.
+For n=0 this is the original meridional filling. Since A is unknotted, the
+ambient manifold after 1/n surgery is S3. The remaining component is a twist
+knot. The output boundary's preferred longitude is unchanged because lk(P,A)=0.
+
+Dubois--Huynh--Yamaguchi, arXiv:0706.2213v3, Remark 2(4)--(5), state together
+that W(1/n)=E(J(2,-2n)) and
+
+                    Delta_(J(2,2n))(t)=n t^2+(1-2n)t+n.
+
+Symmetrizing the polynomial for W(1/n) therefore gives
+
+                    Delta(t)=-n(t+t^-1)+(1+2n),
+                    a_2=-n.
+
+Mirroring or the opposite clasp convention changes the relevant sign; the
+nonvanishing for n nonzero is what the argument uses. The n=0 remaining knot
+is the actual unknot, not merely an Alexander-one knot.
+
+3. RANK ONE WOULD VIOLATE THE LONGITUDE OBSTRUCTION
+
+F(Q0) is the quotient of the actual unknot, in its preferred marking. Hence it
+is the standard rational-zero skein vector, up to a framing unit, and is nonzero.
+Suppose rank F=1. Then for any n, F(Qn)=c_n(A) F(Q0) for a scalar in Q(A).
+
+It is essential not to silently call c_n a framing monomial. Evaluate both
+sides using the OUTER meridional closure: both are actual unknot diagrams.
+Their framed bracket evaluations differ by a framing unit. Thus c_n really
+is a signed Laurent monomial. In particular it is neither zero nor an arbitrary
+rational function.
+
+The outer longitude closure of F(Qn) would consequently have the Jones
+polynomial of the two-component unlink up to a signed Laurent monomial.
+The two-filling obstruction proved in
+work/fanout16/realizability_zero_filling.txt then forces the corresponding
+companion (the twist knot W(1/n)) to have a_2=0. This contradicts a_2=-n for
+any n nonzero. Therefore rank F=2 and F is injective over Q(A).
+
+4. CONSEQUENCES THAT DO NOT ADD UNCOLORED-TO-COLORED ASSUMPTIONS
+
+Suppose an actual companion K has an inherited Whitehead quotient whose
+skein vector is proportional to the preferred rational-zero vector. Since
+F(Q0) lies on this same line, write F(T_K)=c F(Q0). Injectivity gives
+
+                              T_K=c Q0.
+
+The meridional unknot closure again makes c a framing unit. Thus the companion
+quotient itself is Jones-flat relative to the preferred rational-zero tangle.
+The longitude obstruction forces a_2(K)=0.
+
+In fact the following projective condition is preserved in BOTH directions:
+
+  T_K lies on the preferred rational-zero skein line
+       iff F(T_K) lies on the preferred rational-zero skein line.
+
+Forwards is linearity, backwards is injectivity. This gives more than simply
+reapplying the Casson test to the Whitehead double, whose Alexander polynomial
+is already one. Finite compositions of either clasp version of the untwisted
+Whitehead pattern remain injective and preserve this preferred line. Therefore
+no inherited quotient of any iterated untwisted Whitehead double of a core
+with a_2(K) nonzero can be the Jones-flat formal tangle under investigation.
+
+SCOPE WARNINGS
+
+* This is a statement about the entire marked quotient-tangle bracket, not
+  about the ordinary Jones polynomial of Wh(K) or K.
+* The rational-zero line and preferred markings are fixed throughout.
+  It is not enough to say vaguely that an output resembles some rational
+  tangle after an unspecified boundary reparametrization.
+* The proof applies to the specified compatible/inherited inversion. Another
+  strong inversion requires its own pattern-quotient identification.
+* A core with a_2=0 is not excluded by this argument. The result transfers
+  invisibility back to that core; it does not prove such invisibility impossible.
+* No novelty claim is made. This is a deduction from the local skein relation,
+  the standard Whitehead surgery description and the audited Lescop obstruction.
+
+PRIMARY SOURCES
+
+J. Dubois, V. Huynh, Y. Yamaguchi, Non-abelian Reidemeister torsion for twist
+knots, arXiv:0706.2213v3, Section 2, Remark 2(4)--(5), PDF page 4:
+https://arxiv.org/pdf/0706.2213
+
+S. Garoufalidis, Signatures of links and finite type invariants of cyclic
+branched covers, Theorem 1 and Section 4.1 in the arXiv version:
+https://arxiv.org/html/math/9811021
+
+A. Kotelskiy, L. Watson, C. Zibrowius, Khovanov homology and strong inversions,
+Section 1, preferred quotient marking and the Montesinos correspondence:
+https://msp.org/obs/2022/5-1/obs-v5-n1-p10-p.pdf

@@ -1,0 +1,18 @@
+{
+ "files": [
+  "cert/u4_e3b_n20_s220.jsonl.gz"
+ ],
+ "records_total": 4298,
+ "sampled": 4298,
+ "fraction": 1.0,
+ "seed": 102,
+ "records_pass": 4298,
+ "records_FAIL": [],
+ "certs_by_kind_replay_a2": {
+  "tietze|replay=True|a2=True": 4298
+ },
+ "status": {
+  "CERTIFIED_UNKNOT": 4298
+ },
+ "secs": 35.2
+}

@@ -1,0 +1,50 @@
+INDEPENDENT AUDIT OF THE PURE-CHANNEL ARGUMENT
+1 November 2026. Bounded audit of work/research48/twist_anchor.txt.
+
+Verdict: no normalization counterexample or algebraic proof flaw found.
+The lattice assertion is narrower than integrality of the graph basis and
+is justified by a monic leading diagram. It must be retained in that form.
+
+I inspected the actual g_(i,epsilon) diagram on printed page 1044 of
+Abernathy--Gilmer, https://nyjm.albany.edu/j/2016/22-48v.pdf . The two
+projector boxes can be placed across two distinct meridional disks. Each
+nonidentity Temperley--Lieb summand of f_n has through-degree at most n-2.
+Caps and cups can be pushed to the appropriate sides of its disk entirely
+within that box. The resulting diagram has a representative with at most
+n-2 intersections at that disk and does not acquire new intersections at
+the OTHER disk. Thus it cannot isotopically become the crossingless
+identity-resolution diagram whose minimal cut counts are (i,epsilon).
+Choosing identity in every projector is the unique term of that bidegree,
+and all these identity coefficients are 1. Consequently c*g integral
+with only one graph channel implies c integral, despite lower coefficients
+of g being rational functions.
+
+Low-label checks, with h the short arc, v the long arc, and z a core:
+ g_(0,1)=h; g_(1,0)=v;
+ g_(1,2)=h z-delta^(-1)v;
+ g_(2,1)=v z-delta^(-1)h.
+The latter two close by the standard complementary short arc to
+delta^2-1=Delta_2. This matches the claimed theta normalization and makes
+the distinction from false global tensor-lattice integrality explicit.
+
+The standard closure normalization is also directly present in
+Proposition 5.2(i) at n=0: the pairing with x_0^even is theta(1,i,epsilon).
+The usual quantum-factorial theta formula gives
+theta(1,i,i+1)=Delta_(i+1) and theta(1,i,i-1)=Delta_i.
+At A=1 these are signed integers of absolute value max(i,epsilon)+1.
+The closing unknot bracket is delta, not 1; using the reduced bracket
+prematurely would lose precisely the divisibility needed by the argument.
+
+For framed disk twists the eigenvalue is theta_j/theta_l, with
+theta_n=(-1)^n A^(n(n+2)). The two disk twists have opposite signs; after
+removing transported framing q(w1^2-w2^2), the signs cancel because
+j-l and w1^2-w2^2 are both odd. A simultaneous reversal of disk or q
+conventions only reverses all frequencies, leaving distinctness and the
+zero-channel conclusions unchanged. The physical operator identification
+requires the two graph cuts to be Taylor's actual complementary sphere
+disks and the initial closing arc to be the normal arc in Nb(A); the note
+states these data explicitly. It should not be generalized to arbitrary
+closure families without that identification.
+
+No inference from a skein-equal elementary arc to a geometrically trivial
+embedded arc is justified by this audit. That remains the stated gap.

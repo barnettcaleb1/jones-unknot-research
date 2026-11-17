@@ -1,0 +1,278 @@
+JONES RESEARCH: SATELLITE TRANSMISSION AND HIDDEN DERIVATIVES
+31 October 2026. Continuation of the parallel research pass.
+
+OUTCOME
+
+The Whitehead-family test left open in the preceding report is now resolved
+by a uniform proof. No inherited quotient of an iterated untwisted Whitehead
+double of a trefoil can realize the proposed Jones-invisible tangle.
+
+The argument gives more than this exclusion. It proves an injectivity
+criterion for satellite operations on quotient tangles and constructs actual
+two-component links whose Jones polynomials match the unlink through
+arbitrarily many derivatives at t=-1, but differ at the next derivative.
+
+The general Jones unknot-detection problem remains unresolved by this work.
+These are deductions from established skein and surgery formulas, checked
+independently in this pass. Originality relative to all existing literature
+has not been established.
+
+1. OBJECTS AND THE QUESTION THEY ADDRESS
+
+Let J be a strongly invertible knot: an orientation-preserving involution
+of S^3 reverses J and meets it in two fixed points. The quotient of its
+exterior is a four-ended tangle T_J. Use the preferred peripheral marking:
+the infinity filling is the meridian, with actual unknot branch set, and
+the zero filling is the longitude, with branch link L_J. Its double cover
+is zero surgery S^3_0(J).
+
+The Kauffman bracket of a four-ended tangle lies in a free module of rank
+two, with basis Q_0,Q_infinity. Put delta=-A^2-A^-2 and t=A^-4. Normalize
+the closure functionals by
+
+ f_infinity(Q_0)=1,    f_infinity(Q_infinity)=delta,
+ f_0(Q_0)=delta,       f_0(Q_infinity)=1.
+
+These functionals are independent over Q(A). The formal candidate from
+earlier work would have its entire bracket on the Q_0 line, despite having
+additional nontrivial homology. Call that precise condition Jones-flatness.
+It concerns the quotient tangle; it is not a statement about V_J alone.
+
+For an actual T_J, Jones-flatness is equivalent to the exact longitude
+identity V_(L_J)=V_(U_2), with the canonical orientation described below.
+Here U_2 denotes the two-component unlink.
+
+Proof of this equivalence. Orient the infinity unknot, then orient the two
+zero-closure components to agree with its directions on the tangle arcs.
+Both standard closures add no crossings, so their writhe is identical.
+If exact Jones-unlink equality was initially given with another orientation,
+V'_L(1)=-3lk(L)=0 forces linking number zero, so reversing a component
+does not change Jones. The two framed closure values are therefore one
+common framing unit times (1,delta). Independence of the closure pairing
+forces [T_J] to be the same unit times Q_0. Conversely a projective Q_0
+vector, evaluated with these compatible orientations and the unknot anchor,
+gives the exact unlink Jones polynomial. A general monomial multiple of
+unlink Jones alone should not silently be substituted for exact equality.
+
+2. A GENERAL SATELLITE INJECTIVITY CRITERION
+
+Consider an oriented two-component link P union C, where C is an unknot
+and lk(P,C)=0. Regard P as a winding-zero pattern in S^3 minus nu(C).
+Assume a componentwise strong inversion compatible with companion insertion.
+The quotient of the link exterior is a shell between two four-marked-point
+spheres. Inserting a companion quotient into its inner boundary defines
+an integral linear skein map F_P between two rank-two modules.
+
+THEOREM. If the Sato--Levine invariant beta(P union C) is nonzero, then
+F_P is injective over Q(A). The pattern P(U) need not be an unknot for
+this statement.
+
+Proof. Insert the rational tangle Q_n whose covering meridian-disk slope
+is lambda_U+n mu_U. Satellite gluing identifies
+
+                    mu_U -> lambda_C,  lambda_U -> mu_C.
+
+Thus this insertion performs 1/n surgery on C, producing a knot P_n in
+S^3. The outer meridian remains fixed. The outer longitude also remains
+preferred because lk(P,C)=0. In particular every output has an actual
+unknot meridional branch closure.
+
+Hoste's Casson surgery formula, applied first to (+1,1/n) surgery on
+P union C and then in the opposite order, gives
+
+                  a_2(P_n)=a_2(P_0)-n beta(P union C).          (1)
+
+The sign convention for beta follows Gorsky--Liu--Moore. Only its
+nonvanishing matters for the conclusion.
+
+The previous pass proved, for any actual longitude branch link L_J,
+
+                         |V'_L_J(-1)|=|12a_2(J)-1|.           (2)
+
+This follows from Garoufalidis's branched-cover formula and
+lambda_G(S^3_0(J))=2a_2(J)-1/6 in doubled Casson-Lescop normalization.
+The function a -> |12a-1| is injective on integers: the opposite-sign
+equality would require a+b=1/6.
+
+Suppose F_P had rank one. Its outputs on Q_0 and Q_1 would be proportional.
+Evaluating their common meridional closure, which is an actual unknot in
+both cases, forces the proportionality scalar to be a framing monomial.
+Their longitude Jones polynomials would therefore differ by a monomial.
+Since both vanish at -1, their derivative magnitudes there would agree.
+Equation (2) forces a_2(P_0)=a_2(P_1), contradicting (1) when beta is
+nonzero. F_P is nonzero by its meridional closure, so its rank is two.
+
+Primary formulas:
+Gorsky--Liu--Moore, Surgery on links of linking number zero and the
+Heegaard Floer d-invariant, Section 6.2, Eqs. (6.2)--(6.3):
+https://arxiv.org/abs/1810.10178
+https://par.nsf.gov/servlets/purl/10205246
+Garoufalidis, Signatures of links and finite type invariants of cyclic
+branched covers, Theorem 1 and Section 4.1:
+https://people.mpim-bonn.mpg.de/stavros/publications/signature.pdf
+
+3. AN EXACT TRANSMISSION LAW
+
+Suppose additionally P(U)=U. Filling the outer meridian restores the
+unknot exterior E(C). Its quotient is the rational cap with compressible
+slope lambda_C, which the gluing identifies with the INPUT meridian.
+Therefore f_infinity F_P is one fixed framing unit times f_infinity,
+independently of the inserted tangle. Normalize this unit away.
+
+The preferred longitude and P(U)=U then give F_P(Q_0)=Q_0. The vector
+
+                         v=Q_infinity-delta Q_0
+
+spans the kernel of f_infinity. Hence, in the basis (Q_0,v),
+
+                       F_P = diag(1,d_P(A)).                  (3)
+
+The factor d_P belongs to Z[A,A^-1]: the original map is integral,
+its normalization is a unit, and the basis change is unimodular.
+It need not be a unit; its inverse is taken over Q(A).
+
+For any input with nonzero meridian evaluation define
+
+             x(T) = (f_0(T)/f_infinity(T)-delta)/(1-delta^2).
+
+This measures departure from the preferred rational tangle. Equation (3)
+gives the exact identity
+
+                            x(F_P(T))=d_P(A)x(T).             (4)
+
+Thus a nonzero factor preserves and reflects Jones-flatness. Factors
+multiply under compatible pattern composition. For actual exterior
+quotients with the canonical orientations of Section 1,
+
+                  f_0(T_J)/f_infinity(T_J)=V_(L_J)(A^-4).
+
+The law therefore controls the full longitude branch-link Jones defect,
+not just its determinant or a finite collection of coefficients.
+
+4. WHITEHEAD DOUBLING CANNOT CREATE THE FIRST INVISIBLE QUOTIENT
+
+The standard untwisted Whitehead pattern has P(U)=U, winding zero, and
+nonzero Sato--Levine invariant. Both inherited strong inversions, obtained
+by putting the clasp at either fixed point of the companion, fit the shell
+construction. Mirroring and either clasp sign preserve the needed
+nonvanishing conclusion.
+
+One can verify injectivity directly without naming beta. Rational input
+Q_n performs 1/n surgery on one component of the Whitehead link. The
+remaining component is a twist knot with symmetric Alexander polynomial
+
+                         -n(t+t^-1)+(1+2n),
+
+in one standard convention. Thus a_2=-n. Rank one would contradict the
+longitude derivative identity already at n=1.
+
+Consequently the inherited exterior quotient of Wh(J) is Jones-flat if
+and only if the inherited input quotient of J is Jones-flat. The same
+equivalence holds for every finite iteration. A core with a_2 nonzero
+cannot be Jones-flat by (2), so all such iterated Whitehead constructions
+are excluded, including either trefoil and nontrivial L-space cores.
+
+This resolves the specific family proposed at the end of the preceding
+pass. No explicit quotient PD code or complete Jones polynomial was
+computed: this is a uniform non-equality proof for the entire family.
+
+Whitehead surgery and Alexander polynomial, stated together:
+Dubois--Huynh--Yamaguchi, Non-abelian Reidemeister torsion for twist knots,
+Remark 2(4)--(5), PDF p.4:
+https://arxiv.org/pdf/0706.2213
+The inherited inversions are described in Dai--Mallick--Taniguchi,
+Exotic disks and singular instanton Floer homology, Example 2.22/Figure 4:
+https://arxiv.org/html/2606.05819
+
+5. EACH WHITEHEAD LAYER HIDES EXACTLY ONE MORE DERIVATIVE
+
+Put zeta=exp(pi i/4), so t=-1, delta(zeta)=0, and
+|dt/dA|=|delta'(zeta)|=4.
+
+First, every winding-zero shell with P(U)=U has d_P(zeta)=0. Use rational
+input Q_1: its input zero closure is an unknot, with nonzero bracket at
+zeta. Its OUTPUT zero closure is the preferred longitude of P_1, so it
+has determinant zero. Evaluating (3) with delta=0 forces d_P(zeta)=0.
+Thus A^4+1 divides the integral Laurent polynomial d_P.
+
+When beta is nonzero, this zero is SIMPLE. Equation (1) gives
+a_2(P_1)=-beta, a nonzero integer. For the canonical output ratio R,
+equation (2) gives
+
+                  |R'(zeta)|=4|12a_2(P_1)-1| > 4.
+
+Since |delta'(zeta)|=4, the derivative of the output defect x is nonzero.
+The input defect x(Q_1)(zeta) is nonzero, so differentiating (4) proves
+d_P'(zeta) is nonzero. Therefore exactly one factor A^4+1 divides d_P.
+
+There is an exact quantitative version, also independently checked:
+
+                         |d_P'(zeta)| = 48|beta|.             (5a)
+
+To see this, use the standard integer-tangle convention
+Q_1=A Q_0+A^-1 Q_infinity. Put z=-A^4. The elementary two-eigenvalue
+calculation gives x(Q_n)=(1-z^n)/delta, hence x(Q_n)(zeta)=-n zeta^2.
+Differentiating the output ratio gives
+R_n'(zeta)=delta'(zeta)-n zeta^2 d_P'(zeta). Its squared absolute value,
+by (1)--(2), is 16(1 plus-or-minus 12n beta)^2. Comparing the n^2
+coefficients gives |d_P'(zeta)|^2=2304 beta^2. The probes n=-1,0,1
+already suffice. In particular beta=0 is equivalent to a second factor
+A^4+1 dividing d_P, including the possibility d_P is identically zero.
+Thus beta measures the first nontrivial local coefficient of the actual
+skein transmission factor, rather than merely furnishing an inequality.
+
+Now start with a strongly invertible core J having a_2(J) nonzero, for
+example a trefoil. Its actual preferred-zero branch-link defect also has
+a simple zero at zeta, by the same derivative-magnitude argument.
+
+Apply r inherited untwisted Whitehead operations and call the resulting
+preferred-zero branch link L_r. Equation (4) multiplies the original
+defect by r factors, each with a simple zero. It follows that
+
+                ord_(t=-1)(V_(L_r)(t)-V_(U_2)(t)) = r+1.       (5)
+
+The change of variable t=A^-4 has nonzero derivative at zeta, so it
+preserves vanishing order. The half-powers in these two-component Jones
+polynomials use the local branch t^(1/2)=A^-2.
+
+For every r, the two polynomials agree in derivatives of orders 0 through
+r at -1, and differ at derivative r+1. The full difference never vanishes
+identically because it is a product of nonzero factors. The L_r are actual
+two-component branch links and are pairwise distinct even by their Jones
+polynomials. Choices of clasp sign at successive stages do not change
+the exact order count.
+
+This supplies a concrete obstruction to any fixed finite-derivative test
+for the desired longitude identity, even within this geometrically
+restricted family. It explains why a_2 and coarse tests can keep passing
+while the full skein vector remains detectably different.
+
+6. THE BOUNDARY OF THE RESULT
+
+Nonzero beta is sufficient for injectivity, not necessary. Compose two
+untwisted Whitehead patterns. Their skein factor is a product of two
+nonzero factors, hence the map is injective. But every rational-input
+test now gives Wh_0(Wh_n(U)), with Alexander polynomial one. Hoste's
+formula therefore gives beta=0 for this composite pattern. Its factor
+has two copies of A^4+1, exactly as the transmission law predicts.
+
+A zero Sato--Levine invariant consequently does not supply a successful
+cancellation construction. One would need the entire scalar d_P to
+vanish for such a shell to erase all input defects. We have not produced
+an essential geometric pattern with that property.
+
+The other unresolved possibility is a genuinely Jones-flat core quotient
+with a_2=0, not obtained by adding the excluded shells to a visible core.
+No such core has been realized. Also, an arbitrary Jones-one knot has
+not been shown to admit an unknot-anchored quotient of this kind. The
+generic problem is therefore still open in this investigation.
+
+VALIDATION
+
+Three parallel agents independently checked the peripheral markings,
+the meridional framing normalization, the exact two-closure orientation
+argument, the rank proof, and the root-order argument. The parent derived
+and reviewed the combined transmission law. The accompanying archive
+contains the independent proof notes and the earlier normalization audit
+on which equation (2) depends. These are proof-based family results;
+no finite knot-table enumeration is used to justify their universal scope.

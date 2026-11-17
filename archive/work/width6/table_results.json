@@ -1,0 +1,104 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 3.3458053753711283,
+  "scope": "One minimal HT census PD per unoriented prime knot through 12 crossings; mirror choices represented by the table orientation. All crossings switched once.",
+  "polynomial_variable": "Regina x is a square-root Jones variable; comparisons use exact Laurent integer polynomials within the same convention.",
+  "counts": {
+    "3": {
+      "knots": 1,
+      "crossing_changes": 3,
+      "hits": 0
+    },
+    "4": {
+      "knots": 1,
+      "crossing_changes": 4,
+      "hits": 0
+    },
+    "5": {
+      "knots": 2,
+      "crossing_changes": 10,
+      "hits": 0
+    },
+    "6": {
+      "knots": 3,
+      "crossing_changes": 18,
+      "hits": 0
+    },
+    "7": {
+      "knots": 7,
+      "crossing_changes": 49,
+      "hits": 0
+    },
+    "8": {
+      "knots": 21,
+      "crossing_changes": 168,
+      "hits": 0
+    },
+    "9": {
+      "knots": 49,
+      "crossing_changes": 441,
+      "hits": 0
+    },
+    "10": {
+      "knots": 165,
+      "crossing_changes": 1650,
+      "hits": 0
+    },
+    "11": {
+      "knots": 552,
+      "crossing_changes": 6072,
+      "hits": 0
+    },
+    "12": {
+      "knots": 2176,
+      "crossing_changes": 26112,
+      "hits": 0
+    }
+  },
+  "knots_tested": 2977,
+  "crossing_changes_tested": 34527,
+  "hits": [],
+  "errors": [],
+  "census_counts": {
+    "3": [
+      1,
+      0
+    ],
+    "4": [
+      1,
+      0
+    ],
+    "5": [
+      2,
+      0
+    ],
+    "6": [
+      3,
+      0
+    ],
+    "7": [
+      7,
+      0
+    ],
+    "8": [
+      18,
+      3
+    ],
+    "9": [
+      41,
+      8
+    ],
+    "10": [
+      123,
+      42
+    ],
+    "11": [
+      367,
+      185
+    ],
+    "12": [
+      1288,
+      888
+    ]
+  }
+}

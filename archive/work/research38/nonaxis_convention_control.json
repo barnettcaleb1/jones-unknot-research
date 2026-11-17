@@ -1,0 +1,29 @@
+{
+  "matrix_rows": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "Jones_sqrt_t_algebra": {
+    "4": 1,
+    "8": 2,
+    "10": -2,
+    "12": 1,
+    "14": -2,
+    "16": 1
+  },
+  "Jones_sqrt_t_PL_projection": {
+    "-16": 1,
+    "-14": -2,
+    "-12": 1,
+    "-10": -2,
+    "-8": 2,
+    "-4": 1
+  },
+  "relation": "Global mirror: t maps to t^-1. Unit Jones and unknot classification unchanged."
+}

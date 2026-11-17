@@ -1,0 +1,95 @@
+{
+  "exact_reflection_checks": 180,
+  "exact_derivative_identity_checks": 10,
+  "actual_knots": {
+    "braids": {
+      "5_1": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "10_132": [
+        -1,
+        2,
+        -3,
+        -2,
+        3,
+        -4,
+        3,
+        -2,
+        1,
+        -3,
+        2,
+        -3,
+        4,
+        -3,
+        -3,
+        -2
+      ]
+    },
+    "ordinary_Jones_A": {
+      "16": 1,
+      "20": -1,
+      "24": 1,
+      "28": -1,
+      "8": 1
+    },
+    "color3_at_quantum_group_q2": [
+      "208357048576",
+      "12565016366179/4"
+    ],
+    "consequence": "All orders r give equal colors r\u00b11 andr\u00b12 at primitive rth roots, although color3 differs as a Laurent polynomial."
+  },
+  "figure_eight_boundary_layer": [
+    {
+      "r": 10,
+      "color_r_minus_1": 1,
+      "color_r_minus_2": 0.0,
+      "2pi_log_abs_color_r_minus_2_over_r": "-infinity",
+      "2pi_log_abs_first_derivative_color_r_minus_2_over_r": 4.277233851419401,
+      "2pi_log_color_r_over_r": 4.071434347555398
+    },
+    {
+      "r": 20,
+      "color_r_minus_1": 1,
+      "color_r_minus_2": 0.7159209561595878,
+      "2pi_log_abs_color_r_minus_2_over_r": -0.10498747574174457,
+      "2pi_log_abs_first_derivative_color_r_minus_2_over_r": 4.118108526507195,
+      "2pi_log_color_r_over_r": 3.3647374263629026
+    },
+    {
+      "r": 40,
+      "color_r_minus_1": 1,
+      "color_r_minus_2": 0.9267363514000317,
+      "2pi_log_abs_color_r_minus_2_over_r": -0.011951586762280062,
+      "2pi_log_abs_first_derivative_color_r_minus_2_over_r": 3.5334084626942066,
+      "2pi_log_color_r_over_r": 2.858168215633952
+    },
+    {
+      "r": 80,
+      "color_r_minus_1": 1,
+      "color_r_minus_2": 0.9815420137240196,
+      "2pi_log_abs_color_r_minus_2_over_r": -0.0014632329502058494,
+      "2pi_log_abs_first_derivative_color_r_minus_2_over_r": 2.993118283753206,
+      "2pi_log_color_r_over_r": 2.5251108686398385
+    },
+    {
+      "r": 160,
+      "color_r_minus_1": 1,
+      "color_r_minus_2": 0.9953765949848103,
+      "2pi_log_abs_color_r_minus_2_over_r": -0.00018198170285720002,
+      "2pi_log_abs_first_derivative_color_r_minus_2_over_r": 2.6120295883685367,
+      "2pi_log_color_r_over_r": 2.3181871993231
+    },
+    {
+      "r": 320,
+      "color_r_minus_1": 1,
+      "color_r_minus_2": 0.9988435915173164,
+      "2pi_log_abs_color_r_minus_2_over_r": -2.2719166312535118e-05,
+      "2pi_log_abs_first_derivative_color_r_minus_2_over_r": 2.3699015058536643,
+      "2pi_log_color_r_over_r": 2.194415637303069
+    }
+  ]
+}

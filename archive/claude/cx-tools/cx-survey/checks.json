@@ -1,0 +1,191 @@
+{
+ "c1_K00_pd_identical": true,
+ "c1_K00_crossings": [
+  24,
+  24
+ ],
+ "c1_K00_bracket_identical": true,
+ "c1_corners": {
+  "00": {
+   "c1": "-A^-2 - A^2",
+   "mine": "-A^-2 - A^2",
+   "identical": true,
+   "pd_identical": true
+  },
+  "01": {
+   "c1": "A^-32 - 3*A^-28 + 6*A^-24 - 12*A^-20 + 17*A^-16 - 22*A^-12 + 23*A^-8 - 19*A^-4 + 14 - 10*A^8 + 19*A^12 - 23*A^16 + 23*A^20 - 18*A^24 + 13*A^28 - 7*A^32 + 3*A^36 - A^40",
+   "mine": "A^-32 - 3*A^-28 + 6*A^-24 - 12*A^-20 + 17*A^-16 - 22*A^-12 + 23*A^-8 - 19*A^-4 + 14 - 10*A^8 + 19*A^12 - 23*A^16 + 23*A^20 - 18*A^24 + 13*A^28 - 7*A^32 + 3*A^36 - A^40",
+   "identical": true,
+   "pd_identical": true
+  },
+  "10": {
+   "c1": "-A^-24 + A^-8 + A^-4 + 3 + A^4 - A^16",
+   "mine": "-A^-24 + A^-8 + A^-4 + 3 + A^4 - A^16",
+   "identical": true,
+   "pd_identical": true
+  },
+  "11": {
+   "c1": "A^-26 + A^-22 - A^-10 - 2*A^-6 - 4*A^-2 - 4*A^2 - A^6 + A^14 + A^18",
+   "mine": "A^-26 + A^-22 - A^-10 - 2*A^-6 - 4*A^-2 - 4*A^2 - A^6 + A^14 + A^18",
+   "identical": true,
+   "pd_identical": true
+  }
+ },
+ "V_J": "-t^-3 + 2*t^-2 - 3*t^-1 + 5 - 4*t + 4*t^2 - 3*t^3 + 2*t^4 - t^5",
+ "det_J": 25,
+ "B10_eq_unit_delta2_VJ": "A^0",
+ "config4S_K0n_line": {
+  "1": {
+   "crossings": 28,
+   "V_str": "1",
+   "det": 1,
+   "check": {
+    "simplified_crossings": 0,
+    "simplified_free_unknots": 1,
+    "hfk_total_rank": 1,
+    "hfk_genus": 0,
+    "hfk_note": "spherogram global simplification reached 0 crossings",
+    "volume": -1e-06,
+    "solution_type": "contains degenerate tetrahedra",
+    "identify": []
+   }
+  },
+  "2": {
+   "crossings": 30,
+   "V_str": "1",
+   "det": 1,
+   "check": {
+    "simplified_crossings": 0,
+    "simplified_free_unknots": 1,
+    "hfk_total_rank": 1,
+    "hfk_genus": 0,
+    "hfk_note": "spherogram global simplification reached 0 crossings",
+    "volume": -2.754864,
+    "solution_type": "contains degenerate tetrahedra",
+    "identify": []
+   }
+  },
+  "-1": {
+   "crossings": 28,
+   "V_str": "1",
+   "det": 1,
+   "check": {
+    "simplified_crossings": 0,
+    "simplified_free_unknots": 1,
+    "hfk_total_rank": 1,
+    "hfk_genus": 0,
+    "hfk_note": "spherogram global simplification reached 0 crossings",
+    "volume": -0.0,
+    "solution_type": "contains degenerate tetrahedra",
+    "identify": []
+   }
+  },
+  "3": {
+   "crossings": 32,
+   "V_str": "1",
+   "det": 1,
+   "check": {
+    "simplified_crossings": 0,
+    "simplified_free_unknots": 1,
+    "hfk_total_rank": 1,
+    "hfk_genus": 0,
+    "hfk_note": "spherogram global simplification reached 0 crossings",
+    "volume": -2.956052,
+    "solution_type": "contains degenerate tetrahedra",
+    "identify": []
+   }
+  }
+ },
+ "config4S_U_ring": {
+  "components": 2,
+  "V_str": "-t^(-1/2) - t^(1/2)",
+  "linking": "{(0, 1): 0}",
+  "simplified_crossings": 0,
+  "simplified_free": 2,
+  "geometry": {
+   "volume": -2e-06,
+   "solution_type": "contains degenerate tetrahedra",
+   "num_cusps": 2
+  }
+ },
+ "config3_T_ring": {
+  "components": 2,
+  "linking": "{(0, 1): 0}",
+  "simplified_crossings": 21,
+  "simplified_free": 0,
+  "geometry": {
+   "volume": 29.462724,
+   "solution_type": "all tetrahedra positively oriented",
+   "num_cusps": 2
+  }
+ },
+ "config3_seam_ring": {
+  "components": 2,
+  "linking": "{(0, 1): 0}",
+  "simplified_crossings": 17,
+  "simplified_free": 0,
+  "geometry": {
+   "volume": 13.528968,
+   "solution_type": "all tetrahedra positively oriented",
+   "num_cusps": 2
+  }
+ },
+ "config4L_seam_twist_with_Ue": {
+  "0": {
+   "components": 1,
+   "crossings": 24,
+   "V_str": "t + t^3 - t^4",
+   "check": {
+    "simplified_crossings": 3,
+    "simplified_free_unknots": 0,
+    "hfk_total_rank": 3,
+    "hfk_genus": 1,
+    "volume": 0.0,
+    "solution_type": "contains flat tetrahedra",
+    "identify": []
+   }
+  },
+  "1": {
+   "components": 1,
+   "crossings": 26,
+   "V_str": "t + t^3 - t^4",
+   "check": {
+    "simplified_crossings": 3,
+    "simplified_free_unknots": 0,
+    "hfk_total_rank": 3,
+    "hfk_genus": 1,
+    "volume": -0.0,
+    "solution_type": "contains degenerate tetrahedra",
+    "identify": []
+   }
+  },
+  "2": {
+   "components": 1,
+   "crossings": 28,
+   "V_str": "t + t^3 - t^4",
+   "check": {
+    "simplified_crossings": 3,
+    "simplified_free_unknots": 0,
+    "hfk_total_rank": 3,
+    "hfk_genus": 1,
+    "volume": -0.0019,
+    "solution_type": "contains degenerate tetrahedra",
+    "identify": []
+   }
+  },
+  "-1": {
+   "components": 1,
+   "crossings": 26,
+   "V_str": "t + t^3 - t^4",
+   "check": {
+    "simplified_crossings": 3,
+    "simplified_free_unknots": 0,
+    "hfk_total_rank": 3,
+    "hfk_genus": 1,
+    "volume": 0.0,
+    "solution_type": "contains flat tetrahedra",
+    "identify": []
+   }
+  }
+ }
+}

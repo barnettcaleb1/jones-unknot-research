@@ -1,0 +1,28 @@
+Pass37: actual all-integer exclusion for 16 marked records of the earlier
+22 EKT LLL1 two-stage unknot fusions. They have partial deviations with
+unequal orders (3,2), in either order, at x=1. Exact two-site skein formula
+then excludes every (m,n) != (0,0). Do not scan more twist parameters for
+these records: 1,3,5,6,7,8,9,10,11,12,13,14,15,16,19,20.
+
+Six records 0,2,4,17,18,21 remain UNRESOLVED as marked two-site families.
+They are NOT newly certified templates. Naive endpoint pullbacks become
+nonplanar because the second band uses a face opened by the first move.
+No algebraic calculation on those nonplanar pullbacks is legitimate.
+
+General unequal-order theorem needs no determinant input. It applies to
+V00=1, S12=delta², actual disjoint antiparallel twist sites, and nonzero
+partial deviations of different orders at1. No statement of global
+Jones detection follows.
+
+For qualifying rank-one cover matrix B=d vvT with v1,v2 nonzero, even
+equal-order cases have at most one non-anchor Jones-one integer point.
+Put a=v2²,b=v1²,R=(S1-delta)/(S2-delta),z=x^-4. Candidate
+k*= -i R'(i)/(2(a+b)R(i)) on (m,n)=(ak,-bk), then check exact polynomial
+identity. Zero matrix entries and rank-zero B are exceptions to this gate.
+Actual hit5 k*=-1/4. Formal nongeometric partial data can give k*=1 and
+pass scalar gates; do not assert a universal topology prohibition.
+
+Proof/data: outputs/jones-two-band-taylor-obstruction.txt and work/research37.
+No main proof or counterexample. Previous goal pass36 was progress (source-
+grounded false G2 identity); current pass37 is progress (all-integer
+exclusions and finite exact candidate method).

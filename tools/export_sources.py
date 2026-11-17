@@ -78,11 +78,15 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('workspace', type=Path); ap.add_argument('claude_lanes', type=Path); ap.add_argument('assets', type=Path)
     args = ap.parse_args(); args.assets.mkdir(parents=True, exist_ok=True)
     sources = [(args.workspace / k, k) for k in ('collab', 'work', 'outputs')] + [(args.claude_lanes, 'claude')]
+    # Check all inputs before replacing any generated output.
+    for root, label in sources:
+        if not root.is_dir(): raise SystemExit(f'Missing source root: {label}; existing archive left intact')
+        if root.resolve().is_relative_to((REPO / 'archive').resolve()):
+            raise SystemExit('An export input must not be inside its generated archive')
     # This destination contains only generated source copies, never the input roots.
     if (REPO / 'archive').exists(): shutil.rmtree(REPO / 'archive')
     rows, groups = [], {}
     for root, label in sources:
-        if not root.is_dir(): raise SystemExit(f'Missing source root: {label}')
         for p in sorted(root.rglob('*')):
             if not p.is_file() or p.is_symlink(): continue
             key = label + '/' + p.relative_to(root).as_posix()
